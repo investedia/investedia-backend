@@ -66,10 +66,38 @@ def load(name, default):
     except Exception: return default
 
 
-def main():
-    iso = load('iso.json', {})
-    live, arch = load('news-live.json', {}).get('stories', []), load('news-archive.json', {}).get('stories', [])
-    stories = list({s['id']: s for s in arch + live}.values())
+def history(iso, mk, _unused):
+    """Read-only article inputs; deterministic historical output using the live rules."""
+    byday = C.defaultdict(dict)
+    for filename in sorted(os.listdir(os.path.join(G, 'library'))):
+        if not filename.endswith('.json'): continue
+        with open(os.path.join(G, 'library', filename)) as handle:
+            article = json.load(handle)
+        day = (article.get('published_at') or '')[:10]
+        if re.fullmatch(r'\d{4}-\d{2}-\d{2}', day) and article.get('location', {}).get('lat') is not None:
+            byday[day][article['id']] = article
+    total = days = 0
+    for day, articles in sorted(byday.items()):
+        events = load('events/' + day + '.json', {}).get('events', [])
+        available = {event['id'] for event in events}
+        arts = [a for key, a in sorted(articles.items()) if key in available]
+        if not arts: continue
+        conns, rejected, _ = _rules(iso, mk, arts)
+        conns.sort(key=lambda c: (-c['score'], c['published_at'] or '', c['id']))
+        raw = json.dumps({'schema': 'investedia.connections-history/v1', 'day': day,
+                          'connections': conns, 'rejected': dict(sorted(rejected.items()))}, separators=(',', ':'))
+        for directory in (G,):
+            out = os.path.join(directory, 'connections-history')
+            os.makedirs(out, exist_ok=True)
+            target = os.path.join(out, day + '.json')
+            with open(target + '.tmp', 'w') as handle: handle.write(raw)
+            os.replace(target + '.tmp', target)
+        days += 1
+        total += len(conns)
+    print(json.dumps({'days': days, 'connections': total}))
+
+
+def _rules(iso, mk, stories):
     # company registry (data/registry.json): exact normalised-name match to a listed company with a verified place. No fuzzy matching,
     # no AI; a name that matches nothing (private companies such as OpenAI, ByteDance, Pemex) stays unlocated.
     try: REG = json.load(open(os.path.join(ROOT, 'data', 'registry.json')))
@@ -141,7 +169,7 @@ def main():
         if L.get('lat') is None: continue
         named = {BENCH[m.group(1).lower()] for m in bench_re.finditer(s_.get('headline') or '')}
         have = {c['dest']['asset'] for c in conns if c['event'] == s_['id']}
-        for sym in named - have:
+        for sym in sorted(named - have):
             a = bysym.get(sym)
             if not a: continue
             market_refs += 1
@@ -160,6 +188,17 @@ def main():
             conns.append(rec)
     conns.sort(key=lambda c: (-c['score'], c['published_at'] or ''), reverse=False)
 
+    return conns, rej, market_refs
+
+
+def main():
+    iso = load('iso.json', {})
+    live, arch = load('news-live.json', {}).get('stories', []), load('news-archive.json', {}).get('stories', [])
+    stories = list({s['id']: s for s in arch + live}.values())
+    if os.environ.get('CONN_HISTORY'):  # historical days: the full article library (same rules, one file per day)
+        return history(iso, load('markets.json', {}).get('assets', []), stories)
+    mk = load('markets.json', {}).get('assets', [])
+    conns, rej, market_refs = _rules(iso, mk, stories)
     # ---- diagnostics (measured from the published data + the last robot status)
     st = load('news-status.json', {})
     reg = C.Counter((s.get('location') or {}).get('region') or 'none' for s in stories)
