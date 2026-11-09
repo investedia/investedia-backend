@@ -19,6 +19,10 @@ test('dispatch cannot be re-enabled by legacy settings',async()=>{
  globalThis.fetch=async()=>{throw new Error('No dispatch is permitted')};
  try{await worker.scheduled({cron:'*/5 * * * *'},{DISPATCH_ENABLED:'true',DISPATCH_TOKEN:'test-only',DISPATCH_REPOSITORY:'investedia/investedia-backend'},{waitUntil:p=>pending.push(p)});await Promise.all(pending);assert.equal(pending.length,0);}finally{globalThis.fetch=original;}
 });
-test('recovered Worker schedules remain disabled',()=>{
- assert.match(fs.readFileSync(new URL('../wrangler.toml',import.meta.url),'utf8'),/^crons = \[\]/m);
+test('draft Worker config permits only the approved price cron and flags the missing KV ID',()=>{
+ const config=fs.readFileSync(new URL('../wrangler.toml',import.meta.url),'utf8');
+ assert.match(config,/^crons = \["\*\/2 \* \* \* \*"\]/m);
+ assert.match(config,/^id = "REPLACE_WITH_EXISTING_PRICES_KV_NAMESPACE_ID"/m);
+ assert.match(config,/^NEWS_CRON = "off"/m);
+ assert.match(config,/^DISPATCH_ENABLED = "false"/m);
 });

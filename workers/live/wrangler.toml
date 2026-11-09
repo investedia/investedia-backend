@@ -6,11 +6,14 @@ compatibility_date = "2026-10-01"
 # Production must bind the existing KV ID; see docs/DEPLOYMENT-PREPARATION.md. Do not auto-create a replacement namespace.
 [[kv_namespaces]]
 binding = "PRICES"
+# Draft placeholder: owner must supply the EXISTING namespace ID before deployment.
+id = "REPLACE_WITH_EXISTING_PRICES_KV_NAMESPACE_ID"
 
 [triggers]
-# Prices every 2 minutes. The news cron (every 5 minutes) is OFF: the benchmark showed the news job can exceed the free plan's 10 ms CPU limit
-# (see README). To try it anyway: add "*/5 * * * *" to crons and set NEWS_CRON = "on" under [vars].
-crons = [] # Local recovery: schedules disabled until explicitly configured and approved.
+# Draft proposal approved for price cadence only; no deployment has occurred.
+# Every two minutes: the leading '*' is required cron syntax.
+# Keep the legacy GitHub-dispatch alarm and Worker news cron OFF.
+crons = ["*/2 * * * *"]
 
 # Free plan limits: 10 ms CPU and 50 subrequests per invocation, 1000 KV writes a day. v1/prices.js stays inside them (about 15 calls per run).
 [observability]
