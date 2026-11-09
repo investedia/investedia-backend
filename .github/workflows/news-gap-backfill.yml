@@ -1,0 +1,76 @@
+name: One-off news gap recovery
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: 'UTC start inclusive (within Nov 8 16:00 to Nov 9 21:30)'
+        default: '2026-11-08T16:00:00Z'
+        required: true
+      end:
+        description: UTC end exclusive
+        default: '2026-11-09T21:30:00Z'
+        required: true
+      confirm:
+        description: 'Owner approval to ingest a previously staged artifact; false only stages'
+        type: boolean
+        default: false
+      staging_run_id:
+        description: 'Required for confirm: successful staging run ID from this workflow'
+      review_json:
+        description: 'Required for confirm: completed review-template.json, including artifact hash and reviewer'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  # Shares the hourly producer lock; no simultaneous news writes.
+  group: priority-news-production
+  cancel-in-progress: false
+jobs:
+  recovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify recovery tests
+        run: python -m unittest discover -s tests -p test_news_gap_backfill.py
+      - name: Download exact staged artifact
+        if: inputs.confirm
+        uses: actions/download-artifact@v4
+        with:
+          name: news-gap-stage
+          path: .local/news-gap
+          github-token: ${{ github.token }}
+          run-id: ${{ inputs.staging_run_id }}
+      - name: Stage only (no ingestion secret, no Gemini)
+        if: ${{ !inputs.confirm }}
+        env:
+          GAP_START: ${{ inputs.start }}
+          GAP_END: ${{ inputs.end }}
+          WORKER_URL: ${{ secrets.WORKER_URL }}
+        run: >-
+          python tools/news-gap-backfill.py --start "$GAP_START" --end "$GAP_END"
+          --archive assets/globe/news-archive.json --archive data/news-gap-archive-index.json
+      - name: Ingest reviewed artifact only
+        if: inputs.confirm
+        env:
+          REVIEW_JSON: ${{ inputs.review_json }}
+          WORKER_URL: ${{ secrets.WORKER_URL }}
+          NEWS_INGEST_TOKEN: ${{ secrets.NEWS_INGEST_TOKEN }}
+        run: |
+          python -c 'import os,pathlib; pathlib.Path(".local/news-gap/review.json").write_text(os.environ["REVIEW_JSON"])'
+          python tools/news-gap-backfill.py --confirm --review .local/news-gap/review.json --archive data/news-gap-archive-index.json
+      - uses: actions/upload-artifact@v4
+        if: ${{ !inputs.confirm && !cancelled() }}
+        with:
+          name: news-gap-stage
+          path: .local/news-gap/
+          retention-days: 14
+          if-no-files-found: error
+      - name: Visible failure
+        if: failure()
+        run: echo '::error::Gap recovery failed. No success or complete gap coverage should be claimed.'

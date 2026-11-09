@@ -39,6 +39,7 @@ export default {
   async fetch(req, env, ctx) {
     const h = cors(req), url = new URL(req.url);
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: h });
+    if (req.method === 'GET' && url.pathname === '/v1/ingest/news/capabilities') return json(h, 200, {history_ingest_version: 1});
     if (req.method === 'POST' && url.pathname === '/v1/ingest/news') {
       let r; try { r = await ingestNews(req, env); } catch (e) { console.log(JSON.stringify({ route: 'ingest', error: String(e).slice(0, 200) })); r = { status: 500, body: { error: 'internal' } }; }
       if (r.status === 200 && r.body.written) ctx.waitUntil(Promise.all(['/v1/news', '/v1/globe'].map(path => caches.default.delete(new Request(url.origin + path + '#v1', { method: 'GET' })))));
