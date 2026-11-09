@@ -6,7 +6,13 @@ from pathlib import Path
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
-spec = importlib.util.spec_from_file_location('market_focus', ROOT / 'tools/globe-news/build_market_focus.py')
+BUILDER = ROOT / 'tools/globe-news/build_market_focus.py'
+if not BUILDER.is_file():
+    raise unittest.SkipTest(
+        'Market Overview builder belongs to the frontend repository after the split; '
+        'this backend checkout cannot run its projection tests.'
+    )
+spec = importlib.util.spec_from_file_location('market_focus', BUILDER)
 builder = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(builder)
 
