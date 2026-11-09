@@ -105,7 +105,12 @@ export async function refreshNews(env, now = Date.now(), fx = {}) {
 export async function handleNews(env, now = Date.now()) {
   let st = null; try { st = JSON.parse(await env.PRICES.get('news')); } catch {}
   if (!st || !Array.isArray(st.stories) || !st.stories.length) return { status: 503, body: { error: 'no data yet', meta: { state: 'unavailable', provider: PROVIDER.id, version: 1 } } };
-  return { status: 200, body: envelope({ stories: st.stories }, { provider: PROVIDER, snapT: st.t, now, ttl: 30, extra: { count: st.stories.length, model: st.model || null, note: 'newest AI-enriched priority articles; the client merges them with the static broad feed' } }) };
+  let history = []; try { history = JSON.parse(await env.PRICES.get('news-gap-history'))?.stories || []; } catch {}
+  if (!Array.isArray(history)) history = [];
+  const merged = [...st.stories]; const seen = new Set(merged.flatMap(historyKeys));
+  for (const row of history) { const keys = historyKeys(row); if (!keys.some(k => seen.has(k))) { merged.push(row); keys.forEach(k => seen.add(k)); } }
+  merged.sort((a,b) => Date.parse(b.published_at)-Date.parse(a.published_at));
+  return { status: 200, body: envelope({ stories: merged }, { provider: PROVIDER, snapT: st.t, now, ttl: 30, extra: { count: merged.length, model: st.model || null, note: 'newest AI-enriched priority articles; the client merges them with the static broad feed' } }) };
 }
 // Globe events are a compact view of the same articles: no second pipeline, no extra KV writes.
 export async function handleGlobe(env, now = Date.now()) {
@@ -138,6 +143,8 @@ export async function ingestNews(req, env, now = Date.now()) {
   const text = await req.text(); if (text.length > 400_000) return { status: 413, body: { error: 'too large' } };
   let body; try { body = JSON.parse(text); } catch { return { status: 400, body: { error: 'invalid json' } }; }
   const bad = validateIngest(body); if (bad) return { status: 422, body: { error: bad } };
+  if (body.mode === 'gap-history-v1') return ingestGapHistory(body, env, now);
+  if (body.mode != null) return {status:422,body:{error:'unknown ingestion mode'}};
   const generated = body.generated_at == null ? now : Date.parse(body.generated_at);
   if (generated > now + 300_000) return { status: 422, body: { error: 'generated_at is in the future' } };
   const stories = body.stories.slice().sort((a, b) => (a.published_at < b.published_at ? 1 : -1)).slice(0, KEEP);
@@ -147,4 +154,37 @@ export async function ingestNews(req, env, now = Date.now()) {
   if (cur && Array.isArray(cur.stories) && JSON.stringify(cur.stories) === JSON.stringify(stories) && (cur.generated_at || null) === (body.generated_at || null)) return { status: 200, body: { ok: true, written: false, reason: 'unchanged' } };
   await env.PRICES.put('news', JSON.stringify({ t: generated, ingested_at: now, stories, model: 'github-ingest', generated_at: body.generated_at || null }));
   return { status: 200, body: { ok: true, written: true, count: stories.length } };
+}
+
+// Additive outage recovery: current news and its freshness clock are never rewritten.
+const GAP_START = Date.parse('2026-11-08T16:00:00Z'), GAP_END = Date.parse('2026-11-09T21:30:00Z');
+function historyKeys(s) {
+  const url = s.source?.url;
+  return ['id:'+s.id, 'headline:'+String(s.headline).toLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim(), ...(url ? ['url:'+canon(url)] : [])];
+}
+async function ingestGapHistory(body, env, now) {
+  const start = Date.parse(body.window?.start), end = Date.parse(body.window?.end);
+  if (!(GAP_START <= start && start < end && end <= GAP_END)) return {status:422,body:{error:'outside approved gap'}};
+  for (const s of body.stories) {
+    const published = Date.parse(s.published_at), at = Date.parse(s.backfilled_at), p = s.backfill_provenance;
+    let url; try { url = new URL(s.source.url); } catch { return {status:422,body:{error:'source URL required'}}; }
+    if (!(start <= published && published < end) || s.backfilled !== true || !Number.isFinite(at) || at > now+300000 || at < published ||
+        url.protocol !== 'https:' || url.username || url.password || !s.source.name || p?.version !== 'outage-gap-v1' ||
+        p.original_published_at !== s.published_at || !p.feed_url || s.impacts?.some(i => i.scorable === true))
+      return {status:422,body:{error:'invalid gap provenance or publication'}};
+  }
+  let current, stored;
+  try { current = JSON.parse(await env.PRICES.get('news')); stored = JSON.parse(await env.PRICES.get('news-gap-history')); } catch {}
+  if (!current || validateIngest(current)) return {status:409,body:{error:'valid current feed required'}};
+  if (stored && !Array.isArray(stored.stories)) return {status:409,body:{error:'invalid stored history; manual review required'}};
+  const previous = stored?.stories || [], rows = [...previous];
+  const seen = new Set([...current.stories,...previous].flatMap(historyKeys));
+  let added = 0;
+  for (const s of body.stories) {
+    const keys = historyKeys(s); if (keys.some(k => seen.has(k))) continue;
+    rows.push(s); keys.forEach(k => seen.add(k)); added++;
+  }
+  if (rows.length > 240) return {status:422,body:{error:'gap history capacity exceeded; no truncation'}};
+  if (added) await env.PRICES.put('news-gap-history', JSON.stringify({stories:rows, ingested_at:now}));
+  return {status:200,body:{ok:true,written:added>0,added,count:rows.length}};
 }

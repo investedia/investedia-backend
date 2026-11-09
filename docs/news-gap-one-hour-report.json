@@ -1,0 +1,88 @@
+{
+  "schema": "investedia.news-gap/v1",
+  "window": {
+    "start": "2026-11-08T16:00:00Z",
+    "end": "2026-11-08T17:00:00Z"
+  },
+  "staged_at": "2026-11-09T23:38:30Z",
+  "stories": [],
+  "evidence": {
+    "worker_meta": {
+      "state": "stale",
+      "fetched_at": "2026-11-09T22:57:37.000Z",
+      "age_s": 2441,
+      "provider": "rss+gemini",
+      "licensed": false,
+      "ttl_s": 30,
+      "upstream_ok": false,
+      "version": 1,
+      "count": 40,
+      "model": "github-ingest",
+      "note": "newest AI-enriched priority articles; the client merges them with the static broad feed"
+    },
+    "archives": [
+      {
+        "path": "news-archive.json",
+        "sha256": "9c69d5b458cd9d1d86bad1cdb53abca78b1aec699cf6f66a372a5f11d0094cc2",
+        "updated_at": "2026-11-08T00:39:37Z",
+        "count": 1308
+      },
+      {
+        "path": "news-gap-archive-index.json",
+        "sha256": "b84bc42dd33d088d31bee6ec75bff74b37a22053651f68dd1c92f0961f9ef57a",
+        "updated_at": null,
+        "count": 1
+      }
+    ],
+    "sources": [
+      {
+        "name": "European Central Bank",
+        "url": "https://www.ecb.europa.eu/rss/press.html",
+        "status": "unavailable"
+      },
+      {
+        "name": "Federal Reserve",
+        "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+        "status": "unavailable"
+      },
+      {
+        "name": "Federal Reserve",
+        "url": "https://www.federalreserve.gov/feeds/speeches.xml",
+        "status": "unavailable"
+      },
+      {
+        "name": "Federal Reserve",
+        "url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
+        "status": "unavailable"
+      },
+      {
+        "name": "BBC News",
+        "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+        "status": "unavailable"
+      },
+      {
+        "name": "The Guardian",
+        "url": "https://www.theguardian.com/business/rss",
+        "status": "unavailable"
+      },
+      {
+        "name": "MarketWatch",
+        "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
+        "status": "unavailable"
+      }
+    ]
+  },
+  "counts": {
+    "feed_items": 0,
+    "candidates": 0,
+    "source_failures": 7,
+    "accepted": 0,
+    "duplicates": 0,
+    "rejected": {
+      "bounded_limit": 0
+    }
+  },
+  "gemini_calls": 0,
+  "source_scan_complete": false,
+  "quality": "pending-human-review"
+}
