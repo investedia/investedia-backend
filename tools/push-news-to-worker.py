@@ -5,7 +5,8 @@ import json, os, sys, urllib.request, urllib.error
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def payload(path=None, limit=40):
-    d = json.load(open(path or os.path.join(ROOT, 'assets/globe/news-live.json')))
+    with open(path or os.path.join(ROOT, 'assets/globe/news-live.json'), encoding='utf-8') as source:
+        d = json.load(source)
     st = sorted(d.get('stories', []), key=lambda s: s['published_at'], reverse=True)[:limit]
     if not st: raise ValueError('no stories to send')
     return {'generated_at': d.get('updated_at'), 'stories': st}
