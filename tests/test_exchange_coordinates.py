@@ -5,8 +5,13 @@ from pathlib import Path
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
-spec = importlib.util.spec_from_file_location(
-    'exchange_coordinates', ROOT / 'tools/registry/exchange_coordinates.py')
+SOURCE = ROOT / 'tools/registry/exchange_coordinates.py'
+if not SOURCE.is_file():
+    raise unittest.SkipTest(
+        'Recovered backend lacks tools/registry/exchange_coordinates.py; '
+        'restore the original tool and source metadata from the owner archive before running geography tests.'
+    )
+spec = importlib.util.spec_from_file_location('exchange_coordinates', SOURCE)
 geo = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(geo)
 
