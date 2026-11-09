@@ -1,0 +1,14 @@
+﻿import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {ingestNews,handleNews,handleGlobe} from '../v1/news.js';
+const feed=JSON.parse(fs.readFileSync(new URL('../../../assets/globe/news-live.json',import.meta.url),'utf8'));
+const body=()=>({generated_at:feed.updated_at,stories:feed.stories.slice(0,40)});
+const NOW=Date.parse(feed.updated_at)+3600e3;
+const setup=()=>{const map=new Map();return {map,env:{INGEST_TOKEN:'test-only',PRICES:{get:async k=>map.get(k)||null,put:async(k,v)=>map.set(k,v)}}}};
+const post=b=>new Request('https://example.test/v1/ingest/news',{method:'POST',headers:{Authorization:'Bearer test-only'},body:JSON.stringify(b)});
+test('same-ID corrections are ingested and both read routes share the corrected article',async()=>{const {env}=setup();const b=body();await ingestNews(post(b),env,NOW);b.stories[0]={...b.stories[0],summary:b.stories[0].summary+' [test correction]'};const r=await ingestNews(post(b),env,NOW+1000);assert.equal(r.body.written,true);const n=await handleNews(env,NOW),g=await handleGlobe(env,NOW);assert.equal(n.body.data.stories.find(s=>s.id===b.stories[0].id).summary,b.stories[0].summary);assert.deepEqual(n.body.data.stories.map(s=>s.id),g.body.data.events.map(s=>s.id));});
+test('an old saved feed never becomes fresh just because it is uploaded again',async()=>{const {env,map}=setup();await ingestNews(post(body()),env,NOW);const before=map.get('news');const r=await ingestNews(post(body()),env,NOW+60000);assert.equal(r.body.written,false);assert.equal(map.get('news'),before);const n=await handleNews(env,NOW);assert.equal(n.body.meta.fetched_at,new Date(Date.parse(feed.updated_at)).toISOString());assert.equal(n.body.meta.state,'stale');});
+test('malformed stored collections can be repaired by a valid authenticated ingest',async()=>{const {env,map}=setup();map.set('news',JSON.stringify({stories:'broken',generated_at:'2099-01-01T00:00:00Z'}));assert.equal((await ingestNews(post(body()),env,NOW)).status,200);assert.equal((await handleNews(env,NOW)).status,200);});
+test('an older export cannot overwrite newer saved news',async()=>{const {env,map}=setup();await ingestNews(post(body()),env,NOW);const before=map.get('news');const b=body();b.generated_at=new Date(Date.parse(feed.updated_at)-3600e3).toISOString();assert.equal((await ingestNews(post(b),env,NOW)).status,409);assert.equal(map.get('news'),before);});
+test('invalid coordinates and future export timestamps leave good data untouched',async()=>{const {env,map}=setup();await ingestNews(post(body()),env,NOW);const before=map.get('news');let b=body();b.generated_at=new Date(NOW+3600e3).toISOString();assert.equal((await ingestNews(post(b),env,NOW)).status,422);b=body();b.stories[0]={...b.stories[0],location:{...b.stories[0].location,lat:999}};assert.equal((await ingestNews(post(b),env,NOW)).status,422);assert.equal(map.get('news'),before);});

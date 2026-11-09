@@ -44,3 +44,5 @@ Fresh recovery results: 13 Java tests pass and the executable JAR packages; 33 W
 ## Credentials and deployment
 
 No GitHub remotes/actions were added. No Cloudflare deployment, Supabase settings/schema update or scheduled job was performed. `.env.example` documents optional future provider settings; real `.env`, `.dev.vars`, logs and runtime caches are ignored. Never expose backend secret keys in frontend configuration. Public website data must remain honestly timestamped. **Not investment advice.**
+
+The repaired priority-news runner and ingestion guarantees are documented in [docs/NEWS-PIPELINE.md](docs/NEWS-PIPELINE.md). Default preflight is read-only; no scheduled live generation or hosted upload has been performed.

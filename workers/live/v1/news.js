@@ -121,12 +121,13 @@ export function validateIngest(body) {
   if (!body || !Array.isArray(body.stories)) return 'stories must be an array';
   if (!body.stories.length) return 'refusing an empty list';
   if (body.stories.length > 80) return 'too many stories';
+  if (body.generated_at != null && !Number.isFinite(Date.parse(body.generated_at))) return 'bad generated_at';
   const ids = new Set();
   for (const s of body.stories) {
     if (!s || typeof s !== 'object' || REQ.some(k => !s[k])) return 'story missing required fields';
     if (ids.has(s.id)) return 'duplicate id ' + s.id; ids.add(s.id);
     if (!Number.isFinite(Date.parse(s.published_at))) return 'bad published_at';
-    if (!Number.isFinite(+s.location.lat) || !Number.isFinite(+s.location.lon)) return 'bad location';
+    if (!Number.isFinite(+s.location.lat) || !Number.isFinite(+s.location.lon) || Math.abs(+s.location.lat) > 90 || Math.abs(+s.location.lon) > 180) return 'bad location';
   }
   return null;
 }
@@ -137,9 +138,13 @@ export async function ingestNews(req, env, now = Date.now()) {
   const text = await req.text(); if (text.length > 400_000) return { status: 413, body: { error: 'too large' } };
   let body; try { body = JSON.parse(text); } catch { return { status: 400, body: { error: 'invalid json' } }; }
   const bad = validateIngest(body); if (bad) return { status: 422, body: { error: bad } };
+  const generated = body.generated_at == null ? now : Date.parse(body.generated_at);
+  if (generated > now + 300_000) return { status: 422, body: { error: 'generated_at is in the future' } };
   const stories = body.stories.slice().sort((a, b) => (a.published_at < b.published_at ? 1 : -1)).slice(0, KEEP);
   let cur = null; try { cur = JSON.parse(await env.PRICES.get('news')); } catch {}
-  if (cur && JSON.stringify(cur.stories.map(s => s.id)) === JSON.stringify(stories.map(s => s.id))) return { status: 200, body: { ok: true, written: false, reason: 'unchanged' } };
-  await env.PRICES.put('news', JSON.stringify({ t: now, stories, model: 'github-ingest', generated_at: body.generated_at || null }));
+  if (cur && validateIngest(cur)) cur = null;
+  if (cur?.generated_at && Date.parse(cur.generated_at) > generated) return { status: 409, body: { error: 'older feed refused' } };
+  if (cur && Array.isArray(cur.stories) && JSON.stringify(cur.stories) === JSON.stringify(stories) && (cur.generated_at || null) === (body.generated_at || null)) return { status: 200, body: { ok: true, written: false, reason: 'unchanged' } };
+  await env.PRICES.put('news', JSON.stringify({ t: generated, ingested_at: now, stories, model: 'github-ingest', generated_at: body.generated_at || null }));
   return { status: 200, body: { ok: true, written: true, count: stories.length } };
 }
