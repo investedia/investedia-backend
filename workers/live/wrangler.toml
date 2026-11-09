@@ -3,7 +3,7 @@ main = "index.js"
 compatibility_date = "2026-10-01"
 
 # Prices for stocks, indices, commodities and currencies: a cron job saves ONE combined snapshot in KV (unchanged snapshots are skipped), /v1/prices serves it.
-# KV is created automatically on the first deploy.
+# Production must bind the existing KV ID; see docs/DEPLOYMENT-PREPARATION.md. Do not auto-create a replacement namespace.
 [[kv_namespaces]]
 binding = "PRICES"
 
