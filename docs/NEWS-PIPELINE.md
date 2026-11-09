@@ -1,4 +1,4 @@
-﻿# News and globe pipeline
+# News and globe pipeline
 
 This repair is local code only. It has not been deployed, started on a schedule, or used to upload data to Cloudflare. No GitHub configuration is required to run the checks below.
 
@@ -28,12 +28,16 @@ The first command is a read-only preflight. It reports missing setting **names**
 Required environment variables: GEMINI_API_KEY, WORKER_URL, NEWS_INGEST_TOKEN. The uploader token must match the Worker's INGEST_TOKEN secret. PIXABAY_KEY and Pillow are optional for topic-photo generation. `.env.example` lists names; scripts read the process environment and do not automatically load a .env file. Never put these secret values in frontend configuration or Git.
 
 ```powershell
-python tools/news-pipeline.py --run --frontend ../frontend
+python tools/news-pipeline.py --run
 ```
 
-This is an explicit live-provider/upload operation: do not execute it during a dry run. It runs **priority news only** with bounded timeouts and a local overlap lock; it removes any inherited backfill setting. It checks the generator's recorded success because the legacy generator can exit zero after errors. It then generates globe connections, ingests, exports saved JSON and new photo assets, and rebuilds the chosen frontend. The frontend path is validated before any generation or upload. Generation logs are ignored under `.local/`. The optional export is necessary when new article photos use local file URLs; an API response alone cannot deliver those image files to a static host.
+This is an explicit live-provider/upload operation: do not execute it during a dry run. It runs **priority news only** with bounded subprocess timeouts and a local overlap lock; it removes inherited backfill settings. It checks recorded generator success because the legacy generator can exit zero after errors, generates globe connections, and requires acknowledged Worker ingestion. Generation logs stay ignored under `.local/`.
 
-Without `--frontend`, only the backend feed/connections and Worker are updated. Export and deploy the frontend's actual photos/feed separately before claiming the public website is current. The runner never runs V5, financial engines, Git operations or deployment commands. No scheduler/self-chaining is installed. A future scheduler can invoke this bounded job once per run after its account and secret stores are chosen.
+Production news reaches the website through `/v1/news` and `/v1/globe`, using `dataMode=worker` and the approved API base URL. No frontend file commits, delivery PRs, Pages builds or deploys are needed per news update. Existing saved frontend feeds remain an honestly dated fallback.
+
+The proposed `.github/workflows/priority-news.yml` schedules at most hourly, allows one concurrent run and caps each job at 10 minutes; its enable variable remains required. Slow provider runs can time out and must be reported as failures. See `DEPLOYMENT-PREPARATION.md` for the private Actions minutes budget and separate enablement approval. It provides no Pixabay key, so it selects only from saved photo pools. Verify selected photo paths already exist on the deployed site; the API does not deliver local image bytes. The proposed Worker/KV photo path in `workers/live/PHOTO-DELIVERY.md` needs separate implementation/approval without automated frontend commits/builds.
+
+The pre-existing optional `--frontend PATH` argument remains available for explicit manual recovery/export only; the scheduler never uses it. The runner never invokes V5, financial engines, Git operations or deployment commands. No scheduler is activated by this preparation.
 
 ## Failure and freshness guarantees
 

@@ -1,0 +1,48 @@
+# Owner must approve merge and separately enable PRIORITY_NEWS_ENABLED; no deploy step.
+name: Priority news proposal
+on:
+  schedule:
+    - cron: '17 * * * *' # At most hourly; enable only after owner approval.
+permissions:
+  contents: read
+concurrency:
+  group: priority-news-production
+  cancel-in-progress: false
+jobs:
+  priority-news:
+    if: vars.PRIORITY_NEWS_ENABLED == 'true' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: backend
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restore producer state
+        uses: actions/cache@v4
+        with:
+          path: |
+            backend/assets/globe/news-seen.json
+            backend/assets/globe/news-live.json
+            backend/assets/globe/news-48h.json
+            backend/assets/globe/news-archive.json
+            backend/assets/globe/news-status.json
+          key: priority-news-state-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: priority-news-state-
+      - name: Generate and ingest priority news
+        working-directory: backend
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          WORKER_URL: ${{ secrets.WORKER_URL }}
+          NEWS_INGEST_TOKEN: ${{ secrets.NEWS_INGEST_TOKEN }}
+          # Reuse the saved photo pool; API updates cannot publish new Pages assets.
+          PIXABAY_KEY: ''
+        run: python tools/news-pipeline.py --run
+      - name: Report visible failure
+        if: failure()
+        run: |
+          echo '::error::Priority news generation or Worker ingestion failed. Inspect the failed step; do not report the feed as updated.'
+          echo 'Priority-news failed or timed out. No frontend commit, Pages build or deployment was requested. Check the producer status and Worker readback before claiming freshness.' >> "$GITHUB_STEP_SUMMARY"
