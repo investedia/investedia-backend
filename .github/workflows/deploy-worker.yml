@@ -1,0 +1,35 @@
+# Deploys workers/live (investedia-live) to Cloudflare.
+# Runs only on main when workers/live changes, or by hand (Actions > Deploy Worker > Run workflow).
+# Needs repository secrets CLOUDFLARE_API_TOKEN (Worker-scoped token from the Worker's
+# Settings > "API token for external CI/CD") and CLOUDFLARE_ACCOUNT_ID.
+name: Deploy Worker
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['workers/live/**']
+permissions:
+  contents: read
+concurrency:
+  group: deploy-worker
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Worker tests
+        run: node --test workers/live/test/*.test.mjs
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: workers/live
+          command: deploy
