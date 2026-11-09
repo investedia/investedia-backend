@@ -1,0 +1,42 @@
+# One-off: adds the outage-gap articles (data/news-gap-import.json, taken from the old robot's
+# own output with original publication times) to the Worker's separate history slot.
+# Manual only. Additive: today's news and its freshness clock are never rewritten. Idempotent.
+name: One-off news gap import
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type IMPORT to write to the Worker'
+        required: true
+permissions:
+  contents: read
+concurrency:
+  group: priority-news-production
+  cancel-in-progress: false
+jobs:
+  import:
+    if: inputs.confirm == 'IMPORT' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Import into gap history
+        env:
+          WORKER_URL: ${{ secrets.WORKER_URL }}
+          NEWS_INGEST_TOKEN: ${{ secrets.NEWS_INGEST_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          url = os.environ['WORKER_URL'].rstrip('/')
+          assert url.startswith('https://'), 'WORKER_URL must be https'
+          cap = json.load(urllib.request.urlopen(url + '/v1/ingest/news/capabilities', timeout=20))
+          assert cap.get('history_ingest_version') == 1, 'Worker lacks history ingest'
+          body = open('data/news-gap-import.json', 'rb').read()
+          req = urllib.request.Request(url + '/v1/ingest/news', data=body, method='POST', headers={'Content-Type': 'application/json', 'Authorization': 'Bearer ' + os.environ['NEWS_INGEST_TOKEN'], 'User-Agent': 'InvestediaRobot/1.0'})
+          try:
+              r = urllib.request.urlopen(req, timeout=30); print(r.status, r.read().decode()[:300])
+          except urllib.error.HTTPError as e:
+              print('::error::Worker refused the import:', e.code, e.read().decode()[:300]); raise SystemExit(1)
+          PY
