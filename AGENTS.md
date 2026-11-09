@@ -15,7 +15,7 @@ The owner is not a developer: explain in plain words and show results.
 9. **Reporting:** list files changed and tests run; separate pre-existing failures from new ones; never hide a failing check.
 
 ## Who does what
-- **Claude:** Market Overview code (in the frontend repository), `AGENTS.md` / `CLAUDE.md`, design specs and previews, planning repo `investedia/investedia-docs`, video/marketing, PR reviews.
+- **Claude:** Market Overview code (in the frontend repository), `AGENTS.md` / `CLAUDE.md`, design specs and previews, planning repo `investedia/investedia-investedia-docs`, video/marketing, PR reviews.
 - **Codex:** restoring its own earlier work, test fixes, CI, deployment preparation, registry/data plumbing, everything else.
 - Need a change in the other agent's files? Comment on its PR instead of editing.
-- Plans, task files, tracker and handoffs live in the private repo `investedia/investedia-docs` (never in public `docs/`).
+- Plans, task files, tracker and handoffs live in the private repo `investedia/investedia-investedia-docs` (never in public `docs/`).
