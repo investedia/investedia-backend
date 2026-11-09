@@ -56,4 +56,3 @@ def locate(candidate, iso, places):
     countries = list(set(countries))
     if len(countries) != 1: raise ValueError('Missing or ambiguous event location; needs reviewed dateline')
     return {k:v for k,v in places[countries[0]].items() if k != 'bounds'}
-
