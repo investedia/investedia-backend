@@ -1,7 +1,7 @@
 // Investedia live crypto relay (Cloudflare Worker, free plan).
 // Visitors call THIS worker (our own subdomain), not Coinbase, so no third party sees their IP.
 // One edge-cached snapshot of Coinbase's public market data (top 100 coins) is shared by everyone and refreshed at most every 3 seconds.
-const ALLOWED = ['https://investedia.com', 'https://www.investedia.com'];
+const ALLOWED = ['https://investedia.com', 'https://www.investedia.com', 'https://investedia.pages.dev'];
 const TTL = 3, TOP = 100;
 
 const cors = (req) => {

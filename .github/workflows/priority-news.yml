@@ -1,4 +1,4 @@
-# INERT TEMPLATE: owner must approve and move this file into .github/workflows/.
+# Owner must approve merge and separately enable PRIORITY_NEWS_ENABLED; no deploy step.
 name: Priority news proposal
 on:
   schedule:
@@ -12,7 +12,7 @@ jobs:
   priority-news:
     if: vars.PRIORITY_NEWS_ENABLED == 'true' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 2
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:

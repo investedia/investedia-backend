@@ -1,0 +1,13 @@
+# Photo delivery proposal
+
+Start with the existing `PRICES` KV binding and Worker, rather than adding an R2 bucket or a per-run Pages build. This is a proposal only; no image route, uploads or hosted resources are activated by this branch.
+
+A small, curated photo pool is already sufficient for the generator. During a separately approved one-time import, resize approved real photos to bounded JPEG/WebP files (for example, at most 200 KB each), retain credit/source metadata, and store each file under `photo:<sha256>` in KV. Add a public `GET /media/photos/<sha256>.jpg` Worker route that accepts only a fixed hexadecimal digest, returns the known image content type, immutable cache headers and `nosniff`, and caches reads at the edge. Missing keys must return 404, not arbitrary proxy fetches. Use content hashes so replacing an image never changes bytes behind an old URL. The feed should carry the absolute HTTPS Worker image URL plus credit/source fields. Validate the URL in ingestion and in the browser before enabling new images.
+
+Import the fixed pool once, within KV write/storage limits, rather than storing a new image for each article. The ongoing hourly job then needs no photo uploads or extra credentials. Account-level KV quotas are shared with price/news writes; inspect real usage and current Cloudflare terms before the import. No KV capacity/free-tier claim is made without that check. Use the actual existing namespace ID, never a guessed/new namespace.
+
+If the photo library grows beyond this small fixed pool, use R2 with a Worker binding and the same immutable URL scheme; this separates bulk media storage from price/news KV. That later uploader needs an approved, narrowly scoped authentication path. No R2 token or bucket is required for the present fixed-pool proposal.
+
+Owner checklist for the proposed first implementation: approve the actual photo pool/licensing; confirm KV/storage budgets; approve a bounded upload/import mechanism; approve Worker image-route code; verify credit fields and every selected URL; approve the one-time import and deployment separately. Import authorization can use a protected owner-run tool with a KV-scoped Cloudflare token kept only in the provider/GitHub store. Do not add that token to the hourly news job. No new secret is requested until that implementation is reviewed.
+
+Until then, the schedule explicitly has an empty `PIXABAY_KEY` and reuses existing saved photo paths. Verify those files exist on the deployed Pages site; news API success alone does not prove image delivery. Do not enable new photo downloads or claim the proposed route exists yet.
