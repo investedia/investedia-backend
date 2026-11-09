@@ -1,0 +1,57 @@
+{
+  "schema": "investedia.official-listings/v1",
+  "mic": "XNSA",
+  "listing_country": "NG",
+  "checked_at": "2026-11-08",
+  "source_url": "https://doclib.ngxgroup.com/REST/api/issuers/companydirectory?$orderby=CompanyName",
+  "discovery_url": "https://ngxgroup.com/exchange/trade/equities/listed-companies/",
+  "source_sha256": "3c635b863e046bf75943d8a03c58931cbf17cfe0edb623d3472e7f77c5897641",
+  "note": "Exchange directory identity fields only. No quote, price, volume, market cap, profile text or images retained. Country means listing jurisdiction; no headquarters or event geography asserted.",
+  "listings": [
+    {
+      "symbol": "MTNN",
+      "official_name": "MTN NIGERIA COMMUNICATIONS PLC",
+      "isin": "NGMTNN000002",
+      "sector_raw": "ICT",
+      "subsector_raw": "Telecommunications Services",
+      "listed_on": "2019-05-16",
+      "names": [
+        "MTN Nigeria"
+      ]
+    },
+    {
+      "symbol": "DANGCEM",
+      "official_name": "DANGOTE CEMENT PLC",
+      "isin": "NGDANGCEM008",
+      "sector_raw": "INDUSTRIAL GOODS",
+      "subsector_raw": "Building Materials",
+      "listed_on": "2010-10-26",
+      "names": [
+        "Dangote Cement"
+      ]
+    },
+    {
+      "symbol": "NAHCO",
+      "official_name": "NIGERIAN AVIATION HANDLING COMPANY PLC",
+      "isin": "NGNAHCO00008",
+      "sector_raw": "SERVICES",
+      "subsector_raw": "Transport-Related Services",
+      "listed_on": "2006-11-27",
+      "names": [
+        "NAHCO",
+        "NAHCO Aviance"
+      ]
+    },
+    {
+      "symbol": "MANSARD",
+      "official_name": "AXAMANSARD INSURANCE PLC",
+      "isin": "NGGTASSURE05",
+      "sector_raw": "FINANCIAL SERVICES",
+      "subsector_raw": "\"Insurance Carriers, Brokers a",
+      "listed_on": "2009-11-19",
+      "names": [
+        "AXA Mansard"
+      ]
+    }
+  ]
+}
