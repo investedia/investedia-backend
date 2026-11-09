@@ -1,6 +1,7 @@
 # Owner must approve merge and separately enable PRIORITY_NEWS_ENABLED; no deploy step.
 name: Priority news proposal
 on:
+  workflow_dispatch: # owner can run once by hand (Actions > Run workflow); still gated by PRIORITY_NEWS_ENABLED
   schedule:
     - cron: '17 * * * *' # At most hourly; enable only after owner approval.
 permissions:
