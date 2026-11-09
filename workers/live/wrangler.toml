@@ -6,8 +6,8 @@ compatibility_date = "2026-10-01"
 # Production must bind the existing KV ID; see docs/DEPLOYMENT-PREPARATION.md. Do not auto-create a replacement namespace.
 [[kv_namespaces]]
 binding = "PRICES"
-# Draft placeholder: owner must supply the EXISTING namespace ID before deployment.
-id = "REPLACE_WITH_EXISTING_PRICES_KV_NAMESPACE_ID"
+# Existing PRICES namespace ID supplied by the owner; deployment remains unapproved.
+id = "cb4cba0dba5d4d3489e131ad4b8df847"
 
 [triggers]
 # Draft proposal approved for price cadence only; no deployment has occurred.
