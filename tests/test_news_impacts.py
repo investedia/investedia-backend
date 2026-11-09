@@ -12,7 +12,13 @@ robot = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(robot)
 ISO = set(json.loads((ROOT / 'tools/globe-news/iso.json').read_text()).values())
 FEED = json.loads((ROOT / 'assets/globe/news-live.json').read_text())
-FIXTURE = json.loads((ROOT / 'tests/fixtures/impacts-response.json').read_text())
+FIXTURE_PATH = ROOT / 'tests/fixtures/impacts-response.json'
+if not FIXTURE_PATH.is_file():
+    raise unittest.SkipTest(
+        'Recovered backend lacks tests/fixtures/impacts-response.json; '
+        'restore the original response fixture from the owner archive, rather than fabricate article analysis.'
+    )
+FIXTURE = json.loads(FIXTURE_PATH.read_text())
 
 class NewsImpacts(unittest.TestCase):
     def test_typed_bounded_fields(self):

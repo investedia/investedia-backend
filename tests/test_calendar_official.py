@@ -64,8 +64,13 @@ class SavedFeeds(unittest.TestCase):
         c = json.loads((ROOT / 'data/crypto-top30.json').read_text())['coins']
         self.assertEqual([x['rank'] for x in c], list(range(1, 31)))
         src = (ROOT / 'update_market.py').read_text()
-        site = (ROOT / 'assets/mock.js').read_text()
         self.assertEqual([x['s'] for x in c if f'"{x["s"]}": "{x["yahoo"]}"' not in src], [])
+
+    @unittest.skipUnless((ROOT / 'assets/mock.js').is_file(),
+                         'Frontend assets/mock.js is not part of the standalone backend; listing UI coverage belongs in the frontend.')
+    def test_frontend_top30_listing_coverage(self):
+        c = json.loads((ROOT / 'data/crypto-top30.json').read_text())['coins']
+        site = (ROOT / 'assets/mock.js').read_text()
         self.assertEqual([x['s'] for x in c if f"s: '{x['s']}'" not in site], [])
 
 
