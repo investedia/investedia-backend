@@ -1,0 +1,343 @@
+{
+  "schema": "investedia.market-links/v1",
+  "coverage": "Nigeria exports: ten largest country partners in UN Comtrade 2024. Nigeria portfolio liabilities: ten largest reporting counterpart holders in IMF CPIS annual 2023 snapshot. Other bilateral pairs are not covered.",
+  "sources": [
+    {
+      "file": "comtrade-nigeria-2024.json",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&reporterCode=566&cmdCode=TOTAL&flowCode=X&partner2Code=0&customsCode=C00&motCode=0&maxRecords=500",
+      "sha256": "c1786912dba3ee51e7e65485c4e0211fd1f278a95702bad21bc28d094de272d0"
+    },
+    {
+      "file": "comtrade-partners.json",
+      "url": "https://comtradeapi.un.org/files/v1/app/reference/partnerAreas.json",
+      "sha256": "624c1b17fffb8bc74608c4caee4e80f5635bafb479bacf2b17bd7ad94d347a22"
+    },
+    {
+      "file": "imf-cpis-nigeria.json",
+      "url": "https://api.db.nomics.world/v22/series/IMF/CPIS?limit=1000&observations=1&dimensions=%7B%22REF_AREA%22%3A%20%5B%22NG%22%5D%2C%20%22REF_SECTOR%22%3A%20%5B%22T%22%5D%2C%20%22COUNTERPART_SECTOR%22%3A%20%5B%22T%22%5D%2C%20%22FREQ%22%3A%20%5B%22A%22%5D%2C%20%22INDICATOR%22%3A%20%5B%22I_L_T_T_T_BP6_DV_USD%22%5D%7D",
+      "sha256": "17cb71f4168a1bdc09845a2da8287835597f139a1d83197dd2f35651e77b78ef"
+    }
+  ],
+  "links": [
+    {
+      "from": "NG",
+      "to": "ES",
+      "kind": "trade",
+      "year": 2024,
+      "value_usd": 5496406841.959,
+      "measure": "Annual merchandise exports, reporter Nigeria, TOTAL HS",
+      "source": "UN Comtrade",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&reporterCode=566&cmdCode=TOTAL&flowCode=X&partner2Code=0&customsCode=C00&motCode=0&maxRecords=500",
+      "record": {
+        "reporter": 566,
+        "partner": 724,
+        "flow": "X",
+        "period": "2024",
+        "cmdCode": "TOTAL"
+      },
+      "reported": false,
+      "id": "trade-NG-ES-2024"
+    },
+    {
+      "from": "NG",
+      "to": "FR",
+      "kind": "trade",
+      "year": 2024,
+      "value_usd": 4703371428.031,
+      "measure": "Annual merchandise exports, reporter Nigeria, TOTAL HS",
+      "source": "UN Comtrade",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&reporterCode=566&cmdCode=TOTAL&flowCode=X&partner2Code=0&customsCode=C00&motCode=0&maxRecords=500",
+      "record": {
+        "reporter": 566,
+        "partner": 251,
+        "flow": "X",
+        "period": "2024",
+        "cmdCode": "TOTAL"
+      },
+      "reported": false,
+      "id": "trade-NG-FR-2024"
+    },
+    {
+      "from": "NG",
+      "to": "NL",
+      "kind": "trade",
+      "year": 2024,
+      "value_usd": 4686398581.166,
+      "measure": "Annual merchandise exports, reporter Nigeria, TOTAL HS",
+      "source": "UN Comtrade",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&reporterCode=566&cmdCode=TOTAL&flowCode=X&partner2Code=0&customsCode=C00&motCode=0&maxRecords=500",
+      "record": {
+        "reporter": 566,
+        "partner": 528,
+        "flow": "X",
+        "period": "2024",
+        "cmdCode": "TOTAL"
+      },
+      "reported": false,
+      "id": "trade-NG-NL-2024"
+    },
+    {
+      "from": "NG",
+      "to": "IN",
+      "kind": "trade",
+      "year": 2024,
+      "value_usd": 3913177057.958,
+      "measure": "Annual merchandise exports, reporter Nigeria, TOTAL HS",
+      "source": "UN Comtrade",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&reporterCode=566&cmdCode=TOTAL&flowCode=X&partner2Code=0&customsCode=C00&motCode=0&maxRecords=500",
+      "record": {
+        "reporter": 566,
+        "partner": 699,
+        "flow": "X",
+        "period": "2024",
+        "cmdCode": "TOTAL"
+      },
+      "reported": false,
+      "id": "trade-NG-IN-2024"
+    },
+    {
+      "from": "NG",
+      "to": "US",
+      "kind": "trade",
+      "year": 2024,
+      "value_usd": 3801399188.196,
+      "measure": "Annual merchandise exports, reporter Nigeria, TOTAL HS",
+      "source": "UN Comtrade",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&reporterCode=566&cmdCode=TOTAL&flowCode=X&partner2Code=0&customsCode=C00&motCode=0&maxRecords=500",
+      "record": {
+        "reporter": 566,
+        "partner": 842,
+        "flow": "X",
+        "period": "2024",
+        "cmdCode": "TOTAL"
+      },
+      "reported": false,
+      "id": "trade-NG-US-2024"
+    },
+    {
+      "from": "NG",
+      "to": "ID",
+      "kind": "trade",
+      "year": 2024,
+      "value_usd": 2940266026.596,
+      "measure": "Annual merchandise exports, reporter Nigeria, TOTAL HS",
+      "source": "UN Comtrade",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&reporterCode=566&cmdCode=TOTAL&flowCode=X&partner2Code=0&customsCode=C00&motCode=0&maxRecords=500",
+      "record": {
+        "reporter": 566,
+        "partner": 360,
+        "flow": "X",
+        "period": "2024",
+        "cmdCode": "TOTAL"
+      },
+      "reported": false,
+      "id": "trade-NG-ID-2024"
+    },
+    {
+      "from": "NG",
+      "to": "CA",
+      "kind": "trade",
+      "year": 2024,
+      "value_usd": 2858146291.682,
+      "measure": "Annual merchandise exports, reporter Nigeria, TOTAL HS",
+      "source": "UN Comtrade",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&reporterCode=566&cmdCode=TOTAL&flowCode=X&partner2Code=0&customsCode=C00&motCode=0&maxRecords=500",
+      "record": {
+        "reporter": 566,
+        "partner": 124,
+        "flow": "X",
+        "period": "2024",
+        "cmdCode": "TOTAL"
+      },
+      "reported": false,
+      "id": "trade-NG-CA-2024"
+    },
+    {
+      "from": "NG",
+      "to": "IT",
+      "kind": "trade",
+      "year": 2024,
+      "value_usd": 2697107920.737,
+      "measure": "Annual merchandise exports, reporter Nigeria, TOTAL HS",
+      "source": "UN Comtrade",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&reporterCode=566&cmdCode=TOTAL&flowCode=X&partner2Code=0&customsCode=C00&motCode=0&maxRecords=500",
+      "record": {
+        "reporter": 566,
+        "partner": 380,
+        "flow": "X",
+        "period": "2024",
+        "cmdCode": "TOTAL"
+      },
+      "reported": false,
+      "id": "trade-NG-IT-2024"
+    },
+    {
+      "from": "NG",
+      "to": "CN",
+      "kind": "trade",
+      "year": 2024,
+      "value_usd": 2025623541.854,
+      "measure": "Annual merchandise exports, reporter Nigeria, TOTAL HS",
+      "source": "UN Comtrade",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&reporterCode=566&cmdCode=TOTAL&flowCode=X&partner2Code=0&customsCode=C00&motCode=0&maxRecords=500",
+      "record": {
+        "reporter": 566,
+        "partner": 156,
+        "flow": "X",
+        "period": "2024",
+        "cmdCode": "TOTAL"
+      },
+      "reported": false,
+      "id": "trade-NG-CN-2024"
+    },
+    {
+      "from": "NG",
+      "to": "CI",
+      "kind": "trade",
+      "year": 2024,
+      "value_usd": 1983967937.855,
+      "measure": "Annual merchandise exports, reporter Nigeria, TOTAL HS",
+      "source": "UN Comtrade",
+      "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?period=2024&reporterCode=566&cmdCode=TOTAL&flowCode=X&partner2Code=0&customsCode=C00&motCode=0&maxRecords=500",
+      "record": {
+        "reporter": 566,
+        "partner": 384,
+        "flow": "X",
+        "period": "2024",
+        "cmdCode": "TOTAL"
+      },
+      "reported": false,
+      "id": "trade-NG-CI-2024"
+    },
+    {
+      "from": "US",
+      "to": "NG",
+      "kind": "investment",
+      "year": 2023,
+      "value_usd": 3902000000.0,
+      "measure": "Year-end portfolio holdings in Nigeria; derived liabilities from counterpart reports, total instruments, all sectors",
+      "source": "IMF CPIS (DBnomics mirror)",
+      "url": "https://db.nomics.world/IMF/CPIS/A.NG.I_L_T_T_T_BP6_DV_USD.T.T.US",
+      "series": "A.NG.I_L_T_T_T_BP6_DV_USD.T.T.US",
+      "snapshot": "2025-04-09",
+      "id": "investment-US-NG-2023"
+    },
+    {
+      "from": "LU",
+      "to": "NG",
+      "kind": "investment",
+      "year": 2023,
+      "value_usd": 2857233549.495,
+      "measure": "Year-end portfolio holdings in Nigeria; derived liabilities from counterpart reports, total instruments, all sectors",
+      "source": "IMF CPIS (DBnomics mirror)",
+      "url": "https://db.nomics.world/IMF/CPIS/A.NG.I_L_T_T_T_BP6_DV_USD.T.T.LU",
+      "series": "A.NG.I_L_T_T_T_BP6_DV_USD.T.T.LU",
+      "snapshot": "2025-04-09",
+      "id": "investment-LU-NG-2023"
+    },
+    {
+      "from": "NL",
+      "to": "NG",
+      "kind": "investment",
+      "year": 2023,
+      "value_usd": 2240940000.0,
+      "measure": "Year-end portfolio holdings in Nigeria; derived liabilities from counterpart reports, total instruments, all sectors",
+      "source": "IMF CPIS (DBnomics mirror)",
+      "url": "https://db.nomics.world/IMF/CPIS/A.NG.I_L_T_T_T_BP6_DV_USD.T.T.NL",
+      "series": "A.NG.I_L_T_T_T_BP6_DV_USD.T.T.NL",
+      "snapshot": "2025-04-09",
+      "id": "investment-NL-NG-2023"
+    },
+    {
+      "from": "MU",
+      "to": "NG",
+      "kind": "investment",
+      "year": 2023,
+      "value_usd": 1776500000.0,
+      "measure": "Year-end portfolio holdings in Nigeria; derived liabilities from counterpart reports, total instruments, all sectors",
+      "source": "IMF CPIS (DBnomics mirror)",
+      "url": "https://db.nomics.world/IMF/CPIS/A.NG.I_L_T_T_T_BP6_DV_USD.T.T.MU",
+      "series": "A.NG.I_L_T_T_T_BP6_DV_USD.T.T.MU",
+      "snapshot": "2025-04-09",
+      "id": "investment-MU-NG-2023"
+    },
+    {
+      "from": "ZA",
+      "to": "NG",
+      "kind": "investment",
+      "year": 2023,
+      "value_usd": 1270546803.6,
+      "measure": "Year-end portfolio holdings in Nigeria; derived liabilities from counterpart reports, total instruments, all sectors",
+      "source": "IMF CPIS (DBnomics mirror)",
+      "url": "https://db.nomics.world/IMF/CPIS/A.NG.I_L_T_T_T_BP6_DV_USD.T.T.ZA",
+      "series": "A.NG.I_L_T_T_T_BP6_DV_USD.T.T.ZA",
+      "snapshot": "2025-04-09",
+      "id": "investment-ZA-NG-2023"
+    },
+    {
+      "from": "BM",
+      "to": "NG",
+      "kind": "investment",
+      "year": 2023,
+      "value_usd": 1139636718.03943,
+      "measure": "Year-end portfolio holdings in Nigeria; derived liabilities from counterpart reports, total instruments, all sectors",
+      "source": "IMF CPIS (DBnomics mirror)",
+      "url": "https://db.nomics.world/IMF/CPIS/A.NG.I_L_T_T_T_BP6_DV_USD.T.T.BM",
+      "series": "A.NG.I_L_T_T_T_BP6_DV_USD.T.T.BM",
+      "snapshot": "2025-04-09",
+      "id": "investment-BM-NG-2023"
+    },
+    {
+      "from": "KY",
+      "to": "NG",
+      "kind": "investment",
+      "year": 2023,
+      "value_usd": 971375644.0,
+      "measure": "Year-end portfolio holdings in Nigeria; derived liabilities from counterpart reports, total instruments, all sectors",
+      "source": "IMF CPIS (DBnomics mirror)",
+      "url": "https://db.nomics.world/IMF/CPIS/A.NG.I_L_T_T_T_BP6_DV_USD.T.T.KY",
+      "series": "A.NG.I_L_T_T_T_BP6_DV_USD.T.T.KY",
+      "snapshot": "2025-04-09",
+      "id": "investment-KY-NG-2023"
+    },
+    {
+      "from": "IE",
+      "to": "NG",
+      "kind": "investment",
+      "year": 2023,
+      "value_usd": 857480000.0,
+      "measure": "Year-end portfolio holdings in Nigeria; derived liabilities from counterpart reports, total instruments, all sectors",
+      "source": "IMF CPIS (DBnomics mirror)",
+      "url": "https://db.nomics.world/IMF/CPIS/A.NG.I_L_T_T_T_BP6_DV_USD.T.T.IE",
+      "series": "A.NG.I_L_T_T_T_BP6_DV_USD.T.T.IE",
+      "snapshot": "2025-04-09",
+      "id": "investment-IE-NG-2023"
+    },
+    {
+      "from": "DE",
+      "to": "NG",
+      "kind": "investment",
+      "year": 2023,
+      "value_usd": 476255000.0,
+      "measure": "Year-end portfolio holdings in Nigeria; derived liabilities from counterpart reports, total instruments, all sectors",
+      "source": "IMF CPIS (DBnomics mirror)",
+      "url": "https://db.nomics.world/IMF/CPIS/A.NG.I_L_T_T_T_BP6_DV_USD.T.T.DE",
+      "series": "A.NG.I_L_T_T_T_BP6_DV_USD.T.T.DE",
+      "snapshot": "2025-04-09",
+      "id": "investment-DE-NG-2023"
+    },
+    {
+      "from": "CA",
+      "to": "NG",
+      "kind": "investment",
+      "year": 2023,
+      "value_usd": 440488761.502489,
+      "measure": "Year-end portfolio holdings in Nigeria; derived liabilities from counterpart reports, total instruments, all sectors",
+      "source": "IMF CPIS (DBnomics mirror)",
+      "url": "https://db.nomics.world/IMF/CPIS/A.NG.I_L_T_T_T_BP6_DV_USD.T.T.CA",
+      "series": "A.NG.I_L_T_T_T_BP6_DV_USD.T.T.CA",
+      "snapshot": "2025-04-09",
+      "id": "investment-CA-NG-2023"
+    }
+  ]
+}

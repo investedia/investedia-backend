@@ -1,0 +1,24 @@
+{
+  "_about": "Hand-checked company facts, keyed by company slug. Every company here must list its sources. Fields left out stay empty on the site.",
+  "alphabet": {
+    "legal_name": "Alphabet Inc.",
+    "description": "Alphabet is the holding company of Google. Most of its revenue comes from advertising on Google Search and YouTube. It also sells cloud computing through Google Cloud, subscriptions, apps and devices, and funds longer-term businesses such as Waymo.",
+    "hq": "Mountain View, California",
+    "website": "https://abc.xyz",
+    "industry": "Interactive media and services",
+    "founded": "1998 (Google); Alphabet formed in 2015",
+    "exchanges": {"GOOGL": "Nasdaq"},
+    "listing_names": {"GOOGL": "Alphabet Class A"},
+    "more_listings": [{"s": "GOOG", "name": "Alphabet Class C", "exchange": "Nasdaq", "cur": "USD"}],
+    "story": [
+      {"date": "1998-09", "title": "Google is founded", "text": "Larry Page and Sergey Brin incorporate Google in California."},
+      {"date": "2004-08", "title": "Listing on Nasdaq", "text": "Google goes public on Nasdaq."},
+      {"date": "2006-11", "title": "Acquires YouTube", "text": "Google completes its purchase of YouTube."},
+      {"date": "2015-10", "title": "Alphabet is created", "text": "Google reorganises under a new parent company, Alphabet Inc."}
+    ],
+    "sources": [
+      {"name": "Alphabet investor relations", "url": "https://abc.xyz/investor/"},
+      {"name": "Alphabet annual report (Form 10-K), SEC", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001652044&type=10-K"}
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+/target/
+/.runtime/
+/.env
+/.env.*
+/.dev.vars
+*.log
+!/evidence/maven-verify.log

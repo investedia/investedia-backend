@@ -1,0 +1,3 @@
+# Investedia backend
+
+Local-only recovery. No GitHub remotes/pushes, Cloudflare deployments, Supabase schema/auth changes, key changes or external writes without a new instruction. api/ is a Java read-only snapshot API; workers/ and Python jobs are preserved migration sources, not activated production. Do not run financial jobs or fabricate data. V5/track-record/history are frozen; V7 remains research-only. Keep keys in ignored environment files. Preserve original saved-data timestamps and byte-identical financial ledgers. mvnw.cmd verify runs API/Worker contract checks using this repository only. The former workspace and history are retained in the sibling archive.

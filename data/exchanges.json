@@ -1,0 +1,1389 @@
+{
+  "ARCX": {
+    "name": "Nyse Arca",
+    "short": "NYSE Arca",
+    "city": "New York",
+    "country": "US",
+    "currency": "USD",
+    "central_bank": "Federal Reserve",
+    "central_bank_short": "Fed",
+    "website": "https://www.nyse.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://federalreserve.gov",
+      "https://www.nyse.com"
+    ],
+    "coordinates": {
+      "latitude": 40.71427,
+      "longitude": -74.00597,
+      "precision": "city",
+      "source": "https://www.geonames.org/5128581",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "BATS": {
+    "name": "Cboe Bzx U.S. Equities Exchange",
+    "short": "Cboe BZX",
+    "city": "Chicago",
+    "country": "US",
+    "currency": "USD",
+    "central_bank": "Federal Reserve",
+    "central_bank_short": "Fed",
+    "website": "https://markets.cboe.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://federalreserve.gov",
+      "https://markets.cboe.com"
+    ],
+    "coordinates": {
+      "latitude": 41.85003,
+      "longitude": -87.65005,
+      "precision": "city",
+      "source": "https://www.geonames.org/4887398",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "BVMF": {
+    "name": "B3",
+    "short": "B3",
+    "city": "Sao Paulo",
+    "country": "BR",
+    "currency": "BRL",
+    "central_bank": "Banco Central do Brasil",
+    "central_bank_short": "BCB",
+    "website": "https://www.b3.com.br",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://bcb.gov.br",
+      "https://www.b3.com.br"
+    ],
+    "coordinates": {
+      "latitude": -23.5475,
+      "longitude": -46.63611,
+      "precision": "city",
+      "source": "https://www.geonames.org/3448439",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "DSMD": {
+    "name": "Qatar Stock Exchange",
+    "short": "QSE",
+    "city": "Doha",
+    "country": "QA",
+    "currency": "QAR",
+    "central_bank": "Qatar Central Bank",
+    "central_bank_short": "QCB",
+    "website": "https://www.qe.com.qa",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://qcb.gov.qa",
+      "https://www.qe.com.qa"
+    ],
+    "coordinates": {
+      "latitude": 25.28545,
+      "longitude": 51.53096,
+      "precision": "city",
+      "source": "https://www.geonames.org/290030",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "OTCM": {
+    "name": "Otc Link Ats - Otc Markets",
+    "short": "OTC Markets",
+    "city": "New York",
+    "country": "US",
+    "currency": "USD",
+    "central_bank": "Federal Reserve",
+    "central_bank_short": "Fed",
+    "website": "https://www.otcmarkets.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://federalreserve.gov",
+      "https://www.otcmarkets.com"
+    ],
+    "coordinates": {
+      "latitude": 40.71427,
+      "longitude": -74.00597,
+      "precision": "city",
+      "source": "https://www.geonames.org/5128581",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XADS": {
+    "name": "Abu Dhabi Securities Exchange",
+    "short": "ADX",
+    "city": "Abu Dhabi",
+    "country": "AE",
+    "currency": "AED",
+    "central_bank": "Central Bank of the UAE",
+    "central_bank_short": "CBUAE",
+    "website": "https://www.adx.ae",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://centralbank.ae",
+      "https://www.adx.ae"
+    ],
+    "coordinates": {
+      "latitude": 24.45118,
+      "longitude": 54.39696,
+      "precision": "city",
+      "source": "https://www.geonames.org/292968",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XAMS": {
+    "name": "Euronext - Euronext Amsterdam",
+    "short": "Euronext",
+    "city": "Amsterdam",
+    "country": "NL",
+    "currency": "EUR",
+    "central_bank": "European Central Bank",
+    "central_bank_short": "ECB",
+    "website": "https://www.euronext.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://ecb.europa.eu",
+      "https://www.euronext.com"
+    ],
+    "coordinates": {
+      "latitude": 52.37403,
+      "longitude": 4.88969,
+      "precision": "city",
+      "source": "https://www.geonames.org/2759794",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XASE": {
+    "name": "Nyse American Llc",
+    "short": "NYSE American",
+    "city": "New York",
+    "country": "US",
+    "currency": "USD",
+    "central_bank": "Federal Reserve",
+    "central_bank_short": "Fed",
+    "website": "https://www.nyse.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://federalreserve.gov",
+      "https://www.nyse.com"
+    ],
+    "coordinates": {
+      "latitude": 40.71427,
+      "longitude": -74.00597,
+      "precision": "city",
+      "source": "https://www.geonames.org/5128581",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XASX": {
+    "name": "Asx - All Markets",
+    "short": "ASX",
+    "city": "Sydney",
+    "country": "AU",
+    "currency": "AUD",
+    "central_bank": "Reserve Bank of Australia",
+    "central_bank_short": "RBA",
+    "website": "https://www.asx.com.au",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://rba.gov.au",
+      "https://www.asx.com.au"
+    ],
+    "coordinates": {
+      "latitude": -33.86785,
+      "longitude": 151.20732,
+      "precision": "city",
+      "source": "https://www.geonames.org/2147714",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XATH": {
+    "name": "Athens Exchange S.A. Cash Market",
+    "short": "ATHEX",
+    "city": "Athens",
+    "country": "GR",
+    "currency": "EUR",
+    "central_bank": "European Central Bank",
+    "central_bank_short": "ECB",
+    "website": "https://www.athexgroup.gr",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://ecb.europa.eu",
+      "https://www.athexgroup.gr"
+    ],
+    "coordinates": {
+      "latitude": 37.98376,
+      "longitude": 23.72784,
+      "precision": "city",
+      "source": "https://www.geonames.org/264371",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XBAH": {
+    "name": "Bahrain Bourse",
+    "short": "Bahrain Bourse",
+    "city": "Manama",
+    "country": "BH",
+    "currency": "BHD",
+    "central_bank": "Central Bank of Bahrain",
+    "central_bank_short": "CBB",
+    "website": "https://www.bahrainbourse.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://cbb.gov.bh",
+      "https://www.bahrainbourse.com"
+    ],
+    "coordinates": {
+      "latitude": 26.22787,
+      "longitude": 50.58565,
+      "precision": "city",
+      "source": "https://www.geonames.org/290340",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XBKK": {
+    "name": "Stock Exchange Of Thailand",
+    "short": "SET",
+    "city": "Bangkok",
+    "country": "TH",
+    "currency": "THB",
+    "central_bank": "Bank of Thailand",
+    "central_bank_short": "BOT",
+    "website": "https://www.set.or.th",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://bot.or.th",
+      "https://www.set.or.th"
+    ],
+    "coordinates": {
+      "latitude": 13.75398,
+      "longitude": 100.50144,
+      "precision": "city",
+      "source": "https://www.geonames.org/1609350",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XBOG": {
+    "name": "Bolsa De Valores De Colombia",
+    "short": "BVC",
+    "city": "Bogota",
+    "country": "CO",
+    "currency": "COP",
+    "central_bank": "Banco de la República",
+    "central_bank_short": "BanRep",
+    "website": "https://www.bvc.com.co",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://banrep.gov.co",
+      "https://www.bvc.com.co"
+    ],
+    "coordinates": {
+      "latitude": 4.60971,
+      "longitude": -74.08175,
+      "precision": "city",
+      "source": "https://www.geonames.org/3688689",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XBOM": {
+    "name": "Bse Ltd",
+    "short": "BSE",
+    "city": "Mumbai",
+    "country": "IN",
+    "currency": "INR",
+    "central_bank": "Reserve Bank of India",
+    "central_bank_short": "RBI",
+    "website": "https://www.bseindia.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://rbi.org.in",
+      "https://www.bseindia.com"
+    ],
+    "coordinates": {
+      "latitude": 19.07283,
+      "longitude": 72.88261,
+      "precision": "city",
+      "source": "https://www.geonames.org/1275339",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XBRU": {
+    "name": "Euronext - Euronext Brussels",
+    "short": "Euronext",
+    "city": "Brussels",
+    "country": "BE",
+    "currency": "EUR",
+    "central_bank": "European Central Bank",
+    "central_bank_short": "ECB",
+    "website": "https://www.euronext.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://ecb.europa.eu",
+      "https://www.euronext.com"
+    ],
+    "coordinates": {
+      "latitude": 50.85045,
+      "longitude": 4.34878,
+      "precision": "city",
+      "source": "https://www.geonames.org/2800866",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XBUD": {
+    "name": "Budapest Stock Exchange",
+    "short": "BSE",
+    "city": "Budapest",
+    "country": "HU",
+    "currency": "HUF",
+    "central_bank": "Magyar Nemzeti Bank",
+    "central_bank_short": "MNB",
+    "website": "https://www.bet.hu",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://mnb.hu",
+      "https://www.bet.hu"
+    ],
+    "coordinates": {
+      "latitude": 47.49835,
+      "longitude": 19.04045,
+      "precision": "city",
+      "source": "https://www.geonames.org/3054643",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XBUE": {
+    "name": "Bolsa De Comercio De Buenos Aires",
+    "short": "BCBA",
+    "city": "Buenos Aires",
+    "country": "AR",
+    "currency": "ARS",
+    "central_bank": "Banco Central de la República Argentina",
+    "central_bank_short": "BCRA",
+    "website": "https://www.bcba.sba.com.ar",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://bcra.gob.ar",
+      "https://www.bcba.sba.com.ar"
+    ],
+    "coordinates": {
+      "latitude": -34.61315,
+      "longitude": -58.37723,
+      "precision": "city",
+      "source": "https://www.geonames.org/3435910",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XCAI": {
+    "name": "Egyptian Exchange",
+    "short": "EGX",
+    "city": "Cairo",
+    "country": "EG",
+    "currency": "EGP",
+    "central_bank": "Central Bank of Egypt",
+    "central_bank_short": "CBE",
+    "website": "https://www.egx.com.eg",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://cbe.org.eg",
+      "https://www.egx.com.eg"
+    ],
+    "coordinates": {
+      "latitude": 30.06263,
+      "longitude": 31.24967,
+      "precision": "city",
+      "source": "https://www.geonames.org/360630",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XCAS": {
+    "name": "Casablanca Stock Exchange",
+    "short": "CSE",
+    "city": "Casablanca",
+    "country": "MA",
+    "currency": "MAD",
+    "central_bank": "Bank Al-Maghrib",
+    "central_bank_short": "BAM",
+    "website": "https://www.casablanca-bourse.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://bkam.ma",
+      "https://www.casablanca-bourse.com"
+    ],
+    "coordinates": {
+      "latitude": 33.58831,
+      "longitude": -7.61138,
+      "precision": "city",
+      "source": "https://www.geonames.org/2553604",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XCSE": {
+    "name": "Nasdaq Copenhagen A/S",
+    "short": "Nasdaq",
+    "city": "Copenhagen",
+    "country": "DK",
+    "currency": "DKK",
+    "central_bank": "Danmarks Nationalbank",
+    "central_bank_short": "Nationalbanken",
+    "website": "https://www.nasdaqomxnordic.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://nationalbanken.dk",
+      "https://www.nasdaqomxnordic.com"
+    ],
+    "coordinates": {
+      "latitude": 55.67594,
+      "longitude": 12.56553,
+      "precision": "city",
+      "source": "https://www.geonames.org/2618425",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XDFM": {
+    "name": "Dubai Financial Market",
+    "short": "DFM",
+    "city": "Dubai",
+    "country": "AE",
+    "currency": "AED",
+    "central_bank": "Central Bank of the UAE",
+    "central_bank_short": "CBUAE",
+    "website": "https://www.dfm.ae",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://centralbank.ae",
+      "https://www.dfm.ae"
+    ],
+    "coordinates": {
+      "latitude": 25.07725,
+      "longitude": 55.30927,
+      "precision": "city",
+      "source": "https://www.geonames.org/292223",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XDUB": {
+    "name": "Irish Stock Exchange - All Market",
+    "short": "Euronext",
+    "city": "Dublin",
+    "country": "IE",
+    "currency": "EUR",
+    "central_bank": "European Central Bank",
+    "central_bank_short": "ECB",
+    "website": "https://www.ise.ie",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://ecb.europa.eu",
+      "https://www.ise.ie"
+    ],
+    "coordinates": {
+      "latitude": 53.33306,
+      "longitude": -6.24889,
+      "precision": "city",
+      "source": "https://www.geonames.org/2964574",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XETR": {
+    "name": "Xetra",
+    "short": "Xetra",
+    "city": "Frankfurt",
+    "country": "DE",
+    "currency": "EUR",
+    "central_bank": "European Central Bank",
+    "central_bank_short": "ECB",
+    "website": "https://www.deutsche-boerse.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://ecb.europa.eu",
+      "https://www.deutsche-boerse.com"
+    ],
+    "coordinates": {
+      "latitude": 50.11552,
+      "longitude": 8.68417,
+      "precision": "city",
+      "source": "https://www.geonames.org/2925533",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XGHA": {
+    "name": "Ghana Stock Exchange",
+    "short": "GSE",
+    "city": "Accra",
+    "country": "GH",
+    "currency": "GHS",
+    "central_bank": "Bank of Ghana",
+    "central_bank_short": "BoG",
+    "website": "https://www.gse.com.gh",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://bog.gov.gh",
+      "https://www.gse.com.gh"
+    ],
+    "coordinates": {
+      "latitude": 5.55602,
+      "longitude": -0.1969,
+      "precision": "city",
+      "source": "https://www.geonames.org/2306104",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XHEL": {
+    "name": "Nasdaq Helsinki Ltd",
+    "short": "Nasdaq",
+    "city": "Helsinki",
+    "country": "FI",
+    "currency": "EUR",
+    "central_bank": "European Central Bank",
+    "central_bank_short": "ECB",
+    "website": "https://www.nasdaqomxnordic.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://ecb.europa.eu",
+      "https://www.nasdaqomxnordic.com"
+    ],
+    "coordinates": {
+      "latitude": 60.16952,
+      "longitude": 24.93545,
+      "precision": "city",
+      "source": "https://www.geonames.org/658225",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XHKG": {
+    "name": "Hong Kong Exchanges And Clearing Ltd",
+    "short": "HKEX",
+    "city": "Hong Kong",
+    "country": "HK",
+    "currency": "HKD",
+    "central_bank": "Hong Kong Monetary Authority",
+    "central_bank_short": "HKMA",
+    "website": "https://www.hkex.com.hk",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://hkma.gov.hk",
+      "https://www.hkex.com.hk"
+    ],
+    "coordinates": {
+      "latitude": 22.27832,
+      "longitude": 114.17469,
+      "precision": "city",
+      "source": "https://www.geonames.org/1819729",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XIDX": {
+    "name": "Indonesia Stock Exchange",
+    "short": "IDX",
+    "city": "Jakarta",
+    "country": "ID",
+    "currency": "IDR",
+    "central_bank": "Bank Indonesia",
+    "central_bank_short": "BI",
+    "website": "https://www.idx.co.id",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://bi.go.id",
+      "https://www.idx.co.id"
+    ],
+    "coordinates": {
+      "latitude": -6.21462,
+      "longitude": 106.84513,
+      "precision": "city",
+      "source": "https://www.geonames.org/1642911",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XIST": {
+    "name": "Borsa Istanbul",
+    "short": "Borsa Istanbul",
+    "city": "Istanbul",
+    "country": "TR",
+    "currency": "TRY",
+    "central_bank": "Central Bank of the Republic of Türkiye",
+    "central_bank_short": "CBRT",
+    "website": "https://www.borsaistanbul.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://tcmb.gov.tr",
+      "https://www.borsaistanbul.com"
+    ],
+    "coordinates": {
+      "latitude": 41.01384,
+      "longitude": 28.94966,
+      "precision": "city",
+      "source": "https://www.geonames.org/745044",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XJSE": {
+    "name": "Johannesburg Stock Exchange",
+    "short": "JSE",
+    "city": "Johannesburg",
+    "country": "ZA",
+    "currency": "ZAR",
+    "central_bank": "South African Reserve Bank",
+    "central_bank_short": "SARB",
+    "website": "https://www.jse.co.za",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://resbank.co.za",
+      "https://www.jse.co.za"
+    ],
+    "coordinates": {
+      "latitude": -26.20227,
+      "longitude": 28.04363,
+      "precision": "city",
+      "source": "https://www.geonames.org/993800",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XKLS": {
+    "name": "Bursa Malaysia",
+    "short": "Bursa Malaysia",
+    "city": "Kuala Lumpur",
+    "country": "MY",
+    "currency": "MYR",
+    "central_bank": "Bank Negara Malaysia",
+    "central_bank_short": "BNM",
+    "website": "https://www.bursamalaysia.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://bnm.gov.my",
+      "https://www.bursamalaysia.com"
+    ],
+    "coordinates": {
+      "latitude": 3.1412,
+      "longitude": 101.68653,
+      "precision": "city",
+      "source": "https://www.geonames.org/1735161",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XKOS": {
+    "name": "Korea Exchange (Kosdaq)",
+    "short": "KOSDAQ",
+    "city": "Seoul",
+    "country": "KR",
+    "currency": "KRW",
+    "central_bank": "Bank of Korea",
+    "central_bank_short": "BOK",
+    "website": "https://eng.krx.co.kr",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://bok.or.kr",
+      "https://eng.krx.co.kr"
+    ],
+    "coordinates": {
+      "latitude": 37.566,
+      "longitude": 126.9784,
+      "precision": "city",
+      "source": "https://www.geonames.org/1835848",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XKRX": {
+    "name": "Korea Exchange (Stock Market)",
+    "short": "KRX",
+    "city": "Seoul",
+    "country": "KR",
+    "currency": "KRW",
+    "central_bank": "Bank of Korea",
+    "central_bank_short": "BOK",
+    "website": "https://eng.krx.co.kr",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://bok.or.kr",
+      "https://eng.krx.co.kr"
+    ],
+    "coordinates": {
+      "latitude": 37.566,
+      "longitude": 126.9784,
+      "precision": "city",
+      "source": "https://www.geonames.org/1835848",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XKUW": {
+    "name": "Boursa Kuwait",
+    "short": "Boursa Kuwait",
+    "city": "Kuwait",
+    "country": "KW",
+    "currency": "KWD",
+    "central_bank": "Central Bank of Kuwait",
+    "central_bank_short": "CBK",
+    "website": "https://www.boursakuwait.com.kw",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://cbk.gov.kw",
+      "https://www.boursakuwait.com.kw"
+    ],
+    "coordinates": {
+      "latitude": 29.367,
+      "longitude": 47.97429,
+      "precision": "city",
+      "source": "https://www.geonames.org/285787",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XLIS": {
+    "name": "Euronext - Euronext Lisbon",
+    "short": "Euronext",
+    "city": "Lisbon",
+    "country": "PT",
+    "currency": "EUR",
+    "central_bank": "European Central Bank",
+    "central_bank_short": "ECB",
+    "website": "https://www.euronext.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://ecb.europa.eu",
+      "https://www.euronext.com"
+    ],
+    "coordinates": {
+      "latitude": 38.72509,
+      "longitude": -9.1498,
+      "precision": "city",
+      "source": "https://www.geonames.org/2267057",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XLON": {
+    "name": "London Stock Exchange",
+    "short": "LSE",
+    "city": "London",
+    "country": "GB",
+    "currency": "GBP",
+    "central_bank": "Bank of England",
+    "central_bank_short": "BoE",
+    "website": "https://www.londonstockexchange.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://bankofengland.co.uk",
+      "https://www.londonstockexchange.com"
+    ],
+    "coordinates": {
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "precision": "city",
+      "source": "https://www.geonames.org/2643743",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XMAD": {
+    "name": "Bolsa De Madrid",
+    "short": "BME",
+    "city": "Madrid",
+    "country": "ES",
+    "currency": "EUR",
+    "central_bank": "European Central Bank",
+    "central_bank_short": "ECB",
+    "website": "https://www.bolsamadrid.es",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://ecb.europa.eu",
+      "https://www.bolsamadrid.es"
+    ],
+    "coordinates": {
+      "latitude": 40.4165,
+      "longitude": -3.70256,
+      "precision": "city",
+      "source": "https://www.geonames.org/3117735",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XMEX": {
+    "name": "Bolsa Mexicana De Valores (Mexican Stock Exchange)",
+    "short": "BMV",
+    "city": "Mexico",
+    "country": "MX",
+    "currency": "MXN",
+    "central_bank": "Banco de México",
+    "central_bank_short": "Banxico",
+    "website": "https://www.bmv.com.mx",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://banxico.org.mx",
+      "https://www.bmv.com.mx"
+    ],
+    "coordinates": {
+      "latitude": 19.42847,
+      "longitude": -99.12766,
+      "precision": "city",
+      "source": "https://www.geonames.org/3530597",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XMIL": {
+    "name": "Borsa Italiana S.P.A.",
+    "short": "Borsa Italiana",
+    "city": "Milan",
+    "country": "IT",
+    "currency": "EUR",
+    "central_bank": "European Central Bank",
+    "central_bank_short": "ECB",
+    "website": "https://www.borsaitaliana.it",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://ecb.europa.eu",
+      "https://www.borsaitaliana.it"
+    ],
+    "coordinates": {
+      "latitude": 45.46427,
+      "longitude": 9.18951,
+      "precision": "city",
+      "source": "https://www.geonames.org/3173435",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XNAI": {
+    "name": "Nairobi Securities Exchange",
+    "short": "NSE",
+    "city": "Nairobi",
+    "country": "KE",
+    "currency": "KES",
+    "central_bank": "Central Bank of Kenya",
+    "central_bank_short": "CBK",
+    "website": "https://www.nse.co.ke",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://centralbank.go.ke",
+      "https://www.nse.co.ke"
+    ],
+    "coordinates": {
+      "latitude": -1.28333,
+      "longitude": 36.81667,
+      "precision": "city",
+      "source": "https://www.geonames.org/184745",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XNAS": {
+    "name": "Nasdaq - All Markets",
+    "short": "Nasdaq",
+    "city": "New York",
+    "country": "US",
+    "currency": "USD",
+    "central_bank": "Federal Reserve",
+    "central_bank_short": "Fed",
+    "website": "https://www.nasdaq.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://federalreserve.gov",
+      "https://www.nasdaq.com"
+    ],
+    "coordinates": {
+      "latitude": 40.71427,
+      "longitude": -74.00597,
+      "precision": "city",
+      "source": "https://www.geonames.org/5128581",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XNSA": {
+    "name": "Nigerian Exchange",
+    "short": "NGX",
+    "city": "Lagos",
+    "country": "NG",
+    "currency": "NGN",
+    "central_bank": "Central Bank of Nigeria",
+    "central_bank_short": "CBN",
+    "website": "https://ngxgroup.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://cbn.gov.ng",
+      "https://ngxgroup.com"
+    ],
+    "benchmark_name": "NGX All-Share",
+    "coordinates": {
+      "latitude": 6.45407,
+      "longitude": 3.39467,
+      "precision": "city",
+      "source": "https://www.geonames.org/2332459",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XNSE": {
+    "name": "National Stock Exchange of India",
+    "short": "NSE",
+    "city": "Mumbai",
+    "country": "IN",
+    "currency": "INR",
+    "central_bank": "Reserve Bank of India",
+    "central_bank_short": "RBI",
+    "website": "https://www.nseindia.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://rbi.org.in",
+      "https://www.nseindia.com"
+    ],
+    "coordinates": {
+      "latitude": 19.07283,
+      "longitude": 72.88261,
+      "precision": "city",
+      "source": "https://www.geonames.org/1275339",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XNYS": {
+    "name": "New York Stock Exchange, Inc.",
+    "short": "NYSE",
+    "city": "New York",
+    "country": "US",
+    "currency": "USD",
+    "central_bank": "Federal Reserve",
+    "central_bank_short": "Fed",
+    "website": "https://www.nyse.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://federalreserve.gov",
+      "https://www.nyse.com"
+    ],
+    "coordinates": {
+      "latitude": 40.71427,
+      "longitude": -74.00597,
+      "precision": "city",
+      "source": "https://www.geonames.org/5128581",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XNZE": {
+    "name": "Nzx - All Markets",
+    "short": "NZX",
+    "city": "Auckland",
+    "country": "NZ",
+    "currency": "NZD",
+    "central_bank": "Reserve Bank of New Zealand",
+    "central_bank_short": "RBNZ",
+    "website": "https://www.nzx.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://rbnz.govt.nz",
+      "https://www.nzx.com"
+    ],
+    "coordinates": {
+      "latitude": -36.84853,
+      "longitude": 174.76349,
+      "precision": "city",
+      "source": "https://www.geonames.org/2193733",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XOSL": {
+    "name": "Oslo Bors",
+    "short": "Oslo Børs",
+    "city": "Oslo",
+    "country": "NO",
+    "currency": "NOK",
+    "central_bank": "Norges Bank",
+    "central_bank_short": "Norges Bank",
+    "website": "https://www.oslobors.no",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://norges-bank.no",
+      "https://www.oslobors.no"
+    ],
+    "coordinates": {
+      "latitude": 59.91273,
+      "longitude": 10.74609,
+      "precision": "city",
+      "source": "https://www.geonames.org/3143244",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XPAR": {
+    "name": "Euronext - Euronext Paris",
+    "short": "Euronext",
+    "city": "Paris",
+    "country": "FR",
+    "currency": "EUR",
+    "central_bank": "European Central Bank",
+    "central_bank_short": "ECB",
+    "website": "https://www.euronext.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://ecb.europa.eu",
+      "https://www.euronext.com"
+    ],
+    "coordinates": {
+      "latitude": 48.85341,
+      "longitude": 2.3488,
+      "precision": "city",
+      "source": "https://www.geonames.org/2988507",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XPHS": {
+    "name": "Philippine Stock Exchange, Inc.",
+    "short": "PSE",
+    "city": "Pasig City",
+    "country": "PH",
+    "currency": "PHP",
+    "central_bank": "Bangko Sentral ng Pilipinas",
+    "central_bank_short": "BSP",
+    "website": "https://www.pse.com.ph",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://bsp.gov.ph",
+      "https://www.pse.com.ph"
+    ],
+    "coordinates": {
+      "latitude": 14.58691,
+      "longitude": 121.0614,
+      "precision": "city",
+      "source": "https://www.geonames.org/7290466",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XPRA": {
+    "name": "Prague Stock Exchange",
+    "short": "PSE",
+    "city": "Prague",
+    "country": "CZ",
+    "currency": "CZK",
+    "central_bank": "Czech National Bank",
+    "central_bank_short": "CNB",
+    "website": "https://www.pse.cz",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://cnb.cz",
+      "https://www.pse.cz"
+    ],
+    "coordinates": {
+      "latitude": 50.08804,
+      "longitude": 14.42076,
+      "precision": "city",
+      "source": "https://www.geonames.org/3067696",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XSAU": {
+    "name": "Saudi Exchange",
+    "short": "Tadawul",
+    "city": "Riyadh",
+    "country": "SA",
+    "currency": "SAR",
+    "central_bank": "Saudi Central Bank",
+    "central_bank_short": "SAMA",
+    "website": "https://www.saudiexchange.sa",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://sama.gov.sa",
+      "https://www.saudiexchange.sa"
+    ],
+    "coordinates": {
+      "latitude": 24.68773,
+      "longitude": 46.72185,
+      "precision": "city",
+      "source": "https://www.geonames.org/108410",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XSES": {
+    "name": "Singapore Exchange",
+    "short": "SGX",
+    "city": "Singapore",
+    "country": "SG",
+    "currency": "SGD",
+    "central_bank": "Monetary Authority of Singapore",
+    "central_bank_short": "MAS",
+    "website": "https://www.sgx.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://mas.gov.sg",
+      "https://www.sgx.com"
+    ],
+    "coordinates": {
+      "latitude": 1.28967,
+      "longitude": 103.85007,
+      "precision": "city",
+      "source": "https://www.geonames.org/1880252",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XSGO": {
+    "name": "Santiago Stock Exchange",
+    "short": "Santiago",
+    "city": "Santiago",
+    "country": "CL",
+    "currency": "CLP",
+    "central_bank": "Banco Central de Chile",
+    "central_bank_short": "BCCh",
+    "website": "https://www.bolsadesantiago.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://bcentral.cl",
+      "https://www.bolsadesantiago.com"
+    ],
+    "coordinates": {
+      "latitude": -33.45694,
+      "longitude": -70.64827,
+      "precision": "city",
+      "source": "https://www.geonames.org/3871336",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XSHE": {
+    "name": "Shenzhen Stock Exchange",
+    "short": "SZSE",
+    "city": "Shenzhen",
+    "country": "CN",
+    "currency": "CNY",
+    "central_bank": "People’s Bank of China",
+    "central_bank_short": "PBoC",
+    "website": "https://www.szse.cn",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://pbc.gov.cn",
+      "https://www.szse.cn"
+    ],
+    "coordinates": {
+      "latitude": 22.54554,
+      "longitude": 114.0683,
+      "precision": "city",
+      "source": "https://www.geonames.org/1795565",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XSHG": {
+    "name": "Shanghai Stock Exchange",
+    "short": "SSE",
+    "city": "Shanghai",
+    "country": "CN",
+    "currency": "CNY",
+    "central_bank": "People’s Bank of China",
+    "central_bank_short": "PBoC",
+    "website": "https://www.sse.com.cn",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://pbc.gov.cn",
+      "https://www.sse.com.cn"
+    ],
+    "coordinates": {
+      "latitude": 31.22222,
+      "longitude": 121.45806,
+      "precision": "city",
+      "source": "https://www.geonames.org/1796236",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XSTC": {
+    "name": "Ho Chi Minh Stock Exchange",
+    "short": "HOSE",
+    "city": "Ho Chi Minh City",
+    "country": "VN",
+    "currency": "VND",
+    "central_bank": "State Bank of Vietnam",
+    "central_bank_short": "SBV",
+    "website": "https://www.hsx.vn",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://sbv.gov.vn",
+      "https://www.hsx.vn"
+    ],
+    "coordinates": {
+      "latitude": 10.82302,
+      "longitude": 106.62965,
+      "precision": "city",
+      "source": "https://www.geonames.org/1566083",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XSTO": {
+    "name": "Nasdaq Stockholm Ab",
+    "short": "Nasdaq",
+    "city": "Stockholm",
+    "country": "SE",
+    "currency": "SEK",
+    "central_bank": "Sveriges Riksbank",
+    "central_bank_short": "Riksbank",
+    "website": "https://www.nasdaqomxnordic.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://riksbank.se",
+      "https://www.nasdaqomxnordic.com"
+    ],
+    "coordinates": {
+      "latitude": 59.32938,
+      "longitude": 18.06871,
+      "precision": "city",
+      "source": "https://www.geonames.org/2673730",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XSWX": {
+    "name": "Six Swiss Exchange",
+    "short": "SIX",
+    "city": "Zurich",
+    "country": "CH",
+    "currency": "CHF",
+    "central_bank": "Swiss National Bank",
+    "central_bank_short": "SNB",
+    "website": "https://www.six-group.com/en/site/exchanges.html",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://snb.ch",
+      "https://www.six-group.com/en/site/exchanges.html"
+    ],
+    "coordinates": {
+      "latitude": 47.36667,
+      "longitude": 8.55,
+      "precision": "city",
+      "source": "https://www.geonames.org/2657896",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XTAE": {
+    "name": "Tel Aviv Stock Exchange",
+    "short": "TASE",
+    "city": "Tel Aviv",
+    "country": "IL",
+    "currency": "ILS",
+    "central_bank": "Bank of Israel",
+    "central_bank_short": "BoI",
+    "website": "https://www.tase.co.il",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://boi.org.il",
+      "https://www.tase.co.il"
+    ],
+    "coordinates": {
+      "latitude": 32.08088,
+      "longitude": 34.78057,
+      "precision": "city",
+      "source": "https://www.geonames.org/293397",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XTAI": {
+    "name": "Taiwan Stock Exchange",
+    "short": "TWSE",
+    "city": "Taipei",
+    "country": "TW",
+    "currency": "TWD",
+    "central_bank": "Central Bank of the Republic of China (Taiwan)",
+    "central_bank_short": "CBC",
+    "website": "https://www.twse.com.tw/en",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://cbc.gov.tw",
+      "https://www.twse.com.tw/en"
+    ],
+    "coordinates": {
+      "latitude": 25.05306,
+      "longitude": 121.52639,
+      "precision": "city",
+      "source": "https://www.geonames.org/1668341",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XTKS": {
+    "name": "Tokyo Stock Exchange",
+    "short": "TSE",
+    "city": "Tokyo",
+    "country": "JP",
+    "currency": "JPY",
+    "central_bank": "Bank of Japan",
+    "central_bank_short": "BoJ",
+    "website": "https://www.jpx.co.jp",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://boj.or.jp",
+      "https://www.jpx.co.jp"
+    ],
+    "coordinates": {
+      "latitude": 35.6895,
+      "longitude": 139.69171,
+      "precision": "city",
+      "source": "https://www.geonames.org/1850147",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XTSE": {
+    "name": "Toronto Stock Exchange",
+    "short": "TSX",
+    "city": "Toronto",
+    "country": "CA",
+    "currency": "CAD",
+    "central_bank": "Bank of Canada",
+    "central_bank_short": "BoC",
+    "website": "https://www.tse.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://bankofcanada.ca",
+      "https://www.tse.com"
+    ],
+    "coordinates": {
+      "latitude": 43.65333,
+      "longitude": -79.38389,
+      "precision": "city",
+      "source": "https://www.geonames.org/6167865",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XTSX": {
+    "name": "Tsx Venture Exchange",
+    "short": "TSXV",
+    "city": "Toronto",
+    "country": "CA",
+    "currency": "CAD",
+    "central_bank": "Bank of Canada",
+    "central_bank_short": "BoC",
+    "website": "https://www.tsx.com",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://bankofcanada.ca",
+      "https://www.tsx.com"
+    ],
+    "coordinates": {
+      "latitude": 43.65333,
+      "longitude": -79.38389,
+      "precision": "city",
+      "source": "https://www.geonames.org/6167865",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XWAR": {
+    "name": "Warsaw Stock Exchange/Equities/Main Market",
+    "short": "GPW",
+    "city": "Warsaw",
+    "country": "PL",
+    "currency": "PLN",
+    "central_bank": "Narodowy Bank Polski",
+    "central_bank_short": "NBP",
+    "website": "https://www.gpw.pl",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://nbp.pl",
+      "https://www.gpw.pl"
+    ],
+    "coordinates": {
+      "latitude": 52.22977,
+      "longitude": 21.01178,
+      "precision": "city",
+      "source": "https://www.geonames.org/756135",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  },
+  "XWBO": {
+    "name": "Wiener Boerse Ag",
+    "short": "Vienna",
+    "city": "Vienna",
+    "country": "AT",
+    "currency": "EUR",
+    "central_bank": "European Central Bank",
+    "central_bank_short": "ECB",
+    "website": "https://www.wienerboerse.at",
+    "sources": [
+      "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv",
+      "https://ecb.europa.eu",
+      "https://www.wienerboerse.at"
+    ],
+    "coordinates": {
+      "latitude": 48.20849,
+      "longitude": 16.37208,
+      "precision": "city",
+      "source": "https://www.geonames.org/2761369",
+      "attribution": "GeoNames · CC BY 4.0"
+    }
+  }
+}

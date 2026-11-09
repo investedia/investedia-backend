@@ -1,0 +1,23 @@
+name = "investedia-live"
+main = "index.js"
+compatibility_date = "2026-10-01"
+
+# Prices for stocks, indices, commodities and currencies: a cron job saves ONE combined snapshot in KV (unchanged snapshots are skipped), /v1/prices serves it.
+# KV is created automatically on the first deploy.
+[[kv_namespaces]]
+binding = "PRICES"
+
+[triggers]
+# Prices every 2 minutes. The news cron (every 5 minutes) is OFF: the benchmark showed the news job can exceed the free plan's 10 ms CPU limit
+# (see README). To try it anyway: add "*/5 * * * *" to crons and set NEWS_CRON = "on" under [vars].
+crons = [] # Local recovery: schedules disabled until explicitly configured and approved.
+
+# Free plan limits: 10 ms CPU and 50 subrequests per invocation, 1000 KV writes a day. v1/prices.js stays inside them (about 15 calls per run).
+[observability]
+enabled = true
+
+# After deploying, add a custom domain in the Cloudflare dashboard: Workers & Pages > investedia-live > Settings > Domains & Routes > Add > Custom domain: live.investedia.com
+
+[vars]
+NEWS_CRON = "off"
+DISPATCH_ENABLED = "false"

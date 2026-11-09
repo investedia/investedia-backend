@@ -1,0 +1,991 @@
+{
+  "schema": "investedia.globe.news/v0",
+  "demo": true,
+  "notice": "DEMO CONTENT for the Globe News concept. These are sample stories written to show the design. They are not real, current news. Replace this file with the output of the live news pipeline.",
+  "fields": {
+    "id": "unique id",
+    "headline": "story headline",
+    "summary": "short Investedia summary",
+    "why": "why this matters (factual background)",
+    "category": "markets | companies | economy | technology | crypto | commodities | geopolitics",
+    "importance": "1 minor, 2 notable, 3 major",
+    "flag": "breaking | trending | moving | null (use sparingly)",
+    "location": "place, country (as in countries-110m), lat, lon, region (na, eu, asia, me, af, latam, oc)",
+    "entities": "companies / assets involved: name, ticker (as the source gives it), sym (Investedia symbol in assets/quotes.js, used for the price chart and logo)",
+    "links": "ids of stories this one leads to (for connection arcs)",
+    "source": "name + original url (required for real stories)",
+    "published_at": "ISO time from the source (required for real stories)",
+    "retrieved_at": "ISO time we fetched it (required for real stories)",
+    "age_minutes": "DEMO ONLY: age relative to page load, used when published_at is null",
+    "image": "null = Investedia card (real price chart of the first asset with data, logo, country outline). Or an object for a licensed photo: kind 'place' (the real place in the story) or 'topic' (illustration of the subject), file or url, alt, credit, license, license_url, source, source_url. The card is drawn on top of the photo; credit and licence are always shown. No Wikimedia images."
+  },
+  "stories": [
+    {
+      "id": "us-ai-capex",
+      "headline": "US cloud giants signal higher AI data-center spending",
+      "summary": "Large US cloud providers point to rising investment in data centers built for artificial intelligence, a key demand signal for the chip supply chain.",
+      "why": "Cloud providers are the biggest buyers of AI accelerators. Their spending plans feed directly into orders for chip designers, chip makers and the equipment suppliers behind them.",
+      "category": "technology",
+      "importance": 3,
+      "flag": "trending",
+      "location": {
+        "place": "Seattle",
+        "country": "United States of America",
+        "lat": 47.61,
+        "lon": -122.33,
+        "region": "na"
+      },
+      "entities": [
+        {
+          "name": "Microsoft",
+          "ticker": "MSFT",
+          "sym": "MSFT"
+        },
+        {
+          "name": "Amazon",
+          "ticker": "AMZN",
+          "sym": "AMZN"
+        },
+        {
+          "name": "Alphabet",
+          "ticker": "GOOGL",
+          "sym": "GOOGL"
+        }
+      ],
+      "links": [
+        "nvidia-chips"
+      ],
+      "age_minutes": 38
+    },
+    {
+      "id": "nvidia-chips",
+      "headline": "Nvidia announces new AI chips",
+      "summary": "Nvidia presents its next generation of data-center processors for training and running AI models.",
+      "why": "Nvidia designs most of the accelerators used to train large AI models. It does not manufacture them itself: production is outsourced, mainly to TSMC in Taiwan.",
+      "category": "technology",
+      "importance": 3,
+      "flag": "breaking",
+      "location": {
+        "place": "Santa Clara, California",
+        "country": "United States of America",
+        "lat": 37.35,
+        "lon": -121.95,
+        "region": "na"
+      },
+      "entities": [
+        {
+          "name": "Nvidia",
+          "ticker": "NVDA",
+          "sym": "NVDA"
+        }
+      ],
+      "links": [
+        "tsmc-packaging"
+      ],
+      "age_minutes": 6
+    },
+    {
+      "id": "tsmc-packaging",
+      "headline": "TSMC expands advanced chip packaging capacity",
+      "summary": "Taiwan Semiconductor Manufacturing adds capacity for the advanced packaging used in AI processors.",
+      "why": "TSMC is the world's largest contract chip maker and produces most of the leading-edge chips designed by companies like Nvidia and Apple.",
+      "category": "technology",
+      "importance": 2,
+      "flag": null,
+      "location": {
+        "place": "Hsinchu",
+        "country": "Taiwan",
+        "lat": 24.8,
+        "lon": 120.97,
+        "region": "asia"
+      },
+      "entities": [
+        {
+          "name": "TSMC",
+          "ticker": "TSM",
+          "sym": "TSM"
+        }
+      ],
+      "links": [
+        "asml-demand"
+      ],
+      "age_minutes": 140
+    },
+    {
+      "id": "asml-demand",
+      "headline": "ASML reports strong semiconductor demand",
+      "summary": "ASML points to solid demand for its chip-making machines, led by orders tied to advanced AI chips.",
+      "why": "ASML is the only supplier of EUV lithography systems, the machines needed to manufacture the most advanced semiconductors.",
+      "category": "companies",
+      "importance": 3,
+      "flag": "moving",
+      "location": {
+        "place": "Veldhoven",
+        "country": "Netherlands",
+        "lat": 51.42,
+        "lon": 5.4,
+        "region": "eu"
+      },
+      "entities": [
+        {
+          "name": "ASML",
+          "ticker": "ASML",
+          "sym": "ASML"
+        }
+      ],
+      "links": [],
+      "age_minutes": 12
+    },
+    {
+      "id": "opec-decision",
+      "headline": "Oil prices react to production decision",
+      "summary": "Crude prices move after producers in the OPEC+ group update their output plans.",
+      "why": "Saudi Arabia is one of the world's largest oil exporters and a leading member of OPEC+. Changes in the group's output can move global oil prices.",
+      "category": "commodities",
+      "importance": 3,
+      "flag": "breaking",
+      "location": {
+        "place": "Riyadh",
+        "country": "Saudi Arabia",
+        "lat": 24.71,
+        "lon": 46.68,
+        "region": "me"
+      },
+      "entities": [
+        {
+          "name": "Brent crude",
+          "ticker": "BZ=F",
+          "sym": "BRENT"
+        },
+        {
+          "name": "Saudi Aramco",
+          "ticker": "2222.SR",
+          "sym": "ARMCO"
+        }
+      ],
+      "links": [
+        "brent-swing"
+      ],
+      "age_minutes": 9
+    },
+    {
+      "id": "brent-swing",
+      "headline": "Brent crude futures swing after supply news",
+      "summary": "The international oil benchmark trades in a wider range as traders price in the new supply outlook.",
+      "why": "Brent is the main global price reference for crude oil. Many fuel and energy contracts worldwide are priced from it.",
+      "category": "commodities",
+      "importance": 2,
+      "flag": null,
+      "location": {
+        "place": "London",
+        "country": "United Kingdom",
+        "lat": 51.51,
+        "lon": -0.09,
+        "region": "eu"
+      },
+      "entities": [
+        {
+          "name": "Brent crude",
+          "ticker": "BZ=F",
+          "sym": "BRENT"
+        }
+      ],
+      "links": [
+        "eu-open"
+      ],
+      "age_minutes": 25
+    },
+    {
+      "id": "eu-open",
+      "headline": "European stocks open lower as energy costs climb",
+      "summary": "Major European indices start the session lower, with energy-sensitive sectors under pressure.",
+      "why": "Europe imports most of its oil and gas, so higher energy prices raise costs for many European companies.",
+      "category": "markets",
+      "importance": 2,
+      "flag": null,
+      "location": {
+        "place": "Frankfurt",
+        "country": "Germany",
+        "lat": 50.11,
+        "lon": 8.68,
+        "region": "eu"
+      },
+      "entities": [
+        {
+          "name": "DAX 40",
+          "ticker": "^GDAXI",
+          "sym": "DAX"
+        },
+        {
+          "name": "Euro Stoxx 50",
+          "ticker": "^STOXX50E",
+          "sym": "SX5E"
+        }
+      ],
+      "links": [
+        "airlines-fuel"
+      ],
+      "age_minutes": 50
+    },
+    {
+      "id": "airlines-fuel",
+      "headline": "Airline shares slip on higher fuel outlook",
+      "summary": "European airline stocks trade lower as investors weigh the impact of more expensive jet fuel.",
+      "why": "Fuel is one of an airline's largest operating costs, so oil price moves often show up quickly in airline share prices.",
+      "category": "companies",
+      "importance": 1,
+      "flag": null,
+      "location": {
+        "place": "Paris",
+        "country": "France",
+        "lat": 48.86,
+        "lon": 2.35,
+        "region": "eu"
+      },
+      "entities": [
+        {
+          "name": "Air France-KLM",
+          "ticker": "AF.PA"
+        },
+        {
+          "name": "Lufthansa",
+          "ticker": "LHA.DE"
+        }
+      ],
+      "links": [],
+      "age_minutes": 95
+    },
+    {
+      "id": "ecb-rates",
+      "headline": "ECB decision impacts European markets",
+      "summary": "The European Central Bank's latest policy decision moves euro-area bond yields and the euro.",
+      "why": "The ECB sets interest rates for the 20 countries that use the euro, which affects borrowing costs for households, companies and governments.",
+      "category": "economy",
+      "importance": 3,
+      "flag": "moving",
+      "location": {
+        "place": "Frankfurt",
+        "country": "Germany",
+        "lat": 50.11,
+        "lon": 8.68,
+        "region": "eu"
+      },
+      "entities": [
+        {
+          "name": "EUR/USD",
+          "ticker": "EURUSD=X",
+          "sym": "EURUSD"
+        },
+        {
+          "name": "German 10Y Bund",
+          "ticker": null,
+          "sym": "DE10Y"
+        }
+      ],
+      "links": [],
+      "age_minutes": 180
+    },
+    {
+      "id": "eu-finance-ministers",
+      "headline": "EU finance ministers meet in Brussels on capital markets union",
+      "summary": "Finance ministers discuss plans to make it easier for companies to raise money across EU borders.",
+      "why": "A deeper single market for capital could change how European companies are funded and how savers invest.",
+      "category": "geopolitics",
+      "importance": 2,
+      "flag": null,
+      "location": {
+        "place": "Brussels",
+        "country": "Belgium",
+        "lat": 50.85,
+        "lon": 4.35,
+        "region": "eu"
+      },
+      "entities": [
+        {
+          "name": "European Union",
+          "ticker": null
+        }
+      ],
+      "links": [],
+      "age_minutes": 220
+    },
+    {
+      "id": "be-inflation",
+      "headline": "Belgian inflation figures published",
+      "summary": "Belgium's statistics office releases the latest consumer price data.",
+      "why": "Belgium indexes most wages to inflation, so price data feeds directly into salaries and company costs.",
+      "category": "economy",
+      "importance": 1,
+      "flag": null,
+      "location": {
+        "place": "Brussels",
+        "country": "Belgium",
+        "lat": 50.84,
+        "lon": 4.37,
+        "region": "eu"
+      },
+      "entities": [],
+      "links": [],
+      "age_minutes": 1000
+    },
+    {
+      "id": "abinbev",
+      "headline": "AB InBev outlook in focus for European consumer stocks",
+      "summary": "Investors look to the world's largest brewer for signals on consumer demand.",
+      "why": "AB InBev, headquartered in Leuven, is one of the largest companies listed in Belgium and a bellwether for global beer demand.",
+      "category": "companies",
+      "importance": 1,
+      "flag": null,
+      "location": {
+        "place": "Leuven",
+        "country": "Belgium",
+        "lat": 50.88,
+        "lon": 4.7,
+        "region": "eu"
+      },
+      "entities": [
+        {
+          "name": "AB InBev",
+          "ticker": "ABI.BR"
+        }
+      ],
+      "links": [],
+      "age_minutes": 3000
+    },
+    {
+      "id": "eu-stablecoin",
+      "headline": "EU stablecoin rules move to the next phase",
+      "summary": "European regulators publish further guidance for stablecoin issuers under the MiCA framework.",
+      "why": "MiCA is the EU's rulebook for crypto-assets. It decides which stablecoins can be offered to people in Europe.",
+      "category": "crypto",
+      "importance": 1,
+      "flag": null,
+      "location": {
+        "place": "Brussels",
+        "country": "Belgium",
+        "lat": 50.86,
+        "lon": 4.33,
+        "region": "eu"
+      },
+      "entities": [
+        {
+          "name": "USDC",
+          "ticker": "USDC-USD",
+          "sym": "USDC"
+        },
+        {
+          "name": "EURC",
+          "ticker": null
+        }
+      ],
+      "links": [],
+      "age_minutes": 1500
+    },
+    {
+      "id": "china-exports",
+      "headline": "Chinese exports beat expectations",
+      "summary": "China's monthly trade data shows exports growing faster than economists expected.",
+      "why": "China is the world's largest exporter of goods. Its trade data is watched as a signal for global demand and for commodity buyers like Australia.",
+      "category": "economy",
+      "importance": 3,
+      "flag": "trending",
+      "location": {
+        "place": "Beijing",
+        "country": "China",
+        "lat": 39.9,
+        "lon": 116.4,
+        "region": "asia"
+      },
+      "entities": [
+        {
+          "name": "CNY",
+          "ticker": "CNY=X",
+          "sym": "USDCNY"
+        },
+        {
+          "name": "Hang Seng",
+          "ticker": "^HSI",
+          "sym": "HSI"
+        }
+      ],
+      "links": [
+        "iron-ore"
+      ],
+      "age_minutes": 300
+    },
+    {
+      "id": "iron-ore",
+      "headline": "Iron ore miners track Chinese steel demand",
+      "summary": "Australian miners move with expectations for steel production in China.",
+      "why": "Australia is the world's largest iron ore exporter, and China buys most of it to make steel.",
+      "category": "commodities",
+      "importance": 1,
+      "flag": null,
+      "location": {
+        "place": "Perth",
+        "country": "Australia",
+        "lat": -31.95,
+        "lon": 115.86,
+        "region": "oc"
+      },
+      "entities": [
+        {
+          "name": "BHP",
+          "ticker": "BHP.AX",
+          "sym": "BHP"
+        },
+        {
+          "name": "Rio Tinto",
+          "ticker": "RIO.AX",
+          "sym": "RIO"
+        }
+      ],
+      "links": [],
+      "age_minutes": 3500
+    },
+    {
+      "id": "boj-policy",
+      "headline": "Bank of Japan changes policy",
+      "summary": "The Bank of Japan adjusts its monetary policy settings, moving the yen and Japanese bond yields.",
+      "why": "Japan has kept rates very low for decades. Changes at the BoJ can move the yen and global funding flows that borrow in yen.",
+      "category": "economy",
+      "importance": 3,
+      "flag": null,
+      "location": {
+        "place": "Tokyo",
+        "country": "Japan",
+        "lat": 35.68,
+        "lon": 139.69,
+        "region": "asia"
+      },
+      "entities": [
+        {
+          "name": "USD/JPY",
+          "ticker": "JPY=X",
+          "sym": "USDJPY"
+        },
+        {
+          "name": "Nikkei 225",
+          "ticker": "^N225",
+          "sym": "NKY"
+        }
+      ],
+      "links": [],
+      "age_minutes": 420
+    },
+    {
+      "id": "samsung-memory",
+      "headline": "Samsung outlines memory chip outlook",
+      "summary": "Samsung Electronics comments on demand for memory chips used in AI servers and phones.",
+      "why": "Samsung is one of the largest memory chip makers. Memory prices are a closely watched indicator of the electronics cycle.",
+      "category": "technology",
+      "importance": 2,
+      "flag": null,
+      "location": {
+        "place": "Suwon",
+        "country": "South Korea",
+        "lat": 37.26,
+        "lon": 127.03,
+        "region": "asia"
+      },
+      "entities": [
+        {
+          "name": "Samsung Electronics",
+          "ticker": "005930.KS",
+          "sym": "SMSN"
+        }
+      ],
+      "links": [],
+      "age_minutes": 900
+    },
+    {
+      "id": "india-inflows",
+      "headline": "Indian equities climb as foreign inflows return",
+      "summary": "Foreign investors add to Indian stocks, lifting the main indices.",
+      "why": "India is one of the fastest-growing large economies, and foreign fund flows are a major driver of its stock market.",
+      "category": "markets",
+      "importance": 2,
+      "flag": null,
+      "location": {
+        "place": "Mumbai",
+        "country": "India",
+        "lat": 19.08,
+        "lon": 72.88,
+        "region": "asia"
+      },
+      "entities": [
+        {
+          "name": "Nifty 50",
+          "ticker": "^NSEI",
+          "sym": "NIFTY"
+        },
+        {
+          "name": "Sensex",
+          "ticker": "^BSESN",
+          "sym": "SENSEX"
+        }
+      ],
+      "links": [],
+      "age_minutes": 360
+    },
+    {
+      "id": "asia-crypto",
+      "headline": "Crypto trading volumes rise on Asian exchanges",
+      "summary": "Trading activity in bitcoin and ether picks up during Asian trading hours.",
+      "why": "Crypto trades around the clock; Asian sessions often set the tone before Europe and the US open.",
+      "category": "crypto",
+      "importance": 1,
+      "flag": null,
+      "location": {
+        "place": "Singapore",
+        "country": "Singapore",
+        "lat": 1.35,
+        "lon": 103.82,
+        "region": "asia"
+      },
+      "entities": [
+        {
+          "name": "Bitcoin",
+          "ticker": "BTC-USD",
+          "sym": "BTC"
+        },
+        {
+          "name": "Ether",
+          "ticker": "ETH-USD",
+          "sym": "ETH"
+        }
+      ],
+      "links": [],
+      "age_minutes": 200
+    },
+    {
+      "id": "wall-street-open",
+      "headline": "Wall Street opens mixed ahead of inflation data",
+      "summary": "US stocks start the day without a clear direction as investors wait for new inflation figures.",
+      "why": "US inflation data shapes expectations for Federal Reserve interest rates, which influence markets worldwide.",
+      "category": "markets",
+      "importance": 2,
+      "flag": null,
+      "location": {
+        "place": "New York",
+        "country": "United States of America",
+        "lat": 40.71,
+        "lon": -74.01,
+        "region": "na"
+      },
+      "entities": [
+        {
+          "name": "S&P 500",
+          "ticker": "^GSPC",
+          "sym": "SPX"
+        },
+        {
+          "name": "Nasdaq 100",
+          "ticker": "^NDX",
+          "sym": "NDX"
+        }
+      ],
+      "links": [],
+      "age_minutes": 4
+    },
+    {
+      "id": "tesla-earnings",
+      "headline": "Tesla shares fall after earnings",
+      "summary": "Tesla stock trades lower after the company's quarterly results and outlook.",
+      "why": "Tesla is one of the largest companies in the S&P 500 by market value, so its moves can weigh on the wider index.",
+      "category": "companies",
+      "importance": 2,
+      "flag": null,
+      "location": {
+        "place": "Austin, Texas",
+        "country": "United States of America",
+        "lat": 30.27,
+        "lon": -97.74,
+        "region": "na"
+      },
+      "entities": [
+        {
+          "name": "Tesla",
+          "ticker": "TSLA",
+          "sym": "TSLA"
+        }
+      ],
+      "links": [],
+      "age_minutes": 70
+    },
+    {
+      "id": "fed-officials",
+      "headline": "Fed officials weigh timing of next rate move",
+      "summary": "Speeches from Federal Reserve officials focus on how long to hold interest rates at current levels.",
+      "why": "The Federal Reserve sets US interest rates, the most important benchmark for global borrowing costs and the dollar.",
+      "category": "economy",
+      "importance": 2,
+      "flag": null,
+      "location": {
+        "place": "Washington, D.C.",
+        "country": "United States of America",
+        "lat": 38.9,
+        "lon": -77.04,
+        "region": "na"
+      },
+      "entities": [
+        {
+          "name": "US 10Y Treasury",
+          "ticker": "^TNX",
+          "sym": "US10Y"
+        },
+        {
+          "name": "US dollar index",
+          "ticker": "DX-Y.NYB",
+          "sym": "DXY"
+        }
+      ],
+      "links": [],
+      "age_minutes": 600
+    },
+    {
+      "id": "cad-oil",
+      "headline": "Canadian dollar tracks oil and rate outlook",
+      "summary": "The loonie moves with crude prices and expectations for the Bank of Canada.",
+      "why": "Canada is a major oil exporter, so its currency often moves with energy prices.",
+      "category": "markets",
+      "importance": 1,
+      "flag": null,
+      "location": {
+        "place": "Toronto",
+        "country": "Canada",
+        "lat": 43.65,
+        "lon": -79.38,
+        "region": "na"
+      },
+      "entities": [
+        {
+          "name": "USD/CAD",
+          "ticker": "CAD=X",
+          "sym": "USDCAD"
+        }
+      ],
+      "links": [],
+      "age_minutes": 700
+    },
+    {
+      "id": "brazil-rates",
+      "headline": "Brazil central bank decision in focus",
+      "summary": "Markets look ahead to the next interest-rate decision from Brazil's central bank.",
+      "why": "Brazil has some of the highest interest rates among large economies, which strongly affects the real and local stocks.",
+      "category": "economy",
+      "importance": 2,
+      "flag": null,
+      "location": {
+        "place": "Brasília",
+        "country": "Brazil",
+        "lat": -15.79,
+        "lon": -47.88,
+        "region": "latam"
+      },
+      "entities": [
+        {
+          "name": "USD/BRL",
+          "ticker": "BRL=X",
+          "sym": "USDBRL"
+        },
+        {
+          "name": "Ibovespa",
+          "ticker": "^BVSP",
+          "sym": "IBOV"
+        }
+      ],
+      "links": [],
+      "age_minutes": 1300
+    },
+    {
+      "id": "mexico-nearshoring",
+      "headline": "Nearshoring lifts Mexican manufacturing investment",
+      "summary": "Companies continue to expand factories in northern Mexico to serve the US market.",
+      "why": "Mexico is the United States' largest trading partner, and factory investment there shapes trade and the peso.",
+      "category": "economy",
+      "importance": 1,
+      "flag": null,
+      "location": {
+        "place": "Monterrey",
+        "country": "Mexico",
+        "lat": 25.69,
+        "lon": -100.32,
+        "region": "latam"
+      },
+      "entities": [
+        {
+          "name": "USD/MXN",
+          "ticker": "MXN=X",
+          "sym": "USDMXN"
+        }
+      ],
+      "links": [],
+      "age_minutes": 3000
+    },
+    {
+      "id": "chile-copper",
+      "headline": "Copper output update from Chilean mines",
+      "summary": "Production figures from major Chilean copper mines are released.",
+      "why": "Chile is the world's largest copper producer. Copper is used in wiring, electric vehicles and power grids.",
+      "category": "commodities",
+      "importance": 1,
+      "flag": null,
+      "location": {
+        "place": "Santiago",
+        "country": "Chile",
+        "lat": -33.45,
+        "lon": -70.67,
+        "region": "latam"
+      },
+      "entities": [
+        {
+          "name": "Copper",
+          "ticker": "HG=F",
+          "sym": "HG"
+        }
+      ],
+      "links": [],
+      "age_minutes": 2000
+    },
+    {
+      "id": "zar-metals",
+      "headline": "South African rand moves with metals prices",
+      "summary": "The rand tracks prices of the metals South Africa exports.",
+      "why": "South Africa is a leading producer of platinum and gold, so metals prices strongly influence its currency.",
+      "category": "markets",
+      "importance": 1,
+      "flag": null,
+      "location": {
+        "place": "Johannesburg",
+        "country": "South Africa",
+        "lat": -26.2,
+        "lon": 28.05,
+        "region": "af"
+      },
+      "entities": [
+        {
+          "name": "USD/ZAR",
+          "ticker": "ZAR=X",
+          "sym": "USDZAR"
+        }
+      ],
+      "links": [],
+      "age_minutes": 800
+    },
+    {
+      "id": "nigeria-fuel",
+      "headline": "Nigeria fuel price changes ripple through the economy",
+      "summary": "Changes to fuel pricing feed into transport and food costs across Nigeria.",
+      "why": "Nigeria is Africa's largest oil producer and one of its biggest economies; fuel prices affect inflation and the naira.",
+      "category": "economy",
+      "importance": 2,
+      "flag": null,
+      "location": {
+        "place": "Lagos",
+        "country": "Nigeria",
+        "lat": 6.52,
+        "lon": 3.38,
+        "region": "af"
+      },
+      "entities": [
+        {
+          "name": "USD/NGN",
+          "ticker": "NGN=X"
+        }
+      ],
+      "links": [],
+      "age_minutes": 4000
+    },
+    {
+      "id": "suez-shipping",
+      "headline": "Suez Canal traffic in focus for shipping costs",
+      "summary": "Shipping companies watch transit volumes through the Suez Canal.",
+      "why": "Around a tenth of world trade normally passes through the Suez Canal. Diversions add time and cost to shipments between Asia and Europe.",
+      "category": "geopolitics",
+      "importance": 2,
+      "flag": null,
+      "location": {
+        "place": "Suez Canal",
+        "country": "Egypt",
+        "lat": 30.59,
+        "lon": 32.27,
+        "region": "af"
+      },
+      "entities": [
+        {
+          "name": "Maersk",
+          "ticker": "MAERSK-B.CO"
+        }
+      ],
+      "links": [],
+      "age_minutes": 2500
+    },
+    {
+      "id": "aramco-pricing",
+      "headline": "Aramco updates crude prices for Asian buyers",
+      "summary": "Saudi Aramco publishes its monthly official selling prices for crude shipped to Asia.",
+      "why": "Aramco is the world's largest oil company, and its monthly prices are a reference for Asian refiners.",
+      "category": "commodities",
+      "importance": 2,
+      "flag": null,
+      "location": {
+        "place": "Dhahran",
+        "country": "Saudi Arabia",
+        "lat": 26.29,
+        "lon": 50.11,
+        "region": "me"
+      },
+      "entities": [
+        {
+          "name": "Saudi Aramco",
+          "ticker": "2222.SR",
+          "sym": "ARMCO"
+        }
+      ],
+      "links": [],
+      "age_minutes": 1000
+    },
+    {
+      "id": "dubai-forum",
+      "headline": "Dubai hosts sovereign wealth investment forum",
+      "summary": "Gulf sovereign funds discuss investment plans at a forum in Dubai.",
+      "why": "Gulf sovereign wealth funds manage some of the largest pools of capital in the world and invest across global markets.",
+      "category": "economy",
+      "importance": 1,
+      "flag": null,
+      "location": {
+        "place": "Dubai",
+        "country": "United Arab Emirates",
+        "lat": 25.2,
+        "lon": 55.27,
+        "region": "me"
+      },
+      "entities": [],
+      "links": [],
+      "age_minutes": 5000
+    },
+    {
+      "id": "rba-watch",
+      "headline": "RBA keeps watch on housing and inflation",
+      "summary": "The Reserve Bank of Australia's latest minutes focus on housing costs and inflation.",
+      "why": "The RBA sets interest rates for Australia, where many home loans have variable rates that react quickly to its decisions.",
+      "category": "economy",
+      "importance": 2,
+      "flag": null,
+      "location": {
+        "place": "Sydney",
+        "country": "Australia",
+        "lat": -33.87,
+        "lon": 151.21,
+        "region": "oc"
+      },
+      "entities": [
+        {
+          "name": "AUD/USD",
+          "ticker": "AUDUSD=X",
+          "sym": "AUDUSD"
+        }
+      ],
+      "links": [],
+      "age_minutes": 1100
+    },
+    {
+      "id": "chf-safety",
+      "headline": "Swiss franc strengthens as investors seek safety",
+      "summary": "The franc gains as investors move money into assets seen as safer.",
+      "why": "The Swiss franc is traditionally considered a safe-haven currency during market stress.",
+      "category": "markets",
+      "importance": 1,
+      "flag": null,
+      "location": {
+        "place": "Zurich",
+        "country": "Switzerland",
+        "lat": 47.37,
+        "lon": 8.54,
+        "region": "eu"
+      },
+      "entities": [
+        {
+          "name": "EUR/CHF",
+          "ticker": "EURCHF=X",
+          "sym": "EURCHF"
+        }
+      ],
+      "links": [],
+      "age_minutes": 260
+    },
+    {
+      "id": "german-autos",
+      "headline": "German carmakers weigh electric-vehicle pricing",
+      "summary": "Germany's large carmakers review pricing for electric models in Europe and China.",
+      "why": "Car manufacturing is one of Germany's largest industries and a big part of the DAX index.",
+      "category": "companies",
+      "importance": 1,
+      "flag": null,
+      "location": {
+        "place": "Stuttgart",
+        "country": "Germany",
+        "lat": 48.78,
+        "lon": 9.18,
+        "region": "eu"
+      },
+      "entities": [
+        {
+          "name": "Mercedes-Benz",
+          "ticker": "MBG.DE"
+        },
+        {
+          "name": "Porsche",
+          "ticker": "P911.DE"
+        }
+      ],
+      "links": [],
+      "age_minutes": 6000
+    },
+    {
+      "id": "uk-gilts",
+      "headline": "UK inflation data due; gilts steady",
+      "summary": "UK government bonds trade calmly ahead of the next inflation release.",
+      "why": "UK inflation figures guide Bank of England rate decisions and mortgage costs.",
+      "category": "economy",
+      "importance": 1,
+      "flag": null,
+      "location": {
+        "place": "London",
+        "country": "United Kingdom",
+        "lat": 51.5,
+        "lon": -0.12,
+        "region": "eu"
+      },
+      "entities": [
+        {
+          "name": "GBP/USD",
+          "ticker": "GBPUSD=X",
+          "sym": "GBPUSD"
+        }
+      ],
+      "links": [],
+      "age_minutes": 9000
+    },
+    {
+      "id": "norway-fund",
+      "headline": "Norway's wealth fund reports quarterly results",
+      "summary": "The world's largest sovereign wealth fund publishes its latest quarterly return.",
+      "why": "Norway's fund owns a small stake in thousands of listed companies worldwide, making it one of the largest single investors in global stocks.",
+      "category": "economy",
+      "importance": 1,
+      "flag": null,
+      "location": {
+        "place": "Oslo",
+        "country": "Norway",
+        "lat": 59.91,
+        "lon": 10.75,
+        "region": "eu"
+      },
+      "entities": [],
+      "links": [],
+      "age_minutes": 8000
+    }
+  ]
+}

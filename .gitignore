@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+.dev.vars
+.wrangler/
+**/target/
+**/node_modules/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.log
+.m2/
+.local/
+config.local.json
+api/evidence/
+.dev.vars.*

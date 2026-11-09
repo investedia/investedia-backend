@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: investedia-backend
+server:
+  address: ${BACKEND_BIND_ADDRESS:127.0.0.1}
+  port: ${PORT:8080}
+  error:
+    include-message: never
+    include-stacktrace: never
+investedia:
+  repository-root: ${INVESTEDIA_REPOSITORY_ROOT:..}

@@ -1,0 +1,90 @@
+{
+ "canon": [
+  [
+   "https://www.Example.com/a/b/?utm_source=x&id=7#frag",
+   "example.com/a/b?id=7"
+  ],
+  [
+   "https://example.com/a/b/amp/",
+   "example.com/a/b"
+  ],
+  [
+   "https://news.site/x?ref=rss&b=2&a=1",
+   "news.site/x?a=1&b=2"
+  ],
+  [
+   "https://bbc.co.uk/news/business-123",
+   "bbc.co.uk/news/business-123"
+  ]
+ ],
+ "same": [
+  [
+   "ECB holds interest rates steady at 2%",
+   "ECB holds interest rates steady at 2%",
+   1,
+   true
+  ],
+  [
+   "Nvidia shares jump 8% after record earnings",
+   "Nvidia stock surges 8% on record earnings beat",
+   2,
+   true
+  ],
+  [
+   "Apple unveils new iPhone",
+   "Tesla recalls vehicles",
+   1,
+   false
+  ],
+  [
+   "Fed cuts rates by 25 basis points",
+   "Federal Reserve lowers rates 25 basis points amid slowing jobs",
+   3,
+   false
+  ]
+ ],
+ "score": [
+  [
+   {
+    "title": "ECB raises interest rates in surprise decision",
+    "kind": "official",
+    "mins": 3
+   },
+   67.9
+  ],
+  [
+   {
+    "title": "ECB raises interest rates in surprise decision",
+    "kind": "news",
+    "mins": 3
+   },
+   60.1
+  ],
+  [
+   {
+    "title": "US inflation CPI surges, Treasury yields jump",
+    "kind": "news",
+    "mins": 20
+   },
+   71.0
+  ],
+  [
+   {
+    "title": "Local shop opens new branch",
+    "kind": "news",
+    "mins": 900
+   },
+   26.2
+  ],
+  [
+   {
+    "title": "Oil prices jump as OPEC trims output; Brent hits record high",
+    "kind": "news",
+    "mins": 45,
+    "desc": "Crude and gas markets react"
+   },
+   86.0
+  ]
+ ],
+ "now": "2026-10-28T12:00:00Z"
+}

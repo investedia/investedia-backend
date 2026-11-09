@@ -1,0 +1,23 @@
+{
+  "NG": {
+    "currency": "NGN",
+    "currency_name": "Naira",
+    "source": "https://download.geonames.org/export/dump/countryInfo.txt",
+    "attribution": "GeoNames · CC BY 4.0",
+    "checked_at": "2026-11-07"
+  },
+  "MY": {
+    "currency": "MYR",
+    "currency_name": "Ringgit",
+    "source": "https://download.geonames.org/export/dump/countryInfo.txt",
+    "attribution": "GeoNames · CC BY 4.0",
+    "checked_at": "2026-11-07"
+  },
+  "TZ": {
+    "currency": "TZS",
+    "currency_name": "Shilling",
+    "source": "https://download.geonames.org/export/dump/countryInfo.txt",
+    "attribution": "GeoNames · CC BY 4.0",
+    "checked_at": "2026-11-07"
+  }
+}

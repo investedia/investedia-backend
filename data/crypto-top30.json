@@ -1,0 +1,247 @@
+{
+ "asof": "2026-10-25",
+ "source": "CoinGecko market-cap ranking (api.coingecko.com/api/v3/coins/markets) on 2026-10-25; prices from Yahoo Finance via update_market.py",
+ "rule": "First 30 by market cap, skipping tokenised real-world assets and funds (FIGR_HELOC, XAUT, BUIDL, USYC, USDY, EURSAFO, PAXG) and coins with no verifiable Yahoo USD series (USDS, USDE, USD1, TAO, PUMP, PEPE, ASTER, WBT, RAIN, CC, GRAM, BTW)",
+ "coins": [
+  {
+   "rank": 1,
+   "s": "BTC",
+   "n": "Bitcoin",
+   "yahoo": "BTC-USD",
+   "mcap_usd_b": 1611.1,
+   "cg_rank": 1
+  },
+  {
+   "rank": 2,
+   "s": "ETH",
+   "n": "Ethereum",
+   "yahoo": "ETH-USD",
+   "mcap_usd_b": 284.2,
+   "cg_rank": 2
+  },
+  {
+   "rank": 3,
+   "s": "USDT",
+   "n": "Tether",
+   "yahoo": "USDT-USD",
+   "mcap_usd_b": 182.5,
+   "cg_rank": 3
+  },
+  {
+   "rank": 4,
+   "s": "BNB",
+   "n": "BNB",
+   "yahoo": "BNB-USD",
+   "mcap_usd_b": 96.8,
+   "cg_rank": 4
+  },
+  {
+   "rank": 5,
+   "s": "XRP",
+   "n": "XRP",
+   "yahoo": "XRP-USD",
+   "mcap_usd_b": 81.9,
+   "cg_rank": 5
+  },
+  {
+   "rank": 6,
+   "s": "USDC",
+   "n": "USDC",
+   "yahoo": "USDC-USD",
+   "mcap_usd_b": 71.6,
+   "cg_rank": 6
+  },
+  {
+   "rank": 7,
+   "s": "SOL",
+   "n": "Solana",
+   "yahoo": "SOL-USD",
+   "mcap_usd_b": 59.3,
+   "cg_rank": 7
+  },
+  {
+   "rank": 8,
+   "s": "TRX",
+   "n": "TRON",
+   "yahoo": "TRX-USD",
+   "mcap_usd_b": 31.3,
+   "cg_rank": 8
+  },
+  {
+   "rank": 9,
+   "s": "ZEC",
+   "n": "Zcash",
+   "yahoo": "ZEC-USD",
+   "mcap_usd_b": 20.1,
+   "cg_rank": 10
+  },
+  {
+   "rank": 10,
+   "s": "HYPE",
+   "n": "Hyperliquid",
+   "yahoo": "HYPE32196-USD",
+   "mcap_usd_b": 16.7,
+   "cg_rank": 11
+  },
+  {
+   "rank": 11,
+   "s": "DOGE",
+   "n": "Dogecoin",
+   "yahoo": "DOGE-USD",
+   "mcap_usd_b": 11.9,
+   "cg_rank": 12
+  },
+  {
+   "rank": 12,
+   "s": "XMR",
+   "n": "Monero",
+   "yahoo": "XMR-USD",
+   "mcap_usd_b": 11.3,
+   "cg_rank": 13
+  },
+  {
+   "rank": 13,
+   "s": "LINK",
+   "n": "Chainlink",
+   "yahoo": "LINK-USD",
+   "mcap_usd_b": 8.7,
+   "cg_rank": 16
+  },
+  {
+   "rank": 14,
+   "s": "LEO",
+   "n": "LEO Token",
+   "yahoo": "LEO-USD",
+   "mcap_usd_b": 8.3,
+   "cg_rank": 17
+  },
+  {
+   "rank": 15,
+   "s": "ADA",
+   "n": "Cardano",
+   "yahoo": "ADA-USD",
+   "mcap_usd_b": 7.6,
+   "cg_rank": 18
+  },
+  {
+   "rank": 16,
+   "s": "XLM",
+   "n": "Stellar",
+   "yahoo": "XLM-USD",
+   "mcap_usd_b": 5.9,
+   "cg_rank": 19
+  },
+  {
+   "rank": 17,
+   "s": "NEAR",
+   "n": "NEAR Protocol",
+   "yahoo": "NEAR-USD",
+   "mcap_usd_b": 5.7,
+   "cg_rank": 20
+  },
+  {
+   "rank": 18,
+   "s": "BCH",
+   "n": "Bitcoin Cash",
+   "yahoo": "BCH-USD",
+   "mcap_usd_b": 5.5,
+   "cg_rank": 22
+  },
+  {
+   "rank": 19,
+   "s": "DAI",
+   "n": "Dai",
+   "yahoo": "DAI-USD",
+   "mcap_usd_b": 4.5,
+   "cg_rank": 24
+  },
+  {
+   "rank": 20,
+   "s": "LTC",
+   "n": "Litecoin",
+   "yahoo": "LTC-USD",
+   "mcap_usd_b": 4.4,
+   "cg_rank": 25
+  },
+  {
+   "rank": 21,
+   "s": "UNI",
+   "n": "Uniswap",
+   "yahoo": "UNI7083-USD",
+   "mcap_usd_b": 4.2,
+   "cg_rank": 26
+  },
+  {
+   "rank": 22,
+   "s": "AVAX",
+   "n": "Avalanche",
+   "yahoo": "AVAX-USD",
+   "mcap_usd_b": 3.9,
+   "cg_rank": 29
+  },
+  {
+   "rank": 23,
+   "s": "SUI",
+   "n": "Sui",
+   "yahoo": "SUI20947-USD",
+   "mcap_usd_b": 3.7,
+   "cg_rank": 30
+  },
+  {
+   "rank": 24,
+   "s": "HBAR",
+   "n": "Hedera",
+   "yahoo": "HBAR-USD",
+   "mcap_usd_b": 3.4,
+   "cg_rank": 32
+  },
+  {
+   "rank": 25,
+   "s": "PYUSD",
+   "n": "PayPal USD",
+   "yahoo": "PYUSD-USD",
+   "mcap_usd_b": 3.0,
+   "cg_rank": 35
+  },
+  {
+   "rank": 26,
+   "s": "SHIB",
+   "n": "Shiba Inu",
+   "yahoo": "SHIB-USD",
+   "mcap_usd_b": 2.8,
+   "cg_rank": 36
+  },
+  {
+   "rank": 27,
+   "s": "CRO",
+   "n": "Cronos",
+   "yahoo": "CRO-USD",
+   "mcap_usd_b": 2.8,
+   "cg_rank": 38
+  },
+  {
+   "rank": 28,
+   "s": "QNT",
+   "n": "Quant",
+   "yahoo": "QNT-USD",
+   "mcap_usd_b": 2.6,
+   "cg_rank": 39
+  },
+  {
+   "rank": 29,
+   "s": "ENA",
+   "n": "Ethena",
+   "yahoo": "ENA-USD",
+   "mcap_usd_b": 2.5,
+   "cg_rank": 41
+  },
+  {
+   "rank": 30,
+   "s": "RLUSD",
+   "n": "Ripple USD",
+   "yahoo": "RLUSD-USD",
+   "mcap_usd_b": 2.5,
+   "cg_rank": 42
+  }
+ ]
+}
