@@ -1,0 +1,12 @@
+{
+  "schema": "investedia.official-market-staging/v1",
+  "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml",
+  "licence_notice": "https://www.ecb.europa.eu/services/disclaimer/html/index.en.html",
+  "status": "blocked_or_unavailable",
+  "licence_reviewed": false,
+  "data_mode": "staging_not_production",
+  "fx_series": {},
+  "index_prices": [],
+  "bond_10y_prices": [],
+  "gemini_calls": 0
+}
