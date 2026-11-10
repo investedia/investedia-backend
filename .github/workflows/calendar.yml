@@ -1,0 +1,40 @@
+# Economic calendar robot: refreshes the calendar and stores it in the live API (KV). Gated by CALENDAR_ENABLED.
+# Official US schedules (BLS, BEA, Federal Reserve) always; ForexFactory + Nasdaq only if CALENDAR_UNLICENSED=on (no formal reuse licence).
+name: Economic calendar (every 6 hours)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 */6 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: calendar
+  cancel-in-progress: false
+jobs:
+  calendar:
+    if: vars.CALENDAR_ENABLED == 'true' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restore previous calendar
+        uses: actions/cache@v4
+        with:
+          path: assets/calendar-live.json
+          key: calendar-${{ github.run_id }}
+          restore-keys: calendar-
+      - name: Build calendar
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          CALENDAR_UNLICENSED: ${{ vars.CALENDAR_UNLICENSED }}
+        run: mkdir -p assets docs/assets && python update_calendar.py
+      - name: Push to live API
+        env:
+          WORKER_URL: ${{ secrets.WORKER_URL }}
+          NEWS_INGEST_TOKEN: ${{ secrets.NEWS_INGEST_TOKEN }}
+        run: python tools/push-calendar-to-worker.py
