@@ -311,3 +311,9 @@ The four feature branches are based on the initial coverage-audit commit and
 should be reviewed after the audit PR. Claude opens all draft PRs. Source-access
 and licence verification are unfinished, so this is partial preparation, not
 completed worldwide coverage.
+
+## Verified licensed calendar follow-up (staged, not live)
+
+Apache-2.0 exchange-calendars 4.13.2 supplied hours, IANA time zones, breaks and dated holiday/early-close sessions for **46 of 63 exchanges**. Seventeen remain unsupported or outside the library’s known date range. No hours were guessed. This fills **80 staged market fields across 40 countries**, measured by rerunning the audit against the market branch. Per-country `markets_fields_staged` and `markets_staged_added_fields` record that improvement separately from the unchanged deployed data.
+
+The full Apache licence and provider/version/date provenance are retained. The optional calendar importer makes no provider or model requests. Its regular hours are not a guarantee against emergency closures; the dated horizon is 10 Nov–12 Dec 2026. Backend and frontend `codex/markets-coverage` branches contain byte-identical exchange metadata and attribution. No UI was changed and no site deployment occurred. Direct official price/WDI/feed access remains blocked.

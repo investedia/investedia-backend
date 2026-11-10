@@ -145,7 +145,12 @@
         "markets_fields_after": 3,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 5,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -237,7 +242,12 @@
         "markets_fields_after": 3,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 5,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -320,7 +330,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -402,7 +417,12 @@
         "markets_fields_after": 3,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 5,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -484,7 +504,12 @@
         "markets_fields_after": 3,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 5,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -574,7 +599,12 @@
         "markets_fields_after": 3,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 5,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -651,7 +681,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -731,7 +766,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -813,7 +850,12 @@
         "markets_fields_after": 1,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 3,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -891,7 +933,12 @@
         "markets_fields_after": 3,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 5,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -973,7 +1020,12 @@
         "markets_fields_after": 3,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 5,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -1051,7 +1103,12 @@
         "markets_fields_after": 1,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 3,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -1131,7 +1188,12 @@
         "markets_fields_after": 3,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 5,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -1208,7 +1270,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -1290,7 +1357,12 @@
         "markets_fields_after": 3,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 5,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -1373,7 +1445,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -1454,7 +1531,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -1536,7 +1618,12 @@
         "markets_fields_after": 1,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 3,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -1624,7 +1711,12 @@
         "markets_fields_after": 3,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 5,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -1705,7 +1797,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -1782,7 +1879,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -1860,7 +1962,12 @@
         "markets_fields_after": 1,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 3,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -1938,7 +2045,12 @@
         "markets_fields_after": 1,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 3,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -2023,7 +2135,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -2105,7 +2222,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -2190,7 +2312,9 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 2,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -2275,7 +2399,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -2358,7 +2487,12 @@
         "markets_fields_after": 1,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 3,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -2435,7 +2569,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -2517,7 +2656,9 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 2,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -2594,7 +2735,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -2676,7 +2822,9 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 2,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -2757,7 +2905,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -2834,7 +2987,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -2917,7 +3075,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -3000,7 +3163,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -3080,7 +3248,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -3160,7 +3330,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -3242,7 +3414,12 @@
         "markets_fields_after": 3,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 5,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -3329,7 +3506,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -3406,7 +3585,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -3488,7 +3672,9 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 2,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -3574,7 +3760,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -3655,7 +3843,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -3733,7 +3926,12 @@
         "markets_fields_after": 1,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 3,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -3817,7 +4015,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -3899,7 +4099,12 @@
         "markets_fields_after": 1,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 3,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -3979,7 +4184,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -4066,7 +4273,9 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 2,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -4146,7 +4355,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -4224,7 +4435,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -4301,7 +4514,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -4385,7 +4603,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -4462,7 +4682,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     },
     {
@@ -4539,7 +4764,9 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 2,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -4627,7 +4854,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -4704,7 +4933,9 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 2,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -4781,7 +5012,9 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 2,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -4862,7 +5095,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -4942,7 +5177,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -5019,7 +5256,9 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 2,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -5100,7 +5339,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -5181,7 +5422,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -5268,7 +5511,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -5353,7 +5598,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -5433,7 +5680,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -5513,7 +5762,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -5594,7 +5845,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -5675,7 +5928,9 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 2,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -5755,7 +6010,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -5835,7 +6092,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -5916,7 +6175,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -5997,7 +6258,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -6077,7 +6340,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -6158,7 +6423,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -6238,7 +6505,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -6319,7 +6588,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -6399,7 +6670,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -6480,7 +6753,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -6560,7 +6835,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -6640,7 +6917,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -6721,7 +7000,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -6805,7 +7086,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 6,
         "basics_fields_after": 6,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -6885,7 +7168,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -6966,7 +7251,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -7047,7 +7334,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -7128,7 +7417,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -7208,7 +7499,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -7293,7 +7586,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -7373,7 +7668,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -7453,7 +7750,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -7533,7 +7832,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -7613,7 +7914,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -7693,7 +7996,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -7774,7 +8079,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -7855,7 +8162,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -7943,7 +8252,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -8020,7 +8331,9 @@
         "markets_fields_after": 2,
         "basics_fields_before": 7,
         "basics_fields_after": 7,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 2,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -8101,7 +8414,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -8181,7 +8496,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -8262,7 +8579,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -8342,7 +8661,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -8423,7 +8744,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -8503,7 +8826,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -8583,7 +8908,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -8664,7 +8991,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -8744,7 +9073,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -8825,7 +9156,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -8906,7 +9239,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -8986,7 +9321,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -9066,7 +9403,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -9146,7 +9485,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -9227,7 +9568,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -9308,7 +9651,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -9388,7 +9733,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -9468,7 +9815,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -9549,7 +9898,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -9630,7 +9981,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -9710,7 +10063,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -9790,7 +10145,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -9875,7 +10232,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -9956,7 +10315,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -10037,7 +10398,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -10118,7 +10481,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -10198,7 +10563,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -10279,7 +10646,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -10359,7 +10728,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -10439,7 +10810,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -10520,7 +10893,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -10600,7 +10975,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -10681,7 +11058,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -10762,7 +11141,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -10842,7 +11223,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -10922,7 +11305,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -11002,7 +11387,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -11082,7 +11469,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -11162,7 +11551,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -11242,7 +11633,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -11323,7 +11716,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -11404,7 +11799,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -11484,7 +11881,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -11565,7 +11964,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -11645,7 +12046,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -11725,7 +12128,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -11805,7 +12210,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -11885,7 +12292,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -11965,7 +12374,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -12046,7 +12457,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -12127,7 +12540,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -12209,7 +12624,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -12290,7 +12707,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -12371,7 +12790,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -12452,7 +12873,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -12535,7 +12958,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 3,
         "basics_fields_after": 3,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -12616,7 +13041,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -12698,7 +13125,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 3,
         "basics_fields_after": 3,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -12782,7 +13211,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 2,
         "basics_fields_after": 2,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -12863,7 +13294,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -12943,7 +13376,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -13034,7 +13469,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -13114,7 +13551,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -13197,7 +13636,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 3,
         "basics_fields_after": 3,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -13278,7 +13719,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -13360,7 +13803,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -13441,7 +13886,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -13521,7 +13968,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -13601,7 +14050,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -13681,7 +14132,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -13763,7 +14216,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -13843,7 +14298,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -13929,7 +14386,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -14012,7 +14471,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 3,
         "basics_fields_after": 3,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -14093,7 +14554,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -14176,7 +14639,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 3,
         "basics_fields_after": 3,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -14257,7 +14722,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -14339,7 +14806,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -14419,7 +14888,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -14502,7 +14973,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 3,
         "basics_fields_after": 3,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -14582,7 +15055,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -14663,7 +15138,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -14743,7 +15220,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -14823,7 +15302,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -14903,7 +15384,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -14984,7 +15467,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -15065,7 +15550,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -15146,7 +15633,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -15228,7 +15717,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -15309,7 +15800,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -15391,7 +15884,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -15471,7 +15966,9 @@
         "markets_fields_after": 1,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 1,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -15552,7 +16049,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -15635,7 +16134,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 3,
         "basics_fields_after": 3,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -15717,7 +16218,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -15798,7 +16301,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -15879,7 +16384,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -15960,7 +16467,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -16042,7 +16551,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -16125,7 +16636,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 3,
         "basics_fields_after": 3,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -16206,7 +16719,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -16289,7 +16804,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 3,
         "basics_fields_after": 3,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -16371,7 +16888,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -16452,7 +16971,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 5,
         "basics_fields_after": 5,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -16535,7 +17056,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 3,
         "basics_fields_after": 3,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -16617,7 +17140,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -16699,7 +17224,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 4,
         "basics_fields_after": 4,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -16782,7 +17309,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 3,
         "basics_fields_after": 3,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -16869,7 +17398,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -16956,7 +17487,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -17042,7 +17575,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -17127,7 +17662,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 1,
         "basics_fields_after": 1,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -17213,7 +17750,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -17297,7 +17836,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 2,
         "basics_fields_after": 2,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -17383,7 +17924,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -17469,7 +18012,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -17556,7 +18101,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -17642,7 +18189,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -17729,7 +18278,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -17816,7 +18367,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -17903,7 +18456,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -17990,7 +18545,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -18077,7 +18634,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -18164,7 +18723,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -18251,7 +18812,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -18338,7 +18901,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -18425,7 +18990,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -18512,7 +19079,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -18596,7 +19165,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 2,
         "basics_fields_after": 2,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -18682,7 +19253,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -18768,7 +19341,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -18854,7 +19429,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -18941,7 +19518,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -19028,7 +19607,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -19115,7 +19696,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -19201,7 +19784,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -19287,7 +19872,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -19373,7 +19960,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -19459,7 +20048,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -19545,7 +20136,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -19631,7 +20224,9 @@
         "markets_fields_after": 0,
         "basics_fields_before": 0,
         "basics_fields_after": 0,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 0,
+        "markets_staged_added_fields": []
       }
     },
     {
@@ -19713,7 +20308,12 @@
         "markets_fields_after": 2,
         "basics_fields_before": 2,
         "basics_fields_after": 2,
-        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals."
+        "attribution": "No coverage branch deployed; any news change is the pre-existing hourly producer, not these proposals.",
+        "markets_fields_staged": 4,
+        "markets_staged_added_fields": [
+          "trading_hours",
+          "time_zone"
+        ]
       }
     }
   ],
@@ -19765,6 +20365,9 @@
     "new_numeric_basics": 0,
     "gemini_calls_used": 0,
     "added_hourly_actions_minutes": 0,
-    "weekly_refresh_enabled": false
+    "weekly_refresh_enabled": false,
+    "exchange_calendars_filled": 46,
+    "countries_with_staged_market_improvement": 40,
+    "additional_staged_market_fields": 80
   }
 }
