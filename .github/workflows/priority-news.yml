@@ -7,7 +7,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: priority-news-production
+  group: news-production
   cancel-in-progress: false
 jobs:
   priority-news:
