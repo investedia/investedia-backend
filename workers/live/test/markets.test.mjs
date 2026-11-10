@@ -1,0 +1,33 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { handleMarkets } from '../v1/markets.js';
+const fixture=JSON.parse(readFileSync(new URL('./fixtures/markets-pilot.json',import.meta.url)));
+function setup(){
+ const objects=structuredClone(fixture.objects),version=fixture.version;
+ // Simulate an explicitly published artifact in memory, never use this fixture with publisher.
+ objects['api-manifest.json'].fixture=false;objects['api-manifest.json'].publication_eligible=true;
+ const pointer={version,updated_at:new Date().toISOString()};let reads=0;
+ const env={MARKETS_API_ENABLED:'true',MARKETS_KV:{get:async key=>{reads++;assert.equal(key,'markets:current');return JSON.stringify(pointer);}},
+ MARKETS_BUCKET:{get:async key=>{reads++;const prefix='markets/'+version+'/';const x=key.startsWith(prefix)?objects[key.slice(prefix.length)]:null;return x?{json:async()=>structuredClone(x)}:null;}}};
+ const call=(path,options={})=>handleMarkets(new Request('https://unit.test/v1/markets/'+path,options),env);
+ return {objects,version,pointer,env,call,reads:()=>reads};
+}
+test('markets flag off returns 404 before storage reads',async()=>{const s=setup();delete s.env.MARKETS_API_ENABLED;assert.equal((await s.call('search')).status,404);assert.equal(s.reads(),0);});
+test('markets read-only methods',async()=>{const s=setup();assert.equal((await s.call('search',{method:'POST'})).status,405);assert.equal((await s.call('search',{method:'OPTIONS'})).status,204);assert.equal(s.reads(),0);});
+test('markets country data has credits and UK no denominator',async()=>{const s=setup();const r=await s.call('country/GB');assert.equal(r.status,200);const b=await r.json();assert.equal(b.data.iso2,'GB');assert.equal(b.data.coverage.issuer_coverage_pct,null);assert.ok(b.meta.source_credits.includes('SEC EDGAR'));assert.equal(b.meta.notice,'Not investment advice');});
+test('markets search paginates stable version and excludes delisted',async()=>{const s=setup();const first=await(await s.call('search?country=US&limit=1')).json();assert.equal(first.data.total,3);assert.equal(first.data.rows.length,1);assert.equal(first.data.next_page,2);const second=await(await s.call('search?country=US&limit=1&page=2&version='+s.version)).json();assert.notEqual(first.data.rows[0].id,second.data.rows[0].id);const all=await(await s.call('search')).json();assert.ok(all.data.rows.every(r=>r.ticker!=='OLD'));});
+test('markets hides unverified under same nonverification filters',async()=>{const s=setup();const api=s.objects['api-manifest.json'];const ids=s.objects[api.filters['country:US']];const id=ids[0];s.objects[api.filters['verified:true']]=s.objects[api.filters['verified:true']].filter(x=>x!==id);s.objects['rows/'+id.split(':')[1][0]+'.json'][id].verification_status='unverified';const hidden=await(await s.call('search?country=US')).json();assert.equal(hidden.data.hidden_unverified,1);assert.equal(hidden.data.total,2);const shown=await(await s.call('search?country=US&verified=false')).json();assert.equal(shown.data.total,3);assert.equal(shown.data.hidden_unverified,0);const uk=await(await s.call('search?country=GB')).json();assert.equal(uk.data.hidden_unverified,0);});
+test('markets query validation and pagination bounds',async()=>{const s=setup();for(const query of ['page=0','page=-1','page=1.1','limit=101','country=US&country=GB','bad=x','verified=yes','currency=usd','page=100'])assert.equal((await s.call('search?'+query)).status,400,query);for(const query of ['type=ETF','country=FR','exchange=OTC','currency=XYZ'])assert.equal((await s.call('search?'+query)).status,422,query);assert.equal((await s.call('search?version=old')).status,409);});
+test('markets company returns linked multi-listings and validates id',async()=>{const s=setup();const search=await(await s.call('search?exchange=XNAS')).json();const id=search.data.rows[0].issuer_id;const r=await(await s.call('company/'+encodeURIComponent(id))).json();assert.equal(r.data.listings.length,2);assert.equal(r.data.securities.length,1);assert.equal(r.data.page,1);assert.equal((await s.call('company/bad')).status,400);assert.equal((await s.call('company/I:'+'0'.repeat(20))).status,404);assert.equal((await s.call('company/'+id+'?limit=51')).status,400);});
+test('markets connections bounded and typed separately',async()=>{const s=setup();const r=await(await s.call('connections/US?limit=1')).json();assert.deepEqual(r.data.corporate,[]);assert.deepEqual(r.data.currency,[]);assert.equal(r.data.base,'USD');assert.equal((await s.call('connections/US?limit=51')).status,400);assert.equal((await s.call('connections/US?page=2')).status,400);assert.equal((await s.call('connections/FR')).status,404);});
+test('markets fixture, missing snapshot, corruption fail closed',async()=>{const s=setup();s.objects['api-manifest.json'].fixture=true;assert.equal((await s.call('search')).status,503);s.objects['api-manifest.json'].fixture=false;s.objects['api-manifest.json'].updated_at='bad';assert.equal((await s.call('search')).status,503);});
+test('markets previous-version fallback is bounded to 24 hours',async()=>{const s=setup();s.pointer.previous_version=s.version;s.pointer.version='20261110T140000Z-aaaaaaaaaaaa';let r=await s.call('search');assert.equal(r.status,200);assert.equal((await r.json()).meta.stale,true);s.pointer.updated_at='2020-01-01T00:00:00Z';assert.equal((await s.call('search')).status,503);});
+test('markets ETag supports conditional GET and bounded subrequests',async()=>{const s=setup();const r=await s.call('search?limit=100');assert.equal(r.status,200);assert.ok(s.reads()<25);assert.equal((await s.call('search?limit=100',{headers:{'If-None-Match':r.headers.get('ETag')}})).status,304);});
+test('markets cache hit marks previous-version fallback stale',async()=>{
+ const s=setup(),saved=globalThis.caches,entries=new Map(),pending=[];
+ globalThis.caches={default:{match:async key=>entries.get(key.url)?.clone(),put:async(key,value)=>entries.set(key.url,value.clone())}};
+ const call=()=>handleMarkets(new Request('https://cache.test/v1/markets/search'),s.env,{waitUntil:p=>pending.push(p)});
+ try{let r=await call();assert.equal((await r.json()).meta.stale,false);await Promise.all(pending);s.pointer.previous_version=s.version;s.pointer.version='20261110T140000Z-aaaaaaaaaaaa';r=await call();const body=await r.json();assert.equal(body.meta.stale,true);assert.equal(body.meta.reason,'active_snapshot_unavailable_previous_version');}
+ finally{if(saved===undefined)delete globalThis.caches;else globalThis.caches=saved;}
+});

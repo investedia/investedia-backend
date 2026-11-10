@@ -1,0 +1,59 @@
+name: US UK Markets registry (artifact only)
+on:
+  workflow_dispatch:
+    inputs:
+      max_download_mb:
+        description: 'Hard raw-download budget in MiB (256–8192); default 6144'
+        default: '6144'
+        required: true
+permissions:
+  contents: read
+concurrency:
+  group: markets-pilot-registry
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offline pilot verification
+        run: python -m unittest discover -s tests -p test_markets_pilot.py
+      - uses: actions/cache/restore@v4
+        with:
+          path: |
+            .local/markets-pilot/versions
+            .local/markets-pilot/last-good.json
+          key: markets-pilot-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: markets-pilot-
+      - name: Ingest, reconcile and validate approved sources
+        id: registry
+        env:
+          DOWNLOAD_MB: ${{ inputs.max_download_mb }}
+        run: python -m tools.markets_pilot.run --fetch --max-download-mb "$DOWNLOAD_MB"
+      - uses: actions/cache/save@v4
+        with:
+          path: |
+            .local/markets-pilot/versions
+            .local/markets-pilot/last-good.json
+          key: markets-pilot-${{ github.run_id }}-${{ github.run_attempt }}
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: markets-pilot-${{ steps.registry.outputs.version || github.run_id }}
+          path: |
+            .local/markets-pilot/versions/
+            .local/markets-pilot/last-good.json
+            .local/markets-pilot/build-result.json
+            .local/markets-pilot/reports/
+            .local/markets-pilot/raw/manifest.json
+          retention-days: 14
+          if-no-files-found: warn
+      - name: Visible failure
+        if: failure()
+        run: echo '::error::Registry build failed. Last good artifact was retained. No Worker deployment or KV/R2 publication was attempted.'

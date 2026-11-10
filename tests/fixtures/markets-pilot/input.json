@@ -1,0 +1,273 @@
+{
+  "NOTICE": "SYNTHETIC OFFLINE FIXTURE; not live listings, market data, financial facts or allocated new identifiers. Never publish.",
+  "snapshot": {
+    "retrieved_at": "2026-11-10T12:00:00Z",
+    "fixture": true
+  },
+  "sec": {
+    "directory": [
+      {
+        "cik": "0000320193",
+        "name": "Unit issuer one",
+        "ticker": "DUAL",
+        "exchange": "NYSE"
+      },
+      {
+        "cik": "0000320193",
+        "name": "Unit issuer one",
+        "ticker": "DUAL",
+        "exchange": "Nasdaq"
+      },
+      {
+        "cik": "0000789019",
+        "name": "Unit issuer two",
+        "ticker": "SAME",
+        "exchange": "NYSE"
+      },
+      {
+        "cik": "0001652044",
+        "name": "Unit delisted issuer",
+        "ticker": "OLD",
+        "exchange": "Nasdaq"
+      }
+    ],
+    "submissions": {
+      "0000320193": {
+        "cik": "0000320193",
+        "name": "Unit issuer one",
+        "tickers": [
+          "DUAL"
+        ],
+        "exchanges": [
+          "NYSE",
+          "Nasdaq"
+        ],
+        "sic": "3571",
+        "sicDescription": "Unit industry",
+        "filings": {
+          "recent": {
+            "form": [
+              "10-K"
+            ],
+            "accessionNumber": [
+              "0000320193-26-000001"
+            ],
+            "reportDate": [
+              "2025-09-30"
+            ],
+            "filingDate": [
+              "2025-11-01"
+            ],
+            "primaryDocument": [
+              "unit.htm"
+            ]
+          }
+        }
+      },
+      "0000789019": {
+        "cik": "0000789019",
+        "name": "Unit issuer two",
+        "tickers": [
+          "SAME"
+        ],
+        "exchanges": [
+          "NYSE",
+          "Nasdaq"
+        ],
+        "sic": "3571",
+        "sicDescription": "Unit industry",
+        "filings": {
+          "recent": {
+            "form": [
+              "10-K"
+            ],
+            "accessionNumber": [
+              "0000320193-26-000001"
+            ],
+            "reportDate": [
+              "2025-09-30"
+            ],
+            "filingDate": [
+              "2025-11-01"
+            ],
+            "primaryDocument": [
+              "unit.htm"
+            ]
+          }
+        }
+      },
+      "0001652044": {
+        "cik": "0001652044",
+        "name": "Unit delisted issuer",
+        "tickers": [],
+        "exchanges": [
+          "NYSE",
+          "Nasdaq"
+        ],
+        "sic": "3571",
+        "sicDescription": "Unit industry",
+        "filings": {
+          "recent": {
+            "form": [
+              "10-K"
+            ],
+            "accessionNumber": [
+              "0000320193-26-000001"
+            ],
+            "reportDate": [
+              "2025-09-30"
+            ],
+            "filingDate": [
+              "2025-11-01"
+            ],
+            "primaryDocument": [
+              "unit.htm"
+            ]
+          }
+        }
+      }
+    },
+    "companyfacts": {}
+  },
+  "wikidata": [
+    {
+      "issuer_qid": "Q312",
+      "issuer_name": "Unit issuer one",
+      "cik": "0000320193",
+      "lei": "HWUPKR0MPOU8FGXBT394",
+      "security_qid": "Q100000001",
+      "isin": "US0378331005",
+      "security_type": "stock",
+      "mic": "XNYS",
+      "ticker": "DUAL",
+      "active": true,
+      "currency": "USD",
+      "industry_qid": "Q1",
+      "hq": {
+        "lat": 37.3,
+        "lon": -122.0,
+        "location_kind": "headquarters",
+        "source": "Wikidata (CC0)"
+      }
+    },
+    {
+      "issuer_qid": "Q312",
+      "issuer_name": "Unit issuer one",
+      "cik": "0000320193",
+      "lei": "HWUPKR0MPOU8FGXBT394",
+      "security_qid": "Q100000001",
+      "isin": "US0378331005",
+      "security_type": "stock",
+      "mic": "XNAS",
+      "ticker": "DUAL",
+      "active": true,
+      "currency": "USD",
+      "industry_qid": "Q1",
+      "hq": {
+        "lat": 37.3,
+        "lon": -122.0,
+        "location_kind": "headquarters",
+        "source": "Wikidata (CC0)"
+      }
+    },
+    {
+      "issuer_qid": "Q2283",
+      "issuer_name": "Unit issuer two",
+      "cik": "0000789019",
+      "security_qid": "Q100000002",
+      "isin": "US5949181045",
+      "security_type": "stock",
+      "mic": "XNYS",
+      "ticker": "SAME",
+      "active": true,
+      "currency": "USD"
+    },
+    {
+      "issuer_qid": "Q100000003",
+      "issuer_name": "Unit UK issuer",
+      "security_qid": "Q100000004",
+      "isin": null,
+      "lei": null,
+      "security_type": "stock",
+      "mic": "XLON",
+      "ticker": "SAME",
+      "active": true,
+      "currency": "GBP",
+      "legal_country": "GB",
+      "companies_house_id": "UNIT0001"
+    },
+    {
+      "issuer_qid": "Q100000005",
+      "issuer_name": "Unit delisted issuer",
+      "cik": "0001652044",
+      "security_type": "stock",
+      "mic": "XNAS",
+      "ticker": "OLD",
+      "active": false
+    }
+  ],
+  "gleif": {
+    "HWUPKR0MPOU8FGXBT394": {
+      "legal_name": "Unit issuer one",
+      "legal_country": "US",
+      "status": "ACTIVE",
+      "parents": []
+    }
+  },
+  "companies_house": {
+    "licence_confirmed": false,
+    "reason": "fixture_licence_not_confirmed",
+    "records": {}
+  },
+  "ecb": {},
+  "economy": {
+    "US": {},
+    "GB": {}
+  },
+  "exchanges": {
+    "XNYS": {
+      "name": "Unit XNYS",
+      "country": "US",
+      "timezone": "America/New_York",
+      "sessions": [
+        {
+          "open": "09:30",
+          "close": "16:00"
+        }
+      ]
+    },
+    "XNAS": {
+      "name": "Unit XNAS",
+      "country": "US",
+      "timezone": "America/New_York",
+      "sessions": [
+        {
+          "open": "09:30",
+          "close": "16:00"
+        }
+      ]
+    },
+    "XASE": {
+      "name": "Unit XASE",
+      "country": "US",
+      "timezone": "America/New_York",
+      "sessions": [
+        {
+          "open": "09:30",
+          "close": "16:00"
+        }
+      ]
+    },
+    "XLON": {
+      "name": "Unit XLON",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "sessions": [
+        {
+          "open": "09:30",
+          "close": "16:00"
+        }
+      ]
+    }
+  }
+}
