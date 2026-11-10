@@ -31,7 +31,7 @@ jobs:
           import json, os, urllib.request
           url = os.environ['WORKER_URL'].rstrip('/')
           assert url.startswith('https://'), 'WORKER_URL must be https'
-          cap = json.load(urllib.request.urlopen(url + '/v1/ingest/news/capabilities', timeout=20))
+          cap = json.load(urllib.request.urlopen(urllib.request.Request(url + '/v1/ingest/news/capabilities', headers={'User-Agent': 'InvestediaRobot/1.0'}), timeout=20))
           assert cap.get('history_ingest_version') == 1, 'Worker lacks history ingest'
           body = open('data/news-gap-import.json', 'rb').read()
           req = urllib.request.Request(url + '/v1/ingest/news', data=body, method='POST', headers={'Content-Type': 'application/json', 'Authorization': 'Bearer ' + os.environ['NEWS_INGEST_TOKEN'], 'User-Agent': 'InvestediaRobot/1.0'})
