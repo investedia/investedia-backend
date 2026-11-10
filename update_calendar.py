@@ -27,7 +27,7 @@ prev = {}
 if os.path.exists(OUT[0]):
     try: prev = json.load(open(OUT[0]))
     except Exception: pass
-out = {'updated_at': NOW.strftime('%Y-%m-%dT%H:%M:%SZ'), 'events': prev.get('events', []), 'earnings': prev.get('earnings', []),
+out = {'updated_at': NOW.strftime('%Y-%m-%dT%H:%M:%SZ'), 'events': prev.get('events', []), 'earnings': prev.get('earnings', []) if os.environ.get('CALENDAR_UNLICENSED') == 'on' else [],
        'sources': {'events': 'US BLS, BEA and Federal Reserve schedules' + ('; ForexFactory calendar' if os.environ.get('CALENDAR_UNLICENSED') == 'on' else ''), 'earnings': 'Nasdaq earnings calendar' if os.environ.get('CALENDAR_UNLICENSED') == 'on' else ''}}
 
 # Economic releases: both weeks, all impacts, retain released values for 30 days.
@@ -65,6 +65,7 @@ try:
     # Merge by release identity; a later empty feed field must not erase an actual.
     merged = {}
     for e in prev.get('events', []):
+        if os.environ.get('CALENDAR_UNLICENSED') != 'on' and not e.get('src'): continue  # drop earlier rows from unlicensed feeds
         try:
             if datetime.fromisoformat(e['at'].replace('Z', '+00:00')) >= NOW - timedelta(days=30): merged[(e['at'], e['c'], e['t'])] = e
         except (ValueError, KeyError): pass
