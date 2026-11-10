@@ -3,6 +3,8 @@ import argparse
 import hashlib
 import json
 import math
+import urllib.request
+import urllib.error
 from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -129,10 +131,35 @@ def markdown(report):
           'New feed sources and new market prices remain ineligible until reachability, robots/terms and redistribution licensing are verified. Existing Yahoo-derived quotes are not used for new connections.']
     return '\n'.join(out)+'\n'
 
+class NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self,*args):raise ValueError('redirect_requires_review')
+
+def fetch_api(url):
+    from urllib.parse import urlsplit
+    u=urlsplit(url)
+    if u.scheme!='https' or u.username or u.password or u.query:raise ValueError('public_https_base_required')
+    req=urllib.request.Request(url,headers={'User-Agent':'InvestediaRobot/1.0'})
+    with urllib.request.build_opener(NoRedirect()).open(req,timeout=20) as response:
+        raw=response.read(5_000_001)
+        if len(raw)>5_000_000:raise ValueError('API_response_too_large')
+        return json.loads(raw)
+
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--live',type=Path,required=True);p.add_argument('--output',type=Path,default=ROOT/'data/coverage');p.add_argument('--now');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--live',type=Path);p.add_argument('--fetch',action='store_true')
+    p.add_argument('--diagnostic-fallback',action='store_true');p.add_argument('--output',type=Path,default=ROOT/'data/coverage');p.add_argument('--now');a=p.parse_args()
+    if not a.live and not a.fetch:p.error('choose --live FILE or --fetch')
     now=date(a.now) if a.now else datetime.now(timezone.utc)
-    r=generate(ROOT,read(a.live,{}),now,{'requested':'https://api.investedia.com/v1/news','requested_status':'blocked_connect_403','diagnostic_source':'https://investedia-live.adonaykabeya10.workers.dev/v1/news'})
+    status={'requested':'https://api.investedia.com/v1/news','requested_status':'not_probed'}
+    live=read(a.live,{}) if a.live else {}
+    if a.fetch:
+        try:live=fetch_api(status['requested']);status['requested_status']='ok'
+        except (OSError,ValueError):
+            status['requested_status']='blocked_or_unavailable'
+            if not a.diagnostic_fallback:raise
+            status['diagnostic_source']='https://investedia-live.adonaykabeya10.workers.dev/v1/news'
+            live=fetch_api(status['diagnostic_source'])
+    status['input_sha256']=hashlib.sha256(json.dumps(live,sort_keys=True).encode()).hexdigest()
+    r=generate(ROOT,live,now,status)
     a.output.mkdir(parents=True,exist_ok=True);(a.output/'audit.json').write_text(json.dumps(r,indent=2)+'\n');(a.output/'AUDIT.md').write_text(markdown(r))
     print(json.dumps(r['totals']))
 if __name__=='__main__':main()

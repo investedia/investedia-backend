@@ -280,3 +280,34 @@ This is the baseline. Proposed branches are not deployed; live before/after coun
 
 Audit: 0 Gemini calls, no scheduler, no paid service. Existing data and snapshots are read-only. api.investedia.com and official provider access are blocked by the current environment allowlist. No new secrets are needed for the audit.
 New feed sources and new market prices remain ineligible until reachability, robots/terms and redistribution licensing are verified. Existing Yahoo-derived quotes are not used for new connections.
+
+## End-of-task before / after (proposals only)
+
+All 240 per-country records in audit.json include a before_after object with
+observed retained-feed articles, linked-article share and market/basic-field
+counts. These are two read-only observations, not a complete 30-day archive.
+No branch was deployed. Changes in live news, if any, belong to the pre-existing
+hourly robot and cannot be attributed to these proposals.
+
+| Proposal branch | Prepared | Published improvement / blocker |
+|---|---|---|
+| codex/news-feeds-expand | Inventory, original-date/robots/licensing probes | 0 new feeds; official-source probes blocked; licence review pending |
+| codex/news-connections | Country/asset map, evidence-only resolver, ten-country replay tests | 0 new links; missing licensed quotes and explicit relationships |
+| codex/markets-coverage | ECB reference-FX adapter, 30-return correlation engine | 0 new prices/moves/pairs; source/terms blocked; 63 exchanges lack licensed dated series/hours |
+| codex/country-basics | 990 preserved dated numeric observations, seven-indicator WDI adapter, gated weekly artifact | 0 new numeric observations; all seven WDI refresh requests blocked |
+
+No Yahoo requests, paid services, financial jobs, V5/Track Record edits, frontend
+changes, deployments or live ingestion were performed. Existing saved timestamps
+were preserved. No new secrets. Optional repository variables, off by default:
+NEWS_CONNECTIONS_ENABLED and COUNTRY_BASICS_ENABLED. The latter only creates a
+review artifact; it does not publish it. Current added hourly Actions minutes /
+Gemini calls per day: **0 / 0**. Gated weekly refresh ceiling if later enabled:
+five minutes/week (about 25/month). The connection replay takes about 0.06 seconds
+locally; official-feed probe 0.10 seconds; hosted added generation timing cannot
+be measured while source access is blocked. These are local diagnostic timings,
+not a measured bill or claimed complete source expansion.
+
+The four feature branches are based on the initial coverage-audit commit and
+should be reviewed after the audit PR. Claude opens all draft PRs. Source-access
+and licence verification are unfinished, so this is partial preparation, not
+completed worldwide coverage.
