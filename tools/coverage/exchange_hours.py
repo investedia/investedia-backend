@@ -39,7 +39,7 @@ def enrich(exchanges,factory,day,version):
  out=copy.deepcopy(exchanges);missing={};filled=[]
  for mic,row in out.items():
   try:
-   if row.get('sessions') or row.get('timezone'):continue # never overwrite reviewed venue data
+   if (row.get('sessions') or row.get('timezone')) and row.get('calendar',{}).get('provider')!='exchange-calendars':continue # never overwrite other reviewed venue data
    metadata=calendar_metadata(factory(mic),day,version)
   except Exception as e:
    missing[mic]=type(e).__name__;continue
@@ -48,6 +48,7 @@ def enrich(exchanges,factory,day,version):
 
 def main():
  import exchange_calendars as xc
+ if xc.__version__!='4.13.2':raise ValueError('install_the_pinned_calendar_version_before_import')
  p=argparse.ArgumentParser();p.add_argument('--as-of',default=datetime.now(timezone.utc).date().isoformat());a=p.parse_args()
  path=ROOT/'data/exchanges.json';ex=json.loads(path.read_text());out,report=enrich(ex,xc.get_calendar,date.fromisoformat(a.as_of),xc.__version__)
  path.write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
