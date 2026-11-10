@@ -1,0 +1,72 @@
+{
+  "id": "n408001b511",
+  "headline": "Nigerian Naira Strengthens as Foreign Exchange Turnover Jumps",
+  "summary": "The naira appreciated against the US dollar at Nigeria's official foreign exchange market as FX turnover increased significantly.",
+  "why": "Foreign exchange turnover and exchange rate movements are vital for assessing liquidity and macroeconomic stability in emerging markets.",
+  "category": "economy",
+  "event_type": "macro-data",
+  "importance": 2,
+  "flag": null,
+  "market_moving": true,
+  "location": {
+    "place": "Lagos",
+    "country": "Nigeria",
+    "lat": 6.524,
+    "lon": 3.379,
+    "region": "af"
+  },
+  "entities": [],
+  "links": [],
+  "source": {
+    "name": "naija247news.com",
+    "url": "https://naija247news.com/naira-strengthens-to-%E2%82%A61346-79-as-fx-turnover-jumps-184-to-233m/"
+  },
+  "sources": [
+    {
+      "name": "naija247news.com",
+      "url": "https://naija247news.com/naira-strengthens-to-%E2%82%A61346-79-as-fx-turnover-jumps-184-to-233m/"
+    },
+    {
+      "name": "naija247news.com",
+      "url": "https://naija247news.com/naira-strengthens-to-%E2%82%A61346-79-as-fx-turnover-jumps-184-to-233m/"
+    }
+  ],
+  "published_at": "2026-11-07T17:30:00Z",
+  "retrieved_at": "2026-11-07T18:39:42Z",
+  "official": false,
+  "ai_summary": true,
+  "score": 53.4,
+  "content_hash": "3b44faf068a23ada",
+  "impacts": [
+    {
+      "kind": "asset",
+      "name": "USD/NGN",
+      "country": "NG",
+      "ticker": null,
+      "direction": "down",
+      "why": "Higher FX turnover and improved liquidity strengthened the naira against the US dollar.",
+      "role": "primary",
+      "relation": "subject",
+      "asset_class": "fx",
+      "confidence": "high",
+      "created_at": "2026-11-07T18:39:42Z",
+      "version": "impact-gemini-v2",
+      "model": "gemini-3.5-flash-lite",
+      "horizon": "24h",
+      "baseline_rule": "first recorded price at or after created_at (15-minute price recorder); end = first price at least 24 h later, within 48 h",
+      "scorable": false,
+      "unresolved": "no-ticker"
+    }
+  ],
+  "why_moved": "An increase in foreign exchange turnover boosted the local currency's valuation.",
+  "image": {
+    "kind": "topic",
+    "file": "photos/banknotes-money-8033100.jpg",
+    "alt": "banknotes money (illustration)",
+    "credit": "vjkombajn",
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "source": "Pixabay",
+    "source_url": "https://pixabay.com/photos/money-cash-czech-crowns-banknotes-8033100/"
+  }
+}
