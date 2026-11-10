@@ -1,0 +1,2 @@
+# Optional offline calendar importer only; no dependency for normal Worker/Python tests.
+exchange-calendars==4.13.2
