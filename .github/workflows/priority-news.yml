@@ -36,6 +36,7 @@ jobs:
       - name: Generate and ingest priority news
         working-directory: backend
         env:
+          NEWS_CONNECTIONS_ENABLED: ${{ vars.NEWS_CONNECTIONS_ENABLED }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           WORKER_URL: ${{ secrets.WORKER_URL }}
           NEWS_INGEST_TOKEN: ${{ secrets.NEWS_INGEST_TOKEN }}

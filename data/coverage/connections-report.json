@@ -1,0 +1,12 @@
+{
+  "resolved_impacts": 0,
+  "rejected": {
+    "ambiguous_or_missing_registry_asset": 95,
+    "insufficient_relationship_evidence": 24,
+    "sector_requires_named_explicit_asset": 35,
+    "missing_real_price": 1
+  },
+  "gemini_calls": 0,
+  "articles": 360,
+  "seconds": 0.0618
+}

@@ -45,6 +45,8 @@ def main(argv=None):
                 subprocess.run([sys.executable,'-X','utf8',str(ROOT/'update_globe_news.py'),'--tier','priority'],cwd=ROOT,env=env,stdout=output,stderr=subprocess.STDOUT,check=True,timeout=420)
             status=json.loads((ROOT/'assets/globe/news-status.json').read_text(encoding='utf-8'))
             verify_generation(status,started)
+            if os.environ.get('NEWS_CONNECTIONS_ENABLED') == 'true':
+                subprocess.run([sys.executable,str(ROOT/'tools/coverage/resolve_impacts.py'),'--write'],cwd=ROOT,env=env,check=True,timeout=30)
             with log.open('a',encoding='utf-8') as output:
                 subprocess.run([sys.executable,'-X','utf8',str(ROOT/'tools/globe-news/connections.py')],cwd=ROOT,env=env,stdout=output,stderr=subprocess.STDOUT,check=True,timeout=90)
             subprocess.run([sys.executable,str(ROOT/'tools/push-news-to-worker.py')],cwd=ROOT,env=env,check=True,timeout=45)
