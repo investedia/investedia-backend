@@ -55,7 +55,7 @@ class RegionalTests(unittest.TestCase):
   budget=m.ModelBudget(transport);body=json.dumps({'contents':[{'parts':[{'text':'test-only'}]}],'generationConfig':{}}).encode()
   for _ in range(m.MAX_CALLS):budget.get('https://generativelanguage.googleapis.com/v1beta/models/test:generateContent',data=body,timeout=240)
   with self.assertRaises(m.BudgetExceeded):budget.get('https://generativelanguage.googleapis.com/v1beta/models/test:generateContent',data=body)
-  self.assertEqual(len(sent),8);self.assertEqual(sent[0]['timeout'],90);self.assertEqual(json.loads(sent[0]['data'])['generationConfig']['maxOutputTokens'],8192)
+  self.assertEqual(len(sent),m.MAX_CALLS);self.assertEqual(sent[0]['timeout'],90);self.assertEqual(json.loads(sent[0]['data'])['generationConfig']['maxOutputTokens'],8192)
  def test_cap_cannot_be_exceeded_by_many_candidates(self):
   rows,_=m.parse_feed((FIXTURE/'saved-feed.xml').read_text(),SOURCE,NOW,7)
   candidates=[{**rows[0],'url':f'https://fixture.invalid/{i}','source':f'test-only-feed-{i%20}'} for i in range(501)]
@@ -133,7 +133,12 @@ class RecoveryIntegrationTests(unittest.TestCase):
     if url.endswith('/capabilities'):return json.dumps({'regional_backfill_version':1,'history_connections_version':1,'history_count':0,'history_capacity':240,'history_ids':[]})
     raise AssertionError('unexpected HTTP request: '+url)
    with patch.object(m,'ROOT',root),patch.object(m,'request',side_effect=request),patch.object(m.robot,'gemini',return_value=[{'id':original['id'],'impacts':[]}]),patch.object(m.uploader,'push') as upload:
-    result=m.run(7,True,True,{},root/'review','https://fixture.invalid')
+    with patch.object(m,'feed_sources',return_value=([],[])):
+     result=m.run(7,True,False,{},root/'review','https://fixture.invalid',gemini_model='gemini-fixture')
+    self.assertEqual(result['repair_sources']['news-48h.json']['articles'],1)
+    self.assertEqual(result['repair_missing_impacts_scanned'],1)
+    self.assertEqual(result['selected_model'],'gemini-fixture')
+    self.assertIn('processed_by_region',result);self.assertIn('deferred_by_region',result)
    upload.assert_not_called();self.assertEqual(result['state'],'dry_run_complete');self.assertEqual(result['articles_checked'],1)
    self.assertTrue((root/'review/report.json').exists());self.assertTrue((root/'review/threads.json').exists())
    self.assertEqual(initial,{p.name:p.read_bytes() for p in assets.iterdir() if p.is_file()})
@@ -173,7 +178,44 @@ class LegacyRetryBudgetTests(unittest.TestCase):
   def unavailable(url,**kwargs):calls.append(url);raise OSError('offline unit failure')
   budget=m.ModelBudget(unavailable)
   with patch.object(m.robot,'get',side_effect=budget.get),patch.object(m.robot,'GEMINI','unit-only-not-a-real-key'),patch.object(m.robot,'gemini_models',return_value=['unit-model-'+str(i) for i in range(6)]),patch.object(m.robot.time,'sleep'):
-   with self.assertRaises(m.BudgetExceeded):m.robot.gemini('offline unit prompt')
-  self.assertEqual(len(calls),8);self.assertEqual(budget.calls,8)
+   with self.assertRaises(m.ModelUnavailable):m.robot.gemini('offline unit prompt')
+  self.assertEqual(len(calls),1);self.assertEqual(budget.calls,1)
 
 if __name__=='__main__':unittest.main()
+
+class RegionalFixTests(unittest.TestCase):
+ def test_pins_live_hourly_or_explicit_model_without_guessing_names(self):
+  self.assertEqual(m.selected_model(None,{'meta':{'model':'gemini-live'}},{'gemini_model':'gemini-old','gemini_ok':True}),'gemini-live')
+  self.assertEqual(m.selected_model('gemini-owner',{'meta':{'model':'gemini-live'}},{}),'gemini-owner')
+  with self.assertRaises(ValueError):m.selected_model(None,{}, {})
+  with self.assertRaises(ValueError):m.selected_model('https://not-a-model',{}, {})
+ def test_discovery_is_at_most_one_actual_request(self):
+  calls=[];budget=m.ModelBudget(lambda *args,**kw:calls.append(args) or '{}')
+  budget.get('https://generativelanguage.googleapis.com/v1beta/models')
+  with self.assertRaises(m.BudgetExceeded):budget.get('https://generativelanguage.googleapis.com/v1beta/models')
+  self.assertEqual(len(calls),1);self.assertEqual(budget.discovery,1)
+ def test_call_budget_inputs_are_bounded_and_context_is_logged(self):
+  for value in [0,41]:
+   with self.assertRaises(ValueError):m.ModelBudget(lambda:None,limit=value)
+  budget=m.ModelBudget(lambda *args,**kw:'{}',limit=1)
+  budget.context={'purpose':'new_articles','input_candidates':25}
+  body=json.dumps({'contents':[{'parts':[{'text':'offline unit prompt'}]}]}).encode()
+  budget.get('https://generativelanguage.googleapis.com/v1beta/models/gemini-fixture:generateContent',data=body)
+  with self.assertRaises(m.BudgetExceeded):budget.get('https://generativelanguage.googleapis.com/v1beta/models/gemini-fixture:generateContent',data=body)
+  self.assertEqual(budget.call_log[0]['input_candidates'],25);self.assertEqual(budget.calls,1)
+ def test_regions_get_balanced_reserves_before_global_publishers(self):
+  rows,_=m.parse_feed((FIXTURE/'saved-feed.xml').read_text(),SOURCE,NOW,7)
+  candidates=[{**rows[0],'url':f'https://fixture.invalid/{region}/{i}','feed_region':region,'region':region} for region in m.REGIONAL_ORDER for i in range(100)]
+  candidates += [{**rows[0],'url':f'https://fixture.invalid/global/{i}','feed_region':None,'region':'global'} for i in range(1000)]
+  selected=m.regional_candidates(candidates,NOW)
+  counts=m.Counter(c['feed_region'] for c in selected)
+  self.assertEqual(len(selected),150);self.assertEqual(set(counts.values()),{25});self.assertNotIn(None,counts)
+ def test_sparse_regional_feeds_do_not_give_their_reserve_to_global(self):
+  rows,_=m.parse_feed((FIXTURE/'saved-feed.xml').read_text(),SOURCE,NOW,7)
+  candidates=[{**rows[0],'url':f'https://fixture.invalid/{i}','feed_region':'af' if i<8 else None} for i in range(500)]
+  selected=m.regional_candidates(candidates,NOW)
+  self.assertEqual(sum(c['feed_region']=='af' for c in selected),8);self.assertLessEqual(len(selected),10)
+ def test_deadline_stops_model_requests_before_transport(self):
+  budget=m.ModelBudget(lambda *args,**kw:self.fail('deadline must stop before request'),deadline=0)
+  with self.assertRaises(m.BudgetExceeded):budget.get('https://generativelanguage.googleapis.com/v1beta/models')
+  self.assertEqual(budget.discovery,0)

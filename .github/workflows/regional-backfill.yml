@@ -13,6 +13,17 @@ on:
         description: 'Generate the review artifact without ingesting or saving producer state'
         type: boolean
         default: true
+      gemini_model:
+        description: 'Optional exact successful hourly model; blank reads live/status model'
+        default: ''
+      gemini_calls:
+        description: 'Total article/repair call budget: 1–40'
+        default: '20'
+        required: true
+      batch_size:
+        description: 'New article candidates per call: 1–40'
+        default: '25'
+        required: true
       connections_only:
         description: 'Repair only missing/empty impacts on existing articles'
         type: boolean
@@ -39,8 +50,10 @@ jobs:
       - name: Validate bounded inputs before any provider request
         env:
           BACKFILL_DAYS_INPUT: ${{ inputs.days }}
+          BACKFILL_CALLS_INPUT: ${{ inputs.gemini_calls }}
+          BACKFILL_BATCH_INPUT: ${{ inputs.batch_size }}
         run: |
-          python -c 'import os; value=int(os.environ["BACKFILL_DAYS_INPUT"]); assert 1 <= value <= 30, "days must be 1–30"'
+          python -c 'import os; value=int(os.environ["BACKFILL_DAYS_INPUT"]); assert 1 <= value <= 30, "days must be 1–30"; assert 1 <= int(os.environ["BACKFILL_CALLS_INPUT"]) <= 40, "calls must be 1–40"; assert 1 <= int(os.environ["BACKFILL_BATCH_INPUT"]) <= 40, "batch size must be 1–40"'
       - name: Offline recovery tests
         working-directory: backend
         run: python -m unittest discover -s tests -p test_regional_backfill.py
@@ -99,6 +112,9 @@ jobs:
           BACKFILL_CONFIRM_INPUT: ${{ inputs.confirm }}
           BACKFILL_DRY_RUN_INPUT: ${{ inputs.dry_run }}
           BACKFILL_CONNECTIONS_INPUT: ${{ inputs.connections_only }}
+          GEMINI_MODEL: ${{ inputs.gemini_model }}
+          BACKFILL_CALLS_INPUT: ${{ inputs.gemini_calls }}
+          BACKFILL_BATCH_INPUT: ${{ inputs.batch_size }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           WORKER_URL: ${{ secrets.WORKER_URL }}
           NEWS_INGEST_TOKEN: ${{ secrets.NEWS_INGEST_TOKEN }}
@@ -108,6 +124,7 @@ jobs:
           --days "$BACKFILL_DAYS_INPUT" --confirm "$BACKFILL_CONFIRM_INPUT"
           --dry-run "$BACKFILL_DRY_RUN_INPUT" --connections-only "$BACKFILL_CONNECTIONS_INPUT"
           --inventory data/coverage/feed-inventory.json
+          --gemini-calls "$BACKFILL_CALLS_INPUT" --batch-size "$BACKFILL_BATCH_INPUT"
       - name: Save acknowledged state, including a partially acknowledged run
         if: ${{ !cancelled() && !inputs.dry_run && hashFiles('backend/.local/regional-backfill/acknowledged.json') != '' }}
         uses: actions/cache/save@v4

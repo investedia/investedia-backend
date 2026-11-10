@@ -2,7 +2,7 @@
 
 Not investment advice.
 
-Branch: `codex/regional-backfill`. Manual Actions workflow only; no schedule,
+Branch: `codex/regional-backfill-fix` (continuation of regional recovery). Manual Actions workflow only; no schedule,
 deploy, frontend commit, backfill execution or live ingestion is performed by
 this branch. The priority and broad schedules stay unchanged. All provider/model
 execution is on GitHub's runners; tests here use saved fixtures only.
@@ -40,13 +40,17 @@ days: 7
 confirm: BACKFILL
 dry_run: true
 connections_only: false
+gemini_model: ""  # reads the last successful live/hourly status model
+gemini_calls: 20
+batch_size: 25
 ```
 
 Or, once the workflow is available on main:
 
 ```sh
 gh workflow run regional-backfill.yml --ref main \
-  -f days=7 -f confirm=BACKFILL -F dry_run=true -F connections_only=false
+  -f days=7 -f confirm=BACKFILL -F dry_run=true -F connections_only=false \
+  -f gemini_calls=20 -f batch_size=25
 ```
 
 Download `regional-backfill-review`. Inspect `report.json`, `new-articles.json`,
@@ -91,8 +95,9 @@ recorded separately to avoid paying repeatedly for the same unsuccessful case.
 
 ## Source and evidence rules
 
-- Existing `REGION_FEEDS`, `NEWS_FEEDS` and official `FEEDS` are reused and URLs
-  deduplicated. This includes the `OFFICIAL_RE` regional sources now used hourly.
+- Existing `REGION_FEEDS` and official `FEEDS` are reused and URLs
+  deduplicated, with regional sources first. Non-official global/US publisher feeds
+  already handled hourly are excluded from this recovery. This includes the `OFFICIAL_RE` regional sources now used hourly.
   No invented feed, GDELT date, article-page scrape or unofficial archive crawl.
 - Inventory entries marked unavailable/disallowed/disabled are skipped. Remaining
   feeds are checked against robots.txt; disallowed, inaccessible, HTML/redirect
@@ -152,48 +157,67 @@ A separate Worker archive API/frontend reader bridge is needed for those static
 views to consume the new archive without per-run Pages builds. No frontend
 commits/builds or deployment are silently added by this workflow.
 
-## Budget: 7 and 30 days
+## Model, regional reserves, repairs and cost
 
-| Per run | 7-day request | 30-day request |
-|---|---:|---:|
-| New article ceiling | 150 | 150 |
-| Existing correction ceiling | 150 | 150 |
-| Actual Gemini generateContent attempts, including retries | at most 8 | at most 8 |
-| Model-list requests | at most 1 | at most 1 |
-| Input prompt ceiling per attempt | 65,536 UTF-8 bytes | 65,536 UTF-8 bytes |
-| Maximum output tokens per attempt | 8,192 | 8,192 |
-| Actions job ceiling | 25 minutes | 25 minutes |
+The previous job's eight-call budget was consumed by failed model fallbacks,
+then repair ran only if generation left a call. This made articles_checked zero.
+Now repair runs first, scanning the live Worker response (including KV gap
+history), local live/48h/archive and history sidecar over the last 30 days even
+when fetching only 7 days of new feed items. Missing files and per-source counts
+are explicit. At most150 existing articles are submitted for repair; protected
+editorial fields stay unchanged. An unchanged prior no-link judgement is reported
+separately and does not cause another paid analysis.
 
-A full 150-candidate generation uses up to six nominal 25-candidate calls; the
-remaining two calls can analyse up to 80 existing articles if there are no
-retries. Connections-only needs up to four successful 40-record calls for 150
-records, with retries sharing the same eight-request budget. Relevance, feed
-retention, existing deduplication and per-source balancing usually reduce work;
-no hosted runtime was measured in this sandbox. The budget cannot be exceeded
-by model retries, a 30-day lookback or a larger feed. The total per-run ceiling is 512 KiB of submitted prompt text and 65,536
-requested output tokens across eight attempts. The API's actual usage
-metadata is accumulated by model; failed requests without usage are explicitly counted.
+Model selection: exact `gemini_model` input, otherwise live `meta.model`, then
+saved priority status, then the last successful saved robot model. No guessed model
+names or generation probes. Missing model fails before any Gemini call. A pinned
+model transport failure stops immediately after one request, not a list of fallbacks.
+Model discovery is unused (zero); its safety wrapper permits at most one actual
+list request. `selected_model`, `actual_model_used`, per-call candidate counts,
+purpose, request/token usage and failures without usage are reported.
 
-Dry-run **also uses Gemini** on GitHub. A dry run plus confirmation has at most
-16 generation attempts and a combined 50-minute Actions ceiling, roughly 2.5%
-of a 2,000-minute monthly allowance. The service is the existing Gemini project:
-no new paid provider/key is introduced. Dollar cost depends on that project's
-model/plan and remaining free quota; no zero-dollar guarantee is made. Use the
-reported tokens with the model's current price if billing applies. Local offline
-tests consumed **zero provider/Gemini calls**. No workflow has been dispatched.
+New candidates are taken round-robin across source hints af/latam/me/asia/oc/eu.
+These are balancing hints only, never event location. Global official fallbacks
+are last and limited to min(15, regional_selected/4); thin regional feeds do not
+hand their reserve to global publishers. At most150 new candidates are selected.
+`processed_by_region` / `deferred_by_region` describe source hints; `by_region`
+describes validated event locations. Actual accepted geography can differ and is
+never forced. Review the new report against the majority-regional acceptance goal.
 
-RSS commonly retains only 10–50 items or a few days. A 30-day input does not
-create missing history or enable archive scraping. Dates not present in permitted
-feeds stay missing and are reported. The workflow is a bounded recovery, not a
-claim that worldwide 7/30-day coverage is complete.
+| Limit | 7-day or 30-day run |
+|---|---|
+| New article candidates | 150 maximum |
+| Existing repair submissions | 150 maximum, scanned over30 days |
+| New candidates per call | input batch_size, default25, range1–40 |
+| Generation/repair HTTP calls | input gemini_calls, default20, hard maximum40 |
+| Model list calls | zero normally, hard maximum1 |
+| Prompt bytes per call | 65,536 maximum |
+| Requested output tokens per call | 8,192 maximum |
+| Actions timeout | 25 minutes, model requests stop after24 minutes |
+
+Nominal full work: six25-candidate generation calls plus four40-record repair
+calls, **up to10 calls** before validation/caps reduce work. Default absolute
+ceiling20 calls =1.25MiB submitted prompts /163,840 requested output tokens;
+maximum override40 calls =2.5MiB /327,680 tokens. These are bounds, not measured
+usage or a promise that all candidates will be selected. Actual usage is in the
+artifact. A dry run plus confirmation doubles the selected call budget and has
+an absolute50-minute Actions ceiling. No daily cost or schedule is added. Existing
+Gemini plan/free quota determines billing; no new provider/key is needed.
+
+RSS often retains only10–50 items or a few days. Thirty days does not reconstruct
+missing feed history or authorize archive scraping. Local offline checks consumed
+zero provider/Gemini calls. **Nothing has been dispatched or ingested by Codex.**
+The task brief explicitly requires code/offline verification only; a new hosted
+dry run remains an owner action after review/merge. The GitHub API also currently
+returns Forbidden here. Do not claim the live regional-majority acceptance result.
 
 ## Offline verification
 
-163 Python tests passed (4 pre-existing skips); all 45 existing Worker tests and
-7 new regional-history tests passed (52 total); Java `verify` passed 13 tests.
-The recovery-specific tests cover saved original dates/links, source preservation,
-no page/photo fetching, inventory/robots skips, state and Worker deduplication,
-48-hour routing, <=80-record batches, fixed budgets including legacy retries,
-secret-output rejection, immutable cached/article/event fields, events/threads
-artifacts, safe dry runs, unchanged schedules, capacity and idempotent repairs.
-These checks do not prove live provider availability or deployed Worker support.
+212 Python tests pass (4 pre-existing skips), including25 regional recovery tests;
+all76 Worker tests pass; Java verify passes13 tests. Existing unclosed-file
+ResourceWarnings remain in news_core/events/older tests; no new failures.
+Coverage includes pinned-model failure, zero/one discovery, bounded inputs and
+per-call context, regional reserves, normal-mode missing-impact repair, source/date
+preservation, inventory/robots exclusions, dedupe,48h routing,80-record batches,
+secret-output guards, immutable cached/article/event fields and idempotence.
+No user interface changes; review artifacts replace UI screenshots for this task.

@@ -44,7 +44,9 @@ UA = 'InvestediaRobot/1.0'
 MAX_NEW = 150
 MAX_REPAIRS = 150
 MODEL_BATCH = 25
-MAX_CALLS = 8
+MAX_CALLS = 20
+HARD_CALL_LIMIT = 40
+REGIONAL_ORDER = ('af', 'latam', 'me', 'asia', 'oc', 'eu')
 MAX_OUTPUT_TOKENS = 8192
 MAX_PROMPT_BYTES = 65536
 ALLOWED_REPAIR_FIELDS = {'impacts', 'ripples', 'sectors'}
@@ -76,15 +78,53 @@ class BudgetExceeded(BaseException):
     """Escapes the legacy robot's broad retry catches without issuing another call."""
 
 
+class ModelUnavailable(BaseException):
+    """A pinned model failed: do not let legacy retry/fallback loops spend the budget."""
+
+
+def selected_model(explicit, live, saved):
+    candidates = [explicit, live.get('meta', {}).get('model'),
+        saved.get('tiers', {}).get('priority', {}).get('gemini_model'),
+        saved.get('tiers', {}).get('priority', {}).get('model'),
+        saved.get('gemini_model') if saved.get('gemini_ok') else None]
+    for candidate in candidates:
+        if candidate:
+            if not isinstance(candidate, str) or not re.fullmatch(r'gemini-[A-Za-z0-9._-]{1,100}', candidate):
+                raise ValueError('invalid_GEMINI_MODEL_name')
+            return candidate
+    raise ValueError('successful_hourly_model_unknown_set_GEMINI_MODEL')
+
+
+def regional_candidates(candidates, now, limit=MAX_NEW):
+    """Source tags balance selection; they are never event-location evidence."""
+    groups = {region: [] for region in REGIONAL_ORDER}
+    other = []
+    for candidate in sorted(candidates, key=lambda c: core.score(c, now), reverse=True):
+        region = candidate.get('feed_region')
+        (groups[region] if region in groups else other).append(candidate)
+    selected = []
+    while len(selected) < limit and any(groups.values()):
+        for region in REGIONAL_ORDER:
+            if groups[region] and len(selected) < limit:
+                selected.append(groups[region].pop(0))
+    # Global publishers cannot consume regional reserves when regional feeds are thin.
+    fallback = min(limit - len(selected), limit // 10, len(selected) // 4)
+    return selected + other[:fallback]
+
+
 class ModelBudget:
-    def __init__(self, transport):
+    def __init__(self, transport, limit=MAX_CALLS, deadline=None):
+        if not 1 <= limit <= HARD_CALL_LIMIT: raise ValueError('gemini_calls_must_be_1_to_40')
+        self.limit=limit;self.deadline=deadline;self.context={};self.call_log=[]
         self.transport = transport; self.calls = 0; self.discovery = 0; self.stop_reason = None
         self.usage=Counter(); self.usage_known_calls=0; self.by_model={}
     def get(self, url, data=None, headers=None, timeout=40, raw=False):
         if urlsplit(url).hostname != 'generativelanguage.googleapis.com':
             raise ValueError('regional_robot_cannot_fetch_article_pages_or_photos')
+        if self.deadline is not None and time.monotonic() >= self.deadline:
+            self.stop_reason='run_deadline_reached';raise BudgetExceeded(self.stop_reason)
         if ':generateContent' in url:
-            if self.calls >= MAX_CALLS:
+            if self.calls >= self.limit:
                 self.stop_reason='fixed_model_call_budget_exhausted';raise BudgetExceeded(self.stop_reason)
             body = json.loads(data)
             prompt = body['contents'][0]['parts'][0]['text']
@@ -94,10 +134,14 @@ class ModelBudget:
             data = json.dumps(body).encode(); self.calls += 1
             model=url.rsplit('/models/',1)[-1].split(':',1)[0]
             self.by_model.setdefault(model,Counter())['attempts']+=1
+            self.call_log.append({'call':self.calls,'model':model,**self.context})
         else:
+            if self.discovery >= 1: raise BudgetExceeded('model_discovery_already_completed')
             self.discovery += 1
-            if self.discovery > 1: raise BudgetExceeded('model_discovery_already_completed')
-        result=self.transport(url, data=data, headers=headers, timeout=min(timeout, 90), raw=raw)
+        try:result=self.transport(url, data=data, headers=headers, timeout=min(timeout, 90), raw=raw)
+        except (OSError, urllib.error.HTTPError) as error:
+            if ':generateContent' not in url:raise
+            self.stop_reason='configured_model_unavailable';raise ModelUnavailable('configured_model_request_failed') from None
         if ':generateContent' in url:
             try:
                 usage=json.loads(result).get('usageMetadata')
@@ -124,9 +168,8 @@ def request(url, data=None, headers=None, timeout=15, raw=False):
 def feed_sources(inventory):
     health = {r['url']: r for r in inventory.get('feeds', [])}
     if not health: raise ValueError('feed_inventory_required_run_coverage_fetch_first')
-    configured = [(u,n,h,None) for u,n,h in robot.FEEDS]
-    configured += [(u,n,'',None) for u,n in robot.NEWS_FEEDS]
-    configured += [(u,n,'',r) for u,n,r in robot.REGION_FEEDS]
+    configured = [(u,n,'',r) for u,n,r in robot.REGION_FEEDS]
+    configured += [(u,n,h,None) for u,n,h in robot.FEEDS if robot.OFFICIAL_RE.search(n)]
     seen = set(); enabled = []; skipped = []
     for url,name,hint,region in configured:
         if url in seen: continue
@@ -277,14 +320,16 @@ def evidence(articles,now,registry,prices,licences):
     return resolved,reasons
 
 
-def generate_new(candidates,now,box,by_iso,sym):
+def generate_new(candidates,now,box,by_iso,sym,batch_size=MODEL_BATCH,budget=None):
     out=[];processed=[]
-    balanced=robot.balance(sorted(candidates,key=lambda c:core.score(c,now),reverse=True),limit=MAX_NEW)
-    for start in range(0,len(balanced),MODEL_BATCH):
-        part=balanced[start:start+MODEL_BATCH]
+    if not 1 <= batch_size <= 40:raise ValueError('batch_size_must_be_1_to_40')
+    balanced=regional_candidates(candidates,now)
+    for start in range(0,len(balanced),batch_size):
+        part=balanced[start:start+batch_size]
+        if budget is not None:budget.context={'purpose':'new_articles','input_candidates':len(part),'by_feed_region':dict(Counter(c.get('feed_region') or 'global' for c in part))}
         robot.status['gemini_ok']=False
         try:
-            got=robot.pick_stories(part,box,by_iso,sym,set(by_iso),min(MODEL_BATCH,MAX_NEW-len(out)),
+            got=robot.pick_stories(part,box,by_iso,sym,set(by_iso),min(batch_size,MAX_NEW-len(out)),
                                    preserve_source=True,feed_only=True,backfill=True)
         except BudgetExceeded:break
         if not robot.status.get('gemini_ok'):break
@@ -299,11 +344,12 @@ def generate_new(candidates,now,box,by_iso,sym):
     return out,processed
 
 
-def repair_existing(rows,by_iso,attempts):
+def repair_existing(rows,by_iso,attempts,budget=None):
     pending=[s for s in rows if not s.get('impacts') and attempts.get(s['id']) != core.content_hash({'title':s.get('headline'),'desc':s.get('summary')})][:MAX_REPAIRS]
     changed=[];checked=[]
     for start in range(0,len(pending),40):
         part=pending[start:start+40];copies=copy.deepcopy(part)
+        if budget is not None:budget.context={'purpose':'connection_repairs','input_candidates':len(part)}
         completed=[]
         try:robot.backfill_impacts(copies,set(by_iso),limit=len(copies),include_empty=True,completed_ids=completed)
         except BudgetExceeded:break
@@ -399,44 +445,51 @@ def archive(rows,base,now):
     events.write_threads(30,now,base=str(base),out=str(base.parent/'threads.json'),reg=robot.R.get())
 
 
-def run(days,dry_run,connections_only,inventory,output,worker):
+def run(days,dry_run,connections_only,inventory,output,worker,gemini_model=None,gemini_calls=MAX_CALLS,batch_size=MODEL_BATCH):
     if not 1<=days<=30:raise ValueError('days_must_be_1_to_30')
+    if not 1<=gemini_calls<=HARD_CALL_LIMIT:raise ValueError('gemini_calls_must_be_1_to_40')
+    if not 1<=batch_size<=40:raise ValueError('batch_size_must_be_1_to_40')
     now=datetime.now(timezone.utc);start=time.monotonic();output.mkdir(parents=True,exist_ok=True)
     report={'schema':'investedia.regional-backfill/v1','notice':'Not investment advice.','days':days,'dry_run':dry_run,
-            'connections_only':connections_only,'started_at':iso(now),'gemini_call_limit':MAX_CALLS,'gemini_calls':0,
+            'connections_only':connections_only,'started_at':iso(now),'gemini_call_limit':gemini_calls,'model_batch_size':batch_size,'gemini_calls':0,
             'feeds':[],'rejections':{},'state':'incomplete','articles_checked':0}
-    budget=ModelBudget(request);old_get,old_log,old_err=robot.get,robot.log,robot.err
+    budget=ModelBudget(request,gemini_calls,deadline=start+24*60);old_get,old_log,old_err=robot.get,robot.log,robot.err
     robot.get=budget.get;robot.UA=UA;robot.log=lambda *args:None
     errors=Counter();robot.err=lambda msg:errors.update(['robot_validation_or_provider_error'])
     robot.NOW=now;robot.ISO_NOW=iso(now)
-    model_cache=[]
     original_models=robot.gemini_models
-    def models():
-        if not model_cache:model_cache.extend(original_models())
-        return model_cache
-    robot.gemini_models=models
+    pinned=[]
+    robot.gemini_models=lambda:list(pinned)
     try:
         worker=uploader.validate_url(worker)
         live=json.loads(request(worker+'/v1/news?regional_read='+str(time.time_ns())))
         caps=json.loads(request(worker+'/v1/ingest/news/capabilities'))
+        pinned.append(selected_model(gemini_model,live,read(ROOT/'assets/globe/news-status.json',{})))
+        report['selected_model']=pinned[0]
         report['inventory_checked_at']=inventory.get('checked_at')
         report['inventory_sha256']=hashlib.sha256(json.dumps(inventory,sort_keys=True).encode()).hexdigest()
         report['historical_capacity']=caps
         if not dry_run and days>2 and caps.get('regional_backfill_version')!=1:
             raise ValueError('Worker_regional_history_support_requires_separate_approved_deployment')
         local=[]
+        report['repair_sources']={}
         for name in ('news-live.json','news-48h.json','news-archive.json','news-gap-history-cache.json'):
-            local+=read(ROOT/'assets/globe'/name,{}).get('stories',[])
+            path=ROOT/'assets/globe'/name;rows=read(path,{}).get('stories',[])
+            report['repair_sources'][name]={'present':path.exists(),'articles':len(rows)};local+=rows
         current=live.get('data',{}).get('stories',[])
         if not current or not live.get('meta',{}).get('fetched_at'):raise ValueError('valid_live_worker_feed_required')
         # Current API record is authoritative for repairs; never hydrate a compact record over it.
         combined={s['id']:s for s in unique_articles(local)};combined.update({s['id']:s for s in current});existing=list(combined.values())
-        existing=[s for s in existing if now-timedelta(days=days)<=stamp(s['published_at'])<=now]
+        report['repair_sources']['Worker_feed_including_gap_history']={'articles':len(current)}
+        repair_rows=[s for s in existing if now-timedelta(days=30)<=stamp(s['published_at'])<=now]
         seen=read(ROOT/'assets/globe/news-seen.json',{}).get('items',{})
         attempts=read(ROOT/'assets/globe/regional-backfill-state.json',{}).get('connection_attempts',{})
         box,by_iso,sym=robot.load_ref();registry=read(ROOT/'data/registry.json')['assets'];mk=read(ROOT/'assets/globe/markets.json')['assets']
         prices={a['s']:a for a in mk};prices.update(read(ROOT/'assets/globe/news-prices.json')['assets']);licences=read(ROOT/'data/coverage/price-licences.json',{})
-        new=[];processed=[];duplicates={}
+        new=[];processed=[];duplicates={};candidates=[]
+        # Repair first: previously generation consumed every call before this step.
+        missing=[s for s in repair_rows if not s.get('impacts')]
+        repairs,checked=repair_existing(repair_rows,by_iso,attempts,budget=budget)
         if not connections_only:
             sources,skipped=feed_sources(inventory);report['feeds']=[{**s,'status':'skipped_inventory'} for s in skipped]
             fetcher=FeedFetcher();raw=[]
@@ -445,11 +498,14 @@ def run(days,dry_run,connections_only,inventory,output,worker):
             candidates,duplicates=dedupe(raw,existing,seen);report['fetched_candidates']=len(raw);report['deduped_candidates']=len(candidates)
             useful=[c for c in candidates if not robot.NOISE.search(c['title'])]
             duplicates['existing_robot_noise_rule']=len(candidates)-len(useful);candidates=useful
-            report['candidate_cap_deferred']=max(0,len(candidates)-MAX_NEW)
-            new,processed=generate_new(candidates,now,box,by_iso,sym)
-        # Leave room in the global HTTP call budget; failed retries consume budget too.
-        repairs=[];checked=[]
-        if budget.calls<MAX_CALLS:repairs,checked=repair_existing(existing,by_iso,attempts)
+            report['candidate_cap_deferred']=len(candidates)-len(regional_candidates(candidates,now))
+            new,processed=generate_new(candidates,now,box,by_iso,sym,batch_size,budget)
+        processed_ids={c['url'] for c in processed}
+        report['processed_by_region']=dict(Counter(c.get('feed_region') or 'global' for c in processed))
+        report['deferred_by_region']=dict(Counter(c.get('feed_region') or 'global' for c in candidates if c['url'] not in processed_ids))
+        report['repair_missing_impacts_scanned']=len(missing)
+        report['repair_model_completed']=len(checked)
+        report['repair_cache_unchanged']=sum(attempts.get(s['id'])==core.content_hash({'title':s.get('headline'),'desc':s.get('summary')}) for s in missing)
         proposals,new_reasons=evidence(new+repairs,now,registry,prices,licences)
         for row in proposals:row.pop('_feed_description',None)
         new_ids={s['id'] for s in new};new=[s for s in proposals if s['id'] in new_ids]
@@ -460,7 +516,7 @@ def run(days,dry_run,connections_only,inventory,output,worker):
         before_conns,_,_=draw_connections([combined[s['id']] for s in proposals if s['id'] not in new_ids],mk)
         prior_ids={c['id'] for c in before_conns};added_connections=[c for c in conns if c['id'] not in prior_ids]
         connected={c['event'] for c in conns}
-        report.update(new_articles=len(new),articles_checked=len(checked),repairs_with_asset_impacts=len(repairs),connections_added=len(added_connections),
+        report.update(new_articles=len(new),articles_checked=len(missing),repairs_with_asset_impacts=len(repairs),connections_added=len(added_connections),
             articles_still_without_links=[{'id':s['id'],'reasons':new_reasons.get(s['id']) or [{'reason':'same_place_dot_or_existing_connection_rule'}]} for s in proposals if s['id'] not in connected],
             rejections={**duplicates,**dict(errors),'connection_rules':dict(rejected)},
             by_feed=dict(Counter(s['backfill_provenance']['feed_url'] for s in new)),by_region=dict(Counter(s['location'].get('region','none') for s in new)),
@@ -470,11 +526,16 @@ def run(days,dry_run,connections_only,inventory,output,worker):
                 'pct':100*sum(region_of(s)==region and s['id'] in connected for s in proposals)/sum(region_of(s)==region for s in proposals)} for region in sorted({region_of(s) for s in proposals})},
             sample_articles=[{'id':s['id'],'headline':s['headline'],'published_at':s['published_at'],'source':s['source']} for s in new[:10]],
             historical_capacity=caps,worker_fetched_at=live['meta']['fetched_at'])
+        examined_ids={s['id'] for s in proposals}
+        for row in missing:
+            if row['id'] not in examined_ids:
+                reason='unchanged_previously_checked' if attempts.get(row['id'])==core.content_hash({'title':row.get('headline'),'desc':row.get('summary')}) else 'not_processed_budget_or_no_valid_model_response'
+                report['articles_still_without_links'].append({'id':row['id'],'reasons':[{'reason':reason}]})
         roll,history,deferred=plan(new,caps,now,days)
         repair_cap={**caps}
         if repair_cap.get('history_count') is not None:repair_cap['history_count']+=len(history)
         repair_cap['history_ids']=[*caps.get('history_ids',[]),*[s['id'] for s in history]]
-        repair_roll,repair_history,repair_deferred=plan(repairs,repair_cap,now,days,True)
+        repair_roll,repair_history,repair_deferred=plan(repairs,repair_cap,now,30,True)
         report['routing']={'rolling_new':len(roll),'history_new':len(history),'rolling_repairs':len(repair_roll),'history_repairs':len(repair_history),'deferred':deferred+repair_deferred}
         write(output/'new-articles.json',new);write(output/'connection-repairs.json',repairs);write(output/'connections.json',{'connections':conns})
         state_root=ROOT/'assets/globe';archive_base=output/'events'
@@ -508,7 +569,7 @@ def run(days,dry_run,connections_only,inventory,output,worker):
             ingest_deferred=publish(new,worker,now,days,False,caps,acknowledged)
             # Capacity is refreshed after new-article ingestion before corrections.
             refreshed=json.loads(request(worker+'/v1/ingest/news/capabilities')) if new else caps
-            ingest_deferred+=publish(repairs,worker,now,days,True,refreshed,acknowledged,combined)
+            ingest_deferred+=publish(repairs,worker,now,30,True,refreshed,acknowledged,combined)
             for c in processed:
                 sid='n'+hashlib.md5(c['url'].encode()).hexdigest()[:10]
                 if sid in new_ids and sid not in acknowledged_ids:continue
@@ -528,6 +589,9 @@ def run(days,dry_run,connections_only,inventory,output,worker):
         report['feed_failures']=sum(f.get('status')=='unavailable_or_redirect_requires_review' for f in report['feeds'])
         report['candidates_processed']=len(processed);report['not_selected_by_existing_robot']=len(processed)-len(new)
         report['state']=('dry_run_partial_generation' if errors or budget.stop_reason else 'dry_run_complete') if dry_run else ('ingestion_acknowledged_partial_capacity' if report.get('ingestion_deferred') else 'ingestion_acknowledged')
+    except ModelUnavailable:
+        report['failure']='configured_model_unavailable_set_successful_hourly_GEMINI_MODEL'
+        raise ValueError('configured_model_unavailable_report_saved') from None
     except BudgetExceeded:
         report['failure']='fixed_Gemini_budget_exhausted_no_further_model_requests'
         raise ValueError('fixed_Gemini_budget_exhausted_report_saved') from None
@@ -536,7 +600,7 @@ def run(days,dry_run,connections_only,inventory,output,worker):
         report['failure']=reason if isinstance(error,ValueError) and re.fullmatch(r'[A-Za-z0-9_]{1,160}',reason) and not contains_secret(reason) else type(error).__name__
         raise ValueError('regional_backfill_incomplete_report_saved') from None
     finally:
-        report.update(gemini_calls=budget.calls,model_discovery_requests=budget.discovery,model_budget_stop=budget.stop_reason,gemini_usage_reported=dict(budget.usage),gemini_by_model={k:dict(v) for k,v in budget.by_model.items()},gemini_calls_without_usage=budget.calls-budget.usage_known_calls,elapsed_seconds=round(time.monotonic()-start,3))
+        report.update(gemini_calls=budget.calls,gemini_calls_detail=budget.call_log,actual_model_used=robot.status.get('gemini_model') if budget.calls else None,model_discovery_requests=budget.discovery,model_budget_stop=budget.stop_reason,gemini_usage_reported=dict(budget.usage),gemini_by_model={k:dict(v) for k,v in budget.by_model.items()},gemini_calls_without_usage=budget.calls-budget.usage_known_calls,elapsed_seconds=round(time.monotonic()-start,3))
         write(output/'report.json',report)
         robot.get=old_get;robot.log=old_log;robot.err=old_err;robot.gemini_models=original_models
     return report
@@ -545,15 +609,18 @@ def run(days,dry_run,connections_only,inventory,output,worker):
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--days',type=int,default=7);p.add_argument('--confirm',required=True)
     p.add_argument('--dry-run',choices=['true','false'],default='true');p.add_argument('--connections-only',choices=['true','false'],default='false')
+    p.add_argument('--gemini-model',default=os.environ.get('GEMINI_MODEL') or None);p.add_argument('--gemini-calls',type=int,default=MAX_CALLS);p.add_argument('--batch-size',type=int,default=MODEL_BATCH)
     p.add_argument('--inventory',type=Path,required=True);p.add_argument('--output',type=Path,default=ROOT/'.local/regional-backfill')
     a=p.parse_args()
     if a.confirm!='BACKFILL':p.error('confirm_must_equal_BACKFILL')
     if not 1<=a.days<=30:p.error('days_must_be_1_to_30')
+    if not 1<=a.gemini_calls<=HARD_CALL_LIMIT:p.error('gemini_calls_must_be_1_to_40')
+    if not 1<=a.batch_size<=40:p.error('batch_size_must_be_1_to_40')
     required=['GEMINI_API_KEY','WORKER_URL']+(['NEWS_INGEST_TOKEN'] if a.dry_run=='false' else [])
     missing=[key for key in required if not os.environ.get(key)]
     if missing:p.error('missing_required_settings: '+', '.join(missing))
     try:
-        result=run(a.days,a.dry_run=='true',a.connections_only=='true',read(a.inventory,{}),a.output,os.environ.get('WORKER_URL',''))
+        result=run(a.days,a.dry_run=='true',a.connections_only=='true',read(a.inventory,{}),a.output,os.environ.get('WORKER_URL',''),a.gemini_model,a.gemini_calls,a.batch_size)
         print(json.dumps({k:result[k] for k in ('state','new_articles','articles_checked','connections_added','gemini_calls','elapsed_seconds')}));return 0
     except (ValueError,OSError):print('Regional backfill incomplete; inspect the saved report. No success claimed.',file=sys.stderr);return 1
 if __name__=='__main__':sys.exit(main())
