@@ -6,6 +6,7 @@ import { canon, contentHash, dedupe, score } from './newscore.js';
 import { day, envelope } from './core.js';
 
 export const PROVIDER = { id: 'rss+gemini', licensed: false, delayed: false };  // publisher RSS terms are unclear for commercial use: see DATA-LICENSING.md
+export const KEEP_ROLLING = 300, ROLLING_MS = 48 * 3600e3;
 export const KEEP = 40, MAX_CAND = 24, MAX_NEW = 10, SEEN_MS = 3 * 86400e3, NEWS_WRITE_BUDGET = 200  // KV puts per day (the stories blob and the small index each count);
 const NOISE = /\b(stock to buy|stocks to buy|price target|horoscope|celebrity|football|soccer)\b/i;
 const KINDS = new Set(['country', 'company', 'asset', 'sector']), DIRS = new Set(['up', 'down', 'mixed', 'unclear']);
@@ -147,9 +148,15 @@ export async function ingestNews(req, env, now = Date.now()) {
   if (body.mode != null) return {status:422,body:{error:'unknown ingestion mode'}};
   const generated = body.generated_at == null ? now : Date.parse(body.generated_at);
   if (generated > now + 300_000) return { status: 422, body: { error: 'generated_at is in the future' } };
-  const stories = body.stories.slice().sort((a, b) => (a.published_at < b.published_at ? 1 : -1)).slice(0, KEEP);
   let cur = null; try { cur = JSON.parse(await env.PRICES.get('news')); } catch {}
   if (cur && validateIngest(cur)) cur = null;
+  // Accumulate: new articles are added to the stored ones (same id or URL = correction, newest copy wins);
+  // everything from the last 48 hours is kept, up to KEEP_ROLLING. Older articles fall off.
+  const keyOf = x => [x.id, x.source?.url];
+  const seen = new Set(), merged = [];
+  for (const x of [...body.stories, ...(cur?.stories || [])]) { const k = keyOf(x); if (k.some(v => v && seen.has(v))) continue; k.forEach(v => v && seen.add(v)); merged.push(x); }
+  const newest = Math.max(...merged.map(x => Date.parse(x.published_at)).filter(Number.isFinite)), cutoff = newest - ROLLING_MS;
+  const stories = merged.filter(x => Date.parse(x.published_at) >= cutoff).sort((a, b) => (a.published_at < b.published_at ? 1 : -1)).slice(0, KEEP_ROLLING);
   if (cur?.generated_at && Date.parse(cur.generated_at) > generated) return { status: 409, body: { error: 'older feed refused' } };
   if (cur && Array.isArray(cur.stories) && JSON.stringify(cur.stories) === JSON.stringify(stories) && (cur.generated_at || null) === (body.generated_at || null)) return { status: 200, body: { ok: true, written: false, reason: 'unchanged' } };
   await env.PRICES.put('news', JSON.stringify({ t: generated, ingested_at: now, stories, model: 'github-ingest', generated_at: body.generated_at || null }));
