@@ -5,7 +5,7 @@ from datetime import datetime,timezone
 ROOT=Path(__file__).resolve().parents[1]
 
 def preflight(require_secrets=False):
-    required=['update_globe_news.py','news_core.py','registry.py','events.py','tools/globe-news/iso.json','tools/globe-news/wb-countries.json','tools/globe-news/connections.py','assets/globe/countries-50m.json','assets/globe/news-live.json','assets/quotes.js']
+    required=['update_globe_news.py','news_core.py','registry.py','events.py','tools/globe-news/iso.json','tools/globe-news/wb-countries.json','tools/globe-news/connections.py','tools/push-connections-to-worker.py','assets/globe/countries-50m.json','assets/globe/news-live.json','assets/quotes.js']
     missing=[x for x in required if not (ROOT/x).is_file()]
     secrets=[x for x in ['GEMINI_API_KEY','WORKER_URL','NEWS_INGEST_TOKEN'] if not os.environ.get(x,'').strip()]
     if missing:raise ValueError('missing pipeline files: '+', '.join(missing))
@@ -48,6 +48,7 @@ def main(argv=None):
             with log.open('a',encoding='utf-8') as output:
                 subprocess.run([sys.executable,'-X','utf8',str(ROOT/'tools/globe-news/connections.py')],cwd=ROOT,env=env,stdout=output,stderr=subprocess.STDOUT,check=True,timeout=90)
             subprocess.run([sys.executable,str(ROOT/'tools/push-news-to-worker.py')],cwd=ROOT,env=env,check=True,timeout=45)
+            subprocess.run([sys.executable,str(ROOT/'tools/push-connections-to-worker.py')],cwd=ROOT,env=env,check=True,timeout=45)
             if args.frontend:
                 frontend=args.frontend.resolve();sync=frontend/'scripts/sync-snapshots.py'
                 if not sync.is_file():raise ValueError('choose a frontend checkout containing scripts/sync-snapshots.py')

@@ -46,6 +46,7 @@ public class MarketService {
     public Map<String, Object> status() {
         Map<String, Object> status = new LinkedHashMap<>();
         status.put("now", SnapshotMetadata.iso(clock.instant()));
+        status.put("connections_generated_at", null);
         try {
             var snapshot = repository.latest();
             status.put("prices", Map.of("fetched_at", SnapshotMetadata.iso(snapshot.asOf()),

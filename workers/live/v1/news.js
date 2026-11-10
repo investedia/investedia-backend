@@ -117,7 +117,8 @@ export async function handleNews(env, now = Date.now()) {
     const keys=historyKeys(row);if(!keys.some(k=>seen.has(k))){merged.push(row);keys.forEach(k=>seen.add(k));}
   }
   merged.sort((a,b) => Date.parse(b.published_at)-Date.parse(a.published_at));
-  return { status: 200, body: envelope({ stories: merged }, { provider: PROVIDER, snapT: st.t, now, ttl: 30, extra: { count: merged.length, model: st.model || null, note: 'newest AI-enriched priority articles; the client merges them with the static broad feed' } }) };
+  let connectionsGenerated=null;try{connectionsGenerated=JSON.parse(await env.PRICES.get('connections:meta'))?.generated_at||null;}catch{}
+  return { status: 200, body: envelope({ stories: merged }, { provider: PROVIDER, snapT: st.t, now, ttl: 30, extra: { count: merged.length, connections_generated_at:connectionsGenerated, model: st.model || null, note: 'newest AI-enriched priority articles; the client merges them with the static broad feed' } }) };
 }
 // Globe events are a compact view of the same articles: no second pipeline, no extra KV writes.
 export async function handleGlobe(env, now = Date.now()) {

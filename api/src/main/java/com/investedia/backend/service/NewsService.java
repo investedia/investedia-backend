@@ -39,6 +39,8 @@ public class NewsService {
         }
         var meta = SnapshotMetadata.at(snapshot.asOf(), clock.instant(), "rss+gemini", 30);
         meta.put("count", articles.size());
+        // Live connection freshness is unknown in this read-only snapshot service.
+        meta.put("connections_generated_at", null);
         meta.put("model", "github-ingest");
         meta.put("note", "newest AI-enriched priority articles; the client merges them with the static broad feed");
         return new ApiEnvelope<>(Map.of("stories", List.copyOf(articles)), meta);

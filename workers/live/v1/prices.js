@@ -41,7 +41,8 @@ export async function handlePrices(url, env, ctx, now = Date.now()) {
 export async function handleStatus(env, now = Date.now()) {
   let snap = null; try { snap = JSON.parse(await env.PRICES.get('px')); } catch {}
   const stats = snap ? rollStats(snap.stats, now) : null;
-  return { status: 200, body: { now: new Date(now).toISOString(), prices: snap ? { fetched_at: new Date(snap.t).toISOString(), age_s: Math.round((now - snap.t) / 1000), symbols: Object.keys(snap.p).length, provider: snap.provider } : null,
+  let connectionsGenerated=null;try{connectionsGenerated=JSON.parse(await env.PRICES.get('connections:meta'))?.generated_at||null;}catch{}
+  return { status: 200, body: { now: new Date(now).toISOString(), connections_generated_at:connectionsGenerated, prices: snap ? { fetched_at: new Date(snap.t).toISOString(), age_s: Math.round((now - snap.t) / 1000), symbols: Object.keys(snap.p).length, provider: snap.provider } : null,
     kv: stats && { day: stats.day, writes_today: stats.writes, write_budget: 900, free_limit: 1000, note: 'writes are exact (counted at write time); reads are served from a 15 s edge cache, so at most one KV read per 15 s per Cloudflare location' },
     cron: stats && { runs_today: stats.cron_runs, failures_today: stats.cron_failures, upstream_calls: stats.upstream_calls, upstream_failures: stats.upstream_failures, skipped_unchanged: stats.skipped_unchanged },
     limits: { cpu_ms_per_invocation_free: 10, subrequests_per_invocation_free: 50 }, version: 1 } };
