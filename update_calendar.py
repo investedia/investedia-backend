@@ -28,12 +28,13 @@ if os.path.exists(OUT[0]):
     try: prev = json.load(open(OUT[0]))
     except Exception: pass
 out = {'updated_at': NOW.strftime('%Y-%m-%dT%H:%M:%SZ'), 'events': prev.get('events', []), 'earnings': prev.get('earnings', []),
-       'sources': {'events': 'US BLS, BEA and Federal Reserve schedules; ForexFactory calendar', 'earnings': 'Nasdaq earnings calendar'}}
+       'sources': {'events': 'US BLS, BEA and Federal Reserve schedules' + ('; ForexFactory calendar' if os.environ.get('CALENDAR_UNLICENSED') == 'on' else ''), 'earnings': 'Nasdaq earnings calendar' if os.environ.get('CALENDAR_UNLICENSED') == 'on' else ''}}
 
 # Economic releases: both weeks, all impacts, retain released values for 30 days.
 try:
     ev = []
-    for f in ('ff_calendar_thisweek.json', 'ff_calendar_nextweek.json'):
+    UNLIC = os.environ.get('CALENDAR_UNLICENSED') == 'on'  # ForexFactory/Nasdaq feeds have no formal reuse licence: off unless the owner opts in
+    for f in (('ff_calendar_thisweek.json', 'ff_calendar_nextweek.json') if UNLIC else ()):
         try: ev += get('https://nfs.faireconomy.media/' + f)
         except Exception: pass
     keep = []
@@ -77,7 +78,7 @@ except Exception as e: print('events failed:', e)
 # earnings: next 10 days, the largest companies each day
 try:
     ern = []
-    for i in range(0, 10):
+    for i in (range(0, 10) if os.environ.get('CALENDAR_UNLICENSED') == 'on' else ()):
         day = (NOW + timedelta(days=i)).date()
         if day.weekday() > 4: continue
         rows = (get(f'https://api.nasdaq.com/api/calendar/earnings?date={day.isoformat()}').get('data') or {}).get('rows') or []

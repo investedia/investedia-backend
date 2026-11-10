@@ -29,6 +29,7 @@ import { refreshNews, handleNews, handleGlobe, ingestNews, historyCapabilities }
 import { handleMarkets } from './v1/markets.js';
 import { ingestCalls, readCalls } from './v1/calls.js';
 import { joinWaitlist } from './v1/waitlist.js';
+import { ingestCalendar, readCalendar } from './v1/calendar.js';
 export { refresh };
 const json = (h, status, body, cache = 'no-store') => new Response(JSON.stringify(body), { status, headers: { ...h, 'Content-Type': 'application/json', 'Cache-Control': cache } });
 
@@ -40,6 +41,18 @@ export default {
   },
   async fetch(req, env, ctx) {
     const h = cors(req), url = new URL(req.url);
+    if (req.method === 'POST' && url.pathname === '/v1/ingest/calendar') {
+      let r; try { r = await ingestCalendar(req, env); } catch (e) { r = { status: 500, body: { error: 'internal' } }; }
+      if (r.status === 200) ctx.waitUntil(caches.default.delete(new Request(url.origin + '/v1/calendar#v1', { method: 'GET' })));
+      return json({}, r.status, r.body);
+    }
+    if (req.method === 'GET' && url.pathname === '/v1/calendar') {
+      const cache = caches.default, key = new Request(url.origin + '/v1/calendar#v1', { method: 'GET' }), hit = await cache.match(key);
+      if (hit) { const r = new Response(hit.body, hit); for (const [k, v] of Object.entries(h)) r.headers.set(k, v); return r; }
+      const r = await readCalendar(env), res = json(h, r.status, r.body, r.status === 200 ? 'public, max-age=300' : 'no-store');
+      if (r.status === 200) ctx.waitUntil(cache.put(key, res.clone()));
+      return res;
+    }
     if (req.method === 'POST' && url.pathname === '/v1/waitlist') {
       if (!ALLOWED.includes(req.headers.get('Origin') || '')) return json(h, 403, { error: 'forbidden' });
       const r = await joinWaitlist(req, env); return json(h, r.status, r.body);
