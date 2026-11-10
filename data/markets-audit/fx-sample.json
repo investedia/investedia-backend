@@ -1,0 +1,33 @@
+{
+  "schema": "investedia.fx-audit/v1",
+  "method": "Pearson of daily simple returns; latest 30 ECB observation intervals; >=25 identical intervals",
+  "window": 30,
+  "minimum_aligned": 25,
+  "threshold_abs": 0.7,
+  "as_of": null,
+  "interpretation": "Co-movement, not capital flows and not causation.",
+  "shared_currency_policy": "one node per ISO4217; shared-currency country pairs are excluded by construction",
+  "bases": {
+    "EUR": {
+      "positive": [],
+      "negative": [],
+      "all_valid_pairs": []
+    },
+    "USD": {
+      "positive": [],
+      "negative": [],
+      "all_valid_pairs": []
+    }
+  },
+  "comparison": {
+    "pairs_in_both_bases": 0,
+    "sign_changes": 0,
+    "pairs": [],
+    "recommendation": "USD-rebased for phase 1, with base visible; keep EUR-base sensitivity. Neither base is invariant or causal."
+  },
+  "excluded": [],
+  "status": "insufficient_dated_ECB_observations",
+  "reason": "No dated ECB snapshot locally; use the manual runner. Mathematical test fixtures are not market data.",
+  "source_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml",
+  "licence_review_status": "pending_current_primary_notice_review"
+}

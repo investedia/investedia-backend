@@ -1,0 +1,40 @@
+name: Markets feasibility audit (review only)
+on:
+  workflow_dispatch:
+    inputs:
+      sample_limit:
+        description: 'Bounded source schema sample: 1–100; not a coverage population'
+        default: '25'
+        required: true
+permissions:
+  contents: read
+concurrency:
+  group: markets-feasibility-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offline matching and FX checks
+        run: python -m unittest discover -s tests -p test_markets_audit.py
+      - name: Collect bounded primary-source audit evidence
+        env:
+          SAMPLE_LIMIT: ${{ inputs.sample_limit }}
+        run: python -m tools.markets_audit.run --fetch --sample-limit "$SAMPLE_LIMIT"
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: markets-audit-review
+          path: data/markets-audit/
+          retention-days: 14
+          if-no-files-found: error
+      - name: Visible execution failure
+        if: failure()
+        run: echo '::error::Markets audit failed. Missing source evidence is not usable coverage; inspect the review artifact.'
