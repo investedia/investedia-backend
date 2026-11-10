@@ -7,7 +7,7 @@ const TTL = 3, TOP = 100;
 const cors = (req) => {
   const o = req.headers.get('Origin') || '';
   const ok = ALLOWED.includes(o);
-  return { ...(ok ? { 'Access-Control-Allow-Origin': o } : {}), 'Vary': 'Origin', 'Access-Control-Allow-Methods': 'GET, OPTIONS', 'Access-Control-Allow-Headers': 'If-None-Match', 'Access-Control-Max-Age': '86400' };
+  return { ...(ok ? { 'Access-Control-Allow-Origin': o } : {}), 'Vary': 'Origin', 'Access-Control-Allow-Methods': 'GET, POST, OPTIONS', 'Access-Control-Allow-Headers': 'If-None-Match, Content-Type', 'Access-Control-Max-Age': '86400' };
 };
 
 // One call returns every Coinbase spot product with price, 24h change, 24h range, volume and market cap.
@@ -28,6 +28,7 @@ import { refresh, handlePrices, handleStatus } from './v1/prices.js';
 import { refreshNews, handleNews, handleGlobe, ingestNews, historyCapabilities } from './v1/news.js';
 import { handleMarkets } from './v1/markets.js';
 import { ingestCalls, readCalls } from './v1/calls.js';
+import { joinWaitlist } from './v1/waitlist.js';
 export { refresh };
 const json = (h, status, body, cache = 'no-store') => new Response(JSON.stringify(body), { status, headers: { ...h, 'Content-Type': 'application/json', 'Cache-Control': cache } });
 
@@ -39,6 +40,10 @@ export default {
   },
   async fetch(req, env, ctx) {
     const h = cors(req), url = new URL(req.url);
+    if (req.method === 'POST' && url.pathname === '/v1/waitlist') {
+      if (!ALLOWED.includes(req.headers.get('Origin') || '')) return json(h, 403, { error: 'forbidden' });
+      const r = await joinWaitlist(req, env); return json(h, r.status, r.body);
+    }
     if (url.pathname.startsWith('/v1/markets/')) {
       const result=await handleMarkets(req,env,ctx);const headers=new Headers(result.headers);
       for(const [name,value] of Object.entries(h))headers.set(name,value);
