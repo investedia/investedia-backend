@@ -1,0 +1,148 @@
+{
+  "notice": "Planning catalogue; current remote terms must be fetched on the manual runner and reviewed. HTTP 200 is not a licence grant.",
+  "sources": [
+    {
+      "id": "wikidata",
+      "name": "Wikidata structured data",
+      "terms_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "website": "https://www.wikidata.org",
+      "expected_licence": "CC0 for structured data; not images or external referenced works",
+      "expected_verdict": "conditional",
+      "rate_note": "One bounded SPARQL request, LIMIT <=100, <=1 request/second, honour 429; no parallel expensive queries.",
+      "data_url": "https://query.wikidata.org/sparql",
+      "format": "sparql"
+    },
+    {
+      "id": "gleif",
+      "name": "GLEIF LEI and Level 2",
+      "terms_url": "https://www.gleif.org/en/meta/lei-data-terms-of-use",
+      "website": "https://www.gleif.org",
+      "expected_licence": "CC0 expected for GLEIF LEI reference and relationship data; verify the current dataset notice",
+      "expected_verdict": "conditional",
+      "rate_note": "Prefer Golden Copy/deltas in production. Sample <=100 API rows, <=1 request/second, honour Retry-After.",
+      "data_url": "https://api.gleif.org/api/v1/lei-records",
+      "format": "gleif"
+    },
+    {
+      "id": "sec",
+      "name": "SEC EDGAR submissions and companyfacts",
+      "terms_url": "https://www.sec.gov/about/developer-resources",
+      "website": "https://www.sec.gov",
+      "expected_licence": "US agency material and numerical facts distinguished from issuer-authored copyrighted filing text",
+      "expected_verdict": "conditional",
+      "rate_note": "SEC fair-access ceiling commonly 10 requests/second; audit caps at 2, no parallel SEC queries. Exact requested UA may need owner contact details before bulk access.",
+      "data_url": "https://data.sec.gov/submissions/CIK0000320193.json",
+      "format": "sec"
+    },
+    {
+      "id": "esma",
+      "name": "ESMA FIRDS",
+      "terms_url": "https://www.esma.europa.eu/legal-notice",
+      "website": "https://www.esma.europa.eu",
+      "expected_licence": "Dataset-specific reuse/republication conditions must be checked; public reference data is not blanket clearance for all exchange data",
+      "expected_verdict": "conditional",
+      "rate_note": "Use published full/delta reference-data files. Discover file manifest first; no uncontrolled file crawling.",
+      "data_url": "https://registers.esma.europa.eu/solr/esma_registers_firds_files/select?q=*%3A*&wt=json&rows=1",
+      "format": "json"
+    },
+    {
+      "id": "nasdaq",
+      "name": "Nasdaq Trader symbol directories",
+      "terms_url": "https://www.nasdaqtrader.com/Trader.aspx?id=TermsOfUse",
+      "website": "https://www.nasdaqtrader.com",
+      "expected_licence": "No explicit commercial republication grant verified; directory access alone is insufficient",
+      "expected_verdict": "not_cleared",
+      "rate_note": "Bulk daily directories only; no quote scraping. Review symbol-directory definitions and Test Issue/ETF flags.",
+      "data_url": "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+      "format": "directory"
+    },
+    {
+      "id": "ecb",
+      "name": "ECB euro foreign exchange reference rates",
+      "terms_url": "https://www.ecb.europa.eu/services/disclaimer/html/index.en.html",
+      "website": "https://www.ecb.europa.eu",
+      "expected_licence": "ECB own-information reuse notice, source acknowledgement and reference-rate disclaimer; verify current conditions",
+      "expected_verdict": "conditional",
+      "rate_note": "One historical XML download per audit; daily on ECB publication days; not executable FX prices.",
+      "data_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml",
+      "format": "ecb"
+    },
+    {
+      "id": "worldbank",
+      "name": "World Bank WDI",
+      "terms_url": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "website": "https://www.worldbank.org",
+      "expected_licence": "CC BY 4.0 standard dataset terms, subject to third-party dataset exceptions",
+      "expected_verdict": "conditional",
+      "rate_note": "Bulk indicator queries, paginate completely, preserve period/units/licence per indicator. Annual observations are not live readings.",
+      "data_url": "https://api.worldbank.org/v2/country?format=json&per_page=400",
+      "format": "json"
+    },
+    {
+      "id": "exchange_calendars",
+      "name": "exchange-calendars 4.13.2",
+      "terms_url": "https://github.com/gerrymanoim/exchange_calendars/blob/v4.13.2/LICENSE",
+      "website": "https://github.com/gerrymanoim/exchange_calendars",
+      "expected_licence": "Apache-2.0; locally retained full licence and authorship notices",
+      "expected_verdict": "usable",
+      "rate_note": "Pinned offline package/calendar data; refresh library snapshots separately. Emergency closures remain a limitation.",
+      "data_url": null,
+      "format": "local"
+    },
+    {
+      "id": "companies_house",
+      "name": "UK Companies House",
+      "terms_url": "https://developer-specs.company-information.service.gov.uk/guides/termsOfUse",
+      "website": "https://www.gov.uk/government/organisations/companies-house",
+      "expected_licence": "OGL where explicitly applied to the bulk dataset; not a blanket licence for document images or personal data",
+      "expected_verdict": "conditional",
+      "rate_note": "Authenticated API is excluded from this no-secret workflow. Audit the free bulk product manifest; not a stock-listing source.",
+      "data_url": "https://download.companieshouse.gov.uk/en_output.html",
+      "format": "manifest"
+    },
+    {
+      "id": "jse",
+      "name": "JSE official listing files",
+      "terms_url": null,
+      "website": "https://www.jse.co.za",
+      "expected_licence": "No explicit reusable listing-file grant verified; exact terms URL unresolved",
+      "expected_verdict": "not_cleared",
+      "rate_note": "No listing file download until explicit reuse rights are identified.",
+      "data_url": null,
+      "format": "not_cleared"
+    },
+    {
+      "id": "ngx",
+      "name": "NGX official listing files",
+      "terms_url": null,
+      "website": "https://ngxgroup.com",
+      "expected_licence": "Official identity evidence exists in the repository, but bulk republication rights have not been verified",
+      "expected_verdict": "not_cleared",
+      "rate_note": "No new directory download until terms are identified; identity validation is not price licensing.",
+      "data_url": null,
+      "format": "not_cleared"
+    },
+    {
+      "id": "b3",
+      "name": "B3 official listing files",
+      "terms_url": null,
+      "website": "https://www.b3.com.br",
+      "expected_licence": "No explicit reusable listing-file grant verified; commercial market-data contracts are separate",
+      "expected_verdict": "not_cleared",
+      "rate_note": "Do not equate public issuer pages with redistribution rights.",
+      "data_url": null,
+      "format": "not_cleared"
+    },
+    {
+      "id": "nse_india",
+      "name": "NSE India official listing files",
+      "terms_url": "https://www.nseindia.com/nse-disclaimer",
+      "website": "https://www.nseindia.com",
+      "expected_licence": "No explicit commercial republication permission verified for a listings product",
+      "expected_verdict": "not_cleared",
+      "rate_note": "No archive/quote scraping or cookie/robots bypass; require dataset-specific grant before adding files.",
+      "data_url": null,
+      "format": "not_cleared"
+    }
+  ]
+}

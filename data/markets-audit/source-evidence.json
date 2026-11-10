@@ -1,0 +1,165 @@
+{
+  "sources": {
+    "wikidata": {
+      "terms_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "terms_review_status": "pending",
+      "data_status": "not_downloaded_manual_runner_required",
+      "rights": {
+        "commercial_use_allowed": null,
+        "redistribution_allowed": null,
+        "public_domain": null,
+        "free_download": null,
+        "reason": "current_product_specific_primary_grant_not_reviewed"
+      }
+    },
+    "gleif": {
+      "terms_url": "https://www.gleif.org/en/meta/lei-data-terms-of-use",
+      "terms_review_status": "pending",
+      "data_status": "not_downloaded_manual_runner_required",
+      "rights": {
+        "commercial_use_allowed": null,
+        "redistribution_allowed": null,
+        "public_domain": null,
+        "free_download": null,
+        "reason": "current_product_specific_primary_grant_not_reviewed"
+      }
+    },
+    "sec": {
+      "terms_url": "https://www.sec.gov/about/developer-resources",
+      "terms_review_status": "pending",
+      "data_status": "not_downloaded_manual_runner_required",
+      "rights": {
+        "commercial_use_allowed": null,
+        "redistribution_allowed": null,
+        "public_domain": null,
+        "free_download": null,
+        "reason": "current_product_specific_primary_grant_not_reviewed"
+      }
+    },
+    "esma": {
+      "terms_url": "https://www.esma.europa.eu/legal-notice",
+      "terms_review_status": "pending",
+      "data_status": "not_downloaded_manual_runner_required",
+      "rights": {
+        "commercial_use_allowed": null,
+        "redistribution_allowed": null,
+        "public_domain": null,
+        "free_download": null,
+        "reason": "current_product_specific_primary_grant_not_reviewed"
+      }
+    },
+    "nasdaq": {
+      "terms_url": "https://www.nasdaqtrader.com/Trader.aspx?id=TermsOfUse",
+      "terms_review_status": "pending",
+      "data_status": "not_downloaded_manual_runner_required",
+      "rights": {
+        "commercial_use_allowed": null,
+        "redistribution_allowed": null,
+        "public_domain": null,
+        "free_download": null,
+        "reason": "current_product_specific_primary_grant_not_reviewed"
+      }
+    },
+    "ecb": {
+      "terms_url": "https://www.ecb.europa.eu/services/disclaimer/html/index.en.html",
+      "terms_review_status": "pending",
+      "data_status": "not_downloaded_manual_runner_required",
+      "rights": {
+        "commercial_use_allowed": null,
+        "redistribution_allowed": null,
+        "public_domain": null,
+        "free_download": null,
+        "reason": "current_product_specific_primary_grant_not_reviewed"
+      }
+    },
+    "worldbank": {
+      "terms_url": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "terms_review_status": "pending",
+      "data_status": "not_downloaded_manual_runner_required",
+      "rights": {
+        "commercial_use_allowed": null,
+        "redistribution_allowed": null,
+        "public_domain": null,
+        "free_download": null,
+        "reason": "current_product_specific_primary_grant_not_reviewed"
+      }
+    },
+    "exchange_calendars": {
+      "terms_url": "https://github.com/gerrymanoim/exchange_calendars/blob/v4.13.2/LICENSE",
+      "terms_review_status": "pending",
+      "data_status": "not_downloaded_manual_runner_required",
+      "rights": {
+        "commercial_use_allowed": true,
+        "redistribution_allowed": true,
+        "public_domain": false,
+        "free_download": true,
+        "reason": null
+      },
+      "local_licence_verified": true,
+      "checked_at": "2026-11-10T03:05:36.419618+00:00",
+      "local_licence_path": "data/coverage/third-party/exchange-calendars-LICENSE.txt",
+      "licence_sha256": "e35c4578f7db4498e62e278978f6c42e0fce6f21f9993a060b08a33549cd3044"
+    },
+    "companies_house": {
+      "terms_url": "https://developer-specs.company-information.service.gov.uk/guides/termsOfUse",
+      "terms_review_status": "pending",
+      "data_status": "not_downloaded_manual_runner_required",
+      "rights": {
+        "commercial_use_allowed": null,
+        "redistribution_allowed": null,
+        "public_domain": null,
+        "free_download": null,
+        "reason": "current_product_specific_primary_grant_not_reviewed"
+      }
+    },
+    "jse": {
+      "terms_url": null,
+      "terms_review_status": "pending",
+      "data_status": "not_downloaded_manual_runner_required",
+      "rights": {
+        "commercial_use_allowed": null,
+        "redistribution_allowed": null,
+        "public_domain": null,
+        "free_download": null,
+        "reason": "current_product_specific_primary_grant_not_reviewed"
+      }
+    },
+    "ngx": {
+      "terms_url": null,
+      "terms_review_status": "pending",
+      "data_status": "not_downloaded_manual_runner_required",
+      "rights": {
+        "commercial_use_allowed": null,
+        "redistribution_allowed": null,
+        "public_domain": null,
+        "free_download": null,
+        "reason": "current_product_specific_primary_grant_not_reviewed"
+      }
+    },
+    "b3": {
+      "terms_url": null,
+      "terms_review_status": "pending",
+      "data_status": "not_downloaded_manual_runner_required",
+      "rights": {
+        "commercial_use_allowed": null,
+        "redistribution_allowed": null,
+        "public_domain": null,
+        "free_download": null,
+        "reason": "current_product_specific_primary_grant_not_reviewed"
+      }
+    },
+    "nse_india": {
+      "terms_url": "https://www.nseindia.com/nse-disclaimer",
+      "terms_review_status": "pending",
+      "data_status": "not_downloaded_manual_runner_required",
+      "rights": {
+        "commercial_use_allowed": null,
+        "redistribution_allowed": null,
+        "public_domain": null,
+        "free_download": null,
+        "reason": "current_product_specific_primary_grant_not_reviewed"
+      }
+    }
+  },
+  "no_registry_written": true
+}

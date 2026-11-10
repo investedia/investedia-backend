@@ -1,0 +1,10 @@
+{
+  "notice": "Offline reference-identifier tests only; not proof of a current listing, licence, or registry eligibility.",
+  "cases": [
+    {"left":{"kind":"issuer","ids":{"cik":"320193"}},"right":{"kind":"issuer","ids":{"cik":"0000320193"}},"status":"matched_identifier","via":"cik"},
+    {"left":{"kind":"security","ids":{"isin":"US0378331005"}},"right":{"kind":"security","ids":{"isin":"US0378331005"}},"status":"matched_identifier","via":"isin"},
+    {"left":{"kind":"issuer","name":"Same name","ids":{}},"right":{"kind":"issuer","name":"Same name","ids":{}},"status":"no_match"},
+    {"left":{"kind":"issuer","ids":{"cik":"320193","qid":"Q312"}},"right":{"kind":"issuer","ids":{"cik":"789019","qid":"Q312"}},"status":"conflict"},
+    {"left":{"kind":"legal_entity","ids":{"qid":"Q312"}},"right":{"kind":"security","ids":{"qid":"Q312"}},"status":"no_match"}
+  ]
+}
