@@ -39,3 +39,21 @@ unchanged until source/terms verification can be completed.
 Cost: 0 Gemini calls, no schedule, no paid service, no new secret. Added hourly
 Actions/Gemini consumption: zero. Full source integration remains blocked on
 licensing and reachability; this branch provides safe adapters and diagnostics.
+
+## Follow-up: licensed exchange calendars available
+
+The Python package registry was reachable even though direct official sites were
+blocked. `exchange-calendars` 4.13.2 is Apache-2.0; its full licence is retained
+in `third-party/exchange-calendars-LICENSE.txt`. The importer applies only MICs
+explicitly supported by the library (including its documented aliases), never
+a guessed country-wide timetable. See `exchange-hours-report.json` for updated
+and unsupported venues. `data/exchanges.json` now includes local regular hours,
+IANA zones, breaks, day offsets, and dated sessions for 10 Nov–12 Dec 2026,
+including known holidays/early closes. These are library-maintained calendars,
+not a guarantee against emergency exchange closures. Outside the dated horizon
+only regular hours are known. No UI or production system was switched over.
+
+Optional reproducible import: install `tools/coverage/requirements-calendars.txt`
+in a local venv, then run `python tools/coverage/exchange_hours.py --as-of YYYY-MM-DD`.
+Regular tests do not require that dependency. This is source-attributed factual
+calendar metadata; it does not clear any quote licence or fill missing prices.
