@@ -123,10 +123,10 @@ export async function handleGlobe(env, now = Date.now()) {
 // ---- Ingest: the GitHub robot (which already does the heavy CPU work) pushes its newest articles here instead of waiting for a commit and a Pages deploy. ----
 export const timingSafeEqual = (a, b) => { a = String(a); b = String(b); let d = a.length ^ b.length; for (let i = 0; i < Math.max(a.length, b.length); i++) d |= (a.charCodeAt(i) || 0) ^ (b.charCodeAt(i) || 0); return d === 0; };
 const REQ = ['id', 'headline', 'category', 'published_at', 'source', 'location'];
-export function validateIngest(body) {
+export function validateIngest(body, max = 80) {
   if (!body || !Array.isArray(body.stories)) return 'stories must be an array';
   if (!body.stories.length) return 'refusing an empty list';
-  if (body.stories.length > 80) return 'too many stories';
+  if (body.stories.length > max) return 'too many stories';
   if (body.generated_at != null && !Number.isFinite(Date.parse(body.generated_at))) return 'bad generated_at';
   const ids = new Set();
   for (const s of body.stories) {
@@ -149,7 +149,7 @@ export async function ingestNews(req, env, now = Date.now()) {
   const generated = body.generated_at == null ? now : Date.parse(body.generated_at);
   if (generated > now + 300_000) return { status: 422, body: { error: 'generated_at is in the future' } };
   let cur = null; try { cur = JSON.parse(await env.PRICES.get('news')); } catch {}
-  if (cur && validateIngest(cur)) cur = null;
+  if (cur && validateIngest(cur, KEEP_ROLLING)) cur = null;
   // Accumulate: new articles are added to the stored ones (same id or URL = correction, newest copy wins);
   // everything from the last 48 hours is kept, up to KEEP_ROLLING. Older articles fall off.
   const keyOf = x => [x.id, x.source?.url];
@@ -182,7 +182,7 @@ async function ingestGapHistory(body, env, now) {
   }
   let current, stored;
   try { current = JSON.parse(await env.PRICES.get('news')); stored = JSON.parse(await env.PRICES.get('news-gap-history')); } catch {}
-  if (!current || validateIngest(current)) return {status:409,body:{error:'valid current feed required'}};
+  if (!current || validateIngest(current, KEEP_ROLLING)) return {status:409,body:{error:'valid current feed required'}};
   if (stored && !Array.isArray(stored.stories)) return {status:409,body:{error:'invalid stored history; manual review required'}};
   const previous = stored?.stories || [], rows = [...previous];
   const seen = new Set([...current.stories,...previous].flatMap(historyKeys));

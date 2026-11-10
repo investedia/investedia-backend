@@ -95,3 +95,10 @@ test('ingest accumulates the last 48 hours instead of replacing', async () => {
   const r2 = await ingestNews(post({ stories: [story('d', '2026-10-31T09:00:00Z')] }), env);
   assert.equal(r2.body.count, 2); // a and b are now older than 48 h before the newest article
 });
+
+test('a stored feed above 80 articles is kept, not wiped, by the next ingest', async () => {
+  const env = { PRICES: fakeKV(), INGEST_TOKEN: 'tok' }, t = i => new Date(Date.parse('2026-10-28T00:00:00Z') + i * 60e3).toISOString();
+  for (let b = 0; b < 3; b++) await ingestNews(post({ stories: Array.from({ length: 50 }, (_, i) => ({ ...story('s' + (b * 50 + i), t(b * 50 + i)), headline: 'h' + (b * 50 + i) })) }), env);
+  const r = await ingestNews(post({ stories: [{ ...story('z', t(200)), headline: 'z' }] }), env);
+  assert.equal(r.body.count, 151);
+});
