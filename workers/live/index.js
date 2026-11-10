@@ -29,6 +29,7 @@ import { refreshNews, handleNews, handleGlobe, ingestNews, historyCapabilities }
 import { handleMarkets } from './v1/markets.js';
 import { ingestCalls, readCalls } from './v1/calls.js';
 import { joinWaitlist } from './v1/waitlist.js';
+import { ingestConnections, readConnections } from './v1/connections.js';
 import { ingestCalendar, readCalendar } from './v1/calendar.js';
 export { refresh };
 const json = (h, status, body, cache = 'no-store') => new Response(JSON.stringify(body), { status, headers: { ...h, 'Content-Type': 'application/json', 'Cache-Control': cache } });
@@ -41,6 +42,19 @@ export default {
   },
   async fetch(req, env, ctx) {
     const h = cors(req), url = new URL(req.url);
+    if (req.method === 'POST' && url.pathname === '/v1/ingest/connections') {
+      const r=await ingestConnections(req,env);
+      if(r.status===200&&r.body.written)ctx.waitUntil(Promise.all(['/v1/connections','/v1/news','/v1/globe','/v1/status'].map(path=>caches.default.delete(new Request(url.origin+path+'#v1')))));
+      return json({},r.status,r.body);
+    }
+    if (req.method === 'GET' && url.pathname === '/v1/connections') {
+      if(url.search)return json(h,400,{error:'query parameters are not supported'});
+      const cache=caches.default,key=new Request(url.origin+'/v1/connections#v1'),hit=await cache.match(key);
+      if(hit){const res=new Response(hit.body,hit);for(const [k,v] of Object.entries(h))res.headers.set(k,v);res.headers.set('Cache-Control','public, max-age=300');res.headers.set('Cloudflare-CDN-Cache-Control','public, max-age=300');return res;}
+      const r=await readConnections(env),res=json(h,r.status,r.body,r.status===200?'public, max-age=300':'no-store');
+      res.headers.set('Cloudflare-CDN-Cache-Control',r.status===200?'public, max-age=300':'no-store');
+      if(r.status===200)ctx.waitUntil(cache.put(key,res.clone()));return res;
+    }
     if (req.method === 'POST' && url.pathname === '/v1/ingest/calendar') {
       let r; try { r = await ingestCalendar(req, env); } catch (e) { r = { status: 500, body: { error: 'internal' } }; }
       if (r.status === 200) ctx.waitUntil(caches.default.delete(new Request(url.origin + '/v1/calendar#v1', { method: 'GET' })));
