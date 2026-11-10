@@ -67,7 +67,13 @@ def exchange_connections(exchanges,series):
          'exchanges':moves,'pairs':pairs,'missing':missing}
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
- def redirect_request(self,*args):raise ValueError('redirect_requires_review')
+ # Same-site HTTPS redirects only (e.g. www.ecb.europa.eu -> ecb.europa.eu path moves); anything else still needs review.
+ def redirect_request(self,req,fp,code,msg,headers,newurl):
+  from urllib.parse import urlsplit
+  a,b=urlsplit(req.full_url),urlsplit(newurl)
+  same=lambda h:'.'.join((h or '').split('.')[-3:])
+  if b.scheme=='https' and same(a.hostname)==same(b.hostname):return super().redirect_request(req,fp,code,msg,headers,newurl)
+  raise ValueError('redirect_requires_review')
 def fetch(url):
  with urllib.request.build_opener(NoRedirect()).open(urllib.request.Request(url,headers={'User-Agent':'InvestediaRobot/1.0'}),timeout=20) as r:
   raw=r.read(5_000_001)

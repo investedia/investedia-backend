@@ -36,7 +36,7 @@ def compact48(x):
 
 
 ARCHIVE_MAX, ARCHIVE, LIVE_DAYS = 1500, 'news-archive.json', 7  # 600 -> 1500: ~2.5 days instead of ~1
-PRIORITY_MAX, PRIORITY_NEW = 24, 10  # the priority tier is intentionally small
+PRIORITY_MAX, PRIORITY_NEW = 30, 10  # the priority tier is intentionally small
 GEMINI = os.environ.get('GEMINI_API_KEY', '').strip(); PIXABAY = os.environ.get('PIXABAY_KEY', '').strip()
 TIER = (os.environ.get('NEWS_TIER') or (sys.argv[sys.argv.index('--tier') + 1] if '--tier' in sys.argv else 'broad')).lower()
 if TIER not in ('priority', 'broad'): TIER = 'broad'
@@ -305,6 +305,8 @@ def balance(cands, limit=200):
     return (reserved + rest)[:limit]  # never more than the limit, whatever the reserves
 
 
+import re as _re
+OFFICIAL_RE = _re.compile(r'Central Bank|Nationalbank|Banco de la Rep|Reserve Bank|Bank of |Ag[eê]ncia Brasil|Statistic', _re.I)
 PRIORITY_NEWS = {'BBC News', 'The Guardian', 'MarketWatch', 'The New York Times', 'CoinDesk', 'OilPrice.com', 'PR Newswire'}  # fast publisher feeds kept in the small priority tier
 
 
@@ -312,6 +314,7 @@ def rss(tier='broad'):
     """Priority: official sources + a handful of fast business feeds. Broad: everything. One retry per feed, failures are recorded per source."""
     srcs = [(u, n, h, None) for u, n, h in FEEDS] + [(u, n, '', None) for u, n in NEWS_FEEDS if tier == 'broad' or n in PRIORITY_NEWS]
     if tier == 'broad': srcs += [(u, n, '', r) for u, n, r in REGION_FEEDS]
+    else: srcs += [(u, n, '', r) for u, n, r in REGION_FEEDS if OFFICIAL_RE.search(n)]  # official regional sources (central banks, state agencies) also run hourly
 
     def one(src):
         url, name, hint, region = src
