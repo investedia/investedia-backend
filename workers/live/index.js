@@ -26,6 +26,7 @@ async function snapshot() {
 // ---- Non-crypto prices, news and globe: /v1 (see v1/). Provider adapters live in providers/. ----
 import { refresh, handlePrices, handleStatus } from './v1/prices.js';
 import { refreshNews, handleNews, handleGlobe, ingestNews, historyCapabilities } from './v1/news.js';
+import { handleMarkets } from './v1/markets.js';
 import { ingestCalls, readCalls } from './v1/calls.js';
 export { refresh };
 const json = (h, status, body, cache = 'no-store') => new Response(JSON.stringify(body), { status, headers: { ...h, 'Content-Type': 'application/json', 'Cache-Control': cache } });
@@ -38,6 +39,11 @@ export default {
   },
   async fetch(req, env, ctx) {
     const h = cors(req), url = new URL(req.url);
+    if (url.pathname.startsWith('/v1/markets/')) {
+      const result=await handleMarkets(req,env,ctx);const headers=new Headers(result.headers);
+      for(const [name,value] of Object.entries(h))headers.set(name,value);
+      return new Response(result.body,{status:result.status,headers});
+    }
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: h });
     if (req.method === 'GET' && url.pathname === '/v1/ingest/news/capabilities') return json(h, 200, await historyCapabilities(env));
     if (req.method === 'POST' && url.pathname === '/v1/ingest/news') {

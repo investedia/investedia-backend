@@ -1,0 +1,10 @@
+{
+  "scope": "US/GB stocks pilot",
+  "status": "implementation_offline_verified_runner_pending",
+  "source_collection_performed": false,
+  "published": false,
+  "US": {"verified_listed_stocks": null, "sec_issuer_denominator": null, "issuer_coverage_pct": null, "launch_recommendation": "not yet: runner evidence pending"},
+  "GB": {"verified_listed_stocks": null, "official_lse_denominator": null, "coverage_pct": null, "launch_recommendation": "not yet: runner evidence pending; at most partial without denominator"},
+  "fixture_counts_are_market_coverage": false,
+  "notice": "Not investment advice"
+}

@@ -22,5 +22,7 @@ enabled = true
 # After deploying, add a custom domain in the Cloudflare dashboard: Workers & Pages > investedia-live > Settings > Domains & Routes > Add > Custom domain: live.investedia.com
 
 [vars]
+# Pilot API code only; no R2 binding or publication is activated here.
+MARKETS_API_ENABLED = "false"
 NEWS_CRON = "off"
 DISPATCH_ENABLED = "false"
