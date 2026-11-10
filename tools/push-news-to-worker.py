@@ -4,7 +4,8 @@ from pathlib import Path
 from urllib.parse import urlsplit
 ROOT=Path(__file__).resolve().parents[1]
 
-def payload(path=None,limit=40):
+def payload(path=None,limit=None):
+    limit=limit or min(80,int(os.environ.get('PUSH_LIMIT') or 40))
     with open(path or ROOT/'assets/globe/news-live.json',encoding='utf-8') as source:d=json.load(source)
     st=sorted(d.get('stories',[]),key=lambda s:s['published_at'],reverse=True)[:limit]
     if not st:raise ValueError('no articles to send')
