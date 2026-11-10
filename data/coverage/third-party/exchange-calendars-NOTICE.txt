@@ -1,0 +1,10 @@
+exchange-calendars 4.13.2 — Apache-2.0
+Source: https://github.com/gerrymanoim/exchange_calendars
+
+Investedia extracted MIC-specific regular hours and dated sessions; no upstream
+source code was changed or bundled. Emergency closures may differ. The following
+copyright notices appear in the upstream calendar modules:
+
+Copyright 2015 Quantopian, Inc.
+Copyright 2018 Quantopian, Inc.
+Copyright 2019 Quantopian, Inc.
