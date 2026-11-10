@@ -1,0 +1,42 @@
+# One-off: adds the old robot's articles from the last 48 hours (data/news-refill.json,
+# original publication times) to the live feed. Manual only. The feed's "updated" time is
+# kept as it is (generated_at = current value), so nothing claims to be newer than it is.
+name: One-off news refill
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type REFILL to write to the Worker'
+        required: true
+permissions:
+  contents: read
+concurrency:
+  group: priority-news-production
+  cancel-in-progress: false
+jobs:
+  refill:
+    if: inputs.confirm == 'REFILL' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Add articles in batches of 80
+        env:
+          WORKER_URL: ${{ secrets.WORKER_URL }}
+          NEWS_INGEST_TOKEN: ${{ secrets.NEWS_INGEST_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.error
+          url = os.environ['WORKER_URL'].rstrip('/'); UA = {'User-Agent': 'InvestediaRobot/1.0'}
+          assert url.startswith('https://')
+          cur = json.load(urllib.request.urlopen(urllib.request.Request(url + '/v1/news', headers=UA), timeout=20))
+          gen = cur['meta'].get('fetched_at'); assert gen, 'current feed time unknown'
+          S = json.load(open('data/news-refill.json'))
+          for i in range(0, len(S), 80):
+              body = json.dumps({'stories': S[i:i+80], 'generated_at': gen}).encode()
+              req = urllib.request.Request(url + '/v1/ingest/news', data=body, method='POST', headers={**UA, 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + os.environ['NEWS_INGEST_TOKEN']})
+              try: r = urllib.request.urlopen(req, timeout=30); print('batch', i // 80 + 1, r.status, r.read().decode()[:200])
+              except urllib.error.HTTPError as e: print('::error::refused', e.code, e.read().decode()[:300]); raise SystemExit(1)
+          PY
