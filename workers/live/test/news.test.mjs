@@ -86,3 +86,12 @@ test('ingest: auth, validation, empty refusal, unchanged skip, write', async () 
   assert.ok(timingSafeEqual('abc', 'abc') && !timingSafeEqual('abc', 'abd') && !timingSafeEqual('abc', 'ab'));
   assert.equal(validateIngest({ stories: Array.from({ length: 81 }, (_, i) => story('i' + i)) }), 'too many stories');
 });
+
+test('ingest accumulates the last 48 hours instead of replacing', async () => {
+  const env = { PRICES: fakeKV(), INGEST_TOKEN: 'tok' };
+  await ingestNews(post({ stories: [story('a', '2026-10-28T10:00:00Z'), story('b', '2026-10-28T11:00:00Z')] }), env);
+  const r = await ingestNews(post({ stories: [story('c', '2026-10-29T09:00:00Z')] }), env);
+  assert.equal(r.body.count, 3);
+  const r2 = await ingestNews(post({ stories: [story('d', '2026-10-31T09:00:00Z')] }), env);
+  assert.equal(r2.body.count, 2); // a and b are now older than 48 h before the newest article
+});
