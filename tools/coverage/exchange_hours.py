@@ -11,6 +11,7 @@ LICENCE=SOURCE+'/blob/v4.13.2/LICENSE'
 def active_time(values,day):
  active=None
  for since,value in values or []:
+  if since is not None and hasattr(since,'date'):since=since.date()
   if since is None or since<=day:active=value
  return active.isoformat(timespec='seconds') if active is not None else None
 
