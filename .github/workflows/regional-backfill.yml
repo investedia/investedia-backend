@@ -1,0 +1,137 @@
+name: Regional article backfill (manual)
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: 'Lookback days: 1–30 (RSS retention can be shorter)'
+        default: '7'
+        required: true
+      confirm:
+        description: 'Type BACKFILL for this bounded provider/model operation'
+        required: true
+      dry_run:
+        description: 'Generate the review artifact without ingesting or saving producer state'
+        type: boolean
+        default: true
+      connections_only:
+        description: 'Repair only missing/empty impacts on existing articles'
+        type: boolean
+        default: false
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: news-production
+  cancel-in-progress: false
+jobs:
+  backfill:
+    if: inputs.confirm == 'BACKFILL' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: backend
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate bounded inputs before any provider request
+        env:
+          BACKFILL_DAYS_INPUT: ${{ inputs.days }}
+        run: |
+          python -c 'import os; value=int(os.environ["BACKFILL_DAYS_INPUT"]); assert 1 <= value <= 30, "days must be 1–30"'
+      - name: Offline recovery tests
+        working-directory: backend
+        run: python -m unittest discover -s tests -p test_regional_backfill.py
+      - name: Restore shared news producer state (never auto-save a dry run)
+        id: state
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            backend/assets/globe/news-seen.json
+            backend/assets/globe/news-live.json
+            backend/assets/globe/news-48h.json
+            backend/assets/globe/news-archive.json
+            backend/assets/globe/news-status.json
+            backend/assets/globe/events
+            backend/assets/globe/threads.json
+            backend/assets/globe/news-gap-history-cache.json
+            backend/assets/globe/regional-backfill-state.json
+          key: priority-news-state-regional-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: priority-news-state-
+      - name: Bootstrap legacy producer state when the expanded cache is absent
+        if: steps.state.outputs.cache-matched-key == ''
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            backend/assets/globe/news-seen.json
+            backend/assets/globe/news-live.json
+            backend/assets/globe/news-48h.json
+            backend/assets/globe/news-archive.json
+            backend/assets/globe/news-status.json
+          key: legacy-bootstrap-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: priority-news-state-
+      - name: Restore the latest successful coverage inventory artifact
+        if: ${{ !inputs.connections_only }}
+        working-directory: backend
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          if [ ! -f data/coverage/feed-inventory.json ]; then
+            coverage_run=$(gh run list --workflow coverage-fetch.yml --status success --limit 1 --json databaseId --jq '.[0].databaseId')
+            test -n "$coverage_run" && test "$coverage_run" != null
+            gh run download "$coverage_run" --name coverage-review --dir .local/coverage-review
+            python - <<'PY'
+          from pathlib import Path
+          import shutil
+          matches=list(Path('.local/coverage-review').rglob('feed-inventory.json'))
+          assert len(matches)==1, 'Run Coverage fetch first: a unique inventory artifact is required'
+          shutil.copyfile(matches[0], 'data/coverage/feed-inventory.json')
+          PY
+          fi
+      - name: Stage or ingest the bounded recovery
+        id: backfill
+        working-directory: backend
+        env:
+          BACKFILL_DAYS_INPUT: ${{ inputs.days }}
+          BACKFILL_CONFIRM_INPUT: ${{ inputs.confirm }}
+          BACKFILL_DRY_RUN_INPUT: ${{ inputs.dry_run }}
+          BACKFILL_CONNECTIONS_INPUT: ${{ inputs.connections_only }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          WORKER_URL: ${{ secrets.WORKER_URL }}
+          NEWS_INGEST_TOKEN: ${{ secrets.NEWS_INGEST_TOKEN }}
+          PIXABAY_KEY: ''
+        run: >-
+          python tools/regional-backfill.py
+          --days "$BACKFILL_DAYS_INPUT" --confirm "$BACKFILL_CONFIRM_INPUT"
+          --dry-run "$BACKFILL_DRY_RUN_INPUT" --connections-only "$BACKFILL_CONNECTIONS_INPUT"
+          --inventory data/coverage/feed-inventory.json
+      - name: Save acknowledged state, including a partially acknowledged run
+        if: ${{ !cancelled() && !inputs.dry_run && hashFiles('backend/.local/regional-backfill/acknowledged.json') != '' }}
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            backend/assets/globe/news-seen.json
+            backend/assets/globe/news-live.json
+            backend/assets/globe/news-48h.json
+            backend/assets/globe/news-archive.json
+            backend/assets/globe/news-status.json
+            backend/assets/globe/events
+            backend/assets/globe/threads.json
+            backend/assets/globe/news-gap-history-cache.json
+            backend/assets/globe/regional-backfill-state.json
+          key: priority-news-state-regional-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Upload complete or partial review artifact
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: regional-backfill-review
+          path: backend/.local/regional-backfill/
+          retention-days: 14
+          if-no-files-found: warn
+      - name: Visible failure
+        if: failure()
+        run: |
+          echo '::error::Regional recovery did not complete. Inspect the report and any acknowledged batches before retrying. Do not claim complete historical coverage.'

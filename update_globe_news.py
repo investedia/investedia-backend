@@ -486,9 +486,9 @@ def validate_analysis(raw, market_moving, known_iso, created_at=None, backfill=F
     return {'impacts': impacts, 'why_moved': moved.strip()[:400] if market_moving and isinstance(moved, str) and moved.strip() else None}
 
 
-def backfill_impacts(stories, known_iso, generate=None, limit=40):
+def backfill_impacts(stories, known_iso, generate=None, limit=40, *, include_empty=False, completed_ids=None):
     """One bounded second request. Only successfully returned story ids are marked complete."""
-    pending = [s for s in stories if 'impacts' not in s][:min(40, max(0, limit))]
+    pending = [s for s in stories if 'impacts' not in s or (include_empty and not s.get('impacts'))][:min(40, max(0, limit))]
     if not pending: return 0
     inputs = [{k: s.get(k) for k in ('id', 'headline', 'summary', 'why', 'market_moving')} for s in pending]
     try:
@@ -499,6 +499,7 @@ def backfill_impacts(stories, known_iso, generate=None, limit=40):
             if not isinstance(row, dict) or not isinstance(row.get('id'), str) or row['id'] not in wanted or row['id'] in done or not isinstance(row.get('impacts'), list): continue
             story = wanted[row['id']]
             story.update(validate_analysis(row, story.get('market_moving'), known_iso, created_at=ISO_NOW, backfill=True)); done.add(row['id'])  # back-filled: never scorable
+        if completed_ids is not None: completed_ids.extend(sorted(done))
         return len(done)
     except Exception as e:
         err(f'Impact backfill: {e}')
@@ -592,23 +593,28 @@ def save_seen(seen):
 
 
 # ---------- main ----------
-def pick_stories(cands, box, by_iso, sym, known_iso, n, online_stories=None):
+def pick_stories(cands, box, by_iso, sym, known_iso, n, online_stories=None, *, preserve_source=False, feed_only=False, backfill=False):
     """Editor step: Gemini picks, merges and summarises candidates; everything is validated before it is kept."""
     new, photo_topics = [], {}
     if cands:
-        if TIER == 'broad':
+        if TIER == 'broad' and not feed_only:
             with ThreadPoolExecutor(8) as ex: cands = list(ex.map(describe, cands))  # priority never fetches article pages: feed text only
         listing = json.dumps([{'i': i, 'title': c['title'], 'source': c['source'], **({'about': c['hint']} if c.get('hint') else {}), **({'description': c['desc']} if c.get('desc') else {})} for i, c in enumerate(cands)], ensure_ascii=False)
         try:
-            picked = gemini(PROMPT.format(n=n, cats=', '.join(CATS), topics=', '.join(PHOTO_TOPICS), cands=listing, event_types=', '.join(EVENT_TYPES), relations=', '.join(RELATIONS)))
+            prompt = PROMPT
+            if preserve_source:
+                prompt = prompt.replace('Merge candidates that report the same event into one story (list all their indexes in "members").', 'Do not merge candidates: each output must have exactly one member. Retain the source headline; only the summary is generated. Source/region tags never establish an event location.')
+            picked = gemini(prompt.format(n=n, cats=', '.join(CATS), topics=', '.join(PHOTO_TOPICS), cands=listing, event_types=', '.join(EVENT_TYPES), relations=', '.join(RELATIONS)))
             status['gemini_ok'] = True
         except Exception as e:
             err(f'Gemini: {e}'); picked = []
-        ids = []
+        ids = []; source_members = set()
         for k, p in enumerate(picked if isinstance(picked, list) else []):
             try:
                 mem = [m for m in p.get('members', []) if isinstance(m, int) and 0 <= m < len(cands)]
                 if not mem: ids.append(None); continue
+                if preserve_source and (len(mem) != 1 or mem[0] in source_members or len(new) >= n):
+                    ids.append(None); continue
                 iso2 = str(p.get('country', '')).upper(); country = by_iso.get(iso2)
                 if not country or p.get('category') not in CATS: ids.append(None); continue
                 lat, lon = float(p['lat']), float(p['lon'])
@@ -622,14 +628,15 @@ def pick_stories(cands, box, by_iso, sym, known_iso, n, online_stories=None):
                     if not isinstance(e, dict) or not e.get('name'): continue
                     t = (e.get('ticker') or '') or None
                     ents.append(R.stamp({'name': str(e['name'])[:60], 'ticker': t, 'kind': 'company', **({'sym': sym[t.upper()]} if t and t.upper() in sym else {})}))
-                s = {'id': sid, 'headline': str(p['headline'])[:110], 'summary': str(p.get('summary', ''))[:400], 'why': str(p.get('why', ''))[:400],
+                s = {'id': sid, 'headline': cands[mem[0]]['title'] if preserve_source else str(p['headline'])[:110], 'summary': str(p.get('summary', ''))[:400], 'why': str(p.get('why', ''))[:400],
                      'category': p['category'], **({'event_type': p['event_type']} if p.get('event_type') in EVENT_TYPES else {}), 'importance': max(1, min(3, int(p.get('importance', 1)))), 'flag': None, 'market_moving': bool(p.get('market_moving')),
                      'location': {'place': str(p.get('place') or country)[:60], 'country': country, 'lat': round(lat, 3), 'lon': round(lon, 3), 'region': REGION.get(iso2, 'eu')},
                      'entities': ents, 'links': [], 'source': srcs[0], 'sources': srcs, 'published_at': pub, 'retrieved_at': ISO_NOW,
                      'official': any(cands[m]['kind'] == 'official' for m in mem), 'ai_summary': True,
                      'score': max(cands[m].get('score', 0) for m in mem), 'content_hash': cands[mem[0]].get('chash')}
-                if isinstance(p.get('impacts'), list): s.update(validate_analysis(p, s['market_moving'], known_iso, created_at=ISO_NOW))
-                if s['importance'] >= 2: photo_topics[sid] = p.get('photo')
+                if isinstance(p.get('impacts'), list): s.update(validate_analysis(p, s['market_moving'], known_iso, created_at=ISO_NOW, backfill=backfill))
+                if preserve_source: source_members.add(mem[0])
+                if not feed_only and s['importance'] >= 2: photo_topics[sid] = p.get('photo')
                 new.append(s); ids.append((s, p.get('leads_to')))
             except Exception as e:
                 ids.append(None); err(f'story {k}: {e}')

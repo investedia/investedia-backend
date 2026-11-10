@@ -109,7 +109,13 @@ export async function handleNews(env, now = Date.now()) {
   let history = []; try { history = JSON.parse(await env.PRICES.get('news-gap-history'))?.stories || []; } catch {}
   if (!Array.isArray(history)) history = [];
   const merged = [...st.stories]; const seen = new Set(merged.flatMap(historyKeys));
-  for (const row of history) { const keys = historyKeys(row); if (!keys.some(k => seen.has(k))) { merged.push(row); keys.forEach(k => seen.add(k)); } }
+  for (const row of history) {
+    const current=merged.find(s=>s.id===row.id);
+    if(current && !current.impacts?.length && row.impacts?.length && canonicalValue(immutableArticle(current))===canonicalValue(immutableArticle(row))) {
+      const index=merged.indexOf(current);merged[index]={...current,impacts:row.impacts};
+    }
+    const keys=historyKeys(row);if(!keys.some(k=>seen.has(k))){merged.push(row);keys.forEach(k=>seen.add(k));}
+  }
   merged.sort((a,b) => Date.parse(b.published_at)-Date.parse(a.published_at));
   return { status: 200, body: envelope({ stories: merged }, { provider: PROVIDER, snapT: st.t, now, ttl: 30, extra: { count: merged.length, model: st.model || null, note: 'newest AI-enriched priority articles; the client merges them with the static broad feed' } }) };
 }
@@ -170,6 +176,7 @@ function historyKeys(s) {
   return ['id:'+s.id, 'headline:'+String(s.headline).toLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim(), ...(url ? ['url:'+canon(url)] : [])];
 }
 async function ingestGapHistory(body, env, now) {
+  if (body.purpose === 'regional-backfill') return ingestRegionalHistory(body, env, now);
   const start = Date.parse(body.window?.start), end = Date.parse(body.window?.end);
   if (!(GAP_START <= start && start < end && end <= GAP_END)) return {status:422,body:{error:'outside approved gap'}};
   for (const s of body.stories) {
@@ -194,4 +201,56 @@ async function ingestGapHistory(body, env, now) {
   if (rows.length > 240) return {status:422,body:{error:'gap history capacity exceeded; no truncation'}};
   if (added) await env.PRICES.put('news-gap-history', JSON.stringify({stories:rows, ingested_at:now}));
   return {status:200,body:{ok:true,written:added>0,added,count:rows.length}};
+}
+
+const CONNECTION_FIELDS = new Set(['impacts','ripples','sectors']);
+const canonicalValue = value => JSON.stringify(value, function(key,item) {
+  return item && typeof item === 'object' && !Array.isArray(item) ? Object.fromEntries(Object.entries(item).sort(([a],[b])=>a.localeCompare(b))) : item;
+});
+const immutableArticle = row => Object.fromEntries(Object.entries(row).filter(([key])=>!CONNECTION_FIELDS.has(key)));
+export async function historyCapabilities(env) {
+  let state=null,observed=false; try { const raw=await env.PRICES.get('news-gap-history');state=raw?JSON.parse(raw):null;observed=state==null||Array.isArray(state.stories); } catch {}
+  return {history_ingest_version:1,regional_backfill_version:1,history_connections_version:1,
+    history_capacity:240,max_batch:80,max_days:30,history_count:observed?(state?.stories?.length||0):null,
+    history_ids:Array.isArray(state?.stories)?state.stories.map(s=>s.id):[]};
+}
+async function ingestRegionalHistory(body,env,now) {
+  const start=Date.parse(body.window?.start),end=Date.parse(body.window?.end),day=86400000;
+  // Requested regional recovery is separately bounded; the old outage whitelist is unchanged.
+  if (!(Number.isFinite(start)&&Number.isFinite(end)&&start<end&&end<=now+300000&&end>=now-30*60000&&start>=now-30*day-30*60000&&end-start<=30*day))
+    return {status:422,body:{error:'regional window must be within the last 30 days'}};
+  let current,stored;
+  try { current=JSON.parse(await env.PRICES.get('news')); stored=JSON.parse(await env.PRICES.get('news-gap-history')); } catch {}
+  if (!current || validateIngest(current,KEEP_ROLLING)) return {status:409,body:{error:'valid current feed required'}};
+  if (stored && !Array.isArray(stored.stories)) return {status:409,body:{error:'invalid stored history'}};
+  const rows=[...(stored?.stories||[])],byId=new Map(rows.map((s,i)=>[s.id,i]));
+  const known=new Map([...current.stories,...rows].map(s=>[s.id,s]));
+  const seenKeys=new Set([...current.stories,...rows].flatMap(historyKeys));let added=0,updated=0;
+  for (const s of body.stories) {
+    const published=Date.parse(s.published_at);let url;
+    try { url=new URL(s.source.url); } catch {return {status:422,body:{error:'source URL required'}};}
+    if (!(start<=published&&published<=end&&published<=now)||!['https:','http:'].includes(url.protocol)||url.username||url.password||!s.source.name||s.impacts?.some(i=>i.scorable===true))
+      return {status:422,body:{error:'invalid regional publication, source or scorable impact'}};
+    const previous=known.get(s.id);
+    if (body.connections_only===true) {
+      const original=previous || body.originals?.[s.id];
+      if (!original || canonicalValue(immutableArticle(original))!==canonicalValue(immutableArticle(s)))
+        return {status:422,body:{error:'connection correction changed immutable fields'}};
+      if (byId.has(s.id)) {
+        const index=byId.get(s.id);
+        if (canonicalValue(rows[index])!==canonicalValue(s)) {rows[index]=s;updated++;}
+        continue;
+      }
+    } else {
+      const p=s.backfill_provenance,at=Date.parse(s.backfilled_at);
+      if (s.backfilled!==true||p?.version!=='regional-backfill-v1'||p.original_published_at!==s.published_at||!p.feed_url||!Number.isFinite(at)||at<published||at>now+300000)
+        return {status:422,body:{error:'regional source provenance required'}};
+      if (previous || historyKeys(s).some(k=>seenKeys.has(k)))continue;
+    }
+    if(body.connections_only===true&&!previous&&historyKeys(s).some(k=>seenKeys.has(k)))return {status:409,body:{error:'existing canonical article must be corrected instead of adding a duplicate'}};
+    byId.set(s.id,rows.length);rows.push(s);known.set(s.id,s);historyKeys(s).forEach(k=>seenKeys.add(k));added++;
+  }
+  if(rows.length>240)return {status:422,body:{error:'gap history capacity exceeded; no truncation'}};
+  if(added||updated)await env.PRICES.put('news-gap-history',JSON.stringify({stories:rows,ingested_at:now}));
+  return {status:200,body:{ok:true,written:!!(added||updated),added,updated,count:rows.length}};
 }

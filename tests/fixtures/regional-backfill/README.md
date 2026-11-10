@@ -1,0 +1,1 @@
+Offline fixture reconstructed only from an actual saved article in assets/globe/news-archive.json. The original headline, link, publication timestamp, summary and id are preserved. It is not a newly fetched feed or a claim about present-day RSS retention. No fixture is ingested.
