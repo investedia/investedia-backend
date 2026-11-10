@@ -293,10 +293,10 @@ hourly robot and cannot be attributed to these proposals.
 |---|---|---|
 | codex/news-feeds-expand | Inventory, original-date/robots/licensing probes | 0 new feeds; official-source probes blocked; licence review pending |
 | codex/news-connections | Country/asset map, evidence-only resolver, ten-country replay tests | 0 new links; missing licensed quotes and explicit relationships |
-| codex/markets-coverage | ECB reference-FX adapter, 30-return correlation engine | 0 new prices/moves/pairs; source/terms blocked; 63 exchanges lack licensed dated series/hours |
+| codex/markets-coverage | ECB reference-FX adapter, 30-return correlation engine | 0 new prices/moves/pairs; source/terms blocked; 63 exchanges lack licensed dated series; calendar follow-up below fills 46 venues |
 | codex/country-basics | 990 preserved dated numeric observations, seven-indicator WDI adapter, gated weekly artifact | 0 new numeric observations; all seven WDI refresh requests blocked |
 
-No Yahoo requests, paid services, financial jobs, V5/Track Record edits, frontend
+No Yahoo requests, paid services, financial jobs, V5/Track Record edits, frontend UI
 changes, deployments or live ingestion were performed. Existing saved timestamps
 were preserved. No new secrets. Optional repository variables, off by default:
 NEWS_CONNECTIONS_ENABLED and COUNTRY_BASICS_ENABLED. The latter only creates a
