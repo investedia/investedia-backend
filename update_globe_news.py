@@ -173,7 +173,7 @@ NEWS_FEEDS = [  # publisher business feeds (headline + link + their own short de
     ('https://www.prnewswire.com/rss/financial-services-latest-news/earnings-list.rss', 'PR Newswire'),
     ('https://www.prnewswire.com/rss/financial-services-latest-news/acquisitions-mergers-and-takeovers-list.rss', 'PR Newswire'),
     ('https://feeds.bbci.co.uk/news/business/rss.xml', 'BBC News'),
-    ('https://www.theguardian.com/business/rss', 'The Guardian'),
+    ('https://www.theguardian.com/uk/business/rss', 'The Guardian'),
     ('https://rss.nytimes.com/services/xml/rss/nyt/Business.xml', 'The New York Times'),
     ('https://feeds.content.dowjones.io/public/rss/mw_topstories', 'MarketWatch'),
     ('https://www.scmp.com/rss/92/feed', 'South China Morning Post'),
