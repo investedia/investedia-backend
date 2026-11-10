@@ -1,0 +1,44 @@
+name: Coverage fetch (review only)
+# Manual. Runs Codex's coverage tools with open internet and uploads the results
+# for review. Publishes nothing, enables no feed, commits nothing. No secrets used.
+on:
+  workflow_dispatch:
+    inputs:
+      feed_probe_limit:
+        description: How many candidate feeds to probe
+        default: '200'
+permissions:
+  contents: read
+concurrency:
+  group: coverage-fetch
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Tests
+        run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Probe candidate news feeds
+        continue-on-error: true
+        run: python tools/coverage/feed_inventory.py --probe --limit "${{ inputs.feed_probe_limit }}"
+      - name: Fetch country basics (World Bank)
+        continue-on-error: true
+        run: python tools/coverage/country_basics.py --fetch
+      - name: Fetch official market prices / correlations
+        continue-on-error: true
+        run: python tools/coverage/market_data.py --fetch
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: coverage-review
+          path: |
+            data/coverage/
+            data/country-basics.json
+          retention-days: 14
