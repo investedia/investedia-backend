@@ -1,0 +1,1362 @@
+{
+  "configuration_as_of": "2026-11-10",
+  "schema": "investedia.source-licensing-review/v1",
+  "notice": "Not investment advice.",
+  "scope": "Evidence only; no source enabled, licence granted, data ingested or rates published.",
+  "sources": [
+    {
+      "name": "Moneyweb",
+      "source_url": "https://www.moneyweb.co.za/feed/",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Nairametrics",
+      "source_url": "https://nairametrics.com/feed/",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "BusinessDay Nigeria",
+      "source_url": "https://businessday.ng/feed/",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Daily News Egypt",
+      "source_url": "https://dailynewsegypt.com/feed/",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "AllAfrica",
+      "source_url": "https://allafrica.com/tools/headlines/rdf/business/headlines.rdf",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "TechCabal",
+      "source_url": "https://techcabal.com/feed/",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "IOL Business",
+      "source_url": "https://iol.co.za/rss/iol/business",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Ghana Business News",
+      "source_url": "https://www.ghanabusinessnews.com/feed/",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Central Bank of Kenya",
+      "source_url": "https://www.centralbank.go.ke/feed/",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad",
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Capital FM Kenya",
+      "source_url": "https://www.capitalfm.co.ke/business/feed/",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Business Insider Africa",
+      "source_url": "https://africa.businessinsider.com/rss",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Addis Fortune",
+      "source_url": "https://addisfortune.news/feed/",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Premium Times",
+      "source_url": "https://www.premiumtimesng.com/category/business/feed",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "MercoPress",
+      "source_url": "https://en.mercopress.com/rss",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Buenos Aires Times",
+      "source_url": "https://www.batimes.com.ar/feed",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "The Rio Times",
+      "source_url": "https://www.riotimesonline.com/feed/",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Mexico News Daily",
+      "source_url": "https://mexiconewsdaily.com/feed/",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Colombia One",
+      "source_url": "https://colombiaone.com/feed/",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Ag\u00eancia Brasil",
+      "source_url": "https://agenciabrasil.ebc.com.br/en/rss/ultimasnoticias/feed.xml",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad",
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Peru Reports",
+      "source_url": "https://perureports.com/feed/",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Latin America Reports",
+      "source_url": "https://latinamericareports.com/feed/",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Dominican Today",
+      "source_url": "https://dominicantoday.com/feed/",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Infobae",
+      "source_url": "https://www.infobae.com/arc/outboundfeeds/rss/category/economia/",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Clar\u00edn",
+      "source_url": "https://www.clarin.com/rss/economia/",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "La Naci\u00f3n",
+      "source_url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/category/economia/",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "InfoMoney",
+      "source_url": "https://www.infomoney.com.br/feed/",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Money Times",
+      "source_url": "https://www.moneytimes.com.br/feed/",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Exame",
+      "source_url": "https://exame.com/feed/",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Brazil Journal",
+      "source_url": "https://braziljournal.com/feed/",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Portafolio",
+      "source_url": "https://www.portafolio.co/rss/economia.xml",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "El Comercio",
+      "source_url": "https://elcomercio.pe/arcio/rss/category/economia/",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Banco de la Rep\u00fablica (Colombia)",
+      "source_url": "https://www.banrep.gov.co/es/rss.xml",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad",
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Daily Sabah",
+      "source_url": "https://www.dailysabah.com/rssFeed/business",
+      "regions": [
+        "me"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "H\u00fcrriyet Daily News",
+      "source_url": "https://www.hurriyetdailynews.com/rss/economy",
+      "regions": [
+        "me"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "The Japan Times",
+      "source_url": "https://www.japantimes.co.jp/business/feed/",
+      "regions": [
+        "asia"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "The Business Times",
+      "source_url": "https://www.businesstimes.com.sg/rss/top-stories",
+      "regions": [
+        "asia"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "CNA",
+      "source_url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6936",
+      "regions": [
+        "asia"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Mint",
+      "source_url": "https://www.livemint.com/rss/companies",
+      "regions": [
+        "asia"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "The National",
+      "source_url": "https://www.thenationalnews.com/arc/outboundfeeds/rss/category/business/?outputType=xml",
+      "regions": [
+        "me"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Globes",
+      "source_url": "https://en.globes.co.il/WebService/Rss/RssFeeder.asmx/FeederNode?iID=1725",
+      "regions": [
+        "me"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Euronews",
+      "source_url": "https://www.euronews.com/rss?level=vertical&name=business",
+      "regions": [
+        "eu"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "The Irish Times",
+      "source_url": "https://www.irishtimes.com/arc/outboundfeeds/feed-business/?outputType=xml",
+      "regions": [
+        "eu"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "European Central Bank",
+      "source_url": "https://www.ecb.europa.eu/rss/press.html",
+      "regions": [
+        "eu"
+      ],
+      "tiers": [
+        "regional_broad",
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Swiss National Bank",
+      "source_url": "https://www.snb.ch/public/en/rss/news",
+      "regions": [
+        "eu"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "RNZ",
+      "source_url": "https://www.rnz.co.nz/rss/business.xml",
+      "regions": [
+        "oc"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "NZ Herald",
+      "source_url": "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/business/?outputType=xml",
+      "regions": [
+        "oc"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Reserve Bank of New Zealand",
+      "source_url": "https://www.rbnz.govt.nz/feeds/news",
+      "regions": [
+        "oc"
+      ],
+      "tiers": [
+        "regional_broad",
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Business Daily Africa",
+      "source_url": "https://www.businessdailyafrica.com/service/rss/bd/1939132/feed.rss",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Diario Financiero",
+      "source_url": "https://www.df.cl/noticias/site/list/port/rss.xml",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "The Globe and Mail",
+      "source_url": "https://www.theglobeandmail.com/arc/outboundfeeds/rss/category/business/",
+      "regions": [
+        "na"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Bank of Canada",
+      "source_url": "https://www.bankofcanada.ca/content_type/press-releases/feed/",
+      "regions": [
+        "na"
+      ],
+      "tiers": [
+        "regional_broad",
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Japan Today",
+      "source_url": "https://japantoday.com/category/business/feed",
+      "regions": [
+        "asia"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Bank of Japan",
+      "source_url": "https://www.boj.or.jp/en/rss/whatsnew.xml",
+      "regions": [
+        "asia"
+      ],
+      "tiers": [
+        "regional_broad",
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "CGTN",
+      "source_url": "https://www.cgtn.com/subscribe/rss/section/business.xml",
+      "regions": [
+        "asia"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "RTHK",
+      "source_url": "https://rthk.hk/rthk/news/rss/e_expressnews_efinance.xml",
+      "regions": [
+        "asia"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Antara",
+      "source_url": "https://en.antaranews.com/rss/business-investment.xml",
+      "regions": [
+        "asia"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "VnExpress International",
+      "source_url": "https://e.vnexpress.net/rss/business.rss",
+      "regions": [
+        "asia"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Bangkok Post",
+      "source_url": "https://www.bangkokpost.com/rss/data/business.xml",
+      "regions": [
+        "asia"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "The Hindu BusinessLine",
+      "source_url": "https://www.thehindubusinessline.com/markets/feeder/default.rss",
+      "regions": [
+        "asia"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Reserve Bank of India",
+      "source_url": "https://www.rbi.org.in/pressreleases_rss.xml",
+      "regions": [
+        "asia"
+      ],
+      "tiers": [
+        "regional_broad",
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Business Recorder",
+      "source_url": "https://www.brecorder.com/feeds/latest-news",
+      "regions": [
+        "asia"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Dawn",
+      "source_url": "https://www.dawn.com/feeds/business",
+      "regions": [
+        "asia"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "BusinessWorld",
+      "source_url": "https://www.bworldonline.com/feed/",
+      "regions": [
+        "asia"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "The Philippine Star",
+      "source_url": "https://www.philstar.com/rss/business",
+      "regions": [
+        "asia"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Daily Sabah",
+      "source_url": "https://www.dailysabah.com/rssFeed/economy",
+      "regions": [
+        "me"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Anadolu Agency",
+      "source_url": "https://www.aa.com.tr/en/rss/default?cat=economy",
+      "regions": [
+        "me"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "The Sydney Morning Herald",
+      "source_url": "https://www.smh.com.au/rss/business.xml",
+      "regions": [
+        "oc"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Stockhead",
+      "source_url": "https://stockhead.com.au/feed/",
+      "regions": [
+        "oc"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Reserve Bank of Australia",
+      "source_url": "https://www.rba.gov.au/rss/rss-cb-media-releases.xml",
+      "regions": [
+        "oc"
+      ],
+      "tiers": [
+        "regional_broad",
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "BusinessTech",
+      "source_url": "https://businesstech.co.za/news/feed/",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Hespress",
+      "source_url": "https://en.hespress.com/economy/feed",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "MyJoyOnline",
+      "source_url": "https://www.myjoyonline.com/business/feed/",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Egypt Independent",
+      "source_url": "https://egyptindependent.com/category/business/feed/",
+      "regions": [
+        "af"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "finews.com",
+      "source_url": "https://www.finews.com/news/english-news?format=feed&type=rss",
+      "regions": [
+        "eu"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "E24",
+      "source_url": "https://e24.no/rss2/",
+      "regions": [
+        "eu"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Dagens industri",
+      "source_url": "https://www.di.se/rss",
+      "regions": [
+        "eu"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Sveriges Riksbank",
+      "source_url": "https://www.riksbank.se/en-gb/rss/press-releases/",
+      "regions": [
+        "eu"
+      ],
+      "tiers": [
+        "regional_broad",
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "B\u00f8rsen",
+      "source_url": "https://borsen.dk/rss",
+      "regions": [
+        "eu"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Danmarks Nationalbank",
+      "source_url": "https://www.nationalbanken.dk/api/rssfeed?topic=Press%20releases&lang=en",
+      "regions": [
+        "eu"
+      ],
+      "tiers": [
+        "regional_broad",
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Business Insider Polska",
+      "source_url": "https://businessinsider.com.pl/.feed",
+      "regions": [
+        "eu"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Bloomberg HT",
+      "source_url": "https://www.bloomberght.com/rss",
+      "regions": [
+        "eu"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Expansi\u00f3n",
+      "source_url": "https://expansion.mx/rss",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "La Tercera",
+      "source_url": "https://www.latercera.com/arc/outboundfeeds/rss/category/pulso/?outputType=xml",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "La Rep\u00fablica",
+      "source_url": "https://www.larepublica.co/rss/",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Gesti\u00f3n",
+      "source_url": "https://gestion.pe/arcio/rss/",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "\u00c1mbito",
+      "source_url": "https://www.ambito.com/rss/pages/economia.xml",
+      "regions": [
+        "latam"
+      ],
+      "tiers": [
+        "regional_broad"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "regions": [],
+      "tiers": [
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Bank of England",
+      "source_url": "https://www.bankofengland.co.uk/rss/news",
+      "regions": [],
+      "tiers": [
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "US Securities and Exchange Commission",
+      "source_url": "https://www.sec.gov/news/pressreleases.rss",
+      "regions": [],
+      "tiers": [
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/feeds/speeches.xml",
+      "regions": [],
+      "tiers": [
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Federal Reserve",
+      "source_url": "https://www.federalreserve.gov/feeds/press_monetary.xml",
+      "regions": [],
+      "tiers": [
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "US Bureau of Economic Analysis",
+      "source_url": "https://www.bea.gov/rss/rss.xml",
+      "regions": [],
+      "tiers": [
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "US Energy Information Administration",
+      "source_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "regions": [],
+      "tiers": [
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Bank of Korea",
+      "source_url": "https://www.bok.or.kr/eng/bbs/E0000634/news.rss",
+      "regions": [],
+      "tiers": [
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "Eurostat",
+      "source_url": "https://ec.europa.eu/eurostat/en/search?p_p_id=estatsearchportlet_WAR_estatsearchportlet&p_p_lifecycle=2&p_p_state=maximized&p_p_mode=view&p_p_resource_id=atom&_estatsearchportlet_WAR_estatsearchportlet_collection=CAT_PREREL",
+      "regions": [],
+      "tiers": [
+        "official_hourly"
+      ],
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "FRED: Treasury 2Y/10Y and Fed funds target",
+      "source_url": "https://fred.stlouisfed.org/",
+      "terms_url": "https://fred.stlouisfed.org/legal/",
+      "datasets": [
+        "DGS2",
+        "DGS10",
+        "DFEDTARL",
+        "DFEDTARU"
+      ],
+      "scope": "Source-specific series rights must be reviewed; a FRED API key is not a blanket redistribution grant.",
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    },
+    {
+      "name": "ECB: deposit facility rate",
+      "source_url": "https://data.ecb.europa.eu/",
+      "terms_url": "https://www.ecb.europa.eu/services/disclaimer/html/index.en.html",
+      "datasets": [
+        "FM.B.U2.EUR.4F.KR.DFR.LEV"
+      ],
+      "scope": "Name ECB; verify the current notice and any series-specific exception.",
+      "collection_status": "not_fetched_in_blocked_sandbox",
+      "licence_review": "pending_primary_notice_review",
+      "commercial_headlines_summaries_links": null,
+      "notices": []
+    }
+  ],
+  "gemini_calls": 0,
+  "secrets_used": []
+}

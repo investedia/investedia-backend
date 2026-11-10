@@ -1,0 +1,45 @@
+name: Source licensing evidence (manual review only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: source-licensing-review
+  cancel-in-progress: false
+jobs:
+  notices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -p test_source_licensing.py
+      - name: Restore reviewed coverage inventory before provider requests
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          if [ ! -f data/coverage/feed-inventory.json ]; then
+            coverage_run=$(gh run list --workflow coverage-fetch.yml --status success --limit 1 --json databaseId --jq '.[0].databaseId')
+            test -n "$coverage_run" && test "$coverage_run" != null
+            gh run download "$coverage_run" --name coverage-review --dir .local/coverage-review
+            python - <<'PYTHON'
+          from pathlib import Path
+          import shutil
+          matches=list(Path('.local/coverage-review').rglob('feed-inventory.json'))
+          assert len(matches)==1, 'A unique coverage inventory artifact is required'
+          shutil.copyfile(matches[0], 'data/coverage/feed-inventory.json')
+          PYTHON
+          fi
+      - run: python tools/coverage/source_licensing.py --fetch
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: source-licensing-${{ github.run_id }}
+          path: .local/source-licensing/
+          retention-days: 30
