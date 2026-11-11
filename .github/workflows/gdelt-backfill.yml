@@ -46,6 +46,11 @@ on:
         type: choice
         options: [claude-haiku-5-5, gemini]
         default: claude-haiku-5-5
+      sources:
+        description: 'english, translated (local-language press; English headlines marked translated; Claude writer only), or english+translated'
+        type: choice
+        options: [english, translated, english+translated]
+        default: english
       max_usd:
         description: 'Claude spending cap for this run in US dollars (the run stops before passing it)'
         default: '3'
@@ -138,13 +143,14 @@ jobs:
           GEMINI_MODEL: ${{ inputs.gemini_model }}
           WRITER: ${{ inputs.writer }}
           MAX_USD: ${{ inputs.max_usd }}
+          SOURCES: ${{ inputs.sources }}
           GEMINI_API_KEY: ${{ inputs.writer == 'gemini' && secrets.GEMINI_API_KEY || '' }}
           ANTHROPIC_API_KEY: ${{ inputs.writer != 'gemini' && secrets.ANTHROPIC_API_KEY || '' }}
           WORKER_URL: ${{ secrets.WORKER_URL }}
           PIXABAY_KEY: ''
         run: >-
           python tools/gdelt-backfill.py --phase generate
-          $( [ "$WRITER" = gemini ] && echo --provider gemini || echo --provider claude --claude-model "$WRITER" ) --max-usd "$MAX_USD"
+          $( [ "$WRITER" = gemini ] && echo --provider gemini || echo --provider claude --claude-model "$WRITER" ) --max-usd "$MAX_USD" --sources "$SOURCES"
           --confirm "$CONFIRM" --dry-run "$DRY_RUN"
           --start "$START_DATE" --end "$END_DATE" --regions "$REGIONS"
           --gemini-calls "$CALLS" --batch-size "$BATCH" --gdelt-files "$GDELT" --max-minutes 100

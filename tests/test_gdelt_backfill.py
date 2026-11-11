@@ -407,6 +407,34 @@ class ClaudeProviderTests(EndToEndTests):
         report = json.loads((self.out/'report.json').read_text())
         self.assertEqual(report['models_failed'], {'claude-haiku-5-5': 'http_400: Your credit balance is too low.'})
 
+    def test_local_language_articles_get_a_marked_english_headline(self):
+        tr_row = GKG.splitlines()[0].split('\t')
+        tr_row[4] = 'https://news.fixture.invalid/markets/test-only-shilling-sw'
+        tr_row[25] = 'srclc:swa;eng:GT-SWA 1.0'
+        tr_row[26] = '<PAGE_TITLE>Test-only: Shilingi yaimarika benki kuu ikishikilia riba</PAGE_TITLE>'
+        tr_text = '\t'.join(tr_row)
+        self.gdelt = lambda url, timeout=None: gkg_zip(tr_text) if ('translation' in url and '20260902120000' in url) else gkg_zip('')
+        page_sw = PAGE.replace('Test-only: Kenyan shilling edges up as central bank holds rate | Fixture Daily', 'Test-only: Shilingi yaimarika benki kuu ikishikilia riba')
+        self.page = lambda url, timeout=None: 'User-agent: *\nAllow: /\n' if url.endswith('/robots.txt') else page_sw
+        replies = [json.dumps([{'i': 0, 'title': 'Test-only: Shilling strengthens as central bank holds rate',
+                                'description': 'Test-only description: the shilling firmed after the central bank in Nairobi kept its rate.'}]),
+                   json.dumps(self.PICKED)]
+        class Seq(FakeClaude):
+            def create(self, **kw):
+                self.reply_text = replies[len(self.requests)]; return super().create(**kw)
+        fake = Seq('')
+        report = self.run_once(True, calls=5, provider='claude', claude_client=fake, sources='translated')
+        self.assertIn('Translate each news headline', fake.requests[0]['messages'][0]['content'])
+        self.assertIn('Shilingi', fake.requests[0]['messages'][0]['content'])
+        self.assertIn('Shilling strengthens', fake.requests[1]['messages'][0]['content'])
+        art = json.loads((self.out/'new-articles.json').read_text())[0]
+        self.assertEqual(art['headline'], 'Test-only: Shilling strengthens as central bank holds rate')
+        self.assertTrue(art['headline_translated']); self.assertEqual(art['source_language'], 'swa')
+        self.assertEqual(art['original_headline'], 'Test-only: Shilingi yaimarika benki kuu ikishikilia riba')
+        self.assertEqual(art['published_at'], '2026-09-02T04:40:00Z')
+        self.assertEqual(report['translated_articles'], 1); self.assertEqual(report['translated_samples'][0]['language'], 'swa')
+        with self.assertRaises(ValueError): self.run_once(True, sources='translated')  # Gemini cannot translate here
+
     # The Gemini-specific scenarios of the parent class do not apply here.
     test_overloaded_model_is_retried_with_pauses_then_the_next_model_is_used = None
     test_all_models_failing_stops_and_says_why = None

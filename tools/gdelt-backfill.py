@@ -150,7 +150,9 @@ def gkg_plan(start, end, max_files):
     return plan[:max_files]
 
 
-def gkg_url(at): return GKG_BASE + at.strftime('%Y%m%d%H%M%S') + '.gkg.csv.zip'
+def gkg_url(at, kind='english'):
+    # 'translated' is GDELT's second stream: articles in ~65 other languages (themes/places computed on its translation).
+    return GKG_BASE + at.strftime('%Y%m%d%H%M%S') + ('.translation.gkg.csv.zip' if kind == 'translated' else '.gkg.csv.zip')
 
 
 def fetch_bytes(url, timeout=60):
@@ -177,7 +179,7 @@ def main_country(locations):
     return counts.most_common(1)[0][0] if counts else ''
 
 
-def parse_gkg(text, at):
+def parse_gkg(text, at, translated=False):
     """GKG 2.1 rows -> discovery records for every configured region. The batch time is kept for audit only."""
     rows, rejected = [], Counter()
     for line in text.splitlines():
@@ -192,21 +194,26 @@ def parse_gkg(text, at):
         m = re.search(r'<PAGE_TITLE>(.*?)</PAGE_TITLE>', c[26])
         title = html.unescape(m.group(1)).strip() if m else ''
         if len(title) < 12: rejected['missing_title'] += 1; continue
-        rows.append({'title': title[:300], 'url': url, 'domain': (c[3] or u.hostname).lower()[:120], 'gdelt_seen': iso(at),
-                     'gdelt_country': main_country(c[9]), 'gdelt_region': region, 'feed_region': REGIONS[region]['balance']})
+        row = {'title': title[:300], 'url': url, 'domain': (c[3] or u.hostname).lower()[:120], 'gdelt_seen': iso(at),
+               'gdelt_country': main_country(c[9]), 'gdelt_region': region, 'feed_region': REGIONS[region]['balance']}
+        if translated:
+            lang = re.search(r'srclc:([a-z]{2,3})', c[25])
+            row.update(translated=True, source_language=lang.group(1) if lang else 'und')
+        rows.append(row)
     return rows, rejected
 
 
 class GkgClient:
     """Downloads GKG files one at a time (>= 2 s apart); caches only the small parsed result, so runs resume."""
-    def __init__(self, get, cache_dir, max_files=DEFAULT_GDELT_FILES, clock=time.monotonic, sleep=time.sleep, interval=GKG_INTERVAL):
+    def __init__(self, get, cache_dir, max_files=DEFAULT_GDELT_FILES, clock=time.monotonic, sleep=time.sleep, interval=GKG_INTERVAL, kind='english'):
+        self.kind = kind
         if not 1 <= max_files <= MAX_GDELT_FILES: raise ValueError('gdelt_files_must_be_1_to_400')
         self.get, self.cache, self.max, self.clock, self.sleep, self.interval = get, Path(cache_dir), max_files, clock, sleep, interval
         self.cache.mkdir(parents=True, exist_ok=True)
         self.downloads = 0; self.cache_hits = 0; self.slept = 0.0; self.errors = Counter(); self.consecutive = 0
         self.last = None; self.stopped = None; self.rejected = Counter()
 
-    def path(self, at): return self.cache/(at.strftime('%Y%m%d%H%M%S') + '.json')
+    def path(self, at): return self.cache/(('tr-' if self.kind == 'translated' else '') + at.strftime('%Y%m%d%H%M%S') + '.json')
 
     def fetch(self, at):
         path = self.path(at)
@@ -220,7 +227,7 @@ class GkgClient:
             if wait > 0: self.sleep(wait); self.slept += wait
         self.downloads += 1
         try:
-            raw = self.get(gkg_url(at))
+            raw = self.get(gkg_url(at, self.kind))
             with zipfile.ZipFile(io.BytesIO(raw)) as z:
                 names = [n for n in z.namelist() if n.endswith('.csv')]
                 if len(names) != 1: raise ValueError('unexpected_gkg_archive')
@@ -228,14 +235,14 @@ class GkgClient:
         except urllib.error.HTTPError as e:
             self.errors['http_%d' % e.code] += 1
             if e.code == 404:  # GDELT occasionally skips a 15-minute file: record it as empty
-                self.consecutive = 0; write(path, {'url': gkg_url(at), 'rows': [], 'missing': True}); return [], 'missing'
+                self.consecutive = 0; write(path, {'url': gkg_url(at, self.kind), 'rows': [], 'missing': True}); return [], 'missing'
             return self._failed()
         except (OSError, ValueError, zipfile.BadZipFile) as e:
             self.errors[type(e).__name__] += 1; return self._failed()
         finally: self.last = self.clock()
         self.consecutive = 0
-        rows, rejected = parse_gkg(text, at); self.rejected.update(rejected)
-        write(path, {'url': gkg_url(at), 'fetched_at': iso(datetime.now(timezone.utc)), 'rows': rows})
+        rows, rejected = parse_gkg(text, at, self.kind == 'translated'); self.rejected.update(rejected)
+        write(path, {'url': gkg_url(at, self.kind), 'fetched_at': iso(datetime.now(timezone.utc)), 'rows': rows})
         return rows, 'fetched'
 
     def _failed(self):
@@ -352,6 +359,7 @@ def enrich_page(row, page, start, end):
     c = {'title': title, 'url': row['url'], 'source': site or row['domain'], 'published': iso(published), 'kind': 'news', 'hint': '',
          'desc': desc, 'feed_url': GKG_BASE, 'feed_region': row['feed_region'], 'gdelt_region': row['gdelt_region'],
          'gdelt_seen': row['gdelt_seen'], 'gdelt_country': row['gdelt_country']}
+    if row.get('translated'): c.update(translated=True, source_language=row.get('source_language', 'und'))
     if regional.contains_secret(c): return None, 'secret_like_content'
     c['chash'] = core.content_hash(c)
     return c, None
@@ -489,6 +497,9 @@ def recording(transport, budget_ref):
 # pick_stories; only the model call changes. Prices: $ per million input / output tokens (prompts < 100K tokens).
 CLAUDE_PRICES = {'claude-haiku-5-5': (0.10, 0.50), 'claude-sonnet-5-5': (2.00, 10.00), 'claude-opus-5-5': (4.00, 20.00)}
 CLAUDE_MAX_TOKENS = 16000
+TRANSLATE_PROMPT = ('Translate each news headline and description below into clear English, faithfully. Do not add, remove or '
+                    'interpret information; keep names, numbers, currencies and dates exactly. Return only a JSON array of '
+                    '{"i": <same i>, "title": "<English headline>", "description": "<English description>"}.\n\nItems: ')
 
 
 class ClaudeEditor:
@@ -532,6 +543,19 @@ class ClaudeEditor:
         try: return json.loads(re.sub(r'^```(json)?|```$', '', text.strip()))
         except ValueError: self.unusable['invalid_json'] += 1; return []
 
+    def translate(self, items):
+        """[(title, description)] in other languages -> {index: (english title, english description)}; faithful, nothing added."""
+        listing = json.dumps([{'i': i, 'title': t, 'description': d} for i, (t, d) in enumerate(items)], ensure_ascii=False)
+        prompt = (TRANSLATE_PROMPT + listing)
+        got = self(prompt)
+        out = {}
+        for row in got if isinstance(got, list) else []:
+            try:
+                i, t, d = int(row['i']), str(row['title']).strip(), str(row['description']).strip()
+            except (KeyError, TypeError, ValueError): continue
+            if 0 <= i < len(items) and 12 <= len(t) <= 300 and 40 <= len(d) <= 600: out[i] = (t, d[:400])
+        return out
+
 
 def provenance(story, original, now):
     if story['headline'] != original['title'] or story['published_at'] != original['published'] or story['source']['url'] != original['url']:
@@ -541,11 +565,14 @@ def provenance(story, original, now):
                  backfill_provenance={'version': VERSION, 'original_published_at': story['published_at'], 'feed_url': GKG_BASE,
                                       'discovered_via': 'GDELT GKG 2.1', 'gdelt_seen': original['gdelt_seen'],
                                       'publisher_country_gdelt': original['gdelt_country'], 'description_from': 'publisher page metadata'})
+    if original.get('translated'):
+        story.update(headline_translated=True, original_headline=original['original_title'], source_language=original['source_language'])
+        story['backfill_provenance']['description_from'] = 'publisher page metadata, translated to English by Claude'
     story['_feed_description'] = original['desc']
     return story
 
 
-def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH, deadline=None, workers=8):
+def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH, deadline=None, workers=8, translator=None):
     """Enrich lazily, one model batch at a time; stop when the call budget, deadline or rows run out."""
     if not 1 <= batch_size <= 40: raise ValueError('batch_size_must_be_1_to_40')
     box, by_iso, sym = ref
@@ -563,7 +590,21 @@ def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH
                     if c: part.append(c); continue
                     rejected[reason] += 1
                     if not TRANSIENT.match(reason): judged.append(row['url'])  # stable rule: do not fetch again next run
-            if not part: break
+            foreign = [c for c in part if c.get('translated')]
+            if foreign:
+                if translator is None:
+                    rejected['translation_needs_claude_writer'] += len(foreign); part = [c for c in part if not c.get('translated')]
+                else:
+                    budget.context = {'purpose': 'translate_headlines', 'input_candidates': len(foreign)}
+                    try: english = translator.translate([(c['title'], c['desc']) for c in foreign])
+                    except BudgetExceeded: break
+                    except RuntimeError: english = {}
+                    for i, c in enumerate(foreign):
+                        if i in english:
+                            c.update(original_title=c['title'], original_desc=c['desc'], title=english[i][0], desc=english[i][1])
+                        else: c['drop'] = True; rejected['translation_failed'] += 1
+                    part = [c for c in part if not c.get('drop')]
+            if not part: continue
             budget.context = {'purpose': 'gdelt_backfill', 'input_candidates': len(part),
                               'by_gdelt_region': dict(Counter(c['gdelt_region'] for c in part))}
             robot.status['gemini_ok'] = False
@@ -671,7 +712,9 @@ def ingest_artifact(output, worker, state_root, now, library_push=None):
 def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=None, gemini_calls=DEFAULT_CALLS,
         batch_size=MODEL_BATCH, gdelt_files=DEFAULT_GDELT_FILES, max_minutes=100, now=None,
         gdelt_get=None, page_get=None, model_get=None, library_push=None, sleep=time.sleep, state_root=None, ingest=True,
-        provider='gemini', claude_model='claude-haiku-5-5', max_usd=3.0, claude_client=None):
+        provider='gemini', claude_model='claude-haiku-5-5', max_usd=3.0, claude_client=None, sources='english'):
+    if sources not in ('english', 'english+translated', 'translated'): raise ValueError('sources_invalid')
+    if 'translated' in sources and provider != 'claude': raise ValueError('translated_sources_need_claude_writer')
     if provider not in ('gemini', 'claude'): raise ValueError('provider_must_be_gemini_or_claude')
     if not 0 < float(max_usd) <= 50: raise ValueError('max_usd_must_be_0_to_50')
     a, b = window(start, end); regions = regions_from(','.join(regions) if isinstance(regions, list) else regions)
@@ -728,24 +771,30 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         # Discovery: GDELT GKG 15-minute files (the search API answers 429 to shared GitHub machines)
         plan = gkg_plan(a, b, gdelt_files)
         report['gdelt_files_planned'] = len(plan)
-        client = GkgClient(gdelt_get or fetch_bytes, cache_dir, gdelt_files, sleep=sleep)
+        kinds = ['english', 'translated'] if sources == 'english+translated' else [sources]
+        clients = {k: GkgClient(gdelt_get or fetch_bytes, cache_dir, gdelt_files, sleep=sleep, kind=k) for k in kinds}
         found, parse_rejected, discovery = [], Counter(), Counter()
-        for at in plan:
-            if time.monotonic() >= deadline: parse_rejected['run_deadline_reached_during_discovery'] += 1; break
-            rows, status = client.fetch(at)
-            discovery[status] += 1
-            found += [r for r in rows if r['gdelt_region'] in regions]
-        parse_rejected.update(client.rejected)
+        for kind, client in clients.items():
+            for at in plan:
+                if time.monotonic() >= deadline: parse_rejected['run_deadline_reached_during_discovery'] += 1; break
+                rows, status = client.fetch(at)
+                discovery[kind + ':' + status] += 1
+                found += [r for r in rows if r['gdelt_region'] in regions]
+            parse_rejected.update(client.rejected)
+        client = clients[kinds[0]]
+        report['sources'] = sources
+        report['discovered_translated'] = sum(bool(r.get('translated')) for r in found)
+        report['discovered_by_language'] = dict(Counter(r.get('source_language', 'eng') for r in found).most_common(20))
         candidates, dup = dedupe(found, known)
         ordered = order(candidates, regions)
-        report.update(gdelt={'downloads': client.downloads, 'cache_hits': client.cache_hits, 'slept_seconds': round(client.slept, 1),
+        report.update(gdelt={'downloads': sum(c.downloads for c in clients.values()), 'cache_hits': sum(c.cache_hits for c in clients.values()), 'slept_seconds': round(client.slept, 1),
                              'errors': dict(client.errors), 'stop': client.stopped, 'outcomes': dict(discovery)},
                       discovered=len(found), discovered_by_region=dict(Counter(r['gdelt_region'] for r in found)),
                       after_dedupe=len(candidates), after_dedupe_by_region=dict(Counter(r['gdelt_region'] for r in candidates)))
         # Generation
         ref = robot.load_ref()
         fetcher = PageFetcher(page_get or regional.request, sleep=sleep)
-        new, sent, enrich_rejected, judged = generate(ordered, a, b, now, ref, budget, fetcher, batch_size, deadline)
+        new, sent, enrich_rejected, judged = generate(ordered, a, b, now, ref, budget, fetcher, batch_size, deadline, translator=editor)
         registry = read(ROOT/'data/registry.json')['assets']; mk = read(reference/'markets.json')['assets']
         prices = {x['s']: x for x in mk}; prices.update(read(reference/'news-prices.json')['assets'])
         licences = read(ROOT/'data/coverage/price-licences.json', {})
@@ -767,7 +816,12 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
                       rejections={'gdelt_records': dict(parse_rejected), 'dedupe': dict(dup), 'pages_and_rules': dict(enrich_rejected), **dict(errors)},
                       impact_rejections={k: v for k, v in reasons.items() if v},
                       sample_articles=[{'id': s['id'], 'headline': s['headline'], 'summary': s.get('summary'), 'published_at': s['published_at'],
-                                        'country': s['location']['country'], 'source': s['source']} for s in new[:30]],
+                                        'country': s['location']['country'], 'source': s['source'],
+                                        **({'original_headline': s['original_headline'], 'language': s['source_language']} if s.get('headline_translated') else {})} for s in new[:30]],
+                      translated_articles=sum(bool(s.get('headline_translated')) for s in new),
+                      translated_samples=[{'headline': s['headline'], 'original_headline': s['original_headline'], 'language': s['source_language'],
+                                           'summary': s.get('summary'), 'published_at': s['published_at'], 'country': s['location']['country'],
+                                           'source': s['source']} for s in new if s.get('headline_translated')][:15],
                       library_rows_by_day={d: len(r) for d, r in days.items()})
         write(output/'new-articles.json', new); write(output/'library-rows.json', {'days': days})
         events.upsert(copy.deepcopy(new), base=str(output/'events'))
@@ -812,6 +866,7 @@ def main(argv=None):
     p.add_argument('--provider', choices=['gemini', 'claude'], default='gemini')
     p.add_argument('--claude-model', choices=sorted(CLAUDE_PRICES), default='claude-haiku-5-5')
     p.add_argument('--max-usd', type=float, default=3.0)
+    p.add_argument('--sources', choices=['english', 'english+translated', 'translated'], default='english')
     p.add_argument('--cache', type=Path, default=ROOT/'.local/gdelt-cache'); p.add_argument('--output', type=Path, default=ROOT/'.local/gdelt-backfill')
     a = p.parse_args(argv)
     if a.confirm != 'BACKFILL': p.error('confirm_must_equal_BACKFILL')
@@ -841,7 +896,7 @@ def main(argv=None):
     try:
         r = run(a.start, a.end, a.regions, a.dry_run == 'true', a.output, os.environ['WORKER_URL'], a.cache, a.gemini_model,
                 a.gemini_calls, a.batch_size, a.gdelt_files, a.max_minutes, ingest=a.phase == 'all',
-                provider=a.provider, claude_model=a.claude_model, max_usd=a.max_usd)
+                provider=a.provider, claude_model=a.claude_model, max_usd=a.max_usd, sources=a.sources)
         print(json.dumps({k: r.get(k) for k in ('state', 'new_articles', 'by_region', 'gemini_calls', 'cost_usd', 'elapsed_seconds')}))
         return 0
     except (ValueError, OSError):
