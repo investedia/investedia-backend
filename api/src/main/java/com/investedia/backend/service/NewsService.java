@@ -41,6 +41,8 @@ public class NewsService {
         meta.put("count", articles.size());
         // Live connection freshness is unknown in this read-only snapshot service.
         meta.put("connections_generated_at", null);
+        // Homepage totals arrive only through live robot pushes; a read-only snapshot has none (same as the Worker before its first push).
+        meta.put("stats", null);
         meta.put("model", "github-ingest");
         meta.put("note", "newest AI-enriched priority articles; the client merges them with the static broad feed");
         return new ApiEnvelope<>(Map.of("stories", List.copyOf(articles)), meta);
