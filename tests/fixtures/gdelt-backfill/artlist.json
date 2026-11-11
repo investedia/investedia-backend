@@ -1,8 +1,0 @@
-{"articles": [
- {"url": "https://news.fixture.invalid/markets/test-only-shilling", "url_mobile": "", "title": "Test-only: Kenyan shilling edges up as central bank holds rate", "seendate": "20260902T081500Z", "socialimage": "", "domain": "news.fixture.invalid", "language": "English", "sourcecountry": "Kenya"},
- {"url": "https://news.fixture.invalid/markets/test-only-tea", "url_mobile": "", "title": "Test-only: Tea exports rise in August, board says", "seendate": "20260903T101500Z", "socialimage": "", "domain": "news.fixture.invalid", "language": "English", "sourcecountry": "Kenya"},
- {"url": "https://news.fixture.invalid/markets/test-only-shilling#amp", "url_mobile": "", "title": "Test-only: Kenyan shilling edges up as central bank holds rate", "seendate": "20260902T091500Z", "socialimage": "", "domain": "news.fixture.invalid", "language": "English", "sourcecountry": "Kenya"},
- {"url": "http://plain.fixture.invalid/test-only-http", "url_mobile": "", "title": "Test-only: An insecure link that is never fetched", "seendate": "20260902T081500Z", "socialimage": "", "domain": "plain.fixture.invalid", "language": "English", "sourcecountry": "Kenya"},
- {"url": "https://news.fixture.invalid/test-only-swahili", "url_mobile": "", "title": "Test-only: Habari za uchumi kwa lugha nyingine", "seendate": "20260902T081500Z", "socialimage": "", "domain": "news.fixture.invalid", "language": "Swahili", "sourcecountry": "Kenya"},
- {"url": "https://news.fixture.invalid/test-only-baddate", "url_mobile": "", "title": "Test-only: A record without a readable crawl date", "seendate": "yesterday", "socialimage": "", "domain": "news.fixture.invalid", "language": "English", "sourcecountry": "Kenya"}
-]}

@@ -227,13 +227,15 @@ No user interface changes; review artifacts replace UI screenshots for this task
 Tool `tools/gdelt-backfill.py`, manual workflow **GDELT months-back article backfill (manual)**
 (`.github/workflows/gdelt-backfill.yml`). Not investment advice.
 
-- **Discovery only from GDELT.** GDELT DOC 2.0 (`ArtList`, JSON) is asked for business/economy
-  reporting by publisher country (Middle East, Oceania, Asia, Central Asia, East Africa, Eastern
-  and Southern Europe, Caribbean), in 3-day slices, oldest first. At most one request every
-  5.5 s; every answer is cached on disk (`.local/gdelt-cache`, kept between runs), so a later run
-  resumes without asking again. Repeated "please limit requests" answers stop discovery for that
-  run. GDELT only searches about the last three months, so the oldest days drop out first; the
-  report lists slices that are already out of reach.
+- **Discovery only from GDELT.** GDELT's search API answers "429 too many requests" to GitHub's
+  shared machines (the hourly robot sees the same), so the tool reads GDELT's raw GKG 2.1 files
+  instead (`data.gdeltproject.org`, one file per 15 minutes, ~5 MB, no request limit; downloaded
+  at least 2 s apart). It keeps English web articles with business/economy themes whose most-mentioned
+  country is in a backfill region (Middle East, Oceania, Asia, Central Asia, East Africa, Eastern and
+  Southern Europe, Caribbean). Files are read every day at 12:00 first, then 00:00, 06:00, ..., so any
+  file cap covers every day; the small parsed result is cached (`.local/gdelt-cache`) so later runs
+  resume. The raw files reach back years, so 1–13 August is covered too. The mentioned country only
+  balances discovery; the robot decides the event location.
 - **Everything published comes from the publisher.** For each candidate the publisher's page is
   read only if its robots.txt allows it; known paywalled publishers and pages marked
   `isAccessibleForFree=false` are skipped. The original publication time is the page's own
