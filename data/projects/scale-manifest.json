@@ -1,0 +1,172 @@
+{
+  "schema": "investedia.projects.raw-manifest.v1",
+  "build_date": "2026-11-11",
+  "policy": {
+    "name": "projects-scale-current-v1",
+    "completed_since": 2020,
+    "max_coordinate_precision_degrees": 0.001
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "name": "Wikidata (CC0), current wind farm",
+      "class_key": "wind",
+      "enabled": true,
+      "scale_v1": true,
+      "type": "Wind energy",
+      "record_level": "site",
+      "file": "cache/scale-wind.json",
+      "sha256": "75a136c5c517a8b0e94d7ab6a50871b96521129ee8073484e1b9272fbb9c7049",
+      "licence": "CC0 1.0",
+      "checked_at": "2026-11-11",
+      "url": "https://query.wikidata.org/sparql",
+      "licence_review": {
+        "commercial_use": true,
+        "redistribution": true,
+        "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+        "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+        "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+        "reviewed_at": "2026-11-11"
+      }
+    },
+    {
+      "source": "wikidata",
+      "name": "Wikidata (CC0), current P19 reviewed solar class",
+      "class_key": "solar",
+      "enabled": true,
+      "scale_v1": true,
+      "type": "Solar energy",
+      "record_level": "site",
+      "file": "cache/scale-solar.json",
+      "sha256": "e08109f0e67bf49b04c7473551554c2f60798f66e6932c84800921c0a28abd00",
+      "licence": "CC0 1.0",
+      "checked_at": "2026-11-11",
+      "url": "https://query.wikidata.org/sparql",
+      "licence_review": {
+        "commercial_use": true,
+        "redistribution": true,
+        "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+        "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+        "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+        "reviewed_at": "2026-11-11"
+      }
+    },
+    {
+      "source": "wikidata",
+      "name": "Wikidata (CC0), current hydroelectric power station",
+      "class_key": "hydro",
+      "enabled": true,
+      "scale_v1": true,
+      "type": "Hydro energy",
+      "record_level": "site",
+      "file": "cache/scale-hydro.json",
+      "sha256": "fd98d3b07ac66f210ec30ab1cc7941e48d327a1b01e4be326f64e814db43ed30",
+      "licence": "CC0 1.0",
+      "checked_at": "2026-11-11",
+      "url": "https://query.wikidata.org/sparql",
+      "licence_review": {
+        "commercial_use": true,
+        "redistribution": true,
+        "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+        "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+        "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+        "reviewed_at": "2026-11-11"
+      }
+    },
+    {
+      "source": "wikidata",
+      "name": "Wikidata (CC0), current gas-fired power station",
+      "class_key": "gas",
+      "enabled": true,
+      "scale_v1": true,
+      "type": "Gas & LNG",
+      "record_level": "site",
+      "file": "cache/scale-gas.json",
+      "sha256": "325e4339044af4905e557cd733fe7ea7980c6f9c3819e26f81e02f32e9dba08c",
+      "licence": "CC0 1.0",
+      "checked_at": "2026-11-11",
+      "url": "https://query.wikidata.org/sparql",
+      "licence_review": {
+        "commercial_use": true,
+        "redistribution": true,
+        "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+        "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+        "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+        "reviewed_at": "2026-11-11"
+      }
+    },
+    {
+      "source": "wikidata",
+      "name": "Wikidata (CC0), current coal-fired power station",
+      "class_key": "coal",
+      "enabled": true,
+      "scale_v1": true,
+      "type": "Coal energy",
+      "record_level": "site",
+      "file": "cache/scale-coal.json",
+      "sha256": "1f397a8f2fd7545b72dd9e2b62bfea05ec1ac30342bc92b3595d1bc75baeb5ad",
+      "licence": "CC0 1.0",
+      "checked_at": "2026-11-11",
+      "url": "https://query.wikidata.org/sparql",
+      "licence_review": {
+        "commercial_use": true,
+        "redistribution": true,
+        "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+        "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+        "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+        "reviewed_at": "2026-11-11"
+      }
+    },
+    {
+      "source": "wikidata",
+      "name": "Wikidata (CC0), current geothermal power station",
+      "class_key": "geothermal",
+      "enabled": true,
+      "scale_v1": true,
+      "type": "Geothermal energy",
+      "record_level": "site",
+      "file": "cache/scale-geothermal.json",
+      "sha256": "c90f828fb4903943e0df793e93c750503d0dc998cb92ec3fc0e39bf2adff25d5",
+      "licence": "CC0 1.0",
+      "checked_at": "2026-11-11",
+      "url": "https://query.wikidata.org/sparql",
+      "licence_review": {
+        "commercial_use": true,
+        "redistribution": true,
+        "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+        "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+        "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+        "reviewed_at": "2026-11-11"
+      }
+    },
+    {
+      "source": "wikidata",
+      "name": "Wikidata (CC0), current nuclear power plant",
+      "class_key": "nuclear",
+      "enabled": true,
+      "scale_v1": true,
+      "type": "Nuclear energy",
+      "record_level": "site",
+      "file": "cache/scale-nuclear.json",
+      "sha256": "c0ac64264991a8795e1e1baff42a52384aca9405f62433abb60d6415682e44cc",
+      "licence": "CC0 1.0",
+      "checked_at": "2026-11-11",
+      "url": "https://query.wikidata.org/sparql",
+      "licence_review": {
+        "commercial_use": true,
+        "redistribution": true,
+        "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+        "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+        "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+        "reviewed_at": "2026-11-11"
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "investedia.projects.scale-fetch.v1",
+  "requests": 12,
+  "cache_hits": 0,
+  "bytes": 122820,
+  "sources": [
+    {
+      "class": "gas",
+      "listed_ids": 9,
+      "list_complete": true,
+      "completed_batches": 2,
+      "pending_ids": 0,
+      "slow_ids": [],
+      "reason": null,
+      "cached_source_retained": false
+    },
+    {
+      "class": "coal",
+      "listed_ids": 31,
+      "list_complete": true,
+      "completed_batches": 7,
+      "pending_ids": 0,
+      "slow_ids": [],
+      "reason": null,
+      "cached_source_retained": false
+    },
+    {
+      "class": "geothermal",
+      "listed_ids": 0,
+      "list_complete": false,
+      "completed_batches": 0,
+      "pending_ids": 0,
+      "slow_ids": [],
+      "reason": "HTTP 429; source requests a 120 second cooldown",
+      "cached_source_retained": true
+    }
+  ],
+  "unvisited_classes": [
+    "wind",
+    "solar",
+    "hydro",
+    "nuclear"
+  ],
+  "queued": {
+    "batteries_hydrogen": "No reviewed physical-project class yet; GEM owner files pending"
+  },
+  "budget_seconds": 180,
+  "max_items_per_class": 100,
+  "no_publication": true,
+  "gemini_calls": 0
+}

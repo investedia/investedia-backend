@@ -1,0 +1,7 @@
+{
+  "gem": {"state":"awaiting-owner-files-and-column-review","automatic_download":false,"licence_expected":"CC BY 4.0","trackers":["Integrated power","Wind","Solar","Hydro","Nuclear","Coal plants","Gas plants","Oil and gas","LNG","Pipelines","Steel","Coal mines"]},
+  "eia": {"state":"awaiting-official-download-licence-and-header-review","licence_expected":"US public domain","terms":"https://www.eia.gov/about/copyrights_reuse.php"},
+  "world_bank": {"state":"country-level-only; no map points","terms":"https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets"},
+  "osm": {"state":"not-approved; not-downloaded","licence":"ODbL; explicit owner approval required"},
+  "photos_satellite": {"state":"source-specific-licence-and-access-review-pending","fake_placeholders":false}
+}

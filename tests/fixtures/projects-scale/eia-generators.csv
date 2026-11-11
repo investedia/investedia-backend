@@ -1,0 +1,3 @@
+Plant ID,Generator ID,Plant Name,Latitude,Longitude,Status,Nameplate Capacity (MW),Planned Operation Year,Location quality
+TEST-P1,TEST-G1,Fixture planned plant,38.1234,-77.3456,fixture-plan,75,2028,exact
+TEST-P2,TEST-G1,Fixture construction plant,39.2345,-78.4567,fixture-build,125,2027,exact

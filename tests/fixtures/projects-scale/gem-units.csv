@@ -1,0 +1,4 @@
+GEM unit ID,GEM location ID,Unit name,Country/Area,Latitude,Longitude,Status,Capacity (MW),Start year,Location accuracy
+TEST-U1,TEST-S1,Fixture development unit 1,United Kingdom,52.1234,1.2345,construction,100,,exact
+TEST-U2,TEST-S1,Fixture old unit 2,United Kingdom,52.1234,1.2345,operating,200,2010,exact
+TEST-U3,TEST-S2,Fixture cancelled unit,United Kingdom,52.8765,1.3456,cancelled,50,,approximate

@@ -30,6 +30,9 @@ def query(class_id, offset=0, limit=100):
 
 def parse(path, spec):
     data = json.loads(path.read_text())
+    if spec.get('scale_v1'):
+        from tools.projects.scale.wikidata import parse as parse_scale
+        return parse_scale(data,spec)
     if spec.get('retained_snapshot'):
         # Migration of the existing site snapshot, not a new primary-source verification.
         # Old y was an inception year, NOT a status year; quarantine it rather than relabel it.
