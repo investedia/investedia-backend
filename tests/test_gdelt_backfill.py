@@ -200,6 +200,18 @@ class PublisherPageTests(unittest.TestCase):
         f = m.PageFetcher(redirecting('https://elsewhere.fixture.invalid/x'), clock=clock, sleep=clock.sleep)
         self.assertEqual(f.enrich(self.row(), START, END), (None, 'redirect_to_other_site'))
 
+    def test_a_page_cut_off_mid_download_is_skipped_not_fatal(self):
+        import http.client
+        def get(url, timeout=None):
+            if url.endswith('/robots.txt'): return ''
+            raise http.client.IncompleteRead(b'partial')
+        clock = Clock(); f = m.PageFetcher(get, clock=clock, sleep=clock.sleep)
+        self.assertEqual(f.enrich(self.row(), START, END), (None, 'page_unavailable'))
+        def boom(url, timeout=None):
+            if url.endswith('/robots.txt'): return ''
+            raise RuntimeError('anything else')
+        self.assertEqual(m.PageFetcher(boom, clock=clock, sleep=clock.sleep).enrich(self.row(), START, END), (None, 'page_unavailable'))
+
     def test_same_host_requests_are_spaced(self):
         clock = Clock(); times = []
         def get(url, timeout=None):
