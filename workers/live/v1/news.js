@@ -108,17 +108,28 @@ export async function handleNews(env, now = Date.now()) {
   if (!st || !Array.isArray(st.stories) || !st.stories.length) return { status: 503, body: { error: 'no data yet', meta: { state: 'unavailable', provider: PROVIDER.id, version: 1 } } };
   let history = []; try { history = JSON.parse(await env.PRICES.get('news-gap-history'))?.stories || []; } catch {}
   if (!Array.isArray(history)) history = [];
-  const merged = [...st.stories]; const seen = new Set(merged.flatMap(historyKeys));
-  for (const row of history) {
-    const current=merged.find(s=>s.id===row.id);
-    if(current && !current.impacts?.length && row.impacts?.length && canonicalValue(immutableArticle(current))===canonicalValue(immutableArticle(row))) {
-      const index=merged.indexOf(current);merged[index]={...current,impacts:row.impacts};
-    }
-    const keys=historyKeys(row);if(!keys.some(k=>seen.has(k))){merged.push(row);keys.forEach(k=>seen.add(k));}
+  const merged = [...st.stories], seen = new Set(), firstIndexById = new Map();
+  for (const [index, story] of merged.entries()) {
+    if (!firstIndexById.has(story.id)) firstIndexById.set(story.id, index);
+    for (const key of historyKeys(story)) seen.add(key);
   }
-  merged.sort((a,b) => Date.parse(b.published_at)-Date.parse(a.published_at));
+  for (const row of history) {
+    const index = firstIndexById.get(row.id), current = merged[index];
+    if (current && !current.impacts?.length && row.impacts?.length && canonicalValue(immutableArticle(current)) === canonicalValue(immutableArticle(row))) {
+      merged[index] = { ...current, impacts: row.impacts };
+    }
+    const keys = historyKeys(row);
+    if (!keys.some(key => seen.has(key))) {
+      if (index === undefined) firstIndexById.set(row.id, merged.length);
+      merged.push(row);
+      for (const key of keys) seen.add(key);
+    }
+  }
+  const dated = merged.map(story => ({ story, time: Date.parse(story.published_at) }));
+  dated.sort((a, b) => b.time - a.time);
+  const stories = dated.map(entry => entry.story);
   let connectionsGenerated=null;try{connectionsGenerated=JSON.parse(await env.PRICES.get('connections:meta'))?.generated_at||null;}catch{}
-  return { status: 200, body: envelope({ stories: merged }, { provider: PROVIDER, snapT: st.t, now, ttl: 30, extra: { count: merged.length, connections_generated_at:connectionsGenerated, model: st.model || null, note: 'newest AI-enriched priority articles; the client merges them with the static broad feed' } }) };
+  return { status: 200, body: envelope({ stories }, { provider: PROVIDER, snapT: st.t, now, ttl: 30, extra: { count: stories.length, connections_generated_at:connectionsGenerated, model: st.model || null, note: 'newest AI-enriched priority articles; the client merges them with the static broad feed' } }) };
 }
 // Globe events are a compact view of the same articles: no second pipeline, no extra KV writes.
 export async function handleGlobe(env, now = Date.now()) {
@@ -157,14 +168,24 @@ export async function ingestNews(req, env, now = Date.now()) {
   if (generated > now + 300_000) return { status: 422, body: { error: 'generated_at is in the future' } };
   let cur = null; try { cur = JSON.parse(await env.PRICES.get('news')); } catch {}
   if (cur && validateIngest(cur, KEEP_ROLLING)) cur = null;
+  if (cur?.generated_at && Date.parse(cur.generated_at) > generated) return { status: 409, body: { error: 'older feed refused' } };
   // Accumulate: new articles are added to the stored ones (same id or URL = correction, newest copy wins);
   // everything from the last 48 hours is kept, up to KEEP_ROLLING. Older articles fall off.
   const keyOf = x => [x.id, x.source?.url];
   const seen = new Set(), merged = [];
-  for (const x of [...body.stories, ...(cur?.stories || [])]) { const k = keyOf(x); if (k.some(v => v && seen.has(v))) continue; k.forEach(v => v && seen.add(v)); merged.push(x); }
-  const newest = Math.max(...merged.map(x => Date.parse(x.published_at)).filter(Number.isFinite)), cutoff = newest - ROLLING_MS;
-  const stories = merged.filter(x => Date.parse(x.published_at) >= cutoff).sort((a, b) => (a.published_at < b.published_at ? 1 : -1)).slice(0, KEEP_ROLLING);
-  if (cur?.generated_at && Date.parse(cur.generated_at) > generated) return { status: 409, body: { error: 'older feed refused' } };
+  let newest = -Infinity;
+  for (const story of [...body.stories, ...(cur?.stories || [])]) {
+    const keys = keyOf(story);
+    if (keys.some(key => key && seen.has(key))) continue;
+    keys.forEach(key => key && seen.add(key));
+    const time = Date.parse(story.published_at);
+    newest = Math.max(newest, time);
+    merged.push({ story, time });
+  }
+  const cutoff = newest - ROLLING_MS;
+  const stories = merged.filter(entry => entry.time >= cutoff)
+    .sort((a, b) => (a.story.published_at < b.story.published_at ? 1 : -1))
+    .slice(0, KEEP_ROLLING).map(entry => entry.story);
   if (cur && Array.isArray(cur.stories) && JSON.stringify(cur.stories) === JSON.stringify(stories) && (cur.generated_at || null) === (body.generated_at || null)) return { status: 200, body: { ok: true, written: false, reason: 'unchanged' } };
   await env.PRICES.put('news', JSON.stringify({ t: generated, ingested_at: now, stories, model: 'github-ingest', generated_at: body.generated_at || null }));
   return { status: 200, body: { ok: true, written: true, count: stories.length } };
