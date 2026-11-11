@@ -2,7 +2,8 @@
 // GET /v1/library -> { days: { 'YYYY-MM-DD': count } }; GET /v1/library?day=YYYY-MM-DD -> { rows: [...] }.
 // The website's built library covers everything up to its last build; these days fill the gap until the next build.
 import { timingSafeEqual } from './news.js';
-const DAY = /^\d{4}-\d{2}-\d{2}$/, KEEP_DAYS = 45, MAX_ROWS = 1500;
+// Every stored day stays listed in the index (months-back backfills included); ~30 bytes per day, 10-year cap.
+const DAY = /^\d{4}-\d{2}-\d{2}$/, KEEP_DAYS = 3660, MAX_ROWS = 1500;
 const clean = r => (r && typeof r.id === 'string' && typeof r.h === 'string' && Number.isFinite(Date.parse(r.t)) ? {
   id: r.id.slice(0, 40), h: r.h.slice(0, 300), c: String(r.c || 'news').slice(0, 30), t: r.t, s: r.s ? String(r.s).slice(0, 120) : null,
   n: r.n ? String(r.n).slice(0, 80) : null, g: r.g ? String(r.g).slice(0, 10) : null, k: Number.isSafeInteger(r.k) && r.k > 0 ? Math.min(r.k, 99) : 1,

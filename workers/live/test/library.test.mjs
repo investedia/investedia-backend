@@ -21,3 +21,13 @@ test('unchanged days cost no KV writes', async () => {
   const s = setup(), b = { days: { '2026-11-11': [row('a', '2026-11-11T01:00:00Z')] } };
   await ingestLibrary(post(b), s.env, NOW); const w = s.writes; await ingestLibrary(post(b), s.env, NOW); assert.equal(s.writes, w);
 });
+test('older backfilled days stay listed next to the newest days', async () => {
+  const s = setup();
+  for (let d = 0; d < 60; d++) {
+    const day = new Date(Date.parse('2026-09-01T00:00:00Z') + d * 864e5).toISOString().slice(0, 10);
+    await ingestLibrary(post({ days: { [day]: [row('n' + d, day + 'T01:00:00Z')] } }), s.env, NOW);
+  }
+  await ingestLibrary(post({ days: { '2026-08-14': [row('old', '2026-08-14T03:00:00Z')] } }), s.env, NOW);
+  const days = (await handleLibrary(new URL('https://x/v1/library'), s.env)).body.data.days;
+  assert.equal(Object.keys(days).length, 61); assert.equal(days['2026-08-14'], 1); assert.equal(days['2026-09-01'], 1);
+});
