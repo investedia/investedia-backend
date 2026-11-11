@@ -316,6 +316,40 @@ REGION_FEEDS = [  # regional business and central-bank feeds: (url, source name,
     ('https://www.hellenicshippingnews.com/feed/', 'Hellenic Shipping News', 'eu'),
     ('https://www.handelsblatt.com/contentexport/feed/finanzen', 'Handelsblatt Global', 'eu'),
     ('https://www.ilsole24ore.com/rss/economia.xml', 'Il Sole 24 Ore', 'eu'),
+    # Official sources added 2026-11-11 (central banks, statistics offices, finance ministries, exchanges). Each was checked live:
+    # reachable, valid RSS/Atom, 3+ items, newest item under 30 days. Names match OFFICIAL_RE so official ones also run hourly.
+    ('https://www.ons.gov.uk/releasecalendar?rss', 'UK Office for National Statistics', 'eu'),  # release calendar
+    ('https://www.gov.uk/government/organisations/hm-treasury.atom', 'HM Treasury', 'eu'),  # UK finance ministry
+    ('https://www.bundesbank.de/service/rss/en/633292/feed.rss', 'Deutsche Bundesbank (Central Bank of Germany)', 'eu'),  # press releases, English
+    ('https://www.istat.it/en/feed/', 'Italian Statistics (ISTAT)', 'eu'),  # English
+    ('https://www.nbb.be/en/blog_rss.xml', 'National Bank of Belgium', 'eu'),  # English
+    ('https://www.scb.se/feed/statistiknyheter', 'Statistics Sweden', 'eu'),  # Swedish
+    ('https://www.ssb.no/rss', 'Statistics Norway', 'eu'),  # Norwegian
+    ('https://www.bls.gov/feed/cpi.rss', 'US Bureau of Labor Statistics (CPI)', 'na'),  # consumer prices
+    ('https://home.treasury.gov/index.xml', 'US Treasury', 'na'),  # press releases
+    ('https://www.bcb.gov.br/api/feed/sitebcb/sitefeeds/notasImprensa', 'Central Bank of Brazil', 'latam'),  # press notes, Portuguese
+    ('https://www.bcb.gob.bo/?q=rss.xml', 'Central Bank of Bolivia', 'latam'),  # Spanish
+    ('https://www.bce.fin.ec/feed/', 'Central Bank of Ecuador', 'latam'),  # Spanish
+    ('https://www.bcr.gob.sv/feed/', 'Central Reserve Bank of El Salvador', 'latam'),  # Spanish
+    ('https://www.bcn.gob.ni/rss.xml', 'Central Bank of Nicaragua', 'latam'),  # Spanish
+    ('https://boj.org.jm/news/rss', 'Bank of Jamaica', 'latam'),  # English
+    ('https://www.central-bank.org.tt/feed/', 'Central Bank of Trinidad and Tobago', 'latam'),  # English
+    ('https://www.brh.ht/feed/', 'Bank of the Republic of Haiti (BRH)', 'latam'),  # French
+    ('https://www.bog.gov.gh/news/rss', 'Bank of Ghana', 'af'),  # English
+    ('https://www.zamstats.gov.zm/rss.xml', 'Zambia Statistics Agency', 'af'),  # English
+    ('https://zimstat.co.zw/feed/', 'Zimbabwe National Statistics Agency (ZimStat)', 'af'),  # English
+    ('https://www.centralbank.org.sz/feed/', 'Central Bank of Eswatini', 'af'),  # English
+    ('https://www.hcp.ma/xml/atom.xml', 'Morocco Statistics (Haut-Commissariat au Plan)', 'af'),  # French
+    ('https://cbl.gov.ly/feed/', 'Central Bank of Libya', 'af'),  # Arabic/English
+    ('https://cbos.gov.sd/ar/rss.xml', 'Central Bank of Sudan', 'af'),  # Arabic
+    ('https://www.bcc.cd/feed.xml', 'Central Bank of Congo (BCC)', 'af'),  # DR Congo, French
+    ('https://www.bceao.int/rss.xml', 'Central Bank of West African States (BCEAO)', 'af'),  # WAEMU, 8 countries, French
+    ('https://www.bcrg-guinee.org/feed/', 'Central Bank of Guinea (BCRG)', 'af'),  # French
+    ('https://boss.gov.ss/feed/', 'Bank of South Sudan', 'af'),  # English
+    ('https://ngxgroup.com/feed/', 'Nigerian Exchange Group', 'af'),  # stock exchange: broad tier only
+    ('https://www.jse.co.za/rss.xml', 'JSE (Johannesburg Stock Exchange)', 'af'),  # stock exchange: broad tier only
+    ('https://www.pbs.gov.pk/feed/', 'Pakistan Bureau of Statistics', 'asia'),  # English
+    ('https://www.cbsl.gov.lk/en/rss.xml', 'Central Bank of Sri Lanka', 'asia'),  # English
 ]
 REGION_RESERVE, REGION_EACH = 100, 16  # of the 200 candidates sent to the editor, up to 100 are held for region-tagged feeds (16 per region at most)
 CORE_FIRST = 80  # up to 80 of the 200 slots go first to the best-scored non-regional candidates (wires, official, global publishers)
@@ -347,7 +381,7 @@ def balance(cands, limit=200):
 
 
 import re as _re
-OFFICIAL_RE = _re.compile(r'Central Bank|Nationalbank|Banco de la Rep|Reserve Bank|Bank of |Ag[eê]ncia Brasil|Statistic', _re.I)
+OFFICIAL_RE = _re.compile(r'Central Bank|Nationalbank|Banco de la Rep|Reserve Bank|Bank of |Ag[eê]ncia Brasil|Statistic|Treasury', _re.I)
 PRIORITY_NEWS = {'BBC News', 'The Guardian', 'MarketWatch', 'The New York Times', 'CoinDesk', 'OilPrice.com', 'PR Newswire'}  # fast publisher feeds kept in the small priority tier
 
 
