@@ -583,7 +583,18 @@ def topic_photo(topic, seed, stories):
     return None
 
 
-def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH, deadline=None, workers=8, translator=None, photos=True):
+def photo_topics(index):
+    """Live robot topics plus the backfill-only topics, but only those whose photos are already published (in the index)."""
+    extra = _module('gdelt_photo_topics', ROOT/'tools/backfill-photos.py').EXTRA_TOPICS
+    return list(dict.fromkeys(robot.PHOTO_TOPICS + [t for t in extra if index.get(t)]))
+
+
+def usage_stories(usage):
+    """Earlier runs' photo use as robot-shaped rows, so robot.photo picks the least-used photo across all runs."""
+    return [{'image': {'file': f}} for f, n in sorted(usage.items()) for _ in range(min(int(n), 1000))]
+
+
+def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH, deadline=None, workers=8, translator=None, photos=True, prior_usage=()):
     """Enrich lazily, one model batch at a time; stop when the call budget, deadline or rows run out."""
     if not 1 <= batch_size <= 40: raise ValueError('batch_size_must_be_1_to_40')
     box, by_iso, sym = ref
@@ -637,7 +648,7 @@ def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH
                 if s['id'] not in lookup: raise ValueError('source_identity_changed')
                 story = provenance(s, lookup[s['id']], now)
                 if photos:
-                    img = topic_photo(topics.get(s['id']), s['id'], out)
+                    img = topic_photo(topics.get(s['id']), s['id'], [*prior_usage, *out])
                     if img: story['image'] = img
                     else: rejected['no_topic_photo'] += 1
                 out.append(story)
@@ -731,7 +742,10 @@ def ingest_artifact(output, worker, state_root, now, library_push=None):
     for url in judged.get('sent', []) + judged.get('judged', []):
         if sid(url) in new_ids and sid(url) not in acked: continue  # un-acknowledged articles stay retryable
         processed[core.canon(url)] = iso(now)
-    write(state_root/'gdelt-backfill-state.json', {'schema': 'investedia.gdelt-backfill-state/v1', 'updated_at': iso(now), 'processed': processed})
+    usage = Counter(state.get('photo_usage', {}))
+    usage.update((s.get('image') or {}).get('file') for s in fresh if s['id'] in acked and (s.get('image') or {}).get('file'))
+    write(state_root/'gdelt-backfill-state.json', {'schema': 'investedia.gdelt-backfill-state/v1', 'updated_at': iso(now), 'processed': processed,
+                                                    'photo_usage': dict(usage)})
     write(output/'acknowledged.json', {'ids': sorted(acked), 'judgements_persisted': True})
     return {'days': done, 'deferred': deferred, 'acknowledged_articles': len(acked), 'already_present': len(new) - len(fresh)}
 
@@ -762,7 +776,7 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
                         'never sent to the live 48-hour feed']}
     ref = []
     budget = Budget(recording(model_get or regional.request, ref), gemini_calls, deadline=deadline, sleep=sleep); ref.append(budget)
-    saved = (robot.get, robot.log, robot.err, robot.gemini_models, robot.NOW, robot.ISO_NOW, robot.gemini)
+    saved = (robot.get, robot.log, robot.err, robot.gemini_models, robot.NOW, robot.ISO_NOW, robot.gemini, robot.PHOTO_TOPICS)
     editor = None
     errors = Counter(); pinned = []
     robot.get = budget.get; robot.UA = UA; robot.log = lambda *args: None
@@ -822,7 +836,11 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         # Generation
         ref = robot.load_ref()
         fetcher = PageFetcher(page_get or regional.request, sleep=sleep)
-        new, sent, enrich_rejected, judged = generate(ordered, a, b, now, ref, budget, fetcher, batch_size, deadline, translator=editor)
+        photo_index = read(reference/'photos/index.json', {}) or {}
+        robot.PHOTO_TOPICS = photo_topics(photo_index)
+        report['photo_topics'] = len(robot.PHOTO_TOPICS)
+        prior = usage_stories(state.get('photo_usage', {}))
+        new, sent, enrich_rejected, judged = generate(ordered, a, b, now, ref, budget, fetcher, batch_size, deadline, translator=editor, prior_usage=prior)
         registry = read(ROOT/'data/registry.json')['assets']; mk = read(reference/'markets.json')['assets']
         prices = {x['s']: x for x in mk}; prices.update(read(reference/'news-prices.json')['assets'])
         licences = read(ROOT/'data/coverage/price-licences.json', {})
@@ -879,7 +897,7 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         if editor is not None:
             report.update(cost_usd=round(editor.spent, 6), claude_unusable_batches=dict(editor.unusable))
         write(output/'report.json', report)
-        robot.get, robot.log, robot.err, robot.gemini_models, robot.NOW, robot.ISO_NOW, robot.gemini = saved
+        robot.get, robot.log, robot.err, robot.gemini_models, robot.NOW, robot.ISO_NOW, robot.gemini, robot.PHOTO_TOPICS = saved
     return report
 
 

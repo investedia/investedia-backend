@@ -1,0 +1,43 @@
+name: Backfill photo pool top-up (manual, one-time)
+# Downloads more licensed Pixabay topic photos (credited) with the live robot's rules into a review
+# artifact. Nothing is published here: the photos go to the frontend through a reviewed pull request,
+# and only after that is merged is the backend photo index updated.
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type PHOTOS'
+        required: true
+      per_topic:
+        description: 'Photos per topic: 10–40'
+        default: '30'
+        required: true
+permissions:
+  contents: read
+jobs:
+  photos:
+    if: inputs.confirm == 'PHOTOS' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check -q 'Pillow==11.3.0'
+      - name: Offline tests
+        run: python -m unittest tests.test_backfill_photos
+      - name: Download photos into the review artifact
+        env:
+          PIXABAY_KEY: ${{ secrets.PIXABAY_KEY }}
+          PER_TOPIC: ${{ inputs.per_topic }}
+        run: python tools/backfill-photos.py --confirm PHOTOS --per-topic "$PER_TOPIC"
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: backfill-photos
+          path: .local/backfill-photos/
+          retention-days: 7
+          if-no-files-found: warn
