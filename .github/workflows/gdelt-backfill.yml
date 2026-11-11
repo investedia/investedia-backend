@@ -1,0 +1,230 @@
+name: GDELT months-back article backfill (manual)
+# Aug 1 - Oct 15 2026 only. GDELT discovers article links; each publisher's own page metadata
+# (robots.txt honoured, paywalls skipped) supplies the publication time and description; the
+# existing robot prompt writes the summary. Articles go to the article library and the shared
+# day files, never to the live 48-hour feed. Long generation runs without the news-production
+# lock; only the short ingest step waits for it, so hourly news is never held up.
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type BACKFILL for this bounded GDELT/publisher/model operation'
+        required: true
+      dry_run:
+        description: 'Only build the review artifact (no ingestion, no saved producer state)'
+        type: boolean
+        default: true
+      start_date:
+        description: 'First day, YYYY-MM-DD (not before 2026-08-01)'
+        default: '2026-08-01'
+        required: true
+      end_date:
+        description: 'Last day included, YYYY-MM-DD (not after 2026-10-15)'
+        default: '2026-10-15'
+        required: true
+      regions:
+        description: 'all, or comma list: middle_east,oceania,asia,central_asia,east_africa,eastern_europe,southern_europe,caribbean'
+        default: 'all'
+        required: true
+      gemini_calls:
+        description: 'Gemini call budget: 1–80'
+        default: '40'
+        required: true
+      batch_size:
+        description: 'Candidates per Gemini call: 1–40'
+        default: '25'
+        required: true
+      gdelt_requests:
+        description: 'New GDELT requests this run: 1–400 (one per 5.5 s; cached ones are free)'
+        default: '180'
+        required: true
+      gemini_model:
+        description: 'Optional exact successful hourly model; blank reads live/status model'
+        default: ''
+permissions:
+  contents: read
+  actions: read
+jobs:
+  generate:
+    if: inputs.confirm == 'BACKFILL' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    concurrency:
+      group: gdelt-backfill
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: backend
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate bounded inputs before any provider request
+        env:
+          CALLS: ${{ inputs.gemini_calls }}
+          BATCH: ${{ inputs.batch_size }}
+          GDELT: ${{ inputs.gdelt_requests }}
+          START_DATE: ${{ inputs.start_date }}
+          END_DATE: ${{ inputs.end_date }}
+          REGIONS: ${{ inputs.regions }}
+        run: |
+          python - <<'PY'
+          import os, re
+          assert 1 <= int(os.environ['CALLS']) <= 80, 'gemini_calls must be 1–80'
+          assert 1 <= int(os.environ['BATCH']) <= 40, 'batch_size must be 1–40'
+          assert 1 <= int(os.environ['GDELT']) <= 400, 'gdelt_requests must be 1–400'
+          for key in ('START_DATE', 'END_DATE'):
+              assert re.fullmatch(r'\d{4}-\d{2}-\d{2}', os.environ[key]), key + ' must be YYYY-MM-DD'
+          assert '2026-08-01' <= os.environ['START_DATE'] <= os.environ['END_DATE'] <= '2026-10-15', 'window must be inside 2026-08-01..2026-10-15'
+          assert re.fullmatch(r'[a-z_,\s]{1,200}', os.environ['REGIONS']), 'regions: names separated by commas'
+          PY
+      - name: Offline tests
+        working-directory: backend
+        run: python -m unittest tests.test_gdelt_backfill tests.test_regional_backfill
+      - name: Restore shared news producer state (read-only here, for dedupe)
+        id: state
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            backend/assets/globe/news-seen.json
+            backend/assets/globe/news-live.json
+            backend/assets/globe/news-48h.json
+            backend/assets/globe/news-archive.json
+            backend/assets/globe/news-status.json
+            backend/assets/globe/events
+            backend/assets/globe/threads.json
+            backend/assets/globe/news-gap-history-cache.json
+            backend/assets/globe/regional-backfill-state.json
+          key: priority-news-state-gdelt-read-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: priority-news-state-
+      - name: Restore GDELT backfill state (URLs already judged; separate cache, never shared paths)
+        uses: actions/cache/restore@v4
+        with:
+          path: backend/assets/globe/gdelt-backfill-state.json
+          key: gdelt-backfill-state-read-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: gdelt-backfill-state-
+      - name: Restore GDELT discovery cache (resume)
+        uses: actions/cache/restore@v4
+        with:
+          path: backend/.local/gdelt-cache
+          key: gdelt-discovery-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: gdelt-discovery-
+      - name: Discover and generate (review artifact only)
+        working-directory: backend
+        env:
+          CONFIRM: ${{ inputs.confirm }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          START_DATE: ${{ inputs.start_date }}
+          END_DATE: ${{ inputs.end_date }}
+          REGIONS: ${{ inputs.regions }}
+          CALLS: ${{ inputs.gemini_calls }}
+          BATCH: ${{ inputs.batch_size }}
+          GDELT: ${{ inputs.gdelt_requests }}
+          GEMINI_MODEL: ${{ inputs.gemini_model }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          WORKER_URL: ${{ secrets.WORKER_URL }}
+          PIXABAY_KEY: ''
+        run: >-
+          python tools/gdelt-backfill.py --phase generate
+          --confirm "$CONFIRM" --dry-run "$DRY_RUN"
+          --start "$START_DATE" --end "$END_DATE" --regions "$REGIONS"
+          --gemini-calls "$CALLS" --batch-size "$BATCH" --gdelt-requests "$GDELT" --max-minutes 100
+      - name: Save GDELT discovery cache (discovery results only, no secrets)
+        if: ${{ !cancelled() && hashFiles('backend/.local/gdelt-cache/*.json') != '' }}
+        uses: actions/cache/save@v4
+        with:
+          path: backend/.local/gdelt-cache
+          key: gdelt-discovery-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Upload complete or partial review artifact
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: gdelt-backfill-review
+          path: backend/.local/gdelt-backfill/
+          retention-days: 14
+          if-no-files-found: warn
+      - name: Visible failure
+        if: failure()
+        run: echo '::error::GDELT backfill generation did not complete. Inspect report.json in the review artifact. Do not claim complete coverage.'
+
+  ingest:
+    needs: generate
+    if: ${{ !inputs.dry_run && inputs.confirm == 'BACKFILL' && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    concurrency:
+      group: news-production
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: backend
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restore the latest shared news producer state
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            backend/assets/globe/news-seen.json
+            backend/assets/globe/news-live.json
+            backend/assets/globe/news-48h.json
+            backend/assets/globe/news-archive.json
+            backend/assets/globe/news-status.json
+            backend/assets/globe/events
+            backend/assets/globe/threads.json
+            backend/assets/globe/news-gap-history-cache.json
+            backend/assets/globe/regional-backfill-state.json
+          key: priority-news-state-gdelt-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: priority-news-state-
+      - name: Restore GDELT backfill state
+        uses: actions/cache/restore@v4
+        with:
+          path: backend/assets/globe/gdelt-backfill-state.json
+          key: gdelt-backfill-state-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: gdelt-backfill-state-
+      - uses: actions/download-artifact@v4
+        with:
+          name: gdelt-backfill-review
+          path: backend/.local/gdelt-backfill
+      - name: Ingest into the article library and day files (never the live feed)
+        working-directory: backend
+        env:
+          CONFIRM: ${{ inputs.confirm }}
+          WORKER_URL: ${{ secrets.WORKER_URL }}
+          NEWS_INGEST_TOKEN: ${{ secrets.NEWS_INGEST_TOKEN }}
+        run: python tools/gdelt-backfill.py --phase ingest --confirm "$CONFIRM" --dry-run false
+      - name: Save acknowledged state, including a partially acknowledged run
+        if: ${{ !cancelled() && hashFiles('backend/.local/gdelt-backfill/acknowledged.json') != '' }}
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            backend/assets/globe/news-seen.json
+            backend/assets/globe/news-live.json
+            backend/assets/globe/news-48h.json
+            backend/assets/globe/news-archive.json
+            backend/assets/globe/news-status.json
+            backend/assets/globe/events
+            backend/assets/globe/threads.json
+            backend/assets/globe/news-gap-history-cache.json
+            backend/assets/globe/regional-backfill-state.json
+          key: priority-news-state-gdelt-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Save GDELT backfill state
+        if: ${{ !cancelled() && hashFiles('backend/assets/globe/gdelt-backfill-state.json') != '' }}
+        uses: actions/cache/save@v4
+        with:
+          path: backend/assets/globe/gdelt-backfill-state.json
+          key: gdelt-backfill-state-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Upload ingestion result
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: gdelt-backfill-ingested
+          path: backend/.local/gdelt-backfill/
+          retention-days: 14
+          if-no-files-found: warn
+      - name: Visible failure
+        if: failure()
+        run: echo '::error::GDELT backfill ingestion did not complete. Acknowledged days are saved; inspect the artifact before retrying.'
