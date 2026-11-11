@@ -26,6 +26,7 @@ import argparse
 import copy
 import hashlib
 import html
+import http.client
 import io
 import importlib.util
 import json
@@ -377,7 +378,7 @@ class PageFetcher:
             except urllib.error.HTTPError as e:
                 if e.code not in (404, 410): raise ValueError('robots_unavailable') from None
                 raw = ''
-            except OSError: raise ValueError('robots_unavailable') from None
+            except (OSError, http.client.HTTPException): raise ValueError('robots_unavailable') from None
             if '<html' in raw[:2000].lower(): raise ValueError('robots_unavailable')
             rp = urllib.robotparser.RobotFileParser(); rp.parse(raw.splitlines()); self.policies[host] = rp
         return self.policies[host]
@@ -404,15 +405,17 @@ class PageFetcher:
                         if urlsplit(nxt).scheme != 'https' or not same_site(urlsplit(nxt).hostname, host): raise ValueError('redirect_to_other_site')
                         url = nxt; continue
                     raise ValueError('page_http_%d' % e.code) from None
-                except OSError: raise ValueError('page_unavailable') from None
+                except (OSError, http.client.HTTPException): raise ValueError('page_unavailable') from None
                 finally: self.last[host] = self.clock()
             raise ValueError('too_many_redirects')
 
     def enrich(self, row, start, end):
         if paywalled_host(urlsplit(row['url']).hostname): return None, 'paywalled_publisher'
-        try: page = self.page(row['url'])
-        except ValueError as e: return None, str(e)
-        return enrich_page(row, page, start, end)
+        try:
+            page = self.page(row['url'])
+            return enrich_page(row, page, start, end)
+        except ValueError as e: return None, str(e)[:60] if re.fullmatch(r'[a-z0-9_]{1,60}', str(e)) else 'page_unusable'
+        except Exception: return None, 'page_unavailable'  # one bad publisher page never stops the run
 
 
 # ---------- generation through the existing robot ----------
