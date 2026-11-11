@@ -20,6 +20,31 @@ def site_stats(root=ROOT):
     except Exception:pass
     return out
 
+def library_days(root=ROOT,n=2):
+    """The robot's last n day files as compact rows for the website's article library (photo joined from the live feed when known)."""
+    imgs={}
+    try:
+        for s in json.loads((root/'assets/globe/news-live.json').read_text(encoding='utf-8')).get('stories',[]):
+            if (s.get('image') or {}).get('file'):imgs[s['id']]=s['image']['file']
+    except Exception:pass
+    out={}
+    for f in sorted((root/'assets/globe/events').glob('*.json'))[-n:]:
+        try:d=json.loads(f.read_text(encoding='utf-8'))
+        except Exception:continue
+        rows=[]
+        for e in d.get('events',[]):
+            if not e.get('id') or not e.get('title') or not e.get('at'):continue
+            loc=e.get('loc') or {}
+            r={'id':e['id'],'h':e['title'],'c':e.get('cat') or 'news','t':e['at'],'s':e.get('src'),'n':loc.get('country'),'g':loc.get('region'),'k':e.get('n_src') or 1}
+            if e['id'] in imgs:r['i']=imgs[e['id']]
+            rows.append(r)
+        if rows:out[f.stem]=rows
+    return out
+
+def push_library(url,token,days,timeout=30):
+    req=urllib.request.Request(url+'/v1/ingest/library',data=json.dumps({'days':days},ensure_ascii=False).encode('utf-8'),method='POST',headers={'Content-Type':'application/json','Authorization':'Bearer '+token,'User-Agent':'InvestediaRobot/1.0'})
+    with urllib.request.build_opener(NoRedirect).open(req,timeout=timeout) as response:return json.loads(response.read(100_000))
+
 def payload(path=None,limit=None):
     limit=limit or min(80,int(os.environ.get('PUSH_LIMIT') or 40))
     with open(path or ROOT/'assets/globe/news-live.json',encoding='utf-8') as source:d=json.load(source)
@@ -57,7 +82,13 @@ def main(argv=None):
             if args.optional:print('worker ingest unconfigured: explicitly skipped');return 0
             print('worker ingest unconfigured: WORKER_URL and NEWS_INGEST_TOKEN are required',file=sys.stderr);return 2
         result=push(url,token,body)
-        print(json.dumps({'ok':True,'written':result.get('written'),'count':result.get('count'),'reason':'unchanged' if result.get('reason')=='unchanged' else None}));return 0
+        print(json.dumps({'ok':True,'written':result.get('written'),'count':result.get('count'),'reason':'unchanged' if result.get('reason')=='unchanged' else None}))
+        # Article library sync is best effort: a failure here never fails the news run.
+        try:
+            days=library_days()
+            if days:print(json.dumps({'library':push_library(validate_url(url),token,days).get('written'),'days':sorted(days)}))
+        except Exception as e:print('library sync skipped: '+type(e).__name__,file=sys.stderr)
+        return 0
     except urllib.error.HTTPError as e:print(f'worker ingest failed: HTTP {e.code}',file=sys.stderr)
     except (urllib.error.URLError,TimeoutError):print('worker ingest failed: network unavailable or timeout',file=sys.stderr)
     except (ValueError,KeyError,TypeError,OSError):print('worker ingest failed: invalid configuration, feed or response',file=sys.stderr)
