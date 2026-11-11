@@ -8,7 +8,7 @@ def ids(class_id,offset=0,limit=500,current_only=False):
  UNION { ?item wdt:P1619 ?recent FILTER(?recent >= "2020-01-01T00:00:00Z"^^xsd:dateTime) }
  UNION { VALUES ?label { "building or structure under construction"@en "proposed building or structure"@en "pre-construction"@en }
  ?state rdfs:label ?label. ?item wdt:P5817 ?state }''' if current_only else ''
-    return f'''SELECT DISTINCT ?item WHERE {{ ?item wdt:P31 wd:{class_id}; wdt:P625 ?point . {lifecycle} }} ORDER BY ?item LIMIT {limit} OFFSET {offset}''' 
+    return f'''SELECT DISTINCT ?item WHERE {{ ?item wdt:P31 wd:{class_id}; wdt:P625 ?point . {lifecycle} }} ORDER BY ?item LIMIT {limit} OFFSET {offset}'''
 
 
 def details(qids):
