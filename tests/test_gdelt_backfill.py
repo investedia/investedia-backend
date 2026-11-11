@@ -296,6 +296,26 @@ class EndToEndTests(unittest.TestCase):
         # The second (resumed) run reads GDELT from the cache: no new GDELT request.
         report = self.run_once(True); self.assertEqual(report['gdelt']['downloads'], 0); self.assertGreater(report['gdelt']['cache_hits'], 0)
 
+    def test_failing_model_moves_to_the_robots_fallback_without_retries(self):
+        good = self.model
+        def model(url, **kw):
+            if '/models/gemini-test-only:' in url: raise http_error(url, 503)
+            self.assertIn('/models/gemini-flash-latest:', url); return good(url, **kw)
+        self.model = model
+        report = self.run_once(True)
+        self.assertEqual(report['model_order'], ['gemini-test-only', 'gemini-flash-latest', 'gemini-flash-lite-latest'])
+        self.assertEqual(report['models_failed'], {'gemini-test-only': 'http_503'})
+        self.assertEqual(report['gemini_calls'], 2); self.assertEqual(report['new_articles'], 1)
+        self.assertEqual(report['actual_model_used'], 'gemini-flash-latest')
+
+    def test_all_models_failing_stops_after_one_attempt_each_and_says_why(self):
+        def model(url, **kw): raise http_error(url, 429)
+        self.model = model
+        with self.assertRaises(ValueError): self.run_once(True)
+        report = json.loads((self.out/'report.json').read_text())
+        self.assertEqual(report['gemini_calls'], 3); self.assertEqual(set(report['models_failed'].values()), {'http_429'})
+        self.assertEqual(report['new_articles'], 0)
+
     def test_live_run_goes_to_library_and_day_files_never_the_live_feed(self):
         report = self.run_once(False)
         self.assertEqual(report['state'], 'ingestion_acknowledged'); self.assertEqual(len(self.library_pushes), 1)
