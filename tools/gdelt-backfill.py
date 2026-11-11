@@ -609,7 +609,7 @@ def usage_stories(usage):
     return [{'image': {'file': f}} for f, n in sorted(usage.items()) for _ in range(min(int(n), 1000))]
 
 
-def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH, deadline=None, workers=8, translator=None, photos=True, prior_usage=()):
+def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH, deadline=None, workers=8, translator=None, photos=True, prior_usage=(), checkpoint=None):
     """Enrich lazily, one model batch at a time; stop when the call budget, deadline or rows run out."""
     if not 1 <= batch_size <= 40: raise ValueError('batch_size_must_be_1_to_40')
     box, by_iso, sym = ref
@@ -672,6 +672,7 @@ def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH
                         else: rejected['no_topic_photo'] += 1
                     out.append(story)
                 sent.extend(part)
+                if checkpoint: checkpoint(out, sent, judged)  # on disk after every batch: survives a killed run
 
         except (BudgetExceeded, ModelUnavailable): raise
         except ValueError as e:
@@ -681,6 +682,41 @@ def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH
             rejected['run_stopped_early:' + type(e).__name__] += 1  # finished batches are kept and saved
     rejected['not_reached_budget_or_page_cap'] += max(0, len(rows) - cursor)
     return out, sent, rejected, judged
+
+
+CHECKPOINT = 'checkpoint.json'
+
+
+def save_checkpoint(output, out, sent, judged):
+    write(Path(output)/CHECKPOINT, {'stories': out, 'sent': [c['url'] for c in sent], 'judged': list(judged), 'saved_at': iso(datetime.now(timezone.utc))})
+
+
+def finalize(stories, now, a, b, reference=None):
+    """Evidence rules and window check, shared by a normal run and a rescued (stopped) run."""
+    reference = reference or ROOT/'assets/globe'
+    registry = read(ROOT/'data/registry.json')['assets']; mk = read(reference/'markets.json')['assets']
+    prices = {x['s']: x for x in mk}; prices.update(read(reference/'news-prices.json')['assets'])
+    licences = read(ROOT/'data/coverage/price-licences.json', {})
+    proposals, reasons = regional.evidence(stories, now, registry, prices, licences)
+    for row in proposals: row.pop('_feed_description', None)
+    for s in proposals:
+        if not a <= stamp(s['published_at']) < b: raise ValueError('original_date_outside_window')
+    return proposals, reasons
+
+
+def rescue(output, start, end):
+    """A run that was stopped or killed: turn its last checkpoint into the normal artifact so it can be ingested."""
+    output = Path(output); cp = read(output/CHECKPOINT, None)
+    if not cp or not cp.get('stories'): return {'rescued': 0}
+    if (output/'new-articles.json').exists() and read(output/'new-articles.json', []): return {'rescued': 0, 'reason': 'normal_artifact_exists'}
+    a, b = window(start, end); now = datetime.now(timezone.utc)
+    new, _ = finalize(cp['stories'], now, a, b)
+    write(output/'new-articles.json', new); write(output/'library-rows.json', {'days': library_days(new)})
+    write(output/'judged.json', {'sent': cp.get('sent', []), 'judged': cp.get('judged', [])})
+    report = read(output/'report.json', {}) or {}
+    report.update(new_articles=len(new), state='rescued_from_checkpoint', rescued_at=iso(now))
+    write(output/'report.json', report)
+    return {'rescued': len(new)}
 
 
 # ---------- library rows and ingestion (never the live 48-hour feed) ----------
@@ -866,15 +902,9 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         robot.PHOTO_TOPICS = photo_topics(photo_index)
         report['photo_topics'] = len(robot.PHOTO_TOPICS)
         prior = usage_stories(state.get('photo_usage', {}))
-        new, sent, enrich_rejected, judged = generate(ordered, a, b, now, ref, budget, fetcher, batch_size, deadline, translator=editor, prior_usage=prior)
-        registry = read(ROOT/'data/registry.json')['assets']; mk = read(reference/'markets.json')['assets']
-        prices = {x['s']: x for x in mk}; prices.update(read(reference/'news-prices.json')['assets'])
-        licences = read(ROOT/'data/coverage/price-licences.json', {})
-        proposals, reasons = regional.evidence(new, now, registry, prices, licences)
-        for row in proposals: row.pop('_feed_description', None)
-        new = proposals
-        for s in new:
-            if not a <= stamp(s['published_at']) < b: raise ValueError('original_date_outside_window')
+        new, sent, enrich_rejected, judged = generate(ordered, a, b, now, ref, budget, fetcher, batch_size, deadline, translator=editor, prior_usage=prior,
+                                                      checkpoint=lambda o, se, j: save_checkpoint(output, o, se, j))
+        new, reasons = finalize(new, now, a, b, reference)
         days = library_days(new)
         found_region = {c['url']: c['gdelt_region'] for c in sent}
         report.update(new_articles=len(new), pages_fetched=fetcher.pages, sent_to_model=len(sent),
@@ -935,7 +965,7 @@ def main(argv=None):
     p.add_argument('--gemini-model', default=os.environ.get('GEMINI_MODEL') or None)
     p.add_argument('--gemini-calls', type=int, default=DEFAULT_CALLS); p.add_argument('--batch-size', type=int, default=MODEL_BATCH)
     p.add_argument('--gdelt-files', type=int, default=DEFAULT_GDELT_FILES); p.add_argument('--max-minutes', type=int, default=100)
-    p.add_argument('--phase', choices=['all', 'generate', 'ingest'], default='all')
+    p.add_argument('--phase', choices=['all', 'generate', 'ingest', 'rescue'], default='all')
     p.add_argument('--provider', choices=['gemini', 'claude'], default='gemini')
     p.add_argument('--claude-model', choices=sorted(CLAUDE_PRICES), default='claude-haiku-5-5')
     p.add_argument('--max-usd', type=float, default=3.0)
@@ -950,6 +980,9 @@ def main(argv=None):
     if not 0 < a.max_usd <= 50: p.error('max_usd_must_be_0_to_50')
     try: window(a.start, a.end); regions_from(a.regions)
     except ValueError as e: p.error(str(e))
+    if a.phase == 'rescue':
+        try: print(json.dumps(rescue(a.output, a.start, a.end))); return 0
+        except (ValueError, OSError, KeyError, TypeError) as e: print('rescue failed: ' + type(e).__name__, file=sys.stderr); return 1
     if a.phase == 'ingest':
         if a.dry_run != 'false': p.error('ingest_phase_requires_dry_run_false')
         missing = [k for k in ('WORKER_URL', 'NEWS_INGEST_TOKEN') if not os.environ.get(k)]

@@ -431,6 +431,23 @@ class ClaudeProviderTests(EndToEndTests):
         self.assertEqual(report['rejections']['pages_and_rules'].get('run_stopped_early:IncompleteRead'), 1)
         self.assertEqual(len(json.loads((self.out/'new-articles.json').read_text())), 1)
 
+    def test_killed_run_is_rescued_from_the_checkpoint_saved_after_each_batch(self):
+        self.run_once(True, calls=5, provider='claude', claude_client=FakeClaude(json.dumps(self.PICKED)))
+        cp = json.loads((self.out/'checkpoint.json').read_text())
+        self.assertEqual(len(cp['stories']), 1); self.assertEqual(len(cp['sent']), 1)
+        (self.out/'new-articles.json').unlink()  # as if the runner was killed before the end
+        result = m.rescue(self.out, '2026-09-01', '2026-09-03')
+        self.assertEqual(result, {'rescued': 1})
+        art = json.loads((self.out/'new-articles.json').read_text())[0]
+        self.assertEqual(art['published_at'], '2026-09-02T04:40:00Z'); self.assertNotIn('_feed_description', art)
+        self.assertEqual(json.loads((self.out/'report.json').read_text())['state'], 'rescued_from_checkpoint')
+        self.assertEqual(m.rescue(self.out, '2026-09-01', '2026-09-03')['rescued'], 0)  # never twice
+        with patch.object(m.uploader, 'push', side_effect=AssertionError('live feed')), patch.dict('os.environ', {'NEWS_INGEST_TOKEN': 'zq-fake-token-7781'}), \
+             patch.object(m.regional, 'request', side_effect=self.worker):
+            pushes = []
+            m.ingest_artifact(self.out, 'https://worker.fixture.invalid', self.state, NOW, lambda u, t, g: pushes.append(g) or {'ok': True})
+        self.assertEqual(len(pushes), 1)
+
     def test_rejected_request_keeps_claudes_reason(self):
         class Rejected(Exception):
             status_code = 400; body = {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low.'}}
