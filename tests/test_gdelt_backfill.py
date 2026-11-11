@@ -451,6 +451,16 @@ class ClaudeProviderTests(EndToEndTests):
         self.assertEqual(art['published_at'], '2026-09-02T04:40:00Z')
         self.assertEqual(report['translated_articles'], 1); self.assertEqual(report['translated_samples'][0]['language'], 'swa')
         with self.assertRaises(ValueError): self.run_once(True, sources='translated')  # Gemini cannot translate here
+        # Fix C: a translated article placed in a large Western economy, or politics without market impact, is dropped.
+        for change, reason in (({'country': 'DE', 'lat': 52.5, 'lon': 13.4, 'place': 'Berlin'}, 'translated_outside_thin_regions'),
+                               ({'category': 'geopolitics', 'market_moving': False}, 'translated_not_business')):
+            self.PICKED = [{**ClaudeProviderTests.PICKED[0], **change}]
+            replies[1] = json.dumps(self.PICKED)
+            report = self.run_once(True, calls=5, provider='claude', claude_client=Seq(''), sources='translated')
+            self.assertEqual(report['new_articles'], 0); self.assertEqual(report['rejections']['pages_and_rules'].get(reason), 1)
+        weak = tr_text.split('\t'); weak[7] = 'ECON_UNIONS;ECON_TAXATION_X;ECON_WORKINGCLASS;'
+        self.assertEqual(m.parse_gkg('\t'.join(weak), FILE_TIME, True)[1], {'translated_needs_strong_business_theme': 1})
+        self.assertEqual(len(m.parse_gkg('\t'.join(weak), FILE_TIME, False)[0]), 1)  # English rule unchanged
 
     # The Gemini-specific scenarios of the parent class do not apply here.
     test_overloaded_model_is_retried_with_pauses_then_the_next_model_is_used = None

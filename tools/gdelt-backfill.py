@@ -166,6 +166,17 @@ def fetch_bytes(url, timeout=60):
     return body
 
 
+# Local-language press is kept only for the thin regions: articles the writer places in these large
+# Western economies are dropped (owner, 11 Nov: "fix C").
+GLOBAL_COUNTRIES = {'United States of America', 'United Kingdom', 'Germany', 'France', 'Canada', 'Netherlands', 'Switzerland',
+                    'Belgium', 'Austria', 'Ireland', 'Sweden', 'Denmark', 'Norway', 'Finland', 'Luxembourg'}
+
+
+def strong_theme(themes):
+    names = {t for t in themes.split(';') if t}
+    return bool(names & STRONG_THEMES) or any(t.startswith('ECON_WORLDCURRENCIES') for t in names)
+
+
 def themes_ok(themes):
     names = {t for t in themes.split(';') if t}
     econ = {t for t in names if t.startswith('ECON_')}
@@ -188,6 +199,7 @@ def parse_gkg(text, at, translated=False):
         if len(c) < 27: rejected['short_gkg_row'] += 1; continue
         if c[2] != '1': rejected['not_web_article'] += 1; continue
         if not themes_ok(c[7]): rejected['not_business_theme'] += 1; continue
+        if translated and not strong_theme(c[7]): rejected['translated_needs_strong_business_theme'] += 1; continue
         region = FIPS_REGION.get(main_country(c[9]))
         if not region: rejected['outside_backfill_regions'] += 1; continue
         url = c[4].strip(); u = urlsplit(url)
@@ -214,7 +226,7 @@ class GkgClient:
         self.downloads = 0; self.cache_hits = 0; self.slept = 0.0; self.errors = Counter(); self.consecutive = 0
         self.last = None; self.stopped = None; self.rejected = Counter()
 
-    def path(self, at): return self.cache/(('tr-' if self.kind == 'translated' else '') + at.strftime('%Y%m%d%H%M%S') + '.json')
+    def path(self, at): return self.cache/(('tr2-' if self.kind == 'translated' else '') + at.strftime('%Y%m%d%H%M%S') + '.json')
 
     def fetch(self, at):
         path = self.path(at)
@@ -650,6 +662,9 @@ def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH
             for s in got:
                 if s['id'] not in lookup: raise ValueError('source_identity_changed')
                 story = provenance(s, lookup[s['id']], now)
+                if story.get('headline_translated'):
+                    if (story.get('location') or {}).get('country') in GLOBAL_COUNTRIES: rejected['translated_outside_thin_regions'] += 1; continue
+                    if story.get('category') == 'geopolitics' and not story.get('market_moving'): rejected['translated_not_business'] += 1; continue
                 if photos:
                     img = topic_photo(topics.get(s['id']), s['id'], [*prior_usage, *out])
                     if img: story['image'] = img
