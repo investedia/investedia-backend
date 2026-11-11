@@ -118,6 +118,14 @@ class RecoveryIntegrationTests(unittest.TestCase):
   for body in sent:
    if body.get('mode')=='gap-history-v1':self.assertTrue(all(m.stamp(s['published_at'])<now-timedelta(hours=48) for s in body['stories']))
    else:self.assertEqual(body['generated_at'],ARTICLE['published_at'])
+ def test_named_source_set_selects_only_those_feeds(self):
+  sources=[('https://fixture.invalid/a','A','af'),('https://fixture.invalid/new','Central Bank of New','latam')]
+  with patch.object(m.robot,'FEEDS',[]),patch.object(m.robot,'REGION_FEEDS',sources),patch.object(m.robot,'OFFICIAL_REGION_FEEDS_2026_11_11',[sources[1]]):
+   enabled,skipped=m.feed_sources({},m.SOURCE_SETS['official-2026-11-11']())
+  self.assertEqual([s['name'] for s in enabled],['Central Bank of New']);self.assertEqual(skipped,[])
+  with self.assertRaises(ValueError):m.feed_sources({})
+  self.assertTrue(all(any(u==r[0] for r in m.robot.REGION_FEEDS) for u in m.SOURCE_SETS['official-2026-11-11']()))
+  self.assertIn('official-2026-11-11',(ROOT/'.github/workflows/regional-backfill.yml').read_text())
  def test_offline_dry_run_writes_only_review_artifacts(self):
   import shutil
   original=copy.deepcopy(ARTICLE);original['impacts']=[]
