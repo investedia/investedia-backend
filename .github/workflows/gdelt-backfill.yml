@@ -154,6 +154,13 @@ jobs:
           --confirm "$CONFIRM" --dry-run "$DRY_RUN"
           --start "$START_DATE" --end "$END_DATE" --regions "$REGIONS"
           --gemini-calls "$CALLS" --batch-size "$BATCH" --gdelt-files "$GDELT" --max-minutes 100
+      - name: Rescue a stopped or killed run from its last checkpoint (no model calls)
+        if: ${{ always() }}
+        working-directory: backend
+        env:
+          START_DATE: ${{ inputs.start_date }}
+          END_DATE: ${{ inputs.end_date }}
+        run: python tools/gdelt-backfill.py --phase rescue --confirm BACKFILL --start "$START_DATE" --end "$END_DATE"
       - name: Save GDELT discovery cache (discovery results only, no secrets)
         if: ${{ !cancelled() && hashFiles('backend/.local/gdelt-cache/*.json') != '' }}
         uses: actions/cache/save@v4
@@ -161,7 +168,7 @@ jobs:
           path: backend/.local/gdelt-cache
           key: gdelt-discovery-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Upload complete or partial review artifact
-        if: ${{ !cancelled() }}
+        if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
           name: gdelt-backfill-review
@@ -174,7 +181,8 @@ jobs:
 
   ingest:
     needs: generate
-    if: ${{ !inputs.dry_run && inputs.confirm == 'BACKFILL' && github.ref == 'refs/heads/main' }}
+    # Also after a failed or stopped generate job: rescued articles from its checkpoint are ingested too.
+    if: ${{ always() && needs.generate.result != 'skipped' && !inputs.dry_run && inputs.confirm == 'BACKFILL' && github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     concurrency:
