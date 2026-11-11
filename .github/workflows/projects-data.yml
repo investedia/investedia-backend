@@ -1,0 +1,44 @@
+name: Projects registry (draft artifact only)
+on:
+  workflow_dispatch:
+    inputs:
+      fetch_reviewed:
+        description: 'Fetch only hash-bound, licence-reviewed source versions'
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: projects-registry-artifact
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/projects/requirements.txt
+      - run: python -m unittest discover -s tests -p test_projects_pipeline.py
+      - if: inputs.fetch_reviewed
+        run: python -m tools.projects.fetch_sources
+      - run: python tools/projects/build_projects.py --offline
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: projects-draft-${{ github.sha }}
+          path: |
+            assets/globe/projects.json
+            assets/globe/projects-featured.json
+            assets/globe/project-links.json
+            assets/img/projects/
+            data/projects/build-report.json
+            data/projects/country-only.json
+          if-no-files-found: error
+      - name: Visible failure
+        if: failure()
+        run: echo '::error::Projects validation failed. No publication, deployment or production write was attempted.'

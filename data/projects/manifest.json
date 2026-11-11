@@ -1,0 +1,172 @@
+{
+ "schema": "investedia.projects.raw-manifest.v1",
+ "build_date": "2026-11-11",
+ "sources": [
+  {
+   "source": "wikidata",
+   "name": "Wikidata (CC0), retained 10 November site snapshot",
+   "enabled": true,
+   "retained_snapshot": true,
+   "file": "cache/wikidata-retained.json",
+   "sha256": "9dd222bd5575c3ce81bec3a6914128054b6682ef4ec5b8f4727cdf8cc19d243e",
+   "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+   "licence": "CC0 1.0",
+   "checked_at": "2026-11-10"
+  },
+  {
+   "source": "wikidata",
+   "name": "Wikidata (CC0), Data centres (Q671224), fetched 11 Nov 2026",
+   "enabled": true,
+   "type": "Data centres",
+   "file": "cache/wikidata-datacentre.json",
+   "sha256": "03fa9be56881781629ebe6decc102c95b9b7fc542dc91d62f16885a9182229e1",
+   "url": "https://query.wikidata.org/sparql",
+   "licence": "CC0 1.0",
+   "checked_at": "2026-11-11",
+   "licence_review": {
+    "commercial_use": true,
+    "redistribution": true,
+    "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+    "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+    "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+    "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+    "reviewed_at": "2026-11-11"
+   }
+  },
+  {
+   "source": "wikidata",
+   "name": "Wikidata (CC0), High-speed rail (Q858485), fetched 11 Nov 2026",
+   "enabled": true,
+   "type": "High-speed rail",
+   "file": "cache/wikidata-hsr.json",
+   "sha256": "5129460f467b8de6f2e361e58dfc57baf50f3017795a3adbd2636e5d6a28df07",
+   "url": "https://query.wikidata.org/sparql",
+   "licence": "CC0 1.0",
+   "checked_at": "2026-11-11",
+   "licence_review": {
+    "commercial_use": true,
+    "redistribution": true,
+    "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+    "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+    "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+    "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+    "reviewed_at": "2026-11-11"
+   }
+  },
+  {
+   "source": "wikidata",
+   "name": "Wikidata (CC0), Hydro energy (Q15911738), fetched 11 Nov 2026",
+   "enabled": true,
+   "type": "Hydro energy",
+   "file": "cache/wikidata-hydro.json",
+   "sha256": "ad289e6855d107261320c9bfee4f63afcb6ef7880b02f7ba7b3c25c1a5c90fef",
+   "url": "https://query.wikidata.org/sparql",
+   "licence": "CC0 1.0",
+   "checked_at": "2026-11-11",
+   "licence_review": {
+    "commercial_use": true,
+    "redistribution": true,
+    "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+    "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+    "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+    "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+    "reviewed_at": "2026-11-11"
+   }
+  },
+  {
+   "source": "wikidata",
+   "name": "Wikidata (CC0), Nuclear energy (Q134447), fetched 11 Nov 2026",
+   "enabled": true,
+   "type": "Nuclear energy",
+   "file": "cache/wikidata-nuclear.json",
+   "sha256": "eb4dbab870574eead4492d5054700298df295f143ce2c612f41df3a66d5b7cdf",
+   "url": "https://query.wikidata.org/sparql",
+   "licence": "CC0 1.0",
+   "checked_at": "2026-11-11",
+   "licence_review": {
+    "commercial_use": true,
+    "redistribution": true,
+    "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+    "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+    "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+    "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+    "reviewed_at": "2026-11-11"
+   }
+  },
+  {
+   "source": "wikidata",
+   "name": "Wikidata (CC0), Solar energy (Q2298412), fetched 11 Nov 2026",
+   "enabled": true,
+   "type": "Solar energy",
+   "file": "cache/wikidata-solar.json",
+   "sha256": "c5f73bb15dbc8c1540c7896e9be9d6833c82f6ca7c1de60faca7ac8acecafc62",
+   "url": "https://query.wikidata.org/sparql",
+   "licence": "CC0 1.0",
+   "checked_at": "2026-11-11",
+   "licence_review": {
+    "commercial_use": true,
+    "redistribution": true,
+    "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+    "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+    "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+    "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+    "reviewed_at": "2026-11-11"
+   }
+  },
+  {
+   "source": "wikidata",
+   "name": "Wikidata (CC0), Wind energy (Q194356), fetched 11 Nov 2026",
+   "enabled": true,
+   "type": "Wind energy",
+   "file": "cache/wikidata-wind.json",
+   "sha256": "91ec395cc5d8eb4a9a3328ac63fea8bdb4b596a827f1d761f3f17adb82aebd18",
+   "url": "https://query.wikidata.org/sparql",
+   "licence": "CC0 1.0",
+   "checked_at": "2026-11-11",
+   "licence_review": {
+    "commercial_use": true,
+    "redistribution": true,
+    "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+    "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+    "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+    "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+    "reviewed_at": "2026-11-11"
+   }
+  },
+  {
+   "source": "gem",
+   "enabled": false,
+   "reason": "Owner approved 11 Nov 2026. Blocked: GEM tracker downloads require a request form with personal contact details; no direct file. Owner to request the Global Integrated Power Tracker file and add it to the cache for licence/hash review."
+  },
+  {
+   "source": "world_bank",
+   "enabled": false,
+   "reason": "Owner approved 11 Nov 2026. Checked 11 Nov: Projects API (22,729 projects) returns no precise locations (0 of 500 sampled), so per the precise-site rule nothing goes on the map; country-level listing only if wanted."
+  },
+  {
+   "source": "eia",
+   "enabled": false,
+   "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion"
+  },
+  {
+   "source": "nga",
+   "enabled": false,
+   "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion"
+  },
+  {
+   "source": "ourairports",
+   "enabled": false,
+   "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion"
+  },
+  {
+   "source": "wri",
+   "enabled": false,
+   "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion"
+  },
+  {
+   "source": "commons",
+   "enabled": false,
+   "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion"
+  }
+ ]
+}

@@ -14,3 +14,5 @@ __pycache__/
 config.local.json
 api/evidence/
 .dev.vars.*
+# P19 original downloads can be large; small audited retained cache stays versioned.
+data/projects/raw/

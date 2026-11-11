@@ -97,7 +97,7 @@ def history(iso, mk, _unused):
     print(json.dumps({'days': days, 'connections': total}))
 
 
-def _rules(iso, mk, stories):
+def _rules(iso, mk, stories, projects=None, project_review=None):
     # company registry (data/registry.json): exact normalised-name match to a listed company with a verified place. No fuzzy matching,
     # no AI; a name that matches nothing (private companies such as OpenAI, ByteDance, Pemex) stays unlocated.
     try: REG = json.load(open(os.path.join(ROOT, 'data', 'registry.json')))
@@ -186,6 +186,15 @@ def _rules(iso, mk, stories):
                    'explanation': f"The headline names {a['n']}; the line links the event to that market."}
             rec['score'] = round(.6 * (1 + .25 * (rec['importance'] - 1)) * (1.15 if rec['cross_border'] else 1) * .8, 3)
             conns.append(rec)
+    # P19 project destinations stay off until a hash-bound 100-match human review passes.
+    if projects and project_review:
+        if ROOT not in sys.path: sys.path.insert(0, ROOT)
+        from tools.projects.news_links import connections as project_connections
+        additions = project_connections(stories, projects, iso, project_review)
+        for c in additions:
+            c['score'] = c['confidence']
+            c['cross_border'] = False
+        conns.extend(additions)
     conns.sort(key=lambda c: (-c['score'], c['published_at'] or ''), reverse=False)
 
     return conns, rej, market_refs
@@ -198,7 +207,7 @@ def main():
     if os.environ.get('CONN_HISTORY'):  # historical days: the full article library (same rules, one file per day)
         return history(iso, load('markets.json', {}).get('assets', []), stories)
     mk = load('markets.json', {}).get('assets', [])
-    conns, rej, market_refs = _rules(iso, mk, stories)
+    conns, rej, market_refs = _rules(iso, mk, stories, load('projects.json', {}).get('projects', []), load('project-news-review.json', {}))
     # ---- diagnostics (measured from the published data + the last robot status)
     st = load('news-status.json', {})
     reg = C.Counter((s.get('location') or {}).get('region') or 'none' for s in stories)
