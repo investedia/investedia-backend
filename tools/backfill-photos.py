@@ -97,11 +97,16 @@ def run(key, index_path, blocked_path, output, per_topic=PER_TOPIC, fetch=get, s
         new, added, skipped = top_up(topic, entries, hits, blocked, fetch, save, per_topic)
         index[topic] = new; report['added'] += added
         report['topics'][topic] = {'had': len(entries), 'added': added, 'now': len(new), 'skipped': skipped}
+        save_progress(out, index, report, key)  # after every topic: a stopped job keeps everything finished
+    save_progress(out, index, report, key)
+    return report
+
+
+def save_progress(out, index, report, key):
     (out/'index.json').write_text(json.dumps(index, indent=1, ensure_ascii=False) + '\n')
     text = json.dumps(report, indent=1)
     if key in text: raise ValueError('secret_in_report')
     (out/'report.json').write_text(text + '\n')
-    return report
 
 
 def main():
