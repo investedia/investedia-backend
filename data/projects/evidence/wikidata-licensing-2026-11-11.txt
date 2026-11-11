@@ -1,0 +1,63 @@
+This page presents an overview of copyright licensing for Wikidata contributors and users.
+
+==Official policy==
+Wikidata's policy statement can be found at [[Wikidata:Copyright]].
+
+All structured data (i.e. the main, Property, Lexeme, and EntitySchema namespaces) is released into the public domain under [https://creativecommons.org/publicdomain/zero/1.0/ Creative Commons Zero]. Text in other namespaces is copyrighted and available under the [https://creativecommons.org/licenses/by-sa/4.0/ Creative Commons Attribution-ShareAlike 4.0 License].
+
+==Other compatible copyright designations==
+Wikidata requires a CC0 license, which is equivalent to public domain; anyone may freely designate any public-domain data to be CC0.
+
+Other than public-domain data and CC0 data, no other data license or designation is compatible with Wikidata's copyright requirements.
+
+==Determining the copyright of a dataset==
+All data in Wikidata has a CC0 license. Wikidata avoids hosting data that lacks a CC0 license. However, in cases where the Wikidata community decides not to host data due to a copyright claim, that decision does not constitute recognition or confirmation by the Wikidata community (or any authority) of the given copyright claim's validity. The copyright claim may well have merit; more often, the Wikidata community wishes to avoid conflict with an organization asserting a copyright claim over data that, in fact, may not be eligible for copyright.
+
+When any Wikidata user makes a contribution to Wikidata, that user applies a CC0 license to their contribution as a term of use of the Wikidata website. This happens irrespective of whether the user has any claim of ownership to the data they contribute.
+
+Discussing ownership of data and datasets is challenging, as is determining the eligibility of any given data for copyright. Across the globe there is much confusion as to the copyright of datasets. This confusion affects data scientists, copyright lawyers, librarians, government agencies and other reputable organizations which reasonable people would expect to have a clear understanding of how copyright affects their field of expertise. At this time, the Wikidata community cannot offer a simple statement that will clarify all confusion.
+
+Most authorities agree that individual concepts expressed as data are not eligible for copyright anywhere. Wikidata contributors making manual Wikidata entries probably need not worry about copyright. For example, anyone who reads a book, selects information from that book and enters it into Wikidata can presume that their contributions come from sources which have no claim of copyright over the data they contain; if the Wikidata user has any claim to copyright ownership, they relinquish it under the compulsory CC0 license as soon as they post it to Wikidata.
+
+Less clear-cut are situations in which someone wishes to integrate an existing dataset into Wikidata. A dataset is a collection of data that has been curated and structured by an individual or organization. Some entities claim copyright ownership of the datasets they develop. Often the Wikidata community pauses by default with such claims, and it avoids integrating those datasets into Wikidata without considering whether those copyright claims are legitimate and apply to data eligible for copyright, or perhaps less legitimate and being asserted for data ineligible for copyright. Many organizations assert copyright for any media they touch, without considering whether the media is eligible for copyright or whether they own the copyright. The Wikidata community discusses copyright claims more frequently than any other open data project; it is challenging to arrive at definitive answers.
+
+Wikidata contributors sometimes avoid uploading data when someone has made any of the following kinds of copyright claims on the data:
+*traditional copyright, even with no copyright notice at all
+*any Creative Commons license other than CC0. This includes Creative Commons Attribution, the very permissive license accepted on other Wikimedia projects. Some datasets may have Creative Commons Non-Commercial licenses as well.
+*any specialized license with restrictions
+*any of the many copyright licenses applicable to creative works or open source software but which, for some reason, people try to apply to data.
+
+==Examples ==
+
+=== Stories ===
+
+There are some stories that circulate in the Wikidata community as examples for explaining the copyright of data. Here are some of them:
+
+*{{q|Q5441583}} - This 1991 United States legal case determined that a company that compiles a set of phone numbers cannot copyright them. Wikidata contributors sometimes cite this case as supporting evidence that collecting identifying information from compilations of data is permissible, since this sort of information is not eligible for copyright.
+
+=== Uses ===
+
+Organisations who release data under PD or CC0 licences include:
+
+* {{Q|674773}} (e.g. [https://collection.sciencemuseum.org.uk/objects/co202921/wind-tunnel-model-for-avro-720-rocket-fighter])
+Creative Commons hosts a list for several sources that use CC0 license for data: [[creativecommonswiki:wiki/CC0_use_for_data|CC0 use for data]]
+* {{Q|Q234110}}, see https://www.europeana.eu/nl/rights/usage-guidelines-for-metadata 
+* {{Q|Q1526131}}, see http://data.bibliotheken.nl/
+* {{Q|Q131626}},  see https://www.si.edu/openaccess/faq
+* {{Q|Q190804}}, see https://www.rijksmuseum.nl/en/research/conduct-research/data/policy
+
+==Why should you use a CC0 license for data in Wikidata?==
+The Wikidata community frequently gets questions as to why data providers should license content with a CC0 license. Here are some pieces describing various explanations for this reasoning: 
+* [[User:Lydia Pintscher (WMDE)/CC-0|Lydia Pintscher's thoughts]]
+* [[wmse:Fil:Arguments_on_CC0-licensing_for_data.pdf|Arguments on CC0-licensing for data]] (PDF)
+* [https://www.europeandataportal.eu/en/news/why-sweden-advocates-cc0 Why Sweden advocates for CC0]
+* [https://opendata.stackexchange.com/questions/26/benefits-of-using-cc0-over-cc-by-for-data Discussion of benefits of CC0 for data] on StackExchange
+* [https://blog.ldodds.com/2013/04/30/how-do-we-attribute-data/ How Do We Attribute Data?] by Leigh Dodds (2013)
+* [http://sciencecommons.org/projects/publishing/open-access-data-protocol/ Protocol for Implementing Open Access Data] -- by the Science Commons project at Creative Commons
+* [http://simia.net/wiki/Free_data Free data] by Denny Vrandečić
+
+==See also==
+* [[Wikidata:Open data publishing|A guide for publishing open data]]
+
+==External links==
+*[https://data.research.cornell.edu/content/intellectual-property Introduction to intellectual property rights in data management] from Cornell University
