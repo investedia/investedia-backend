@@ -617,60 +617,68 @@ def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH
     cursor, max_pages = 0, budget.limit * batch_size * 4
     attempted = 0
     with ThreadPoolExecutor(workers) as pool:
-        while cursor < len(rows) and budget.calls < budget.limit and attempted < max_pages:
-            if deadline is not None and time.monotonic() >= deadline: rejected['run_deadline_reached'] += 1; break
-            part = []
-            while len(part) < batch_size and cursor < len(rows) and attempted < max_pages:
-                take = rows[cursor:cursor + min(workers * 2, batch_size - len(part) + workers)]
-                cursor += len(take); attempted += len(take)
-                for row, (c, reason) in zip(take, pool.map(lambda r: fetcher.enrich(r, start, end), take)):
-                    if c: part.append(c); continue
-                    rejected[reason] += 1
-                    if not TRANSIENT.match(reason): judged.append(row['url'])  # stable rule: do not fetch again next run
-            foreign = [c for c in part if c.get('translated')]
-            if foreign:
-                if translator is None:
-                    rejected['translation_needs_claude_writer'] += len(foreign); part = [c for c in part if not c.get('translated')]
-                else:
-                    budget.context = {'purpose': 'translate_headlines', 'input_candidates': len(foreign)}
-                    try: english = translator.translate([(c['title'], c['desc']) for c in foreign])
-                    except BudgetExceeded: break
-                    except RuntimeError: english = {}
-                    for i, c in enumerate(foreign):
-                        if i in english:
-                            c.update(original_title=c['title'], original_desc=c['desc'], title=english[i][0], desc=english[i][1])
-                        else: c['drop'] = True; rejected['translation_failed'] += 1
-                    part = [c for c in part if not c.get('drop')]
-            if not part: continue
-            budget.context = {'purpose': 'gdelt_backfill', 'input_candidates': len(part),
-                              'by_gdelt_region': dict(Counter(c['gdelt_region'] for c in part))}
-            robot.status['gemini_ok'] = False
-            picks, writer = [], robot.gemini
-            def capture(prompt):
-                result = writer(prompt); picks.append(result); return result
-            robot.gemini = capture
-            try: got = robot.pick_stories(part, box, by_iso, sym, set(by_iso), len(part), preserve_source=True, feed_only=True, backfill=True)
-            except BudgetExceeded: break
-            finally: robot.gemini = writer
-            if not robot.status.get('gemini_ok'): break
-            lookup = {sid(c['url']): c for c in part}
-            topics = {}
-            for p in (picks[-1] if picks and isinstance(picks[-1], list) else []):
-                mem = p.get('members') if isinstance(p, dict) else None
-                if isinstance(mem, list) and len(mem) == 1 and isinstance(mem[0], int) and 0 <= mem[0] < len(part):
-                    topics[sid(part[mem[0]]['url'])] = p.get('photo')
-            for s in got:
-                if s['id'] not in lookup: raise ValueError('source_identity_changed')
-                story = provenance(s, lookup[s['id']], now)
-                if story.get('headline_translated'):
-                    if (story.get('location') or {}).get('country') in GLOBAL_COUNTRIES: rejected['translated_outside_thin_regions'] += 1; continue
-                    if story.get('category') == 'geopolitics' and not story.get('market_moving'): rejected['translated_not_business'] += 1; continue
-                if photos:
-                    img = topic_photo(topics.get(s['id']), s['id'], [*prior_usage, *out])
-                    if img: story['image'] = img
-                    else: rejected['no_topic_photo'] += 1
-                out.append(story)
-            sent.extend(part)
+        try:
+            while cursor < len(rows) and budget.calls < budget.limit and attempted < max_pages:
+                if deadline is not None and time.monotonic() >= deadline: rejected['run_deadline_reached'] += 1; break
+                part = []
+                while len(part) < batch_size and cursor < len(rows) and attempted < max_pages:
+                    take = rows[cursor:cursor + min(workers * 2, batch_size - len(part) + workers)]
+                    cursor += len(take); attempted += len(take)
+                    for row, (c, reason) in zip(take, pool.map(lambda r: fetcher.enrich(r, start, end), take)):
+                        if c: part.append(c); continue
+                        rejected[reason] += 1
+                        if not TRANSIENT.match(reason): judged.append(row['url'])  # stable rule: do not fetch again next run
+                foreign = [c for c in part if c.get('translated')]
+                if foreign:
+                    if translator is None:
+                        rejected['translation_needs_claude_writer'] += len(foreign); part = [c for c in part if not c.get('translated')]
+                    else:
+                        budget.context = {'purpose': 'translate_headlines', 'input_candidates': len(foreign)}
+                        try: english = translator.translate([(c['title'], c['desc']) for c in foreign])
+                        except BudgetExceeded: break
+                        except RuntimeError: english = {}
+                        for i, c in enumerate(foreign):
+                            if i in english:
+                                c.update(original_title=c['title'], original_desc=c['desc'], title=english[i][0], desc=english[i][1])
+                            else: c['drop'] = True; rejected['translation_failed'] += 1
+                        part = [c for c in part if not c.get('drop')]
+                if not part: continue
+                budget.context = {'purpose': 'gdelt_backfill', 'input_candidates': len(part),
+                                  'by_gdelt_region': dict(Counter(c['gdelt_region'] for c in part))}
+                robot.status['gemini_ok'] = False
+                picks, writer = [], robot.gemini
+                def capture(prompt):
+                    result = writer(prompt); picks.append(result); return result
+                robot.gemini = capture
+                try: got = robot.pick_stories(part, box, by_iso, sym, set(by_iso), len(part), preserve_source=True, feed_only=True, backfill=True)
+                except BudgetExceeded: break
+                finally: robot.gemini = writer
+                if not robot.status.get('gemini_ok'): break
+                lookup = {sid(c['url']): c for c in part}
+                topics = {}
+                for p in (picks[-1] if picks and isinstance(picks[-1], list) else []):
+                    mem = p.get('members') if isinstance(p, dict) else None
+                    if isinstance(mem, list) and len(mem) == 1 and isinstance(mem[0], int) and 0 <= mem[0] < len(part):
+                        topics[sid(part[mem[0]]['url'])] = p.get('photo')
+                for s in got:
+                    if s['id'] not in lookup: raise ValueError('source_identity_changed')
+                    story = provenance(s, lookup[s['id']], now)
+                    if story.get('headline_translated'):
+                        if (story.get('location') or {}).get('country') in GLOBAL_COUNTRIES: rejected['translated_outside_thin_regions'] += 1; continue
+                        if story.get('category') == 'geopolitics' and not story.get('market_moving'): rejected['translated_not_business'] += 1; continue
+                    if photos:
+                        img = topic_photo(topics.get(s['id']), s['id'], [*prior_usage, *out])
+                        if img: story['image'] = img
+                        else: rejected['no_topic_photo'] += 1
+                    out.append(story)
+                sent.extend(part)
+
+        except (BudgetExceeded, ModelUnavailable): raise
+        except ValueError as e:
+            if str(e) == 'source_identity_changed': raise
+            rejected['run_stopped_early:' + str(e)[:40]] += 1  # finished batches are kept and saved
+        except Exception as e:
+            rejected['run_stopped_early:' + type(e).__name__] += 1  # finished batches are kept and saved
     rejected['not_reached_budget_or_page_cap'] += max(0, len(rows) - cursor)
     return out, sent, rejected, judged
 

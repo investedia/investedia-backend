@@ -281,7 +281,7 @@ class EndToEndTests(unittest.TestCase):
                    'why': 'Test-only', 'category': 'economy', 'importance': 1, 'country': 'KE', 'lat': -1.29, 'lon': 36.82, 'place': 'Nairobi', 'impacts': [], 'photo': 'bank building'}]
         return json.dumps({'candidates': [{'content': {'parts': [{'text': json.dumps(picked)}]}}]})
 
-    def run_once(self, dry_run, calls=3, **extra):
+    def run_once(self, dry_run, calls=3, batch=5, **extra):
         def library_push(url, token, group): self.library_pushes.append(group); return {'ok': True, 'written': len(group)}
         with patch.object(m.regional, 'request', side_effect=self.worker), patch.object(m.robot, 'GEMINI', 'test-only-key'), \
              patch.object(m.uploader, 'push', side_effect=AssertionError('live 48-hour feed ingestion')), \
@@ -289,7 +289,7 @@ class EndToEndTests(unittest.TestCase):
              patch.object(m.robot, 'get', side_effect=AssertionError('Pixabay download')), \
              patch.dict('os.environ', {'NEWS_INGEST_TOKEN': 'test-only-token'}):
             return m.run('2026-09-01', '2026-09-03', 'east_africa', dry_run, self.out, 'https://worker.fixture.invalid', self.cache,
-                         gemini_calls=calls, batch_size=5, gdelt_files=5, now=NOW, gdelt_get=self.gdelt, page_get=self.page,
+                         gemini_calls=calls, batch_size=batch, gdelt_files=5, now=NOW, gdelt_get=self.gdelt, page_get=self.page,
                          model_get=self.model, library_push=library_push, sleep=lambda s: None, state_root=self.state, **extra)
 
     def test_dry_run_builds_review_artifact_and_ingests_nothing(self):
@@ -413,6 +413,23 @@ class ClaudeProviderTests(EndToEndTests):
             fake = FakeClaude(json.dumps(self.PICKED), stop=stop)
             report = self.run_once(True, calls=5, provider='claude', claude_client=fake)
             self.assertEqual(report['new_articles'], 0); self.assertEqual(report['claude_unusable_batches'], {'stop_' + stop: 1})
+
+    def test_an_unexpected_error_keeps_the_batches_already_written(self):
+        import http.client
+        calls = []
+        def flaky(topic, seed, stories):
+            calls.append(seed)
+            if len(calls) > 1: raise http.client.IncompleteRead(b'')
+            return None
+        two = [self.PICKED[0], {**self.PICKED[0], 'members': [1]}]
+        page = self.page
+        self.page = lambda url, timeout=None: page(url) if 'tea' not in url else PAGE  # both candidates usable
+        fake = FakeClaude(json.dumps(two))
+        with patch.object(m, 'topic_photo', side_effect=flaky):
+            report = self.run_once(True, calls=5, provider='claude', claude_client=fake)
+        self.assertEqual(report['state'], 'dry_run_complete'); self.assertEqual(report['new_articles'], 1)
+        self.assertEqual(report['rejections']['pages_and_rules'].get('run_stopped_early:IncompleteRead'), 1)
+        self.assertEqual(len(json.loads((self.out/'new-articles.json').read_text())), 1)
 
     def test_rejected_request_keeps_claudes_reason(self):
         class Rejected(Exception):
