@@ -275,6 +275,12 @@ def build(root=ROOT, manifest_path=None, output=None):
     else:
         projects,conflicts,merges=merge_rows(all_rows)
     conflicts=source_conflicts+conflicts
+    media_report={'accepted':[],'rejected':[],'missing':[p['k'] for p in projects]}
+    if manifest.get('policy',{}).get('name')=='projects-scale-current-v1':
+        from tools.projects.scale.media import attach
+        media_path=directory/'scale/media-reviewed.json'
+        if media_path.is_file():
+            projects,media_report=attach(projects,read(media_path),root,date)
     links,unlinked=company_links(projects,read(root/'data/registry.json'),read(root/'assets/globe/markets.json'))
     feats,feat_drops=featured(directory/'curated',root/'assets/globe')
     if manifest.get('policy',{}).get('name')=='projects-scale-current-v1':
@@ -291,7 +297,7 @@ def build(root=ROOT, manifest_path=None, output=None):
             'by_status':dict(sorted(collections.Counter(p.get('s','Not sourced') for p in projects).items())),
             'by_country':dict(sorted(collections.Counter(p['cc'] for p in projects).items())),
             'by_region':dict(sorted(collections.Counter(region_by_cc.get(p['cc'],'Unknown') for p in projects).items())),
-            'by_source':source_reports,'status_pct':share('s'),'year_pct':share('y'),
+            'by_source':source_reports,'media':media_report,'status_pct':share('s'),'year_pct':share('y'),
             'capacity_or_cost_pct':round(100*sum(bool(p.get('cap') or p.get('cost')) for p in projects)/total,2) if total else 0,
             'duplicates_merged':len(merges),'merges':merges,'conflicts':conflicts,'rows_dropped':len(drops),
             'drops_by_reason':dict(sorted(collections.Counter(d['reason'] for d in drops).items())), 'drops':drops,

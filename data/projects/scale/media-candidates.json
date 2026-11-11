@@ -1,0 +1,2459 @@
+{
+  "schema": "investedia.projects.media-candidates.v1",
+  "checked_at": "2026-11-11T19:39:10.638458+00:00",
+  "notice": "Candidates only. No image is approved, downloaded or published. Not investment advice.",
+  "counts": {
+    "projects_requested": 225,
+    "projects_checked": 225,
+    "projects_with_candidates": 23,
+    "images": 23,
+    "not_wikidata": 0,
+    "pending": 0
+  },
+  "requests": 0,
+  "bytes": 0,
+  "cache_hits": 0,
+  "deferred": null,
+  "projects": [
+    {
+      "project": "Q104602234",
+      "name": "Parc éolien de Sarry",
+      "country": "FR",
+      "type": "Wind energy",
+      "site_sha256": "35f1f8b6e6a0d506941be753aa6c146175ac198e2431bb7a19171e4ff8f0373d",
+      "images": [
+        {
+          "title": "File:Wind turbines in Burgundy, France.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073",
+          "checked_at": "2026-11-11T19:37:40.078557+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q105812997",
+      "name": "Korlat Wind Farm",
+      "country": "HR",
+      "type": "Wind energy",
+      "site_sha256": "e251ae492bdc9ca30a9b7002ee23e682c897476dcac747f5deaec93abd51dd20",
+      "images": [
+        {
+          "title": "File:Vjetroelektrana Korlat 1.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073",
+          "checked_at": "2026-11-11T19:37:40.078557+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q106645616",
+      "name": "Quilemba Solar Power Station",
+      "country": "AO",
+      "type": "Solar energy",
+      "site_sha256": "997e7d116437eab4d443041c27c261cc570234f26a98885da65635dec90f5f07",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q106809627",
+      "name": "Mayflower Wind",
+      "country": "US",
+      "type": "Wind energy",
+      "site_sha256": "a4d55701c77fb72fc8c82632c4690f9e2a64f0578451895ed764edf7f04dd317",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q106947269",
+      "name": "Vardafjellet wind farm",
+      "country": "NO",
+      "type": "Wind energy",
+      "site_sha256": "28656a6bdd74a0867d89e740afc988b337ccffc76fe05ad9373b3b63dcee5d77",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q107088030",
+      "name": "Dondo Solar Power Station",
+      "country": "MZ",
+      "type": "Solar energy",
+      "site_sha256": "dd4abd898ebeda8755e60e8615f269dca187a448b6fff19f249eaef9f038ca5b",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q107490195",
+      "name": "Puketoi Wind Farm",
+      "country": "NZ",
+      "type": "Wind energy",
+      "site_sha256": "56a09f20c2a9ca4a7ff7f31aefd896b9c2b9fd2907329115056abafc3b911bce",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q108122994",
+      "name": "Kaiwaikawe Wind Farm",
+      "country": "NZ",
+      "type": "Wind energy",
+      "site_sha256": "75e80bd2fcad48a7d0db137093c63ed2420f3caecf645674660179c389dd7987",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q108586840",
+      "name": "Alttrebbin solar park",
+      "country": "DE",
+      "type": "Solar energy",
+      "site_sha256": "aa550c62511de218e74b73e3ac6871b73126c103954fb8b374a1d7606a614dd4",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q108822188",
+      "name": "Namaacha Wind Power Station",
+      "country": "MZ",
+      "type": "Wind energy",
+      "site_sha256": "2b11f1efde502de37d5790957eca7ab1ea8356a01bffdc73d0fc59f1e13e0054",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q109377736",
+      "name": "San'ao nuclear power plant",
+      "country": "CN",
+      "type": "Nuclear energy",
+      "site_sha256": "3305642f55633a9c7f11d2f56ee343048553e394a2b17707d791189ce83b5546",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q110122400",
+      "name": "Geitfjellet wind farm",
+      "country": "NO",
+      "type": "Wind energy",
+      "site_sha256": "0df771d2f982af0a5ee96feb0336627be461c446ec1a6aaff0d6c6d73a6996b5",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q110417042",
+      "name": "Øyfjellet Wind Park",
+      "country": "NO",
+      "type": "Wind energy",
+      "site_sha256": "95378e111181a0b9820267bfdd7d637492859fc910439b9a106ec4f125822c1a",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q110417361",
+      "name": "Kjølberget wind farm",
+      "country": "NO",
+      "type": "Wind energy",
+      "site_sha256": "33db135d4d60e54e160a59f681bbed250fd2f20114c290cfd04b63af01cd26be",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q110417857",
+      "name": "Sørmarkfjellet Wind Farm",
+      "country": "NO",
+      "type": "Wind energy",
+      "site_sha256": "56ae3dc06a3d432aa7bb44a4593ee32a8be277275510fe4e43251a9914a57722",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q110505482",
+      "name": "Gismarvik Wind Farm",
+      "country": "NO",
+      "type": "Wind energy",
+      "site_sha256": "a8f56f3a959fb6ee0f87451232398f2516e928de884e2ac1496f100f15eaf957",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q110507447",
+      "name": "Buheii Wind Farm",
+      "country": "NO",
+      "type": "Wind energy",
+      "site_sha256": "41e4d2ce8fbe30ba671d2cff480105e19fd459d3ebf077de51b973e781c55a99",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q110507697",
+      "name": "Kvenndalsfjellet Wind Farm",
+      "country": "NO",
+      "type": "Wind energy",
+      "site_sha256": "5f6571b3f249c1a01184c7aba65056efad24fc47fc6b3ed9b71e6ab919ab656c",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q110507835",
+      "name": "Harbaksfjellet Wind Farm",
+      "country": "NO",
+      "type": "Wind energy",
+      "site_sha256": "dc95c83d4d487e85c6c6ddb49707398c227bb1e7613eabfe5f107a3bf8f77ce4",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q110508389",
+      "name": "Frøya Wind Farm",
+      "country": "NO",
+      "type": "Wind energy",
+      "site_sha256": "40b6435c5efc5ac084ac2a407bffa872dfd792aa77706523e0c2db761257921f",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q110508528",
+      "name": "Stokkfjellet Wind Farm",
+      "country": "NO",
+      "type": "Wind energy",
+      "site_sha256": "0cdc18f272b3cb3d0ea3a12af4f87b937744114b1d36d51652e95a4569a71071",
+      "images": [
+        {
+          "title": "File:Stokkfjellet vindpark.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073",
+          "checked_at": "2026-11-11T19:37:40.078557+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q110510214",
+      "name": "Sørfjord Wind Farm",
+      "country": "NO",
+      "type": "Wind energy",
+      "site_sha256": "bdfe4e4d5b7d9cff4b2d257fafd764da7bc6ef956f6b44b5f51c30da5d72027e",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q110510588",
+      "name": "Haram Wind Farm",
+      "country": "NO",
+      "type": "Wind energy",
+      "site_sha256": "7dea73eaa885b11675a51d589e0d0dfc3f023815a359279ee37eab7dd1f3ace4",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q110520142",
+      "name": "Okla Wind Farm",
+      "country": "NO",
+      "type": "Wind energy",
+      "site_sha256": "5caa6217914bb5c45b68ff59d745e423c595cde01c200496724277e3a94443d1",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q110613263",
+      "name": "Nkhoma Deka Solar Power Station",
+      "country": "MW",
+      "type": "Solar energy",
+      "site_sha256": "08501b9a1e2e1c3a1547f97b2a0b950b3b861724e4e78537a29de1563c1d10b9",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q111019562",
+      "name": "Gottesgabe solar park",
+      "country": "DE",
+      "type": "Solar energy",
+      "site_sha256": "4b3e4dbc97e73962f7804e8ce1d428214818925d951861ba31a2b64d6ccf01e8",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q111265768",
+      "name": "Banshkhali power plant",
+      "country": "BD",
+      "type": "Coal energy",
+      "site_sha256": "f7eb7a81422144f9cf602ed82149aa881ae92d2b45838988f07b729bcb67c8d0",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q111265773",
+      "name": "Barisal Electric Power Company Limited",
+      "country": "BD",
+      "type": "Coal energy",
+      "site_sha256": "c9544dd13ccf115d1a168fd114d063d9732dff3f4a50c4b12710338ee91e7ea0",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q111265821",
+      "name": "Patuakhali power plant",
+      "country": "BD",
+      "type": "Coal energy",
+      "site_sha256": "845e2d4f76b83499c2937e8f86ceb9c657a4c34f5ea11f910be9e2e9d3866ca1",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q111944867",
+      "name": "Olkaria VI Geothermal Power Station",
+      "country": "KE",
+      "type": "Geothermal energy",
+      "site_sha256": "971aff0d553ef661ef3b10fe4d265bce1a8ca724d9d55216c455aa63b9e9e75c",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q114014240",
+      "name": "Odal Wind Farm",
+      "country": "NO",
+      "type": "Wind energy",
+      "site_sha256": "cf7111a242420dac91d634dc8bc891072615d74f68d5f94fc865acbe2149bc30",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q114045206",
+      "name": "Godda Thermal Power Station",
+      "country": "IN",
+      "type": "Coal energy",
+      "site_sha256": "638c6bb77cee1a566b8dc4f3d485059c8e1b23def6cfcbf86b9a1d62932919b4",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q116373658",
+      "name": "Skurup Solar PV Park",
+      "country": "SE",
+      "type": "Solar energy",
+      "site_sha256": "076338c0ffbd3bdad105d491548b5aa6f9a84cbee69f6c4bfa6d2416a40f082f",
+      "images": [
+        {
+          "title": "File:Alight Skurup 28 april 2022-3.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073",
+          "checked_at": "2026-11-11T19:37:40.078557+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q118144516",
+      "name": "Larks Green Solar Farm",
+      "country": "GB",
+      "type": "Solar energy",
+      "site_sha256": "7dd26671eb103d2451551955534fe907fbb355b3889353e4ab8c9b50d80ad1c1",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q118399895",
+      "name": "Eikemo Power Station",
+      "country": "NO",
+      "type": "Hydro energy",
+      "site_sha256": "656c848bb5c45481a218bc6bb8cf1ac5e73d67a661bf5a93b036dd8402ae11df",
+      "images": [
+        {
+          "title": "File:Eikemo kraftverk.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073",
+          "checked_at": "2026-11-11T19:37:40.078557+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q119518290",
+      "name": "Sihuangziping Pilot Geothermal Power Plant",
+      "country": "TW",
+      "type": "Geothermal energy",
+      "site_sha256": "d7725a9097ecf58914c81a959012b4a5eed8286dcb76f2e8b5aad7172699e967",
+      "images": [
+        {
+          "title": "File:四磺子坪E-303號地熱探勘井.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073",
+          "checked_at": "2026-11-11T19:37:40.078557+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q119592190",
+      "name": "Udangudi Thermal Power Station",
+      "country": "IN",
+      "type": "Coal energy",
+      "site_sha256": "4ad64eb2bb8ad7e6a5610733ac09b30ff87ce8bf95d4e3f5c67b60bc3ec72860",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q11992622",
+      "name": "North Karanpura Thermal Power Station",
+      "country": "IN",
+      "type": "Coal energy",
+      "site_sha256": "2cc7ab8e22e838a3bc20a3c2e30a57716e5e1c2690db646048e01a2d3e6a5d7e",
+      "images": [
+        {
+          "title": "File:North Karanpura Thermal Power Station.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073",
+          "checked_at": "2026-11-11T19:37:40.078557+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q120962108",
+      "name": "Slopedown Wind Farm",
+      "country": "NZ",
+      "type": "Wind energy",
+      "site_sha256": "c782bfcc423c6e8d2d399baaa328bf65ab3f9bcb86de500e5051273ca1e3b078",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q121854838",
+      "name": "Lava Ridge Wind Project",
+      "country": "US",
+      "type": "Wind energy",
+      "site_sha256": "5ae4646d5a462e04652c2f1dbdda5517a1d9343e6172426b7ccc44a500ec60d7",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:40.078557+00:00",
+      "receipt_sha256": "d2417fd7f8c4e9ee902443c7b30a9a66c505818cba3374b177316a6f089ae073"
+    },
+    {
+      "project": "Q126900452",
+      "name": "Ambrosia Wind Farm",
+      "country": "AU",
+      "type": "Wind energy",
+      "site_sha256": "35cc560e1963a98301ac79dea9d96200da3b306853749b28dbce3c436cc5f57b",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q127375703",
+      "name": "King Rocks Wind Farm",
+      "country": "AU",
+      "type": "Wind energy",
+      "site_sha256": "ed458217cd4edd32076d625534a7dd6da92de1884bb396be1f2ffb7f01a200ae",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q129284749",
+      "name": "Lotus Creek Wind Farm",
+      "country": "AU",
+      "type": "Wind energy",
+      "site_sha256": "5a098560e7eb0214989ba2116af7786a401fba0394e6d723b937fa07b35a3474",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q129562261",
+      "name": "Wheatbelt Solar Farm",
+      "country": "AU",
+      "type": "Solar energy",
+      "site_sha256": "bf6a121d00b01e9e1ac454a830e2cbed32f6aa5537ca0f57ae982367c2b06610",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q130282610",
+      "name": "Port Hedland solar farm",
+      "country": "AU",
+      "type": "Solar energy",
+      "site_sha256": "34fc77c1ee45cfa4fe0c88ab3da66aa2f19ded87e6dfdd10960c8d54f2a126b8",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q130358624",
+      "name": "Vinh Tan 3 Power Plant",
+      "country": "VN",
+      "type": "Coal energy",
+      "site_sha256": "9372d9bd31a83ce5b603978ae4a81d1e9b5a0a7e328653b76b162bcc5b3e15d0",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q130389041",
+      "name": "Narrogin wind farm",
+      "country": "AU",
+      "type": "Wind energy",
+      "site_sha256": "c9d94891a2d85a4985dec1ddde81d7dad19ddfd81130b622067723ac6a359aa5",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q130471071",
+      "name": "Goulburn River Solar Farm",
+      "country": "AU",
+      "type": "Solar energy",
+      "site_sha256": "ed03b594c3ffadbd837b6b41543f3f6062644702e34dfe3d19c5d4a3b4b5fff0",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q130476512",
+      "name": "Waddi Wind Farm",
+      "country": "AU",
+      "type": "Wind energy",
+      "site_sha256": "16a9ba6bec08d39e66951bc7112f073d0cd3e3171a74c564436da6cda0f2e969",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q130476579",
+      "name": "Waddi Solar Farm",
+      "country": "AU",
+      "type": "Solar energy",
+      "site_sha256": "44c38c6012aeb57bce399124986a978624cc32e506755a9dab20b411e554bef5",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q130527371",
+      "name": "Golden Plains Wind Farm",
+      "country": "AU",
+      "type": "Wind energy",
+      "site_sha256": "f117062f76ae093ad324a98afbaef5632634ecff06080f1c7681310c8b6a66fa",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q130741247",
+      "name": "St Ives Renewables Project (Solar)",
+      "country": "AU",
+      "type": "Solar energy",
+      "site_sha256": "79b7549eb29661f041195dc6c85a67ee4ce60a6e9b74bd35fe1c5735b054335b",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q130899765",
+      "name": "Cunderdin Solar Farm",
+      "country": "AU",
+      "type": "Solar energy",
+      "site_sha256": "f089fa522350b6df1df2e32f49cf14d8e77c3d7eb16122147ae0c520f374ce08",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q131057326",
+      "name": "Collector Wind Farm",
+      "country": "AU",
+      "type": "Wind energy",
+      "site_sha256": "4ae1cbd0fe94760d0678870efd8d3bc80f889dc5ab5f1c41869be4805ad52463",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q131686976",
+      "name": "Kerala Nuclear Power Station",
+      "country": "IN",
+      "type": "Nuclear energy",
+      "site_sha256": "8fd4e968e557b3e79f4452bb5c53381fad0b78eaafdd820b908077911c0cca5a",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q1326165",
+      "name": "Khudoni HPP project",
+      "country": "GE",
+      "type": "Hydro energy",
+      "site_sha256": "c1ef82564e1f7d3c414dd81e983a89c1fa172045db6d48d497f5a661cf741873",
+      "images": [
+        {
+          "title": "File:Khaishi (Photo A. Muhranoff, 2011).jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb",
+          "checked_at": "2026-11-11T19:37:41.553662+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q133295781",
+      "name": "Kondinin Wind & Solar Project",
+      "country": "AU",
+      "type": "Wind energy",
+      "site_sha256": "0313721a4ad3b94b45d34e9c137441dfbdd5602cdd7d8f86a0a6c88b1da4b29a",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q133720667",
+      "name": "Kondinin Energy Storage and Solar",
+      "country": "AU",
+      "type": "Solar energy",
+      "site_sha256": "5facb17c3deff90236996c5fe142b27407487553c05efafc04cafd9d0d1f1bdb",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q134211071",
+      "name": "Bullawah Wind Farm",
+      "country": "AU",
+      "type": "Wind energy",
+      "site_sha256": "b8be896b281f0f307eee3a735974afa6d23b6f4587f92aabccf885f34e9d84f9",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q134267925",
+      "name": "Iluka Resources Renewable Energy Project",
+      "country": "AU",
+      "type": "Solar energy",
+      "site_sha256": "50166fc1e99c6229a7d6404164b9a606acee15eeb9607e55a3fc9bd47982095d",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q134951833",
+      "name": "Parron Wind Farm",
+      "country": "AU",
+      "type": "Wind energy",
+      "site_sha256": "c1fbae307bb38b0d7c558da1337f3a02cf120f585904703a8779da4efda8222b",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q1353243",
+      "name": "Darkhovin Nuclear Power Plant",
+      "country": "IR",
+      "type": "Nuclear energy",
+      "site_sha256": "571e9aecc844e0f26a965ba03b5cf6218f0e6d8854486ee0681dc790a43d0612",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q1356919",
+      "name": "Tocoma Dam",
+      "country": "VE",
+      "type": "Hydro energy",
+      "site_sha256": "2a1d2bed2746c540189d4d4b2fdb91a4fac08db34dd6622fadf9b39c44a585c9",
+      "images": [
+        {
+          "title": "File:Tocoma 110514-5.JPG",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb",
+          "checked_at": "2026-11-11T19:37:41.553662+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q137196041",
+      "name": "Zhaoyuan Nuclear Power Plant",
+      "country": "CN",
+      "type": "Nuclear energy",
+      "site_sha256": "79bcc74cdabbd98c8bb4b1588dcb6e3dc99c41430928ff13423da8e2e06a9ca9",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q137485641",
+      "name": "Xuwei Nuclear Power Plant",
+      "country": "CN",
+      "type": "Nuclear energy",
+      "site_sha256": "82fe9db9e3dedd122537e2db567c4bf2da291ece82a825833a27c59ef85a8e8d",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q137608879",
+      "name": "Tandegin Wind Farm",
+      "country": "AU",
+      "type": "Wind energy",
+      "site_sha256": "b8763d51b8c4af5f485dd5af70e5175f32ccb7afe98d65220a238b65bee501c9",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q138030979",
+      "name": "Xinjiang Nilka (Lüfa) wind farm",
+      "country": "CN",
+      "type": "Wind energy",
+      "site_sha256": "4188d872fc9aa01f8dc203f05d72edbf4412c6eb294a66a9a074616904340542",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q138299231",
+      "name": "Samandéni Dam",
+      "country": "BF",
+      "type": "Hydro energy",
+      "site_sha256": "c79429de403b823cd5093379e527dc6b8933619feb19afad3e1768c7d2cab167",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q138720556",
+      "name": "Palmer  Renewables Project",
+      "country": "AU",
+      "type": "Solar energy",
+      "site_sha256": "7a981b98bfa26649f89a1cc9e1dc4b85a18795a44ef6b8f8571be1f3d7904873",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q138745240",
+      "name": "Priestgill Wind Farm",
+      "country": "GB",
+      "type": "Wind energy",
+      "site_sha256": "c2c216d8cba31c8ce10a3ffbc6ce34fb91a84e31f2371f8e1bed287e612e7051",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q140127991",
+      "name": "Tathra Wind Farm",
+      "country": "AU",
+      "type": "Wind energy",
+      "site_sha256": "d05c11120fdf6796f1462f5f7ec14a98d8c1fee3e041a8c0b4187c18640644d1",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q140135912",
+      "name": "Killawarra Hybrid Project",
+      "country": "AU",
+      "type": "Solar energy",
+      "site_sha256": "7062124b29cc289bf90d4ac1463a989b329cd52076622ff51a4f25ad4299585e",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q140471421",
+      "name": "Chirmorie Wind Farm",
+      "country": "GB",
+      "type": "Wind energy",
+      "site_sha256": "ecbe978ceb6e893aae2caeb73e36257e3767cb3b46ab7c2b0300e15ecba7bcca",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q141141963",
+      "name": "Skhalta Hydro Power Plant",
+      "country": "GE",
+      "type": "Hydro energy",
+      "site_sha256": "2622b071e19dca0cb812cde7900ce83a5f8553511137daa30046ea2e8bba04ab",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q141155401",
+      "name": "Ruisi Wind Power Plant",
+      "country": "GE",
+      "type": "Wind energy",
+      "site_sha256": "35a96a340c5f886eb87f8b200ee0db1f86dda3dd46f8d500a2625a357c69940b",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q141190074",
+      "name": "Jugaani Solar Power Plant",
+      "country": "GE",
+      "type": "Solar energy",
+      "site_sha256": "447fbfe5e32cfea1d9f915144cbb6300f581f69e808a9184d2e1c214780114f8",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q141190076",
+      "name": "Kistauri Solar Power Plant",
+      "country": "GE",
+      "type": "Solar energy",
+      "site_sha256": "7aa851d0e92421d00d40013bb18ab6f4830d8662d200c01123764c2fb4171af3",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q141190077",
+      "name": "Khirsa Solar Power Plant",
+      "country": "GE",
+      "type": "Solar energy",
+      "site_sha256": "afc078f885f28b912802d6448266d624836024f702b21c519b864ed57876f00e",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q141190078",
+      "name": "Keda Solar Power Plant",
+      "country": "GE",
+      "type": "Solar energy",
+      "site_sha256": "73b81d7519c4488ffbfef87db8c2e434e4457bf82d57db845a096d73f255299f",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q141190079",
+      "name": "Gamarjveba Solar Power Plant",
+      "country": "GE",
+      "type": "Solar energy",
+      "site_sha256": "f30d8d2b1f64210e019155335c610483619652a5fbed5b40e2f6814e5915a23c",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:41.553662+00:00",
+      "receipt_sha256": "18548ea043697e4d8c043409c701869491acd87139d7183d2e7d51307edb8aeb"
+    },
+    {
+      "project": "Q141191565",
+      "name": "Sashuala HPP",
+      "country": "GE",
+      "type": "Hydro energy",
+      "site_sha256": "f7be2f62f8c273a7c77b89d2a4512c798e1704f72a9255bde0c8472cc4ca7ae3",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141192350",
+      "name": "Lakhami 1 HPP",
+      "country": "GE",
+      "type": "Hydro energy",
+      "site_sha256": "1bc47d39ad0b48025c6652e9c1ace4d400487494c792524f9f634d9d42889a03",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141192351",
+      "name": "Lakhami 2 HPP",
+      "country": "GE",
+      "type": "Hydro energy",
+      "site_sha256": "bf6f7b9aadddf8c3f196bedc03ca13e7a5c9a5ad7e24199c2275166e561880a7",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141192475",
+      "name": "Akhalkalaki 1 HPP",
+      "country": "GE",
+      "type": "Hydro energy",
+      "site_sha256": "e4a42e4df9c3c6adeb93972286d9dd3892ce37d0c120f6b37649e99315b92e71",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141192476",
+      "name": "Akhalkalaki 2 HPP",
+      "country": "GE",
+      "type": "Hydro energy",
+      "site_sha256": "4a39f69dd4e5543b82b2308604db316fd85e6ed63556cd74d0263806dcdf8d30",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141212594",
+      "name": "Khobi 2 HPP",
+      "country": "GE",
+      "type": "Hydro energy",
+      "site_sha256": "4a262fa48e94387c7e385783c5f0b71ca0175eeb090d5d5efc27621435af43cb",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141855808",
+      "name": "Ventos de Santa Martina 01 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "b5b568d1313a4f972d241c312ce86e85f2faeb09f52f320a0ca813de352633d1",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141855811",
+      "name": "Ventos de Santa Martina 09 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "e24002ef7a3475ba58270be0d143e41b191556586ec78246980d084baec67cd2",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141855815",
+      "name": "Ventos de Santa Martina 10 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "e2af4dfb45cbf62088b46d4c126f0a1563d5e476295bdf39426f8bb44c25fa1c",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141855819",
+      "name": "Ventos de Santa Martina 11 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "3bcb4c5a02128428f155121977c4477b51c71e0d624d02542953dc638f87714e",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141855824",
+      "name": "Ventos de Santa Martina 12 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "d15134dafc6a8ad7b48a08b8d018596037ec7a1a395b0bed0e1e7f4f921f64d9",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141855831",
+      "name": "Ventos de Santa Martina 13 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "9b79d2647b53d65438b60ce42644b4e2e7e260e0470a54a755d84d3817aa5144",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141855836",
+      "name": "Ventos de Santa Martina 14 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "4250424371db3e957d1d22d698f72be07ea6da68856b76205d4c4c46816bf32a",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141855841",
+      "name": "Ventos de São Januário 23 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "88dedd5bc40103b98d73b578c6ea42fd8d4b95f82d4b1a3336a0bfdacef46ef1",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141855846",
+      "name": "Ventos de Santa Leia 01 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "a487fe2272cb876fc677f1e453eddf8ea8fa453019d1521cee710779a54d13a7",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141855874",
+      "name": "Ventos de Santa Leia 02 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "0fa7ff957028fa49b4950cd04a78713dc82b10bec6b4f6b52d072a43bafa368c",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141855880",
+      "name": "Ventos de Santa Leia 03 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "fc645b5f12ddb7490000f0130d6f45d8ecb1ea39d5e6c17d04924bd0e9e3e310",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141855886",
+      "name": "Ventos de Santa Leia 04 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "f5fb73c0099eeb552b652d6668c49271ee416abfb1a2f4bb76f4134ce5683e48",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141855984",
+      "name": "Ventos de Santa Leia 05 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "6b0fa7a6a36c87247f79aecfdf7054eb6e49f32fdc335b4e1395cccf639d21f3",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141856005",
+      "name": "Ventos de Santa Leia 12 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "32e5a579ec363ea2a2f7a005c36604917bd9c8bca0757b0493c010210940c40a",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141856017",
+      "name": "Ventos de Santa Leia 13 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "786fb1ff7360a32ec2c17bf5be629a1ba00cadcbef8d3f3e491561d3ea53b4c4",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141856041",
+      "name": "Ventos de Santa Leia 14 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "d7782cf960628baa9948d6a64259308a28ceb7005c9981f40bf44dda01b51e65",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141926643",
+      "name": "Monte Verde I Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "121143f864bc3558d03896102604ec0ca9e5f02383e11f5eca2e11df4edbe825",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141926652",
+      "name": "Monte Verde II Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "21bfaf2579a2ae6201332954f11726eeeef4ec0de3dab1c41a7676398684588a",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141926660",
+      "name": "Monte Verde III Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "a2e5a790f137110b1e81c3a5223dda26c41df12027c7c7730275f6a31f7db47e",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141926668",
+      "name": "Monte Verde IV Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "51aff96233c98eced23cc10af65e38e631c3fd5c8b6f07b391483d9f8cef8adb",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141926674",
+      "name": "Monte Verde V Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "6843a11489a9218df7b8de83877ecbe67af2577948ce94fbbbcb8b25489089df",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141926680",
+      "name": "Monte Verde VI Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "2a7e1e9efa6ec11dec1a67efef61451de8f87e262845d3467dcdc1b00a9861f0",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141927002",
+      "name": "Santa Rosa e Mundo Novo I Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "f7f29e9c3b5181de04d4a82c2678f81637ac3e919fa728902ed580b41055d3a7",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141927007",
+      "name": "Santa Rosa e Mundo Novo II Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "4ec31d8109e0652ce0108be832b21910a635e63191483c1be2866ca416915a40",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141927012",
+      "name": "Santa Rosa e Mundo Novo III Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "147c1bb3e53573935525e0a4fb77016398693ce170831d74bb258e558ee58a58",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141927018",
+      "name": "Santa Rosa e Mundo Novo IV Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "fb7407428b7f594da06aa8e89b7dc6e398c464816b2809978e0fa4bc70c4f2d7",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141927024",
+      "name": "Santa Rosa e Mundo Novo V Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "44daf40e72b4afa3d5cbaee603e56d773fc5464d81ff5584b8bd5c7d50dbd182",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141927042",
+      "name": "Aventura II Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "42dcf548319569fdda35af92b4ab528de1c729d9fdc51fd5fad9950735871121",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141927046",
+      "name": "Aventura III Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "bf63cea1d7aa200c0b5a75548024698baf46682b3036950fd431665e8dcf424d",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141927052",
+      "name": "Aventura IV Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "97c254c5bc09e1577539dd3d68d3c53f7f6f80a75f11ecf88a9b31abfb5fd96e",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141927058",
+      "name": "Aventura V Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "cbea426efd7618d0bb1cfc01efe28ba4d8c6fc97dd2a698e0df4199ff3328741",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141927393",
+      "name": "Boqueirão I Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "f65a69d3f49c593ae4358603e5b52bcb86221bd9a4ed8d9cde9506cae87ce2c2",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141927399",
+      "name": "Boqueirão II Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "2e3ae106075caf3091580de81bfe12eb6521fbbb6d608e1585a836f9d5f1b96d",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141927417",
+      "name": "Jerusalém I Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "4d62d8c8302f2f68e1722f16e80ad75291ba3c36dd1f834615b544792c7ccf02",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:42.761967+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141927424",
+      "name": "Jerusalém II Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "7ee938c6878e1758723ed3ff5650e2a66b27323dc5bc30ac6ce683974170cd2b",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141927433",
+      "name": "Jerusalém III Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "54c429f482f6245420c8350f1ae4fe917eee35073b3df0ae3539ee529412857e",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141927440",
+      "name": "Jerusalém IV Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "72fca3b55e3b3aad084ad4eb51d405182bbb42664cf3ca09261a79d3606579a4",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141927446",
+      "name": "Jerusalém V Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "76e7a2b8f44a91e5b5c752bc6fe64a466592d48dcc177b16f503119d47c968ed",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141927454",
+      "name": "Jerusalém VI Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "1efd8d1046569907b895e7efbb05aad44d2ce59c40adb75300e875d2356b868f",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141938031",
+      "name": "Gameleira Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "87be757a42b178db71e8e5bb1d63c2222c3e6129768439ce23af9c4aefd7d585",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141938034",
+      "name": "Figueira Branca Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "862af187f8951773b30705ee10579692f110f6e8550dba61a7bb456d9feff4ed",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141938036",
+      "name": "Costa das Dunas Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "db28fed178ef205fc9c175337a385cc1947ce2a3fc5f473a8baf51d66a8f1558",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141938038",
+      "name": "Farol de Touros Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "392c9b3d0fe5f0d162ca464de58d4db781aa321181b7c4c9ad9a7b59ca2e1b70",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141947250",
+      "name": "Ventos da Bahia XIII Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "e0464cb49bd87a2b59faf0ab3a497fc723a837757e5cf9e25e0b814f332ccbb5",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141947256",
+      "name": "Ventos da Bahia XIV Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "d21df236320f0ef3a58749e0fce9e4ee3341b6a85e2735e14c8d52b83b300a67",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141947386",
+      "name": "Ventos da Bahia XXVII Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "b563c526b4e08969e3085f5391adeca99fb233ef616e0d2ec3d8c5a05389b60b",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141947404",
+      "name": "Ventos da Bahia XXIII Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "63ca4aa80a7bd7e18831d0247a5a059e88736d09004c0a08c47d546affbec635",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141947463",
+      "name": "Assuruá 4 I Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "a04cb03ade803f624f4cdf88640d07650e2c3b266c8432d80aa0e7e268713a8e",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141947470",
+      "name": "Assuruá 4 II Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "cf0e6d055b8994ce835aebccec393c9910441e2296194be2b8394159b5238f60",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141947478",
+      "name": "Assuruá 4 III Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "9a077e1c7114cb5b27e50f27dca73816d504b09f2d8b42ab9dee0d0f5380b55d",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141947485",
+      "name": "Assuruá 4 IV Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "1b4b7889357c15fe8abb8e0016d5b173b1562897dbcc88c8812fca0c307855dc",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141947492",
+      "name": "Assuruá 4 V Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "7e213e30852a8381354bd4952f5aeb4e756145f0ef609d13541cec3b15c18556",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141947501",
+      "name": "Assuruá 4 VI Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "682734dda584d6c0ee71e0adfc37a2634e73bc6be56b3875b3598ef4276d063d",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141947509",
+      "name": "Assuruá 5 I Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "5807a4e57c59d989fb1e6a7f4fbba0bacecb40b56027fdc0a89baa21f37637f2",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141947517",
+      "name": "Assuruá 5 II Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "05f0498189dfe4c5a8a99cb7e669ed684dccb0152c7bcc57657f586b72f5d71b",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141947525",
+      "name": "Assuruá 5 III Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "2384d2224a1cc571424582939950f4335943f21eb7f0af2a27f22f366441e86b",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141947532",
+      "name": "Assuruá 5 IV Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "f79cbfb8c21d244957a5839fbd24d40b6e7a0f5f852ea687f8c5c0c14bfa915a",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141947541",
+      "name": "Assuruá 5 V Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "e48550dd6d264f79cc1818da48deea8804a3a13bb24648b9f4c72e338558d625",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141947548",
+      "name": "Assuruá 5 VI Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "48f497367f033c72d0ac65264618a2fd9c11a136596abb987eac3846e0c2786b",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141963918",
+      "name": "Chafariz 1 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "003bed4887b15e55261173d4d78a8cf1d8a47f93055e95b98a517a43106f2373",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141963929",
+      "name": "Chafariz 2 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "0ea65c67e53d27bf6987d84ad6d9b1ab6414ab4d6146858b155ac788ed4ca6ac",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141963938",
+      "name": "Chafariz 3 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "4940933d5ce59113aaac0f4022953c1732a92471cd0a923025368664c5142617",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141963946",
+      "name": "Chafariz 4 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "1a014a0ed47a49cf3dfc12244f02b7ae043da1d1d907934cb776eca880d2013d",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141963951",
+      "name": "Chafariz 5 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "65d3e09bff79dd89b059c96ad52c1054d61912dab6043025f037860237d4795a",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141963958",
+      "name": "Canoas 2 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "c147358e865bf37791121a32e60fcea4f597503885b950836b4b191555f3aa9b",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141963966",
+      "name": "Chafariz 6 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "c6fa7f0ca3a3ded7a877cf86ef658eb055c59c568bf70644f7bf2127d6cc7052",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141963998",
+      "name": "Ventos de Arapuá 1 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "5fb1c64638cbdac7d773e8bcec2ddba8c719f92d2db9553dbb20edfc3df371b6",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141964008",
+      "name": "Ventos de Arapuá 2 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "7f3f0a151bf771265d40db8973a3c96f11546cc0de715a75fec05b5f06b20d1f",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141964021",
+      "name": "Ventos de Arapuá 3 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "39fe37ff50d01bb2d5c3fb05f6bae1ac977a95afcd91d17f6bc7e391c0bf3981",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141964028",
+      "name": "Canoas 3 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "f56dbc013feb763a5ae81a840a6b7f5d72ff116eed1f38fb6c7efa32870270eb",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141964035",
+      "name": "Canoas 4 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "6fe8b11ab146ce3c31617ee11be76e2f1b883b19e7ceb21835b59065da3a72ec",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141964040",
+      "name": "Chafariz 7 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "0d80eb0b167659379af866681836eca4301a25df9942296c34a29d6b18024aaf",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141964053",
+      "name": "Lagoa 3 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "d645448b5a09734d7b68b20c46dad5397f622465d53883878b5ecff79fc53a89",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141964066",
+      "name": "Lagoa 4 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "54f1f38e349b17147163e6ebf4d73ecfd67a5c8981aec119c24d5aefcd105337",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:43.979176+00:00",
+      "receipt_sha256": "28fd49830a2e3a03b90175f247ed53bdd7f74922ad4566e1e5e163e4cdb1316b"
+    },
+    {
+      "project": "Q141964196",
+      "name": "Oitis 10 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "326d3ad039154c02d65ede4c981a46eee8553dfbb3e3e37e7634a600578dca49",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q141964204",
+      "name": "Oitis 2 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "07a3b6a73203b2288a415725cf274b7669b292a7730cc26866cb23987f008560",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q141964212",
+      "name": "Oitis 21 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "88d4734d4291af61a20f90f054068148a24e45f487d9dfc4b5e3d8dd26ff20fd",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q141964220",
+      "name": "Oitis 22 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "30c9ad24bec103faf1e451813beedaa4100fea9b5a3ac98b0347be5e23b0383a",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q141964227",
+      "name": "Oitis 3 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "2d9d1ccff2181c983d15228f6e61afccc0fd940d56e1041025664f0a08fcae74",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q141964235",
+      "name": "Oitis 4 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "88b3c2c1a865023145266f305e60411edb9c32af7000a57cda0dc2513627972c",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q141964240",
+      "name": "Oitis 5 Wind Farm",
+      "country": "BR",
+      "type": "Wind energy",
+      "site_sha256": "032811d97037a14e96e7dd724caeb3e947e93764f9f9375de8025ea8e69baeb9",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q142094789",
+      "name": "Marlim Azul Thermal Power Plant",
+      "country": "BR",
+      "type": "Gas & LNG",
+      "site_sha256": "a9b6da96706cce35b33ecb887f41638a744906cb74799b9048e20d3ebf126492",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q142094836",
+      "name": "Karkey 019 Thermal Power Plant",
+      "country": "BR",
+      "type": "Gas & LNG",
+      "site_sha256": "9e4b6d5c52177f395c0184700e9eed24188e15e5885cc5ec37045a919bd4bf09",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q142094844",
+      "name": "Porsud II Thermal Power Plant",
+      "country": "BR",
+      "type": "Gas & LNG",
+      "site_sha256": "cc2823cb506057652e6655c93f15a2e5a52eb2de80422772dac145f5366385ac",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q15071638",
+      "name": "Rampal Power Station",
+      "country": "BD",
+      "type": "Coal energy",
+      "site_sha256": "f392be7f973abe7e165ed6d194148bce2046ac6851eebd7a1f3c6529509f1b98",
+      "images": [
+        {
+          "title": "File:Rampal Power Plant.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b",
+          "checked_at": "2026-11-11T19:37:45.390073+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q15938258",
+      "name": "Nanyang Nuclear Power Plant",
+      "country": "CN",
+      "type": "Nuclear energy",
+      "site_sha256": "c5e32f4e749ce1725c17efd0c1c001d9d7bbb6a1bf150dc07662dad345000ea1",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q16053842",
+      "name": "Tabas power plant",
+      "country": "IR",
+      "type": "Coal energy",
+      "site_sha256": "7ccaf51f1abbc15c1f16f7234be5bf161bfea4921e8441498a160f42b1d386a7",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q1630042",
+      "name": "Akkuyu Nuclear Power Plant",
+      "country": "TR",
+      "type": "Nuclear energy",
+      "site_sha256": "c83d1c4d02134bce004f11b0b9c4e303444d9d32e8fb2eef315e050a2bc22e93",
+      "images": [
+        {
+          "title": "File:Model of the Akkuyu Nuclear Power Plant.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b",
+          "checked_at": "2026-11-11T19:37:45.390073+00:00",
+          "licence_inherited_from_wikidata": false,
+          "review_warnings": [
+            "possible-model-or-rendering-not-a-site-photo"
+          ]
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q1642138",
+      "name": "Jaitapur Nuclear Power Project",
+      "country": "IN",
+      "type": "Nuclear energy",
+      "site_sha256": "9b166192589294b3abe64975f5717bf86da0631e7c33512fa82bee42da8088df",
+      "images": [
+        {
+          "title": "File:EPR OLK3 lage.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b",
+          "checked_at": "2026-11-11T19:37:45.390073+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q16698859",
+      "name": "Smolensk Nuclear Power Plant II",
+      "country": "RU",
+      "type": "Nuclear energy",
+      "site_sha256": "d0cbe2de889e99f8bca8fddeac5e37862f742410c1458758e9ed5badc70ac5a4",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q1739422",
+      "name": "Kaliningrad Nuclear Power Plant",
+      "country": "RU",
+      "type": "Nuclear energy",
+      "site_sha256": "c2fc86e7e7904f10d409af016f67fc29866876e923c935c72e03a6acd6827ef2",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q1739423",
+      "name": "Kŭmho Nuclear Power Plant",
+      "country": "KP",
+      "type": "Nuclear energy",
+      "site_sha256": "07182d8e00a01e03b58fc0ea737ede978f92b940f9bb4beec4da948790c04d87",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q18125091",
+      "name": "Ghatampur Thermal Power Station",
+      "country": "IN",
+      "type": "Coal energy",
+      "site_sha256": "97a1b463da04ef1fe19f15a468d3960aeede92ec554c7f8c2b47eeadec637db2",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q1891844",
+      "name": "Rogun Dam",
+      "country": "TJ",
+      "type": "Hydro energy",
+      "site_sha256": "69dd9b05147bb67e485385c0f55cd4f3bfe43a6a28f9e939a4f6603655437450",
+      "images": [
+        {
+          "title": "File:Rogun Dam.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b",
+          "checked_at": "2026-11-11T19:37:45.390073+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q24236381",
+      "name": "Meru Wind Power Station",
+      "country": "KE",
+      "type": "Wind energy",
+      "site_sha256": "035cd051ed1251e3ca134ceae122f6275b0c5cc286415ff0ef1fab2648ad3ae7",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q24937165",
+      "name": "Katwa Super Thermal Power Station",
+      "country": "IN",
+      "type": "Coal energy",
+      "site_sha256": "ada48b226ecebd806dfa3a682bc7b725ff59757c937047547b9357d56ef5946a",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q24947558",
+      "name": "Uppur Thermal Power Project",
+      "country": "IN",
+      "type": "Coal energy",
+      "site_sha256": "9644def3282f6d1dfdebb7af5501a904cbab47b108c1e0666731d6f64f2d606f",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q24947561",
+      "name": "Yadadri Thermal Power Plant",
+      "country": "IN",
+      "type": "Coal energy",
+      "site_sha256": "8a884cfd621a01957aa399ceef7f1f5b31f6419f186dea402d500d23fde0c95a",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q24948985",
+      "name": "Telangana Super Thermal Power Project",
+      "country": "IN",
+      "type": "Coal energy",
+      "site_sha256": "91d70a720482bd33b246382269dcc9815a4dbb1f40d9ee40f4353fe55fd0cb93",
+      "images": [
+        {
+          "title": "File:Rstps4.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b",
+          "checked_at": "2026-11-11T19:37:45.390073+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q24949566",
+      "name": "Chutka Nuclear Power Plant",
+      "country": "IN",
+      "type": "Nuclear energy",
+      "site_sha256": "3d80ee309a65551494c2b1daba6461d3df03b425a3a0ab47365fa81fa737e1a1",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q24949843",
+      "name": "Jawaharpur Super Thermal Power Station",
+      "country": "IN",
+      "type": "Coal energy",
+      "site_sha256": "d056f22e900c1deafb8b2b6313c019e9b44737c6ffbd30503506825b3df0e11f",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q25230637",
+      "name": "Tororo Wind Power Station",
+      "country": "UG",
+      "type": "Wind energy",
+      "site_sha256": "70c5db05ac815547db137fbdf5e9f3dfb03d2f31f6862f6bcd2237db0fdfe92e",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q25247790",
+      "name": "Thambapavani Wind Farm",
+      "country": "LK",
+      "type": "Wind energy",
+      "site_sha256": "91b73c82a9507451b05123951b666bb24431fcaa39c022717d8d7946a29c51fa",
+      "images": [
+        {
+          "title": "File:MannarIsland-January2012-01.JPG",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b",
+          "checked_at": "2026-11-11T19:37:45.390073+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q27077030",
+      "name": "Nenskra HPP project",
+      "country": "GE",
+      "type": "Hydro energy",
+      "site_sha256": "e329b300710dd3731963e000c0f8ea2b9bb4f87b02e28d891c1a0924014b23a0",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q28169385",
+      "name": "Matrishri Usha Jayaswal Mega Power Plant",
+      "country": "IN",
+      "type": "Coal energy",
+      "site_sha256": "d915aebacdee81615405327437d212939332262ab0b01f375c913f522d13b244",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q28223974",
+      "name": "Xudabao Nuclear Power Plant",
+      "country": "CN",
+      "type": "Nuclear energy",
+      "site_sha256": "b86f84608a860ec55efd864ec7cb90394beddea4fcf541077c786740460d7c4e",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q28225221",
+      "name": "Payra Power Plant",
+      "country": "BD",
+      "type": "Coal energy",
+      "site_sha256": "ce289624c9e0f60f85d18aae3ca457e6134a9e7e844d845f59178b453ec6c318",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q28409026",
+      "name": "Xiapu Nuclear Power Plant",
+      "country": "CN",
+      "type": "Nuclear energy",
+      "site_sha256": "2ff410b97ee1fb7d232826777fe104da6fd8ec57c6b571018efea85886c8bbb2",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q28854324",
+      "name": "Blue Castle Project",
+      "country": "US",
+      "type": "Nuclear energy",
+      "site_sha256": "781f4efd9aa17ed6bdfffcf42d57706c2d47b95110b5c0286fc9be137e1c7609",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q30083718",
+      "name": "El Dabaa Nuclear Power Plant",
+      "country": "EG",
+      "type": "Nuclear energy",
+      "site_sha256": "55721c3a8014929eadfd17812c7bebc53d19293fb83a2df7f540e69698fb375b",
+      "images": [
+        {
+          "title": "File:Al-Dabaa Reactor 5.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b",
+          "checked_at": "2026-11-11T19:37:45.390073+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q30894419",
+      "name": "Zhangzhou Nuclear Power Plant",
+      "country": "CN",
+      "type": "Nuclear energy",
+      "site_sha256": "f67b8833dc2316654e6193a4cceaaf68a6cda01e254111ae125a6efebc13a1a6",
+      "images": [
+        {
+          "title": "File:全球最大“华龙一号”核电基地漳州核电一期工程全面建成投产 01.png",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b",
+          "checked_at": "2026-11-11T19:37:45.390073+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q3445852",
+      "name": "Panki Thermal Power Station",
+      "country": "IN",
+      "type": "Coal energy",
+      "site_sha256": "02c5f24eb54901b1846d2970cc95c6ba0602870bc70145cd214cba108d749557",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q3664612",
+      "name": "Kola Nuclear Power Plant II",
+      "country": "RU",
+      "type": "Nuclear energy",
+      "site_sha256": "f717a159e7223f415aa6cd7c0104b1120e5decc2501681336a0053e4dd5c16e6",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q3664613",
+      "name": "Kovvada Atomic Power Project",
+      "country": "IN",
+      "type": "Nuclear energy",
+      "site_sha256": "a8750c3d0b63c9bdc91bbf2a880a4dfcf25a9990bce4dbef4c8c1d1e90af1d8f",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:45.390073+00:00",
+      "receipt_sha256": "aeb5e5d8b72e3c1b9f71dc30d3daac59726c2afc333927d8bea1c59a6de19e7b"
+    },
+    {
+      "project": "Q3664615",
+      "name": "Kursk Nuclear Power Plant 2",
+      "country": "RU",
+      "type": "Nuclear energy",
+      "site_sha256": "4490f3abad29c76def628b4c5ba3ef3f76ece0cb7c557514eac66de19a8435b1",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q3664619",
+      "name": "Nizhegorodsk Nuclear Power Plant",
+      "country": "RU",
+      "type": "Nuclear energy",
+      "site_sha256": "77a07450966e9b3653b08c44895f7b6cd5e61d5140eaf066b8d651c34db49e1f",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q5379238",
+      "name": "Ennore Thermal Power Station",
+      "country": "IN",
+      "type": "Coal energy",
+      "site_sha256": "b8617f45f95410b7780489ef891c4fd47f6db1007e1f322f5d651064d9abbeec",
+      "images": [
+        {
+          "title": "File:Ennore Thermal Power Plant.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3",
+          "checked_at": "2026-11-11T19:37:46.695920+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q54306562",
+      "name": "Patratu Super Thermal Power Project(Keshav)",
+      "country": "IN",
+      "type": "Coal energy",
+      "site_sha256": "77d43427862c9baec13624d0baf5d7d22c4310c7ef3036250c515b58f5253aa9",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q5579566",
+      "name": "Golden Hills Wind Project",
+      "country": "US",
+      "type": "Wind energy",
+      "site_sha256": "ea5308760f34ed701f8a82d053f8e2d7c9a4d3a48158f994f780f86262c41e68",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q56274878",
+      "name": "Khurja Super Thermal Power Plant",
+      "country": "IN",
+      "type": "Coal energy",
+      "site_sha256": "ff2728e530cab9e34b1b96053e6dcf631ae1eb232563aa90e8e7e2d25f200180",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q60749473",
+      "name": "Corona Wind Projects",
+      "country": "US",
+      "type": "Wind energy",
+      "site_sha256": "a69d78740d034f240e863e9a5c8ffc998d4cb1a26c16c4befea19eed34bf6ad6",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q6361166",
+      "name": "Kandadji Dam",
+      "country": "NE",
+      "type": "Hydro energy",
+      "site_sha256": "b657e7fdc4cd9423c4792b00be3008fad9bf852e2e2e63b191fbeb72e6dbb097",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q63656905",
+      "name": "Emba Hunutlu power station",
+      "country": "TR",
+      "type": "Coal energy",
+      "site_sha256": "d2600ec0c0fb86eb91beb7257316846a4c673b823d9265cd006d8b07f99a1066",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q6885794",
+      "name": "Mmamabula",
+      "country": "BW",
+      "type": "Coal energy",
+      "site_sha256": "af674c13dada9b844eb8b73c2b1ed1ab6f417adb4fa407ad1e88ffc41a0b1247",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q707536",
+      "name": "Lungmen Nuclear Power Plant",
+      "country": "TW",
+      "type": "Nuclear energy",
+      "site_sha256": "d1c0f619215d500e20b9d33a3dc189dd81f60bbf1b5ce5bd292b97592fff3d90",
+      "images": [
+        {
+          "title": "File:台湾第四原子力発電所.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3",
+          "checked_at": "2026-11-11T19:37:46.695920+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q7249025",
+      "name": "Project Huriwaka",
+      "country": "NZ",
+      "type": "Wind energy",
+      "site_sha256": "cff30b38bba3c62580a4f966757b63a945728d9fce2c532eb6a93a201c3f8a16",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q7249153",
+      "name": "Project Hurunui",
+      "country": "NZ",
+      "type": "Wind energy",
+      "site_sha256": "8cb652d5ddc3b68fec1b4c798feba62da9ca3adeda294d481cd76447fdb46a72",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q7380438",
+      "name": "Rooppur Nuclear Power Plant",
+      "country": "BD",
+      "type": "Nuclear energy",
+      "site_sha256": "48e788e040cf5d25248de995226a1d70a5bca577366c129825b451b0d0b437c9",
+      "images": [
+        {
+          "title": "File:Ruppur Nuclear Power Plant 2024.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3",
+          "checked_at": "2026-11-11T19:37:46.695920+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q743467",
+      "name": "Hanhikivi Nuclear Power Plant",
+      "country": "FI",
+      "type": "Nuclear energy",
+      "site_sha256": "f3ddbb866346c656d254034158785d4c0267a086aea6a45c9beafaa4fc26a777",
+      "images": [
+        {
+          "title": "File:Hanhikivi 1 Power Plant Design 2013.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3",
+          "checked_at": "2026-11-11T19:37:46.695920+00:00",
+          "licence_inherited_from_wikidata": false,
+          "review_warnings": [
+            "possible-model-or-rendering-not-a-site-photo"
+          ]
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q84761125",
+      "name": "Mtkvari Hydro Power Plant",
+      "country": "GE",
+      "type": "Hydro energy",
+      "site_sha256": "3cee0e53daa281902ba08f396f002b7e6b2dfd707c0315c7f9e4c5b055341992",
+      "images": [
+        {
+          "title": "File:MTKVARI HPP.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3",
+          "checked_at": "2026-11-11T19:37:46.695920+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q85749693",
+      "name": "Chausa thermal power plant",
+      "country": "IN",
+      "type": "Coal energy",
+      "site_sha256": "f907df7e8373ba2925cacd9ac2ffd35a0f0c8d99360cd7d7f741e1953a9f580d",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q85764720",
+      "name": "Guangxi Bailong Nuclear Power Project",
+      "country": "CN",
+      "type": "Nuclear energy",
+      "site_sha256": "a5a894c82c46cf35d54943a284a9fe232b97961da8a42fb15db134773e536347",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q85790197",
+      "name": "Ocean Wind",
+      "country": "US",
+      "type": "Wind energy",
+      "site_sha256": "ba50ecad7d0311e6a5c7f7ca026c232d6b13686a7cae718b410f6748dd81ebf5",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q85801460",
+      "name": "Skipjack Wind Farm",
+      "country": "US",
+      "type": "Wind energy",
+      "site_sha256": "0fc9fc897fb083d1d468b880f7f318839edb99fd18651af63ba1c5aa65500c5d",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q95472069",
+      "name": "Sandvand power station",
+      "country": "NO",
+      "type": "Hydro energy",
+      "site_sha256": "f0787f7138d1094b94316cc09b891dba752ab5d3d78ed4185c234b63ac279780",
+      "images": [
+        {
+          "title": "File:Sandvand kraftverk.jpg",
+          "assertion": "Wikidata P18",
+          "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3",
+          "checked_at": "2026-11-11T19:37:46.695920+00:00",
+          "licence_inherited_from_wikidata": false
+        }
+      ],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q96374910",
+      "name": "Chiloé Wind Farm",
+      "country": "CL",
+      "type": "Wind energy",
+      "site_sha256": "573a9197ee663f74948f0a47e3fd5420e7a0ecd720b1e74c3840cd884cf6b494",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q96374936",
+      "name": "Chiredzi Solar Power Station",
+      "country": "ZW",
+      "type": "Solar energy",
+      "site_sha256": "cfd1e7531129c194b20079c31d16d49acef3a0bb5bb5418362b1f3461131f04e",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q97285076",
+      "name": "Yunus Emre Power Station",
+      "country": "TR",
+      "type": "Coal energy",
+      "site_sha256": "648f4b7963502970b5eb8abe63babfabc520f8c6a0af1ffd8ced3ceb4a96961a",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    },
+    {
+      "project": "Q97402084",
+      "name": "Colleen Bawn Solar Power Station",
+      "country": "ZW",
+      "type": "Solar energy",
+      "site_sha256": "12a232c27f1a381b5a25e373e5a17672dcfc2342aea55b419039320448f14737",
+      "images": [],
+      "checked_at": "2026-11-11T19:37:46.695920+00:00",
+      "receipt_sha256": "32c023c5f5e1b46be79003025a6c5f92a9e19cf5bec2c7b357b93ed7564ad2a3"
+    }
+  ]
+}
