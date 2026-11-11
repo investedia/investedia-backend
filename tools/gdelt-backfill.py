@@ -516,7 +516,11 @@ class ClaudeEditor:
                                             messages=[{'role': 'user', 'content': prompt}])
         except Exception as e:  # SDK already retried 429/5xx/connection errors
             code = getattr(e, 'status_code', None)
-            b.failed[self.model] = 'http_%d' % code if isinstance(code, int) else type(e).__name__
+            body = getattr(e, 'body', None)
+            msg = str(((body or {}).get('error') or {}).get('message') or '') if isinstance(body, dict) else ''
+            msg = re.sub(r'[^A-Za-z0-9 .,:;()\'_-]', ' ', msg)[:200].strip()
+            if regional.contains_secret(msg) or os.environ.get('ANTHROPIC_API_KEY', '\0') in msg: msg = ''
+            b.failed[self.model] = ('http_%d' % code if isinstance(code, int) else type(e).__name__) + (': ' + msg if msg else '')
             raise RuntimeError('claude_request_failed') from None
         usage = getattr(r, 'usage', None)
         t_in, t_out = int(getattr(usage, 'input_tokens', 0) or 0), int(getattr(usage, 'output_tokens', 0) or 0)

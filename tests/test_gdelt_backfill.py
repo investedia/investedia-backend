@@ -397,6 +397,16 @@ class ClaudeProviderTests(EndToEndTests):
             report = self.run_once(True, calls=5, provider='claude', claude_client=fake)
             self.assertEqual(report['new_articles'], 0); self.assertEqual(report['claude_unusable_batches'], {'stop_' + stop: 1})
 
+    def test_rejected_request_keeps_claudes_reason(self):
+        class Rejected(Exception):
+            status_code = 400; body = {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low.'}}
+        fake = FakeClaude('[]')
+        def boom(**kw): raise Rejected()
+        fake.messages = SimpleNamespace(create=boom)
+        with self.assertRaises(ValueError): self.run_once(True, calls=5, provider='claude', claude_client=fake)
+        report = json.loads((self.out/'report.json').read_text())
+        self.assertEqual(report['models_failed'], {'claude-haiku-5-5': 'http_400: Your credit balance is too low.'})
+
     # The Gemini-specific scenarios of the parent class do not apply here.
     test_overloaded_model_is_retried_with_pauses_then_the_next_model_is_used = None
     test_all_models_failing_stops_and_says_why = None
