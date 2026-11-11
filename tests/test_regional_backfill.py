@@ -126,6 +126,8 @@ class RecoveryIntegrationTests(unittest.TestCase):
   with self.assertRaises(ValueError):m.feed_sources({})
   self.assertTrue(all(any(u==r[0] for r in m.robot.REGION_FEEDS) for u in m.SOURCE_SETS['official-2026-11-11']()))
   self.assertIn('official-2026-11-11',(ROOT/'.github/workflows/regional-backfill.yml').read_text())
+  wf=(ROOT/'.github/workflows/regional-backfill.yml').read_text();stage=wf[wf.index('Stage or ingest'):wf.index('Save acknowledged')]
+  self.assertIn('BACKFILL_SOURCES_INPUT: ${{ inputs.sources }}',stage);self.assertIn('--sources "$BACKFILL_SOURCES_INPUT"',stage)
  def test_offline_dry_run_writes_only_review_artifacts(self):
   import shutil
   original=copy.deepcopy(ARTICLE);original['impacts']=[]

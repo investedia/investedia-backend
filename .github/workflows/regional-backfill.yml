@@ -121,6 +121,7 @@ jobs:
           GEMINI_MODEL: ${{ inputs.gemini_model }}
           BACKFILL_CALLS_INPUT: ${{ inputs.gemini_calls }}
           BACKFILL_BATCH_INPUT: ${{ inputs.batch_size }}
+          BACKFILL_SOURCES_INPUT: ${{ inputs.sources }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           WORKER_URL: ${{ secrets.WORKER_URL }}
           NEWS_INGEST_TOKEN: ${{ secrets.NEWS_INGEST_TOKEN }}
