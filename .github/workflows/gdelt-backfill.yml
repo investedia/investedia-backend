@@ -41,6 +41,15 @@ on:
       gemini_model:
         description: 'Optional exact successful hourly model; blank reads live/status model'
         default: ''
+      writer:
+        description: 'Which model writes the summaries (claude uses secret ANTHROPIC_API_KEY and leaves the Gemini quota to live news)'
+        type: choice
+        options: [claude-haiku-5-5, gemini]
+        default: claude-haiku-5-5
+      max_usd:
+        description: 'Claude spending cap for this run in US dollars (the run stops before passing it)'
+        default: '3'
+        required: true
 permissions:
   contents: read
   actions: read
@@ -68,6 +77,7 @@ jobs:
           START_DATE: ${{ inputs.start_date }}
           END_DATE: ${{ inputs.end_date }}
           REGIONS: ${{ inputs.regions }}
+          MAX_USD: ${{ inputs.max_usd }}
         run: |
           python - <<'PY'
           import os, re
@@ -78,6 +88,7 @@ jobs:
               assert re.fullmatch(r'\d{4}-\d{2}-\d{2}', os.environ[key]), key + ' must be YYYY-MM-DD'
           assert '2026-08-01' <= os.environ['START_DATE'] <= os.environ['END_DATE'] <= '2026-10-15', 'window must be inside 2026-08-01..2026-10-15'
           assert re.fullmatch(r'[a-z_,\s]{1,200}', os.environ['REGIONS']), 'regions: names separated by commas'
+          assert 0 < float(os.environ['MAX_USD']) <= 50, 'max_usd must be above 0 and at most 50'
           PY
       - name: Offline tests
         working-directory: backend
@@ -110,6 +121,9 @@ jobs:
           path: backend/.local/gdelt-cache
           key: gdelt-discovery-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: gdelt-discovery-
+      - name: Install the official Anthropic SDK (Claude writer only)
+        if: inputs.writer != 'gemini'
+        run: python -m pip install --disable-pip-version-check -q 'anthropic==2.8.0'
       - name: Discover and generate (review artifact only)
         working-directory: backend
         env:
@@ -122,11 +136,15 @@ jobs:
           BATCH: ${{ inputs.batch_size }}
           GDELT: ${{ inputs.gdelt_files }}
           GEMINI_MODEL: ${{ inputs.gemini_model }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          WRITER: ${{ inputs.writer }}
+          MAX_USD: ${{ inputs.max_usd }}
+          GEMINI_API_KEY: ${{ inputs.writer == 'gemini' && secrets.GEMINI_API_KEY || '' }}
+          ANTHROPIC_API_KEY: ${{ inputs.writer != 'gemini' && secrets.ANTHROPIC_API_KEY || '' }}
           WORKER_URL: ${{ secrets.WORKER_URL }}
           PIXABAY_KEY: ''
         run: >-
           python tools/gdelt-backfill.py --phase generate
+          $( [ "$WRITER" = gemini ] && echo --provider gemini || echo --provider claude --claude-model "$WRITER" ) --max-usd "$MAX_USD"
           --confirm "$CONFIRM" --dry-run "$DRY_RUN"
           --start "$START_DATE" --end "$END_DATE" --regions "$REGIONS"
           --gemini-calls "$CALLS" --batch-size "$BATCH" --gdelt-files "$GDELT" --max-minutes 100

@@ -2,6 +2,7 @@
 import importlib.util, io, json, tempfile, unittest, urllib.error, zipfile
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from types import SimpleNamespace
 from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -268,7 +269,7 @@ class EndToEndTests(unittest.TestCase):
                    'why': 'Test-only', 'category': 'economy', 'importance': 1, 'country': 'KE', 'lat': -1.29, 'lon': 36.82, 'place': 'Nairobi', 'impacts': []}]
         return json.dumps({'candidates': [{'content': {'parts': [{'text': json.dumps(picked)}]}}]})
 
-    def run_once(self, dry_run, calls=3):
+    def run_once(self, dry_run, calls=3, **extra):
         def library_push(url, token, group): self.library_pushes.append(group); return {'ok': True, 'written': len(group)}
         with patch.object(m.regional, 'request', side_effect=self.worker), patch.object(m.robot, 'GEMINI', 'test-only-key'), \
              patch.object(m.uploader, 'push', side_effect=AssertionError('live 48-hour feed ingestion')), \
@@ -276,7 +277,7 @@ class EndToEndTests(unittest.TestCase):
              patch.dict('os.environ', {'NEWS_INGEST_TOKEN': 'test-only-token'}):
             return m.run('2026-09-01', '2026-09-03', 'east_africa', dry_run, self.out, 'https://worker.fixture.invalid', self.cache,
                          gemini_calls=calls, batch_size=5, gdelt_files=5, now=NOW, gdelt_get=self.gdelt, page_get=self.page,
-                         model_get=self.model, library_push=library_push, sleep=lambda s: None, state_root=self.state)
+                         model_get=self.model, library_push=library_push, sleep=lambda s: None, state_root=self.state, **extra)
 
     def test_dry_run_builds_review_artifact_and_ingests_nothing(self):
         report = self.run_once(True)
@@ -349,13 +350,75 @@ class EndToEndTests(unittest.TestCase):
         self.assertEqual(pushes, [])
 
 
+class FakeClaude:
+    """Test-only stand-in for anthropic.Anthropic(): records requests, returns a Messages-API-shaped reply."""
+    def __init__(self, reply_text, stop='end_turn', usage=(1000, 500)):
+        self.requests = []; self.reply_text, self.stop, self.usage = reply_text, stop, usage
+        self.messages = SimpleNamespace(create=self.create)
+    def create(self, **kw):
+        self.requests.append(kw)
+        return SimpleNamespace(stop_reason=self.stop, content=[SimpleNamespace(type='thinking', thinking=''), SimpleNamespace(type='text', text=self.reply_text)],
+                               usage=SimpleNamespace(input_tokens=self.usage[0], output_tokens=self.usage[1]))
+
+
+class ClaudeProviderTests(EndToEndTests):
+    PICKED = [{'members': [0], 'headline': 'Must never replace the original', 'summary': 'Test-only summary written from the description.',
+               'why': 'Test-only', 'category': 'economy', 'importance': 1, 'country': 'KE', 'lat': -1.29, 'lon': 36.82, 'place': 'Nairobi', 'impacts': []}]
+
+    def setUp(self):
+        super().setUp()
+        def no_gemini(url, **kw): raise AssertionError('Gemini must not be called with provider=claude')
+        self.model = no_gemini
+
+    def test_haiku_writes_through_the_same_robot_rules_and_reports_cost(self):
+        fake = FakeClaude('```json\n' + json.dumps(self.PICKED) + '\n```')
+        report = self.run_once(True, calls=5, provider='claude', claude_client=fake)
+        self.assertEqual(report['new_articles'], 1); self.assertEqual(report['provider'], 'claude')
+        self.assertEqual(report['actual_model_used'], 'claude-haiku-5-5'); self.assertEqual(report['gemini_calls'], 1)
+        self.assertAlmostEqual(report['cost_usd'], 0.00035)
+        req = fake.requests[0]
+        self.assertEqual(req['model'], 'claude-haiku-5-5'); self.assertEqual(req['output_config'], {'effort': 'low'})
+        self.assertIn('Test-only description', req['messages'][0]['content']); self.assertNotIn('body text', req['messages'][0]['content'])
+        art = json.loads((self.out/'new-articles.json').read_text())[0]
+        self.assertEqual(art['headline'], 'Test-only: Kenyan shilling edges up as central bank holds rate')
+        self.assertEqual(art['published_at'], '2026-09-02T04:40:00Z'); self.assertTrue(art['backfilled'])
+        self.assertEqual(self.library_pushes, [])
+
+    def test_dollar_cap_stops_before_any_call_that_could_pass_it(self):
+        fake = FakeClaude(json.dumps(self.PICKED))
+        report = self.run_once(True, calls=5, provider='claude', claude_client=fake, max_usd=0.001)
+        self.assertEqual(fake.requests, []); self.assertEqual(report['model_budget_stop'], 'dollar_cap_reached')
+        self.assertEqual(report['new_articles'], 0); self.assertEqual(report['cost_usd'], 0)
+        with self.assertRaises(ValueError): m.ClaudeEditor(fake, 'claude-unknown', None, 1)
+
+    def test_refused_or_cut_off_batch_adds_nothing_and_is_counted(self):
+        for stop in ('refusal', 'max_tokens'):
+            fake = FakeClaude(json.dumps(self.PICKED), stop=stop)
+            report = self.run_once(True, calls=5, provider='claude', claude_client=fake)
+            self.assertEqual(report['new_articles'], 0); self.assertEqual(report['claude_unusable_batches'], {'stop_' + stop: 1})
+
+    # The Gemini-specific scenarios of the parent class do not apply here.
+    test_overloaded_model_is_retried_with_pauses_then_the_next_model_is_used = None
+    test_all_models_failing_stops_and_says_why = None
+    test_dry_run_builds_review_artifact_and_ingests_nothing = None
+    test_live_run_goes_to_library_and_day_files_never_the_live_feed = None
+    test_separate_ingest_step_rechecks_provenance_and_skips_articles_already_in_day_files = None
+
+
 class CommandLineTests(unittest.TestCase):
     def test_confirm_word_bounds_and_settings_are_checked_before_any_request(self):
         with patch.object(m, 'run', side_effect=AssertionError('run started')), patch.dict('os.environ', {}, clear=True):
             for argv in (['--confirm', 'yes'], ['--confirm', 'BACKFILL', '--gemini-calls', '81'], ['--confirm', 'BACKFILL', '--start', '2026-07-01'],
                          ['--confirm', 'BACKFILL', '--regions', 'atlantis'], ['--confirm', 'BACKFILL'],
-                         ['--confirm', 'BACKFILL', '--phase', 'ingest', '--dry-run', 'true']):
+                         ['--confirm', 'BACKFILL', '--phase', 'ingest', '--dry-run', 'true'],
+                         ['--confirm', 'BACKFILL', '--provider', 'claude', '--max-usd', '0'],
+                         ['--confirm', 'BACKFILL', '--provider', 'claude', '--claude-model', 'claude-unknown']):
                 with self.assertRaises(SystemExit), patch('sys.stderr', io.StringIO()): m.main(argv)
+        # Claude needs its own key, not the Gemini one.
+        with patch.object(m, 'run', side_effect=AssertionError('run started')), patch.dict('os.environ', {'GEMINI_API_KEY': 'x', 'WORKER_URL': 'https://w.invalid'}, clear=True):
+            err = io.StringIO()
+            with self.assertRaises(SystemExit), patch('sys.stderr', err): m.main(['--confirm', 'BACKFILL', '--provider', 'claude'])
+            self.assertIn('ANTHROPIC_API_KEY', err.getvalue())
 
 
 if __name__ == '__main__': unittest.main()

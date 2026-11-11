@@ -485,6 +485,50 @@ def recording(transport, budget_ref):
     return call
 
 
+# Claude (Anthropic API) as an alternative writer. Same robot prompt and the same validation in
+# pick_stories; only the model call changes. Prices: $ per million input / output tokens (prompts < 100K tokens).
+CLAUDE_PRICES = {'claude-haiku-5-5': (0.10, 0.50), 'claude-sonnet-5-5': (2.00, 10.00), 'claude-opus-5-5': (4.00, 20.00)}
+CLAUDE_MAX_TOKENS = 16000
+
+
+class ClaudeEditor:
+    """Stands in for update_globe_news.gemini(prompt): one Messages API call, JSON array back.
+    Stops before the call budget, the deadline or the dollar cap could be passed (worst case of the next call counted)."""
+    def __init__(self, client, model, budget, max_usd, effort='low'):
+        if model not in CLAUDE_PRICES: raise ValueError('unsupported_claude_model')
+        self.client, self.model, self.budget, self.max_usd, self.effort = client, model, budget, float(max_usd), effort
+        self.spent = 0.0; self.unusable = Counter()
+
+    def cost(self, tokens_in, tokens_out):
+        p_in, p_out = CLAUDE_PRICES[self.model]
+        return tokens_in * p_in / 1e6 + tokens_out * p_out / 1e6
+
+    def __call__(self, prompt):
+        b = self.budget
+        if b.deadline is not None and time.monotonic() >= b.deadline: b.stop_reason = 'run_deadline_reached'; raise BudgetExceeded(b.stop_reason)
+        if b.calls >= b.limit: b.stop_reason = 'fixed_model_call_budget_exhausted'; raise BudgetExceeded(b.stop_reason)
+        if len(prompt.encode()) > regional.MAX_PROMPT_BYTES: b.stop_reason = 'model_prompt_limit'; raise BudgetExceeded(b.stop_reason)
+        worst = self.cost(len(prompt.encode()) // 2, CLAUDE_MAX_TOKENS)  # generous: < 2 bytes per token never happens for this text
+        if self.spent + worst > self.max_usd: b.stop_reason = 'dollar_cap_reached'; raise BudgetExceeded(b.stop_reason)
+        b.calls += 1; b.call_log.append({'call': b.calls, 'model': self.model, **b.context})
+        try:
+            r = self.client.messages.create(model=self.model, max_tokens=CLAUDE_MAX_TOKENS, output_config={'effort': self.effort},
+                                            messages=[{'role': 'user', 'content': prompt}])
+        except Exception as e:  # SDK already retried 429/5xx/connection errors
+            code = getattr(e, 'status_code', None)
+            b.failed[self.model] = 'http_%d' % code if isinstance(code, int) else type(e).__name__
+            raise RuntimeError('claude_request_failed') from None
+        usage = getattr(r, 'usage', None)
+        t_in, t_out = int(getattr(usage, 'input_tokens', 0) or 0), int(getattr(usage, 'output_tokens', 0) or 0)
+        b.usage['input_tokens'] += t_in; b.usage['output_tokens'] += t_out; b.usage_known_calls += 1
+        self.spent += self.cost(t_in, t_out)
+        robot.status['gemini_model'] = self.model
+        if r.stop_reason != 'end_turn': self.unusable['stop_' + str(r.stop_reason)] += 1; return []
+        text = ''.join(getattr(block, 'text', '') for block in r.content if getattr(block, 'type', '') == 'text')
+        try: return json.loads(re.sub(r'^```(json)?|```$', '', text.strip()))
+        except ValueError: self.unusable['invalid_json'] += 1; return []
+
+
 def provenance(story, original, now):
     if story['headline'] != original['title'] or story['published_at'] != original['published'] or story['source']['url'] != original['url']:
         raise ValueError('source_identity_changed')
@@ -622,7 +666,10 @@ def ingest_artifact(output, worker, state_root, now, library_push=None):
 # ---------- run ----------
 def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=None, gemini_calls=DEFAULT_CALLS,
         batch_size=MODEL_BATCH, gdelt_files=DEFAULT_GDELT_FILES, max_minutes=100, now=None,
-        gdelt_get=None, page_get=None, model_get=None, library_push=None, sleep=time.sleep, state_root=None, ingest=True):
+        gdelt_get=None, page_get=None, model_get=None, library_push=None, sleep=time.sleep, state_root=None, ingest=True,
+        provider='gemini', claude_model='claude-haiku-5-5', max_usd=3.0, claude_client=None):
+    if provider not in ('gemini', 'claude'): raise ValueError('provider_must_be_gemini_or_claude')
+    if not 0 < float(max_usd) <= 50: raise ValueError('max_usd_must_be_0_to_50')
     a, b = window(start, end); regions = regions_from(','.join(regions) if isinstance(regions, list) else regions)
     if not 1 <= gemini_calls <= HARD_CALL_LIMIT: raise ValueError('gemini_calls_must_be_1_to_80')
     if not 1 <= batch_size <= 40: raise ValueError('batch_size_must_be_1_to_40')
@@ -640,7 +687,8 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
                         'never sent to the live 48-hour feed']}
     ref = []
     budget = Budget(recording(model_get or regional.request, ref), gemini_calls, deadline=deadline, sleep=sleep); ref.append(budget)
-    saved = (robot.get, robot.log, robot.err, robot.gemini_models, robot.NOW, robot.ISO_NOW)
+    saved = (robot.get, robot.log, robot.err, robot.gemini_models, robot.NOW, robot.ISO_NOW, robot.gemini)
+    editor = None
     errors = Counter(); pinned = []
     robot.get = budget.get; robot.UA = UA; robot.log = lambda *args: None
     robot.err = lambda msg: errors.update(['robot_validation_or_provider_error'])
@@ -651,9 +699,18 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         live = json.loads(regional.request(worker + '/v1/news?gdelt_read=' + str(time.time_ns())))
         current = live.get('data', {}).get('stories', [])
         if not current or not live.get('meta', {}).get('fetched_at'): raise ValueError('valid_live_worker_feed_required')
-        status = read(reference/'news-status.json', {}) or {}
-        pinned.extend(model_list(selected_model(gemini_model, live, status), status))
-        report['selected_model'] = pinned[0]; report['model_order'] = list(pinned)
+        report['provider'] = provider
+        if provider == 'claude':
+            if claude_client is None:
+                import anthropic  # official SDK; reads ANTHROPIC_API_KEY from the environment
+                claude_client = anthropic.Anthropic(max_retries=3, timeout=180.0)
+            editor = ClaudeEditor(claude_client, claude_model, budget, max_usd)
+            robot.gemini = editor
+            report.update(selected_model=claude_model, model_order=[claude_model], max_usd=float(max_usd))
+        else:
+            status = read(reference/'news-status.json', {}) or {}
+            pinned.extend(model_list(selected_model(gemini_model, live, status), status))
+            report['selected_model'] = pinned[0]; report['model_order'] = list(pinned)
         local = []
         for name in ('news-live.json', 'news-48h.json', 'news-archive.json', 'news-gap-history-cache.json'):
             local += read(state_root/name, {}).get('stories', [])
@@ -732,8 +789,10 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         report.update(gemini_calls=budget.calls, gemini_calls_detail=budget.call_log, model_budget_stop=budget.stop_reason,
                       models_failed=dict(budget.failed), model_retries=dict(budget.retries), actual_model_used=robot.status.get('gemini_model') if budget.calls else None,
                       gemini_usage_reported=dict(budget.usage), elapsed_seconds=round(time.monotonic() - clock0, 3))
+        if editor is not None:
+            report.update(cost_usd=round(editor.spent, 6), claude_unusable_batches=dict(editor.unusable))
         write(output/'report.json', report)
-        robot.get, robot.log, robot.err, robot.gemini_models, robot.NOW, robot.ISO_NOW = saved
+        robot.get, robot.log, robot.err, robot.gemini_models, robot.NOW, robot.ISO_NOW, robot.gemini = saved
     return report
 
 
@@ -746,6 +805,9 @@ def main(argv=None):
     p.add_argument('--gemini-calls', type=int, default=DEFAULT_CALLS); p.add_argument('--batch-size', type=int, default=MODEL_BATCH)
     p.add_argument('--gdelt-files', type=int, default=DEFAULT_GDELT_FILES); p.add_argument('--max-minutes', type=int, default=100)
     p.add_argument('--phase', choices=['all', 'generate', 'ingest'], default='all')
+    p.add_argument('--provider', choices=['gemini', 'claude'], default='gemini')
+    p.add_argument('--claude-model', choices=sorted(CLAUDE_PRICES), default='claude-haiku-5-5')
+    p.add_argument('--max-usd', type=float, default=3.0)
     p.add_argument('--cache', type=Path, default=ROOT/'.local/gdelt-cache'); p.add_argument('--output', type=Path, default=ROOT/'.local/gdelt-backfill')
     a = p.parse_args(argv)
     if a.confirm != 'BACKFILL': p.error('confirm_must_equal_BACKFILL')
@@ -753,6 +815,7 @@ def main(argv=None):
     if not 1 <= a.batch_size <= 40: p.error('batch_size_must_be_1_to_40')
     if not 1 <= a.gdelt_files <= MAX_GDELT_FILES: p.error('gdelt_files_must_be_1_to_400')
     if not 5 <= a.max_minutes <= 170: p.error('max_minutes_must_be_5_to_170')
+    if not 0 < a.max_usd <= 50: p.error('max_usd_must_be_0_to_50')
     try: window(a.start, a.end); regions_from(a.regions)
     except ValueError as e: p.error(str(e))
     if a.phase == 'ingest':
@@ -768,13 +831,14 @@ def main(argv=None):
         except (ValueError, OSError, KeyError, TypeError) as e:
             print('GDELT backfill ingestion incomplete: ' + (str(e) if isinstance(e, ValueError) and re.fullmatch(r'[A-Za-z0-9_]{1,160}', str(e)) else type(e).__name__), file=sys.stderr)
             return 1
-    required = ['GEMINI_API_KEY', 'WORKER_URL'] + (['NEWS_INGEST_TOKEN'] if a.dry_run == 'false' and a.phase == 'all' else [])
+    required = ['ANTHROPIC_API_KEY' if a.provider == 'claude' else 'GEMINI_API_KEY', 'WORKER_URL'] + (['NEWS_INGEST_TOKEN'] if a.dry_run == 'false' and a.phase == 'all' else [])
     missing = [k for k in required if not os.environ.get(k)]
     if missing: p.error('missing_required_settings: ' + ', '.join(missing))
     try:
         r = run(a.start, a.end, a.regions, a.dry_run == 'true', a.output, os.environ['WORKER_URL'], a.cache, a.gemini_model,
-                a.gemini_calls, a.batch_size, a.gdelt_files, a.max_minutes, ingest=a.phase == 'all')
-        print(json.dumps({k: r.get(k) for k in ('state', 'new_articles', 'by_region', 'gemini_calls', 'elapsed_seconds')}))
+                a.gemini_calls, a.batch_size, a.gdelt_files, a.max_minutes, ingest=a.phase == 'all',
+                provider=a.provider, claude_model=a.claude_model, max_usd=a.max_usd)
+        print(json.dumps({k: r.get(k) for k in ('state', 'new_articles', 'by_region', 'gemini_calls', 'cost_usd', 'elapsed_seconds')}))
         return 0
     except (ValueError, OSError):
         print('GDELT backfill incomplete; inspect the saved report. No success claimed.', file=sys.stderr); return 1
