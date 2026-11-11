@@ -268,14 +268,14 @@ class EndToEndTests(unittest.TestCase):
                    'why': 'Test-only', 'category': 'economy', 'importance': 1, 'country': 'KE', 'lat': -1.29, 'lon': 36.82, 'place': 'Nairobi', 'impacts': []}]
         return json.dumps({'candidates': [{'content': {'parts': [{'text': json.dumps(picked)}]}}]})
 
-    def run_once(self, dry_run):
+    def run_once(self, dry_run, calls=3):
         def library_push(url, token, group): self.library_pushes.append(group); return {'ok': True, 'written': len(group)}
         with patch.object(m.regional, 'request', side_effect=self.worker), patch.object(m.robot, 'GEMINI', 'test-only-key'), \
              patch.object(m.uploader, 'push', side_effect=AssertionError('live 48-hour feed ingestion')), \
              patch.object(m.robot, 'photo', side_effect=AssertionError('photo fetch')), \
              patch.dict('os.environ', {'NEWS_INGEST_TOKEN': 'test-only-token'}):
             return m.run('2026-09-01', '2026-09-03', 'east_africa', dry_run, self.out, 'https://worker.fixture.invalid', self.cache,
-                         gemini_calls=3, batch_size=5, gdelt_files=5, now=NOW, gdelt_get=self.gdelt, page_get=self.page,
+                         gemini_calls=calls, batch_size=5, gdelt_files=5, now=NOW, gdelt_get=self.gdelt, page_get=self.page,
                          model_get=self.model, library_push=library_push, sleep=lambda s: None, state_root=self.state)
 
     def test_dry_run_builds_review_artifact_and_ingests_nothing(self):
@@ -296,25 +296,29 @@ class EndToEndTests(unittest.TestCase):
         # The second (resumed) run reads GDELT from the cache: no new GDELT request.
         report = self.run_once(True); self.assertEqual(report['gdelt']['downloads'], 0); self.assertGreater(report['gdelt']['cache_hits'], 0)
 
-    def test_failing_model_moves_to_the_robots_fallback_without_retries(self):
-        good = self.model
+    def test_overloaded_model_is_retried_with_pauses_then_the_next_model_is_used(self):
+        good, used = self.model, []
         def model(url, **kw):
-            if '/models/gemini-test-only:' in url: raise http_error(url, 503)
-            self.assertIn('/models/gemini-flash-latest:', url); return good(url, **kw)
+            name = url.rsplit('/models/', 1)[1].split(':')[0]; used.append(name)
+            if name == 'gemini-test-only':
+                raise urllib.error.HTTPError(url, 503, 'x', {}, io.BytesIO(json.dumps({'error': {'message': 'The model is overloaded. Please try again later.'}}).encode()))
+            return good(url, **kw)
         self.model = model
-        report = self.run_once(True)
-        self.assertEqual(report['model_order'], ['gemini-test-only', 'gemini-flash-latest', 'gemini-flash-lite-latest'])
-        self.assertEqual(report['models_failed'], {'gemini-test-only': 'http_503'})
-        self.assertEqual(report['gemini_calls'], 2); self.assertEqual(report['new_articles'], 1)
-        self.assertEqual(report['actual_model_used'], 'gemini-flash-latest')
+        report = self.run_once(True, calls=10)
+        order = report['model_order']
+        self.assertEqual(order[0], 'gemini-test-only'); self.assertEqual(order[-2:], ['gemini-flash-latest', 'gemini-flash-lite-latest'])
+        self.assertEqual(used[:3], ['gemini-test-only'] * 3); self.assertEqual(report['model_retries'], {'gemini-test-only': 2})
+        self.assertEqual(report['models_failed'], {'gemini-test-only': 'http_503: The model is overloaded. Please try again later.'})
+        self.assertEqual(report['gemini_calls'], 4); self.assertEqual(report['new_articles'], 1)
+        self.assertEqual(report['actual_model_used'], order[1])
 
-    def test_all_models_failing_stops_after_one_attempt_each_and_says_why(self):
-        def model(url, **kw): raise http_error(url, 429)
+    def test_all_models_failing_stops_and_says_why(self):
+        def model(url, **kw): raise http_error(url, 400)
         self.model = model
-        with self.assertRaises(ValueError): self.run_once(True)
+        with self.assertRaises(ValueError): self.run_once(True, calls=10)
         report = json.loads((self.out/'report.json').read_text())
-        self.assertEqual(report['gemini_calls'], 3); self.assertEqual(set(report['models_failed'].values()), {'http_429'})
-        self.assertEqual(report['new_articles'], 0)
+        self.assertEqual(report['gemini_calls'], len(report['model_order']))  # 400 is not retried
+        self.assertEqual(set(report['models_failed'].values()), {'http_400'}); self.assertEqual(report['new_articles'], 0)
 
     def test_live_run_goes_to_library_and_day_files_never_the_live_feed(self):
         report = self.run_once(False)
