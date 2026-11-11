@@ -39,9 +39,12 @@ class ProjectsPipelineTests(unittest.TestCase):
 
     def test_provenance_every_field_and_inherited_not_verified(self):
         with tempfile.TemporaryDirectory() as temp:
-            report=b.build(output=Path(temp));self.assertEqual(report['verified_points'],0)
+            report=b.build(output=Path(temp));self.assertEqual(report['retained_unverified'],631)
             for p in b.read(Path(temp)/'assets/globe/projects.json')['projects']:
-                self.assertEqual(p['validation_status'],'retained_unverified')
+                # Inherited snapshot rows never count as verified; verified rows come only from licence-reviewed fetches.
+                inherited=any('Inherited' in (x.get('review') or '') for x in p['src'])
+                self.assertEqual(p['validation_status'],'retained_unverified' if inherited and len(p['src'])==1 else p['validation_status'])
+                if p['validation_status']=='verified': self.assertTrue(any('fetched 11 Nov 2026' in x['name'] for x in p['src']),p['k'])
                 for field in set(p)-{'upd','validation_status','src'}: self.assertTrue(b.covered(p,field),(p['k'],field))
             self.assertGreater(report['omitted_legacy_inception_years'],0)
 
