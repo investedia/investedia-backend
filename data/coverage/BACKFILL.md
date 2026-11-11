@@ -255,3 +255,12 @@ Tool `tools/gdelt-backfill.py`, manual workflow **GDELT months-back article back
 Owner steps: merge the draft PR; run the workflow with `confirm=BACKFILL`, `dry_run=true`; open
 the `gdelt-backfill-review` artifact (`report.json`: counts per region, country and day, 30 sample
 articles, rejection reasons); if it looks right, run again with `dry_run=false`.
+
+### Writer: Claude Haiku 5.5 (default) or Gemini
+
+The workflow input `writer` picks the model that writes the summaries. `claude-haiku-5-5` (default) uses the
+repository secret `ANTHROPIC_API_KEY` through the official `anthropic` SDK (2.8.0) and leaves the shared Gemini
+quota to the hourly news robot. Same robot prompt and validation; effort `low`; `max_usd` (default $3) stops the
+run before any call that could pass the cap (the next call is counted at its worst case). `report.json` shows
+`cost_usd`. Haiku 5.5 costs $0.10 / $0.50 per million input / output tokens; the whole Aug–Oct backfill is
+estimated at about $0.50.
