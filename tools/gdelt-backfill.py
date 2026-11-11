@@ -423,11 +423,43 @@ def selected_model(explicit, live, saved):
     raise ValueError('successful_hourly_model_unknown_set_GEMINI_MODEL')
 
 
+FALLBACK_MODELS = ('gemini-flash-latest', 'gemini-flash-lite-latest')  # the hourly robot's own fallbacks
+
+
 class Budget(regional.ModelBudget):
-    """regional-backfill's Gemini guard (no page or photo fetches through the model client), with this tool's 1-80 cap."""
+    """regional-backfill's Gemini guard (no page or photo fetches through the model client), with this tool's 1-80 cap.
+    A model that fails is not retried (no budget spent on retries); the robot's loop moves on to the next listed model,
+    as the hourly robot does. Every failure is recorded with its HTTP code."""
     def __init__(self, transport, limit=DEFAULT_CALLS, deadline=None):
         if not 1 <= limit <= HARD_CALL_LIMIT: raise ValueError('gemini_calls_must_be_1_to_80')
         super().__init__(transport, 1, deadline); self.limit = limit
+        self.failed = {}
+
+    def get(self, url, data=None, headers=None, timeout=40, raw=False):
+        model = url.rsplit('/models/', 1)[-1].split(':', 1)[0] if ':generateContent' in url else None
+        if model in self.failed: raise urllib.error.HTTPError(url, 404, 'model failed earlier in this run', None, None)
+        try: return super().get(url, data=data, headers=headers, timeout=timeout, raw=raw)
+        except ModelUnavailable:
+            cause = getattr(self, 'last_error', None)
+            self.failed[model] = cause or 'request_failed'; self.stop_reason = None
+            raise urllib.error.HTTPError(url, 404, 'model unavailable: try the next one', None, None) from None
+
+
+def model_list(first):
+    return list(dict.fromkeys([first, *FALLBACK_MODELS]))
+
+
+def recording(transport, budget_ref):
+    """Wraps the HTTP transport so the real failure code is kept for the report (never the response body)."""
+    def call(url, **kw):
+        try: return transport(url, **kw)
+        except urllib.error.HTTPError as e:
+            if budget_ref: budget_ref[0].last_error = 'http_%d' % e.code
+            raise
+        except OSError as e:
+            if budget_ref: budget_ref[0].last_error = type(e).__name__
+            raise
+    return call
 
 
 def provenance(story, original, now):
@@ -583,7 +615,8 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
                         'robots.txt honoured; paywalled publishers/pages skipped; no article body stored',
                         'same robot prompt and validation as regional-backfill; no photos',
                         'never sent to the live 48-hour feed']}
-    budget = Budget(model_get or regional.request, gemini_calls, deadline=deadline)
+    ref = []
+    budget = Budget(recording(model_get or regional.request, ref), gemini_calls, deadline=deadline); ref.append(budget)
     saved = (robot.get, robot.log, robot.err, robot.gemini_models, robot.NOW, robot.ISO_NOW)
     errors = Counter(); pinned = []
     robot.get = budget.get; robot.UA = UA; robot.log = lambda *args: None
@@ -595,8 +628,8 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         live = json.loads(regional.request(worker + '/v1/news?gdelt_read=' + str(time.time_ns())))
         current = live.get('data', {}).get('stories', [])
         if not current or not live.get('meta', {}).get('fetched_at'): raise ValueError('valid_live_worker_feed_required')
-        pinned.append(selected_model(gemini_model, live, read(reference/'news-status.json', {})))
-        report['selected_model'] = pinned[0]
+        pinned.extend(model_list(selected_model(gemini_model, live, read(reference/'news-status.json', {}))))
+        report['selected_model'] = pinned[0]; report['model_order'] = list(pinned)
         local = []
         for name in ('news-live.json', 'news-48h.json', 'news-archive.json', 'news-gap-history-cache.json'):
             local += read(state_root/name, {}).get('stories', [])
@@ -673,6 +706,7 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         raise ValueError('gdelt_backfill_incomplete_report_saved') from None
     finally:
         report.update(gemini_calls=budget.calls, gemini_calls_detail=budget.call_log, model_budget_stop=budget.stop_reason,
+                      models_failed=dict(budget.failed), actual_model_used=robot.status.get('gemini_model') if budget.calls else None,
                       gemini_usage_reported=dict(budget.usage), elapsed_seconds=round(time.monotonic() - clock0, 3))
         write(output/'report.json', report)
         robot.get, robot.log, robot.err, robot.gemini_models, robot.NOW, robot.ISO_NOW = saved
