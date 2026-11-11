@@ -266,14 +266,15 @@ class EndToEndTests(unittest.TestCase):
         prompt = json.loads(data)['contents'][0]['parts'][0]['text']; self.model_prompts.append(prompt)
         self.assertIn('Test-only description', prompt); self.assertNotIn('body text', prompt)
         picked = [{'members': [0], 'headline': 'Must never replace the original', 'summary': 'Test-only summary written from the description.',
-                   'why': 'Test-only', 'category': 'economy', 'importance': 1, 'country': 'KE', 'lat': -1.29, 'lon': 36.82, 'place': 'Nairobi', 'impacts': []}]
+                   'why': 'Test-only', 'category': 'economy', 'importance': 1, 'country': 'KE', 'lat': -1.29, 'lon': 36.82, 'place': 'Nairobi', 'impacts': [], 'photo': 'bank building'}]
         return json.dumps({'candidates': [{'content': {'parts': [{'text': json.dumps(picked)}]}}]})
 
     def run_once(self, dry_run, calls=3, **extra):
         def library_push(url, token, group): self.library_pushes.append(group); return {'ok': True, 'written': len(group)}
         with patch.object(m.regional, 'request', side_effect=self.worker), patch.object(m.robot, 'GEMINI', 'test-only-key'), \
              patch.object(m.uploader, 'push', side_effect=AssertionError('live 48-hour feed ingestion')), \
-             patch.object(m.robot, 'photo', side_effect=AssertionError('photo fetch')), \
+             patch.object(m.robot, 'PIXABAY', 'test-only-key-never-used'), \
+             patch.object(m.robot, 'get', side_effect=AssertionError('Pixabay download')), \
              patch.dict('os.environ', {'NEWS_INGEST_TOKEN': 'test-only-token'}):
             return m.run('2026-09-01', '2026-09-03', 'east_africa', dry_run, self.out, 'https://worker.fixture.invalid', self.cache,
                          gemini_calls=calls, batch_size=5, gdelt_files=5, now=NOW, gdelt_get=self.gdelt, page_get=self.page,
@@ -290,7 +291,11 @@ class EndToEndTests(unittest.TestCase):
         art = json.loads((self.out/'new-articles.json').read_text())[0]
         self.assertEqual(art['headline'], 'Test-only: Kenyan shilling edges up as central bank holds rate')
         self.assertEqual(art['published_at'], '2026-09-02T04:40:00Z'); self.assertTrue(art['backfilled'])
-        self.assertEqual(art['backfill_provenance']['version'], 'gdelt-backfill-v1'); self.assertNotIn('image', art)
+        self.assertEqual(art['backfill_provenance']['version'], 'gdelt-backfill-v1')
+        index = json.loads((ROOT/'assets/globe/photos/index.json').read_text())
+        self.assertEqual(art['image']['kind'], 'topic'); self.assertEqual(art['image']['source'], 'Pixabay')
+        self.assertIn(art['image']['file'], [p['file'] for p in index['bank building']])  # existing published pool only
+        self.assertEqual(report['with_topic_photo'], 1)
         self.assertEqual(art['location']['country'], 'Kenya'); self.assertEqual(len(art['sources']), 1)
         self.assertNotIn('_feed_description', art); self.assertEqual(report['sample_articles'][0]['id'], art['id'])
         self.assertTrue((self.out/'report.json').exists()); self.assertTrue((self.out/'events/2026-09-02.json').exists())
@@ -363,7 +368,7 @@ class FakeClaude:
 
 class ClaudeProviderTests(EndToEndTests):
     PICKED = [{'members': [0], 'headline': 'Must never replace the original', 'summary': 'Test-only summary written from the description.',
-               'why': 'Test-only', 'category': 'economy', 'importance': 1, 'country': 'KE', 'lat': -1.29, 'lon': 36.82, 'place': 'Nairobi', 'impacts': []}]
+               'why': 'Test-only', 'category': 'economy', 'importance': 1, 'country': 'KE', 'lat': -1.29, 'lon': 36.82, 'place': 'Nairobi', 'impacts': [], 'photo': 'bank building'}]
 
     def setUp(self):
         super().setUp()
