@@ -1,9 +1,11 @@
 """Manual months-back article backfill (Aug-Oct 2026) discovered through GDELT.
 
-GDELT DOC 2.0 is used only to DISCOVER article links, titles, crawl dates and the
-publisher's country. Everything published comes from the publisher itself:
+GDELT is used only to DISCOVER article links and titles: its GKG 2.1 files
+(data.gdeltproject.org, one per 15 minutes; the DOC search API answers 429 to
+shared GitHub machines) list every English web article it saw, with themes and
+the places mentioned. Everything published comes from the publisher itself:
 - the original publication time is read from the article page's own metadata
-  (GDELT's seendate is a crawl time and is never used as the publication date);
+  (GDELT's file time is a crawl time and is never used as the publication date);
 - the short description the summary is written from is the page's own meta
   description, exactly like the broad robot's describe() step;
 - robots.txt is honoured for every page, known paywalled publishers and pages
@@ -24,6 +26,7 @@ import argparse
 import copy
 import hashlib
 import html
+import io
 import importlib.util
 import json
 import os
@@ -33,7 +36,9 @@ import threading
 import time
 import urllib.error
 import urllib.parse
+import urllib.request
 import urllib.robotparser
+import zipfile
 from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
@@ -54,28 +59,32 @@ core, robot, events, uploader = regional.core, regional.robot, regional.events, 
 
 UA = regional.UA
 VERSION = 'gdelt-backfill-v1'
-GDELT_API = 'https://api.gdeltproject.org/api/v2/doc/doc'
-GDELT_INTERVAL = 5.5          # GDELT asks for at most one request every 5 seconds
-GDELT_MAX_RECORDS = 250       # DOC 2.0 artlist maximum
-GDELT_HORIZON_DAYS = 89       # DOC 2.0 searches roughly the last three months only
+GKG_BASE = 'https://data.gdeltproject.org/gdeltv2/'  # GDELT 2.0 Global Knowledge Graph, one file per 15 minutes
+GKG_INTERVAL = 2.0            # polite spacing between file downloads (static files, not the rate-limited search API)
+GKG_MAX_BYTES = 60_000_000
+HOUR_ROUNDS = (12, 0, 6, 18, 3, 9, 15, 21)  # every day at noon first, then midnight, ...: a file cap still covers every day
 ALLOWED_START = '2026-08-01'
 ALLOWED_END = '2026-10-15'    # inclusive day; the live library starts around 15 October
 DEFAULT_CALLS = 40
 HARD_CALL_LIMIT = 80
 MODEL_BATCH = 25
-DEFAULT_GDELT_REQUESTS = 180
-MAX_GDELT_REQUESTS = 400
-SLICE_DAYS = 3
-RATE_LIMIT_RETRIES = 2      # per request, with growing pauses
-RATE_LIMIT_STOP = 6         # consecutive 429s end discovery for this run (cache keeps what was found)
+DEFAULT_GDELT_FILES = 160     # about two 15-minute files per day for Aug 1 - Oct 15
+MAX_GDELT_FILES = 400
+ERROR_STOP = 8                # consecutive download failures end discovery for this run
 PAGE_LIMIT = 400_000
 LIBRARY_DAY_LIMIT = 1500      # Worker /v1/ingest/library row limit per day (no truncation here)
 LIBRARY_DAYS_PER_REQUEST = 3
 TRANSIENT = re.compile(r'^(page_unavailable|robots_unavailable|page_http_(5\d\d|429|408)|too_many_redirects)$')
-THEMES = '(economy OR business OR market OR markets OR bank OR investment OR inflation OR trade OR currency OR oil OR shares OR exports)'
+# Business/economy GKG themes. A record qualifies with one strong theme or three ECON_ themes.
+STRONG_THEMES = {'ECON_STOCKMARKET', 'ECON_INFLATION', 'ECON_INTEREST_RATES', 'ECON_CENTRALBANK', 'ECON_BANKRUPTCY',
+                 'ECON_EARNINGSREPORT', 'ECON_IPO', 'ECON_OILPRICE', 'ECON_CURRENCY_EXCHANGE_RATE', 'ECON_DEBT',
+                 'ECON_SOVEREIGN_DEBT', 'ECON_FREETRADE', 'ECON_TRADE_DISPUTE', 'ECON_SUBSIDIES', 'ECON_HOUSING_PRICES',
+                 'ECON_COST_OF_LIVING', 'ECON_PRICECONTROL', 'ECON_UNEMPLOYMENT', 'ECON_GASOLINEPRICE', 'ECON_NATGASPRICE',
+                 'ECON_ELECTRICALPRICE', 'ECON_FOREIGNINVEST', 'ECON_BUDGET_DEFICIT', 'ECON_EMERGINGECON', 'ECON_REMITTANCE',
+                 'ECON_BITCOIN', 'ECON_DEREGULATION', 'ECON_TAXATION', 'ECON_WORLDCURRENCIES', 'ECON_MOU'}
 
-# Thin regions first. FIPS 10-4 codes, as GDELT's sourcecountry filter expects.
-# The source country only balances discovery; it is never an event location.
+# Thin regions first. FIPS 10-4 country codes, as GDELT's GKG locations use them.
+# The most-mentioned country only balances discovery; it is never the event location (the robot decides that).
 REGIONS = {
     'middle_east': {'label': 'Middle East', 'balance': 'me',
                     'fips': ['AE', 'SA', 'QA', 'KU', 'BA', 'MU', 'IS', 'JO', 'LE', 'IZ', 'TU', 'IR']},
@@ -128,105 +137,111 @@ def regions_from(value):
     return list(dict.fromkeys(names))
 
 
-def query(region):
-    countries = ' OR '.join('sourcecountry:' + code for code in REGIONS[region]['fips'])
-    return f'{THEMES} ({countries}) sourcelang:english'
+FIPS_REGION = {code: key for key, region in REGIONS.items() for code in region['fips']}
 
 
-def slices(start, end, now, size=SLICE_DAYS):
-    """Oldest first: GDELT forgets the oldest days first. Parts older than its horizon are reported, not queried."""
-    horizon = (now - timedelta(days=GDELT_HORIZON_DAYS)).replace(hour=0, minute=0, second=0, microsecond=0)
-    out, skipped = [], []
+def gkg_plan(start, end, max_files):
+    """Oldest-first within each round; round 1 is every day at 12:00 UTC, round 2 at 00:00, ..."""
+    if not 1 <= max_files <= MAX_GDELT_FILES: raise ValueError('gdelt_files_must_be_1_to_400')
+    days = []
     cursor = start
-    while cursor < end:
-        stop = min(cursor + timedelta(days=size), end)
-        if stop <= horizon: skipped.append((cursor, stop))
-        else: out.append((max(cursor, horizon), stop))
-        cursor = stop
-    return out, skipped
+    while cursor < end: days.append(cursor); cursor += timedelta(days=1)
+    plan = [d + timedelta(hours=h) for h in HOUR_ROUNDS for d in days]
+    return plan[:max_files]
 
 
-def plan_requests(regions, parts):
-    # Round-robin by region inside each time slice so a request cap still covers every region.
-    return [(region, a, b) for a, b in parts for region in regions]
+def gkg_url(at): return GKG_BASE + at.strftime('%Y%m%d%H%M%S') + '.gkg.csv.zip'
 
 
-def gdelt_url(region, start, end):
-    params = {'query': query(region), 'mode': 'ArtList', 'format': 'json', 'maxrecords': GDELT_MAX_RECORDS,
-              'sort': 'HybridRel', 'startdatetime': start.strftime('%Y%m%d%H%M%S'),
-              'enddatetime': (end - timedelta(seconds=1)).strftime('%Y%m%d%H%M%S')}
-    return GDELT_API + '?' + urllib.parse.urlencode(params)
+def fetch_bytes(url, timeout=60):
+    u = urlsplit(url)
+    if u.scheme != 'https' or u.hostname != 'data.gdeltproject.org': raise ValueError('gdelt_file_host_only')
+    req = urllib.request.Request(url, headers={'User-Agent': UA})
+    with urllib.request.build_opener(uploader.NoRedirect()).open(req, timeout=timeout) as response:
+        body = response.read(GKG_MAX_BYTES + 1)
+    if len(body) > GKG_MAX_BYTES: raise ValueError('gdelt_file_too_large')
+    return body
 
 
-class GdeltClient:
-    """One request every >= 5.5 s, every valid response cached on disk, resumable."""
-    def __init__(self, get, cache_dir, max_requests=DEFAULT_GDELT_REQUESTS, clock=time.monotonic, sleep=time.sleep, interval=GDELT_INTERVAL):
-        if not 1 <= max_requests <= MAX_GDELT_REQUESTS: raise ValueError('gdelt_requests_must_be_1_to_400')
-        self.get, self.cache, self.max, self.clock, self.sleep, self.interval = get, Path(cache_dir), max_requests, clock, sleep, interval
+def themes_ok(themes):
+    names = {t for t in themes.split(';') if t}
+    econ = {t for t in names if t.startswith('ECON_')}
+    return bool(names & STRONG_THEMES) or any(t.startswith('ECON_WORLDCURRENCIES') for t in names) or len(econ) >= 3
+
+
+def main_country(locations):
+    counts = Counter()
+    for item in locations.split(';'):
+        parts = item.split('#')
+        if len(parts) > 2 and parts[2]: counts[parts[2]] += 1
+    return counts.most_common(1)[0][0] if counts else ''
+
+
+def parse_gkg(text, at):
+    """GKG 2.1 rows -> discovery records for every configured region. The batch time is kept for audit only."""
+    rows, rejected = [], Counter()
+    for line in text.splitlines():
+        c = line.split('\t')
+        if len(c) < 27: rejected['short_gkg_row'] += 1; continue
+        if c[2] != '1': rejected['not_web_article'] += 1; continue
+        if not themes_ok(c[7]): rejected['not_business_theme'] += 1; continue
+        region = FIPS_REGION.get(main_country(c[9]))
+        if not region: rejected['outside_backfill_regions'] += 1; continue
+        url = c[4].strip(); u = urlsplit(url)
+        if u.scheme != 'https' or not u.hostname or u.username or u.password: rejected['not_public_https_url'] += 1; continue
+        m = re.search(r'<PAGE_TITLE>(.*?)</PAGE_TITLE>', c[26])
+        title = html.unescape(m.group(1)).strip() if m else ''
+        if len(title) < 12: rejected['missing_title'] += 1; continue
+        rows.append({'title': title[:300], 'url': url, 'domain': (c[3] or u.hostname).lower()[:120], 'gdelt_seen': iso(at),
+                     'gdelt_country': main_country(c[9]), 'gdelt_region': region, 'feed_region': REGIONS[region]['balance']})
+    return rows, rejected
+
+
+class GkgClient:
+    """Downloads GKG files one at a time (>= 2 s apart); caches only the small parsed result, so runs resume."""
+    def __init__(self, get, cache_dir, max_files=DEFAULT_GDELT_FILES, clock=time.monotonic, sleep=time.sleep, interval=GKG_INTERVAL):
+        if not 1 <= max_files <= MAX_GDELT_FILES: raise ValueError('gdelt_files_must_be_1_to_400')
+        self.get, self.cache, self.max, self.clock, self.sleep, self.interval = get, Path(cache_dir), max_files, clock, sleep, interval
         self.cache.mkdir(parents=True, exist_ok=True)
-        self.requests = 0; self.cache_hits = 0; self.slept = 0.0; self.rate_limited = 0; self.errors = Counter()
-        self.last = None; self.stopped = None; self.consecutive_429 = 0
+        self.downloads = 0; self.cache_hits = 0; self.slept = 0.0; self.errors = Counter(); self.consecutive = 0
+        self.last = None; self.stopped = None; self.rejected = Counter()
 
-    def path(self, url): return self.cache/(hashlib.sha256(url.encode()).hexdigest()[:32] + '.json')
+    def path(self, at): return self.cache/(at.strftime('%Y%m%d%H%M%S') + '.json')
 
-    def _wait(self):
+    def fetch(self, at):
+        path = self.path(at)
+        if path.exists():
+            self.cache_hits += 1
+            return read(path).get('rows', []), 'cache'
+        if self.stopped: return [], self.stopped
+        if self.downloads >= self.max: self.stopped = 'gdelt_file_budget_reached'; return [], self.stopped
         if self.last is not None:
             wait = self.interval - (self.clock() - self.last)
             if wait > 0: self.sleep(wait); self.slept += wait
-
-    def _once(self, url):
-        self._wait()
-        self.requests += 1
-        try: text = self.get(url, timeout=30)
-        finally: self.last = self.clock()
-        stripped = text.lstrip()
-        if stripped.startswith('{'): return json.loads(stripped)
-        if 'limit requests' in stripped.lower(): raise urllib.error.HTTPError(url, 429, 'rate limited', None, None)
-        raise ValueError('gdelt_non_json_response')
-
-    def fetch(self, url):
-        path = self.path(url)
-        if path.exists():
-            self.cache_hits += 1
-            return read(path).get('articles', []), 'cache'
-        if self.stopped: return [], self.stopped
-        for attempt in range(RATE_LIMIT_RETRIES + 1):
-            if self.requests >= self.max: self.stopped = 'gdelt_request_budget_reached'; return [], self.stopped
-            try:
-                payload = self._once(url); self.consecutive_429 = 0; break
-            except urllib.error.HTTPError as e:
-                if e.code != 429: self.errors['http_%d' % e.code] += 1; return [], 'error'
-                self.rate_limited += 1; self.consecutive_429 += 1
-                if self.consecutive_429 >= RATE_LIMIT_STOP: self.stopped = 'gdelt_rate_limited_stop'; return [], self.stopped
-                pause = self.interval * 6 * (attempt + 1)  # 33 s, 66 s, 99 s: well above GDELT's 5 s rule
-                self.sleep(pause); self.slept += pause; self.last = self.clock()
-                if attempt == RATE_LIMIT_RETRIES: return [], 'rate_limited'
-            except (OSError, ValueError) as e:
-                self.errors[type(e).__name__ if not isinstance(e, ValueError) else str(e)[:60]] += 1; return [], 'error'
-        articles = payload.get('articles', []) if isinstance(payload, dict) else []
-        if not isinstance(articles, list): articles = []
-        write(path, {'url': url, 'fetched_at': iso(datetime.now(timezone.utc)), 'articles': articles[:GDELT_MAX_RECORDS]})
-        return articles[:GDELT_MAX_RECORDS], 'fetched'
-
-
-def parse_articles(articles, region, start, end):
-    """GDELT rows -> discovery records. seendate is kept for audit only, never as publication time."""
-    rows, rejected = [], Counter()
-    for a in articles:
+        self.downloads += 1
         try:
-            url, title = str(a.get('url') or '').strip(), html.unescape(str(a.get('title') or '')).strip()
-            seen = datetime.strptime(a['seendate'], '%Y%m%dT%H%M%SZ').replace(tzinfo=timezone.utc)
-            u = urlsplit(url)
-        except (KeyError, TypeError, ValueError, AttributeError):
-            rejected['invalid_gdelt_record'] += 1; continue
-        if (a.get('language') or 'English') != 'English': rejected['not_english'] += 1; continue
-        if u.scheme != 'https' or not u.hostname or u.username or u.password: rejected['not_public_https_url'] += 1; continue
-        if len(title) < 12: rejected['missing_title'] += 1; continue
-        if not start <= seen < end + timedelta(days=1): rejected['gdelt_record_outside_slice'] += 1; continue
-        rows.append({'title': title, 'url': url, 'domain': str(a.get('domain') or u.hostname).lower(), 'gdelt_seen': iso(seen),
-                     'gdelt_country': str(a.get('sourcecountry') or '')[:60], 'gdelt_region': region,
-                     'feed_region': REGIONS[region]['balance']})
-    return rows, rejected
+            raw = self.get(gkg_url(at))
+            with zipfile.ZipFile(io.BytesIO(raw)) as z:
+                names = [n for n in z.namelist() if n.endswith('.csv')]
+                if len(names) != 1: raise ValueError('unexpected_gkg_archive')
+                text = z.read(names[0]).decode('utf-8', 'replace')
+        except urllib.error.HTTPError as e:
+            self.errors['http_%d' % e.code] += 1
+            if e.code == 404:  # GDELT occasionally skips a 15-minute file: record it as empty
+                self.consecutive = 0; write(path, {'url': gkg_url(at), 'rows': [], 'missing': True}); return [], 'missing'
+            return self._failed()
+        except (OSError, ValueError, zipfile.BadZipFile) as e:
+            self.errors[type(e).__name__] += 1; return self._failed()
+        finally: self.last = self.clock()
+        self.consecutive = 0
+        rows, rejected = parse_gkg(text, at); self.rejected.update(rejected)
+        write(path, {'url': gkg_url(at), 'fetched_at': iso(datetime.now(timezone.utc)), 'rows': rows})
+        return rows, 'fetched'
+
+    def _failed(self):
+        self.consecutive += 1
+        if self.consecutive >= ERROR_STOP: self.stopped = 'gdelt_download_errors_stop'
+        return [], 'error'
 
 
 def headline_key(text): return re.sub(r'\W+', ' ', str(text or '').casefold()).strip()
@@ -335,7 +350,7 @@ def enrich_page(row, page, start, end):
     title = clean_title(meta(page, 'og:title') or row['title'], site)[:300]
     if len(title) < 12: return None, 'missing_title'
     c = {'title': title, 'url': row['url'], 'source': site or row['domain'], 'published': iso(published), 'kind': 'news', 'hint': '',
-         'desc': desc, 'feed_url': GDELT_API, 'feed_region': row['feed_region'], 'gdelt_region': row['gdelt_region'],
+         'desc': desc, 'feed_url': GKG_BASE, 'feed_region': row['feed_region'], 'gdelt_region': row['gdelt_region'],
          'gdelt_seen': row['gdelt_seen'], 'gdelt_country': row['gdelt_country']}
     if regional.contains_secret(c): return None, 'secret_like_content'
     c['chash'] = core.content_hash(c)
@@ -393,6 +408,21 @@ class PageFetcher:
 
 
 # ---------- generation through the existing robot ----------
+MODEL_NAME = re.compile(r'gemini-[A-Za-z0-9._-]{1,100}')
+
+
+def selected_model(explicit, live, saved):
+    """Like regional-backfill, but a non-Gemini placeholder (the Worker now reports 'github-ingest') is skipped, not fatal."""
+    if explicit:
+        if not isinstance(explicit, str) or not MODEL_NAME.fullmatch(explicit): raise ValueError('invalid_GEMINI_MODEL_name')
+        return explicit
+    tiers = saved.get('tiers', {}) if isinstance(saved, dict) else {}
+    for candidate in [live.get('meta', {}).get('model'), tiers.get('priority', {}).get('gemini_model'), tiers.get('priority', {}).get('model'),
+                      tiers.get('broad', {}).get('gemini_model'), saved.get('gemini_model') if saved.get('gemini_ok') else None]:
+        if isinstance(candidate, str) and MODEL_NAME.fullmatch(candidate): return candidate
+    raise ValueError('successful_hourly_model_unknown_set_GEMINI_MODEL')
+
+
 class Budget(regional.ModelBudget):
     """regional-backfill's Gemini guard (no page or photo fetches through the model client), with this tool's 1-80 cap."""
     def __init__(self, transport, limit=DEFAULT_CALLS, deadline=None):
@@ -405,8 +435,8 @@ def provenance(story, original, now):
         raise ValueError('source_identity_changed')
     story.pop('score', None)
     story.update(backfilled=True, backfilled_at=iso(now),
-                 backfill_provenance={'version': VERSION, 'original_published_at': story['published_at'], 'feed_url': GDELT_API,
-                                      'discovered_via': 'GDELT DOC 2.0', 'gdelt_seen': original['gdelt_seen'],
+                 backfill_provenance={'version': VERSION, 'original_published_at': story['published_at'], 'feed_url': GKG_BASE,
+                                      'discovered_via': 'GDELT GKG 2.1', 'gdelt_seen': original['gdelt_seen'],
                                       'publisher_country_gdelt': original['gdelt_country'], 'description_from': 'publisher page metadata'})
     story['_feed_description'] = original['desc']
     return story
@@ -536,19 +566,19 @@ def ingest_artifact(output, worker, state_root, now, library_push=None):
 
 # ---------- run ----------
 def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=None, gemini_calls=DEFAULT_CALLS,
-        batch_size=MODEL_BATCH, gdelt_requests=DEFAULT_GDELT_REQUESTS, max_minutes=100, now=None,
+        batch_size=MODEL_BATCH, gdelt_files=DEFAULT_GDELT_FILES, max_minutes=100, now=None,
         gdelt_get=None, page_get=None, model_get=None, library_push=None, sleep=time.sleep, state_root=None, ingest=True):
     a, b = window(start, end); regions = regions_from(','.join(regions) if isinstance(regions, list) else regions)
     if not 1 <= gemini_calls <= HARD_CALL_LIMIT: raise ValueError('gemini_calls_must_be_1_to_80')
     if not 1 <= batch_size <= 40: raise ValueError('batch_size_must_be_1_to_40')
-    if not 1 <= gdelt_requests <= MAX_GDELT_REQUESTS: raise ValueError('gdelt_requests_must_be_1_to_400')
+    if not 1 <= gdelt_files <= MAX_GDELT_FILES: raise ValueError('gdelt_files_must_be_1_to_400')
     now = now or datetime.now(timezone.utc); clock0 = time.monotonic(); deadline = clock0 + max_minutes * 60
     output = Path(output); output.mkdir(parents=True, exist_ok=True)
     state_root = Path(state_root or ROOT/'assets/globe'); reference = ROOT/'assets/globe'
     report = {'schema': 'investedia.gdelt-backfill/v1', 'notice': 'Not investment advice.', 'window': {'start': iso(a), 'end_exclusive': iso(b)},
               'regions': regions, 'dry_run': dry_run, 'started_at': iso(now), 'gemini_call_limit': gemini_calls, 'model_batch_size': batch_size,
-              'gdelt_request_limit': gdelt_requests, 'state': 'incomplete', 'new_articles': 0, 'gemini_calls': 0,
-              'rules': ['GDELT used for discovery only; seendate is never the publication date',
+              'gdelt_file_limit': gdelt_files, 'state': 'incomplete', 'new_articles': 0, 'gemini_calls': 0,
+              'rules': ['GDELT GKG files used for discovery only; their crawl time is never the publication date',
                         'publication time and description come from the publisher page metadata',
                         'robots.txt honoured; paywalled publishers/pages skipped; no article body stored',
                         'same robot prompt and validation as regional-backfill; no photos',
@@ -565,7 +595,7 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         live = json.loads(regional.request(worker + '/v1/news?gdelt_read=' + str(time.time_ns())))
         current = live.get('data', {}).get('stories', [])
         if not current or not live.get('meta', {}).get('fetched_at'): raise ValueError('valid_live_worker_feed_required')
-        pinned.append(regional.selected_model(gemini_model, live, read(reference/'news-status.json', {})))
+        pinned.append(selected_model(gemini_model, live, read(reference/'news-status.json', {})))
         report['selected_model'] = pinned[0]
         local = []
         for name in ('news-live.json', 'news-48h.json', 'news-archive.json', 'news-gap-history-cache.json'):
@@ -577,24 +607,21 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         known = known_keys(regional.unique_articles(local + current), event_rows, library_ids, processed)
         report['dedupe_sources'] = {'articles': len(local) + len(current), 'event_records': len(event_rows), 'library_files': len(library_ids),
                                     'earlier_gdelt_processed_urls': len(processed)}
-        # Discovery
-        parts, too_old = slices(a, b, now)
-        report['gdelt_slices_outside_search_horizon'] = [{'start': iso(x), 'end_exclusive': iso(y)} for x, y in too_old]
-        client = GdeltClient(gdelt_get or regional.request, cache_dir, gdelt_requests, sleep=sleep)
-        found, parse_rejected = [], Counter()
-        discovery = Counter(); requests_plan = plan_requests(regions, parts)
-        report['gdelt_requests_planned'] = len(requests_plan)
-        for region, x, y in requests_plan:
+        # Discovery: GDELT GKG 15-minute files (the search API answers 429 to shared GitHub machines)
+        plan = gkg_plan(a, b, gdelt_files)
+        report['gdelt_files_planned'] = len(plan)
+        client = GkgClient(gdelt_get or fetch_bytes, cache_dir, gdelt_files, sleep=sleep)
+        found, parse_rejected, discovery = [], Counter(), Counter()
+        for at in plan:
             if time.monotonic() >= deadline: parse_rejected['run_deadline_reached_during_discovery'] += 1; break
-            articles, status = client.fetch(gdelt_url(region, x, y))
+            rows, status = client.fetch(at)
             discovery[status] += 1
-            rows, bad = parse_articles(articles, region, x, y)
-            found += rows; parse_rejected.update(bad)
+            found += [r for r in rows if r['gdelt_region'] in regions]
+        parse_rejected.update(client.rejected)
         candidates, dup = dedupe(found, known)
         ordered = order(candidates, regions)
-        report.update(gdelt={'requests': client.requests, 'cache_hits': client.cache_hits, 'slept_seconds': round(client.slept, 1),
-                             'rate_limited': client.rate_limited, 'errors': dict(client.errors), 'stop': client.stopped,
-                             'outcomes': dict(discovery)},
+        report.update(gdelt={'downloads': client.downloads, 'cache_hits': client.cache_hits, 'slept_seconds': round(client.slept, 1),
+                             'errors': dict(client.errors), 'stop': client.stopped, 'outcomes': dict(discovery)},
                       discovered=len(found), discovered_by_region=dict(Counter(r['gdelt_region'] for r in found)),
                       after_dedupe=len(candidates), after_dedupe_by_region=dict(Counter(r['gdelt_region'] for r in candidates)))
         # Generation
@@ -659,14 +686,14 @@ def main(argv=None):
     p.add_argument('--dry-run', choices=['true', 'false'], default='true')
     p.add_argument('--gemini-model', default=os.environ.get('GEMINI_MODEL') or None)
     p.add_argument('--gemini-calls', type=int, default=DEFAULT_CALLS); p.add_argument('--batch-size', type=int, default=MODEL_BATCH)
-    p.add_argument('--gdelt-requests', type=int, default=DEFAULT_GDELT_REQUESTS); p.add_argument('--max-minutes', type=int, default=100)
+    p.add_argument('--gdelt-files', type=int, default=DEFAULT_GDELT_FILES); p.add_argument('--max-minutes', type=int, default=100)
     p.add_argument('--phase', choices=['all', 'generate', 'ingest'], default='all')
     p.add_argument('--cache', type=Path, default=ROOT/'.local/gdelt-cache'); p.add_argument('--output', type=Path, default=ROOT/'.local/gdelt-backfill')
     a = p.parse_args(argv)
     if a.confirm != 'BACKFILL': p.error('confirm_must_equal_BACKFILL')
     if not 1 <= a.gemini_calls <= HARD_CALL_LIMIT: p.error('gemini_calls_must_be_1_to_80')
     if not 1 <= a.batch_size <= 40: p.error('batch_size_must_be_1_to_40')
-    if not 1 <= a.gdelt_requests <= MAX_GDELT_REQUESTS: p.error('gdelt_requests_must_be_1_to_400')
+    if not 1 <= a.gdelt_files <= MAX_GDELT_FILES: p.error('gdelt_files_must_be_1_to_400')
     if not 5 <= a.max_minutes <= 170: p.error('max_minutes_must_be_5_to_170')
     try: window(a.start, a.end); regions_from(a.regions)
     except ValueError as e: p.error(str(e))
@@ -688,7 +715,7 @@ def main(argv=None):
     if missing: p.error('missing_required_settings: ' + ', '.join(missing))
     try:
         r = run(a.start, a.end, a.regions, a.dry_run == 'true', a.output, os.environ['WORKER_URL'], a.cache, a.gemini_model,
-                a.gemini_calls, a.batch_size, a.gdelt_requests, a.max_minutes, ingest=a.phase == 'all')
+                a.gemini_calls, a.batch_size, a.gdelt_files, a.max_minutes, ingest=a.phase == 'all')
         print(json.dumps({k: r.get(k) for k in ('state', 'new_articles', 'by_region', 'gemini_calls', 'elapsed_seconds')}))
         return 0
     except (ValueError, OSError):

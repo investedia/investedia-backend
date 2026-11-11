@@ -1,5 +1,5 @@
 name: GDELT months-back article backfill (manual)
-# Aug 1 - Oct 15 2026 only. GDELT discovers article links; each publisher's own page metadata
+# Aug 1 - Oct 15 2026 only. GDELT's 15-minute GKG files (its search API answers 429 to GitHub machines) discover article links; each publisher's own page metadata
 # (robots.txt honoured, paywalls skipped) supplies the publication time and description; the
 # existing robot prompt writes the summary. Articles go to the article library and the shared
 # day files, never to the live 48-hour feed. Long generation runs without the news-production
@@ -34,9 +34,9 @@ on:
         description: 'Candidates per Gemini call: 1–40'
         default: '25'
         required: true
-      gdelt_requests:
-        description: 'New GDELT requests this run: 1–400 (one per 5.5 s; cached ones are free)'
-        default: '180'
+      gdelt_files:
+        description: 'GDELT 15-minute files to read: 1–400 (~5 MB each; 160 = about 2 per day; cached ones are free)'
+        default: '160'
         required: true
       gemini_model:
         description: 'Optional exact successful hourly model; blank reads live/status model'
@@ -64,7 +64,7 @@ jobs:
         env:
           CALLS: ${{ inputs.gemini_calls }}
           BATCH: ${{ inputs.batch_size }}
-          GDELT: ${{ inputs.gdelt_requests }}
+          GDELT: ${{ inputs.gdelt_files }}
           START_DATE: ${{ inputs.start_date }}
           END_DATE: ${{ inputs.end_date }}
           REGIONS: ${{ inputs.regions }}
@@ -73,7 +73,7 @@ jobs:
           import os, re
           assert 1 <= int(os.environ['CALLS']) <= 80, 'gemini_calls must be 1–80'
           assert 1 <= int(os.environ['BATCH']) <= 40, 'batch_size must be 1–40'
-          assert 1 <= int(os.environ['GDELT']) <= 400, 'gdelt_requests must be 1–400'
+          assert 1 <= int(os.environ['GDELT']) <= 400, 'gdelt_files must be 1–400'
           for key in ('START_DATE', 'END_DATE'):
               assert re.fullmatch(r'\d{4}-\d{2}-\d{2}', os.environ[key]), key + ' must be YYYY-MM-DD'
           assert '2026-08-01' <= os.environ['START_DATE'] <= os.environ['END_DATE'] <= '2026-10-15', 'window must be inside 2026-08-01..2026-10-15'
@@ -120,7 +120,7 @@ jobs:
           REGIONS: ${{ inputs.regions }}
           CALLS: ${{ inputs.gemini_calls }}
           BATCH: ${{ inputs.batch_size }}
-          GDELT: ${{ inputs.gdelt_requests }}
+          GDELT: ${{ inputs.gdelt_files }}
           GEMINI_MODEL: ${{ inputs.gemini_model }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           WORKER_URL: ${{ secrets.WORKER_URL }}
@@ -129,7 +129,7 @@ jobs:
           python tools/gdelt-backfill.py --phase generate
           --confirm "$CONFIRM" --dry-run "$DRY_RUN"
           --start "$START_DATE" --end "$END_DATE" --regions "$REGIONS"
-          --gemini-calls "$CALLS" --batch-size "$BATCH" --gdelt-requests "$GDELT" --max-minutes 100
+          --gemini-calls "$CALLS" --batch-size "$BATCH" --gdelt-files "$GDELT" --max-minutes 100
       - name: Save GDELT discovery cache (discovery results only, no secrets)
         if: ${{ !cancelled() && hashFiles('backend/.local/gdelt-cache/*.json') != '' }}
         uses: actions/cache/save@v4

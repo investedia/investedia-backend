@@ -1,5 +1,5 @@
-"""Offline only: synthetic GDELT/publisher fixtures (.invalid domains, "Test-only" headlines); nothing is ever ingested."""
-import importlib.util, io, json, tempfile, unittest, urllib.error
+"""Offline only: synthetic GDELT GKG/publisher fixtures (.invalid domains, "Test-only" headlines); nothing is ever ingested."""
+import importlib.util, io, json, tempfile, unittest, urllib.error, zipfile
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest.mock import patch
@@ -8,11 +8,18 @@ ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('gdelt_backfill', ROOT/'tools/gdelt-backfill.py')
 m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
 FIXTURE = ROOT/'tests/fixtures/gdelt-backfill'
-ARTLIST = json.loads((FIXTURE/'artlist.json').read_text())
+GKG = (FIXTURE/'gkg-sample.csv').read_text()
 PAGE = (FIXTURE/'publisher-page.html').read_text()
 NOW = datetime(2026, 11, 11, 12, tzinfo=timezone.utc)
 START, END = m.window('2026-08-01', '2026-10-15')
 UTC = timezone.utc
+FILE_TIME = datetime(2026, 9, 2, 12, tzinfo=UTC)
+
+
+def gkg_zip(text=GKG, name='20260902120000.gkg.csv'):
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, 'w') as z: z.writestr(name, text)
+    return buf.getvalue()
 
 
 class Clock:
@@ -32,17 +39,20 @@ class WindowsAndRegions(unittest.TestCase):
         for a, b in [('2026-07-31', '2026-08-02'), ('2026-10-01', '2026-10-16'), ('2026-09-10', '2026-09-01'), ('2026-9-1', '2026-09-02')]:
             with self.assertRaises(ValueError): m.window(a, b)
 
-    def test_slices_oldest_first_and_report_days_beyond_gdelt_horizon(self):
-        parts, skipped = m.slices(START, END, NOW)
-        horizon = datetime(2026, 8, 14, tzinfo=UTC)
-        self.assertTrue(all(b <= horizon for _, b in skipped)); self.assertEqual(parts[0][0], horizon)
-        self.assertEqual(parts[-1][1], END); self.assertEqual(parts, sorted(parts))
-        self.assertTrue(all(b - a <= timedelta(days=m.SLICE_DAYS) for a, b in parts))
-        for (_, b), (c, _) in zip(parts, parts[1:]): self.assertEqual(b, c)  # contiguous, no overlap
-        # Early in the allowed window everything is still searchable.
-        self.assertEqual(m.slices(START, END, datetime(2026, 10, 20, tzinfo=UTC))[1], [])
+    def test_file_plan_covers_every_day_first_then_adds_hours(self):
+        days = (END - START).days
+        self.assertEqual(days, 76)
+        plan = m.gkg_plan(START, END, 160)
+        self.assertEqual(len(plan), 160); self.assertEqual(len(set(plan)), 160)
+        self.assertEqual(plan[0], datetime(2026, 8, 1, 12, tzinfo=UTC)); self.assertEqual(plan[days - 1], datetime(2026, 10, 15, 12, tzinfo=UTC))
+        self.assertEqual(plan[days], datetime(2026, 8, 1, 0, tzinfo=UTC))  # second round: midnight files
+        self.assertEqual({p.date() for p in plan[:days]}, {(START + timedelta(days=i)).date() for i in range(days)})
+        self.assertTrue(all(START <= p < END for p in m.gkg_plan(START, END, 400)))
+        self.assertEqual(m.gkg_url(plan[0]), 'https://data.gdeltproject.org/gdeltv2/20260801120000.gkg.csv.zip')
+        for bad in (0, 401):
+            with self.assertRaises(ValueError): m.gkg_plan(START, END, bad)
 
-    def test_region_mapping_queries_and_round_robin_plan(self):
+    def test_region_mapping(self):
         self.assertEqual(m.regions_from('all'), list(m.REGIONS)); self.assertEqual(m.regions_from(''), list(m.REGIONS))
         self.assertEqual(m.regions_from('oceania, caribbean'), ['oceania', 'caribbean'])
         with self.assertRaises(ValueError): m.regions_from('atlantis')
@@ -50,17 +60,20 @@ class WindowsAndRegions(unittest.TestCase):
             self.assertIn(key, m.REGIONS)
         self.assertEqual(m.REGIONS['east_africa']['balance'], 'af'); self.assertEqual(m.REGIONS['caribbean']['balance'], 'latam')
         self.assertEqual(m.REGIONS['central_asia']['balance'], 'asia'); self.assertEqual(m.REGIONS['oceania']['balance'], 'oc')
-        q = m.query('oceania')
-        self.assertIn('sourcecountry:AS', q); self.assertIn('sourcecountry:NZ', q); self.assertIn('sourcelang:english', q)
-        url = m.gdelt_url('oceania', datetime(2026, 9, 1, tzinfo=UTC), datetime(2026, 9, 4, tzinfo=UTC))
-        self.assertIn('startdatetime=20260901000000', url); self.assertIn('enddatetime=20260903235959', url)
-        self.assertIn('mode=ArtList', url); self.assertIn('format=json', url); self.assertIn('maxrecords=250', url)
-        parts = [(datetime(2026, 9, 1, tzinfo=UTC), datetime(2026, 9, 4, tzinfo=UTC)), (datetime(2026, 9, 4, tzinfo=UTC), datetime(2026, 9, 7, tzinfo=UTC))]
-        plan = m.plan_requests(['oceania', 'caribbean'], parts)
-        self.assertEqual([r for r, *_ in plan], ['oceania', 'caribbean', 'oceania', 'caribbean'])
+        self.assertEqual(m.FIPS_REGION['KE'], 'east_africa'); self.assertEqual(m.FIPS_REGION['AS'], 'oceania')
+        self.assertEqual(m.FIPS_REGION['JM'], 'caribbean'); self.assertNotIn('US', m.FIPS_REGION)
+        codes = [c for r in m.REGIONS.values() for c in r['fips']]; self.assertEqual(len(codes), len(set(codes)))
+
+    def test_model_choice_skips_non_gemini_placeholders(self):
+        live = {'meta': {'model': 'github-ingest'}}
+        self.assertEqual(m.selected_model(None, live, {'gemini_model': 'gemini-3.5-flash-lite', 'gemini_ok': True}), 'gemini-3.5-flash-lite')
+        self.assertEqual(m.selected_model(None, {'meta': {'model': 'gemini-a'}}, {}), 'gemini-a')
+        self.assertEqual(m.selected_model('gemini-b', live, {}), 'gemini-b')
+        with self.assertRaises(ValueError): m.selected_model('github-ingest', live, {})
+        with self.assertRaises(ValueError): m.selected_model(None, live, {'gemini_model': 'gemini-x', 'gemini_ok': False})
 
 
-class GdeltClientTests(unittest.TestCase):
+class GkgClientTests(unittest.TestCase):
     def setUp(self):
         self.dir = tempfile.TemporaryDirectory(); self.cache = Path(self.dir.name); self.clock = Clock(); self.sent = []
     def tearDown(self): self.dir.cleanup()
@@ -69,55 +82,52 @@ class GdeltClientTests(unittest.TestCase):
             self.sent.append((url, self.clock.t)); r = responses.pop(0)
             if isinstance(r, Exception): raise r
             return r
-        return m.GdeltClient(get, self.cache, limit, clock=self.clock, sleep=self.clock.sleep)
+        return m.GkgClient(get, self.cache, limit, clock=self.clock, sleep=self.clock.sleep)
 
-    def test_one_request_every_five_seconds_and_every_response_cached(self):
-        c = self.client([json.dumps(ARTLIST)] * 3)
-        for i in range(3): self.assertEqual(c.fetch(f'https://api.gdeltproject.org/test-only/{i}')[1], 'fetched')
+    def test_downloads_are_spaced_and_parsed_results_cached_for_resume(self):
+        c = self.client([gkg_zip()] * 3)
+        for h in range(3): self.assertEqual(c.fetch(FILE_TIME + timedelta(hours=h))[1], 'fetched')
         gaps = [b - a for (_, a), (_, b) in zip(self.sent, self.sent[1:])]
-        self.assertTrue(all(g >= 5.0 for g in gaps), gaps)
-        self.assertEqual(c.requests, 3); self.assertEqual(len(list(self.cache.glob('*.json'))), 3)
-        # Resume: a new client (next run) answers from disk without any request or sleep.
+        self.assertTrue(all(g >= 2.0 for g in gaps), gaps)
+        self.assertEqual(c.downloads, 3); self.assertEqual(len(list(self.cache.glob('*.json'))), 3)
+        self.assertTrue(self.sent[0][0].startswith('https://data.gdeltproject.org/gdeltv2/20260902120000'))
         again = self.client([])
-        rows, status = again.fetch('https://api.gdeltproject.org/test-only/1')
-        self.assertEqual(status, 'cache'); self.assertEqual(len(rows), len(ARTLIST['articles'])); self.assertEqual(again.requests, 0)
+        rows, status = again.fetch(FILE_TIME)
+        self.assertEqual(status, 'cache'); self.assertEqual(len(rows), 4); self.assertEqual(again.downloads, 0)
 
-    def test_rate_limit_text_and_429_back_off_then_retry(self):
-        c = self.client(['Please limit requests to one every 5 seconds', json.dumps({'articles': []})])
-        self.assertEqual(c.fetch('https://api.gdeltproject.org/test-only/a'), ([], 'fetched'))
-        self.assertEqual(c.rate_limited, 1); self.assertIn(33.0, self.clock.sleeps)
-        self.assertGreaterEqual(self.sent[1][1] - self.sent[0][1], 33.0)
+    def test_missing_files_errors_and_budget(self):
+        c = self.client([http_error('u', 404), b'not a zip', gkg_zip()], limit=3)
+        self.assertEqual(c.fetch(FILE_TIME)[1], 'missing'); self.assertEqual(c.fetch(FILE_TIME + timedelta(hours=1))[1], 'error')
+        self.assertEqual(c.fetch(FILE_TIME + timedelta(hours=2))[1], 'fetched')
+        self.assertEqual(c.fetch(FILE_TIME + timedelta(hours=3))[1], 'gdelt_file_budget_reached')
+        self.assertEqual(c.fetch(FILE_TIME)[1], 'cache')  # the missing file is remembered, not asked again
+        stop = self.client([http_error('u', 503)] * 20, limit=50)
+        outcomes = [stop.fetch(FILE_TIME + timedelta(days=1, hours=h))[1] for h in range(m.ERROR_STOP + 2)]
+        self.assertEqual(outcomes[-1], 'gdelt_download_errors_stop'); self.assertEqual(len(self.sent), 3 + m.ERROR_STOP)
+        with self.assertRaises(ValueError): m.GkgClient(lambda *a, **k: b'', self.cache, 401)
 
-    def test_repeated_rate_limits_stop_discovery_and_nothing_is_cached(self):
-        c = self.client([http_error('u', 429)] * 20, limit=50)
-        outcomes = [c.fetch(f'https://api.gdeltproject.org/test-only/{i}')[1] for i in range(4)]
-        self.assertEqual(outcomes[0], 'rate_limited'); self.assertEqual(outcomes[-1], 'gdelt_rate_limited_stop')
-        self.assertEqual(c.rate_limited, m.RATE_LIMIT_STOP); self.assertEqual(list(self.cache.glob('*.json')), [])
-        self.assertEqual(len(self.sent), m.RATE_LIMIT_STOP)
-
-    def test_request_budget_and_errors(self):
-        c = self.client([json.dumps({}), 'query error text'], limit=2)
-        self.assertEqual(c.fetch('https://api.gdeltproject.org/test-only/a'), ([], 'fetched'))
-        self.assertEqual(c.fetch('https://api.gdeltproject.org/test-only/b'), ([], 'error'))
-        self.assertEqual(c.fetch('https://api.gdeltproject.org/test-only/c'), ([], 'gdelt_request_budget_reached'))
-        with self.assertRaises(ValueError): m.GdeltClient(lambda *a, **k: '', self.cache, 401)
+    def test_only_gdelt_file_host_is_downloaded(self):
+        for url in ('http://data.gdeltproject.org/gdeltv2/x.zip', 'https://example.invalid/x.zip'):
+            with self.assertRaises(ValueError): m.fetch_bytes(url)
 
 
 class DiscoveryTests(unittest.TestCase):
-    def rows(self):
-        return m.parse_articles(ARTLIST['articles'], 'east_africa', datetime(2026, 9, 1, tzinfo=UTC), datetime(2026, 9, 4, tzinfo=UTC))
+    def rows(self): return m.parse_gkg(GKG, FILE_TIME)
 
-    def test_parse_keeps_discovery_fields_and_never_uses_seendate_as_publication(self):
+    def test_parse_keeps_business_articles_in_backfill_regions_and_never_uses_file_time_as_publication(self):
         rows, rejected = self.rows()
-        self.assertEqual(len(rows), 3)
-        self.assertEqual(rejected, {'not_public_https_url': 1, 'not_english': 1, 'invalid_gdelt_record': 1})
-        self.assertEqual(rows[0]['gdelt_seen'], '2026-09-02T08:15:00Z'); self.assertNotIn('published', rows[0])
-        self.assertEqual(rows[0]['gdelt_country'], 'Kenya'); self.assertEqual(rows[0]['feed_region'], 'af')
+        self.assertEqual([r['url'].rsplit('/', 1)[1] for r in rows], ['test-only-shilling', 'test-only-tea', 'test-only-shilling#amp', 'test-only-rba'])
+        self.assertEqual(rejected, {'not_public_https_url': 1, 'not_business_theme': 1, 'outside_backfill_regions': 1,
+                                    'missing_title': 1, 'not_web_article': 1})
+        self.assertEqual(rows[0]['gdelt_seen'], '2026-09-02T12:00:00Z'); self.assertNotIn('published', rows[0])
+        self.assertEqual(rows[0]['gdelt_country'], 'KE'); self.assertEqual(rows[0]['gdelt_region'], 'east_africa')
+        self.assertEqual(rows[0]['feed_region'], 'af'); self.assertEqual(rows[3]['gdelt_region'], 'oceania')
+        self.assertEqual(m.main_country('1#A#AS#x#0#0#1;1#B#KE#x#0#0#1;1#B#KE#x#0#0#1'), 'KE')
 
     def test_dedupe_against_ids_urls_headlines_events_and_earlier_runs(self):
         rows, _ = self.rows()
         fresh, dup = m.dedupe(rows, m.known_keys([], [], [], {}))
-        self.assertEqual(len(fresh), 2); self.assertEqual(dup, {'duplicate_id_or_source_url': 1})  # '#amp' copy
+        self.assertEqual(len(fresh), 3); self.assertEqual(dup, {'duplicate_id_or_source_url': 1})  # '#amp' copy
         first = rows[0]
         cases = [m.known_keys([{'id': m.sid(first['url'])}], [], [], {}),
                  m.known_keys([{'id': 'x', 'source': {'url': first['url'].replace('https://', 'https://www.') + '/'}}], [], [], {}),
@@ -244,7 +254,7 @@ class EndToEndTests(unittest.TestCase):
         raise AssertionError('unexpected Worker read ' + url)
 
     def gdelt(self, url, timeout=None):
-        return json.dumps(ARTLIST) if 'sourcecountry%3AKE' in url and '20260901' in url else json.dumps({'articles': []})
+        return gkg_zip() if '20260902120000' in url else gkg_zip('')
 
     def page(self, url, timeout=None):
         if url.endswith('/robots.txt'): return 'User-agent: *\nAllow: /\n'
@@ -265,7 +275,7 @@ class EndToEndTests(unittest.TestCase):
              patch.object(m.robot, 'photo', side_effect=AssertionError('photo fetch')), \
              patch.dict('os.environ', {'NEWS_INGEST_TOKEN': 'test-only-token'}):
             return m.run('2026-09-01', '2026-09-03', 'east_africa', dry_run, self.out, 'https://worker.fixture.invalid', self.cache,
-                         gemini_calls=3, batch_size=5, gdelt_requests=5, now=NOW, gdelt_get=self.gdelt, page_get=self.page,
+                         gemini_calls=3, batch_size=5, gdelt_files=5, now=NOW, gdelt_get=self.gdelt, page_get=self.page,
                          model_get=self.model, library_push=library_push, sleep=lambda s: None, state_root=self.state)
 
     def test_dry_run_builds_review_artifact_and_ingests_nothing(self):
@@ -284,7 +294,7 @@ class EndToEndTests(unittest.TestCase):
         self.assertNotIn('_feed_description', art); self.assertEqual(report['sample_articles'][0]['id'], art['id'])
         self.assertTrue((self.out/'report.json').exists()); self.assertTrue((self.out/'events/2026-09-02.json').exists())
         # The second (resumed) run reads GDELT from the cache: no new GDELT request.
-        report = self.run_once(True); self.assertEqual(report['gdelt']['requests'], 0); self.assertGreater(report['gdelt']['cache_hits'], 0)
+        report = self.run_once(True); self.assertEqual(report['gdelt']['downloads'], 0); self.assertGreater(report['gdelt']['cache_hits'], 0)
 
     def test_live_run_goes_to_library_and_day_files_never_the_live_feed(self):
         report = self.run_once(False)
