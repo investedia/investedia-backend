@@ -165,11 +165,15 @@ def request(url, data=None, headers=None, timeout=15, raw=False):
     return content if raw else content.decode('utf-8-sig', 'replace')
 
 
-def feed_sources(inventory):
+SOURCE_SETS = {'all': None, 'official-2026-11-11': lambda: {u for u,_,_ in robot.OFFICIAL_REGION_FEEDS_2026_11_11}}  # named sets for --sources
+
+
+def feed_sources(inventory, only=None):
     health = {r['url']: r for r in inventory.get('feeds', [])}
-    if not health: raise ValueError('feed_inventory_required_run_coverage_fetch_first')
+    if not health and only is None: raise ValueError('feed_inventory_required_run_coverage_fetch_first')
     configured = [(u,n,'',r) for u,n,r in robot.REGION_FEEDS]
     configured += [(u,n,h,None) for u,n,h in robot.FEEDS if robot.OFFICIAL_RE.search(n)]
+    if only is not None: configured = [c for c in configured if c[0] in only]  # a named set: feeds added after the last coverage inventory
     seen = set(); enabled = []; skipped = []
     for url,name,hint,region in configured:
         if url in seen: continue
@@ -445,7 +449,7 @@ def archive(rows,base,now):
     events.write_threads(30,now,base=str(base),out=str(base.parent/'threads.json'),reg=robot.R.get())
 
 
-def run(days,dry_run,connections_only,inventory,output,worker,gemini_model=None,gemini_calls=MAX_CALLS,batch_size=MODEL_BATCH):
+def run(days,dry_run,connections_only,inventory,output,worker,gemini_model=None,gemini_calls=MAX_CALLS,batch_size=MODEL_BATCH,sources_set='all'):
     if not 1<=days<=30:raise ValueError('days_must_be_1_to_30')
     if not 1<=gemini_calls<=HARD_CALL_LIMIT:raise ValueError('gemini_calls_must_be_1_to_40')
     if not 1<=batch_size<=40:raise ValueError('batch_size_must_be_1_to_40')
@@ -491,7 +495,7 @@ def run(days,dry_run,connections_only,inventory,output,worker,gemini_model=None,
         missing=[s for s in repair_rows if not s.get('impacts')]
         repairs,checked=repair_existing(repair_rows,by_iso,attempts,budget=budget)
         if not connections_only:
-            sources,skipped=feed_sources(inventory);report['feeds']=[{**s,'status':'skipped_inventory'} for s in skipped]
+            only=SOURCE_SETS[sources_set];sources,skipped=feed_sources(inventory,only() if only else None);report['sources_set']=sources_set;report['feeds']=[{**s,'status':'skipped_inventory'} for s in skipped]
             fetcher=FeedFetcher();raw=[]
             with ThreadPoolExecutor(6) as pool:
                 for rows,meta in pool.map(lambda s:fetcher.one(s,now,days),sources):raw.extend(rows);report['feeds'].append(meta)
@@ -610,7 +614,7 @@ def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--days',type=int,default=7);p.add_argument('--confirm',required=True)
     p.add_argument('--dry-run',choices=['true','false'],default='true');p.add_argument('--connections-only',choices=['true','false'],default='false')
     p.add_argument('--gemini-model',default=os.environ.get('GEMINI_MODEL') or None);p.add_argument('--gemini-calls',type=int,default=MAX_CALLS);p.add_argument('--batch-size',type=int,default=MODEL_BATCH)
-    p.add_argument('--inventory',type=Path,required=True);p.add_argument('--output',type=Path,default=ROOT/'.local/regional-backfill')
+    p.add_argument('--sources',choices=sorted(SOURCE_SETS),default='all');p.add_argument('--inventory',type=Path,required=True);p.add_argument('--output',type=Path,default=ROOT/'.local/regional-backfill')
     a=p.parse_args()
     if a.confirm!='BACKFILL':p.error('confirm_must_equal_BACKFILL')
     if not 1<=a.days<=30:p.error('days_must_be_1_to_30')
@@ -620,7 +624,7 @@ def main():
     missing=[key for key in required if not os.environ.get(key)]
     if missing:p.error('missing_required_settings: '+', '.join(missing))
     try:
-        result=run(a.days,a.dry_run=='true',a.connections_only=='true',read(a.inventory,{}),a.output,os.environ.get('WORKER_URL',''),a.gemini_model,a.gemini_calls,a.batch_size)
+        result=run(a.days,a.dry_run=='true',a.connections_only=='true',read(a.inventory,{}),a.output,os.environ.get('WORKER_URL',''),a.gemini_model,a.gemini_calls,a.batch_size,a.sources)
         print(json.dumps({k:result[k] for k in ('state','new_articles','articles_checked','connections_added','gemini_calls','elapsed_seconds')}));return 0
     except (ValueError,OSError):print('Regional backfill incomplete; inspect the saved report. No success claimed.',file=sys.stderr);return 1
 if __name__=='__main__':sys.exit(main())

@@ -24,6 +24,11 @@ on:
         description: 'New article candidates per call: 1–40'
         default: '25'
         required: true
+      sources:
+        description: 'Feeds to backfill: all, or only the official feeds added on 2026-11-11'
+        type: choice
+        options: [all, official-2026-11-11]
+        default: all
       connections_only:
         description: 'Repair only missing/empty impacts on existing articles'
         type: boolean
@@ -52,6 +57,7 @@ jobs:
           BACKFILL_DAYS_INPUT: ${{ inputs.days }}
           BACKFILL_CALLS_INPUT: ${{ inputs.gemini_calls }}
           BACKFILL_BATCH_INPUT: ${{ inputs.batch_size }}
+          BACKFILL_SOURCES_INPUT: ${{ inputs.sources }}
         run: |
           python -c 'import os; value=int(os.environ["BACKFILL_DAYS_INPUT"]); assert 1 <= value <= 30, "days must be 1–30"; assert 1 <= int(os.environ["BACKFILL_CALLS_INPUT"]) <= 40, "calls must be 1–40"; assert 1 <= int(os.environ["BACKFILL_BATCH_INPUT"]) <= 40, "batch size must be 1–40"'
       - name: Offline recovery tests
@@ -125,6 +131,7 @@ jobs:
           --dry-run "$BACKFILL_DRY_RUN_INPUT" --connections-only "$BACKFILL_CONNECTIONS_INPUT"
           --inventory data/coverage/feed-inventory.json
           --gemini-calls "$BACKFILL_CALLS_INPUT" --batch-size "$BACKFILL_BATCH_INPUT"
+          --sources "$BACKFILL_SOURCES_INPUT"
       - name: Save acknowledged state, including a partially acknowledged run
         if: ${{ !cancelled() && !inputs.dry_run && hashFiles('backend/.local/regional-backfill/acknowledged.json') != '' }}
         uses: actions/cache/save@v4

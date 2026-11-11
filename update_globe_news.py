@@ -316,7 +316,9 @@ REGION_FEEDS = [  # regional business and central-bank feeds: (url, source name,
     ('https://www.hellenicshippingnews.com/feed/', 'Hellenic Shipping News', 'eu'),
     ('https://www.handelsblatt.com/contentexport/feed/finanzen', 'Handelsblatt Global', 'eu'),
     ('https://www.ilsole24ore.com/rss/economia.xml', 'Il Sole 24 Ore', 'eu'),
-    # Official sources added 2026-11-11 (central banks, statistics offices, finance ministries, exchanges). Each was checked live:
+]
+OFFICIAL_REGION_FEEDS_2026_11_11 = [  # official sources added 2026-11-11; kept as a named list so tools/regional-backfill.py can backfill exactly these
+    # Central banks, statistics offices, finance ministries, exchanges. Each was checked live:
     # reachable, valid RSS/Atom, 3+ items, newest item under 30 days. Names match OFFICIAL_RE so official ones also run hourly.
     ('https://www.ons.gov.uk/releasecalendar?rss', 'UK Office for National Statistics', 'eu'),  # release calendar
     ('https://www.gov.uk/government/organisations/hm-treasury.atom', 'HM Treasury', 'eu'),  # UK finance ministry
@@ -335,8 +337,7 @@ REGION_FEEDS = [  # regional business and central-bank feeds: (url, source name,
     ('https://boj.org.jm/news/rss', 'Bank of Jamaica', 'latam'),  # English
     ('https://www.central-bank.org.tt/feed/', 'Central Bank of Trinidad and Tobago', 'latam'),  # English
     ('https://www.brh.ht/feed/', 'Bank of the Republic of Haiti (BRH)', 'latam'),  # French
-    ('https://www.bog.gov.gh/news/rss', 'Bank of Ghana', 'af'),  # English
-    ('https://www.zamstats.gov.zm/rss.xml', 'Zambia Statistics Agency', 'af'),  # English
+    ('https://www.bog.gov.gh/news/feed/', 'Bank of Ghana', 'af'),  # English
     ('https://zimstat.co.zw/feed/', 'Zimbabwe National Statistics Agency (ZimStat)', 'af'),  # English
     ('https://www.centralbank.org.sz/feed/', 'Central Bank of Eswatini', 'af'),  # English
     ('https://www.hcp.ma/xml/atom.xml', 'Morocco Statistics (Haut-Commissariat au Plan)', 'af'),  # French
@@ -351,6 +352,8 @@ REGION_FEEDS = [  # regional business and central-bank feeds: (url, source name,
     ('https://www.pbs.gov.pk/feed/', 'Pakistan Bureau of Statistics', 'asia'),  # English
     ('https://www.cbsl.gov.lk/en/rss.xml', 'Central Bank of Sri Lanka', 'asia'),  # English
 ]
+REGION_FEEDS += OFFICIAL_REGION_FEEDS_2026_11_11
+
 REGION_RESERVE, REGION_EACH = 100, 16  # of the 200 candidates sent to the editor, up to 100 are held for region-tagged feeds (16 per region at most)
 CORE_FIRST = 80  # up to 80 of the 200 slots go first to the best-scored non-regional candidates (wires, official, global publishers)
 SOURCE_MAX = 25  # no single source may fill more than 25 of the 200 editor slots (Investing.com was ~24% of all articles)
