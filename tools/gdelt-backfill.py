@@ -572,7 +572,18 @@ def provenance(story, original, now):
     return story
 
 
-def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH, deadline=None, workers=8, translator=None):
+def topic_photo(topic, seed, stories):
+    """The live robot's Pixabay topic photo (licensed, credited), only from the photo pool already published:
+    no new downloads (PIXABAY_KEY is never used here), so every file already exists on the site."""
+    saved = robot.PIXABAY
+    robot.PIXABAY = ''
+    try: img = robot.photo(topic, seed, list(stories))
+    finally: robot.PIXABAY = saved
+    if img and img.get('kind') == 'topic' and img.get('source') == 'Pixabay' and img.get('file'): return img
+    return None
+
+
+def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH, deadline=None, workers=8, translator=None, photos=True):
     """Enrich lazily, one model batch at a time; stop when the call budget, deadline or rows run out."""
     if not 1 <= batch_size <= 40: raise ValueError('batch_size_must_be_1_to_40')
     box, by_iso, sym = ref
@@ -608,13 +619,28 @@ def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH
             budget.context = {'purpose': 'gdelt_backfill', 'input_candidates': len(part),
                               'by_gdelt_region': dict(Counter(c['gdelt_region'] for c in part))}
             robot.status['gemini_ok'] = False
+            picks, writer = [], robot.gemini
+            def capture(prompt):
+                result = writer(prompt); picks.append(result); return result
+            robot.gemini = capture
             try: got = robot.pick_stories(part, box, by_iso, sym, set(by_iso), len(part), preserve_source=True, feed_only=True, backfill=True)
             except BudgetExceeded: break
+            finally: robot.gemini = writer
             if not robot.status.get('gemini_ok'): break
             lookup = {sid(c['url']): c for c in part}
+            topics = {}
+            for p in (picks[-1] if picks and isinstance(picks[-1], list) else []):
+                mem = p.get('members') if isinstance(p, dict) else None
+                if isinstance(mem, list) and len(mem) == 1 and isinstance(mem[0], int) and 0 <= mem[0] < len(part):
+                    topics[sid(part[mem[0]]['url'])] = p.get('photo')
             for s in got:
                 if s['id'] not in lookup: raise ValueError('source_identity_changed')
-                out.append(provenance(s, lookup[s['id']], now))
+                story = provenance(s, lookup[s['id']], now)
+                if photos:
+                    img = topic_photo(topics.get(s['id']), s['id'], out)
+                    if img: story['image'] = img
+                    else: rejected['no_topic_photo'] += 1
+                out.append(story)
             sent.extend(part)
     rejected['not_reached_budget_or_page_cap'] += max(0, len(rows) - cursor)
     return out, sent, rejected, judged
@@ -624,7 +650,8 @@ def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH
 def library_row(s):
     loc = s.get('location') or {}
     return {'id': s['id'], 'h': s['headline'], 'c': s.get('category') or 'news', 't': s['published_at'], 's': (s.get('source') or {}).get('name'),
-            'n': loc.get('country'), 'g': loc.get('region'), 'k': len(s.get('sources') or []) or 1}
+            'n': loc.get('country'), 'g': loc.get('region'), 'k': len(s.get('sources') or []) or 1,
+            **({'i': s['image']['file']} if (s.get('image') or {}).get('file') else {})}
 
 
 def library_days(stories):
@@ -677,7 +704,8 @@ def valid_backfilled(s, now):
     return (s.get('backfilled') is True and p.get('version') == VERSION and p.get('original_published_at') == s['published_at']
             and day(ALLOWED_START) <= t < day(ALLOWED_END) + timedelta(days=1) and t <= now
             and urlsplit((s.get('source') or {}).get('url', '')).scheme == 'https' and (s.get('source') or {}).get('name')
-            and not any(i.get('scorable') is True for i in s.get('impacts') or []) and not s.get('image'))
+            and not any(i.get('scorable') is True for i in s.get('impacts') or [])
+            and (not s.get('image') or (s['image'].get('kind') == 'topic' and s['image'].get('source') == 'Pixabay')))
 
 
 def ingest_artifact(output, worker, state_root, now, library_push=None):
@@ -730,7 +758,7 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
               'rules': ['GDELT GKG files used for discovery only; their crawl time is never the publication date',
                         'publication time and description come from the publisher page metadata',
                         'robots.txt honoured; paywalled publishers/pages skipped; no article body stored',
-                        'same robot prompt and validation as regional-backfill; no photos',
+                        'same robot prompt and validation as regional-backfill; Pixabay topic photos from the published pool only (owner request)',
                         'never sent to the live 48-hour feed']}
     ref = []
     budget = Budget(recording(model_get or regional.request, ref), gemini_calls, deadline=deadline, sleep=sleep); ref.append(budget)
@@ -816,8 +844,9 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
                       rejections={'gdelt_records': dict(parse_rejected), 'dedupe': dict(dup), 'pages_and_rules': dict(enrich_rejected), **dict(errors)},
                       impact_rejections={k: v for k, v in reasons.items() if v},
                       sample_articles=[{'id': s['id'], 'headline': s['headline'], 'summary': s.get('summary'), 'published_at': s['published_at'],
-                                        'country': s['location']['country'], 'source': s['source'],
+                                        'country': s['location']['country'], 'source': s['source'], 'image': (s.get('image') or {}).get('file'),
                                         **({'original_headline': s['original_headline'], 'language': s['source_language']} if s.get('headline_translated') else {})} for s in new[:30]],
+                      with_topic_photo=sum(bool(s.get('image')) for s in new),
                       translated_articles=sum(bool(s.get('headline_translated')) for s in new),
                       translated_samples=[{'headline': s['headline'], 'original_headline': s['original_headline'], 'language': s['source_language'],
                                            'summary': s.get('summary'), 'published_at': s['published_at'], 'country': s['location']['country'],
