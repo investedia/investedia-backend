@@ -129,7 +129,7 @@ export async function handleNews(env, now = Date.now()) {
   dated.sort((a, b) => b.time - a.time);
   const stories = dated.map(entry => entry.story);
   let connectionsGenerated=null;try{connectionsGenerated=JSON.parse(await env.PRICES.get('connections:meta'))?.generated_at||null;}catch{}
-  return { status: 200, body: envelope({ stories }, { provider: PROVIDER, snapT: st.t, now, ttl: 30, extra: { count: stories.length, connections_generated_at:connectionsGenerated, model: st.model || null, note: 'newest AI-enriched priority articles; the client merges them with the static broad feed' } }) };
+  return { status: 200, body: envelope({ stories }, { provider: PROVIDER, snapT: st.t, now, ttl: 30, extra: { count: stories.length, stats: st.stats || null, connections_generated_at:connectionsGenerated, model: st.model || null, note: 'newest AI-enriched priority articles; the client merges them with the static broad feed' } }) };
 }
 // Globe events are a compact view of the same articles: no second pipeline, no extra KV writes.
 export async function handleGlobe(env, now = Date.now()) {
@@ -154,6 +154,14 @@ export function validateIngest(body, max = 80) {
     if (!Number.isFinite(+s.location.lat) || !Number.isFinite(+s.location.lon) || Math.abs(+s.location.lat) > 90 || Math.abs(+s.location.lon) > 180) return 'bad location';
   }
   return null;
+}
+export function mergeStats(cur, add) {
+  const out = {};
+  for (const k of ['articles', 'sources', 'projects']) {
+    const a = Number.isSafeInteger(cur?.[k]) && cur[k] >= 0 ? cur[k] : null, b = Number.isSafeInteger(add?.[k]) && add[k] >= 0 ? add[k] : null;
+    if (a != null || b != null) out[k] = Math.max(a ?? 0, b ?? 0);
+  }
+  return Object.keys(out).length ? out : null;
 }
 export async function ingestNews(req, env, now = Date.now()) {
   if (!env.INGEST_TOKEN) return { status: 503, body: { error: 'ingest not configured' } };
@@ -186,8 +194,11 @@ export async function ingestNews(req, env, now = Date.now()) {
   const stories = merged.filter(entry => entry.time >= cutoff)
     .sort((a, b) => (a.story.published_at < b.story.published_at ? 1 : -1))
     .slice(0, KEEP_ROLLING).map(entry => entry.story);
-  if (cur && Array.isArray(cur.stories) && JSON.stringify(cur.stories) === JSON.stringify(stories) && (cur.generated_at || null) === (body.generated_at || null)) return { status: 200, body: { ok: true, written: false, reason: 'unchanged' } };
-  await env.PRICES.put('news', JSON.stringify({ t: generated, ingested_at: now, stories, model: 'github-ingest', generated_at: body.generated_at || null }));
+  // Homepage totals (every article ever published, distinct sources, projects on the globe), counted by the news robot.
+  // Totals only ever grow, so a robot run with incomplete local history cannot make them drop.
+  const stats = mergeStats(cur?.stats, body.stats);
+  if (cur && JSON.stringify(cur.stats || null) === JSON.stringify(stats) && Array.isArray(cur.stories) && JSON.stringify(cur.stories) === JSON.stringify(stories) && (cur.generated_at || null) === (body.generated_at || null)) return { status: 200, body: { ok: true, written: false, reason: 'unchanged' } };
+  await env.PRICES.put('news', JSON.stringify({ t: generated, ingested_at: now, stories, model: 'github-ingest', generated_at: body.generated_at || null, stats }));
   return { status: 200, body: { ok: true, written: true, count: stories.length } };
 }
 

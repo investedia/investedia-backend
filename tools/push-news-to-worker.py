@@ -4,12 +4,28 @@ from pathlib import Path
 from urllib.parse import urlsplit
 ROOT=Path(__file__).resolve().parents[1]
 
+def site_stats(root=ROOT):
+    """Homepage totals: every article in the robot's day files (assets/globe/events), the distinct news sources behind them,
+    and the projects on the globe. Missing inputs are left out, never guessed."""
+    ids,sources=set(),set()
+    for f in sorted((root/'assets/globe/events').glob('*.json')):
+        try:d=json.loads(f.read_text(encoding='utf-8'))
+        except Exception:continue
+        for e in d.get('events',[]):
+            if e.get('id'):ids.add(e['id'])
+            if e.get('src'):sources.add(str(e['src']).strip().lower())
+    out={}
+    if ids:out['articles']=len(ids);out['sources']=len(sources)
+    try:out['projects']=len(json.loads((root/'assets/globe/projects.json').read_text(encoding='utf-8'))['projects'])
+    except Exception:pass
+    return out
+
 def payload(path=None,limit=None):
     limit=limit or min(80,int(os.environ.get('PUSH_LIMIT') or 40))
     with open(path or ROOT/'assets/globe/news-live.json',encoding='utf-8') as source:d=json.load(source)
     st=sorted(d.get('stories',[]),key=lambda s:s['published_at'],reverse=True)[:limit]
     if not st:raise ValueError('no articles to send')
-    return {'generated_at':d.get('updated_at'),'stories':st}
+    return {'generated_at':d.get('updated_at'),'stories':st,'stats':site_stats()}
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self,req,fp,code,msg,headers,newurl):
