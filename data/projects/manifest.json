@@ -136,12 +136,12 @@
   {
    "source": "gem",
    "enabled": false,
-   "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion"
+   "reason": "Owner approved 11 Nov 2026. Blocked: GEM tracker downloads require a request form with personal contact details; no direct file. Owner to request the Global Integrated Power Tracker file and add it to the cache for licence/hash review."
   },
   {
    "source": "world_bank",
    "enabled": false,
-   "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion"
+   "reason": "Owner approved 11 Nov 2026. Checked 11 Nov: Projects API (22,729 projects) returns no precise locations (0 of 500 sampled), so per the precise-site rule nothing goes on the map; country-level listing only if wanted."
   },
   {
    "source": "eia",
