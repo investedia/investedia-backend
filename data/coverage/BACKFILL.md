@@ -221,3 +221,35 @@ per-call context, regional reserves, normal-mode missing-impact repair, source/d
 preservation, inventory/robots exclusions, dedupe,48h routing,80-record batches,
 secret-output guards, immutable cached/article/event fields and idempotence.
 No user interface changes; review artifacts replace UI screenshots for this task.
+
+## Months-back backfill through GDELT (Aug 1 – Oct 15 2026)
+
+Tool `tools/gdelt-backfill.py`, manual workflow **GDELT months-back article backfill (manual)**
+(`.github/workflows/gdelt-backfill.yml`). Not investment advice.
+
+- **Discovery only from GDELT.** GDELT DOC 2.0 (`ArtList`, JSON) is asked for business/economy
+  reporting by publisher country (Middle East, Oceania, Asia, Central Asia, East Africa, Eastern
+  and Southern Europe, Caribbean), in 3-day slices, oldest first. At most one request every
+  5.5 s; every answer is cached on disk (`.local/gdelt-cache`, kept between runs), so a later run
+  resumes without asking again. Repeated "please limit requests" answers stop discovery for that
+  run. GDELT only searches about the last three months, so the oldest days drop out first; the
+  report lists slices that are already out of reach.
+- **Everything published comes from the publisher.** For each candidate the publisher's page is
+  read only if its robots.txt allows it; known paywalled publishers and pages marked
+  `isAccessibleForFree=false` are skipped. The original publication time is the page's own
+  `article:published_time` / `datePublished` (never GDELT's crawl date; a time without a time zone
+  is rejected). The description given to the model is the page's own meta description, as the broad
+  robot already does. No article body is stored.
+- **Same generation as regional backfill:** the existing robot prompt with
+  `preserve_source`, `feed_only` and `backfill`, the same validation and evidence rules, no photos,
+  and a fixed Gemini budget (default 40 calls, at most 80).
+- **Never the live feed.** Articles keep their original `published_at`, carry `backfilled: true`
+  and `backfill_provenance.version = gdelt-backfill-v1`. With `dry_run=false` a second, short job
+  (holding the `news-production` lock) merges them into the Worker article library
+  (`/v1/ingest/library`, existing rows of each day are kept) and into the shared day files
+  (`assets/globe/events`), which feed the homepage totals. The Worker's 30-day history path is not
+  used: it rejects anything older than 30 days.
+
+Owner steps: merge the draft PR; run the workflow with `confirm=BACKFILL`, `dry_run=true`; open
+the `gdelt-backfill-review` artifact (`report.json`: counts per region, country and day, 30 sample
+articles, rejection reasons); if it looks right, run again with `dry_run=false`.
