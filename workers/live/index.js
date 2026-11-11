@@ -26,6 +26,7 @@ async function snapshot() {
 // ---- Non-crypto prices, news and globe: /v1 (see v1/). Provider adapters live in providers/. ----
 import { refresh, handlePrices, handleStatus } from './v1/prices.js';
 import { refreshNews, handleNews, handleGlobe, ingestNews, historyCapabilities } from './v1/news.js';
+import { ingestLibrary, handleLibrary } from './v1/library.js';
 import { handleMarkets } from './v1/markets.js';
 import { ingestCalls, readCalls } from './v1/calls.js';
 import { joinWaitlist } from './v1/waitlist.js';
@@ -82,6 +83,14 @@ export default {
       let r; try { r = await ingestNews(req, env); } catch (e) { console.log(JSON.stringify({ route: 'ingest', error: String(e).slice(0, 200) })); r = { status: 500, body: { error: 'internal' } }; }
       if (r.status === 200 && r.body.written) ctx.waitUntil(Promise.all(['/v1/news', '/v1/globe'].map(path => caches.default.delete(new Request(url.origin + path + '#v1', { method: 'GET' })))));
       return json({}, r.status, r.body);
+    }
+    if (req.method === 'POST' && url.pathname === '/v1/ingest/library') {
+      let r; try { r = await ingestLibrary(req, env); } catch (e) { console.log(JSON.stringify({ route: 'ingest-library', error: String(e).slice(0, 200) })); r = { status: 500, body: { error: 'internal' } }; }
+      return json({}, r.status, r.body);
+    }
+    if (req.method === 'GET' && url.pathname === '/v1/library') {
+      let r; try { r = await handleLibrary(url, env); } catch { r = { status: 500, body: { error: 'internal' } }; }
+      return json(h, r.status, r.body, 'public, max-age=300');
     }
     if (req.method === 'POST' && url.pathname === '/v1/ingest/calls') {
       let r; try { r = await ingestCalls(req, env); } catch (e) { console.log(JSON.stringify({ route: 'ingest-calls', error: String(e).slice(0, 200) })); r = { status: 500, body: { error: 'internal' } }; }
