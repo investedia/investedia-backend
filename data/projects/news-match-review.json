@@ -1,0 +1,10 @@
+{
+  "enabled": false,
+  "dataset_sha256": "45abfa3b14a29c277563c6776415052ff91e7051e6a4d8ecd2d8e6ca01fcc402",
+  "reviewer": null,
+  "checked_at": null,
+  "candidate_matches": 0,
+  "sample": [],
+  "accuracy_pct": null,
+  "reason": "Human review required; no synthetic matches count toward acceptance"
+}

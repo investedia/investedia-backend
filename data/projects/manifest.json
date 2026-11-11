@@ -1,0 +1,52 @@
+{
+  "schema": "investedia.projects.raw-manifest.v1",
+  "build_date": "2026-11-11",
+  "sources": [
+    {
+      "source": "wikidata",
+      "name": "Wikidata (CC0), retained 10 November site snapshot",
+      "enabled": true,
+      "retained_snapshot": true,
+      "file": "cache/wikidata-retained.json",
+      "sha256": "9dd222bd5575c3ce81bec3a6914128054b6682ef4ec5b8f4727cdf8cc19d243e",
+      "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "licence": "CC0 1.0",
+      "checked_at": "2026-11-10"
+    },
+    {
+      "source": "gem",
+      "enabled": false,
+      "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion"
+    },
+    {
+      "source": "world_bank",
+      "enabled": false,
+      "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion"
+    },
+    {
+      "source": "eia",
+      "enabled": false,
+      "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion"
+    },
+    {
+      "source": "nga",
+      "enabled": false,
+      "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion"
+    },
+    {
+      "source": "ourairports",
+      "enabled": false,
+      "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion"
+    },
+    {
+      "source": "wri",
+      "enabled": false,
+      "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion"
+    },
+    {
+      "source": "commons",
+      "enabled": false,
+      "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion"
+    }
+  ]
+}

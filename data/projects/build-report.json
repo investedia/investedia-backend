@@ -1,0 +1,291 @@
+{
+  "build_date": "2026-11-11",
+  "by_country": {
+    "AE": 3,
+    "AM": 1,
+    "AU": 26,
+    "BD": 1,
+    "BE": 2,
+    "BG": 2,
+    "BR": 2,
+    "BY": 1,
+    "CA": 42,
+    "CH": 2,
+    "CL": 6,
+    "CN": 39,
+    "CR": 1,
+    "CZ": 1,
+    "DE": 9,
+    "DJ": 1,
+    "DK": 1,
+    "EG": 1,
+    "ES": 4,
+    "ET": 1,
+    "FI": 1,
+    "FR": 19,
+    "GB": 81,
+    "GE": 1,
+    "GR": 1,
+    "HU": 3,
+    "ID": 5,
+    "IE": 5,
+    "IL": 1,
+    "IN": 18,
+    "IR": 3,
+    "IT": 3,
+    "JO": 2,
+    "JP": 16,
+    "KE": 4,
+    "KP": 2,
+    "KR": 4,
+    "LK": 5,
+    "LT": 3,
+    "LU": 1,
+    "MA": 2,
+    "MN": 3,
+    "MR": 1,
+    "MX": 8,
+    "MY": 2,
+    "MZ": 1,
+    "NA": 1,
+    "NE": 1,
+    "NG": 2,
+    "NL": 4,
+    "NO": 3,
+    "NZ": 32,
+    "PH": 15,
+    "PK": 8,
+    "PL": 9,
+    "PT": 1,
+    "RO": 7,
+    "RS": 2,
+    "RU": 9,
+    "SA": 5,
+    "SE": 8,
+    "SG": 6,
+    "SK": 2,
+    "SN": 1,
+    "TH": 4,
+    "TN": 1,
+    "TO": 1,
+    "TR": 13,
+    "TW": 9,
+    "TZ": 1,
+    "UA": 4,
+    "UG": 1,
+    "US": 129,
+    "UY": 1,
+    "UZ": 1,
+    "VN": 1,
+    "XK": 1,
+    "ZA": 7
+  },
+  "by_source": [
+    {
+      "rows": 635,
+      "source": "wikidata",
+      "state": "retained-unverified"
+    },
+    {
+      "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion",
+      "rows": 0,
+      "source": "gem",
+      "state": "not-ingested"
+    },
+    {
+      "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion",
+      "rows": 0,
+      "source": "world_bank",
+      "state": "not-ingested"
+    },
+    {
+      "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion",
+      "rows": 0,
+      "source": "eia",
+      "state": "not-ingested"
+    },
+    {
+      "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion",
+      "rows": 0,
+      "source": "nga",
+      "state": "not-ingested"
+    },
+    {
+      "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion",
+      "rows": 0,
+      "source": "ourairports",
+      "state": "not-ingested"
+    },
+    {
+      "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion",
+      "rows": 0,
+      "source": "wri",
+      "state": "not-ingested"
+    },
+    {
+      "reason": "Dataset-specific licence, commercial redistribution and primary access pending; no new ingestion",
+      "rows": 0,
+      "source": "commons",
+      "state": "not-ingested"
+    }
+  ],
+  "by_status": {
+    "Not sourced": 513,
+    "On hold": 1,
+    "Operational": 49,
+    "Proposed": 37,
+    "Under construction": 31
+  },
+  "by_type": {
+    "Airports": 0,
+    "Batteries & hydrogen": 0,
+    "Data centres": 0,
+    "Development finance": 0,
+    "Gas & LNG": 0,
+    "High-speed rail": 14,
+    "Hydro energy": 0,
+    "Megaproject": 10,
+    "Metro & urban rail": 0,
+    "Mining": 0,
+    "Nuclear energy": 159,
+    "Oil & gas": 0,
+    "Pipelines": 0,
+    "Ports & logistics": 0,
+    "Real estate": 183,
+    "Semiconductors": 0,
+    "Solar energy": 0,
+    "Water": 0,
+    "Wind energy": 265
+  },
+  "capacity_or_cost_pct": 0.0,
+  "company_link_rejections": {},
+  "company_links": 0,
+  "conflicts": [
+    {
+      "field": "la",
+      "kept": 30.4413,
+      "project": "Q1029360",
+      "rejected": 30.436,
+      "rule": "newer-field-source; ties stable"
+    },
+    {
+      "field": "n",
+      "kept": "Fangjiashan Nuclear Power Plant",
+      "project": "Q1029360",
+      "rejected": "Qinshan Nuclear Power Plant",
+      "rule": "newer-field-source; ties stable"
+    },
+    {
+      "field": "lo",
+      "kept": 120.9418,
+      "project": "Q1029360",
+      "rejected": 120.9581,
+      "rule": "newer-field-source; ties stable"
+    },
+    {
+      "field": "la",
+      "kept": 51.209,
+      "project": "Q54296442",
+      "rejected": 51.2061,
+      "rule": "newer-field-source; ties stable"
+    },
+    {
+      "field": "n",
+      "kept": "Hinkley Point nuclear power stations",
+      "project": "Q54296442",
+      "rejected": "Hinkley Point C nuclear power station",
+      "rule": "newer-field-source; ties stable"
+    },
+    {
+      "field": "lo",
+      "kept": -3.127,
+      "project": "Q54296442",
+      "rejected": -3.1429,
+      "rule": "newer-field-source; ties stable"
+    },
+    {
+      "field": "la",
+      "kept": 51.2699,
+      "project": "Q1739448",
+      "rejected": 51.265,
+      "rule": "newer-field-source; ties stable"
+    },
+    {
+      "field": "n",
+      "kept": "Novovoronezh Nuclear Power Plant",
+      "project": "Q1739448",
+      "rejected": "Novovoronezh Nuclear Power Plant II",
+      "rule": "newer-field-source; ties stable"
+    },
+    {
+      "field": "lo",
+      "kept": 39.1982,
+      "project": "Q1739448",
+      "rejected": 39.2114,
+      "rule": "newer-field-source; ties stable"
+    }
+  ],
+  "country_only": 0,
+  "drops": [
+    {
+      "id": "Q20569290",
+      "reason": "country-not-in-iso",
+      "source": "wikidata"
+    }
+  ],
+  "drops_by_reason": {
+    "country-not-in-iso": 1
+  },
+  "duplicates_merged": 3,
+  "featured_rejected": [],
+  "featured_retained": 4,
+  "featured_reviewed": 0,
+  "linked_projects_by_region": {},
+  "linked_projects_by_type": {},
+  "map_points": 631,
+  "merges": [
+    {
+      "kept": "Q1029360",
+      "merged": "Q1483977"
+    },
+    {
+      "kept": "Q54296442",
+      "merged": "Q5767271"
+    },
+    {
+      "kept": "Q1739448",
+      "merged": "Q835791"
+    }
+  ],
+  "missing_fields": {
+    "aliases": 631,
+    "cap": 631,
+    "cost": 631,
+    "own": 631,
+    "s": 513,
+    "y": 631
+  },
+  "news_match_review": {
+    "accuracy_pct": null,
+    "checked": 0,
+    "correct": 0,
+    "enabled": false,
+    "reason": "100 real matches require human review"
+  },
+  "notice": "Draft artifacts only. Retained data is not new verified coverage. Not investment advice.",
+  "omitted_legacy_inception_years": 111,
+  "ready_for_publication": false,
+  "retained_unverified": 631,
+  "rows_dropped": 1,
+  "schema": "investedia.projects.build-report.v1",
+  "status_pct": 18.7,
+  "targets": {
+    "capacity_or_cost_pct": 40,
+    "featured": 50,
+    "points": 4000,
+    "status_pct": 70,
+    "year_pct": 60
+  },
+  "verified_points": 0,
+  "year_pct": 0.0
+}
