@@ -1,0 +1,135 @@
+{
+  "receipt": {
+    "url": "https://query.wikidata.org/sparql?query=SELECT+%3Fitem+%3Flabel+%3Fdescription+WHERE+%7B+VALUES+%3Fitem+%7B+wd%3AQ44782+wd%3AQ1248784+wd%3AQ12323+wd%3AQ9341055+wd%3AQ11303+wd%3AQ671224+wd%3AQ4168959+%7D+%3Fitem+rdfs%3Alabel+%3Flabel+.+FILTER%28LANG%28%3Flabel%29%3D%22en%22%29+OPTIONAL+%7B+%3Fitem+schema%3Adescription+%3Fdescription+FILTER%28LANG%28%3Fdescription%29%3D%22en%22%29+%7D+%7D&format=json",
+    "retrieved_at": "2026-11-11T19:40:31.191299+00:00",
+    "checked_at": "2026-11-11T19:40:31.191299+00:00",
+    "sha256": "00cc897c3c38a7d9cf3d9dd3180fc6ab6c1fb3659cc25a7bc2479f7f5479c257",
+    "etag": null,
+    "last_modified": null
+  },
+  "results": {
+    "head": {
+      "vars": [
+        "item",
+        "label",
+        "description"
+      ]
+    },
+    "results": {
+      "bindings": [
+        {
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q671224"
+          },
+          "description": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "building or room where computer servers and related equipment are operated"
+          },
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "data center"
+          }
+        },
+        {
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q1248784"
+          },
+          "description": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "location where aircraft take off and land with extended support facilities, mostly for commercial air transport"
+          },
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "airport"
+          }
+        },
+        {
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q4168959"
+          },
+          "description": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "factory where devices such as integrated circuits are manufactured"
+          },
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "semiconductor fabrication plant"
+          }
+        },
+        {
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q9341055"
+          },
+          "description": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "facility where water is treated"
+          },
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "water treatment plant"
+          }
+        },
+        {
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q11303"
+          },
+          "description": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "very tall building"
+          },
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "skyscraper"
+          }
+        },
+        {
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q12323"
+          },
+          "description": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "barrier that impounds water or underground streams"
+          },
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "dam"
+          }
+        },
+        {
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q44782"
+          },
+          "description": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "maritime facility where ships may dock to load and discharge passengers and cargo"
+          },
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "port"
+          }
+        }
+      ]
+    }
+  }
+}

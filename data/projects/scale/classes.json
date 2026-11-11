@@ -43,9 +43,59 @@
       "qid": "Q30565277",
       "type": "Geothermal energy",
       "label": "geothermal power station"
+    },
+    {
+      "key": "ports",
+      "qid": "Q44782",
+      "type": "Ports & logistics",
+      "label": "port",
+      "scope": "Physical site only; current development or source-confirmed completion since 2020. No operating directory import."
+    },
+    {
+      "key": "airports",
+      "qid": "Q1248784",
+      "type": "Airports",
+      "label": "airport",
+      "scope": "Physical site only; current development or source-confirmed completion since 2020. No operating directory import."
+    },
+    {
+      "key": "dam",
+      "qid": "Q12323",
+      "type": "Water",
+      "label": "dam",
+      "scope": "Physical site only; current development or source-confirmed completion since 2020. No operating directory import."
+    },
+    {
+      "key": "water",
+      "qid": "Q9341055",
+      "type": "Water",
+      "label": "water treatment plant",
+      "scope": "Physical site only; current development or source-confirmed completion since 2020. No operating directory import."
+    },
+    {
+      "key": "skyscraper",
+      "qid": "Q11303",
+      "type": "Real estate",
+      "label": "skyscraper",
+      "scope": "Physical site only; current development or source-confirmed completion since 2020. No operating directory import."
+    },
+    {
+      "key": "datacentre",
+      "qid": "Q671224",
+      "type": "Data centres",
+      "label": "data center",
+      "scope": "Physical site only; current development or source-confirmed completion since 2020. No operating directory import."
+    },
+    {
+      "key": "semiconductor",
+      "qid": "Q4168959",
+      "type": "Semiconductors",
+      "label": "semiconductor fabrication plant",
+      "scope": "Physical site only; current development or source-confirmed completion since 2020. No operating directory import."
     }
   ],
   "queued": {
-    "batteries_hydrogen": "No reviewed physical-project class yet; GEM owner files pending"
+    "batteries_hydrogen": "No reviewed physical-project class yet; GEM owner files pending",
+    "rail_metro": "A line coordinate may be a representative route point, not a verified physical development site; await reviewed site/route geometry."
   }
 }

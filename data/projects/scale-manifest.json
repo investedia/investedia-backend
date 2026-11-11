@@ -167,6 +167,167 @@
         "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
         "reviewed_at": "2026-11-11"
       }
+    },
+    {
+      "source": "wikidata",
+      "name": "Wikidata (CC0), current port",
+      "class_key": "ports",
+      "enabled": true,
+      "scale_v1": true,
+      "type": "Ports & logistics",
+      "record_level": "site",
+      "file": "cache/scale-ports.json",
+      "sha256": "d3ef835c2aed95d6bcd85588ea187c5788e25f80f0aada3c12be3bd5eb5e2319",
+      "licence": "CC0 1.0",
+      "checked_at": "2026-11-11",
+      "url": "https://query.wikidata.org/sparql",
+      "licence_review": {
+        "commercial_use": true,
+        "redistribution": true,
+        "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+        "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+        "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+        "reviewed_at": "2026-11-11"
+      }
+    },
+    {
+      "source": "wikidata",
+      "name": "Wikidata (CC0), current airport",
+      "class_key": "airports",
+      "enabled": true,
+      "scale_v1": true,
+      "type": "Airports",
+      "record_level": "site",
+      "file": "cache/scale-airports.json",
+      "sha256": "379d84e3b71eb4b7d5e05ade9b087be61009a39f63556bba2d7405fb0caf4f64",
+      "licence": "CC0 1.0",
+      "checked_at": "2026-11-11",
+      "url": "https://query.wikidata.org/sparql",
+      "licence_review": {
+        "commercial_use": true,
+        "redistribution": true,
+        "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+        "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+        "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+        "reviewed_at": "2026-11-11"
+      }
+    },
+    {
+      "source": "wikidata",
+      "name": "Wikidata (CC0), current dam",
+      "class_key": "dam",
+      "enabled": true,
+      "scale_v1": true,
+      "type": "Water",
+      "record_level": "site",
+      "file": "cache/scale-dam.json",
+      "sha256": "3e7bd1a7da5b6df3cde67ff37537d9b9e8059ca2375691b22711610b2312231f",
+      "licence": "CC0 1.0",
+      "checked_at": "2026-11-11",
+      "url": "https://query.wikidata.org/sparql",
+      "licence_review": {
+        "commercial_use": true,
+        "redistribution": true,
+        "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+        "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+        "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+        "reviewed_at": "2026-11-11"
+      }
+    },
+    {
+      "source": "wikidata",
+      "name": "Wikidata (CC0), current water treatment plant",
+      "class_key": "water",
+      "enabled": true,
+      "scale_v1": true,
+      "type": "Water",
+      "record_level": "site",
+      "file": "cache/scale-water.json",
+      "sha256": "bb93db2cf9acc43879567ce403c7efb8cc5a1763f318806ba85931e27aa0f3fd",
+      "licence": "CC0 1.0",
+      "checked_at": "2026-11-11",
+      "url": "https://query.wikidata.org/sparql",
+      "licence_review": {
+        "commercial_use": true,
+        "redistribution": true,
+        "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+        "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+        "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+        "reviewed_at": "2026-11-11"
+      }
+    },
+    {
+      "source": "wikidata",
+      "name": "Wikidata (CC0), current skyscraper",
+      "class_key": "skyscraper",
+      "enabled": true,
+      "scale_v1": true,
+      "type": "Real estate",
+      "record_level": "site",
+      "file": "cache/scale-skyscraper.json",
+      "sha256": "3c2e0ffba1b1a5d4f87071f35d5c8f553580ceee2d5214b74966807232b18b61",
+      "licence": "CC0 1.0",
+      "checked_at": "2026-11-11",
+      "url": "https://query.wikidata.org/sparql",
+      "licence_review": {
+        "commercial_use": true,
+        "redistribution": true,
+        "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+        "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+        "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+        "reviewed_at": "2026-11-11"
+      }
+    },
+    {
+      "source": "wikidata",
+      "name": "Wikidata (CC0), current data center",
+      "class_key": "datacentre",
+      "enabled": true,
+      "scale_v1": true,
+      "type": "Data centres",
+      "record_level": "site",
+      "file": "cache/scale-datacentre.json",
+      "sha256": "ee1310be5cac433cda501f88ecd588ce7c015abf31af94ab97673b0dcc232e98",
+      "licence": "CC0 1.0",
+      "checked_at": "2026-11-11",
+      "url": "https://query.wikidata.org/sparql",
+      "licence_review": {
+        "commercial_use": true,
+        "redistribution": true,
+        "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+        "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+        "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+        "reviewed_at": "2026-11-11"
+      }
+    },
+    {
+      "source": "wikidata",
+      "name": "Wikidata (CC0), current semiconductor fabrication plant",
+      "class_key": "semiconductor",
+      "enabled": true,
+      "scale_v1": true,
+      "type": "Semiconductors",
+      "record_level": "site",
+      "file": "cache/scale-semiconductor.json",
+      "sha256": "63f7d759e7d829d737d5fc11d2a2d5b2c74612a70aca10168e7f53b837dd88bd",
+      "licence": "CC0 1.0",
+      "checked_at": "2026-11-11",
+      "url": "https://query.wikidata.org/sparql",
+      "licence_review": {
+        "commercial_use": true,
+        "redistribution": true,
+        "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "evidence_file": "evidence/wikidata-licensing-2026-11-11.txt",
+        "sha256": "f371157d3d900fd8fa0c1802e5e4eccb4a577ca1f6a7428609ff8fa2dc3ec185",
+        "reviewer": "Owner-approved source (Wikidata CC0, decision 10 Nov 2026); terms captured by Claude",
+        "reviewed_at": "2026-11-11"
+      }
     }
   ]
 }

@@ -1,6 +1,7 @@
 """Offline fixtures only; synthetic raster bytes do not represent real projects."""
 import copy
 import base64
+import datetime as dt
 import hashlib
 import json
 from pathlib import Path
@@ -136,7 +137,7 @@ class DiscoveryTests(unittest.TestCase):
         client.sparql.return_value=({'results':{'bindings':[{
             'item':{'value':'http://www.wikidata.org/entity/Q123'},
             'image':{'value':'http://commons.wikimedia.org/wiki/Special:FilePath/Fixture.png'}}]}},
-            {'checked_at':'2026-11-11T00:00:00+00:00','sha256':'fixture'})
+            {'checked_at':dt.datetime.now(dt.timezone.utc).isoformat(),'sha256':'fixture'})
         result=discover({'projects':[p]},client)
         self.assertEqual(result['counts']['projects_with_candidates'],1)
         self.assertFalse(result['projects'][0]['images'][0]['licence_inherited_from_wikidata'])

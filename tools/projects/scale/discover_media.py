@@ -61,7 +61,14 @@ def discover(document, client, previous=None, commons=False, limit=500):
     # Only reuse candidates for the identical project identity/location.
     candidates = {r['project']: r for r in (previous or {}).get('projects', [])
                   if r['project'] in by_id and r.get('site_sha256') == site_hash(by_id[r['project']])}
-    pending = [k for k in by_id if k not in candidates or (commons and any(
+    def fresh(candidate):
+        try:
+            stamp = dt.datetime.fromisoformat(candidate['checked_at'])
+            age = (dt.datetime.now(dt.timezone.utc)-stamp).total_seconds()
+            return 0 <= age < 7*86400
+        except (KeyError, ValueError, TypeError):
+            return False
+    pending = [k for k in by_id if k not in candidates or not fresh(candidates[k]) or (commons and any(
         'commons' not in image for image in candidates[k].get('images', [])))]
     deferred = None
     try:
@@ -103,7 +110,7 @@ def discover(document, client, previous=None, commons=False, limit=500):
         for image in candidate['images']:
             if re.search(r'\b(model|design|rendering|impression)\b', image['title'], re.I):
                 image['review_warnings'] = ['possible-model-or-rendering-not-a-site-photo']
-    completed = [k for k in by_id if k in candidates and (not commons or all(
+    completed = [k for k in by_id if k in candidates and fresh(candidates[k]) and (not commons or all(
         'commons' in image for image in candidates[k]['images']))]
     return {'schema': 'investedia.projects.media-candidates.v1',
             'checked_at': dt.datetime.now(dt.timezone.utc).isoformat(),

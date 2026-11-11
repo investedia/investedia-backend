@@ -104,6 +104,77 @@
       "y": 2020
     },
     {
+      "c": "Pakistan",
+      "cc": "PK",
+      "coordinate_precision": 1e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "In development",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(67.6565756 24.1030203)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P5817",
+          "value": "proposed building or structure"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q104881147"
+      },
+      "k": "Q104881147",
+      "la": 24.1030203,
+      "lo": 67.6565756,
+      "n": "Sindh Barrage",
+      "own": [
+        {
+          "name": "Water & Power Development Authority",
+          "qid": "Q7973437",
+          "role": "operator"
+        }
+      ],
+      "record_level": "site",
+      "s": "Proposed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q104881147"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q104881147",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
       "c": "Croatia",
       "cap": {
         "unit": "megawatt",
@@ -261,6 +332,61 @@
       ],
       "status_source": "https://www.wikidata.org/wiki/Q106645616",
       "t": "Solar energy",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "Brazil",
+      "cc": "BR",
+      "coordinate_precision": 1e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(-46.7119 -23.62932)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q106779205"
+      },
+      "k": "Q106779205",
+      "la": -23.62932,
+      "lo": -46.7119,
+      "n": "Alto das Nações",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q106779205"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q106779205",
+      "t": "Real estate",
       "upd": "2026-11-11",
       "validation_status": "verified"
     },
@@ -769,6 +895,174 @@
       "validation_status": "verified"
     },
     {
+      "c": "People's Republic of China",
+      "cc": "CN",
+      "completion_date": "2023",
+      "coordinate_precision": 1e-06,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2023",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2023-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(113.965341666 22.526908333)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2023-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q109039173"
+      },
+      "k": "Q109039173",
+      "la": 22.526908333,
+      "lo": 113.965341666,
+      "n": "Huiyun Center",
+      "own": [
+        {
+          "name": "Vanke",
+          "qid": "Q861340",
+          "role": "owner"
+        }
+      ],
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q109039173"
+        }
+      ],
+      "status_date": "2023",
+      "status_source": "https://www.wikidata.org/wiki/Q109039173",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2023
+    },
+    {
+      "c": "Pakistan",
+      "cap": {
+        "unit": "megawatt",
+        "value": 0.5
+      },
+      "cc": "PK",
+      "coordinate_precision": 1e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "In development",
+      "evidence": {
+        "cap": {
+          "property": "P2109",
+          "unit": "megawatt",
+          "value": "0.5"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(74.040550207 32.929602671)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P5817",
+          "value": "proposed building or structure"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q109255048"
+      },
+      "k": "Q109255048",
+      "la": 32.929602671,
+      "lo": 74.040550207,
+      "n": "Bhimber Dam",
+      "own": [
+        {
+          "name": "Water & Power Development Authority",
+          "qid": "Q7973437",
+          "role": "operator"
+        }
+      ],
+      "record_level": "site",
+      "s": "Proposed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cap",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q109255048"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q109255048",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
       "aliases": [
         "San'ao Nuclear Power Plant",
         "Sanaocun nuclear power plant"
@@ -843,6 +1137,255 @@
       "t": "Nuclear energy",
       "upd": "2026-11-11",
       "validation_status": "verified"
+    },
+    {
+      "c": "Japan",
+      "cc": "JP",
+      "completion_date": "2023",
+      "coordinate_precision": 0.0001,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2023",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2023-04-14T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(139.7003756 35.6958971)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2023-04-14T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q109595002"
+      },
+      "k": "Q109595002",
+      "la": 35.6958971,
+      "lo": 139.7003756,
+      "n": "Tokyu Kabukicho Tower",
+      "own": [
+        {
+          "name": "Tokyu",
+          "qid": "Q1332242",
+          "role": "owner"
+        }
+      ],
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q109595002"
+        }
+      ],
+      "status_date": "2023",
+      "status_source": "https://www.wikidata.org/wiki/Q109595002",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2023
+    },
+    {
+      "aliases": [
+        "JPMorgan Chase Building"
+      ],
+      "c": "United States",
+      "cc": "US",
+      "completion_date": "2025",
+      "coordinate_precision": 0.0001,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2025",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2025-10-21T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(-73.9754 40.7558)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2025-10-21T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q109648853"
+      },
+      "k": "Q109648853",
+      "la": 40.7558,
+      "lo": -73.9754,
+      "n": "270 Park Avenue",
+      "own": [
+        {
+          "name": "LA Holdings",
+          "qid": "Q11347681",
+          "role": "owner"
+        }
+      ],
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q109648853"
+        }
+      ],
+      "status_date": "2025",
+      "status_source": "https://www.wikidata.org/wiki/Q109648853",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2025
+    },
+    {
+      "c": "Japan",
+      "cc": "JP",
+      "completion_date": "2023",
+      "coordinate_precision": 1e-07,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2023",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2023-11-24T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(139.740386009 35.660992329)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "in use"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2023-11-24T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q109703244"
+      },
+      "k": "Q109703244",
+      "la": 35.660992329,
+      "lo": 139.740386009,
+      "n": "Azabudai Hills Mori JP Tower",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q109703244"
+        }
+      ],
+      "status_date": "2023",
+      "status_source": "https://www.wikidata.org/wiki/Q109703244",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2023
     },
     {
       "c": "Norway",
@@ -2086,6 +2629,77 @@
       "validation_status": "verified"
     },
     {
+      "c": "Japan",
+      "cc": "JP",
+      "completion_date": "2021",
+      "coordinate_precision": 2.7777777777778e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2021",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2021-11-27T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(137.386944444 34.762666666)"
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2021-11-27T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q110787967"
+      },
+      "k": "Q110787967",
+      "la": 34.762666666,
+      "lo": 137.386944444,
+      "n": "emCAMPUS",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q110787967"
+        }
+      ],
+      "status_date": "2021",
+      "status_source": "https://www.wikidata.org/wiki/Q110787967",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2021
+    },
+    {
       "aliases": [
         "EnBW-Solarpark Gottesgabe",
         "Solarpark Gottesgabe"
@@ -2448,6 +3062,298 @@
       "validation_status": "verified"
     },
     {
+      "aliases": [
+        "2 WTC",
+        "200 Greenwich Street",
+        "New Two World Trade Center",
+        "Two World Trade Center",
+        "Two World Trade Center, 2 WTC"
+      ],
+      "c": "United States",
+      "cc": "US",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(-74.011111111 40.712222222)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q1127212"
+      },
+      "k": "Q1127212",
+      "la": 40.712222222,
+      "lo": -74.011111111,
+      "n": "2 World Trade Center",
+      "own": [
+        {
+          "name": "Port Authority of New York and New Jersey",
+          "qid": "Q908666",
+          "role": "owner"
+        }
+      ],
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q1127212"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q1127212",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "Japan",
+      "cc": "JP",
+      "completion_date": "2023",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2023",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P729",
+          "raw": "2023-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(136.862222222 35.779444444)"
+        },
+        "s": {
+          "property": "P729",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P729",
+          "raw": "2023-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q112837456"
+      },
+      "k": "Q112837456",
+      "la": 35.779444444,
+      "lo": 136.862222222,
+      "n": "Uchigatani Dam",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q112837456"
+        }
+      ],
+      "status_date": "2023",
+      "status_source": "https://www.wikidata.org/wiki/Q112837456",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2023
+    },
+    {
+      "c": "Japan",
+      "cc": "JP",
+      "completion_date": "2021",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2021",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P729",
+          "raw": "2021-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(142.386111111 42.680277777)"
+        },
+        "s": {
+          "property": "P729",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P729",
+          "raw": "2021-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q113189821"
+      },
+      "k": "Q113189821",
+      "la": 42.680277777,
+      "lo": 142.386111111,
+      "n": "Biraotori Dam",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q113189821"
+        }
+      ],
+      "status_date": "2021",
+      "status_source": "https://www.wikidata.org/wiki/Q113189821",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2021
+    },
+    {
+      "c": "Japan",
+      "cc": "JP",
+      "completion_date": "2023",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2023",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P729",
+          "raw": "2023-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(141.986388888 43.278055555)"
+        },
+        "s": {
+          "property": "P729",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P729",
+          "raw": "2023-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q113379961"
+      },
+      "k": "Q113379961",
+      "la": 43.278055555,
+      "lo": 141.986388888,
+      "n": "Mikasabonbetsu Dam",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q113379961"
+        }
+      ],
+      "status_date": "2023",
+      "status_source": "https://www.wikidata.org/wiki/Q113379961",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2023
+    },
+    {
       "c": "Norway",
       "cc": "NO",
       "completion_date": "2022",
@@ -2616,6 +3522,162 @@
       "y": 2023
     },
     {
+      "c": "Pakistan",
+      "cap": {
+        "unit": "megawatt",
+        "value": 4500.0
+      },
+      "cc": "PK",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "cap": {
+          "property": "P2109",
+          "unit": "megawatt",
+          "value": "4500"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(73.739166666 35.519444444)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q1140572"
+      },
+      "k": "Q1140572",
+      "la": 35.519444444,
+      "lo": 73.739166666,
+      "n": "Diamer-Bhasha Dam",
+      "own": [
+        {
+          "name": "Water & Power Development Authority",
+          "qid": "Q7973437",
+          "role": "operator"
+        }
+      ],
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cap",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q1140572"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q1140572",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "aliases": [
+        "Mogami Ogunigawa Dam"
+      ],
+      "c": "Japan",
+      "cc": "JP",
+      "completion_date": "2020",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2020",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P729",
+          "raw": "2020-03-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(140.575833333 38.701388888)"
+        },
+        "s": {
+          "property": "P729",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P729",
+          "raw": "2020-03-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q11515441"
+      },
+      "k": "Q11515441",
+      "la": 38.701388888,
+      "lo": 140.575833333,
+      "n": "Mogamiogunigawa Dam",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q11515441"
+        }
+      ],
+      "status_date": "2020",
+      "status_source": "https://www.wikidata.org/wiki/Q11515441",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2020
+    },
+    {
       "c": "Sweden",
       "cap": {
         "unit": "megawatt",
@@ -2711,6 +3773,159 @@
       "upd": "2026-11-11",
       "validation_status": "verified",
       "y": 2022
+    },
+    {
+      "aliases": [
+        "Central Bank Museum Garden",
+        "Markazi Bank Museum Garden"
+      ],
+      "c": "Iran",
+      "cc": "IR",
+      "completion_date": "2021",
+      "coordinate_precision": 2.7777777777778e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2021",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2021-03-08T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(51.429305555 35.756583333)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2021-03-08T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q117070507"
+      },
+      "k": "Q117070507",
+      "la": 35.756583333,
+      "lo": 51.429305555,
+      "n": "Bank Markazi Tower (Abbas Abad)",
+      "own": [
+        {
+          "name": "Central Bank of Iran",
+          "qid": "Q1261157",
+          "role": "owner"
+        }
+      ],
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q117070507"
+        }
+      ],
+      "status_date": "2021",
+      "status_source": "https://www.wikidata.org/wiki/Q117070507",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2021
+    },
+    {
+      "aliases": [
+        "Al Mukaab",
+        "Al-Mukaab",
+        "AlMukaab"
+      ],
+      "c": "Saudi Arabia",
+      "cc": "SA",
+      "coordinate_precision": 1e-06,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(46.569226 24.808118)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q117289908"
+      },
+      "k": "Q117289908",
+      "la": 24.808118,
+      "lo": 46.569226,
+      "n": "Mukaab",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q117289908"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q117289908",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
     },
     {
       "c": "United Kingdom",
@@ -3084,6 +4299,71 @@
       "validation_status": "verified"
     },
     {
+      "c": "People's Republic of China",
+      "cap": {
+        "unit": "megawatt",
+        "value": 2200.0
+      },
+      "cc": "CN",
+      "coordinate_precision": 1e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "cap": {
+          "property": "P2109",
+          "unit": "megawatt",
+          "value": "2200"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(100.6923417 34.67262222)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q11987730"
+      },
+      "k": "Q11987730",
+      "la": 34.67262222,
+      "lo": 100.6923417,
+      "n": "Maerdang Dam",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cap",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q11987730"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q11987730",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
       "c": "India",
       "cc": "IN",
       "completion_date": "2023",
@@ -3174,6 +4454,103 @@
       "upd": "2026-11-11",
       "validation_status": "verified",
       "y": 2023
+    },
+    {
+      "c": "People's Republic of China",
+      "cap": {
+        "unit": "megawatt",
+        "value": 1500.0
+      },
+      "cc": "CN",
+      "completion_date": "2021",
+      "coordinate_precision": 0.000277778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2021",
+      "evidence": {
+        "cap": {
+          "property": "P2109",
+          "unit": "megawatt",
+          "value": "1500"
+        },
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P729",
+          "raw": "2021-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(101.2008726 28.6509856)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P729",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P729",
+          "raw": "2021-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q12010933"
+      },
+      "k": "Q12010933",
+      "la": 28.6509856,
+      "lo": 101.2008726,
+      "n": "Yangfanggou Dam",
+      "own": [
+        {
+          "name": "Yalong Hydro",
+          "qid": "Q107518803",
+          "role": "owner"
+        }
+      ],
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cap",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q12010933"
+        }
+      ],
+      "status_date": "2021",
+      "status_source": "https://www.wikidata.org/wiki/Q12010933",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2021
     },
     {
       "c": "New Zealand",
@@ -3282,6 +4659,215 @@
       ],
       "status_source": "https://www.wikidata.org/wiki/Q121854838",
       "t": "Wind energy",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "Indonesia",
+      "cc": "ID",
+      "completion_date": "2024",
+      "coordinate_precision": 1e-06,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2024",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2024-08-29T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(108.393048 -7.361712)"
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2024-08-29T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q125680902"
+      },
+      "k": "Q125680902",
+      "la": -7.361712,
+      "lo": 108.393048,
+      "n": "Leuwikeris Dam",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q125680902"
+        }
+      ],
+      "status_date": "2024",
+      "status_source": "https://www.wikidata.org/wiki/Q125680902",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2024
+    },
+    {
+      "aliases": [
+        "Ellinikon Tower",
+        "Hellinikon Marina Residential Tower",
+        "Marina Tower"
+      ],
+      "c": "Greece",
+      "cc": "GR",
+      "coordinate_precision": 1e-06,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(23.72685 37.88284)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q126366817"
+      },
+      "k": "Q126366817",
+      "la": 37.88284,
+      "lo": 23.72685,
+      "n": "Riviera Tower",
+      "own": [
+        {
+          "name": "Lamda Development",
+          "qid": "Q107444864",
+          "role": "owner"
+        }
+      ],
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q126366817"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q126366817",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "aliases": [
+        "Haim-Moshe Shapira",
+        "Shapira Towers",
+        "Together Towers"
+      ],
+      "c": "Israel",
+      "cc": "IL",
+      "coordinate_precision": 1e-08,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(34.645013065 31.799617412)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q126708670"
+      },
+      "k": "Q126708670",
+      "la": 31.799617412,
+      "lo": 34.645013065,
+      "n": "Yahad Towers",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q126708670"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q126708670",
+      "t": "Real estate",
       "upd": "2026-11-11",
       "validation_status": "verified"
     },
@@ -3722,6 +5308,124 @@
       "validation_status": "verified"
     },
     {
+      "aliases": [
+        "Lev Sharbat"
+      ],
+      "c": "Israel",
+      "cc": "IL",
+      "coordinate_precision": 1e-08,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(34.65893393 31.808523514)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q130355083"
+      },
+      "k": "Q130355083",
+      "la": 31.808523514,
+      "lo": 34.65893393,
+      "n": "Lev Ashdod",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q130355083"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q130355083",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "aliases": [
+        "Zarfati Towers"
+      ],
+      "c": "Israel",
+      "cc": "IL",
+      "coordinate_precision": 1e-08,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(34.660271829 31.808008435)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q130355102"
+      },
+      "k": "Q130355102",
+      "la": 31.808008435,
+      "lo": 34.660271829,
+      "n": "Tzarfati Towers",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q130355102"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q130355102",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
       "c": "Vietnam",
       "cc": "VN",
       "coordinate_precision": 0.000277778,
@@ -3773,6 +5477,180 @@
       ],
       "status_source": "https://www.wikidata.org/wiki/Q130358624",
       "t": "Coal energy",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "aliases": [
+        "Harmony Ashdod",
+        "Harmony Towers"
+      ],
+      "c": "Israel",
+      "cc": "IL",
+      "coordinate_precision": 1e-08,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(34.645013065 31.799617412)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q130360354"
+      },
+      "k": "Q130360354",
+      "la": 31.799617412,
+      "lo": 34.645013065,
+      "n": "Dimri Harmony",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q130360354"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q130360354",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "Israel",
+      "cc": "IL",
+      "coordinate_precision": 1e-08,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(34.650844673 31.811856232)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q130368653"
+      },
+      "k": "Q130368653",
+      "la": 31.811856232,
+      "lo": 34.650844673,
+      "n": "Aqua Park",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q130368653"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q130368653",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "aliases": [
+        "North Star"
+      ],
+      "c": "Israel",
+      "cc": "IL",
+      "coordinate_precision": 2.7777777777778e-08,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(34.652717119 31.810973561)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q130368955"
+      },
+      "k": "Q130368955",
+      "la": 31.810973561,
+      "lo": 34.652717119,
+      "n": "Kohav HaTzafon",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q130368955"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q130368955",
+      "t": "Real estate",
       "upd": "2026-11-11",
       "validation_status": "verified"
     },
@@ -4205,6 +6083,153 @@
       "validation_status": "verified"
     },
     {
+      "c": "United States",
+      "cc": "US",
+      "completion_date": "2022",
+      "coordinate_precision": 1e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2022",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2022-11-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(-86.773686375 36.160290221)"
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2022-11-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q130641830"
+      },
+      "k": "Q130641830",
+      "la": 36.160290221,
+      "lo": -86.773686375,
+      "n": "Four Seasons Hotel and Residences",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q130641830"
+        }
+      ],
+      "status_date": "2022",
+      "status_source": "https://www.wikidata.org/wiki/Q130641830",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2022
+    },
+    {
+      "aliases": [
+        "Chengmai Center",
+        "Citymark Financial Center"
+      ],
+      "c": "People's Republic of China",
+      "cc": "CN",
+      "completion_date": "2022",
+      "coordinate_precision": 2.7777777777778e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2022",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2022-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(114.100083333 22.560972222)"
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2022-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q130693037"
+      },
+      "k": "Q130693037",
+      "la": 22.560972222,
+      "lo": 114.100083333,
+      "n": "Citymark Centre",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q130693037"
+        }
+      ],
+      "status_date": "2022",
+      "status_source": "https://www.wikidata.org/wiki/Q130693037",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2022
+    },
+    {
       "c": "Australia",
       "cap": {
         "unit": "megawatt",
@@ -4366,6 +6391,71 @@
       "upd": "2026-11-11",
       "validation_status": "verified",
       "y": 2024
+    },
+    {
+      "c": "India",
+      "cap": {
+        "unit": "megawatt",
+        "value": 300.0
+      },
+      "cc": "IN",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "cap": {
+          "property": "P2109",
+          "unit": "megawatt",
+          "value": "300"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(77.79527778 30.50361111)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q1310412"
+      },
+      "k": "Q1310412",
+      "la": 30.50361111,
+      "lo": 77.79527778,
+      "n": "Lakhwar Dam",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cap",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q1310412"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q1310412",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
     },
     {
       "c": "Australia",
@@ -4965,6 +7055,77 @@
       "validation_status": "verified"
     },
     {
+      "c": "Russia",
+      "cc": "RU",
+      "completion_date": "2023",
+      "coordinate_precision": 1e-06,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2023",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P729",
+          "raw": "2023-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(37.640731 55.699072)"
+        },
+        "s": {
+          "property": "P729",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P729",
+          "raw": "2023-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q134308376"
+      },
+      "k": "Q134308376",
+      "la": 55.699072,
+      "lo": 37.640731,
+      "n": "Zilart Tower",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q134308376"
+        }
+      ],
+      "status_date": "2023",
+      "status_source": "https://www.wikidata.org/wiki/Q134308376",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2023
+    },
+    {
       "aliases": [
         "Parron Maam Marang Farm"
       ],
@@ -5128,32 +7289,15 @@
       "validation_status": "verified"
     },
     {
-      "c": "Venezuela",
-      "cap": {
-        "unit": "megawatt",
-        "value": 2300.0
-      },
-      "cc": "VE",
-      "coordinate_precision": 1e-07,
+      "c": "Turkey",
+      "cc": "TR",
+      "coordinate_precision": 0.00027777777777778,
       "coordinate_quality": "source-declared precision in degrees",
       "display_status": "Under construction",
       "evidence": {
-        "cap": {
-          "property": "P2109",
-          "unit": "megawatt",
-          "value": "2300"
-        },
         "coordinates": {
           "property": "P625",
-          "raw": "Point(-63.0236732 7.9062743)"
-        },
-        "own": {
-          "properties": [
-            "P127",
-            "P137",
-            "P178",
-            "P1652"
-          ]
+          "raw": "Point(27.176666666 38.4475)"
         },
         "s": {
           "property": "P5817",
@@ -5161,19 +7305,12 @@
         }
       },
       "external_ids": {
-        "wikidata": "Q1356919"
+        "wikidata": "Q135471429"
       },
-      "k": "Q1356919",
-      "la": 7.9062743,
-      "lo": -63.0236732,
-      "n": "Tocoma Dam",
-      "own": [
-        {
-          "name": "Q5829020",
-          "qid": "Q5829020",
-          "role": "operator"
-        }
-      ],
+      "k": "Q135471429",
+      "la": 38.4475,
+      "lo": 27.176666666,
+      "n": "İnci Mega",
       "record_level": "site",
       "s": "Under construction",
       "src": [
@@ -5181,7 +7318,6 @@
           "checked_at": "2026-11-11",
           "field_list": [
             "c",
-            "cap",
             "cc",
             "coordinate_precision",
             "coordinate_quality",
@@ -5191,7 +7327,6 @@
             "la",
             "lo",
             "n",
-            "own",
             "record_level",
             "s",
             "status_source",
@@ -5199,14 +7334,211 @@
             "display_status"
           ],
           "licence": "CC0 1.0",
-          "name": "Wikidata (CC0), current hydroelectric power station",
-          "url": "https://www.wikidata.org/wiki/Q1356919"
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q135471429"
         }
       ],
-      "status_source": "https://www.wikidata.org/wiki/Q1356919",
-      "t": "Hydro energy",
+      "status_source": "https://www.wikidata.org/wiki/Q135471429",
+      "t": "Real estate",
       "upd": "2026-11-11",
       "validation_status": "verified"
+    },
+    {
+      "c": "Belgium",
+      "cc": "BE",
+      "coordinate_precision": 1e-06,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "In development",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(4.403015 50.817937)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "proposed building or structure"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q135919660"
+      },
+      "k": "Q135919660",
+      "la": 50.817937,
+      "lo": 4.403015,
+      "n": "Triomphe 172",
+      "record_level": "site",
+      "s": "Proposed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q135919660"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q135919660",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "South Korea",
+      "cc": "KR",
+      "completion_date": "2024",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2024",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2024-02-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(128.583055555 35.876666666)"
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2024-02-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q136757981"
+      },
+      "k": "Q136757981",
+      "la": 35.876666666,
+      "lo": 128.583055555,
+      "n": "HILLSTATE Dowon Central",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q136757981"
+        }
+      ],
+      "status_date": "2024",
+      "status_source": "https://www.wikidata.org/wiki/Q136757981",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2024
+    },
+    {
+      "c": "South Korea",
+      "cc": "KR",
+      "completion_date": "2025",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2025",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2025-08-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(128.557222222 35.858055555)"
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2025-08-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q136758135"
+      },
+      "k": "Q136758135",
+      "la": 35.858055555,
+      "lo": 128.557222222,
+      "n": "Duryu station Xi",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q136758135"
+        }
+      ],
+      "status_date": "2025",
+      "status_source": "https://www.wikidata.org/wiki/Q136758135",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2025
     },
     {
       "c": "People's Republic of China",
@@ -5505,30 +7837,15 @@
       "validation_status": "verified"
     },
     {
-      "c": "Burkina Faso",
-      "cap": {
-        "unit": "megawatt",
-        "value": 3.7
-      },
-      "cc": "BF",
-      "completion_date": "2021",
-      "coordinate_precision": 0.00027777777777778,
+      "c": "United Kingdom",
+      "cc": "GB",
+      "coordinate_precision": 1e-05,
       "coordinate_quality": "source-declared precision in degrees",
-      "display_status": "Completed 2021",
+      "display_status": "Under construction",
       "evidence": {
-        "cap": {
-          "property": "P2109",
-          "unit": "megawatt",
-          "value": "3.7"
-        },
-        "completion_date": {
-          "output_precision": "year-only; source time precision not fetched",
-          "property": "P729",
-          "raw": "2021-04-22T00:00:00Z"
-        },
         "coordinates": {
           "property": "P625",
-          "raw": "Point(-4.716111111 11.386666666)"
+          "raw": "Point(-0.00547 51.51071)"
         },
         "own": {
           "properties": [
@@ -5539,39 +7856,32 @@
           ]
         },
         "s": {
-          "property": "P729",
-          "rule": "service entry/official opening; not an operating-now claim"
-        },
-        "status_date": {
-          "output_precision": "year-only; source time precision not fetched",
-          "property": "P729",
-          "raw": "2021-04-22T00:00:00Z"
+          "property": "P5817",
+          "value": "building or structure under construction"
         }
       },
       "external_ids": {
-        "wikidata": "Q138299231"
+        "wikidata": "Q138426766"
       },
-      "k": "Q138299231",
-      "la": 11.386666666,
-      "lo": -4.716111111,
-      "n": "Samandéni Dam",
+      "k": "Q138426766",
+      "la": 51.51071,
+      "lo": -0.00547,
+      "n": "Global Switch London South",
       "own": [
         {
-          "name": "Société Nationale d'électricité du Burkina Faso",
-          "qid": "Q2297165",
+          "name": "Global Switch",
+          "qid": "Q138426680",
           "role": "operator"
         }
       ],
       "record_level": "site",
-      "s": "Completed",
+      "s": "Under construction",
       "src": [
         {
           "checked_at": "2026-11-11",
           "field_list": [
             "c",
-            "cap",
             "cc",
-            "completion_date",
             "coordinate_precision",
             "coordinate_quality",
             "evidence",
@@ -5583,23 +7893,19 @@
             "own",
             "record_level",
             "s",
-            "status_date",
             "status_source",
             "t",
-            "display_status",
-            "y"
+            "display_status"
           ],
           "licence": "CC0 1.0",
-          "name": "Wikidata (CC0), current hydroelectric power station",
-          "url": "https://www.wikidata.org/wiki/Q138299231"
+          "name": "Wikidata (CC0), current data center",
+          "url": "https://www.wikidata.org/wiki/Q138426766"
         }
       ],
-      "status_date": "2021",
-      "status_source": "https://www.wikidata.org/wiki/Q138299231",
-      "t": "Hydro energy",
+      "status_source": "https://www.wikidata.org/wiki/Q138426766",
+      "t": "Data centres",
       "upd": "2026-11-11",
-      "validation_status": "verified",
-      "y": 2021
+      "validation_status": "verified"
     },
     {
       "aliases": [
@@ -5764,6 +8070,229 @@
       "t": "Wind energy",
       "upd": "2026-11-11",
       "validation_status": "verified"
+    },
+    {
+      "aliases": [
+        "Kensington Tower"
+      ],
+      "c": "United States",
+      "cc": "US",
+      "completion_date": "2025",
+      "coordinate_precision": 0.0001,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2025",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2025-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(-111.8887 40.7653)"
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2025-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q138914013"
+      },
+      "k": "Q138914013",
+      "la": 40.7653,
+      "lo": -111.8887,
+      "n": "Astra Tower",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q138914013"
+        }
+      ],
+      "status_date": "2025",
+      "status_source": "https://www.wikidata.org/wiki/Q138914013",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2025
+    },
+    {
+      "c": "Iraq",
+      "cc": "IQ",
+      "completion_date": "2022",
+      "coordinate_precision": 1e-08,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2022",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2022-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(43.424972086 36.7639035)"
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2022-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q139771894"
+      },
+      "k": "Q139771894",
+      "la": 36.7639035,
+      "lo": 43.424972086,
+      "n": "Khinnis Dam",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q139771894"
+        }
+      ],
+      "status_date": "2022",
+      "status_source": "https://www.wikidata.org/wiki/Q139771894",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2022
+    },
+    {
+      "aliases": [
+        "Nashville Yards Pinnacle Tower",
+        "Pinnacle Nashville",
+        "Pinnacle Office Tower"
+      ],
+      "c": "United States",
+      "cc": "US",
+      "completion_date": "2025",
+      "coordinate_precision": 2.7777777777778e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2025",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2025-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(-86.785611111 36.159611111)"
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2025-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q140032956"
+      },
+      "k": "Q140032956",
+      "la": 36.159611111,
+      "lo": -86.785611111,
+      "n": "Pinnacle Tower",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q140032956"
+        }
+      ],
+      "status_date": "2025",
+      "status_source": "https://www.wikidata.org/wiki/Q140032956",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2025
     },
     {
       "aliases": [
@@ -5946,6 +8475,98 @@
       "validation_status": "verified"
     },
     {
+      "aliases": [
+        "Prime 801 Church",
+        "The Prime"
+      ],
+      "c": "United States",
+      "cc": "US",
+      "completion_date": "2024",
+      "coordinate_precision": 2.7777777777778e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2024",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2024-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(-86.784027777 36.161194444)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2024-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q140291375"
+      },
+      "k": "Q140291375",
+      "la": 36.161194444,
+      "lo": -86.784027777,
+      "n": "Prime",
+      "own": [
+        {
+          "name": "Giarratana",
+          "qid": "Q133456353",
+          "role": "developer"
+        }
+      ],
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q140291375"
+        }
+      ],
+      "status_date": "2024",
+      "status_source": "https://www.wikidata.org/wiki/Q140291375",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2024
+    },
+    {
       "c": "United Kingdom",
       "cc": "GB",
       "coordinate_precision": 1e-08,
@@ -6015,6 +8636,81 @@
       "t": "Wind energy",
       "upd": "2026-11-11",
       "validation_status": "verified"
+    },
+    {
+      "aliases": [
+        "Damak Business Complex"
+      ],
+      "c": "Nepal",
+      "cc": "NP",
+      "completion_date": "2025",
+      "coordinate_precision": 0.0001,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2025",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2025-07-17T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(87.6633 26.6886)"
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2025-07-17T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q140984352"
+      },
+      "k": "Q140984352",
+      "la": 26.6886,
+      "lo": 87.6633,
+      "n": "Damak View Tower",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q140984352"
+        }
+      ],
+      "status_date": "2025",
+      "status_source": "https://www.wikidata.org/wiki/Q140984352",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2025
     },
     {
       "aliases": [
@@ -15698,6 +18394,77 @@
       "y": 2022
     },
     {
+      "c": "United Arab Emirates",
+      "cc": "AE",
+      "coordinate_precision": 1e-08,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(55.20971 25.05427)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q142027365"
+      },
+      "k": "Q142027365",
+      "la": 25.05427,
+      "lo": 55.20971,
+      "n": "Binghatti Circle",
+      "own": [
+        {
+          "name": "Binghatti Properties",
+          "qid": "Q120569279",
+          "role": "developer"
+        }
+      ],
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q142027365"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q142027365",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
       "aliases": [
         "Marlim Azul UTE"
       ],
@@ -15995,6 +18762,152 @@
       "y": 2022
     },
     {
+      "c": "People's Republic of China",
+      "cc": "CN",
+      "completion_date": "2023",
+      "coordinate_precision": 2.7777777777778e-06,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2023",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2023-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(114.317475 30.585941666)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2023-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q143235"
+      },
+      "k": "Q143235",
+      "la": 30.585941666,
+      "lo": 114.317475,
+      "n": "Wuhan Greenland Center",
+      "own": [
+        {
+          "name": "Adrian Smith",
+          "qid": "Q374276",
+          "role": "owner"
+        }
+      ],
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q143235"
+        }
+      ],
+      "status_date": "2023",
+      "status_source": "https://www.wikidata.org/wiki/Q143235",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2023
+    },
+    {
+      "aliases": [
+        "台北雙子星大樓"
+      ],
+      "c": "Taiwan",
+      "cc": "TW",
+      "coordinate_precision": 0.0001,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "In development",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(121.5127 25.0487)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "proposed building or structure"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q1495752"
+      },
+      "k": "Q1495752",
+      "la": 25.0487,
+      "lo": 121.5127,
+      "n": "Taipei Twins",
+      "record_level": "site",
+      "s": "Proposed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q1495752"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q1495752",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
       "aliases": [
         "Maitree Super Thermal Power Project"
       ],
@@ -16060,6 +18973,189 @@
       ],
       "status_source": "https://www.wikidata.org/wiki/Q15071638",
       "t": "Coal energy",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "aliases": [
+        "Broadlands Hydropower Project"
+      ],
+      "c": "Sri Lanka",
+      "cap": {
+        "unit": "megawatt",
+        "value": 35.0
+      },
+      "cc": "LK",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "cap": {
+          "property": "P2109",
+          "unit": "megawatt",
+          "value": "35"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(80.454444444 6.978888888)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q15117260"
+      },
+      "k": "Q15117260",
+      "la": 6.978888888,
+      "lo": 80.454444444,
+      "n": "Broadlands Dam",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cap",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q15117260"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q15117260",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "aliases": [
+        "Nirmal One Discovery"
+      ],
+      "c": "India",
+      "cc": "IN",
+      "coordinate_precision": 2.77777777778e-06,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(72.93697 19.165004)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q15214130"
+      },
+      "k": "Q15214130",
+      "la": 19.165004,
+      "lo": 72.93697,
+      "n": "Discovery Offices",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q15214130"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q15214130",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "Thailand",
+      "cc": "TH",
+      "coordinate_precision": 0.000277778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "In development",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(99.326305 15.916431944)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "proposed building or structure"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q15637281"
+      },
+      "k": "Q15637281",
+      "la": 15.916431944,
+      "lo": 99.326305,
+      "n": "Mae Wong Dam",
+      "record_level": "site",
+      "s": "Proposed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q15637281"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q15637281",
+      "t": "Water",
       "upd": "2026-11-11",
       "validation_status": "verified"
     },
@@ -16180,6 +19276,65 @@
       ],
       "status_source": "https://www.wikidata.org/wiki/Q16053842",
       "t": "Coal energy",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "aliases": [
+        "City Pride"
+      ],
+      "c": "United Kingdom",
+      "cc": "GB",
+      "coordinate_precision": 2.7777777777778e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(-0.025472222 51.502777777)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q16258428"
+      },
+      "k": "Q16258428",
+      "la": 51.502777777,
+      "lo": -0.025472222,
+      "n": "Landmark Pinnacle",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q16258428"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q16258428",
+      "t": "Real estate",
       "upd": "2026-11-11",
       "validation_status": "verified"
     },
@@ -16411,6 +19566,120 @@
       ],
       "status_source": "https://www.wikidata.org/wiki/Q16698859",
       "t": "Nuclear energy",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "aliases": [
+        "Jorge Cepernic Dam"
+      ],
+      "c": "Argentina",
+      "cc": "AR",
+      "coordinate_precision": 1e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(-70.12073333 -50.19215556)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q17074253"
+      },
+      "k": "Q17074253",
+      "la": -50.19215556,
+      "lo": -70.12073333,
+      "n": "La Barrancosa Dam",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q17074253"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q17074253",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "Kenya",
+      "cc": "KE",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(37.336666666 -0.5325)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q17110824"
+      },
+      "k": "Q17110824",
+      "la": -0.5325,
+      "lo": 37.336666666,
+      "n": "Rukenya Dam",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q17110824"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q17110824",
+      "t": "Water",
       "upd": "2026-11-11",
       "validation_status": "verified"
     },
@@ -16648,6 +19917,207 @@
       "validation_status": "verified"
     },
     {
+      "c": "People's Republic of China",
+      "cc": "CN",
+      "completion_date": "2020",
+      "coordinate_precision": 2.7777777777778e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2020",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2020-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(108.391138888 22.814833333)"
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2020-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q18347369"
+      },
+      "k": "Q18347369",
+      "la": 22.814833333,
+      "lo": 108.391138888,
+      "n": "Nanning China Resources Tower",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q18347369"
+        }
+      ],
+      "status_date": "2020",
+      "status_source": "https://www.wikidata.org/wiki/Q18347369",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2020
+    },
+    {
+      "c": "Mozambique",
+      "cap": {
+        "unit": "megawatt",
+        "value": 1500.0
+      },
+      "cc": "MZ",
+      "coordinate_precision": 0.000277778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "In development",
+      "evidence": {
+        "cap": {
+          "property": "P2109",
+          "unit": "megawatt",
+          "value": "1500"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(33.1444479 -15.7734464)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "proposed building or structure"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q18377811"
+      },
+      "k": "Q18377811",
+      "la": -15.7734464,
+      "lo": 33.1444479,
+      "n": "Mphanda Nkuwa Dam",
+      "record_level": "site",
+      "s": "Proposed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cap",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q18377811"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q18377811",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "India",
+      "cap": {
+        "unit": "megawatt",
+        "value": 2000.0
+      },
+      "cc": "IN",
+      "coordinate_precision": 0.001,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "cap": {
+          "property": "P2109",
+          "unit": "megawatt",
+          "value": "2000"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(94.259 27.552361111)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q1872594"
+      },
+      "k": "Q1872594",
+      "la": 27.552361111,
+      "lo": 94.259,
+      "n": "Subansiri Lower Dam",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cap",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q1872594"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q1872594",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
       "c": "Tajikistan",
       "cap": {
         "unit": "megawatt",
@@ -16709,6 +20179,420 @@
       ],
       "status_source": "https://www.wikidata.org/wiki/Q1891844",
       "t": "Hydro energy",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "Canada",
+      "cap": {
+        "unit": "megawatt",
+        "value": 695.0
+      },
+      "cc": "CA",
+      "completion_date": "2021",
+      "coordinate_precision": 0.000277778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2021",
+      "evidence": {
+        "cap": {
+          "property": "P2109",
+          "unit": "megawatt",
+          "value": "695"
+        },
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P729",
+          "raw": "2021-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(-95.2021229 56.3498853)"
+        },
+        "s": {
+          "property": "P729",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P729",
+          "raw": "2021-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q19377055"
+      },
+      "k": "Q19377055",
+      "la": 56.3498853,
+      "lo": -95.2021229,
+      "n": "Keeyask Generating Station",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cap",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q19377055"
+        }
+      ],
+      "status_date": "2021",
+      "status_source": "https://www.wikidata.org/wiki/Q19377055",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2021
+    },
+    {
+      "c": "Australia",
+      "cc": "AU",
+      "coordinate_precision": 0.0001,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "In development",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(153.029 -27.4717)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "proposed building or structure"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q1982118"
+      },
+      "k": "Q1982118",
+      "la": -27.4717,
+      "lo": 153.029,
+      "n": "Vision Brisbane",
+      "record_level": "site",
+      "s": "Proposed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q1982118"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q1982118",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "People's Republic of China",
+      "cap": {
+        "unit": "megawatt",
+        "value": 560.0
+      },
+      "cc": "CN",
+      "completion_date": "2020",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2020",
+      "evidence": {
+        "cap": {
+          "property": "P2109",
+          "unit": "megawatt",
+          "value": "560"
+        },
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P729",
+          "raw": "2020-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(101.64305556 26.57416667)"
+        },
+        "s": {
+          "property": "P729",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P729",
+          "raw": "2020-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q19853879"
+      },
+      "k": "Q19853879",
+      "la": 26.57416667,
+      "lo": 101.64305556,
+      "n": "Jinsha Dam",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cap",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q19853879"
+        }
+      ],
+      "status_date": "2020",
+      "status_source": "https://www.wikidata.org/wiki/Q19853879",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2020
+    },
+    {
+      "c": "Iran",
+      "cc": "IR",
+      "completion_date": "2024",
+      "coordinate_precision": 2.7777777777778e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2024",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2024-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(51.429888888 35.784111111)"
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2024-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q20987795"
+      },
+      "k": "Q20987795",
+      "la": 35.784111111,
+      "lo": 51.429888888,
+      "n": "Fereshteh Pasargad Hotel",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q20987795"
+        }
+      ],
+      "status_date": "2024",
+      "status_source": "https://www.wikidata.org/wiki/Q20987795",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2024
+    },
+    {
+      "c": "People's Republic of China",
+      "cc": "CN",
+      "completion_date": "2020",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2020",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2020-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(117.66361111 39.00472222)"
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2020-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q2289545"
+      },
+      "k": "Q2289545",
+      "la": 39.00472222,
+      "lo": 117.66361111,
+      "n": "Sino-Steel Tower",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q2289545"
+        }
+      ],
+      "status_date": "2020",
+      "status_source": "https://www.wikidata.org/wiki/Q2289545",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2020
+    },
+    {
+      "c": "Australia",
+      "cc": "AU",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "In development",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(151.11305556 -25.72833333)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "proposed building or structure"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q24189632"
+      },
+      "k": "Q24189632",
+      "la": -25.72833333,
+      "lo": 151.11305556,
+      "n": "Auburn River Dam",
+      "record_level": "site",
+      "s": "Proposed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q24189632"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q24189632",
+      "t": "Water",
       "upd": "2026-11-11",
       "validation_status": "verified"
     },
@@ -16776,6 +20660,104 @@
       "t": "Wind energy",
       "upd": "2026-11-11",
       "validation_status": "verified"
+    },
+    {
+      "aliases": [
+        "53 West 53rd Street",
+        "MoMA Expansion Tower",
+        "Tower Verre"
+      ],
+      "c": "United States",
+      "cc": "US",
+      "completion_date": "2020",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2020",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2020-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(-73.978333333 40.761666666)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2020-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q2446907"
+      },
+      "k": "Q2446907",
+      "la": 40.761666666,
+      "lo": -73.978333333,
+      "n": "53W53",
+      "own": [
+        {
+          "name": "Gerald D. Hines",
+          "qid": "Q5549048",
+          "role": "owner"
+        },
+        {
+          "name": "Hines Interests Limited Partnership",
+          "qid": "Q1619384",
+          "role": "developer"
+        }
+      ],
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q2446907"
+        }
+      ],
+      "status_date": "2020",
+      "status_source": "https://www.wikidata.org/wiki/Q2446907",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2020
     },
     {
       "c": "India",
@@ -17459,6 +21441,82 @@
     },
     {
       "aliases": [
+        "Fontainebleau Resort Las Vegas",
+        "The Drew Las Vegas"
+      ],
+      "c": "United States",
+      "cc": "US",
+      "completion_date": "2023",
+      "coordinate_precision": 1e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2023",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2023-12-13T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(-115.158889 36.1375)"
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2023-12-13T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q278380"
+      },
+      "k": "Q278380",
+      "la": 36.1375,
+      "lo": -115.158889,
+      "n": "Fontainebleau Las Vegas",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q278380"
+        }
+      ],
+      "status_date": "2023",
+      "status_source": "https://www.wikidata.org/wiki/Q278380",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2023
+    },
+    {
+      "aliases": [
         "Chandwa Power Plant"
       ],
       "c": "India",
@@ -17568,6 +21626,66 @@
       ],
       "status_source": "https://www.wikidata.org/wiki/Q28223974",
       "t": "Nuclear energy",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "aliases": [
+        "Kula Belgrade",
+        "Kula Beograd"
+      ],
+      "c": "Serbia",
+      "cc": "RS",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(20.446790704 44.805621765)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q28224747"
+      },
+      "k": "Q28224747",
+      "la": 44.805621765,
+      "lo": 20.446790704,
+      "n": "Belgrade Tower",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q28224747"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q28224747",
+      "t": "Real estate",
       "upd": "2026-11-11",
       "validation_status": "verified"
     },
@@ -17708,6 +21826,126 @@
       "validation_status": "verified"
     },
     {
+      "c": "Democratic Republic of the Congo",
+      "cc": "CD",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "In development",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(13.55694444 -5.54583333)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "proposed building or structure"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q2884957"
+      },
+      "k": "Q2884957",
+      "la": -5.54583333,
+      "lo": 13.55694444,
+      "n": "Grand Inga Dam",
+      "record_level": "site",
+      "s": "Proposed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q2884957"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q2884957",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "Turkey",
+      "cap": {
+        "unit": "megawatt",
+        "value": 240.0
+      },
+      "cc": "TR",
+      "coordinate_precision": 2.77777777778e-06,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "In development",
+      "evidence": {
+        "cap": {
+          "property": "P2109",
+          "unit": "megawatt",
+          "value": "240"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(42.154713 37.362926)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "proposed building or structure"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q2885099"
+      },
+      "k": "Q2885099",
+      "la": 37.362926,
+      "lo": 42.154713,
+      "n": "Cizre Dam",
+      "record_level": "site",
+      "s": "Proposed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cap",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q2885099"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q2885099",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
       "aliases": [
         "Green River nuclear power plant, Blue Castle Holdings, Transition Power Development"
       ],
@@ -17765,6 +22003,93 @@
       "t": "Nuclear energy",
       "upd": "2026-11-11",
       "validation_status": "verified"
+    },
+    {
+      "c": "France",
+      "cc": "FR",
+      "completion_date": "2020",
+      "coordinate_precision": 1e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2020",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2020-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(2.31066 48.89465)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2020-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q2974817"
+      },
+      "k": "Q2974817",
+      "la": 48.89465,
+      "lo": 2.31066,
+      "n": "Paris Tribunal",
+      "own": [
+        {
+          "name": "Établissement public du palais de justice de Paris",
+          "qid": "Q54738278",
+          "role": "owner"
+        }
+      ],
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q2974817"
+        }
+      ],
+      "status_date": "2020",
+      "status_source": "https://www.wikidata.org/wiki/Q2974817",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2020
     },
     {
       "c": "Egypt",
@@ -18262,6 +22587,419 @@
       "validation_status": "verified"
     },
     {
+      "aliases": [
+        "Pentominium"
+      ],
+      "c": "United Arab Emirates",
+      "cc": "AE",
+      "coordinate_precision": 1e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(55.149889 25.089111)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q374662"
+      },
+      "k": "Q374662",
+      "la": 25.089111,
+      "lo": 55.149889,
+      "n": "Six Senses Residences",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q374662"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q374662",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "aliases": [
+        "Torre Libeskind",
+        "il Curvo"
+      ],
+      "c": "Italy",
+      "cc": "IT",
+      "completion_date": "2020",
+      "coordinate_precision": 1e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2020",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2020-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(9.15687 45.47882)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2020-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q3995204"
+      },
+      "k": "Q3995204",
+      "la": 45.47882,
+      "lo": 9.15687,
+      "n": "Libeskind Tower",
+      "own": [
+        {
+          "name": "Assicurazioni Generali",
+          "qid": "Q670482",
+          "role": "owner"
+        }
+      ],
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q3995204"
+        }
+      ],
+      "status_date": "2020",
+      "status_source": "https://www.wikidata.org/wiki/Q3995204",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2020
+    },
+    {
+      "c": "Russia",
+      "cc": "RU",
+      "completion_date": "2022",
+      "coordinate_precision": 1e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2022",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2022-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(30.17814 59.98703)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2022-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q4255374"
+      },
+      "k": "Q4255374",
+      "la": 59.98703,
+      "lo": 30.17814,
+      "n": "Lakhta Centre",
+      "own": [
+        {
+          "name": "Gazprom",
+          "qid": "Q102673",
+          "role": "owner"
+        }
+      ],
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q4255374"
+        }
+      ],
+      "status_date": "2022",
+      "status_source": "https://www.wikidata.org/wiki/Q4255374",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2022
+    },
+    {
+      "c": "Malaysia",
+      "cc": "MY",
+      "coordinate_precision": 1e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(101.71468 3.15738)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q48726927"
+      },
+      "k": "Q48726927",
+      "la": 3.15738,
+      "lo": 101.71468,
+      "n": "Fairmont Kuala Lumpur Towers",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q48726927"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q48726927",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "Russia",
+      "cc": "RU",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "In development",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(89.92777778 65.65444444)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "proposed building or structure"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q500045"
+      },
+      "k": "Q500045",
+      "la": 65.65444444,
+      "lo": 89.92777778,
+      "n": "Evenk hydroelectric power plant",
+      "record_level": "site",
+      "s": "Proposed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q500045"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q500045",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "India",
+      "cap": {
+        "unit": "megawatt",
+        "value": 45.0
+      },
+      "cc": "IN",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "In development",
+      "evidence": {
+        "cap": {
+          "property": "P2109",
+          "unit": "megawatt",
+          "value": "45"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(76.66833333 34.46916667)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "proposed building or structure"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q5313902"
+      },
+      "k": "Q5313902",
+      "la": 34.46916667,
+      "lo": 76.66833333,
+      "n": "Dumkhar Dam",
+      "record_level": "site",
+      "s": "Proposed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cap",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q5313902"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q5313902",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
       "c": "India",
       "cc": "IN",
       "coordinate_precision": 0.00027777777777778,
@@ -18378,6 +23116,61 @@
       ],
       "status_source": "https://www.wikidata.org/wiki/Q54306562",
       "t": "Coal energy",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "Zimbabwe",
+      "cc": "ZW",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "In development",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(29.205 -20.68361111)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "proposed building or structure"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q5567138"
+      },
+      "k": "Q5567138",
+      "la": -20.68361111,
+      "lo": 29.205,
+      "n": "Glassblock Dam",
+      "record_level": "site",
+      "s": "Proposed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q5567138"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q5567138",
+      "t": "Water",
       "upd": "2026-11-11",
       "validation_status": "verified"
     },
@@ -18502,6 +23295,98 @@
       "validation_status": "verified"
     },
     {
+      "aliases": [
+        "Turkevi Center",
+        "Turkish Center"
+      ],
+      "c": "United States",
+      "cc": "US",
+      "completion_date": "2021",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2021",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2021-09-20T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(-73.968333333 40.751388888)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2021-09-20T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q6063129"
+      },
+      "k": "Q6063129",
+      "la": 40.751388888,
+      "lo": -73.968333333,
+      "n": "Turkish House",
+      "own": [
+        {
+          "name": "Ministry of Foreign Affairs of the Republic of Turkey",
+          "qid": "Q2612487",
+          "role": "owner"
+        }
+      ],
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q6063129"
+        }
+      ],
+      "status_date": "2021",
+      "status_source": "https://www.wikidata.org/wiki/Q6063129",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2021
+    },
+    {
       "c": "United States",
       "cc": "US",
       "coordinate_precision": 1e-06,
@@ -18557,39 +23442,39 @@
       "validation_status": "verified"
     },
     {
-      "c": "Niger",
+      "c": "Sudan",
       "cap": {
         "unit": "megawatt",
-        "value": 130.0
+        "value": 300.0
       },
-      "cc": "NE",
-      "coordinate_precision": 1e-05,
+      "cc": "SD",
+      "coordinate_precision": 2.77777777778e-06,
       "coordinate_quality": "source-declared precision in degrees",
-      "display_status": "Under construction",
+      "display_status": "In development",
       "evidence": {
         "cap": {
           "property": "P2109",
           "unit": "megawatt",
-          "value": "130"
+          "value": "300"
         },
         "coordinates": {
           "property": "P625",
-          "raw": "Point(0.98711 14.61281)"
+          "raw": "Point(30.430927 19.94011)"
         },
         "s": {
           "property": "P5817",
-          "value": "building or structure under construction"
+          "value": "proposed building or structure"
         }
       },
       "external_ids": {
-        "wikidata": "Q6361166"
+        "wikidata": "Q6348911"
       },
-      "k": "Q6361166",
-      "la": 14.61281,
-      "lo": 0.98711,
-      "n": "Kandadji Dam",
+      "k": "Q6348911",
+      "la": 19.94011,
+      "lo": 30.430927,
+      "n": "Kajbar Power Station",
       "record_level": "site",
-      "s": "Under construction",
+      "s": "Proposed",
       "src": [
         {
           "checked_at": "2026-11-11",
@@ -18612,12 +23497,77 @@
             "display_status"
           ],
           "licence": "CC0 1.0",
-          "name": "Wikidata (CC0), current hydroelectric power station",
-          "url": "https://www.wikidata.org/wiki/Q6361166"
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q6348911"
         }
       ],
-      "status_source": "https://www.wikidata.org/wiki/Q6361166",
-      "t": "Hydro energy",
+      "status_source": "https://www.wikidata.org/wiki/Q6348911",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "Pakistan",
+      "cap": {
+        "unit": "megawatt",
+        "value": 3600.0
+      },
+      "cc": "PK",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "In development",
+      "evidence": {
+        "cap": {
+          "property": "P2109",
+          "unit": "megawatt",
+          "value": "3600"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(71.61361111 32.95638889)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "proposed building or structure"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q6349998"
+      },
+      "k": "Q6349998",
+      "la": 32.95638889,
+      "lo": 71.61361111,
+      "n": "Kalabagh Dam",
+      "record_level": "site",
+      "s": "Proposed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cap",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q6349998"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q6349998",
+      "t": "Water",
       "upd": "2026-11-11",
       "validation_status": "verified"
     },
@@ -18728,6 +23678,341 @@
       "y": 2022
     },
     {
+      "aliases": [
+        "Karuma Hydroelectric Power Station"
+      ],
+      "c": "Uganda",
+      "cap": {
+        "unit": "megawatt",
+        "value": 600.0
+      },
+      "cc": "UG",
+      "coordinate_precision": 0.000277778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "cap": {
+          "property": "P2109",
+          "unit": "megawatt",
+          "value": "600"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(32.26677 2.2453486)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q6373628"
+      },
+      "k": "Q6373628",
+      "la": 2.2453486,
+      "lo": 32.26677,
+      "n": "Karuma Power Station",
+      "own": [
+        {
+          "name": "Uganda Electricity Generation Company Limited",
+          "qid": "Q18356039",
+          "role": "operator"
+        }
+      ],
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cap",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q6373628"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q6373628",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "United States",
+      "cc": "US",
+      "coordinate_precision": 0.0001,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(-93.6231 41.5852)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q65084304"
+      },
+      "k": "Q65084304",
+      "la": 41.5852,
+      "lo": -93.6231,
+      "n": "The Fifth",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q65084304"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q65084304",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "Iran",
+      "cap": {
+        "unit": "megawatt",
+        "value": 110.0
+      },
+      "cc": "IR",
+      "coordinate_precision": 0.000277778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "cap": {
+          "property": "P2109",
+          "unit": "megawatt",
+          "value": "110"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(50.8735442 30.1830477)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q65205936"
+      },
+      "k": "Q65205936",
+      "la": 30.1830477,
+      "lo": 50.8735442,
+      "n": "Chamshir Dam",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cap",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q65205936"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q65205936",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "aliases": [
+        "Aarhus Øje"
+      ],
+      "c": "Denmark",
+      "cc": "DK",
+      "completion_date": "2020",
+      "coordinate_precision": 2.77777777778e-06,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2020",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2020-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(10.23135556 56.16562778)"
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2020-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q6546023"
+      },
+      "k": "Q6546023",
+      "la": 56.16562778,
+      "lo": 10.23135556,
+      "n": "Lighthouse",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q6546023"
+        }
+      ],
+      "status_date": "2020",
+      "status_source": "https://www.wikidata.org/wiki/Q6546023",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2020
+    },
+    {
+      "c": "Taiwan",
+      "cc": "TW",
+      "coordinate_precision": 1e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(121.459229 25.058082)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q67934747"
+      },
+      "k": "Q67934747",
+      "la": 25.058082,
+      "lo": 121.459229,
+      "n": "HongWell i-Tower",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q67934747"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q67934747",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
       "c": "Botswana",
       "cc": "BW",
       "coordinate_precision": 2.77777777778e-06,
@@ -18779,6 +24064,61 @@
       ],
       "status_source": "https://www.wikidata.org/wiki/Q6885794",
       "t": "Coal energy",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "Zimbabwe",
+      "cc": "ZW",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "In development",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(29.33861111 -21.24666667)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "proposed building or structure"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q7074138"
+      },
+      "k": "Q7074138",
+      "la": -21.24666667,
+      "lo": 29.33861111,
+      "n": "Oakley Block Dam",
+      "record_level": "site",
+      "s": "Proposed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q7074138"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q7074138",
+      "t": "Water",
       "upd": "2026-11-11",
       "validation_status": "verified"
     },
@@ -19167,6 +24507,236 @@
       "validation_status": "verified"
     },
     {
+      "c": "Afghanistan",
+      "cc": "AF",
+      "coordinate_precision": 2.77777777778e-06,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "In development",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(68.83417 34.43167)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "proposed building or structure"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q7462316"
+      },
+      "k": "Q7462316",
+      "la": 34.43167,
+      "lo": 68.83417,
+      "n": "Shahtoot Dam",
+      "record_level": "site",
+      "s": "Proposed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q7462316"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q7462316",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "aliases": [
+        "KL118",
+        "Merdeka PNB 118",
+        "PNB 118",
+        "Warisan Merdeka"
+      ],
+      "c": "Malaysia",
+      "cc": "MY",
+      "completion_date": "2023",
+      "coordinate_precision": 2.7777777777778e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2023",
+      "evidence": {
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2023-01-01T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(101.700722222 3.141666666)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P1619",
+          "rule": "service entry/official opening; not an operating-now claim"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2023-01-01T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q7969454"
+      },
+      "k": "Q7969454",
+      "la": 3.141666666,
+      "lo": 101.700722222,
+      "n": "Merdeka 118",
+      "own": [
+        {
+          "name": "Permodalan Nasional Berhad",
+          "qid": "Q4206786",
+          "role": "owner"
+        }
+      ],
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "aliases",
+            "c",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q7969454"
+        }
+      ],
+      "status_date": "2023",
+      "status_source": "https://www.wikidata.org/wiki/Q7969454",
+      "t": "Real estate",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2023
+    },
+    {
+      "c": "Turkey",
+      "cap": {
+        "unit": "megawatt",
+        "value": 540.0
+      },
+      "cc": "TR",
+      "completion_date": "2022",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Completed 2022",
+      "evidence": {
+        "cap": {
+          "property": "P2109",
+          "unit": "megawatt",
+          "value": "540"
+        },
+        "completion_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2022-11-22T00:00:00Z"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(41.644722222 40.816111111)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "in use"
+        },
+        "status_date": {
+          "output_precision": "year-only; source time precision not fetched",
+          "property": "P1619",
+          "raw": "2022-11-22T00:00:00Z"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q8062008"
+      },
+      "k": "Q8062008",
+      "la": 40.816111111,
+      "lo": 41.644722222,
+      "n": "Yusufeli Dam",
+      "record_level": "site",
+      "s": "Completed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cap",
+            "cc",
+            "completion_date",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_date",
+            "status_source",
+            "t",
+            "display_status",
+            "y"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q8062008"
+        }
+      ],
+      "status_date": "2022",
+      "status_source": "https://www.wikidata.org/wiki/Q8062008",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified",
+      "y": 2022
+    },
+    {
       "aliases": [
         "Mtkvari HPP",
         "Mtkvari Hesi",
@@ -19258,6 +24828,92 @@
       "upd": "2026-11-11",
       "validation_status": "verified",
       "y": 2025
+    },
+    {
+      "c": "Malaysia",
+      "cap": {
+        "unit": "megawatt",
+        "value": 1285.0
+      },
+      "cc": "MY",
+      "coordinate_precision": 0.000277778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "cap": {
+          "property": "P2109",
+          "unit": "megawatt",
+          "value": "1285"
+        },
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(113.7706374 1.8024905)"
+        },
+        "own": {
+          "properties": [
+            "P127",
+            "P137",
+            "P178",
+            "P1652"
+          ]
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q84761195"
+      },
+      "k": "Q84761195",
+      "la": 1.8024905,
+      "lo": 113.7706374,
+      "n": "Baleh Dam",
+      "own": [
+        {
+          "name": "Sarawak Energy",
+          "qid": "Q7659479",
+          "role": "owner"
+        },
+        {
+          "name": "Sarawak Energy",
+          "qid": "Q7659479",
+          "role": "operator"
+        }
+      ],
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cap",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "own",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q84761195"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q84761195",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
     },
     {
       "c": "India",
@@ -19907,6 +25563,116 @@
       ],
       "status_source": "https://www.wikidata.org/wiki/Q97402084",
       "t": "Solar energy",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "Turkey",
+      "cc": "TR",
+      "coordinate_precision": 0.00027777777777778,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "In development",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(33.518333333 36.513888888)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "proposed building or structure"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q985220"
+      },
+      "k": "Q985220",
+      "la": 36.513888888,
+      "lo": 33.518333333,
+      "n": "Kayraktepe Dam",
+      "record_level": "site",
+      "s": "Proposed",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current dam",
+          "url": "https://www.wikidata.org/wiki/Q985220"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q985220",
+      "t": "Water",
+      "upd": "2026-11-11",
+      "validation_status": "verified"
+    },
+    {
+      "c": "India",
+      "cc": "IN",
+      "coordinate_precision": 1e-05,
+      "coordinate_quality": "source-declared precision in degrees",
+      "display_status": "Under construction",
+      "evidence": {
+        "coordinates": {
+          "property": "P625",
+          "raw": "Point(72.82335 19.01097)"
+        },
+        "s": {
+          "property": "P5817",
+          "value": "building or structure under construction"
+        }
+      },
+      "external_ids": {
+        "wikidata": "Q98937711"
+      },
+      "k": "Q98937711",
+      "la": 19.01097,
+      "lo": 72.82335,
+      "n": "Three Sixty West Tower B",
+      "record_level": "site",
+      "s": "Under construction",
+      "src": [
+        {
+          "checked_at": "2026-11-11",
+          "field_list": [
+            "c",
+            "cc",
+            "coordinate_precision",
+            "coordinate_quality",
+            "evidence",
+            "external_ids",
+            "k",
+            "la",
+            "lo",
+            "n",
+            "record_level",
+            "s",
+            "status_source",
+            "t",
+            "display_status"
+          ],
+          "licence": "CC0 1.0",
+          "name": "Wikidata (CC0), current skyscraper",
+          "url": "https://www.wikidata.org/wiki/Q98937711"
+        }
+      ],
+      "status_source": "https://www.wikidata.org/wiki/Q98937711",
+      "t": "Real estate",
       "upd": "2026-11-11",
       "validation_status": "verified"
     }

@@ -1,50 +1,68 @@
 {
   "build_date": "2026-11-11",
   "by_country": {
+    "AE": 2,
+    "AF": 1,
     "AO": 1,
-    "AU": 22,
+    "AR": 1,
+    "AU": 24,
     "BD": 6,
-    "BF": 1,
-    "BR": 84,
+    "BE": 1,
+    "BR": 85,
     "BW": 1,
+    "CA": 1,
+    "CD": 1,
     "CL": 1,
-    "CN": 9,
+    "CN": 17,
     "DE": 2,
+    "DK": 1,
     "EG": 1,
     "FI": 1,
-    "FR": 1,
-    "GB": 3,
+    "FR": 2,
+    "GB": 5,
     "GE": 16,
+    "GR": 1,
     "HR": 1,
-    "IN": 19,
-    "IR": 2,
-    "KE": 2,
+    "ID": 1,
+    "IL": 6,
+    "IN": 24,
+    "IQ": 1,
+    "IR": 5,
+    "IT": 1,
+    "JP": 7,
+    "KE": 3,
     "KP": 1,
-    "LK": 1,
+    "KR": 2,
+    "LK": 2,
     "MW": 1,
-    "MZ": 2,
-    "NE": 1,
+    "MY": 3,
+    "MZ": 3,
     "NO": 17,
+    "NP": 1,
     "NZ": 5,
-    "RU": 5,
+    "PK": 4,
+    "RS": 1,
+    "RU": 8,
+    "SA": 1,
+    "SD": 1,
     "SE": 1,
+    "TH": 1,
     "TJ": 1,
-    "TR": 3,
-    "TW": 2,
-    "UG": 1,
-    "US": 7,
-    "VE": 1,
+    "TR": 7,
+    "TW": 4,
+    "UG": 2,
+    "US": 17,
     "VN": 1,
-    "ZW": 2
+    "ZW": 4
   },
   "by_region": {
-    "Africa": 8,
-    "Asia": 38,
-    "Europe": 33,
-    "Middle East": 2,
-    "North America": 7,
-    "Oceania": 27,
-    "South America": 86,
+    "Africa": 13,
+    "Asia": 74,
+    "Europe": 48,
+    "Middle East": 15,
+    "North America": 18,
+    "Oceania": 29,
+    "South America": 87,
     "Unknown": 24
   },
   "by_source": [
@@ -110,24 +128,87 @@
       "rows": 35,
       "source": "wikidata",
       "state": "licence-reviewed"
+    },
+    {
+      "class": "ports",
+      "eligible_before_reconciliation": 0,
+      "name": "Wikidata (CC0), current port",
+      "rejected_before_reconciliation": 2,
+      "rows": 2,
+      "source": "wikidata",
+      "state": "licence-reviewed"
+    },
+    {
+      "class": "airports",
+      "eligible_before_reconciliation": 0,
+      "name": "Wikidata (CC0), current airport",
+      "rejected_before_reconciliation": 63,
+      "rows": 63,
+      "source": "wikidata",
+      "state": "licence-reviewed"
+    },
+    {
+      "class": "dam",
+      "eligible_before_reconciliation": 38,
+      "name": "Wikidata (CC0), current dam",
+      "rejected_before_reconciliation": 36,
+      "rows": 74,
+      "source": "wikidata",
+      "state": "licence-reviewed"
+    },
+    {
+      "class": "water",
+      "eligible_before_reconciliation": 0,
+      "name": "Wikidata (CC0), current water treatment plant",
+      "rejected_before_reconciliation": 2,
+      "rows": 2,
+      "source": "wikidata",
+      "state": "licence-reviewed"
+    },
+    {
+      "class": "skyscraper",
+      "eligible_before_reconciliation": 50,
+      "name": "Wikidata (CC0), current skyscraper",
+      "rejected_before_reconciliation": 23,
+      "rows": 73,
+      "source": "wikidata",
+      "state": "licence-reviewed"
+    },
+    {
+      "class": "datacentre",
+      "eligible_before_reconciliation": 1,
+      "name": "Wikidata (CC0), current data center",
+      "rejected_before_reconciliation": 0,
+      "rows": 1,
+      "source": "wikidata",
+      "state": "licence-reviewed"
+    },
+    {
+      "class": "semiconductor",
+      "eligible_before_reconciliation": 0,
+      "name": "Wikidata (CC0), current semiconductor fabrication plant",
+      "rejected_before_reconciliation": 1,
+      "rows": 1,
+      "source": "wikidata",
+      "state": "licence-reviewed"
     }
   ],
   "by_status": {
     "Approved": 1,
-    "Completed": 129,
-    "Proposed": 52,
-    "Under construction": 43
+    "Completed": 165,
+    "Proposed": 70,
+    "Under construction": 72
   },
   "by_type": {
     "Airports": 0,
     "Batteries & hydrogen": 0,
     "Coal energy": 25,
-    "Data centres": 0,
+    "Data centres": 1,
     "Development finance": 0,
     "Gas & LNG": 3,
     "Geothermal energy": 2,
     "High-speed rail": 0,
-    "Hydro energy": 16,
+    "Hydro energy": 13,
     "Megaproject": 0,
     "Metro & urban rail": 0,
     "Mining": 0,
@@ -135,15 +216,15 @@
     "Oil & gas": 0,
     "Pipelines": 0,
     "Ports & logistics": 0,
-    "Real estate": 0,
+    "Real estate": 50,
     "Semiconductors": 0,
     "Solar energy": 24,
-    "Water": 0,
+    "Water": 35,
     "Wind energy": 130
   },
-  "capacity_or_cost_pct": 78.22,
+  "capacity_or_cost_pct": 62.01,
   "company_link_rejections": {
-    "no-verified-listed-identity": 291
+    "no-verified-listed-identity": 313
   },
   "company_links": 0,
   "conflicts": [
@@ -473,6 +554,97 @@
       "id": "Q11992622"
     },
     {
+      "action": "ambiguous fields withheld",
+      "fields": {
+        "opening": [
+          "1994-01-01T00:00:00Z",
+          "2020-01-02T00:00:00Z"
+        ]
+      },
+      "id": "Q4670277"
+    },
+    {
+      "action": "ambiguous fields withheld",
+      "fields": {
+        "opening": [
+          "2017-01-01T00:00:00Z",
+          "2023-11-10T00:00:00Z"
+        ]
+      },
+      "id": "Q541858"
+    },
+    {
+      "action": "ambiguous fields withheld",
+      "fields": {
+        "capacity": [
+          "3800",
+          "4600"
+        ]
+      },
+      "id": "Q1135119"
+    },
+    {
+      "action": "ambiguous fields withheld",
+      "fields": {
+        "capacity": [
+          "360",
+          "600"
+        ]
+      },
+      "id": "Q17074253"
+    },
+    {
+      "action": "ambiguous fields withheld",
+      "fields": {
+        "capacity": [
+          "840",
+          "884"
+        ]
+      },
+      "id": "Q24947725"
+    },
+    {
+      "action": "ambiguous fields withheld",
+      "fields": {
+        "capacity": [
+          "11000",
+          "4800"
+        ]
+      },
+      "id": "Q2884959"
+    },
+    {
+      "action": "ambiguous fields withheld",
+      "fields": {
+        "capacity": [
+          "12",
+          "20"
+        ]
+      },
+      "id": "Q500045"
+    },
+    {
+      "action": "ambiguous fields withheld",
+      "fields": {
+        "opening": [
+          "1962-01-01T00:00:00Z",
+          "2021-01-01T00:00:00Z"
+        ]
+      },
+      "id": "Q5711011"
+    },
+    {
+      "action": "ambiguous fields withheld",
+      "fields": {
+        "statusStart": [
+          "2013-01-01T00:00:00Z",
+          "2018-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
+        ]
+      },
+      "id": "Q737945"
+    },
+    {
       "action": "both held out; no guess",
       "fields": [
         "t"
@@ -487,6 +659,30 @@
       ],
       "id": "Q134210188",
       "other": "Q134210188"
+    },
+    {
+      "action": "both held out; no guess",
+      "fields": [
+        "t"
+      ],
+      "id": "Q1356919",
+      "other": "Q1356919"
+    },
+    {
+      "action": "both held out; no guess",
+      "fields": [
+        "t"
+      ],
+      "id": "Q138299231",
+      "other": "Q138299231"
+    },
+    {
+      "action": "both held out; no guess",
+      "fields": [
+        "t"
+      ],
+      "id": "Q6361166",
+      "other": "Q6361166"
     }
   ],
   "country_only": 0,
@@ -2402,6 +2598,641 @@
       "source": "wikidata"
     },
     {
+      "id": "Q120036476",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q137538922",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q101429798",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q105178478",
+      "reason": "rounded-coordinate",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q107621242",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q107723739",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q108030341",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q108364345",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q109341251",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q11074678",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q111180999",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q111915271",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q113038977",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q113212298",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q113549278",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q115481355",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q115803075",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q116783692",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q122418179",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q122637686",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q122637753",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q122637817",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q123029655",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q124342093",
+      "reason": "project-name-not-readable",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q126626037",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q130265374",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q130436293",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q130603624",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q130755168",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q132745937",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q132813625",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q133575293",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q136499522",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q136523696",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q137867873",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q141069065",
+      "reason": "country-not-in-iso",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q141425807",
+      "reason": "country-not-in-iso",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q16259679",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q19659470",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q20582446",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q25468096",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q27981434",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q2875794",
+      "reason": "conflicting-coord;no-coordinate;conflicting-precision",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q3813650",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q3884833",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q39060573",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q4670277",
+      "reason": "current-status-not-sourced",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q47542529",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q48797442",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q48929178",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q541858",
+      "reason": "conflicting-coord;no-coordinate;conflicting-precision",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q56295287",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q56705156",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q5721568",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q60649462",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q60752625",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q60775425",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q60994980",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q62023680",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q7371313",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q76761345",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q86080735",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q97306995",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q97372841",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q99776256",
+      "reason": "not-verified-development",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q10388348",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q10388349",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q10388369",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q105972846",
+      "reason": "conflicting-countryLabel;conflicting-countryCode",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q112672067",
+      "reason": "completion-not-confirmed-before-asof",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q113499585",
+      "reason": "conflicting-countryLabel;conflicting-countryCode",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q1135119",
+      "reason": "conflicting-countryLabel;conflicting-countryCode",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q1138295",
+      "reason": "rounded-coordinate",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q11960338",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q12010897",
+      "reason": "project-name-not-readable",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q140072905",
+      "reason": "project-name-not-readable",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q1411336",
+      "reason": "project-name-not-readable",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q16903494",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q17163850",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q18208457",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q18337495",
+      "reason": "future-status-date",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q2081671",
+      "reason": "conflicting-countryLabel;conflicting-countryCode",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q24032655",
+      "reason": "conflicting-coord;no-coordinate;conflicting-precision",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q24908614",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q24911224",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q24947725",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q24947737",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q24948031",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q2884959",
+      "reason": "project-name-not-readable",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q2885451",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q4802090",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q4858023",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q5640993",
+      "reason": "conflicting-coord;no-coordinate",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q5767167",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q6346124",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q6354384",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q7409076",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q7628743",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q7628752",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q7698305",
+      "reason": "rounded-coordinate",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q97356365",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q129829512",
+      "reason": "project-name-not-readable",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q129830041",
+      "reason": "project-name-not-readable",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q105077323",
+      "reason": "rounded-coordinate",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q107552561",
+      "reason": "completion-not-confirmed-before-asof",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q11543018",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q1207442",
+      "reason": "completion-not-confirmed-before-asof",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q130576700",
+      "reason": "country-not-in-iso",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q139744708",
+      "reason": "project-name-not-readable",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q140959915",
+      "reason": "completion-not-confirmed-before-asof",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q15264266",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q16901495",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q18398409",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q19817578",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q28952560",
+      "reason": "project-name-not-readable",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q30303011",
+      "reason": "completion-not-confirmed-before-asof",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q30644326",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q30686870",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q3533060",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q3775875",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q47539081",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q55635196",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q55642324",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q5711011",
+      "reason": "current-status-not-sourced",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q6351258",
+      "reason": "coordinate-precision-unknown-or-coarse",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q737945",
+      "reason": "project-name-not-readable;conflicting-statusLabel",
+      "source": "wikidata"
+    },
+    {
+      "id": "Q129567265",
+      "reason": "project-name-not-readable",
+      "source": "wikidata"
+    },
+    {
       "id": "Q109255372",
       "reason": "cross-source-conflict"
     },
@@ -2415,21 +3246,51 @@
     },
     {
       "id": "Q134210188",
+      "reason": "cross-source-conflict"
+    },
+    {
+      "id": "Q1356919",
+      "reason": "cross-source-conflict"
+    },
+    {
+      "id": "Q1356919",
+      "reason": "cross-source-conflict"
+    },
+    {
+      "id": "Q138299231",
+      "reason": "cross-source-conflict"
+    },
+    {
+      "id": "Q138299231",
+      "reason": "cross-source-conflict"
+    },
+    {
+      "id": "Q6361166",
+      "reason": "cross-source-conflict"
+    },
+    {
+      "id": "Q6361166",
       "reason": "cross-source-conflict"
     }
   ],
   "drops_by_reason": {
     "completed-before-cutoff": 41,
-    "completion-not-confirmed-before-asof": 2,
-    "coordinate-precision-unknown-or-coarse": 31,
-    "cross-source-conflict": 4,
-    "current-status-not-sourced": 251,
+    "completion-not-confirmed-before-asof": 7,
+    "conflicting-coord;no-coordinate": 1,
+    "conflicting-coord;no-coordinate;conflicting-precision": 3,
+    "conflicting-countryLabel;conflicting-countryCode": 4,
+    "coordinate-precision-unknown-or-coarse": 70,
+    "country-not-in-iso": 3,
+    "cross-source-conflict": 10,
+    "current-status-not-sourced": 253,
     "excluded-status-decommissioned": 1,
     "excluded-status-on-hold": 1,
-    "future-status-date": 1,
-    "project-name-not-readable": 33,
+    "future-status-date": 2,
+    "not-verified-development": 54,
+    "project-name-not-readable": 43,
+    "project-name-not-readable;conflicting-statusLabel": 1,
     "retired-project": 6,
-    "rounded-coordinate": 15
+    "rounded-coordinate": 19
   },
   "duplicates_merged": 0,
   "featured_rejected": [],
@@ -2437,13 +3298,15 @@
   "featured_reviewed": 0,
   "linked_projects_by_region": {},
   "linked_projects_by_type": {},
-  "map_points": 225,
+  "map_points": 308,
   "media": {
     "accepted": [],
     "missing": [
       "Q104602234",
+      "Q104881147",
       "Q105812997",
       "Q106645616",
+      "Q106779205",
       "Q106809627",
       "Q106947269",
       "Q107088030",
@@ -2451,7 +3314,12 @@
       "Q108122994",
       "Q108586840",
       "Q108822188",
+      "Q109039173",
+      "Q109255048",
       "Q109377736",
+      "Q109595002",
+      "Q109648853",
+      "Q109703244",
       "Q110122400",
       "Q110417042",
       "Q110417361",
@@ -2466,34 +3334,56 @@
       "Q110510588",
       "Q110520142",
       "Q110613263",
+      "Q110787967",
       "Q111019562",
       "Q111265768",
       "Q111265773",
       "Q111265821",
       "Q111944867",
+      "Q1127212",
+      "Q112837456",
+      "Q113189821",
+      "Q113379961",
       "Q114014240",
       "Q114045206",
+      "Q1140572",
+      "Q11515441",
       "Q116373658",
+      "Q117070507",
+      "Q117289908",
       "Q118144516",
       "Q118399895",
       "Q119518290",
       "Q119592190",
+      "Q11987730",
       "Q11992622",
+      "Q12010933",
       "Q120962108",
       "Q121854838",
+      "Q125680902",
+      "Q126366817",
+      "Q126708670",
       "Q126900452",
       "Q127375703",
       "Q129284749",
       "Q129562261",
       "Q130282610",
+      "Q130355083",
+      "Q130355102",
       "Q130358624",
+      "Q130360354",
+      "Q130368653",
+      "Q130368955",
       "Q130389041",
       "Q130471071",
       "Q130476512",
       "Q130476579",
       "Q130527371",
+      "Q130641830",
+      "Q130693037",
       "Q130741247",
       "Q130899765",
+      "Q1310412",
       "Q131057326",
       "Q131686976",
       "Q1326165",
@@ -2501,19 +3391,28 @@
       "Q133720667",
       "Q134211071",
       "Q134267925",
+      "Q134308376",
       "Q134951833",
       "Q1353243",
-      "Q1356919",
+      "Q135471429",
+      "Q135919660",
+      "Q136757981",
+      "Q136758135",
       "Q137196041",
       "Q137485641",
       "Q137608879",
       "Q138030979",
-      "Q138299231",
+      "Q138426766",
       "Q138720556",
       "Q138745240",
+      "Q138914013",
+      "Q139771894",
+      "Q140032956",
       "Q140127991",
       "Q140135912",
+      "Q140291375",
       "Q140471421",
+      "Q140984352",
       "Q141141963",
       "Q141155401",
       "Q141190074",
@@ -2608,20 +3507,39 @@
       "Q141964227",
       "Q141964235",
       "Q141964240",
+      "Q142027365",
       "Q142094789",
       "Q142094836",
       "Q142094844",
+      "Q143235",
+      "Q1495752",
       "Q15071638",
+      "Q15117260",
+      "Q15214130",
+      "Q15637281",
       "Q15938258",
       "Q16053842",
+      "Q16258428",
       "Q1630042",
       "Q1642138",
       "Q16698859",
+      "Q17074253",
+      "Q17110824",
       "Q1739422",
       "Q1739423",
       "Q18125091",
+      "Q18347369",
+      "Q18377811",
+      "Q1872594",
       "Q1891844",
+      "Q19377055",
+      "Q1982118",
+      "Q19853879",
+      "Q20987795",
+      "Q2289545",
+      "Q24189632",
       "Q24236381",
+      "Q2446907",
       "Q24937165",
       "Q24947558",
       "Q24947561",
@@ -2631,11 +3549,16 @@
       "Q25230637",
       "Q25247790",
       "Q27077030",
+      "Q278380",
       "Q28169385",
       "Q28223974",
+      "Q28224747",
       "Q28225221",
       "Q28409026",
+      "Q2884957",
+      "Q2885099",
       "Q28854324",
+      "Q2974817",
       "Q30083718",
       "Q30894419",
       "Q3445852",
@@ -2643,20 +3566,39 @@
       "Q3664613",
       "Q3664615",
       "Q3664619",
+      "Q374662",
+      "Q3995204",
+      "Q4255374",
+      "Q48726927",
+      "Q500045",
+      "Q5313902",
       "Q5379238",
       "Q54306562",
+      "Q5567138",
       "Q5579566",
       "Q56274878",
+      "Q6063129",
       "Q60749473",
-      "Q6361166",
+      "Q6348911",
+      "Q6349998",
       "Q63656905",
+      "Q6373628",
+      "Q65084304",
+      "Q65205936",
+      "Q6546023",
+      "Q67934747",
       "Q6885794",
+      "Q7074138",
       "Q707536",
       "Q7249025",
       "Q7249153",
       "Q7380438",
       "Q743467",
+      "Q7462316",
+      "Q7969454",
+      "Q8062008",
       "Q84761125",
+      "Q84761195",
       "Q85749693",
       "Q85764720",
       "Q85790197",
@@ -2665,20 +3607,22 @@
       "Q96374910",
       "Q96374936",
       "Q97285076",
-      "Q97402084"
+      "Q97402084",
+      "Q985220",
+      "Q98937711"
     ],
     "rejected": []
   },
   "merges": [],
   "missing_fields": {
-    "aliases": 157,
-    "cap": 49,
+    "aliases": 210,
+    "cap": 117,
     "coordinate_precision": 0,
-    "cost": 225,
-    "own": 59,
+    "cost": 308,
+    "own": 122,
     "s": 0,
-    "status_date": 94,
-    "y": 94
+    "status_date": 141,
+    "y": 141
   },
   "news_match_review": {
     "accuracy_pct": null,
@@ -2696,10 +3640,10 @@
   },
   "ready_for_publication": false,
   "record_levels": {
-    "site": 225
+    "site": 308
   },
   "retained_unverified": 0,
-  "rows_dropped": 386,
+  "rows_dropped": 519,
   "schema": "investedia.projects.build-report.v1",
   "sector_coverage": {
     "Airports": {
@@ -2725,7 +3669,7 @@
     },
     "Data centres": {
       "capacity_pct": 0.0,
-      "count": 0,
+      "count": 1,
       "photo_pct": 0.0,
       "satellite_pct": 0.0,
       "status_date_pct": 0.0
@@ -2759,11 +3703,11 @@
       "status_date_pct": 0.0
     },
     "Hydro energy": {
-      "capacity_pct": 50.0,
-      "count": 16,
+      "capacity_pct": 38.46,
+      "count": 13,
       "photo_pct": 0.0,
       "satellite_pct": 0.0,
-      "status_date_pct": 81.25
+      "status_date_pct": 92.31
     },
     "Megaproject": {
       "capacity_pct": 0.0,
@@ -2816,10 +3760,10 @@
     },
     "Real estate": {
       "capacity_pct": 0.0,
-      "count": 0,
+      "count": 50,
       "photo_pct": 0.0,
       "satellite_pct": 0.0,
-      "status_date_pct": 0.0
+      "status_date_pct": 54.0
     },
     "Semiconductors": {
       "capacity_pct": 0.0,
@@ -2836,11 +3780,11 @@
       "status_date_pct": 41.67
     },
     "Water": {
-      "capacity_pct": 0.0,
-      "count": 0,
+      "capacity_pct": 51.43,
+      "count": 35,
       "photo_pct": 0.0,
       "satellite_pct": 0.0,
-      "status_date_pct": 0.0
+      "status_date_pct": 28.57
     },
     "Wind energy": {
       "capacity_pct": 90.77,
@@ -2857,6 +3801,6 @@
     "quality_dependent": true
   },
   "unique_source_sites": 0,
-  "verified_points": 225,
-  "year_pct": 58.22
+  "verified_points": 308,
+  "year_pct": 54.22
 }
