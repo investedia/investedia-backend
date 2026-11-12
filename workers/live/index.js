@@ -36,10 +36,10 @@ import { ingestCalendar, readCalendar } from './v1/calendar.js';
 export { refresh };
 const json = (h, status, body, cache = 'no-store') => new Response(JSON.stringify(body), { status, headers: { ...h, 'Content-Type': 'application/json', 'Cache-Control': cache } });
 
-export default {
 // Secrets may have been saved with lowercase names in Cloudflare (e.g. supabase_service_key): accept both spellings.
 const ALIAS = ['SUPABASE_SERVICE_KEY', 'BREVO_API_KEY', 'VAPID_PRIVATE_KEY', 'BREVO_SENDER_EMAIL'];
 const withAliases = env => { const out = Object.create(env); for (const k of ALIAS) if (!env[k] && env[k.toLowerCase()]) Object.defineProperty(out, k, { value: env[k.toLowerCase()] }); return out; };
+export default {
   async scheduled(event, env0, ctx) {
     const env = withAliases(env0);
     const log = (o) => console.log(JSON.stringify(o)), fail = (k) => (e) => log({ cron: k, error: String(e).slice(0, 200) });
