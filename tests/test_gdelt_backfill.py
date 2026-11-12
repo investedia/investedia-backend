@@ -548,3 +548,15 @@ class CountryCapTests(unittest.TestCase):
         self.assertTrue(m.country_allowed('IR', runs, {}, 15))
         self.assertFalse(m.country_allowed('TU', runs, {'TU': 140}, 15))   # 140 + 10 reaches the 150 total
         self.assertTrue(m.country_allowed('RO', runs, {}, 0))             # 0 = no cap
+
+
+class RecentIngestTests(unittest.TestCase):
+    def test_recent_dates_pass_the_ingest_check_but_old_gap_does_not(self):
+        from datetime import datetime, timezone
+        now = datetime(2026, 11, 12, 14, tzinfo=timezone.utc)
+        def story(t): return {'backfilled': True, 'published_at': t, 'source': {'url': 'https://x.invalid/a', 'name': 'X'},
+                              'backfill_provenance': {'version': m.VERSION, 'original_published_at': t}}
+        self.assertTrue(m.valid_backfilled(story('2026-11-11T10:00:00Z'), now))
+        self.assertTrue(m.valid_backfilled(story('2026-09-01T10:00:00Z'), now))
+        self.assertFalse(m.valid_backfilled(story('2026-10-25T10:00:00Z'), now))
+        self.assertFalse(m.valid_backfilled(story('2026-11-12T15:00:00Z'), now))
