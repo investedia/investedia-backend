@@ -621,13 +621,13 @@ def usage_stories(usage):
     return [{'image': {'file': f}} for f, n in sorted(usage.items()) for _ in range(min(int(n), 1000))]
 
 
-def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH, deadline=None, workers=8, translator=None, photos=True, prior_usage=(), checkpoint=None):
+def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH, deadline=None, workers=8, translator=None, photos=True, prior_usage=(), checkpoint=None, country_cap=0, country_prior=None):
     """Enrich lazily, one model batch at a time; stop when the call budget, deadline or rows run out."""
     if not 1 <= batch_size <= 40: raise ValueError('batch_size_must_be_1_to_40')
     box, by_iso, sym = ref
     out, sent, rejected, judged = [], [], Counter(), []
     cursor, max_pages = 0, budget.limit * batch_size * 4
-    attempted = 0
+    attempted = 0; run_counts = Counter(); prior_totals = dict(country_prior or {})
     with ThreadPoolExecutor(workers) as pool:
         try:
             while cursor < len(rows) and budget.calls < budget.limit and attempted < max_pages:
@@ -635,7 +635,11 @@ def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH
                 part = []
                 while len(part) < batch_size and cursor < len(rows) and attempted < max_pages:
                     take = rows[cursor:cursor + min(workers * 2, batch_size - len(part) + workers)]
-                    cursor += len(take); attempted += len(take)
+                    cursor += len(take)
+                    capped = [r for r in take if not country_allowed(r.get('gdelt_country'), run_counts, prior_totals, country_cap)]
+                    if capped:  # not fetched, not judged: a later run may still use them
+                        rejected['country_cap'] += len(capped); take = [r for r in take if r not in capped]
+                    attempted += len(take)
                     for row, (c, reason) in zip(take, pool.map(lambda r: fetcher.enrich(r, start, end), take)):
                         if c: part.append(c); continue
                         rejected[reason] += 1
@@ -678,6 +682,9 @@ def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH
                     if story.get('headline_translated'):
                         if (story.get('location') or {}).get('country') in GLOBAL_COUNTRIES: rejected['translated_outside_thin_regions'] += 1; continue
                         if story.get('category') == 'geopolitics' and not story.get('market_moving'): rejected['translated_not_business'] += 1; continue
+                    code = lookup[s['id']].get('gdelt_country')
+                    if not country_allowed(code, run_counts, prior_totals, country_cap): rejected['country_cap'] += 1; continue
+                    if code: run_counts[code] += 1
                     if photos:
                         img = topic_photo(topics.get(s['id']), s['id'], [*prior_usage, *out])
                         if img: story['image'] = img
@@ -697,6 +704,14 @@ def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH
 
 
 CHECKPOINT = 'checkpoint.json'
+# Owner request 12 Nov 2026 ("add cap"): spread articles over more countries. Keyed by GDELT/FIPS country code.
+TOTAL_CAPS = {'TU': 150}            # Turkey: at most about 150 backfilled articles in all
+COUNTRY_SEED = {'TU': 137}          # Turkey articles already published before totals were recorded (runs C and 3)
+
+
+def country_allowed(code, run_counts, prior, per_run):
+    if not per_run or not code: return True
+    return run_counts[code] < per_run and prior.get(code, 0) + run_counts[code] < TOTAL_CAPS.get(code, 10**9)
 
 
 def save_checkpoint(output, out, sent, judged):
@@ -816,10 +831,12 @@ def ingest_artifact(output, worker, state_root, now, library_push=None):
     for url in judged.get('sent', []) + judged.get('judged', []):
         if sid(url) in new_ids and sid(url) not in acked: continue  # un-acknowledged articles stay retryable
         processed[core.canon(url)] = iso(now)
+    totals = Counter({**COUNTRY_SEED, **(state.get('country_totals') or {})})
+    totals.update(s['backfill_provenance'].get('publisher_country_gdelt') for s in fresh if s['id'] in acked and s['backfill_provenance'].get('publisher_country_gdelt'))
     usage = Counter(state.get('photo_usage', {}))
     usage.update((s.get('image') or {}).get('file') for s in fresh if s['id'] in acked and (s.get('image') or {}).get('file'))
     write(state_root/'gdelt-backfill-state.json', {'schema': 'investedia.gdelt-backfill-state/v1', 'updated_at': iso(now), 'processed': processed,
-                                                    'photo_usage': dict(usage)})
+                                                    'photo_usage': dict(usage), 'country_totals': dict(totals)})
     write(output/'acknowledged.json', {'ids': sorted(acked), 'judgements_persisted': True})
     return {'days': done, 'deferred': deferred, 'acknowledged_articles': len(acked), 'already_present': len(new) - len(fresh)}
 
@@ -828,7 +845,7 @@ def ingest_artifact(output, worker, state_root, now, library_push=None):
 def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=None, gemini_calls=DEFAULT_CALLS,
         batch_size=MODEL_BATCH, gdelt_files=DEFAULT_GDELT_FILES, max_minutes=100, now=None,
         gdelt_get=None, page_get=None, model_get=None, library_push=None, sleep=time.sleep, state_root=None, ingest=True,
-        provider='gemini', claude_model='claude-haiku-5-5', max_usd=3.0, claude_client=None, sources='english'):
+        provider='gemini', claude_model='claude-haiku-5-5', max_usd=3.0, claude_client=None, sources='english', country_cap=0):
     if sources not in ('english', 'english+translated', 'translated'): raise ValueError('sources_invalid')
     if 'translated' in sources and provider != 'claude': raise ValueError('translated_sources_need_claude_writer')
     if provider not in ('gemini', 'claude'): raise ValueError('provider_must_be_gemini_or_claude')
@@ -915,7 +932,9 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         report['photo_topics'] = len(robot.PHOTO_TOPICS)
         prior = usage_stories(state.get('photo_usage', {}))
         new, sent, enrich_rejected, judged = generate(ordered, a, b, now, ref, budget, fetcher, batch_size, deadline, translator=editor, prior_usage=prior,
-                                                      checkpoint=lambda o, se, j: save_checkpoint(output, o, se, j))
+                                                      checkpoint=lambda o, se, j: save_checkpoint(output, o, se, j),
+                                                      country_cap=country_cap, country_prior={**COUNTRY_SEED, **(state.get('country_totals') or {})})
+        report['country_cap'] = country_cap
         new, reasons = finalize(new, now, a, b, reference)
         days = library_days(new)
         found_region = {c['url']: c['gdelt_region'] for c in sent}
@@ -980,7 +999,7 @@ def main(argv=None):
     p.add_argument('--phase', choices=['all', 'generate', 'ingest', 'rescue'], default='all')
     p.add_argument('--provider', choices=['gemini', 'claude'], default='gemini')
     p.add_argument('--claude-model', choices=sorted(CLAUDE_PRICES), default='claude-haiku-5-5')
-    p.add_argument('--max-usd', type=float, default=3.0)
+    p.add_argument('--max-usd', type=float, default=3.0); p.add_argument('--country-cap', type=int, default=0)
     p.add_argument('--sources', choices=['english', 'english+translated', 'translated'], default='english')
     p.add_argument('--cache', type=Path, default=ROOT/'.local/gdelt-cache'); p.add_argument('--output', type=Path, default=ROOT/'.local/gdelt-backfill')
     a = p.parse_args(argv)
@@ -1014,7 +1033,7 @@ def main(argv=None):
     try:
         r = run(a.start, a.end, a.regions, a.dry_run == 'true', a.output, os.environ['WORKER_URL'], a.cache, a.gemini_model,
                 a.gemini_calls, a.batch_size, a.gdelt_files, a.max_minutes, ingest=a.phase == 'all',
-                provider=a.provider, claude_model=a.claude_model, max_usd=a.max_usd, sources=a.sources)
+                provider=a.provider, claude_model=a.claude_model, max_usd=a.max_usd, sources=a.sources, country_cap=a.country_cap)
         print(json.dumps({k: r.get(k) for k in ('state', 'new_articles', 'by_region', 'gemini_calls', 'cost_usd', 'elapsed_seconds')}))
         return 0
     except (ValueError, OSError):

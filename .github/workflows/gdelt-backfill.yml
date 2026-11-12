@@ -51,6 +51,10 @@ on:
         type: choice
         options: [english, translated, english+translated]
         default: english
+      country_cap:
+        description: 'Most articles per country in one run (0 = no cap); Turkey also capped at about 150 in all'
+        default: '15'
+        required: true
       max_usd:
         description: 'Claude spending cap for this run in US dollars (the run stops before passing it)'
         default: '3'
@@ -83,6 +87,7 @@ jobs:
           END_DATE: ${{ inputs.end_date }}
           REGIONS: ${{ inputs.regions }}
           MAX_USD: ${{ inputs.max_usd }}
+          COUNTRY_CAP: ${{ inputs.country_cap }}
         run: |
           python - <<'PY'
           import os, re
@@ -96,6 +101,7 @@ jobs:
           a, b = os.environ['START_DATE'], os.environ['END_DATE']
           assert a <= b and (('2026-08-01' <= a and b <= '2026-10-15') or (recent <= a and b <= today.isoformat())), 'window must be inside 2026-08-01..2026-10-15 or the last 3 days'
           assert re.fullmatch(r'[a-z_,\s]{1,200}', os.environ['REGIONS']), 'regions: names separated by commas'
+          assert 0 <= int(os.environ['COUNTRY_CAP']) <= 200, 'country_cap must be 0–200'
           assert 0 < float(os.environ['MAX_USD']) <= 50, 'max_usd must be above 0 and at most 50'
           PY
       - name: Offline tests
@@ -147,13 +153,14 @@ jobs:
           WRITER: ${{ inputs.writer }}
           MAX_USD: ${{ inputs.max_usd }}
           SOURCES: ${{ inputs.sources }}
+          COUNTRY_CAP: ${{ inputs.country_cap }}
           GEMINI_API_KEY: ${{ inputs.writer == 'gemini' && secrets.GEMINI_API_KEY || '' }}
           ANTHROPIC_API_KEY: ${{ inputs.writer != 'gemini' && secrets.ANTHROPIC_API_KEY || '' }}
           WORKER_URL: ${{ secrets.WORKER_URL }}
           PIXABAY_KEY: ''
         run: >-
           python tools/gdelt-backfill.py --phase generate
-          $( [ "$WRITER" = gemini ] && echo --provider gemini || echo --provider claude --claude-model "$WRITER" ) --max-usd "$MAX_USD" --sources "$SOURCES"
+          $( [ "$WRITER" = gemini ] && echo --provider gemini || echo --provider claude --claude-model "$WRITER" ) --max-usd "$MAX_USD" --sources "$SOURCES" --country-cap "$COUNTRY_CAP"
           --confirm "$CONFIRM" --dry-run "$DRY_RUN"
           --start "$START_DATE" --end "$END_DATE" --regions "$REGIONS"
           --gemini-calls "$CALLS" --batch-size "$BATCH" --gdelt-files "$GDELT" --max-minutes 100

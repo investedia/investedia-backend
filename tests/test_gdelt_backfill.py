@@ -538,3 +538,13 @@ class RecentWindowTests(unittest.TestCase):
         with self.assertRaises(ValueError): m.window('2026-11-01', '2026-11-12', today=today)
         with self.assertRaises(ValueError): m.window('2026-10-20', '2026-10-21', today=today)
         m.window('2026-08-01', '2026-10-15', today=today)
+
+
+class CountryCapTests(unittest.TestCase):
+    def test_per_run_and_total_caps(self):
+        from collections import Counter
+        runs = Counter({'RO': 15, 'TU': 10})
+        self.assertFalse(m.country_allowed('RO', runs, {}, 15))
+        self.assertTrue(m.country_allowed('IR', runs, {}, 15))
+        self.assertFalse(m.country_allowed('TU', runs, {'TU': 140}, 15))   # 140 + 10 reaches the 150 total
+        self.assertTrue(m.country_allowed('RO', runs, {}, 0))             # 0 = no cap
