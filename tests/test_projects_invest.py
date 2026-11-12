@@ -79,6 +79,13 @@ class InvestLayer(unittest.TestCase):
         linked = record(link=[{'url': 'https://example.org/annual-report', 'proves': 'Holdco is 60% owned by Listed Power', 'retrieved_at': TODAY, 'edge': ['E2', 'E1']}])
         self.assertEqual(self.run_build(rows, {'gem:L1|E1': linked})[1]['public_projects'], 1)
 
+    def test_owner_ids_pair_by_name_not_position(self):
+        # GEM row with names and IDs in different orders (real case: Rabigh 2).
+        rows = [unit(**{'Owner(s)': 'State Utility [50%]; Listed Power PLC [50%]', 'Owner(s) GEM Entity ID': 'E1 [50%]; E3 [50%]'})]
+        research, _, _ = self.run_build(rows)
+        self.assertEqual([(e['owner'], e['listed_entity_id']) for e in research[0]['candidate_exposures']], [('Listed Power PLC', 'E1')])
+        self.assertEqual({o['name']: o['entity_id'] for o in research[0]['owners']}, {'State Utility': 'E3', 'Listed Power PLC': 'E1'})
+
     def test_unknown_stake_stays_unknown(self):
         e = self.reg.exposures({'name': 'Project Holdco', 'entity_id': 'E2', 'stake': None})[0]
         self.assertIsNone(e['effective_stake'])

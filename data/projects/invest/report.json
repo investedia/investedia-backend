@@ -3,7 +3,7 @@
  "candidate_listed_companies": 608,
  "candidates": {
   "by_kind_Bioenergy": 96,
-  "by_kind_Coal": 295,
+  "by_kind_Coal": 294,
   "by_kind_Geothermal": 23,
   "by_kind_Hydropower": 176,
   "by_kind_Nuclear": 27,
@@ -12,22 +12,22 @@
   "by_kind_Wind": 902,
   "by_stage_Announced": 697,
   "by_stage_Pre-construction": 1408,
-  "by_stage_Under construction": 865,
-  "by_type_E1": 1630,
-  "by_type_E1+E3": 79,
+  "by_stage_Under construction": 864,
+  "by_type_E1": 1628,
+  "by_type_E1+E3": 80,
   "by_type_E3": 1261,
-  "exact_location": 1085,
-  "listed_company_has_lei_or_cik": 2656,
-  "matched_by_gem_id": 1130,
-  "projects_with_candidate": 2970
+  "exact_location": 1084,
+  "listed_company_has_lei_or_cik": 2655,
+  "matched_by_gem_id": 1153,
+  "projects_with_candidate": 2969
  },
  "missing_country_code": 0,
  "not_public_reasons": {
-  "no verified exposure to a listed company": 27864
+  "no verified exposure to a listed company": 27861
  },
  "notice": "Candidates are not verified. Only public_projects are shown. Not investment advice.",
  "pipeline_projects": 27864,
- "public_projects": 0,
+ "public_projects": 3,
  "sources": {
   "ownership": {
    "licence": "CC BY 4.0",
@@ -50,12 +50,12 @@
    75
   ],
   [
-   "Power Construction Corporation of China",
-   71
-  ],
-  [
    "Huadian Power International",
    70
+  ],
+  [
+   "Power Construction Corporation of China",
+   68
   ],
   [
    "Iberdrola",
@@ -66,20 +66,20 @@
    57
   ],
   [
-   "ENGIE",
-   56
-  ],
-  [
    "NextEra Energy",
    56
   ],
   [
-   "Datang International Power Generation",
+   "ENGIE",
    55
   ],
   [
    "RWE",
    55
+  ],
+  [
+   "Datang International Power Generation",
+   54
   ],
   [
    "China Energy Engineering",

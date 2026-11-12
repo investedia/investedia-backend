@@ -28,8 +28,11 @@ def pct(v):
         return None
 
 
-def split_owners(names, ids):
-    """'A [65%]; B [35%]' + 'E1 [65%]; E2 [35%]' -> [{name, entity_id, stake}]. IDs align by position."""
+def split_owners(names, ids, registry=None):
+    """'A [65%]; B [35%]' + 'E1 [65%]; E2 [35%]' -> [{name, entity_id, stake}].
+
+    GEM's name and ID columns are not always in the same order (seen: Rabigh 2), so with a registry each
+    name is paired with the row ID whose registered name matches; without one, IDs pair by position."""
     parts = [p.strip() for p in (clean(names) or '').split(';') if p.strip()]
     id_parts = [p.strip() for p in (clean(ids) or '').split(';') if p.strip()]
     out = []
@@ -43,7 +46,17 @@ def split_owners(names, ids):
         if norm(name) in ('unknown', 'small shareholder s', 'natural person s', 'other'):
             continue
         out.append({'name': name, 'entity_id': eid, 'stake': float(m.group(2)) if m.group(2) else None})
+    if registry is not None:
+        row_ids = [re.match(r'^(E\d+)', x).group(1) for x in id_parts if re.match(r'^(E\d+)', x)]
+        for o in out:
+            o['entity_id'] = registry.pair(o['name'], row_ids)
     return out
+
+
+def similar(a, b):
+    stop = {'co', 'ltd', 'inc', 'corp', 'company', 'sa', 'ag', 'se', 'plc', 'llc', 'the', 'of', 'and', 'group'}
+    ta, tb = set(norm(a).split()) - stop, set(norm(b).split()) - stop
+    return len(ta & tb) / max(1, min(len(ta), len(tb))) if ta and tb else 0.0
 
 
 class Registry:
@@ -71,6 +84,12 @@ class Registry:
                 self.up[child].append({'parent': parent, 'stake': pct(r.get('% Share of Ownership')),
                                        'source_url': clean(r.get('Data Source URL')),
                                        'imputed': 'imputed value' == clean(r.get('Share Imputed?'))})
+
+    def pair(self, name, row_ids):
+        """The row ID whose registered name matches this owner name, else None (never by position)."""
+        best = max(((similar(name, self.entities[i]['name'] or ''), similar(name, self.entities[i]['full_name'] or ''), i)
+                    for i in row_ids if i in self.entities), default=None, key=lambda t: max(t[0], t[1]))
+        return best[2] if best and max(best[0], best[1]) >= 0.5 else None
 
     def resolve(self, owner):
         """Return (entity, match) where match is 'id', 'name' or None."""

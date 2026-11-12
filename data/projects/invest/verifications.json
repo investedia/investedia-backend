@@ -1,5 +1,99 @@
 {
  "schema": "investedia.projects.invest.verifications.v1",
  "how": "One record per '<project id>|<listed GEM entity id>'. identity {scheme LEI|CIK, id, source_url, checked_at}; listing {ticker, exchange, source_url, checked_at}; link [{url, proves, quote, retrieved_at, edge?}] with at least one primary document; reviewer; verified_at. See tools/projects/invest/rules.py.",
- "records": {}
+ "records": {
+  "gem:L100000101875|E100000000407": {
+   "identity": {
+    "scheme": "LEI",
+    "id": "529900JSFZ4TS59HKD79",
+    "legal_name": "EnBW Energie Baden-Württemberg AG",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/529900JSFZ4TS59HKD79",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "EBK",
+    "exchange": "Frankfurt Stock Exchange and Stuttgart Stock Exchange (regulated market)",
+    "isin": "DE0005220008",
+    "source_url": "https://www.enbw.com/company/investors/share/",
+    "checked_at": "2026-11-12"
+   },
+   "link": [
+    {
+     "url": "https://www.enbw.com/company/topics/coal-phaseout/heilbronn-combined-heat-and-power-plant/",
+     "proves": "EnBW is building the 675 MW Heilbronn CCGT plant; groundbreaking 23 Feb 2024; commissioning expected 2027",
+     "quote": "EnBW is building a controllable, hydrogen-ready combined cycle gas turbine (CCGT) plant at the site.",
+     "retrieved_at": "2026-11-12"
+    }
+   ],
+   "stake": {
+    "value": null,
+    "note": "Company page states EnBW builds the plant; percentage not stated by the company (GEM lists 100%)"
+   },
+   "reviewer": "Claude (agent), 12 Nov 2026",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100000101873|E100000000407": {
+   "identity": {
+    "scheme": "LEI",
+    "id": "529900JSFZ4TS59HKD79",
+    "legal_name": "EnBW Energie Baden-Württemberg AG",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/529900JSFZ4TS59HKD79",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "EBK",
+    "exchange": "Frankfurt Stock Exchange and Stuttgart Stock Exchange (regulated market)",
+    "isin": "DE0005220008",
+    "source_url": "https://www.enbw.com/company/investors/share/",
+    "checked_at": "2026-11-12"
+   },
+   "link": [
+    {
+     "url": "https://www.enbw.com/unternehmen/konzern/energieerzeugung/neubau-und-projekte/gas-und-dampfturbinenanlage-gud-altbach-deizisau/",
+     "proves": "EnBW is building the 665 MW Altbach/Deizisau CCGT plant; gas connection completed Sep 2026; commercial operation expected Q3 2027",
+     "quote": "die EnBW am Standort eine regelbare, wasserstofffähige Gas- und Dampfturbinenanlage (GuD) baut",
+     "retrieved_at": "2026-11-12"
+    }
+   ],
+   "stake": {
+    "value": null,
+    "note": "Company page states EnBW builds the plant; percentage not stated by the company (GEM lists 100%)"
+   },
+   "reviewer": "Claude (agent), 12 Nov 2026",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100000401075|E100000000882": {
+   "identity": {
+    "scheme": "LEI",
+    "id": "558600Y0TFKRV2QZ1A74",
+    "legal_name": "شركة أكوا باور شركة مساهمة سعودية",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "2082",
+    "exchange": "Saudi Exchange (Tadawul), main market",
+    "isin": "SA15CGS10H12",
+    "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+    "checked_at": "2026-11-12"
+   },
+   "link": [
+    {
+     "url": "https://acwapower.com/en/media-center/latest-news/acwa-signs-power-purchase-agreement-for-the-expansion-of-rabigh-2-power-plant-project/",
+     "proves": "ACWA Power holds a 40% equity stake in the 2,313.5 MW Rabigh 2 IPP Expansion Project (PPA signed 16 Apr 2026)",
+     "quote": "Acwa will hold a 40% equity stake in the project.",
+     "retrieved_at": "2026-11-12"
+    }
+   ],
+   "stake": {
+    "value": 40.0,
+    "note": "Stated by the company"
+   },
+   "reviewer": "Claude (agent), 12 Nov 2026",
+   "verified_at": "2026-11-12"
+  }
+ }
 }

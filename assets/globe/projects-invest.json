@@ -4,6 +4,241 @@
   "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release (CC BY 4.0)",
   "Global Energy Monitor, Global Energy Ownership Tracker, November 2026 (CC BY 4.0)"
  ],
- "projects": [],
+ "projects": [
+  {
+   "cc": "DE",
+   "cost": null,
+   "country": "Germany",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 100.0,
+     "hq_country": "Germany",
+     "lei": "529900JSFZ4TS59HKD79",
+     "listed_entity_id": "E100000000407",
+     "listed_name": "EnBW Energie Baden-Württemberg",
+     "owner": "EnBW Energie Baden-Württemberg AG",
+     "owner_match": "id",
+     "owner_stake": 100.0,
+     "path": [
+      "E100000000407"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "EnBW Energie Baden-Württemberg"
+     ],
+     "type": "E1",
+     "verification": {
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "529900JSFZ4TS59HKD79",
+       "legal_name": "EnBW Energie Baden-Württemberg AG",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/529900JSFZ4TS59HKD79",
+       "status": "ACTIVE"
+      },
+      "link": [
+       {
+        "proves": "EnBW is building the 665 MW Altbach/Deizisau CCGT plant; gas connection completed Sep 2026; commercial operation expected Q3 2027",
+        "quote": "die EnBW am Standort eine regelbare, wasserstofffähige Gas- und Dampfturbinenanlage (GuD) baut",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.enbw.com/unternehmen/konzern/energieerzeugung/neubau-und-projekte/gas-und-dampfturbinenanlage-gud-altbach-deizisau/"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "Frankfurt Stock Exchange and Stuttgart Stock Exchange (regulated market)",
+       "isin": "DE0005220008",
+       "source_url": "https://www.enbw.com/company/investors/share/",
+       "ticker": "EBK"
+      },
+      "reviewer": "Claude (agent), 12 Nov 2026",
+      "stake": {
+       "note": "Company page states EnBW builds the plant; percentage not stated by the company (GEM lists 100%)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100000101873",
+   "kind": "Oil & gas",
+   "lat": 48.717185,
+   "lon": 9.37079,
+   "mw": 665.0,
+   "name": "Altbach power station",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Altbach_power_station"
+  },
+  {
+   "cc": "DE",
+   "cost": null,
+   "country": "Germany",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 100.0,
+     "hq_country": "Germany",
+     "lei": "529900JSFZ4TS59HKD79",
+     "listed_entity_id": "E100000000407",
+     "listed_name": "EnBW Energie Baden-Württemberg",
+     "owner": "EnBW Energie Baden-Württemberg AG",
+     "owner_match": "id",
+     "owner_stake": 100.0,
+     "path": [
+      "E100000000407"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "EnBW Energie Baden-Württemberg"
+     ],
+     "type": "E1",
+     "verification": {
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "529900JSFZ4TS59HKD79",
+       "legal_name": "EnBW Energie Baden-Württemberg AG",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/529900JSFZ4TS59HKD79",
+       "status": "ACTIVE"
+      },
+      "link": [
+       {
+        "proves": "EnBW is building the 675 MW Heilbronn CCGT plant; groundbreaking 23 Feb 2024; commissioning expected 2027",
+        "quote": "EnBW is building a controllable, hydrogen-ready combined cycle gas turbine (CCGT) plant at the site.",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.enbw.com/company/topics/coal-phaseout/heilbronn-combined-heat-and-power-plant/"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "Frankfurt Stock Exchange and Stuttgart Stock Exchange (regulated market)",
+       "isin": "DE0005220008",
+       "source_url": "https://www.enbw.com/company/investors/share/",
+       "ticker": "EBK"
+      },
+      "reviewer": "Claude (agent), 12 Nov 2026",
+      "stake": {
+       "note": "Company page states EnBW builds the plant; percentage not stated by the company (GEM lists 100%)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100000101875",
+   "kind": "Oil & gas",
+   "lat": 49.175277,
+   "lon": 9.207428,
+   "mw": 675.0,
+   "name": "Heilbronn power station",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Heilbronn_power_station"
+  },
+  {
+   "cc": "SA",
+   "cost": null,
+   "country": "Saudi Arabia",
+   "expected_year": null,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 40.0,
+     "hq_country": "Saudi Arabia",
+     "lei": "558600Y0TFKRV2QZ1A74",
+     "listed_entity_id": "E100000000882",
+     "listed_name": "ACWA Power",
+     "owner": "ACWA Power Co",
+     "owner_match": "id",
+     "owner_stake": 40.0,
+     "path": [
+      "E100000000882"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "ACWA Power"
+     ],
+     "type": "E1",
+     "verification": {
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "558600Y0TFKRV2QZ1A74",
+       "legal_name": "شركة أكوا باور شركة مساهمة سعودية",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+       "status": "ACTIVE"
+      },
+      "link": [
+       {
+        "proves": "ACWA Power holds a 40% equity stake in the 2,313.5 MW Rabigh 2 IPP Expansion Project (PPA signed 16 Apr 2026)",
+        "quote": "Acwa will hold a 40% equity stake in the project.",
+        "retrieved_at": "2026-11-12",
+        "url": "https://acwapower.com/en/media-center/latest-news/acwa-signs-power-purchase-agreement-for-the-expansion-of-rabigh-2-power-plant-project/"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "Saudi Exchange (Tadawul), main market",
+       "isin": "SA15CGS10H12",
+       "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+       "ticker": "2082"
+      },
+      "reviewer": "Claude (agent), 12 Nov 2026",
+      "stake": {
+       "note": "Stated by the company",
+       "value": 40.0
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100000401075",
+   "kind": "Oil & gas",
+   "lat": 22.628931,
+   "lon": 39.046689,
+   "mw": 2313.0,
+   "name": "Rabigh 2 IPP power station",
+   "other_owners": [
+    {
+     "entity_id": "E100000003970",
+     "name": "Saudi Power Procurement Co",
+     "stake": 40.0
+    }
+   ],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Rabigh_2_IPP_power_station"
+  }
+ ],
  "schema": "investedia.projects.invest.v1"
 }

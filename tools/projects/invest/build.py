@@ -51,7 +51,7 @@ def num(v):
         return None
 
 
-def plants(rows, iso):
+def plants(rows, iso, registry=None):
     """Group unit rows into plants by GEM location ID. Keeps pipeline units only."""
     groups = defaultdict(list)
     for r in rows:
@@ -64,7 +64,7 @@ def plants(rows, iso):
         years = [int(y) for y in (num(u.get('Start year')) for u in units) if y]
         owners, seen = [], set()
         for u in units:
-            for o in split_owners(u.get('Owner(s)'), u.get('Owner(s) GEM Entity ID')):
+            for o in split_owners(u.get('Owner(s)'), u.get('Owner(s) GEM Entity ID'), registry):
                 if (o['name'], o['entity_id']) not in seen:
                     seen.add((o['name'], o['entity_id']))
                     owners.append(o)
@@ -81,7 +81,7 @@ def plants(rows, iso):
 
 def build(power_rows, iso, registry, ledger, today):
     research, public, why, cand = [], [], Counter(), Counter()
-    for p in plants(power_rows, iso):
+    for p in plants(power_rows, iso, registry):
         exposures = [dict(e, owner=o['name'], owner_stake=o['stake']) for o in p['owners'] for e in registry.exposures(o)]
         ok, reasons, verified = evaluate(p, exposures, ledger, today)
         research.append(dict(p, candidate_exposures=exposures, public=ok, reasons=reasons))
