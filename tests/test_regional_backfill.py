@@ -265,3 +265,10 @@ class ExtraFeedsTests(unittest.TestCase):
         self.assertEqual({e['url'] for e in enabled},urls)
         hourly={u for u,_,_ in m.robot.REGION_FEEDS}|{u for u,_,_ in m.robot.FEEDS}
         self.assertFalse(urls&hourly)
+
+
+class ThinCapTests(unittest.TestCase):
+    def test_big_economies_dropped_and_country_capped(self):
+        rows=[{'location':{'country':'United States of America'}}]+[{'location':{'country':'Tanzania'}} for _ in range(20)]+[{'location':{'country':'Rwanda'}}]
+        rep={};kept=m.thin_and_capped(rows,rep)
+        self.assertEqual(len(kept),16);self.assertEqual(rep['thin_filter_dropped'],{'big_economy':1,'country_cap':5})

@@ -190,6 +190,22 @@ class ClaudeWriter:
         except ValueError: return []
 
 
+BIG_ECONOMIES = {'United States of America', 'United Kingdom', 'Germany', 'France', 'Canada', 'Netherlands', 'Switzerland',
+                 'Belgium', 'Austria', 'Ireland', 'Sweden', 'Denmark', 'Norway', 'Finland', 'Luxembourg'}
+EXTRA_COUNTRY_CAP = 15
+
+
+def thin_and_capped(stories, report):
+    """Thin-region feeds (owner 12 Nov 2026): skip big-economy articles; at most EXTRA_COUNTRY_CAP per country per run."""
+    kept=[];per=Counter();dropped=Counter()
+    for s in stories:
+        country=(s.get('location') or {}).get('country')
+        if country in BIG_ECONOMIES:dropped['big_economy']+=1;continue
+        if per[country]>=EXTRA_COUNTRY_CAP:dropped['country_cap']+=1;continue
+        per[country]+=1;kept.append(s)
+    report['thin_filter_dropped']=dict(dropped);return kept
+
+
 HEADLINE_PROMPT = ('Below are news headlines. For each one NOT in English, translate it faithfully into clear English '
                    '(keep names, numbers, currencies and dates exactly; add nothing). Return only a JSON array of '
                    '{"i": <same i>, "english": "<English headline>"} for the non-English ones; omit English ones.\n\nHeadlines: ')
@@ -222,13 +238,13 @@ def request(url, data=None, headers=None, timeout=15, raw=False):
 # Owner request 12 Nov 2026 ("add 6" + "check africa batch"): thin-region feeds checked live that day (feed works,
 # robots.txt allows feed and articles, pages carry a publish date, no paywall). Used only by this tool, never the hourly robot.
 EXTRA_FEEDS_2026_11_12 = [
-    ('https://www.jamaicaobserver.com/feed', 'Jamaica Observer', 'latam'),
+    ('https://www.jamaicaobserver.com/feed/', 'Jamaica Observer', 'latam'),
     ('https://www.diariolibre.com/rss/portada.xml', 'Diario Libre', 'latam'),
     ('https://barbadostoday.bb/feed/', 'Barbados Today', 'latam'),
     ('https://24.kg/rss', '24.kg', 'asia'),
     ('https://www.gazeta.uz/oz/rss/', 'Gazeta.uz', 'asia'),
     ('https://islandsbusiness.com/feed/', 'Islands Business', 'oc'),
-    ('https://punchng.com/feed/', 'Punch Nigeria', 'af'),
+    ('https://rss.punchng.com/v1/category/latest_news', 'Punch Nigeria', 'af'),
     ('https://capitalethiopia.com/feed/', 'Capital Ethiopia', 'af'),
     ('https://www.tanzaniainvest.com/feed', 'TanzaniaInvest', 'af'),
     ('https://www.lusakatimes.com/feed/', 'Lusaka Times', 'af'),
@@ -587,6 +603,7 @@ def run(days,dry_run,connections_only,inventory,output,worker,gemini_model=None,
         proposals,new_reasons=evidence(new+repairs,now,registry,prices,licences)
         for row in proposals:row.pop('_feed_description',None)
         new_ids={s['id'] for s in new};new=[s for s in proposals if s['id'] in new_ids]
+        if sources_set=='extra-2026-11-12':new=thin_and_capped(new,report)
         if claude and new:report['headlines_translated']=english_headlines(claude,new)
         repairs=[s for s in proposals if s['id'] not in new_ids and s.get('impacts')]
         for s in repairs:
