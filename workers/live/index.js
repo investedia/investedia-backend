@@ -27,6 +27,7 @@ async function snapshot() {
 import { refresh, handlePrices, handleStatus } from './v1/prices.js';
 import { refreshNews, handleNews, handleGlobe, ingestNews, historyCapabilities } from './v1/news.js';
 import { ingestLibrary, handleLibrary } from './v1/library.js';
+import { runAlerts, runPriceAlerts, alertsReady, unsubscribe, FREE_SMART } from './v1/alerts.js';
 import { handleMarkets } from './v1/markets.js';
 import { ingestCalls, readCalls } from './v1/calls.js';
 import { joinWaitlist } from './v1/waitlist.js';
@@ -39,7 +40,9 @@ export default {
   async scheduled(event, env, ctx) {
     const log = (o) => console.log(JSON.stringify(o)), fail = (k) => (e) => log({ cron: k, error: String(e).slice(0, 200) });
     if (event.cron === '*/5 * * * *') { if (env.NEWS_CRON === 'on') ctx.waitUntil(refreshNews(env).then(r => log({ cron: 'news', fetched: r.fetched, candidates: r.candidates, added: r.added, wrote: r.wrote, gemini_ok: r.gemini_ok, feeds_failed: r.feeds_failed })).catch(fail('news'))); }
-    else ctx.waitUntil(refresh(env).then(r => log({ cron: 'prices', ok: r.ok, sent: r.sent, wrote: r.wrote, changed: r.changed, reason: r.reason })).catch(fail('prices')));
+    else ctx.waitUntil(refresh(env).then(r => log({ cron: 'prices', ok: r.ok, sent: r.sent, wrote: r.wrote, changed: r.changed, reason: r.reason })).catch(fail('prices'))
+      // price-move smart alerts every 10 minutes, from the snapshot the price run just wrote
+      .then(async () => { if (!alertsReady(env) || Math.floor(event.scheduledTime / 120e3) % 5) return; let px = null; try { px = JSON.parse(await env.PRICES.get('px'))?.p || null; } catch {} const a = await runPriceAlerts(env, px); if (!a.skipped) log({ cron: 'price-alerts', ...a }); }).catch(fail('price-alerts')));
   },
   async fetch(req, env, ctx) {
     const h = cors(req), url = new URL(req.url);
@@ -82,11 +85,21 @@ export default {
     if (req.method === 'POST' && url.pathname === '/v1/ingest/news') {
       let r; try { r = await ingestNews(req, env); } catch (e) { console.log(JSON.stringify({ route: 'ingest', error: String(e).slice(0, 200) })); r = { status: 500, body: { error: 'internal' } }; }
       if (r.status === 200 && r.body.written) ctx.waitUntil(Promise.all(['/v1/news', '/v1/globe'].map(path => caches.default.delete(new Request(url.origin + path + '#v1', { method: 'GET' })))));
-      return json({}, r.status, r.body);
+      // push alerts for followers (off unless ALERTS_ENABLED and keys are set); never delays or fails the ingest
+      if (r.status === 200 && r.body.written && r.body.added?.length) ctx.waitUntil(runAlerts(env, r.body.added).catch(e => console.log(JSON.stringify({ route: 'alerts', error: String(e).slice(0, 200) }))));
+      const { added, ...shown } = r.body || {}; return json({}, r.status, added ? { ...shown, added: added.length } : r.body);
     }
     if (req.method === 'POST' && url.pathname === '/v1/ingest/library') {
       let r; try { r = await ingestLibrary(req, env); } catch (e) { console.log(JSON.stringify({ route: 'ingest-library', error: String(e).slice(0, 200) })); r = { status: 500, body: { error: 'internal' } }; }
       return json({}, r.status, r.body);
+    }
+    if ((req.method === 'GET' || req.method === 'POST') && url.pathname === '/v1/alerts/unsubscribe') {
+      const r = await unsubscribe(url, env).catch(() => ({ status: 500, html: 'Something went wrong.' }));
+      return new Response(r.html, { status: r.status, headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' } });
+    }
+    if (req.method === 'GET' && url.pathname === '/v1/alerts/config') {
+      // public part of the push setup: the site needs the VAPID public key to subscribe a browser; off until the owner turns alerts on
+      return json(h, 200, { data: { enabled: alertsReady(env), vapidPublicKey: alertsReady(env) && env.VAPID_PRIVATE_KEY ? env.VAPID_PUBLIC_KEY : null, freeSmartAlerts: FREE_SMART, smartPeriodDays: 7 } }, 'public, max-age=300');
     }
     if (req.method === 'GET' && url.pathname === '/v1/library') {
       let r; try { r = await handleLibrary(url, env); } catch { r = { status: 500, body: { error: 'internal' } }; }
