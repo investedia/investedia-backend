@@ -102,17 +102,17 @@ def sec_sub(cik):
         return None
 
 
-def run(monthly, annual, today):
+def run(monthly, annual, today, year=2024):
     m = pd.read_excel(monthly, sheet_name='Planned', header=2)
     m = m[pd.to_numeric(m['Plant ID'], errors='coerce').notna()].copy()
     m['mw'] = pd.to_numeric(m['Nameplate Capacity (MW)'], errors='coerce')
-    gen = pd.read_excel(Path(annual) / '3_1_Generator_Y2024.xlsx', sheet_name=None, header=1)
+    gen = pd.read_excel(Path(annual) / ('3_1_Generator_Y%d.xlsx' % year), sheet_name=None, header=1)
     known = set()
     for sh in ('Operable', 'Proposed'):
         g = gen[sh]
         g = g[pd.to_numeric(g['Plant Code'], errors='coerce').notna()]
         known |= {(int(a), str(b)) for a, b in zip(g['Plant Code'], g['Generator ID'])}
-    own = pd.read_excel(Path(annual) / '4___Owner_Y2024.xlsx', header=1)
+    own = pd.read_excel(Path(annual) / ('4___Owner_Y%d.xlsx' % year), header=1)
     own = own[pd.to_numeric(own['Plant Code'], errors='coerce').notna()]
     owners = defaultdict(list)
     for r in own.itertuples():
@@ -144,7 +144,7 @@ def run(monthly, annual, today):
         stats['plants'] += 1
         gens = [(int(pid), str(x)) for x in g['Generator ID']]
         if not all(k in known for k in gens):
-            rec['route_b'] = {'category': 'C', 'reason': 'generator newer than the EIA-860 2024 ownership survey'}
+            rec['route_b'] = {'category': 'C', 'reason': 'generator newer than the EIA-860 %d ownership survey' % year}
             records.append(rec); stats['C newer than ownership survey'] += 1
             continue
         sets = {tuple(sorted(owners.get(k, [(r0['Entity Name'], int(r0['Entity ID']), None)]))) for k in gens}
@@ -200,9 +200,9 @@ def run(monthly, annual, today):
             rec.setdefault('candidate_exposures', []).append(exposure)
             evidence = [{'url': 'https://www.eia.gov/electricity/data/eia860m/', 'document_date': '2026-09-30', 'publisher': 'U.S. EIA',
                          'proves': 'EIA-860M lists %s (plant %d) as planned, status %s, reported by %s' % (rec['name'], pid, status, r0['Entity Name']), 'retrieved_at': today},
-                        {'url': 'https://www.eia.gov/electricity/data/eia860/', 'document_date': '2025-09-30', 'publisher': 'U.S. EIA',
-                         'proves': ('EIA-860 2024 Schedule 4 lists %s as owner (%s%%)' % (o['name'], o['stake']) if o['stake'] is not None
-                                    else 'EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity %s owns the generators (EIA instructions, Schedule 4 item 1)' % o['name']),
+                        {'url': 'https://www.eia.gov/electricity/data/eia860/', 'document_date': None, 'edition': 'EIA-860 %d data' % year, 'publisher': 'U.S. EIA',
+                         'proves': ('EIA-860 %d Schedule 4 lists %s as owner (%s%%)' % (year, o['name'], o['stake']) if o['stake'] is not None
+                                    else 'EIA-860 %d Schedule 4 lists no other owner, so the reporting entity %s owns the generators (EIA instructions, Schedule 4 item 1)' % (year, o['name'])),
                          'retrieved_at': today},
                         {'url': 'https://api.gleif.org/api/v1/lei-records/%s' % chain[0]['lei'], 'publisher': 'GLEIF', 'document_date': today,
                          'proves': 'Legal entity %s, LEI %s' % (chain[0]['name'], chain[0]['lei']), 'retrieved_at': today}]
@@ -216,8 +216,8 @@ def run(monthly, annual, today):
                 'identity': {'scheme': 'LEI', 'id': chain[-1]['lei'], 'legal_name': chain[-1]['name'], 'source_url': 'https://api.gleif.org/api/v1/lei-records/' + chain[-1]['lei'], 'checked_at': today},
                 'listing': {'ticker': L['ticker'], 'exchange': L['exchange'], 'cik': L.get('cik'), 'source_url': 'https://data.sec.gov/submissions/CIK%010d.json' % int(L['cik']) if L.get('cik') else L.get('source_url'), 'checked_at': today},
                 'link': evidence,
-                'stake': ({'value': o['stake'], 'note': 'EIA-860 Schedule 4 percentage'} if len(chain) == 1 and o['stake'] is not None else
-                          {'value': None, 'note': ('%s holds %s%% (EIA-860 Schedule 4); %s\'s effective share is not published' % (o['name'], o['stake'], L['name'])) if o['stake'] is not None
+                'stake': ({'value': o['stake'], 'note': 'EIA-860 %d Schedule 4 percentage' % year} if len(chain) == 1 and o['stake'] is not None else
+                          {'value': None, 'note': ('%s holds %s%% (EIA-860 %d Schedule 4); %s\'s effective share is not published' % (o['name'], o['stake'], year, L['name'])) if o['stake'] is not None
                            else 'Not stated by EIA (sole owner by reporting rule; no percentage published)'}),
                 'internal_only': safeguards(exposure), 'company_states_interest': False, 'batch': 'route-b-us-2026-11', 'reviewer': 'engine (route B, US)', 'verified_at': today}
         records.append(rec)
@@ -229,9 +229,10 @@ def main():
     ap.add_argument('--monthly', required=True)
     ap.add_argument('--annual', required=True)
     ap.add_argument('--today', required=True)
+    ap.add_argument('--year', type=int, default=2024)
     a = ap.parse_args()
     t0 = time.time()
-    records, ledger, stats = run(a.monthly, a.annual, a.today)
+    records, ledger, stats = run(a.monthly, a.annual, a.today, a.year)
     out = ROOT / 'data/projects/raw/invest/research-eia.json'
     out.write_text(json.dumps({'projects': records}, ensure_ascii=False) + '\n')
     led_path = INV / 'verifications.json'

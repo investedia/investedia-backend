@@ -2,12 +2,11 @@
  "batch": "route-b-us-2026-11",
  "stats": {
   "plants": 1021,
-  "C newer than ownership survey": 335,
-  "C no listed identity": 635,
-  "B plants": 48,
-  "owner identified but no company with public common equity": 186,
-  "C mixed owners": 3
+  "owner identified but no company with public common equity": 274,
+  "C no listed identity": 894,
+  "B plants": 100,
+  "C newer than ownership survey": 27
  },
- "b_links": 48,
- "seconds": 15
+ "b_links": 100,
+ "seconds": 16
 }
