@@ -59,6 +59,13 @@ jobs:
           # Reuse the saved photo pool; API updates cannot publish new Pages assets.
           PIXABAY_KEY: ''
         run: python tools/news-pipeline.py --run
+      - name: Smart alerts (matches new articles to followers; no-op until the owner adds ALERTS_INGEST_TOKEN)
+        if: success()
+        continue-on-error: true
+        working-directory: backend
+        env:
+          ALERTS_INGEST_TOKEN: ${{ secrets.ALERTS_INGEST_TOKEN }}
+        run: python tools/alerts/push_alerts.py
       - name: Save shared producer state after successful generation
         uses: actions/cache/save@v4
         with:
