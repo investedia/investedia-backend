@@ -123,10 +123,16 @@ def day(value):
     return result
 
 
-def window(start, end):
-    """Inclusive day range inside Aug 1 - Oct 15 2026 -> half-open UTC datetimes."""
+RECENT_DAYS = 3  # owner request 12 Nov 2026 (item 1): the same thin-region discovery for the last few days
+
+
+def window(start, end, today=None):
+    """Inclusive day range inside Aug 1 - Oct 15 2026, or inside the last RECENT_DAYS days -> half-open UTC datetimes."""
     a, b = day(start), day(end)
-    if not day(ALLOWED_START) <= a <= b <= day(ALLOWED_END): raise ValueError('window_outside_2026-08-01_to_2026-10-15')
+    today = (today or datetime.now(timezone.utc)).replace(hour=0, minute=0, second=0, microsecond=0)
+    historic = day(ALLOWED_START) <= a <= b <= day(ALLOWED_END)
+    recent = today - timedelta(days=RECENT_DAYS - 1) <= a <= b <= today
+    if not (historic or recent): raise ValueError('window_outside_2026-08-01_to_2026-10-15_or_last_3_days')
     return a, b + timedelta(days=1)
 
 
@@ -148,6 +154,10 @@ def gkg_plan(start, end, max_files):
     cursor = start
     while cursor < end: days.append(cursor); cursor += timedelta(days=1)
     plan = [d + timedelta(hours=h) for h in HOUR_ROUNDS for d in days]
+    if end > datetime.now(timezone.utc) - timedelta(days=1):  # recent window: hourly files, newest first, only published ones
+        cutoff = datetime.now(timezone.utc) - timedelta(minutes=30)
+        plan = sorted({d + timedelta(hours=h) for d in days for h in range(24)} - set(), reverse=True)
+        plan = [t for t in plan if t <= cutoff]
     return plan[:max_files]
 
 

@@ -15,7 +15,7 @@ on:
         type: boolean
         default: true
       start_date:
-        description: 'First day, YYYY-MM-DD (not before 2026-08-01)'
+        description: 'First day, YYYY-MM-DD (2026-08-01..2026-10-15, or within the last 3 days)'
         default: '2026-08-01'
         required: true
       end_date:
@@ -91,7 +91,10 @@ jobs:
           assert 1 <= int(os.environ['GDELT']) <= 400, 'gdelt_files must be 1–400'
           for key in ('START_DATE', 'END_DATE'):
               assert re.fullmatch(r'\d{4}-\d{2}-\d{2}', os.environ[key]), key + ' must be YYYY-MM-DD'
-          assert '2026-08-01' <= os.environ['START_DATE'] <= os.environ['END_DATE'] <= '2026-10-15', 'window must be inside 2026-08-01..2026-10-15'
+          import datetime as dt
+          today = dt.datetime.now(dt.timezone.utc).date(); recent = (today - dt.timedelta(days=2)).isoformat()
+          a, b = os.environ['START_DATE'], os.environ['END_DATE']
+          assert a <= b and (('2026-08-01' <= a and b <= '2026-10-15') or (recent <= a and b <= today.isoformat())), 'window must be inside 2026-08-01..2026-10-15 or the last 3 days'
           assert re.fullmatch(r'[a-z_,\s]{1,200}', os.environ['REGIONS']), 'regions: names separated by commas'
           assert 0 < float(os.environ['MAX_USD']) <= 50, 'max_usd must be above 0 and at most 50'
           PY
