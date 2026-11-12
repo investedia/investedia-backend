@@ -26,8 +26,11 @@ enabled = true
 MARKETS_API_ENABLED = "false"
 NEWS_CRON = "off"
 DISPATCH_ENABLED = "false"
-# Push alerts (12 Nov 2026): off until the owner sets ALERTS_ENABLED="true", SUPABASE_URL, VAPID_PUBLIC_KEY here and the
-# secrets SUPABASE_SERVICE_KEY and VAPID_PRIVATE_KEY in Cloudflare (Worker > Settings > Variables and secrets).
+# Alerts (12 Nov 2026): off until the owner sets ALERTS_ENABLED="true" and BREVO_SENDER_EMAIL here, and adds the Worker secrets
+# SUPABASE_SERVICE_KEY, BREVO_API_KEY and (for Pro push) VAPID_PRIVATE_KEY in Cloudflare (Worker > Settings > Variables and secrets).
 ALERTS_ENABLED = "false"
 SUPABASE_URL = "https://lfjyoeusblhfpmgwbrhj.supabase.co"
+BREVO_SENDER_EMAIL = ""
+BREVO_SENDER_NAME = "Investedia"
+BREVO_DAILY_LIMIT = "280"
 VAPID_PUBLIC_KEY = "BIkjWTaCvPbx5GYGze1HvD758pvKoRJZMhP7jC947J1yjmHFCTPspaCJgvfjG_POwArHd63sa-kDQx5iwwCEVx4"
