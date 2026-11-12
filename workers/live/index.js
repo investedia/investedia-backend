@@ -36,15 +36,20 @@ import { ingestCalendar, readCalendar } from './v1/calendar.js';
 export { refresh };
 const json = (h, status, body, cache = 'no-store') => new Response(JSON.stringify(body), { status, headers: { ...h, 'Content-Type': 'application/json', 'Cache-Control': cache } });
 
+// Secrets may have been saved with lowercase names in Cloudflare (e.g. supabase_service_key): accept both spellings.
+const ALIAS = ['SUPABASE_SERVICE_KEY', 'BREVO_API_KEY', 'VAPID_PRIVATE_KEY', 'BREVO_SENDER_EMAIL'];
+const withAliases = env => { const out = Object.create(env); for (const k of ALIAS) if (!env[k] && env[k.toLowerCase()]) Object.defineProperty(out, k, { value: env[k.toLowerCase()] }); return out; };
 export default {
-  async scheduled(event, env, ctx) {
+  async scheduled(event, env0, ctx) {
+    const env = withAliases(env0);
     const log = (o) => console.log(JSON.stringify(o)), fail = (k) => (e) => log({ cron: k, error: String(e).slice(0, 200) });
     if (event.cron === '*/5 * * * *') { if (env.NEWS_CRON === 'on') ctx.waitUntil(refreshNews(env).then(r => log({ cron: 'news', fetched: r.fetched, candidates: r.candidates, added: r.added, wrote: r.wrote, gemini_ok: r.gemini_ok, feeds_failed: r.feeds_failed })).catch(fail('news'))); }
     else ctx.waitUntil(refresh(env).then(r => log({ cron: 'prices', ok: r.ok, sent: r.sent, wrote: r.wrote, changed: r.changed, reason: r.reason })).catch(fail('prices'))
       // price-move smart alerts every 10 minutes, from the snapshot the price run just wrote
       .then(async () => { if (!alertsReady(env) || Math.floor(event.scheduledTime / 120e3) % 5) return; let px = null; try { px = JSON.parse(await env.PRICES.get('px'))?.p || null; } catch {} const a = await runPriceAlerts(env, px); if (!a.skipped) log({ cron: 'price-alerts', ...a }); }).catch(fail('price-alerts')));
   },
-  async fetch(req, env, ctx) {
+  async fetch(req, env0, ctx) {
+    const env = withAliases(env0);
     const h = cors(req), url = new URL(req.url);
     if (req.method === 'POST' && url.pathname === '/v1/ingest/connections') {
       const r=await ingestConnections(req,env);
