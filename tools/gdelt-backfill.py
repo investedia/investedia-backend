@@ -803,7 +803,7 @@ def valid_backfilled(s, now):
     p = s.get('backfill_provenance') or {}
     t = stamp(s['published_at'])
     return (s.get('backfilled') is True and p.get('version') == VERSION and p.get('original_published_at') == s['published_at']
-            and day(ALLOWED_START) <= t < day(ALLOWED_END) + timedelta(days=1) and t <= now
+            and (day(ALLOWED_START) <= t < day(ALLOWED_END) + timedelta(days=1) or now - timedelta(days=RECENT_DAYS + 1) <= t) and t <= now
             and urlsplit((s.get('source') or {}).get('url', '')).scheme == 'https' and (s.get('source') or {}).get('name')
             and not any(i.get('scorable') is True for i in s.get('impacts') or [])
             and (not s.get('image') or (s['image'].get('kind') == 'topic' and s['image'].get('source') == 'Pixabay')))
