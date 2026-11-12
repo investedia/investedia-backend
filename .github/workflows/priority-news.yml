@@ -73,6 +73,11 @@ jobs:
             backend/assets/globe/news-gap-history-cache.json
             backend/assets/globe/regional-backfill-state.json
           key: priority-news-state-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Show robot log on failure
+        if: failure()
+        run: |
+          tail -n 60 backend/.local/news-generation.log 2>/dev/null || echo 'no generation log'
+          python3 -c "import json;s=json.load(open('backend/assets/globe/news-status.json'));print({k:s.get(k) for k in ('fetched','candidates','gemini_ok','gemini_model','errors','stories_online')})" 2>/dev/null || true
       - name: Report visible failure
         if: failure()
         run: |
