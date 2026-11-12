@@ -1,3 +1,17 @@
+# Projects data — current scale draft
+
+The default offline build now uses `scale-manifest.json`: current development/construction or source-confirmed completion from 2020 onward. See [stage 1 report](scale/REPORT.md) for actual coverage, missing fields, source limits, commands and tests. Output is branch-only and not ready for publication. Not investment advice.
+
+The original P19 manifest remains available explicitly:
+
+```sh
+python tools/projects/build_projects.py --offline --manifest data/projects/manifest.json
+```
+
+The following is historical P19 foundation documentation; its snapshot counts and source-access status are not the current scale result.
+
+---
+
 # P19 draft project data
 
 Not investment advice. This is an offline migration and ingestion foundation, **not a publication-ready expanded dataset**. No new source is cleared or downloaded; no model calls. Do not copy the draft output over the live frontend data.

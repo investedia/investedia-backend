@@ -1,0 +1,95 @@
+{
+  "schema": "investedia.projects.scale-fetch.v1",
+  "requests": 26,
+  "cache_hits": 0,
+  "bytes": 603218,
+  "sources": [
+    {
+      "class": "ports",
+      "listed_ids": 2,
+      "list_complete": true,
+      "completed_batches": 1,
+      "pending_ids": 0,
+      "slow_ids": [],
+      "reason": null,
+      "cached_source_retained": false
+    },
+    {
+      "class": "airports",
+      "listed_ids": 63,
+      "list_complete": true,
+      "completed_batches": 4,
+      "pending_ids": 0,
+      "slow_ids": [],
+      "reason": null,
+      "cached_source_retained": false
+    },
+    {
+      "class": "dam",
+      "listed_ids": 74,
+      "list_complete": true,
+      "completed_batches": 4,
+      "pending_ids": 0,
+      "slow_ids": [],
+      "reason": null,
+      "cached_source_retained": false
+    },
+    {
+      "class": "water",
+      "listed_ids": 2,
+      "list_complete": true,
+      "completed_batches": 1,
+      "pending_ids": 0,
+      "slow_ids": [],
+      "reason": null,
+      "cached_source_retained": false
+    },
+    {
+      "class": "skyscraper",
+      "listed_ids": 73,
+      "list_complete": true,
+      "completed_batches": 4,
+      "pending_ids": 0,
+      "slow_ids": [],
+      "reason": null,
+      "cached_source_retained": false
+    },
+    {
+      "class": "datacentre",
+      "listed_ids": 1,
+      "list_complete": true,
+      "completed_batches": 1,
+      "pending_ids": 0,
+      "slow_ids": [],
+      "reason": null,
+      "cached_source_retained": false
+    },
+    {
+      "class": "semiconductor",
+      "listed_ids": 1,
+      "list_complete": true,
+      "completed_batches": 1,
+      "pending_ids": 0,
+      "slow_ids": [],
+      "reason": null,
+      "cached_source_retained": false
+    }
+  ],
+  "unvisited_classes": [
+    "wind",
+    "solar",
+    "hydro",
+    "nuclear",
+    "gas",
+    "coal",
+    "geothermal"
+  ],
+  "queued": {
+    "batteries_hydrogen": "No reviewed physical-project class yet; GEM owner files pending",
+    "rail_metro": "A line coordinate may be a representative route point, not a verified physical development site; await reviewed site/route geometry."
+  },
+  "budget_seconds": 240,
+  "max_items_per_class": 100,
+  "no_publication": true,
+  "gemini_calls": 0
+}

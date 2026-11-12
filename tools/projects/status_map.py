@@ -1,5 +1,5 @@
 """Exact source statuses only. Absence and unknown values never imply operational."""
-STATUS = {'proposed': 'Proposed', 'announced': 'Proposed', 'pre-permit': 'Proposed',
+STATUS = {'completed': 'Completed', 'in development': 'In development', 'proposed': 'Proposed', 'announced': 'Proposed', 'pre-permit': 'Proposed',
           'approved': 'Approved', 'permitted': 'Approved', 'pre-construction': 'Approved',
           'under construction': 'Under construction', 'construction': 'Under construction',
           'operational': 'Operational', 'operating': 'Operational', 'in service': 'Operational',

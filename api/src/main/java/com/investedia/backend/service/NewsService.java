@@ -39,6 +39,8 @@ public class NewsService {
         }
         var meta = SnapshotMetadata.at(snapshot.asOf(), clock.instant(), "rss+gemini", 30);
         meta.put("count", articles.size());
+        // Aggregated live counters are unknown in this repository snapshot.
+        meta.put("stats", null);
         // Live connection freshness is unknown in this read-only snapshot service.
         meta.put("connections_generated_at", null);
         // Homepage totals arrive only through live robot pushes; a read-only snapshot has none (same as the Worker before its first push).

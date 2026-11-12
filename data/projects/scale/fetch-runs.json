@@ -1,0 +1,323 @@
+[
+  {
+    "schema": "investedia.projects.scale-fetch.v1",
+    "requests": 8,
+    "cache_hits": 0,
+    "bytes": 300233,
+    "sources": [
+      {
+        "class": "wind",
+        "listed_ids": 300,
+        "list_complete": false,
+        "completed_batches": 7,
+        "pending_ids": 160,
+        "reason": "TimeoutError",
+        "cached_source_retained": false
+      }
+    ],
+    "unvisited_classes": [
+      "solar",
+      "hydro",
+      "nuclear",
+      "gas",
+      "coal",
+      "geothermal"
+    ],
+    "queued": {
+      "batteries_hydrogen": "No reviewed physical-project class yet; GEM owner files pending"
+    },
+    "budget_seconds": 420,
+    "max_items_per_class": 300,
+    "no_publication": true,
+    "gemini_calls": 0
+  },
+  {
+    "schema": "investedia.projects.scale-fetch.v1",
+    "requests": 10,
+    "cache_hits": 0,
+    "bytes": 471032,
+    "sources": [
+      {
+        "class": "solar",
+        "listed_ids": 160,
+        "list_complete": false,
+        "completed_batches": 4,
+        "pending_ids": 80,
+        "reason": "TimeoutError",
+        "cached_source_retained": false
+      },
+      {
+        "class": "hydro",
+        "listed_ids": 160,
+        "list_complete": false,
+        "completed_batches": 3,
+        "pending_ids": 100,
+        "reason": "TimeoutError",
+        "cached_source_retained": false
+      },
+      {
+        "class": "nuclear",
+        "listed_ids": 160,
+        "list_complete": false,
+        "completed_batches": 0,
+        "pending_ids": 160,
+        "reason": "TimeoutError",
+        "cached_source_retained": false
+      }
+    ],
+    "unvisited_classes": [
+      "wind",
+      "gas",
+      "coal",
+      "geothermal"
+    ],
+    "queued": {
+      "batteries_hydrogen": "No reviewed physical-project class yet; GEM owner files pending"
+    },
+    "budget_seconds": 420,
+    "max_items_per_class": 160,
+    "no_publication": true,
+    "gemini_calls": 0
+  },
+  {
+    "schema": "investedia.projects.scale-fetch.v1",
+    "requests": 20,
+    "cache_hits": 0,
+    "bytes": 642085,
+    "sources": [
+      {
+        "class": "nuclear",
+        "listed_ids": 160,
+        "list_complete": false,
+        "completed_batches": 0,
+        "pending_ids": 160,
+        "reason": "TimeoutError",
+        "cached_source_retained": false
+      },
+      {
+        "class": "gas",
+        "listed_ids": 160,
+        "list_complete": false,
+        "completed_batches": 3,
+        "pending_ids": 100,
+        "reason": "TimeoutError",
+        "cached_source_retained": false
+      },
+      {
+        "class": "coal",
+        "listed_ids": 160,
+        "list_complete": false,
+        "completed_batches": 5,
+        "pending_ids": 60,
+        "reason": "TimeoutError",
+        "cached_source_retained": false
+      },
+      {
+        "class": "geothermal",
+        "listed_ids": 160,
+        "list_complete": false,
+        "completed_batches": 5,
+        "pending_ids": 60,
+        "reason": "TimeoutError",
+        "cached_source_retained": false
+      }
+    ],
+    "unvisited_classes": [
+      "wind",
+      "solar",
+      "hydro"
+    ],
+    "queued": {
+      "batteries_hydrogen": "No reviewed physical-project class yet; GEM owner files pending"
+    },
+    "budget_seconds": 360,
+    "max_items_per_class": 160,
+    "no_publication": true,
+    "gemini_calls": 0
+  },
+  {
+    "schema": "investedia.projects.scale-fetch.v1",
+    "requests": 8,
+    "cache_hits": 0,
+    "bytes": 94212,
+    "sources": [
+      {
+        "class": "nuclear",
+        "listed_ids": 40,
+        "list_complete": false,
+        "completed_batches": 7,
+        "pending_ids": 5,
+        "slow_ids": [
+          "Q48795655",
+          "Q48795688",
+          "Q54296442",
+          "Q55063313",
+          "Q5767271"
+        ],
+        "reason": "ID list reused from the reviewed P19 cache; fresh detail pass, not a fresh exhaustive class census",
+        "cached_source_retained": false
+      }
+    ],
+    "unvisited_classes": [
+      "wind",
+      "solar",
+      "hydro",
+      "gas",
+      "coal",
+      "geothermal"
+    ],
+    "queued": {
+      "batteries_hydrogen": "No reviewed physical-project class yet; GEM owner files pending"
+    },
+    "budget_seconds": 180,
+    "max_items_per_class": 40,
+    "no_publication": true,
+    "gemini_calls": 0
+  },
+  {
+    "schema": "investedia.projects.scale-fetch.v1",
+    "requests": 12,
+    "cache_hits": 0,
+    "bytes": 122820,
+    "sources": [
+      {
+        "class": "gas",
+        "listed_ids": 9,
+        "list_complete": true,
+        "completed_batches": 2,
+        "pending_ids": 0,
+        "slow_ids": [],
+        "reason": null,
+        "cached_source_retained": false
+      },
+      {
+        "class": "coal",
+        "listed_ids": 31,
+        "list_complete": true,
+        "completed_batches": 7,
+        "pending_ids": 0,
+        "slow_ids": [],
+        "reason": null,
+        "cached_source_retained": false
+      },
+      {
+        "class": "geothermal",
+        "listed_ids": 0,
+        "list_complete": false,
+        "completed_batches": 0,
+        "pending_ids": 0,
+        "slow_ids": [],
+        "reason": "HTTP 429; source requests a 120 second cooldown",
+        "cached_source_retained": true
+      }
+    ],
+    "unvisited_classes": [
+      "wind",
+      "solar",
+      "hydro",
+      "nuclear"
+    ],
+    "queued": {
+      "batteries_hydrogen": "No reviewed physical-project class yet; GEM owner files pending"
+    },
+    "budget_seconds": 180,
+    "max_items_per_class": 100,
+    "no_publication": true,
+    "gemini_calls": 0
+  },
+  {
+    "schema": "investedia.projects.scale-fetch.v1",
+    "requests": 26,
+    "cache_hits": 0,
+    "bytes": 603218,
+    "sources": [
+      {
+        "class": "ports",
+        "listed_ids": 2,
+        "list_complete": true,
+        "completed_batches": 1,
+        "pending_ids": 0,
+        "slow_ids": [],
+        "reason": null,
+        "cached_source_retained": false
+      },
+      {
+        "class": "airports",
+        "listed_ids": 63,
+        "list_complete": true,
+        "completed_batches": 4,
+        "pending_ids": 0,
+        "slow_ids": [],
+        "reason": null,
+        "cached_source_retained": false
+      },
+      {
+        "class": "dam",
+        "listed_ids": 74,
+        "list_complete": true,
+        "completed_batches": 4,
+        "pending_ids": 0,
+        "slow_ids": [],
+        "reason": null,
+        "cached_source_retained": false
+      },
+      {
+        "class": "water",
+        "listed_ids": 2,
+        "list_complete": true,
+        "completed_batches": 1,
+        "pending_ids": 0,
+        "slow_ids": [],
+        "reason": null,
+        "cached_source_retained": false
+      },
+      {
+        "class": "skyscraper",
+        "listed_ids": 73,
+        "list_complete": true,
+        "completed_batches": 4,
+        "pending_ids": 0,
+        "slow_ids": [],
+        "reason": null,
+        "cached_source_retained": false
+      },
+      {
+        "class": "datacentre",
+        "listed_ids": 1,
+        "list_complete": true,
+        "completed_batches": 1,
+        "pending_ids": 0,
+        "slow_ids": [],
+        "reason": null,
+        "cached_source_retained": false
+      },
+      {
+        "class": "semiconductor",
+        "listed_ids": 1,
+        "list_complete": true,
+        "completed_batches": 1,
+        "pending_ids": 0,
+        "slow_ids": [],
+        "reason": null,
+        "cached_source_retained": false
+      }
+    ],
+    "unvisited_classes": [
+      "wind",
+      "solar",
+      "hydro",
+      "nuclear",
+      "gas",
+      "coal",
+      "geothermal"
+    ],
+    "queued": {
+      "batteries_hydrogen": "No reviewed physical-project class yet; GEM owner files pending",
+      "rail_metro": "A line coordinate may be a representative route point, not a verified physical development site; await reviewed site/route geometry."
+    },
+    "budget_seconds": 240,
+    "max_items_per_class": 100,
+    "no_publication": true,
+    "gemini_calls": 0
+  }
+]

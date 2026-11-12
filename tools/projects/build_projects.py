@@ -27,8 +27,8 @@ from tools.projects.status_map import normalize
 TYPES = ('Solar energy', 'Wind energy', 'Hydro energy', 'Nuclear energy', 'Gas & LNG', 'Oil & gas',
          'Pipelines', 'Mining', 'Batteries & hydrogen', 'Semiconductors', 'Data centres',
          'High-speed rail', 'Metro & urban rail', 'Ports & logistics', 'Airports', 'Water',
-         'Real estate', 'Megaproject', 'Development finance')
-OPTIONAL = {'s', 'y', 'ys', 'ye', 'cap', 'cost', 'own', 'aliases', 'sub', 'geometry'}
+         'Real estate', 'Megaproject', 'Development finance', 'Coal energy', 'Geothermal energy')
+OPTIONAL = {'status_date','status_source','completion_date','retirement_date','coordinate_precision','coordinate_quality','record_level','external_ids','display_status','evidence','s', 'y', 'ys', 'ye', 'cap', 'cost', 'own', 'aliases', 'sub', 'geometry'}
 FIELDS = {'k', 'n', 'lo', 'la', 'c', 'cc', 't'} | OPTIONAL
 COUNTRY_ALIASES = {'United States': 'United States of America', "People's Republic of China": 'China',
                    'Republic of Ireland': 'Ireland', 'Russia': 'Russia', 'South Korea': 'South Korea',
@@ -70,7 +70,7 @@ def licence_gate(spec, directory):
         raise ValueError('Ports/airports require individually sourced infrastructure developments')
 
 
-def normalise(raw, iso, centroids, date, verified):
+def normalise(raw, iso, centroids, date, verified, preserve_coordinates=False):
     row = {k: copy.deepcopy(v) for k, v in raw.items() if k in FIELDS and v not in (None, '', [])}
     if not row.get('k') or not (re.fullmatch(r'Q[1-9]\d*', str(row['k'])) or ':' in str(row['k'])):
         raise ValueError('invalid-id')
@@ -80,7 +80,8 @@ def normalise(raw, iso, centroids, date, verified):
     except (TypeError, ValueError, KeyError): raise ValueError('no-coordinates')
     if not (finite(row['la']) and finite(row['lo']) and abs(row['la']) <= 90 and abs(row['lo']) <= 180):
         raise ValueError('invalid-coordinates')
-    row['la'], row['lo'] = round(row['la'], 4), round(row['lo'], 4)
+    if not preserve_coordinates:
+        row['la'], row['lo'] = round(row['la'], 4), round(row['lo'], 4)
     cc = iso.get(COUNTRY_ALIASES.get(row.get('c'), row.get('c')))
     if row.get('cc'):
         if row['cc'] not in iso.values() or cc and cc != row['cc']: raise ValueError('conflicting-country')
@@ -232,6 +233,7 @@ def build(root=ROOT, manifest_path=None, output=None):
     iso=read(root/'assets/globe/iso.json')
     centroids=read(directory/'country-centroids.json')
     all_rows, drops, source_reports, country_only = [], [], [], []
+    source_conflicts=[]
     for spec in manifest['sources']:
         if not spec.get('enabled'):
             source_reports.append({'source':spec['source'],'state':'not-ingested','reason':spec.get('reason'),'rows':0}); continue
@@ -239,13 +241,22 @@ def build(root=ROOT, manifest_path=None, output=None):
         path = (directory/spec['file']).resolve()
         if not path.is_relative_to(directory.resolve()) or digest(path) != spec['sha256']: raise ValueError('Raw hash mismatch')
         parsed=ADAPTERS[spec['source']].parse(path, spec)
-        source_reports.append({'source':spec['source'],'state':'retained-unverified' if spec.get('retained_snapshot') else 'licence-reviewed', 'rows':len(parsed)})
+        source_entry={'source':spec['source'],'name':spec.get('name'),'class':spec.get('class_key'),'state':'retained-unverified' if spec.get('retained_snapshot') else 'licence-reviewed','rows':len(parsed)}
+        source_reports.append(source_entry)
+        accepted_before=len(all_rows);dropped_before=len(drops)
         for raw in parsed:
-            try: all_rows.append(normalise(raw,iso,centroids,date,not spec.get('retained_snapshot')))
+            if raw.get('_field_conflicts'):source_conflicts.append({'id':raw.get('k'),'fields':raw['_field_conflicts'],'action':'ambiguous fields withheld'})
+            try:
+                if manifest.get('policy',{}).get('name')=='projects-scale-current-v1':
+                    from tools.projects.scale.policy import current
+                    raw=current(raw,date,manifest['policy'].get('completed_since',2020),manifest['policy'].get('max_coordinate_precision_degrees',.001))
+                all_rows.append(normalise(raw,iso,centroids,date,not spec.get('retained_snapshot'),preserve_coordinates=manifest.get('policy',{}).get('name')=='projects-scale-current-v1'))
             except ValueError as e:
                 drops.append({'id':raw.get('k'),'source':spec['source'],'reason':str(e)})
                 if raw.get('t')=='Development finance' and str(e) in ('no-coordinates','imprecise-location','physical-location-not-verified'):
                     country_only.append(raw)
+        source_entry['eligible_before_reconciliation']=len(all_rows)-accepted_before
+        source_entry['rejected_before_reconciliation']=len(drops)-dropped_before
     # Curated map facts use exactly the same provenance/validation rules.
     import yaml
     for path in sorted((directory/'curated').glob('*.yaml')):
@@ -257,20 +268,36 @@ def build(root=ROOT, manifest_path=None, output=None):
             if not sources or not sources <= cleared: raise ValueError('Curated source not cleared')
             try: all_rows.append(normalise(raw,iso,centroids,date,True))
             except ValueError as e: drops.append({'id':raw.get('k'),'source':'curated','reason':str(e)})
-    projects,conflicts,merges=merge_rows(all_rows)
+    if manifest.get('policy',{}).get('name')=='projects-scale-current-v1':
+        from tools.projects.scale.reconcile import reconcile
+        projects,conflicts,merges,reconcile_drops=reconcile(all_rows)
+        drops.extend(reconcile_drops)
+    else:
+        projects,conflicts,merges=merge_rows(all_rows)
+    conflicts=source_conflicts+conflicts
+    media_report={'accepted':[],'rejected':[],'missing':[p['k'] for p in projects]}
+    if manifest.get('policy',{}).get('name')=='projects-scale-current-v1':
+        from tools.projects.scale.media import attach
+        media_path=directory/'scale/media-reviewed.json'
+        if media_path.is_file():
+            projects,media_report=attach(projects,read(media_path),root,date)
     links,unlinked=company_links(projects,read(root/'data/registry.json'),read(root/'assets/globe/markets.json'))
     feats,feat_drops=featured(directory/'curated',root/'assets/globe')
+    if manifest.get('policy',{}).get('name')=='projects-scale-current-v1':
+        feats=[p for p in feats if p.get('wikidata_id') in {r['k'] for r in projects}]
     reviewed=[p for p in feats if p.get('review_status')=='reviewed' and len(p.get('milestones',[]))>=2]
+    region_by_cc={a.get('cc','').upper():a['r'] for a in read(root/'assets/globe/markets.json').get('assets',[]) if a.get('cc') and a.get('r')}
     total=len(projects)
     share=lambda key: round(100*sum(bool(p.get(key)) for p in projects)/total,2) if total else 0
-    report={'schema':'investedia.projects.build-report.v1','build_date':date,'map_points':total,
+    report={'schema':'investedia.projects.build-report.v1','build_date':date,'policy':manifest.get('policy'),'map_points':total,
             'verified_points':sum(p['validation_status']=='verified' for p in projects),
             'retained_unverified':sum(p['validation_status']!='verified' for p in projects),
             'by_type':{t:sum(p['t']==t for p in projects) for t in TYPES},
-            'missing_fields':{f:sum(not p.get(f) for p in projects) for f in ('s','y','cap','cost','own','aliases')},
+            'missing_fields':{f:sum(not p.get(f) for p in projects) for f in ('s','y','cap','cost','own','aliases','status_date','coordinate_precision')},
             'by_status':dict(sorted(collections.Counter(p.get('s','Not sourced') for p in projects).items())),
             'by_country':dict(sorted(collections.Counter(p['cc'] for p in projects).items())),
-            'by_source':source_reports,'status_pct':share('s'),'year_pct':share('y'),
+            'by_region':dict(sorted(collections.Counter(region_by_cc.get(p['cc'],'Unknown') for p in projects).items())),
+            'by_source':source_reports,'media':media_report,'status_pct':share('s'),'year_pct':share('y'),
             'capacity_or_cost_pct':round(100*sum(bool(p.get('cap') or p.get('cost')) for p in projects)/total,2) if total else 0,
             'duplicates_merged':len(merges),'merges':merges,'conflicts':conflicts,'rows_dropped':len(drops),
             'drops_by_reason':dict(sorted(collections.Counter(d['reason'] for d in drops).items())), 'drops':drops,
@@ -280,11 +307,18 @@ def build(root=ROOT, manifest_path=None, output=None):
             'linked_projects_by_region':dict(collections.Counter(a.get('r','Unknown') for a in read(root/'assets/globe/markets.json').get('assets', []) if any(l['asset']==a.get('site') for l in links))),
             'omitted_legacy_inception_years':sum(bool(r.get('y')) for s in manifest['sources'] if s.get('retained_snapshot') for r in read(directory/s['file']).get('projects', [])),
             'news_match_review':{'checked':0,'correct':0,'accuracy_pct':None,'enabled':False,'reason':'100 real matches require human review'},
-            'targets':{'points':4000,'status_pct':70,'year_pct':60,'capacity_or_cost_pct':40,'featured':50},
+            'targets':({'energy_points':5000,'infrastructure_points':1000,'quality_dependent':True} if manifest.get('policy') else {'points':4000,'status_pct':70,'year_pct':60,'capacity_or_cost_pct':40,'featured':50}),
+            'record_levels':dict(collections.Counter(p.get('record_level','legacy') for p in projects)),
+            'unique_source_sites':len({(ns,str(v)) for p in projects for ns,v in p.get('external_ids',{}).items() if ns.endswith(':site')}),
+            'sector_coverage':{t:{'count':sum(p['t']==t for p in projects),
+                'capacity_pct':round(100*sum(p['t']==t and bool(p.get('cap')) for p in projects)/max(1,sum(p['t']==t for p in projects)),2),
+                'status_date_pct':round(100*sum(p['t']==t and bool(p.get('status_date')) for p in projects)/max(1,sum(p['t']==t for p in projects)),2),
+                'photo_pct':round(100*sum(p['t']==t and bool(p.get('photo')) for p in projects)/max(1,sum(p['t']==t for p in projects)),2),
+                'satellite_pct':round(100*sum(p['t']==t and bool(p.get('satellite')) for p in projects)/max(1,sum(p['t']==t for p in projects)),2)} for t in TYPES},
             'ready_for_publication':False,'notice':'Draft artifacts only. Retained data is not new verified coverage. Not investment advice.'}
     # Stage all validation before replacing outputs; a failed ingest leaves the last good files untouched.
     dest=Path(output or root)
-    outputs={dest/'assets/globe/projects.json':{'schema':'investedia.projects.v2','build_date':date,'projects':projects},
+    outputs={dest/'assets/globe/projects.json':{'schema':'investedia.projects.v2','build_date':date,'policy':manifest.get('policy'),'projects':projects},
              dest/'assets/globe/projects-featured.json':{'schema':'investedia.projects.featured.v1','reviewed_count':len(reviewed),
                 'curation_target':[50,50],'curation_status':'Retained previews; new primary-source review blocked','projects':feats},
              dest/'assets/globe/project-links.json':{'schema':'investedia.project-links.v1','links':links},
@@ -298,7 +332,7 @@ def build(root=ROOT, manifest_path=None, output=None):
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--offline',action='store_true',help='Required: build only from hash-bound caches')
-    parser.add_argument('--manifest',type=Path)
+    parser.add_argument('--manifest',type=Path,default=ROOT/'data/projects/scale-manifest.json' if (ROOT/'data/projects/scale-manifest.json').exists() else None)
     parser.add_argument('--output',type=Path)
     args=parser.parse_args()
     if not args.offline: parser.error('Use --offline; fetch and licence review are separate explicit steps')

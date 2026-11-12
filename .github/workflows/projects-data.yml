@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       fetch_reviewed:
-        description: 'Fetch only hash-bound, licence-reviewed source versions'
+        description: 'Resume only approved Wikidata sources; no GEM form submissions'
         type: boolean
         default: false
 permissions:
@@ -23,10 +23,22 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r tools/projects/requirements.txt
-      - run: python -m unittest discover -s tests -p test_projects_pipeline.py
+      - run: python -m unittest discover -s tests -p 'test_projects*.py'
+      - uses: actions/cache/restore@v4
+        if: inputs.fetch_reviewed
+        with:
+          path: data/projects/raw/scale/http
+          key: projects-scale-wikidata-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: projects-scale-wikidata-
       - if: inputs.fetch_reviewed
-        run: python -m tools.projects.fetch_sources
+        run: python -m tools.projects.scale.fetch_wikidata --seconds 600 --batch-size 20 --max-items 1500 --cached-ids
+      - uses: actions/cache/save@v4
+        if: ${{ !cancelled() && inputs.fetch_reviewed }}
+        with:
+          path: data/projects/raw/scale/http
+          key: projects-scale-wikidata-${{ github.run_id }}-${{ github.run_attempt }}
       - run: python tools/projects/build_projects.py --offline
+      - run: python tools/projects/slim_projects.py
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
@@ -38,6 +50,8 @@ jobs:
             assets/img/projects/
             data/projects/build-report.json
             data/projects/country-only.json
+            data/projects/scale/
+            .local/projects-scale/frontend/projects.json
           if-no-files-found: error
       - name: Visible failure
         if: failure()

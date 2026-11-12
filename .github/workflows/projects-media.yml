@@ -1,0 +1,59 @@
+name: Projects media candidates (draft only)
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Maximum projects to check (1..5000)'
+        type: number
+        default: 225
+      commons:
+        description: 'Collect Commons per-file licence and credit metadata'
+        type: boolean
+        default: true
+permissions:
+  contents: read
+concurrency:
+  group: projects-registry-artifact
+  cancel-in-progress: false
+jobs:
+  candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/projects/requirements.txt
+      - run: python -m unittest discover -s tests -p 'test_projects_media.py'
+      - uses: actions/cache/restore@v4
+        with:
+          path: data/projects/raw/scale/media-http
+          key: projects-media-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: projects-media-
+      - name: Collect candidates within a ten-minute budget
+        env:
+          PROJECT_LIMIT: ${{ inputs.limit }}
+          COMMONS: ${{ inputs.commons }}
+        run: |
+          args=()
+          if [ "$COMMONS" = true ]; then args+=(--commons); fi
+          python -m tools.projects.scale.discover_media --limit "$PROJECT_LIMIT" --seconds 600 "${args[@]}"
+      - uses: actions/cache/save@v4
+        if: ${{ !cancelled() }}
+        with:
+          path: data/projects/raw/scale/media-http
+          key: projects-media-${{ github.run_id }}-${{ github.run_attempt }}
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: projects-media-review-${{ github.sha }}
+          path: |
+            data/projects/scale/media-candidates.json
+            data/projects/raw/scale/media-http/*.json
+          if-no-files-found: error
+      - name: Visible failure
+        if: failure()
+        run: echo '::error::Media discovery failed. No images or production data were published.'

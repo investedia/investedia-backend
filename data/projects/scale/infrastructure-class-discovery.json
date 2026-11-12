@@ -1,0 +1,572 @@
+{
+  "receipt": {
+    "url": "https://query.wikidata.org/sparql?query=SELECT+%3Fitem+%3Flabel+WHERE+%7B+VALUES+%3Flabel+%7B+%22airport%22%40en+%22port%22%40en+%22dam%22%40en+%22water+treatment+plant%22%40en+%22skyscraper%22%40en+%22residential+building%22%40en+%22semiconductor+fabrication+plant%22%40en+%22data+center%22%40en+%22high-speed+railway+line%22%40en+%22metro+line%22%40en+%7D+%3Fitem+rdfs%3Alabel+%3Flabel+.+%7D&format=json",
+    "retrieved_at": "2026-11-11T19:40:15.597016+00:00",
+    "checked_at": "2026-11-11T19:40:15.597016+00:00",
+    "sha256": "962fc7881db98df2a63035a5706c9edcd983c60fd3eb8f41d7e41cfef86c1f5f",
+    "etag": null,
+    "last_modified": null
+  },
+  "results": {
+    "head": {
+      "vars": [
+        "item",
+        "label"
+      ]
+    },
+    "results": {
+      "bindings": [
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "data center"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q671224"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "port"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/P1641"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "port"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q44782"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "port"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q552258"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "port"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q858321"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "port"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q2443617"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "port"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q11723008"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "port"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q29713226"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "port"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q89292899"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "port"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q108421894"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "port"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q108587320"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "port"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q112254322"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "port"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q140786589"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "port"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q142044353"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "skyscraper"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q11303"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "dam"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q12323"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "dam"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q14416029"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "airport"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q1248784"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "airport"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q140412714"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "high-speed railway line"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q858485"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q11755880"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q29575591"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q29575594"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q29575597"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q29576320"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q29580136"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q29580264"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q29581644"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q29651247"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q29651373"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q29686194"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q29881029"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q29881164"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q29881285"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q41280801"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q41280804"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q41280858"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q41280864"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q41280871"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q41280873"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q41280892"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q41280894"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q41280901"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q41280904"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q41280917"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q98742906"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q98744675"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "residential building"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q136622359"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "water treatment plant"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q9341055"
+          }
+        },
+        {
+          "label": {
+            "xml:lang": "en",
+            "type": "literal",
+            "value": "semiconductor fabrication plant"
+          },
+          "item": {
+            "type": "uri",
+            "value": "http://www.wikidata.org/entity/Q4168959"
+          }
+        }
+      ]
+    }
+  }
+}
