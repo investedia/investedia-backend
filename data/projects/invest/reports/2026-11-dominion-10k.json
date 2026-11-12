@@ -24,7 +24,7 @@
  },
  "internal_only": 0,
  "cost": {
-  "seconds": 3.1,
+  "seconds": 2.9,
   "documents": 1,
   "bytes": 18147347
  },
@@ -157,8 +157,8 @@
    "internal_only": []
   },
   {
-   "project": "gem:L100000907677",
-   "name": "Kitty Hawk wind farm",
+   "project": "gem:L100000907677:p1",
+   "name": "Kitty Hawk wind farm (phase 1)",
    "category": "C",
    "reasons": [
     "not named in the batch documents"
@@ -184,7 +184,7 @@
    "internal_only": []
   },
   {
-   "project": "gem:L100000500116",
+   "project": "gem:L100000500116:x",
    "name": "North Anna nuclear power plant",
    "category": "C",
    "reasons": [
@@ -239,7 +239,7 @@
    "internal_only": []
   },
   {
-   "project": "gem:L100000104178",
+   "project": "gem:L100000104178:Oil & gas:x",
    "name": "Urquhart Station",
    "category": "C",
    "reasons": [

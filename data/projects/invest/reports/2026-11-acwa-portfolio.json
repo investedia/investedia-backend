@@ -11,21 +11,17 @@
    "rows": 103
   }
  ],
- "candidates": 33,
+ "candidates": 41,
  "categories": {
-  "C": 23,
-  "A": 10
+  "C": 24,
+  "A": 17
  },
- "verified_written": 10,
- "yield_pct": 30.3,
+ "verified_written": 17,
+ "yield_pct": 41.5,
  "unresolved_reasons": {
-  "stake conflict": 2,
+  "stake conflict": 7,
   "capacity differs": 2,
-  "document lists phases (Kungrad 1 Wind IPP); the GEM plant must be split by phase first": 1,
-  "document lists phases (Sazagan Solar 1); the GEM plant must be split by phase first": 1,
   "document lists phases (Rumah 1); the GEM plant must be split by phase first": 1,
-  "document lists phases (Nairyah1); the GEM plant must be split by phase first": 1,
-  "document lists phases (Aral 1 Wind); the GEM plant must be split by phase first": 1,
   "not named in the batch documents": 14
  },
  "internal_only": 0,
@@ -43,32 +39,32 @@
    "passage": "PPA-                                                         Saudi Power / Saudi                                                                                                                                                                       Operating / Shaqra Wind                     1        3,000      35.10%      1,000       -          -          -        -       -     1,000       -     BOO-25       Wind        Q4 2027        EAI                    Procurement / Arabia                   "
   },
   {
-   "project": "Starah wind farm",
-   "id": "gem:L100001063265",
-   "document_row": "Starah Wind",
-   "stake": 35.1,
-   "passage": "PPA-                                                         Saudi Power / Saudi                                                                                                                                                                       Operating / Starah Wind                     1        5,625      35.10%      2,000       -          -          -        -       -     2,000       -     BOO-25       Wind        Q1 2028        EAI                    Procurement / Arabia                   "
-  },
-  {
-   "project": "Gijduvan (ACWA Power) wind farm",
-   "id": "gem:L100001061657",
-   "document_row": "Gijduvan Wind IPP",
-   "stake": 100.0,
-   "passage": "Gijduvan Wind       Uzbeki-                                                                                      PPA-BOO(T)-XX                                         Operating    National Electric Grid / 1         1,349        100.00%      300          -           -          -                        WInd       Q1 2027        SUB / IPP                  stan                                                                                             YR                                              "
-  },
-  {
-   "project": "Haden solar farm",
-   "id": "gem:L100001018770",
-   "document_row": "Haden Solar PV",
-   "stake": 35.1,
-   "passage": "PPA-                                                            Saudi Power / Haden Solar        Saudi                                                                                                                                                                          Operating / 1        4,375      35.10%      2,000       -          -          -        -       -     2,000      -     BOO-25          PV          Q1 2027        EAI                    Procurement / PV                Arabia      "
-  },
-  {
    "project": "Al-Muwaih Solar PV",
    "id": "gem:L100001018768",
    "document_row": "Al-Muwaih Solar",
    "stake": 35.1,
    "passage": "day)             day) / PPA-                                                          Saudi Power / Al-Muwaih          Saudi                                                                                                                                                                      Operating / 1        4,427      35.10%      2,000       -          -          -        -       -     2,000      -     BOO-25        PV         Q1 2027        EAI                     Procurement / Solar         "
+  },
+  {
+   "project": "Aral wind farm (phase 5)",
+   "id": "gem:L100001016696:p5",
+   "document_row": "Aral 5 Wind",
+   "stake": 100.0,
+   "passage": "Uzbeki-                                                                                      PPA-BOO(T)-25                                         Operating    National Electric Grid / Aral 5 Wind                       1         3,896        100.00%     1,000         -           -          -                        Wind       Q2 2031        SUB / stan                                                                                             YR                                                 leas"
+  },
+  {
+   "project": "Aral wind farm (phase 2)",
+   "id": "gem:L100001016696:p2",
+   "document_row": "Aral 2 Wind",
+   "stake": 100.0,
+   "passage": "Uzbeki-                                                                                      PPA-BOO(T)-25                                         Operating    National Electric Grid / Aral 2 Wind                       1         4,055        100.00%     1,000         -           -          -                        Wind       Q2 2031        SUB / stan                                                                                             YR                                                 leas"
+  },
+  {
+   "project": "Aral wind farm (phase 4)",
+   "id": "gem:L100001016696:p4",
+   "document_row": "Aral 4 Wind",
+   "stake": 100.0,
+   "passage": "Uzbeki-                                                                                      PPA-BOO(T)-25                                         Operating    National Electric Grid / Aral 4 Wind                       1         3,963        100.00%     1,000         -           -          -                        Wind       Q2 2031        SUB / stan                                                                                             YR                                                 leas"
   }
  ],
  "results": [
@@ -113,6 +109,56 @@
    "internal_only": []
   },
   {
+   "project": "gem:L100001016696:p1",
+   "name": "Aral wind farm (phase 1)",
+   "category": "A",
+   "reasons": [
+    "named in the company publication with 100.0%"
+   ],
+   "stake": 100.0,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001016696:p2",
+   "name": "Aral wind farm (phase 2)",
+   "category": "A",
+   "reasons": [
+    "named in the company publication with 100.0%"
+   ],
+   "stake": 100.0,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001016696:p3",
+   "name": "Aral wind farm (phase 3)",
+   "category": "A",
+   "reasons": [
+    "named in the company publication with 100.0%"
+   ],
+   "stake": 100.0,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001016696:p4",
+   "name": "Aral wind farm (phase 4)",
+   "category": "A",
+   "reasons": [
+    "named in the company publication with 100.0%"
+   ],
+   "stake": 100.0,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001016696:p5",
+   "name": "Aral wind farm (phase 5)",
+   "category": "A",
+   "reasons": [
+    "named in the company publication with 100.0%"
+   ],
+   "stake": 100.0,
+   "internal_only": []
+  },
+  {
    "project": "gem:L100001063143",
    "name": "Bisha solar farm",
    "category": "A",
@@ -140,6 +186,26 @@
     "named in the company publication with 35.1%"
    ],
    "stake": 35.1,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000922142:p4",
+   "name": "Kungrad (ACWA Power) wind farm (phase 4)",
+   "category": "A",
+   "reasons": [
+    "named in the company publication with 100.0%"
+   ],
+   "stake": 100.0,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001004183:p1",
+   "name": "Nairyah IPP Power Plant (phase 1)",
+   "category": "A",
+   "reasons": [
+    "named in the company publication with 35.0%"
+   ],
+   "stake": 35.0,
    "internal_only": []
   },
   {
@@ -182,8 +248,8 @@
    "internal_only": []
   },
   {
-   "project": "gem:L100000900062",
-   "name": "ACWA wind farm",
+   "project": "gem:L100000900062:p1",
+   "name": "ACWA wind farm (phase 1)",
    "category": "C",
    "reasons": [
     "not named in the batch documents"
@@ -197,16 +263,6 @@
    "reasons": [
     "not named in the batch documents"
    ],
-   "internal_only": []
-  },
-  {
-   "project": "gem:L100001016696",
-   "name": "Aral wind farm",
-   "category": "C",
-   "reasons": [
-    "document lists phases (Aral 1 Wind); the GEM plant must be split by phase first"
-   ],
-   "stake": null,
    "internal_only": []
   },
   {
@@ -273,18 +329,38 @@
    "internal_only": []
   },
   {
-   "project": "gem:L100000922142",
-   "name": "Kungrad (ACWA Power) wind farm",
+   "project": "gem:L100000922142:p1",
+   "name": "Kungrad (ACWA Power) wind farm (phase 1)",
    "category": "C",
    "reasons": [
-    "document lists phases (Kungrad 1 Wind IPP); the GEM plant must be split by phase first"
+    "stake conflict: company 100.0% vs GEM 51.0% (not resolved automatically)"
    ],
    "stake": null,
    "internal_only": []
   },
   {
-   "project": "gem:L100000804146",
-   "name": "Layla Solar PV Plant",
+   "project": "gem:L100000922142:p2",
+   "name": "Kungrad (ACWA Power) wind farm (phase 2)",
+   "category": "C",
+   "reasons": [
+    "stake conflict: company 100.0% vs GEM 51.0% (not resolved automatically)"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000922142:p3",
+   "name": "Kungrad (ACWA Power) wind farm (phase 3)",
+   "category": "C",
+   "reasons": [
+    "stake conflict: company 100.0% vs GEM 51.0% (not resolved automatically)"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000804146:p2",
+   "name": "Layla Solar PV Plant (phase 2)",
    "category": "C",
    "reasons": [
     "not named in the batch documents"
@@ -321,17 +397,7 @@
    "internal_only": []
   },
   {
-   "project": "gem:L100001004183",
-   "name": "Nairyah IPP Power Plant",
-   "category": "C",
-   "reasons": [
-    "document lists phases (Nairyah1); the GEM plant must be split by phase first"
-   ],
-   "stake": null,
-   "internal_only": []
-  },
-  {
-   "project": "gem:L100000405553",
+   "project": "gem:L100000405553:x",
    "name": "Qurayyah CC power plant",
    "category": "C",
    "reasons": [
@@ -349,7 +415,7 @@
    "internal_only": []
   },
   {
-   "project": "gem:L100000401075",
+   "project": "gem:L100000401075:x",
    "name": "Rabigh 2 IPP power station",
    "category": "C",
    "reasons": [
@@ -369,11 +435,21 @@
    "internal_only": []
   },
   {
-   "project": "gem:L100000831559",
-   "name": "Sazagan solar farm",
+   "project": "gem:L100000831559:p1",
+   "name": "Sazagan solar farm (phase 1)",
    "category": "C",
    "reasons": [
-    "document lists phases (Sazagan Solar 1); the GEM plant must be split by phase first"
+    "stake conflict: company 100.0% vs GEM 51.0% (not resolved automatically)"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000831559:p2",
+   "name": "Sazagan solar farm (phase 2)",
+   "category": "C",
+   "reasons": [
+    "stake conflict: company 100.0% vs GEM 51.0% (not resolved automatically)"
    ],
    "stake": null,
    "internal_only": []

@@ -22,6 +22,14 @@ class Engine(unittest.TestCase):
         self.assertEqual([k for _, k in candidates_for({'doc_name': 'Aral 1 Wind'}, [proj('Aral wind farm')])], ['phase'])
         self.assertEqual([k for _, k in candidates_for({'doc_name': 'Nairyah1'}, [proj('Nairyah 1 power plant')])], ['exact'])
 
+    def test_phase_and_expansion_matching(self):
+        ph = dict(proj('Darlipali power station', mw=800.0), plant_name='Darlipali power station', phase=2)
+        self.assertEqual([k for _, k in candidates_for({'doc_name': 'Darlipali-II', 'mw': 800}, [ph])], ['exact'])
+        self.assertEqual(candidates_for({'doc_name': 'Darlipali-III'}, [ph]), [])
+        ex = dict(proj('Gadarwara Super Thermal Power Project', mw=1600.0), expansion=True)
+        self.assertEqual([k for _, k in candidates_for({'doc_name': 'Gadarwara- II', 'mw': 1600}, [ex])], ['expansion'])
+        self.assertEqual(classify(ex, {'effective_stake': None}, {'doc_name': 'Gadarwara- II', 'mw': None, 'section': 'Under construction'}, 'expansion', DOC, TODAY)[0], 'C')
+
     def test_country_and_state_must_agree(self):
         self.assertEqual(candidates_for({'doc_name': 'Thakadu, South Africa', 'comma_country': True}, [proj('Thakadu solar farm', country='Egypt')]), [])
         self.assertTrue(candidates_for({'doc_name': 'Ground Mounted Solar Project, Ganjam', 'mw': 40}, [proj('Ganjam solar farm', country='India')]))
@@ -67,6 +75,8 @@ class Engine(unittest.TestCase):
         self.assertTrue(safeguards({'hq_country': 'Russia', 'listed_name': 'Mosenergo'}))
         self.assertTrue(safeguards({'hq_country': 'Belgium', 'listed_name': 'KBC Groep'}))
         self.assertEqual(safeguards({'hq_country': 'Saudi Arabia', 'listed_name': 'ACWA Power'}), [])
+        self.assertEqual(safeguards({'hq_country': 'United States', 'listed_name': 'Pinnacle West Capital Corporation'}), [])
+        self.assertTrue(safeguards({'hq_country': 'United States', 'listed_name': 'BlackRock Infrastructure Partners'}))
 
     def test_table_extractor_wrapped_names_components_and_footnotes(self):
         text = ('Saguling Float-   Indone-\n'

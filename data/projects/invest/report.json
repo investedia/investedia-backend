@@ -1,46 +1,47 @@
 {
  "as_of": "2026-11-12",
- "candidate_listed_companies": 618,
+ "candidate_listed_companies": 627,
  "candidates": {
-  "by_kind_Battery storage": 4,
+  "by_kind_Battery storage": 8,
   "by_kind_Bioenergy": 96,
-  "by_kind_Coal": 294,
-  "by_kind_Geothermal": 23,
+  "by_kind_Coal": 318,
+  "by_kind_Geothermal": 24,
   "by_kind_Hydropower": 176,
   "by_kind_Nuclear": 27,
-  "by_kind_Oil & gas": 587,
-  "by_kind_Solar": 885,
-  "by_kind_Wind": 905,
-  "by_stage_Announced": 700,
-  "by_stage_Commissioning": 4,
-  "by_stage_Pre-construction": 1417,
-  "by_stage_Under construction": 876,
-  "by_type_E1": 1637,
-  "by_type_E1+E3": 80,
-  "by_type_E3": 1280,
-  "exact_location": 1112,
-  "listed_company_has_lei_or_cik": 2683,
-  "matched_by_gem_id": 1177,
-  "projects_with_candidate": 2997
+  "by_kind_Oil & gas": 607,
+  "by_kind_Solar": 1078,
+  "by_kind_Wind": 992,
+  "by_stage_Announced": 773,
+  "by_stage_Commissioning": 7,
+  "by_stage_Pre-construction": 1611,
+  "by_stage_Under construction": 935,
+  "by_type_E1": 1816,
+  "by_type_E1+E3": 83,
+  "by_type_E3": 1427,
+  "exact_location": 1290,
+  "listed_company_has_lei_or_cik": 3003,
+  "matched_by_gem_id": 1242,
+  "projects_with_candidate": 3326
  },
  "missing_country_code": 0,
  "not_public_reasons": {
-  "no verified exposure to a listed company": 28838
+  "no verified exposure to a listed company": 33677
  },
  "notice": "Candidates are not verified. Only public_projects are shown. Not investment advice.",
- "pipeline_projects": 28885,
+ "pipeline_projects": 33769,
  "public_by_category": {
-  "A": 24,
-  "B": 23
+  "A": 45,
+  "B": 47
  },
  "public_by_sector_kind": {
-  "Battery storage": 4,
-  "Hydropower": 4,
-  "Oil & gas": 13,
-  "Solar": 20,
-  "Wind": 6
+  "Battery storage": 8,
+  "Coal": 8,
+  "Hydropower": 5,
+  "Oil & gas": 18,
+  "Solar": 40,
+  "Wind": 13
  },
- "public_projects": 47,
+ "public_projects": 92,
  "sources": {
   "ownership": {
    "licence": "CC BY 4.0",
@@ -56,103 +57,103 @@
  "top_candidate_companies": [
   [
    "TotalEnergies",
-   76
+   88
   ],
   [
    "Huaneng Power International",
-   75
-  ],
-  [
-   "Huadian Power International",
-   70
+   81
   ],
   [
    "Power Construction Corporation of China",
-   68
+   72
+  ],
+  [
+   "Huadian Power International",
+   71
   ],
   [
    "Iberdrola",
-   62
+   64
   ],
   [
    "GD POWER Development",
-   57
+   60
+  ],
+  [
+   "ENGIE",
+   58
+  ],
+  [
+   "China Energy Engineering",
+   58
+  ],
+  [
+   "NTPC",
+   56
+  ],
+  [
+   "RWE",
+   56
   ],
   [
    "NextEra Energy",
    56
   ],
   [
-   "ENGIE",
-   55
-  ],
-  [
-   "RWE",
-   55
-  ],
-  [
    "Datang International Power Generation",
-   54
-  ],
-  [
-   "China Energy Engineering",
-   52
+   55
   ],
   [
    "Korea Electric Power",
-   52
+   55
   ],
   [
    "AES",
-   50
+   54
   ],
   [
-   "NTPC",
-   49
+   "ACWA Power",
+   43
   ],
   [
    "China Resources Power Holdings",
    43
   ],
   [
-   "ACWA Power",
-   35
+   "NHPC",
+   43
   ],
   [
    "Ørsted",
-   35
+   42
   ],
   [
    "Blackstone",
+   37
+  ],
+  [
+   "Enel",
    35
   ],
   [
    "KBC Groep",
+   34
+  ],
+  [
+   "Bank of China",
    33
   ],
   [
-   "NHPC",
+   "Acciona",
+   32
+  ],
+  [
+   "CPFL Energia",
    32
   ],
   [
    "China Power International Development",
-   31
-  ],
-  [
-   "Bank of China",
-   30
-  ],
-  [
-   "Agricultural Bank of China",
-   29
-  ],
-  [
-   "China Shenhua Energy",
-   27
-  ],
-  [
-   "Enel",
-   26
+   32
   ]
  ]
 }

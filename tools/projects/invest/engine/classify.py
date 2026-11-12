@@ -7,8 +7,9 @@ A  company-confirmed: an official publication of the listed company (or its subs
 import re
 from datetime import date
 
-FINANCIAL = ('bank', 'groep', 'blackstone', 'capital', 'fund', 'asset management', 'investment', 'insurance', 'kkr',
-             'macquarie group', 'brookfield corp', 'brookfield asset', 'allianz', 'bnp', 'hsbc', 'jpmorgan', 'mizuho', 'mitsubishi ufj', 'sumitomo mitsui')
+FINANCIAL = ('bank', 'groep', 'blackstone', 'asset management', 'capital group', 'capital partners', 'infrastructure partners',
+             'investment management', 'insurance', 'kkr', 'macquarie group', 'brookfield corp', 'brookfield asset', 'allianz', 'bnp',
+             'hsbc', 'jpmorgan', 'mizuho', 'mitsubishi ufj', 'sumitomo mitsui', 'mitsubishi hc capital', 'pension', ' fund')
 MAX_DOC_AGE_DAYS = 548  # 18 months
 
 
@@ -42,7 +43,7 @@ def classify(project, exposure, row, match_kind, doc, today):
         return 'C', ['document lists phases (%s); the GEM plant must be split by phase first' % row['doc_name']], None
     if row.get('prose') and not (row.get('mw') and project.get('mw')):
         return 'C', ['prose passage states no capacity to confirm the project'], None
-    if match_kind == 'loose' and not (row.get('mw') and project.get('mw')):
+    if match_kind in ('loose', 'expansion') and not (row.get('mw') and project.get('mw')):
         return 'C', ['name match is partial and capacity cannot confirm it'], None
     if row.get('mw') and project.get('mw') and not (0.85 <= row['mw'] / project['mw'] <= 1.15):
         return 'C', ['capacity differs: document %s MW vs GEM %s MW' % (row['mw'], project['mw'])], None

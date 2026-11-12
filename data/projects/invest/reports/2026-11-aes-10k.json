@@ -11,20 +11,19 @@
    "rows": 19
   }
  ],
- "candidates": 11,
+ "candidates": 16,
  "categories": {
   "A": 4,
   "C": 7
  },
  "verified_written": 4,
- "yield_pct": 36.4,
+ "yield_pct": 25.0,
  "unresolved_reasons": {
-  "document lists phases (Vientos Bonaerenses 3 and 4); the GEM plant must be split by phase first": 1,
-  "capacity differs": 6
+  "capacity differs": 7
  },
  "internal_only": 0,
  "cost": {
-  "seconds": 0.7,
+  "seconds": 0.8,
   "documents": 1,
   "bytes": 6595755
  },
@@ -140,11 +139,21 @@
    "internal_only": []
   },
   {
-   "project": "gem:L100000832222",
-   "name": "Pampas Hybrid solar farm",
+   "project": "gem:L100000832222:p1",
+   "name": "Pampas Hybrid solar farm (phase 1)",
    "category": "C",
    "reasons": [
-    "capacity differs: document 697.0 MW vs GEM 252.0 MW"
+    "capacity differs: document 697.0 MW vs GEM 252.0 MW (whole plant: 2 phases, 252.0 MW together)"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000832222:p2",
+   "name": "Pampas Hybrid solar farm (phase 2)",
+   "category": "C",
+   "reasons": [
+    "capacity differs: document 697.0 MW vs GEM 252.0 MW (whole plant: 2 phases, 252.0 MW together)"
    ],
    "stake": null,
    "internal_only": []
@@ -155,16 +164,6 @@
    "category": "C",
    "reasons": [
     "capacity differs: document 697.0 MW vs GEM 140.0 MW"
-   ],
-   "stake": null,
-   "internal_only": []
-  },
-  {
-   "project": "gem:L100000904954",
-   "name": "Vientos Bonaerenses wind farm",
-   "category": "C",
-   "reasons": [
-    "document lists phases (Vientos Bonaerenses 3 and 4); the GEM plant must be split by phase first"
    ],
    "stake": null,
    "internal_only": []

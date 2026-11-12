@@ -1,0 +1,590 @@
+{
+ "batch": "2026-11-ntpc-under-construction",
+ "run_at": "2026-11-12",
+ "company": "NTPC",
+ "documents": [
+  {
+   "url": "https://ntpc.co.in/future-capacity-additions",
+   "sha256": "872ace35d725d7cfc0336ca77a7990869bd98a5c28516bfc323d17f5d7bd5637",
+   "date": "2026-11-12",
+   "kind": "company",
+   "rows": 69
+  }
+ ],
+ "candidates": 55,
+ "categories": {
+  "A": 13,
+  "C": 42
+ },
+ "verified_written": 13,
+ "yield_pct": 23.6,
+ "unresolved_reasons": {
+  "ambiguous expansion": 2,
+  "capacity differs": 1,
+  "document lists phases (Bikaner I); the GEM plant must be split by phase first": 2,
+  "document lists phases (Gujarat -I (Amreshwar)); the GEM plant must be split by phase first": 1,
+  "document lists phases (SECI Hybrid IV (Part of Dayapar I), Nakhatrana); the GEM plant must be split by phase first": 2,
+  "not named in the batch documents": 34
+ },
+ "internal_only": 0,
+ "cost": {
+  "seconds": 0.0,
+  "documents": 1,
+  "bytes": 53246
+ },
+ "audit_sample": [
+  {
+   "project": "Vishnugad Pipalkoti hydroelectric plant",
+   "id": "gem:L100000602090",
+   "document_row": "Pipalkoti-THDC",
+   "stake": null,
+   "passage": "3. | Pipalkoti-THDC | Hydro | Uttarakhand | 444"
+  },
+  {
+   "project": "Talcher power station (phase 3)",
+   "id": "gem:L100000102504:p3",
+   "document_row": "Talcher-III",
+   "stake": null,
+   "passage": "7. | Talcher-III | Thermal | Odisha | 1,320"
+  },
+  {
+   "project": "Patratu JSEB power station",
+   "id": "gem:L100000102281:x:under-construction",
+   "document_row": "Patratu",
+   "stake": null,
+   "passage": "2. | Patratu | Thermal | Jharkhand | 800"
+  },
+  {
+   "project": "Barethi solar park",
+   "id": "gem:L100001019874",
+   "document_row": "Barethi",
+   "stake": null,
+   "passage": "4 | Barethi | NTPC REL | Madhya Pradesh | 630 | 630"
+  },
+  {
+   "project": "Sipat power station",
+   "id": "gem:L100000102185:x",
+   "document_row": "Sipat-III",
+   "stake": null,
+   "passage": "6. | Sipat-III | Thermal | Chhattisgarh | 800"
+  }
+ ],
+ "results": [
+  {
+   "project": "gem:L100001019874",
+   "name": "Barethi solar park",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102458:p2",
+   "name": "Darlipali power station (phase 2)",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000922381",
+   "name": "Dayapar (NTPC) III wind farm",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102332:x",
+   "name": "Gadarwara Super Thermal Power Project",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000808890",
+   "name": "Lalitpur solar park",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102640:p2",
+   "name": "Meja Thermal Power Project (phase 2)",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102113:x",
+   "name": "Nabinagar Super Thermal Power Project",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102281:x:under-construction",
+   "name": "Patratu JSEB power station",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000800609",
+   "name": "Rihand solar farm",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102652:x",
+   "name": "Singrauli Super Thermal Power Station",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102185:x",
+   "name": "Sipat power station",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102504:p3",
+   "name": "Talcher power station (phase 3)",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000602090",
+   "name": "Vishnugad Pipalkoti hydroelectric plant",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000800586",
+   "name": "Amreshwar solar farm",
+   "category": "C",
+   "reasons": [
+    "document lists phases (Gujarat -I (Amreshwar)); the GEM plant must be split by phase first"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001000082",
+   "name": "Anpara-E power station (MUNPL)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102090:x",
+   "name": "Barauni power station",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001063966",
+   "name": "Barmer hybrid solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000829495",
+   "name": "Bhadla (NTPC) solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001083636",
+   "name": "Bihar nuclear power plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001080254",
+   "name": "Bikaner (NTPC) IV solar farm",
+   "category": "C",
+   "reasons": [
+    "document lists phases (Bikaner I); the GEM plant must be split by phase first"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001020458",
+   "name": "Bikaner (NTPC) solar farm",
+   "category": "C",
+   "reasons": [
+    "document lists phases (Bikaner I); the GEM plant must be split by phase first"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102524:x",
+   "name": "Chhabra Thermal Power Station",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000900499",
+   "name": "Dayapar (NTPC) wind farm",
+   "category": "C",
+   "reasons": [
+    "document lists phases (SECI Hybrid IV (Part of Dayapar I), Nakhatrana); the GEM plant must be split by phase first"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102145:p1",
+   "name": "Godhna power station (phase 1)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000808867",
+   "name": "Gujarat GUVNL XI (NTPC) solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001063836",
+   "name": "Jalore hybrid solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000808880",
+   "name": "Jhansi solar park",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102104:x",
+   "name": "Kahalgaon Super Thermal Power Plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001063720",
+   "name": "Kumbhe hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000800602:p1",
+   "name": "Kutch (NTPC) Solar Park (phase 1)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000800602:p2",
+   "name": "Kutch (NTPC) Solar Park (phase 2)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000800602:p3",
+   "name": "Kutch (NTPC) Solar Park (phase 3)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000800602:p4",
+   "name": "Kutch (NTPC) Solar Park (phase 4)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102164:x:under-construction",
+   "name": "Lara Integrated Thermal Power Project",
+   "category": "C",
+   "reasons": [
+    "ambiguous expansion: several unit groups of gem:L100000102164 fit \"Lara-II\" on capacity alone"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102164:x:pre-construction",
+   "name": "Lara Integrated Thermal Power Project",
+   "category": "C",
+   "reasons": [
+    "ambiguous expansion: several unit groups of gem:L100000102164 fit \"Lara-II\" on capacity alone"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000500288",
+   "name": "Mahi Banswara nuclear power plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000601958",
+   "name": "Malshej Ghat hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001063601",
+   "name": "Mori Hanol hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000917097",
+   "name": "NTPC Hybrid SECI IV wind farm",
+   "category": "C",
+   "reasons": [
+    "document lists phases (SECI Hybrid IV (Part of Dayapar I), Nakhatrana); the GEM plant must be split by phase first"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102340:p2",
+   "name": "NTPC Seoni power station (phase 2)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102644:x",
+   "name": "Obra Thermal Power Station",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000800686:x",
+   "name": "Omkareshwar Floating Solar Park",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102281:x:announced",
+   "name": "Patratu JSEB power station",
+   "category": "C",
+   "reasons": [
+    "capacity differs: document 800.0 MW vs GEM 1600.0 MW"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001025804",
+   "name": "Phanchung Pachi hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102602:p5",
+   "name": "Ramagundam power station (phase 5)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000602007",
+   "name": "Rammam III hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000808766:p1",
+   "name": "Sampoor Solar Power Project (phase 1)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000808766:p2",
+   "name": "Sampoor Solar Power Project (phase 2)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000602029",
+   "name": "Seli hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000808946:p2",
+   "name": "Shajapur solar park (phase 2)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001000571",
+   "name": "THDCIL-UJVNL Energy power station",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102504:p4",
+   "name": "Talcher power station (phase 4)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000602054",
+   "name": "Tapovan Vishnugad hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001063904",
+   "name": "Upper Bhavani hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001063723",
+   "name": "Vidhyanchal solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "batch": "2026-11-ntpc-under-construction",
+ "company": "NTPC",
+ "company_entity_ids": [
+  "E100000001926"
+ ],
+ "company_tokens": [
+  "ntpc",
+  "rel",
+  "thdc",
+  "neepco",
+  "ngel",
+  "hydro",
+  "stage"
+ ],
+ "identity": {
+  "scheme": "LEI",
+  "id": "335800Q4TRGJXNLVMB81",
+  "legal_name": "NTPC LIMITED",
+  "source_url": "https://api.gleif.org/api/v1/lei-records/335800Q4TRGJXNLVMB81",
+  "checked_at": "2026-11-12"
+ },
+ "listing": {
+  "ticker": "NTPC",
+  "exchange": "National Stock Exchange of India; BSE (532555)",
+  "source_url": "https://ntpc.co.in/sites/default/files/annual-report/complete-reports/Annual%20Report%202025-26%20%283%29.pdf",
+  "quote": "NTPC equity shares are listed on the following Stock Exchanges ... Scrip Code/ Symbol 532555 NTPC EQ",
+  "checked_at": "2026-11-12"
+ },
+ "documents": [
+  {
+   "url": "https://ntpc.co.in/future-capacity-additions",
+   "date": "2026-11-12",
+   "kind": "company",
+   "publisher": "NTPC Limited",
+   "publisher_is_listed_company": true,
+   "title": "Future capacity additions: capacity under construction",
+   "extract": {
+    "type": "html_table",
+    "name_cell": 1,
+    "mw_cells": [
+     4
+    ],
+    "section": "Under construction",
+    "group_indirect": "JV|Sub",
+    "group_direct": "NTPC Owned",
+    "jv_marker": "\\(JV"
+   }
+  }
+ ]
+}

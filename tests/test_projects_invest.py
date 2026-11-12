@@ -86,6 +86,18 @@ class InvestLayer(unittest.TestCase):
         self.assertEqual([(e['owner'], e['listed_entity_id']) for e in research[0]['candidate_exposures']], [('Listed Power PLC', 'E1')])
         self.assertEqual({o['name']: o['entity_id'] for o in research[0]['owners']}, {'State Utility': 'E3', 'Listed Power PLC': 'E1'})
 
+    def test_phases_and_expansions_never_double_count(self):
+        from tools.projects.invest.build import phase_of
+        self.assertEqual([phase_of(x, 'Coal') for x in ('Phase II Unit 3', 'Stage III Unit 1', 'Unit 4')], [2, 3, None])
+        self.assertEqual(phase_of('1-Nairyah IPP 1', 'Oil & gas'), 1)
+        rows = [unit(**{'Unit / Phase name': 'Phase I Unit 1', 'Status': 'operating'}), unit(**{'Unit / Phase name': 'Phase II Unit 3'}),
+                unit(**{'Unit / Phase name': 'Phase III Unit 5', 'Status': 'pre-construction'})]
+        research, _, _ = self.run_build(rows)
+        self.assertEqual(sorted(r['id'] for r in research), ['gem:L1:p2', 'gem:L1:p3'])
+        exp = [unit(**{'Unit / Phase name': 'Unit 1', 'Status': 'operating'}), unit(**{'Unit / Phase name': 'Unit 3'}), unit(**{'Unit / Phase name': 'Unit 4'})]
+        research, _, _ = self.run_build(exp)
+        self.assertEqual([(r['id'], r['mw'], r['expansion']) for r in research], [('gem:L1:x', 200.0, True)])
+
     def test_unknown_stake_stays_unknown(self):
         e = self.reg.exposures({'name': 'Project Holdco', 'entity_id': 'E2', 'stake': None})[0]
         self.assertIsNone(e['effective_stake'])

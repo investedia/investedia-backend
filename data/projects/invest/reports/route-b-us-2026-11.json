@@ -3,11 +3,11 @@
  "stats": {
   "plants": 1021,
   "C newer than ownership survey": 335,
-  "C no listed identity": 659,
-  "owner identified but no company with public common equity": 177,
-  "B plants": 24,
+  "C no listed identity": 635,
+  "B plants": 48,
+  "owner identified but no company with public common equity": 186,
   "C mixed owners": 3
  },
- "b_links": 24,
- "seconds": 152
+ "b_links": 48,
+ "seconds": 15
 }

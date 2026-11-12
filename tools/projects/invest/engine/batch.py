@@ -64,9 +64,16 @@ def run(cfg, research, ledger, today):
         docs.append({'url': d['url'], 'sha256': sha, 'date': d['date'], 'kind': d['kind'], 'rows': len(rows)})
         doc = dict(d, sha256=sha)
         for row in rows:
-            for p, kind in ([(by_id[row['_project']], 'exact')] if row.get('_project') else candidates_for(row, pool, cfg.get('company_tokens', []))):
+            matches = [(by_id[row['_project']], 'exact')] if row.get('_project') else candidates_for(row, pool, cfg.get('company_tokens', []))
+            whole = [p for p, k in matches if k == 'whole']
+            whole_mw = sum(p['mw'] or 0 for p in whole)
+            for p, kind in matches:
                 e = next(e for e in p['candidate_exposures'] if e['listed_entity_id'] in eids)
-                cat, why, stake = classify(p, e, row, kind, doc, today)
+                if kind == 'whole':  # all phases of the named plant, judged on their combined capacity
+                    cat, why, stake = classify(dict(p, mw=whole_mw), e, row, 'loose', doc, today)
+                    why = [w + ' (whole plant: %d phases, %s MW together)' % (len(whole), whole_mw) for w in why]
+                else:
+                    cat, why, stake = classify(p, e, row, kind, doc, today)
                 prev = results.get(p['id'])
                 rank = {'A': 0, 'B': 1, 'D': 2, 'C': 3}
                 if prev and rank[prev['category']] <= rank[cat]:
@@ -75,6 +82,21 @@ def run(cfg, research, ledger, today):
                                     'exposure': e, 'row': row, 'doc': doc, 'internal_only': safeguards(e) if cat in 'AB' else []}
     if cfg.get('pool') == 'by_location':
         pool = [p for p in pool if p['id'] in results]  # report only projects the filing names
+    # Expansion groups are identified by capacity only: if one row fits several groups of the same plant,
+    # or several rows fit the same group, the match is ambiguous and is not verified.
+    from collections import defaultdict
+    fits = defaultdict(set)
+    for pid, r in results.items():
+        if r.get('row') and r['category'] in ('A', 'B') and by_id.get(pid, {}).get('expansion'):
+            fits[(pid.rsplit(':x', 1)[0], r['row']['doc_name'])].add(pid)
+    rows_per_group = defaultdict(set)
+    for (plant, row_name), pids in fits.items():
+        for pid in pids:
+            rows_per_group[pid].add(row_name)
+    for (plant, row_name), pids in fits.items():
+        for pid in pids:
+            if len(pids) > 1 or len(rows_per_group[pid]) > 1:
+                results[pid].update(category='C', reasons=['ambiguous expansion: several unit groups of %s fit "%s" on capacity alone' % (plant, row_name)])
     for p in pool:
         results.setdefault(p['id'], {'project': p['id'], 'name': p['name'], 'category': 'C', 'reasons': ['not named in the batch documents'], 'exposure': None, 'internal_only': []})
     written = 0
@@ -83,7 +105,7 @@ def run(cfg, research, ledger, today):
             continue
         e, d = r['exposure'], r['doc']
         key = '%s|%s' % (r['project'], e['listed_entity_id'])
-        ledger[key] = {'category': r['category'], 'exposure_type': 'direct' if e['type'] == 'E1' else 'indirect',
+        ledger[key] = {'category': r['category'], 'exposure_type': 'indirect' if e['type'] != 'E1' or r['row'].get('indirect') else 'direct',
                        'identity': cfg['identity'], 'listing': cfg['listing'],
                        'link': [{'url': d['url'], 'sha256': d['sha256'], 'document_date': d['date'], 'publisher': d['publisher'],
                                  'proves': '%s names %s%s' % (d['publisher'], r['row']['doc_name'],

@@ -1,0 +1,82 @@
+{
+ "batch": "2026-11-ntpc-under-construction",
+ "auditor": "Claude (manual read of each passage)",
+ "date": "2026-11-12",
+ "sample": "all A records (100%)",
+ "checked": 13,
+ "correct": 13,
+ "false_positives": 0,
+ "note": "NTPC capacity-under-construction table (13 A): Darlipali-II, Gadarwara-II, Nabinagar-II, Singrauli-III, Sipat-III, Talcher-III, Meja-II (JV), Patratu (JV), Pipalkoti (THDC), Rihand, Barethi, Lalitpur, Dayapar III. Unit groups and capacities agree with GEM.",
+ "items": [
+  {
+   "key": "gem:L100000102458:p2|E100000001926",
+   "proves": "NTPC Limited names Darlipali-II",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100000102332:x|E100000001926",
+   "proves": "NTPC Limited names Gadarwara- II",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100000102113:x|E100000001926",
+   "proves": "NTPC Limited names NabiNagar-II",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100000102652:x|E100000001926",
+   "proves": "NTPC Limited names Singrauli-III",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100000102185:x|E100000001926",
+   "proves": "NTPC Limited names Sipat-III",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100000102504:p3|E100000001926",
+   "proves": "NTPC Limited names Talcher-III",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100000102640:p2|E100000001926",
+   "proves": "NTPC Limited names Meja-II",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100000102281:x:under-construction|E100000001926",
+   "proves": "NTPC Limited names Patratu",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100000602090|E100000001926",
+   "proves": "NTPC Limited names Pipalkoti-THDC",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100000800609|E100000001926",
+   "proves": "NTPC Limited names Rihand",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100001019874|E100000001926",
+   "proves": "NTPC Limited names Barethi",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100000808890|E100000001926",
+   "proves": "NTPC Limited names Lalitpur",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100000922381|E100000001926",
+   "proves": "NTPC Limited names Dayapar III",
+   "result": "correct"
+  }
+ ],
+ "false_positives_before_fix": {
+  "count": 1,
+  "of": 15,
+  "cause": "Lara: two expansion unit groups of the same capacity (1,600 MW) both matched \"Lara-II\"; fixed by the ambiguity rule (both now C)"
+ }
+}

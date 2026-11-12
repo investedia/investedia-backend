@@ -11,6 +11,7 @@ Outputs:
 assets/globe/projects.json is never touched. Real rows only; unknown values stay null.
 """
 import argparse
+import re
 import hashlib
 import json
 from collections import Counter, defaultdict
@@ -23,7 +24,7 @@ from .rules import evaluate
 ROOT = Path(__file__).resolve().parents[3]
 SHA256 = {'power': '34749042643b15cac4423ae67864ad36c391013aa2d5acc65ae7492c5e33ee27',
           'ownership': 'dc77b6be39ec5fc962da20f0f298c6c1bd79d12e863b034b180809b4dea6f0a5'}
-POWER_HEADERS = ['Type', 'Country/area', 'Plant / Project name', 'Capacity (MW)', 'Status', 'Start year', 'Owner(s)',
+POWER_HEADERS = ['Unit / Phase name', 'Type', 'Country/area', 'Plant / Project name', 'Capacity (MW)', 'Status', 'Start year', 'Owner(s)',
                  'Owner(s) GEM Entity ID', 'Latitude', 'Longitude', 'Location accuracy', 'GEM location ID', 'GEM.Wiki URL']
 SOURCES = {
     'power': {'name': 'Global Energy Monitor, Global Integrated Power Tracker, September 2026 release',
@@ -51,32 +52,80 @@ def num(v):
         return None
 
 
+ROMAN = {'i': 1, 'ii': 2, 'iii': 3, 'iv': 4, 'v': 5, 'vi': 6, 'vii': 7, 'viii': 8}
+
+
+def phase_of(unit_name, kind):
+    """Phase number from a GEM unit name: 'Phase II Unit 3' -> 2, 'Stage III Unit 1' -> 3; for wind/solar/
+    storage a bare unit number ('3', '1-...Nairyah IPP 1') is the phase. Thermal 'Unit 4' alone is not a phase."""
+    u = (clean(unit_name) or '').lower()
+    m = re.search(r'(?:phase|stage|block)\s*([ivx]+|\d+)\b', u)
+    if m:
+        v = m.group(1)
+        return ROMAN.get(v) or (int(v) if v.isdigit() else None)
+    m = re.search(r'\bipp\s*(\d+)\s*$', u)
+    if m:
+        return int(m.group(1))
+    if kind in ('Solar', 'Wind') and re.fullmatch(r'(\d+)(?:\s*-.*)?', u):
+        return int(re.match(r'\d+', u).group(0))
+    return None
+
+
 def plants(rows, iso, registry=None):
-    """Group unit rows into plants by GEM location ID. Keeps pipeline units only."""
+    """Group unit rows by GEM location ID. Pipeline units only are kept, split so nothing is counted twice:
+    - units with phase labels -> one record per phase ('gem:<loc>:p<n>');
+    - otherwise, a plant that also has operating units -> 'expansion' records, one per pipeline stage group;
+    - otherwise one plant record ('gem:<loc>')."""
     groups = defaultdict(list)
     for r in rows:
-        if STAGE.get(str(r.get('Status'))) and clean(r.get('GEM location ID')):
+        if clean(r.get('GEM location ID')):
             groups[(r['GEM location ID'], r['Type'])].append(r)
-    for (loc, typ), units in groups.items():
-        first = units[0]
-        lat, lon = num(first.get('Latitude')), num(first.get('Longitude'))
-        stage = min((STAGE[str(u['Status'])] for u in units), key=ORDER.index)
-        years = [int(y) for y in (num(u.get('Start year')) for u in units) if y]
-        owners, seen = [], set()
+    multi_type = Counter(l for l, t in groups)
+    for (loc, typ), all_units in groups.items():
+        kind = KIND.get(str(typ), str(typ))
+        units = [u for u in all_units if STAGE.get(str(u.get('Status')))]
+        if not units:
+            continue
+        operating = any(str(u.get('Status')) == 'operating' for u in all_units)
+        base_id = 'gem:' + loc + ('' if multi_type[loc] == 1 else ':' + kind)
+        phases = defaultdict(list)
         for u in units:
-            for o in split_owners(u.get('Owner(s)'), u.get('Owner(s) GEM Entity ID'), registry):
-                if (o['name'], o['entity_id']) not in seen:
-                    seen.add((o['name'], o['entity_id']))
-                    owners.append(o)
-        mw = [num(u.get('Capacity (MW)')) for u in units]
-        acc = (clean(first.get('Location accuracy')) or '').lower()
-        yield {'id': 'gem:' + loc + ('' if len({t for l, t in groups if l == loc}) == 1 else ':' + KIND.get(typ, typ)),
-               'name': clean(first.get('Plant / Project name')), 'sector': 'Energy & Utilities', 'kind': KIND.get(str(typ), str(typ)),
-               'country': clean(first.get('Country/area')), 'cc': iso.get(clean(first.get('Country/area'))),
-               'lat': lat, 'lon': lon, 'precision': acc if acc in ('exact', 'approximate') else None,
-               'mw': round(sum(m for m in mw if m), 1) if any(mw) else None, 'stage': stage,
-               'expected_year': max(years) if years else None, 'units': len(units), 'owners': owners,
-               'cost': None, 'progress': None, 'wiki': clean(first.get('GEM.Wiki URL')), 'source': SOURCES['power']}
+            phases[phase_of(u.get('Unit / Phase name'), kind)].append(u)
+        if None not in phases and len(units) > 0 and (len(phases) > 1 or operating or any(phase_of(u.get('Unit / Phase name'), kind) for u in all_units if u not in units)):
+            for n, us in sorted(phases.items()):
+                yield record(base_id + ':p%d' % n, us, kind, iso, registry, phase=n)
+        elif operating:
+            by_stage = defaultdict(list)
+            for u in units:
+                by_stage[STAGE[str(u['Status'])]].append(u)
+            for st, us in by_stage.items():
+                suffix = '' if len(by_stage) == 1 else ':' + st.lower().replace(' ', '-')
+                yield record(base_id + ':x' + suffix, us, kind, iso, registry, expansion=True)
+        else:
+            yield record(base_id, units, kind, iso, registry)
+
+
+def record(pid, units, kind, iso, registry, phase=None, expansion=False):
+    first = units[0]
+    lat, lon = num(first.get('Latitude')), num(first.get('Longitude'))
+    stage = min((STAGE[str(u['Status'])] for u in units), key=ORDER.index)
+    years = [int(y) for y in (num(u.get('Start year')) for u in units) if y]
+    owners, seen = [], set()
+    for u in units:
+        for o in split_owners(u.get('Owner(s)'), u.get('Owner(s) GEM Entity ID'), registry):
+            if (o['name'], o['entity_id']) not in seen:
+                seen.add((o['name'], o['entity_id']))
+                owners.append(o)
+    mw = [num(u.get('Capacity (MW)')) for u in units]
+    acc = (clean(first.get('Location accuracy')) or '').lower()
+    name = clean(first.get('Plant / Project name'))
+    return {'id': pid, 'name': name + (' (phase %d)' % phase if phase else ''), 'plant_name': name, 'phase': phase, 'expansion': expansion,
+            'units_named': [clean(u.get('Unit / Phase name')) for u in units], 'sector': 'Energy & Utilities', 'kind': kind,
+            'country': clean(first.get('Country/area')), 'cc': iso.get(clean(first.get('Country/area'))),
+            'lat': lat, 'lon': lon, 'precision': acc if acc in ('exact', 'approximate') else None,
+            'mw': round(sum(m for m in mw if m), 1) if any(mw) else None, 'stage': stage,
+            'expected_year': max(years) if years else None, 'units': len(units), 'owners': owners,
+            'cost': None, 'progress': None, 'wiki': clean(first.get('GEM.Wiki URL')), 'source': SOURCES['power']}
 
 
 def ledger_exposures(pid, known, ledger):

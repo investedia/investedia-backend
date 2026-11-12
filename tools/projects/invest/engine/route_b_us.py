@@ -40,7 +40,24 @@ def gleif(url):
     return json.loads(Path(path).read_text())
 
 
+_IDX = None
+
+
+def _idx():
+    global _IDX
+    from .gleif_local import DB, Index
+    if _IDX is None and DB.exists():
+        _IDX = Index()
+    return _IDX
+
+
 def lei_for(name):
+    ix = _idx()
+    if ix:  # complete local golden copy: exact key, US legal address, unique
+        hit = ix.by_name(name, 'US')
+        if not hit:
+            return None, 'no unique exact legal-entity match'
+        return {'id': hit[0], 'attributes': {'entity': {'legalName': {'name': hit[1]}}}}, None
     q = urllib.parse.quote(name)
     try:
         j = gleif('https://api.gleif.org/api/v1/lei-records?filter[entity.legalName]=%s&page[size]=20' % q)
@@ -54,6 +71,10 @@ def lei_for(name):
 
 
 def parent_of(lei, rel):
+    ix = _idx()
+    if ix:
+        par = ix.parent(lei, rel)
+        return {'id': par, 'attributes': {'entity': {'legalName': {'name': ix.name(par) or par}}}} if par else None
     try:
         j = gleif('https://api.gleif.org/api/v1/lei-records/%s/%s' % (lei, rel))
         return j.get('data')

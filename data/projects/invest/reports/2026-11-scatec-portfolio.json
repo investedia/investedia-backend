@@ -11,18 +11,18 @@
    "rows": 39
   }
  ],
- "candidates": 23,
+ "candidates": 25,
  "categories": {
-  "A": 1,
-  "C": 22
+  "A": 2,
+  "C": 23
  },
- "verified_written": 1,
- "yield_pct": 4.3,
+ "verified_written": 2,
+ "yield_pct": 8.0,
  "unresolved_reasons": {
   "capacity differs": 1,
   "document lists phases (Sidi Bouzid 2, Tunisia); the GEM plant must be split by phase first": 1,
   "stake conflict": 1,
-  "not named in the batch documents": 19
+  "not named in the batch documents": 20
  },
  "internal_only": 0,
  "cost": {
@@ -32,8 +32,15 @@
  },
  "audit_sample": [
   {
-   "project": "Egypt Aluminium solar farm",
-   "id": "gem:L100001045291",
+   "project": "Egypt Aluminium solar farm (phase 1)",
+   "id": "gem:L100001045291:p1",
+   "document_row": "Egypt Aluminium",
+   "stake": 100.0,
+   "passage": "Egypt Aluminium                     Solar              1,125        100%"
+  },
+  {
+   "project": "Egypt Aluminium solar farm (phase 2)",
+   "id": "gem:L100001045291:p2",
    "document_row": "Egypt Aluminium",
    "stake": 100.0,
    "passage": "Egypt Aluminium                     Solar              1,125        100%"
@@ -41,11 +48,21 @@
  ],
  "results": [
   {
-   "project": "gem:L100001045291",
-   "name": "Egypt Aluminium solar farm",
+   "project": "gem:L100001045291:p1",
+   "name": "Egypt Aluminium solar farm (phase 1)",
    "category": "A",
    "reasons": [
-    "named in the company publication with 100.0%"
+    "named in the company publication with 100.0% (whole plant: 2 phases, 1000.0 MW together)"
+   ],
+   "stake": 100.0,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001045291:p2",
+   "name": "Egypt Aluminium solar farm (phase 2)",
+   "category": "A",
+   "reasons": [
+    "named in the company publication with 100.0% (whole plant: 2 phases, 1000.0 MW together)"
    ],
    "stake": 100.0,
    "internal_only": []
@@ -97,7 +114,7 @@
    "internal_only": []
   },
   {
-   "project": "gem:L100000811571",
+   "project": "gem:L100000811571:x",
    "name": "Guider solar farm",
    "category": "C",
    "reasons": [
@@ -134,7 +151,7 @@
    "internal_only": []
   },
   {
-   "project": "gem:L100000811572",
+   "project": "gem:L100000811572:x",
    "name": "Maroua solar farm",
    "category": "C",
    "reasons": [
@@ -152,8 +169,17 @@
    "internal_only": []
   },
   {
-   "project": "gem:L100001045292",
-   "name": "Obelisk solar farm",
+   "project": "gem:L100001045292:p1",
+   "name": "Obelisk solar farm (phase 1)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001045292:p2",
+   "name": "Obelisk solar farm (phase 2)",
    "category": "C",
    "reasons": [
     "not named in the batch documents"

@@ -14,6 +14,11 @@
    "result": "correct"
   },
   {
+   "key": "gem:L100001019878|E100000120883",
+   "proves": "NHPC Limited names Ground Mounted Solar Power Project, Ganjam",
+   "result": "correct"
+  },
+  {
    "key": "gem:L100000602048|E100000120883",
    "proves": "NHPC Limited names Subansiri (Lower)",
    "result": "correct"
@@ -26,11 +31,6 @@
   {
    "key": "gem:L100000602067|E100000120883",
    "proves": "NHPC Limited names Teesta VI HEP",
-   "result": "correct"
-  },
-  {
-   "key": "gem:L100001019878|E100000120883",
-   "proves": "NHPC Limited names Ground Mounted Solar Power Project, Ganjam",
    "result": "correct"
   }
  ]

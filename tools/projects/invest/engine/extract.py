@@ -127,10 +127,18 @@ def html_table(raw_html, spec):
     the name, e.g. trailing state names), section, jv_marker (regex flagging joint ventures)."""
     import html as H
     out = []
+    indirect = False
     for i, tr in enumerate(re.findall(r'(?is)<tr[^>]*>(.*?)</tr>', raw_html)):
         cells = [re.sub(r'\s+', ' ', H.unescape(H.unescape(re.sub('<[^>]+>', ' ', c)))).strip()
                  for c in re.findall(r'(?is)<t[dh][^>]*>(.*?)</t[dh]>', tr)]
-        if len(cells) <= spec['name_cell'] or not cells[spec['name_cell']] or re.match(r'(?i)name of project|total', cells[spec['name_cell']]):
+        head = ' '.join(c for c in cells if c)
+        if spec.get('group_indirect') and len([c for c in cells if c]) <= 3 and re.search(spec['group_indirect'], head):
+            indirect = True
+            continue
+        if spec.get('group_direct') and len([c for c in cells if c]) <= 3 and re.search(spec['group_direct'], head):
+            indirect = False
+            continue
+        if len(cells) <= spec['name_cell'] or not cells[spec['name_cell']] or re.match(r'(?i)name of project|project/stations|total|sub-total|grand total', cells[spec['name_cell']]):
             continue
         name = cells[spec['name_cell']]
         mw = None
@@ -144,5 +152,5 @@ def html_table(raw_html, spec):
         if spec.get('strip'):
             name = re.sub(spec['strip'], '', name).strip(' ,')
         out.append({'doc_name': name, 'pct': None, 'mw': mw, 'cod': None, 'section': spec.get('section'), 'line': i + 1,
-                    'joint_venture': jv, 'passage': ' | '.join(cells)[:400]})
+                    'joint_venture': jv, 'indirect': indirect or jv, 'passage': ' | '.join(cells)[:400]})
     return out

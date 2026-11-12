@@ -2,24 +2,24 @@
  "batches": [
   {
    "batch": "2026-11-acwa-portfolio",
-   "candidates": 33,
+   "candidates": 41,
    "categories": {
-    "C": 23,
-    "A": 10
+    "C": 24,
+    "A": 17
    },
-   "yield_pct": 30.3,
+   "yield_pct": 41.5,
    "seconds": 0.3,
-   "audit": "10/10"
+   "audit": "17/17"
   },
   {
    "batch": "2026-11-aes-10k",
-   "candidates": 11,
+   "candidates": 16,
    "categories": {
     "A": 4,
     "C": 7
    },
-   "yield_pct": 36.4,
-   "seconds": 0.7,
+   "yield_pct": 25.0,
+   "seconds": 0.8,
    "audit": "4/4"
   },
   {
@@ -30,7 +30,7 @@
     "A": 1
    },
    "yield_pct": 4.0,
-   "seconds": 3.1,
+   "seconds": 2.9,
    "audit": "1/1"
   },
   {
@@ -46,25 +46,36 @@
   },
   {
    "batch": "2026-11-nhpc-under-construction",
-   "candidates": 32,
+   "candidates": 43,
    "categories": {
-    "C": 27,
+    "C": 38,
     "A": 5
    },
-   "yield_pct": 15.6,
+   "yield_pct": 11.6,
    "seconds": 0.0,
    "audit": "5/5"
   },
   {
-   "batch": "2026-11-scatec-portfolio",
-   "candidates": 23,
+   "batch": "2026-11-ntpc-under-construction",
+   "candidates": 55,
    "categories": {
-    "A": 1,
-    "C": 22
+    "A": 13,
+    "C": 42
    },
-   "yield_pct": 4.3,
+   "yield_pct": 23.6,
+   "seconds": 0.0,
+   "audit": "13/13"
+  },
+  {
+   "batch": "2026-11-scatec-portfolio",
+   "candidates": 25,
+   "categories": {
+    "A": 2,
+    "C": 23
+   },
+   "yield_pct": 8.0,
    "seconds": 0.2,
-   "audit": "1/1"
+   "audit": "2/2"
   },
   {
    "batch": "route-b-us-2026-11",
@@ -72,26 +83,26 @@
    "categories": {
     "plants": 1021,
     "C newer than ownership survey": 335,
-    "C no listed identity": 659,
-    "owner identified but no company with public common equity": 177,
-    "B plants": 24,
+    "C no listed identity": 635,
+    "B plants": 48,
+    "owner identified but no company with public common equity": 186,
     "C mixed owners": 3
    },
    "yield_pct": null,
-   "seconds": 152,
-   "audit": "24/24"
+   "seconds": 15,
+   "audit": "48/48"
   }
  ],
  "unresolved": {
-  "not named in the batch documents": 95,
+  "not named in the batch documents": 142,
   "document lists phases": 12,
-  "capacity differs": 9,
-  "stake conflict": 3,
-  "prose passage states no capacity to confirm the project": 1,
-  "name match is partial and capacity cannot confirm it": 1
+  "capacity differs": 11,
+  "stake conflict": 8,
+  "ambiguous expansion": 2,
+  "prose passage states no capacity to confirm the project": 1
  },
  "audit_total": {
-  "checked": 47,
-  "correct": 47
+  "checked": 92,
+  "correct": 92
  }
 }

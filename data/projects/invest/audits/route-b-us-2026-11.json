@@ -3,8 +3,8 @@
  "auditor": "Claude (manual check of every chain)",
  "date": "2026-11-12",
  "sample": "all B records (100%)",
- "checked": 24,
- "correct": 24,
+ "checked": 48,
+ "correct": 48,
  "false_positives": 0,
  "false_positives_before_fix": {
   "count": 10,
@@ -13,6 +13,31 @@
  },
  "held_internal": "Brookfield Corporation via TerraForm Power: consolidating parent is an asset manager; owner decision keeps bank/fund links internal.",
  "items": [
+  {
+   "key": "eia:708|lei:549300FC3G3YU2FBZD92",
+   "proves": "EIA-860M lists Hammond (plant 708) as planned, status V, reported by Georgia Power Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Georgia Power Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity GEORGIA POWER COMPANY, LEI D981X4Z4RWS7PDMJUZ03 / GEORGIA POWER COMPANY reports THE SOUTHERN COMPANY as its direct parent / SOUTHERN CO has publicly traded common equity: SO on NYSE (CIK 92122; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:728|lei:549300FC3G3YU2FBZD92",
+   "proves": "EIA-860M lists Yates (plant 728) as planned, status P, reported by Georgia Power Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Georgia Power Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity GEORGIA POWER COMPANY, LEI D981X4Z4RWS7PDMJUZ03 / GEORGIA POWER COMPANY reports THE SOUTHERN COMPANY as its direct parent / SOUTHERN CO has publicly traded common equity: SO on NYSE (CIK 92122; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:1355|lei:9N3UAJSNOUXFKQLF3V18",
+   "proves": "EIA-860M lists E W Brown (plant 1355) as planned, status V, reported by Kentucky Utilities Co / EIA-860 2024 Schedule 4 lists Louisville Gas & Electric Co as owner (100.0%) / Legal entity LOUISVILLE GAS AND ELECTRIC COMPANY, LEI KO3GRIB3RPH1XDX50U72 / LOUISVILLE GAS AND ELECTRIC COMPANY reports PPL CORPORATION as its direct parent / PPL Corp has publicly traded common equity: PPL on NYSE (CIK 922224; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:1364|lei:9N3UAJSNOUXFKQLF3V18",
+   "proves": "EIA-860M lists Mill Creek (KY) (plant 1364) as planned, status V, reported by Louisville Gas & Electric Co / EIA-860 2024 Schedule 4 lists Louisville Gas & Electric Co as owner (31.0%) / Legal entity LOUISVILLE GAS AND ELECTRIC COMPANY, LEI KO3GRIB3RPH1XDX50U72 / LOUISVILLE GAS AND ELECTRIC COMPANY reports PPL CORPORATION as its direct parent / PPL Corp has publicly traded common equity: PPL on NYSE (CIK 922224; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:4050|lei:5493009ML300G373MZ12",
+   "proves": "EIA-860M lists Edgewater (plant 4050) as planned, status U, reported by Wisconsin Power & Light Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Wisconsin Power & Light Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity WISCONSIN POWER AND LIGHT COMPANY, LEI JWBYHVQVMY66CVCOSO49 / WISCONSIN POWER AND LIGHT COMPANY reports ALLIANT ENERGY CORPORATION as its direct parent / ALLIANT ENERGY CORP has publicly traded common equity: LNT on Nasdaq (CIK 352541; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
   {
    "key": "eia:55478|lei:3MGELCRSTNSAMJ962671",
    "proves": "EIA-860M lists Lange Generating Station (plant 55478) as planned, status V, reported by Black Hills Power, Inc. / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Black Hills Power, Inc. owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity BLACK HILLS POWER, INC., LEI 549300WSKCZZU2LB2X28 / BLACK HILLS POWER, INC. reports BLACK HILLS CORPORATION as its direct parent / BLACK HILLS CORP /SD/ has publicly traded common equity: BKH on NYSE (CIK 1130464; SEC accelerated or large accelerated filer (public common equity))",
@@ -39,38 +64,23 @@
    "result": "correct"
   },
   {
-   "key": "eia:64550|lei:ILUL7B6Z54MRYCF6H308",
-   "proves": "EIA-860M lists Coastal Virginia Offshore Wind (CVOW) Commercial Project (plant 64550) as planned, status U, reported by Dominion Energy Inc. / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Dominion Energy Inc. owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity Dominion Energy, Inc., LEI ILUL7B6Z54MRYCF6H308 / DOMINION ENERGY, INC has publicly traded common equity: D on NYSE (CIK 715957; SEC accelerated or large accelerated filer (public common equity))",
-   "result": "correct"
-  },
-  {
-   "key": "eia:65043|lei:ILUL7B6Z54MRYCF6H308",
-   "proves": "EIA-860M lists Dulles Solar and Storage (plant 65043) as planned, status V, reported by Dominion Energy Inc. / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Dominion Energy Inc. owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity Dominion Energy, Inc., LEI ILUL7B6Z54MRYCF6H308 / DOMINION ENERGY, INC has publicly traded common equity: D on NYSE (CIK 715957; SEC accelerated or large accelerated filer (public common equity))",
-   "result": "correct"
-  },
-  {
    "key": "eia:65301|lei:C6J3FGIWG6MBDGTE8F80",
    "proves": "EIA-860M lists Steward Creek Solar Phase 1 (plant 65301) as planned, status P, reported by TerraForm Power Operating, LLC / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity TerraForm Power Operating, LLC owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity TERRAFORM POWER OPERATING, LLC, LEI 5493000S2OLR3UT5BE13 / TERRAFORM POWER OPERATING, LLC reports TERRAFORM POWER, LLC as its direct parent / TERRAFORM POWER, LLC reports BROOKFIELD CORPORATION as its ultimate parent / BROOKFIELD Corp /ON/ has publicly traded common equity: BN on NYSE (CIK 1001085; SEC accelerated or large accelerated filer (public common equity))",
    "result": "correct relationship, kept internal"
   },
   {
-   "key": "eia:66312|lei:ILUL7B6Z54MRYCF6H308",
-   "proves": "EIA-860M lists Courthouse Solar (plant 66312) as planned, status U, reported by Dominion Energy Inc. / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Dominion Energy Inc. owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity Dominion Energy, Inc., LEI ILUL7B6Z54MRYCF6H308 / DOMINION ENERGY, INC has publicly traded common equity: D on NYSE (CIK 715957; SEC accelerated or large accelerated filer (public common equity))",
-   "result": "correct"
-  },
-  {
-   "key": "eia:66313|lei:ILUL7B6Z54MRYCF6H308",
-   "proves": "EIA-860M lists Moon Corner Solar (plant 66313) as planned, status U, reported by Dominion Energy Inc. / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Dominion Energy Inc. owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity Dominion Energy, Inc., LEI ILUL7B6Z54MRYCF6H308 / DOMINION ENERGY, INC has publicly traded common equity: D on NYSE (CIK 715957; SEC accelerated or large accelerated filer (public common equity))",
-   "result": "correct"
-  },
-  {
-   "key": "eia:66315|lei:ILUL7B6Z54MRYCF6H308",
-   "proves": "EIA-860M lists Clover Creek Solar (plant 66315) as planned, status U, reported by Dominion Energy Inc. / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Dominion Energy Inc. owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity Dominion Energy, Inc., LEI ILUL7B6Z54MRYCF6H308 / DOMINION ENERGY, INC has publicly traded common equity: D on NYSE (CIK 715957; SEC accelerated or large accelerated filer (public common equity))",
+   "key": "eia:65458|lei:549300I7ROF15MAEVP56",
+   "proves": "EIA-860M lists Anode (Springville) BESS (plant 65458) as planned, status TS, reported by Southern California Edison Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Southern California Edison Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity SOUTHERN CALIFORNIA EDISON COMPANY, LEI 9R1Z5I36FERIBVKW4P77 / SOUTHERN CALIFORNIA EDISON COMPANY reports EDISON INTERNATIONAL as its direct parent / EDISON INTERNATIONAL has publicly traded common equity: EIX on NYSE (CIK 827052; SEC accelerated or large accelerated filer (public common equity))",
    "result": "correct"
   },
   {
    "key": "eia:66621|lei:4XM3TW50JULSLG8BNC79",
    "proves": "EIA-860M lists Orange County Advanced Power Station (plant 66621) as planned, status TS, reported by Entergy Texas Inc. / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Entergy Texas Inc. owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity ENTERGY TEXAS, INC., LEI LWXX58X12AJXISQ28573 / ENTERGY TEXAS, INC. reports ENTERGY CORPORATION as its direct parent / ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:67576|lei:XRZQ5S7HYJFPHJ78L959",
+   "proves": "EIA-860M lists Castle Bluff Energy Center (plant 67576) as planned, status P, reported by Union Electric Co - (MO) / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Union Electric Co - (MO) owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity UNION ELECTRIC COMPANY, LEI QMPJLLDULY5C1M8PNY21 / UNION ELECTRIC COMPANY reports AMEREN CORPORATION as its direct parent / AMEREN CORP has publicly traded common equity: AEE on NYSE (CIK 1002910; SEC accelerated or large accelerated filer (public common equity))",
    "result": "correct"
   },
   {
@@ -86,6 +96,21 @@
   {
    "key": "eia:67914|lei:4XM3TW50JULSLG8BNC79",
    "proves": "EIA-860M lists Delta Blues Advanced Power Station (plant 67914) as planned, status L, reported by Entergy Mississippi LLC / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Entergy Mississippi LLC owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity ENTERGY MISSISSIPPI, LLC, LEI 54930043I78H35DVVW89 / ENTERGY MISSISSIPPI, LLC reports ENTERGY CORPORATION as its direct parent / ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:67964|lei:TWSEY0NEDUDCKS27AH81",
+   "proves": "EIA-860M lists Agave (plant 67964) as planned, status TS, reported by Arizona Public Service Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Arizona Public Service Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity ARIZONA PUBLIC SERVICE COMPANY, LEI YG6VT0TPHRH4TFVAQV64 / ARIZONA PUBLIC SERVICE COMPANY reports PINNACLE WEST CAPITAL CORPORATION as its direct parent / PINNACLE WEST CAPITAL CORP has publicly traded common equity: PNW on NYSE (CIK 764622; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:67998|lei:549300IA9XFBAGNIBW29",
+   "proves": "EIA-860M lists Karn Solar Energy Center (plant 67998) as planned, status U, reported by Consumers Energy Co - (MI) / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Consumers Energy Co - (MI) owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity CONSUMERS ENERGY COMPANY, LEI 7NKTFWJ1G6MELP9TU740 / CONSUMERS ENERGY COMPANY reports CMS ENERGY CORPORATION as its ultimate parent / CMS ENERGY CORP has publicly traded common equity: CMS on NYSE (CIK 811156; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:67999|lei:549300IA9XFBAGNIBW29",
+   "proves": "EIA-860M lists Spring Creek Agri-Energy Center (plant 67999) as planned, status U, reported by Consumers Energy Co - (MI) / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Consumers Energy Co - (MI) owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity CONSUMERS ENERGY COMPANY, LEI 7NKTFWJ1G6MELP9TU740 / CONSUMERS ENERGY COMPANY reports CMS ENERGY CORPORATION as its ultimate parent / CMS ENERGY CORP has publicly traded common equity: CMS on NYSE (CIK 811156; SEC accelerated or large accelerated filer (public common equity))",
    "result": "correct"
   },
   {
@@ -124,8 +149,103 @@
    "result": "correct"
   },
   {
+   "key": "eia:68397|lei:TWSEY0NEDUDCKS27AH81",
+   "proves": "EIA-860M lists Ironwood Solar (plant 68397) as planned, status TS, reported by Arizona Public Service Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Arizona Public Service Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity ARIZONA PUBLIC SERVICE COMPANY, LEI YG6VT0TPHRH4TFVAQV64 / ARIZONA PUBLIC SERVICE COMPANY reports PINNACLE WEST CAPITAL CORPORATION as its direct parent / PINNACLE WEST CAPITAL CORP has publicly traded common equity: PNW on NYSE (CIK 764622; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68417|lei:1B4S6S7G0TW5EE83BO58",
+   "proves": "EIA-860M lists Hallsville (plant 68417) as planned, status P, reported by Southwestern Electric Power Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Southwestern Electric Power Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity SOUTHWESTERN ELECTRIC POWER COMPANY, LEI R64UBJHEC74EB3HGQ410 / SOUTHWESTERN ELECTRIC POWER COMPANY reports AMERICAN ELECTRIC POWER COMPANY, INC. as its direct parent / AMERICAN ELECTRIC POWER CO INC has publicly traded common equity: AEP on Nasdaq (CIK 4904; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68744|lei:549300IA9XFBAGNIBW29",
+   "proves": "EIA-860M lists Liberty Solar Energy Center (plant 68744) as planned, status U, reported by Consumers Energy Co - (MI) / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Consumers Energy Co - (MI) owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity CONSUMERS ENERGY COMPANY, LEI 7NKTFWJ1G6MELP9TU740 / CONSUMERS ENERGY COMPANY reports CMS ENERGY CORPORATION as its ultimate parent / CMS ENERGY CORP has publicly traded common equity: CMS on NYSE (CIK 811156; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68745|lei:549300IA9XFBAGNIBW29",
+   "proves": "EIA-860M lists Sunfish Solar 2 (plant 68745) as planned, status U, reported by Consumers Energy Co - (MI) / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Consumers Energy Co - (MI) owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity CONSUMERS ENERGY COMPANY, LEI 7NKTFWJ1G6MELP9TU740 / CONSUMERS ENERGY COMPANY reports CMS ENERGY CORPORATION as its ultimate parent / CMS ENERGY CORP has publicly traded common equity: CMS on NYSE (CIK 811156; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68824|lei:254900RHL9MEUS5NKX63",
+   "proves": "EIA-860M lists Middle Lake (plant 68824) as planned, status U, reported by Florida Power & Light Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Florida Power & Light Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity FLORIDA POWER & LIGHT COMPANY, LEI A89MY1K3YLIGJMYWVX50 / FLORIDA POWER & LIGHT COMPANY reports NextEra Energy, Inc. as its ultimate parent / NEXTERA ENERGY INC has publicly traded common equity: NEE on NYSE (CIK 753308; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68825|lei:254900RHL9MEUS5NKX63",
+   "proves": "EIA-860M lists Pinecone (plant 68825) as planned, status U, reported by Florida Power & Light Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Florida Power & Light Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity FLORIDA POWER & LIGHT COMPANY, LEI A89MY1K3YLIGJMYWVX50 / FLORIDA POWER & LIGHT COMPANY reports NextEra Energy, Inc. as its ultimate parent / NEXTERA ENERGY INC has publicly traded common equity: NEE on NYSE (CIK 753308; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68826|lei:254900RHL9MEUS5NKX63",
+   "proves": "EIA-860M lists Saddle (plant 68826) as planned, status U, reported by Florida Power & Light Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Florida Power & Light Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity FLORIDA POWER & LIGHT COMPANY, LEI A89MY1K3YLIGJMYWVX50 / FLORIDA POWER & LIGHT COMPANY reports NextEra Energy, Inc. as its ultimate parent / NEXTERA ENERGY INC has publicly traded common equity: NEE on NYSE (CIK 753308; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68827|lei:254900RHL9MEUS5NKX63",
+   "proves": "EIA-860M lists Spanish Moss (plant 68827) as planned, status U, reported by Florida Power & Light Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Florida Power & Light Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity FLORIDA POWER & LIGHT COMPANY, LEI A89MY1K3YLIGJMYWVX50 / FLORIDA POWER & LIGHT COMPANY reports NextEra Energy, Inc. as its ultimate parent / NEXTERA ENERGY INC has publicly traded common equity: NEE on NYSE (CIK 753308; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68828|lei:254900RHL9MEUS5NKX63",
+   "proves": "EIA-860M lists Tangelo (plant 68828) as planned, status U, reported by Florida Power & Light Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Florida Power & Light Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity FLORIDA POWER & LIGHT COMPANY, LEI A89MY1K3YLIGJMYWVX50 / FLORIDA POWER & LIGHT COMPANY reports NextEra Energy, Inc. as its ultimate parent / NEXTERA ENERGY INC has publicly traded common equity: NEE on NYSE (CIK 753308; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68829|lei:254900RHL9MEUS5NKX63",
+   "proves": "EIA-860M lists Ambersweet (plant 68829) as planned, status U, reported by Florida Power & Light Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Florida Power & Light Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity FLORIDA POWER & LIGHT COMPANY, LEI A89MY1K3YLIGJMYWVX50 / FLORIDA POWER & LIGHT COMPANY reports NextEra Energy, Inc. as its ultimate parent / NEXTERA ENERGY INC has publicly traded common equity: NEE on NYSE (CIK 753308; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68830|lei:254900RHL9MEUS5NKX63",
+   "proves": "EIA-860M lists Catfish (plant 68830) as planned, status U, reported by Florida Power & Light Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Florida Power & Light Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity FLORIDA POWER & LIGHT COMPANY, LEI A89MY1K3YLIGJMYWVX50 / FLORIDA POWER & LIGHT COMPANY reports NextEra Energy, Inc. as its ultimate parent / NEXTERA ENERGY INC has publicly traded common equity: NEE on NYSE (CIK 753308; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68831|lei:254900RHL9MEUS5NKX63",
+   "proves": "EIA-860M lists Cocoplum (plant 68831) as planned, status U, reported by Florida Power & Light Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Florida Power & Light Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity FLORIDA POWER & LIGHT COMPANY, LEI A89MY1K3YLIGJMYWVX50 / FLORIDA POWER & LIGHT COMPANY reports NextEra Energy, Inc. as its ultimate parent / NEXTERA ENERGY INC has publicly traded common equity: NEE on NYSE (CIK 753308; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68832|lei:254900RHL9MEUS5NKX63",
+   "proves": "EIA-860M lists County Line (plant 68832) as planned, status U, reported by Florida Power & Light Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Florida Power & Light Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity FLORIDA POWER & LIGHT COMPANY, LEI A89MY1K3YLIGJMYWVX50 / FLORIDA POWER & LIGHT COMPANY reports NextEra Energy, Inc. as its ultimate parent / NEXTERA ENERGY INC has publicly traded common equity: NEE on NYSE (CIK 753308; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68833|lei:254900RHL9MEUS5NKX63",
+   "proves": "EIA-860M lists Hardwood Hammock (plant 68833) as planned, status U, reported by Florida Power & Light Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Florida Power & Light Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity FLORIDA POWER & LIGHT COMPANY, LEI A89MY1K3YLIGJMYWVX50 / FLORIDA POWER & LIGHT COMPANY reports NextEra Energy, Inc. as its ultimate parent / NEXTERA ENERGY INC has publicly traded common equity: NEE on NYSE (CIK 753308; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68834|lei:254900RHL9MEUS5NKX63",
+   "proves": "EIA-860M lists Hendry (plant 68834) as planned, status U, reported by Florida Power & Light Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Florida Power & Light Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity FLORIDA POWER & LIGHT COMPANY, LEI A89MY1K3YLIGJMYWVX50 / FLORIDA POWER & LIGHT COMPANY reports NextEra Energy, Inc. as its ultimate parent / NEXTERA ENERGY INC has publicly traded common equity: NEE on NYSE (CIK 753308; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68835|lei:254900RHL9MEUS5NKX63",
+   "proves": "EIA-860M lists Joshua Creek (plant 68835) as planned, status U, reported by Florida Power & Light Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Florida Power & Light Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity FLORIDA POWER & LIGHT COMPANY, LEI A89MY1K3YLIGJMYWVX50 / FLORIDA POWER & LIGHT COMPANY reports NextEra Energy, Inc. as its ultimate parent / NEXTERA ENERGY INC has publicly traded common equity: NEE on NYSE (CIK 753308; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68836|lei:254900RHL9MEUS5NKX63",
+   "proves": "EIA-860M lists Maple Trail (plant 68836) as planned, status U, reported by Florida Power & Light Co / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Florida Power & Light Co owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity FLORIDA POWER & LIGHT COMPANY, LEI A89MY1K3YLIGJMYWVX50 / FLORIDA POWER & LIGHT COMPANY reports NextEra Energy, Inc. as its ultimate parent / NEXTERA ENERGY INC has publicly traded common equity: NEE on NYSE (CIK 753308; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
    "key": "eia:68850|lei:549300IX8SD6XXD71I78",
    "proves": "EIA-860M lists Gratiot Solar Park (plant 68850) as planned, status TS, reported by DTE Electric Company / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity DTE Electric Company owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity DTE Electric Company, LEI 9N0FWODEJVKHC2DYLO03 / DTE Electric Company reports DTE ENERGY COMPANY as its direct parent / DTE ENERGY CO has publicly traded common equity: DTE on NYSE (CIK 936340; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68982|lei:LGJNMI9GH8XIDG5RCM61",
+   "proves": "EIA-860M lists Singing Grass Wind (plant 68982) as planned, status U, reported by Public Service Co of Colorado / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Public Service Co of Colorado owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity PUBLIC SERVICE COMPANY OF COLORADO, LEI 5BANEF6PGSEK0SNMQF44 / PUBLIC SERVICE COMPANY OF COLORADO reports Xcel Energy Inc. as its direct parent / XCEL ENERGY INC has publicly traded common equity: XEL on Nasdaq (CIK 72903; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:69040|lei:LGJNMI9GH8XIDG5RCM61",
+   "proves": "EIA-860M lists Arroyo Solar (plant 69040) as planned, status U, reported by Public Service Co of Colorado / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Public Service Co of Colorado owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity PUBLIC SERVICE COMPANY OF COLORADO, LEI 5BANEF6PGSEK0SNMQF44 / PUBLIC SERVICE COMPANY OF COLORADO reports Xcel Energy Inc. as its direct parent / XCEL ENERGY INC has publicly traded common equity: XEL on Nasdaq (CIK 72903; SEC accelerated or large accelerated filer (public common equity))",
    "result": "correct"
   },
   {
@@ -133,5 +253,6 @@
    "proves": "EIA-860M lists Lone Star Power Station (plant 69077) as planned, status L, reported by Entergy Texas Inc. / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Entergy Texas Inc. owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity ENTERGY TEXAS, INC., LEI LWXX58X12AJXISQ28573 / ENTERGY TEXAS, INC. reports ENTERGY CORPORATION as its direct parent / ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
    "result": "correct"
   }
- ]
+ ],
+ "round2": "Local GLEIF golden copy (2026-11-12): 24 new links audited by hand, all correct. Safeguard fix: \"capital\" alone no longer marks a company as a fund (Pinnacle West Capital Corp)."
 }

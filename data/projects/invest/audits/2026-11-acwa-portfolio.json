@@ -1,12 +1,12 @@
 {
  "batch": "2026-11-acwa-portfolio",
- "auditor": "Claude (manual read of each passage against the source document)",
+ "auditor": "Claude (manual read of each passage)",
  "date": "2026-11-12",
  "sample": "all A records (100%)",
- "checked": 10,
- "correct": 10,
+ "checked": 17,
+ "correct": 17,
  "false_positives": 0,
- "note": "Each A row read against the investor-report table: project name, effective share, capacity and start date agree with the stored passage and with GEM capacity. Saguling and Gijduvan confirmed after parser fixes.",
+ "note": "Round 2 after phase splitting: 17 A. Added Nairyah phase 1 (ACWA 1,890 MW vs GEM 1,800), Kungrad 4, Aral 1-5 (1,000 MW each, 100%, COD Q2 2031). All read against the table.",
  "items": [
   {
    "key": "gem:L100001018770|E100000000882",
@@ -26,6 +26,11 @@
   {
    "key": "gem:L100000801313|E100000000882",
    "proves": "ACWA Power names Saguling Floating PV IPP with a 49.0% interest",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100001004183:p1|E100000000882",
+   "proves": "ACWA Power names Nairyah1 with a 35.0% interest",
    "result": "correct"
   },
   {
@@ -56,6 +61,36 @@
   {
    "key": "gem:L100001061657|E100000000882",
    "proves": "ACWA Power names Gijduvan Wind IPP with a 100.0% interest",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100000922142:p4|E100000000882",
+   "proves": "ACWA Power names Kungrad 4 Wind IPP with a 100.0% interest",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100001016696:p1|E100000000882",
+   "proves": "ACWA Power names Aral 1 Wind with a 100.0% interest",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100001016696:p2|E100000000882",
+   "proves": "ACWA Power names Aral 2 Wind with a 100.0% interest",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100001016696:p3|E100000000882",
+   "proves": "ACWA Power names Aral 3 Wind with a 100.0% interest",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100001016696:p4|E100000000882",
+   "proves": "ACWA Power names Aral 4 Wind with a 100.0% interest",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100001016696:p5|E100000000882",
+   "proves": "ACWA Power names Aral 5 Wind with a 100.0% interest",
    "result": "correct"
   }
  ]

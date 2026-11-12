@@ -11,20 +11,19 @@
    "rows": 18
   }
  ],
- "candidates": 32,
+ "candidates": 43,
  "categories": {
-  "C": 27,
+  "C": 38,
   "A": 5
  },
  "verified_written": 5,
- "yield_pct": 15.6,
+ "yield_pct": 11.6,
  "unresolved_reasons": {
-  "name match is partial and capacity cannot confirm it": 1,
   "document lists phases (Under1000 MW CPSUs Scheme Solar Project, Rajasthan 300 MW); the GEM plant must be split by phase first": 1,
   "document lists phases (200 MW Grid connected solar PV Project (600 MW Solar park at Khavda) Stage-I); the GEM plant must be split by phase first": 1,
   "document lists phases (Under1000 MW CPSUs Scheme Solar Project, Andhra Pradesh 100 MW); the GEM plant must be split by phase first": 2,
   "document lists phases (600 MW Solar Power Project Khavda, Gujarat (Stage-II)( Under1000 MW CPSUs Scheme )); the GEM plant must be split by phase first": 1,
-  "not named in the batch documents": 21
+  "not named in the batch documents": 33
  },
  "internal_only": 0,
  "cost": {
@@ -232,13 +231,111 @@
    "internal_only": []
   },
   {
-   "project": "gem:L100001019884",
-   "name": "Jalaun solar park",
+   "project": "gem:L100001019884:p1",
+   "name": "Jalaun solar park (phase 1)",
    "category": "C",
    "reasons": [
-    "name match is partial and capacity cannot confirm it"
+    "not named in the batch documents"
    ],
-   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001019884:p10",
+   "name": "Jalaun solar park (phase 10)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001019884:p11",
+   "name": "Jalaun solar park (phase 11)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001019884:p12",
+   "name": "Jalaun solar park (phase 12)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001019884:p2",
+   "name": "Jalaun solar park (phase 2)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001019884:p3",
+   "name": "Jalaun solar park (phase 3)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001019884:p4",
+   "name": "Jalaun solar park (phase 4)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001019884:p5",
+   "name": "Jalaun solar park (phase 5)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001019884:p6",
+   "name": "Jalaun solar park (phase 6)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001019884:p7",
+   "name": "Jalaun solar park (phase 7)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001019884:p8",
+   "name": "Jalaun solar park (phase 8)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001019884:p9",
+   "name": "Jalaun solar park (phase 9)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
    "internal_only": []
   },
   {

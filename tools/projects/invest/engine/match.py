@@ -43,15 +43,22 @@ def candidates_for(row, projects, company_tokens=()):
         return []
     out = []
     for p in projects:
-        pc = [w for w in core(p['name']) if w not in drop]
+        pc = [w for w in core(p.get('plant_name') or p['name']) if w not in drop]
+        if p.get('phase'):
+            pc = pc + [str(p['phase'])]
         pw = set(pc) - nums(pc)
         if not (country_ok(row['doc_name'], p['country'], cc) and location_ok(row, p)) or not pw:
+            continue
+        if p.get('phase') and not nums(rc) and words <= set(pc):
+            out.append((p, 'whole'))  # document names the whole plant; the batch checks the phases add up
             continue
         if nums(rc) != nums(pc) and not (not nums(pc) and nums(rc)):
             continue
         kind = 'exact' if words <= set(pc) else 'loose' if pw <= set(rc) else None
         if kind:
-            out.append((p, 'phase' if nums(rc) and not nums(pc) else kind))
+            if nums(rc) and not nums(pc):
+                kind = 'expansion' if p.get('expansion') else 'phase'  # 'expansion' must agree on capacity
+            out.append((p, kind))
     return out
 
 
