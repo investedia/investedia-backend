@@ -8,7 +8,7 @@ INV = Path(__file__).resolve().parents[4] / 'data/projects/invest'
 
 def main():
     rows, unresolved, audit = [], Counter(), Counter()
-    for f in sorted((INV / 'reports').glob('*.json')):
+    for f in sorted(x for x in (INV / 'reports').glob('*.json') if not x.name.startswith('_')):
         r = json.loads(f.read_text())
         a = INV / 'audits' / f.name
         aud = json.loads(a.read_text()) if a.exists() else None

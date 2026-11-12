@@ -2,9 +2,4744 @@
  "as_of": "2026-11-12",
  "credit": [
   "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release (CC BY 4.0)",
-  "Global Energy Monitor, Global Energy Ownership Tracker, November 2026 (CC BY 4.0)"
+  "Global Energy Monitor, Global Energy Ownership Tracker, November 2026 (CC BY 4.0)",
+  "Source: U.S. Energy Information Administration, EIA-860M (September 2026) and EIA-860 (2024)"
  ],
  "projects": [
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "V",
+   "expected": "2026-12",
+   "expected_year": 2026,
+   "exposures": [
+    {
+     "cik": 1130464,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "3MGELCRSTNSAMJ962671",
+     "listed_entity_id": "lei:3MGELCRSTNSAMJ962671",
+     "listed_name": "BLACK HILLS CORP /SD/",
+     "owner": "Black Hills Power, Inc.",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "549300WSKCZZU2LB2X28",
+      "3MGELCRSTNSAMJ962671"
+     ],
+     "path_edges": [
+      [
+       "549300WSKCZZU2LB2X28",
+       "3MGELCRSTNSAMJ962671"
+      ]
+     ],
+     "path_names": [
+      "BLACK HILLS POWER, INC.",
+      "BLACK HILLS CORPORATION"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "3MGELCRSTNSAMJ962671",
+       "legal_name": "BLACK HILLS CORPORATION",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/3MGELCRSTNSAMJ962671"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Lange Generating Station (plant 55478) as planned, status V, reported by Black Hills Power, Inc.",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Black Hills Power, Inc. owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity BLACK HILLS POWER, INC., LEI 549300WSKCZZU2LB2X28",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/549300WSKCZZU2LB2X28"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "549300WSKCZZU2LB2X28",
+         "3MGELCRSTNSAMJ962671"
+        ],
+        "proves": "BLACK HILLS POWER, INC. reports BLACK HILLS CORPORATION as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/549300WSKCZZU2LB2X28/direct-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "BLACK HILLS CORP /SD/ has publicly traded common equity: BKH on NYSE (CIK 1130464; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0001130464.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 1130464,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0001130464.json",
+       "ticker": "BKH"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:55478",
+   "kind": "Oil & gas",
+   "lat": 44.1218,
+   "lon": -103.2641,
+   "mw": 99.6,
+   "name": "Lange Generating Station",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Under construction",
+   "state": "SD",
+   "technology": "Natural Gas Internal Combustion Engine"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "V",
+   "expected": "2027-03",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": 895728,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "98TPTUM4IVMFCZBCUR27",
+     "listed_entity_id": "lei:98TPTUM4IVMFCZBCUR27",
+     "listed_name": "ENBRIDGE INC",
+     "owner": "Enbridge Wind (Easter), LLC",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "254900QVKHG1RMI4RZ32",
+      "5493003FRODSVHJWFS32",
+      "98TPTUM4IVMFCZBCUR27"
+     ],
+     "path_edges": [
+      [
+       "254900QVKHG1RMI4RZ32",
+       "5493003FRODSVHJWFS32"
+      ],
+      [
+       "5493003FRODSVHJWFS32",
+       "98TPTUM4IVMFCZBCUR27"
+      ]
+     ],
+     "path_names": [
+      "ENBRIDGE WIND (EASTER), LLC",
+      "ENBRIDGE (U.S.) INC.",
+      "Enbridge Inc."
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "98TPTUM4IVMFCZBCUR27",
+       "legal_name": "Enbridge Inc.",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/98TPTUM4IVMFCZBCUR27"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Easter (plant 59971) as planned, status V, reported by Enbridge Wind (Easter), LLC",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Enbridge Wind (Easter), LLC owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity ENBRIDGE WIND (EASTER), LLC, LEI 254900QVKHG1RMI4RZ32",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/254900QVKHG1RMI4RZ32"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "254900QVKHG1RMI4RZ32",
+         "5493003FRODSVHJWFS32"
+        ],
+        "proves": "ENBRIDGE WIND (EASTER), LLC reports ENBRIDGE (U.S.) INC. as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/254900QVKHG1RMI4RZ32/direct-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "5493003FRODSVHJWFS32",
+         "98TPTUM4IVMFCZBCUR27"
+        ],
+        "proves": "ENBRIDGE (U.S.) INC. reports Enbridge Inc. as its ultimate parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/5493003FRODSVHJWFS32/ultimate-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "ENBRIDGE INC has publicly traded common equity: ENB on NYSE (CIK 895728; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0000895728.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 895728,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000895728.json",
+       "ticker": "ENB"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:59971",
+   "kind": "Wind",
+   "lat": 34.668882,
+   "lon": -102.3517,
+   "mw": 152.0,
+   "name": "Easter",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Under construction",
+   "state": "TX",
+   "technology": "Onshore Wind Turbine"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "L",
+   "expected": "2027-11",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": 895728,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "98TPTUM4IVMFCZBCUR27",
+     "listed_entity_id": "lei:98TPTUM4IVMFCZBCUR27",
+     "listed_name": "ENBRIDGE INC",
+     "owner": "Cone Renewable Energy Project, LLC",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "254900QG97NZ1R6IXT76",
+      "5493003FRODSVHJWFS32",
+      "98TPTUM4IVMFCZBCUR27"
+     ],
+     "path_edges": [
+      [
+       "254900QG97NZ1R6IXT76",
+       "5493003FRODSVHJWFS32"
+      ],
+      [
+       "5493003FRODSVHJWFS32",
+       "98TPTUM4IVMFCZBCUR27"
+      ]
+     ],
+     "path_names": [
+      "Cone Renewable Energy Project, LLC",
+      "ENBRIDGE (U.S.) INC.",
+      "Enbridge Inc."
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "98TPTUM4IVMFCZBCUR27",
+       "legal_name": "Enbridge Inc.",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/98TPTUM4IVMFCZBCUR27"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Cone Renewable Energy Project, LLC (plant 60272) as planned, status L, reported by Cone Renewable Energy Project, LLC",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Cone Renewable Energy Project, LLC owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity Cone Renewable Energy Project, LLC, LEI 254900QG97NZ1R6IXT76",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/254900QG97NZ1R6IXT76"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "254900QG97NZ1R6IXT76",
+         "5493003FRODSVHJWFS32"
+        ],
+        "proves": "Cone Renewable Energy Project, LLC reports ENBRIDGE (U.S.) INC. as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/254900QG97NZ1R6IXT76/direct-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "5493003FRODSVHJWFS32",
+         "98TPTUM4IVMFCZBCUR27"
+        ],
+        "proves": "ENBRIDGE (U.S.) INC. reports Enbridge Inc. as its ultimate parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/5493003FRODSVHJWFS32/ultimate-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "ENBRIDGE INC has publicly traded common equity: ENB on NYSE (CIK 895728; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0000895728.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 895728,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000895728.json",
+       "ticker": "ENB"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:60272",
+   "kind": "Wind",
+   "lat": 33.8093,
+   "lon": -101.3424,
+   "mw": 150.0,
+   "name": "Cone Renewable Energy Project, LLC",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Pre-construction",
+   "state": "TX",
+   "technology": "Onshore Wind Turbine"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "V",
+   "expected": "2026-10",
+   "expected_year": 2026,
+   "exposures": [
+    {
+     "cik": 1326160,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "I1BZKREC126H0VB1BL91",
+     "listed_entity_id": "lei:I1BZKREC126H0VB1BL91",
+     "listed_name": "Duke Energy CORP",
+     "owner": "Duke Energy Carolinas, LLC",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "MWIUSDMN17TCR56VW396",
+      "I1BZKREC126H0VB1BL91"
+     ],
+     "path_edges": [
+      [
+       "MWIUSDMN17TCR56VW396",
+       "I1BZKREC126H0VB1BL91"
+      ]
+     ],
+     "path_names": [
+      "Duke Energy Carolinas, LLC",
+      "DUKE ENERGY CORPORATION"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "I1BZKREC126H0VB1BL91",
+       "legal_name": "DUKE ENERGY CORPORATION",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/I1BZKREC126H0VB1BL91"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Baxter Creek Solar (plant 60434) as planned, status V, reported by Duke Energy Carolinas, LLC",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Duke Energy Carolinas, LLC owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity Duke Energy Carolinas, LLC, LEI MWIUSDMN17TCR56VW396",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/MWIUSDMN17TCR56VW396"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "MWIUSDMN17TCR56VW396",
+         "I1BZKREC126H0VB1BL91"
+        ],
+        "proves": "Duke Energy Carolinas, LLC reports DUKE ENERGY CORPORATION as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/MWIUSDMN17TCR56VW396/direct-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Duke Energy CORP has publicly traded common equity: DUK on NYSE (CIK 1326160; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0001326160.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 1326160,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0001326160.json",
+       "ticker": "DUK"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:60434",
+   "kind": "Solar",
+   "lat": 35.865502,
+   "lon": -80.55309,
+   "mw": 30.0,
+   "name": "Baxter Creek Solar",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Under construction",
+   "state": "NC",
+   "technology": "Solar Photovoltaic"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "L",
+   "expected": "2030-01",
+   "expected_year": 2030,
+   "exposures": [
+    {
+     "cik": 1692819,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "549300KP43CPCUJOOG15",
+     "listed_entity_id": "lei:549300KP43CPCUJOOG15",
+     "listed_name": "Vistra Corp.",
+     "owner": "Luminant Generation Company LLC",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "549300FLGTCZR4C2RX49",
+      "549300KP43CPCUJOOG15"
+     ],
+     "path_edges": [
+      [
+       "549300FLGTCZR4C2RX49",
+       "549300KP43CPCUJOOG15"
+      ]
+     ],
+     "path_names": [
+      "LUMINANT GENERATION COMPANY LLC",
+      "VISTRA CORP."
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "549300KP43CPCUJOOG15",
+       "legal_name": "VISTRA CORP.",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/549300KP43CPCUJOOG15"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Alira (plant 63193) as planned, status L, reported by Luminant Generation Company LLC",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Luminant Generation Company LLC owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity LUMINANT GENERATION COMPANY LLC, LEI 549300FLGTCZR4C2RX49",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/549300FLGTCZR4C2RX49"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "549300FLGTCZR4C2RX49",
+         "549300KP43CPCUJOOG15"
+        ],
+        "proves": "LUMINANT GENERATION COMPANY LLC reports VISTRA CORP. as its ultimate parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/549300FLGTCZR4C2RX49/ultimate-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Vistra Corp. has publicly traded common equity: VST on NYSE (CIK 1692819; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0001692819.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 1692819,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0001692819.json",
+       "ticker": "VST"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:63193",
+   "kind": "Solar",
+   "lat": 32.347392,
+   "lon": -102.9677,
+   "mw": 222.8,
+   "name": "Alira",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Pre-construction",
+   "state": "TX",
+   "technology": "Solar Photovoltaic"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "V",
+   "expected": "2026-12",
+   "expected_year": 2026,
+   "exposures": [
+    {
+     "cik": 874761,
+     "effective_stake": 75.0,
+     "hq_country": null,
+     "lei": "2NUNNB7D43COUIRE5295",
+     "listed_entity_id": "lei:2NUNNB7D43COUIRE5295",
+     "listed_name": "THE AES CORPORATION",
+     "owner": "THE AES CORPORATION",
+     "owner_match": "document",
+     "owner_stake": null,
+     "path": [
+      "lei:2NUNNB7D43COUIRE5295"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "THE AES CORPORATION"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-aes-10k",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "2H 2026",
+       "joint_venture": false,
+       "mw": 1000.0,
+       "name": "Bellefield 2",
+       "section": "Under construction"
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "2NUNNB7D43COUIRE5295",
+       "legal_name": "THE AES CORPORATION",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/2NUNNB7D43COUIRE5295"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-03-02",
+        "edge": null,
+        "proves": "The AES Corporation (Form 10-K, FY2025) names Bellefield 2 with a 75.0% interest",
+        "publisher": "The AES Corporation (Form 10-K, FY2025)",
+        "quote": "Bellefield 2 US-CA Solar 500  75  % 2H 2026",
+        "retrieved_at": "2026-11-12",
+        "sha256": "5592ecb1ba2daaacfc5e277ed3162a17381a632e303cb11715860b65c53da1a4",
+        "url": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000063/aes-20251231.htm"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 874761,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000874761.json",
+       "ticker": "AES"
+      },
+      "reviewer": "engine (batch 2026-11-aes-10k)",
+      "stake": {
+       "note": "As stated in the document",
+       "value": 75.0
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:64209",
+   "kind": "Battery storage",
+   "lat": 35.017779,
+   "lon": -118.0687,
+   "mw": 1000.0,
+   "name": "Bellefield 2 Solar & Energy Storage Farm",
+   "other_owners": [
+    {
+     "eia_id": 63806,
+     "name": "26SB 8me LLC",
+     "stake": null
+    }
+   ],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Under construction",
+   "state": "CA",
+   "technology": "Batteries"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "U",
+   "expected": "2027-04",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": 874761,
+     "effective_stake": 75.0,
+     "hq_country": null,
+     "lei": "2NUNNB7D43COUIRE5295",
+     "listed_entity_id": "lei:2NUNNB7D43COUIRE5295",
+     "listed_name": "THE AES CORPORATION",
+     "owner": "THE AES CORPORATION",
+     "owner_match": "document",
+     "owner_stake": null,
+     "path": [
+      "lei:2NUNNB7D43COUIRE5295"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "THE AES CORPORATION"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-aes-10k",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "1H 2026",
+       "joint_venture": false,
+       "mw": 200.0,
+       "name": "Armadillo",
+       "section": "Under construction"
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "2NUNNB7D43COUIRE5295",
+       "legal_name": "THE AES CORPORATION",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/2NUNNB7D43COUIRE5295"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-03-02",
+        "edge": null,
+        "proves": "The AES Corporation (Form 10-K, FY2025) names Armadillo with a 75.0% interest",
+        "publisher": "The AES Corporation (Form 10-K, FY2025)",
+        "quote": "Armadillo US-TX Solar 200  75  % 1H 2026",
+        "retrieved_at": "2026-11-12",
+        "sha256": "5592ecb1ba2daaacfc5e277ed3162a17381a632e303cb11715860b65c53da1a4",
+        "url": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000063/aes-20251231.htm"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 874761,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000874761.json",
+       "ticker": "AES"
+      },
+      "reviewer": "engine (batch 2026-11-aes-10k)",
+      "stake": {
+       "note": "As stated in the document",
+       "value": 75.0
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:64349",
+   "kind": "Solar",
+   "lat": 32.00014,
+   "lon": -96.2027,
+   "mw": 175.0,
+   "name": "Armadillo Solar Center",
+   "other_owners": [
+    {
+     "eia_id": 64904,
+     "name": "AES Clean Energy",
+     "stake": null
+    }
+   ],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Under construction",
+   "stage_note": "Expected 1H 2026 according to the source; current status to be re-checked",
+   "state": "TX",
+   "technology": "Solar Photovoltaic"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "U",
+   "expected": "2027-01",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": 715957,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "ILUL7B6Z54MRYCF6H308",
+     "listed_entity_id": "lei:ILUL7B6Z54MRYCF6H308",
+     "listed_name": "DOMINION ENERGY, INC",
+     "owner": "Dominion Energy Inc.",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "ILUL7B6Z54MRYCF6H308"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "Dominion Energy, Inc."
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "ILUL7B6Z54MRYCF6H308",
+       "legal_name": "Dominion Energy, Inc.",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/ILUL7B6Z54MRYCF6H308"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Coastal Virginia Offshore Wind (CVOW) Commercial Project (plant 64550) as planned, status U, reported by Dominion Energy Inc.",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Dominion Energy Inc. owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity Dominion Energy, Inc., LEI ILUL7B6Z54MRYCF6H308",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/ILUL7B6Z54MRYCF6H308"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "DOMINION ENERGY, INC has publicly traded common equity: D on NYSE (CIK 715957; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0000715957.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 715957,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000715957.json",
+       "ticker": "D"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:64550",
+   "kind": "Wind",
+   "lat": 36.907956,
+   "lon": -75.34907,
+   "mw": 2640.0,
+   "name": "Coastal Virginia Offshore Wind (CVOW) Commercial Project",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Under construction",
+   "state": "VA",
+   "technology": "Offshore Wind Turbine"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "V",
+   "expected": "2026-12",
+   "expected_year": 2026,
+   "exposures": [
+    {
+     "cik": 715957,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "ILUL7B6Z54MRYCF6H308",
+     "listed_entity_id": "lei:ILUL7B6Z54MRYCF6H308",
+     "listed_name": "DOMINION ENERGY, INC",
+     "owner": "Dominion Energy Inc.",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "ILUL7B6Z54MRYCF6H308"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "Dominion Energy, Inc."
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "ILUL7B6Z54MRYCF6H308",
+       "legal_name": "Dominion Energy, Inc.",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/ILUL7B6Z54MRYCF6H308"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Dulles Solar and Storage (plant 65043) as planned, status V, reported by Dominion Energy Inc.",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Dominion Energy Inc. owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity Dominion Energy, Inc., LEI ILUL7B6Z54MRYCF6H308",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/ILUL7B6Z54MRYCF6H308"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "DOMINION ENERGY, INC has publicly traded common equity: D on NYSE (CIK 715957; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0000715957.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 715957,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000715957.json",
+       "ticker": "D"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:65043",
+   "kind": "Battery storage",
+   "lat": 38.95,
+   "lon": -77.5,
+   "mw": 150.0,
+   "name": "Dulles Solar and Storage",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Under construction",
+   "state": "VA",
+   "technology": "Batteries"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "U",
+   "expected": "2030-10",
+   "expected_year": 2030,
+   "exposures": [
+    {
+     "cik": 715957,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "ILUL7B6Z54MRYCF6H308",
+     "listed_entity_id": "lei:ILUL7B6Z54MRYCF6H308",
+     "listed_name": "DOMINION ENERGY, INC",
+     "owner": "Dominion Energy Inc.",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "ILUL7B6Z54MRYCF6H308"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "Dominion Energy, Inc."
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "ILUL7B6Z54MRYCF6H308",
+       "legal_name": "Dominion Energy, Inc.",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/ILUL7B6Z54MRYCF6H308"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Courthouse Solar (plant 66312) as planned, status U, reported by Dominion Energy Inc.",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Dominion Energy Inc. owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity Dominion Energy, Inc., LEI ILUL7B6Z54MRYCF6H308",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/ILUL7B6Z54MRYCF6H308"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "DOMINION ENERGY, INC has publicly traded common equity: D on NYSE (CIK 715957; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0000715957.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 715957,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000715957.json",
+       "ticker": "D"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:66312",
+   "kind": "Solar",
+   "lat": 37.04,
+   "lon": -78.58,
+   "mw": 167.0,
+   "name": "Courthouse Solar",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Under construction",
+   "state": "VA",
+   "technology": "Solar Photovoltaic"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "U",
+   "expected": "2026-12",
+   "expected_year": 2026,
+   "exposures": [
+    {
+     "cik": 715957,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "ILUL7B6Z54MRYCF6H308",
+     "listed_entity_id": "lei:ILUL7B6Z54MRYCF6H308",
+     "listed_name": "DOMINION ENERGY, INC",
+     "owner": "Dominion Energy Inc.",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "ILUL7B6Z54MRYCF6H308"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "Dominion Energy, Inc."
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "ILUL7B6Z54MRYCF6H308",
+       "legal_name": "Dominion Energy, Inc.",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/ILUL7B6Z54MRYCF6H308"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Moon Corner Solar (plant 66313) as planned, status U, reported by Dominion Energy Inc.",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Dominion Energy Inc. owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity Dominion Energy, Inc., LEI ILUL7B6Z54MRYCF6H308",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/ILUL7B6Z54MRYCF6H308"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "DOMINION ENERGY, INC has publicly traded common equity: D on NYSE (CIK 715957; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0000715957.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 715957,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000715957.json",
+       "ticker": "D"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:66313",
+   "kind": "Solar",
+   "lat": 37.89,
+   "lon": -76.54,
+   "mw": 60.0,
+   "name": "Moon Corner Solar",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Under construction",
+   "state": "VA",
+   "technology": "Solar Photovoltaic"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "U",
+   "expected": "2027-06",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": 715957,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "ILUL7B6Z54MRYCF6H308",
+     "listed_entity_id": "lei:ILUL7B6Z54MRYCF6H308",
+     "listed_name": "DOMINION ENERGY, INC",
+     "owner": "Dominion Energy Inc.",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "ILUL7B6Z54MRYCF6H308"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "Dominion Energy, Inc."
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "ILUL7B6Z54MRYCF6H308",
+       "legal_name": "Dominion Energy, Inc.",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/ILUL7B6Z54MRYCF6H308"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Clover Creek Solar (plant 66315) as planned, status U, reported by Dominion Energy Inc.",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Dominion Energy Inc. owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity Dominion Energy, Inc., LEI ILUL7B6Z54MRYCF6H308",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/ILUL7B6Z54MRYCF6H308"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "DOMINION ENERGY, INC has publicly traded common equity: D on NYSE (CIK 715957; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0000715957.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 715957,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000715957.json",
+       "ticker": "D"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:66315",
+   "kind": "Solar",
+   "lat": 36.816641,
+   "lon": -78.69262,
+   "mw": 77.2,
+   "name": "Clover Creek Solar",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Under construction",
+   "state": "VA",
+   "technology": "Solar Photovoltaic"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "TS",
+   "expected": "2026-10",
+   "expected_year": 2026,
+   "exposures": [
+    {
+     "cik": 65984,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "4XM3TW50JULSLG8BNC79",
+     "listed_entity_id": "lei:4XM3TW50JULSLG8BNC79",
+     "listed_name": "ENTERGY CORP /DE/",
+     "owner": "Entergy Texas Inc.",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "LWXX58X12AJXISQ28573",
+      "4XM3TW50JULSLG8BNC79"
+     ],
+     "path_edges": [
+      [
+       "LWXX58X12AJXISQ28573",
+       "4XM3TW50JULSLG8BNC79"
+      ]
+     ],
+     "path_names": [
+      "ENTERGY TEXAS, INC.",
+      "ENTERGY CORPORATION"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "4XM3TW50JULSLG8BNC79",
+       "legal_name": "ENTERGY CORPORATION",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/4XM3TW50JULSLG8BNC79"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Orange County Advanced Power Station (plant 66621) as planned, status TS, reported by Entergy Texas Inc.",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Entergy Texas Inc. owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity ENTERGY TEXAS, INC., LEI LWXX58X12AJXISQ28573",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/LWXX58X12AJXISQ28573"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "LWXX58X12AJXISQ28573",
+         "4XM3TW50JULSLG8BNC79"
+        ],
+        "proves": "ENTERGY TEXAS, INC. reports ENTERGY CORPORATION as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/LWXX58X12AJXISQ28573/direct-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0000065984.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 65984,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000065984.json",
+       "ticker": "ETR"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:66621",
+   "kind": "Oil & gas",
+   "lat": 30.025251,
+   "lon": -93.87134,
+   "mw": 1306.0,
+   "name": "Orange County Advanced Power Station",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Commissioning",
+   "state": "TX",
+   "technology": "Natural Gas Fired Combined Cycle"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "TS",
+   "expected": "2026-12",
+   "expected_year": 2026,
+   "exposures": [
+    {
+     "cik": 936340,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "549300IX8SD6XXD71I78",
+     "listed_entity_id": "lei:549300IX8SD6XXD71I78",
+     "listed_name": "DTE ENERGY CO",
+     "owner": "DTE Electric Company",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "9N0FWODEJVKHC2DYLO03",
+      "549300IX8SD6XXD71I78"
+     ],
+     "path_edges": [
+      [
+       "9N0FWODEJVKHC2DYLO03",
+       "549300IX8SD6XXD71I78"
+      ]
+     ],
+     "path_names": [
+      "DTE Electric Company",
+      "DTE ENERGY COMPANY"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "549300IX8SD6XXD71I78",
+       "legal_name": "DTE ENERGY COMPANY",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/549300IX8SD6XXD71I78"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Little Trout Solar (plant 67755) as planned, status TS, reported by DTE Electric Company",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity DTE Electric Company owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity DTE Electric Company, LEI 9N0FWODEJVKHC2DYLO03",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/9N0FWODEJVKHC2DYLO03"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "9N0FWODEJVKHC2DYLO03",
+         "549300IX8SD6XXD71I78"
+        ],
+        "proves": "DTE Electric Company reports DTE ENERGY COMPANY as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/9N0FWODEJVKHC2DYLO03/direct-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "DTE ENERGY CO has publicly traded common equity: DTE on NYSE (CIK 936340; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0000936340.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 936340,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000936340.json",
+       "ticker": "DTE"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:67755",
+   "kind": "Solar",
+   "lat": 45.334045,
+   "lon": -83.75117,
+   "mw": 150.0,
+   "name": "Little Trout Solar",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Commissioning",
+   "state": "MI",
+   "technology": "Solar Photovoltaic"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "TS",
+   "expected": "2027-01",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": 936340,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "549300IX8SD6XXD71I78",
+     "listed_entity_id": "lei:549300IX8SD6XXD71I78",
+     "listed_name": "DTE ENERGY CO",
+     "owner": "DTE Electric Company",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "9N0FWODEJVKHC2DYLO03",
+      "549300IX8SD6XXD71I78"
+     ],
+     "path_edges": [
+      [
+       "9N0FWODEJVKHC2DYLO03",
+       "549300IX8SD6XXD71I78"
+      ]
+     ],
+     "path_names": [
+      "DTE Electric Company",
+      "DTE ENERGY COMPANY"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "549300IX8SD6XXD71I78",
+       "legal_name": "DTE ENERGY COMPANY",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/549300IX8SD6XXD71I78"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Trenton Channel Energy Center (plant 67759) as planned, status TS, reported by DTE Electric Company",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity DTE Electric Company owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity DTE Electric Company, LEI 9N0FWODEJVKHC2DYLO03",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/9N0FWODEJVKHC2DYLO03"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "9N0FWODEJVKHC2DYLO03",
+         "549300IX8SD6XXD71I78"
+        ],
+        "proves": "DTE Electric Company reports DTE ENERGY COMPANY as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/9N0FWODEJVKHC2DYLO03/direct-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "DTE ENERGY CO has publicly traded common equity: DTE on NYSE (CIK 936340; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0000936340.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 936340,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000936340.json",
+       "ticker": "DTE"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:67759",
+   "kind": "Battery storage",
+   "lat": 42.124423,
+   "lon": -83.18571,
+   "mw": 220.0,
+   "name": "Trenton Channel Energy Center",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Commissioning",
+   "state": "MI",
+   "technology": "Batteries"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "L",
+   "expected": "2028-05",
+   "expected_year": 2028,
+   "exposures": [
+    {
+     "cik": 65984,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "4XM3TW50JULSLG8BNC79",
+     "listed_entity_id": "lei:4XM3TW50JULSLG8BNC79",
+     "listed_name": "ENTERGY CORP /DE/",
+     "owner": "Entergy Mississippi LLC",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "54930043I78H35DVVW89",
+      "4XM3TW50JULSLG8BNC79"
+     ],
+     "path_edges": [
+      [
+       "54930043I78H35DVVW89",
+       "4XM3TW50JULSLG8BNC79"
+      ]
+     ],
+     "path_names": [
+      "ENTERGY MISSISSIPPI, LLC",
+      "ENTERGY CORPORATION"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "4XM3TW50JULSLG8BNC79",
+       "legal_name": "ENTERGY CORPORATION",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/4XM3TW50JULSLG8BNC79"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Delta Blues Advanced Power Station (plant 67914) as planned, status L, reported by Entergy Mississippi LLC",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Entergy Mississippi LLC owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity ENTERGY MISSISSIPPI, LLC, LEI 54930043I78H35DVVW89",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/54930043I78H35DVVW89"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "54930043I78H35DVVW89",
+         "4XM3TW50JULSLG8BNC79"
+        ],
+        "proves": "ENTERGY MISSISSIPPI, LLC reports ENTERGY CORPORATION as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/54930043I78H35DVVW89/direct-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0000065984.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 65984,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000065984.json",
+       "ticker": "ETR"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:67914",
+   "kind": "Oil & gas",
+   "lat": 33.330476,
+   "lon": -91.13058,
+   "mw": 818.7,
+   "name": "Delta Blues Advanced Power Station",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Pre-construction",
+   "state": "MS",
+   "technology": "Natural Gas Fired Combined Cycle"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "P",
+   "expected": "2027-11",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": 65984,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "4XM3TW50JULSLG8BNC79",
+     "listed_entity_id": "lei:4XM3TW50JULSLG8BNC79",
+     "listed_name": "ENTERGY CORP /DE/",
+     "owner": "Entergy Mississippi LLC",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "54930043I78H35DVVW89",
+      "4XM3TW50JULSLG8BNC79"
+     ],
+     "path_edges": [
+      [
+       "54930043I78H35DVVW89",
+       "4XM3TW50JULSLG8BNC79"
+      ]
+     ],
+     "path_names": [
+      "ENTERGY MISSISSIPPI, LLC",
+      "ENTERGY CORPORATION"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "4XM3TW50JULSLG8BNC79",
+       "legal_name": "ENTERGY CORPORATION",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/4XM3TW50JULSLG8BNC79"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Delta Solar Plant (plant 68028) as planned, status P, reported by Entergy Mississippi LLC",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Entergy Mississippi LLC owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity ENTERGY MISSISSIPPI, LLC, LEI 54930043I78H35DVVW89",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/54930043I78H35DVVW89"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "54930043I78H35DVVW89",
+         "4XM3TW50JULSLG8BNC79"
+        ],
+        "proves": "ENTERGY MISSISSIPPI, LLC reports ENTERGY CORPORATION as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/54930043I78H35DVVW89/direct-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0000065984.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 65984,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000065984.json",
+       "ticker": "ETR"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:68028",
+   "kind": "Solar",
+   "lat": 33.794007,
+   "lon": -90.71392,
+   "mw": 80.0,
+   "name": "Delta Solar Plant",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Announced",
+   "state": "LA",
+   "technology": "Solar Photovoltaic"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "P",
+   "expected": "2028-03",
+   "expected_year": 2028,
+   "exposures": [
+    {
+     "cik": 65984,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "4XM3TW50JULSLG8BNC79",
+     "listed_entity_id": "lei:4XM3TW50JULSLG8BNC79",
+     "listed_name": "ENTERGY CORP /DE/",
+     "owner": "Entergy Mississippi LLC",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "54930043I78H35DVVW89",
+      "4XM3TW50JULSLG8BNC79"
+     ],
+     "path_edges": [
+      [
+       "54930043I78H35DVVW89",
+       "4XM3TW50JULSLG8BNC79"
+      ]
+     ],
+     "path_names": [
+      "ENTERGY MISSISSIPPI, LLC",
+      "ENTERGY CORPORATION"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "4XM3TW50JULSLG8BNC79",
+       "legal_name": "ENTERGY CORPORATION",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/4XM3TW50JULSLG8BNC79"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Penton Solar Plant (plant 68029) as planned, status P, reported by Entergy Mississippi LLC",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Entergy Mississippi LLC owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity ENTERGY MISSISSIPPI, LLC, LEI 54930043I78H35DVVW89",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/54930043I78H35DVVW89"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "54930043I78H35DVVW89",
+         "4XM3TW50JULSLG8BNC79"
+        ],
+        "proves": "ENTERGY MISSISSIPPI, LLC reports ENTERGY CORPORATION as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/54930043I78H35DVVW89/direct-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0000065984.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 65984,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000065984.json",
+       "ticker": "ETR"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:68029",
+   "kind": "Solar",
+   "lat": 34.861567,
+   "lon": -90.263,
+   "mw": 190.0,
+   "name": "Penton Solar Plant",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Announced",
+   "state": "MS",
+   "technology": "Solar Photovoltaic"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "L",
+   "expected": "2028-07",
+   "expected_year": 2028,
+   "exposures": [
+    {
+     "cik": 65984,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "4XM3TW50JULSLG8BNC79",
+     "listed_entity_id": "lei:4XM3TW50JULSLG8BNC79",
+     "listed_name": "ENTERGY CORP /DE/",
+     "owner": "Entergy Texas Inc.",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "LWXX58X12AJXISQ28573",
+      "4XM3TW50JULSLG8BNC79"
+     ],
+     "path_edges": [
+      [
+       "LWXX58X12AJXISQ28573",
+       "4XM3TW50JULSLG8BNC79"
+      ]
+     ],
+     "path_names": [
+      "ENTERGY TEXAS, INC.",
+      "ENTERGY CORPORATION"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "4XM3TW50JULSLG8BNC79",
+       "legal_name": "ENTERGY CORPORATION",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/4XM3TW50JULSLG8BNC79"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Legend Power Station (plant 68053) as planned, status L, reported by Entergy Texas Inc.",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Entergy Texas Inc. owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity ENTERGY TEXAS, INC., LEI LWXX58X12AJXISQ28573",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/LWXX58X12AJXISQ28573"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "LWXX58X12AJXISQ28573",
+         "4XM3TW50JULSLG8BNC79"
+        ],
+        "proves": "ENTERGY TEXAS, INC. reports ENTERGY CORPORATION as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/LWXX58X12AJXISQ28573/direct-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0000065984.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 65984,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000065984.json",
+       "ticker": "ETR"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:68053",
+   "kind": "Oil & gas",
+   "lat": 29.880219,
+   "lon": -93.99573,
+   "mw": 754.0,
+   "name": "Legend Power Station",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Pre-construction",
+   "state": "TX",
+   "technology": "Natural Gas Fired Combined Cycle"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "L",
+   "expected": "2028-12",
+   "expected_year": 2028,
+   "exposures": [
+    {
+     "cik": 65984,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "4XM3TW50JULSLG8BNC79",
+     "listed_entity_id": "lei:4XM3TW50JULSLG8BNC79",
+     "listed_name": "ENTERGY CORP /DE/",
+     "owner": "Entergy Louisiana LLC",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "0V5453U14HDZO63CGH17",
+      "4XM3TW50JULSLG8BNC79"
+     ],
+     "path_edges": [
+      [
+       "0V5453U14HDZO63CGH17",
+       "4XM3TW50JULSLG8BNC79"
+      ]
+     ],
+     "path_names": [
+      "ENTERGY LOUISIANA, LLC",
+      "ENTERGY CORPORATION"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "4XM3TW50JULSLG8BNC79",
+       "legal_name": "ENTERGY CORPORATION",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/4XM3TW50JULSLG8BNC79"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Franklin Farms 1&2 (plant 68214) as planned, status L, reported by Entergy Louisiana LLC",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Entergy Louisiana LLC owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity ENTERGY LOUISIANA, LLC, LEI 0V5453U14HDZO63CGH17",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/0V5453U14HDZO63CGH17"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "0V5453U14HDZO63CGH17",
+         "4XM3TW50JULSLG8BNC79"
+        ],
+        "proves": "ENTERGY LOUISIANA, LLC reports ENTERGY CORPORATION as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/0V5453U14HDZO63CGH17/direct-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0000065984.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 65984,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000065984.json",
+       "ticker": "ETR"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:68214",
+   "kind": "Oil & gas",
+   "lat": 32.53246,
+   "lon": -91.62767,
+   "mw": 1560.6,
+   "name": "Franklin Farms 1&2",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Pre-construction",
+   "state": "LA",
+   "technology": "Natural Gas Fired Combined Cycle"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "T",
+   "expected": "2029-01",
+   "expected_year": 2029,
+   "exposures": [
+    {
+     "cik": 1711269,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "549300PGTHDQY6PSUI61",
+     "listed_entity_id": "lei:549300PGTHDQY6PSUI61",
+     "listed_name": "Evergy, Inc.",
+     "owner": "Evergy Missouri West",
+     "owner_match": "id",
+     "owner_stake": 50.0,
+     "path": [
+      "EZIFUDC0VSUS6T6LCG85",
+      "549300PGTHDQY6PSUI61"
+     ],
+     "path_edges": [
+      [
+       "EZIFUDC0VSUS6T6LCG85",
+       "549300PGTHDQY6PSUI61"
+      ]
+     ],
+     "path_names": [
+      "EVERGY MISSOURI WEST, INC.",
+      "Evergy, Inc."
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "549300PGTHDQY6PSUI61",
+       "legal_name": "Evergy, Inc.",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/549300PGTHDQY6PSUI61"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Viola Generating Station (plant 68294) as planned, status T, reported by Evergy Kansas Central, Inc",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists Evergy Missouri West as owner (50.0%)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity EVERGY MISSOURI WEST, INC., LEI EZIFUDC0VSUS6T6LCG85",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/EZIFUDC0VSUS6T6LCG85"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "EZIFUDC0VSUS6T6LCG85",
+         "549300PGTHDQY6PSUI61"
+        ],
+        "proves": "EVERGY MISSOURI WEST, INC. reports Evergy, Inc. as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/EZIFUDC0VSUS6T6LCG85/direct-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Evergy, Inc. has publicly traded common equity: EVRG on Nasdaq (CIK 1711269; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0001711269.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 1711269,
+       "exchange": "Nasdaq",
+       "source_url": "https://data.sec.gov/submissions/CIK0001711269.json",
+       "ticker": "EVRG"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Evergy Missouri West holds 50.0% (EIA-860 Schedule 4); Evergy, Inc.'s effective share is not published",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:68294",
+   "kind": "Oil & gas",
+   "lat": 37.331481,
+   "lon": -97.67,
+   "mw": 765.0,
+   "name": "Viola Generating Station",
+   "other_owners": [
+    {
+     "eia_id": 22500,
+     "name": "Evergy Kansas Central, Inc",
+     "stake": 50.0
+    }
+   ],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Pre-construction",
+   "state": "KS",
+   "technology": "Natural Gas Fired Combined Cycle"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "T",
+   "expected": "2030-01",
+   "expected_year": 2030,
+   "exposures": [
+    {
+     "cik": 1711269,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "549300PGTHDQY6PSUI61",
+     "listed_entity_id": "lei:549300PGTHDQY6PSUI61",
+     "listed_name": "Evergy, Inc.",
+     "owner": "Evergy Missouri West",
+     "owner_match": "id",
+     "owner_stake": 50.0,
+     "path": [
+      "EZIFUDC0VSUS6T6LCG85",
+      "549300PGTHDQY6PSUI61"
+     ],
+     "path_edges": [
+      [
+       "EZIFUDC0VSUS6T6LCG85",
+       "549300PGTHDQY6PSUI61"
+      ]
+     ],
+     "path_names": [
+      "EVERGY MISSOURI WEST, INC.",
+      "Evergy, Inc."
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "549300PGTHDQY6PSUI61",
+       "legal_name": "Evergy, Inc.",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/549300PGTHDQY6PSUI61"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists McNew Generating Station (plant 68295) as planned, status T, reported by Evergy Kansas Central, Inc",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists Evergy Missouri West as owner (50.0%)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity EVERGY MISSOURI WEST, INC., LEI EZIFUDC0VSUS6T6LCG85",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/EZIFUDC0VSUS6T6LCG85"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "EZIFUDC0VSUS6T6LCG85",
+         "549300PGTHDQY6PSUI61"
+        ],
+        "proves": "EVERGY MISSOURI WEST, INC. reports Evergy, Inc. as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/EZIFUDC0VSUS6T6LCG85/direct-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Evergy, Inc. has publicly traded common equity: EVRG on Nasdaq (CIK 1711269; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0001711269.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 1711269,
+       "exchange": "Nasdaq",
+       "source_url": "https://data.sec.gov/submissions/CIK0001711269.json",
+       "ticker": "EVRG"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Evergy Missouri West holds 50.0% (EIA-860 Schedule 4); Evergy, Inc.'s effective share is not published",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:68295",
+   "kind": "Oil & gas",
+   "lat": 38.00595,
+   "lon": -97.92166,
+   "mw": 765.0,
+   "name": "McNew Generating Station",
+   "other_owners": [
+    {
+     "eia_id": 22500,
+     "name": "Evergy Kansas Central, Inc",
+     "stake": 50.0
+    }
+   ],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Pre-construction",
+   "state": "KS",
+   "technology": "Natural Gas Fired Combined Cycle"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "T",
+   "expected": "2030-01",
+   "expected_year": 2030,
+   "exposures": [
+    {
+     "cik": 1711269,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "549300PGTHDQY6PSUI61",
+     "listed_entity_id": "lei:549300PGTHDQY6PSUI61",
+     "listed_name": "Evergy, Inc.",
+     "owner": "Evergy Missouri West",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "EZIFUDC0VSUS6T6LCG85",
+      "549300PGTHDQY6PSUI61"
+     ],
+     "path_edges": [
+      [
+       "EZIFUDC0VSUS6T6LCG85",
+       "549300PGTHDQY6PSUI61"
+      ]
+     ],
+     "path_names": [
+      "EVERGY MISSOURI WEST, INC.",
+      "Evergy, Inc."
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "549300PGTHDQY6PSUI61",
+       "legal_name": "Evergy, Inc.",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/549300PGTHDQY6PSUI61"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Mullin Creek #1 Generating Station (plant 68296) as planned, status T, reported by Evergy Missouri West",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Evergy Missouri West owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity EVERGY MISSOURI WEST, INC., LEI EZIFUDC0VSUS6T6LCG85",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/EZIFUDC0VSUS6T6LCG85"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "EZIFUDC0VSUS6T6LCG85",
+         "549300PGTHDQY6PSUI61"
+        ],
+        "proves": "EVERGY MISSOURI WEST, INC. reports Evergy, Inc. as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/EZIFUDC0VSUS6T6LCG85/direct-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Evergy, Inc. has publicly traded common equity: EVRG on Nasdaq (CIK 1711269; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0001711269.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 1711269,
+       "exchange": "Nasdaq",
+       "source_url": "https://data.sec.gov/submissions/CIK0001711269.json",
+       "ticker": "EVRG"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:68296",
+   "kind": "Oil & gas",
+   "lat": 38.00595,
+   "lon": -97.92166,
+   "mw": 489.7,
+   "name": "Mullin Creek #1 Generating Station",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Pre-construction",
+   "state": "MO",
+   "technology": "Natural Gas Fired Combustion Turbine"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "TS",
+   "expected": "2026-10",
+   "expected_year": 2026,
+   "exposures": [
+    {
+     "cik": 936340,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "549300IX8SD6XXD71I78",
+     "listed_entity_id": "lei:549300IX8SD6XXD71I78",
+     "listed_name": "DTE ENERGY CO",
+     "owner": "DTE Electric Company",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "9N0FWODEJVKHC2DYLO03",
+      "549300IX8SD6XXD71I78"
+     ],
+     "path_edges": [
+      [
+       "9N0FWODEJVKHC2DYLO03",
+       "549300IX8SD6XXD71I78"
+      ]
+     ],
+     "path_names": [
+      "DTE Electric Company",
+      "DTE ENERGY COMPANY"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "549300IX8SD6XXD71I78",
+       "legal_name": "DTE ENERGY COMPANY",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/549300IX8SD6XXD71I78"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Gratiot Solar Park (plant 68850) as planned, status TS, reported by DTE Electric Company",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity DTE Electric Company owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity DTE Electric Company, LEI 9N0FWODEJVKHC2DYLO03",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/9N0FWODEJVKHC2DYLO03"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "9N0FWODEJVKHC2DYLO03",
+         "549300IX8SD6XXD71I78"
+        ],
+        "proves": "DTE Electric Company reports DTE ENERGY COMPANY as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/9N0FWODEJVKHC2DYLO03/direct-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "DTE ENERGY CO has publicly traded common equity: DTE on NYSE (CIK 936340; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0000936340.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 936340,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000936340.json",
+       "ticker": "DTE"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:68850",
+   "kind": "Solar",
+   "lat": 43.436999,
+   "lon": -84.49845,
+   "mw": 50.0,
+   "name": "Gratiot Solar Park",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Commissioning",
+   "state": "MI",
+   "technology": "Solar Photovoltaic"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "L",
+   "expected": "2028-07",
+   "expected_year": 2028,
+   "exposures": [
+    {
+     "cik": 65984,
+     "effective_stake": null,
+     "hq_country": null,
+     "lei": "4XM3TW50JULSLG8BNC79",
+     "listed_entity_id": "lei:4XM3TW50JULSLG8BNC79",
+     "listed_name": "ENTERGY CORP /DE/",
+     "owner": "Entergy Texas Inc.",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "LWXX58X12AJXISQ28573",
+      "4XM3TW50JULSLG8BNC79"
+     ],
+     "path_edges": [
+      [
+       "LWXX58X12AJXISQ28573",
+       "4XM3TW50JULSLG8BNC79"
+      ]
+     ],
+     "path_names": [
+      "ENTERGY TEXAS, INC.",
+      "ENTERGY CORPORATION"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "4XM3TW50JULSLG8BNC79",
+       "legal_name": "ENTERGY CORPORATION",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/4XM3TW50JULSLG8BNC79"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Lone Star Power Station (plant 69077) as planned, status L, reported by Entergy Texas Inc.",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": "2025-09-30",
+        "proves": "EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Entergy Texas Inc. owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-12",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "Legal entity ENTERGY TEXAS, INC., LEI LWXX58X12AJXISQ28573",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/LWXX58X12AJXISQ28573"
+       },
+       {
+        "document_date": "2026-11-12",
+        "edge": [
+         "LWXX58X12AJXISQ28573",
+         "4XM3TW50JULSLG8BNC79"
+        ],
+        "proves": "ENTERGY TEXAS, INC. reports ENTERGY CORPORATION as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-12",
+        "url": "https://api.gleif.org/api/v1/lei-records/LWXX58X12AJXISQ28573/direct-parent"
+       },
+       {
+        "document_date": "2026-11-12",
+        "proves": "ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
+        "publisher": "U.S. SEC",
+        "retrieved_at": "2026-11-12",
+        "url": "https://data.sec.gov/submissions/CIK0000065984.json"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 65984,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000065984.json",
+       "ticker": "ETR"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:69077",
+   "kind": "Oil & gas",
+   "lat": 30.414158,
+   "lon": -95.01671,
+   "mw": 467.3,
+   "name": "Lone Star Power Station",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Pre-construction",
+   "state": "TX",
+   "technology": "Natural Gas Fired Combustion Turbine"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "U",
+   "expected": "2026-10",
+   "expected_year": 2026,
+   "exposures": [
+    {
+     "cik": 874761,
+     "effective_stake": 75.0,
+     "hq_country": null,
+     "lei": "2NUNNB7D43COUIRE5295",
+     "listed_entity_id": "lei:2NUNNB7D43COUIRE5295",
+     "listed_name": "THE AES CORPORATION",
+     "owner": "THE AES CORPORATION",
+     "owner_match": "document",
+     "owner_stake": null,
+     "path": [
+      "lei:2NUNNB7D43COUIRE5295"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "THE AES CORPORATION"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-aes-10k",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "1H 2026",
+       "joint_venture": false,
+       "mw": 80.0,
+       "name": "Halifax",
+       "section": "Under construction"
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "2NUNNB7D43COUIRE5295",
+       "legal_name": "THE AES CORPORATION",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/2NUNNB7D43COUIRE5295"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-03-02",
+        "edge": null,
+        "proves": "The AES Corporation (Form 10-K, FY2025) names Halifax with a 75.0% interest",
+        "publisher": "The AES Corporation (Form 10-K, FY2025)",
+        "quote": "Halifax US-NC Solar 80  75  % 1H 2026",
+        "retrieved_at": "2026-11-12",
+        "sha256": "5592ecb1ba2daaacfc5e277ed3162a17381a632e303cb11715860b65c53da1a4",
+        "url": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000063/aes-20251231.htm"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 874761,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000874761.json",
+       "ticker": "AES"
+      },
+      "reviewer": "engine (batch 2026-11-aes-10k)",
+      "stake": {
+       "note": "As stated in the document",
+       "value": 75.0
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:69197",
+   "kind": "Solar",
+   "lat": 36.2537,
+   "lon": -77.6884,
+   "mw": 80.0,
+   "name": "Halifax County Solar",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Under construction",
+   "stage_note": "Expected 1H 2026 according to the source; current status to be re-checked",
+   "state": "NC",
+   "technology": "Solar Photovoltaic"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "V",
+   "expected": "2027-02",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": 874761,
+     "effective_stake": 75.0,
+     "hq_country": null,
+     "lei": "2NUNNB7D43COUIRE5295",
+     "listed_entity_id": "lei:2NUNNB7D43COUIRE5295",
+     "listed_name": "THE AES CORPORATION",
+     "owner": "THE AES CORPORATION",
+     "owner_match": "document",
+     "owner_stake": null,
+     "path": [
+      "lei:2NUNNB7D43COUIRE5295"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "THE AES CORPORATION"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-aes-10k",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "1H 2027",
+       "joint_venture": false,
+       "mw": 50.0,
+       "name": "Baldy Mesa Energy Storage",
+       "section": "Under construction"
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "2NUNNB7D43COUIRE5295",
+       "legal_name": "THE AES CORPORATION",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/2NUNNB7D43COUIRE5295"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-03-02",
+        "edge": null,
+        "proves": "The AES Corporation (Form 10-K, FY2025) names Baldy Mesa Energy Storage with a 75.0% interest",
+        "publisher": "The AES Corporation (Form 10-K, FY2025)",
+        "quote": "Baldy Mesa Energy Storage US-CA Energy Storage 50  75  % 1H 2027",
+        "retrieved_at": "2026-11-12",
+        "sha256": "5592ecb1ba2daaacfc5e277ed3162a17381a632e303cb11715860b65c53da1a4",
+        "url": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000063/aes-20251231.htm"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 874761,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000874761.json",
+       "ticker": "AES"
+      },
+      "reviewer": "engine (batch 2026-11-aes-10k)",
+      "stake": {
+       "note": "As stated in the document",
+       "value": 75.0
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "eia:69964",
+   "kind": "Battery storage",
+   "lat": 34.6029,
+   "lon": -117.449,
+   "mw": 50.0,
+   "name": "Baldy Mesa Storage",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Under construction",
+   "state": "CA",
+   "technology": "Batteries"
+  },
+  {
+   "cc": "EG",
+   "cost": null,
+   "country": "Egypt",
+   "expected_year": null,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 100.0,
+     "hq_country": "Norway",
+     "lei": "5967007LIEEXZXIARK36",
+     "listed_entity_id": "E100000148903",
+     "listed_name": "Scatec",
+     "owner": "Scatec ASA",
+     "owner_match": "name",
+     "owner_stake": 100.0,
+     "path": [
+      "E100000148903"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "Scatec"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-scatec-portfolio",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": null,
+       "joint_venture": false,
+       "mw": 1125.0,
+       "name": "Egypt Aluminium",
+       "section": "Project backlog"
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "5967007LIEEXZXIARK36",
+       "legal_name": "Scatec ASA",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/5967007LIEEXZXIARK36",
+       "status": "ACTIVE"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-06-30",
+        "edge": null,
+        "proves": "Scatec ASA names Egypt Aluminium with a 100.0% interest",
+        "publisher": "Scatec ASA",
+        "quote": "Egypt Aluminium                     Solar              1,125        100%",
+        "retrieved_at": "2026-11-12",
+        "sha256": "52cb082ab99c1363a6c65fbf7e728f48c0ef11b73b6537db403992f2afb2e56b",
+        "url": "https://storage.mfn.se/a0d6c1c3-c903-4c13-9985-b1d911d0daf7/scatec-q2-2026-report.pdf"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "Oslo Børs (Euronext Oslo)",
+       "note": "to confirm on scatec.com investor page",
+       "source_url": "https://storage.mfn.se/a0d6c1c3-c903-4c13-9985-b1d911d0daf7/scatec-q2-2026-report.pdf",
+       "ticker": "SCATC"
+      },
+      "reviewer": "engine (batch 2026-11-scatec-portfolio)",
+      "stake": {
+       "note": "As stated in the document",
+       "value": 100.0
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100001045291",
+   "kind": "Solar",
+   "lat": 26.0064,
+   "lon": 32.3116,
+   "mw": 1000.0,
+   "name": "Egypt Aluminium solar farm",
+   "other_owners": [],
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Pre-construction",
+   "units": 2,
+   "wiki": "https://www.gem.wiki/Egypt_Aluminium_solar_farm"
+  },
+  {
+   "cc": "IN",
+   "cost": null,
+   "country": "India",
+   "expected_year": null,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": null,
+     "hq_country": "India",
+     "lei": "3358003ZPPTGWT595J46",
+     "listed_entity_id": "E100000120883",
+     "listed_name": "NHPC",
+     "owner": "NHPC Ltd",
+     "owner_match": "name",
+     "owner_stake": null,
+     "path": [
+      "E100000120883"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "NHPC"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-nhpc-under-construction",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": null,
+       "joint_venture": false,
+       "mw": 40.0,
+       "name": "Ground Mounted Solar Power Project, Ganjam",
+       "section": "Under construction"
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "3358003ZPPTGWT595J46",
+       "legal_name": "NHPC LIMITED",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/3358003ZPPTGWT595J46",
+       "status": "ACTIVE"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-11-12",
+        "edge": null,
+        "proves": "NHPC Limited names Ground Mounted Solar Power Project, Ganjam",
+        "publisher": "NHPC Limited",
+        "quote": "Ground Mounted Solar Power Project, Ganjam Odisha | 40 | 40",
+        "retrieved_at": "2026-11-12",
+        "sha256": "2f363e943f30a67e95dc53e9306aed6e9a7f44abf62e95104c575327f77993ba",
+        "url": "https://www.nhpcindia.com/welcome/language/en/project/3//"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "National Stock Exchange of India and BSE (533098)",
+       "note": "confirm on NSE/BSE listing page before public",
+       "source_url": "https://www.nhpcindia.com/",
+       "ticker": "NHPC"
+      },
+      "reviewer": "engine (batch 2026-11-nhpc-under-construction)",
+      "stake": {
+       "note": "Not stated in the document",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100001019878",
+   "kind": "Solar",
+   "lat": 19.5883,
+   "lon": 84.7357,
+   "mw": 40.0,
+   "name": "Ganjam solar farm",
+   "other_owners": [],
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Ganjam_solar_farm"
+  },
+  {
+   "cc": "ID",
+   "cost": null,
+   "country": "Indonesia",
+   "expected_year": 2026,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 49.0,
+     "hq_country": "Saudi Arabia",
+     "lei": "558600Y0TFKRV2QZ1A74",
+     "listed_entity_id": "E100000000882",
+     "listed_name": "ACWA Power",
+     "owner": "ACWA Power Co",
+     "owner_match": "name",
+     "owner_stake": 49.0,
+     "path": [
+      "E100000000882"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "ACWA Power"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-acwa-portfolio",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "Q4 2026",
+       "joint_venture": false,
+       "mw": 60.0,
+       "name": "Saguling Floating PV IPP",
+       "section": null
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "558600Y0TFKRV2QZ1A74",
+       "legal_name": "ACWA POWER COMPANY",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+       "status": "ACTIVE"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2025-09-30",
+        "edge": null,
+        "proves": "ACWA Power names Saguling Floating PV IPP with a 49.0% interest",
+        "publisher": "ACWA Power",
+        "quote": "PPA- / Saguling Float-   Indone-                                                                                                                                                                     Operating / 1         225       49.00%       60         -          -          -        -       -      60        -     BOO-25        PV         Q4 2026        EAI                         PLN / ing PV IPP          sia                                                                                        ",
+        "retrieved_at": "2026-11-12",
+        "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+        "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "Saudi Exchange (Tadawul), main market",
+       "isin": "SA15CGS10H12",
+       "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+       "ticker": "2082"
+      },
+      "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+      "stake": {
+       "note": "As stated in the document",
+       "value": 49.0
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100000801313",
+   "kind": "Solar",
+   "lat": -6.4511,
+   "lon": 108.1781,
+   "mw": 60.0,
+   "name": "Saguling solar farm",
+   "other_owners": [
+    {
+     "entity_id": null,
+     "name": "PT PLN (Persero)",
+     "stake": 51.0
+    }
+   ],
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Saguling_solar_farm"
+  },
+  {
+   "cc": "SA",
+   "cost": null,
+   "country": "Saudi Arabia",
+   "expected_year": 2028,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 35.0,
+     "hq_country": "Saudi Arabia",
+     "lei": "558600Y0TFKRV2QZ1A74",
+     "listed_entity_id": "E100000000882",
+     "listed_name": "ACWA Power",
+     "owner": "ACWA Power Co",
+     "owner_match": "name",
+     "owner_stake": 35.0,
+     "path": [
+      "E100000000882"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "ACWA Power"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-acwa-portfolio",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "Q4 2027",
+       "joint_venture": false,
+       "mw": 2000.0,
+       "name": "Afif 1 PV",
+       "section": null
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "558600Y0TFKRV2QZ1A74",
+       "legal_name": "ACWA POWER COMPANY",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+       "status": "ACTIVE"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2025-09-30",
+        "edge": null,
+        "proves": "ACWA Power names Afif 1 PV with a 35.1% interest",
+        "publisher": "ACWA Power",
+        "quote": "PPA-                                                         Saudi Power / Saudi                                                                                                                                                                       Operating / Afif 1 PV                       1        3,750      35.10%      2,000       -          -          -        -       -     2,000       -     BOO-25        PV         Q4 2027        EAI                    Procurement / Arabia                   ",
+        "retrieved_at": "2026-11-12",
+        "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+        "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "Saudi Exchange (Tadawul), main market",
+       "isin": "SA15CGS10H12",
+       "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+       "ticker": "2082"
+      },
+      "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+      "stake": {
+       "note": "As stated in the document",
+       "value": 35.1
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100001063152",
+   "kind": "Solar",
+   "lat": 23.9332,
+   "lon": 42.9159,
+   "mw": 2000.0,
+   "name": "Afif 1 solar farm",
+   "other_owners": [
+    {
+     "entity_id": null,
+     "name": "Saudi Aramco Power Co",
+     "stake": 30.0
+    },
+    {
+     "entity_id": null,
+     "name": "Water and Electricity Holding CO (Badeel)",
+     "stake": 34.0
+    }
+   ],
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Pre-construction",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Afif_1_solar_farm"
+  },
+  {
+   "cc": "SA",
+   "cost": null,
+   "country": "Saudi Arabia",
+   "expected_year": 2028,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 35.0,
+     "hq_country": "Saudi Arabia",
+     "lei": "558600Y0TFKRV2QZ1A74",
+     "listed_entity_id": "E100000000882",
+     "listed_name": "ACWA Power",
+     "owner": "ACWA Power Co",
+     "owner_match": "name",
+     "owner_stake": 35.0,
+     "path": [
+      "E100000000882"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "ACWA Power"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-acwa-portfolio",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "Q4 2027",
+       "joint_venture": false,
+       "mw": 2000.0,
+       "name": "Afif 2 PV",
+       "section": null
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "558600Y0TFKRV2QZ1A74",
+       "legal_name": "ACWA POWER COMPANY",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+       "status": "ACTIVE"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2025-09-30",
+        "edge": null,
+        "proves": "ACWA Power names Afif 2 PV with a 35.1% interest",
+        "publisher": "ACWA Power",
+        "quote": "PPA-                                                         Saudi Power / Saudi                                                                                                                                                                       Operating / Afif 2 PV                       1        3,750      35.10%      2,000       -          -          -        -       -     2,000       -     BOO-25        PV         Q4 2027        EAI                    Procurement / Arabia                   ",
+        "retrieved_at": "2026-11-12",
+        "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+        "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "Saudi Exchange (Tadawul), main market",
+       "isin": "SA15CGS10H12",
+       "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+       "ticker": "2082"
+      },
+      "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+      "stake": {
+       "note": "As stated in the document",
+       "value": 35.1
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100001063155",
+   "kind": "Solar",
+   "lat": 23.8826,
+   "lon": 42.9206,
+   "mw": 2000.0,
+   "name": "Afif 2 solar farm",
+   "other_owners": [
+    {
+     "entity_id": null,
+     "name": "Saudi Aramco Power Co",
+     "stake": 30.0
+    },
+    {
+     "entity_id": null,
+     "name": "Water and Electricity Holding CO (Badeel)",
+     "stake": 34.0
+    }
+   ],
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Pre-construction",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Afif_2_solar_farm"
+  },
+  {
+   "cc": "SA",
+   "cost": null,
+   "country": "Saudi Arabia",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": null,
+     "hq_country": "Saudi Arabia",
+     "lei": "558600Y0TFKRV2QZ1A74",
+     "listed_entity_id": "E100000000882",
+     "listed_name": "ACWA Power",
+     "owner": "ACWA Power Co",
+     "owner_match": "name",
+     "owner_stake": null,
+     "path": [
+      "E100000000882"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "ACWA Power"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-acwa-portfolio",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "Q1 2027",
+       "joint_venture": false,
+       "mw": 1500.0,
+       "name": "Al-Khushaybi PV",
+       "section": null
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "558600Y0TFKRV2QZ1A74",
+       "legal_name": "ACWA POWER COMPANY",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+       "status": "ACTIVE"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2025-09-30",
+        "edge": null,
+        "proves": "ACWA Power names Al-Khushaybi PV with a 35.1% interest",
+        "publisher": "ACWA Power",
+        "quote": "PPA-                                                          Saudi Power / Al-Khushay-       Saudi                                                                                                                                                                      Operating / 1        3,457      35.10%      1,500       -          -          -        -       -     1,500      -     BOO-25        PV         Q1 2027        EAI                     Procurement / bi PV            Arabia                ",
+        "retrieved_at": "2026-11-12",
+        "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+        "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "Saudi Exchange (Tadawul), main market",
+       "isin": "SA15CGS10H12",
+       "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+       "ticker": "2082"
+      },
+      "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+      "stake": {
+       "note": "As stated in the document",
+       "value": 35.1
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100001018767",
+   "kind": "Solar",
+   "lat": 25.5146,
+   "lon": 43.3166,
+   "mw": 1500.0,
+   "name": "Al-Khushaybi Solar PV Park",
+   "other_owners": [
+    {
+     "entity_id": null,
+     "name": "Saudi Aramco Power Co",
+     "stake": null
+    },
+    {
+     "entity_id": null,
+     "name": "Public Investment Fund (Saudi Arabia)",
+     "stake": null
+    }
+   ],
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Al-Khushaybi_Solar_PV_Park"
+  },
+  {
+   "cc": "SA",
+   "cost": null,
+   "country": "Saudi Arabia",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": null,
+     "hq_country": "Saudi Arabia",
+     "lei": "558600Y0TFKRV2QZ1A74",
+     "listed_entity_id": "E100000000882",
+     "listed_name": "ACWA Power",
+     "owner": "ACWA Power Co",
+     "owner_match": "name",
+     "owner_stake": null,
+     "path": [
+      "E100000000882"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "ACWA Power"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-acwa-portfolio",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "Q1 2027",
+       "joint_venture": false,
+       "mw": 2000.0,
+       "name": "Al-Muwaih Solar",
+       "section": null
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "558600Y0TFKRV2QZ1A74",
+       "legal_name": "ACWA POWER COMPANY",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+       "status": "ACTIVE"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2025-09-30",
+        "edge": null,
+        "proves": "ACWA Power names Al-Muwaih Solar with a 35.1% interest",
+        "publisher": "ACWA Power",
+        "quote": "day)             day) / PPA-                                                          Saudi Power / Al-Muwaih          Saudi                                                                                                                                                                      Operating / 1        4,427      35.10%      2,000       -          -          -        -       -     2,000      -     BOO-25        PV         Q1 2027        EAI                     Procurement / Solar         ",
+        "retrieved_at": "2026-11-12",
+        "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+        "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "Saudi Exchange (Tadawul), main market",
+       "isin": "SA15CGS10H12",
+       "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+       "ticker": "2082"
+      },
+      "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+      "stake": {
+       "note": "As stated in the document",
+       "value": 35.1
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100001018768",
+   "kind": "Solar",
+   "lat": 22.756,
+   "lon": 41.5881,
+   "mw": 2000.0,
+   "name": "Al-Muwaih Solar PV",
+   "other_owners": [
+    {
+     "entity_id": null,
+     "name": "Saudi Aramco Power Co",
+     "stake": null
+    },
+    {
+     "entity_id": null,
+     "name": "Public Investment Fund (Saudi Arabia)",
+     "stake": null
+    }
+   ],
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Al-Muwaih_Solar_PV"
+  },
+  {
+   "cc": "SA",
+   "cost": null,
+   "country": "Saudi Arabia",
+   "expected_year": null,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 35.0,
+     "hq_country": "Saudi Arabia",
+     "lei": "558600Y0TFKRV2QZ1A74",
+     "listed_entity_id": "E100000000882",
+     "listed_name": "ACWA Power",
+     "owner": "ACWA Power Co",
+     "owner_match": "name",
+     "owner_stake": 35.0,
+     "path": [
+      "E100000000882"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "ACWA Power"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-acwa-portfolio",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "Q1 2028",
+       "joint_venture": false,
+       "mw": 3000.0,
+       "name": "Bisha PV",
+       "section": null
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "558600Y0TFKRV2QZ1A74",
+       "legal_name": "ACWA POWER COMPANY",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+       "status": "ACTIVE"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2025-09-30",
+        "edge": null,
+        "proves": "ACWA Power names Bisha PV with a 35.1% interest",
+        "publisher": "ACWA Power",
+        "quote": "PPA-                                                         Saudi Power / Saudi                                                                                                                                                                       Operating / Bisha PV                        1        5,625      35.10%      3,000       -          -          -        -       -     3,000       -     BOO-25        PV         Q1 2028        EAI                    Procurement / Arabia                   ",
+        "retrieved_at": "2026-11-12",
+        "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+        "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "Saudi Exchange (Tadawul), main market",
+       "isin": "SA15CGS10H12",
+       "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+       "ticker": "2082"
+      },
+      "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+      "stake": {
+       "note": "As stated in the document",
+       "value": 35.1
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100001063143",
+   "kind": "Solar",
+   "lat": 19.9113,
+   "lon": 42.5432,
+   "mw": 3000.0,
+   "name": "Bisha solar farm",
+   "other_owners": [
+    {
+     "entity_id": null,
+     "name": "Saudi Aramco Power Co",
+     "stake": 30.0
+    },
+    {
+     "entity_id": null,
+     "name": "Water and Electricity Holding CO (Badeel)",
+     "stake": 34.0
+    }
+   ],
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Pre-construction",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Bisha_solar_farm"
+  },
+  {
+   "cc": "SA",
+   "cost": null,
+   "country": "Saudi Arabia",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": null,
+     "hq_country": "Saudi Arabia",
+     "lei": "558600Y0TFKRV2QZ1A74",
+     "listed_entity_id": "E100000000882",
+     "listed_name": "ACWA Power",
+     "owner": "ACWA Power Co",
+     "owner_match": "name",
+     "owner_stake": null,
+     "path": [
+      "E100000000882"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "ACWA Power"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-acwa-portfolio",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "Q1 2027",
+       "joint_venture": false,
+       "mw": 2000.0,
+       "name": "Haden Solar PV",
+       "section": null
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "558600Y0TFKRV2QZ1A74",
+       "legal_name": "ACWA POWER COMPANY",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+       "status": "ACTIVE"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2025-09-30",
+        "edge": null,
+        "proves": "ACWA Power names Haden Solar PV with a 35.1% interest",
+        "publisher": "ACWA Power",
+        "quote": "PPA-                                                            Saudi Power / Haden Solar        Saudi                                                                                                                                                                          Operating / 1        4,375      35.10%      2,000       -          -          -        -       -     2,000      -     BOO-25          PV          Q1 2027        EAI                    Procurement / PV                Arabia      ",
+        "retrieved_at": "2026-11-12",
+        "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+        "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "Saudi Exchange (Tadawul), main market",
+       "isin": "SA15CGS10H12",
+       "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+       "ticker": "2082"
+      },
+      "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+      "stake": {
+       "note": "As stated in the document",
+       "value": 35.1
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100001018770",
+   "kind": "Solar",
+   "lat": 21.4166,
+   "lon": 41.0763,
+   "mw": 2000.0,
+   "name": "Haden solar farm",
+   "other_owners": [
+    {
+     "entity_id": null,
+     "name": "Saudi Aramco Power Co",
+     "stake": null
+    },
+    {
+     "entity_id": null,
+     "name": "Public Investment Fund (Saudi Arabia)",
+     "stake": null
+    }
+   ],
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Haden_solar_farm"
+  },
+  {
+   "cc": "SA",
+   "cost": null,
+   "country": "Saudi Arabia",
+   "expected_year": 2028,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 35.0,
+     "hq_country": "Saudi Arabia",
+     "lei": "558600Y0TFKRV2QZ1A74",
+     "listed_entity_id": "E100000000882",
+     "listed_name": "ACWA Power",
+     "owner": "ACWA Power Co",
+     "owner_match": "name",
+     "owner_stake": 35.0,
+     "path": [
+      "E100000000882"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "ACWA Power"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-acwa-portfolio",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "Q4 2027",
+       "joint_venture": false,
+       "mw": 1000.0,
+       "name": "Shaqra Wind",
+       "section": null
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "558600Y0TFKRV2QZ1A74",
+       "legal_name": "ACWA POWER COMPANY",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+       "status": "ACTIVE"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2025-09-30",
+        "edge": null,
+        "proves": "ACWA Power names Shaqra Wind with a 35.1% interest",
+        "publisher": "ACWA Power",
+        "quote": "PPA-                                                         Saudi Power / Saudi                                                                                                                                                                       Operating / Shaqra Wind                     1        3,000      35.10%      1,000       -          -          -        -       -     1,000       -     BOO-25       Wind        Q4 2027        EAI                    Procurement / Arabia                   ",
+        "retrieved_at": "2026-11-12",
+        "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+        "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "Saudi Exchange (Tadawul), main market",
+       "isin": "SA15CGS10H12",
+       "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+       "ticker": "2082"
+      },
+      "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+      "stake": {
+       "note": "As stated in the document",
+       "value": 35.1
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100001063269",
+   "kind": "Wind",
+   "lat": 25.2444,
+   "lon": 45.2625,
+   "mw": 1000.0,
+   "name": "Shaqra wind farm",
+   "other_owners": [
+    {
+     "entity_id": null,
+     "name": "Saudi Aramco Power Co",
+     "stake": 30.0
+    },
+    {
+     "entity_id": null,
+     "name": "Water and Electricity Holding CO (Badeel)",
+     "stake": 34.0
+    }
+   ],
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Pre-construction",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Shaqra_wind_farm"
+  },
+  {
+   "cc": "SA",
+   "cost": null,
+   "country": "Saudi Arabia",
+   "expected_year": 2028,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 35.0,
+     "hq_country": "Saudi Arabia",
+     "lei": "558600Y0TFKRV2QZ1A74",
+     "listed_entity_id": "E100000000882",
+     "listed_name": "ACWA Power",
+     "owner": "ACWA Power Co",
+     "owner_match": "name",
+     "owner_stake": 35.0,
+     "path": [
+      "E100000000882"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "ACWA Power"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-acwa-portfolio",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "Q1 2028",
+       "joint_venture": false,
+       "mw": 2000.0,
+       "name": "Starah Wind",
+       "section": null
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "558600Y0TFKRV2QZ1A74",
+       "legal_name": "ACWA POWER COMPANY",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+       "status": "ACTIVE"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2025-09-30",
+        "edge": null,
+        "proves": "ACWA Power names Starah Wind with a 35.1% interest",
+        "publisher": "ACWA Power",
+        "quote": "PPA-                                                         Saudi Power / Saudi                                                                                                                                                                       Operating / Starah Wind                     1        5,625      35.10%      2,000       -          -          -        -       -     2,000       -     BOO-25       Wind        Q1 2028        EAI                    Procurement / Arabia                   ",
+        "retrieved_at": "2026-11-12",
+        "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+        "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "Saudi Exchange (Tadawul), main market",
+       "isin": "SA15CGS10H12",
+       "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+       "ticker": "2082"
+      },
+      "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+      "stake": {
+       "note": "As stated in the document",
+       "value": 35.1
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100001063265",
+   "kind": "Wind",
+   "lat": 24.8524,
+   "lon": 47.1219,
+   "mw": 2000.0,
+   "name": "Starah wind farm",
+   "other_owners": [
+    {
+     "entity_id": null,
+     "name": "Saudi Aramco Power Co",
+     "stake": 30.0
+    },
+    {
+     "entity_id": null,
+     "name": "Water and Electricity Holding CO (Badeel)",
+     "stake": 34.0
+    }
+   ],
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Pre-construction",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Starah_wind_farm"
+  },
+  {
+   "cc": "UZ",
+   "cost": null,
+   "country": "Uzbekistan",
+   "expected_year": null,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": null,
+     "hq_country": "Saudi Arabia",
+     "lei": "558600Y0TFKRV2QZ1A74",
+     "listed_entity_id": "E100000000882",
+     "listed_name": "ACWA Power",
+     "owner": "ACWA Power Co",
+     "owner_match": "name",
+     "owner_stake": null,
+     "path": [
+      "E100000000882"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "ACWA Power"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-acwa-portfolio",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "Q1 2027",
+       "joint_venture": false,
+       "mw": 300.0,
+       "name": "Gijduvan Wind IPP",
+       "section": null
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "558600Y0TFKRV2QZ1A74",
+       "legal_name": "ACWA POWER COMPANY",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+       "status": "ACTIVE"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2025-09-30",
+        "edge": null,
+        "proves": "ACWA Power names Gijduvan Wind IPP with a 100.0% interest",
+        "publisher": "ACWA Power",
+        "quote": "Gijduvan Wind       Uzbeki-                                                                                      PPA-BOO(T)-XX                                         Operating    National Electric Grid / 1         1,349        100.00%      300          -           -          -                        WInd       Q1 2027        SUB / IPP                  stan                                                                                             YR                                              ",
+        "retrieved_at": "2026-11-12",
+        "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+        "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "Saudi Exchange (Tadawul), main market",
+       "isin": "SA15CGS10H12",
+       "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+       "ticker": "2082"
+      },
+      "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+      "stake": {
+       "note": "As stated in the document",
+       "value": 100.0
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100001061657",
+   "kind": "Wind",
+   "lat": 40.5261,
+   "lon": 64.5794,
+   "mw": 300.0,
+   "name": "Gijduvan (ACWA Power) wind farm",
+   "other_owners": [],
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Announced",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Gijduvan_(ACWA_Power)_wind_farm"
+  },
+  {
+   "cc": "IN",
+   "cost": null,
+   "country": "India",
+   "expected_year": 2032,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 100.0,
+     "hq_country": "India",
+     "lei": "3358003ZPPTGWT595J46",
+     "listed_entity_id": "E100000120883",
+     "listed_name": "NHPC",
+     "owner": "NHPC Ltd",
+     "owner_match": "id",
+     "owner_stake": 100.0,
+     "path": [
+      "E100000120883"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "NHPC"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-nhpc-under-construction",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": null,
+       "joint_venture": false,
+       "mw": 2880.0,
+       "name": "Dibang",
+       "section": "Under construction"
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "3358003ZPPTGWT595J46",
+       "legal_name": "NHPC LIMITED",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/3358003ZPPTGWT595J46",
+       "status": "ACTIVE"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-11-12",
+        "edge": null,
+        "proves": "NHPC Limited names Dibang",
+        "publisher": "NHPC Limited",
+        "quote": "Dibang Arunachal Pradesh | 12 * 240 | 2880",
+        "retrieved_at": "2026-11-12",
+        "sha256": "2f363e943f30a67e95dc53e9306aed6e9a7f44abf62e95104c575327f77993ba",
+        "url": "https://www.nhpcindia.com/welcome/language/en/project/3//"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "National Stock Exchange of India and BSE (533098)",
+       "note": "confirm on NSE/BSE listing page before public",
+       "source_url": "https://www.nhpcindia.com/",
+       "ticker": "NHPC"
+      },
+      "reviewer": "engine (batch 2026-11-nhpc-under-construction)",
+      "stake": {
+       "note": "Not stated in the document",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100000601853",
+   "kind": "Hydropower",
+   "lat": 28.0938,
+   "lon": 94.5921,
+   "mw": 2880.0,
+   "name": "Dibang Multipurpose hydroelectric plant",
+   "other_owners": [],
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Dibang_Multipurpose_hydroelectric_plant"
+  },
+  {
+   "cc": "IN",
+   "cost": null,
+   "country": "India",
+   "expected_year": 2026,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 100.0,
+     "hq_country": "India",
+     "lei": "3358003ZPPTGWT595J46",
+     "listed_entity_id": "E100000120883",
+     "listed_name": "NHPC",
+     "owner": "NHPC Ltd",
+     "owner_match": "id",
+     "owner_stake": 100.0,
+     "path": [
+      "E100000120883"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "NHPC"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-nhpc-under-construction",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": null,
+       "joint_venture": true,
+       "mw": 120.0,
+       "name": "Rangit-IV HEP (JV)",
+       "section": "Under construction"
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "3358003ZPPTGWT595J46",
+       "legal_name": "NHPC LIMITED",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/3358003ZPPTGWT595J46",
+       "status": "ACTIVE"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-11-12",
+        "edge": null,
+        "proves": "NHPC Limited names Rangit-IV HEP (JV)",
+        "publisher": "NHPC Limited",
+        "quote": "Rangit-IV HEP (JV) Sikkim | 3 * 40 | 120",
+        "retrieved_at": "2026-11-12",
+        "sha256": "2f363e943f30a67e95dc53e9306aed6e9a7f44abf62e95104c575327f77993ba",
+        "url": "https://www.nhpcindia.com/welcome/language/en/project/3//"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "National Stock Exchange of India and BSE (533098)",
+       "note": "confirm on NSE/BSE listing page before public",
+       "source_url": "https://www.nhpcindia.com/",
+       "ticker": "NHPC"
+      },
+      "reviewer": "engine (batch 2026-11-nhpc-under-construction)",
+      "stake": {
+       "note": "Not stated in the document",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100000602010",
+   "kind": "Hydropower",
+   "lat": 27.171,
+   "lon": 88.2955,
+   "mw": 120.0,
+   "name": "Rangit IV hydroelectric plant",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Rangit_IV_hydroelectric_plant"
+  },
+  {
+   "cc": "IN",
+   "cost": null,
+   "country": "India",
+   "expected_year": 2026,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 100.0,
+     "hq_country": "India",
+     "lei": "3358003ZPPTGWT595J46",
+     "listed_entity_id": "E100000120883",
+     "listed_name": "NHPC",
+     "owner": "NHPC Ltd",
+     "owner_match": "id",
+     "owner_stake": 100.0,
+     "path": [
+      "E100000120883"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "NHPC"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-nhpc-under-construction",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": null,
+       "joint_venture": false,
+       "mw": 2000.0,
+       "name": "Subansiri (Lower)",
+       "section": "Under construction"
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "3358003ZPPTGWT595J46",
+       "legal_name": "NHPC LIMITED",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/3358003ZPPTGWT595J46",
+       "status": "ACTIVE"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-11-12",
+        "edge": null,
+        "proves": "NHPC Limited names Subansiri (Lower)",
+        "publisher": "NHPC Limited",
+        "quote": "Subansiri (Lower) Arunachal Pradesh and Assam | 8 * 250 | 2000",
+        "retrieved_at": "2026-11-12",
+        "sha256": "2f363e943f30a67e95dc53e9306aed6e9a7f44abf62e95104c575327f77993ba",
+        "url": "https://www.nhpcindia.com/welcome/language/en/project/3//"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "National Stock Exchange of India and BSE (533098)",
+       "note": "confirm on NSE/BSE listing page before public",
+       "source_url": "https://www.nhpcindia.com/",
+       "ticker": "NHPC"
+      },
+      "reviewer": "engine (batch 2026-11-nhpc-under-construction)",
+      "stake": {
+       "note": "Not stated in the document",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100000602048",
+   "kind": "Hydropower",
+   "lat": 27.5529,
+   "lon": 94.2596,
+   "mw": 2000.0,
+   "name": "Subansiri Lower hydroelectric plant",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Subansiri_Lower_hydroelectric_plant"
+  },
+  {
+   "cc": "IN",
+   "cost": null,
+   "country": "India",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 100.0,
+     "hq_country": "India",
+     "lei": "3358003ZPPTGWT595J46",
+     "listed_entity_id": "E100000120883",
+     "listed_name": "NHPC",
+     "owner": "NHPC Ltd",
+     "owner_match": "id",
+     "owner_stake": 100.0,
+     "path": [
+      "E100000120883"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "NHPC"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-nhpc-under-construction",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": null,
+       "joint_venture": false,
+       "mw": 500.0,
+       "name": "Teesta VI HEP",
+       "section": "Under construction"
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "3358003ZPPTGWT595J46",
+       "legal_name": "NHPC LIMITED",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/3358003ZPPTGWT595J46",
+       "status": "ACTIVE"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-11-12",
+        "edge": null,
+        "proves": "NHPC Limited names Teesta VI HEP",
+        "publisher": "NHPC Limited",
+        "quote": "Teesta VI HEP Sikkim | 4*125 | 500",
+        "retrieved_at": "2026-11-12",
+        "sha256": "2f363e943f30a67e95dc53e9306aed6e9a7f44abf62e95104c575327f77993ba",
+        "url": "https://www.nhpcindia.com/welcome/language/en/project/3//"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "exchange": "National Stock Exchange of India and BSE (533098)",
+       "note": "confirm on NSE/BSE listing page before public",
+       "source_url": "https://www.nhpcindia.com/",
+       "ticker": "NHPC"
+      },
+      "reviewer": "engine (batch 2026-11-nhpc-under-construction)",
+      "stake": {
+       "note": "Not stated in the document",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100000602067",
+   "kind": "Hydropower",
+   "lat": 27.126,
+   "lon": 88.4878,
+   "mw": 500.0,
+   "name": "Teesta-VI hydroelectric plant",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "wiki": "https://www.gem.wiki/Teesta-VI_hydroelectric_plant"
+  },
   {
    "cc": "DE",
    "cost": null,
@@ -30,6 +4765,18 @@
      ],
      "type": "E1",
      "verification": {
+      "batch": "2026-11-enbw-project-pages",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": null,
+       "joint_venture": false,
+       "mw": 665.0,
+       "name": "Altbach power station",
+       "section": "Under construction or development"
+      },
+      "exposure_type": "direct",
       "identity": {
        "checked_at": "2026-11-12",
        "id": "529900JSFZ4TS59HKD79",
@@ -38,11 +4785,16 @@
        "source_url": "https://api.gleif.org/api/v1/lei-records/529900JSFZ4TS59HKD79",
        "status": "ACTIVE"
       },
+      "internal_only": [],
       "link": [
        {
-        "proves": "EnBW is building the 665 MW Altbach/Deizisau CCGT plant; gas connection completed Sep 2026; commercial operation expected Q3 2027",
-        "quote": "die EnBW am Standort eine regelbare, wasserstofffähige Gas- und Dampfturbinenanlage (GuD) baut",
+        "document_date": "2026-09-30",
+        "edge": null,
+        "proves": "EnBW names Altbach power station",
+        "publisher": "EnBW",
+        "quote": "Fuel Switch Projektvorstellung Die EnBW setzt mit dem Ausbau der erneuerbaren Energien die Dekarbonisierung ihres Erzeugungsportfolios konsequent fort. Aufgrund gesetzlicher Vorgaben müssen zudem alle Kohlekraftwerke in Deutschland bis spätestens 2038 abgeschaltet werden, so auch in Altbach/Deizisau. Die regionale Versorgungssicherheit mit Strom und Fernwärme hat jedoch oberste Priorität, weshalb die EnBW am Standort eine regelbare, wasserstofffähige Gas- und Dampfturbinenanlage (GuD) baut: Die neue, gasbefeuerte Anlage hat eine elektrische Leistung von 665 Megawatt (MW) und eine thermische Le",
         "retrieved_at": "2026-11-12",
+        "sha256": "37b2c9b3c81fb6b4ff0d1e009b9fed87587802c6b3097082a5b4fe4f554fa11b",
         "url": "https://www.enbw.com/unternehmen/konzern/energieerzeugung/neubau-und-projekte/gas-und-dampfturbinenanlage-gud-altbach-deizisau/"
        }
       ],
@@ -53,9 +4805,9 @@
        "source_url": "https://www.enbw.com/company/investors/share/",
        "ticker": "EBK"
       },
-      "reviewer": "Claude (agent), 12 Nov 2026",
+      "reviewer": "engine (batch 2026-11-enbw-project-pages)",
       "stake": {
-       "note": "Company page states EnBW builds the plant; percentage not stated by the company (GEM lists 100%)",
+       "note": "Not stated in the document",
        "value": null
       },
       "verified_at": "2026-11-12"
@@ -106,6 +4858,18 @@
      ],
      "type": "E1",
      "verification": {
+      "batch": "2026-11-enbw-project-pages",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": null,
+       "joint_venture": false,
+       "mw": 675.0,
+       "name": "Heilbronn power station",
+       "section": "Under construction or development"
+      },
+      "exposure_type": "direct",
       "identity": {
        "checked_at": "2026-11-12",
        "id": "529900JSFZ4TS59HKD79",
@@ -114,11 +4878,16 @@
        "source_url": "https://api.gleif.org/api/v1/lei-records/529900JSFZ4TS59HKD79",
        "status": "ACTIVE"
       },
+      "internal_only": [],
       "link": [
        {
-        "proves": "EnBW is building the 675 MW Heilbronn CCGT plant; groundbreaking 23 Feb 2024; commissioning expected 2027",
-        "quote": "EnBW is building a controllable, hydrogen-ready combined cycle gas turbine (CCGT) plant at the site.",
+        "document_date": "2026-08-31",
+        "edge": null,
+        "proves": "EnBW names Heilbronn power station",
+        "publisher": "EnBW",
+        "quote": "Fuel Switch The project EnBW is consistently continuing the decarbonization of its generation portfolio with the expansion of renewable energies. Due to legal requirements, all coal power plants in Germany must also be shut down by no later than 2038, including the plant in Heilbronn. The most important consideration in the region, however, is guaranteeing security of supply for electricity and district heating, which is why EnBW is building a controllable, hydrogen-ready combined cycle gas turbine (CCGT) plant at the site: The new, gas-fired plant has an electrical output of 675 megawatts (MW",
         "retrieved_at": "2026-11-12",
+        "sha256": "eddbfa468340d85aa9a64b4959f7330e3cefbb2998b416d6156a2242fdbf3879",
         "url": "https://www.enbw.com/company/topics/coal-phaseout/heilbronn-combined-heat-and-power-plant/"
        }
       ],
@@ -129,9 +4898,9 @@
        "source_url": "https://www.enbw.com/company/investors/share/",
        "ticker": "EBK"
       },
-      "reviewer": "Claude (agent), 12 Nov 2026",
+      "reviewer": "engine (batch 2026-11-enbw-project-pages)",
       "stake": {
-       "note": "Company page states EnBW builds the plant; percentage not stated by the company (GEM lists 100%)",
+       "note": "Not stated in the document",
        "value": null
       },
       "verified_at": "2026-11-12"
@@ -182,6 +4951,16 @@
      ],
      "type": "E1",
      "verification": {
+      "batch": "manual-2026-11-12",
+      "category": "A",
+      "company_states_interest": true,
+      "document_row": {
+       "cod": null,
+       "mw": 2313.5,
+       "name": "Rabigh 2 IPP Expansion Project",
+       "section": "Under construction or development"
+      },
+      "exposure_type": "direct",
       "identity": {
        "checked_at": "2026-11-12",
        "id": "558600Y0TFKRV2QZ1A74",
@@ -190,6 +4969,7 @@
        "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
        "status": "ACTIVE"
       },
+      "internal_only": [],
       "link": [
        {
         "proves": "ACWA Power holds a 40% equity stake in the 2,313.5 MW Rabigh 2 IPP Expansion Project (PPA signed 16 Apr 2026)",
@@ -238,6 +5018,124 @@
    "stage": "Under construction",
    "units": 1,
    "wiki": "https://www.gem.wiki/Rabigh_2_IPP_power_station"
+  },
+  {
+   "cc": "US",
+   "cost": {
+    "amount": 1500000000.0,
+    "basis": "company estimate",
+    "currency": "USD",
+    "quote": "expected to cost $1.5 billion",
+    "source": "https://www.sec.gov/Archives/edgar/data/715957/000119312526063120/d-20251231.htm"
+   },
+   "country": "United States",
+   "expected_year": 2029,
+   "exposures": [
+    {
+     "cik": "0000715957",
+     "edge_sources": [
+      {
+       "imputed": false,
+       "parent": "E100000001193",
+       "source_url": "https://search.gleif.org/#/record/ILUL7B6Z54MRYCF6H308,https://www.epa.gov/ghgreporting/data-sets,https://s2.q4cdn.com/510812146/files/doc_financials/2025/ar/Dominion-Energy-2025-Proxy-Statement-1.pdf",
+       "stake": 100.0
+      }
+     ],
+     "effective_stake": 100.0,
+     "hq_country": "United States",
+     "lei": "ILUL7B6Z54MRYCF6H308",
+     "listed_entity_id": "E100000001193",
+     "listed_name": "Dominion Energy",
+     "owner": "Virginia Electric and Power Co",
+     "owner_match": "id",
+     "owner_stake": 100.0,
+     "path": [
+      "E100000004306",
+      "E100000001193"
+     ],
+     "path_edges": [
+      [
+       "E100000004306",
+       "E100000001193"
+      ]
+     ],
+     "path_names": [
+      "Virginia Electric and Power",
+      "Dominion Energy"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "2026-11-dominion-10k",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": {
+       "amount": 1500000000.0,
+       "basis": "company estimate",
+       "currency": "USD",
+       "quote": "expected to cost $1.5 billion"
+      },
+      "document_row": {
+       "cod": null,
+       "joint_venture": false,
+       "mw": 944.0,
+       "name": "Chesterfield Energy Reliability Center",
+       "section": "Under construction or development"
+      },
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-12",
+       "id": "ILUL7B6Z54MRYCF6H308",
+       "legal_name": "DOMINION ENERGY, INC.",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/ILUL7B6Z54MRYCF6H308"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-02-23",
+        "edge": null,
+        "proves": "Dominion Energy, Inc. (Form 10-K, FY2025) names Chesterfield Energy Reliability Center",
+        "publisher": "Dominion Energy, Inc. (Form 10-K, FY2025)",
+        "quote": "Significant projects under construction or development as well as significant projects under consideration are set forth below: • Virginia Power plans to invest approximately $6.9 billion from 2026 through 2030 to acquire or construct several solar facilities to serve utility customers. See Notes 10 and 13 to the Consolidated Financial Statements for additional information. • Virginia Power plans to invest approximately $2.0 billion from 2026 to 2030 to develop battery-storage facilities to serve utility customers. • Virginia Power has received approval to construct and operate the Chesterfiel",
+        "retrieved_at": "2026-11-12",
+        "sha256": "cbbdfb7a9db2a2fcd03ee03f8f7971226e1fe3200cb7326e5c6c88ea8b743a2a",
+        "url": "https://www.sec.gov/Archives/edgar/data/715957/000119312526063120/d-20251231.htm"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-12",
+       "cik": 715957,
+       "exchange": "NYSE",
+       "source_url": "https://data.sec.gov/submissions/CIK0000715957.json",
+       "ticker": "D"
+      },
+      "reviewer": "engine (batch 2026-11-dominion-10k)",
+      "stake": {
+       "note": "Not stated in the document",
+       "value": null
+      },
+      "verified_at": "2026-11-12"
+     }
+    }
+   ],
+   "id": "gem:L100001026043",
+   "kind": "Oil & gas",
+   "lat": 37.3823521,
+   "lon": -77.3804614,
+   "mw": 1000.0,
+   "name": "Chesterfield Energy Reliability Center",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Pre-construction",
+   "units": 4,
+   "wiki": "https://www.gem.wiki/Chesterfield_Energy_Reliability_Center"
   }
  ],
  "schema": "investedia.projects.invest.v1"

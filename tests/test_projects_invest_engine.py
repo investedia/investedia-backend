@@ -48,6 +48,16 @@ class Engine(unittest.TestCase):
         self.assertEqual(classify(proj('Alpha'), e, row, 'exact', dict(DOC, kind='news'), TODAY)[0], 'C')
         self.assertEqual(classify(proj('Alpha'), e, row, 'exact', dict(DOC, kind='regulator'), TODAY)[0], 'B')
 
+    def test_rows_without_pipeline_evidence_are_not_verified(self):
+        row = {'doc_name': 'Alpha', 'pct': 40.0, 'mw': 100.0, 'cod': None, 'section': None}
+        self.assertEqual(classify(proj('Alpha'), {'effective_stake': None}, row, 'exact', DOC, TODAY)[0], 'C')
+        self.assertEqual(classify(proj('Alpha'), {'effective_stake': None}, dict(row, section='Under construction'), 'exact', DOC, TODAY)[0], 'A')
+
+    def test_section_windows_skip_operating_tables(self):
+        text = 'Operating plants\nWaiawa US-HI Solar 30  75  % 2025\nThe following table lists our plants under construction:\nKeydet US-VA Solar 62  75  % 1H 2026\n5,502\nLater US-TX Solar 9  75  % 2025\n'
+        spec = {'row': r'^(?P<name>[A-Z][a-z]+) (?P<loc>US-[A-Z]{2}) (?P<tech>Solar) (?P<mw>[\d,]+)\s+(?P<pct>\d+)\s+%', 'section_start': 'plants under construction', 'section_end': r'^\d{1,3}(,\d{3})*$'}
+        self.assertEqual([r['doc_name'] for r in extract.table(text, spec)], ['Keydet'])
+
     def test_half_year_dates(self):
         self.assertEqual(quarter_end('2H 2026').month, 12)
         self.assertEqual(quarter_end('2H 2027 - 1H 2028').year, 2027)
@@ -77,6 +87,14 @@ class Engine(unittest.TestCase):
         self.assertEqual(hit['mw'], 675.0)
         self.assertIsNone(extract.prose_for('Heilbronn is a city. ' + 'Filler. ' * 10 + 'EnBW is building elsewhere.', 'Heilbronn power station', core, ['EnBW']))
         self.assertIsNone(extract.prose_for('Heilbronn plant, operated by EnBW, 675 MW.', 'Heilbronn power station', core, ['EnBW']))
+
+
+class Listing(unittest.TestCase):
+    def test_only_public_common_equity_counts(self):
+        from tools.projects.invest.engine.route_b_us import equity_issuer
+        self.assertIsNone(equity_issuer({'category': 'Non-accelerated filer', 'tickers': ['TVE'], 'exchanges': ['NYSE']}))  # TVA power bonds
+        self.assertIsNone(equity_issuer({'category': '', 'tickers': ['EMP'], 'exchanges': ['NYSE']}))  # utility first-mortgage bonds
+        self.assertEqual(equity_issuer({'category': 'Large accelerated filer', 'tickers': ['DTE', 'DTW'], 'exchanges': ['NYSE', 'NYSE']}), ('DTE', 'NYSE'))
 
 
 if __name__ == '__main__':

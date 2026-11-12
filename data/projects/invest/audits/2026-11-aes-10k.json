@@ -1,0 +1,37 @@
+{
+ "batch": "2026-11-aes-10k",
+ "auditor": "Claude (manual read of each passage)",
+ "date": "2026-11-12",
+ "sample": "all A records (100%)",
+ "checked": 4,
+ "correct": 4,
+ "false_positives": 0,
+ "false_positives_before_fix": {
+  "count": 3,
+  "of": 7,
+  "cause": "rows from the operating-plants table matched (Waiawa Phase 2, Andes Solar 2a, Vientos Bonaerenses); fixed by declared pipeline sections and the rule that a row needs a future start date or pipeline section"
+ },
+ "note": "Bellefield 2 (500 MW solar + 500 MW storage, 75%, 2H 2026), Armadillo, Halifax, Baldy Mesa: under-construction table of the FY2025 10-K.",
+ "items": [
+  {
+   "key": "eia:69197|lei:2NUNNB7D43COUIRE5295",
+   "proves": "The AES Corporation (Form 10-K, FY2025) names Halifax with a 75.0% interest",
+   "result": "correct"
+  },
+  {
+   "key": "eia:64349|lei:2NUNNB7D43COUIRE5295",
+   "proves": "The AES Corporation (Form 10-K, FY2025) names Armadillo with a 75.0% interest",
+   "result": "correct"
+  },
+  {
+   "key": "eia:64209|lei:2NUNNB7D43COUIRE5295",
+   "proves": "The AES Corporation (Form 10-K, FY2025) names Bellefield 2 with a 75.0% interest",
+   "result": "correct"
+  },
+  {
+   "key": "eia:69964|lei:2NUNNB7D43COUIRE5295",
+   "proves": "The AES Corporation (Form 10-K, FY2025) names Baldy Mesa Energy Storage with a 75.0% interest",
+   "result": "correct"
+  }
+ ]
+}

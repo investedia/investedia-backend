@@ -1,0 +1,173 @@
+{
+ "batch": "2026-11-aes-10k",
+ "run_at": "2026-11-12",
+ "company": "AES Corporation",
+ "documents": [
+  {
+   "url": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000063/aes-20251231.htm",
+   "sha256": "5592ecb1ba2daaacfc5e277ed3162a17381a632e303cb11715860b65c53da1a4",
+   "date": "2026-03-02",
+   "kind": "company",
+   "rows": 19
+  }
+ ],
+ "candidates": 11,
+ "categories": {
+  "A": 4,
+  "C": 7
+ },
+ "verified_written": 4,
+ "yield_pct": 36.4,
+ "unresolved_reasons": {
+  "document lists phases (Vientos Bonaerenses 3 and 4); the GEM plant must be split by phase first": 1,
+  "capacity differs": 6
+ },
+ "internal_only": 0,
+ "cost": {
+  "seconds": 0.7,
+  "documents": 1,
+  "bytes": 6595755
+ },
+ "audit_sample": [
+  {
+   "project": "Bellefield 2 Solar & Energy Storage Farm",
+   "id": "eia:64209",
+   "document_row": "Bellefield 2",
+   "stake": 75.0,
+   "passage": "Bellefield 2 US-CA Solar 500  75  % 2H 2026"
+  },
+  {
+   "project": "Armadillo Solar Center",
+   "id": "eia:64349",
+   "document_row": "Armadillo",
+   "stake": 75.0,
+   "passage": "Armadillo US-TX Solar 200  75  % 1H 2026"
+  },
+  {
+   "project": "Baldy Mesa Storage",
+   "id": "eia:69964",
+   "document_row": "Baldy Mesa Energy Storage",
+   "stake": 75.0,
+   "passage": "Baldy Mesa Energy Storage US-CA Energy Storage 50  75  % 1H 2027"
+  },
+  {
+   "project": "Halifax County Solar",
+   "id": "eia:69197",
+   "document_row": "Halifax",
+   "stake": 75.0,
+   "passage": "Halifax US-NC Solar 80  75  % 1H 2026"
+  }
+ ],
+ "results": [
+  {
+   "project": "eia:64349",
+   "name": "Armadillo Solar Center",
+   "category": "A",
+   "reasons": [
+    "named in the company publication with 75.0%"
+   ],
+   "stake": 75.0,
+   "internal_only": []
+  },
+  {
+   "project": "eia:69964",
+   "name": "Baldy Mesa Storage",
+   "category": "A",
+   "reasons": [
+    "named in the company publication with 75.0%"
+   ],
+   "stake": 75.0,
+   "internal_only": []
+  },
+  {
+   "project": "eia:64209",
+   "name": "Bellefield 2 Solar & Energy Storage Farm",
+   "category": "A",
+   "reasons": [
+    "named in the company publication with 75.0%"
+   ],
+   "stake": 75.0,
+   "internal_only": []
+  },
+  {
+   "project": "eia:69197",
+   "name": "Halifax County Solar",
+   "category": "A",
+   "reasons": [
+    "named in the company publication with 75.0%"
+   ],
+   "stake": 75.0,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001045253",
+   "name": "Antofagasta Oasis de Atacama solar farm",
+   "category": "C",
+   "reasons": [
+    "capacity differs: document 250.0 MW vs GEM 550.0 MW"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000832107",
+   "name": "Cristales solar farm",
+   "category": "C",
+   "reasons": [
+    "capacity differs: document 627.0 MW vs GEM 379.0 MW"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "eia:66441",
+   "name": "Crossvine Solar",
+   "category": "C",
+   "reasons": [
+    "capacity differs: document 170.0 MW vs GEM 100.0 MW"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001045252",
+   "name": "Elena Oasis de Atacama solar farm",
+   "category": "C",
+   "reasons": [
+    "capacity differs: document 250.0 MW vs GEM 446.0 MW"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000832222",
+   "name": "Pampas Hybrid solar farm",
+   "category": "C",
+   "reasons": [
+    "capacity differs: document 697.0 MW vs GEM 252.0 MW"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000921869",
+   "name": "Pampas Hybrid wind farm",
+   "category": "C",
+   "reasons": [
+    "capacity differs: document 697.0 MW vs GEM 140.0 MW"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000904954",
+   "name": "Vientos Bonaerenses wind farm",
+   "category": "C",
+   "reasons": [
+    "document lists phases (Vientos Bonaerenses 3 and 4); the GEM plant must be split by phase first"
+   ],
+   "stake": null,
+   "internal_only": []
+  }
+ ]
+}

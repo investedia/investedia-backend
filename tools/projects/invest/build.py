@@ -136,7 +136,7 @@ def build(power_rows, iso, registry, ledger, today, extra=()):
     public.sort(key=lambda p: (-len(p['exposures']), p['id'].startswith('gem:')))
     kept = []
     for p in public:
-        dup = next((k for k in kept if k['kind'] == p['kind'] and km(k, p) < 2.0), None)
+        dup = next((k for k in kept if k['kind'] == p['kind'] and k['id'].split(':')[0] != p['id'].split(':')[0] and km(k, p) < 2.0), None)  # same plant in GEM and EIA; never merge within one source
         if dup:
             dup.setdefault('also_listed_as', []).append(p['id'])
             seen = {e['listed_entity_id'] for e in dup['exposures']}
@@ -150,6 +150,12 @@ def build(power_rows, iso, registry, ledger, today, extra=()):
               'candidate_listed_companies': len(companies), 'top_candidate_companies': companies.most_common(25),
               'missing_country_code': sum(1 for r in research if not r['cc']), 'sources': SOURCES,
               'notice': 'Candidates are not verified. Only public_projects are shown. Not investment advice.'}
+    from .engine.classify import quarter_end
+    for p in public:  # an expected date that has passed means the stage needs a fresh source; flag, never guess
+        cods = [e['verification'].get('document_row', {}).get('cod') for e in p['exposures']]
+        due = [c for c in cods if c and quarter_end(c) < date.fromisoformat(today)]
+        if due:
+            p['stage_note'] = 'Expected %s according to the source; current status to be re-checked' % due[0]
     cats = Counter(e['verification'].get('category', 'A') for p in public for e in p['exposures'])
     report['public_by_category'] = dict(cats)
     report['public_by_sector_kind'] = dict(Counter(p['kind'] for p in public))

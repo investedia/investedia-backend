@@ -61,6 +61,26 @@ def parent_of(lei, rel):
         return None
 
 
+EQUITY_FILERS = ('Large accelerated filer', 'Accelerated filer')
+
+
+def equity_issuer(sub):
+    """SEC filer status 'large accelerated' or 'accelerated' requires publicly held common equity
+    (public float). Debt-only or preferred-only issuers (e.g. TVA power bonds, utility first-mortgage
+    bonds) do not qualify. Returns (ticker, exchange) of the primary listing or None."""
+    if not sub or sub.get('category') not in EQUITY_FILERS or not sub.get('tickers'):
+        return None
+    return sub['tickers'][0], sub['exchanges'][0]
+
+
+def sec_sub(cik):
+    try:
+        path, _, _ = fetch.fetch('https://data.sec.gov/submissions/CIK%010d.json' % int(cik))
+        return json.loads(Path(path).read_text())
+    except Exception:
+        return None
+
+
 def run(monthly, annual, today):
     m = pd.read_excel(monthly, sheet_name='Planned', header=2)
     m = m[pd.to_numeric(m['Plant ID'], errors='coerce').notna()].copy()
@@ -122,20 +142,27 @@ def run(monthly, annual, today):
                 continue
             ent = hit['attributes']['entity']['legalName']['name']
             chain = [{'lei': hit['id'], 'name': ent}]
-            listed = sec_by_key.get(key(ent))
-            if not listed:
-                for rel in ('direct-parent', 'ultimate-parent'):
-                    par = parent_of(hit['id'], rel)
-                    if par and par['id'] != chain[-1]['lei']:
-                        chain.append({'lei': par['id'], 'name': par['attributes']['entity']['legalName']['name'], 'relationship': rel})
-                for c in chain[1:]:
-                    listed = sec_by_key.get(key(c['name'])) or ([listings[c['lei']]] if c['lei'] in listings else None)
-                    if listed:
-                        chain = chain[:chain.index(c) + 1]
-                        break
-            if not listed or len(listed) != 1 and len({x['cik'] for x in listed}) != 1:
+            for rel in ('direct-parent', 'ultimate-parent'):
+                par = parent_of(hit['id'], rel)
+                if par and par['id'] not in [c['lei'] for c in chain]:
+                    chain.append({'lei': par['id'], 'name': par['attributes']['entity']['legalName']['name'], 'relationship': rel})
+            # The investable security is the group's top-most company with public common equity.
+            L = None
+            for c in reversed(chain):
+                cands = sec_by_key.get(key(c['name'])) or []
+                if len({x['cik'] for x in cands}) == 1:
+                    eq = equity_issuer(sec_sub(cands[0]['cik']))
+                    if eq:
+                        L = {'cik': cands[0]['cik'], 'name': cands[0]['name'], 'ticker': eq[0], 'exchange': eq[1],
+                             'filer_status': 'SEC accelerated or large accelerated filer (public common equity)'}
+                elif c['lei'] in listings:
+                    L = listings[c['lei']]
+                if L:
+                    chain = chain[:chain.index(c) + 1]
+                    break
+            if not L:
+                stats['owner identified but no company with public common equity'] += 1
                 continue
-            L = listed[0]
             verified.append({'owner': o, 'chain': chain, 'listing': L})
         if not verified:
             rec['route_b'] = {'category': 'C', 'reason': 'owner has no exact registry identity or no currently listed parent'}
@@ -161,13 +188,16 @@ def run(monthly, annual, today):
             for a, b in zip(chain, chain[1:]):
                 evidence.append({'url': 'https://api.gleif.org/api/v1/lei-records/%s/%s' % (a['lei'], b['relationship']), 'publisher': 'GLEIF', 'document_date': today,
                                  'proves': '%s reports %s as its %s' % (a['name'], b['name'], b['relationship'].replace('-', ' ')), 'retrieved_at': today, 'edge': [a['lei'], b['lei']]})
-            evidence.append({'url': 'https://www.sec.gov/files/company_tickers_exchange.json', 'publisher': 'U.S. SEC', 'document_date': today,
-                             'proves': '%s is currently listed: %s on %s (CIK %s)' % (L['name'], L['ticker'], L['exchange'], L.get('cik')), 'retrieved_at': today})
+            evidence.append({'url': 'https://data.sec.gov/submissions/CIK%010d.json' % int(L['cik']) if L.get('cik') else L.get('source_url'), 'publisher': 'U.S. SEC', 'document_date': today,
+                             'proves': '%s has publicly traded common equity: %s on %s (CIK %s; %s)' % (L['name'], L['ticker'], L['exchange'], L.get('cik'), L.get('filer_status', 'verified listing')), 'retrieved_at': today})
             ledger['%s|%s' % (rec['id'], exposure['listed_entity_id'])] = {
                 'category': 'B', 'exposure_type': 'direct' if exposure['type'] == 'E1' else 'indirect',
                 'identity': {'scheme': 'LEI', 'id': chain[-1]['lei'], 'legal_name': chain[-1]['name'], 'source_url': 'https://api.gleif.org/api/v1/lei-records/' + chain[-1]['lei'], 'checked_at': today},
-                'listing': {'ticker': L['ticker'], 'exchange': L['exchange'], 'cik': L.get('cik'), 'source_url': 'https://www.sec.gov/files/company_tickers_exchange.json', 'checked_at': today},
-                'link': evidence, 'stake': {'value': o['stake'], 'note': 'EIA-860 Schedule 4 percentage' if o['stake'] is not None else 'Not stated by EIA (sole owner by reporting rule; no percentage published)'},
+                'listing': {'ticker': L['ticker'], 'exchange': L['exchange'], 'cik': L.get('cik'), 'source_url': 'https://data.sec.gov/submissions/CIK%010d.json' % int(L['cik']) if L.get('cik') else L.get('source_url'), 'checked_at': today},
+                'link': evidence,
+                'stake': ({'value': o['stake'], 'note': 'EIA-860 Schedule 4 percentage'} if len(chain) == 1 and o['stake'] is not None else
+                          {'value': None, 'note': ('%s holds %s%% (EIA-860 Schedule 4); %s\'s effective share is not published' % (o['name'], o['stake'], L['name'])) if o['stake'] is not None
+                           else 'Not stated by EIA (sole owner by reporting rule; no percentage published)'}),
                 'internal_only': safeguards(exposure), 'company_states_interest': False, 'batch': 'route-b-us-2026-11', 'reviewer': 'engine (route B, US)', 'verified_at': today}
         records.append(rec)
     return records, ledger, stats

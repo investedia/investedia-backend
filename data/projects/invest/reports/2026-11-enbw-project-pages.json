@@ -30,7 +30,7 @@
  },
  "internal_only": 0,
  "cost": {
-  "seconds": 0.1,
+  "seconds": 0.2,
   "documents": 2,
   "bytes": 599093
  },

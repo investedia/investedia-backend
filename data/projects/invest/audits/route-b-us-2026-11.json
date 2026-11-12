@@ -1,0 +1,137 @@
+{
+ "batch": "route-b-us-2026-11",
+ "auditor": "Claude (manual check of every chain)",
+ "date": "2026-11-12",
+ "sample": "all B records (100%)",
+ "checked": 24,
+ "correct": 24,
+ "false_positives": 0,
+ "false_positives_before_fix": {
+  "count": 10,
+  "of": 28,
+  "cause": "SEC ticker list includes bonds and preferred shares: TVA power bonds (TVE), Entergy Mississippi bonds (EMP), Entergy Texas preferred (ETI-P). Fixed: top-most group company with public common equity (SEC accelerated filer) only."
+ },
+ "held_internal": "Brookfield Corporation via TerraForm Power: consolidating parent is an asset manager; owner decision keeps bank/fund links internal.",
+ "items": [
+  {
+   "key": "eia:55478|lei:3MGELCRSTNSAMJ962671",
+   "proves": "EIA-860M lists Lange Generating Station (plant 55478) as planned, status V, reported by Black Hills Power, Inc. / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Black Hills Power, Inc. owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity BLACK HILLS POWER, INC., LEI 549300WSKCZZU2LB2X28 / BLACK HILLS POWER, INC. reports BLACK HILLS CORPORATION as its direct parent / BLACK HILLS CORP /SD/ has publicly traded common equity: BKH on NYSE (CIK 1130464; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:59971|lei:98TPTUM4IVMFCZBCUR27",
+   "proves": "EIA-860M lists Easter (plant 59971) as planned, status V, reported by Enbridge Wind (Easter), LLC / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Enbridge Wind (Easter), LLC owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity ENBRIDGE WIND (EASTER), LLC, LEI 254900QVKHG1RMI4RZ32 / ENBRIDGE WIND (EASTER), LLC reports ENBRIDGE (U.S.) INC. as its direct parent / ENBRIDGE (U.S.) INC. reports Enbridge Inc. as its ultimate parent / ENBRIDGE INC has publicly traded common equity: ENB on NYSE (CIK 895728; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:60272|lei:98TPTUM4IVMFCZBCUR27",
+   "proves": "EIA-860M lists Cone Renewable Energy Project, LLC (plant 60272) as planned, status L, reported by Cone Renewable Energy Project, LLC / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Cone Renewable Energy Project, LLC owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity Cone Renewable Energy Project, LLC, LEI 254900QG97NZ1R6IXT76 / Cone Renewable Energy Project, LLC reports ENBRIDGE (U.S.) INC. as its direct parent / ENBRIDGE (U.S.) INC. reports Enbridge Inc. as its ultimate parent / ENBRIDGE INC has publicly traded common equity: ENB on NYSE (CIK 895728; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:60434|lei:I1BZKREC126H0VB1BL91",
+   "proves": "EIA-860M lists Baxter Creek Solar (plant 60434) as planned, status V, reported by Duke Energy Carolinas, LLC / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Duke Energy Carolinas, LLC owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity Duke Energy Carolinas, LLC, LEI MWIUSDMN17TCR56VW396 / Duke Energy Carolinas, LLC reports DUKE ENERGY CORPORATION as its direct parent / Duke Energy CORP has publicly traded common equity: DUK on NYSE (CIK 1326160; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:63193|lei:549300KP43CPCUJOOG15",
+   "proves": "EIA-860M lists Alira (plant 63193) as planned, status L, reported by Luminant Generation Company LLC / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Luminant Generation Company LLC owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity LUMINANT GENERATION COMPANY LLC, LEI 549300FLGTCZR4C2RX49 / LUMINANT GENERATION COMPANY LLC reports VISTRA CORP. as its ultimate parent / Vistra Corp. has publicly traded common equity: VST on NYSE (CIK 1692819; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:64550|lei:ILUL7B6Z54MRYCF6H308",
+   "proves": "EIA-860M lists Coastal Virginia Offshore Wind (CVOW) Commercial Project (plant 64550) as planned, status U, reported by Dominion Energy Inc. / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Dominion Energy Inc. owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity Dominion Energy, Inc., LEI ILUL7B6Z54MRYCF6H308 / DOMINION ENERGY, INC has publicly traded common equity: D on NYSE (CIK 715957; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:65043|lei:ILUL7B6Z54MRYCF6H308",
+   "proves": "EIA-860M lists Dulles Solar and Storage (plant 65043) as planned, status V, reported by Dominion Energy Inc. / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Dominion Energy Inc. owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity Dominion Energy, Inc., LEI ILUL7B6Z54MRYCF6H308 / DOMINION ENERGY, INC has publicly traded common equity: D on NYSE (CIK 715957; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:65301|lei:C6J3FGIWG6MBDGTE8F80",
+   "proves": "EIA-860M lists Steward Creek Solar Phase 1 (plant 65301) as planned, status P, reported by TerraForm Power Operating, LLC / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity TerraForm Power Operating, LLC owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity TERRAFORM POWER OPERATING, LLC, LEI 5493000S2OLR3UT5BE13 / TERRAFORM POWER OPERATING, LLC reports TERRAFORM POWER, LLC as its direct parent / TERRAFORM POWER, LLC reports BROOKFIELD CORPORATION as its ultimate parent / BROOKFIELD Corp /ON/ has publicly traded common equity: BN on NYSE (CIK 1001085; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct relationship, kept internal"
+  },
+  {
+   "key": "eia:66312|lei:ILUL7B6Z54MRYCF6H308",
+   "proves": "EIA-860M lists Courthouse Solar (plant 66312) as planned, status U, reported by Dominion Energy Inc. / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Dominion Energy Inc. owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity Dominion Energy, Inc., LEI ILUL7B6Z54MRYCF6H308 / DOMINION ENERGY, INC has publicly traded common equity: D on NYSE (CIK 715957; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:66313|lei:ILUL7B6Z54MRYCF6H308",
+   "proves": "EIA-860M lists Moon Corner Solar (plant 66313) as planned, status U, reported by Dominion Energy Inc. / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Dominion Energy Inc. owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity Dominion Energy, Inc., LEI ILUL7B6Z54MRYCF6H308 / DOMINION ENERGY, INC has publicly traded common equity: D on NYSE (CIK 715957; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:66315|lei:ILUL7B6Z54MRYCF6H308",
+   "proves": "EIA-860M lists Clover Creek Solar (plant 66315) as planned, status U, reported by Dominion Energy Inc. / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Dominion Energy Inc. owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity Dominion Energy, Inc., LEI ILUL7B6Z54MRYCF6H308 / DOMINION ENERGY, INC has publicly traded common equity: D on NYSE (CIK 715957; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:66621|lei:4XM3TW50JULSLG8BNC79",
+   "proves": "EIA-860M lists Orange County Advanced Power Station (plant 66621) as planned, status TS, reported by Entergy Texas Inc. / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Entergy Texas Inc. owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity ENTERGY TEXAS, INC., LEI LWXX58X12AJXISQ28573 / ENTERGY TEXAS, INC. reports ENTERGY CORPORATION as its direct parent / ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:67755|lei:549300IX8SD6XXD71I78",
+   "proves": "EIA-860M lists Little Trout Solar (plant 67755) as planned, status TS, reported by DTE Electric Company / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity DTE Electric Company owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity DTE Electric Company, LEI 9N0FWODEJVKHC2DYLO03 / DTE Electric Company reports DTE ENERGY COMPANY as its direct parent / DTE ENERGY CO has publicly traded common equity: DTE on NYSE (CIK 936340; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:67759|lei:549300IX8SD6XXD71I78",
+   "proves": "EIA-860M lists Trenton Channel Energy Center (plant 67759) as planned, status TS, reported by DTE Electric Company / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity DTE Electric Company owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity DTE Electric Company, LEI 9N0FWODEJVKHC2DYLO03 / DTE Electric Company reports DTE ENERGY COMPANY as its direct parent / DTE ENERGY CO has publicly traded common equity: DTE on NYSE (CIK 936340; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:67914|lei:4XM3TW50JULSLG8BNC79",
+   "proves": "EIA-860M lists Delta Blues Advanced Power Station (plant 67914) as planned, status L, reported by Entergy Mississippi LLC / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Entergy Mississippi LLC owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity ENTERGY MISSISSIPPI, LLC, LEI 54930043I78H35DVVW89 / ENTERGY MISSISSIPPI, LLC reports ENTERGY CORPORATION as its direct parent / ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68028|lei:4XM3TW50JULSLG8BNC79",
+   "proves": "EIA-860M lists Delta Solar Plant (plant 68028) as planned, status P, reported by Entergy Mississippi LLC / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Entergy Mississippi LLC owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity ENTERGY MISSISSIPPI, LLC, LEI 54930043I78H35DVVW89 / ENTERGY MISSISSIPPI, LLC reports ENTERGY CORPORATION as its direct parent / ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68029|lei:4XM3TW50JULSLG8BNC79",
+   "proves": "EIA-860M lists Penton Solar Plant (plant 68029) as planned, status P, reported by Entergy Mississippi LLC / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Entergy Mississippi LLC owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity ENTERGY MISSISSIPPI, LLC, LEI 54930043I78H35DVVW89 / ENTERGY MISSISSIPPI, LLC reports ENTERGY CORPORATION as its direct parent / ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68053|lei:4XM3TW50JULSLG8BNC79",
+   "proves": "EIA-860M lists Legend Power Station (plant 68053) as planned, status L, reported by Entergy Texas Inc. / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Entergy Texas Inc. owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity ENTERGY TEXAS, INC., LEI LWXX58X12AJXISQ28573 / ENTERGY TEXAS, INC. reports ENTERGY CORPORATION as its direct parent / ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68214|lei:4XM3TW50JULSLG8BNC79",
+   "proves": "EIA-860M lists Franklin Farms 1&2 (plant 68214) as planned, status L, reported by Entergy Louisiana LLC / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Entergy Louisiana LLC owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity ENTERGY LOUISIANA, LLC, LEI 0V5453U14HDZO63CGH17 / ENTERGY LOUISIANA, LLC reports ENTERGY CORPORATION as its direct parent / ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68294|lei:549300PGTHDQY6PSUI61",
+   "proves": "EIA-860M lists Viola Generating Station (plant 68294) as planned, status T, reported by Evergy Kansas Central, Inc / EIA-860 2024 Schedule 4 lists Evergy Missouri West as owner (50.0%) / Legal entity EVERGY MISSOURI WEST, INC., LEI EZIFUDC0VSUS6T6LCG85 / EVERGY MISSOURI WEST, INC. reports Evergy, Inc. as its direct parent / Evergy, Inc. has publicly traded common equity: EVRG on Nasdaq (CIK 1711269; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68295|lei:549300PGTHDQY6PSUI61",
+   "proves": "EIA-860M lists McNew Generating Station (plant 68295) as planned, status T, reported by Evergy Kansas Central, Inc / EIA-860 2024 Schedule 4 lists Evergy Missouri West as owner (50.0%) / Legal entity EVERGY MISSOURI WEST, INC., LEI EZIFUDC0VSUS6T6LCG85 / EVERGY MISSOURI WEST, INC. reports Evergy, Inc. as its direct parent / Evergy, Inc. has publicly traded common equity: EVRG on Nasdaq (CIK 1711269; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68296|lei:549300PGTHDQY6PSUI61",
+   "proves": "EIA-860M lists Mullin Creek #1 Generating Station (plant 68296) as planned, status T, reported by Evergy Missouri West / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Evergy Missouri West owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity EVERGY MISSOURI WEST, INC., LEI EZIFUDC0VSUS6T6LCG85 / EVERGY MISSOURI WEST, INC. reports Evergy, Inc. as its direct parent / Evergy, Inc. has publicly traded common equity: EVRG on Nasdaq (CIK 1711269; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:68850|lei:549300IX8SD6XXD71I78",
+   "proves": "EIA-860M lists Gratiot Solar Park (plant 68850) as planned, status TS, reported by DTE Electric Company / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity DTE Electric Company owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity DTE Electric Company, LEI 9N0FWODEJVKHC2DYLO03 / DTE Electric Company reports DTE ENERGY COMPANY as its direct parent / DTE ENERGY CO has publicly traded common equity: DTE on NYSE (CIK 936340; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  },
+  {
+   "key": "eia:69077|lei:4XM3TW50JULSLG8BNC79",
+   "proves": "EIA-860M lists Lone Star Power Station (plant 69077) as planned, status L, reported by Entergy Texas Inc. / EIA-860 2024 Schedule 4 lists no other owner, so the reporting entity Entergy Texas Inc. owns the generators (EIA instructions, Schedule 4 item 1) / Legal entity ENTERGY TEXAS, INC., LEI LWXX58X12AJXISQ28573 / ENTERGY TEXAS, INC. reports ENTERGY CORPORATION as its direct parent / ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
+   "result": "correct"
+  }
+ ]
+}

@@ -43,7 +43,10 @@
     "type": "table",
     "row": "^(?P<name>[A-Z][A-Za-z0-9&().' \\-]+?) (?P<loc>US-[A-Z]{2}|US-Various|Chile|Argentina|El Salvador|Panama|Dominican Republic|Colombia|Mexico|Bulgaria|Vietnam) (?P<tech>Solar|Wind|Energy Storage|Gas|Hydro) (?P<mw>[\\d,]+)\\s+(?P<pct>\\d{1,3})\\s+%",
     "continuation": "^(?P<tech>Energy Storage|Solar|Wind) (?P<mw>[\\d,]+)$",
-    "cod": "[12]H(?:-[12]H)? 20\\d\\d(?: - [12]H 20\\d\\d)?"
+    "cod": "[12]H(?:-[12]H)? 20\\d\\d(?: - [12]H 20\\d\\d)?",
+    "section_start": "table lists our plants under construction",
+    "section_end": "^\\d{1,3}(,\\d{3})*$",
+    "section": "Under construction"
    }
   }
  ],

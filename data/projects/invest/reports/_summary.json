@@ -12,6 +12,17 @@
    "audit": "10/10"
   },
   {
+   "batch": "2026-11-aes-10k",
+   "candidates": 11,
+   "categories": {
+    "A": 4,
+    "C": 7
+   },
+   "yield_pct": 36.4,
+   "seconds": 0.7,
+   "audit": "4/4"
+  },
+  {
    "batch": "2026-11-dominion-10k",
    "candidates": 25,
    "categories": {
@@ -19,7 +30,7 @@
     "A": 1
    },
    "yield_pct": 4.0,
-   "seconds": 3.0,
+   "seconds": 3.1,
    "audit": "1/1"
   },
   {
@@ -30,7 +41,7 @@
     "C": 18
    },
    "yield_pct": 10.0,
-   "seconds": 0.1,
+   "seconds": 0.2,
    "audit": "2/2"
   },
   {
@@ -54,18 +65,33 @@
    "yield_pct": 4.3,
    "seconds": 0.2,
    "audit": "1/1"
+  },
+  {
+   "batch": "route-b-us-2026-11",
+   "candidates": null,
+   "categories": {
+    "plants": 1021,
+    "C newer than ownership survey": 335,
+    "C no listed identity": 659,
+    "owner identified but no company with public common equity": 177,
+    "B plants": 24,
+    "C mixed owners": 3
+   },
+   "yield_pct": null,
+   "seconds": 152,
+   "audit": "24/24"
   }
  ],
  "unresolved": {
   "not named in the batch documents": 95,
-  "document lists phases": 11,
+  "document lists phases": 12,
+  "capacity differs": 9,
   "stake conflict": 3,
-  "capacity differs": 3,
   "prose passage states no capacity to confirm the project": 1,
   "name match is partial and capacity cannot confirm it": 1
  },
  "audit_total": {
-  "checked": 19,
-  "correct": 19
+  "checked": 47,
+  "correct": 47
  }
 }

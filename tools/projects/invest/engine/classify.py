@@ -4,10 +4,11 @@ A  company-confirmed: an official publication of the listed company (or its subs
    and the relationship. B  regulator-confirmed: a government source names the owner and official registries
    confirm the current listed parent. C  research candidate. D  contradicted.
 """
+import re
 from datetime import date
 
 FINANCIAL = ('bank', 'groep', 'blackstone', 'capital', 'fund', 'asset management', 'investment', 'insurance', 'kkr',
-             'macquarie group', 'allianz', 'bnp', 'hsbc', 'jpmorgan', 'mizuho', 'mitsubishi ufj', 'sumitomo mitsui')
+             'macquarie group', 'brookfield corp', 'brookfield asset', 'allianz', 'bnp', 'hsbc', 'jpmorgan', 'mizuho', 'mitsubishi ufj', 'sumitomo mitsui')
 MAX_DOC_AGE_DAYS = 548  # 18 months
 
 
@@ -52,6 +53,9 @@ def classify(project, exposure, row, match_kind, doc, today):
         return 'D', ['company start date %s is on or before the document date: operating, not pipeline' % row['cod']], None
     if (row.get('section') or '').lower().startswith(('in operation', 'power station', 'operating')):
         return 'D', ['company lists it as in operation'], None
+    pipeline_section = re.search(r'(?i)construction|backlog|development|pipeline|planned', row.get('section') or '')
+    if not row.get('cod') and not pipeline_section:
+        return 'C', ['document does not show that the project is in the pipeline (no future start date or pipeline section)'], None
     if doc['kind'] == 'company':
         return 'A', ['named in the company publication' + (' with %s%%' % row['pct'] if row.get('pct') is not None else '')], row.get('pct')
     if doc['kind'] == 'regulator':

@@ -11,14 +11,34 @@ def _num(s):
     return None if s in (None, '', '-') else float(s.replace(',', ''))
 
 
+def windows(lines, spec):
+    """Line indexes inside the declared pipeline sections (section_start ... section_end); all lines if none."""
+    if not spec.get('section_start'):
+        return set(range(len(lines)))
+    start, end = re.compile(spec['section_start'], re.I), re.compile(spec['section_end'])
+    keep, on = set(), False
+    for i, l in enumerate(lines):
+        if start.search(l):
+            on = True
+            continue
+        if on and end.match(l.strip()):
+            on = False
+        if on:
+            keep.add(i)
+    return keep
+
+
 def table(text, spec):
     lines = text.split('\n')
+    inside = windows(lines, spec)
     row = re.compile(spec['row'])
     out = []
     hits = []
     cont = re.compile(spec['continuation']) if spec.get('continuation') else None
     extra = {}
     for i, l in enumerate(lines):
+        if i not in inside:
+            continue
         for m in (row.finditer(l) if spec.get('multi') else [row.match(l)]):
             if m:
                 hits.append((i, m))
@@ -96,8 +116,9 @@ def prose_for(text, project_name, core, company_words=(), window=4):
         cost_v = {'amount': float(cost.group(2).replace(',', '')) * (1e9 if cost.group(3).lower() == 'billion' else 1e6),
                   'currency': 'USD' if '$' in cost.group(1) or 'USD' in cost.group(1) else 'EUR', 'basis': 'company estimate',
                   'quote': cost.group(0)} if cost else None
-        return {'doc_name': project_name, 'prose': True, 'cost': cost_v, 'pct': _num(pct.group(1).replace(',', '.')) if pct else None, 'mw': _num(mwv),
-                'cod': None, 'section': None, 'line': i + 1, 'passage': blob[:600]}
+        building = re.search(r'\b(is building|are building|we are building|to construct|construct and operate|is constructing|baut|errichtet)\b', s, re.I)
+        return {'doc_name': project_name, 'prose': True, 'cost': cost_v, 'stage_hint': 'Under construction or development' if building else None, 'pct': _num(pct.group(1).replace(',', '.')) if pct else None, 'mw': _num(mwv),
+                'cod': None, 'section': 'Under construction or development' if building else None, 'line': i + 1, 'passage': blob[:600]}
     return None
 
 
