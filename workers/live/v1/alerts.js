@@ -51,7 +51,7 @@ export function priceHit(alert, row) {
 export function alertsReady(env) { return env.ALERTS_ENABLED === 'true' && !!(env.SUPABASE_URL && env.SUPABASE_SERVICE_KEY && env.BREVO_API_KEY && env.BREVO_SENDER_EMAIL); }
 const pushReady = env => !!(env.VAPID_PUBLIC_KEY && env.VAPID_PRIVATE_KEY);
 function sb(env, path, init = {}) {
-  return fetch(env.SUPABASE_URL.replace(/\/$/, '') + '/rest/v1/' + path, { ...init, headers: { apikey: env.SUPABASE_SERVICE_KEY, ...(String(env.SUPABASE_SERVICE_KEY).startsWith('sb_') ? {} : { Authorization: 'Bearer ' + env.SUPABASE_SERVICE_KEY }),  // new sb_secret_ keys go in apikey only 'Content-Type': 'application/json', ...(init.headers || {}) } });
+  return fetch(env.SUPABASE_URL.replace(/\/$/, '') + '/rest/v1/' + path, { ...init, headers: { apikey: env.SUPABASE_SERVICE_KEY, ...(String(env.SUPABASE_SERVICE_KEY).startsWith('sb_') ? {} : { Authorization: 'Bearer ' + env.SUPABASE_SERVICE_KEY }), /* new sb_secret_ keys go in apikey only */ 'Content-Type': 'application/json', ...(init.headers || {}) } });
 }
 const get = (env, path) => sb(env, path).then(r => r.ok ? r.json() : []).catch(() => []);
 const inList = ids => '(' + ids.map(x => '"' + String(x).replace(/["\\]/g, '') + '"').join(',') + ')';
