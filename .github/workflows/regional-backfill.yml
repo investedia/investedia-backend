@@ -16,6 +16,15 @@ on:
       gemini_model:
         description: 'Optional exact successful hourly model; blank reads live/status model'
         default: ''
+      writer:
+        description: 'Which model writes (claude uses secret ANTHROPIC_API_KEY and leaves the Gemini quota to live news)'
+        type: choice
+        options: [gemini, claude-haiku-5-5]
+        default: gemini
+      max_usd:
+        description: 'Claude spending cap in US dollars (Claude writer only)'
+        default: '1'
+        required: true
       gemini_calls:
         description: 'Total article/repair call budget: 1–40'
         default: '20'
@@ -110,6 +119,9 @@ jobs:
           shutil.copyfile(matches[0], 'data/coverage/feed-inventory.json')
           PY
           fi
+      - name: Install the official Anthropic SDK (Claude writer only)
+        if: inputs.writer != 'gemini'
+        run: python -m pip install --disable-pip-version-check -q 'anthropic==2.8.0'
       - name: Stage or ingest the bounded recovery
         id: backfill
         working-directory: backend
@@ -122,12 +134,15 @@ jobs:
           BACKFILL_CALLS_INPUT: ${{ inputs.gemini_calls }}
           BACKFILL_BATCH_INPUT: ${{ inputs.batch_size }}
           BACKFILL_SOURCES_INPUT: ${{ inputs.sources }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY: ${{ inputs.writer == 'gemini' && secrets.GEMINI_API_KEY || '' }}
+          ANTHROPIC_API_KEY: ${{ inputs.writer != 'gemini' && secrets.ANTHROPIC_API_KEY || '' }}
+          WRITER: ${{ inputs.writer }}
+          MAX_USD: ${{ inputs.max_usd }}
           WORKER_URL: ${{ secrets.WORKER_URL }}
           NEWS_INGEST_TOKEN: ${{ secrets.NEWS_INGEST_TOKEN }}
           PIXABAY_KEY: ''
         run: >-
-          python tools/regional-backfill.py
+          python tools/regional-backfill.py --writer "$WRITER" --max-usd "$MAX_USD"
           --days "$BACKFILL_DAYS_INPUT" --confirm "$BACKFILL_CONFIRM_INPUT"
           --dry-run "$BACKFILL_DRY_RUN_INPUT" --connections-only "$BACKFILL_CONNECTIONS_INPUT"
           --inventory data/coverage/feed-inventory.json
