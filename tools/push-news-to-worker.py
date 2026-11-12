@@ -89,7 +89,10 @@ def main(argv=None):
             if days:print(json.dumps({'library':push_library(validate_url(url),token,days).get('written'),'days':sorted(days)}))
         except Exception as e:print('library sync skipped: '+type(e).__name__,file=sys.stderr)
         return 0
-    except urllib.error.HTTPError as e:print(f'worker ingest failed: HTTP {e.code}',file=sys.stderr)
+    except urllib.error.HTTPError as e:
+        try:detail=e.read(400).decode('utf-8','replace')
+        except Exception:detail=''
+        print(f'worker ingest failed: HTTP {e.code} {detail}',file=sys.stderr)
     except (urllib.error.URLError,TimeoutError):print('worker ingest failed: network unavailable or timeout',file=sys.stderr)
     except (ValueError,KeyError,TypeError,OSError):print('worker ingest failed: invalid configuration, feed or response',file=sys.stderr)
     return 1
