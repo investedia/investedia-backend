@@ -44,7 +44,7 @@ jobs:
         with:
           name: projects-draft-${{ github.sha }}
           path: |
-            assets/globe/projects.json
+            assets/globe/projects-v2.json
             assets/globe/projects-featured.json
             assets/globe/project-links.json
             assets/img/projects/

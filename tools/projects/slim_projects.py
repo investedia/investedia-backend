@@ -22,7 +22,7 @@ def slim(document):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--input',type=Path,default=Path('assets/globe/projects.json'))
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--input',type=Path,default=Path('assets/globe/projects-v2.json'))
     p.add_argument('--output',type=Path,default=Path('.local/projects-scale/frontend/projects.json'));args=p.parse_args()
     data=slim(json.loads(args.input.read_text()));args.output.parent.mkdir(parents=True,exist_ok=True)
     temp=args.output.with_suffix('.tmp');temp.write_text(json.dumps(data,ensure_ascii=False,separators=(',',':'))+'\n');temp.replace(args.output)

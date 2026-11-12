@@ -40,7 +40,7 @@ class ProjectsPipelineTests(unittest.TestCase):
     def test_provenance_every_field_and_inherited_not_verified(self):
         with tempfile.TemporaryDirectory() as temp:
             report=b.build(output=Path(temp));self.assertEqual(report['retained_unverified'],631)
-            for p in b.read(Path(temp)/'assets/globe/projects.json')['projects']:
+            for p in b.read(Path(temp)/'assets/globe/projects-v2.json')['projects']:
                 # Inherited snapshot rows never count as verified; verified rows come only from licence-reviewed fetches.
                 inherited=any('Inherited' in (x.get('review') or '') for x in p['src'])
                 self.assertEqual(p['validation_status'],'retained_unverified' if inherited and len(p['src'])==1 else p['validation_status'])
@@ -93,9 +93,9 @@ class ProjectsPipelineTests(unittest.TestCase):
             before=b.digest(d/'old.json')
             manifest=b.read(b.ROOT/'data/projects/manifest.json');manifest['sources'][0]['sha256']='bad'
             # Use the original manifest folder, without changing tracked inputs.
-            original=b.digest(b.ROOT/'assets/globe/projects.json')
+            original=b.digest(b.ROOT/'assets/globe/projects-v2.json')
             with self.assertRaises(ValueError): b.licence_gate(manifest['sources'][0],b.ROOT/'data/projects')
-            self.assertEqual(original,b.digest(b.ROOT/'assets/globe/projects.json'))
+            self.assertEqual(original,b.digest(b.ROOT/'assets/globe/projects-v2.json'))
             self.assertEqual(before,b.digest(d/'old.json'))
 
     def test_company_links_exact_and_verified_only(self):

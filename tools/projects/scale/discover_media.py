@@ -125,7 +125,7 @@ def discover(document, client, previous=None, commons=False, limit=500):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--input', type=Path, default=Path('assets/globe/projects.json'))
+    p.add_argument('--input', type=Path, default=Path('assets/globe/projects-v2.json'))
     p.add_argument('--output', type=Path, default=Path('data/projects/scale/media-candidates.json'))
     p.add_argument('--commons', action='store_true', help='Fetch per-file licence/credit candidates; still requires exact-site review')
     p.add_argument('--seconds', type=int, default=180)

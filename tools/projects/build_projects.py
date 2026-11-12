@@ -318,7 +318,7 @@ def build(root=ROOT, manifest_path=None, output=None):
             'ready_for_publication':False,'notice':'Draft artifacts only. Retained data is not new verified coverage. Not investment advice.'}
     # Stage all validation before replacing outputs; a failed ingest leaves the last good files untouched.
     dest=Path(output or root)
-    outputs={dest/'assets/globe/projects.json':{'schema':'investedia.projects.v2','build_date':date,'policy':manifest.get('policy'),'projects':projects},
+    outputs={dest/'assets/globe/projects-v2.json':{'schema':'investedia.projects.v2','build_date':date,'policy':manifest.get('policy'),'projects':projects},
              dest/'assets/globe/projects-featured.json':{'schema':'investedia.projects.featured.v1','reviewed_count':len(reviewed),
                 'curation_target':[50,50],'curation_status':'Retained previews; new primary-source review blocked','projects':feats},
              dest/'assets/globe/project-links.json':{'schema':'investedia.project-links.v1','links':links},

@@ -178,7 +178,7 @@ class ScaleArtifactTests(unittest.TestCase):
             paths=list(Path(temp).rglob('*.json'));before={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
             builder.build(manifest_path=manifest,output=Path(temp))
             self.assertEqual(before,{str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in paths})
-            data=json.loads((Path(temp)/'assets/globe/projects.json').read_text())
+            data=json.loads((Path(temp)/'assets/globe/projects-v2.json').read_text())
             for project in data['projects']:
                 self.assertIn(project['s'],['Proposed','Approved','Under construction','In development','Completed'])
                 if project['s']=='Completed':self.assertGreaterEqual(int(project['completion_date'][:4]),2020)
