@@ -527,3 +527,14 @@ class TitleJunkTests(unittest.TestCase):
 
 
 if __name__ == '__main__': unittest.main()
+
+
+class RecentWindowTests(unittest.TestCase):
+    def test_recent_window_allowed_and_old_gap_refused(self):
+        from datetime import datetime, timezone
+        today = datetime(2026, 11, 12, 10, tzinfo=timezone.utc)
+        a, b = m.window('2026-11-11', '2026-11-12', today=today)
+        self.assertEqual((b - a).days, 2)
+        with self.assertRaises(ValueError): m.window('2026-11-01', '2026-11-12', today=today)
+        with self.assertRaises(ValueError): m.window('2026-10-20', '2026-10-21', today=today)
+        m.window('2026-08-01', '2026-10-15', today=today)
