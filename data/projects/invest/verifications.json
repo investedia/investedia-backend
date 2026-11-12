@@ -1,0 +1,5 @@
+{
+ "schema": "investedia.projects.invest.verifications.v1",
+ "how": "One record per '<project id>|<listed GEM entity id>'. identity {scheme LEI|CIK, id, source_url, checked_at}; listing {ticker, exchange, source_url, checked_at}; link [{url, proves, quote, retrieved_at, edge?}] with at least one primary document; reviewer; verified_at. See tools/projects/invest/rules.py.",
+ "records": {}
+}

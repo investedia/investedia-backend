@@ -1,0 +1,145 @@
+{
+ "as_of": "2026-11-12",
+ "candidate_listed_companies": 608,
+ "candidates": {
+  "by_kind_Bioenergy": 96,
+  "by_kind_Coal": 295,
+  "by_kind_Geothermal": 23,
+  "by_kind_Hydropower": 176,
+  "by_kind_Nuclear": 27,
+  "by_kind_Oil & gas": 578,
+  "by_kind_Solar": 873,
+  "by_kind_Wind": 902,
+  "by_stage_Announced": 697,
+  "by_stage_Pre-construction": 1408,
+  "by_stage_Under construction": 865,
+  "by_type_E1": 1630,
+  "by_type_E1+E3": 79,
+  "by_type_E3": 1261,
+  "exact_location": 1085,
+  "listed_company_has_lei_or_cik": 2656,
+  "matched_by_gem_id": 1130,
+  "projects_with_candidate": 2970
+ },
+ "missing_country_code": 0,
+ "not_public_reasons": {
+  "no verified exposure to a listed company": 27864
+ },
+ "notice": "Candidates are not verified. Only public_projects are shown. Not investment advice.",
+ "pipeline_projects": 27864,
+ "public_projects": 0,
+ "sources": {
+  "ownership": {
+   "licence": "CC BY 4.0",
+   "name": "Global Energy Monitor, Global Energy Ownership Tracker, November 2026",
+   "url": "https://globalenergymonitor.org/projects/global-energy-ownership-tracker/"
+  },
+  "power": {
+   "licence": "CC BY 4.0",
+   "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+   "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+  }
+ },
+ "top_candidate_companies": [
+  [
+   "TotalEnergies",
+   76
+  ],
+  [
+   "Huaneng Power International",
+   75
+  ],
+  [
+   "Power Construction Corporation of China",
+   71
+  ],
+  [
+   "Huadian Power International",
+   70
+  ],
+  [
+   "Iberdrola",
+   62
+  ],
+  [
+   "GD POWER Development",
+   57
+  ],
+  [
+   "ENGIE",
+   56
+  ],
+  [
+   "NextEra Energy",
+   56
+  ],
+  [
+   "Datang International Power Generation",
+   55
+  ],
+  [
+   "RWE",
+   55
+  ],
+  [
+   "China Energy Engineering",
+   52
+  ],
+  [
+   "Korea Electric Power",
+   52
+  ],
+  [
+   "AES",
+   50
+  ],
+  [
+   "NTPC",
+   49
+  ],
+  [
+   "China Resources Power Holdings",
+   43
+  ],
+  [
+   "ACWA Power",
+   35
+  ],
+  [
+   "Ørsted",
+   35
+  ],
+  [
+   "Blackstone",
+   35
+  ],
+  [
+   "KBC Groep",
+   33
+  ],
+  [
+   "NHPC",
+   32
+  ],
+  [
+   "China Power International Development",
+   31
+  ],
+  [
+   "Bank of China",
+   30
+  ],
+  [
+   "Agricultural Bank of China",
+   29
+  ],
+  [
+   "China Shenhua Energy",
+   27
+  ],
+  [
+   "Enel",
+   26
+  ]
+ ]
+}
