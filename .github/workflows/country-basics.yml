@@ -1,0 +1,36 @@
+name: Country basics refresh proposal
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '43 4 * * 1'
+permissions:
+  contents: read
+concurrency:
+  group: country-basics-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    if: vars.COUNTRY_BASICS_ENABLED == 'true' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify country data transformations
+        run: python -m unittest discover -s tests -p test_country_basics.py
+      - name: Refresh dated World Bank observations
+        run: python tools/coverage/country_basics.py --fetch
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: country-basics-review
+          path: data/country-basics.json
+          retention-days: 14
+          if-no-files-found: error
+      - name: Visible failure
+        if: failure()
+        run: echo '::error::Country basics refresh incomplete. Original saved dates are retained; inspect the artifact before publishing.'
