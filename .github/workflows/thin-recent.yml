@@ -1,0 +1,41 @@
+name: Thin-region recent articles (every 6 hours)
+# Owner request 12 Nov 2026 ("start" for item 1): keep thin regions covered after 15 Oct.
+# Starts two existing bounded workflows with the Claude writer (Gemini quota stays with hourly news):
+#  1) regional-backfill.yml on the 12 thin-region feeds checked 12 Nov (named set extra-2026-11-12), last 2 days;
+#  2) gdelt-backfill.yml on the last 2 days (thin regions only, 15 per country), skipped while a GDELT run is queued or
+#     running, because GitHub keeps only one waiting run per concurrency group and must not replace a backfill run.
+# Articles go to the library and day files; the hourly news robots and their feed lists are unchanged.
+on:
+  schedule:
+    - cron: '40 1,7,13,19 * * *'
+  workflow_dispatch:
+permissions:
+  actions: write
+  contents: read
+concurrency:
+  group: thin-recent
+  cancel-in-progress: false
+jobs:
+  start:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Start the thin-region feeds catch-up (Claude, capped at $0.30)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh workflow run regional-backfill.yml --ref main -f days=2 -f confirm=BACKFILL -f dry_run=false \
+            -f writer=claude-haiku-5-5 -f max_usd=0.3 -f gemini_calls=10 -f batch_size=25 \
+            -f sources=extra-2026-11-12 -f connections_only=false
+      - name: Start the GDELT recent search unless a GDELT run is already waiting or running
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          busy=$(gh run list --workflow gdelt-backfill.yml --limit 20 --json status --jq '[.[] | select(.status != "completed")] | length')
+          if [ "$busy" != "0" ]; then echo "GDELT run busy ($busy); skipped this time"; exit 0; fi
+          start=$(date -u -d yesterday +%F); end=$(date -u +%F)
+          gh workflow run gdelt-backfill.yml --ref main -f confirm=BACKFILL -f dry_run=false \
+            -f start_date="$start" -f end_date="$end" -f regions=all -f gemini_calls=15 -f batch_size=25 \
+            -f gdelt_files=12 -f writer=claude-haiku-5-5 -f sources=english+translated -f max_usd=0.3 -f country_cap=15

@@ -621,7 +621,7 @@ def usage_stories(usage):
     return [{'image': {'file': f}} for f, n in sorted(usage.items()) for _ in range(min(int(n), 1000))]
 
 
-def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH, deadline=None, workers=8, translator=None, photos=True, prior_usage=(), checkpoint=None, country_cap=0, country_prior=None):
+def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH, deadline=None, workers=8, translator=None, photos=True, prior_usage=(), checkpoint=None, country_cap=0, country_prior=None, thin_only=False):
     """Enrich lazily, one model batch at a time; stop when the call budget, deadline or rows run out."""
     if not 1 <= batch_size <= 40: raise ValueError('batch_size_must_be_1_to_40')
     box, by_iso, sym = ref
@@ -679,8 +679,9 @@ def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH
                 for s in got:
                     if s['id'] not in lookup: raise ValueError('source_identity_changed')
                     story = provenance(s, lookup[s['id']], now)
+                    if (story.get('headline_translated') or thin_only) and (story.get('location') or {}).get('country') in GLOBAL_COUNTRIES:
+                        rejected['outside_thin_regions'] += 1; continue
                     if story.get('headline_translated'):
-                        if (story.get('location') or {}).get('country') in GLOBAL_COUNTRIES: rejected['translated_outside_thin_regions'] += 1; continue
                         if story.get('category') == 'geopolitics' and not story.get('market_moving'): rejected['translated_not_business'] += 1; continue
                     code = lookup[s['id']].get('gdelt_country')
                     if not country_allowed(code, run_counts, prior_totals, country_cap): rejected['country_cap'] += 1; continue
@@ -933,7 +934,8 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         prior = usage_stories(state.get('photo_usage', {}))
         new, sent, enrich_rejected, judged = generate(ordered, a, b, now, ref, budget, fetcher, batch_size, deadline, translator=editor, prior_usage=prior,
                                                       checkpoint=lambda o, se, j: save_checkpoint(output, o, se, j),
-                                                      country_cap=country_cap, country_prior={**COUNTRY_SEED, **(state.get('country_totals') or {})})
+                                                      country_cap=country_cap, country_prior={**COUNTRY_SEED, **(state.get('country_totals') or {})},
+                                                      thin_only=b > now - timedelta(days=RECENT_DAYS + 1))  # recent runs: thin regions only
         report['country_cap'] = country_cap
         new, reasons = finalize(new, now, a, b, reference)
         days = library_days(new)

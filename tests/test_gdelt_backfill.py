@@ -486,7 +486,7 @@ class ClaudeProviderTests(EndToEndTests):
         self.assertEqual(report['translated_articles'], 1); self.assertEqual(report['translated_samples'][0]['language'], 'swa')
         with self.assertRaises(ValueError): self.run_once(True, sources='translated')  # Gemini cannot translate here
         # Fix C: a translated article placed in a large Western economy, or politics without market impact, is dropped.
-        for change, reason in (({'country': 'DE', 'lat': 52.5, 'lon': 13.4, 'place': 'Berlin'}, 'translated_outside_thin_regions'),
+        for change, reason in (({'country': 'DE', 'lat': 52.5, 'lon': 13.4, 'place': 'Berlin'}, 'outside_thin_regions'),
                                ({'category': 'geopolitics', 'market_moving': False}, 'translated_not_business')):
             self.PICKED = [{**ClaudeProviderTests.PICKED[0], **change}]
             replies[1] = json.dumps(self.PICKED)
