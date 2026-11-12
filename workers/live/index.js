@@ -27,7 +27,7 @@ async function snapshot() {
 import { refresh, handlePrices, handleStatus } from './v1/prices.js';
 import { refreshNews, handleNews, handleGlobe, ingestNews, historyCapabilities } from './v1/news.js';
 import { ingestLibrary, handleLibrary } from './v1/library.js';
-import { runAlerts, runPriceAlerts, alertsReady, unsubscribe, FREE_SMART } from './v1/alerts.js';
+import { runAlerts, runPriceAlerts, alertsReady, unsubscribe, sendPreview, FREE_SMART } from './v1/alerts.js';
 import { handleMarkets } from './v1/markets.js';
 import { ingestCalls, readCalls } from './v1/calls.js';
 import { joinWaitlist } from './v1/waitlist.js';
@@ -101,6 +101,9 @@ export default {
     if ((req.method === 'GET' || req.method === 'POST') && url.pathname === '/v1/alerts/unsubscribe') {
       const r = await unsubscribe(url, env).catch(() => ({ status: 500, html: 'Something went wrong.' }));
       return new Response(r.html, { status: r.status, headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' } });
+    }
+    if (req.method === 'POST' && url.pathname === '/v1/alerts/preview') {
+      const r = await sendPreview(req, env).catch(() => ({ status: 500, body: { error: 'internal' } })); return json({}, r.status, r.body);
     }
     if (req.method === 'GET' && url.pathname === '/v1/alerts/config') {
       // public part of the push setup: the site needs the VAPID public key to subscribe a browser; off until the owner turns alerts on

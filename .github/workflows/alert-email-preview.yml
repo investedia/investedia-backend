@@ -1,0 +1,24 @@
+name: Alert email preview (manual)
+# Sends the three alert email layouts to one address you type in, through the live Worker (Brevo key stays in Cloudflare).
+on:
+  workflow_dispatch:
+    inputs:
+      to:
+        description: 'Email address to send the preview to'
+        required: true
+permissions:
+  contents: read
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Send preview
+        env:
+          WORKER_URL: ${{ secrets.WORKER_URL }}
+          TOKEN: ${{ secrets.NEWS_INGEST_TOKEN }}
+          TO: ${{ inputs.to }}
+        run: |
+          body=$(python3 -c 'import json,os;print(json.dumps({"to":os.environ["TO"]}))')
+          code=$(curl -sS -o out.json -w '%{http_code}' -X POST "${WORKER_URL%/}/v1/alerts/preview" -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json' --data "$body")
+          cat out.json; echo; test "$code" = 200 && grep -q '"ok":true' out.json

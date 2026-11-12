@@ -25,7 +25,8 @@ test('markets fixture, missing snapshot, corruption fail closed',async()=>{const
 test('markets previous-version fallback is bounded to 24 hours',async()=>{const s=setup();s.pointer.previous_version=s.version;s.pointer.version='20261110T140000Z-aaaaaaaaaaaa';let r=await s.call('search');assert.equal(r.status,200);assert.equal((await r.json()).meta.stale,true);s.pointer.updated_at='2020-01-01T00:00:00Z';assert.equal((await s.call('search')).status,503);});
 test('markets ETag supports conditional GET and bounded subrequests',async()=>{const s=setup();const r=await s.call('search?limit=100');assert.equal(r.status,200);assert.ok(s.reads()<25);assert.equal((await s.call('search?limit=100',{headers:{'If-None-Match':r.headers.get('ETag')}})).status,304);});
 test('markets cache hit marks previous-version fallback stale',async()=>{
- const s=setup(),saved=globalThis.caches,entries=new Map(),pending=[];
+ // the fixture manifest has a fixed date; make it fresh so the first answer is not stale just because time passed
+ const s=setup();for(const o of Object.values(s.objects))if(o&&typeof o==='object'&&o.updated_at)o.updated_at=new Date().toISOString();const saved=globalThis.caches,entries=new Map(),pending=[];
  globalThis.caches={default:{match:async key=>entries.get(key.url)?.clone(),put:async(key,value)=>entries.set(key.url,value.clone())}};
  const call=()=>handleMarkets(new Request('https://cache.test/v1/markets/search'),s.env,{waitUntil:p=>pending.push(p)});
  try{let r=await call();assert.equal((await r.json()).meta.stale,false);await Promise.all(pending);s.pointer.previous_version=s.version;s.pointer.version='20261110T140000Z-aaaaaaaaaaaa';r=await call();const body=await r.json();assert.equal(body.meta.stale,true);assert.equal(body.meta.reason,'active_snapshot_unavailable_previous_version');}

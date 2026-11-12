@@ -126,3 +126,21 @@ export async function unsubscribe(url, env) {
   const rows = r.ok ? await r.json() : []; return rows.length ? { status: 200, html: page('You will not get alert emails from Investedia any more. You can turn them back on in the bell menu on investedia.com.') } : { status: 404, html: page('This link has expired.') };
 }
 const page = msg => `<!doctype html><meta name="viewport" content="width=device-width"><title>Investedia alerts</title><body style="font-family:Inter,system-ui,sans-serif;background:#0a0a0b;color:#f4f4f5;display:grid;place-items:center;min-height:90vh;margin:0"><div style="max-width:420px;padding:24px;text-align:center"><h1 style="font-size:22px">Investedia</h1><p style="color:#a1a1aa;line-height:1.5">${msg}</p><a href="${SITE}" style="color:#ff7a1a">Back to investedia.com</a></div>`;
+
+// Owner preview: send the three email layouts to one address. Protected by the ingest token (only GitHub Actions has it).
+export async function sendPreview(req, env) {
+  const auth = req.headers.get('Authorization') || '';
+  if (!env.INGEST_TOKEN || auth !== 'Bearer ' + env.INGEST_TOKEN) return { status: 401, body: { error: 'unauthorized' } };
+  if (!env.BREVO_API_KEY || !env.BREVO_SENDER_EMAIL) return { status: 503, body: { error: 'email not configured' } };
+  let b = {}; try { b = await req.json(); } catch {}
+  const to = String(b.to || '').trim(); if (!/^[^@\s]{1,64}@[^@\s]{1,190}\.[a-z]{2,}$/i.test(to)) return { status: 422, body: { error: 'bad address' } };
+  const unsub = SITE + '/watchlist.html', U = SITE + '/news.html';
+  const sets = [
+    [{ why: 'You follow Brazil', title: 'Preview · Brazil central bank holds rates as inflation eases', line: 'This is a preview of a single article alert. Real alerts use real Investedia articles.', url: U }],
+    [{ why: 'You follow Nvidia', title: 'Preview · Several alerts in one email', line: 'Up to five articles arrive together in one email per news update.', url: U },
+     { why: 'Market-moving', title: 'Preview · A market-moving article', line: 'Smart alert: market-moving only.', url: U },
+     { why: 'Sector · Commodities', title: 'Preview · A sector article', line: 'Smart alert: sector news.', url: U }],
+    [{ why: 'Price move · -6.20% today', title: 'Preview · Nvidia down 6.2%', line: 'Your alert: moves up or down more than 5% in a day.', url: SITE + '/markets.html' }]];
+  const out = []; for (const items of sets) out.push(await sendEmail(env, to, alertEmail(items, unsub), unsub));
+  return { status: 200, body: { ok: out.every(s => s >= 200 && s < 300), statuses: out } };
+}
