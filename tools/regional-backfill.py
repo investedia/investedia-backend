@@ -190,6 +190,25 @@ class ClaudeWriter:
         except ValueError: return []
 
 
+HEADLINE_PROMPT = ('Below are news headlines. For each one NOT in English, translate it faithfully into clear English '
+                   '(keep names, numbers, currencies and dates exactly; add nothing). Return only a JSON array of '
+                   '{"i": <same i>, "english": "<English headline>"} for the non-English ones; omit English ones.\n\nHeadlines: ')
+
+
+def english_headlines(writer, stories):
+    """Owner request 12 Nov 2026: English headlines; the original is kept and the article marked translated."""
+    listing=json.dumps([{'i':i,'headline':s['headline']} for i,s in enumerate(stories)],ensure_ascii=False)
+    try:got=writer(HEADLINE_PROMPT+listing)
+    except BudgetExceeded:return 0
+    done=0
+    for row in got if isinstance(got,list) else []:
+        try:i,t=int(row['i']),str(row['english']).strip()
+        except (KeyError,TypeError,ValueError):continue
+        if 0<=i<len(stories) and 12<=len(t)<=300 and t!=stories[i]['headline'] and not stories[i].get('headline_translated'):
+            s=stories[i];s.update(original_headline=s['headline'],headline=t,headline_translated=True);done+=1
+    return done
+
+
 def request(url, data=None, headers=None, timeout=15, raw=False):
     u = urlsplit(url)
     if u.scheme != 'https' or u.username or u.password: raise ValueError('public_https_required')
@@ -550,6 +569,7 @@ def run(days,dry_run,connections_only,inventory,output,worker,gemini_model=None,
         proposals,new_reasons=evidence(new+repairs,now,registry,prices,licences)
         for row in proposals:row.pop('_feed_description',None)
         new_ids={s['id'] for s in new};new=[s for s in proposals if s['id'] in new_ids]
+        if claude and new:report['headlines_translated']=english_headlines(claude,new)
         repairs=[s for s in proposals if s['id'] not in new_ids and s.get('impacts')]
         for s in repairs:
             if protected(s)!=protected(combined[s['id']]):raise ValueError('protected_fields_changed')

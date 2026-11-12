@@ -247,3 +247,11 @@ class ClaudeWriterTests(unittest.TestCase):
         tight=m.ClaudeWriter(Fake(),'claude-haiku-5-5',m.ModelBudget(lambda *a,**k:'',5),0.001)
         with self.assertRaises(m.BudgetExceeded): tight('p')
         with self.assertRaises(ValueError): m.ClaudeWriter(Fake(),'gpt',b,1)
+
+
+class EnglishHeadlineTests(unittest.TestCase):
+    def test_only_foreign_headlines_are_replaced_and_marked(self):
+        stories=[{'headline':'Nvidia shares fall'},{'headline':'Paradoja exportadora en Argentina'}]
+        n=m.english_headlines(lambda p:[{'i':1,'english':'Export paradox in Argentina'},{'i':9,'english':'out of range item'}],stories)
+        self.assertEqual(n,1);self.assertEqual(stories[0],{'headline':'Nvidia shares fall'})
+        self.assertEqual(stories[1],{'headline':'Export paradox in Argentina','original_headline':'Paradoja exportadora en Argentina','headline_translated':True})
