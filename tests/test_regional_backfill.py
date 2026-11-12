@@ -229,3 +229,21 @@ class RegionalFixTests(unittest.TestCase):
   budget=m.ModelBudget(lambda *args,**kw:self.fail('deadline must stop before request'),deadline=0)
   with self.assertRaises(m.BudgetExceeded):budget.get('https://generativelanguage.googleapis.com/v1beta/models')
   self.assertEqual(budget.discovery,0)
+
+
+class ClaudeWriterTests(unittest.TestCase):
+    """Offline: a fake client; no network, no key."""
+    def test_claude_writer_counts_budget_cost_and_caps(self):
+        from types import SimpleNamespace as NS
+        class Fake:
+            def __init__(s): s.messages=s; s.calls=0
+            def create(s, **kw):
+                s.calls+=1; assert kw['model']=='claude-haiku-5-5'
+                return NS(stop_reason='end_turn', usage=NS(input_tokens=1000, output_tokens=200), content=[NS(type='text', text='[{"id":"a"}]')])
+        b=m.ModelBudget(lambda *a,**k:'',2); w=m.ClaudeWriter(Fake(),'claude-haiku-5-5',b,1.0)
+        self.assertEqual(w('prompt'),[{'id':'a'}]); self.assertEqual(b.calls,1); self.assertAlmostEqual(w.spent,0.0002)
+        w('p'); 
+        with self.assertRaises(m.BudgetExceeded): w('p')
+        tight=m.ClaudeWriter(Fake(),'claude-haiku-5-5',m.ModelBudget(lambda *a,**k:'',5),0.001)
+        with self.assertRaises(m.BudgetExceeded): tight('p')
+        with self.assertRaises(ValueError): m.ClaudeWriter(Fake(),'gpt',b,1)

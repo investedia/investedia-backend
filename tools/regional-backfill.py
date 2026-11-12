@@ -155,6 +155,41 @@ class ModelBudget:
         return result
 
 
+CLAUDE_PRICES = {'claude-haiku-5-5': (0.10, 0.50)}  # US$ per million input / output tokens
+CLAUDE_MAX_TOKENS = 16000
+
+
+class ClaudeWriter:
+    """Optional stand-in for update_globe_news.gemini(prompt) (owner request 12 Nov 2026: catch-up with the Claude key,
+    leaving the Gemini quota to live news). Same prompt, same call budget/deadline/prompt limits, plus a dollar cap."""
+    def __init__(self, client, model, budget, max_usd):
+        if model not in CLAUDE_PRICES: raise ValueError('unsupported_claude_model')
+        self.client, self.model, self.budget, self.max_usd, self.spent = client, model, budget, float(max_usd), 0.0
+    def cost(self, t_in, t_out):
+        p_in, p_out = CLAUDE_PRICES[self.model]; return t_in*p_in/1e6 + t_out*p_out/1e6
+    def __call__(self, prompt):
+        b = self.budget
+        if b.deadline is not None and time.monotonic() >= b.deadline: b.stop_reason='run_deadline_reached'; raise BudgetExceeded(b.stop_reason)
+        if b.calls >= b.limit: b.stop_reason='fixed_model_call_budget_exhausted'; raise BudgetExceeded(b.stop_reason)
+        if len(prompt.encode()) > MAX_PROMPT_BYTES: b.stop_reason='model_prompt_limit'; raise BudgetExceeded(b.stop_reason)
+        if self.spent + self.cost(len(prompt.encode())//2, CLAUDE_MAX_TOKENS) > self.max_usd: b.stop_reason='dollar_cap_reached'; raise BudgetExceeded(b.stop_reason)
+        b.calls += 1; b.by_model.setdefault(self.model, Counter())['attempts'] += 1
+        b.call_log.append({'call': b.calls, 'model': self.model, **b.context})
+        try: r = self.client.messages.create(model=self.model, max_tokens=CLAUDE_MAX_TOKENS, output_config={'effort': 'low'},
+                                             messages=[{'role': 'user', 'content': prompt}])
+        except Exception as e:
+            code = getattr(e, 'status_code', None)
+            b.by_model[self.model]['error_http_%s' % code] += 1
+            b.stop_reason='configured_model_unavailable'; raise ModelUnavailable('configured_model_request_failed') from None
+        u = getattr(r, 'usage', None); t_in, t_out = int(getattr(u, 'input_tokens', 0) or 0), int(getattr(u, 'output_tokens', 0) or 0)
+        b.usage['input_tokens'] += t_in; b.usage['output_tokens'] += t_out; b.usage_known_calls += 1
+        self.spent += self.cost(t_in, t_out); robot.status['gemini_model'] = self.model
+        if r.stop_reason != 'end_turn': return []
+        text = ''.join(getattr(x, 'text', '') for x in r.content if getattr(x, 'type', '') == 'text')
+        try: return json.loads(re.sub(r'^```(json)?|```$', '', text.strip()))
+        except ValueError: return []
+
+
 def request(url, data=None, headers=None, timeout=15, raw=False):
     u = urlsplit(url)
     if u.scheme != 'https' or u.username or u.password: raise ValueError('public_https_required')
@@ -449,7 +484,7 @@ def archive(rows,base,now):
     events.write_threads(30,now,base=str(base),out=str(base.parent/'threads.json'),reg=robot.R.get())
 
 
-def run(days,dry_run,connections_only,inventory,output,worker,gemini_model=None,gemini_calls=MAX_CALLS,batch_size=MODEL_BATCH,sources_set='all'):
+def run(days,dry_run,connections_only,inventory,output,worker,gemini_model=None,gemini_calls=MAX_CALLS,batch_size=MODEL_BATCH,sources_set='all',writer=None,max_usd=1.0,claude_client=None):
     if not 1<=days<=30:raise ValueError('days_must_be_1_to_30')
     if not 1<=gemini_calls<=HARD_CALL_LIMIT:raise ValueError('gemini_calls_must_be_1_to_40')
     if not 1<=batch_size<=40:raise ValueError('batch_size_must_be_1_to_40')
@@ -461,14 +496,16 @@ def run(days,dry_run,connections_only,inventory,output,worker,gemini_model=None,
     robot.get=budget.get;robot.UA=UA;robot.log=lambda *args:None
     errors=Counter();robot.err=lambda msg:errors.update(['robot_validation_or_provider_error'])
     robot.NOW=now;robot.ISO_NOW=iso(now)
-    original_models=robot.gemini_models
-    pinned=[]
+    original_models=robot.gemini_models;original_gemini=robot.gemini
+    pinned=[];claude=None
+    if writer:
+        claude=ClaudeWriter(claude_client,writer,budget,max_usd);robot.gemini=claude
     robot.gemini_models=lambda:list(pinned)
     try:
         worker=uploader.validate_url(worker)
         live=json.loads(request(worker+'/v1/news?regional_read='+str(time.time_ns())))
         caps=json.loads(request(worker+'/v1/ingest/news/capabilities'))
-        pinned.append(selected_model(gemini_model,live,read(ROOT/'assets/globe/news-status.json',{})))
+        pinned.append(writer if writer else selected_model(gemini_model,live,read(ROOT/'assets/globe/news-status.json',{})))
         report['selected_model']=pinned[0]
         report['inventory_checked_at']=inventory.get('checked_at')
         report['inventory_sha256']=hashlib.sha256(json.dumps(inventory,sort_keys=True).encode()).hexdigest()
@@ -605,8 +642,9 @@ def run(days,dry_run,connections_only,inventory,output,worker,gemini_model=None,
         raise ValueError('regional_backfill_incomplete_report_saved') from None
     finally:
         report.update(gemini_calls=budget.calls,gemini_calls_detail=budget.call_log,actual_model_used=robot.status.get('gemini_model') if budget.calls else None,model_discovery_requests=budget.discovery,model_budget_stop=budget.stop_reason,gemini_usage_reported=dict(budget.usage),gemini_by_model={k:dict(v) for k,v in budget.by_model.items()},gemini_calls_without_usage=budget.calls-budget.usage_known_calls,elapsed_seconds=round(time.monotonic()-start,3))
+        if claude:report.update(writer=writer,cost_usd=round(claude.spent,6),max_usd=max_usd)
         write(output/'report.json',report)
-        robot.get=old_get;robot.log=old_log;robot.err=old_err;robot.gemini_models=original_models
+        robot.get=old_get;robot.log=old_log;robot.err=old_err;robot.gemini_models=original_models;robot.gemini=original_gemini
     return report
 
 
@@ -615,16 +653,20 @@ def main():
     p.add_argument('--dry-run',choices=['true','false'],default='true');p.add_argument('--connections-only',choices=['true','false'],default='false')
     p.add_argument('--gemini-model',default=os.environ.get('GEMINI_MODEL') or None);p.add_argument('--gemini-calls',type=int,default=MAX_CALLS);p.add_argument('--batch-size',type=int,default=MODEL_BATCH)
     p.add_argument('--sources',choices=sorted(SOURCE_SETS),default='all');p.add_argument('--inventory',type=Path,required=True);p.add_argument('--output',type=Path,default=ROOT/'.local/regional-backfill')
+    p.add_argument('--writer',choices=['gemini']+sorted(CLAUDE_PRICES),default='gemini');p.add_argument('--max-usd',type=float,default=1.0)
     a=p.parse_args()
+    if not 0<a.max_usd<=10:p.error('max_usd_must_be_above_0_and_at_most_10')
     if a.confirm!='BACKFILL':p.error('confirm_must_equal_BACKFILL')
     if not 1<=a.days<=30:p.error('days_must_be_1_to_30')
     if not 1<=a.gemini_calls<=HARD_CALL_LIMIT:p.error('gemini_calls_must_be_1_to_40')
     if not 1<=a.batch_size<=40:p.error('batch_size_must_be_1_to_40')
-    required=['GEMINI_API_KEY','WORKER_URL']+(['NEWS_INGEST_TOKEN'] if a.dry_run=='false' else [])
+    claude=a.writer!='gemini'
+    required=(['ANTHROPIC_API_KEY'] if claude else ['GEMINI_API_KEY'])+['WORKER_URL']+(['NEWS_INGEST_TOKEN'] if a.dry_run=='false' else [])
     missing=[key for key in required if not os.environ.get(key)]
     if missing:p.error('missing_required_settings: '+', '.join(missing))
     try:
-        result=run(a.days,a.dry_run=='true',a.connections_only=='true',read(a.inventory,{}),a.output,os.environ.get('WORKER_URL',''),a.gemini_model,a.gemini_calls,a.batch_size,a.sources)
+        result=run(a.days,a.dry_run=='true',a.connections_only=='true',read(a.inventory,{}),a.output,os.environ.get('WORKER_URL',''),a.gemini_model,a.gemini_calls,a.batch_size,a.sources,
+                 writer=a.writer if claude else None,max_usd=a.max_usd,claude_client=__import__('anthropic').Anthropic() if claude else None)
         print(json.dumps({k:result[k] for k in ('state','new_articles','articles_checked','connections_added','gemini_calls','elapsed_seconds')}));return 0
     except (ValueError,OSError):print('Regional backfill incomplete; inspect the saved report. No success claimed.',file=sys.stderr);return 1
 if __name__=='__main__':sys.exit(main())
