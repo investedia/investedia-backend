@@ -1,0 +1,46 @@
+{
+ "batch": "2026-11-nhpc-under-construction",
+ "company": "NHPC",
+ "company_entity_ids": [
+  "E100000120883"
+ ],
+ "identity": {
+  "scheme": "LEI",
+  "id": "3358003ZPPTGWT595J46",
+  "legal_name": "NHPC LIMITED",
+  "status": "ACTIVE",
+  "source_url": "https://api.gleif.org/api/v1/lei-records/3358003ZPPTGWT595J46",
+  "checked_at": "2026-11-12"
+ },
+ "listing": {
+  "ticker": "NHPC",
+  "exchange": "National Stock Exchange of India and BSE (533098)",
+  "source_url": "https://www.nhpcindia.com/",
+  "checked_at": "2026-11-12",
+  "note": "confirm on NSE/BSE listing page before public"
+ },
+ "documents": [
+  {
+   "url": "https://www.nhpcindia.com/welcome/language/en/project/3//",
+   "date": "2026-11-12",
+   "kind": "company",
+   "publisher": "NHPC Limited",
+   "publisher_is_listed_company": true,
+   "title": "Projects under construction (company website)",
+   "extract": {
+    "type": "html_table",
+    "name_cell": 0,
+    "mw_cells": [
+     2,
+     1
+    ],
+    "strip": "\\s*(UT of Jammu (and|&|&amp;) Kashmir|Jammu (&|and) Kashmir|Arunachal Pradesh and Assam|Arunachal Pradesh|Uttar Pradesh|Rajasthan|Gujarat|Andhra Pradesh|Odisha|kerala|Kerala|Himachal Pradesh|Uttarakhand|Sikkim|Madhya Pradesh|Maharashtra|West Bengal|Assam|Manipur|Tamil Nadu|Nepal)\\s*$",
+    "jv_marker": "\\(JV|JV with",
+    "section": "Under construction"
+   }
+  }
+ ],
+ "company_tokens": [
+  "nhpc"
+ ]
+}

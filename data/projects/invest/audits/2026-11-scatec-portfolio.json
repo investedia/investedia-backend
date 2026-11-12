@@ -1,0 +1,17 @@
+{
+ "batch": "2026-11-scatec-portfolio",
+ "auditor": "Claude (manual read of each passage against the source document)",
+ "date": "2026-11-12",
+ "sample": "all A records (100%)",
+ "checked": 1,
+ "correct": 1,
+ "false_positives": 0,
+ "note": "Egypt Aluminium: backlog column, 1,125 MW, 100% economic interest; GEM 1,000 MW, 100%.",
+ "items": [
+  {
+   "key": "gem:L100001045291|E100000148903",
+   "proves": "Scatec ASA names Egypt Aluminium with a 100.0% interest",
+   "result": "correct"
+  }
+ ]
+}

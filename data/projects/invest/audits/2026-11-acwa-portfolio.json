@@ -1,0 +1,62 @@
+{
+ "batch": "2026-11-acwa-portfolio",
+ "auditor": "Claude (manual read of each passage against the source document)",
+ "date": "2026-11-12",
+ "sample": "all A records (100%)",
+ "checked": 10,
+ "correct": 10,
+ "false_positives": 0,
+ "note": "Each A row read against the investor-report table: project name, effective share, capacity and start date agree with the stored passage and with GEM capacity. Saguling and Gijduvan confirmed after parser fixes.",
+ "items": [
+  {
+   "key": "gem:L100001018770|E100000000882",
+   "proves": "ACWA Power names Haden Solar PV with a 35.1% interest",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100001018768|E100000000882",
+   "proves": "ACWA Power names Al-Muwaih Solar with a 35.1% interest",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100001018767|E100000000882",
+   "proves": "ACWA Power names Al-Khushaybi PV with a 35.1% interest",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100000801313|E100000000882",
+   "proves": "ACWA Power names Saguling Floating PV IPP with a 49.0% interest",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100001063143|E100000000882",
+   "proves": "ACWA Power names Bisha PV with a 35.1% interest",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100001063152|E100000000882",
+   "proves": "ACWA Power names Afif 1 PV with a 35.1% interest",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100001063155|E100000000882",
+   "proves": "ACWA Power names Afif 2 PV with a 35.1% interest",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100001063269|E100000000882",
+   "proves": "ACWA Power names Shaqra Wind with a 35.1% interest",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100001063265|E100000000882",
+   "proves": "ACWA Power names Starah Wind with a 35.1% interest",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100001061657|E100000000882",
+   "proves": "ACWA Power names Gijduvan Wind IPP with a 100.0% interest",
+   "result": "correct"
+  }
+ ]
+}

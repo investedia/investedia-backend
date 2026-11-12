@@ -5,6 +5,7 @@ company is verified in the ledger. Nothing here estimates or fills in a value: u
 """
 from datetime import date
 
+PUBLIC_CATEGORIES = {'A', 'B'}  # owner decision 12 Nov 2026: A company-confirmed, B regulator-confirmed
 PIPELINE = {'Announced', 'Pre-construction', 'Under construction', 'Commissioning'}
 MAX_AGE_DAYS = {'Energy & Utilities': 183}
 DEFAULT_MAX_AGE_DAYS = 365
@@ -21,6 +22,10 @@ def exposure_problems(exposure, record, today):
     if not record:
         return ['no verification record']
     out = []
+    if record.get('category', 'A') not in PUBLIC_CATEGORIES:
+        out.append('category %s is never public' % record.get('category'))
+    if record.get('internal_only'):
+        out.extend(record['internal_only'])
     ident = record.get('identity') or {}
     if ident.get('scheme') not in ('LEI', 'CIK') or not ident.get('id') or not ident.get('source_url'):
         out.append('legal entity not confirmed (LEI or CIK with registry URL)')
@@ -31,7 +36,8 @@ def exposure_problems(exposure, record, today):
     primary = [l for l in links if not any(h in l['url'] for h in NOT_PRIMARY)]
     if not primary:
         out.append('no primary document for the project-to-company link')
-    if exposure['type'] == 'E3':
+    # A listed parent's own publication stating its interest in the project proves the indirect exposure itself.
+    if exposure['type'] == 'E3' and not record.get('company_states_interest'):
         proved = {tuple(l['edge']) for l in primary if l.get('edge')}
         missing = [e for e in exposure['path_edges'] if tuple(e) not in proved]
         if missing:

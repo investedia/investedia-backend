@@ -79,10 +79,38 @@ def plants(rows, iso, registry=None):
                'cost': None, 'progress': None, 'wiki': clean(first.get('GEM.Wiki URL')), 'source': SOURCES['power']}
 
 
-def build(power_rows, iso, registry, ledger, today):
+def ledger_exposures(pid, known, ledger):
+    """Exposures proven by a document that names the project directly (e.g. a company filing), which the
+    GEM/EIA owner fields did not show. Built only from verified ledger records."""
+    out = []
+    for key, rec in ledger.items():
+        p, eid = key.split('|', 1)
+        if p != pid or eid in known:
+            continue
+        out.append({'type': 'E1' if rec.get('exposure_type') == 'direct' else 'E3', 'listed_entity_id': eid,
+                    'listed_name': rec['identity'].get('legal_name'), 'lei': rec['identity'].get('id'), 'cik': rec['listing'].get('cik'),
+                    'hq_country': rec.get('hq_country'), 'path': [eid], 'path_names': [rec['identity'].get('legal_name')], 'path_edges': [],
+                    'effective_stake': (rec.get('stake') or {}).get('value'), 'owner_match': 'document', 'owner': rec['identity'].get('legal_name'), 'owner_stake': None})
+    return out
+
+
+def km(a, b):
+    import math
+    if None in (a.get('lat'), a.get('lon'), b.get('lat'), b.get('lon')):
+        return 1e9
+    dx = math.radians(b['lon'] - a['lon']) * math.cos(math.radians((a['lat'] + b['lat']) / 2))
+    return 6371 * math.hypot(dx, math.radians(b['lat'] - a['lat']))
+
+
+def build(power_rows, iso, registry, ledger, today, extra=()):
     research, public, why, cand = [], [], Counter(), Counter()
-    for p in plants(power_rows, iso, registry):
-        exposures = [dict(e, owner=o['name'], owner_stake=o['stake']) for o in p['owners'] for e in registry.exposures(o)]
+    def projects():
+        for p in plants(power_rows, iso, registry):
+            yield p, [dict(e, owner=o['name'], owner_stake=o['stake']) for o in p['owners'] for e in registry.exposures(o)]
+        for p in extra:  # EIA research records (route B and filings)
+            yield {k: v for k, v in p.items() if k != 'candidate_exposures'}, list(p.get('candidate_exposures', []))
+    for p, exposures in projects():
+        exposures = exposures + ledger_exposures(p['id'], {e['listed_entity_id'] for e in exposures}, ledger)
         ok, reasons, verified = evaluate(p, exposures, ledger, today)
         research.append(dict(p, candidate_exposures=exposures, public=ok, reasons=reasons))
         for r in reasons:
@@ -99,16 +127,36 @@ def build(power_rows, iso, registry, ledger, today):
             if p['precision'] == 'exact':
                 cand['exact_location'] += 1
         if ok:
-            public.append(dict({k: v for k, v in p.items() if k != 'owners'}, exposures=verified,
-                               other_owners=[o for o in p['owners'] if o['name'] not in {v['owner'] for v in verified}]))
+            costs = [e['verification']['cost'] for e in verified if e['verification'].get('cost')]
+            if costs:  # only a cost stated in a verified company document, with its quote; never estimated
+                p = dict(p, cost=dict(costs[0], source=next(e['verification']['link'][0]['url'] for e in verified if e['verification'].get('cost'))))
+            public.append(dict({k: v for k, v in p.items() if k not in ('owners', 'route_b')}, exposures=verified,
+                               other_owners=[o for o in p.get('owners', []) if o['name'] not in {v['owner'] for v in verified}]))
+    # One public record per physical plant: GEM and EIA describe some US plants twice.
+    public.sort(key=lambda p: (-len(p['exposures']), p['id'].startswith('gem:')))
+    kept = []
+    for p in public:
+        dup = next((k for k in kept if k['kind'] == p['kind'] and km(k, p) < 2.0), None)
+        if dup:
+            dup.setdefault('also_listed_as', []).append(p['id'])
+            seen = {e['listed_entity_id'] for e in dup['exposures']}
+            dup['exposures'] += [e for e in p['exposures'] if e['listed_entity_id'] not in seen]
+        else:
+            kept.append(p)
+    public = kept
     companies = Counter(e['listed_name'] for r in research for e in r['candidate_exposures'])
     report = {'as_of': today, 'pipeline_projects': len(research), 'public_projects': len(public),
               'not_public_reasons': dict(why.most_common()), 'candidates': dict(sorted(cand.items())),
               'candidate_listed_companies': len(companies), 'top_candidate_companies': companies.most_common(25),
               'missing_country_code': sum(1 for r in research if not r['cc']), 'sources': SOURCES,
               'notice': 'Candidates are not verified. Only public_projects are shown. Not investment advice.'}
+    cats = Counter(e['verification'].get('category', 'A') for p in public for e in p['exposures'])
+    report['public_by_category'] = dict(cats)
+    report['public_by_sector_kind'] = dict(Counter(p['kind'] for p in public))
     export = {'schema': 'investedia.projects.invest.v1', 'as_of': today,
-              'credit': [s['name'] + ' (' + s['licence'] + ')' for s in SOURCES.values()], 'projects': public}
+              'credit': [s['name'] + ' (' + s['licence'] + ')' for s in SOURCES.values()] +
+                        (['Source: U.S. Energy Information Administration, EIA-860M (September 2026) and EIA-860 (2024)'] if extra else []),
+              'projects': public}
     return research, report, export
 
 
@@ -139,7 +187,9 @@ def main():
     iso = {clean(r.get('GEM Standard Country Name/Area')): clean(r.get('ISO-alpha2 Code')) for r in sheet(pw, 'Regions, area, and countries')}
     registry = Registry(sheet(ow, 'All Entities'), sheet(ow, 'Entity Ownership'))
     ledger = json.loads((ROOT / 'data/projects/invest/verifications.json').read_text())['records']
-    research, report, export = build(sheet(pw, 'Power facilities'), iso, registry, ledger, a.today)
+    eia_path = ROOT / 'data/projects/raw/invest/research-eia.json'
+    extra = json.loads(eia_path.read_text())['projects'] if eia_path.exists() else []
+    research, report, export = build(sheet(pw, 'Power facilities'), iso, registry, ledger, a.today, extra)
     for path, value in ((ROOT / 'data/projects/raw/invest/research.json', {'projects': research}),
                         (ROOT / 'data/projects/invest/report.json', report), (ROOT / 'assets/globe/projects-invest.json', export)):
         path.parent.mkdir(parents=True, exist_ok=True)

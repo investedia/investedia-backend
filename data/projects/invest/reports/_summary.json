@@ -1,0 +1,71 @@
+{
+ "batches": [
+  {
+   "batch": "2026-11-acwa-portfolio",
+   "candidates": 33,
+   "categories": {
+    "C": 23,
+    "A": 10
+   },
+   "yield_pct": 30.3,
+   "seconds": 0.3,
+   "audit": "10/10"
+  },
+  {
+   "batch": "2026-11-dominion-10k",
+   "candidates": 25,
+   "categories": {
+    "C": 24,
+    "A": 1
+   },
+   "yield_pct": 4.0,
+   "seconds": 3.0,
+   "audit": "1/1"
+  },
+  {
+   "batch": "2026-11-enbw-project-pages",
+   "candidates": 20,
+   "categories": {
+    "A": 2,
+    "C": 18
+   },
+   "yield_pct": 10.0,
+   "seconds": 0.1,
+   "audit": "2/2"
+  },
+  {
+   "batch": "2026-11-nhpc-under-construction",
+   "candidates": 32,
+   "categories": {
+    "C": 27,
+    "A": 5
+   },
+   "yield_pct": 15.6,
+   "seconds": 0.0,
+   "audit": "5/5"
+  },
+  {
+   "batch": "2026-11-scatec-portfolio",
+   "candidates": 23,
+   "categories": {
+    "A": 1,
+    "C": 22
+   },
+   "yield_pct": 4.3,
+   "seconds": 0.2,
+   "audit": "1/1"
+  }
+ ],
+ "unresolved": {
+  "not named in the batch documents": 95,
+  "document lists phases": 11,
+  "stake conflict": 3,
+  "capacity differs": 3,
+  "prose passage states no capacity to confirm the project": 1,
+  "name match is partial and capacity cannot confirm it": 1
+ },
+ "audit_total": {
+  "checked": 19,
+  "correct": 19
+ }
+}

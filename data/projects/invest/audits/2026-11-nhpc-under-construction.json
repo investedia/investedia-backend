@@ -1,0 +1,37 @@
+{
+ "batch": "2026-11-nhpc-under-construction",
+ "auditor": "Claude (manual read of each passage against the source document)",
+ "date": "2026-11-12",
+ "sample": "all A records (100%)",
+ "checked": 5,
+ "correct": 5,
+ "false_positives": 0,
+ "note": "NHPC under-construction list: Dibang 2,880 MW, Subansiri (Lower) 2,000, Teesta VI 500, Rangit-IV (JV) 120, Ganjam 40; all agree with GEM.",
+ "items": [
+  {
+   "key": "gem:L100000601853|E100000120883",
+   "proves": "NHPC Limited names Dibang",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100000602048|E100000120883",
+   "proves": "NHPC Limited names Subansiri (Lower)",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100000602010|E100000120883",
+   "proves": "NHPC Limited names Rangit-IV HEP (JV)",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100000602067|E100000120883",
+   "proves": "NHPC Limited names Teesta VI HEP",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100001019878|E100000120883",
+   "proves": "NHPC Limited names Ground Mounted Solar Power Project, Ganjam",
+   "result": "correct"
+  }
+ ]
+}

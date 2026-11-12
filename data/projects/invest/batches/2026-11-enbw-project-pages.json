@@ -1,0 +1,49 @@
+{
+ "batch": "2026-11-enbw-project-pages",
+ "company": "EnBW Energie Baden-Württemberg",
+ "company_entity_ids": [
+  "E100000000407"
+ ],
+ "identity": {
+  "scheme": "LEI",
+  "id": "529900JSFZ4TS59HKD79",
+  "legal_name": "EnBW Energie Baden-Württemberg AG",
+  "status": "ACTIVE",
+  "source_url": "https://api.gleif.org/api/v1/lei-records/529900JSFZ4TS59HKD79",
+  "checked_at": "2026-11-12"
+ },
+ "listing": {
+  "ticker": "EBK",
+  "exchange": "Frankfurt Stock Exchange and Stuttgart Stock Exchange (regulated market)",
+  "isin": "DE0005220008",
+  "source_url": "https://www.enbw.com/company/investors/share/",
+  "checked_at": "2026-11-12"
+ },
+ "documents": [
+  {
+   "url": "https://www.enbw.com/company/topics/coal-phaseout/heilbronn-combined-heat-and-power-plant/",
+   "date": "2026-08-31",
+   "kind": "company",
+   "publisher": "EnBW",
+   "publisher_is_listed_company": true,
+   "title": "Heilbronn CHP plant project page",
+   "extract": {
+    "type": "prose"
+   }
+  },
+  {
+   "url": "https://www.enbw.com/unternehmen/konzern/energieerzeugung/neubau-und-projekte/gas-und-dampfturbinenanlage-gud-altbach-deizisau/",
+   "date": "2026-09-30",
+   "kind": "company",
+   "publisher": "EnBW",
+   "publisher_is_listed_company": true,
+   "title": "GuD Altbach/Deizisau project page",
+   "extract": {
+    "type": "prose"
+   }
+  }
+ ],
+ "company_tokens": [
+  "enbw"
+ ]
+}

@@ -1,0 +1,255 @@
+{
+ "batch": "2026-11-scatec-portfolio",
+ "run_at": "2026-11-12",
+ "company": "Scatec",
+ "documents": [
+  {
+   "url": "https://storage.mfn.se/a0d6c1c3-c903-4c13-9985-b1d911d0daf7/scatec-q2-2026-report.pdf",
+   "sha256": "52cb082ab99c1363a6c65fbf7e728f48c0ef11b73b6537db403992f2afb2e56b",
+   "date": "2026-06-30",
+   "kind": "company",
+   "rows": 39
+  }
+ ],
+ "candidates": 23,
+ "categories": {
+  "A": 1,
+  "C": 22
+ },
+ "verified_written": 1,
+ "yield_pct": 4.3,
+ "unresolved_reasons": {
+  "capacity differs": 1,
+  "document lists phases (Sidi Bouzid 2, Tunisia); the GEM plant must be split by phase first": 1,
+  "stake conflict": 1,
+  "not named in the batch documents": 19
+ },
+ "internal_only": 0,
+ "cost": {
+  "seconds": 0.2,
+  "documents": 1,
+  "bytes": 31800285
+ },
+ "audit_sample": [
+  {
+   "project": "Egypt Aluminium solar farm",
+   "id": "gem:L100001045291",
+   "document_row": "Egypt Aluminium",
+   "stake": 100.0,
+   "passage": "Egypt Aluminium                     Solar              1,125        100%"
+  }
+ ],
+ "results": [
+  {
+   "project": "gem:L100001045291",
+   "name": "Egypt Aluminium solar farm",
+   "category": "A",
+   "reasons": [
+    "named in the company publication with 100.0%"
+   ],
+   "stake": 100.0,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000804037",
+   "name": "Al Diwaniyah solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001016807",
+   "name": "Damietta Green Methanol wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001016808",
+   "name": "Damietta green methanol solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001064686",
+   "name": "Duazon solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001016809",
+   "name": "Egypt Green solar farm",
+   "category": "C",
+   "reasons": [
+    "capacity differs: document 1505.0 MW vs GEM 130.0 MW"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000811571",
+   "name": "Guider solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000804040",
+   "name": "Khidir solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001049997",
+   "name": "Kroonstad PV Cluster solar farm",
+   "category": "C",
+   "reasons": [
+    "stake conflict: company 41.0% vs GEM 50.0% (not resolved automatically)"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001019127",
+   "name": "Liberia (SCATEC) solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000811572",
+   "name": "Maroua solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000602430",
+   "name": "Mpatamanga Gorge hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001045292",
+   "name": "Obelisk solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001061986",
+   "name": "Port Said Green Methanol solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001045262",
+   "name": "Port Said Green Methanol wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000804038",
+   "name": "Sawa 1 Solar",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000804039",
+   "name": "Sawa 2 Solar",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000800285",
+   "name": "Segou solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000800286",
+   "name": "Selebi-Phikwe solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000811680",
+   "name": "Sidi Bouzid-Scatec solar farm",
+   "category": "C",
+   "reasons": [
+    "document lists phases (Sidi Bouzid 2, Tunisia); the GEM plant must be split by phase first"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001080214",
+   "name": "Sierra Leone (Scatec) solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000800339",
+   "name": "Tozeur-Scatec solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000921992",
+   "name": "West Sohag wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  }
+ ]
+}

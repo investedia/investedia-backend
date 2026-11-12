@@ -1,0 +1,269 @@
+{
+ "batch": "2026-11-dominion-10k",
+ "run_at": "2026-11-12",
+ "company": "Dominion Energy",
+ "documents": [
+  {
+   "url": "https://www.sec.gov/Archives/edgar/data/715957/000119312526063120/d-20251231.htm",
+   "sha256": "cbbdfb7a9db2a2fcd03ee03f8f7971226e1fe3200cb7326e5c6c88ea8b743a2a",
+   "date": "2026-02-23",
+   "kind": "company",
+   "rows": 2
+  }
+ ],
+ "candidates": 25,
+ "categories": {
+  "C": 24,
+  "A": 1
+ },
+ "verified_written": 1,
+ "yield_pct": 4.0,
+ "unresolved_reasons": {
+  "prose passage states no capacity to confirm the project": 1,
+  "not named in the batch documents": 23
+ },
+ "internal_only": 0,
+ "cost": {
+  "seconds": 3.0,
+  "documents": 1,
+  "bytes": 18147347
+ },
+ "audit_sample": [
+  {
+   "project": "Chesterfield Energy Reliability Center",
+   "id": "gem:L100001026043",
+   "document_row": "Chesterfield Energy Reliability Center",
+   "stake": null,
+   "passage": "Significant projects under construction or development as well as significant projects under consideration are set forth below: • Virginia Power plans to invest approximately $6.9 billion from 2026 through 2030 to acquire or construct several solar facilities to serve utility customers. See Notes 10 and 13 to the Consolidated Financial Statements for additional information. • Virginia Power plans to invest approximately $2.0 billion from 2026 to 2030 to develop battery-storage facilities to serve utility customers. • Virginia Power has received approval to construct and operate the Chesterfiel"
+  }
+ ],
+ "results": [
+  {
+   "project": "gem:L100001026043",
+   "name": "Chesterfield Energy Reliability Center",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001020741",
+   "name": "Beldale Solar",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001020742",
+   "name": "Blue Ridge Solar",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001046954",
+   "name": "Canadays power station",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000832780",
+   "name": "Cerulean solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000804980",
+   "name": "Chester White solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000832794",
+   "name": "Clover Creek (Virginia) Solar",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000907703",
+   "name": "Coastal Virginia Offshore Wind (CVOW) Commercial Project",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000832813",
+   "name": "Courthouse solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001080156",
+   "name": "Cumberland Energy Center",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000804982",
+   "name": "Dulles solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000805168",
+   "name": "Highlands (Dominion) Solar Project",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000833016",
+   "name": "Kings Creek Solar",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000907677",
+   "name": "Kitty Hawk wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000804984",
+   "name": "Merry Point solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000804985",
+   "name": "Moon Corner solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000500116",
+   "name": "North Anna nuclear power plant",
+   "category": "C",
+   "reasons": [
+    "prose passage states no capacity to confirm the project"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000833169",
+   "name": "Pineside Solar",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000833202",
+   "name": "Randolph Solar Project",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000833226",
+   "name": "Rocky Run Solar",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000804993",
+   "name": "Sweet Sue Solar",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000832459",
+   "name": "Urcuqui solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000104178",
+   "name": "Urquhart Station",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000804994",
+   "name": "Walnut Solar",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000804997",
+   "name": "Winterpock solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "batch": "2026-11-enbw-project-pages",
+ "auditor": "Claude (manual read of each passage against the source document)",
+ "date": "2026-11-12",
+ "sample": "all A records (100%)",
+ "checked": 2,
+ "correct": 2,
+ "false_positives": 0,
+ "note": "Company project pages state EnBW is building the plants; capacities 675 MW and 665 MW agree with GEM.",
+ "items": [
+  {
+   "key": "gem:L100000101875|E100000000407",
+   "proves": "EnBW names Heilbronn power station",
+   "result": "correct"
+  },
+  {
+   "key": "gem:L100000101873|E100000000407",
+   "proves": "EnBW names Altbach power station",
+   "result": "correct"
+  }
+ ]
+}

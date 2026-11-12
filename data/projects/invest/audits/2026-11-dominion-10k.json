@@ -1,0 +1,17 @@
+{
+ "batch": "2026-11-dominion-10k",
+ "auditor": "Claude (manual read of each passage against the source document)",
+ "date": "2026-11-12",
+ "sample": "all A records (100%)",
+ "checked": 1,
+ "correct": 1,
+ "false_positives": 0,
+ "note": "10-K: Virginia Power (Dominion subsidiary) approved to construct and operate Chesterfield Energy Reliability Center, 944 MW, expected cost $1.5 billion, in service 2029.",
+ "items": [
+  {
+   "key": "gem:L100001026043|E100000001193",
+   "proves": "Dominion Energy, Inc. (Form 10-K, FY2025) names Chesterfield Energy Reliability Center",
+   "result": "correct"
+  }
+ ]
+}

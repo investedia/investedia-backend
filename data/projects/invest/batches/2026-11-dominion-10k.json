@@ -1,0 +1,42 @@
+{
+ "batch": "2026-11-dominion-10k",
+ "company": "Dominion Energy",
+ "company_entity_ids": [
+  "E100000001193"
+ ],
+ "company_tokens": [
+  "dominion"
+ ],
+ "identity": {
+  "scheme": "LEI",
+  "id": "ILUL7B6Z54MRYCF6H308",
+  "legal_name": "DOMINION ENERGY, INC.",
+  "source_url": "https://api.gleif.org/api/v1/lei-records/ILUL7B6Z54MRYCF6H308",
+  "checked_at": "2026-11-12"
+ },
+ "listing": {
+  "ticker": "D",
+  "exchange": "NYSE",
+  "cik": 715957,
+  "source_url": "https://data.sec.gov/submissions/CIK0000715957.json",
+  "checked_at": "2026-11-12"
+ },
+ "documents": [
+  {
+   "url": "https://www.sec.gov/Archives/edgar/data/715957/000119312526063120/d-20251231.htm",
+   "date": "2026-02-23",
+   "kind": "company",
+   "publisher": "Dominion Energy, Inc. (Form 10-K, FY2025)",
+   "publisher_is_listed_company": true,
+   "extract": {
+    "type": "prose",
+    "company_words": [
+     "Dominion",
+     "Virginia Power",
+     "DESC",
+     "the Company"
+    ]
+   }
+  }
+ ]
+}

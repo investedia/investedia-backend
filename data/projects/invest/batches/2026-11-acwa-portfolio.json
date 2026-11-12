@@ -1,0 +1,40 @@
+{
+ "batch": "2026-11-acwa-portfolio",
+ "company": "ACWA Power",
+ "company_entity_ids": [
+  "E100000000882"
+ ],
+ "identity": {
+  "scheme": "LEI",
+  "id": "558600Y0TFKRV2QZ1A74",
+  "legal_name": "ACWA POWER COMPANY",
+  "status": "ACTIVE",
+  "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+  "checked_at": "2026-11-12"
+ },
+ "listing": {
+  "ticker": "2082",
+  "exchange": "Saudi Exchange (Tadawul), main market",
+  "isin": "SA15CGS10H12",
+  "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+  "checked_at": "2026-11-12"
+ },
+ "documents": [
+  {
+   "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf",
+   "date": "2025-09-30",
+   "kind": "company",
+   "publisher": "ACWA Power",
+   "publisher_is_listed_company": true,
+   "title": "3Q & 9M 2025 Interim Investor Report",
+   "extract": {
+    "type": "table",
+    "row": "^(?P<lead>.{0,30}?)\\s+(?P<n>\\d)\\s+(?P<cost>[\\d,]+)\\s+(?P<pct>[\\d.]+)%\\s+(?P<mw>[\\d,]+|-)\\s",
+    "name_window": 16
+   }
+  }
+ ],
+ "company_tokens": [
+  "acwa"
+ ]
+}

@@ -1,0 +1,237 @@
+{
+ "batch": "2026-11-enbw-project-pages",
+ "run_at": "2026-11-12",
+ "company": "EnBW Energie Baden-Württemberg",
+ "documents": [
+  {
+   "url": "https://www.enbw.com/company/topics/coal-phaseout/heilbronn-combined-heat-and-power-plant/",
+   "sha256": "eddbfa468340d85aa9a64b4959f7330e3cefbb2998b416d6156a2242fdbf3879",
+   "date": "2026-08-31",
+   "kind": "company",
+   "rows": 1
+  },
+  {
+   "url": "https://www.enbw.com/unternehmen/konzern/energieerzeugung/neubau-und-projekte/gas-und-dampfturbinenanlage-gud-altbach-deizisau/",
+   "sha256": "37b2c9b3c81fb6b4ff0d1e009b9fed87587802c6b3097082a5b4fe4f554fa11b",
+   "date": "2026-09-30",
+   "kind": "company",
+   "rows": 1
+  }
+ ],
+ "candidates": 20,
+ "categories": {
+  "A": 2,
+  "C": 18
+ },
+ "verified_written": 2,
+ "yield_pct": 10.0,
+ "unresolved_reasons": {
+  "not named in the batch documents": 18
+ },
+ "internal_only": 0,
+ "cost": {
+  "seconds": 0.1,
+  "documents": 2,
+  "bytes": 599093
+ },
+ "audit_sample": [
+  {
+   "project": "Heilbronn power station",
+   "id": "gem:L100000101875",
+   "document_row": "Heilbronn power station",
+   "stake": null,
+   "passage": "Fuel Switch The project EnBW is consistently continuing the decarbonization of its generation portfolio with the expansion of renewable energies. Due to legal requirements, all coal power plants in Germany must also be shut down by no later than 2038, including the plant in Heilbronn. The most important consideration in the region, however, is guaranteeing security of supply for electricity and district heating, which is why EnBW is building a controllable, hydrogen-ready combined cycle gas turbine (CCGT) plant at the site: The new, gas-fired plant has an electrical output of 675 megawatts (MW"
+  },
+  {
+   "project": "Altbach power station",
+   "id": "gem:L100000101873",
+   "document_row": "Altbach power station",
+   "stake": null,
+   "passage": "Fuel Switch Projektvorstellung Die EnBW setzt mit dem Ausbau der erneuerbaren Energien die Dekarbonisierung ihres Erzeugungsportfolios konsequent fort. Aufgrund gesetzlicher Vorgaben müssen zudem alle Kohlekraftwerke in Deutschland bis spätestens 2038 abgeschaltet werden, so auch in Altbach/Deizisau. Die regionale Versorgungssicherheit mit Strom und Fernwärme hat jedoch oberste Priorität, weshalb die EnBW am Standort eine regelbare, wasserstofffähige Gas- und Dampfturbinenanlage (GuD) baut: Die neue, gasbefeuerte Anlage hat eine elektrische Leistung von 665 Megawatt (MW) und eine thermische Le"
+  }
+ ],
+ "results": [
+  {
+   "project": "gem:L100000101873",
+   "name": "Altbach power station",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000101875",
+   "name": "Heilbronn power station",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000920033",
+   "name": "Aspach-Oppenweiler wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000920040",
+   "name": "Bad Wildbad wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000920046",
+   "name": "Benndorf wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000920071",
+   "name": "Burladingen wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000920077",
+   "name": "Derental wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001045976",
+   "name": "Forbach Pumped Storage hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000920113",
+   "name": "Gundelsheim wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000916283",
+   "name": "He Dreiht wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000920151",
+   "name": "Kämpfelbach wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000921193",
+   "name": "Mona offshore wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000921201",
+   "name": "Morgan Offshore wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000921203",
+   "name": "Morven Offshore wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000920202",
+   "name": "Obhausen-Nemsdorf wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000101880",
+   "name": "RDK (Karlsruhe) power station",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000920254",
+   "name": "Titisee-Neustadt wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000827607",
+   "name": "VNG AG solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000920263",
+   "name": "Vierherrenwald wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000920273",
+   "name": "Weingarten wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  }
+ ]
+}

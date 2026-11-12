@@ -1,0 +1,53 @@
+{
+ "batch": "2026-11-aes-10k",
+ "company": "AES Corporation",
+ "company_entity_ids": [
+  "lei:2NUNNB7D43COUIRE5295"
+ ],
+ "hq_country": "United States",
+ "pool": "by_location",
+ "countries": [
+  "United States",
+  "Chile",
+  "Argentina",
+  "El Salvador",
+  "Panama",
+  "Dominican Republic",
+  "Colombia",
+  "Mexico",
+  "Bulgaria",
+  "Vietnam"
+ ],
+ "identity": {
+  "scheme": "LEI",
+  "id": "2NUNNB7D43COUIRE5295",
+  "legal_name": "THE AES CORPORATION",
+  "source_url": "https://api.gleif.org/api/v1/lei-records/2NUNNB7D43COUIRE5295",
+  "checked_at": "2026-11-12"
+ },
+ "listing": {
+  "ticker": "AES",
+  "exchange": "NYSE",
+  "cik": 874761,
+  "source_url": "https://data.sec.gov/submissions/CIK0000874761.json",
+  "checked_at": "2026-11-12"
+ },
+ "documents": [
+  {
+   "url": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000063/aes-20251231.htm",
+   "date": "2026-03-02",
+   "kind": "company",
+   "publisher": "The AES Corporation (Form 10-K, FY2025)",
+   "publisher_is_listed_company": true,
+   "extract": {
+    "type": "table",
+    "row": "^(?P<name>[A-Z][A-Za-z0-9&().' \\-]+?) (?P<loc>US-[A-Z]{2}|US-Various|Chile|Argentina|El Salvador|Panama|Dominican Republic|Colombia|Mexico|Bulgaria|Vietnam) (?P<tech>Solar|Wind|Energy Storage|Gas|Hydro) (?P<mw>[\\d,]+)\\s+(?P<pct>\\d{1,3})\\s+%",
+    "continuation": "^(?P<tech>Energy Storage|Solar|Wind) (?P<mw>[\\d,]+)$",
+    "cod": "[12]H(?:-[12]H)? 20\\d\\d(?: - [12]H 20\\d\\d)?"
+   }
+  }
+ ],
+ "company_tokens": [
+  "aes"
+ ]
+}

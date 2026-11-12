@@ -3,6 +3,8 @@
  "how": "One record per '<project id>|<listed GEM entity id>'. identity {scheme LEI|CIK, id, source_url, checked_at}; listing {ticker, exchange, source_url, checked_at}; link [{url, proves, quote, retrieved_at, edge?}] with at least one primary document; reviewer; verified_at. See tools/projects/invest/rules.py.",
  "records": {
   "gem:L100000101875|E100000000407": {
+   "category": "A",
+   "exposure_type": "direct",
    "identity": {
     "scheme": "LEI",
     "id": "529900JSFZ4TS59HKD79",
@@ -21,19 +23,34 @@
    "link": [
     {
      "url": "https://www.enbw.com/company/topics/coal-phaseout/heilbronn-combined-heat-and-power-plant/",
-     "proves": "EnBW is building the 675 MW Heilbronn CCGT plant; groundbreaking 23 Feb 2024; commissioning expected 2027",
-     "quote": "EnBW is building a controllable, hydrogen-ready combined cycle gas turbine (CCGT) plant at the site.",
-     "retrieved_at": "2026-11-12"
+     "sha256": "eddbfa468340d85aa9a64b4959f7330e3cefbb2998b416d6156a2242fdbf3879",
+     "document_date": "2026-08-31",
+     "publisher": "EnBW",
+     "proves": "EnBW names Heilbronn power station",
+     "quote": "Fuel Switch The project EnBW is consistently continuing the decarbonization of its generation portfolio with the expansion of renewable energies. Due to legal requirements, all coal power plants in Germany must also be shut down by no later than 2038, including the plant in Heilbronn. The most important consideration in the region, however, is guaranteeing security of supply for electricity and district heating, which is why EnBW is building a controllable, hydrogen-ready combined cycle gas turbine (CCGT) plant at the site: The new, gas-fired plant has an electrical output of 675 megawatts (MW",
+     "retrieved_at": "2026-11-12",
+     "edge": null
     }
    ],
    "stake": {
     "value": null,
-    "note": "Company page states EnBW builds the plant; percentage not stated by the company (GEM lists 100%)"
+    "note": "Not stated in the document"
    },
-   "reviewer": "Claude (agent), 12 Nov 2026",
+   "document_row": {
+    "name": "Heilbronn power station",
+    "mw": 675.0,
+    "cod": null,
+    "section": null
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-enbw-project-pages",
+   "reviewer": "engine (batch 2026-11-enbw-project-pages)",
    "verified_at": "2026-11-12"
   },
   "gem:L100000101873|E100000000407": {
+   "category": "A",
+   "exposure_type": "direct",
    "identity": {
     "scheme": "LEI",
     "id": "529900JSFZ4TS59HKD79",
@@ -52,16 +69,29 @@
    "link": [
     {
      "url": "https://www.enbw.com/unternehmen/konzern/energieerzeugung/neubau-und-projekte/gas-und-dampfturbinenanlage-gud-altbach-deizisau/",
-     "proves": "EnBW is building the 665 MW Altbach/Deizisau CCGT plant; gas connection completed Sep 2026; commercial operation expected Q3 2027",
-     "quote": "die EnBW am Standort eine regelbare, wasserstofffähige Gas- und Dampfturbinenanlage (GuD) baut",
-     "retrieved_at": "2026-11-12"
+     "sha256": "37b2c9b3c81fb6b4ff0d1e009b9fed87587802c6b3097082a5b4fe4f554fa11b",
+     "document_date": "2026-09-30",
+     "publisher": "EnBW",
+     "proves": "EnBW names Altbach power station",
+     "quote": "Fuel Switch Projektvorstellung Die EnBW setzt mit dem Ausbau der erneuerbaren Energien die Dekarbonisierung ihres Erzeugungsportfolios konsequent fort. Aufgrund gesetzlicher Vorgaben müssen zudem alle Kohlekraftwerke in Deutschland bis spätestens 2038 abgeschaltet werden, so auch in Altbach/Deizisau. Die regionale Versorgungssicherheit mit Strom und Fernwärme hat jedoch oberste Priorität, weshalb die EnBW am Standort eine regelbare, wasserstofffähige Gas- und Dampfturbinenanlage (GuD) baut: Die neue, gasbefeuerte Anlage hat eine elektrische Leistung von 665 Megawatt (MW) und eine thermische Le",
+     "retrieved_at": "2026-11-12",
+     "edge": null
     }
    ],
    "stake": {
     "value": null,
-    "note": "Company page states EnBW builds the plant; percentage not stated by the company (GEM lists 100%)"
+    "note": "Not stated in the document"
    },
-   "reviewer": "Claude (agent), 12 Nov 2026",
+   "document_row": {
+    "name": "Altbach power station",
+    "mw": 665.0,
+    "cod": null,
+    "section": null
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-enbw-project-pages",
+   "reviewer": "engine (batch 2026-11-enbw-project-pages)",
    "verified_at": "2026-11-12"
   },
   "gem:L100000401075|E100000000882": {
@@ -93,6 +123,794 @@
     "note": "Stated by the company"
    },
    "reviewer": "Claude (agent), 12 Nov 2026",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100001018770|E100000000882": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "558600Y0TFKRV2QZ1A74",
+    "legal_name": "ACWA POWER COMPANY",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "2082",
+    "exchange": "Saudi Exchange (Tadawul), main market",
+    "isin": "SA15CGS10H12",
+    "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+    "checked_at": "2026-11-12"
+   },
+   "link": [
+    {
+     "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf",
+     "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+     "document_date": "2025-09-30",
+     "publisher": "ACWA Power",
+     "proves": "ACWA Power names Haden Solar PV with a 35.1% interest",
+     "quote": "PPA-                                                            Saudi Power / Haden Solar        Saudi                                                                                                                                                                          Operating / 1        4,375      35.10%      2,000       -          -          -        -       -     2,000      -     BOO-25          PV          Q1 2027        EAI                    Procurement / PV                Arabia      ",
+     "retrieved_at": "2026-11-12",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": 35.1,
+    "note": "As stated in the document"
+   },
+   "document_row": {
+    "name": "Haden Solar PV",
+    "mw": 2000.0,
+    "cod": "Q1 2027",
+    "section": null
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-acwa-portfolio",
+   "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100001018768|E100000000882": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "558600Y0TFKRV2QZ1A74",
+    "legal_name": "ACWA POWER COMPANY",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "2082",
+    "exchange": "Saudi Exchange (Tadawul), main market",
+    "isin": "SA15CGS10H12",
+    "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+    "checked_at": "2026-11-12"
+   },
+   "link": [
+    {
+     "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf",
+     "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+     "document_date": "2025-09-30",
+     "publisher": "ACWA Power",
+     "proves": "ACWA Power names Al-Muwaih Solar with a 35.1% interest",
+     "quote": "day)             day) / PPA-                                                          Saudi Power / Al-Muwaih          Saudi                                                                                                                                                                      Operating / 1        4,427      35.10%      2,000       -          -          -        -       -     2,000      -     BOO-25        PV         Q1 2027        EAI                     Procurement / Solar         ",
+     "retrieved_at": "2026-11-12",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": 35.1,
+    "note": "As stated in the document"
+   },
+   "document_row": {
+    "name": "Al-Muwaih Solar",
+    "mw": 2000.0,
+    "cod": "Q1 2027",
+    "section": null
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-acwa-portfolio",
+   "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100001018767|E100000000882": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "558600Y0TFKRV2QZ1A74",
+    "legal_name": "ACWA POWER COMPANY",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "2082",
+    "exchange": "Saudi Exchange (Tadawul), main market",
+    "isin": "SA15CGS10H12",
+    "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+    "checked_at": "2026-11-12"
+   },
+   "link": [
+    {
+     "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf",
+     "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+     "document_date": "2025-09-30",
+     "publisher": "ACWA Power",
+     "proves": "ACWA Power names Al-Khushaybi PV with a 35.1% interest",
+     "quote": "PPA-                                                          Saudi Power / Al-Khushay-       Saudi                                                                                                                                                                      Operating / 1        3,457      35.10%      1,500       -          -          -        -       -     1,500      -     BOO-25        PV         Q1 2027        EAI                     Procurement / bi PV            Arabia                ",
+     "retrieved_at": "2026-11-12",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": 35.1,
+    "note": "As stated in the document"
+   },
+   "document_row": {
+    "name": "Al-Khushaybi PV",
+    "mw": 1500.0,
+    "cod": "Q1 2027",
+    "section": null
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-acwa-portfolio",
+   "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100000801313|E100000000882": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "558600Y0TFKRV2QZ1A74",
+    "legal_name": "ACWA POWER COMPANY",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "2082",
+    "exchange": "Saudi Exchange (Tadawul), main market",
+    "isin": "SA15CGS10H12",
+    "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+    "checked_at": "2026-11-12"
+   },
+   "link": [
+    {
+     "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf",
+     "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+     "document_date": "2025-09-30",
+     "publisher": "ACWA Power",
+     "proves": "ACWA Power names Saguling Floating PV IPP with a 49.0% interest",
+     "quote": "PPA- / Saguling Float-   Indone-                                                                                                                                                                     Operating / 1         225       49.00%       60         -          -          -        -       -      60        -     BOO-25        PV         Q4 2026        EAI                         PLN / ing PV IPP          sia                                                                                        ",
+     "retrieved_at": "2026-11-12",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": 49.0,
+    "note": "As stated in the document"
+   },
+   "document_row": {
+    "name": "Saguling Floating PV IPP",
+    "mw": 60.0,
+    "cod": "Q4 2026",
+    "section": null
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-acwa-portfolio",
+   "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100001063143|E100000000882": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "558600Y0TFKRV2QZ1A74",
+    "legal_name": "ACWA POWER COMPANY",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "2082",
+    "exchange": "Saudi Exchange (Tadawul), main market",
+    "isin": "SA15CGS10H12",
+    "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+    "checked_at": "2026-11-12"
+   },
+   "link": [
+    {
+     "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf",
+     "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+     "document_date": "2025-09-30",
+     "publisher": "ACWA Power",
+     "proves": "ACWA Power names Bisha PV with a 35.1% interest",
+     "quote": "PPA-                                                         Saudi Power / Saudi                                                                                                                                                                       Operating / Bisha PV                        1        5,625      35.10%      3,000       -          -          -        -       -     3,000       -     BOO-25        PV         Q1 2028        EAI                    Procurement / Arabia                   ",
+     "retrieved_at": "2026-11-12",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": 35.1,
+    "note": "As stated in the document"
+   },
+   "document_row": {
+    "name": "Bisha PV",
+    "mw": 3000.0,
+    "cod": "Q1 2028",
+    "section": null
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-acwa-portfolio",
+   "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100001063152|E100000000882": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "558600Y0TFKRV2QZ1A74",
+    "legal_name": "ACWA POWER COMPANY",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "2082",
+    "exchange": "Saudi Exchange (Tadawul), main market",
+    "isin": "SA15CGS10H12",
+    "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+    "checked_at": "2026-11-12"
+   },
+   "link": [
+    {
+     "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf",
+     "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+     "document_date": "2025-09-30",
+     "publisher": "ACWA Power",
+     "proves": "ACWA Power names Afif 1 PV with a 35.1% interest",
+     "quote": "PPA-                                                         Saudi Power / Saudi                                                                                                                                                                       Operating / Afif 1 PV                       1        3,750      35.10%      2,000       -          -          -        -       -     2,000       -     BOO-25        PV         Q4 2027        EAI                    Procurement / Arabia                   ",
+     "retrieved_at": "2026-11-12",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": 35.1,
+    "note": "As stated in the document"
+   },
+   "document_row": {
+    "name": "Afif 1 PV",
+    "mw": 2000.0,
+    "cod": "Q4 2027",
+    "section": null
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-acwa-portfolio",
+   "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100001063155|E100000000882": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "558600Y0TFKRV2QZ1A74",
+    "legal_name": "ACWA POWER COMPANY",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "2082",
+    "exchange": "Saudi Exchange (Tadawul), main market",
+    "isin": "SA15CGS10H12",
+    "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+    "checked_at": "2026-11-12"
+   },
+   "link": [
+    {
+     "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf",
+     "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+     "document_date": "2025-09-30",
+     "publisher": "ACWA Power",
+     "proves": "ACWA Power names Afif 2 PV with a 35.1% interest",
+     "quote": "PPA-                                                         Saudi Power / Saudi                                                                                                                                                                       Operating / Afif 2 PV                       1        3,750      35.10%      2,000       -          -          -        -       -     2,000       -     BOO-25        PV         Q4 2027        EAI                    Procurement / Arabia                   ",
+     "retrieved_at": "2026-11-12",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": 35.1,
+    "note": "As stated in the document"
+   },
+   "document_row": {
+    "name": "Afif 2 PV",
+    "mw": 2000.0,
+    "cod": "Q4 2027",
+    "section": null
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-acwa-portfolio",
+   "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100001063269|E100000000882": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "558600Y0TFKRV2QZ1A74",
+    "legal_name": "ACWA POWER COMPANY",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "2082",
+    "exchange": "Saudi Exchange (Tadawul), main market",
+    "isin": "SA15CGS10H12",
+    "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+    "checked_at": "2026-11-12"
+   },
+   "link": [
+    {
+     "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf",
+     "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+     "document_date": "2025-09-30",
+     "publisher": "ACWA Power",
+     "proves": "ACWA Power names Shaqra Wind with a 35.1% interest",
+     "quote": "PPA-                                                         Saudi Power / Saudi                                                                                                                                                                       Operating / Shaqra Wind                     1        3,000      35.10%      1,000       -          -          -        -       -     1,000       -     BOO-25       Wind        Q4 2027        EAI                    Procurement / Arabia                   ",
+     "retrieved_at": "2026-11-12",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": 35.1,
+    "note": "As stated in the document"
+   },
+   "document_row": {
+    "name": "Shaqra Wind",
+    "mw": 1000.0,
+    "cod": "Q4 2027",
+    "section": null
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-acwa-portfolio",
+   "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100001063265|E100000000882": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "558600Y0TFKRV2QZ1A74",
+    "legal_name": "ACWA POWER COMPANY",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "2082",
+    "exchange": "Saudi Exchange (Tadawul), main market",
+    "isin": "SA15CGS10H12",
+    "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+    "checked_at": "2026-11-12"
+   },
+   "link": [
+    {
+     "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf",
+     "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+     "document_date": "2025-09-30",
+     "publisher": "ACWA Power",
+     "proves": "ACWA Power names Starah Wind with a 35.1% interest",
+     "quote": "PPA-                                                         Saudi Power / Saudi                                                                                                                                                                       Operating / Starah Wind                     1        5,625      35.10%      2,000       -          -          -        -       -     2,000       -     BOO-25       Wind        Q1 2028        EAI                    Procurement / Arabia                   ",
+     "retrieved_at": "2026-11-12",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": 35.1,
+    "note": "As stated in the document"
+   },
+   "document_row": {
+    "name": "Starah Wind",
+    "mw": 2000.0,
+    "cod": "Q1 2028",
+    "section": null
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-acwa-portfolio",
+   "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100001061657|E100000000882": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "558600Y0TFKRV2QZ1A74",
+    "legal_name": "ACWA POWER COMPANY",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/558600Y0TFKRV2QZ1A74",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "2082",
+    "exchange": "Saudi Exchange (Tadawul), main market",
+    "isin": "SA15CGS10H12",
+    "source_url": "https://www.acwapower.com/en/investor-relations/overview/",
+    "checked_at": "2026-11-12"
+   },
+   "link": [
+    {
+     "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf",
+     "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+     "document_date": "2025-09-30",
+     "publisher": "ACWA Power",
+     "proves": "ACWA Power names Gijduvan Wind IPP with a 100.0% interest",
+     "quote": "Gijduvan Wind       Uzbeki-                                                                                      PPA-BOO(T)-XX                                         Operating    National Electric Grid / 1         1,349        100.00%      300          -           -          -                        WInd       Q1 2027        SUB / IPP                  stan                                                                                             YR                                              ",
+     "retrieved_at": "2026-11-12",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": 100.0,
+    "note": "As stated in the document"
+   },
+   "document_row": {
+    "name": "Gijduvan Wind IPP",
+    "mw": 300.0,
+    "cod": "Q1 2027",
+    "section": null
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-acwa-portfolio",
+   "reviewer": "engine (batch 2026-11-acwa-portfolio)",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100001045291|E100000148903": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "5967007LIEEXZXIARK36",
+    "legal_name": "Scatec ASA",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/5967007LIEEXZXIARK36",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "SCATC",
+    "exchange": "Oslo Børs (Euronext Oslo)",
+    "source_url": "https://storage.mfn.se/a0d6c1c3-c903-4c13-9985-b1d911d0daf7/scatec-q2-2026-report.pdf",
+    "checked_at": "2026-11-12",
+    "note": "to confirm on scatec.com investor page"
+   },
+   "link": [
+    {
+     "url": "https://storage.mfn.se/a0d6c1c3-c903-4c13-9985-b1d911d0daf7/scatec-q2-2026-report.pdf",
+     "sha256": "52cb082ab99c1363a6c65fbf7e728f48c0ef11b73b6537db403992f2afb2e56b",
+     "document_date": "2026-06-30",
+     "publisher": "Scatec ASA",
+     "proves": "Scatec ASA names Egypt Aluminium with a 100.0% interest",
+     "quote": "Egypt Aluminium                     Solar              1,125        100%",
+     "retrieved_at": "2026-11-12",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": 100.0,
+    "note": "As stated in the document"
+   },
+   "document_row": {
+    "name": "Egypt Aluminium",
+    "mw": 1125.0,
+    "cod": null,
+    "section": "Project backlog"
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-scatec-portfolio",
+   "reviewer": "engine (batch 2026-11-scatec-portfolio)",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100000601853|E100000120883": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "3358003ZPPTGWT595J46",
+    "legal_name": "NHPC LIMITED",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/3358003ZPPTGWT595J46",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "NHPC",
+    "exchange": "National Stock Exchange of India and BSE (533098)",
+    "source_url": "https://www.nhpcindia.com/",
+    "checked_at": "2026-11-12",
+    "note": "confirm on NSE/BSE listing page before public"
+   },
+   "link": [
+    {
+     "url": "https://www.nhpcindia.com/welcome/language/en/project/3//",
+     "sha256": "2f363e943f30a67e95dc53e9306aed6e9a7f44abf62e95104c575327f77993ba",
+     "document_date": "2026-11-12",
+     "publisher": "NHPC Limited",
+     "proves": "NHPC Limited names Dibang",
+     "quote": "Dibang Arunachal Pradesh | 12 * 240 | 2880",
+     "retrieved_at": "2026-11-12",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": null,
+    "note": "Not stated in the document"
+   },
+   "document_row": {
+    "name": "Dibang",
+    "mw": 2880.0,
+    "cod": null,
+    "section": "Under construction"
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-nhpc-under-construction",
+   "reviewer": "engine (batch 2026-11-nhpc-under-construction)",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100000602048|E100000120883": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "3358003ZPPTGWT595J46",
+    "legal_name": "NHPC LIMITED",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/3358003ZPPTGWT595J46",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "NHPC",
+    "exchange": "National Stock Exchange of India and BSE (533098)",
+    "source_url": "https://www.nhpcindia.com/",
+    "checked_at": "2026-11-12",
+    "note": "confirm on NSE/BSE listing page before public"
+   },
+   "link": [
+    {
+     "url": "https://www.nhpcindia.com/welcome/language/en/project/3//",
+     "sha256": "2f363e943f30a67e95dc53e9306aed6e9a7f44abf62e95104c575327f77993ba",
+     "document_date": "2026-11-12",
+     "publisher": "NHPC Limited",
+     "proves": "NHPC Limited names Subansiri (Lower)",
+     "quote": "Subansiri (Lower) Arunachal Pradesh and Assam | 8 * 250 | 2000",
+     "retrieved_at": "2026-11-12",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": null,
+    "note": "Not stated in the document"
+   },
+   "document_row": {
+    "name": "Subansiri (Lower)",
+    "mw": 2000.0,
+    "cod": null,
+    "section": "Under construction"
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-nhpc-under-construction",
+   "reviewer": "engine (batch 2026-11-nhpc-under-construction)",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100000602010|E100000120883": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "3358003ZPPTGWT595J46",
+    "legal_name": "NHPC LIMITED",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/3358003ZPPTGWT595J46",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "NHPC",
+    "exchange": "National Stock Exchange of India and BSE (533098)",
+    "source_url": "https://www.nhpcindia.com/",
+    "checked_at": "2026-11-12",
+    "note": "confirm on NSE/BSE listing page before public"
+   },
+   "link": [
+    {
+     "url": "https://www.nhpcindia.com/welcome/language/en/project/3//",
+     "sha256": "2f363e943f30a67e95dc53e9306aed6e9a7f44abf62e95104c575327f77993ba",
+     "document_date": "2026-11-12",
+     "publisher": "NHPC Limited",
+     "proves": "NHPC Limited names Rangit-IV HEP (JV)",
+     "quote": "Rangit-IV HEP (JV) Sikkim | 3 * 40 | 120",
+     "retrieved_at": "2026-11-12",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": null,
+    "note": "Not stated in the document"
+   },
+   "document_row": {
+    "name": "Rangit-IV HEP (JV)",
+    "mw": 120.0,
+    "cod": null,
+    "section": "Under construction"
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-nhpc-under-construction",
+   "reviewer": "engine (batch 2026-11-nhpc-under-construction)",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100000602067|E100000120883": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "3358003ZPPTGWT595J46",
+    "legal_name": "NHPC LIMITED",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/3358003ZPPTGWT595J46",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "NHPC",
+    "exchange": "National Stock Exchange of India and BSE (533098)",
+    "source_url": "https://www.nhpcindia.com/",
+    "checked_at": "2026-11-12",
+    "note": "confirm on NSE/BSE listing page before public"
+   },
+   "link": [
+    {
+     "url": "https://www.nhpcindia.com/welcome/language/en/project/3//",
+     "sha256": "2f363e943f30a67e95dc53e9306aed6e9a7f44abf62e95104c575327f77993ba",
+     "document_date": "2026-11-12",
+     "publisher": "NHPC Limited",
+     "proves": "NHPC Limited names Teesta VI HEP",
+     "quote": "Teesta VI HEP Sikkim | 4*125 | 500",
+     "retrieved_at": "2026-11-12",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": null,
+    "note": "Not stated in the document"
+   },
+   "document_row": {
+    "name": "Teesta VI HEP",
+    "mw": 500.0,
+    "cod": null,
+    "section": "Under construction"
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-nhpc-under-construction",
+   "reviewer": "engine (batch 2026-11-nhpc-under-construction)",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100001019878|E100000120883": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "3358003ZPPTGWT595J46",
+    "legal_name": "NHPC LIMITED",
+    "status": "ACTIVE",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/3358003ZPPTGWT595J46",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "NHPC",
+    "exchange": "National Stock Exchange of India and BSE (533098)",
+    "source_url": "https://www.nhpcindia.com/",
+    "checked_at": "2026-11-12",
+    "note": "confirm on NSE/BSE listing page before public"
+   },
+   "link": [
+    {
+     "url": "https://www.nhpcindia.com/welcome/language/en/project/3//",
+     "sha256": "2f363e943f30a67e95dc53e9306aed6e9a7f44abf62e95104c575327f77993ba",
+     "document_date": "2026-11-12",
+     "publisher": "NHPC Limited",
+     "proves": "NHPC Limited names Ground Mounted Solar Power Project, Ganjam",
+     "quote": "Ground Mounted Solar Power Project, Ganjam Odisha | 40 | 40",
+     "retrieved_at": "2026-11-12",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": null,
+    "note": "Not stated in the document"
+   },
+   "document_row": {
+    "name": "Ground Mounted Solar Power Project, Ganjam",
+    "mw": 40.0,
+    "cod": null,
+    "section": "Under construction"
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-nhpc-under-construction",
+   "reviewer": "engine (batch 2026-11-nhpc-under-construction)",
+   "verified_at": "2026-11-12"
+  },
+  "gem:L100001026043|E100000001193": {
+   "category": "A",
+   "exposure_type": "indirect",
+   "identity": {
+    "scheme": "LEI",
+    "id": "ILUL7B6Z54MRYCF6H308",
+    "legal_name": "DOMINION ENERGY, INC.",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/ILUL7B6Z54MRYCF6H308",
+    "checked_at": "2026-11-12"
+   },
+   "listing": {
+    "ticker": "D",
+    "exchange": "NYSE",
+    "cik": 715957,
+    "source_url": "https://data.sec.gov/submissions/CIK0000715957.json",
+    "checked_at": "2026-11-12"
+   },
+   "link": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/715957/000119312526063120/d-20251231.htm",
+     "sha256": "cbbdfb7a9db2a2fcd03ee03f8f7971226e1fe3200cb7326e5c6c88ea8b743a2a",
+     "document_date": "2026-02-23",
+     "publisher": "Dominion Energy, Inc. (Form 10-K, FY2025)",
+     "proves": "Dominion Energy, Inc. (Form 10-K, FY2025) names Chesterfield Energy Reliability Center",
+     "quote": "Significant projects under construction or development as well as significant projects under consideration are set forth below: • Virginia Power plans to invest approximately $6.9 billion from 2026 through 2030 to acquire or construct several solar facilities to serve utility customers. See Notes 10 and 13 to the Consolidated Financial Statements for additional information. • Virginia Power plans to invest approximately $2.0 billion from 2026 to 2030 to develop battery-storage facilities to serve utility customers. • Virginia Power has received approval to construct and operate the Chesterfiel",
+     "retrieved_at": "2026-11-12",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": null,
+    "note": "Not stated in the document"
+   },
+   "document_row": {
+    "name": "Chesterfield Energy Reliability Center",
+    "mw": 944.0,
+    "cod": null,
+    "section": null,
+    "joint_venture": false
+   },
+   "cost": {
+    "amount": 1500000000.0,
+    "currency": "USD",
+    "basis": "company estimate",
+    "quote": "expected to cost $1.5 billion"
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-dominion-10k",
+   "reviewer": "engine (batch 2026-11-dominion-10k)",
    "verified_at": "2026-11-12"
   }
  }

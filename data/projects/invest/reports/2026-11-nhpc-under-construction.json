@@ -1,0 +1,373 @@
+{
+ "batch": "2026-11-nhpc-under-construction",
+ "run_at": "2026-11-12",
+ "company": "NHPC",
+ "documents": [
+  {
+   "url": "https://www.nhpcindia.com/welcome/language/en/project/3//",
+   "sha256": "2f363e943f30a67e95dc53e9306aed6e9a7f44abf62e95104c575327f77993ba",
+   "date": "2026-11-12",
+   "kind": "company",
+   "rows": 18
+  }
+ ],
+ "candidates": 32,
+ "categories": {
+  "C": 27,
+  "A": 5
+ },
+ "verified_written": 5,
+ "yield_pct": 15.6,
+ "unresolved_reasons": {
+  "name match is partial and capacity cannot confirm it": 1,
+  "document lists phases (Under1000 MW CPSUs Scheme Solar Project, Rajasthan 300 MW); the GEM plant must be split by phase first": 1,
+  "document lists phases (200 MW Grid connected solar PV Project (600 MW Solar park at Khavda) Stage-I); the GEM plant must be split by phase first": 1,
+  "document lists phases (Under1000 MW CPSUs Scheme Solar Project, Andhra Pradesh 100 MW); the GEM plant must be split by phase first": 2,
+  "document lists phases (600 MW Solar Power Project Khavda, Gujarat (Stage-II)( Under1000 MW CPSUs Scheme )); the GEM plant must be split by phase first": 1,
+  "not named in the batch documents": 21
+ },
+ "internal_only": 0,
+ "cost": {
+  "seconds": 0.0,
+  "documents": 1,
+  "bytes": 156680
+ },
+ "audit_sample": [
+  {
+   "project": "Rangit IV hydroelectric plant",
+   "id": "gem:L100000602010",
+   "document_row": "Rangit-IV HEP (JV)",
+   "stake": null,
+   "passage": "Rangit-IV HEP (JV) Sikkim | 3 * 40 | 120"
+  },
+  {
+   "project": "Dibang Multipurpose hydroelectric plant",
+   "id": "gem:L100000601853",
+   "document_row": "Dibang",
+   "stake": null,
+   "passage": "Dibang Arunachal Pradesh | 12 * 240 | 2880"
+  },
+  {
+   "project": "Subansiri Lower hydroelectric plant",
+   "id": "gem:L100000602048",
+   "document_row": "Subansiri (Lower)",
+   "stake": null,
+   "passage": "Subansiri (Lower) Arunachal Pradesh and Assam | 8 * 250 | 2000"
+  },
+  {
+   "project": "Teesta-VI hydroelectric plant",
+   "id": "gem:L100000602067",
+   "document_row": "Teesta VI HEP",
+   "stake": null,
+   "passage": "Teesta VI HEP Sikkim | 4*125 | 500"
+  },
+  {
+   "project": "Ganjam solar farm",
+   "id": "gem:L100001019878",
+   "document_row": "Ground Mounted Solar Power Project, Ganjam",
+   "stake": null,
+   "passage": "Ground Mounted Solar Power Project, Ganjam Odisha | 40 | 40"
+  }
+ ],
+ "results": [
+  {
+   "project": "gem:L100000601853",
+   "name": "Dibang Multipurpose hydroelectric plant",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001019878",
+   "name": "Ganjam solar farm",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000602010",
+   "name": "Rangit IV hydroelectric plant",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000602048",
+   "name": "Subansiri Lower hydroelectric plant",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000602067",
+   "name": "Teesta-VI hydroelectric plant",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001064415",
+   "name": "Andhra Pradesh (NHPC) solar farm",
+   "category": "C",
+   "reasons": [
+    "document lists phases (Under1000 MW CPSUs Scheme Solar Project, Andhra Pradesh 100 MW); the GEM plant must be split by phase first"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000808839",
+   "name": "Andhra Pradesh (NHPC) solar plant",
+   "category": "C",
+   "reasons": [
+    "document lists phases (Under1000 MW CPSUs Scheme Solar Project, Andhra Pradesh 100 MW); the GEM plant must be split by phase first"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001064081",
+   "name": "Bikampur (NHPC) II solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001064069",
+   "name": "Bikampur (NHPC) solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001063945",
+   "name": "Bikaner (NHPC) solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000808930",
+   "name": "Bikaner (NHPC) solar plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000601835",
+   "name": "Bursar hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000601858",
+   "name": "Dugar hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001064416",
+   "name": "FDRE-III solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001063960",
+   "name": "Fatehgarh (NHPC) II solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001063932",
+   "name": "Fatehgarh (NHPC) solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000808864",
+   "name": "Gujarat (NHPC) solar plant",
+   "category": "C",
+   "reasons": [
+    "document lists phases (600 MW Solar Power Project Khavda, Gujarat (Stage-II)( Under1000 MW CPSUs Scheme )); the GEM plant must be split by phase first"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001019884",
+   "name": "Jalaun solar park",
+   "category": "C",
+   "reasons": [
+    "name match is partial and capacity cannot confirm it"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001064115",
+   "name": "Karnisar Bhatiyan (NHPC) II solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001063830",
+   "name": "Karnisar Bhatiyan (NHPC) solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001019755",
+   "name": "Khavda (NHPC) solar farm",
+   "category": "C",
+   "reasons": [
+    "document lists phases (200 MW Grid connected solar PV Project (600 MW Solar park at Khavda) Stage-I); the GEM plant must be split by phase first"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000601912",
+   "name": "Kirthai-II hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001020554",
+   "name": "Mirzapur solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001064102",
+   "name": "Rajasthan (NHPC) II solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001064106",
+   "name": "Rajasthan (NHPC) III solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001064101",
+   "name": "Rajasthan (NHPC) solar farm",
+   "category": "C",
+   "reasons": [
+    "document lists phases (Under1000 MW CPSUs Scheme Solar Project, Rajasthan 300 MW); the GEM plant must be split by phase first"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001063939",
+   "name": "Ratkuriya solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000808936",
+   "name": "Rengali floating solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001063949",
+   "name": "Sikar solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000602065",
+   "name": "Teesta-IV hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000602085",
+   "name": "Upper Subansiri hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001020260",
+   "name": "West Kallada floating solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  }
+ ]
+}
