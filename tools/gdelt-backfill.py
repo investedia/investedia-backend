@@ -350,6 +350,8 @@ def same_site(a, b):
 
 
 def clean_title(title, site):
+    # Unfilled SEO-plugin placeholders (e.g. "%%sep%% %%sitename%%") are page junk, never headline text.
+    title = re.sub(r'\s*%%[a-z_]+%%.*$', '', title).strip()
     if site:
         for sep in (' | ', ' - ', ' — ', ' – '):
             if title.endswith(sep + site): return title[:-len(sep + site)].strip()
