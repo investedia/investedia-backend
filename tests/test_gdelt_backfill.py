@@ -520,4 +520,10 @@ class CommandLineTests(unittest.TestCase):
             self.assertIn('ANTHROPIC_API_KEY', err.getvalue())
 
 
+class TitleJunkTests(unittest.TestCase):
+    def test_seo_placeholders_are_removed(self):
+        self.assertEqual(m.clean_title('Pulses get dearer %%sep%% %%enurl%% %%sep%% %%sitename%%', 'X'), 'Pulses get dearer')
+        self.assertEqual(m.clean_title('Plain - Site', 'Site'), 'Plain')
+
+
 if __name__ == '__main__': unittest.main()
