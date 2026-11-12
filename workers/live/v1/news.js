@@ -199,7 +199,8 @@ export async function ingestNews(req, env, now = Date.now()) {
   const stats = mergeStats(cur?.stats, body.stats);
   if (cur && JSON.stringify(cur.stats || null) === JSON.stringify(stats) && Array.isArray(cur.stories) && JSON.stringify(cur.stories) === JSON.stringify(stories) && (cur.generated_at || null) === (body.generated_at || null)) return { status: 200, body: { ok: true, written: false, reason: 'unchanged' } };
   await env.PRICES.put('news', JSON.stringify({ t: generated, ingested_at: now, stories, model: 'github-ingest', generated_at: body.generated_at || null, stats }));
-  return { status: 200, body: { ok: true, written: true, count: stories.length } };
+  const before = new Set((cur?.stories || []).map(x => x.id)), added = stories.filter(x => !before.has(x.id));
+  return { status: 200, body: { ok: true, written: true, count: stories.length, added } };
 }
 
 // Additive outage recovery: current news and its freshness clock are never rewritten.
