@@ -34,9 +34,9 @@ on:
         default: '25'
         required: true
       sources:
-        description: 'Feeds to backfill: all, or only the official feeds added on 2026-11-11'
+        description: 'Feeds: all, the official feeds added 2026-11-11, or the 12 thin-region feeds added 2026-11-12'
         type: choice
-        options: [all, official-2026-11-11]
+        options: [all, official-2026-11-11, extra-2026-11-12]
         default: all
       connections_only:
         description: 'Repair only missing/empty impacts on existing articles'
