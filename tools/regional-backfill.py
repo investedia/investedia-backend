@@ -219,7 +219,24 @@ def request(url, data=None, headers=None, timeout=15, raw=False):
     return content if raw else content.decode('utf-8-sig', 'replace')
 
 
-SOURCE_SETS = {'all': None, 'official-2026-11-11': lambda: {u for u,_,_ in robot.OFFICIAL_REGION_FEEDS_2026_11_11}}  # named sets for --sources
+# Owner request 12 Nov 2026 ("add 6" + "check africa batch"): thin-region feeds checked live that day (feed works,
+# robots.txt allows feed and articles, pages carry a publish date, no paywall). Used only by this tool, never the hourly robot.
+EXTRA_FEEDS_2026_11_12 = [
+    ('https://www.jamaicaobserver.com/feed', 'Jamaica Observer', 'latam'),
+    ('https://www.diariolibre.com/rss/portada.xml', 'Diario Libre', 'latam'),
+    ('https://barbadostoday.bb/feed/', 'Barbados Today', 'latam'),
+    ('https://24.kg/rss', '24.kg', 'asia'),
+    ('https://www.gazeta.uz/oz/rss/', 'Gazeta.uz', 'asia'),
+    ('https://islandsbusiness.com/feed/', 'Islands Business', 'oc'),
+    ('https://punchng.com/feed/', 'Punch Nigeria', 'af'),
+    ('https://capitalethiopia.com/feed/', 'Capital Ethiopia', 'af'),
+    ('https://www.tanzaniainvest.com/feed', 'TanzaniaInvest', 'af'),
+    ('https://www.lusakatimes.com/feed/', 'Lusaka Times', 'af'),
+    ('https://www.ktpress.rw/feed/', 'KT Press Rwanda', 'af'),
+    ('https://www.independent.co.ug/feed/', 'The Independent Uganda', 'af'),
+]
+SOURCE_SETS = {'all': None, 'official-2026-11-11': lambda: {u for u,_,_ in robot.OFFICIAL_REGION_FEEDS_2026_11_11},
+               'extra-2026-11-12': lambda: {u for u,_,_ in EXTRA_FEEDS_2026_11_12}}  # named sets for --sources
 
 
 def feed_sources(inventory, only=None):
@@ -227,6 +244,7 @@ def feed_sources(inventory, only=None):
     if not health and only is None: raise ValueError('feed_inventory_required_run_coverage_fetch_first')
     configured = [(u,n,'',r) for u,n,r in robot.REGION_FEEDS]
     configured += [(u,n,h,None) for u,n,h in robot.FEEDS if robot.OFFICIAL_RE.search(n)]
+    if only is not None: configured += [(u,n,'',r) for u,n,r in EXTRA_FEEDS_2026_11_12]  # only through a named set
     if only is not None: configured = [c for c in configured if c[0] in only]  # a named set: feeds added after the last coverage inventory
     seen = set(); enabled = []; skipped = []
     for url,name,hint,region in configured:

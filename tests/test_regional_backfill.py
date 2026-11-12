@@ -255,3 +255,13 @@ class EnglishHeadlineTests(unittest.TestCase):
         n=m.english_headlines(lambda p:[{'i':1,'english':'Export paradox in Argentina'},{'i':9,'english':'out of range item'}],stories)
         self.assertEqual(n,1);self.assertEqual(stories[0],{'headline':'Nvidia shares fall'})
         self.assertEqual(stories[1],{'headline':'Export paradox in Argentina','original_headline':'Paradoja exportadora en Argentina','headline_translated':True})
+
+
+class ExtraFeedsTests(unittest.TestCase):
+    def test_extra_feeds_are_a_named_set_and_not_in_the_hourly_robot(self):
+        urls={u for u,_,_ in m.EXTRA_FEEDS_2026_11_12}
+        self.assertEqual(len(urls),12)
+        enabled,_=m.feed_sources({},m.SOURCE_SETS['extra-2026-11-12']())
+        self.assertEqual({e['url'] for e in enabled},urls)
+        hourly={u for u,_,_ in m.robot.REGION_FEEDS}|{u for u,_,_ in m.robot.FEEDS}
+        self.assertFalse(urls&hourly)
