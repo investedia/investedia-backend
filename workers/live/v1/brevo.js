@@ -3,18 +3,20 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': 
 const SITE = 'https://investedia.com';
 // One email can carry several items: [{title, line, url, why}]
 export function alertEmail(items, unsubUrl) {
+  // Dark by default (12 Nov 2026): Gmail and most apps ignore prefers-color-scheme, so the email is dark everywhere.
   const n = items.length, subject = n === 1 ? items[0].title : `${n} alerts: ${items[0].title}`;
-  const rows = items.map(i => `<tr><td style="padding:16px 0;border-top:1px solid #e4e4e7">
-    <div style="font-size:12px;color:#ea6a0c;font-weight:600;letter-spacing:.04em;text-transform:uppercase">${esc(i.why)}</div>
-    <div style="font-size:17px;font-weight:600;color:#18181b;margin:4px 0">${esc(i.title)}</div>
-    ${i.line ? `<div style="font-size:14px;color:#52525b;line-height:1.5">${esc(i.line)}</div>` : ''}
-    <a href="${esc(i.url)}" style="display:inline-block;margin-top:10px;color:#ea6a0c;font-weight:600;text-decoration:none">Read the article →</a></td></tr>`).join('');
-  const html = `<!doctype html><html><body style="margin:0;background:#f4f4f5;font-family:Inter,-apple-system,Segoe UI,Roboto,Arial,sans-serif">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center" style="padding:24px 12px">
-  <table role="presentation" width="560" cellpadding="0" cellspacing="0" style="max-width:560px;background:#fff;border-radius:14px;padding:24px">
-  <tr><td style="font-size:18px;font-weight:700;color:#18181b;padding-bottom:12px">Investedia</td></tr>${rows}
-  <tr><td style="padding-top:18px;border-top:1px solid #e4e4e7;font-size:12px;color:#71717a;line-height:1.6">You get this because you turned on alerts at investedia.com.
-  <a href="${SITE}/watchlist.html" style="color:#71717a">Manage alerts</a> · <a href="${esc(unsubUrl)}" style="color:#71717a">Unsubscribe</a><br>Not investment advice.</td></tr>
+  const rows = items.map(i => `<tr><td style="padding:18px 0;border-top:1px solid #26262b">
+    <div style="font-size:12px;color:#ff7a1a;font-weight:600;letter-spacing:.06em;text-transform:uppercase">${esc(i.why)}</div>
+    <div style="font-size:18px;line-height:1.35;font-weight:600;color:#f4f4f5;margin:6px 0">${esc(i.title)}</div>
+    ${i.line ? `<div style="font-size:14px;color:#a1a1aa;line-height:1.55">${esc(i.line)}</div>` : ''}
+    <a href="${esc(i.url)}" style="display:inline-block;margin-top:12px;background:#ff7a1a;color:#111111;font-weight:600;font-size:14px;text-decoration:none;padding:9px 14px;border-radius:9px">Read the article →</a></td></tr>`).join('');
+  const html = `<!doctype html><html><head><meta name="color-scheme" content="dark"><meta name="supported-color-schemes" content="dark"><meta name="viewport" content="width=device-width"></head>
+  <body style="margin:0;background:#050506;font-family:Inter,-apple-system,Segoe UI,Roboto,Arial,sans-serif" bgcolor="#050506">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#050506" style="background:#050506"><tr><td align="center" style="padding:28px 12px">
+  <table role="presentation" width="560" cellpadding="0" cellspacing="0" bgcolor="#0f0f12" style="max-width:560px;width:100%;background:#0f0f12;border:1px solid #26262b;border-radius:16px;padding:26px">
+  <tr><td style="padding-bottom:14px"><span style="font-size:20px;font-weight:700;color:#f4f4f5">Invested<span style="color:#ff7a1a">i</span>a</span><span style="float:right;font-size:12px;color:#71717a;padding-top:5px">Alert</span></td></tr>${rows}
+  <tr><td style="padding-top:20px;border-top:1px solid #26262b;font-size:12px;color:#71717a;line-height:1.7">You get this because you turned on alerts at investedia.com.<br>
+  <a href="${SITE}/watchlist.html" style="color:#a1a1aa">Manage alerts</a> · <a href="${esc(unsubUrl)}" style="color:#a1a1aa">Unsubscribe</a><br>Not investment advice.</td></tr>
   </table></td></tr></table></body></html>`;
   const text = items.map(i => `${i.why}\n${i.title}\n${i.line || ''}\n${i.url}`).join('\n\n') + `\n\nManage alerts: ${SITE}/watchlist.html\nUnsubscribe: ${unsubUrl}\nNot investment advice.`;
   return { subject: subject.slice(0, 150), html, text };
