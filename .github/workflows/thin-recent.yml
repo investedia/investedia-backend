@@ -6,10 +6,9 @@ name: Thin-region recent articles (every 6 hours)
 #     running, because GitHub keeps only one waiting run per concurrency group and must not replace a backfill run.
 # Articles go to the library and day files; the hourly news robots and their feed lists are unchanged.
 on:
-  # PAUSED 12 Nov 2026 15:30 UTC: the Worker answers HTTP 500 to every write (live news too), most likely the
-  # Cloudflare KV daily write limit. Re-enable the schedule after writes work again.
-  # schedule:
-  #   - cron: '40 1,7,13,19 * * *'
+  # Resumed 13 Nov 2026: owner upgraded to Cloudflare Workers Paid (KV write limit was the 12 Nov outage).
+  schedule:
+    - cron: '40 1,7,13,19 * * *'
   workflow_dispatch:
 permissions:
   actions: write
