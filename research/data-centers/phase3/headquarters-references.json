@@ -1,0 +1,48 @@
+{
+  "source": "Existing verified frontend company-hq.json; read-only reuse of CC0 facts",
+  "snapshot_commit": "c78ab084349b43e4c166fa0f6a0dde6dbae8af5c",
+  "companies": {
+    "EQIX": {
+      "hq_city": "Redwood City",
+      "hq_lat": 37.4828,
+      "hq_lon": -122.2361,
+      "qid": "Q851641",
+      "hq_qid": "Q505549",
+      "company_label": "Equinix",
+      "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+      "source_url": "https://www.wikidata.org/entity/Q851641",
+      "checked_at": "2026-11-11",
+      "precision": "headquarters_city_reference",
+      "exact_office": false,
+      "licence": "CC0 1.0"
+    },
+    "DLR": {
+      "hq_city": "Austin",
+      "hq_lat": 30.3,
+      "hq_lon": -97.7333,
+      "qid": "Q5275969",
+      "hq_qid": "Q16559",
+      "company_label": "Digital Realty Trust",
+      "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+      "source_url": "https://www.wikidata.org/entity/Q5275969",
+      "checked_at": "2026-11-11",
+      "precision": "headquarters_city_reference",
+      "exact_office": false,
+      "licence": "CC0 1.0"
+    },
+    "AMT": {
+      "hq_city": "Boston",
+      "hq_lat": 42.3603,
+      "hq_lon": -71.0578,
+      "qid": "Q4745263",
+      "hq_qid": "Q100",
+      "company_label": "American Tower Corporation",
+      "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+      "source_url": "https://www.wikidata.org/entity/Q4745263",
+      "checked_at": "2026-11-11",
+      "precision": "headquarters_city_reference",
+      "exact_office": false,
+      "licence": "CC0 1.0"
+    }
+  }
+}

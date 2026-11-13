@@ -1,0 +1,20 @@
+{
+  "status": "deferred_until_first_data_centers_publication_batch",
+  "public_ready_dc_count": 0,
+  "existing_audit": "../phase2/real-estate-source-audit.json",
+  "audit_sha256": "b8148c5ff2fef5710d0fef50c353bb79a8c3d429a7521549af3242b84f1eda67",
+  "companies": [
+    "Prologis",
+    "SEGRO",
+    "Goodman Group",
+    "WDP",
+    "Montea"
+  ],
+  "new_verified_real_estate_records": 0,
+  "next_steps": [
+    "Select a named development from each official project-level pipeline, not regional aggregate tables",
+    "Verify property identity, listed security, developer/operator/JV roles and scoped ownership evidence",
+    "Resolve source-specific factual reuse and imagery rights; retain unresolved records internally",
+    "Use the same precision and economic categories in a research-local adapter; no shared schema changes"
+  ]
+}

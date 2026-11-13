@@ -1,0 +1,12 @@
+{
+  "frontend_commit": "c78ab084349b43e4c166fa0f6a0dde6dbae8af5c",
+  "loader_sha256": "39ea5a869b04105f34d9351f2c3ce13e353dd7fd744590ee433478a0dada07fa",
+  "probe_is_synthetic": true,
+  "normalized_shape_pass": true,
+  "data_center_candidates": 5,
+  "legacy_loader_sector": "Energy",
+  "legacy_populates_listed_owner": true,
+  "drop_in_compatibility": false,
+  "required_contract": "Sector-aware loader hook and economic-role card labels; no shared changes performed",
+  "production_files_modified": false
+}

@@ -1,0 +1,8 @@
+{
+  "url": "https://query.wikidata.org/sparql?query=SELECT+%3Fitem+%3FitemLabel+%3Fcoord+%3Fcountry+%3FcountryLabel+WHERE+%7B+VALUES+%3Fitem+%7B+wd%3AQ2807+wd%3AQ16553+wd%3AQ334+wd%3AQ16554+wd%3AQ1086547+%7D+%3Fitem+wdt%3AP625+%3Fcoord+.+OPTIONAL+%7B%3Fitem+wdt%3AP17+%3Fcountry%7D+SERVICE+wikibase%3Alabel+%7Bbd%3AserviceParam+wikibase%3Alanguage+%22en%22.%7D+%7D&format=json",
+  "final_url": "https://query.wikidata.org/sparql?query=SELECT+%3Fitem+%3FitemLabel+%3Fcoord+%3Fcountry+%3FcountryLabel+WHERE+%7B+VALUES+%3Fitem+%7B+wd%3AQ2807+wd%3AQ16553+wd%3AQ334+wd%3AQ16554+wd%3AQ1086547+%7D+%3Fitem+wdt%3AP625+%3Fcoord+.+OPTIONAL+%7B%3Fitem+wdt%3AP17+%3Fcountry%7D+SERVICE+wikibase%3Alabel+%7Bbd%3AserviceParam+wikibase%3Alanguage+%22en%22.%7D+%7D&format=json",
+  "retrieved_at": "2026-11-13T09:46:51.848055+00:00",
+  "sha256": "81fb431b9bda4aa8f368ef536e6a6785b76855201c37a198d2f80ac9978e9632",
+  "bytes": 2673,
+  "status": 200
+}
