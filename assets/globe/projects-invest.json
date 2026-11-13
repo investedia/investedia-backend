@@ -1009,12 +1009,12 @@
      "cik": 352541,
      "effective_stake": null,
      "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Madison",
       "lat": 43.074722222,
       "lon": -89.384166666,
-      "city": "Madison",
       "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
-      "source_url": "https://www.wikidata.org/entity/Q4732492",
-      "checked_at": "2026-11-13"
+      "source_url": "https://www.wikidata.org/entity/Q4732492"
      },
      "hq_country": null,
      "lei": "5493009ML300G373MZ12",
@@ -5736,11 +5736,11 @@
      "cik": 753308,
      "effective_stake": null,
      "hq": {
-      "checked_at": "2026-11-11",
+      "checked_at": "2026-11-13",
       "city": "Juno Beach",
-      "lat": 26.8733,
-      "lon": -80.0542,
-      "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+      "lat": 26.873333333,
+      "lon": -80.054166666,
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
       "source_url": "https://www.wikidata.org/entity/Q967868"
      },
      "hq_country": null,
@@ -5889,11 +5889,11 @@
      "cik": 753308,
      "effective_stake": null,
      "hq": {
-      "checked_at": "2026-11-11",
+      "checked_at": "2026-11-13",
       "city": "Juno Beach",
-      "lat": 26.8733,
-      "lon": -80.0542,
-      "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+      "lat": 26.873333333,
+      "lon": -80.054166666,
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
       "source_url": "https://www.wikidata.org/entity/Q967868"
      },
      "hq_country": null,
@@ -6042,11 +6042,11 @@
      "cik": 753308,
      "effective_stake": null,
      "hq": {
-      "checked_at": "2026-11-11",
+      "checked_at": "2026-11-13",
       "city": "Juno Beach",
-      "lat": 26.8733,
-      "lon": -80.0542,
-      "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+      "lat": 26.873333333,
+      "lon": -80.054166666,
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
       "source_url": "https://www.wikidata.org/entity/Q967868"
      },
      "hq_country": null,
@@ -6195,11 +6195,11 @@
      "cik": 753308,
      "effective_stake": null,
      "hq": {
-      "checked_at": "2026-11-11",
+      "checked_at": "2026-11-13",
       "city": "Juno Beach",
-      "lat": 26.8733,
-      "lon": -80.0542,
-      "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+      "lat": 26.873333333,
+      "lon": -80.054166666,
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
       "source_url": "https://www.wikidata.org/entity/Q967868"
      },
      "hq_country": null,
@@ -6348,11 +6348,11 @@
      "cik": 753308,
      "effective_stake": null,
      "hq": {
-      "checked_at": "2026-11-11",
+      "checked_at": "2026-11-13",
       "city": "Juno Beach",
-      "lat": 26.8733,
-      "lon": -80.0542,
-      "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+      "lat": 26.873333333,
+      "lon": -80.054166666,
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
       "source_url": "https://www.wikidata.org/entity/Q967868"
      },
      "hq_country": null,
@@ -6501,11 +6501,11 @@
      "cik": 753308,
      "effective_stake": null,
      "hq": {
-      "checked_at": "2026-11-11",
+      "checked_at": "2026-11-13",
       "city": "Juno Beach",
-      "lat": 26.8733,
-      "lon": -80.0542,
-      "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+      "lat": 26.873333333,
+      "lon": -80.054166666,
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
       "source_url": "https://www.wikidata.org/entity/Q967868"
      },
      "hq_country": null,
@@ -6654,11 +6654,11 @@
      "cik": 753308,
      "effective_stake": null,
      "hq": {
-      "checked_at": "2026-11-11",
+      "checked_at": "2026-11-13",
       "city": "Juno Beach",
-      "lat": 26.8733,
-      "lon": -80.0542,
-      "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+      "lat": 26.873333333,
+      "lon": -80.054166666,
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
       "source_url": "https://www.wikidata.org/entity/Q967868"
      },
      "hq_country": null,
@@ -6807,11 +6807,11 @@
      "cik": 753308,
      "effective_stake": null,
      "hq": {
-      "checked_at": "2026-11-11",
+      "checked_at": "2026-11-13",
       "city": "Juno Beach",
-      "lat": 26.8733,
-      "lon": -80.0542,
-      "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+      "lat": 26.873333333,
+      "lon": -80.054166666,
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
       "source_url": "https://www.wikidata.org/entity/Q967868"
      },
      "hq_country": null,
@@ -6960,11 +6960,11 @@
      "cik": 753308,
      "effective_stake": null,
      "hq": {
-      "checked_at": "2026-11-11",
+      "checked_at": "2026-11-13",
       "city": "Juno Beach",
-      "lat": 26.8733,
-      "lon": -80.0542,
-      "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+      "lat": 26.873333333,
+      "lon": -80.054166666,
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
       "source_url": "https://www.wikidata.org/entity/Q967868"
      },
      "hq_country": null,
@@ -7113,11 +7113,11 @@
      "cik": 753308,
      "effective_stake": null,
      "hq": {
-      "checked_at": "2026-11-11",
+      "checked_at": "2026-11-13",
       "city": "Juno Beach",
-      "lat": 26.8733,
-      "lon": -80.0542,
-      "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+      "lat": 26.873333333,
+      "lon": -80.054166666,
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
       "source_url": "https://www.wikidata.org/entity/Q967868"
      },
      "hq_country": null,
@@ -7266,11 +7266,11 @@
      "cik": 753308,
      "effective_stake": null,
      "hq": {
-      "checked_at": "2026-11-11",
+      "checked_at": "2026-11-13",
       "city": "Juno Beach",
-      "lat": 26.8733,
-      "lon": -80.0542,
-      "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+      "lat": 26.873333333,
+      "lon": -80.054166666,
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
       "source_url": "https://www.wikidata.org/entity/Q967868"
      },
      "hq_country": null,
@@ -7419,11 +7419,11 @@
      "cik": 753308,
      "effective_stake": null,
      "hq": {
-      "checked_at": "2026-11-11",
+      "checked_at": "2026-11-13",
       "city": "Juno Beach",
-      "lat": 26.8733,
-      "lon": -80.0542,
-      "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+      "lat": 26.873333333,
+      "lon": -80.054166666,
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
       "source_url": "https://www.wikidata.org/entity/Q967868"
      },
      "hq_country": null,
@@ -7572,11 +7572,11 @@
      "cik": 753308,
      "effective_stake": null,
      "hq": {
-      "checked_at": "2026-11-11",
+      "checked_at": "2026-11-13",
       "city": "Juno Beach",
-      "lat": 26.8733,
-      "lon": -80.0542,
-      "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+      "lat": 26.873333333,
+      "lon": -80.054166666,
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
       "source_url": "https://www.wikidata.org/entity/Q967868"
      },
      "hq_country": null,
@@ -15692,12 +15692,12 @@
      "cik": null,
      "effective_stake": null,
      "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Faridabad",
       "lat": 28.41124,
       "lon": 77.31316,
-      "city": "Faridabad",
       "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
-      "source_url": "https://www.wikidata.org/entity/Q6954097",
-      "checked_at": "2026-11-13"
+      "source_url": "https://www.wikidata.org/entity/Q6954097"
      },
      "hq_country": "India",
      "lei": "3358003ZPPTGWT595J46",
@@ -17957,12 +17957,12 @@
      "cik": null,
      "effective_stake": 100.0,
      "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Faridabad",
       "lat": 28.41124,
       "lon": 77.31316,
-      "city": "Faridabad",
       "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
-      "source_url": "https://www.wikidata.org/entity/Q6954097",
-      "checked_at": "2026-11-13"
+      "source_url": "https://www.wikidata.org/entity/Q6954097"
      },
      "hq_country": "India",
      "lei": "3358003ZPPTGWT595J46",
@@ -18064,12 +18064,12 @@
      "cik": null,
      "effective_stake": 100.0,
      "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Faridabad",
       "lat": 28.41124,
       "lon": 77.31316,
-      "city": "Faridabad",
       "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
-      "source_url": "https://www.wikidata.org/entity/Q6954097",
-      "checked_at": "2026-11-13"
+      "source_url": "https://www.wikidata.org/entity/Q6954097"
      },
      "hq_country": "India",
      "lei": "3358003ZPPTGWT595J46",
@@ -18193,12 +18193,12 @@
      "cik": null,
      "effective_stake": 100.0,
      "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Faridabad",
       "lat": 28.41124,
       "lon": 77.31316,
-      "city": "Faridabad",
       "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
-      "source_url": "https://www.wikidata.org/entity/Q6954097",
-      "checked_at": "2026-11-13"
+      "source_url": "https://www.wikidata.org/entity/Q6954097"
      },
      "hq_country": "India",
      "lei": "3358003ZPPTGWT595J46",
@@ -18322,12 +18322,12 @@
      "cik": null,
      "effective_stake": 100.0,
      "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Faridabad",
       "lat": 28.41124,
       "lon": 77.31316,
-      "city": "Faridabad",
       "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
-      "source_url": "https://www.wikidata.org/entity/Q6954097",
-      "checked_at": "2026-11-13"
+      "source_url": "https://www.wikidata.org/entity/Q6954097"
      },
      "hq_country": "India",
      "lei": "3358003ZPPTGWT595J46",
