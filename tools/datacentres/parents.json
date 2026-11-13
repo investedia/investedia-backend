@@ -6,8 +6,14 @@
     "equinix": {
       "operator": "Equinix, Inc.",
       "listed_parent": "Equinix, Inc.",
-      "parent_chain": ["Equinix, Inc."],
-      "listing": {"ticker": "EQIX", "exchange": "Nasdaq", "security": "common stock"},
+      "parent_chain": [
+        "Equinix, Inc."
+      ],
+      "listing": {
+        "ticker": "EQIX",
+        "exchange": "Nasdaq",
+        "security": "common stock"
+      },
       "listing_evidence": "https://data.sec.gov/submissions/CIK0001101239.json",
       "annual_report": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
       "annual_report_ownership_note": "FY2025 10-K Item 2 shows owned vs leased only per metro (a metro may contain both), so ownership of an individual IBX is not established from it.",
@@ -17,8 +23,14 @@
     "digitalrealty": {
       "operator": "Digital Realty Trust, Inc.",
       "listed_parent": "Digital Realty Trust, Inc.",
-      "parent_chain": ["Digital Realty Trust, Inc."],
-      "listing": {"ticker": "DLR", "exchange": "NYSE", "security": "common stock"},
+      "parent_chain": [
+        "Digital Realty Trust, Inc."
+      ],
+      "listing": {
+        "ticker": "DLR",
+        "exchange": "NYSE",
+        "security": "common stock"
+      },
       "listing_evidence": "https://data.sec.gov/submissions/CIK0001297996.json",
       "annual_report": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm",
       "annual_report_ownership_note": "FY2025 10-K Schedule III aggregates properties by metro (building counts), not by facility; consolidated and joint-venture holdings are not separated per site in the directory.",
@@ -28,8 +40,15 @@
     "coresite": {
       "operator": "CoreSite (CoreSite Realty Corporation)",
       "listed_parent": "American Tower Corporation",
-      "parent_chain": ["CoreSite Realty Corporation", "American Tower Corporation"],
-      "listing": {"ticker": "AMT", "exchange": "NYSE", "security": "common stock"},
+      "parent_chain": [
+        "CoreSite Realty Corporation",
+        "American Tower Corporation"
+      ],
+      "listing": {
+        "ticker": "AMT",
+        "exchange": "NYSE",
+        "security": "common stock"
+      },
       "listing_evidence": "https://data.sec.gov/submissions/CIK0001053507.json",
       "parent_chain_evidence": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000035/amt-20251231.htm",
       "directory": "https://www.coresite.com/data-center-locations",
@@ -38,14 +57,54 @@
     "nextdc": {
       "operator": "NEXTDC Limited",
       "listed_parent": "NEXTDC Limited",
-      "parent_chain": ["NEXTDC Limited"],
-      "listing": {"ticker": "NXT", "exchange": "ASX", "security": "ordinary shares"},
+      "parent_chain": [
+        "NEXTDC Limited"
+      ],
+      "listing": {
+        "ticker": "NXT",
+        "exchange": "ASX",
+        "security": "ordinary shares"
+      },
       "listing_evidence": "https://asx.api.markitdigital.com/asx-research/1.0/companies/NXT/header",
       "directory": "https://www.nextdc.com/data-centres",
       "relationship_basis": "Facility listed in the operator's official directory: operating/development relationship."
+    },
+    "cyrusone": {
+      "operator": "CyrusOne",
+      "listed_parent": null,
+      "parent_chain": [
+        "CyrusOne (Cavalry Parent L.P.)",
+        "funds managed by KKR",
+        "funds managed by Global Infrastructure Partners (a BlackRock business since 1 Oct 2024)"
+      ],
+      "listing": {
+        "ticker": "KKR / BLK",
+        "exchange": "NYSE",
+        "security": "common stock of the fund managers (not of CyrusOne)"
+      },
+      "listings": [
+        {
+          "name": "KKR & Co. Inc.",
+          "ticker": "KKR",
+          "exchange": "NYSE",
+          "evidence": "https://data.sec.gov/submissions/CIK0001404912.json"
+        },
+        {
+          "name": "BlackRock, Inc.",
+          "ticker": "BLK",
+          "exchange": "NYSE",
+          "evidence": "https://data.sec.gov/submissions/CIK0002012383.json"
+        }
+      ],
+      "listing_evidence": "https://data.sec.gov/submissions/CIK0001404912.json",
+      "parent_chain_evidence": [
+        "https://www.sec.gov/Archives/edgar/data/1553023/000110465922038090/tm229713d1_ex99-1.htm",
+        "https://www.sec.gov/Archives/edgar/data/2012383/000095017024114208/blk-ex99_1.htm"
+      ],
+      "directory": "https://www.cyrusone.com/data-centers",
+      "relationship_type": "Fund-manager exposure (indirect)",
+      "relationship_basis": "CyrusOne was acquired on 25 Mar 2022 by funds managed by KKR and GIP (CyrusOne 8-K Ex. 99.1); BlackRock completed its acquisition of GIP on 1 Oct 2024 (BlackRock 8-K Ex. 99.1). KKR and BlackRock are fund managers: their shareholders do not own CyrusOne or its facilities; fund economics accrue mainly to fund investors."
     }
   },
-  "not_listed": {
-    "cyrusone": {"operator": "CyrusOne", "reason": "Privately held (KKR and Global Infrastructure Partners); no listed common-equity parent. Facilities recorded as rejected for listed-exposure purposes.", "directory": "https://www.cyrusone.com/data-centers"}
-  }
+  "not_listed": {}
 }

@@ -104,6 +104,8 @@ def dlr_parse(url, s):
     addr = re.sub(r'\s+', ' ', addr) if addr else None
     loc = (d.get('field_facility_location') or [{}])[0].get('name') if d.get('field_facility_location') else None
     country = addr.split(',')[-1].strip() if addr and ',' in addr else None
+    if addr and re.search(r'\b(' + '|'.join(US_STATES) + r')\s+\d{5}(-\d{4})?\s*$', addr): country = 'United States'
+    elif country and re.search(r'\d', country): country = None  # postcode, not a country -> unresolved, never guessed
     lat, lng = val('field_latitude'), val('field_longitude')
     intro = re.sub(r'<[^>]+>', ' ', html.unescape(val('field_intro_location') or ''))
     code = val('field_site_code_location') or d.get('title') or url.rsplit('/', 1)[-1].upper()
@@ -114,6 +116,7 @@ def dlr_parse(url, s):
             'building_m2': int(size_m2) if size_m2 and size_m2.isdigit() and int(size_m2) > 0 else None}
 
 COR_MARKETS = ['atlanta', 'orlando', 'new-york', 'miami', 'boston', 'chicago', 'los-angeles', 'northern-virginia', 'silicon-valley', 'denver', 'washington-dc']
+COR_ADDR = {}
 def cor_discover(f):
     urls = set()
     _, xml, _ = f.get('https://www.coresite.com/sitemap.xml')
@@ -121,12 +124,16 @@ def cor_discover(f):
     for mk in COR_MARKETS:
         st, s, _ = f.get(f'https://www.coresite.com/data-center-locations/{mk}')
         urls |= {'https://www.coresite.com' + h for h in re.findall(r'href="(/data-center/[a-z]{2}\d+[a-z]?-[a-z-]+)"', s)}
+        # pair each facility link with the next address on the market page
+        for m in re.finditer(r'href="(?:https://www\.coresite\.com)?(/data-center/[a-z]{2}\d+[a-z]?-[a-z-]+)"', s):
+            nxt = re.search(r'class="address-text">\s*([^<]+)', s[m.end():m.end() + 4000])
+            if nxt and m.group(1) not in COR_ADDR: COR_ADDR[m.group(1)] = re.sub(r'\s+', ' ', nxt.group(1)).strip()
     return sorted(urls)
 
 US_STATES = {'AL','AK','AZ','AR','CA','CO','CT','DE','DC','FL','GA','HI','ID','IL','IN','IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY'}
 def cor_parse(url, s):
     slug = url.rsplit('/', 1)[-1]; code = slug.split('-')[0].upper()
-    addr = re.findall(r'class="address-text">\s*([^<]+)', s)
+    addr = [COR_ADDR['/data-center/' + slug]] if '/data-center/' + slug in COR_ADDR else []
     title = (re.findall(r'<title>([^<]+)', s) or [''])[0]
     st = slug.split('-')[-1].upper()
     return {'code': code, 'name': f'CoreSite {code}', 'country': 'United States' if st in US_STATES else None,
@@ -145,14 +152,34 @@ def nxt_parse(url, s):
     sub = re.search(r'Rack Capacity\n([^\n]{2,40})\nLocation', t)
     mw = re.search(r'\n([\d.,]+)\s?MW\nIT Capacity', t)
     # the site navigation marks each facility's stage, e.g. "M4 Port Melbourne (In Development)"
-    nav = re.search(re.escape(code) + r'\s[^|\n()]{0,40}\((In Planning|In Development)\)', t)
+    nav = re.search(r'(?<![A-Z0-9])' + re.escape(code) + r'\s+' + re.escape(slug_title(metro_slug)) + r'[^\n()]{0,30}\((In Planning|In Development)\)', t)
     status = {'In Planning': 'proposed', 'In Development': 'construction'}.get(nav.group(1)) if nav else None
     return {'code': code, 'name': f'NEXTDC {code}', 'country': NXT_COUNTRY.get(metro_slug, 'Australia'), 'metro': slug_title(metro_slug),
             'address': (sub.group(1).strip() + ', ' + slug_title(metro_slug)) if sub else None, 'locality_only': True,
             'lat': None, 'lng': None, 'coord_source': None, 'status_hint': status, 'capacity_mw': float(mw.group(1).replace(',', '')) if mw else None,
             'page_title': title.strip()}
 
-ADAPTERS = {'equinix': (eqx_discover, eqx_parse), 'digitalrealty': (dlr_discover, dlr_parse), 'coresite': (cor_discover, cor_parse), 'nextdc': (nxt_discover, nxt_parse)}
+def cy_discover(f):
+    _, xml, _ = f.get('https://www.cyrusone.com/sitemap.xml')
+    return sorted({u for u in locs(xml) if re.match(r'https://www\.cyrusone\.com/data-centers/(north-america|emea|apac|europe|asia-pacific)/[a-z0-9-]+$', u)})
+
+CY_COUNTRY = {'uk': 'United Kingdom', 'london': 'United Kingdom', 'germany': 'Germany', 'frankfurt': 'Germany', 'ireland': 'Ireland', 'dublin': 'Ireland', 'netherlands': 'Netherlands', 'amsterdam': 'Netherlands',
+              'france': 'France', 'paris': 'France', 'spain': 'Spain', 'madrid': 'Spain', 'italy': 'Italy', 'milan': 'Italy', 'japan': 'Japan', 'tokyo': 'Japan', 'osaka': 'Japan', 'belgium': 'Belgium', 'brussels': 'Belgium'}
+def cy_parse(url, s):
+    slug = url.rsplit('/', 1)[-1]; region = url.split('/')[-2]
+    title = (re.findall(r'<title>([^<]+)', s) or [''])[0]
+    m = re.match(r'\s*([^:|]+?):\s*([A-Z0-9 -]+?)\s*\|', title)
+    place, code = (m.group(1).strip(), m.group(2).strip()) if m else (slug_title(slug), slug.split('-')[-1].upper())
+    if not m: return None  # campus/landing pages without a facility code are not single facilities
+    t = text_of(s); mw = re.search(r'([\d.,]+)\s?MW of (critical )?IT', t)
+    country = 'United States' if region == 'north-america' and re.search(r',\s?[A-Z]{2}$', place) and place.split(',')[-1].strip() in US_STATES else None
+    for tok, ctry in CY_COUNTRY.items():
+        if country is None and tok in slug.split('-'): country = ctry
+    return {'code': code, 'name': f'CyrusOne {code}', 'country': country, 'metro': place, 'address': place, 'locality_only': True,
+            'lat': None, 'lng': None, 'coord_source': None, 'status_hint': status_from(t[:5000]),
+            'capacity_mw': float(mw.group(1).replace(',', '')) if mw else None}
+
+ADAPTERS = {'equinix': (eqx_discover, eqx_parse), 'digitalrealty': (dlr_discover, dlr_parse), 'coresite': (cor_discover, cor_parse), 'nextdc': (nxt_discover, nxt_parse), 'cyrusone': (cy_discover, cy_parse)}
 
 # ---------------------------------------------------------------- normalise / classify
 REGION = {'United States': 'North America', 'Canada': 'North America', 'Mexico': 'Latin America', 'Brazil': 'Latin America', 'Chile': 'Latin America', 'Colombia': 'Latin America', 'Peru': 'Latin America', 'Argentina': 'Latin America',
@@ -196,13 +223,34 @@ def build(cache, operators, limit=None):
             r['legal_owner'] = None; r['ownership_status'] = 'not established'
             r['listed_parent'] = par['listed_parent']; r['parent_chain'] = par['parent_chain']; r['listing'] = par['listing']
             r['listing_evidence'] = par['listing_evidence']
-            r['relationship_type'] = 'Operator exposure'; r['relationship_basis'] = par['relationship_basis']
+            r['relationship_type'] = par.get('relationship_type', 'Operator exposure'); r['relationship_basis'] = par['relationship_basis']
+            if par.get('listings'): r['listings'] = par['listings']; r['parent_chain_evidence'] = par.get('parent_chain_evidence')
             r['status'] = r.pop('status_hint') or 'operational (listed in operator directory)'
             r['verified_on'] = TODAY
             r['licence'] = {'basis': 'facts only (name, location, operator, status) re-expressed; source linked; no text or images copied', 'images': 'none collected: neutral placeholder'}
             recs.append(r)
             if (i + 1) % 50 == 0: print(f'  {op} {i+1}/{len(urls)}', flush=True)
-    return dedupe(recs), rejected, blocked, f.log
+    recs = dedupe(recs)
+    geocode(f, recs)
+    return recs, rejected, blocked, f.log
+
+def geocode(f, recs):
+    """Approximate coordinates from the operator-published address (OpenStreetMap Nominatim, ODbL). Never labelled exact."""
+    import urllib.parse
+    for r in recs:
+        c = r['coordinates']
+        if c['class'] != 'unknown' or not r.get('address'): continue
+        q = r['address'] if (r.get('country') or '') in r['address'] else f"{r['address']}, {r.get('country') or ''}"
+        parts = [x.strip() for x in q.split(',') if x.strip()]
+        hit = None
+        for qq in dict.fromkeys([q, ', '.join(parts[:2] + parts[-2:]), ', '.join(parts[:1] + parts[-2:])]):
+            st, body, _ = f.get('https://nominatim.openstreetmap.org/search?format=json&limit=1&q=' + urllib.parse.quote(qq))
+            try: hit = json.loads(body)[0] if st == 200 and body.strip().startswith('[') and json.loads(body) else None
+            except Exception: hit = None
+            if hit: break
+        if hit:
+            c.update({'lat': round(float(hit['lat']), 5), 'lng': round(float(hit['lon']), 5),
+                      'class': 'approximate', 'source': ('geocoded locality' if r.get('locality_only') else 'geocoded published address') + ' (OpenStreetMap Nominatim, ODbL)'})
 
 def dedupe(recs):
     """Same operator + same code = same facility (keep first). Different codes at one address = separate buildings of one campus."""
@@ -224,20 +272,21 @@ def dedupe(recs):
 def tiers(r):
     sub = bool(r.get('name') and (r.get('address') or r.get('metro')) and r.get('country'))
     rel = sub and r.get('relationship_type') == 'Operator exposure' and bool(r.get('listing_evidence'))
+    fund = sub and r.get('relationship_type', '').startswith('Fund-manager') and bool(r.get('parent_chain_evidence'))
     coords_ok = r['coordinates']['class'] in ('exact', 'approximate')
-    return {'extracted': True, 'substantiated': sub, 'listed_relationship_verified': rel, 'ownership_verified': False,
-            'release_eligible': sub and rel and coords_ok}
+    return {'extracted': True, 'substantiated': sub, 'listed_relationship_verified': rel, 'fund_level_relationship_verified': fund,
+            'ownership_verified': False, 'release_eligible': sub and rel and coords_ok,
+            'release_note': None if rel else ('fund-manager exposure: owner decision needed before any public use' if fund else 'not eligible')}
 
 def write(recs, rejected, blocked, log, operators):
     OUT.mkdir(parents=True, exist_ok=True)
     for r in recs: r['evidence'] = tiers(r)
     verified = [r for r in recs if r['evidence']['listed_relationship_verified']]
-    unresolved = [r for r in recs if not r['evidence']['listed_relationship_verified']]
+    unresolved = [r for r in recs if not (r['evidence']['listed_relationship_verified'] or r['evidence']['fund_level_relationship_verified'])]
     meta = {'schema': 'investedia.datacentres.v1', 'generated': TODAY, 'operators': operators, 'parents': 'tools/datacentres/parents.json'}
     (OUT / 'candidates.json').write_text(json.dumps({**meta, 'records': recs}, ensure_ascii=False, indent=1), encoding='utf-8')
     (OUT / 'verified.json').write_text(json.dumps({**meta, 'records': verified}, ensure_ascii=False, indent=1), encoding='utf-8')
     rej = rejected + [{'id': r['id'], 'source_url': r['source_url'], 'reason': 'unresolved: missing country/location or listing evidence'} for r in unresolved]
-    rej += [{'operator': v['operator'], 'source_url': v['directory'], 'reason': v['reason']} for v in PARENTS['not_listed'].values()]
     (OUT / 'rejected.json').write_text(json.dumps({**meta, 'records': rej}, ensure_ascii=False, indent=1), encoding='utf-8')
     return verified, unresolved, rej
 
