@@ -1,0 +1,20 @@
+{
+ "version": "v2",
+ "generated": "2026-11-13",
+ "tiers": {
+  "public_candidates": 29,
+  "licensing_unresolved": 533,
+  "internal_research": 69,
+  "rejected": 0
+ },
+ "gate": {
+  "public_candidates_pass_after_owner_signature": 29,
+  "blocked": {},
+  "signed_now": 0
+ },
+ "sha256": {
+  "public_candidates.json": "4638dd550634df8fb9b5356092df9535286e8283fbeb4dd446d6d6d39271b845",
+  "licensing_unresolved.json": "7a6864cb066bd1e16e40022756435575cbb2b9bd7946916d7b72002b9dc1013f",
+  "internal_research.json": "db9668eb312c02a02240c56bce1ec0edaff09479007dedf43e891c6a51ece7d5"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "checked_at": "2026-11-13",
+ "mismatches": [
+  {
+   "id": "dc-digitalrealty-hkg10",
+   "page_country": "Hong Kong",
+   "page_iso": "HK",
+   "coordinate_country": "CN",
+   "coordinate_class": "approximate",
+   "address": "33 Chun Choi Street, Tseung Kwan O Sai Kung, Hong Kong"
+  },
+  {
+   "id": "dc-digitalrealty-hkg11",
+   "page_country": "Hong Kong",
+   "page_iso": "HK",
+   "coordinate_country": "CN",
+   "coordinate_class": "approximate",
+   "address": "11 Kin Chuen, Kwai Chung, Hong Kong"
+  }
+ ]
+}

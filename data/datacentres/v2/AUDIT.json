@@ -1,0 +1,787 @@
+{
+ "status_corrections": [
+  {
+   "id": "dc:dlr:2425",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "keyword not specific to this facility (e.g. \"master-planned campus\")"
+  },
+  {
+   "id": "dc:dlr:2302",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "keyword not specific to this facility (e.g. \"master-planned campus\")"
+  },
+  {
+   "id": "dc:dlr:2307",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "keyword not specific to this facility (e.g. \"master-planned campus\")"
+  },
+  {
+   "id": "dc:dlr:2363",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "keyword not specific to this facility (e.g. \"master-planned campus\")"
+  },
+  {
+   "id": "dc:dlr:2450",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "keyword not specific to this facility (e.g. \"master-planned campus\")"
+  },
+  {
+   "id": "dc:dlr:2444",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "keyword not specific to this facility (e.g. \"master-planned campus\")"
+  },
+  {
+   "id": "dc:coresite:RA1",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "keyword not specific to this facility (e.g. \"master-planned campus\")"
+  },
+  {
+   "id": "dc:cyrusone:OSK1",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:AMS1",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:DUB1",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:FRA1",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:FRA2",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:FRA3",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:FRA4",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:FRA5",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:FRA6",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:FRA7",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:LON1",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:LON2",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:LON3",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:LON4",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:LON5",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:MAD1",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:MIL1",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:MIL2",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:PAR1",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:DFW3-DFW5",
+   "from": "planning",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:CHI1-CHI3",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:CHI9",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:AUS2-AUS3",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:DFW1",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:PHX1-PHX8",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:CIN2",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:OCB1",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:DUR1-DUR2",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:CIN6",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:HOU3-4",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:DFW2",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:NYM5",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:PNW1",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:DFW6",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:SAT5-SAT6",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:SAT1",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:NYM1",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:NVA1-NVA3",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:NVA5-NVA7",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:NVA4",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:NVA8",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:NVA9",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:NYM2",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  },
+  {
+   "id": "dc:cyrusone:NYM7",
+   "from": "under_construction",
+   "to": "unknown",
+   "reason": "matched site-wide navigation / generic wording, not this facility"
+  }
+ ],
+ "jv_notes": [
+  {
+   "id": "dc:dlr:101686",
+   "platform": "Digital Realty Bersama",
+   "business_interest_pct": 50
+  },
+  {
+   "id": "dc:dlr:101687",
+   "platform": "Digital Realty Bersama",
+   "business_interest_pct": 50
+  },
+  {
+   "id": "dc:dlr:2389",
+   "platform": "MC Digital Realty",
+   "business_interest_pct": 50
+  },
+  {
+   "id": "dc:dlr:3228",
+   "platform": "MC Digital Realty",
+   "business_interest_pct": 50
+  },
+  {
+   "id": "dc:dlr:3106",
+   "platform": "MC Digital Realty",
+   "business_interest_pct": 50
+  },
+  {
+   "id": "dc:dlr:100712",
+   "platform": "MC Digital Realty",
+   "business_interest_pct": 50
+  },
+  {
+   "id": "dc:dlr:102348",
+   "platform": "MC Digital Realty",
+   "business_interest_pct": 50
+  },
+  {
+   "id": "dc:dlr:102011",
+   "platform": "Medallion",
+   "business_interest_pct": 60
+  }
+ ],
+ "country_checks": [],
+ "duplicates": [],
+ "hq": [],
+ "location_basis": {
+  "geocoded_published_address": 157,
+  "withheld": 169,
+  "official_site_pin_consistent_with_address": 115,
+  "official_site_pin_campus_level_unresolved": 110,
+  "geocoded_locality": 51
+ },
+ "staged_review": [
+  {
+   "filing_row": "SV18 phase 1",
+   "existing_codex_id": "project:eqix:SV18",
+   "action": "not imported: Codex reviewed record holds stronger, newer evidence; add filing row as supporting evidence on review"
+  },
+  {
+   "filing_row": "SP7 phase 1",
+   "existing_codex_id": "project:eqix:SP7",
+   "action": "not imported: Codex reviewed record holds stronger, newer evidence; add filing row as supporting evidence on review"
+  },
+  {
+   "filing_row": "SV18 phase 2",
+   "existing_codex_id": "project:eqix:SV18",
+   "action": "not imported: Codex reviewed record holds stronger, newer evidence; add filing row as supporting evidence on review"
+  },
+  {
+   "filing_row": "LG3 phase 1",
+   "existing_codex_id": "project:eqix:LG3",
+   "action": "not imported: Codex reviewed record holds stronger, newer evidence; add filing row as supporting evidence on review"
+  },
+  {
+   "filing_row": "MD5 phase 1",
+   "existing_codex_id": "project:eqix:MD5",
+   "action": "not imported: Codex reviewed record holds stronger, newer evidence; add filing row as supporting evidence on review"
+  },
+  {
+   "filing_row": "IL3 phase 1",
+   "existing_codex_id": "project:eqix:IL3",
+   "action": "not imported: Codex reviewed record holds stronger, newer evidence; add filing row as supporting evidence on review"
+  },
+  {
+   "filing_row": "LD14 phase 1",
+   "existing_codex_id": "project:eqix:LD14",
+   "action": "not imported: Codex reviewed record holds stronger, newer evidence; add filing row as supporting evidence on review"
+  },
+  {
+   "filing_row": "PA14 phase 1",
+   "existing_codex_id": "project:eqix:PA14",
+   "action": "not imported: Codex reviewed record holds stronger, newer evidence; add filing row as supporting evidence on review"
+  },
+  {
+   "filing_row": "LD14 phase 2",
+   "existing_codex_id": "project:eqix:LD14",
+   "action": "not imported: Codex reviewed record holds stronger, newer evidence; add filing row as supporting evidence on review"
+  },
+  {
+   "filing_row": "PA14 phase 2",
+   "existing_codex_id": "project:eqix:PA14",
+   "action": "not imported: Codex reviewed record holds stronger, newer evidence; add filing row as supporting evidence on review"
+  },
+  {
+   "filing_row": "SG6 phase 1",
+   "existing_codex_id": "project:eqix:SG6",
+   "action": "not imported: Codex reviewed record holds stronger, newer evidence; add filing row as supporting evidence on review"
+  },
+  {
+   "filing_row": "JH2 phases 1 and 2",
+   "existing_codex_id": "project:eqix:JH2",
+   "action": "not imported: Codex reviewed record holds stronger, newer evidence; add filing row as supporting evidence on review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:eqix:SV1"
+   ],
+   "new_source_identity": {
+    "authority": "equinix.com:ibx",
+    "id": "SV1"
+   },
+   "basis": "same provider + official site code SV1",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "project:eqix:SV18"
+   ],
+   "new_source_identity": {
+    "authority": "equinix.com:ibx",
+    "id": "SV18"
+   },
+   "basis": "same provider + official site code SV18",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:eqix:DC2"
+   ],
+   "new_source_identity": {
+    "authority": "equinix.com:ibx",
+    "id": "DC2"
+   },
+   "basis": "same provider + official site code DC2",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "project:eqix:MD5"
+   ],
+   "new_source_identity": {
+    "authority": "equinix.com:ibx",
+    "id": "MD5"
+   },
+   "basis": "same provider + official site code MD5",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:eqix:DX1"
+   ],
+   "new_source_identity": {
+    "authority": "equinix.com:ibx",
+    "id": "DX1"
+   },
+   "basis": "same provider + official site code DX1",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2344"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2344"
+   },
+   "basis": "same provider + official site code FTZ01",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2256"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2256"
+   },
+   "basis": "same provider + official site code ACC4",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2257"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2257"
+   },
+   "basis": "same provider + official site code ACC5",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2413"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2413"
+   },
+   "basis": "same provider + official site code MEX01",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2293"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2293"
+   },
+   "basis": "same provider + official site code CPS01",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2475"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2475"
+   },
+   "basis": "same provider + official site code TOR1",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:3389"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "3389"
+   },
+   "basis": "same provider + official site code MAA10",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2412"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2412"
+   },
+   "basis": "same provider + official site code MEL11",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2387"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2387"
+   },
+   "basis": "same provider + official site code KIX10",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2388"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2388"
+   },
+   "basis": "same provider + official site code KIX11",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2379"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2379"
+   },
+   "basis": "same provider + official site code ICN10",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2448"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2448"
+   },
+   "basis": "same provider + official site code SIN10",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:24413"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "24413"
+   },
+   "basis": "same provider + official site code ACR2",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:1790"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "1790"
+   },
+   "basis": "same provider + official site code AMS7",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2294"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2294"
+   },
+   "basis": "same provider + official site code CT1",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2295"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2295"
+   },
+   "basis": "same provider + official site code CT2",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2290"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2290"
+   },
+   "basis": "same provider + official site code CPH1",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2310"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2310"
+   },
+   "basis": "same provider + official site code DUB1",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2311"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2311"
+   },
+   "basis": "same provider + official site code DUB10",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2316"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2316"
+   },
+   "basis": "same provider + official site code DUS1",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2405"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2405"
+   },
+   "basis": "same provider + official site code LOS1",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2408"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2408"
+   },
+   "basis": "same provider + official site code MAD1",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:11459"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "11459"
+   },
+   "basis": "same provider + official site code MPM1",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2416"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2416"
+   },
+   "basis": "same provider + official site code MRS1",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:dlr:2411"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2411"
+   },
+   "basis": "same provider + official site code MBA1",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "project:coresite:DE3"
+   ],
+   "new_source_identity": {
+    "authority": "coresite.com:facility-code",
+    "id": "DE3"
+   },
+   "basis": "same provider + official site code DE3",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "project:coresite:NY3"
+   ],
+   "new_source_identity": {
+    "authority": "coresite.com:facility-code",
+    "id": "NY3"
+   },
+   "basis": "same provider + official site code NY3",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  },
+  {
+   "existing_codex_ids": [
+    "dc:coresite:VA1"
+   ],
+   "new_source_identity": {
+    "authority": "coresite.com:facility-code",
+    "id": "VA1"
+   },
+   "basis": "same provider + official site code VA1",
+   "disposition": "Kept Codex record; new directory evidence attached for field-by-field review"
+  }
+ ]
+}
