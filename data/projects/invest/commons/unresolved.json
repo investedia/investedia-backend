@@ -1,0 +1,293 @@
+{
+ "gem:L100000401075:x": {
+  "checked_at": "2026-11-13",
+  "country": "Saudi Arabia",
+  "lat": 22.628931,
+  "lon": 39.046689,
+  "name": "Rabigh 2 IPP power station",
+  "precision": "exact",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100000601853": {
+  "checked_at": "2026-11-13",
+  "country": "India",
+  "lat": 28.0938,
+  "lon": 94.5921,
+  "name": "Dibang Multipurpose hydroelectric plant",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100000602090": {
+  "checked_at": "2026-11-13",
+  "country": "India",
+  "lat": 30.4877,
+  "lon": 79.6705,
+  "name": "Vishnugad Pipalkoti hydroelectric plant",
+  "name_words": [
+   "vishnugad",
+   "pipalkoti"
+  ],
+  "precision": "approximate",
+  "reason": "no Commons file both names the project and passes licence/location checks",
+  "status": "done"
+ },
+ "gem:L100000800609": {
+  "checked_at": "2026-11-13",
+  "country": "India",
+  "lat": 24.2033,
+  "lon": 83.0053,
+  "name": "Rihand solar farm",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100000801313": {
+  "checked_at": "2026-11-13",
+  "country": "Indonesia",
+  "lat": -6.4511,
+  "lon": 108.1781,
+  "name": "Saguling solar farm",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100000808890": {
+  "checked_at": "2026-11-13",
+  "country": "India",
+  "lat": 24.6916,
+  "lon": 78.3977,
+  "name": "Lalitpur solar park",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100000922142:p4": {
+  "checked_at": "2026-11-13",
+  "country": "Uzbekistan",
+  "lat": 43.7227,
+  "lon": 57.0599,
+  "name": "Kungrad (ACWA Power) wind farm (phase 4)",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100000922381": {
+  "checked_at": "2026-11-13",
+  "country": "India",
+  "lat": 23.6348,
+  "lon": 68.9012,
+  "name": "Dayapar (NTPC) III wind farm",
+  "name_words": [
+   "dayapar"
+  ],
+  "precision": "approximate",
+  "reason": "no Commons file both names the project and passes licence/location checks",
+  "status": "done"
+ },
+ "gem:L100001004183:p1": {
+  "checked_at": "2026-11-13",
+  "country": "Saudi Arabia",
+  "lat": 27.47574,
+  "lon": 48.49949,
+  "name": "Nairyah IPP Power Plant (phase 1)",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100001016696:p1": {
+  "checked_at": "2026-11-13",
+  "country": "Uzbekistan",
+  "lat": 43.1013,
+  "lon": 60.985,
+  "name": "Aral wind farm (phase 1)",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100001016696:p2": {
+  "checked_at": "2026-11-13",
+  "country": "Uzbekistan",
+  "lat": 43.1013,
+  "lon": 60.985,
+  "name": "Aral wind farm (phase 2)",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100001016696:p3": {
+  "checked_at": "2026-11-13",
+  "country": "Uzbekistan",
+  "lat": 43.1013,
+  "lon": 60.985,
+  "name": "Aral wind farm (phase 3)",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100001016696:p4": {
+  "checked_at": "2026-11-13",
+  "country": "Uzbekistan",
+  "lat": 43.1013,
+  "lon": 60.985,
+  "name": "Aral wind farm (phase 4)",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100001016696:p5": {
+  "checked_at": "2026-11-13",
+  "country": "Uzbekistan",
+  "lat": 43.1013,
+  "lon": 60.985,
+  "name": "Aral wind farm (phase 5)",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100001018767": {
+  "checked_at": "2026-11-13",
+  "country": "Saudi Arabia",
+  "lat": 25.5146,
+  "lon": 43.3166,
+  "name": "Al-Khushaybi Solar PV Park",
+  "name_words": [
+   "al",
+   "khushaybi"
+  ],
+  "precision": "approximate",
+  "reason": "no Commons file both names the project and passes licence/location checks",
+  "status": "done"
+ },
+ "gem:L100001018768": {
+  "checked_at": "2026-11-13",
+  "country": "Saudi Arabia",
+  "lat": 22.756,
+  "lon": 41.5881,
+  "name": "Al-Muwaih Solar PV",
+  "name_words": [
+   "al",
+   "muwaih"
+  ],
+  "precision": "approximate",
+  "reason": "no Commons file both names the project and passes licence/location checks",
+  "status": "done"
+ },
+ "gem:L100001018770": {
+  "checked_at": "2026-11-13",
+  "country": "Saudi Arabia",
+  "lat": 21.4166,
+  "lon": 41.0763,
+  "name": "Haden solar farm",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100001019874": {
+  "checked_at": "2026-11-13",
+  "country": "India",
+  "lat": 24.6042,
+  "lon": 79.206,
+  "name": "Barethi solar park",
+  "name_words": [
+   "barethi"
+  ],
+  "precision": "approximate",
+  "reason": "no Commons file both names the project and passes licence/location checks",
+  "status": "done"
+ },
+ "gem:L100001019878": {
+  "checked_at": "2026-11-13",
+  "country": "India",
+  "lat": 19.5883,
+  "lon": 84.7357,
+  "name": "Ganjam solar farm",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100001045291:p1": {
+  "checked_at": "2026-11-13",
+  "country": "Egypt",
+  "lat": 26.0064,
+  "lon": 32.3116,
+  "name": "Egypt Aluminium solar farm (phase 1)",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100001045291:p2": {
+  "checked_at": "2026-11-13",
+  "country": "Egypt",
+  "lat": 26.0064,
+  "lon": 32.3116,
+  "name": "Egypt Aluminium solar farm (phase 2)",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100001061657": {
+  "checked_at": "2026-11-13",
+  "country": "Uzbekistan",
+  "lat": 40.5261,
+  "lon": 64.5794,
+  "name": "Gijduvan (ACWA Power) wind farm",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100001063143": {
+  "checked_at": "2026-11-13",
+  "country": "Saudi Arabia",
+  "lat": 19.9113,
+  "lon": 42.5432,
+  "name": "Bisha solar farm",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100001063152": {
+  "checked_at": "2026-11-13",
+  "country": "Saudi Arabia",
+  "lat": 23.9332,
+  "lon": 42.9159,
+  "name": "Afif 1 solar farm",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100001063155": {
+  "checked_at": "2026-11-13",
+  "country": "Saudi Arabia",
+  "lat": 23.8826,
+  "lon": 42.9206,
+  "name": "Afif 2 solar farm",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ },
+ "gem:L100001063265": {
+  "checked_at": "2026-11-13",
+  "country": "Saudi Arabia",
+  "lat": 24.8524,
+  "lon": 47.1219,
+  "name": "Starah wind farm",
+  "name_words": [
+   "starah"
+  ],
+  "precision": "approximate",
+  "reason": "no Commons file both names the project and passes licence/location checks",
+  "status": "done"
+ },
+ "gem:L100001063269": {
+  "checked_at": "2026-11-13",
+  "country": "Saudi Arabia",
+  "lat": 25.2444,
+  "lon": 45.2625,
+  "name": "Shaqra wind farm",
+  "precision": "approximate",
+  "reason": "Commons: no photo of this project after manual check",
+  "status": "done"
+ }
+}

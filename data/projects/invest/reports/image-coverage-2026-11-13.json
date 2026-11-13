@@ -1,0 +1,90 @@
+{
+ "date": "2026-11-13",
+ "totals": {
+  "projects": 142,
+  "before": 115,
+  "after_if_approved": 117
+ },
+ "commons": {
+  "files_found_by_search": 587,
+  "passed_manual": 0
+ },
+ "new_candidates_not_published": {
+  "gem:L100000401075:x": "Sentinel-2 30 May 2026 at exact point (bright-desert filter too strict; manual check: plant visible)",
+  "gem:L100000601853": "Sentinel-2 8 Nov 2026 at 28.3375,95.7708 (secondary coordinate; dam construction at river confluence matches NHPC description) - location needs owner OK"
+ },
+ "by_country": {
+  "Egypt": {
+   "projects": 2,
+   "before": 0,
+   "after_if_approved": 0,
+   "gaps": [
+    "Egypt Aluminium solar farm (phase 1) (approximate)",
+    "Egypt Aluminium solar farm (phase 2) (approximate)"
+   ]
+  },
+  "Germany": {
+   "projects": 2,
+   "before": 2,
+   "after_if_approved": 2,
+   "gaps": []
+  },
+  "India": {
+   "projects": 18,
+   "before": 11,
+   "after_if_approved": 12,
+   "gaps": [
+    "Barethi solar park (approximate)",
+    "Ganjam solar farm (approximate)",
+    "Lalitpur solar park (approximate)",
+    "Rihand solar farm (approximate)",
+    "Dayapar (NTPC) III wind farm (approximate)",
+    "Vishnugad Pipalkoti hydroelectric plant (approximate)"
+   ]
+  },
+  "Indonesia": {
+   "projects": 1,
+   "before": 0,
+   "after_if_approved": 0,
+   "gaps": [
+    "Saguling solar farm (approximate)"
+   ]
+  },
+  "Saudi Arabia": {
+   "projects": 10,
+   "before": 0,
+   "after_if_approved": 1,
+   "gaps": [
+    "Afif 1 solar farm (approximate)",
+    "Afif 2 solar farm (approximate)",
+    "Al-Khushaybi Solar PV Park (approximate)",
+    "Al-Muwaih Solar PV (approximate)",
+    "Bisha solar farm (approximate)",
+    "Haden solar farm (approximate)",
+    "Shaqra wind farm (approximate)",
+    "Starah wind farm (approximate)",
+    "Nairyah IPP Power Plant (phase 1) (approximate)"
+   ]
+  },
+  "United States": {
+   "projects": 102,
+   "before": 102,
+   "after_if_approved": 102,
+   "gaps": []
+  },
+  "Uzbekistan": {
+   "projects": 7,
+   "before": 0,
+   "after_if_approved": 0,
+   "gaps": [
+    "Aral wind farm (phase 1) (approximate)",
+    "Aral wind farm (phase 2) (approximate)",
+    "Aral wind farm (phase 3) (approximate)",
+    "Aral wind farm (phase 4) (approximate)",
+    "Aral wind farm (phase 5) (approximate)",
+    "Gijduvan (ACWA Power) wind farm (approximate)",
+    "Kungrad (ACWA Power) wind farm (phase 4) (approximate)"
+   ]
+  }
+ }
+}
