@@ -1,0 +1,130 @@
+[
+ {
+  "id": "project:nextdc:SC2:site",
+  "reason": "Site/city location not sufficiently verified (owner: keep on hold)",
+  "record": {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:nextdc:SC2:site",
+   "source_identity": {
+    "authority": "asx:nxt:annual-report-fy26",
+    "id": "SC2:site"
+   },
+   "synthetic": false,
+   "name": "NEXTDC SC2 Sunshine Coast",
+   "sector": "data_centers",
+   "country_code": "AU",
+   "city": "Sunshine Coast",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Construction continued during FY26 (edge facility)",
+    "as_of": "2026-08-27",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+     "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+     "checked_at": "2026-11-13",
+     "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'continued construction at S4 Sydney, GE1 Geelong, D2 Darwin and SC2 Sunshine Coast'"
+    }
+   },
+   "location": {
+    "precision": "unknown",
+    "lat": null,
+    "lon": null,
+    "satellite_allowed": false
+   },
+   "identity_evidence": {
+    "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+    "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+    "checked_at": "2026-11-13",
+    "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'continued construction at S4 Sydney, GE1 Geelong, D2 Darwin and SC2 Sunshine Coast'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer annual report)",
+     "relationship_scope": "NEXTDC project per FY26 annual report; property title/lease for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "lei:529900RTERU3X7G3D672",
+     "listing": {
+      "name": "NEXTDC Limited",
+      "ticker": "NXT",
+      "exchange": "XASX",
+      "exchange_mic": "XASX",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://asx.api.markitdigital.com/asx-research/1.0/companies/NXT/header",
+       "sha256": "8a69ccffced739868b57a6769c05607200239e2df4f4cf6d3c22c597755789bd",
+       "checked_at": "2026-11-13",
+       "locator": "ASX company header: symbol NXT, ordinary shares, listed 2010-12-13"
+      }
+     },
+     "evidence": {
+      "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+      "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+      "checked_at": "2026-11-13",
+      "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'continued construction at S4 Sydney, GE1 Geelong, D2 Darwin and SC2 Sunshine Coast'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "public_equity",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure (ASX: NXT); no direct property purchase"
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-NXT-DEV (ASX annual report)"
+   },
+   "reported_metrics": {
+    "capacity": null
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "ASX listing identifiers; credited"
+     },
+     "location": {
+      "status": "omit",
+      "basis": "No point"
+     }
+    },
+    "review": null
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "location",
+     "disposition": "No verified Wikidata reference resolved for this city yet; no marker"
+    }
+   ]
+  }
+ }
+]

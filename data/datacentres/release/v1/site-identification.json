@@ -1,0 +1,749 @@
+{
+ "method": "Independent site identification for the 40 development records via OpenStreetMap (Nominatim search, ODbL).\nAccept a site only when an OSM object's own name contains the operator AND the facility code (e.g. 'Equinix FR8'),\ninside the expected metro (<= 60 km from the city reference). Everything else stays 'not identified'.\nWrites data/datacentres/release/v1/site-identification.json.",
+ "checked_at": "2026-11-13",
+ "records": {
+  "project:eqix:NY11:phase-5": {
+   "name": "Equinix NY11 phase 5",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix NY11 New York",
+     "hits": 0
+    },
+    {
+     "q": "Equinix NY11",
+     "hits": 8
+    },
+    {
+     "q": "Equinix NY11 data center",
+     "hits": 1
+    }
+   ]
+  },
+  "project:eqix:BG2:phase-2": {
+   "name": "Equinix BG2 phase 2",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix BG2 Bogotá",
+     "hits": 0
+    },
+    {
+     "q": "Equinix BG2",
+     "hits": 6
+    },
+    {
+     "q": "Equinix BG2 data center",
+     "hits": 0
+    }
+   ]
+  },
+  "project:eqix:MI1:redevelopment": {
+   "name": "Equinix MI1 redevelopment",
+   "site": {
+    "osm": "way/435518280",
+    "name": "NAP of the Americas",
+    "class": "building/yes",
+    "lat": 25.782359,
+    "lon": -80.193089,
+    "km_from_city_ref": 0.9,
+    "source": "https://www.openstreetmap.org/way/435518280",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "queries": [
+    {
+     "q": "Equinix MI1 Miami",
+     "hits": 1
+    }
+   ]
+  },
+  "project:eqix:MT1:phase-3": {
+   "name": "Equinix MT1 phase 3",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix MT1 Montreal",
+     "hits": 0
+    },
+    {
+     "q": "Equinix MT1",
+     "hits": 0
+    },
+    {
+     "q": "Equinix MT1 data center",
+     "hits": 0
+    }
+   ]
+  },
+  "project:eqix:RJ3:phase-2": {
+   "name": "Equinix RJ3 phase 2",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix RJ3 Rio de Janeiro",
+     "hits": 0
+    },
+    {
+     "q": "Equinix RJ3",
+     "hits": 0
+    },
+    {
+     "q": "Equinix RJ3 data center",
+     "hits": 0
+    }
+   ]
+  },
+  "project:eqix:SP4:phase-5": {
+   "name": "Equinix SP4 phase 5",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix SP4 São Paulo",
+     "hits": 0
+    },
+    {
+     "q": "Equinix SP4",
+     "hits": 5
+    },
+    {
+     "q": "Equinix SP4 data center",
+     "hits": 0
+    }
+   ]
+  },
+  "project:eqix:DC17:phases-1-and-2": {
+   "name": "Equinix DC17 phases 1 and 2",
+   "site": {
+    "osm": "way/1543931283",
+    "name": "Equinix DC17",
+    "class": "building/data_center",
+    "lat": 39.024891,
+    "lon": -77.453419,
+    "km_from_city_ref": 38.8,
+    "source": "https://www.openstreetmap.org/way/1543931283",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "queries": [
+    {
+     "q": "Equinix DC17 Washington, D.C.",
+     "hits": 0
+    },
+    {
+     "q": "Equinix DC17",
+     "hits": 1
+    }
+   ]
+  },
+  "project:eqix:DC22:phase-2": {
+   "name": "Equinix DC22 phase 2",
+   "site": {
+    "osm": "way/1522636324",
+    "name": "Equinix DC22",
+    "class": "building/data_center",
+    "lat": 39.013325,
+    "lon": -77.453801,
+    "km_from_city_ref": 38.4,
+    "source": "https://www.openstreetmap.org/way/1522636324",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "queries": [
+    {
+     "q": "Equinix DC22 Washington, D.C.",
+     "hits": 0
+    },
+    {
+     "q": "Equinix DC22",
+     "hits": 1
+    }
+   ]
+  },
+  "project:eqix:TR6:phase-3": {
+   "name": "Equinix TR6 phase 3",
+   "site": {
+    "osm": "way/661951723",
+    "name": "Equinix TR6",
+    "class": "building/data_center",
+    "lat": 43.74404,
+    "lon": -79.716378,
+    "km_from_city_ref": 27.7,
+    "source": "https://www.openstreetmap.org/way/661951723",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "queries": [
+    {
+     "q": "Equinix TR6 Toronto",
+     "hits": 0
+    },
+    {
+     "q": "Equinix TR6",
+     "hits": 1
+    }
+   ]
+  },
+  "project:eqix:CH5:phase-2": {
+   "name": "Equinix CH5 phase 2",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix CH5 Chicago",
+     "hits": 0
+    },
+    {
+     "q": "Equinix CH5",
+     "hits": 6
+    },
+    {
+     "q": "Equinix CH5 data center",
+     "hits": 0
+    }
+   ]
+  },
+  "project:eqix:DA12:phase-1": {
+   "name": "Equinix DA12 phase 1",
+   "site": {
+    "osm": "way/900152571",
+    "name": "Equinix DA12",
+    "class": "landuse/construction",
+    "lat": 32.8209,
+    "lon": -96.859826,
+    "km_from_city_ref": 6.6,
+    "source": "https://www.openstreetmap.org/way/900152571",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "queries": [
+    {
+     "q": "Equinix DA12 Dallas",
+     "hits": 1
+    }
+   ]
+  },
+  "project:eqix:DX3:phase-2": {
+   "name": "Equinix DX3 phase 2",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix DX3 Dubai",
+     "hits": 0
+    },
+    {
+     "q": "Equinix DX3",
+     "hits": 4
+    },
+    {
+     "q": "Equinix DX3 data center",
+     "hits": 0
+    }
+   ]
+  },
+  "project:eqix:FR8:phase-3": {
+   "name": "Equinix FR8 phase 3",
+   "site": {
+    "osm": "way/1267104292",
+    "name": "Equinix FR8.2",
+    "class": "building/industrial",
+    "lat": 50.098123,
+    "lon": 8.586068,
+    "km_from_city_ref": 7.0,
+    "source": "https://www.openstreetmap.org/way/1267104292",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "queries": [
+    {
+     "q": "Equinix FR8 Frankfurt",
+     "hits": 2
+    }
+   ]
+  },
+  "project:eqix:LS2:phase-2": {
+   "name": "Equinix LS2 phase 2",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix LS2 Lisbon",
+     "hits": 0
+    },
+    {
+     "q": "Equinix LS2",
+     "hits": 6
+    },
+    {
+     "q": "Equinix LS2 data center",
+     "hits": 0
+    }
+   ]
+  },
+  "project:eqix:ZH4:phase-6": {
+   "name": "Equinix ZH4 phase 6",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix ZH4 Zurich",
+     "hits": 0
+    },
+    {
+     "q": "Equinix ZH4",
+     "hits": 6
+    },
+    {
+     "q": "Equinix ZH4 data center",
+     "hits": 0
+    }
+   ]
+  },
+  "project:eqix:LG4:phase-1": {
+   "name": "Equinix LG4 phase 1",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix LG4 Lagos",
+     "hits": 0
+    },
+    {
+     "q": "Equinix LG4",
+     "hits": 6
+    },
+    {
+     "q": "Equinix LG4 data center",
+     "hits": 0
+    }
+   ]
+  },
+  "project:eqix:DB10:phase-1": {
+   "name": "Equinix DB10 phase 1",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix DB10 Dublin",
+     "hits": 1
+    },
+    {
+     "q": "Equinix DB10",
+     "hits": 5
+    },
+    {
+     "q": "Equinix DB10 data center",
+     "hits": 1
+    }
+   ]
+  },
+  "project:eqix:FR12:phase-1": {
+   "name": "Equinix FR12 phase 1",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix FR12 Frankfurt",
+     "hits": 3
+    },
+    {
+     "q": "Equinix FR12",
+     "hits": 5
+    },
+    {
+     "q": "Equinix FR12 data center",
+     "hits": 1
+    }
+   ]
+  },
+  "project:eqix:MU4:phase-3": {
+   "name": "Equinix MU4 phase 3",
+   "site": {
+    "osm": "way/1125475727",
+    "name": "Equinix MU4 Rechenzentrum",
+    "class": "building/commercial",
+    "lat": 48.147201,
+    "lon": 11.682168,
+    "km_from_city_ref": 8.0,
+    "source": "https://www.openstreetmap.org/way/1125475727",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "queries": [
+    {
+     "q": "Equinix MU4 Munich",
+     "hits": 2
+    }
+   ]
+  },
+  "project:eqix:FR15:phase-1": {
+   "name": "Equinix FR15 phase 1",
+   "site": {
+    "osm": "way/1466121977",
+    "name": "Equinix FR15",
+    "class": "landuse/construction",
+    "lat": 50.097052,
+    "lon": 8.586483,
+    "km_from_city_ref": 7.0,
+    "source": "https://www.openstreetmap.org/way/1466121977",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "queries": [
+    {
+     "q": "Equinix FR15 Frankfurt",
+     "hits": 1
+    }
+   ]
+  },
+  "project:eqix:HK6:phase-1": {
+   "name": "Equinix HK6 phase 1",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix HK6 Hong Kong",
+     "hits": 0
+    },
+    {
+     "q": "Equinix HK6",
+     "hits": 0
+    },
+    {
+     "q": "Equinix HK6 data center",
+     "hits": 0
+    }
+   ]
+  },
+  "project:eqix:OS3:phase-4": {
+   "name": "Equinix OS3 phase 4",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix OS3 Osaka",
+     "hits": 0
+    },
+    {
+     "q": "Equinix OS3",
+     "hits": 5
+    },
+    {
+     "q": "Equinix OS3 data center",
+     "hits": 0
+    }
+   ]
+  },
+  "project:eqix:JK1:phase-2": {
+   "name": "Equinix JK1 phase 2",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix JK1 Jakarta",
+     "hits": 0
+    },
+    {
+     "q": "Equinix JK1",
+     "hits": 0
+    },
+    {
+     "q": "Equinix JK1 data center",
+     "hits": 0
+    }
+   ]
+  },
+  "project:eqix:SY5:phase-4": {
+   "name": "Equinix SY5 phase 4",
+   "site": {
+    "osm": "way/1210163349",
+    "name": "Equinix SY5",
+    "class": "building/yes",
+    "lat": -33.919347,
+    "lon": 151.189981,
+    "km_from_city_ref": 6.0,
+    "source": "https://www.openstreetmap.org/way/1210163349",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "queries": [
+    {
+     "q": "Equinix SY5 Sydney",
+     "hits": 1
+    }
+   ]
+  },
+  "project:eqix:KL2:phases-1-and-2": {
+   "name": "Equinix KL2 phases 1 and 2",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix KL2 Kuala Lumpur",
+     "hits": 0
+    },
+    {
+     "q": "Equinix KL2",
+     "hits": 0
+    },
+    {
+     "q": "Equinix KL2 data center",
+     "hits": 0
+    }
+   ]
+  },
+  "project:eqix:MB3:phase-2": {
+   "name": "Equinix MB3 phase 2",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix MB3 Mumbai",
+     "hits": 0
+    },
+    {
+     "q": "Equinix MB3",
+     "hits": 6
+    },
+    {
+     "q": "Equinix MB3 data center",
+     "hits": 0
+    }
+   ]
+  },
+  "project:eqix:BK1:phase-1": {
+   "name": "Equinix BK1 phase 1",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix BK1 Bangkok",
+     "hits": 0
+    },
+    {
+     "q": "Equinix BK1",
+     "hits": 6
+    },
+    {
+     "q": "Equinix BK1 data center",
+     "hits": 0
+    }
+   ]
+  },
+  "project:eqix:CN1:phase-2": {
+   "name": "Equinix CN1 phase 2",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix CN1 Chennai",
+     "hits": 0
+    },
+    {
+     "q": "Equinix CN1",
+     "hits": 5
+    },
+    {
+     "q": "Equinix CN1 data center",
+     "hits": 0
+    }
+   ]
+  },
+  "project:eqix:OS6:phase-1": {
+   "name": "Equinix OS6 phase 1",
+   "site": null,
+   "queries": [
+    {
+     "q": "Equinix OS6 Osaka",
+     "hits": 0
+    },
+    {
+     "q": "Equinix OS6",
+     "hits": 5
+    },
+    {
+     "q": "Equinix OS6 data center",
+     "hits": 0
+    }
+   ]
+  },
+  "project:nextdc:M4:campus": {
+   "name": "NEXTDC M4 Melbourne",
+   "site": null,
+   "queries": [
+    {
+     "q": "NEXTDC M4 Melbourne",
+     "hits": 1
+    },
+    {
+     "q": "NEXTDC M4",
+     "hits": 1
+    },
+    {
+     "q": "M4 NEXTDC data centre",
+     "hits": 0
+    }
+   ]
+  },
+  "project:nextdc:KL1:expansion": {
+   "name": "NEXTDC KL1 Kuala Lumpur",
+   "site": {
+    "osm": "way/881960579",
+    "name": "NEXTDC Kuala Lumpur Data Centre (KL1)",
+    "class": "landuse/industrial",
+    "lat": 3.094504,
+    "lon": 101.628691,
+    "km_from_city_ref": 9.5,
+    "source": "https://www.openstreetmap.org/way/881960579",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "queries": [
+    {
+     "q": "NEXTDC KL1 Kuala Lumpur",
+     "hits": 2
+    }
+   ]
+  },
+  "project:nextdc:TK1:site": {
+   "name": "NEXTDC TK1 Tokyo",
+   "site": null,
+   "queries": [
+    {
+     "q": "NEXTDC TK1 Tokyo",
+     "hits": 0
+    },
+    {
+     "q": "NEXTDC TK1",
+     "hits": 0
+    },
+    {
+     "q": "TK1 NEXTDC data centre",
+     "hits": 0
+    }
+   ]
+  },
+  "project:nextdc:AK1:site": {
+   "name": "NEXTDC AK1 Auckland",
+   "site": null,
+   "queries": [
+    {
+     "q": "NEXTDC AK1 Auckland",
+     "hits": 0
+    },
+    {
+     "q": "NEXTDC AK1",
+     "hits": 1
+    },
+    {
+     "q": "AK1 NEXTDC data centre",
+     "hits": 0
+    }
+   ]
+  },
+  "project:nextdc:S4:site": {
+   "name": "NEXTDC S4 Sydney",
+   "site": null,
+   "queries": [
+    {
+     "q": "NEXTDC S4 Sydney",
+     "hits": 1
+    },
+    {
+     "q": "NEXTDC S4",
+     "hits": 1
+    },
+    {
+     "q": "S4 NEXTDC data centre",
+     "hits": 0
+    }
+   ]
+  },
+  "project:nextdc:S7:site": {
+   "name": "NEXTDC S7 Sydney",
+   "site": null,
+   "queries": [
+    {
+     "q": "NEXTDC S7 Sydney",
+     "hits": 1
+    },
+    {
+     "q": "NEXTDC S7",
+     "hits": 1
+    },
+    {
+     "q": "S7 NEXTDC data centre",
+     "hits": 0
+    }
+   ]
+  },
+  "project:nextdc:GE1:site": {
+   "name": "NEXTDC GE1 Geelong",
+   "site": null,
+   "queries": [
+    {
+     "q": "NEXTDC GE1 Geelong",
+     "hits": 0
+    },
+    {
+     "q": "NEXTDC GE1",
+     "hits": 0
+    },
+    {
+     "q": "GE1 NEXTDC data centre",
+     "hits": 0
+    }
+   ]
+  },
+  "project:nextdc:D2:site": {
+   "name": "NEXTDC D2 Darwin",
+   "site": null,
+   "queries": [
+    {
+     "q": "NEXTDC D2 Darwin",
+     "hits": 0
+    },
+    {
+     "q": "NEXTDC D2",
+     "hits": 1
+    },
+    {
+     "q": "D2 NEXTDC data centre",
+     "hits": 0
+    }
+   ]
+  },
+  "project:nextdc:SC2:site": {
+   "name": "NEXTDC SC2 Sunshine Coast",
+   "site": null,
+   "queries": [
+    {
+     "q": "NEXTDC SC2 Sunshine Coast",
+     "hits": 0
+    },
+    {
+     "q": "NEXTDC SC2",
+     "hits": 1
+    },
+    {
+     "q": "SC2 NEXTDC data centre",
+     "hits": 0
+    }
+   ]
+  },
+  "project:nextdc:P1:extension": {
+   "name": "NEXTDC P1 Perth extension",
+   "site": {
+    "osm": "way/668458502",
+    "name": "NEXTDC P1 Data Centre",
+    "class": "building/commercial",
+    "lat": -31.864461,
+    "lon": 115.895933,
+    "km_from_city_ref": 10.7,
+    "source": "https://www.openstreetmap.org/way/668458502",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "queries": [
+    {
+     "q": "NEXTDC P1 Perth",
+     "hits": 1
+    }
+   ]
+  },
+  "project:nextdc:B2:extension": {
+   "name": "NEXTDC B2 Brisbane extension",
+   "site": null,
+   "queries": [
+    {
+     "q": "NEXTDC B2 Brisbane",
+     "hits": 0
+    },
+    {
+     "q": "NEXTDC B2",
+     "hits": 1
+    },
+    {
+     "q": "B2 NEXTDC data centre",
+     "hits": 0
+    }
+   ]
+  }
+ }
+}

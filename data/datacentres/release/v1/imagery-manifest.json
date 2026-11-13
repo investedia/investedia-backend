@@ -1,0 +1,512 @@
+{
+ "schema": "investedia.datacentres.imagery.v1",
+ "method": "Sentinel-2 imagery for Data Center development sites that are independently identified (site-identification.json).",
+ "images": {
+  "project:eqix:MI1:redevelopment": {
+   "project_id": "project:eqix:MI1:redevelopment",
+   "name": "Equinix MI1 redevelopment",
+   "site": {
+    "osm": "way/435518280",
+    "name": "NAP of the Americas",
+    "class": "building/yes",
+    "lat": 25.782359,
+    "lon": -80.193089,
+    "km_from_city_ref": 0.9,
+    "source": "https://www.openstreetmap.org/way/435518280",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "site_level": "building",
+   "corroboration": null,
+   "images": {
+    "now": null,
+    "before": null
+   },
+   "photo": {
+    "file": "Miami - NAP of the Americas.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Miami_-_NAP_of_the_Americas.jpg",
+    "author": "Pietro",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "commercial_use": "allowed with attribution; adaptations under CC BY-SA",
+    "date_taken": "2014-04-05",
+    "is_current": false,
+    "label": "Exterior, April 2014 (before the current redevelopment)",
+    "sha1": "e225af0f9a1cb11d8320e3a34466224529f766ca",
+    "identity_evidence": [
+     "Wikidata Q6952344 (NAP of the Americas) uses this file as its image (P18); its coordinates are ~5 m from the geocoded MI1 address (50 NE 9th Street)",
+     "Commons category: Equinix",
+     "Photo GPS 117 m from the address (street-level viewpoint)"
+    ],
+    "review": "accepted"
+   }
+  },
+  "project:eqix:DC17:phases-1-and-2": {
+   "project_id": "project:eqix:DC17:phases-1-and-2",
+   "name": "Equinix DC17 phases 1 and 2",
+   "site": {
+    "osm": "way/1543931283",
+    "name": "Equinix DC17",
+    "class": "building/data_center",
+    "lat": 39.024891,
+    "lon": -77.453419,
+    "km_from_city_ref": 38.8,
+    "source": "https://www.openstreetmap.org/way/1543931283",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "site_level": "building",
+   "corroboration": null,
+   "images": {
+    "now": {
+     "file": "project-eqix-DC17-phases-1-and-2-now.jpg",
+     "date": "2026-11-10",
+     "scene": "S2A_T17SQD_20261110T160653_L2A",
+     "sha256": "af5862fb3f92b4e128adc982410f14dbf9011eed9eccec1ecf69068d2c340814",
+     "width_km": 1.5,
+     "resolution_m": 10,
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "licence": "Copernicus Sentinel data terms (free, full and open; attribution)",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "is_current": true,
+     "review": {
+      "by_eye": "accepted: clear scene, centred on the OSM-identified site",
+      "date": "2026-11-13"
+     }
+    },
+    "before": {
+     "file": "project-eqix-DC17-phases-1-and-2-before.jpg",
+     "date": "2024-12-30",
+     "scene": "S2B_T17SQD_20241230T155717_L2A",
+     "sha256": "588a5b8d84c8391ad9190da459b1e7e0a4059cfeea382c8ff016ca8b310d825b",
+     "width_km": 1.5,
+     "resolution_m": 10,
+     "credit": "Contains modified Copernicus Sentinel data 2024",
+     "licence": "Copernicus Sentinel data terms (free, full and open; attribution)",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "is_current": false,
+     "review": {
+      "by_eye": "accepted: clear scene, centred on the OSM-identified site",
+      "date": "2026-11-13"
+     }
+    }
+   }
+  },
+  "project:eqix:DC22:phase-2": {
+   "project_id": "project:eqix:DC22:phase-2",
+   "name": "Equinix DC22 phase 2",
+   "site": {
+    "osm": "way/1522636324",
+    "name": "Equinix DC22",
+    "class": "building/data_center",
+    "lat": 39.013325,
+    "lon": -77.453801,
+    "km_from_city_ref": 38.4,
+    "source": "https://www.openstreetmap.org/way/1522636324",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "site_level": "building",
+   "corroboration": null,
+   "images": {
+    "now": {
+     "file": "project-eqix-DC22-phase-2-now.jpg",
+     "date": "2026-11-10",
+     "scene": "S2A_T17SQD_20261110T160653_L2A",
+     "sha256": "137c0ea21fcaa1c0c9efebabb7f5a71e2c9746f8a46255975b2726fbfce4b7d5",
+     "width_km": 1.5,
+     "resolution_m": 10,
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "licence": "Copernicus Sentinel data terms (free, full and open; attribution)",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "is_current": true,
+     "review": {
+      "by_eye": "accepted: clear scene, centred on the OSM-identified site",
+      "date": "2026-11-13"
+     }
+    },
+    "before": {
+     "file": "project-eqix-DC22-phase-2-before.jpg",
+     "date": "2024-12-30",
+     "scene": "S2B_T17SQD_20241230T155717_L2A",
+     "sha256": "e2b9fb6960994d3ec8ec3c6aa382d6a00e967965d8fa3d4411b6b96194401722",
+     "width_km": 1.5,
+     "resolution_m": 10,
+     "credit": "Contains modified Copernicus Sentinel data 2024",
+     "licence": "Copernicus Sentinel data terms (free, full and open; attribution)",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "is_current": false,
+     "review": {
+      "by_eye": "accepted: clear scene, centred on the OSM-identified site",
+      "date": "2026-11-13"
+     }
+    }
+   }
+  },
+  "project:eqix:TR6:phase-3": {
+   "project_id": "project:eqix:TR6:phase-3",
+   "name": "Equinix TR6 phase 3",
+   "site": {
+    "osm": "way/661951723",
+    "name": "Equinix TR6",
+    "class": "building/data_center",
+    "lat": 43.74404,
+    "lon": -79.716378,
+    "km_from_city_ref": 27.7,
+    "source": "https://www.openstreetmap.org/way/661951723",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "site_level": "building",
+   "corroboration": null,
+   "images": {
+    "now": {
+     "file": "project-eqix-TR6-phase-3-now.jpg",
+     "date": "2026-11-01",
+     "scene": "S2C_T17TPJ_20261101T161418_L2A",
+     "sha256": "420300a4ebed2379b7b9863fca7a7ad2c1620f04e57ad5274f888595f6d8b74c",
+     "width_km": 1.5,
+     "resolution_m": 10,
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "licence": "Copernicus Sentinel data terms (free, full and open; attribution)",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "is_current": true,
+     "review": {
+      "by_eye": "accepted: clear scene, centred on the OSM-identified site",
+      "date": "2026-11-13"
+     }
+    },
+    "before": {
+     "file": "project-eqix-TR6-phase-3-before.jpg",
+     "date": "2024-10-17",
+     "scene": "S2B_T17TNJ_20241017T162054_L2A",
+     "sha256": "e58e627aed8867ee04a4acdd5a1c84bc50ce9b9128ca9eb17ed7c47412e83bbc",
+     "width_km": 1.5,
+     "resolution_m": 10,
+     "credit": "Contains modified Copernicus Sentinel data 2024",
+     "licence": "Copernicus Sentinel data terms (free, full and open; attribution)",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "is_current": false,
+     "review": {
+      "by_eye": "accepted: clear scene, centred on the OSM-identified site",
+      "date": "2026-11-13"
+     }
+    }
+   }
+  },
+  "project:eqix:DA12:phase-1": {
+   "project_id": "project:eqix:DA12:phase-1",
+   "name": "Equinix DA12 phase 1",
+   "site": {
+    "osm": "way/900152571",
+    "name": "Equinix DA12",
+    "class": "landuse/construction",
+    "lat": 32.8209,
+    "lon": -96.859826,
+    "km_from_city_ref": 6.6,
+    "source": "https://www.openstreetmap.org/way/900152571",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "site_level": "campus/site",
+   "corroboration": null,
+   "images": {
+    "now": {
+     "file": "project-eqix-DA12-phase-1-now.jpg",
+     "date": "2026-11-11",
+     "scene": "S2B_T14SPB_20261111T170934_L2A",
+     "sha256": "4a168d6f459adc8ef421d4806986fdb2bbf186ccd2a5b211eb6827dd0b1ba635",
+     "width_km": 1.5,
+     "resolution_m": 10,
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "licence": "Copernicus Sentinel data terms (free, full and open; attribution)",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "is_current": true,
+     "review": {
+      "by_eye": "accepted: clear scene, centred on the OSM-identified site",
+      "date": "2026-11-13"
+     }
+    },
+    "before": {
+     "file": "project-eqix-DA12-phase-1-before.jpg",
+     "date": "2024-12-31",
+     "scene": "S2B_T14SPB_20241231T171326_L2A",
+     "sha256": "8ac27f60e8bca34d18a2be5e39a8c995aeb23aac721a216a6d88f0a7baef1b74",
+     "width_km": 1.5,
+     "resolution_m": 10,
+     "credit": "Contains modified Copernicus Sentinel data 2024",
+     "licence": "Copernicus Sentinel data terms (free, full and open; attribution)",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "is_current": false,
+     "review": {
+      "by_eye": "accepted: clear scene, centred on the OSM-identified site",
+      "date": "2026-11-13"
+     }
+    }
+   }
+  },
+  "project:eqix:FR8:phase-3": {
+   "project_id": "project:eqix:FR8:phase-3",
+   "name": "Equinix FR8 phase 3",
+   "site": {
+    "osm": "way/1267104292",
+    "name": "Equinix FR8.2",
+    "class": "building/industrial",
+    "lat": 50.098123,
+    "lon": 8.586068,
+    "km_from_city_ref": 7.0,
+    "source": "https://www.openstreetmap.org/way/1267104292",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "site_level": "building",
+   "corroboration": {
+    "official_pin_distance_m": 53,
+    "note": "Equinix-published pin vs OSM-named object (internal corroboration; pin not republished)"
+   },
+   "images": {
+    "now": {
+     "file": "project-eqix-FR8-phase-3-now.jpg",
+     "date": "2026-10-05",
+     "scene": "S2B_T32UMA_20261005T102902_L2A",
+     "sha256": "b3546da3b0873daa4c1f3c62987bb8ef08e4c75a98450f68edb362b847aa0638",
+     "width_km": 1.5,
+     "resolution_m": 10,
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "licence": "Copernicus Sentinel data terms (free, full and open; attribution)",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "is_current": true,
+     "review": {
+      "by_eye": "accepted: clear scene, centred on the OSM-identified site",
+      "date": "2026-11-13"
+     }
+    },
+    "before": {
+     "file": "project-eqix-FR8-phase-3-before.jpg",
+     "date": "2024-10-25",
+     "scene": "S2B_T32UMA_20241025T103449_L2A",
+     "sha256": "e3d483c7f53cbfe2892b56448df44ca42d9ce0eb78acc4ae81f4ee541457f301",
+     "width_km": 1.5,
+     "resolution_m": 10,
+     "credit": "Contains modified Copernicus Sentinel data 2024",
+     "licence": "Copernicus Sentinel data terms (free, full and open; attribution)",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "is_current": false,
+     "review": {
+      "by_eye": "accepted: clear scene, centred on the OSM-identified site",
+      "date": "2026-11-13"
+     }
+    }
+   }
+  },
+  "project:eqix:MU4:phase-3": {
+   "project_id": "project:eqix:MU4:phase-3",
+   "name": "Equinix MU4 phase 3",
+   "site": {
+    "osm": "way/1125475727",
+    "name": "Equinix MU4 Rechenzentrum",
+    "class": "building/commercial",
+    "lat": 48.147201,
+    "lon": 11.682168,
+    "km_from_city_ref": 8.0,
+    "source": "https://www.openstreetmap.org/way/1125475727",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "site_level": "building",
+   "corroboration": {
+    "official_pin_distance_m": 53,
+    "note": "Equinix-published pin vs OSM-named object (internal corroboration; pin not republished)"
+   },
+   "images": {
+    "now": null,
+    "before": {
+     "file": "project-eqix-MU4-phase-3-before.jpg",
+     "date": "2024-12-21",
+     "scene": "S2B_T32UPU_20241221T102341_L2A",
+     "sha256": "e1572472488e7770703d6dcca1e2039bee7d11b4f38c5a06fac444258a763f4a",
+     "width_km": 1.5,
+     "resolution_m": 10,
+     "credit": "Contains modified Copernicus Sentinel data 2024",
+     "licence": "Copernicus Sentinel data terms (free, full and open; attribution)",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "is_current": false,
+     "review": {
+      "by_eye": "accepted: clear scene, centred on the OSM-identified site",
+      "date": "2026-11-13"
+     }
+    }
+   },
+   "rejected": [
+    {
+     "key": "now",
+     "scene": "S2C_T32UPU_20261027T102515_L2A",
+     "reason": "haze/cloud over the site on visual review"
+    }
+   ]
+  },
+  "project:eqix:FR15:phase-1": {
+   "project_id": "project:eqix:FR15:phase-1",
+   "name": "Equinix FR15 phase 1",
+   "site": {
+    "osm": "way/1466121977",
+    "name": "Equinix FR15",
+    "class": "landuse/construction",
+    "lat": 50.097052,
+    "lon": 8.586483,
+    "km_from_city_ref": 7.0,
+    "source": "https://www.openstreetmap.org/way/1466121977",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "site_level": "campus/site",
+   "corroboration": null,
+   "images": {
+    "now": {
+     "file": "project-eqix-FR15-phase-1-now.jpg",
+     "date": "2026-10-05",
+     "scene": "S2B_T32UMA_20261005T102902_L2A",
+     "sha256": "04c68303ae4b778088f120b830edb908a62535617039011fb25e74af5dd90d3a",
+     "width_km": 1.5,
+     "resolution_m": 10,
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "licence": "Copernicus Sentinel data terms (free, full and open; attribution)",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "is_current": true,
+     "review": {
+      "by_eye": "accepted: clear scene, centred on the OSM-identified site",
+      "date": "2026-11-13"
+     }
+    },
+    "before": {
+     "file": "project-eqix-FR15-phase-1-before.jpg",
+     "date": "2024-10-25",
+     "scene": "S2B_T32UMA_20241025T103449_L2A",
+     "sha256": "8f88ab54b2ab0cda315d17d91743c2b97a5ebfcbfd65cd09a9fb8124ca5bd238",
+     "width_km": 1.5,
+     "resolution_m": 10,
+     "credit": "Contains modified Copernicus Sentinel data 2024",
+     "licence": "Copernicus Sentinel data terms (free, full and open; attribution)",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "is_current": false,
+     "review": {
+      "by_eye": "accepted: clear scene, centred on the OSM-identified site",
+      "date": "2026-11-13"
+     }
+    }
+   }
+  },
+  "project:eqix:SY5:phase-4": {
+   "project_id": "project:eqix:SY5:phase-4",
+   "name": "Equinix SY5 phase 4",
+   "site": {
+    "osm": "way/1210163349",
+    "name": "Equinix SY5",
+    "class": "building/yes",
+    "lat": -33.919347,
+    "lon": 151.189981,
+    "km_from_city_ref": 6.0,
+    "source": "https://www.openstreetmap.org/way/1210163349",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "site_level": "building",
+   "corroboration": null,
+   "images": {
+    "now": {
+     "file": "project-eqix-SY5-phase-4-now.jpg",
+     "date": "2026-09-30",
+     "scene": "S2B_T56HLH_20260930T000221_L2A",
+     "sha256": "a5fb979294a0bed3b6ea7fb1d113b9d415cd072cf0c561fef489b4348b474b5c",
+     "width_km": 1.5,
+     "resolution_m": 10,
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "licence": "Copernicus Sentinel data terms (free, full and open; attribution)",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "is_current": true,
+     "review": {
+      "by_eye": "accepted: clear scene, centred on the OSM-identified site",
+      "date": "2026-11-13"
+     }
+    },
+    "before": null
+   }
+  },
+  "project:nextdc:KL1:expansion": {
+   "project_id": "project:nextdc:KL1:expansion",
+   "name": "NEXTDC KL1 Kuala Lumpur",
+   "site": {
+    "osm": "way/881960579",
+    "name": "NEXTDC Kuala Lumpur Data Centre (KL1)",
+    "class": "landuse/industrial",
+    "lat": 3.094504,
+    "lon": 101.628691,
+    "km_from_city_ref": 9.5,
+    "source": "https://www.openstreetmap.org/way/881960579",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "site_level": "campus/site",
+   "corroboration": null,
+   "images": {
+    "now": {
+     "file": "project-nextdc-KL1-expansion-now.jpg",
+     "date": "2026-08-15",
+     "scene": "S2C_T47NQD_20260815T034137_L2A",
+     "sha256": "8c3973a68159aed537b58ea673f58b03c2890431ecbbb740ea335d2ffd89d80a",
+     "width_km": 1.5,
+     "resolution_m": 10,
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "licence": "Copernicus Sentinel data terms (free, full and open; attribution)",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "is_current": true,
+     "review": {
+      "by_eye": "accepted: clear scene, centred on the OSM-identified site",
+      "date": "2026-11-13"
+     }
+    },
+    "before": null
+   }
+  },
+  "project:nextdc:P1:extension": {
+   "project_id": "project:nextdc:P1:extension",
+   "name": "NEXTDC P1 Perth extension",
+   "site": {
+    "osm": "way/668458502",
+    "name": "NEXTDC P1 Data Centre",
+    "class": "building/commercial",
+    "lat": -31.864461,
+    "lon": 115.895933,
+    "km_from_city_ref": 10.7,
+    "source": "https://www.openstreetmap.org/way/668458502",
+    "licence": "ODbL 1.0 (© OpenStreetMap contributors)"
+   },
+   "site_level": "building",
+   "corroboration": null,
+   "images": {
+    "now": {
+     "file": "project-nextdc-P1-extension-now.jpg",
+     "date": "2026-09-17",
+     "scene": "S2C_T50HLK_20260917T022244_L2A",
+     "sha256": "ee4fa7e6d20df65514a7c87662ea2c104486d4b294a5444eb61ff101f78d0b19",
+     "width_km": 1.5,
+     "resolution_m": 10,
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "licence": "Copernicus Sentinel data terms (free, full and open; attribution)",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "is_current": true,
+     "review": {
+      "by_eye": "accepted: clear scene, centred on the OSM-identified site",
+      "date": "2026-11-13"
+     }
+    },
+    "before": {
+     "file": "project-nextdc-P1-extension-before.jpg",
+     "date": "2024-10-07",
+     "scene": "S2A_T50HLK_20241007T022334_L2A",
+     "sha256": "c1ef659f0b1cfbef90acf3d5feb1b52ef6192328c5b74200d59c6ae35f95e0ad",
+     "width_km": 1.5,
+     "resolution_m": 10,
+     "credit": "Contains modified Copernicus Sentinel data 2024",
+     "licence": "Copernicus Sentinel data terms (free, full and open; attribution)",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "is_current": false,
+     "review": {
+      "by_eye": "accepted: clear scene, centred on the OSM-identified site",
+      "date": "2026-11-13"
+     }
+    }
+   }
+  }
+ }
+}

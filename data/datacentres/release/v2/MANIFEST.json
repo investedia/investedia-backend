@@ -1,0 +1,16 @@
+{
+ "release": "data-centres-v2-candidate",
+ "date": "2026-11-13",
+ "candidates": 39,
+ "hold": 1,
+ "exact_sites": 11,
+ "with_satellite_now": 9,
+ "with_before_after": 7,
+ "with_photo": 1,
+ "placeholder_only": 28,
+ "gate_pass_now": 29,
+ "gate_blocked": {
+  "Required factual reuse unresolved": 10
+ },
+ "publication": "Not published. Owner approval required; NEXTDC additionally needs permission/legal review."
+}

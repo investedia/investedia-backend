@@ -1,0 +1,353 @@
+{
+ "project:eqix:NY11:phase-5": {
+  "name": "Equinix NY11 phase 5",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:BG2:phase-2": {
+  "name": "Equinix BG2 phase 2",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:MI1:redevelopment": {
+  "name": "Equinix MI1 redevelopment",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "attribution",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:MT1:phase-3": {
+  "name": "Equinix MT1 phase 3",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:RJ3:phase-2": {
+  "name": "Equinix RJ3 phase 2",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:SP4:phase-5": {
+  "name": "Equinix SP4 phase 5",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:DC17:phases-1-and-2": {
+  "name": "Equinix DC17 phases 1 and 2",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "attribution",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:DC22:phase-2": {
+  "name": "Equinix DC22 phase 2",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "attribution",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:TR6:phase-3": {
+  "name": "Equinix TR6 phase 3",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "attribution",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:CH5:phase-2": {
+  "name": "Equinix CH5 phase 2",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:DA12:phase-1": {
+  "name": "Equinix DA12 phase 1",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "attribution",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:DX3:phase-2": {
+  "name": "Equinix DX3 phase 2",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:FR8:phase-3": {
+  "name": "Equinix FR8 phase 3",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "attribution",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:LS2:phase-2": {
+  "name": "Equinix LS2 phase 2",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:ZH4:phase-6": {
+  "name": "Equinix ZH4 phase 6",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:LG4:phase-1": {
+  "name": "Equinix LG4 phase 1",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:DB10:phase-1": {
+  "name": "Equinix DB10 phase 1",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:FR12:phase-1": {
+  "name": "Equinix FR12 phase 1",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:MU4:phase-3": {
+  "name": "Equinix MU4 phase 3",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "attribution",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:FR15:phase-1": {
+  "name": "Equinix FR15 phase 1",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "attribution",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:HK6:phase-1": {
+  "name": "Equinix HK6 phase 1",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:OS3:phase-4": {
+  "name": "Equinix OS3 phase 4",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:JK1:phase-2": {
+  "name": "Equinix JK1 phase 2",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:SY5:phase-4": {
+  "name": "Equinix SY5 phase 4",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "attribution",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:KL2:phases-1-and-2": {
+  "name": "Equinix KL2 phases 1 and 2",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:MB3:phase-2": {
+  "name": "Equinix MB3 phase 2",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:BK1:phase-1": {
+  "name": "Equinix BK1 phase 1",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:CN1:phase-2": {
+  "name": "Equinix CN1 phase 2",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:eqix:OS6:phase-1": {
+  "name": "Equinix OS6 phase 1",
+  "identity": "none",
+  "status_and_dates": "none",
+  "capacity_and_capex": "none",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:nextdc:M4:campus": {
+  "name": "NEXTDC M4 Melbourne",
+  "identity": "legal_review",
+  "status_and_dates": "legal_review",
+  "capacity_and_capex": "legal_review",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:nextdc:KL1:expansion": {
+  "name": "NEXTDC KL1 Kuala Lumpur",
+  "identity": "legal_review",
+  "status_and_dates": "legal_review",
+  "capacity_and_capex": "legal_review",
+  "listing": "none",
+  "location": "attribution",
+  "aggregate": "legal_review"
+ },
+ "project:nextdc:TK1:site": {
+  "name": "NEXTDC TK1 Tokyo",
+  "identity": "legal_review",
+  "status_and_dates": "legal_review",
+  "capacity_and_capex": "legal_review",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:nextdc:AK1:site": {
+  "name": "NEXTDC AK1 Auckland",
+  "identity": "legal_review",
+  "status_and_dates": "legal_review",
+  "capacity_and_capex": "legal_review",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:nextdc:S4:site": {
+  "name": "NEXTDC S4 Sydney",
+  "identity": "legal_review",
+  "status_and_dates": "legal_review",
+  "capacity_and_capex": "legal_review",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:nextdc:S7:site": {
+  "name": "NEXTDC S7 Sydney",
+  "identity": "legal_review",
+  "status_and_dates": "legal_review",
+  "capacity_and_capex": "legal_review",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:nextdc:GE1:site": {
+  "name": "NEXTDC GE1 Geelong",
+  "identity": "legal_review",
+  "status_and_dates": "legal_review",
+  "capacity_and_capex": "legal_review",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:nextdc:D2:site": {
+  "name": "NEXTDC D2 Darwin",
+  "identity": "legal_review",
+  "status_and_dates": "legal_review",
+  "capacity_and_capex": "legal_review",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ },
+ "project:nextdc:P1:extension": {
+  "name": "NEXTDC P1 Perth extension",
+  "identity": "legal_review",
+  "status_and_dates": "legal_review",
+  "capacity_and_capex": "legal_review",
+  "listing": "none",
+  "location": "attribution",
+  "aggregate": "legal_review"
+ },
+ "project:nextdc:B2:extension": {
+  "name": "NEXTDC B2 Brisbane extension",
+  "identity": "legal_review",
+  "status_and_dates": "legal_review",
+  "capacity_and_capex": "legal_review",
+  "listing": "none",
+  "location": "none",
+  "aggregate": "legal_review"
+ }
+}
