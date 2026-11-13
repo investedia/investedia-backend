@@ -15577,7 +15577,15 @@
     {
      "cik": null,
      "effective_stake": null,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "New Delhi",
+      "city_url": "https://www.wikidata.org/entity/Q987",
+      "lat": 28.613889,
+      "lon": 77.208889,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q1967805"
+     },
      "hq_country": "India",
      "lei": "335800Q4TRGJXNLVMB81",
      "listed_entity_id": "E100000001926",
@@ -15784,7 +15792,15 @@
       }
      ],
      "effective_stake": 74.5,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "New Delhi",
+      "city_url": "https://www.wikidata.org/entity/Q987",
+      "lat": 28.613889,
+      "lon": 77.208889,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q1967805"
+     },
      "hq_country": "India",
      "lei": "335800Q4TRGJXNLVMB81",
      "listed_entity_id": "E100000001926",
@@ -15890,7 +15906,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "New Delhi",
+      "city_url": "https://www.wikidata.org/entity/Q987",
+      "lat": 28.613889,
+      "lon": 77.208889,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q1967805"
+     },
      "hq_country": "India",
      "lei": "335800Q4TRGJXNLVMB81",
      "listed_entity_id": "E100000001926",
@@ -15989,7 +16013,15 @@
     {
      "cik": null,
      "effective_stake": 49.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",
@@ -16095,7 +16127,15 @@
     {
      "cik": null,
      "effective_stake": 35.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",
@@ -16206,7 +16246,15 @@
     {
      "cik": null,
      "effective_stake": 35.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",
@@ -16317,7 +16365,15 @@
     {
      "cik": null,
      "effective_stake": null,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",
@@ -16428,7 +16484,15 @@
     {
      "cik": null,
      "effective_stake": null,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",
@@ -16539,7 +16603,15 @@
     {
      "cik": null,
      "effective_stake": 35.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",
@@ -16650,7 +16722,15 @@
     {
      "cik": null,
      "effective_stake": null,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",
@@ -16761,7 +16841,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "New Delhi",
+      "city_url": "https://www.wikidata.org/entity/Q987",
+      "lat": 28.613889,
+      "lon": 77.208889,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q1967805"
+     },
      "hq_country": "India",
      "lei": "335800Q4TRGJXNLVMB81",
      "listed_entity_id": "E100000001926",
@@ -16860,7 +16948,15 @@
     {
      "cik": null,
      "effective_stake": 35.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",
@@ -16971,7 +17067,15 @@
     {
      "cik": null,
      "effective_stake": 35.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",
@@ -17082,7 +17186,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",
@@ -17182,7 +17294,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",
@@ -17282,7 +17402,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",
@@ -17382,7 +17510,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",
@@ -17482,7 +17618,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",
@@ -17582,7 +17726,15 @@
     {
      "cik": null,
      "effective_stake": null,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",
@@ -17682,7 +17834,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",
@@ -18256,7 +18416,15 @@
       }
      ],
      "effective_stake": 74.5,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "New Delhi",
+      "city_url": "https://www.wikidata.org/entity/Q987",
+      "lat": 28.613889,
+      "lon": 77.208889,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q1967805"
+     },
      "hq_country": "India",
      "lei": "335800Q4TRGJXNLVMB81",
      "listed_entity_id": "E100000001926",
@@ -18362,7 +18530,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "New Delhi",
+      "city_url": "https://www.wikidata.org/entity/Q987",
+      "lat": 28.613889,
+      "lon": 77.208889,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q1967805"
+     },
      "hq_country": "India",
      "lei": "335800Q4TRGJXNLVMB81",
      "listed_entity_id": "E100000001926",
@@ -18483,7 +18659,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "New Delhi",
+      "city_url": "https://www.wikidata.org/entity/Q987",
+      "lat": 28.613889,
+      "lon": 77.208889,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q1967805"
+     },
      "hq_country": "India",
      "lei": "335800Q4TRGJXNLVMB81",
      "listed_entity_id": "E100000001926",
@@ -18613,7 +18797,15 @@
       }
      ],
      "effective_stake": 50.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "New Delhi",
+      "city_url": "https://www.wikidata.org/entity/Q987",
+      "lat": 28.613889,
+      "lon": 77.208889,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q1967805"
+     },
      "hq_country": "India",
      "lei": "335800Q4TRGJXNLVMB81",
      "listed_entity_id": "E100000001926",
@@ -18733,7 +18925,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "New Delhi",
+      "city_url": "https://www.wikidata.org/entity/Q987",
+      "lat": 28.613889,
+      "lon": 77.208889,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q1967805"
+     },
      "hq_country": "India",
      "lei": "335800Q4TRGJXNLVMB81",
      "listed_entity_id": "E100000001926",
@@ -18864,7 +19064,15 @@
       }
      ],
      "effective_stake": 74.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "New Delhi",
+      "city_url": "https://www.wikidata.org/entity/Q987",
+      "lat": 28.613889,
+      "lon": 77.208889,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q1967805"
+     },
      "hq_country": "India",
      "lei": "335800Q4TRGJXNLVMB81",
      "listed_entity_id": "E100000001926",
@@ -18992,7 +19200,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "New Delhi",
+      "city_url": "https://www.wikidata.org/entity/Q987",
+      "lat": 28.613889,
+      "lon": 77.208889,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q1967805"
+     },
      "hq_country": "India",
      "lei": "335800Q4TRGJXNLVMB81",
      "listed_entity_id": "E100000001926",
@@ -19114,7 +19330,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "New Delhi",
+      "city_url": "https://www.wikidata.org/entity/Q987",
+      "lat": 28.613889,
+      "lon": 77.208889,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q1967805"
+     },
      "hq_country": "India",
      "lei": "335800Q4TRGJXNLVMB81",
      "listed_entity_id": "E100000001926",
@@ -19235,7 +19459,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "New Delhi",
+      "city_url": "https://www.wikidata.org/entity/Q987",
+      "lat": 28.613889,
+      "lon": 77.208889,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q1967805"
+     },
      "hq_country": "India",
      "lei": "335800Q4TRGJXNLVMB81",
      "listed_entity_id": "E100000001926",
@@ -19615,7 +19847,15 @@
     {
      "cik": null,
      "effective_stake": 35.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",
@@ -19721,7 +19961,15 @@
     {
      "cik": null,
      "effective_stake": 40.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Riyadh",
+      "city_url": "https://www.wikidata.org/entity/Q3692",
+      "lat": 24.638333,
+      "lon": 46.715,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q20850809"
+     },
      "hq_country": "Saudi Arabia",
      "lei": "558600Y0TFKRV2QZ1A74",
      "listed_entity_id": "E100000000882",

@@ -82,15 +82,14 @@
    "candidates": null,
    "categories": {
     "plants": 1021,
-    "C newer than ownership survey": 335,
-    "C no listed identity": 635,
-    "B plants": 48,
-    "owner identified but no company with public common equity": 186,
-    "C mixed owners": 3
+    "owner identified but no company with public common equity": 274,
+    "C no listed identity": 894,
+    "B plants": 100,
+    "C newer than ownership survey": 27
    },
    "yield_pct": null,
-   "seconds": 15,
-   "audit": "48/48"
+   "seconds": 16,
+   "audit": "100/100"
   }
  ],
  "unresolved": {
@@ -102,7 +101,7 @@
   "prose passage states no capacity to confirm the project": 1
  },
  "audit_total": {
-  "checked": 92,
-  "correct": 92
+  "checked": 144,
+  "correct": 144
  }
 }

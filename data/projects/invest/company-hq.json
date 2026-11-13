@@ -185,6 +185,24 @@
    "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
    "source_url": "https://www.wikidata.org/entity/Q5013012",
    "checked_at": "2026-11-12"
+  },
+  "558600Y0TFKRV2QZ1A74": {
+   "lat": 24.638333,
+   "lon": 46.715,
+   "city": "Riyadh",
+   "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+   "source_url": "https://www.wikidata.org/entity/Q20850809",
+   "city_url": "https://www.wikidata.org/entity/Q3692",
+   "checked_at": "2026-11-13"
+  },
+  "335800Q4TRGJXNLVMB81": {
+   "lat": 28.613889,
+   "lon": 77.208889,
+   "city": "New Delhi",
+   "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (company item has no LEI P1278; matched by name, checked by hand)",
+   "source_url": "https://www.wikidata.org/entity/Q1967805",
+   "city_url": "https://www.wikidata.org/entity/Q987",
+   "checked_at": "2026-11-13"
   }
  },
  "by_ticker": {
