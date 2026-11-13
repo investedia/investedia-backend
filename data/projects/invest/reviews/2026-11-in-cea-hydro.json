@@ -1,0 +1,183 @@
+{
+ "review": "2026-11-in-cea-hydro",
+ "status": "REVIEW ONLY - not in verifications.json, not public. Needs owner approval.",
+ "made": "2026-11-13",
+ "method": "CEA regulator list (existence, MW, state, status) joined to GEM by name+MW+state; owner statement from the company's own publication; GLEIF LEI; NSE equity list for listing.",
+ "cea_source": "https://cea.nic.in (hydro projects under execution, 2026-06; local copy data/projects/raw/intl/in/cea-hydro-under-execution-2026-06.xlsx)",
+ "limits": [
+  "CEA list names an implementing agency, not a legal-entity id, so the owner link rests on the company's own publication, i.e. category A, not B.",
+  "SJVN document is an organisation chart (project offices), not a capacity table; MW and status come from CEA only.",
+  "Stake not stated; left null.",
+  "Phase and status history not yet extracted from archived CEA monthly reports."
+ ],
+ "accepted_as_A_candidates": [
+  {
+   "gem_id": "gem:L100000602054",
+   "project": "Tapovan Vishnugad",
+   "mw": 520,
+   "state": "Uttarakhand",
+   "company": "NTPC",
+   "evidence": {
+    "url": "https://ntpc.co.in/future-capacity-additions",
+    "sha256": "5d3e27532373b6b3f293d7cbf79490ed35a0de1b4ad133fd779fa938f74ba866",
+    "quote": "12. | Tapovan Vishnugud-Hydro | Hydro | Uttarakhand | 520",
+    "name_variant": "Vishnugud vs GEM Vishnugad; same MW and state"
+   },
+   "cea": [
+    {
+     "sector": "Central Sector",
+     "agency_section": "NTPC",
+     "name": "Tapovan Vishnugad (NTPC)",
+     "state": "Uttarakhand",
+     "district": "Chamoli",
+     "ic": "4x130",
+     "mw_exec": 520.0,
+     "river": "Dhauliganga / Alaknanada & /Ganga ",
+     "finish": "2028-29     (Mar'29)",
+     "kind": "Hydropower"
+    }
+   ],
+   "chain": {
+    "legal_owner": "NTPC LIMITED (LEI 335800Q4TRGJXNLVMB81, GLEIF ACTIVE)",
+    "listed_parent": "self - listed on NSE: NTPC, ISIN INE733E01010, series EQ (nse-EQUITY_L-2026-11-13.csv, sha256 prefix c78517837fe47a29)",
+    "exposure_type": "E1 direct (company is the project developer in its own publication)",
+    "stake": null
+   },
+   "audit": "pass: MW and state agree across NTPC page, CEA and GEM; coordinates exact"
+  },
+  {
+   "gem_id": "gem:L100000602007",
+   "project": "Rammam III",
+   "mw": 120,
+   "state": "West Bengal",
+   "company": "NTPC",
+   "evidence": {
+    "url": "https://ntpc.co.in/future-capacity-additions",
+    "sha256": "5d3e27532373b6b3f293d7cbf79490ed35a0de1b4ad133fd779fa938f74ba866",
+    "quote": "11. | Rammam-Hydro | Hydro | West Bengal | 120",
+    "name_variant": "Rammam-Hydro vs GEM Rammam III; same MW and state"
+   },
+   "cea": [
+    {
+     "sector": "Central Sector",
+     "agency_section": "NTPC",
+     "name": "Rammam-III (NTPC)",
+     "state": "West Bengal",
+     "district": "Darjeeling",
+     "ic": "3x40",
+     "mw_exec": 120.0,
+     "river": "Rammam/ Rangit/Teesta Brahmaputra ",
+     "finish": "2028-29     (Mar'29)",
+     "kind": "Hydropower"
+    }
+   ],
+   "chain": {
+    "legal_owner": "NTPC LIMITED (LEI 335800Q4TRGJXNLVMB81, GLEIF ACTIVE)",
+    "listed_parent": "self - listed on NSE: NTPC, ISIN INE733E01010, series EQ (nse-EQUITY_L-2026-11-13.csv, sha256 prefix c78517837fe47a29)",
+    "exposure_type": "E1 direct (company is the project developer in its own publication)",
+    "stake": null
+   },
+   "audit": "pass with note: name omits stage III; MW, state and agency agree"
+  },
+  {
+   "gem_id": "gem:L100001025754",
+   "project": "Dhaulasidh",
+   "mw": 66,
+   "state": "Himachal Pradesh",
+   "company": "SJVN",
+   "evidence": {
+    "url": "https://sjvn.nic.in/sites/default/files/2026-05/Org%20Chart%20English_from%2001.05.2026.pdf",
+    "sha256": "c6015bc14975a452c2786f85b1d43d5b9d56bed732f79e8dbc48e755516043fe",
+    "quote": "Dhaulasidh HEP (SJVN project office)"
+   },
+   "cea": [
+    {
+     "sector": "Central Sector",
+     "agency_section": "SJVN",
+     "name": "Dhaulasidh (SJVN)",
+     "state": "Himachal Pradesh",
+     "district": "Hamirpur/ Kangra",
+     "ic": "2x33",
+     "mw_exec": 66.0,
+     "river": "Beas/Indus",
+     "finish": "2026-27     (Mar'27)",
+     "kind": "Hydropower"
+    }
+   ],
+   "chain": {
+    "legal_owner": "SJVN LIMITED (LEI 335800WHWSIB8LQQMH94, GLEIF ACTIVE)",
+    "listed_parent": "self - listed on NSE: SJVN, ISIN INE002L01015, series EQ (nse-EQUITY_L-2026-11-13.csv, sha256 prefix c78517837fe47a29)",
+    "exposure_type": "E1 direct (company is the project developer in its own publication)",
+    "stake": null
+   },
+   "audit": "conditional: org chart proves SJVN runs the project, MW from CEA; operator != owner, so hold until SJVN capacity table or annual report names it"
+  },
+  {
+   "gem_id": "gem:L100000601950",
+   "project": "Luhri-I",
+   "mw": 210,
+   "state": "Himachal Pradesh",
+   "company": "SJVN",
+   "evidence": {
+    "url": "https://sjvn.nic.in/sites/default/files/2026-05/Org%20Chart%20English_from%2001.05.2026.pdf",
+    "sha256": "c6015bc14975a452c2786f85b1d43d5b9d56bed732f79e8dbc48e755516043fe",
+    "quote": "Luhri HEP Stage-1 (SJVN project office)"
+   },
+   "cea": [
+    {
+     "sector": "Central Sector",
+     "agency_section": "SJVN",
+     "name": "Luhri-I (SJVN)",
+     "state": "Himachal Pradesh",
+     "district": "Kullu/Shimla",
+     "ic": "2x80+2x25",
+     "mw_exec": 210.0,
+     "river": "Satluj/Indus ",
+     "finish": "2029-30    (Feb'30)",
+     "kind": "Hydropower"
+    }
+   ],
+   "chain": {
+    "legal_owner": "SJVN LIMITED (LEI 335800WHWSIB8LQQMH94, GLEIF ACTIVE)",
+    "listed_parent": "self - listed on NSE: SJVN, ISIN INE002L01015, series EQ (nse-EQUITY_L-2026-11-13.csv, sha256 prefix c78517837fe47a29)",
+    "exposure_type": "E1 direct (company is the project developer in its own publication)",
+    "stake": null
+   },
+   "audit": "conditional: same caveat as Dhaulasidh; location approximate"
+  }
+ ],
+ "held": [
+  {
+   "project": "Dulhasti-II (NHPC)",
+   "why": "no NHPC publication names it"
+  },
+  {
+   "project": "Ratle",
+   "why": "JV RHEPPL NHPC 51 / JKSPDC 49; needs JV chain"
+  },
+  {
+   "project": "Uri-I Stage-II",
+   "why": "GEM expansion record"
+  },
+  {
+   "project": "Sunni Dam",
+   "why": "GEM name Luhri-III; name conflict"
+  },
+  {
+   "project": "Subansiri Lower",
+   "why": "capacity conflict 1000 vs 2000 MW"
+  },
+  {
+   "project": "NEEPCO/THDC/CVPPL and private pumped-storage SPVs",
+   "why": "no official ownership chain available"
+  }
+ ],
+ "counts": {
+  "cea_rows": 40,
+  "matched_gem": 36,
+  "already_in_layer": 5,
+  "accepted_A": 2,
+  "conditional": 2,
+  "held": 6
+ }
+}
