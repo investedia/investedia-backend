@@ -1,0 +1,841 @@
+{
+ "note": "Matches to existing reviewed rows. Not imported; review field by field.",
+ "matches": [
+  {
+   "existing_ids": [
+    "dc:eqix:SV1"
+   ],
+   "new_source_identity": {
+    "authority": "equinix.com:ibx",
+    "id": "SV1"
+   },
+   "match_basis": "same provider + official site code SV1",
+   "new_evidence": {
+    "url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/silicon-valley-data-centers/sv1",
+    "sha256": "9f573d56537ba84c53592b8bcbbce26bccb2317dc088b4dabd3c2941730bcbfa",
+    "checked_at": "2026-11-13T19:39:47Z",
+    "address": "11 Great Oaks Boulevard, San Jose, CA 95119",
+    "country": "United States",
+    "coordinates": {
+     "lat": 37.2416,
+     "lng": -121.78332,
+     "class": "approximate",
+     "source": "geocoded published address (OpenStreetMap Nominatim, ODbL)"
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "project:eqix:SV18"
+   ],
+   "new_source_identity": {
+    "authority": "equinix.com:ibx",
+    "id": "SV18"
+   },
+   "match_basis": "same provider + official site code SV18",
+   "new_evidence": {
+    "url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/silicon-valley-data-centers/sv18",
+    "sha256": "15b27281f913e8a0ec3e261aa5e1086d0977a1ff7652fc96e427876fa0e3f5bb",
+    "checked_at": "2026-11-13T19:39:54Z",
+    "address": "127 Great Oaks Blvd., San Jose, CA 95119",
+    "country": "United States",
+    "coordinates": {
+     "lat": 37.23261,
+     "lng": -121.78044,
+     "class": "approximate",
+     "source": "geocoded published address (OpenStreetMap Nominatim, ODbL)"
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:eqix:DC2"
+   ],
+   "new_source_identity": {
+    "authority": "equinix.com:ibx",
+    "id": "DC2"
+   },
+   "match_basis": "same provider + official site code DC2",
+   "new_evidence": {
+    "url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/washington-dc-data-centers/dc2",
+    "sha256": "4ea461e33c6a00a686302cb9a28ea8d5eb1503ab78b0c15996a3e00a38408348",
+    "checked_at": "2026-11-13T19:40:09Z",
+    "address": "21715 Filigree Court, Ashburn, VA 20147",
+    "country": "United States",
+    "coordinates": {
+     "lat": 39.01633,
+     "lng": -77.45877,
+     "class": "approximate",
+     "source": "geocoded published address (OpenStreetMap Nominatim, ODbL)"
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "project:eqix:MD5"
+   ],
+   "new_source_identity": {
+    "authority": "equinix.com:ibx",
+    "id": "MD5"
+   },
+   "match_basis": "same provider + official site code MD5",
+   "new_evidence": {
+    "url": "https://www.equinix.com/data-centers/europe-colocation/spain-colocation/madrid-data-centers/md5",
+    "sha256": "5d6d42ea3a3d52249b0f712e4e201a0cf1308fd6ff26586f4a31b5b9cd40d640",
+    "checked_at": "2026-11-13T19:42:37Z",
+    "address": "Calle de la Pedriza 6, Alcobendas, 28108 Madrid, Spain",
+    "country": "Spain",
+    "coordinates": {
+     "lat": 40.53334,
+     "lng": -3.66096,
+     "class": "approximate",
+     "source": "geocoded published address (OpenStreetMap Nominatim, ODbL)"
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:eqix:DX1"
+   ],
+   "new_source_identity": {
+    "authority": "equinix.com:ibx",
+    "id": "DX1"
+   },
+   "match_basis": "same provider + official site code DX1",
+   "new_evidence": {
+    "url": "https://www.equinix.com/data-centers/europe-colocation/united-arab-emirates-colocation/dubai-data-centers/dx1",
+    "sha256": "a89af1f3ef2bfc96cda6e571fe6906d3918502362c056131605ba3409ed8f235",
+    "checked_at": "2026-11-13T19:42:51Z",
+    "address": "Dubai,  500389, United Arab Emirates",
+    "country": "United Arab Emirates",
+    "coordinates": {
+     "lat": 25.02544660129486,
+     "lng": 55.18684176173679,
+     "class": "needs_review",
+     "source": "operator page map pin",
+     "validation": "operator pin vs geocoded published address: 28650 m (place/city, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 28650
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2344"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2344"
+   },
+   "match_basis": "same provider + official site code FTZ01",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/americas/fortaleza/ftz01",
+    "sha256": "52a1b8b7ac94c863eb2cb5beb91d943c7c847de91cf8fc65db7e209341eed1b1",
+    "checked_at": "2026-11-13T19:43:35Z",
+    "address": "TV. Francisco Marrocos Portela, 1161 Sl. 01, Alto Alegre I, Maracanaú, CE CEP: 61.922-120",
+    "country": null,
+    "coordinates": {
+     "lat": -3.830665,
+     "lng": -38.612192,
+     "class": "needs_review",
+     "source": "operator page data",
+     "validation": "published address could not be geocoded"
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2256"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2256"
+   },
+   "match_basis": "same provider + official site code ACC4",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/americas/northern-virginia/acc4",
+    "sha256": "3374c9f47568bfc0bbee39d9e3f212beef24f1532c27e1eeabe83a7304a5bfdd",
+    "checked_at": "2026-11-13T19:43:49Z",
+    "address": "44480 Hastings Drive Ashburn, VA 20147",
+    "country": "United States",
+    "coordinates": {
+     "lat": 39.0178075,
+     "lng": -77.4624887,
+     "class": "needs_review",
+     "source": "operator page data",
+     "validation": "published address could not be geocoded"
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2257"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2257"
+   },
+   "match_basis": "same provider + official site code ACC5",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/americas/northern-virginia/acc5",
+    "sha256": "e15adb7f9d4b84fb4f52398045f2c8b209b23924866e2a94e03d896953f77a26",
+    "checked_at": "2026-11-13T19:43:50Z",
+    "address": "44521 Hastings Drive, Ashburn, VA 20147",
+    "country": "United States",
+    "coordinates": {
+     "lat": 39.0201312,
+     "lng": -77.4632058,
+     "class": "exact",
+     "source": "operator page data",
+     "validation": "operator pin vs geocoded published address: 6 m (building/data_center, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 6
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2413"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2413"
+   },
+   "match_basis": "same provider + official site code MEX01",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/americas/queretaro/mex01",
+    "sha256": "8250a65fee9929c2b0529cb1a8bfb571892b767e0262d8d642b5c7a455b74f65",
+    "checked_at": "2026-11-13T19:44:09Z",
+    "address": "Camino a Nativitas 800, Colon",
+    "country": "Colon",
+    "coordinates": {
+     "lat": 20.592944,
+     "lng": -100.164761,
+     "class": "needs_review",
+     "source": "operator page data",
+     "validation": "published address could not be geocoded"
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2293"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2293"
+   },
+   "match_basis": "same provider + official site code CPS01",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/cps01",
+    "sha256": "8fca79f7a82f62c75fa32628ceaad3b0377381574dcfe233fdc7370652e7b2da",
+    "checked_at": "2026-11-13T19:44:17Z",
+    "address": "Avenida Pierre Simon de Laplace, 1211 Campinas, SP 13069-320",
+    "country": null,
+    "coordinates": {
+     "lat": -22.848037,
+     "lng": -47.153369,
+     "class": "approximate",
+     "source": "operator page data",
+     "validation": "operator pin vs geocoded published address: 186 m (highway/unclassified, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 186
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2475"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2475"
+   },
+   "match_basis": "same provider + official site code TOR1",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/americas/toronto/tor1",
+    "sha256": "f09e33dcb2df1469834dc5e38b9e35dae931561df634ce738b3d23b81e4fab01",
+    "checked_at": "2026-11-13T19:44:57Z",
+    "address": "1 Century Place Vaughan, ON L4L 8R2",
+    "country": null,
+    "coordinates": {
+     "lat": 43.7773553,
+     "lng": -79.5439629,
+     "class": "approximate",
+     "source": "operator page data",
+     "validation": "operator pin vs geocoded published address: 358 m (building/industrial, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 358
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:3389"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "3389"
+   },
+   "match_basis": "same provider + official site code MAA10",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/asia-pacific/chennai/maa10",
+    "sha256": "d72e84a0f04dbf37944d17c2e929ea7c57e64f0019baade8834b202210557cc0",
+    "checked_at": "2026-11-13T19:45:00Z",
+    "address": "MTH Road, Ambattur Industrial Estate, Chennai",
+    "country": "Chennai",
+    "coordinates": {
+     "lat": 13.09899,
+     "lng": 80.16583,
+     "class": "needs_review",
+     "source": "operator page data",
+     "validation": "published address could not be geocoded"
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2412"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2412"
+   },
+   "match_basis": "same provider + official site code MEL11",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/asia-pacific/melbourne/mel11",
+    "sha256": "89f0d6f03d2e1876f319cd95cc9829192c703da1c61e61c0f4e42371e56e9e4b",
+    "checked_at": "2026-11-13T19:45:07Z",
+    "address": "72 Radnor Drive Deer Park, VIC 3023",
+    "country": null,
+    "coordinates": {
+     "lat": -37.78116034,
+     "lng": 144.7781525,
+     "class": "exact",
+     "source": "operator page data",
+     "validation": "operator pin vs geocoded published address: 86 m (building/industrial, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 86
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2387"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2387"
+   },
+   "match_basis": "same provider + official site code KIX10",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/asia-pacific/osaka/kix10",
+    "sha256": "e4856d8319ba410ccafedc741ecf4f690acf79583f31253bbffd85870d80326b",
+    "checked_at": "2026-11-13T19:45:08Z",
+    "address": "5-8-1, Saito Yamabuki, Ibaraki-shi, Osaka",
+    "country": "Osaka",
+    "coordinates": {
+     "lat": 34.8614235,
+     "lng": 135.5158993,
+     "class": "approximate",
+     "source": "operator page data",
+     "validation": "operator pin vs geocoded published address: 155 m (place/neighbourhood, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 155
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2388"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2388"
+   },
+   "match_basis": "same provider + official site code KIX11",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/asia-pacific/osaka/kix11",
+    "sha256": "c6a5f6a6b99be86fb38cd83dd9759acd8ab0294d9eea52bb18d7ae29fa84b208",
+    "checked_at": "2026-11-13T19:45:09Z",
+    "address": "6-1, Saito Aokita, Mino-shi, Osaka",
+    "country": "Osaka",
+    "coordinates": {
+     "lat": 34.8615942,
+     "lng": 135.5120772,
+     "class": "approximate",
+     "source": "operator page data",
+     "validation": "operator pin vs geocoded published address: 354 m (place/neighbourhood, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 354
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2379"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2379"
+   },
+   "match_basis": "same provider + official site code ICN10",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/asia-pacific/seoul/icn10",
+    "sha256": "90b5108d6f509f3e32a11d5b3a29b037aacf7b6c64768fec1446b5edc9cf5712",
+    "checked_at": "2026-11-13T19:45:13Z",
+    "address": "12 World Cup buk-ro 60-gil, Mapo-gu Seoul, Korea, 03922",
+    "country": null,
+    "coordinates": {
+     "lat": 37.5818414,
+     "lng": 126.8847847,
+     "class": "needs_review",
+     "source": "operator page data",
+     "validation": "published address could not be geocoded"
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2448"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2448"
+   },
+   "match_basis": "same provider + official site code SIN10",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/asia-pacific/singapore/sin10",
+    "sha256": "171796c526954f6601c3e68c8cf48cf53cec986d1e56d815d9beb37e9fae7234",
+    "checked_at": "2026-11-13T19:45:14Z",
+    "address": "29A International Business Park Jurong East, 609934",
+    "country": null,
+    "coordinates": {
+     "lat": 1.327732,
+     "lng": 103.745974,
+     "class": "exact",
+     "source": "operator page data",
+     "validation": "operator pin vs geocoded published address: 25 m (office/yes, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 25
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:24413"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "24413"
+   },
+   "match_basis": "same provider + official site code ACR2",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/accra/acr2",
+    "sha256": "4cbee691d3ecfa271eae55ba00fa684f0abd9994292907750414cb3142027017",
+    "checked_at": "2026-11-13T19:45:23Z",
+    "address": "Bank Street and Prof. Atta Mills High St, Accra Ghana",
+    "country": "Accra Ghana",
+    "coordinates": {
+     "lat": 5.542241,
+     "lng": -0.206357,
+     "class": "needs_review",
+     "source": "operator page data",
+     "validation": "published address could not be geocoded"
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:1790"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "1790"
+   },
+   "match_basis": "same provider + official site code AMS7",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/amsterdam/ams7",
+    "sha256": "af996ff490c83029ce545e84f92cd204fcd66488a585191cd1a8665e2b7e15c6",
+    "checked_at": "2026-11-13T19:45:34Z",
+    "address": "Cessnalaan 50, Schiphol-Rijk 1119 NL, The Netherlands",
+    "country": "Netherlands",
+    "coordinates": {
+     "lat": 52.281585,
+     "lng": 4.766454,
+     "class": "approximate",
+     "source": "operator page data",
+     "validation": "operator pin vs geocoded published address: 79 m (office/company, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 79
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2294"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2294"
+   },
+   "match_basis": "same provider + official site code CT1",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/cape-town/ct1",
+    "sha256": "d1f5af25fd3457868aebb39e6dc3a1a49984722df6fd07fa4daaf32d59163ae7",
+    "checked_at": "2026-11-13T19:45:45Z",
+    "address": "Great Westerford Building, Rondebosch",
+    "country": "Rondebosch",
+    "coordinates": {
+     "lat": -33.9712,
+     "lng": 18.4649,
+     "class": "exact",
+     "source": "operator page data",
+     "validation": "operator pin vs geocoded published address: 103 m (building/office, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 103
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2295"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2295"
+   },
+   "match_basis": "same provider + official site code CT2",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/cape-town/ct2",
+    "sha256": "da8b0fad4829c3f56e54d7b6ad746be0895231ac9a855b06dcf48a3d2a46437e",
+    "checked_at": "2026-11-13T19:45:45Z",
+    "address": "Brackenfell Data Center 57 Tiber Road, Brackengate 2, Brackenfell",
+    "country": "Brackenfell",
+    "coordinates": {
+     "lat": -33.907417,
+     "lng": 18.67936,
+     "class": "needs_review",
+     "source": "operator page data",
+     "validation": "published address could not be geocoded"
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2290"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2290"
+   },
+   "match_basis": "same provider + official site code CPH1",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/copenhagen/cph1",
+    "sha256": "09983620f6b14b3cf43f2f4cbd04a34ca90f051f3f6229db020e245bdec9a7fb",
+    "checked_at": "2026-11-13T19:45:46Z",
+    "address": "Industriparken 20A, Ballerup DK-2750, Denmark",
+    "country": "Denmark",
+    "coordinates": {
+     "lat": 55.72808,
+     "lng": 12.37752,
+     "class": "exact",
+     "source": "operator page data",
+     "validation": "operator pin vs geocoded published address: 0 m (place/house, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 0
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2310"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2310"
+   },
+   "match_basis": "same provider + official site code DUB1",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/dublin/dub1",
+    "sha256": "92f2f019ca81ece96e288797a792c218ecc76f5b81e124b5a5d88f2f204d1f43",
+    "checked_at": "2026-11-13T19:45:50Z",
+    "address": "Unit 35, Lavery Avenue Parkwest D 12, Ireland",
+    "country": "Ireland",
+    "coordinates": {
+     "lat": 53.33231,
+     "lng": -6.36595,
+     "class": "needs_review",
+     "source": "operator page data",
+     "validation": "published address could not be geocoded"
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2311"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2311"
+   },
+   "match_basis": "same provider + official site code DUB10",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/dublin/dub10",
+    "sha256": "b66d7170d80bd803eb8afa49b23adead4324f617f2cd9d2da9a1d37030c1c479",
+    "checked_at": "2026-11-13T19:45:52Z",
+    "address": "Blanchardstown Corporate Park, Unit 9 Dublin, 15",
+    "country": null,
+    "coordinates": {
+     "lat": 53.4114041,
+     "lng": -6.3694628,
+     "class": "approximate",
+     "source": "operator page data",
+     "validation": "operator pin vs geocoded published address: 182 m (landuse/commercial, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 182
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2316"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2316"
+   },
+   "match_basis": "same provider + official site code DUS1",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/dusseldorf/dus1",
+    "sha256": "915166d8113e3956b40a75c2baddd450f207ce6075bcfd2584725d258dac7f2f",
+    "checked_at": "2026-11-13T19:46:01Z",
+    "address": "In der Steele 25-45, 40599 Düsseldorf, Germany",
+    "country": "Germany",
+    "coordinates": {
+     "lat": 51.18785,
+     "lng": 6.86831,
+     "class": "approximate",
+     "source": "operator page data",
+     "validation": "operator pin vs geocoded published address: 423 m (highway/unclassified, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 423
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2405"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2405"
+   },
+   "match_basis": "same provider + official site code LOS1",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/lagos/los1",
+    "sha256": "9e8d95bbabb95004c93dd544c6e389c4f748d308e2e83859c9052ef85bf4a09a",
+    "checked_at": "2026-11-13T19:46:35Z",
+    "address": "8A Saka Tinubu Street, Victoria Island, Lagos",
+    "country": "Lagos",
+    "coordinates": {
+     "lat": 6.426722,
+     "lng": 3.417459,
+     "class": "approximate",
+     "source": "operator page data",
+     "validation": "operator pin vs geocoded published address: 310 m (highway/tertiary, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 310
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2408"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2408"
+   },
+   "match_basis": "same provider + official site code MAD1",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/madrid/mad1",
+    "sha256": "a94f271c0798e4ef72eafc7d93d64cfc2b1de515108280c78c4eb681fa7e49d0",
+    "checked_at": "2026-11-13T19:46:52Z",
+    "address": "Calle Albasanz 71 Madrid, 28037, Spain",
+    "country": "Spain",
+    "coordinates": {
+     "lat": 40.43948,
+     "lng": -3.62126,
+     "class": "exact",
+     "source": "operator page data",
+     "validation": "operator pin vs geocoded published address: 14 m (building/data_center, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 14
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:11459"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "11459"
+   },
+   "match_basis": "same provider + official site code MPM1",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/maputo/mpm1",
+    "sha256": "5c99104147c47ffbc695c90f28cb1c5d97a1948ae2df557381de3f63b5ea71ae",
+    "checked_at": "2026-11-13T19:46:56Z",
+    "address": "140D, Avenida Vladimir Lenine Center, Maputo, Mozambique",
+    "country": "Mozambique",
+    "coordinates": {
+     "lat": -25.950476,
+     "lng": 32.590457,
+     "class": "needs_review",
+     "source": "operator page data",
+     "validation": "operator pin vs geocoded published address: 2890 m (boundary/administrative, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 2890
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2416"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2416"
+   },
+   "match_basis": "same provider + official site code MRS1",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/marseille/mrs1",
+    "sha256": "7d0e412c10469f592bb183361275a1cc2410af5af7032ccb33eeafdff01aca74",
+    "checked_at": "2026-11-13T19:46:57Z",
+    "address": "40 Avenue Roger Salengro, Marseille 13003, France",
+    "country": "France",
+    "coordinates": {
+     "lat": 43.31074,
+     "lng": 5.3733,
+     "class": "exact",
+     "source": "operator page data",
+     "validation": "operator pin vs geocoded published address: 33 m (place/house, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 33
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:dlr:2411"
+   ],
+   "new_source_identity": {
+    "authority": "digitalrealty.com:node",
+    "id": "2411"
+   },
+   "match_basis": "same provider + official site code MBA1",
+   "new_evidence": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/mombasa/mba1",
+    "sha256": "edc4bea1858f4c2c27df04b71617bb85ea9bc3bac3310340cf17206073272c78",
+    "checked_at": "2026-11-13T19:47:02Z",
+    "address": "Mombassa Road, Mombasa, Kenya",
+    "country": "Kenya",
+    "coordinates": {
+     "lat": -4.00833,
+     "lng": 39.60574,
+     "class": "needs_review",
+     "source": "operator page data",
+     "validation": "operator pin vs geocoded published address: 10333 m (amenity/post_office, OpenStreetMap Nominatim, ODbL)",
+     "pin_address_distance_m": 10333
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "project:coresite:DE3"
+   ],
+   "new_source_identity": {
+    "authority": "coresite.com:facility-code",
+    "id": "DE3"
+   },
+   "match_basis": "same provider + official site code DE3",
+   "new_evidence": {
+    "url": "https://www.coresite.com/data-center/de3-denver-co",
+    "sha256": "3c20f0d52e8e96cb22dd7a6da928b053d8e772bb5c6995cc6196f6f155efde31",
+    "checked_at": "2026-11-13T19:47:43Z",
+    "address": "4900 Race St., Denver, Co 80216",
+    "country": "United States",
+    "coordinates": {
+     "lat": 39.77769,
+     "lng": -104.96347,
+     "class": "approximate",
+     "source": "geocoded published address (OpenStreetMap Nominatim, ODbL)"
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "project:coresite:NY3"
+   ],
+   "new_source_identity": {
+    "authority": "coresite.com:facility-code",
+    "id": "NY3"
+   },
+   "match_basis": "same provider + official site code NY3",
+   "new_evidence": {
+    "url": "https://www.coresite.com/data-center/ny3-secaucus-nj",
+    "sha256": "0844383897fd1375018dd54d970f787f9e76f2d5f29c41398392892833dae52a",
+    "checked_at": "2026-11-13T19:47:50Z",
+    "address": "2 Emerson Lane, Secaucus, Nj 07094",
+    "country": "United States",
+    "coordinates": {
+     "lat": 40.7849,
+     "lng": -74.06536,
+     "class": "approximate",
+     "source": "geocoded published address (OpenStreetMap Nominatim, ODbL)"
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  },
+  {
+   "existing_ids": [
+    "dc:coresite:VA1"
+   ],
+   "new_source_identity": {
+    "authority": "coresite.com:facility-code",
+    "id": "VA1"
+   },
+   "match_basis": "same provider + official site code VA1",
+   "new_evidence": {
+    "url": "https://www.coresite.com/data-center/va1-reston-va",
+    "sha256": "7396c2c3578b200b7e477f2fb607b62ecc70a968d38a11a0e7bc4e18434e30a0",
+    "checked_at": "2026-11-13T19:47:59Z",
+    "address": "12100 Sunrise Valley Drive, Reston, Va 20191",
+    "country": "United States",
+    "coordinates": {
+     "lat": 38.95061,
+     "lng": -77.36453,
+     "class": "approximate",
+     "source": "geocoded published address (OpenStreetMap Nominatim, ODbL)"
+    }
+   },
+   "action": "review field by field; do not overwrite stronger reviewed evidence"
+  }
+ ]
+}

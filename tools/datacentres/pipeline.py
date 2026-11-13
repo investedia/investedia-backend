@@ -104,7 +104,7 @@ def dlr_parse(url, s):
     addr = re.sub(r'\s+', ' ', addr) if addr else None
     loc = (d.get('field_facility_location') or [{}])[0].get('name') if d.get('field_facility_location') else None
     country = addr.split(',')[-1].strip() if addr and ',' in addr else None
-    if addr and re.search(r'\b(' + '|'.join(US_STATES) + r')\s+\d{5}(-\d{4})?\s*$', addr): country = 'United States'
+    if addr and re.search(r'\b(' + '|'.join(US_STATES) + r')\s*\d{5}(-\d{4})?\s*$', addr): country = 'United States'
     elif country and re.search(r'\d', country): country = None  # postcode, not a country -> unresolved, never guessed
     lat, lng = val('field_latitude'), val('field_longitude')
     intro = re.sub(r'<[^>]+>', ' ', html.unescape(val('field_intro_location') or ''))

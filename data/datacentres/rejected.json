@@ -1,0 +1,461 @@
+{
+ "schema": "investedia.datacentres.v1",
+ "generated": "2026-11-13",
+ "operators": [
+  "equinix",
+  "digitalrealty",
+  "coresite",
+  "nextdc",
+  "cyrusone"
+ ],
+ "parents": "tools/datacentres/parents.json",
+ "records": [
+  {
+   "id": null,
+   "operator_key": "cyrusone",
+   "source_url": "https://www.cyrusone.com/data-centers/emea/london-uk-lon6",
+   "source_fetched": "2026-11-13T20:29:10Z",
+   "http_status": 200,
+   "reason": "page is not a single-facility page or could not be parsed"
+  },
+  {
+   "id": null,
+   "operator_key": "cyrusone",
+   "source_url": "https://www.cyrusone.com/data-centers/north-america/bosque-county-tx",
+   "source_fetched": "2026-11-13T20:29:20Z",
+   "http_status": 200,
+   "reason": "page is not a single-facility page or could not be parsed"
+  },
+  {
+   "id": null,
+   "operator_key": "cyrusone",
+   "source_url": "https://www.cyrusone.com/data-centers/north-america/freestone-county-texas",
+   "source_fetched": "2026-11-13T20:29:27Z",
+   "http_status": 200,
+   "reason": "page is not a single-facility page or could not be parsed"
+  },
+  {
+   "id": null,
+   "operator_key": "cyrusone",
+   "source_url": "https://www.cyrusone.com/data-centers/north-america/lebanon-oh-cin5-cin7",
+   "source_fetched": "2026-11-13T20:29:29Z",
+   "http_status": 200,
+   "reason": "page is not a single-facility page or could not be parsed"
+  },
+  {
+   "id": null,
+   "operator_key": "cyrusone",
+   "source_url": "https://www.cyrusone.com/data-centers/north-america/lee-county-north-carolina",
+   "source_fetched": "2026-11-13T20:29:30Z",
+   "http_status": 200,
+   "reason": "page is not a single-facility page or could not be parsed"
+  },
+  {
+   "id": null,
+   "operator_key": "cyrusone",
+   "source_url": "https://www.cyrusone.com/data-centers/north-america/medina-county",
+   "source_fetched": "2026-11-13T20:29:32Z",
+   "http_status": 200,
+   "reason": "page is not a single-facility page or could not be parsed"
+  },
+  {
+   "id": null,
+   "operator_key": "cyrusone",
+   "source_url": "https://www.cyrusone.com/data-centers/north-america/sangamon-county-data-center",
+   "source_fetched": "2026-11-13T20:29:41Z",
+   "http_status": 200,
+   "reason": "page is not a single-facility page or could not be parsed"
+  },
+  {
+   "id": null,
+   "operator_key": "cyrusone",
+   "source_url": "https://www.cyrusone.com/data-centers/north-america/sulphur-springs-texas",
+   "source_fetched": "2026-11-13T20:29:48Z",
+   "http_status": 200,
+   "reason": "page is not a single-facility page or could not be parsed"
+  },
+  {
+   "id": null,
+   "operator_key": "cyrusone",
+   "source_url": "https://www.cyrusone.com/data-centers/north-america/yorkville-technology-campus",
+   "source_fetched": "2026-11-13T20:29:51Z",
+   "http_status": 200,
+   "reason": "page is not a single-facility page or could not be parsed"
+  },
+  {
+   "id": "dc-digitalrealty-bog1",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/bogota/bog1",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-bog2",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/bogota/bog2",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-ftz01",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/fortaleza/ftz01",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-mex02",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/queretaro/mex02",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-rio01",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/rio-de-janeiro/rio01",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-rio02",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/rio-de-janeiro/rio02",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-chl01",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/santiago/chl01",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-chl02",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/santiago/chl02",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-chl03",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/santiago/chl03",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-cps01",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/cps01",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-htl01",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/htl01",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-htl02",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/htl02",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-htl03",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/htl03",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-htl04",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/htl04",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-htl05",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/htl05",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-htl06",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/htl06",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-jdi01",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/jdi01",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-jdi02",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/jdi02",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-pln01",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/pln01",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-sp01",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/sp01",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-sp02",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/sp02",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-sp03",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/sp03",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-sp04",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/sp04",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-sum01",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/sum01",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-sum02",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/sum02",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-sum03",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/sum03",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-sum04",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/sum04",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-sum05",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/sum05",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-vin01",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/vin01",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-vin02",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/vin02",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-tor1",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/toronto/tor1",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-yyz10",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/toronto/yyz10",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-yyz12",
+   "source_url": "https://www.digitalrealty.com/data-centers/americas/toronto/yyz12",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-mel11",
+   "source_url": "https://www.digitalrealty.com/data-centers/asia-pacific/melbourne/mel11",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-icn10",
+   "source_url": "https://www.digitalrealty.com/data-centers/asia-pacific/seoul/icn10",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-sin10",
+   "source_url": "https://www.digitalrealty.com/data-centers/asia-pacific/singapore/sin10",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-sin11",
+   "source_url": "https://www.digitalrealty.com/data-centers/asia-pacific/singapore/sin11",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-sin12",
+   "source_url": "https://www.digitalrealty.com/data-centers/asia-pacific/singapore/sin12",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-syd10",
+   "source_url": "https://www.digitalrealty.com/data-centers/asia-pacific/sydney/syd10",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-syd11",
+   "source_url": "https://www.digitalrealty.com/data-centers/asia-pacific/sydney/syd11",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-ams11",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/amsterdam/ams11",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-bru3",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/brussels/bru3",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-bru4",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/brussels/bru4",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-dub10",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/dublin/dub10",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-dub12",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/dublin/dub12",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-dub14",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/dublin/dub14",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-fra18",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/frankfurt/fra18",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-fra20",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/frankfurt/fra20",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-fra27",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/frankfurt/fra27",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-fra29",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/frankfurt/fra29",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-fra33",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/frankfurt/fra33",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-her1-crete",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/heraklion/her1",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-lkk1",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/lagos/lkk1",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-lkk2",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/lagos/lkk2",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-lis1",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/lisbon/lis1",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-lgw14",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/london/lgw14",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-lgw15",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/london/lgw15",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-lgw16",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/london/lgw16",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-lhr13",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/london/lhr13",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-lhr17",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/london/lhr17",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-lhr18",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/london/lhr18",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-lhr19",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/london/lhr19",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-lhr20",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/london/lhr20",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-lhr26",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/london/lhr26",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-lhr27",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/london/lhr27",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-mrs2",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/marseille/mrs2",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-mrs3",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/marseille/mrs3",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-mrs4",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/marseille/mrs4",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-mrs5",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/marseille/mrs5",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-par1",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/paris/par1",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-par2",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/paris/par2",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-digitalrealty-sof11",
+   "source_url": "https://www.digitalrealty.com/data-centers/emea/sofia/sof11",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-coresite-dc1",
+   "source_url": "https://www.coresite.com/data-center/dc1-washington-d-c",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-coresite-dc2",
+   "source_url": "https://www.coresite.com/data-center/dc2-washington-d-c",
+   "reason": "unresolved: missing country/location or listing evidence"
+  },
+  {
+   "id": "dc-cyrusone-sat2-sat4",
+   "source_url": "https://www.cyrusone.com/data-centers/north-america/san-antonio-sat2-sat3",
+   "reason": "unresolved: missing country/location or listing evidence"
+  }
+ ]
+}
