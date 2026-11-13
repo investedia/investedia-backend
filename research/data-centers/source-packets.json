@@ -1,0 +1,1418 @@
+{
+  "selected": {
+    "facts": [
+      {
+        "node_id": "2256",
+        "title": "ACC4"
+      },
+      {
+        "node_id": "2257",
+        "title": "ACC5"
+      },
+      {
+        "node_id": "2475",
+        "title": "TOR1"
+      },
+      {
+        "node_id": "2293",
+        "title": "CPS01"
+      },
+      {
+        "node_id": "2344",
+        "title": "FTZ01"
+      },
+      {
+        "node_id": "2413",
+        "title": "MEX01"
+      },
+      {
+        "node_id": "2310",
+        "title": "DUB1"
+      },
+      {
+        "node_id": "2311",
+        "title": "DUB10"
+      },
+      {
+        "node_id": "1790",
+        "title": "AMS7"
+      },
+      {
+        "node_id": "2316",
+        "title": "DUS1"
+      },
+      {
+        "node_id": "2416",
+        "title": "MRS1"
+      },
+      {
+        "node_id": "2408",
+        "title": "MAD1"
+      },
+      {
+        "node_id": "2290",
+        "title": "CPH1"
+      },
+      {
+        "node_id": "2387",
+        "title": "KIX10"
+      },
+      {
+        "node_id": "2388",
+        "title": "KIX11"
+      },
+      {
+        "node_id": "2448",
+        "title": "SIN10"
+      },
+      {
+        "node_id": "2412",
+        "title": "MEL11"
+      },
+      {
+        "node_id": "3389",
+        "title": "MAA10"
+      },
+      {
+        "node_id": "2379",
+        "title": "ICN10"
+      },
+      {
+        "node_id": "2294",
+        "title": "CT1"
+      },
+      {
+        "node_id": "2295",
+        "title": "CT2"
+      },
+      {
+        "node_id": "2405",
+        "title": "LOS1"
+      },
+      {
+        "node_id": "2411",
+        "title": "MBA1"
+      },
+      {
+        "node_id": "11459",
+        "title": "MPM1"
+      },
+      {
+        "node_id": "24413",
+        "title": "ACR2 "
+      }
+    ],
+    "facts_sha256": "c2de7070172eae9406fa4d7bfa9cbf08d614e4e5785128ad36300f6cf57bb550",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers",
+      "final_url": "https://www.digitalrealty.com/data-centers",
+      "retrieved_at": "2026-11-13T00:56:29.340267+00:00",
+      "sha256": "8b08643bdba4c301f5dec441adcd7edf3976a0f611f036dccfe0a2181b2448b6",
+      "bytes": 1113663
+    }
+  },
+  "directory-count": {
+    "facts": {
+      "count": 261
+    },
+    "facts_sha256": "50806a46ca8f5bbc418411c9fec288cfe20029545dcfa58c688ab2e6d76a8c81",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers",
+      "final_url": "https://www.digitalrealty.com/data-centers",
+      "retrieved_at": "2026-11-13T00:56:29.340267+00:00",
+      "sha256": "8b08643bdba4c301f5dec441adcd7edf3976a0f611f036dccfe0a2181b2448b6",
+      "bytes": 1113663
+    }
+  },
+  "2256": {
+    "facts": {
+      "title": "ACC4",
+      "node_id": "2256",
+      "country": "USA",
+      "metro": "Northern Virginia",
+      "field_address_location": [
+        {
+          "value": "<p>44480 Hastings Drive Ashburn, VA 20147</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "39.0178075"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "-77.4624887"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "34500"
+        }
+      ]
+    },
+    "facts_sha256": "9a4fbd7e4eb809fc5115bb6fcb476e47b81d88a2c93db51d0c6b56b787c97021",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/americas/northern-virginia/acc4",
+      "final_url": "https://www.digitalrealty.com/data-centers/americas/northern-virginia/acc4",
+      "retrieved_at": "2026-11-13T00:57:53.637761+00:00",
+      "sha256": "3374c9f47568bfc0bbee39d9e3f212beef24f1532c27e1eeabe83a7304a5bfdd",
+      "bytes": 201603,
+      "status": 200
+    }
+  },
+  "2257": {
+    "facts": {
+      "title": "ACC5",
+      "node_id": "2257",
+      "country": "USA",
+      "metro": "Northern Virginia",
+      "field_address_location": [
+        {
+          "value": "<p>44521 Hastings Drive, Ashburn, VA 20147</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "39.0201312"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "-77.4632058"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "34500"
+        }
+      ]
+    },
+    "facts_sha256": "c7899cf3c37b56248fbad1aaf3c604b589816c26268bf9d439c33a0e807e1aa2",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/americas/northern-virginia/acc5",
+      "final_url": "https://www.digitalrealty.com/data-centers/americas/northern-virginia/acc5",
+      "retrieved_at": "2026-11-13T00:57:55.073578+00:00",
+      "sha256": "e15adb7f9d4b84fb4f52398045f2c8b209b23924866e2a94e03d896953f77a26",
+      "bytes": 201122,
+      "status": 200
+    }
+  },
+  "2475": {
+    "facts": {
+      "title": "TOR1",
+      "node_id": "2475",
+      "country": "Canada",
+      "metro": "Toronto",
+      "field_address_location": [
+        {
+          "value": "<p>1 Century Place Vaughan, ON L4L 8R2</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "43.7773553"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "-79.5439629"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "27600"
+        }
+      ]
+    },
+    "facts_sha256": "f72c090d3b2cc420894292ca43951d14d9b03d6e45ee32273df16f946207b780",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/americas/toronto/tor1",
+      "final_url": "https://www.digitalrealty.com/data-centers/americas/toronto/tor1",
+      "retrieved_at": "2026-11-13T00:57:57.002131+00:00",
+      "sha256": "f09e33dcb2df1469834dc5e38b9e35dae931561df634ce738b3d23b81e4fab01",
+      "bytes": 219602,
+      "status": 200
+    }
+  },
+  "2293": {
+    "facts": {
+      "title": "CPS01",
+      "node_id": "2293",
+      "country": "Brazil",
+      "metro": "São Paulo",
+      "field_address_location": [
+        {
+          "value": "<p>Avenida Pierre Simon de Laplace, 1211 Campinas, SP 13069-320</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "-22.848037"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "-47.153369"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "6000"
+        }
+      ]
+    },
+    "facts_sha256": "352994007e254727b733e6c2d6b192ad54aee35fe1601adf6e2786303ae47452",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/cps01",
+      "final_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/cps01",
+      "retrieved_at": "2026-11-13T00:57:58.932591+00:00",
+      "sha256": "8fca79f7a82f62c75fa32628ceaad3b0377381574dcfe233fdc7370652e7b2da",
+      "bytes": 197123,
+      "status": 200
+    }
+  },
+  "2344": {
+    "facts": {
+      "title": "FTZ01",
+      "node_id": "2344",
+      "country": "Brazil",
+      "metro": "Fortaleza",
+      "field_address_location": [
+        {
+          "value": "<p>TV. Francisco Marrocos Portela, 1161 Sl. 01, Alto Alegre I, Maracanaú, CE CEP: 61.922-120</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "-3.830665"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "-38.612192"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "10000"
+        }
+      ]
+    },
+    "facts_sha256": "6ecacb06e25348491f160f7005bae9113fe85601832a648ed9f874cdb45ab022",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/americas/fortaleza/ftz01",
+      "final_url": "https://www.digitalrealty.com/data-centers/americas/fortaleza/ftz01",
+      "retrieved_at": "2026-11-13T00:58:00.831225+00:00",
+      "sha256": "52a1b8b7ac94c863eb2cb5beb91d943c7c847de91cf8fc65db7e209341eed1b1",
+      "bytes": 197901,
+      "status": 200
+    }
+  },
+  "2413": {
+    "facts": {
+      "title": "MEX01",
+      "node_id": "2413",
+      "country": "Mexico",
+      "metro": "Querétaro",
+      "field_address_location": [
+        {
+          "value": "<p>Camino a Nativitas 800, Colon</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "20.592944"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "-100.164761"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "25000"
+        }
+      ]
+    },
+    "facts_sha256": "fa96674eb311f25e19357aec977af4d99e1d0a4351a92bf89d06cad83db6828e",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/americas/queretaro/mex01",
+      "final_url": "https://www.digitalrealty.com/data-centers/americas/queretaro/mex01",
+      "retrieved_at": "2026-11-13T00:58:02.771444+00:00",
+      "sha256": "8250a65fee9929c2b0529cb1a8bfb571892b767e0262d8d642b5c7a455b74f65",
+      "bytes": 193804,
+      "status": 200
+    }
+  },
+  "2310": {
+    "facts": {
+      "title": "DUB1",
+      "node_id": "2310",
+      "country": "United Kingdom",
+      "metro": "Dublin",
+      "field_address_location": [
+        {
+          "value": "<p>Unit 35, Lavery Avenue Parkwest D 12, Ireland</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "53.33231"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "-6.36595"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "1000"
+        }
+      ]
+    },
+    "facts_sha256": "fc194c688050fcb0be968f558183a4a4573cb31da1891d6e4e802c0652a51cd4",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/emea/dublin/dub1",
+      "final_url": "https://www.digitalrealty.com/data-centers/emea/dublin/dub1",
+      "retrieved_at": "2026-11-13T00:58:04.147528+00:00",
+      "sha256": "92f2f019ca81ece96e288797a792c218ecc76f5b81e124b5a5d88f2f204d1f43",
+      "bytes": 200943,
+      "status": 200
+    }
+  },
+  "2311": {
+    "facts": {
+      "title": "DUB10",
+      "node_id": "2311",
+      "country": "United Kingdom",
+      "metro": "Dublin",
+      "field_address_location": [
+        {
+          "value": "<p>Blanchardstown Corporate Park, Unit 9 Dublin, 15</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "53.4114041"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "-6.3694628"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "5000"
+        }
+      ]
+    },
+    "facts_sha256": "69eea8e6c62d7c66bb47898735e4c05adb31e5dea8f7ec6f3015ba5597b12daa",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/emea/dublin/dub10",
+      "final_url": "https://www.digitalrealty.com/data-centers/emea/dublin/dub10",
+      "retrieved_at": "2026-11-13T00:58:06.077167+00:00",
+      "sha256": "b66d7170d80bd803eb8afa49b23adead4324f617f2cd9d2da9a1d37030c1c479",
+      "bytes": 202597,
+      "status": 200
+    }
+  },
+  "1790": {
+    "facts": {
+      "title": "AMS7",
+      "node_id": "1790",
+      "country": "Netherlands",
+      "metro": "Amsterdam",
+      "field_address_location": [
+        {
+          "value": "<p>Cessnalaan 50, Schiphol-Rijk 1119 NL, The Netherlands</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "52.281585"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "4.766454"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "14800"
+        }
+      ]
+    },
+    "facts_sha256": "c5728c1e019f54dd73af9b043c11cd6a16b00282b8383f507f1ec9e15d7fdec8",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/emea/amsterdam/ams7",
+      "final_url": "https://www.digitalrealty.com/data-centers/emea/amsterdam/ams7",
+      "retrieved_at": "2026-11-13T00:58:08.023100+00:00",
+      "sha256": "95cceeeb8db597d34c7b17d79b45491550900005efa339341a66acabc24e8f77",
+      "bytes": 205755,
+      "status": 200
+    }
+  },
+  "2316": {
+    "facts": {
+      "title": "DUS1",
+      "node_id": "2316",
+      "country": "Germany",
+      "metro": "Düsseldorf",
+      "field_address_location": [
+        {
+          "value": "<p><span>In der Steele 25-45, 40599 Düsseldorf, Germany</span></p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "51.18785"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "6.86831"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "1700"
+        }
+      ]
+    },
+    "facts_sha256": "897a9a412248fb3754d7581d8ce0ed04e6560223b67d1b45ede333c34770ffcc",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/emea/dusseldorf/dus1",
+      "final_url": "https://www.digitalrealty.com/data-centers/emea/dusseldorf/dus1",
+      "retrieved_at": "2026-11-13T00:58:09.915629+00:00",
+      "sha256": "915166d8113e3956b40a75c2baddd450f207ce6075bcfd2584725d258dac7f2f",
+      "bytes": 201403,
+      "status": 200
+    }
+  },
+  "2416": {
+    "facts": {
+      "title": "MRS1",
+      "node_id": "2416",
+      "country": "France",
+      "metro": "Marseille",
+      "field_address_location": [
+        {
+          "value": "<p>40 Avenue Roger Salengro, Marseille 13003, France</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "43.31074"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "5.3733"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "14500"
+        }
+      ]
+    },
+    "facts_sha256": "da4cb122dd7ad3c813d5ac468781839fd228fef14feca3038599e22be32d52b0",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/emea/marseille/mrs1",
+      "final_url": "https://www.digitalrealty.com/data-centers/emea/marseille/mrs1",
+      "retrieved_at": "2026-11-13T00:58:11.800887+00:00",
+      "sha256": "7d0e412c10469f592bb183361275a1cc2410af5af7032ccb33eeafdff01aca74",
+      "bytes": 204186,
+      "status": 200
+    }
+  },
+  "2408": {
+    "facts": {
+      "title": "MAD1",
+      "node_id": "2408",
+      "country": "Spain",
+      "metro": "Madrid",
+      "field_address_location": [
+        {
+          "value": "<p>Calle Albasanz 71 Madrid, 28037, Spain</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "40.43948"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "-3.62126"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "3600"
+        }
+      ]
+    },
+    "facts_sha256": "8d16f73495b44c64bc09f5e43a3086863f28e72361bedee7839b7af74727ba13",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/emea/madrid/mad1",
+      "final_url": "https://www.digitalrealty.com/data-centers/emea/madrid/mad1",
+      "retrieved_at": "2026-11-13T00:58:13.770570+00:00",
+      "sha256": "a94f271c0798e4ef72eafc7d93d64cfc2b1de515108280c78c4eb681fa7e49d0",
+      "bytes": 204517,
+      "status": 200
+    }
+  },
+  "2290": {
+    "facts": {
+      "title": "CPH1",
+      "node_id": "2290",
+      "country": "Denmark",
+      "metro": "Copenhagen",
+      "field_address_location": [
+        {
+          "value": "<p>Industriparken 20A, Ballerup DK-2750, Denmark</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "55.72808"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "12.37752"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "4200"
+        }
+      ]
+    },
+    "facts_sha256": "3983b6e8208094d27c7b6c36d01911dadf7f4a697ac0c002450a05a7d87ede31",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/emea/copenhagen/cph1",
+      "final_url": "https://www.digitalrealty.com/data-centers/emea/copenhagen/cph1",
+      "retrieved_at": "2026-11-13T00:58:16.214392+00:00",
+      "sha256": "09983620f6b14b3cf43f2f4cbd04a34ca90f051f3f6229db020e245bdec9a7fb",
+      "bytes": 203521,
+      "status": 200
+    }
+  },
+  "2387": {
+    "facts": {
+      "title": "KIX10",
+      "node_id": "2387",
+      "country": "Japan",
+      "metro": "Osaka",
+      "field_address_location": [
+        {
+          "value": "<p>5-8-1, Saito Yamabuki, Ibaraki-shi, Osaka</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "34.8614235"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "135.5158993"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "12000"
+        }
+      ]
+    },
+    "facts_sha256": "7a707906e33afa3caf4127992a47a2564fbe3c59da9899f52ecc027b07bd3ea8",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/asia-pacific/osaka/kix10",
+      "final_url": "https://www.digitalrealty.com/data-centers/asia-pacific/osaka/kix10",
+      "retrieved_at": "2026-11-13T00:58:18.095916+00:00",
+      "sha256": "e4856d8319ba410ccafedc741ecf4f690acf79583f31253bbffd85870d80326b",
+      "bytes": 191967,
+      "status": 200
+    }
+  },
+  "2388": {
+    "facts": {
+      "title": "KIX11",
+      "node_id": "2388",
+      "country": "Japan",
+      "metro": "Osaka",
+      "field_address_location": [
+        {
+          "value": "<p>6-1, Saito Aokita, Mino-shi, Osaka</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "34.8615942"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "135.5120772"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "28000"
+        }
+      ]
+    },
+    "facts_sha256": "272a388c25ce181f02f83f79e18a3a7dc8f5715eea1e2548ef46ef2a53746af8",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/asia-pacific/osaka/kix11",
+      "final_url": "https://www.digitalrealty.com/data-centers/asia-pacific/osaka/kix11",
+      "retrieved_at": "2026-11-13T00:58:20.064270+00:00",
+      "sha256": "c6a5f6a6b99be86fb38cd83dd9759acd8ab0294d9eea52bb18d7ae29fa84b208",
+      "bytes": 192505,
+      "status": 200
+    }
+  },
+  "2448": {
+    "facts": {
+      "title": "SIN10",
+      "node_id": "2448",
+      "country": "Singapore",
+      "metro": "Singapore",
+      "field_address_location": [
+        {
+          "value": "<p>29A International Business Park Jurong East, 609934</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "1.327732"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "103.745974"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "26000"
+        }
+      ]
+    },
+    "facts_sha256": "ec422abf7eb4f89bf072514001d1d8e6a48b039dad905efabd6f2b1cd59826aa",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/asia-pacific/singapore/sin10",
+      "final_url": "https://www.digitalrealty.com/data-centers/asia-pacific/singapore/sin10",
+      "retrieved_at": "2026-11-13T00:58:22.118789+00:00",
+      "sha256": "171796c526954f6601c3e68c8cf48cf53cec986d1e56d815d9beb37e9fae7234",
+      "bytes": 206759,
+      "status": 200
+    }
+  },
+  "2412": {
+    "facts": {
+      "title": "MEL11",
+      "node_id": "2412",
+      "country": "Australia",
+      "metro": "Melbourne",
+      "field_address_location": [
+        {
+          "value": "<p>72 Radnor Drive Deer Park, VIC 3023</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "-37.78116034"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "144.7781525"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "10000"
+        }
+      ]
+    },
+    "facts_sha256": "f0786fb576322317114bbef85bc31dbb6984140bc6a633e2c80ac81e727bf101",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/asia-pacific/melbourne/mel11",
+      "final_url": "https://www.digitalrealty.com/data-centers/asia-pacific/melbourne/mel11",
+      "retrieved_at": "2026-11-13T00:58:24.080157+00:00",
+      "sha256": "89f0d6f03d2e1876f319cd95cc9829192c703da1c61e61c0f4e42371e56e9e4b",
+      "bytes": 201848,
+      "status": 200
+    }
+  },
+  "3389": {
+    "facts": {
+      "title": "MAA10",
+      "node_id": "3389",
+      "country": "India",
+      "metro": "Chennai",
+      "field_address_location": [
+        {
+          "value": "<p>MTH Road, Ambattur Industrial Estate, Chennai</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "13.098990"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "80.165830"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "20400"
+        }
+      ]
+    },
+    "facts_sha256": "92b0c7a9b4f1f97c69440309d24e0667394f42b09ed95bf6870391764c8bd670",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/asia-pacific/chennai/maa10",
+      "final_url": "https://www.digitalrealty.com/data-centers/asia-pacific/chennai/maa10",
+      "retrieved_at": "2026-11-13T00:58:26.048298+00:00",
+      "sha256": "d72e84a0f04dbf37944d17c2e929ea7c57e64f0019baade8834b202210557cc0",
+      "bytes": 187287,
+      "status": 200
+    }
+  },
+  "2379": {
+    "facts": {
+      "title": "ICN10",
+      "node_id": "2379",
+      "country": "South Korea",
+      "metro": "Seul",
+      "field_address_location": [
+        {
+          "value": "<p>12 World Cup buk-ro 60-gil, Mapo-gu Seoul, Korea, 03922</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "37.5818414"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "126.8847847"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "20000"
+        }
+      ]
+    },
+    "facts_sha256": "f8310875710c050890c8b3aab6798c642f9b21e890528f1858d018a6ec829d8e",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/asia-pacific/seoul/icn10",
+      "final_url": "https://www.digitalrealty.com/data-centers/asia-pacific/seoul/icn10",
+      "retrieved_at": "2026-11-13T00:58:28.019351+00:00",
+      "sha256": "90b5108d6f509f3e32a11d5b3a29b037aacf7b6c64768fec1446b5edc9cf5712",
+      "bytes": 203629,
+      "status": 200
+    }
+  },
+  "2294": {
+    "facts": {
+      "title": "CT1",
+      "node_id": "2294",
+      "country": "South Africa",
+      "metro": "Cape Town",
+      "field_address_location": [
+        {
+          "value": "<p>Great Westerford Building, Rondebosch</p>",
+          "format": "full_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "-33.9712"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "18.4649"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "5000"
+        }
+      ]
+    },
+    "facts_sha256": "254e75acbd5344703c7feb75fc17fccdf7252d1eb14c7ca0744d85c724d2d471",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/emea/cape-town/ct1",
+      "final_url": "https://www.digitalrealty.com/data-centers/emea/cape-town/ct1",
+      "retrieved_at": "2026-11-13T00:58:29.941090+00:00",
+      "sha256": "d1f5af25fd3457868aebb39e6dc3a1a49984722df6fd07fa4daaf32d59163ae7",
+      "bytes": 182462,
+      "status": 200
+    }
+  },
+  "2295": {
+    "facts": {
+      "title": "CT2",
+      "node_id": "2295",
+      "country": "South Africa",
+      "metro": "Cape Town",
+      "field_address_location": [
+        {
+          "value": "<p>Brackenfell Data Center 57 Tiber Road, Brackengate 2, Brackenfell</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "-33.907417"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "18.67936"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "30000"
+        }
+      ]
+    },
+    "facts_sha256": "3ec89db8c7c4f6ab7ea28df646d9eafb5d34f6cbe5535b7708c9bf4e9144cdeb",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/emea/cape-town/ct2",
+      "final_url": "https://www.digitalrealty.com/data-centers/emea/cape-town/ct2",
+      "retrieved_at": "2026-11-13T00:58:31.466339+00:00",
+      "sha256": "da8b0fad4829c3f56e54d7b6ad746be0895231ac9a855b06dcf48a3d2a46437e",
+      "bytes": 203638,
+      "status": 200
+    }
+  },
+  "2405": {
+    "facts": {
+      "title": "LOS1",
+      "node_id": "2405",
+      "country": "Nigeria",
+      "metro": "Lagos",
+      "field_address_location": [
+        {
+          "value": "<p>8A Saka Tinubu Street, Victoria Island, Lagos</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "6.426722"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "3.417459"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "200"
+        }
+      ]
+    },
+    "facts_sha256": "4ab2c24f845f1fb6cd40c895eaaffa4197ecf6d2d482ca13ad3ddcfdeb7ba9b4",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/emea/lagos/los1",
+      "final_url": "https://www.digitalrealty.com/data-centers/emea/lagos/los1",
+      "retrieved_at": "2026-11-13T00:58:33.493266+00:00",
+      "sha256": "9e8d95bbabb95004c93dd544c6e389c4f748d308e2e83859c9052ef85bf4a09a",
+      "bytes": 177364,
+      "status": 200
+    }
+  },
+  "2411": {
+    "facts": {
+      "title": "MBA1",
+      "node_id": "2411",
+      "country": "Kenya",
+      "metro": "Mombasa",
+      "field_address_location": [
+        {
+          "value": "<p>Mombassa Road, Mombasa, Kenya</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "-4.00833"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "39.60574"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "2000"
+        }
+      ]
+    },
+    "facts_sha256": "70a4ce1502b81eeadf1635b61c28b665a85a9d19e4df8a86b08b9232ed5ec028",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/emea/mombasa/mba1",
+      "final_url": "https://www.digitalrealty.com/data-centers/emea/mombasa/mba1",
+      "retrieved_at": "2026-11-13T00:58:35.465894+00:00",
+      "sha256": "edc4bea1858f4c2c27df04b71617bb85ea9bc3bac3310340cf17206073272c78",
+      "bytes": 188043,
+      "status": 200
+    }
+  },
+  "11459": {
+    "facts": {
+      "title": "MPM1",
+      "node_id": "11459",
+      "country": "Mozambique",
+      "metro": "Maputo",
+      "field_address_location": [
+        {
+          "value": "<p>140D, Avenida Vladimir Lenine Center, Maputo, Mozambique</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "-25.950476"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "32.590457"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "400"
+        }
+      ]
+    },
+    "facts_sha256": "0a92188da647e7fc57674a68e1a07204f83feab24e69939df1ec66e7fd115ba7",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/emea/maputo/mpm1",
+      "final_url": "https://www.digitalrealty.com/data-centers/emea/maputo/mpm1",
+      "retrieved_at": "2026-11-13T00:58:37.360376+00:00",
+      "sha256": "5c99104147c47ffbc695c90f28cb1c5d97a1948ae2df557381de3f63b5ea71ae",
+      "bytes": 187689,
+      "status": 200
+    }
+  },
+  "24413": {
+    "facts": {
+      "title": "ACR2 ",
+      "node_id": "24413",
+      "country": "Ghana",
+      "metro": "Accra",
+      "field_address_location": [
+        {
+          "value": "<p>Bank Street and Prof. Atta Mills High St, Accra Ghana</p>",
+          "format": "basic_html"
+        }
+      ],
+      "field_latitude": [
+        {
+          "value": "5.542241"
+        }
+      ],
+      "field_longitude": [
+        {
+          "value": "-0.206357"
+        }
+      ],
+      "field_utility_power_capacity": [
+        {
+          "value": "1700"
+        }
+      ]
+    },
+    "facts_sha256": "eae7f07db98dfeb9f379075eabf9714b7ad17db828e5d299669b864145bdcfef",
+    "receipt": {
+      "url": "https://www.digitalrealty.com/data-centers/emea/accra/acr2",
+      "final_url": "https://www.digitalrealty.com/data-centers/emea/accra/acr2",
+      "retrieved_at": "2026-11-13T00:58:39.259315+00:00",
+      "sha256": "4cbee691d3ecfa271eae55ba00fa684f0abd9994292907750414cb3142027017",
+      "bytes": 190188,
+      "status": 200
+    }
+  },
+  "eqix-dc2": {
+    "facts": {
+      "longitude": "-77.46054392965522",
+      "latitude": "39.01678723190463",
+      "address1": "21715 Filigree Court",
+      "address2": "",
+      "city": "Ashburn",
+      "country": "United States of America"
+    },
+    "facts_sha256": "47f9c8d4e43dcf9f5362f13d41761d303703a66e6cc71e22f08c7eecec73957b",
+    "receipt": {
+      "url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/washington-dc-data-centers/dc2",
+      "final_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/washington-dc-data-centers/dc2",
+      "retrieved_at": "2026-11-13T00:58:42.950288+00:00",
+      "sha256": "602b82f1eeb5d793c6e4471a31a09024ea6429660bfa16bd836d54bd7fe0c877",
+      "bytes": 311409,
+      "status": 200
+    }
+  },
+  "eqix-sv1": {
+    "facts": {
+      "longitude": "-121.78421121891819",
+      "latitude": "37.241496584550006",
+      "address1": "11 Great Oaks Boulevard",
+      "address2": "",
+      "city": "San Jose",
+      "country": "United States of America"
+    },
+    "facts_sha256": "95a92ae8931ec411fe60e1f0383c4819928fcc84be01c1db1e0899545a7a673a",
+    "receipt": {
+      "url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/silicon-valley-data-centers/sv1",
+      "final_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/silicon-valley-data-centers/sv1",
+      "retrieved_at": "2026-11-13T00:58:44.344843+00:00",
+      "sha256": "e0b4d5db0a39219134434162542c866ac7b13b928d29f1092c035d24c5a875cf",
+      "bytes": 308339,
+      "status": 200
+    }
+  },
+  "eqix-dx1": {
+    "facts": {
+      "longitude": "55.18684176173679",
+      "latitude": "25.02544660129486",
+      "address1": "International Media Production Zone (IMPZ)",
+      "address2": "Units F90, F91 & F92",
+      "city": "Dubai",
+      "country": "United Arab Emirates"
+    },
+    "facts_sha256": "c15bdb494b60539426079e0a65dbbda814b6af54ea7f6843d7b1f9eef3d423dc",
+    "receipt": {
+      "url": "https://www.equinix.com/data-centers/europe-colocation/united-arab-emirates-colocation/dubai-data-centers/dx1",
+      "final_url": "https://www.equinix.com/data-centers/europe-colocation/united-arab-emirates-colocation/dubai-data-centers/dx1",
+      "retrieved_at": "2026-11-13T01:02:48.099707+00:00",
+      "sha256": "b248b2168d43b3c1c09fb7711301146814dd7af455a69523ae60b07e5c8e1929",
+      "bytes": 286178
+    }
+  },
+  "EQIX-10k": {
+    "facts": {
+      "common_stock_cover_html": "<tr><td colspan=\"3\" style=\"border-top:1pt solid #000000;padding:2px 1pt;text-align:center;vertical-align:top\"><span style=\"color:#000000;font-family:'Arial',sans-serif;font-size:9pt;font-weight:400;line-height:100%\"><ix:nonNumeric contextRef=\"c-2\" name=\"dei:Security12bTitle\" id=\"f-16\">Common Stock, $0.001</ix:nonNumeric></span></td><td colspan=\"3\" style=\"padding:0 1pt\"/><td colspan=\"3\" style=\"border-top:1pt solid #000000;padding:2px 1pt;text-align:center;vertical-align:top\"><span style=\"color:#000000;font-family:'Arial',sans-serif;font-size:9pt;font-weight:400;line-height:100%\"><ix:nonNumeric contextRef=\"c-2\" name=\"dei:TradingSymbol\" id=\"f-17\">EQIX</ix:nonNumeric></span></td><td colspan=\"3\" style=\"padding:0 1pt\"/><td colspan=\"3\" style=\"border-top:1pt solid #000000;padding:2px 1pt;text-align:center;vertical-align:top\"><span style=\"color:#000000;font-family:'Arial',sans-serif;font-size:9pt;font-weight:400;line-height:100%\"><ix:nonNumeric contextRef=\"c-2\" name=\"dei:SecurityExchangeName\" format=\"ixt-sec:exchnameen\" id=\"f-18\">The Nasdaq Stock Market LLC</ix:nonNumeric></span></td></tr>"
+    },
+    "facts_sha256": "8973443c538c12cd51d841d836554393a79756051abd6d4091e8c23bac4658df",
+    "receipt": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "retrieved_at": "2026-11-13T00:59:52.992782+00:00",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "bytes": 4071991
+    }
+  },
+  "EQIX-submissions": {
+    "facts": {
+      "filings": {
+        "recent": {
+          "accessionNumber": [
+            "0001101239-26-000032"
+          ],
+          "filingDate": [
+            "2026-02-11"
+          ],
+          "reportDate": [
+            "2025-12-31"
+          ],
+          "acceptanceDateTime": [
+            "2026-02-11T21:15:08.000Z"
+          ],
+          "act": [
+            "34"
+          ],
+          "form": [
+            "10-K"
+          ],
+          "fileNumber": [
+            "001-40205"
+          ],
+          "filmNumber": [
+            "26620905"
+          ],
+          "items": [
+            ""
+          ],
+          "core_type": [
+            "XBRL"
+          ],
+          "size": [
+            31202332
+          ],
+          "isXBRL": [
+            1
+          ],
+          "isInlineXBRL": [
+            1
+          ],
+          "isXBRLNumeric": [
+            null
+          ],
+          "primaryDocument": [
+            "eqix-20251231.htm"
+          ],
+          "primaryDocDescription": [
+            "10-K"
+          ]
+        }
+      }
+    },
+    "facts_sha256": "44ba0b805ba9157fa4abf668779a5a9707a2126240e48dd244f09f6afe5222ae",
+    "receipt": {
+      "url": "https://data.sec.gov/submissions/CIK0001101239.json",
+      "final_url": "https://data.sec.gov/submissions/CIK0001101239.json",
+      "retrieved_at": "2026-11-13T00:59:51.520000+00:00",
+      "sha256": "55282974969ca99abe97f799fd65204918eb79a718eddbb4362432afd3bc7c8a",
+      "bytes": 158343
+    }
+  },
+  "DLR-10k": {
+    "facts": {
+      "common_stock_cover_html": "<tr style=\"\"><td style=\"vertical-align:top;width:15.28%;margin:0pt;padding:0pt 2pt 0pt 0pt;\"><p style=\"font-family:'Times New Roman','Times','serif';font-size:8pt;text-indent:0pt;margin:0pt;\">Digital Realty Trust,&#160;Inc.</p></td><td style=\"vertical-align:top;width:2.53%;margin:0pt;padding:0pt;\"><p style=\"font-family:'Times New Roman','Times','serif';font-size:10pt;text-indent:0pt;margin:0pt;\"><span style=\"font-size:8pt;margin-bottom:12pt;visibility:hidden;\">&#8203;</span></p></td><td style=\"vertical-align:top;width:31.89%;border-top:1px solid #000000;margin:0pt;padding:0pt 3pt 0pt 0pt;\"><p style=\"font-family:'Times New Roman','Times','serif';font-size:10pt;text-align:center;text-indent:0pt;margin:0pt;\"><ix:nonNumeric contextRef=\"Duration_1_1_2025_To_12_31_2025_us-gaap_StatementClassOfStockAxis_us-gaap_CommonStockMember_gjZpfgdVt0Wa1Q70I8xfLQ\" name=\"dei:Security12bTitle\" id=\"Narr_vpqz5do5AUKVM_l7yGPL0Q\"><span style=\"font-size:8pt;\">Common Stock</span></ix:nonNumeric><span style=\"font-size:8pt;\">, $0.01 par value per share</span></p></td><td style=\"vertical-align:top;width:2.53%;margin:0pt;padding:0pt;\"><p style=\"font-family:'Times New Roman','Times','serif';font-size:10pt;text-align:justify;text-indent:0pt;margin:0pt;\"><span style=\"font-size:8pt;margin-bottom:12pt;visibility:hidden;\">&#8203;</span></p></td><td style=\"vertical-align:top;width:0.17%;border-top:1px solid #000000;margin:0pt;padding:0pt;\"><p style=\"font-family:'Times New Roman','Times','serif';font-size:10pt;text-align:justify;text-indent:0pt;margin:0pt;\"><span style=\"font-size:8pt;margin-bottom:12pt;visibility:hidden;\">&#8203;</span></p></td><td style=\"vertical-align:top;width:8.71%;border-top:1px solid #000000;margin:0pt;padding:0pt;\"><p style=\"font-family:'Times New Roman','Times','serif';font-size:10pt;text-align:center;text-indent:0pt;margin:0pt;\"><ix:nonNumeric contextRef=\"Duration_1_1_2025_To_12_31_2025_us-gaap_StatementClassOfStockAxis_us-gaap_CommonStockMember_gjZpfgdVt0Wa1Q70I8xfLQ\" name=\"dei:TradingSymbol\" id=\"Tc_EGap_HqUgEeAeoIANJvN_A_2_5\"><span style=\"font-size:8pt;\">DLR</span></ix:nonNumeric></p></td><td style=\"vertical-align:top;width:2.53%;margin:0pt;padding:0pt;\"><p style=\"font-family:'Times New Roman','Times','serif';font-size:10pt;text-align:justify;text-indent:0pt;margin:0pt;\"><span style=\"font-size:8pt;margin-bottom:12pt;visibility:hidden;\">&#8203;</span></p></td><td style=\"vertical-align:top;width:36.3%;margin:0pt;padding:0pt 3pt 0pt 0pt;\"><p style=\"font-family:'Times New Roman','Times','serif';font-size:10pt;text-align:center;text-indent:0pt;margin:0pt;\"><ix:nonNumeric format=\"ixt-sec:exchnameen\" contextRef=\"Duration_1_1_2025_To_12_31_2025_us-gaap_StatementClassOfStockAxis_us-gaap_CommonStockMember_gjZpfgdVt0Wa1Q70I8xfLQ\" name=\"dei:SecurityExchangeName\" id=\"Tc_624yZULYj0eWT-_lmYkOXw_2_7\"><span style=\"font-size:8pt;\">New&#160;York&#160;Stock&#160;Exchange</span></ix:nonNumeric></p></td></tr>"
+    },
+    "facts_sha256": "206ee87ebc8bb19b2ad09a2d0c356fafb03a69078d31cc7f540f0f593ee1c468",
+    "receipt": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm",
+      "retrieved_at": "2026-11-13T00:59:57.823437+00:00",
+      "sha256": "c183a976e239d454422d8e5e0a35963e9af1956b35bdd97a791f39dd969f8d18",
+      "bytes": 8000000,
+      "complete_response": false,
+      "note": "Bounded first 8,000,000 bytes; cover evidence only, not a complete filing"
+    }
+  },
+  "DLR-submissions": {
+    "facts": {
+      "filings": {
+        "recent": {
+          "accessionNumber": [
+            "0001104659-26-015365"
+          ],
+          "filingDate": [
+            "2026-02-13"
+          ],
+          "reportDate": [
+            "2025-12-31"
+          ],
+          "acceptanceDateTime": [
+            "2026-02-13T22:18:21.000Z"
+          ],
+          "act": [
+            "34"
+          ],
+          "form": [
+            "10-K"
+          ],
+          "fileNumber": [
+            "001-32336"
+          ],
+          "filmNumber": [
+            "26634608"
+          ],
+          "items": [
+            ""
+          ],
+          "core_type": [
+            "XBRL"
+          ],
+          "size": [
+            48594103
+          ],
+          "isXBRL": [
+            1
+          ],
+          "isInlineXBRL": [
+            1
+          ],
+          "isXBRLNumeric": [
+            null
+          ],
+          "primaryDocument": [
+            "dlr-20251231x10k.htm"
+          ],
+          "primaryDocDescription": [
+            "10-K"
+          ]
+        }
+      }
+    },
+    "facts_sha256": "0afa1b2174b5caa72a77f53576fe991b84d7869f044c4afa255b5a3567d6e3ad",
+    "receipt": {
+      "url": "https://data.sec.gov/submissions/CIK0001297996.json",
+      "final_url": "https://data.sec.gov/submissions/CIK0001297996.json",
+      "retrieved_at": "2026-11-13T00:59:54.328495+00:00",
+      "sha256": "6e6b59fb95554da58e47e15956fc5c7c0cc465b9941ff4fe22c3c4e5acc7e1f9",
+      "bytes": 161432
+    }
+  },
+  "AMT-10k": {
+    "facts": {
+      "common_stock_cover_html": "<tr><td colspan=\"3\" style=\"padding:2px 1pt;text-align:center;vertical-align:middle\"><span style=\"color:#000000;font-family:'Times New Roman',serif;font-size:7.5pt;font-weight:700;line-height:100%\"><ix:nonNumeric contextRef=\"c-2\" name=\"dei:Security12bTitle\" id=\"f-16\">Common Stock, $0.01 par value</ix:nonNumeric></span></td><td colspan=\"3\" style=\"padding:2px 1pt;text-align:center;vertical-align:middle\"><span style=\"color:#000000;font-family:'Times New Roman',serif;font-size:7.5pt;font-weight:700;line-height:100%\">&#160;<ix:nonNumeric contextRef=\"c-2\" name=\"dei:TradingSymbol\" id=\"f-17\">AMT</ix:nonNumeric></span></td><td colspan=\"3\" style=\"padding:2px 1pt;text-align:center;vertical-align:middle\"><span style=\"color:#000000;font-family:'Times New Roman',serif;font-size:7.5pt;font-weight:700;line-height:100%\"><ix:nonNumeric contextRef=\"c-2\" name=\"dei:SecurityExchangeName\" format=\"ixt-sec:exchnameen\" id=\"f-18\">New York Stock Exchange</ix:nonNumeric></span></td></tr>"
+    },
+    "facts_sha256": "f877f0ed01cc0e79c8a7e6ff20116c29814a60807a21c1334ba06c448cede89c",
+    "receipt": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000035/amt-20251231.htm",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000035/amt-20251231.htm",
+      "retrieved_at": "2026-11-13T01:00:08.309701+00:00",
+      "sha256": "fb453bdf34d5cd97ed91e28b37cf34a58cbe267d22e09050d436aea6d0095b01",
+      "bytes": 4332529
+    }
+  },
+  "AMT-submissions": {
+    "facts": {
+      "filings": {
+        "recent": {
+          "accessionNumber": [
+            "0001053507-26-000035"
+          ],
+          "filingDate": [
+            "2026-02-24"
+          ],
+          "reportDate": [
+            "2025-12-31"
+          ],
+          "acceptanceDateTime": [
+            "2026-02-24T21:08:23.000Z"
+          ],
+          "act": [
+            "34"
+          ],
+          "form": [
+            "10-K"
+          ],
+          "fileNumber": [
+            "001-14195"
+          ],
+          "filmNumber": [
+            "26671596"
+          ],
+          "items": [
+            ""
+          ],
+          "core_type": [
+            "XBRL"
+          ],
+          "size": [
+            24447788
+          ],
+          "isXBRL": [
+            1
+          ],
+          "isInlineXBRL": [
+            1
+          ],
+          "isXBRLNumeric": [
+            null
+          ],
+          "primaryDocument": [
+            "amt-20251231.htm"
+          ],
+          "primaryDocDescription": [
+            "10-K"
+          ]
+        }
+      }
+    },
+    "facts_sha256": "e403604225ea6b2616331c1fc04e058d123f985dc0dc6b4b189456fe0876b5ba",
+    "receipt": {
+      "url": "https://data.sec.gov/submissions/CIK0001053507.json",
+      "final_url": "https://data.sec.gov/submissions/CIK0001053507.json",
+      "retrieved_at": "2026-11-13T01:00:01.450208+00:00",
+      "sha256": "60eac869e57ded8c1874282b520d7ce243e548fa6a89bb62b14c525a3aad6765",
+      "bytes": 161990
+    }
+  },
+  "sec": {
+    "facts": {
+      "fields": [
+        "cik",
+        "name",
+        "ticker",
+        "exchange"
+      ],
+      "data": [
+        [
+          1101239,
+          "EQUINIX INC",
+          "EQIX",
+          "Nasdaq"
+        ],
+        [
+          1053507,
+          "AMERICAN TOWER CORP /MA/",
+          "AMT",
+          "NYSE"
+        ],
+        [
+          1297996,
+          "DIGITAL REALTY TRUST, INC.",
+          "DLR",
+          "NYSE"
+        ]
+      ]
+    },
+    "facts_sha256": "c3737d54fa3284aa553e682d69f91984025326ad0a0022d58fa5e9d954186af3",
+    "receipt": {
+      "url": "https://www.sec.gov/files/company_tickers_exchange.json",
+      "sha256": "98d357e2c5b2fb5bfdb085f3d6a9010036e43a2306e63563061b1997d1e8224e",
+      "retrieved_at": "2026-11-13T01:02:07.615487+00:00",
+      "timestamp_note": "Receipt assembled after response; not a source publication date",
+      "bytes": 521966
+    }
+  },
+  "coresite-va1": {
+    "facts": {
+      "facility": "VA1",
+      "note": "Official VA1 detail page; no concluded parent/JV chain"
+    },
+    "facts_sha256": "cd1be062e60e7d6c16883ddd615d7b08263cd7dfbee9202427cff7f86279065d",
+    "receipt": {
+      "url": "https://www.coresite.com/data-center/va1-reston-va",
+      "final_url": "https://www.coresite.com/data-center/va1-reston-va",
+      "retrieved_at": "2026-11-13T01:00:09.603401+00:00",
+      "sha256": "7396c2c3578b200b7e477f2fb607b62ecc70a968d38a11a0e7bc4e18434e30a0",
+      "bytes": 217547
+    }
+  }
+}

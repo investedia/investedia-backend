@@ -1,0 +1,42 @@
+[
+  {
+    "width": 1440,
+    "theme": "dark",
+    "records": 26,
+    "search": true,
+    "company_filter": true,
+    "contradictions_excluded": true,
+    "overflow": false,
+    "runtime_errors": []
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "records": 26,
+    "search": true,
+    "company_filter": true,
+    "contradictions_excluded": true,
+    "overflow": false,
+    "runtime_errors": []
+  },
+  {
+    "width": 1440,
+    "theme": "light",
+    "records": 26,
+    "search": true,
+    "company_filter": true,
+    "contradictions_excluded": true,
+    "overflow": false,
+    "runtime_errors": []
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "records": 26,
+    "search": true,
+    "company_filter": true,
+    "contradictions_excluded": true,
+    "overflow": false,
+    "runtime_errors": []
+  }
+]
