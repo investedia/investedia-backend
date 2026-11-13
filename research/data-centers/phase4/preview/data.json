@@ -1,0 +1,801 @@
+{
+  "projects": [
+    {
+      "id": "eia:708",
+      "name": "Hammond",
+      "sector": "Energy",
+      "type": "project",
+      "stage": "Under construction",
+      "status": {
+        "stage": "under_construction",
+        "label": "Under construction",
+        "as_of": "2026-11-13"
+      },
+      "country": "US",
+      "location": "Hammond",
+      "lat": 34.2528,
+      "lon": -85.3456,
+      "location_accuracy": {
+        "precision": "exact",
+        "lat": 34.2528,
+        "lon": -85.3456,
+        "label": "Hammond",
+        "basis": "Existing approved Energy verification; inherited without new site audit",
+        "satellite_allowed": false,
+        "evidence": {
+          "url": "https://www.eia.gov/electricity/data/eia860m/",
+          "sha256": "b890d82e95c94d2c81c7f394b179f8789b4f6f0944fd7973fdc69189c53b0a2d",
+          "checked_at": "2026-11-13",
+          "locator": "Existing verified Energy record eia:708",
+          "sha256_scope": "verified_input_snapshot",
+          "snapshot_commit": "c78ab084349b43e4c166fa0f6a0dde6dbae8af5c",
+          "snapshot_path": "assets/globe/projects-invest.json",
+          "record_id": "eia:708",
+          "scope": "specific_site"
+        }
+      },
+      "listed_exposure": {
+        "ticker": "SO",
+        "name": "SOUTHERN CO"
+      },
+      "invest": {
+        "exposures": [
+          {
+            "name": "SOUTHERN CO",
+            "ticker": "SO",
+            "exchange": "XNYS",
+            "category": "reported_group_owner",
+            "category_label": "Existing verified Energy ownership chain; legacy classification preserved",
+            "role_labels": [
+              "Existing verified Energy ownership chain; legacy classification preserved"
+            ],
+            "maturity": "inherited Energy verification",
+            "investment_route": {
+              "type": "public_equity",
+              "verified": true,
+              "scope": "Indirect company equity; no direct project purchase"
+            },
+            "hq": {
+              "city": "Atlanta",
+              "lat": 33.754444444,
+              "lon": -84.389722222
+            }
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Official project evidence",
+          "url": "https://www.eia.gov/electricity/data/eia860m/"
+        },
+        {
+          "name": "Listing evidence",
+          "url": "https://data.sec.gov/submissions/CIK0000092122.json"
+        },
+        {
+          "name": "Geographic evidence",
+          "url": "https://www.eia.gov/electricity/data/eia860m/"
+        }
+      ],
+      "capacity": null,
+      "expected_completion": null,
+      "review_state": "Existing verified Energy data; local integration only",
+      "preview_only": true,
+      "asset": {
+        "category": "project",
+        "subtype": "Battery storage",
+        "parent_id": null,
+        "count_as_project": true
+      },
+      "reuse": {
+        "status": "inherited_existing_energy",
+        "fields": {
+          "identity": {
+            "status": "cleared",
+            "basis": "US public domain"
+          }
+        },
+        "review": null
+      }
+    },
+    {
+      "id": "eia:728",
+      "name": "Yates",
+      "sector": "Energy",
+      "type": "project",
+      "stage": "Announced",
+      "status": {
+        "stage": "announced",
+        "label": "Announced",
+        "as_of": "2026-11-13"
+      },
+      "country": "US",
+      "location": "Yates",
+      "lat": 33.4622,
+      "lon": -84.8986,
+      "location_accuracy": {
+        "precision": "exact",
+        "lat": 33.4622,
+        "lon": -84.8986,
+        "label": "Yates",
+        "basis": "Existing approved Energy verification; inherited without new site audit",
+        "satellite_allowed": false,
+        "evidence": {
+          "url": "https://www.eia.gov/electricity/data/eia860m/",
+          "sha256": "b890d82e95c94d2c81c7f394b179f8789b4f6f0944fd7973fdc69189c53b0a2d",
+          "checked_at": "2026-11-13",
+          "locator": "Existing verified Energy record eia:728",
+          "sha256_scope": "verified_input_snapshot",
+          "snapshot_commit": "c78ab084349b43e4c166fa0f6a0dde6dbae8af5c",
+          "snapshot_path": "assets/globe/projects-invest.json",
+          "record_id": "eia:728",
+          "scope": "specific_site"
+        }
+      },
+      "listed_exposure": {
+        "ticker": "SO",
+        "name": "SOUTHERN CO"
+      },
+      "invest": {
+        "exposures": [
+          {
+            "name": "SOUTHERN CO",
+            "ticker": "SO",
+            "exchange": "XNYS",
+            "category": "reported_group_owner",
+            "category_label": "Existing verified Energy ownership chain; legacy classification preserved",
+            "role_labels": [
+              "Existing verified Energy ownership chain; legacy classification preserved"
+            ],
+            "maturity": "inherited Energy verification",
+            "investment_route": {
+              "type": "public_equity",
+              "verified": true,
+              "scope": "Indirect company equity; no direct project purchase"
+            },
+            "hq": {
+              "city": "Atlanta",
+              "lat": 33.754444444,
+              "lon": -84.389722222
+            }
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Official project evidence",
+          "url": "https://www.eia.gov/electricity/data/eia860m/"
+        },
+        {
+          "name": "Listing evidence",
+          "url": "https://data.sec.gov/submissions/CIK0000092122.json"
+        },
+        {
+          "name": "Geographic evidence",
+          "url": "https://www.eia.gov/electricity/data/eia860m/"
+        }
+      ],
+      "capacity": null,
+      "expected_completion": null,
+      "review_state": "Existing verified Energy data; local integration only",
+      "preview_only": true,
+      "asset": {
+        "category": "project",
+        "subtype": "Oil & gas",
+        "parent_id": null,
+        "count_as_project": true
+      },
+      "reuse": {
+        "status": "inherited_existing_energy",
+        "fields": {
+          "identity": {
+            "status": "cleared",
+            "basis": "US public domain"
+          }
+        },
+        "review": null
+      }
+    },
+    {
+      "id": "project:eqix:SG6",
+      "name": "Equinix SG6",
+      "sector": "Data Centers",
+      "type": "project",
+      "stage": "opened",
+      "status": {
+        "stage": "operating",
+        "label": "opened",
+        "as_of": "2026-11-06",
+        "certainty": "company_reported"
+      },
+      "country": "SG",
+      "location": "Singapore",
+      "lat": 1.3,
+      "lon": 103.8,
+      "location_accuracy": {
+        "precision": "approximate",
+        "lat": 1.3,
+        "lon": 103.8,
+        "label": "Singapore city reference",
+        "basis": "Verified city, not facility footprint",
+        "satellite_allowed": false,
+        "evidence": {
+          "url": "https://www.wikidata.org/entity/Q334",
+          "sha256": "f42a60541216840fe48bf9749da139d760cb2d9a424cb763928caec0e06c3587",
+          "checked_at": "2026-11-13",
+          "locator": "Wikidata QID/country/P625 checked city reference",
+          "sha256_scope": "local_reference_file",
+          "snapshot_path": "../phase3/city-references.json"
+        }
+      },
+      "listed_exposure": {
+        "ticker": "EQIX",
+        "name": "Equinix"
+      },
+      "invest": {
+        "exposures": [
+          {
+            "name": "Equinix",
+            "ticker": "EQIX",
+            "exchange": "XNAS",
+            "category": "operator",
+            "category_label": "Disclosed operator exposure; property/phase/JV scope retained",
+            "role_labels": [
+              "Disclosed operator exposure; property/phase/JV scope retained"
+            ],
+            "maturity": "reported",
+            "investment_route": {
+              "type": "listed_REIT",
+              "verified": true,
+              "scope": "Indirect listed-company equity exposure; no direct property purchase"
+            },
+            "hq": {
+              "city": "Redwood City",
+              "lat": 37.4828,
+              "lon": -122.2361
+            }
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Official project evidence",
+          "url": "https://investor.equinix.com/news-events/press-releases/detail/1130/equinix-opens-sg6-in-singapore-expanding-ai-ready-capacity"
+        },
+        {
+          "name": "Listing evidence",
+          "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm"
+        },
+        {
+          "name": "Geographic evidence",
+          "url": "https://www.wikidata.org/entity/Q334"
+        }
+      ],
+      "capacity": null,
+      "expected_completion": null,
+      "review_state": "Research preview; data reuse/stage review pending",
+      "preview_only": true,
+      "asset": {
+        "category": "project",
+        "subtype": "Data center development",
+        "parent_id": null,
+        "count_as_project": true
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "listing": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "location": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "reported_metrics": {
+            "status": "omit",
+            "basis": "Corporate capacity/cost/table-derived metrics excluded from minimal discovery export"
+          }
+        },
+        "review": null
+      }
+    },
+    {
+      "id": "project:eqix:SV18",
+      "name": "Equinix SV18",
+      "sector": "Data Centers",
+      "type": "project",
+      "stage": "opened as reported",
+      "status": {
+        "stage": "operating",
+        "label": "opened as reported",
+        "as_of": "2026-11-13",
+        "certainty": "company_reported"
+      },
+      "country": "US",
+      "location": "San Jose",
+      "lat": 37.304166666,
+      "lon": -121.872777777,
+      "location_accuracy": {
+        "precision": "approximate",
+        "lat": 37.304166666,
+        "lon": -121.872777777,
+        "label": "San Jose city reference",
+        "basis": "Verified city, not facility footprint",
+        "satellite_allowed": false,
+        "evidence": {
+          "url": "https://www.wikidata.org/entity/Q16553",
+          "sha256": "f42a60541216840fe48bf9749da139d760cb2d9a424cb763928caec0e06c3587",
+          "checked_at": "2026-11-13",
+          "locator": "Wikidata QID/country/P625 checked city reference",
+          "sha256_scope": "local_reference_file",
+          "snapshot_path": "../phase3/city-references.json"
+        }
+      },
+      "listed_exposure": {
+        "ticker": "EQIX",
+        "name": "Equinix"
+      },
+      "invest": {
+        "exposures": [
+          {
+            "name": "Equinix",
+            "ticker": "EQIX",
+            "exchange": "XNAS",
+            "category": "reported_group_owner",
+            "category_label": "Issuer reports ownership; legal title entity unverified",
+            "role_labels": [
+              "Issuer reports ownership; legal title entity unverified"
+            ],
+            "maturity": "reported",
+            "investment_route": {
+              "type": "listed_REIT",
+              "verified": true,
+              "scope": "Indirect listed-company equity exposure; no direct property purchase"
+            },
+            "hq": {
+              "city": "Redwood City",
+              "lat": 37.4828,
+              "lon": -122.2361
+            }
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Official project evidence",
+          "url": "https://www.equinix.com/data-centers/expansions"
+        },
+        {
+          "name": "Listing evidence",
+          "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm"
+        },
+        {
+          "name": "Geographic evidence",
+          "url": "https://www.wikidata.org/entity/Q16553"
+        }
+      ],
+      "capacity": null,
+      "expected_completion": null,
+      "review_state": "Research preview; data reuse/stage review pending",
+      "preview_only": true,
+      "asset": {
+        "category": "project",
+        "subtype": "Data center development",
+        "parent_id": null,
+        "count_as_project": true
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "listing": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "location": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "reported_metrics": {
+            "status": "omit",
+            "basis": "Corporate capacity/cost/table-derived metrics excluded from minimal discovery export"
+          }
+        },
+        "review": null
+      }
+    },
+    {
+      "id": "project:eqix:MD5",
+      "name": "Equinix MD5",
+      "sector": "Data Centers",
+      "type": "project",
+      "stage": "opened as reported",
+      "status": {
+        "stage": "operating",
+        "label": "opened as reported",
+        "as_of": "2026-11-13",
+        "certainty": "company_reported"
+      },
+      "country": "ES",
+      "location": "Madrid",
+      "lat": 40.416944444,
+      "lon": -3.703333333,
+      "location_accuracy": {
+        "precision": "approximate",
+        "lat": 40.416944444,
+        "lon": -3.703333333,
+        "label": "Madrid city reference",
+        "basis": "Verified city, not facility footprint",
+        "satellite_allowed": false,
+        "evidence": {
+          "url": "https://www.wikidata.org/entity/Q2807",
+          "sha256": "f42a60541216840fe48bf9749da139d760cb2d9a424cb763928caec0e06c3587",
+          "checked_at": "2026-11-13",
+          "locator": "Wikidata QID/country/P625 checked city reference",
+          "sha256_scope": "local_reference_file",
+          "snapshot_path": "../phase3/city-references.json"
+        }
+      },
+      "listed_exposure": {
+        "ticker": "EQIX",
+        "name": "Equinix"
+      },
+      "invest": {
+        "exposures": [
+          {
+            "name": "Equinix",
+            "ticker": "EQIX",
+            "exchange": "XNAS",
+            "category": "reported_group_owner",
+            "category_label": "Issuer reports ownership; legal title entity unverified",
+            "role_labels": [
+              "Issuer reports ownership; legal title entity unverified"
+            ],
+            "maturity": "reported",
+            "investment_route": {
+              "type": "listed_REIT",
+              "verified": true,
+              "scope": "Indirect listed-company equity exposure; no direct property purchase"
+            },
+            "hq": {
+              "city": "Redwood City",
+              "lat": 37.4828,
+              "lon": -122.2361
+            }
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Official project evidence",
+          "url": "https://www.equinix.com/data-centers/expansions"
+        },
+        {
+          "name": "Listing evidence",
+          "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm"
+        },
+        {
+          "name": "Geographic evidence",
+          "url": "https://www.wikidata.org/entity/Q2807"
+        }
+      ],
+      "capacity": null,
+      "expected_completion": null,
+      "review_state": "Research preview; data reuse/stage review pending",
+      "preview_only": true,
+      "asset": {
+        "category": "project",
+        "subtype": "Data center development",
+        "parent_id": null,
+        "count_as_project": true
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "listing": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "location": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "reported_metrics": {
+            "status": "omit",
+            "basis": "Corporate capacity/cost/table-derived metrics excluded from minimal discovery export"
+          }
+        },
+        "review": null
+      }
+    },
+    {
+      "id": "project:coresite:DE3",
+      "name": "CoreSite DE3",
+      "sector": "Data Centers",
+      "type": "building",
+      "stage": "targeted for availability in 2026; current completion unverified",
+      "status": {
+        "stage": "unknown",
+        "label": "targeted for availability in 2026; current completion unverified",
+        "as_of": "2026-11-13",
+        "certainty": "target_only_current_completion_unknown"
+      },
+      "country": "US",
+      "location": "Denver",
+      "lat": 39.739166666,
+      "lon": -104.984722222,
+      "location_accuracy": {
+        "precision": "approximate",
+        "lat": 39.739166666,
+        "lon": -104.984722222,
+        "label": "Denver city reference",
+        "basis": "Verified city, not facility footprint",
+        "satellite_allowed": false,
+        "evidence": {
+          "url": "https://www.wikidata.org/entity/Q16554",
+          "sha256": "f42a60541216840fe48bf9749da139d760cb2d9a424cb763928caec0e06c3587",
+          "checked_at": "2026-11-13",
+          "locator": "Wikidata QID/country/P625 checked city reference",
+          "sha256_scope": "local_reference_file",
+          "snapshot_path": "../phase3/city-references.json"
+        }
+      },
+      "listed_exposure": {
+        "ticker": "AMT",
+        "name": "American Tower"
+      },
+      "invest": {
+        "exposures": [
+          {
+            "name": "American Tower",
+            "ticker": "AMT",
+            "exchange": "XNYS",
+            "category": "operator",
+            "category_label": "Disclosed operator exposure; property/phase/JV scope retained",
+            "role_labels": [
+              "Disclosed operator exposure; property/phase/JV scope retained"
+            ],
+            "maturity": "planned",
+            "investment_route": {
+              "type": "listed_REIT",
+              "verified": true,
+              "scope": "Indirect listed-company equity exposure; no direct property purchase"
+            },
+            "hq": {
+              "city": "Boston",
+              "lat": 42.3603,
+              "lon": -71.0578
+            }
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Official project evidence",
+          "url": "https://www.coresite.com/data-center/de3-denver-co"
+        },
+        {
+          "name": "Listing evidence",
+          "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000035/amt-20251231.htm"
+        },
+        {
+          "name": "Geographic evidence",
+          "url": "https://www.wikidata.org/entity/Q16554"
+        }
+      ],
+      "capacity": null,
+      "expected_completion": null,
+      "review_state": "Research preview; data reuse/stage review pending",
+      "preview_only": true,
+      "asset": {
+        "category": "building",
+        "subtype": "Data center development",
+        "parent_id": null,
+        "count_as_project": true,
+        "building_identity_evidence": {
+          "url": "https://www.coresite.com/data-center/de3-denver-co",
+          "sha256": "3c20f0d52e8e96cb22dd7a6da928b053d8e772bb5c6995cc6196f6f155efde31",
+          "checked_at": "2026-11-13T01:50:44.861308+00:00",
+          "locator": "Current DE3 facility specification: first building,18 CMW; availability target2026"
+        }
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "listing": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "location": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "reported_metrics": {
+            "status": "omit",
+            "basis": "Corporate capacity/cost/table-derived metrics excluded from minimal discovery export"
+          }
+        },
+        "review": null
+      }
+    },
+    {
+      "id": "project:coresite:NY3",
+      "name": "CoreSite NY3",
+      "sector": "Data Centers",
+      "type": "building",
+      "stage": "Operating facility, company-reported; launched 25 September 2025",
+      "status": {
+        "stage": "operating",
+        "label": "Operating facility, company-reported; launched 25 September 2025",
+        "as_of": "2026-11-13",
+        "certainty": "company_reported",
+        "evidence": {
+          "url": "https://www.coresite.com/data-center/ny3-secaucus-nj",
+          "sha256": "0844383897fd1375018dd54d970f787f9e76f2d5f29c41398392892833dae52a",
+          "checked_at": "2026-11-13",
+          "locator": "Current NY3 service page, named facility and operating services; checked separately from launch announcement"
+        }
+      },
+      "country": "US",
+      "location": "Secaucus",
+      "lat": 40.7875,
+      "lon": -74.061666666,
+      "location_accuracy": {
+        "precision": "approximate",
+        "lat": 40.7875,
+        "lon": -74.061666666,
+        "label": "Secaucus city reference",
+        "basis": "Verified city, not facility footprint",
+        "satellite_allowed": false,
+        "evidence": {
+          "url": "https://www.wikidata.org/entity/Q1013249",
+          "sha256": "f42a60541216840fe48bf9749da139d760cb2d9a424cb763928caec0e06c3587",
+          "checked_at": "2026-11-13",
+          "locator": "Wikidata QID/country/P625 checked city reference",
+          "sha256_scope": "local_reference_file",
+          "snapshot_path": "../phase3/city-references.json"
+        }
+      },
+      "listed_exposure": {
+        "ticker": "AMT",
+        "name": "American Tower"
+      },
+      "invest": {
+        "exposures": [
+          {
+            "name": "American Tower",
+            "ticker": "AMT",
+            "exchange": "XNYS",
+            "category": "operator",
+            "category_label": "Disclosed operator exposure; property/phase/JV scope retained",
+            "role_labels": [
+              "Disclosed operator exposure; property/phase/JV scope retained"
+            ],
+            "maturity": "reported",
+            "investment_route": {
+              "type": "listed_REIT",
+              "verified": true,
+              "scope": "Indirect listed-company equity exposure; no direct property purchase"
+            },
+            "hq": {
+              "city": "Boston",
+              "lat": 42.3603,
+              "lon": -71.0578
+            }
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Official project evidence",
+          "url": "https://www.coresite.com/news/coresite-launches-ny3-data-center-expanding-ai-optimized-capacity-in-the-new-york-metro-area"
+        },
+        {
+          "name": "Listing evidence",
+          "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000035/amt-20251231.htm"
+        },
+        {
+          "name": "Geographic evidence",
+          "url": "https://www.wikidata.org/entity/Q1013249"
+        }
+      ],
+      "capacity": null,
+      "expected_completion": null,
+      "review_state": "Data review cleared; integration approval pending",
+      "preview_only": true,
+      "asset": {
+        "category": "building",
+        "subtype": "Data center development",
+        "parent_id": null,
+        "count_as_project": true,
+        "building_identity_evidence": {
+          "url": "https://www.coresite.com/news/coresite-launches-ny3-data-center-expanding-ai-optimized-capacity-in-the-new-york-metro-area",
+          "sha256": "ab006921111b84402bee22fc54b49847a898f1c049231b4b7506d06aff15253a",
+          "checked_at": "2026-11-13T01:32:37.578454+00:00",
+          "locator": "Official named facility development announcement"
+        }
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "cleared",
+            "basis": "Narrow independently authored US facility facts, source-specific access check; see REUSE-ASSESSMENT.md. No source text/table/photo redistribution or bulk directory reuse."
+          },
+          "status": {
+            "status": "cleared",
+            "basis": "Narrow independently authored US facility facts, source-specific access check; see REUSE-ASSESSMENT.md. No source text/table/photo redistribution or bulk directory reuse."
+          },
+          "economic_relationship": {
+            "status": "cleared",
+            "basis": "Narrow independently authored US facility facts, source-specific access check; see REUSE-ASSESSMENT.md. No source text/table/photo redistribution or bulk directory reuse."
+          },
+          "listing": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "location": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "reported_metrics": {
+            "status": "omit",
+            "basis": "Corporate capacity/cost/table-derived metrics excluded from minimal discovery export"
+          }
+        },
+        "review": {
+          "reviewer": "Codex bounded factual-source assessment (not publisher legal sign-off)",
+          "date": "2026-11-13",
+          "basis": "REUSE-ASSESSMENT.md, minimum NY3 factual projection; source checks and omissions recorded",
+          "fact_sha256": "cfa9a6dcbda33ce4501f32a097fc2e053f9a01efdbda91a0f1a275eb71291510"
+        }
+      }
+    }
+  ],
+  "public_deployment_approved": false,
+  "data_ready_dc_count": 1,
+  "notice": "Local review only. No production release. Not investment advice."
+}

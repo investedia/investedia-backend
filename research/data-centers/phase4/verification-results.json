@@ -1,0 +1,140 @@
+{
+  "protected_baseline_files_unchanged": 5,
+  "python": {
+    "tests": 316,
+    "skipped": 4,
+    "result": "OK",
+    "existing_warnings": "ResourceWarnings from inherited track-backfill tests"
+  },
+  "worker": {
+    "passed": 88,
+    "failed": 0
+  },
+  "java": {
+    "tests": 13,
+    "failed": 0,
+    "result": "Maven verify OK with cached Maven/JDK21 setup"
+  },
+  "phase1": {
+    "tests": 14,
+    "result": "OK"
+  },
+  "phase2": {
+    "tests": 17,
+    "result": "OK"
+  },
+  "phase3": {
+    "tests": 16,
+    "result": "OK"
+  },
+  "phase4": {
+    "tests": 35,
+    "result": "OK"
+  },
+  "browser": [
+    {
+      "width": 1440,
+      "theme": "dark",
+      "records": 7,
+      "energy": 2,
+      "data_centers": 5,
+      "sector_filter": true,
+      "company_filter": true,
+      "exposure_filter": true,
+      "search": true,
+      "globe_rotation": true,
+      "hq_toggle": true,
+      "precision_labels": true,
+      "ny3_data_review_label": true,
+      "load_ms": 212,
+      "site_imagery_requests": 0,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "records": 7,
+      "energy": 2,
+      "data_centers": 5,
+      "sector_filter": true,
+      "company_filter": true,
+      "exposure_filter": true,
+      "search": true,
+      "globe_rotation": true,
+      "hq_toggle": true,
+      "precision_labels": true,
+      "ny3_data_review_label": true,
+      "load_ms": 132,
+      "site_imagery_requests": 0,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "records": 7,
+      "energy": 2,
+      "data_centers": 5,
+      "sector_filter": true,
+      "company_filter": true,
+      "exposure_filter": true,
+      "search": true,
+      "globe_rotation": true,
+      "hq_toggle": true,
+      "precision_labels": true,
+      "ny3_data_review_label": true,
+      "load_ms": 113,
+      "site_imagery_requests": 0,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "records": 7,
+      "energy": 2,
+      "data_centers": 5,
+      "sector_filter": true,
+      "company_filter": true,
+      "exposure_filter": true,
+      "search": true,
+      "globe_rotation": true,
+      "hq_toggle": true,
+      "precision_labels": true,
+      "ny3_data_review_label": true,
+      "load_ms": 105,
+      "site_imagery_requests": 0,
+      "overflow": false,
+      "errors": []
+    }
+  ],
+  "energy_compatibility": {
+    "commit": "c78ab084349b43e4c166fa0f6a0dde6dbae8af5c",
+    "energy_records_normalized": 150,
+    "raw_records": 150,
+    "input_unchanged": true,
+    "repeated_normalization_identical": true,
+    "normalized_sha256": "c40e7b15d9fe9bc5ddd4255ffca56a4126f9b8fe721acb2e063105ecf8908393",
+    "loader_sha256": "39ea5a869b04105f34d9351f2c3ce13e353dd7fd744590ee433478a0dada07fa",
+    "production_files_modified": false,
+    "selected_preview_ids": [
+      "eia:708",
+      "eia:728"
+    ],
+    "wrapper_records_validated": 150,
+    "all_legacy_outputs_preserved": true,
+    "source_bundle_unchanged": true,
+    "wrapper_validation_total_ms": 26.66
+  },
+  "initial_environment_attempts": [
+    "mvn not on PATH",
+    "Default Maven cache path unwritable",
+    "Fresh Maven dependency request lacked proxy settings",
+    "System Java21 is JRE-only; cached JDK21 selected"
+  ],
+  "unresolved_test_failures": [],
+  "production_edits": false,
+  "push": false,
+  "deployment": false
+}

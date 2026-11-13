@@ -1,0 +1,155 @@
+{
+  "schema": "investedia.projects.data-review.v1",
+  "status": "data-reviewed only; no shared integration or production release approved",
+  "projects": [
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "project:coresite:NY3",
+      "name": "CoreSite NY3",
+      "sector": "data_centers",
+      "country_code": "US",
+      "city": "Secaucus",
+      "asset": {
+        "category": "building",
+        "subtype": "Data center development",
+        "parent_id": null,
+        "count_as_project": true,
+        "building_identity_evidence": {
+          "url": "https://www.coresite.com/news/coresite-launches-ny3-data-center-expanding-ai-optimized-capacity-in-the-new-york-metro-area",
+          "sha256": "ab006921111b84402bee22fc54b49847a898f1c049231b4b7506d06aff15253a",
+          "checked_at": "2026-11-13T01:32:37.578454+00:00",
+          "locator": "Official named facility development announcement"
+        }
+      },
+      "status": {
+        "stage": "operating",
+        "label": "Operating facility, company-reported; launched 25 September 2025",
+        "as_of": "2026-11-13",
+        "certainty": "company_reported",
+        "evidence": {
+          "url": "https://www.coresite.com/data-center/ny3-secaucus-nj",
+          "sha256": "0844383897fd1375018dd54d970f787f9e76f2d5f29c41398392892833dae52a",
+          "checked_at": "2026-11-13",
+          "locator": "Current NY3 service page, named facility and operating services; checked separately from launch announcement"
+        }
+      },
+      "location": {
+        "precision": "approximate",
+        "lat": 40.7875,
+        "lon": -74.061666666,
+        "label": "Secaucus city reference",
+        "basis": "Verified city, not facility footprint",
+        "satellite_allowed": false,
+        "evidence": {
+          "url": "https://www.wikidata.org/entity/Q1013249",
+          "sha256": "f42a60541216840fe48bf9749da139d760cb2d9a424cb763928caec0e06c3587",
+          "checked_at": "2026-11-13",
+          "locator": "Wikidata QID/country/P625 checked city reference",
+          "sha256_scope": "local_reference_file",
+          "snapshot_path": "../phase3/city-references.json"
+        }
+      },
+      "identity_evidence": {
+        "url": "https://www.coresite.com/news/coresite-launches-ny3-data-center-expanding-ai-optimized-capacity-in-the-new-york-metro-area",
+        "sha256": "ab006921111b84402bee22fc54b49847a898f1c049231b4b7506d06aff15253a",
+        "checked_at": "2026-11-13T01:32:37.578454+00:00",
+        "locator": "Official named facility development announcement"
+      },
+      "exposures": [
+        {
+          "role": "operator",
+          "label": "Disclosed operator exposure; property/phase/JV scope retained",
+          "relationship_scope": "specific named facility operating exposure",
+          "maturity": "reported",
+          "property_stake": null,
+          "listing": {
+            "name": "American Tower",
+            "ticker": "AMT",
+            "exchange": "XNYS",
+            "exchange_mic": "XNYS",
+            "security_type": "common_equity",
+            "evidence": {
+              "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000035/amt-20251231.htm",
+              "sha256": "fb453bdf34d5cd97ed91e28b37cf34a58cbe267d22e09050d436aea6d0095b01",
+              "checked_at": "2026-11-13",
+              "locator": "Cover securities table: common equity ticker and exchange"
+            }
+          },
+          "evidence": {
+            "url": "https://www.coresite.com/news/coresite-launches-ny3-data-center-expanding-ai-optimized-capacity-in-the-new-york-metro-area",
+            "sha256": "ab006921111b84402bee22fc54b49847a898f1c049231b4b7506d06aff15253a",
+            "checked_at": "2026-11-13T01:32:37.578454+00:00",
+            "locator": "Official named facility development announcement"
+          },
+          "headquarters": {
+            "city": "Boston",
+            "lat": 42.3603,
+            "lon": -71.0578,
+            "precision": "approximate",
+            "evidence": {
+              "url": "https://www.wikidata.org/entity/Q4745263",
+              "sha256": "f62b1a230667bd334151a789dca59a91648dadface231c65d4f5930fbdb2fb44",
+              "checked_at": "2026-11-11",
+              "locator": "Existing CC0 HQ city reference",
+              "sha256_scope": "local_reference_file",
+              "snapshot_path": "../phase3/headquarters-references.json"
+            }
+          },
+          "investment_access": {
+            "type": "listed_REIT",
+            "verified": true,
+            "scope": "Indirect listed-company equity exposure; no direct property purchase"
+          },
+          "parent_chain_evidence": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000157/amt-20260930.htm",
+            "sha256": "610c29ad1b5c8808ae4982a4a0929d39baf51fec866274d7695a836ba9dfb905",
+            "checked_at": "2026-11-13T01:30:17.912119+00:00",
+            "locator": "US operating business chain; separate minority development JV not assumed to be DE3"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "company_confirmed",
+        "date": "2026-11-13",
+        "property_title_verified": false
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "cleared",
+            "basis": "Narrow independently authored US facility facts, source-specific access check; see REUSE-ASSESSMENT.md. No source text/table/photo redistribution or bulk directory reuse."
+          },
+          "status": {
+            "status": "cleared",
+            "basis": "Narrow independently authored US facility facts, source-specific access check; see REUSE-ASSESSMENT.md. No source text/table/photo redistribution or bulk directory reuse."
+          },
+          "economic_relationship": {
+            "status": "cleared",
+            "basis": "Narrow independently authored US facility facts, source-specific access check; see REUSE-ASSESSMENT.md. No source text/table/photo redistribution or bulk directory reuse."
+          },
+          "listing": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "location": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "reported_metrics": {
+            "status": "omit",
+            "basis": "Corporate capacity/cost/table-derived metrics excluded from minimal discovery export"
+          }
+        },
+        "review": {
+          "reviewer": "Codex bounded factual-source assessment (not publisher legal sign-off)",
+          "date": "2026-11-13",
+          "basis": "REUSE-ASSESSMENT.md, minimum NY3 factual projection; source checks and omissions recorded",
+          "fact_sha256": "cfa9a6dcbda33ce4501f32a097fc2e053f9a01efdbda91a0f1a275eb71291510"
+        }
+      },
+      "preview_only": true,
+      "notes": []
+    }
+  ]
+}

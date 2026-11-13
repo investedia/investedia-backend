@@ -1,0 +1,140 @@
+{
+  "new_verified_exact_sites": 0,
+  "retained_dc_city_references": 5,
+  "records": [
+    {
+      "facility": "NY3",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=2+Emerson+Lane+Secaucus&format=jsonv2&limit=3&addressdetails=1",
+      "response_sha256": "c1016b8fb6576f356409a304379ca3701edcc595ab86992a4f198781e3f1e63c",
+      "licence": "ODbL 1.0",
+      "credit": "© OpenStreetMap contributors",
+      "candidate_count": 1,
+      "release_use": "Not included in public candidate or Globe; separate internal comparison layer",
+      "exact_site_accepted": false,
+      "first_match": {
+        "osm_type": "way",
+        "osm_id": 1383916144,
+        "category": "building",
+        "type": "data_center",
+        "name": "CoreSite NY3",
+        "lat": "40.7849039",
+        "lon": "-74.0653573",
+        "address": {
+          "building": "CoreSite NY3",
+          "house_number": "2",
+          "road": "Emerson Lane",
+          "hamlet": "Harmon Cove",
+          "town": "Secaucus",
+          "county": "Hudson County",
+          "state": "New Jersey",
+          "ISO3166-2-lvl4": "US-NJ",
+          "postcode": "07094",
+          "country": "United States",
+          "country_code": "us"
+        }
+      },
+      "official_service_pin": {
+        "lat": 40.7829,
+        "lon": -74.0601
+      },
+      "offset_metres": 496,
+      "reason": "Named OSM building/address matches NY3, but official JSON-LD point disagrees. Shared NY2 address and separate adjacent buildings require footprint/planning reconciliation before exact-site promotion."
+    },
+    {
+      "facility": "SV18",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=127+Great+Oaks+Boulevard+San+Jose&format=jsonv2&limit=3&addressdetails=1",
+      "response_sha256": "af5943616b8db08e7512c89b2abc27886d747d6e5c9ce73d8c4c62049e7e96dd",
+      "licence": "ODbL 1.0",
+      "credit": "© OpenStreetMap contributors",
+      "candidate_count": 1,
+      "release_use": "Not included in public candidate or Globe; separate internal comparison layer",
+      "exact_site_accepted": false,
+      "first_match": {
+        "osm_type": "way",
+        "osm_id": 393786511,
+        "category": "place",
+        "type": "house",
+        "name": "",
+        "lat": "37.2326075",
+        "lon": "-121.7804422",
+        "address": {
+          "house_number": "127",
+          "road": "Great Oaks Boulevard",
+          "city": "San Jose",
+          "county": "Santa Clara County",
+          "state": "California",
+          "ISO3166-2-lvl4": "US-CA",
+          "postcode": "95119",
+          "country": "United States",
+          "country_code": "us"
+        }
+      },
+      "official_service_pin": {
+        "lat": 37.23467199,
+        "lon": -121.78465786
+      },
+      "offset_metres": 438,
+      "reason": "Address result is a house/place point, not independent facility identity; official pin disagrees. No exact-site promotion."
+    },
+    {
+      "facility": "MD5",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=Calle+Pedriza+6+Alcobendas&format=jsonv2&limit=3&addressdetails=1",
+      "response_sha256": "900497000820b78653238339d41a5db12d1c8b50267844508c92d6f173a6b630",
+      "licence": "ODbL 1.0",
+      "credit": "© OpenStreetMap contributors",
+      "candidate_count": 1,
+      "release_use": "Not included in public candidate or Globe; separate internal comparison layer",
+      "exact_site_accepted": false,
+      "first_match": {
+        "osm_type": "way",
+        "osm_id": 231940040,
+        "category": "highway",
+        "type": "residential",
+        "name": "Calle de La Pedriza",
+        "lat": "40.5333449",
+        "lon": "-3.6609633",
+        "address": {
+          "road": "Calle de La Pedriza",
+          "city": "Alcobendas",
+          "state": "Comunidad de Madrid",
+          "ISO3166-2-lvl4": "ES-MD",
+          "postcode": "28108",
+          "country": "España",
+          "country_code": "es"
+        }
+      },
+      "reason": "Only street-level matches returned; not facility/house-number proof. Official page pin is not independently certified."
+    },
+    {
+      "facility": "DE3",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=4900+Race+Street+Denver&format=jsonv2&limit=3&addressdetails=1",
+      "response_sha256": "ab720e29b4aa66c9afc7b11f270ddc1c7e35e8048a3ad963655adc6286e259fe",
+      "licence": "ODbL 1.0",
+      "credit": "© OpenStreetMap contributors",
+      "candidate_count": 3,
+      "release_use": "Not included in public candidate or Globe; separate internal comparison layer",
+      "exact_site_accepted": false,
+      "first_match": {
+        "osm_type": "way",
+        "osm_id": 896829528,
+        "category": "highway",
+        "type": "residential",
+        "name": "Race Street",
+        "lat": "39.7632472",
+        "lon": "-104.9634495",
+        "address": {
+          "road": "Race Street",
+          "neighbourhood": "Cole Neighborhood Historic District",
+          "suburb": "Cole",
+          "city": "Denver",
+          "state": "Colorado",
+          "ISO3166-2-lvl4": "US-CO",
+          "postcode": "80205",
+          "country": "United States",
+          "country_code": "us"
+        }
+      },
+      "reason": "Only street-level matches returned; not facility/house-number proof. Official page pin is not independently certified."
+    }
+  ]
+}

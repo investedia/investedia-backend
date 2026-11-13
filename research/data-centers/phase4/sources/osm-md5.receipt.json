@@ -1,0 +1,8 @@
+{
+  "url": "https://nominatim.openstreetmap.org/search?q=Calle+Pedriza+6+Alcobendas&format=jsonv2&limit=3&addressdetails=1",
+  "retrieved_at": "2026-11-13T11:02:42.680649+00:00",
+  "status": 200,
+  "final_url": "https://nominatim.openstreetmap.org/search?q=Calle+Pedriza+6+Alcobendas&format=jsonv2&limit=3&addressdetails=1",
+  "bytes": 657,
+  "sha256": "900497000820b78653238339d41a5db12d1c8b50267844508c92d6f173a6b630"
+}

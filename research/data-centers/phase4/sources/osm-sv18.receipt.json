@@ -1,0 +1,8 @@
+{
+  "url": "https://nominatim.openstreetmap.org/search?q=127+Great+Oaks+Boulevard+San+Jose&format=jsonv2&limit=3&addressdetails=1",
+  "retrieved_at": "2026-11-13T11:02:40.659700+00:00",
+  "status": 200,
+  "final_url": "https://nominatim.openstreetmap.org/search?q=127+Great+Oaks+Boulevard+San+Jose&format=jsonv2&limit=3&addressdetails=1",
+  "bytes": 700,
+  "sha256": "af5943616b8db08e7512c89b2abc27886d747d6e5c9ce73d8c4c62049e7e96dd"
+}

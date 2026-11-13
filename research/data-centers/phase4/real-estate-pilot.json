@@ -1,0 +1,1035 @@
+{
+  "schema": "investedia.real-estate.pilot.research.v1",
+  "prerequisites": {
+    "sector_adapter_tests_passed": true,
+    "five_dc_candidate_reviews_completed": true,
+    "production_approval": false
+  },
+  "counts": {
+    "property_candidates": 10,
+    "verified_specific_developer_relationships": 3,
+    "portfolio_affiliations_only": 7,
+    "verified_property_ownership": 0,
+    "verified_property_investment_routes": 0,
+    "public_release_eligible": 0,
+    "companies_with_property_candidates": 3,
+    "companies_source_audited": 5
+  },
+  "companies": [
+    {
+      "name": "Prologis",
+      "documents": [
+        "prologis-investors",
+        "prologis-presentation",
+        "prologis-sec"
+      ],
+      "result": "Issuer listing PLD on NYSE confirmed by current SEC submissions; accessible presentation/supplement contain regional/portfolio aggregates, not enough to create named property ownership links. Corporate development/UK property URLs returned HTTP405.",
+      "property_records": 0,
+      "listing_verified": true,
+      "listing": {
+        "ticker": "PLD",
+        "mic": "XNYS",
+        "security_type": "common_equity",
+        "evidence": {
+          "url": "https://data.sec.gov/submissions/CIK0001045609.json",
+          "sha256": "1369c6acb0f256140d2a420c0c791706bece87a8057c3395592f5cf560b61b80",
+          "checked_at": "2026-11-13T11:10:41.545852+00:00",
+          "locator": "SEC submissions tickers/exchanges: PLD/NYSE"
+        }
+      },
+      "next_step": "Use an accessible official project announcement or property-specific planning/ownership document; no regional aggregate becomes a property."
+    },
+    {
+      "name": "SEGRO",
+      "documents": [
+        "segro-bologna",
+        "segro-northern-italy",
+        "segro-disclaimer"
+      ],
+      "result": "Two specifically named developer relationships verified; no property title or stake established. Official release confirms company REIT/listed status; exact current ticker/MIC mapping remains pending after guessed share URL404.",
+      "property_records": 2,
+      "listing_verified": false
+    },
+    {
+      "name": "Goodman Group",
+      "documents": [
+        "goodman-q1fy27",
+        "goodman-portfolio",
+        "goodman-terms"
+      ],
+      "result": "Official Q1 FY27 logistics discussion is aggregate; named project table concerns Data Centers, not logistics properties. Public property page is script-only in this request. No invented property rows. Preserve stapled-security distinction; current security URL404.",
+      "property_records": 0,
+      "listing_verified": false,
+      "next_step": "Seek official property-level logistics case study and current ASX stapled-security evidence; do not use portfolio totals or DC projects as Real Estate pilot properties."
+    },
+    {
+      "name": "WDP",
+      "documents": [
+        "wdp-hazeldonk",
+        "wdp-hazeldonk-project",
+        "wdp-share",
+        "wdp-disclaimer"
+      ],
+      "result": "One specific redevelopment relationship verified, no title/stake. Official share page confirms Euronext listings; precise current share class/ticker/MIC mapping still requires identifier evidence.",
+      "property_records": 1,
+      "listing_verified": false
+    },
+    {
+      "name": "Montea",
+      "documents": [
+        "montea-quartz",
+        "montea-silica",
+        "montea-share",
+        "montea-disclaimer",
+        "montea-italy"
+      ],
+      "result": "Seven property-specific candidates; portfolio marketing is not ownership/developer proof. Share page links BE0003853703-XBRU; no live price data consumed. Italy transaction is separate context, not ten verified properties or a completed-acquisition claim.",
+      "property_records": 7,
+      "listing_verified": false
+    }
+  ],
+  "projects": [
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "re:segro-bologna",
+      "name": "SEGRO Bologna Interport delivered building",
+      "sector": "real_estate",
+      "country_code": "IT",
+      "city": "Bologna",
+      "asset": {
+        "category": "building",
+        "subtype": "Logistics real estate",
+        "parent_id": null,
+        "count_as_project": true,
+        "building_identity_evidence": {
+          "url": "https://www.segro.com/media/news/2026/021126-segro-delivers-a-logistics-property-of-over-23-000-sqm-in-bologna",
+          "sha256": "517661df6d97d00b2105603026e87ed1a79f17070ffe64095deee8bbc487ea06",
+          "checked_at": "2026-11-13T11:03:12.936089+00:00",
+          "locator": "Named delivery announcement: SEGRO built and delivered a new logistics building"
+        }
+      },
+      "status": {
+        "stage": "completed",
+        "label": "Company reports delivery on 2 November 2026",
+        "as_of": "2026-11-13"
+      },
+      "location": {
+        "precision": "unknown",
+        "lat": null,
+        "lon": null,
+        "label": "Bologna; no checked point",
+        "satellite_allowed": false
+      },
+      "identity_evidence": {
+        "url": "https://www.segro.com/media/news/2026/021126-segro-delivers-a-logistics-property-of-over-23-000-sqm-in-bologna",
+        "sha256": "517661df6d97d00b2105603026e87ed1a79f17070ffe64095deee8bbc487ea06",
+        "checked_at": "2026-11-13T11:03:12.936089+00:00",
+        "locator": "Named delivery announcement: SEGRO built and delivered a new logistics building"
+      },
+      "exposures": [
+        {
+          "role": "developer",
+          "label": "Company-confirmed developer",
+          "relationship_scope": "Specific named development",
+          "property_stake": null,
+          "listing": null,
+          "evidence": {
+            "url": "https://www.segro.com/media/news/2026/021126-segro-delivers-a-logistics-property-of-over-23-000-sqm-in-bologna",
+            "sha256": "517661df6d97d00b2105603026e87ed1a79f17070ffe64095deee8bbc487ea06",
+            "checked_at": "2026-11-13T11:03:12.936089+00:00",
+            "locator": "Named delivery announcement: SEGRO built and delivered a new logistics building"
+          },
+          "headquarters": null,
+          "investment_access": {
+            "type": "research_only",
+            "verified": false,
+            "scope": "Current security mapping/asset-level chain pending; no investable property route asserted"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "company_confirmed",
+        "property_title_verified": false,
+        "company": "SEGRO"
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "listing": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "location": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          }
+        },
+        "review": null
+      },
+      "preview_only": true,
+      "blockers": [
+        "commercial_reuse_pending",
+        "current_listing_mapping_pending",
+        "exact_economic_chain_pending",
+        "coordinates_unverified"
+      ]
+    },
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "re:segro-northern-italy",
+      "name": "SEGRO Calvenzano logistics development",
+      "sector": "real_estate",
+      "country_code": "IT",
+      "city": "Calvenzano",
+      "asset": {
+        "category": "building",
+        "subtype": "Logistics real estate",
+        "parent_id": null,
+        "count_as_project": true,
+        "building_identity_evidence": {
+          "url": "https://www.segro.com/media/news/2026/151026-segro-strengthens-its-presence-in-northern-italy-with-a-new-53-000-m2-development",
+          "sha256": "dfb0440b01552851ba1c1ae17c839576e8b2a698896e380ae7bfb7c0fc6f13cf",
+          "checked_at": "2026-11-13T11:03:12.936702+00:00",
+          "locator": "15 October 2026 announcement: SEGRO construction start, Calvenzano municipality"
+        }
+      },
+      "status": {
+        "stage": "under_construction",
+        "label": "Work started; completion targeted November 2027, not guaranteed",
+        "as_of": "2026-11-13"
+      },
+      "location": {
+        "precision": "unknown",
+        "lat": null,
+        "lon": null,
+        "label": "Calvenzano; no checked point",
+        "satellite_allowed": false
+      },
+      "identity_evidence": {
+        "url": "https://www.segro.com/media/news/2026/151026-segro-strengthens-its-presence-in-northern-italy-with-a-new-53-000-m2-development",
+        "sha256": "dfb0440b01552851ba1c1ae17c839576e8b2a698896e380ae7bfb7c0fc6f13cf",
+        "checked_at": "2026-11-13T11:03:12.936702+00:00",
+        "locator": "15 October 2026 announcement: SEGRO construction start, Calvenzano municipality"
+      },
+      "exposures": [
+        {
+          "role": "developer",
+          "label": "Company-confirmed developer",
+          "relationship_scope": "Specific named development",
+          "property_stake": null,
+          "listing": null,
+          "evidence": {
+            "url": "https://www.segro.com/media/news/2026/151026-segro-strengthens-its-presence-in-northern-italy-with-a-new-53-000-m2-development",
+            "sha256": "dfb0440b01552851ba1c1ae17c839576e8b2a698896e380ae7bfb7c0fc6f13cf",
+            "checked_at": "2026-11-13T11:03:12.936702+00:00",
+            "locator": "15 October 2026 announcement: SEGRO construction start, Calvenzano municipality"
+          },
+          "headquarters": null,
+          "investment_access": {
+            "type": "research_only",
+            "verified": false,
+            "scope": "Current security mapping/asset-level chain pending; no investable property route asserted"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "company_confirmed",
+        "property_title_verified": false,
+        "company": "SEGRO"
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "listing": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "location": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          }
+        },
+        "review": null
+      },
+      "preview_only": true,
+      "blockers": [
+        "commercial_reuse_pending",
+        "current_listing_mapping_pending",
+        "exact_economic_chain_pending",
+        "coordinates_unverified"
+      ]
+    },
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "re:wdp-hazeldonk-project",
+      "name": "WDP LogiLink Hazeldonk redevelopment",
+      "sector": "real_estate",
+      "country_code": "NL",
+      "city": "Breda / Hazeldonk",
+      "asset": {
+        "category": "project",
+        "subtype": "Logistics real estate",
+        "parent_id": null,
+        "count_as_project": true
+      },
+      "status": {
+        "stage": "unknown",
+        "label": "Company markets redevelopment and future availability; construction milestone not independently confirmed",
+        "as_of": "2026-11-13"
+      },
+      "location": {
+        "precision": "unknown",
+        "lat": null,
+        "lon": null,
+        "label": "Breda / Hazeldonk; no checked point",
+        "satellite_allowed": false
+      },
+      "identity_evidence": {
+        "url": "https://wdp.eu/en/available-locations/wdplogilink_hazeldonk",
+        "sha256": "c7dfd2e2049542beadc0af53e944163dce1c08a50d0304851c103dc545a04825",
+        "checked_at": "2026-11-13T11:08:08.483262+00:00",
+        "locator": "Named project description: redevelopment by WDP, multi-tenant logistics facility"
+      },
+      "exposures": [
+        {
+          "role": "developer",
+          "label": "Company-confirmed developer",
+          "relationship_scope": "Specific named development",
+          "property_stake": null,
+          "listing": null,
+          "evidence": {
+            "url": "https://wdp.eu/en/available-locations/wdplogilink_hazeldonk",
+            "sha256": "c7dfd2e2049542beadc0af53e944163dce1c08a50d0304851c103dc545a04825",
+            "checked_at": "2026-11-13T11:08:08.483262+00:00",
+            "locator": "Named project description: redevelopment by WDP, multi-tenant logistics facility"
+          },
+          "headquarters": null,
+          "investment_access": {
+            "type": "research_only",
+            "verified": false,
+            "scope": "Current security mapping/asset-level chain pending; no investable property route asserted"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "company_confirmed",
+        "property_title_verified": false,
+        "company": "WDP"
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "listing": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "location": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          }
+        },
+        "review": null
+      },
+      "preview_only": true,
+      "blockers": [
+        "commercial_reuse_pending",
+        "current_listing_mapping_pending",
+        "exact_economic_chain_pending",
+        "coordinates_unverified"
+      ]
+    },
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "re:montea-quartz",
+      "name": "Logistic Park Glassworks DC Quartz",
+      "sector": "real_estate",
+      "country_code": "NL",
+      "city": "Tiel",
+      "asset": {
+        "category": "building",
+        "subtype": "Logistics real estate",
+        "parent_id": "campus:montea:glassworks",
+        "count_as_project": true,
+        "building_identity_evidence": {
+          "url": "https://montea.com/en/warehouse/tiel-dcquartz",
+          "sha256": "03b586550fb1fe0c49321626254043c34f668dc8646086420b0f7476f9903fec",
+          "checked_at": "2026-11-13T11:03:14.263834+00:00",
+          "locator": "Named DC Quartz page, location Tiel, leased status and redevelopment context"
+        }
+      },
+      "status": {
+        "stage": "unknown",
+        "label": "Company reports leased building and remaining availability; leasing is not an operating-status audit",
+        "as_of": "2026-11-13"
+      },
+      "location": {
+        "precision": "unknown",
+        "lat": null,
+        "lon": null,
+        "label": "Tiel; no checked point",
+        "satellite_allowed": false
+      },
+      "identity_evidence": {
+        "url": "https://montea.com/en/warehouse/tiel-dcquartz",
+        "sha256": "03b586550fb1fe0c49321626254043c34f668dc8646086420b0f7476f9903fec",
+        "checked_at": "2026-11-13T11:03:14.263834+00:00",
+        "locator": "Named DC Quartz page, location Tiel, leased status and redevelopment context"
+      },
+      "exposures": [
+        {
+          "role": "affiliation",
+          "label": "Portfolio affiliation only; economic role not established",
+          "relationship_scope": "Company markets this property; title, lessor and development entity unresolved",
+          "property_stake": null,
+          "listing": null,
+          "evidence": {
+            "url": "https://montea.com/en/warehouse/tiel-dcquartz",
+            "sha256": "03b586550fb1fe0c49321626254043c34f668dc8646086420b0f7476f9903fec",
+            "checked_at": "2026-11-13T11:03:14.263834+00:00",
+            "locator": "Named DC Quartz page, location Tiel, leased status and redevelopment context"
+          },
+          "headquarters": null,
+          "investment_access": {
+            "type": "research_only",
+            "verified": false,
+            "scope": "Current security mapping/asset-level chain pending; no investable property route asserted"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "research_only_affiliation",
+        "property_title_verified": false,
+        "company": "Montea"
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "listing": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "location": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          }
+        },
+        "review": null
+      },
+      "preview_only": true,
+      "blockers": [
+        "commercial_reuse_pending",
+        "current_listing_mapping_pending",
+        "exact_economic_chain_pending",
+        "coordinates_unverified",
+        "economic_role_not_proven"
+      ]
+    },
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "re:montea-silica",
+      "name": "Logistic Park Glassworks DC Silica",
+      "sector": "real_estate",
+      "country_code": "NL",
+      "city": "Tiel",
+      "asset": {
+        "category": "building",
+        "subtype": "Logistics real estate",
+        "parent_id": "campus:montea:glassworks",
+        "count_as_project": true,
+        "building_identity_evidence": {
+          "url": "https://montea.com/en/warehouse/tiel-dc-silica",
+          "sha256": "c0bb7296d7fdafe48b76d6c97ca35302e99a24e2c29f47b25f6fdcde97ea81aa",
+          "checked_at": "2026-11-13T11:03:14.306827+00:00",
+          "locator": "Distinct named DC Silica page; land-for-development label"
+        }
+      },
+      "status": {
+        "stage": "planning",
+        "label": "Land for development; planned warehouse, not confirmed construction",
+        "as_of": "2026-11-13"
+      },
+      "location": {
+        "precision": "unknown",
+        "lat": null,
+        "lon": null,
+        "label": "Tiel; no checked point",
+        "satellite_allowed": false
+      },
+      "identity_evidence": {
+        "url": "https://montea.com/en/warehouse/tiel-dc-silica",
+        "sha256": "c0bb7296d7fdafe48b76d6c97ca35302e99a24e2c29f47b25f6fdcde97ea81aa",
+        "checked_at": "2026-11-13T11:03:14.306827+00:00",
+        "locator": "Distinct named DC Silica page; land-for-development label"
+      },
+      "exposures": [
+        {
+          "role": "affiliation",
+          "label": "Portfolio affiliation only; economic role not established",
+          "relationship_scope": "Company markets this property; title, lessor and development entity unresolved",
+          "property_stake": null,
+          "listing": null,
+          "evidence": {
+            "url": "https://montea.com/en/warehouse/tiel-dc-silica",
+            "sha256": "c0bb7296d7fdafe48b76d6c97ca35302e99a24e2c29f47b25f6fdcde97ea81aa",
+            "checked_at": "2026-11-13T11:03:14.306827+00:00",
+            "locator": "Distinct named DC Silica page; land-for-development label"
+          },
+          "headquarters": null,
+          "investment_access": {
+            "type": "research_only",
+            "verified": false,
+            "scope": "Current security mapping/asset-level chain pending; no investable property route asserted"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "research_only_affiliation",
+        "property_title_verified": false,
+        "company": "Montea"
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "listing": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "location": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          }
+        },
+        "review": null
+      },
+      "preview_only": true,
+      "blockers": [
+        "commercial_reuse_pending",
+        "current_listing_mapping_pending",
+        "exact_economic_chain_pending",
+        "coordinates_unverified",
+        "economic_role_not_proven"
+      ]
+    },
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "re:montea-combronde",
+      "name": "Combronde ZAC du Parc de l’Aize development land",
+      "sector": "real_estate",
+      "country_code": "FR",
+      "city": "Combronde",
+      "asset": {
+        "category": "project",
+        "subtype": "Logistics real estate",
+        "parent_id": null,
+        "count_as_project": true
+      },
+      "status": {
+        "stage": "planning",
+        "label": "Land for development, company-reported",
+        "as_of": "2026-11-13"
+      },
+      "location": {
+        "precision": "unknown",
+        "lat": null,
+        "lon": null,
+        "label": "Combronde; no checked point",
+        "satellite_allowed": false
+      },
+      "identity_evidence": {
+        "url": "https://montea.com/en/warehouse/combronde-zac-du-parc-de-laize",
+        "sha256": "7774061dc582e528a51031bd71257769ce07f19cc605b71de3ac9dccdef0f0e5",
+        "checked_at": "2026-11-13T11:03:18.160940+00:00",
+        "locator": "Named address/site and land-for-development label"
+      },
+      "exposures": [
+        {
+          "role": "affiliation",
+          "label": "Portfolio affiliation only; economic role not established",
+          "relationship_scope": "Company markets this property; title, lessor and development entity unresolved",
+          "property_stake": null,
+          "listing": null,
+          "evidence": {
+            "url": "https://montea.com/en/warehouse/combronde-zac-du-parc-de-laize",
+            "sha256": "7774061dc582e528a51031bd71257769ce07f19cc605b71de3ac9dccdef0f0e5",
+            "checked_at": "2026-11-13T11:03:18.160940+00:00",
+            "locator": "Named address/site and land-for-development label"
+          },
+          "headquarters": null,
+          "investment_access": {
+            "type": "research_only",
+            "verified": false,
+            "scope": "Current security mapping/asset-level chain pending; no investable property route asserted"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "research_only_affiliation",
+        "property_title_verified": false,
+        "company": "Montea"
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "listing": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "location": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          }
+        },
+        "review": null
+      },
+      "preview_only": true,
+      "blockers": [
+        "commercial_reuse_pending",
+        "current_listing_mapping_pending",
+        "exact_economic_chain_pending",
+        "coordinates_unverified",
+        "economic_role_not_proven"
+      ]
+    },
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "re:montea-echt",
+      "name": "Echt Fahrenheitstraat development land",
+      "sector": "real_estate",
+      "country_code": "NL",
+      "city": "Echt",
+      "asset": {
+        "category": "project",
+        "subtype": "Logistics real estate",
+        "parent_id": null,
+        "count_as_project": true
+      },
+      "status": {
+        "stage": "planning",
+        "label": "Future brownfield potential subject to planning; no construction claim",
+        "as_of": "2026-11-13"
+      },
+      "location": {
+        "precision": "unknown",
+        "lat": null,
+        "lon": null,
+        "label": "Echt; no checked point",
+        "satellite_allowed": false
+      },
+      "identity_evidence": {
+        "url": "https://montea.com/en/warehouse/echt-the-netherlands",
+        "sha256": "30f43264a01af0a53dc429ce82ff3477cba36ba5f2cd3ca595a52f0840f77a68",
+        "checked_at": "2026-11-13T11:03:18.605877+00:00",
+        "locator": "Named site and planning/permitting qualification"
+      },
+      "exposures": [
+        {
+          "role": "affiliation",
+          "label": "Portfolio affiliation only; economic role not established",
+          "relationship_scope": "Company markets this property; title, lessor and development entity unresolved",
+          "property_stake": null,
+          "listing": null,
+          "evidence": {
+            "url": "https://montea.com/en/warehouse/echt-the-netherlands",
+            "sha256": "30f43264a01af0a53dc429ce82ff3477cba36ba5f2cd3ca595a52f0840f77a68",
+            "checked_at": "2026-11-13T11:03:18.605877+00:00",
+            "locator": "Named site and planning/permitting qualification"
+          },
+          "headquarters": null,
+          "investment_access": {
+            "type": "research_only",
+            "verified": false,
+            "scope": "Current security mapping/asset-level chain pending; no investable property route asserted"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "research_only_affiliation",
+        "property_title_verified": false,
+        "company": "Montea"
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "listing": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "location": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          }
+        },
+        "review": null
+      },
+      "preview_only": true,
+      "blockers": [
+        "commercial_reuse_pending",
+        "current_listing_mapping_pending",
+        "exact_economic_chain_pending",
+        "coordinates_unverified",
+        "economic_role_not_proven"
+      ]
+    },
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "re:montea-puurs",
+      "name": "Puurs Rijksweg 85–89 development site",
+      "sector": "real_estate",
+      "country_code": "BE",
+      "city": "Puurs",
+      "asset": {
+        "category": "project",
+        "subtype": "Logistics real estate",
+        "parent_id": null,
+        "count_as_project": true
+      },
+      "status": {
+        "stage": "planning",
+        "label": "Marketed build-to-suit opportunity; no construction start established",
+        "as_of": "2026-11-13"
+      },
+      "location": {
+        "precision": "unknown",
+        "lat": null,
+        "lon": null,
+        "label": "Puurs; no checked point",
+        "satellite_allowed": false
+      },
+      "identity_evidence": {
+        "url": "https://montea.com/en/warehouse/puurs-rijksweg-85-89",
+        "sha256": "ff238c63a319992a3f76d5d6d35834aa7008186756450305a64beef2b2d464e4",
+        "checked_at": "2026-11-13T11:08:08.604854+00:00",
+        "locator": "Named address and land-for-development classification"
+      },
+      "exposures": [
+        {
+          "role": "affiliation",
+          "label": "Portfolio affiliation only; economic role not established",
+          "relationship_scope": "Company markets this property; title, lessor and development entity unresolved",
+          "property_stake": null,
+          "listing": null,
+          "evidence": {
+            "url": "https://montea.com/en/warehouse/puurs-rijksweg-85-89",
+            "sha256": "ff238c63a319992a3f76d5d6d35834aa7008186756450305a64beef2b2d464e4",
+            "checked_at": "2026-11-13T11:08:08.604854+00:00",
+            "locator": "Named address and land-for-development classification"
+          },
+          "headquarters": null,
+          "investment_access": {
+            "type": "research_only",
+            "verified": false,
+            "scope": "Current security mapping/asset-level chain pending; no investable property route asserted"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "research_only_affiliation",
+        "property_title_verified": false,
+        "company": "Montea"
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "listing": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "location": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          }
+        },
+        "review": null
+      },
+      "preview_only": true,
+      "blockers": [
+        "commercial_reuse_pending",
+        "current_listing_mapping_pending",
+        "exact_economic_chain_pending",
+        "coordinates_unverified",
+        "economic_role_not_proven"
+      ]
+    },
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "re:montea-lummen",
+      "name": "Lummen Dellestraat 20 Lumineus",
+      "sector": "real_estate",
+      "country_code": "BE",
+      "city": "Lummen",
+      "asset": {
+        "category": "project",
+        "subtype": "Logistics real estate",
+        "parent_id": null,
+        "count_as_project": true
+      },
+      "status": {
+        "stage": "planning",
+        "label": "Marketed build-to-suit opportunity; no construction start established",
+        "as_of": "2026-11-13"
+      },
+      "location": {
+        "precision": "unknown",
+        "lat": null,
+        "lon": null,
+        "label": "Lummen; no checked point",
+        "satellite_allowed": false
+      },
+      "identity_evidence": {
+        "url": "https://montea.com/en/warehouse/lummen-dellestraat-20",
+        "sha256": "dc06ba2d2811aa997d1d4450f0d2f0667074cec3e15dd04271bc5523b9a94ce6",
+        "checked_at": "2026-11-13T11:08:11.578667+00:00",
+        "locator": "Named Lumineus project and Dellestraat 20 address"
+      },
+      "exposures": [
+        {
+          "role": "affiliation",
+          "label": "Portfolio affiliation only; economic role not established",
+          "relationship_scope": "Company markets this property; title, lessor and development entity unresolved",
+          "property_stake": null,
+          "listing": null,
+          "evidence": {
+            "url": "https://montea.com/en/warehouse/lummen-dellestraat-20",
+            "sha256": "dc06ba2d2811aa997d1d4450f0d2f0667074cec3e15dd04271bc5523b9a94ce6",
+            "checked_at": "2026-11-13T11:08:11.578667+00:00",
+            "locator": "Named Lumineus project and Dellestraat 20 address"
+          },
+          "headquarters": null,
+          "investment_access": {
+            "type": "research_only",
+            "verified": false,
+            "scope": "Current security mapping/asset-level chain pending; no investable property route asserted"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "research_only_affiliation",
+        "property_title_verified": false,
+        "company": "Montea"
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "listing": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "location": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          }
+        },
+        "review": null
+      },
+      "preview_only": true,
+      "blockers": [
+        "commercial_reuse_pending",
+        "current_listing_mapping_pending",
+        "exact_economic_chain_pending",
+        "coordinates_unverified",
+        "economic_role_not_proven"
+      ]
+    },
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "re:montea-grimbergen",
+      "name": "Grimbergen Oostvaartdijk development site",
+      "sector": "real_estate",
+      "country_code": "BE",
+      "city": "Grimbergen",
+      "asset": {
+        "category": "project",
+        "subtype": "Logistics real estate",
+        "parent_id": null,
+        "count_as_project": true
+      },
+      "status": {
+        "stage": "planning",
+        "label": "Company markets land for development; exact stage unresolved",
+        "as_of": "2026-11-13"
+      },
+      "location": {
+        "precision": "unknown",
+        "lat": null,
+        "lon": null,
+        "label": "Grimbergen; no checked point",
+        "satellite_allowed": false
+      },
+      "identity_evidence": {
+        "url": "https://montea.com/en/warehouse/grimbergen-oostvaartdijk",
+        "sha256": "da96cb1d864e9a6d64e87ea9a18cf9d48f4f9ac167dbece5e5c8a02dfa1ec25a",
+        "checked_at": "2026-11-13T11:10:36.622639+00:00",
+        "locator": "Named Oostvaartdijk site and land-for-development classification"
+      },
+      "exposures": [
+        {
+          "role": "affiliation",
+          "label": "Portfolio affiliation only; economic role not established",
+          "relationship_scope": "Company markets this property; title, lessor and development entity unresolved",
+          "property_stake": null,
+          "listing": null,
+          "evidence": {
+            "url": "https://montea.com/en/warehouse/grimbergen-oostvaartdijk",
+            "sha256": "da96cb1d864e9a6d64e87ea9a18cf9d48f4f9ac167dbece5e5c8a02dfa1ec25a",
+            "checked_at": "2026-11-13T11:10:36.622639+00:00",
+            "locator": "Named Oostvaartdijk site and land-for-development classification"
+          },
+          "headquarters": null,
+          "investment_access": {
+            "type": "research_only",
+            "verified": false,
+            "scope": "Current security mapping/asset-level chain pending; no investable property route asserted"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "research_only_affiliation",
+        "property_title_verified": false,
+        "company": "Montea"
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "listing": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          },
+          "location": {
+            "status": "pending",
+            "basis": "Source-specific commercial factual reuse/access/database conditions unresolved"
+          }
+        },
+        "review": null
+      },
+      "preview_only": true,
+      "blockers": [
+        "commercial_reuse_pending",
+        "current_listing_mapping_pending",
+        "exact_economic_chain_pending",
+        "coordinates_unverified",
+        "economic_role_not_proven"
+      ]
+    }
+  ],
+  "notice": "Internal verification pilot. Ten reviewed candidates are not ten verified investments. Not investment advice."
+}

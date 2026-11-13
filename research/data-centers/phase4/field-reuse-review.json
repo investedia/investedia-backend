@@ -1,0 +1,155 @@
+{
+  "scope": "Field-level factual extraction; not permission to copy documents, tables, photos, logos or directories",
+  "records": {
+    "project:eqix:SG6": {
+      "fields": {
+        "identity": {
+          "status": "pending",
+          "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+        },
+        "status": {
+          "status": "pending",
+          "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+        },
+        "economic_relationship": {
+          "status": "pending",
+          "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+        },
+        "listing": {
+          "status": "cleared",
+          "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+        },
+        "location": {
+          "status": "cleared",
+          "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+        },
+        "reported_metrics": {
+          "status": "omit",
+          "basis": "Corporate capacity/cost/table-derived metrics excluded from minimal discovery export"
+        }
+      },
+      "review": null
+    },
+    "project:eqix:SV18": {
+      "fields": {
+        "identity": {
+          "status": "pending",
+          "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+        },
+        "status": {
+          "status": "pending",
+          "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+        },
+        "economic_relationship": {
+          "status": "pending",
+          "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+        },
+        "listing": {
+          "status": "cleared",
+          "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+        },
+        "location": {
+          "status": "cleared",
+          "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+        },
+        "reported_metrics": {
+          "status": "omit",
+          "basis": "Corporate capacity/cost/table-derived metrics excluded from minimal discovery export"
+        }
+      },
+      "review": null
+    },
+    "project:eqix:MD5": {
+      "fields": {
+        "identity": {
+          "status": "pending",
+          "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+        },
+        "status": {
+          "status": "pending",
+          "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+        },
+        "economic_relationship": {
+          "status": "pending",
+          "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+        },
+        "listing": {
+          "status": "cleared",
+          "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+        },
+        "location": {
+          "status": "cleared",
+          "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+        },
+        "reported_metrics": {
+          "status": "omit",
+          "basis": "Corporate capacity/cost/table-derived metrics excluded from minimal discovery export"
+        }
+      },
+      "review": null
+    },
+    "project:coresite:DE3": {
+      "fields": {
+        "identity": {
+          "status": "pending",
+          "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+        },
+        "status": {
+          "status": "pending",
+          "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+        },
+        "economic_relationship": {
+          "status": "pending",
+          "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+        },
+        "listing": {
+          "status": "cleared",
+          "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+        },
+        "location": {
+          "status": "cleared",
+          "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+        },
+        "reported_metrics": {
+          "status": "omit",
+          "basis": "Corporate capacity/cost/table-derived metrics excluded from minimal discovery export"
+        }
+      },
+      "review": null
+    },
+    "project:coresite:NY3": {
+      "fields": {
+        "identity": {
+          "status": "cleared",
+          "basis": "Narrow independently authored US facility facts, source-specific access check; see REUSE-ASSESSMENT.md. No source text/table/photo redistribution or bulk directory reuse."
+        },
+        "status": {
+          "status": "cleared",
+          "basis": "Narrow independently authored US facility facts, source-specific access check; see REUSE-ASSESSMENT.md. No source text/table/photo redistribution or bulk directory reuse."
+        },
+        "economic_relationship": {
+          "status": "cleared",
+          "basis": "Narrow independently authored US facility facts, source-specific access check; see REUSE-ASSESSMENT.md. No source text/table/photo redistribution or bulk directory reuse."
+        },
+        "listing": {
+          "status": "cleared",
+          "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+        },
+        "location": {
+          "status": "cleared",
+          "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+        },
+        "reported_metrics": {
+          "status": "omit",
+          "basis": "Corporate capacity/cost/table-derived metrics excluded from minimal discovery export"
+        }
+      },
+      "review": {
+        "reviewer": "Codex bounded factual-source assessment (not publisher legal sign-off)",
+        "date": "2026-11-13",
+        "basis": "REUSE-ASSESSMENT.md, minimum NY3 factual projection; source checks and omissions recorded",
+        "fact_sha256": "cfa9a6dcbda33ce4501f32a097fc2e053f9a01efdbda91a0f1a275eb71291510"
+      }
+    }
+  }
+}

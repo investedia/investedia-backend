@@ -1,0 +1,1364 @@
+{
+  "schema": "investedia.projects.sector-bundle.proposal.v2",
+  "contract_status": "proposed; shared integration not approved",
+  "projects": [
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "eia:708",
+      "name": "Hammond",
+      "sector": "energy",
+      "country_code": "US",
+      "city": null,
+      "asset": {
+        "category": "project",
+        "subtype": "Battery storage",
+        "parent_id": null,
+        "count_as_project": true
+      },
+      "status": {
+        "stage": "under_construction",
+        "label": "Under construction",
+        "as_of": "2026-11-13"
+      },
+      "location": {
+        "precision": "exact",
+        "lat": 34.2528,
+        "lon": -85.3456,
+        "label": "Hammond",
+        "basis": "Existing approved Energy verification; inherited without new site audit",
+        "satellite_allowed": false,
+        "evidence": {
+          "url": "https://www.eia.gov/electricity/data/eia860m/",
+          "sha256": "b890d82e95c94d2c81c7f394b179f8789b4f6f0944fd7973fdc69189c53b0a2d",
+          "checked_at": "2026-11-13",
+          "locator": "Existing verified Energy record eia:708",
+          "sha256_scope": "verified_input_snapshot",
+          "snapshot_commit": "c78ab084349b43e4c166fa0f6a0dde6dbae8af5c",
+          "snapshot_path": "assets/globe/projects-invest.json",
+          "record_id": "eia:708",
+          "scope": "specific_site"
+        }
+      },
+      "identity_evidence": {
+        "url": "https://www.eia.gov/electricity/data/eia860m/",
+        "sha256": "b890d82e95c94d2c81c7f394b179f8789b4f6f0944fd7973fdc69189c53b0a2d",
+        "checked_at": "2026-11-13",
+        "locator": "Existing verified Energy record eia:708",
+        "sha256_scope": "verified_input_snapshot",
+        "snapshot_commit": "c78ab084349b43e4c166fa0f6a0dde6dbae8af5c",
+        "snapshot_path": "assets/globe/projects-invest.json"
+      },
+      "exposures": [
+        {
+          "role": "reported_group_owner",
+          "label": "Existing verified Energy ownership chain; legacy classification preserved",
+          "relationship_scope": "generator/plant ownership under existing Energy rules, not new real-estate title certification",
+          "property_stake": null,
+          "verification": {
+            "batch": "route-b-us-2026-11",
+            "category": "B",
+            "company_states_interest": false,
+            "exposure_type": "indirect",
+            "identity": {
+              "checked_at": "2026-11-12",
+              "id": "549300FC3G3YU2FBZD92",
+              "legal_name": "THE SOUTHERN COMPANY",
+              "scheme": "LEI",
+              "source_url": "https://api.gleif.org/api/v1/lei-records/549300FC3G3YU2FBZD92"
+            },
+            "internal_only": [],
+            "link": [
+              {
+                "document_date": "2026-09-30",
+                "proves": "EIA-860M lists Hammond (plant 708) as planned, status V, reported by Georgia Power Co",
+                "publisher": "U.S. EIA",
+                "retrieved_at": "2026-11-12",
+                "url": "https://www.eia.gov/electricity/data/eia860m/"
+              },
+              {
+                "document_date": null,
+                "edition": "EIA-860 2025 data",
+                "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Georgia Power Co owns the generators (EIA instructions, Schedule 4 item 1)",
+                "publisher": "U.S. EIA",
+                "retrieved_at": "2026-11-12",
+                "url": "https://www.eia.gov/electricity/data/eia860/"
+              },
+              {
+                "document_date": "2026-11-12",
+                "proves": "Legal entity GEORGIA POWER COMPANY, LEI D981X4Z4RWS7PDMJUZ03",
+                "publisher": "GLEIF",
+                "retrieved_at": "2026-11-12",
+                "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03"
+              },
+              {
+                "document_date": "2026-11-12",
+                "edge": [
+                  "D981X4Z4RWS7PDMJUZ03",
+                  "549300FC3G3YU2FBZD92"
+                ],
+                "proves": "GEORGIA POWER COMPANY reports THE SOUTHERN COMPANY as its direct parent",
+                "publisher": "GLEIF",
+                "retrieved_at": "2026-11-12",
+                "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03/direct-parent"
+              },
+              {
+                "document_date": "2026-11-12",
+                "proves": "SOUTHERN CO has publicly traded common equity: SO on NYSE (CIK 92122; SEC accelerated or large accelerated filer (public common equity))",
+                "publisher": "U.S. SEC",
+                "retrieved_at": "2026-11-12",
+                "url": "https://data.sec.gov/submissions/CIK0000092122.json"
+              }
+            ],
+            "listing": {
+              "checked_at": "2026-11-12",
+              "cik": 92122,
+              "exchange": "NYSE",
+              "source_url": "https://data.sec.gov/submissions/CIK0000092122.json",
+              "ticker": "SO"
+            },
+            "reviewer": "engine (route B, US)",
+            "stake": {
+              "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+              "value": null
+            },
+            "verified_at": "2026-11-12"
+          },
+          "listing": {
+            "name": "SOUTHERN CO",
+            "ticker": "SO",
+            "exchange": "XNYS",
+            "exchange_mic": "XNYS",
+            "exchange_name": "NYSE",
+            "security_type": "common_equity",
+            "evidence": {
+              "url": "https://data.sec.gov/submissions/CIK0000092122.json",
+              "sha256": "b890d82e95c94d2c81c7f394b179f8789b4f6f0944fd7973fdc69189c53b0a2d",
+              "checked_at": "2026-11-12",
+              "locator": "Existing Energy listing verification",
+              "sha256_scope": "verified_input_snapshot",
+              "snapshot_commit": "c78ab084349b43e4c166fa0f6a0dde6dbae8af5c"
+            }
+          },
+          "evidence": {
+            "url": "https://www.eia.gov/electricity/data/eia860m/",
+            "sha256": "b890d82e95c94d2c81c7f394b179f8789b4f6f0944fd7973fdc69189c53b0a2d",
+            "checked_at": "2026-11-12",
+            "locator": "Inherited verified Energy evidence chain; source record eia:708",
+            "sha256_scope": "verified_input_snapshot",
+            "snapshot_commit": "c78ab084349b43e4c166fa0f6a0dde6dbae8af5c"
+          },
+          "headquarters": {
+            "city": "Atlanta",
+            "lat": 33.754444444,
+            "lon": -84.389722222,
+            "precision": "approximate",
+            "evidence": {
+              "url": "https://www.wikidata.org/entity/Q2304693",
+              "sha256": "b890d82e95c94d2c81c7f394b179f8789b4f6f0944fd7973fdc69189c53b0a2d",
+              "checked_at": "2026-11-12",
+              "locator": "Inherited CC0 HQ city from Energy evidence",
+              "sha256_scope": "verified_input_snapshot",
+              "snapshot_commit": "c78ab084349b43e4c166fa0f6a0dde6dbae8af5c"
+            }
+          },
+          "investment_access": {
+            "type": "public_equity",
+            "verified": true,
+            "scope": "Indirect company equity; no direct project purchase"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "regulator_confirmed",
+        "inherited_categories": [
+          "B"
+        ],
+        "basis": "Existing Energy verification retained; not re-reviewed in Phase4"
+      },
+      "reuse": {
+        "status": "inherited_existing_energy",
+        "fields": {
+          "identity": {
+            "status": "cleared",
+            "basis": "US public domain"
+          }
+        },
+        "review": null
+      },
+      "legacy_energy": {
+        "id": "eia:708",
+        "name": "Hammond",
+        "country": "United States",
+        "location": "United States",
+        "lat": 34.2528,
+        "lon": -85.3456,
+        "type": "Battery storage",
+        "sector": "Energy",
+        "energy": "Battery storage",
+        "stage": "Under construction",
+        "start_year": null,
+        "status_year": 2026,
+        "milestones": [],
+        "figures": [],
+        "sources": [
+          {
+            "name": "U.S. EIA",
+            "url": "https://www.eia.gov/electricity/data/eia860m/",
+            "checked_at": "2026-09-30"
+          },
+          {
+            "name": "U.S. EIA",
+            "url": "https://www.eia.gov/electricity/data/eia860/",
+            "checked_at": "EIA-860 2025 data"
+          },
+          {
+            "name": "GLEIF",
+            "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03",
+            "checked_at": "2026-11-12"
+          },
+          {
+            "name": "GLEIF",
+            "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03/direct-parent",
+            "checked_at": "2026-11-12"
+          },
+          {
+            "name": "U.S. SEC",
+            "url": "https://data.sec.gov/submissions/CIK0000092122.json",
+            "checked_at": "2026-11-12"
+          }
+        ],
+        "wiki": null,
+        "featured": false,
+        "verified": true,
+        "cc": "US",
+        "capacity": {
+          "unit": "megawatt",
+          "value": 57.5
+        },
+        "cost": null,
+        "owners": [],
+        "aliases": [],
+        "invest": {
+          "exposures": [
+            {
+              "ticker": "SO",
+              "exchange": "NYSE",
+              "name": "THE SOUTHERN COMPANY",
+              "category": "B",
+              "category_label": "Regulator-confirmed",
+              "direct": false,
+              "path": [
+                "GEORGIA POWER COMPANY",
+                "THE SOUTHERN COMPANY"
+              ],
+              "stake": null,
+              "stake_note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+              "hq": {
+                "checked_at": "2026-11-12",
+                "city": "Atlanta",
+                "lat": 33.754444444,
+                "lon": -84.389722222,
+                "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+                "source_url": "https://www.wikidata.org/entity/Q2304693"
+              },
+              "evidence": [
+                {
+                  "url": "https://www.eia.gov/electricity/data/eia860m/",
+                  "publisher": "U.S. EIA",
+                  "date": "2026-09-30",
+                  "proves": "EIA-860M lists Hammond (plant 708) as planned, status V, reported by Georgia Power Co",
+                  "quote": null
+                },
+                {
+                  "url": "https://www.eia.gov/electricity/data/eia860/",
+                  "publisher": "U.S. EIA",
+                  "date": "EIA-860 2025 data",
+                  "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Georgia Power Co owns the generators (EIA instructions, Schedule 4 item 1)",
+                  "quote": null
+                },
+                {
+                  "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03",
+                  "publisher": "GLEIF",
+                  "date": "2026-11-12",
+                  "proves": "Legal entity GEORGIA POWER COMPANY, LEI D981X4Z4RWS7PDMJUZ03",
+                  "quote": null
+                },
+                {
+                  "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03/direct-parent",
+                  "publisher": "GLEIF",
+                  "date": "2026-11-12",
+                  "proves": "GEORGIA POWER COMPANY reports THE SOUTHERN COMPANY as its direct parent",
+                  "quote": null
+                },
+                {
+                  "url": "https://data.sec.gov/submissions/CIK0000092122.json",
+                  "publisher": "U.S. SEC",
+                  "date": "2026-11-12",
+                  "proves": "SOUTHERN CO has publicly traded common equity: SO on NYSE (CIK 92122; SEC accelerated or large accelerated filer (public common equity))",
+                  "quote": null
+                }
+              ]
+            }
+          ],
+          "other_owners": [],
+          "stage_note": null,
+          "precision": "exact",
+          "location_note": null
+        },
+        "listed": {
+          "ticker": "SO",
+          "name": "THE SOUTHERN COMPANY",
+          "stake": null
+        },
+        "satellite": {
+          "url": "https://example.invalid/assets/js/img/projects/sat/eia-708-now.jpg",
+          "date": "2026-10-27",
+          "before": {
+            "url": "https://example.invalid/assets/js/img/projects/sat/eia-708-before.jpg",
+            "date": "2024-12-24"
+          },
+          "x": 0.5,
+          "y": 0.5,
+          "s2": true,
+          "km": 3,
+          "credit": "Contains modified Copernicus Sentinel data 2026"
+        }
+      },
+      "preview_only": true
+    },
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "eia:728",
+      "name": "Yates",
+      "sector": "energy",
+      "country_code": "US",
+      "city": null,
+      "asset": {
+        "category": "project",
+        "subtype": "Oil & gas",
+        "parent_id": null,
+        "count_as_project": true
+      },
+      "status": {
+        "stage": "announced",
+        "label": "Announced",
+        "as_of": "2026-11-13"
+      },
+      "location": {
+        "precision": "exact",
+        "lat": 33.4622,
+        "lon": -84.8986,
+        "label": "Yates",
+        "basis": "Existing approved Energy verification; inherited without new site audit",
+        "satellite_allowed": false,
+        "evidence": {
+          "url": "https://www.eia.gov/electricity/data/eia860m/",
+          "sha256": "b890d82e95c94d2c81c7f394b179f8789b4f6f0944fd7973fdc69189c53b0a2d",
+          "checked_at": "2026-11-13",
+          "locator": "Existing verified Energy record eia:728",
+          "sha256_scope": "verified_input_snapshot",
+          "snapshot_commit": "c78ab084349b43e4c166fa0f6a0dde6dbae8af5c",
+          "snapshot_path": "assets/globe/projects-invest.json",
+          "record_id": "eia:728",
+          "scope": "specific_site"
+        }
+      },
+      "identity_evidence": {
+        "url": "https://www.eia.gov/electricity/data/eia860m/",
+        "sha256": "b890d82e95c94d2c81c7f394b179f8789b4f6f0944fd7973fdc69189c53b0a2d",
+        "checked_at": "2026-11-13",
+        "locator": "Existing verified Energy record eia:728",
+        "sha256_scope": "verified_input_snapshot",
+        "snapshot_commit": "c78ab084349b43e4c166fa0f6a0dde6dbae8af5c",
+        "snapshot_path": "assets/globe/projects-invest.json"
+      },
+      "exposures": [
+        {
+          "role": "reported_group_owner",
+          "label": "Existing verified Energy ownership chain; legacy classification preserved",
+          "relationship_scope": "generator/plant ownership under existing Energy rules, not new real-estate title certification",
+          "property_stake": null,
+          "verification": {
+            "batch": "route-b-us-2026-11",
+            "category": "B",
+            "company_states_interest": false,
+            "exposure_type": "indirect",
+            "identity": {
+              "checked_at": "2026-11-12",
+              "id": "549300FC3G3YU2FBZD92",
+              "legal_name": "THE SOUTHERN COMPANY",
+              "scheme": "LEI",
+              "source_url": "https://api.gleif.org/api/v1/lei-records/549300FC3G3YU2FBZD92"
+            },
+            "internal_only": [],
+            "link": [
+              {
+                "document_date": "2026-09-30",
+                "proves": "EIA-860M lists Yates (plant 728) as planned, status P, reported by Georgia Power Co",
+                "publisher": "U.S. EIA",
+                "retrieved_at": "2026-11-12",
+                "url": "https://www.eia.gov/electricity/data/eia860m/"
+              },
+              {
+                "document_date": null,
+                "edition": "EIA-860 2025 data",
+                "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Georgia Power Co owns the generators (EIA instructions, Schedule 4 item 1)",
+                "publisher": "U.S. EIA",
+                "retrieved_at": "2026-11-12",
+                "url": "https://www.eia.gov/electricity/data/eia860/"
+              },
+              {
+                "document_date": "2026-11-12",
+                "proves": "Legal entity GEORGIA POWER COMPANY, LEI D981X4Z4RWS7PDMJUZ03",
+                "publisher": "GLEIF",
+                "retrieved_at": "2026-11-12",
+                "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03"
+              },
+              {
+                "document_date": "2026-11-12",
+                "edge": [
+                  "D981X4Z4RWS7PDMJUZ03",
+                  "549300FC3G3YU2FBZD92"
+                ],
+                "proves": "GEORGIA POWER COMPANY reports THE SOUTHERN COMPANY as its direct parent",
+                "publisher": "GLEIF",
+                "retrieved_at": "2026-11-12",
+                "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03/direct-parent"
+              },
+              {
+                "document_date": "2026-11-12",
+                "proves": "SOUTHERN CO has publicly traded common equity: SO on NYSE (CIK 92122; SEC accelerated or large accelerated filer (public common equity))",
+                "publisher": "U.S. SEC",
+                "retrieved_at": "2026-11-12",
+                "url": "https://data.sec.gov/submissions/CIK0000092122.json"
+              }
+            ],
+            "listing": {
+              "checked_at": "2026-11-12",
+              "cik": 92122,
+              "exchange": "NYSE",
+              "source_url": "https://data.sec.gov/submissions/CIK0000092122.json",
+              "ticker": "SO"
+            },
+            "reviewer": "engine (route B, US)",
+            "stake": {
+              "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+              "value": null
+            },
+            "verified_at": "2026-11-12"
+          },
+          "listing": {
+            "name": "SOUTHERN CO",
+            "ticker": "SO",
+            "exchange": "XNYS",
+            "exchange_mic": "XNYS",
+            "exchange_name": "NYSE",
+            "security_type": "common_equity",
+            "evidence": {
+              "url": "https://data.sec.gov/submissions/CIK0000092122.json",
+              "sha256": "b890d82e95c94d2c81c7f394b179f8789b4f6f0944fd7973fdc69189c53b0a2d",
+              "checked_at": "2026-11-12",
+              "locator": "Existing Energy listing verification",
+              "sha256_scope": "verified_input_snapshot",
+              "snapshot_commit": "c78ab084349b43e4c166fa0f6a0dde6dbae8af5c"
+            }
+          },
+          "evidence": {
+            "url": "https://www.eia.gov/electricity/data/eia860m/",
+            "sha256": "b890d82e95c94d2c81c7f394b179f8789b4f6f0944fd7973fdc69189c53b0a2d",
+            "checked_at": "2026-11-12",
+            "locator": "Inherited verified Energy evidence chain; source record eia:728",
+            "sha256_scope": "verified_input_snapshot",
+            "snapshot_commit": "c78ab084349b43e4c166fa0f6a0dde6dbae8af5c"
+          },
+          "headquarters": {
+            "city": "Atlanta",
+            "lat": 33.754444444,
+            "lon": -84.389722222,
+            "precision": "approximate",
+            "evidence": {
+              "url": "https://www.wikidata.org/entity/Q2304693",
+              "sha256": "b890d82e95c94d2c81c7f394b179f8789b4f6f0944fd7973fdc69189c53b0a2d",
+              "checked_at": "2026-11-12",
+              "locator": "Inherited CC0 HQ city from Energy evidence",
+              "sha256_scope": "verified_input_snapshot",
+              "snapshot_commit": "c78ab084349b43e4c166fa0f6a0dde6dbae8af5c"
+            }
+          },
+          "investment_access": {
+            "type": "public_equity",
+            "verified": true,
+            "scope": "Indirect company equity; no direct project purchase"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "regulator_confirmed",
+        "inherited_categories": [
+          "B"
+        ],
+        "basis": "Existing Energy verification retained; not re-reviewed in Phase4"
+      },
+      "reuse": {
+        "status": "inherited_existing_energy",
+        "fields": {
+          "identity": {
+            "status": "cleared",
+            "basis": "US public domain"
+          }
+        },
+        "review": null
+      },
+      "legacy_energy": {
+        "id": "eia:728",
+        "name": "Yates",
+        "country": "United States",
+        "location": "United States",
+        "lat": 33.4622,
+        "lon": -84.8986,
+        "type": "Gas power",
+        "sector": "Energy",
+        "energy": "Oil & gas",
+        "stage": "Announced",
+        "start_year": null,
+        "status_year": 2027,
+        "milestones": [],
+        "figures": [],
+        "sources": [
+          {
+            "name": "U.S. EIA",
+            "url": "https://www.eia.gov/electricity/data/eia860m/",
+            "checked_at": "2026-09-30"
+          },
+          {
+            "name": "U.S. EIA",
+            "url": "https://www.eia.gov/electricity/data/eia860/",
+            "checked_at": "EIA-860 2025 data"
+          },
+          {
+            "name": "GLEIF",
+            "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03",
+            "checked_at": "2026-11-12"
+          },
+          {
+            "name": "GLEIF",
+            "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03/direct-parent",
+            "checked_at": "2026-11-12"
+          },
+          {
+            "name": "U.S. SEC",
+            "url": "https://data.sec.gov/submissions/CIK0000092122.json",
+            "checked_at": "2026-11-12"
+          }
+        ],
+        "wiki": null,
+        "featured": false,
+        "verified": true,
+        "cc": "US",
+        "capacity": {
+          "unit": "megawatt",
+          "value": 1448.4
+        },
+        "cost": null,
+        "owners": [],
+        "aliases": [],
+        "invest": {
+          "exposures": [
+            {
+              "ticker": "SO",
+              "exchange": "NYSE",
+              "name": "THE SOUTHERN COMPANY",
+              "category": "B",
+              "category_label": "Regulator-confirmed",
+              "direct": false,
+              "path": [
+                "GEORGIA POWER COMPANY",
+                "THE SOUTHERN COMPANY"
+              ],
+              "stake": null,
+              "stake_note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+              "hq": {
+                "checked_at": "2026-11-12",
+                "city": "Atlanta",
+                "lat": 33.754444444,
+                "lon": -84.389722222,
+                "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+                "source_url": "https://www.wikidata.org/entity/Q2304693"
+              },
+              "evidence": [
+                {
+                  "url": "https://www.eia.gov/electricity/data/eia860m/",
+                  "publisher": "U.S. EIA",
+                  "date": "2026-09-30",
+                  "proves": "EIA-860M lists Yates (plant 728) as planned, status P, reported by Georgia Power Co",
+                  "quote": null
+                },
+                {
+                  "url": "https://www.eia.gov/electricity/data/eia860/",
+                  "publisher": "U.S. EIA",
+                  "date": "EIA-860 2025 data",
+                  "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Georgia Power Co owns the generators (EIA instructions, Schedule 4 item 1)",
+                  "quote": null
+                },
+                {
+                  "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03",
+                  "publisher": "GLEIF",
+                  "date": "2026-11-12",
+                  "proves": "Legal entity GEORGIA POWER COMPANY, LEI D981X4Z4RWS7PDMJUZ03",
+                  "quote": null
+                },
+                {
+                  "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03/direct-parent",
+                  "publisher": "GLEIF",
+                  "date": "2026-11-12",
+                  "proves": "GEORGIA POWER COMPANY reports THE SOUTHERN COMPANY as its direct parent",
+                  "quote": null
+                },
+                {
+                  "url": "https://data.sec.gov/submissions/CIK0000092122.json",
+                  "publisher": "U.S. SEC",
+                  "date": "2026-11-12",
+                  "proves": "SOUTHERN CO has publicly traded common equity: SO on NYSE (CIK 92122; SEC accelerated or large accelerated filer (public common equity))",
+                  "quote": null
+                }
+              ]
+            }
+          ],
+          "other_owners": [],
+          "stage_note": null,
+          "precision": "exact",
+          "location_note": null
+        },
+        "listed": {
+          "ticker": "SO",
+          "name": "THE SOUTHERN COMPANY",
+          "stake": null
+        },
+        "satellite": {
+          "url": "https://example.invalid/assets/js/img/projects/sat/eia-728-now.jpg",
+          "date": "2026-10-27",
+          "before": null,
+          "x": 0.5,
+          "y": 0.5,
+          "s2": true,
+          "km": 3,
+          "credit": "Contains modified Copernicus Sentinel data 2026"
+        }
+      },
+      "preview_only": true
+    },
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "project:eqix:SG6",
+      "name": "Equinix SG6",
+      "sector": "data_centers",
+      "country_code": "SG",
+      "city": "Singapore",
+      "asset": {
+        "category": "project",
+        "subtype": "Data center development",
+        "parent_id": null,
+        "count_as_project": true
+      },
+      "status": {
+        "stage": "operating",
+        "label": "opened",
+        "as_of": "2026-11-06",
+        "certainty": "company_reported"
+      },
+      "location": {
+        "precision": "approximate",
+        "lat": 1.3,
+        "lon": 103.8,
+        "label": "Singapore city reference",
+        "basis": "Verified city, not facility footprint",
+        "satellite_allowed": false,
+        "evidence": {
+          "url": "https://www.wikidata.org/entity/Q334",
+          "sha256": "f42a60541216840fe48bf9749da139d760cb2d9a424cb763928caec0e06c3587",
+          "checked_at": "2026-11-13",
+          "locator": "Wikidata QID/country/P625 checked city reference",
+          "sha256_scope": "local_reference_file",
+          "snapshot_path": "../phase3/city-references.json"
+        }
+      },
+      "identity_evidence": {
+        "url": "https://investor.equinix.com/news-events/press-releases/detail/1130/equinix-opens-sg6-in-singapore-expanding-ai-ready-capacity",
+        "sha256": "4ce401970cc1a6a7752766cc9945e8aa45c605cab660518248626a5e2e2b481f",
+        "checked_at": "2026-11-13T01:32:32.072839+00:00",
+        "locator": "Dated SG6 opening announcement, first-phase8MW/full-facility20MW/initial investment"
+      },
+      "exposures": [
+        {
+          "role": "operator",
+          "label": "Disclosed operator exposure; property/phase/JV scope retained",
+          "relationship_scope": "announced company development; exact legal contracting entity not established",
+          "maturity": "reported",
+          "property_stake": null,
+          "listing": {
+            "name": "Equinix",
+            "ticker": "EQIX",
+            "exchange": "XNAS",
+            "exchange_mic": "XNAS",
+            "security_type": "common_equity",
+            "evidence": {
+              "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+              "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+              "checked_at": "2026-11-13",
+              "locator": "Cover securities table: common equity ticker and exchange"
+            }
+          },
+          "evidence": {
+            "url": "https://investor.equinix.com/news-events/press-releases/detail/1130/equinix-opens-sg6-in-singapore-expanding-ai-ready-capacity",
+            "sha256": "4ce401970cc1a6a7752766cc9945e8aa45c605cab660518248626a5e2e2b481f",
+            "checked_at": "2026-11-13T01:32:32.072839+00:00",
+            "locator": "Dated SG6 opening announcement, first-phase8MW/full-facility20MW/initial investment"
+          },
+          "headquarters": {
+            "city": "Redwood City",
+            "lat": 37.4828,
+            "lon": -122.2361,
+            "precision": "approximate",
+            "evidence": {
+              "url": "https://www.wikidata.org/entity/Q851641",
+              "sha256": "f62b1a230667bd334151a789dca59a91648dadface231c65d4f5930fbdb2fb44",
+              "checked_at": "2026-11-11",
+              "locator": "Existing CC0 HQ city reference",
+              "sha256_scope": "local_reference_file",
+              "snapshot_path": "../phase3/headquarters-references.json"
+            }
+          },
+          "investment_access": {
+            "type": "listed_REIT",
+            "verified": true,
+            "scope": "Indirect listed-company equity exposure; no direct property purchase"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "company_confirmed",
+        "date": "2026-11-13",
+        "property_title_verified": false
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "listing": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "location": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "reported_metrics": {
+            "status": "omit",
+            "basis": "Corporate capacity/cost/table-derived metrics excluded from minimal discovery export"
+          }
+        },
+        "review": null
+      },
+      "preview_only": true,
+      "reported_metrics": {
+        "capacity": {
+          "value": 8,
+          "unit": "MW",
+          "basis": "first-phase capacity"
+        },
+        "cost": null,
+        "historic_expected_completion": null
+      },
+      "notes": [
+        {
+          "field": "expected_opening",
+          "timeline": "2027-Q1",
+          "disposition": "Held: later dated 6 November 2026 explicit opening announcement controls status."
+        }
+      ]
+    },
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "project:eqix:SV18",
+      "name": "Equinix SV18",
+      "sector": "data_centers",
+      "country_code": "US",
+      "city": "San Jose",
+      "asset": {
+        "category": "project",
+        "subtype": "Data center development",
+        "parent_id": null,
+        "count_as_project": true
+      },
+      "status": {
+        "stage": "operating",
+        "label": "opened as reported",
+        "as_of": "2026-11-13",
+        "certainty": "company_reported"
+      },
+      "location": {
+        "precision": "approximate",
+        "lat": 37.304166666,
+        "lon": -121.872777777,
+        "label": "San Jose city reference",
+        "basis": "Verified city, not facility footprint",
+        "satellite_allowed": false,
+        "evidence": {
+          "url": "https://www.wikidata.org/entity/Q16553",
+          "sha256": "f42a60541216840fe48bf9749da139d760cb2d9a424cb763928caec0e06c3587",
+          "checked_at": "2026-11-13",
+          "locator": "Wikidata QID/country/P625 checked city reference",
+          "sha256_scope": "local_reference_file",
+          "snapshot_path": "../phase3/city-references.json"
+        }
+      },
+      "identity_evidence": {
+        "url": "https://www.equinix.com/data-centers/expansions",
+        "sha256": "851c514f806273c20cadd7a0a246c36b474a14426bcf84df20bda176a294fa4a",
+        "checked_at": "2026-11-13T01:32:30.634156+00:00",
+        "locator": "Expansion timeline / latest additions"
+      },
+      "exposures": [
+        {
+          "role": "reported_group_owner",
+          "label": "Issuer reports ownership; legal title entity unverified",
+          "relationship_scope": "announced company development; exact legal contracting entity not established",
+          "maturity": "reported",
+          "property_stake": null,
+          "listing": {
+            "name": "Equinix",
+            "ticker": "EQIX",
+            "exchange": "XNAS",
+            "exchange_mic": "XNAS",
+            "security_type": "common_equity",
+            "evidence": {
+              "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+              "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+              "checked_at": "2026-11-13",
+              "locator": "Cover securities table: common equity ticker and exchange"
+            }
+          },
+          "evidence": {
+            "url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_presentation/Equinix_Q3_26_Earnings_Presentation_Final.pdf",
+            "sha256": "2b2d3aad052aa3b49a3e45e950eaabb0b4bd99498e53384fb813a41691adfaa3",
+            "checked_at": "2026-11-13T01:33:01.290679+00:00",
+            "locator": "Portfolio Composition, pages 35/36, Owned column"
+          },
+          "headquarters": {
+            "city": "Redwood City",
+            "lat": 37.4828,
+            "lon": -122.2361,
+            "precision": "approximate",
+            "evidence": {
+              "url": "https://www.wikidata.org/entity/Q851641",
+              "sha256": "f62b1a230667bd334151a789dca59a91648dadface231c65d4f5930fbdb2fb44",
+              "checked_at": "2026-11-11",
+              "locator": "Existing CC0 HQ city reference",
+              "sha256_scope": "local_reference_file",
+              "snapshot_path": "../phase3/headquarters-references.json"
+            }
+          },
+          "investment_access": {
+            "type": "listed_REIT",
+            "verified": true,
+            "scope": "Indirect listed-company equity exposure; no direct property purchase"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "company_confirmed",
+        "date": "2026-11-13",
+        "property_title_verified": false
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "listing": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "location": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "reported_metrics": {
+            "status": "omit",
+            "basis": "Corporate capacity/cost/table-derived metrics excluded from minimal discovery export"
+          }
+        },
+        "review": null
+      },
+      "preview_only": true,
+      "reported_metrics": {
+        "capacity": null,
+        "cost": null,
+        "historic_expected_completion": "2026-Q2"
+      },
+      "notes": []
+    },
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "project:eqix:MD5",
+      "name": "Equinix MD5",
+      "sector": "data_centers",
+      "country_code": "ES",
+      "city": "Madrid",
+      "asset": {
+        "category": "project",
+        "subtype": "Data center development",
+        "parent_id": null,
+        "count_as_project": true
+      },
+      "status": {
+        "stage": "operating",
+        "label": "opened as reported",
+        "as_of": "2026-11-13",
+        "certainty": "company_reported"
+      },
+      "location": {
+        "precision": "approximate",
+        "lat": 40.416944444,
+        "lon": -3.703333333,
+        "label": "Madrid city reference",
+        "basis": "Verified city, not facility footprint",
+        "satellite_allowed": false,
+        "evidence": {
+          "url": "https://www.wikidata.org/entity/Q2807",
+          "sha256": "f42a60541216840fe48bf9749da139d760cb2d9a424cb763928caec0e06c3587",
+          "checked_at": "2026-11-13",
+          "locator": "Wikidata QID/country/P625 checked city reference",
+          "sha256_scope": "local_reference_file",
+          "snapshot_path": "../phase3/city-references.json"
+        }
+      },
+      "identity_evidence": {
+        "url": "https://www.equinix.com/data-centers/expansions",
+        "sha256": "851c514f806273c20cadd7a0a246c36b474a14426bcf84df20bda176a294fa4a",
+        "checked_at": "2026-11-13T01:32:30.634156+00:00",
+        "locator": "Expansion timeline / latest additions"
+      },
+      "exposures": [
+        {
+          "role": "reported_group_owner",
+          "label": "Issuer reports ownership; legal title entity unverified",
+          "relationship_scope": "announced company development; exact legal contracting entity not established",
+          "maturity": "reported",
+          "property_stake": null,
+          "listing": {
+            "name": "Equinix",
+            "ticker": "EQIX",
+            "exchange": "XNAS",
+            "exchange_mic": "XNAS",
+            "security_type": "common_equity",
+            "evidence": {
+              "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+              "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+              "checked_at": "2026-11-13",
+              "locator": "Cover securities table: common equity ticker and exchange"
+            }
+          },
+          "evidence": {
+            "url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_presentation/Equinix_Q3_26_Earnings_Presentation_Final.pdf",
+            "sha256": "2b2d3aad052aa3b49a3e45e950eaabb0b4bd99498e53384fb813a41691adfaa3",
+            "checked_at": "2026-11-13T01:33:01.290679+00:00",
+            "locator": "Portfolio Composition, pages 35/36, Owned column"
+          },
+          "headquarters": {
+            "city": "Redwood City",
+            "lat": 37.4828,
+            "lon": -122.2361,
+            "precision": "approximate",
+            "evidence": {
+              "url": "https://www.wikidata.org/entity/Q851641",
+              "sha256": "f62b1a230667bd334151a789dca59a91648dadface231c65d4f5930fbdb2fb44",
+              "checked_at": "2026-11-11",
+              "locator": "Existing CC0 HQ city reference",
+              "sha256_scope": "local_reference_file",
+              "snapshot_path": "../phase3/headquarters-references.json"
+            }
+          },
+          "investment_access": {
+            "type": "listed_REIT",
+            "verified": true,
+            "scope": "Indirect listed-company equity exposure; no direct property purchase"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "company_confirmed",
+        "date": "2026-11-13",
+        "property_title_verified": false
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "listing": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "location": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "reported_metrics": {
+            "status": "omit",
+            "basis": "Corporate capacity/cost/table-derived metrics excluded from minimal discovery export"
+          }
+        },
+        "review": null
+      },
+      "preview_only": true,
+      "reported_metrics": {
+        "capacity": null,
+        "cost": null,
+        "historic_expected_completion": "2026-Q2"
+      },
+      "notes": []
+    },
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "project:coresite:DE3",
+      "name": "CoreSite DE3",
+      "sector": "data_centers",
+      "country_code": "US",
+      "city": "Denver",
+      "asset": {
+        "category": "building",
+        "subtype": "Data center development",
+        "parent_id": null,
+        "count_as_project": true,
+        "building_identity_evidence": {
+          "url": "https://www.coresite.com/data-center/de3-denver-co",
+          "sha256": "3c20f0d52e8e96cb22dd7a6da928b053d8e772bb5c6995cc6196f6f155efde31",
+          "checked_at": "2026-11-13T01:50:44.861308+00:00",
+          "locator": "Current DE3 facility specification: first building,18 CMW; availability target2026"
+        }
+      },
+      "status": {
+        "stage": "unknown",
+        "label": "targeted for availability in 2026; current completion unverified",
+        "as_of": "2026-11-13",
+        "certainty": "target_only_current_completion_unknown"
+      },
+      "location": {
+        "precision": "approximate",
+        "lat": 39.739166666,
+        "lon": -104.984722222,
+        "label": "Denver city reference",
+        "basis": "Verified city, not facility footprint",
+        "satellite_allowed": false,
+        "evidence": {
+          "url": "https://www.wikidata.org/entity/Q16554",
+          "sha256": "f42a60541216840fe48bf9749da139d760cb2d9a424cb763928caec0e06c3587",
+          "checked_at": "2026-11-13",
+          "locator": "Wikidata QID/country/P625 checked city reference",
+          "sha256_scope": "local_reference_file",
+          "snapshot_path": "../phase3/city-references.json"
+        }
+      },
+      "identity_evidence": {
+        "url": "https://www.coresite.com/data-center/de3-denver-co",
+        "sha256": "3c20f0d52e8e96cb22dd7a6da928b053d8e772bb5c6995cc6196f6f155efde31",
+        "checked_at": "2026-11-13T01:50:44.861308+00:00",
+        "locator": "Current DE3 facility specification: first building,18 CMW; availability target2026"
+      },
+      "exposures": [
+        {
+          "role": "operator",
+          "label": "Disclosed operator exposure; property/phase/JV scope retained",
+          "relationship_scope": "specific named facility operating exposure",
+          "maturity": "planned",
+          "property_stake": null,
+          "listing": {
+            "name": "American Tower",
+            "ticker": "AMT",
+            "exchange": "XNYS",
+            "exchange_mic": "XNYS",
+            "security_type": "common_equity",
+            "evidence": {
+              "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000035/amt-20251231.htm",
+              "sha256": "fb453bdf34d5cd97ed91e28b37cf34a58cbe267d22e09050d436aea6d0095b01",
+              "checked_at": "2026-11-13",
+              "locator": "Cover securities table: common equity ticker and exchange"
+            }
+          },
+          "evidence": {
+            "url": "https://www.coresite.com/data-center/de3-denver-co",
+            "sha256": "3c20f0d52e8e96cb22dd7a6da928b053d8e772bb5c6995cc6196f6f155efde31",
+            "checked_at": "2026-11-13T01:50:44.861308+00:00",
+            "locator": "Current DE3 facility specification: first building,18 CMW; availability target2026"
+          },
+          "headquarters": {
+            "city": "Boston",
+            "lat": 42.3603,
+            "lon": -71.0578,
+            "precision": "approximate",
+            "evidence": {
+              "url": "https://www.wikidata.org/entity/Q4745263",
+              "sha256": "f62b1a230667bd334151a789dca59a91648dadface231c65d4f5930fbdb2fb44",
+              "checked_at": "2026-11-11",
+              "locator": "Existing CC0 HQ city reference",
+              "sha256_scope": "local_reference_file",
+              "snapshot_path": "../phase3/headquarters-references.json"
+            }
+          },
+          "investment_access": {
+            "type": "listed_REIT",
+            "verified": true,
+            "scope": "Indirect listed-company equity exposure; no direct property purchase"
+          },
+          "parent_chain_evidence": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000157/amt-20260930.htm",
+            "sha256": "610c29ad1b5c8808ae4982a4a0929d39baf51fec866274d7695a836ba9dfb905",
+            "checked_at": "2026-11-13T01:30:17.912119+00:00",
+            "locator": "US operating business chain; separate minority development JV not assumed to be DE3"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "company_confirmed",
+        "date": "2026-11-13",
+        "property_title_verified": false
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "status": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "economic_relationship": {
+            "status": "pending",
+            "basis": "Corporate source-specific access/reuse interpretation remains unresolved"
+          },
+          "listing": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "location": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "reported_metrics": {
+            "status": "omit",
+            "basis": "Corporate capacity/cost/table-derived metrics excluded from minimal discovery export"
+          }
+        },
+        "review": null
+      },
+      "preview_only": true,
+      "reported_metrics": {
+        "capacity": {
+          "value": 18,
+          "unit": "CMW",
+          "basis": "planned critical power for DE3 first building, not whole-campus capacity"
+        },
+        "cost": null,
+        "historic_expected_completion": "2026 (original target, not confirmed completion)"
+      },
+      "notes": [
+        {
+          "field": "project_area",
+          "earlier_announcement": 180000,
+          "current_facility_page": 170000,
+          "disposition": "No single area published as resolved; both source scopes retained."
+        }
+      ]
+    },
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "project:coresite:NY3",
+      "name": "CoreSite NY3",
+      "sector": "data_centers",
+      "country_code": "US",
+      "city": "Secaucus",
+      "asset": {
+        "category": "building",
+        "subtype": "Data center development",
+        "parent_id": null,
+        "count_as_project": true,
+        "building_identity_evidence": {
+          "url": "https://www.coresite.com/news/coresite-launches-ny3-data-center-expanding-ai-optimized-capacity-in-the-new-york-metro-area",
+          "sha256": "ab006921111b84402bee22fc54b49847a898f1c049231b4b7506d06aff15253a",
+          "checked_at": "2026-11-13T01:32:37.578454+00:00",
+          "locator": "Official named facility development announcement"
+        }
+      },
+      "status": {
+        "stage": "operating",
+        "label": "Operating facility, company-reported; launched 25 September 2025",
+        "as_of": "2026-11-13",
+        "certainty": "company_reported",
+        "evidence": {
+          "url": "https://www.coresite.com/data-center/ny3-secaucus-nj",
+          "sha256": "0844383897fd1375018dd54d970f787f9e76f2d5f29c41398392892833dae52a",
+          "checked_at": "2026-11-13",
+          "locator": "Current NY3 service page, named facility and operating services; checked separately from launch announcement"
+        }
+      },
+      "location": {
+        "precision": "approximate",
+        "lat": 40.7875,
+        "lon": -74.061666666,
+        "label": "Secaucus city reference",
+        "basis": "Verified city, not facility footprint",
+        "satellite_allowed": false,
+        "evidence": {
+          "url": "https://www.wikidata.org/entity/Q1013249",
+          "sha256": "f42a60541216840fe48bf9749da139d760cb2d9a424cb763928caec0e06c3587",
+          "checked_at": "2026-11-13",
+          "locator": "Wikidata QID/country/P625 checked city reference",
+          "sha256_scope": "local_reference_file",
+          "snapshot_path": "../phase3/city-references.json"
+        }
+      },
+      "identity_evidence": {
+        "url": "https://www.coresite.com/news/coresite-launches-ny3-data-center-expanding-ai-optimized-capacity-in-the-new-york-metro-area",
+        "sha256": "ab006921111b84402bee22fc54b49847a898f1c049231b4b7506d06aff15253a",
+        "checked_at": "2026-11-13T01:32:37.578454+00:00",
+        "locator": "Official named facility development announcement"
+      },
+      "exposures": [
+        {
+          "role": "operator",
+          "label": "Disclosed operator exposure; property/phase/JV scope retained",
+          "relationship_scope": "specific named facility operating exposure",
+          "maturity": "reported",
+          "property_stake": null,
+          "listing": {
+            "name": "American Tower",
+            "ticker": "AMT",
+            "exchange": "XNYS",
+            "exchange_mic": "XNYS",
+            "security_type": "common_equity",
+            "evidence": {
+              "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000035/amt-20251231.htm",
+              "sha256": "fb453bdf34d5cd97ed91e28b37cf34a58cbe267d22e09050d436aea6d0095b01",
+              "checked_at": "2026-11-13",
+              "locator": "Cover securities table: common equity ticker and exchange"
+            }
+          },
+          "evidence": {
+            "url": "https://www.coresite.com/news/coresite-launches-ny3-data-center-expanding-ai-optimized-capacity-in-the-new-york-metro-area",
+            "sha256": "ab006921111b84402bee22fc54b49847a898f1c049231b4b7506d06aff15253a",
+            "checked_at": "2026-11-13T01:32:37.578454+00:00",
+            "locator": "Official named facility development announcement"
+          },
+          "headquarters": {
+            "city": "Boston",
+            "lat": 42.3603,
+            "lon": -71.0578,
+            "precision": "approximate",
+            "evidence": {
+              "url": "https://www.wikidata.org/entity/Q4745263",
+              "sha256": "f62b1a230667bd334151a789dca59a91648dadface231c65d4f5930fbdb2fb44",
+              "checked_at": "2026-11-11",
+              "locator": "Existing CC0 HQ city reference",
+              "sha256_scope": "local_reference_file",
+              "snapshot_path": "../phase3/headquarters-references.json"
+            }
+          },
+          "investment_access": {
+            "type": "listed_REIT",
+            "verified": true,
+            "scope": "Indirect listed-company equity exposure; no direct property purchase"
+          },
+          "parent_chain_evidence": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000157/amt-20260930.htm",
+            "sha256": "610c29ad1b5c8808ae4982a4a0929d39baf51fec866274d7695a836ba9dfb905",
+            "checked_at": "2026-11-13T01:30:17.912119+00:00",
+            "locator": "US operating business chain; separate minority development JV not assumed to be DE3"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "company_confirmed",
+        "date": "2026-11-13",
+        "property_title_verified": false
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "cleared",
+            "basis": "Narrow independently authored US facility facts, source-specific access check; see REUSE-ASSESSMENT.md. No source text/table/photo redistribution or bulk directory reuse."
+          },
+          "status": {
+            "status": "cleared",
+            "basis": "Narrow independently authored US facility facts, source-specific access check; see REUSE-ASSESSMENT.md. No source text/table/photo redistribution or bulk directory reuse."
+          },
+          "economic_relationship": {
+            "status": "cleared",
+            "basis": "Narrow independently authored US facility facts, source-specific access check; see REUSE-ASSESSMENT.md. No source text/table/photo redistribution or bulk directory reuse."
+          },
+          "listing": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "location": {
+            "status": "cleared",
+            "basis": "Approved narrow SEC listing identifiers / Wikidata CC0 approximate city reference; sources credited"
+          },
+          "reported_metrics": {
+            "status": "omit",
+            "basis": "Corporate capacity/cost/table-derived metrics excluded from minimal discovery export"
+          }
+        },
+        "review": {
+          "reviewer": "Codex bounded factual-source assessment (not publisher legal sign-off)",
+          "date": "2026-11-13",
+          "basis": "REUSE-ASSESSMENT.md, minimum NY3 factual projection; source checks and omissions recorded",
+          "fact_sha256": "cfa9a6dcbda33ce4501f32a097fc2e053f9a01efdbda91a0f1a275eb71291510"
+        }
+      },
+      "preview_only": true,
+      "reported_metrics": {
+        "capacity": null,
+        "cost": null,
+        "historic_expected_completion": null
+      },
+      "notes": []
+    }
+  ]
+}
