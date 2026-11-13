@@ -1,0 +1,1498 @@
+{
+ "schema": "investedia.projects.import.v1",
+ "synthetic": false,
+ "companies": {
+  "lei:529900RTERU3X7G3D672": {
+   "identity": {
+    "scheme": "lei",
+    "value": "529900RTERU3X7G3D672",
+    "evidence": {
+     "url": "https://api.gleif.org/api/v1/lei-records?filter[entity.legalName]=NEXTDC%20LIMITED",
+     "sha256": "4867712f0d67e485f88952810e868a60cc2b5d6e17341f14454e5b44189f7b12",
+     "checked_at": "2026-11-13",
+     "locator": "GLEIF LEI record: NEXTDC LIMITED, HQ Sydney"
+    }
+   },
+   "listing": {
+    "name": "NEXTDC Limited",
+    "ticker": "NXT",
+    "exchange": "XASX",
+    "exchange_mic": "XASX",
+    "security_type": "common_equity",
+    "evidence": {
+     "url": "https://asx.api.markitdigital.com/asx-research/1.0/companies/NXT/header",
+     "sha256": "8a69ccffced739868b57a6769c05607200239e2df4f4cf6d3c22c597755789bd",
+     "checked_at": "2026-11-13",
+     "locator": "ASX company header: symbol NXT, ordinary shares, listed 2010-12-13"
+    }
+   },
+   "headquarters": {
+    "city": "Sydney",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "precision": "approximate",
+    "evidence": {
+     "url": "https://api.gleif.org/api/v1/lei-records?filter[entity.legalName]=NEXTDC%20LIMITED",
+     "sha256": "4867712f0d67e485f88952810e868a60cc2b5d6e17341f14454e5b44189f7b12",
+     "checked_at": "2026-11-13",
+     "locator": "GLEIF headquarters address city Sydney (Wikidata lists Brisbane: conflict noted; GLEIF used)"
+    }
+   }
+  }
+ },
+ "records": [
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:nextdc:M4:campus",
+   "source_identity": {
+    "authority": "asx:nxt:annual-report-fy26",
+    "id": "M4:campus"
+   },
+   "synthetic": false,
+   "name": "NEXTDC M4 Melbourne",
+   "sector": "data_centers",
+   "country_code": "AU",
+   "city": "Melbourne",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center campus",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "planning",
+    "label": "Victorian Government development approval (January 2026) for a technology campus at Fishermans Bend, Port Melbourne",
+    "as_of": "2026-08-27",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+     "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+     "checked_at": "2026-11-13",
+     "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'In January 2026, we secured Victorian Government development approval for M4 Melbourne, a 162MW technology campus at Fishermans Bend'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": -37.8142,
+    "lon": 144.9631,
+    "label": "Melbourne reference",
+    "basis": "Wikidata (CC0) city reference Q3141 (Melbourne); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q3141",
+     "sha256": "d28afe8121c24f772ebc8b624e9b4d837c00247aa810596e2856c071d013ada1",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:nextdc:M4:campus",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+    "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+    "checked_at": "2026-11-13",
+    "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'In January 2026, we secured Victorian Government development approval for M4 Melbourne, a 162MW technology campus at Fishermans Bend'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer annual report)",
+     "relationship_scope": "NEXTDC project per FY26 annual report; property title/lease for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "lei:529900RTERU3X7G3D672",
+     "listing": {
+      "name": "NEXTDC Limited",
+      "ticker": "NXT",
+      "exchange": "XASX",
+      "exchange_mic": "XASX",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://asx.api.markitdigital.com/asx-research/1.0/companies/NXT/header",
+       "sha256": "8a69ccffced739868b57a6769c05607200239e2df4f4cf6d3c22c597755789bd",
+       "checked_at": "2026-11-13",
+       "locator": "ASX company header: symbol NXT, ordinary shares, listed 2010-12-13"
+      }
+     },
+     "evidence": {
+      "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+      "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+      "checked_at": "2026-11-13",
+      "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'In January 2026, we secured Victorian Government development approval for M4 Melbourne, a 162MW technology campus at Fishermans Bend'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "public_equity",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure (ASX: NXT); no direct property purchase"
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-NXT-DEV (ASX annual report)"
+   },
+   "reported_metrics": {
+    "planned_capacity": {
+     "value": 162,
+     "unit": "MW",
+     "basis": "campus, per annual report"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "ASX listing identifiers; credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": null
+   },
+   "preview_only": true,
+   "notes": []
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:nextdc:KL1:expansion",
+   "source_identity": {
+    "authority": "asx:nxt:annual-report-fy26",
+    "id": "KL1:expansion"
+   },
+   "synthetic": false,
+   "name": "NEXTDC KL1 Kuala Lumpur",
+   "sector": "data_centers",
+   "country_code": "MY",
+   "city": "Kuala Lumpur",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center expansion",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "expanding",
+    "label": "Opened May 2026 with 10MW; further 15MW in progress and 15MW in plan",
+    "as_of": "2026-08-27",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+     "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+     "checked_at": "2026-11-13",
+     "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): International segment: 'KL1 Kuala Lumpur opened with 10MW of capacity, 15MW in progress and 15MW in plan'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 3.1478,
+    "lon": 101.6953,
+    "label": "Kuala Lumpur reference",
+    "basis": "Wikidata (CC0) city reference Q1865 (Kuala Lumpur); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q1865",
+     "sha256": "c5a990e39d310687df3177ef6a824eb460a42f35756f1ed97feef28c85b125ab",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:nextdc:KL1:expansion",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+    "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+    "checked_at": "2026-11-13",
+    "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): International segment: 'KL1 Kuala Lumpur opened with 10MW of capacity, 15MW in progress and 15MW in plan'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer annual report)",
+     "relationship_scope": "NEXTDC project per FY26 annual report; property title/lease for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "lei:529900RTERU3X7G3D672",
+     "listing": {
+      "name": "NEXTDC Limited",
+      "ticker": "NXT",
+      "exchange": "XASX",
+      "exchange_mic": "XASX",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://asx.api.markitdigital.com/asx-research/1.0/companies/NXT/header",
+       "sha256": "8a69ccffced739868b57a6769c05607200239e2df4f4cf6d3c22c597755789bd",
+       "checked_at": "2026-11-13",
+       "locator": "ASX company header: symbol NXT, ordinary shares, listed 2010-12-13"
+      }
+     },
+     "evidence": {
+      "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+      "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+      "checked_at": "2026-11-13",
+      "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): International segment: 'KL1 Kuala Lumpur opened with 10MW of capacity, 15MW in progress and 15MW in plan'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "public_equity",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure (ASX: NXT); no direct property purchase"
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-NXT-DEV (ASX annual report)"
+   },
+   "reported_metrics": {
+    "opened_capacity": {
+     "value": 10,
+     "unit": "MW"
+    },
+    "in_progress_capacity": {
+     "value": 15,
+     "unit": "MW"
+    },
+    "planned_capacity": {
+     "value": 15,
+     "unit": "MW"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "ASX listing identifiers; credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": null
+   },
+   "preview_only": true,
+   "notes": []
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:nextdc:TK1:site",
+   "source_identity": {
+    "authority": "asx:nxt:annual-report-fy26",
+    "id": "TK1:site"
+   },
+   "synthetic": false,
+   "name": "NEXTDC TK1 Tokyo",
+   "sector": "data_centers",
+   "country_code": "JP",
+   "city": "Tokyo",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Preliminary site works underway (first NEXTDC facility in Japan)",
+    "as_of": "2026-08-27",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+     "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+     "checked_at": "2026-11-13",
+     "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'preliminary site works commenced at TK1 Tokyo, our first Japanese facility'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 35.6894,
+    "lon": 139.6917,
+    "label": "Tokyo reference",
+    "basis": "Wikidata (CC0) city reference Q1490 (Tokyo); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q1490",
+     "sha256": "87a32b8213016edce2d0384effbf97f305364f8f4874edab6f3135fab10c0609",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:nextdc:TK1:site",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+    "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+    "checked_at": "2026-11-13",
+    "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'preliminary site works commenced at TK1 Tokyo, our first Japanese facility'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer annual report)",
+     "relationship_scope": "NEXTDC project per FY26 annual report; property title/lease for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "lei:529900RTERU3X7G3D672",
+     "listing": {
+      "name": "NEXTDC Limited",
+      "ticker": "NXT",
+      "exchange": "XASX",
+      "exchange_mic": "XASX",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://asx.api.markitdigital.com/asx-research/1.0/companies/NXT/header",
+       "sha256": "8a69ccffced739868b57a6769c05607200239e2df4f4cf6d3c22c597755789bd",
+       "checked_at": "2026-11-13",
+       "locator": "ASX company header: symbol NXT, ordinary shares, listed 2010-12-13"
+      }
+     },
+     "evidence": {
+      "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+      "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+      "checked_at": "2026-11-13",
+      "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'preliminary site works commenced at TK1 Tokyo, our first Japanese facility'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "public_equity",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure (ASX: NXT); no direct property purchase"
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-NXT-DEV (ASX annual report)"
+   },
+   "reported_metrics": {
+    "capacity": null
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "ASX listing identifiers; credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": null
+   },
+   "preview_only": true,
+   "notes": []
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:nextdc:AK1:site",
+   "source_identity": {
+    "authority": "asx:nxt:annual-report-fy26",
+    "id": "AK1:site"
+   },
+   "synthetic": false,
+   "name": "NEXTDC AK1 Auckland",
+   "sector": "data_centers",
+   "country_code": "NZ",
+   "city": "Auckland",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "planning",
+    "label": "Resource consent application lodged with Auckland Council",
+    "as_of": "2026-08-27",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+     "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+     "checked_at": "2026-11-13",
+     "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): International segment: 'a resource consent application lodged with Auckland Council for AK1 Auckland'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": -36.8492,
+    "lon": 174.7653,
+    "label": "Auckland reference",
+    "basis": "Wikidata (CC0) city reference Q37100 (Auckland); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q37100",
+     "sha256": "39beb449ae29cf2b336c41aaaa57e39ce0da8cf3d93e8c25e1e40ee1f3973c53",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:nextdc:AK1:site",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+    "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+    "checked_at": "2026-11-13",
+    "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): International segment: 'a resource consent application lodged with Auckland Council for AK1 Auckland'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer annual report)",
+     "relationship_scope": "NEXTDC project per FY26 annual report; property title/lease for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "lei:529900RTERU3X7G3D672",
+     "listing": {
+      "name": "NEXTDC Limited",
+      "ticker": "NXT",
+      "exchange": "XASX",
+      "exchange_mic": "XASX",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://asx.api.markitdigital.com/asx-research/1.0/companies/NXT/header",
+       "sha256": "8a69ccffced739868b57a6769c05607200239e2df4f4cf6d3c22c597755789bd",
+       "checked_at": "2026-11-13",
+       "locator": "ASX company header: symbol NXT, ordinary shares, listed 2010-12-13"
+      }
+     },
+     "evidence": {
+      "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+      "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+      "checked_at": "2026-11-13",
+      "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): International segment: 'a resource consent application lodged with Auckland Council for AK1 Auckland'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "public_equity",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure (ASX: NXT); no direct property purchase"
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-NXT-DEV (ASX annual report)"
+   },
+   "reported_metrics": {
+    "capacity": null
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "ASX listing identifiers; credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": null
+   },
+   "preview_only": true,
+   "notes": []
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:nextdc:S4:site",
+   "source_identity": {
+    "authority": "asx:nxt:annual-report-fy26",
+    "id": "S4:site"
+   },
+   "synthetic": false,
+   "name": "NEXTDC S4 Sydney",
+   "sector": "data_centers",
+   "country_code": "AU",
+   "city": "Sydney",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Construction continued during FY26",
+    "as_of": "2026-08-27",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+     "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+     "checked_at": "2026-11-13",
+     "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'continued construction at S4 Sydney, GE1 Geelong, D2 Darwin and SC2 Sunshine Coast'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": -33.8678,
+    "lon": 151.21,
+    "label": "Sydney reference",
+    "basis": "Wikidata (CC0) city reference Q3130 (Sydney); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q3130",
+     "sha256": "36df852d2aafe0fbb0061b18b4026beafa02815e29f8cd26f392292b51519d17",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:nextdc:S4:site",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+    "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+    "checked_at": "2026-11-13",
+    "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'continued construction at S4 Sydney, GE1 Geelong, D2 Darwin and SC2 Sunshine Coast'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer annual report)",
+     "relationship_scope": "NEXTDC project per FY26 annual report; property title/lease for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "lei:529900RTERU3X7G3D672",
+     "listing": {
+      "name": "NEXTDC Limited",
+      "ticker": "NXT",
+      "exchange": "XASX",
+      "exchange_mic": "XASX",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://asx.api.markitdigital.com/asx-research/1.0/companies/NXT/header",
+       "sha256": "8a69ccffced739868b57a6769c05607200239e2df4f4cf6d3c22c597755789bd",
+       "checked_at": "2026-11-13",
+       "locator": "ASX company header: symbol NXT, ordinary shares, listed 2010-12-13"
+      }
+     },
+     "evidence": {
+      "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+      "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+      "checked_at": "2026-11-13",
+      "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'continued construction at S4 Sydney, GE1 Geelong, D2 Darwin and SC2 Sunshine Coast'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "public_equity",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure (ASX: NXT); no direct property purchase"
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-NXT-DEV (ASX annual report)"
+   },
+   "reported_metrics": {
+    "capacity": null
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "ASX listing identifiers; credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": null
+   },
+   "preview_only": true,
+   "notes": []
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:nextdc:S7:site",
+   "source_identity": {
+    "authority": "asx:nxt:annual-report-fy26",
+    "id": "S7:site"
+   },
+   "synthetic": false,
+   "name": "NEXTDC S7 Sydney",
+   "sector": "data_centers",
+   "country_code": "AU",
+   "city": "Sydney",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "planning",
+    "label": "Project under development (construction start not stated)",
+    "as_of": "2026-08-27",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+     "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+     "checked_at": "2026-11-13",
+     "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Sustainability: 'Projects under development including S4, S7 and M4'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": -33.8678,
+    "lon": 151.21,
+    "label": "Sydney reference",
+    "basis": "Wikidata (CC0) city reference Q3130 (Sydney); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q3130",
+     "sha256": "36df852d2aafe0fbb0061b18b4026beafa02815e29f8cd26f392292b51519d17",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:nextdc:S7:site",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+    "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+    "checked_at": "2026-11-13",
+    "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Sustainability: 'Projects under development including S4, S7 and M4'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer annual report)",
+     "relationship_scope": "NEXTDC project per FY26 annual report; property title/lease for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "lei:529900RTERU3X7G3D672",
+     "listing": {
+      "name": "NEXTDC Limited",
+      "ticker": "NXT",
+      "exchange": "XASX",
+      "exchange_mic": "XASX",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://asx.api.markitdigital.com/asx-research/1.0/companies/NXT/header",
+       "sha256": "8a69ccffced739868b57a6769c05607200239e2df4f4cf6d3c22c597755789bd",
+       "checked_at": "2026-11-13",
+       "locator": "ASX company header: symbol NXT, ordinary shares, listed 2010-12-13"
+      }
+     },
+     "evidence": {
+      "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+      "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+      "checked_at": "2026-11-13",
+      "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Sustainability: 'Projects under development including S4, S7 and M4'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "public_equity",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure (ASX: NXT); no direct property purchase"
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-NXT-DEV (ASX annual report)"
+   },
+   "reported_metrics": {
+    "capacity": null
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "ASX listing identifiers; credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": null
+   },
+   "preview_only": true,
+   "notes": []
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:nextdc:GE1:site",
+   "source_identity": {
+    "authority": "asx:nxt:annual-report-fy26",
+    "id": "GE1:site"
+   },
+   "synthetic": false,
+   "name": "NEXTDC GE1 Geelong",
+   "sector": "data_centers",
+   "country_code": "AU",
+   "city": "Geelong",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Construction continued during FY26 (edge facility)",
+    "as_of": "2026-08-27",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+     "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+     "checked_at": "2026-11-13",
+     "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'continued construction at S4 Sydney, GE1 Geelong, D2 Darwin and SC2 Sunshine Coast'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": -38.15,
+    "lon": 144.35,
+    "label": "Geelong reference",
+    "basis": "Wikidata (CC0) city reference Q231765 (Geelong); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q231765",
+     "sha256": "8af819f0b9bb70cd2d07880771f634110183b5cc8a07173872f68ef633f6cb4f",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:nextdc:GE1:site",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+    "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+    "checked_at": "2026-11-13",
+    "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'continued construction at S4 Sydney, GE1 Geelong, D2 Darwin and SC2 Sunshine Coast'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer annual report)",
+     "relationship_scope": "NEXTDC project per FY26 annual report; property title/lease for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "lei:529900RTERU3X7G3D672",
+     "listing": {
+      "name": "NEXTDC Limited",
+      "ticker": "NXT",
+      "exchange": "XASX",
+      "exchange_mic": "XASX",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://asx.api.markitdigital.com/asx-research/1.0/companies/NXT/header",
+       "sha256": "8a69ccffced739868b57a6769c05607200239e2df4f4cf6d3c22c597755789bd",
+       "checked_at": "2026-11-13",
+       "locator": "ASX company header: symbol NXT, ordinary shares, listed 2010-12-13"
+      }
+     },
+     "evidence": {
+      "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+      "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+      "checked_at": "2026-11-13",
+      "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'continued construction at S4 Sydney, GE1 Geelong, D2 Darwin and SC2 Sunshine Coast'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "public_equity",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure (ASX: NXT); no direct property purchase"
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-NXT-DEV (ASX annual report)"
+   },
+   "reported_metrics": {
+    "capacity": null
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "ASX listing identifiers; credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": null
+   },
+   "preview_only": true,
+   "notes": []
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:nextdc:D2:site",
+   "source_identity": {
+    "authority": "asx:nxt:annual-report-fy26",
+    "id": "D2:site"
+   },
+   "synthetic": false,
+   "name": "NEXTDC D2 Darwin",
+   "sector": "data_centers",
+   "country_code": "AU",
+   "city": "Darwin",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Construction continued during FY26 (edge facility)",
+    "as_of": "2026-08-27",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+     "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+     "checked_at": "2026-11-13",
+     "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'continued construction at S4 Sydney, GE1 Geelong, D2 Darwin and SC2 Sunshine Coast'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": -12.4381,
+    "lon": 130.8411,
+    "label": "Darwin reference",
+    "basis": "Wikidata (CC0) city reference Q11568 (Darwin); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q11568",
+     "sha256": "c55e73f06060b0a706bb1a794062568298299eea3bb326bc9f756074f9515ff3",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:nextdc:D2:site",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+    "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+    "checked_at": "2026-11-13",
+    "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'continued construction at S4 Sydney, GE1 Geelong, D2 Darwin and SC2 Sunshine Coast'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer annual report)",
+     "relationship_scope": "NEXTDC project per FY26 annual report; property title/lease for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "lei:529900RTERU3X7G3D672",
+     "listing": {
+      "name": "NEXTDC Limited",
+      "ticker": "NXT",
+      "exchange": "XASX",
+      "exchange_mic": "XASX",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://asx.api.markitdigital.com/asx-research/1.0/companies/NXT/header",
+       "sha256": "8a69ccffced739868b57a6769c05607200239e2df4f4cf6d3c22c597755789bd",
+       "checked_at": "2026-11-13",
+       "locator": "ASX company header: symbol NXT, ordinary shares, listed 2010-12-13"
+      }
+     },
+     "evidence": {
+      "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+      "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+      "checked_at": "2026-11-13",
+      "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'continued construction at S4 Sydney, GE1 Geelong, D2 Darwin and SC2 Sunshine Coast'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "public_equity",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure (ASX: NXT); no direct property purchase"
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-NXT-DEV (ASX annual report)"
+   },
+   "reported_metrics": {
+    "capacity": null
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "ASX listing identifiers; credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": null
+   },
+   "preview_only": true,
+   "notes": []
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:nextdc:SC2:site",
+   "source_identity": {
+    "authority": "asx:nxt:annual-report-fy26",
+    "id": "SC2:site"
+   },
+   "synthetic": false,
+   "name": "NEXTDC SC2 Sunshine Coast",
+   "sector": "data_centers",
+   "country_code": "AU",
+   "city": "Sunshine Coast",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Construction continued during FY26 (edge facility)",
+    "as_of": "2026-08-27",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+     "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+     "checked_at": "2026-11-13",
+     "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'continued construction at S4 Sydney, GE1 Geelong, D2 Darwin and SC2 Sunshine Coast'"
+    }
+   },
+   "location": {
+    "precision": "unknown",
+    "lat": null,
+    "lon": null,
+    "satellite_allowed": false
+   },
+   "identity_evidence": {
+    "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+    "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+    "checked_at": "2026-11-13",
+    "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'continued construction at S4 Sydney, GE1 Geelong, D2 Darwin and SC2 Sunshine Coast'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer annual report)",
+     "relationship_scope": "NEXTDC project per FY26 annual report; property title/lease for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "lei:529900RTERU3X7G3D672",
+     "listing": {
+      "name": "NEXTDC Limited",
+      "ticker": "NXT",
+      "exchange": "XASX",
+      "exchange_mic": "XASX",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://asx.api.markitdigital.com/asx-research/1.0/companies/NXT/header",
+       "sha256": "8a69ccffced739868b57a6769c05607200239e2df4f4cf6d3c22c597755789bd",
+       "checked_at": "2026-11-13",
+       "locator": "ASX company header: symbol NXT, ordinary shares, listed 2010-12-13"
+      }
+     },
+     "evidence": {
+      "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+      "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+      "checked_at": "2026-11-13",
+      "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'continued construction at S4 Sydney, GE1 Geelong, D2 Darwin and SC2 Sunshine Coast'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "public_equity",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure (ASX: NXT); no direct property purchase"
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-NXT-DEV (ASX annual report)"
+   },
+   "reported_metrics": {
+    "capacity": null
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "ASX listing identifiers; credited"
+     },
+     "location": {
+      "status": "omit",
+      "basis": "No point"
+     }
+    },
+    "review": null
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "location",
+     "disposition": "No verified Wikidata reference resolved for this city yet; no marker"
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:nextdc:P1:extension",
+   "source_identity": {
+    "authority": "asx:nxt:annual-report-fy26",
+    "id": "P1:extension"
+   },
+   "synthetic": false,
+   "name": "NEXTDC P1 Perth extension",
+   "sector": "data_centers",
+   "country_code": "AU",
+   "city": "Perth",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center extension",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "expanding",
+    "label": "Extension build commenced, adding 2MW",
+    "as_of": "2026-08-27",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+     "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+     "checked_at": "2026-11-13",
+     "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'commenced builds to extend our existing P1 Perth and B2 Brisbane data centres, adding 2MW of additional capacity at each site'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": -31.9558,
+    "lon": 115.8597,
+    "label": "Perth reference",
+    "basis": "Wikidata (CC0) city reference Q3183 (Perth); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q3183",
+     "sha256": "e6d6065c2ae3fe028bf58ad72330cdc1b24cc814f72334f7f481f74096ac0036",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:nextdc:P1:extension",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+    "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+    "checked_at": "2026-11-13",
+    "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'commenced builds to extend our existing P1 Perth and B2 Brisbane data centres, adding 2MW of additional capacity at each site'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer annual report)",
+     "relationship_scope": "NEXTDC project per FY26 annual report; property title/lease for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "lei:529900RTERU3X7G3D672",
+     "listing": {
+      "name": "NEXTDC Limited",
+      "ticker": "NXT",
+      "exchange": "XASX",
+      "exchange_mic": "XASX",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://asx.api.markitdigital.com/asx-research/1.0/companies/NXT/header",
+       "sha256": "8a69ccffced739868b57a6769c05607200239e2df4f4cf6d3c22c597755789bd",
+       "checked_at": "2026-11-13",
+       "locator": "ASX company header: symbol NXT, ordinary shares, listed 2010-12-13"
+      }
+     },
+     "evidence": {
+      "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+      "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+      "checked_at": "2026-11-13",
+      "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'commenced builds to extend our existing P1 Perth and B2 Brisbane data centres, adding 2MW of additional capacity at each site'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "public_equity",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure (ASX: NXT); no direct property purchase"
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-NXT-DEV (ASX annual report)"
+   },
+   "reported_metrics": {
+    "added_capacity": {
+     "value": 2,
+     "unit": "MW"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "ASX listing identifiers; credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": null
+   },
+   "preview_only": true,
+   "notes": []
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:nextdc:B2:extension",
+   "source_identity": {
+    "authority": "asx:nxt:annual-report-fy26",
+    "id": "B2:extension"
+   },
+   "synthetic": false,
+   "name": "NEXTDC B2 Brisbane extension",
+   "sector": "data_centers",
+   "country_code": "AU",
+   "city": "Brisbane",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center extension",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "expanding",
+    "label": "Extension build commenced, adding 2MW",
+    "as_of": "2026-08-27",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+     "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+     "checked_at": "2026-11-13",
+     "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'commenced builds to extend our existing P1 Perth and B2 Brisbane data centres, adding 2MW of additional capacity at each site'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": -27.4678,
+    "lon": 153.0278,
+    "label": "Brisbane reference",
+    "basis": "Wikidata (CC0) city reference Q34932 (Brisbane); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q34932",
+     "sha256": "31cb55f87036d09f6744c788047d0ce43b78e512aa5f1177dffa8c7d3403bbe8",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:nextdc:B2:extension",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+    "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+    "checked_at": "2026-11-13",
+    "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'commenced builds to extend our existing P1 Perth and B2 Brisbane data centres, adding 2MW of additional capacity at each site'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer annual report)",
+     "relationship_scope": "NEXTDC project per FY26 annual report; property title/lease for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "lei:529900RTERU3X7G3D672",
+     "listing": {
+      "name": "NEXTDC Limited",
+      "ticker": "NXT",
+      "exchange": "XASX",
+      "exchange_mic": "XASX",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://asx.api.markitdigital.com/asx-research/1.0/companies/NXT/header",
+       "sha256": "8a69ccffced739868b57a6769c05607200239e2df4f4cf6d3c22c597755789bd",
+       "checked_at": "2026-11-13",
+       "locator": "ASX company header: symbol NXT, ordinary shares, listed 2010-12-13"
+      }
+     },
+     "evidence": {
+      "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+      "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+      "checked_at": "2026-11-13",
+      "locator": "NEXTDC FY26 Annual Report & Appendix 4E (ASX, 27 Aug 2026): Operating review: 'commenced builds to extend our existing P1 Perth and B2 Brisbane data centres, adding 2MW of additional capacity at each site'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "public_equity",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure (ASX: NXT); no direct property purchase"
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-NXT-DEV (ASX annual report)"
+   },
+   "reported_metrics": {
+    "added_capacity": {
+     "value": 2,
+     "unit": "MW"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "Facts from ASX annual report; owner approval so far covers SEC facts - ASX filing scope awaiting owner confirmation"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "ASX listing identifiers; credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": null
+   },
+   "preview_only": true,
+   "notes": []
+  }
+ ],
+ "operator_rule": {
+  "id": "R-NXT-OP",
+  "evidence": {
+   "url": "https://announcements.asx.com.au/asxpdf/20260827/pdf/073c027z036kht.pdf",
+   "sha256": "300cd701299122110e20215f80bb7b2d8442336e649989d199ed0bdf09791a85",
+   "locator": "Operating review: 'Today NEXTDC manages 18 fully operational, highly certified data centres'"
+  }
+ }
+}
