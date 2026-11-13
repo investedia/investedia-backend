@@ -50,7 +50,7 @@ def main():
             continue
         done.add(base)
         words = [w for w in core(base) if not w.isdigit() and w not in ('ntpc', 'acwa', 'scatec', 'nhpc')]
-        if not words:
+        if len(words) < 2:  # one-word names (e.g. 'Hammond') match unrelated files
             continue
         res = api({'action': 'query', 'list': 'search', 'srnamespace': 6, 'srlimit': 15, 'srsearch': ' '.join(words) + ' ' + p['kind'].split()[0]})
         titles = [r['title'] for r in res.get('query', {}).get('search', [])]
@@ -66,7 +66,7 @@ def main():
                     continue
                 co = (pg.get('coordinates') or [{}])[0]
                 dist = round(km(p['lat'], p['lon'], co['lat'], co['lon']), 1) if 'lat' in co else None
-                if dist is not None and dist > 25:
+                if dist is None or dist > 25:  # a photo must carry coordinates near the project
                     continue
                 cands.append({'title': pg['title'], 'file_page': ii.get('descriptionurl'), 'thumb': ii.get('thumburl'), 'original': ii.get('url'),
                               'licence': lic, 'licence_url': md.get('LicenseUrl'), 'author': md.get('Artist', '').strip()[:200],
