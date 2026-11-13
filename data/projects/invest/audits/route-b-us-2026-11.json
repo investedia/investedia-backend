@@ -515,5 +515,53 @@
   }
  ],
  "round2": "Local GLEIF golden copy (2026-11-12): 24 new links audited by hand, all correct. Safeguard fix: \"capital\" alone no longer marks a company as a fund (Pinnacle West Capital Corp).",
- "round3": "EIA-860 2025 ownership survey (released 2026): 52 new links audited by hand, all correct (utility subsidiaries to listed parents; Tampa Electric > TECO Energy > Emera; MidAmerican > Berkshire Hathaway). Mulqueeney Wind (Brookfield) kept internal."
+ "round3": "EIA-860 2025 ownership survey (released 2026): 52 new links audited by hand, all correct (utility subsidiaries to listed parents; Tampa Electric > TECO Energy > Emera; MidAmerican > Berkshire Hathaway). Mulqueeney Wind (Brookfield) kept internal.",
+ "rounds": [
+  {
+   "date": "2026-11-13",
+   "change": "non-US listings (RWE, Acciona, EDP, Enel) from official exchange/IR pages; SEC 10-K Exhibit 21 links for owners without GLEIF parent (NextEra Energy Resources, Otter Tail Power, OG&E, Black Hills Colorado Electric)",
+   "new_links": 28,
+   "result": "28/28 correct",
+   "checked": [
+    "EIA owner = reporting entity or Schedule 4 owner",
+    "registry/Exhibit 21 link verbatim",
+    "listing current on official page",
+    "no stake invented (EIA % only where reported)"
+   ],
+   "keys": [
+    "eia:2951|lei:CE5OG6JPOZMDSA0LAQ19",
+    "eia:56998|lei:3MGELCRSTNSAMJ962671",
+    "eia:61511|lei:529900GB7KCA94ACC940",
+    "eia:62263|lei:529900CLC3WDMGI9VH80",
+    "eia:62892|lei:529900CLC3WDMGI9VH80",
+    "eia:64658|lei:54930002KP75TLLLNO21",
+    "eia:64659|lei:54930002KP75TLLLNO21",
+    "eia:64672|lei:WOCMU6HCI0OJWNPRZS33",
+    "eia:65028|lei:WOCMU6HCI0OJWNPRZS33",
+    "eia:65338|lei:529900GB7KCA94ACC940",
+    "eia:66124|lei:529900GB7KCA94ACC940",
+    "eia:66238|lei:529900GB7KCA94ACC940",
+    "eia:66309|lei:529900GB7KCA94ACC940",
+    "eia:68339|lei:CIK0001466593",
+    "eia:68340|lei:CIK0001466593",
+    "eia:69004|lei:54930002KP75TLLLNO21",
+    "eia:69027|lei:529900GB7KCA94ACC940",
+    "eia:69110|lei:54930002KP75TLLLNO21",
+    "eia:69579|lei:529900GB7KCA94ACC940",
+    "eia:69588|lei:529900GB7KCA94ACC940",
+    "eia:69657|lei:254900RHL9MEUS5NKX63",
+    "eia:69658|lei:254900RHL9MEUS5NKX63",
+    "eia:69659|lei:254900RHL9MEUS5NKX63",
+    "eia:69823|lei:254900RHL9MEUS5NKX63",
+    "eia:69879|lei:254900RHL9MEUS5NKX63",
+    "eia:70299|lei:254900RHL9MEUS5NKX63",
+    "eia:70407|lei:254900RHL9MEUS5NKX63",
+    "eia:70408|lei:254900RHL9MEUS5NKX63"
+   ],
+   "notes": [
+    "Avangrid plants stay C: GLEIF ultimate parent Avangrid Inc is no longer listed; Iberdrola link would need Iberdrola document",
+    "EIA expected months already passed are flagged \"to be re-checked\" on the Globe"
+   ]
+  }
+ ]
 }

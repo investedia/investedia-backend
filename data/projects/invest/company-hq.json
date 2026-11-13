@@ -221,6 +221,46 @@
    "source_url": "https://www.wikidata.org/entity/Q4732492",
    "city_url": "https://www.wikidata.org/entity/Q43788",
    "checked_at": "2026-11-13"
+  },
+  "335800WHWSIB8LQQMH94": {
+   "lat": 31.1048,
+   "lon": 77.1734,
+   "city": "Shimla",
+   "source": "SJVN Annual Report 2025-26: \"Registered & Corporate Office: SJVN Corporate Office Complex, Shanan, Shimla - 171006\"; city-centre coordinate for Shimla",
+   "source_url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+   "checked_at": "2026-11-13"
+  },
+  "CE5OG6JPOZMDSA0LAQ19": {
+   "lat": 35.4676,
+   "lon": -97.5164,
+   "city": "Oklahoma City",
+   "source": "GLEIF headquarters address (city); city-centre coordinate",
+   "source_url": "https://api.gleif.org/api/v1/lei-records/CE5OG6JPOZMDSA0LAQ19",
+   "checked_at": "2026-11-13"
+  },
+  "529900GB7KCA94ACC940": {
+   "lat": 51.4556,
+   "lon": 7.0116,
+   "city": "Essen",
+   "source": "GLEIF headquarters address (city); city-centre coordinate",
+   "source_url": "https://api.gleif.org/api/v1/lei-records/529900GB7KCA94ACC940",
+   "checked_at": "2026-11-13"
+  },
+  "529900CLC3WDMGI9VH80": {
+   "lat": 38.7223,
+   "lon": -9.1393,
+   "city": "Lisbon",
+   "source": "GLEIF headquarters address (city); city-centre coordinate",
+   "source_url": "https://api.gleif.org/api/v1/lei-records/529900CLC3WDMGI9VH80",
+   "checked_at": "2026-11-13"
+  },
+  "54930002KP75TLLLNO21": {
+   "lat": 40.4168,
+   "lon": -3.7038,
+   "city": "Madrid",
+   "source": "GLEIF headquarters address (city); city-centre coordinate",
+   "source_url": "https://api.gleif.org/api/v1/lei-records/54930002KP75TLLLNO21",
+   "checked_at": "2026-11-13"
   }
  },
  "by_ticker": {
@@ -2815,6 +2855,14 @@
    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
    "source_url": "https://www.wikidata.org/entity/Q661845",
    "checked_at": "2026-11-11"
+  },
+  "OTTR": {
+   "lat": 46.283,
+   "lon": -96.077,
+   "city": "Fergus Falls",
+   "source": "SEC EDGAR business address (city); city-centre coordinate",
+   "source_url": "https://data.sec.gov/submissions/CIK0001466593.json",
+   "checked_at": "2026-11-13"
   }
  }
 }

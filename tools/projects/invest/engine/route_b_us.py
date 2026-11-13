@@ -124,6 +124,7 @@ def run(monthly, annual, today, year=2024):
     for cik, name, ticker, exch in sec['data']:
         sec_by_key[key(name)].append({'cik': cik, 'name': name, 'ticker': ticker, 'exchange': exch})
     listings = json.loads((INV / 'listings.json').read_text())['by_lei'] if (INV / 'listings.json').exists() else {}
+    subs = json.loads((INV / 'sec-subsidiaries.json').read_text())['by_child_lei'] if (INV / 'sec-subsidiaries.json').exists() else {}
     records, ledger, stats, lei_cache = [], {}, Counter(), {}
     for pid, g in m.groupby('Plant ID'):
         mw = g.mw.sum()
@@ -167,6 +168,10 @@ def run(monthly, annual, today, year=2024):
                 par = parent_of(hit['id'], rel)
                 if par and par['id'] not in [c['lei'] for c in chain]:
                     chain.append({'lei': par['id'], 'name': par['attributes']['entity']['legalName']['name'], 'relationship': rel})
+            if len(chain) == 1 and hit['id'] in subs:  # no GLEIF parent: parent's 10-K Exhibit 21 names this subsidiary verbatim
+                sx = subs[hit['id']]
+                chain.append({'lei': sx['parent_lei'], 'name': sx['parent_name'], 'relationship': 'SEC 10-K Exhibit 21 subsidiary',
+                              'source_url': sx['source_url'], 'quote': sx['quote'], 'filing_date': sx['filing_date']})
             # The investable security is the group's top-most company with public common equity.
             L = None
             for c in reversed(chain):
@@ -207,13 +212,19 @@ def run(monthly, annual, today, year=2024):
                         {'url': 'https://api.gleif.org/api/v1/lei-records/%s' % chain[0]['lei'], 'publisher': 'GLEIF', 'document_date': today,
                          'proves': 'Legal entity %s, LEI %s' % (chain[0]['name'], chain[0]['lei']), 'retrieved_at': today}]
             for a, b in zip(chain, chain[1:]):
+                if b.get('source_url'):  # Exhibit 21 link
+                    evidence.append({'url': b['source_url'], 'publisher': 'U.S. SEC (10-K Exhibit 21 of %s)' % b['name'], 'document_date': b['filing_date'],
+                                     'proves': '%s lists %s as a subsidiary' % (b['name'], a['name']), 'quote': b['quote'], 'retrieved_at': today, 'edge': [a['lei'], b['lei']]})
+                    continue
                 evidence.append({'url': 'https://api.gleif.org/api/v1/lei-records/%s/%s' % (a['lei'], b['relationship']), 'publisher': 'GLEIF', 'document_date': today,
                                  'proves': '%s reports %s as its %s' % (a['name'], b['name'], b['relationship'].replace('-', ' ')), 'retrieved_at': today, 'edge': [a['lei'], b['lei']]})
-            evidence.append({'url': 'https://data.sec.gov/submissions/CIK%010d.json' % int(L['cik']) if L.get('cik') else L.get('source_url'), 'publisher': 'U.S. SEC', 'document_date': today,
+            evidence.append({'url': 'https://data.sec.gov/submissions/CIK%010d.json' % int(L['cik']) if L.get('cik') else L.get('source_url'), 'publisher': 'U.S. SEC' if L.get('cik') else 'Official exchange or company investor page', 'document_date': today, 'quote': L.get('quote'),
                              'proves': '%s has publicly traded common equity: %s on %s (CIK %s; %s)' % (L['name'], L['ticker'], L['exchange'], L.get('cik'), L.get('filer_status', 'verified listing')), 'retrieved_at': today})
             ledger['%s|%s' % (rec['id'], exposure['listed_entity_id'])] = {
                 'category': 'B', 'exposure_type': 'direct' if exposure['type'] == 'E1' else 'indirect',
-                'identity': {'scheme': 'LEI', 'id': chain[-1]['lei'], 'legal_name': chain[-1]['name'], 'source_url': 'https://api.gleif.org/api/v1/lei-records/' + chain[-1]['lei'], 'checked_at': today},
+                'identity': ({'scheme': 'CIK', 'id': chain[-1]['lei'][3:], 'legal_name': chain[-1]['name'], 'source_url': 'https://data.sec.gov/submissions/%s.json' % chain[-1]['lei'], 'checked_at': today}
+                             if chain[-1]['lei'].startswith('CIK') else
+                             {'scheme': 'LEI', 'id': chain[-1]['lei'], 'legal_name': chain[-1]['name'], 'source_url': 'https://api.gleif.org/api/v1/lei-records/' + chain[-1]['lei'], 'checked_at': today}),
                 'listing': {'ticker': L['ticker'], 'exchange': L['exchange'], 'cik': L.get('cik'), 'source_url': 'https://data.sec.gov/submissions/CIK%010d.json' % int(L['cik']) if L.get('cik') else L.get('source_url'), 'checked_at': today},
                 'link': evidence,
                 'stake': ({'value': o['stake'], 'note': 'EIA-860 %d Schedule 4 percentage' % year} if len(chain) == 1 and o['stake'] is not None else

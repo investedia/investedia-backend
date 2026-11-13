@@ -1,47 +1,47 @@
 {
  "as_of": "2026-11-13",
- "candidate_listed_companies": 634,
+ "candidate_listed_companies": 640,
  "candidates": {
-  "by_kind_Battery storage": 16,
+  "by_kind_Battery storage": 23,
   "by_kind_Bioenergy": 96,
   "by_kind_Coal": 318,
   "by_kind_Geothermal": 24,
   "by_kind_Hydropower": 214,
   "by_kind_Nuclear": 27,
-  "by_kind_Oil & gas": 624,
-  "by_kind_Solar": 1195,
-  "by_kind_Wind": 1133,
-  "by_stage_Announced": 852,
-  "by_stage_Commissioning": 7,
-  "by_stage_Pre-construction": 1753,
-  "by_stage_Under construction": 1035,
+  "by_kind_Oil & gas": 625,
+  "by_kind_Solar": 1207,
+  "by_kind_Wind": 1141,
+  "by_stage_Announced": 860,
+  "by_stage_Commissioning": 14,
+  "by_stage_Pre-construction": 1759,
+  "by_stage_Under construction": 1042,
   "by_type_E1": 2042,
   "by_type_E1+E3": 87,
-  "by_type_E3": 1518,
-  "exact_location": 1406,
-  "listed_company_has_lei_or_cik": 3325,
-  "matched_by_gem_id": 1294,
-  "projects_with_candidate": 3647
+  "by_type_E3": 1546,
+  "exact_location": 1434,
+  "listed_company_has_lei_or_cik": 3353,
+  "matched_by_gem_id": 1322,
+  "projects_with_candidate": 3675
  },
  "missing_country_code": 0,
  "not_public_reasons": {
-  "no verified exposure to a listed company": 33618
+  "no verified exposure to a listed company": 33590
  },
  "notice": "Candidates are not verified. Only public_projects are shown. Not investment advice.",
  "pipeline_projects": 33769,
  "public_by_category": {
   "A": 53,
-  "B": 98
+  "B": 126
  },
  "public_by_sector_kind": {
-  "Battery storage": 16,
+  "Battery storage": 23,
   "Coal": 8,
   "Hydropower": 9,
-  "Oil & gas": 34,
-  "Solar": 69,
-  "Wind": 14
+  "Oil & gas": 35,
+  "Solar": 81,
+  "Wind": 22
  },
- "public_projects": 150,
+ "public_projects": 178,
  "sources": {
   "ownership": {
    "licence": "CC BY 4.0",

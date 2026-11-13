@@ -1,0 +1,38 @@
+{
+ "schema": "investedia.projects.invest.listings.v1",
+ "note": "Non-US listings for route B, each from the company's own investor page or the official exchange page. Checked 2026-11-13.",
+ "by_lei": {
+  "529900GB7KCA94ACC940": {
+   "name": "RWE AG",
+   "ticker": "RWE",
+   "exchange": "Frankfurt Stock Exchange (Xetra)",
+   "source_url": "https://www.rwe.com/en/investor-relations/rwe-share/share-at-a-glance/",
+   "quote": "RWE shares are traded on the Frankfurt am Main and Düsseldorf Stock Exchanges as well as via the electronic platform Xetra",
+   "checked_at": "2026-11-13"
+  },
+  "54930002KP75TLLLNO21": {
+   "name": "Acciona SA",
+   "ticker": "ANA",
+   "exchange": "Bolsas y Mercados Españoles (Madrid)",
+   "source_url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.acciona-es0125220311.html",
+   "quote": "ACCIONA,S.A. ES0125220311 (BME share detail page)",
+   "checked_at": "2026-11-13"
+  },
+  "529900CLC3WDMGI9VH80": {
+   "name": "EDP, S.A.",
+   "ticker": "EDP",
+   "exchange": "Euronext Lisbon",
+   "source_url": "https://live.euronext.com/en/product/equities/PTEDP0AM0009-XLIS",
+   "quote": "EDP | PTEDP0AM0009 | Euronext",
+   "checked_at": "2026-11-13"
+  },
+  "WOCMU6HCI0OJWNPRZS33": {
+   "name": "Enel S.p.A.",
+   "ticker": "ENEL",
+   "exchange": "Euronext Milan (Borsa Italiana)",
+   "source_url": "https://borsaitaliana.it/borsa/azioni/scheda/IT0003128367.html?lang=en",
+   "quote": "ENEL IT0003128367 (Borsa Italiana share page)",
+   "checked_at": "2026-11-13"
+  }
+ }
+}

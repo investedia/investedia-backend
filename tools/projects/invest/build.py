@@ -225,6 +225,8 @@ def build(power_rows, iso, registry, ledger, today, extra=()):
         due = [c for c in cods if c and quarter_end(c) < date.fromisoformat(today)]
         if due:
             p['stage_note'] = 'Expected %s according to the source; current status to be re-checked' % due[0]
+        elif re.fullmatch(r'20\d\d-\d\d', str(p.get('expected') or '')) and p['expected'] < today[:7]:  # EIA-860M planned month has passed
+            p['stage_note'] = 'Expected %s according to EIA-860M (September 2026); current status to be re-checked' % p['expected']
     cats = Counter(e['verification'].get('category', 'A') for p in public for e in p['exposures'])
     report['public_by_category'] = dict(cats)
     report['public_by_sector_kind'] = dict(Counter(p['kind'] for p in public))

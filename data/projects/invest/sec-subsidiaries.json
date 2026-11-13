@@ -1,0 +1,42 @@
+{
+ "schema": "investedia.projects.invest.sec-subsidiaries.v1",
+ "note": "Owner LEIs with no GLEIF parent, linked to the listed parent through the parent's latest 10-K Exhibit 21 (subsidiary named verbatim). Checked 2026-11-13.",
+ "by_child_lei": {
+  "549300FJM21DWKFIDD87": {
+   "child": "NextEra Energy Resources, LLC",
+   "parent_lei": "254900RHL9MEUS5NKX63",
+   "parent_name": "NEXTERA ENERGY INC",
+   "cik": 753308,
+   "filing_date": "2026-02-13",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000015/nee-q42025xex21.htm",
+   "quote": "NextEra Energy Resources, LLC (a)(b) Delaware"
+  },
+  "549300HHVBQRQUVKKD91": {
+   "child": "Otter Tail Power Company",
+   "parent_lei": "CIK0001466593",
+   "parent_name": "Otter Tail Corp",
+   "cik": 1466593,
+   "filing_date": "2026-02-18",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1466593/000146659326000008/a2025ex21subsidiariesofreg.htm",
+   "quote": "Otter Tail Power Company Minnesota"
+  },
+  "549300VJ8YXGPO8EV472": {
+   "child": "Oklahoma Gas and Electric Company",
+   "parent_lei": "CE5OG6JPOZMDSA0LAQ19",
+   "parent_name": "OGE ENERGY CORP.",
+   "cik": 1021635,
+   "filing_date": "2026-02-18",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1021635/000119312526055414/oge-ex21_01.htm",
+   "quote": "Oklahoma Gas and Electric Company Oklahoma 100.0"
+  },
+  "549300DJAHB27GE4M472": {
+   "child": "Black Hills Colorado Electric, LLC",
+   "parent_lei": "3MGELCRSTNSAMJ962671",
+   "parent_name": "BLACK HILLS CORP /SD/",
+   "cik": 1130464,
+   "filing_date": "2026-02-11",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1130464/000119312526046028/bkh-ex21.htm",
+   "quote": "Black Hills Colorado Electric, LLC * Delaware"
+  }
+ }
+}
