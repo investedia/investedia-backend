@@ -1,0 +1,444 @@
+{
+  "scope": "Public read-only bounded research; raw corporate bodies ignored; no directories redistributed",
+  "receipts": [
+    {
+      "url": "https://www.coresite.com/",
+      "retrieved_at": "2026-11-13T11:03:25.569958+00:00",
+      "status": 200,
+      "final_url": "https://www.coresite.com/",
+      "bytes": 205375,
+      "sha256": "c1dba96a7a1a05002923f377dfdb36a7676a14df0e11b0d1aac3b61c66bc3fed",
+      "receipt_file": "sources/coresite-home.receipt.json"
+    },
+    {
+      "url": "https://www.coresite.com/legal",
+      "retrieved_at": "2026-11-13T11:02:11.694681+00:00",
+      "status": 404,
+      "failure": "HTTPError",
+      "receipt_file": "sources/coresite-legal.receipt.json"
+    },
+    {
+      "url": "https://www.coresite.com/privacy",
+      "retrieved_at": "2026-11-13T11:05:37.226138+00:00",
+      "status": 200,
+      "final_url": "https://www.coresite.com/privacy",
+      "bytes": 157016,
+      "sha256": "15495c5c030227a947fdf424797321e8788a6b80f2ce9c2a12a9e36357e48fcf",
+      "receipt_file": "sources/coresite-privacy-current.receipt.json"
+    },
+    {
+      "url": "https://www.coresite.com/privacy-policy",
+      "retrieved_at": "2026-11-13T11:03:25.416900+00:00",
+      "status": 404,
+      "failure": "HTTPError",
+      "receipt_file": "sources/coresite-privacy.receipt.json"
+    },
+    {
+      "url": "https://www.coresite.com/robots.txt",
+      "retrieved_at": "2026-11-13T11:05:37.226760+00:00",
+      "status": 200,
+      "final_url": "https://www.coresite.com/robots.txt",
+      "bytes": 165,
+      "sha256": "ea8e85a2b5420fc4539c4997c85a6821500c4e4a4ebb410b0c926f648fddb5ce",
+      "receipt_file": "sources/coresite-robots.receipt.json"
+    },
+    {
+      "url": "https://www.coresite.com/terms-of-use",
+      "retrieved_at": "2026-11-13T11:02:11.695799+00:00",
+      "status": 404,
+      "failure": "HTTPError",
+      "receipt_file": "sources/coresite-terms.receipt.json"
+    },
+    {
+      "url": "https://investor.equinix.com/terms-of-use",
+      "retrieved_at": "2026-11-13T11:02:12.308663+00:00",
+      "status": 404,
+      "failure": "HTTPError",
+      "receipt_file": "sources/equinix-investor-terms.receipt.json"
+    },
+    {
+      "url": "https://www.goodman.com/logistics/property-development",
+      "retrieved_at": "2026-11-13T11:03:21.567115+00:00",
+      "status": 200,
+      "final_url": "https://www.goodman.com/logistics/property-development",
+      "bytes": 233330,
+      "sha256": "0bf8e1a3b76ab4175904f76b25a3509be5e5492f234249ac9b80876098f0bbe3",
+      "receipt_file": "sources/goodman-development.receipt.json"
+    },
+    {
+      "url": "https://www.goodman.com/investor-centre/announcements",
+      "retrieved_at": "2026-11-13T11:02:14.094392+00:00",
+      "status": 404,
+      "failure": "HTTPError",
+      "receipt_file": "sources/goodman-news.receipt.json"
+    },
+    {
+      "url": "https://www.goodman.com/our-properties/global-property-portfolio",
+      "retrieved_at": "2026-11-13T11:02:13.773896+00:00",
+      "status": 200,
+      "final_url": "https://www.goodman.com/our-properties/global-property-portfolio",
+      "bytes": 178712,
+      "sha256": "52ab081e6041041f2ce1d33dedc40e7e82adf19e85ed13fec2c4525b9a3a9b03",
+      "receipt_file": "sources/goodman-portfolio.receipt.json"
+    },
+    {
+      "url": "https://www.goodman.com/-/media/project/goodman/global/files/investor-centre/gmg-goodman-group/announcements/asx-announcements/2026/q1-fy27-operational-update.pdf?rev=1d9d2e3799de4cd6903edd5460b360ad",
+      "retrieved_at": "2026-11-13T11:08:08.005126+00:00",
+      "status": 200,
+      "final_url": "https://www.goodman.com/-/media/project/goodman/global/files/investor-centre/gmg-goodman-group/announcements/asx-announcements/2026/q1-fy27-operational-update.pdf?rev=1d9d2e3799de4cd6903edd5460b360ad",
+      "bytes": 3551771,
+      "sha256": "14e5edb8cb52c05f05d041bfaf88c1ad819764c28dd60080d4a7aac8c276380d",
+      "receipt_file": "sources/goodman-q1fy27.receipt.json"
+    },
+    {
+      "url": "https://www.goodman.com/investor-centre/goodman-group-australia/securityholder-information",
+      "retrieved_at": "2026-11-13T11:10:40.885250+00:00",
+      "status": 404,
+      "failure": "HTTPError",
+      "receipt_file": "sources/goodman-security.receipt.json"
+    },
+    {
+      "url": "https://www.goodman.com/terms-and-conditions",
+      "retrieved_at": "2026-11-13T11:08:16.023776+00:00",
+      "status": 200,
+      "final_url": "https://www.goodman.com/terms-and-conditions",
+      "bytes": 185983,
+      "sha256": "d9a2b9ef061326b2eb4e7e3dca63cb2b007a0c3910127c3d3b5cae297768a61e",
+      "receipt_file": "sources/goodman-terms.receipt.json"
+    },
+    {
+      "url": "https://us.goodman.com/our-properties",
+      "retrieved_at": "2026-11-13T11:05:37.920323+00:00",
+      "status": 200,
+      "final_url": "https://us.goodman.com/logistics",
+      "bytes": 181552,
+      "sha256": "a51e3277ddaa6ddcdb66ae6a49e293723fb7103f2de18f7295c449e60b268486",
+      "receipt_file": "sources/goodman-us-development.receipt.json"
+    },
+    {
+      "url": "https://montea.com/en/warehouse/combronde-zac-du-parc-de-laize",
+      "retrieved_at": "2026-11-13T11:03:18.160940+00:00",
+      "status": 200,
+      "final_url": "https://montea.com/en/warehouse/combronde-zac-du-parc-de-laize",
+      "bytes": 222103,
+      "sha256": "7774061dc582e528a51031bd71257769ce07f19cc605b71de3ac9dccdef0f0e5",
+      "receipt_file": "sources/montea-combronde.receipt.json"
+    },
+    {
+      "url": "https://montea.com/en/disclaimer",
+      "retrieved_at": "2026-11-13T11:05:40.769062+00:00",
+      "status": 200,
+      "final_url": "https://montea.com/en/disclaimer",
+      "bytes": 132984,
+      "sha256": "f9ab6f89117857fe0392cb439436ad6cf0c28b212a1900faa81b73e38eae6f3b",
+      "receipt_file": "sources/montea-disclaimer.receipt.json"
+    },
+    {
+      "url": "https://montea.com/en/warehouse/echt-the-netherlands",
+      "retrieved_at": "2026-11-13T11:03:18.605877+00:00",
+      "status": 200,
+      "final_url": "https://montea.com/en/warehouse/echt-the-netherlands",
+      "bytes": 227783,
+      "sha256": "30f43264a01af0a53dc429ce82ff3477cba36ba5f2cd3ca595a52f0840f77a68",
+      "receipt_file": "sources/montea-echt.receipt.json"
+    },
+    {
+      "url": "https://montea.com/en/flagship-projects",
+      "retrieved_at": "2026-11-13T11:02:15.927058+00:00",
+      "status": 200,
+      "final_url": "https://montea.com/en/flagship-projects",
+      "bytes": 235339,
+      "sha256": "065bbafcda5b2b3905da7da7660fd60f6addc6585c639e587c0be111a5c97fe7",
+      "receipt_file": "sources/montea-flagships.receipt.json"
+    },
+    {
+      "url": "https://montea.com/en/warehouse/grimbergen-oostvaartdijk",
+      "retrieved_at": "2026-11-13T11:10:36.622639+00:00",
+      "status": 200,
+      "final_url": "https://montea.com/en/warehouse/grimbergen-oostvaartdijk",
+      "bytes": 288003,
+      "sha256": "da96cb1d864e9a6d64e87ea9a18cf9d48f4f9ac167dbece5e5c8a02dfa1ec25a",
+      "receipt_file": "sources/montea-grimbergen.receipt.json"
+    },
+    {
+      "url": "https://montea.com/en/montea-enters-italy",
+      "retrieved_at": "2026-11-13T11:08:12.872074+00:00",
+      "status": 200,
+      "final_url": "https://montea.com/en/montea-enters-italy",
+      "bytes": 287079,
+      "sha256": "5eb48e92a33fd48341bd84860e6333c2333db0ce80ab136cada127b0c56cded6",
+      "receipt_file": "sources/montea-italy.receipt.json"
+    },
+    {
+      "url": "https://montea.com/en/warehouse/lummen-dellestraat-20",
+      "retrieved_at": "2026-11-13T11:08:11.578667+00:00",
+      "status": 200,
+      "final_url": "https://montea.com/en/warehouse/lummen-dellestraat-20",
+      "bytes": 276844,
+      "sha256": "dc06ba2d2811aa997d1d4450f0d2f0667074cec3e15dd04271bc5523b9a94ce6",
+      "receipt_file": "sources/montea-lummen.receipt.json"
+    },
+    {
+      "url": "https://montea.com/en/warehouse/puurs-rijksweg-85-89",
+      "retrieved_at": "2026-11-13T11:08:08.604854+00:00",
+      "status": 200,
+      "final_url": "https://montea.com/en/warehouse/puurs-rijksweg-85-89",
+      "bytes": 248005,
+      "sha256": "ff238c63a319992a3f76d5d6d35834aa7008186756450305a64beef2b2d464e4",
+      "receipt_file": "sources/montea-puurs.receipt.json"
+    },
+    {
+      "url": "https://montea.com/en/warehouse/tiel-dcquartz",
+      "retrieved_at": "2026-11-13T11:03:14.263834+00:00",
+      "status": 200,
+      "final_url": "https://montea.com/en/warehouse/tiel-dcquartz",
+      "bytes": 244639,
+      "sha256": "03b586550fb1fe0c49321626254043c34f668dc8646086420b0f7476f9903fec",
+      "receipt_file": "sources/montea-quartz.receipt.json"
+    },
+    {
+      "url": "https://montea.com/en/investor-relations/montea-share",
+      "retrieved_at": "2026-11-13T11:10:36.623275+00:00",
+      "status": 200,
+      "final_url": "https://montea.com/en/investor-relations/montea-share",
+      "bytes": 143578,
+      "sha256": "0482c205a6724484aa2bccf5e59c7f5df86609cf5328ba6403d5fda9583cf054",
+      "receipt_file": "sources/montea-share.receipt.json"
+    },
+    {
+      "url": "https://montea.com/en/warehouse/tiel-dc-silica",
+      "retrieved_at": "2026-11-13T11:03:14.306827+00:00",
+      "status": 200,
+      "final_url": "https://montea.com/en/warehouse/tiel-dc-silica",
+      "bytes": 277325,
+      "sha256": "c0bb7296d7fdafe48b76d6c97ca35302e99a24e2c29f47b25f6fdcde97ea81aa",
+      "receipt_file": "sources/montea-silica.receipt.json"
+    },
+    {
+      "url": "https://montea.com/en/warehouses",
+      "retrieved_at": "2026-11-13T11:02:17.862837+00:00",
+      "status": 200,
+      "final_url": "https://montea.com/en/warehouses",
+      "bytes": 743180,
+      "sha256": "218af1f6aaea17ebd3680e9077dce97ef987beec32cf0223fa6218978f190f31",
+      "receipt_file": "sources/montea-warehouses.receipt.json"
+    },
+    {
+      "url": "https://nominatim.openstreetmap.org/search?q=4900+Race+Street+Denver&format=jsonv2&limit=3&addressdetails=1",
+      "retrieved_at": "2026-11-13T11:02:44.570313+00:00",
+      "status": 200,
+      "final_url": "https://nominatim.openstreetmap.org/search?q=4900+Race+Street+Denver&format=jsonv2&limit=3&addressdetails=1",
+      "bytes": 2048,
+      "sha256": "ab720e29b4aa66c9afc7b11f270ddc1c7e35e8048a3ad963655adc6286e259fe",
+      "receipt_file": "sources/osm-de3.receipt.json"
+    },
+    {
+      "url": "https://nominatim.openstreetmap.org/search?q=Calle+Pedriza+6+Alcobendas&format=jsonv2&limit=3&addressdetails=1",
+      "retrieved_at": "2026-11-13T11:02:42.680649+00:00",
+      "status": 200,
+      "final_url": "https://nominatim.openstreetmap.org/search?q=Calle+Pedriza+6+Alcobendas&format=jsonv2&limit=3&addressdetails=1",
+      "bytes": 657,
+      "sha256": "900497000820b78653238339d41a5db12d1c8b50267844508c92d6f173a6b630",
+      "receipt_file": "sources/osm-md5.receipt.json"
+    },
+    {
+      "url": "https://nominatim.openstreetmap.org/search?q=2+Emerson+Lane+Secaucus&format=jsonv2&limit=3&addressdetails=1",
+      "retrieved_at": "2026-11-13T11:02:46.287969+00:00",
+      "status": 200,
+      "final_url": "https://nominatim.openstreetmap.org/search?q=2+Emerson+Lane+Secaucus&format=jsonv2&limit=3&addressdetails=1",
+      "bytes": 769,
+      "sha256": "c1016b8fb6576f356409a304379ca3701edcc595ab86992a4f198781e3f1e63c",
+      "receipt_file": "sources/osm-ny3.receipt.json"
+    },
+    {
+      "url": "https://nominatim.openstreetmap.org/search?q=127+Great+Oaks+Boulevard+San+Jose&format=jsonv2&limit=3&addressdetails=1",
+      "retrieved_at": "2026-11-13T11:02:40.659700+00:00",
+      "status": 200,
+      "final_url": "https://nominatim.openstreetmap.org/search?q=127+Great+Oaks+Boulevard+San+Jose&format=jsonv2&limit=3&addressdetails=1",
+      "bytes": 700,
+      "sha256": "af5943616b8db08e7512c89b2abc27886d747d6e5c9ce73d8c4c62049e7e96dd",
+      "receipt_file": "sources/osm-sv18.receipt.json"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526436160/pld-20260930.htm",
+      "retrieved_at": "2026-11-13T11:16:01.586437+00:00",
+      "status": 200,
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526436160/pld-20260930.htm",
+      "bytes": 7558713,
+      "sha256": "5b868fd26a5bf5cae79204b1428fbfc45721d725980cec19a1694ffea65b8aa5",
+      "receipt_file": "sources/prologis-current-filing.receipt.json"
+    },
+    {
+      "url": "https://www.prologis.com/what-we-do/development",
+      "retrieved_at": "2026-11-13T11:02:19.041616+00:00",
+      "status": 405,
+      "failure": "HTTPError",
+      "receipt_file": "sources/prologis-developments.receipt.json"
+    },
+    {
+      "url": "https://ir.prologis.com/",
+      "retrieved_at": "2026-11-13T11:02:18.342568+00:00",
+      "status": 200,
+      "final_url": "https://ir.prologis.com/",
+      "bytes": 267406,
+      "sha256": "10cbde205cc6dbd8d9399cf37425fe35024e32cb825e0d7ce1ddca5c739fb4a7",
+      "receipt_file": "sources/prologis-investors.receipt.json"
+    },
+    {
+      "url": "https://d1io3yog0oux5.cloudfront.net/_3fd53a5288f6d3b808cc28184d7a5926/prologis/db/2327/24117/pdf/Prologis_Investor_Presentation_Oct_2026.pdf",
+      "retrieved_at": "2026-11-13T11:08:08.005997+00:00",
+      "status": 200,
+      "final_url": "https://d1io3yog0oux5.cloudfront.net/_3fd53a5288f6d3b808cc28184d7a5926/prologis/db/2327/24117/pdf/Prologis_Investor_Presentation_Oct_2026.pdf",
+      "bytes": 3465630,
+      "sha256": "70d7ec63495335197dd3721b3864c3163d6be283af5ec5e4b8498e104100a96f",
+      "receipt_file": "sources/prologis-presentation.receipt.json"
+    },
+    {
+      "url": "https://ir.prologis.com/news-events/press-releases",
+      "retrieved_at": "2026-11-13T11:03:24.813359+00:00",
+      "status": 200,
+      "final_url": "https://ir.prologis.com/news-events/press-releases",
+      "bytes": 281424,
+      "sha256": "fb821b04cba4d8064b9610c48ce42a23592e4ae11e986c857efc180e77a7999f",
+      "receipt_file": "sources/prologis-press.receipt.json"
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0001045609.json",
+      "retrieved_at": "2026-11-13T11:10:41.545852+00:00",
+      "status": 200,
+      "final_url": "https://data.sec.gov/submissions/CIK0001045609.json",
+      "bytes": 156347,
+      "sha256": "1369c6acb0f256140d2a420c0c791706bece87a8057c3395592f5cf560b61b80",
+      "receipt_file": "sources/prologis-sec.receipt.json"
+    },
+    {
+      "url": "https://www.prologis.co.uk/our-parks",
+      "retrieved_at": "2026-11-13T11:05:39.206791+00:00",
+      "status": 405,
+      "failure": "HTTPError",
+      "receipt_file": "sources/prologis-uk.receipt.json"
+    },
+    {
+      "url": "https://www.segro.com/media/news/2026/021126-segro-delivers-a-logistics-property-of-over-23-000-sqm-in-bologna",
+      "retrieved_at": "2026-11-13T11:03:12.936089+00:00",
+      "status": 200,
+      "final_url": "https://www.segro.com/media/news/2026/021126-segro-delivers-a-logistics-property-of-over-23-000-sqm-in-bologna",
+      "bytes": 115796,
+      "sha256": "517661df6d97d00b2105603026e87ed1a79f17070ffe64095deee8bbc487ea06",
+      "receipt_file": "sources/segro-bologna.receipt.json"
+    },
+    {
+      "url": "https://www.segro.com/disclaimer",
+      "retrieved_at": "2026-11-13T11:05:40.060111+00:00",
+      "status": 200,
+      "final_url": "https://www.segro.com/disclaimer",
+      "bytes": 113330,
+      "sha256": "7163a2a29f335aae080f230eddbc57040c34c2eb0a79a0ea2d32fef22ad26889",
+      "receipt_file": "sources/segro-disclaimer.receipt.json"
+    },
+    {
+      "url": "https://www.segro.com/media/news",
+      "retrieved_at": "2026-11-13T11:02:12.969059+00:00",
+      "status": 200,
+      "final_url": "https://www.segro.com/media/news",
+      "bytes": 131607,
+      "sha256": "fbf319ebaac7a7d9d0e934b534de06d18b2949d927168a5ae8b6755d3b9598e1",
+      "receipt_file": "sources/segro-news.receipt.json"
+    },
+    {
+      "url": "https://www.segro.com/media/news/2026/151026-segro-strengthens-its-presence-in-northern-italy-with-a-new-53-000-m2-development",
+      "retrieved_at": "2026-11-13T11:03:12.936702+00:00",
+      "status": 200,
+      "final_url": "https://www.segro.com/media/news/2026/151026-segro-strengthens-its-presence-in-northern-italy-with-a-new-53-000-m2-development",
+      "bytes": 112931,
+      "sha256": "dfb0440b01552851ba1c1ae17c839576e8b2a698896e380ae7bfb7c0fc6f13cf",
+      "receipt_file": "sources/segro-northern-italy.receipt.json"
+    },
+    {
+      "url": "https://www.segro.com/about/our-properties",
+      "retrieved_at": "2026-11-13T11:02:12.438062+00:00",
+      "status": 200,
+      "final_url": "https://www.segro.com/about/our-properties",
+      "bytes": 120823,
+      "sha256": "6165f551241cb5b1d10f681d84130e7a924f636755887cad627c3575effd3591",
+      "receipt_file": "sources/segro-properties.receipt.json"
+    },
+    {
+      "url": "https://www.segro.com/investors/shareholder-information/share-price",
+      "retrieved_at": "2026-11-13T11:10:40.158187+00:00",
+      "status": 404,
+      "failure": "HTTPError",
+      "receipt_file": "sources/segro-share.receipt.json"
+    },
+    {
+      "url": "https://wdp.eu/en/our-solutions/brownfield-redevelopment",
+      "retrieved_at": "2026-11-13T11:03:22.406863+00:00",
+      "status": 200,
+      "final_url": "https://wdp.eu/en/our-solutions/brownfield-redevelopment",
+      "bytes": 256187,
+      "sha256": "a8cd034fa52fc9db38266200c296e733d13786f4690420d8cde0fce8477bdca7",
+      "receipt_file": "sources/wdp-brownfields.receipt.json"
+    },
+    {
+      "url": "https://wdp.eu/en/discover-wdp/disclaimer",
+      "retrieved_at": "2026-11-13T11:05:41.314426+00:00",
+      "status": 200,
+      "final_url": "https://wdp.eu/en/discover-wdp/disclaimer",
+      "bytes": 185967,
+      "sha256": "9a8ac6bdf9716c3622093b53d75a3a87da9fd06a92feb00779c9f3e30746e13a",
+      "receipt_file": "sources/wdp-disclaimer.receipt.json"
+    },
+    {
+      "url": "https://wdp.eu/en/available-locations/wdplogilink_hazeldonk",
+      "retrieved_at": "2026-11-13T11:08:08.483262+00:00",
+      "status": 200,
+      "final_url": "https://wdp.eu/en/available-locations/wdplogilink_hazeldonk",
+      "bytes": 270560,
+      "sha256": "c7dfd2e2049542beadc0af53e944163dce1c08a50d0304851c103dc545a04825",
+      "receipt_file": "sources/wdp-hazeldonk-project.receipt.json"
+    },
+    {
+      "url": "https://wdp.eu/en/knowledge-hub/blog/hazeldonk-as-an-example-of-future-proof-redevelopment-in-logistics-real-estate",
+      "retrieved_at": "2026-11-13T11:05:37.682029+00:00",
+      "status": 200,
+      "final_url": "https://wdp.eu/en/knowledge-hub/blog/hazeldonk-as-an-example-of-future-proof-redevelopment-in-logistics-real-estate",
+      "bytes": 273577,
+      "sha256": "dcf9c7802abeefb9af0bc1ad6babfcc341f5deddf0ee1cc3cc599a74028d23bf",
+      "receipt_file": "sources/wdp-hazeldonk.receipt.json"
+    },
+    {
+      "url": "https://wdp.eu/en/investors/portfolio",
+      "retrieved_at": "2026-11-13T11:02:14.338334+00:00",
+      "status": 200,
+      "final_url": "https://wdp.eu/en/investors/portfolio",
+      "bytes": 265268,
+      "sha256": "7d34b5dfeb893a1eb13ad2016cc5006c89686e70af1e06ac9bf12c2a78097bb6",
+      "receipt_file": "sources/wdp-portfolio.receipt.json"
+    },
+    {
+      "url": "https://wdp.eu/en/investors/reports-presentations-and-press-releases/press-releases",
+      "retrieved_at": "2026-11-13T11:03:22.496782+00:00",
+      "status": 200,
+      "final_url": "https://wdp.eu/en/investors/reports-presentations-and-press-releases/press-releases",
+      "bytes": 191218,
+      "sha256": "68c7e60edb25d62839462ed1249c6d9a9cb1740b228280ee20fed05ce7f27efe",
+      "receipt_file": "sources/wdp-press.receipt.json"
+    },
+    {
+      "url": "https://wdp.eu/en/our-properties",
+      "retrieved_at": "2026-11-13T11:02:14.989912+00:00",
+      "status": 404,
+      "failure": "HTTPError",
+      "receipt_file": "sources/wdp-projects.receipt.json"
+    },
+    {
+      "url": "https://wdp.eu/en/investors/shareholder-information/share",
+      "retrieved_at": "2026-11-13T11:10:39.820876+00:00",
+      "status": 200,
+      "final_url": "https://wdp.eu/en/investors/shareholder-information/share",
+      "bytes": 197081,
+      "sha256": "b85df578108d819a48bfd3af6cad23531cef886e713d35ac6eff3285914223cc",
+      "receipt_file": "sources/wdp-share.receipt.json"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "scope": "Backend validation, artifact generation, filtering, geographic clustering and lazy loading only; no UI/rendering benchmark",
+  "results": [
+    {
+      "records": 200,
+      "synthetic": true,
+      "validation_ms": 220.27,
+      "artifact_build_ms": 209.52,
+      "peak_traced_mib": 2.25,
+      "catalog_load_ms": 0.94,
+      "query": {
+        "median_ms": 0.346,
+        "p95_ms": 0.437
+      },
+      "cluster": {
+        "median_ms": 0.124,
+        "p95_ms": 0.174
+      },
+      "detail_cached": {
+        "median_ms": 0.04,
+        "p95_ms": 0.058
+      },
+      "catalog_bytes": 96719,
+      "catalog_gzip_bytes": 5501,
+      "selected_detail_shard_bytes": 5812,
+      "shards_changed_by_one_record_update": 1,
+      "clusters": 23,
+      "rendering_measured": false
+    },
+    {
+      "records": 500,
+      "synthetic": true,
+      "validation_ms": 570.76,
+      "artifact_build_ms": 434.76,
+      "peak_traced_mib": 5.45,
+      "catalog_load_ms": 2.49,
+      "query": {
+        "median_ms": 0.384,
+        "p95_ms": 0.478
+      },
+      "cluster": {
+        "median_ms": 0.322,
+        "p95_ms": 0.445
+      },
+      "detail_cached": {
+        "median_ms": 0.039,
+        "p95_ms": 0.046
+      },
+      "catalog_bytes": 241237,
+      "catalog_gzip_bytes": 12222,
+      "selected_detail_shard_bytes": 8724,
+      "shards_changed_by_one_record_update": 1,
+      "clusters": 55,
+      "rendering_measured": false
+    },
+    {
+      "records": 1000,
+      "synthetic": true,
+      "validation_ms": 1124.19,
+      "artifact_build_ms": 728.07,
+      "peak_traced_mib": 10.74,
+      "catalog_load_ms": 6.71,
+      "query": {
+        "median_ms": 0.49,
+        "p95_ms": 0.657
+      },
+      "cluster": {
+        "median_ms": 0.691,
+        "p95_ms": 0.79
+      },
+      "detail_cached": {
+        "median_ms": 0.042,
+        "p95_ms": 0.046
+      },
+      "catalog_bytes": 482216,
+      "catalog_gzip_bytes": 23506,
+      "selected_detail_shard_bytes": 14531,
+      "shards_changed_by_one_record_update": 1,
+      "clusters": 108,
+      "rendering_measured": false
+    },
+    {
+      "records": 5000,
+      "synthetic": true,
+      "validation_ms": 6439.64,
+      "artifact_build_ms": 2666.92,
+      "peak_traced_mib": 53.47,
+      "catalog_load_ms": 40.02,
+      "query": {
+        "median_ms": 0.796,
+        "p95_ms": 0.94
+      },
+      "cluster": {
+        "median_ms": 3.392,
+        "p95_ms": 3.681
+      },
+      "detail_cached": {
+        "median_ms": 0.041,
+        "p95_ms": 0.08
+      },
+      "catalog_bytes": 2410394,
+      "catalog_gzip_bytes": 113879,
+      "selected_detail_shard_bytes": 61038,
+      "shards_changed_by_one_record_update": 1,
+      "clusters": 264,
+      "rendering_measured": false
+    }
+  ]
+}

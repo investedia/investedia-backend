@@ -1,0 +1,140 @@
+{
+  "scope": "Receipts only; raw downloaded bodies excluded from version control",
+  "receipts": [
+    {
+      "url": "https://query.wikidata.org/sparql?query=SELECT+%3Fitem+%3FitemLabel+%3Fcoord+%3Fcountry+%3FcountryLabel+WHERE+%7B+VALUES+%3Fitem+%7B+wd%3AQ2807+wd%3AQ16553+wd%3AQ334+wd%3AQ16554+wd%3AQ1086547+%7D+%3Fitem+wdt%3AP625+%3Fcoord+.+OPTIONAL+%7B%3Fitem+wdt%3AP17+%3Fcountry%7D+SERVICE+wikibase%3Alabel+%7Bbd%3AserviceParam+wikibase%3Alanguage+%22en%22.%7D+%7D&format=json",
+      "final_url": "https://query.wikidata.org/sparql?query=SELECT+%3Fitem+%3FitemLabel+%3Fcoord+%3Fcountry+%3FcountryLabel+WHERE+%7B+VALUES+%3Fitem+%7B+wd%3AQ2807+wd%3AQ16553+wd%3AQ334+wd%3AQ16554+wd%3AQ1086547+%7D+%3Fitem+wdt%3AP625+%3Fcoord+.+OPTIONAL+%7B%3Fitem+wdt%3AP17+%3Fcountry%7D+SERVICE+wikibase%3Alabel+%7Bbd%3AserviceParam+wikibase%3Alanguage+%22en%22.%7D+%7D&format=json",
+      "retrieved_at": "2026-11-13T09:46:51.848055+00:00",
+      "sha256": "81fb431b9bda4aa8f368ef536e6a6785b76855201c37a198d2f80ac9978e9632",
+      "bytes": 2673,
+      "status": 200,
+      "receipt_file": "sources/candidate-cities.receipt.json"
+    },
+    {
+      "url": "https://www.copyright.gov/comp3/chap300/ch300-copyrightable-authorship.pdf",
+      "final_url": "https://www.copyright.gov/comp3/chap300/ch300-copyrightable-authorship.pdf",
+      "retrieved_at": "2026-11-13T09:55:22.642988+00:00",
+      "sha256": "363f7898364800c62b7a8457133955df3884cf5950510abaffecf656bd39c37d",
+      "bytes": 641671,
+      "status": 200,
+      "receipt_file": "sources/copyright-facts-compendium.receipt.json"
+    },
+    {
+      "url": "https://www.copyright.gov/circs/circ33.pdf",
+      "final_url": "https://www.copyright.gov/circs/circ33.pdf",
+      "retrieved_at": "2026-11-13T09:54:04.206162+00:00",
+      "sha256": "4abb8e07b87a560612f11839fabe7c066afeffc8bdb8816c755f7e47fa07dbf2",
+      "bytes": 115541,
+      "status": 200,
+      "receipt_file": "sources/copyright-facts.receipt.json"
+    },
+    {
+      "url": "https://www.coresite.com/data-center/de3-denver-co",
+      "final_url": "https://www.coresite.com/data-center/de3-denver-co",
+      "retrieved_at": "2026-11-13T09:46:54.408216+00:00",
+      "sha256": "3c20f0d52e8e96cb22dd7a6da928b053d8e772bb5c6995cc6196f6f155efde31",
+      "bytes": 192178,
+      "status": 200,
+      "receipt_file": "sources/coresite-facility.receipt.json"
+    },
+    {
+      "url": "https://www.coresite.com/data-center/ny3-secaucus-nj",
+      "final_url": "https://www.coresite.com/data-center/ny3-secaucus-nj",
+      "retrieved_at": "2026-11-13T09:48:08.385140+00:00",
+      "sha256": "0844383897fd1375018dd54d970f787f9e76f2d5f29c41398392892833dae52a",
+      "bytes": 220072,
+      "status": 200,
+      "receipt_file": "sources/coresite-ny3.receipt.json"
+    },
+    {
+      "url": "https://www.digitalrealty.com/about/legal/terms",
+      "final_url": "https://www.digitalrealty.com/about/legal/terms",
+      "retrieved_at": "2026-11-13T09:46:53.900015+00:00",
+      "sha256": "de1a04b3e56b8a3f771497445143e81ba21ea68c4c59a1a88fd5dd1052de6aad",
+      "bytes": 200335,
+      "status": 200,
+      "receipt_file": "sources/dlr-terms.receipt.json"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000178/0001101239-26-000178-index.html",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000178/0001101239-26-000178-index.html",
+      "retrieved_at": "2026-11-13T09:54:03.940453+00:00",
+      "sha256": "c7f7a65669e8c246f183a17a7dbde6302819b1a7ee0ec35b2cdf1439113eb8c6",
+      "bytes": 10696,
+      "status": 200,
+      "receipt_file": "sources/eqix-results-index.receipt.json"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000178/a991eqix-q326xpr.htm",
+      "final_url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000178/a991eqix-q326xpr.htm",
+      "retrieved_at": "2026-11-13T09:54:45.879239+00:00",
+      "sha256": "564cddb16516f00da8cab4a3c7c7b55e9beb8850e5a3d9867367ad07d356a37e",
+      "bytes": 620705,
+      "status": 200,
+      "receipt_file": "sources/eqix-sec-ex991.receipt.json"
+    },
+    {
+      "url": "https://www.equinix.com/about/legal/terms",
+      "final_url": "https://www.equinix.com/about/legal/terms",
+      "retrieved_at": "2026-11-13T09:46:53.161751+00:00",
+      "sha256": "ad1e34b3f3c6cf05cb30726119e0cd983d029d70e0dc9fc7393a740cf4a03b22",
+      "bytes": 106449,
+      "status": 200,
+      "receipt_file": "sources/equinix-terms.receipt.json"
+    },
+    {
+      "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep499/usrep499340/usrep499340.pdf",
+      "final_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep499/usrep499340/usrep499340.pdf",
+      "retrieved_at": "2026-11-13T09:55:23.068436+00:00",
+      "sha256": "e093d8132592c560347496912858bf7aa41c06cf8173f90e9f53a7aaddad0476",
+      "bytes": 730036,
+      "status": 200,
+      "receipt_file": "sources/feist-opinion.receipt.json"
+    },
+    {
+      "url": "https://www.equinix.com/data-centers/europe-colocation/spain-colocation/madrid-data-centers/md5",
+      "final_url": "https://www.equinix.com/data-centers/europe-colocation/spain-colocation/madrid-data-centers/md5",
+      "retrieved_at": "2026-11-13T09:50:13.212825+00:00",
+      "sha256": "3c26b638b9e847145d9f89f210907ee3a210d4aa6a3d7a65b8130952363dbb15",
+      "bytes": 279467,
+      "status": 200,
+      "receipt_file": "sources/md5-facility.receipt.json"
+    },
+    {
+      "url": "https://www.sec.gov/about/developer-resources",
+      "final_url": "https://www.sec.gov/about/developer-resources",
+      "retrieved_at": "2026-11-13T09:46:52.795598+00:00",
+      "sha256": "0132f992f88c24f4e0edb78b8d6f08c7bfbc6acdf2a603f42b678243c191abf2",
+      "bytes": 68443,
+      "status": 200,
+      "receipt_file": "sources/sec-reuse.receipt.json"
+    },
+    {
+      "url": "https://query.wikidata.org/sparql?query=SELECT+%3Fitem+%3Flabel+%3Fcoord+%3Fcountry+WHERE+%7B+VALUES+%3Flabel+%7B+%22Secaucus%22%40en+%22Secaucus%2C+New+Jersey%22%40en+%7D+%3Fitem+rdfs%3Alabel+%3Flabel%3B+wdt%3AP625+%3Fcoord%3B+wdt%3AP17+%3Fcountry+.+%7D+LIMIT+10&format=json",
+      "final_url": "https://query.wikidata.org/sparql?query=SELECT+%3Fitem+%3Flabel+%3Fcoord+%3Fcountry+WHERE+%7B+VALUES+%3Flabel+%7B+%22Secaucus%22%40en+%22Secaucus%2C+New+Jersey%22%40en+%7D+%3Fitem+rdfs%3Alabel+%3Flabel%3B+wdt%3AP625+%3Fcoord%3B+wdt%3AP17+%3Fcountry+.+%7D+LIMIT+10&format=json",
+      "retrieved_at": "2026-11-13T09:48:07.823665+00:00",
+      "sha256": "0145ce566ceae2183f6e6c9837d012dcd2a32eb81e8556eb3d9a72ca10bb081a",
+      "bytes": 627,
+      "status": 200,
+      "receipt_file": "sources/secaucus-city.receipt.json"
+    },
+    {
+      "url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/silicon-valley-data-centers/sv18",
+      "final_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/silicon-valley-data-centers/sv18",
+      "retrieved_at": "2026-11-13T09:50:12.864277+00:00",
+      "sha256": "b188e39b9e3549dcb5937964ed88e3b3c4cee532abe9ac17ec304d707aedb102",
+      "bytes": 295618,
+      "status": 200,
+      "receipt_file": "sources/sv18-facility.receipt.json"
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "final_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "retrieved_at": "2026-11-13T09:46:52.377309+00:00",
+      "sha256": "8575662035b8c17a94bf13e971c96409800e6919f11f58c6cc283ae9f7bcaa38",
+      "bytes": 64924,
+      "status": 200,
+      "receipt_file": "sources/wikidata-licence.receipt.json"
+    }
+  ]
+}

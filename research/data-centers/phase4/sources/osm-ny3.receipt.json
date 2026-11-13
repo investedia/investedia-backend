@@ -1,0 +1,8 @@
+{
+  "url": "https://nominatim.openstreetmap.org/search?q=2+Emerson+Lane+Secaucus&format=jsonv2&limit=3&addressdetails=1",
+  "retrieved_at": "2026-11-13T11:02:46.287969+00:00",
+  "status": 200,
+  "final_url": "https://nominatim.openstreetmap.org/search?q=2+Emerson+Lane+Secaucus&format=jsonv2&limit=3&addressdetails=1",
+  "bytes": 769,
+  "sha256": "c1016b8fb6576f356409a304379ca3701edcc595ab86992a4f198781e3f1e63c"
+}

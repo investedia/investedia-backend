@@ -1,0 +1,31 @@
+{
+  "name": "Prologis, Inc.",
+  "cik": "0001045609",
+  "tickers": [
+    "PLD",
+    "PLDGP"
+  ],
+  "exchanges": [
+    "NYSE",
+    "OTC"
+  ],
+  "security_type": "common_equity",
+  "listing_evidence": {
+    "url": "https://data.sec.gov/submissions/CIK0001045609.json",
+    "retrieved_at": "2026-11-13T11:10:41.545852+00:00",
+    "status": 200,
+    "final_url": "https://data.sec.gov/submissions/CIK0001045609.json",
+    "bytes": 156347,
+    "sha256": "1369c6acb0f256140d2a420c0c791706bece87a8057c3395592f5cf560b61b80"
+  },
+  "class_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526436160/pld-20260930.htm",
+    "retrieved_at": "2026-11-13T11:16:01.586437+00:00",
+    "status": 200,
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526436160/pld-20260930.htm",
+    "bytes": 7558713,
+    "sha256": "5b868fd26a5bf5cae79204b1428fbfc45721d725980cec19a1694ffea65b8aa5",
+    "locator": "Cover table: Prologis Inc. common stock, PLD, New York Stock Exchange"
+  },
+  "licence_scope": "Owner-approved narrow SEC identifiers and security class; not filing text"
+}

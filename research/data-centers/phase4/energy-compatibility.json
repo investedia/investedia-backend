@@ -1,0 +1,18 @@
+{
+  "commit": "c78ab084349b43e4c166fa0f6a0dde6dbae8af5c",
+  "energy_records_normalized": 150,
+  "raw_records": 150,
+  "input_unchanged": true,
+  "repeated_normalization_identical": true,
+  "normalized_sha256": "c40e7b15d9fe9bc5ddd4255ffca56a4126f9b8fe721acb2e063105ecf8908393",
+  "loader_sha256": "39ea5a869b04105f34d9351f2c3ce13e353dd7fd744590ee433478a0dada07fa",
+  "production_files_modified": false,
+  "selected_preview_ids": [
+    "eia:708",
+    "eia:728"
+  ],
+  "wrapper_records_validated": 150,
+  "all_legacy_outputs_preserved": true,
+  "source_bundle_unchanged": true,
+  "wrapper_validation_total_ms": 26.66
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "investedia.projects.sector-contract.proposal.v1",
+  "status": "proposed; not installed or approved",
+  "sector": "Data Centers",
+  "input": "Phase2 evidence-bound records",
+  "output": "Projects normalized common fields + isolated economic_exposure sidecar",
+  "mandatory_fields": [
+    "id",
+    "name",
+    "sector",
+    "type",
+    "stage",
+    "location_accuracy",
+    "economic_exposures",
+    "sources",
+    "release"
+  ],
+  "rules": [
+    "No Energy-specific verification label reused as property ownership",
+    "Never populate legacy listed owner for a lessee/operator/developer",
+    "Approximate city references explicitly labelled and never generate site imagery",
+    "Stake belongs to an identified legal-entity scope; business64/36 is not a facility stake",
+    "HQ city is an approximate company endpoint, not a surveyed office",
+    "Missing project currency must remain null",
+    "No public export while any record gate or adapter-contract approval remains pending"
+  ],
+  "frontend_snapshot": "c78ab084349b43e4c166fa0f6a0dde6dbae8af5c",
+  "requires_shared_approval": [
+    "Add a sector adapter hook to verified Projects loader",
+    "Replace ownership-only card labels with economic-role labels for this sector",
+    "Teach controls the Data Centers sector without touching Energy filters or verification",
+    "Keep approximate location and HQ endpoint warnings visible"
+  ]
+}

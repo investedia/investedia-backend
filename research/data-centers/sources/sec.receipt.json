@@ -1,0 +1,7 @@
+{
+  "url": "https://www.sec.gov/files/company_tickers_exchange.json",
+  "sha256": "98d357e2c5b2fb5bfdb085f3d6a9010036e43a2306e63563061b1997d1e8224e",
+  "retrieved_at": "2026-11-13T01:02:07.615487+00:00",
+  "timestamp_note": "Receipt assembled after response; not a source publication date",
+  "bytes": 521966
+}

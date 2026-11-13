@@ -1,0 +1,518 @@
+{
+  "schema": "investedia.data-centers.exposure-research.v1",
+  "nodes": [
+    {
+      "id": "dc:dlr:2256",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2257",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2475",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2293",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2344",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2413",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2310",
+      "kind": "facility_record",
+      "category": "D"
+    },
+    {
+      "id": "dc:dlr:2311",
+      "kind": "facility_record",
+      "category": "D"
+    },
+    {
+      "id": "dc:dlr:1790",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2316",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2416",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2408",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2290",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2387",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2388",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2448",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2412",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:3389",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2379",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2294",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2295",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2405",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:2411",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:11459",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:dlr:24413",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:eqix:DC2",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:eqix:SV1",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:eqix:DX1",
+      "kind": "facility_record",
+      "category": "A"
+    },
+    {
+      "id": "dc:coresite:VA1",
+      "kind": "facility_record",
+      "category": "C"
+    },
+    {
+      "id": "EQ:XNYS:DLR",
+      "company_id": "CO:CIK0001297996",
+      "name": "Digital Realty",
+      "ticker": "DLR",
+      "mic": "XNYS",
+      "cik": "0001297996",
+      "security_type": "common_equity",
+      "listing_checked_at": "2026-11-13",
+      "sec_listing_match": {
+        "cik": 1297996,
+        "name": "DIGITAL REALTY TRUST, INC.",
+        "ticker": "DLR",
+        "exchange": "NYSE"
+      },
+      "security_class_evidence": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm",
+        "sha256": "c183a976e239d454422d8e5e0a35963e9af1956b35bdd97a791f39dd969f8d18",
+        "cover_row": {
+          "security_titles": [
+            "Common Stock"
+          ],
+          "ticker": "DLR",
+          "exchanges": [
+            "New York Stock Exchange"
+          ]
+        },
+        "form": "10-K",
+        "filing_date": "2026-02-13",
+        "accession": "0001104659-26-015365"
+      },
+      "hq": null,
+      "hq_reason": "Existing registry coordinates are city-level; not a verified office site. No HQ line generated.",
+      "kind": "listed_common_equity"
+    },
+    {
+      "id": "EQ:XNAS:EQIX",
+      "company_id": "CO:CIK0001101239",
+      "name": "Equinix",
+      "ticker": "EQIX",
+      "mic": "XNAS",
+      "cik": "0001101239",
+      "security_type": "common_equity",
+      "listing_checked_at": "2026-11-13",
+      "sec_listing_match": {
+        "cik": 1101239,
+        "name": "EQUINIX INC",
+        "ticker": "EQIX",
+        "exchange": "Nasdaq"
+      },
+      "security_class_evidence": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+        "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+        "cover_row": {
+          "security_titles": [
+            "Common Stock, $0.001"
+          ],
+          "ticker": "EQIX",
+          "exchanges": [
+            "The Nasdaq Stock Market LLC"
+          ]
+        },
+        "form": "10-K",
+        "filing_date": "2026-02-11",
+        "accession": "0001101239-26-000032"
+      },
+      "hq": null,
+      "hq_reason": "Existing registry coordinates are city-level; not a verified office site. No HQ line generated.",
+      "kind": "listed_common_equity"
+    },
+    {
+      "id": "EQ:XNYS:AMT",
+      "company_id": "CO:CIK0001053507",
+      "name": "American Tower",
+      "ticker": "AMT",
+      "mic": "XNYS",
+      "cik": "0001053507",
+      "security_type": "common_equity",
+      "listing_checked_at": "2026-11-13",
+      "sec_listing_match": {
+        "cik": 1053507,
+        "name": "AMERICAN TOWER CORP /MA/",
+        "ticker": "AMT",
+        "exchange": "NYSE"
+      },
+      "security_class_evidence": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000035/amt-20251231.htm",
+        "sha256": "fb453bdf34d5cd97ed91e28b37cf34a58cbe267d22e09050d436aea6d0095b01",
+        "cover_row": {
+          "security_titles": [
+            "Common Stock, $0.01 par value"
+          ],
+          "ticker": "AMT",
+          "exchanges": [
+            "New York Stock Exchange"
+          ]
+        },
+        "form": "10-K",
+        "filing_date": "2026-02-24",
+        "accession": "0001053507-26-000035"
+      },
+      "hq": null,
+      "hq_reason": "Existing registry coordinates are city-level; not a verified office site. No HQ line generated.",
+      "kind": "listed_common_equity"
+    }
+  ],
+  "edges": [
+    {
+      "project": "dc:dlr:2256",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "3374c9f47568bfc0bbee39d9e3f212beef24f1532c27e1eeabe83a7304a5bfdd",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2257",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "e15adb7f9d4b84fb4f52398045f2c8b209b23924866e2a94e03d896953f77a26",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2475",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "f09e33dcb2df1469834dc5e38b9e35dae931561df634ce738b3d23b81e4fab01",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2293",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "8fca79f7a82f62c75fa32628ceaad3b0377381574dcfe233fdc7370652e7b2da",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2344",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "52a1b8b7ac94c863eb2cb5beb91d943c7c847de91cf8fc65db7e209341eed1b1",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2413",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "8250a65fee9929c2b0529cb1a8bfb571892b767e0262d8d642b5c7a455b74f65",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:1790",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "95cceeeb8db597d34c7b17d79b45491550900005efa339341a66acabc24e8f77",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2316",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "915166d8113e3956b40a75c2baddd450f207ce6075bcfd2584725d258dac7f2f",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2416",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "7d0e412c10469f592bb183361275a1cc2410af5af7032ccb33eeafdff01aca74",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2408",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "a94f271c0798e4ef72eafc7d93d64cfc2b1de515108280c78c4eb681fa7e49d0",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2290",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "09983620f6b14b3cf43f2f4cbd04a34ca90f051f3f6229db020e245bdec9a7fb",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2387",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "e4856d8319ba410ccafedc741ecf4f690acf79583f31253bbffd85870d80326b",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2388",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "c6a5f6a6b99be86fb38cd83dd9759acd8ab0294d9eea52bb18d7ae29fa84b208",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2448",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "171796c526954f6601c3e68c8cf48cf53cec986d1e56d815d9beb37e9fae7234",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2412",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "89f0d6f03d2e1876f319cd95cc9829192c703da1c61e61c0f4e42371e56e9e4b",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:3389",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "d72e84a0f04dbf37944d17c2e929ea7c57e64f0019baade8834b202210557cc0",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2379",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "90b5108d6f509f3e32a11d5b3a29b037aacf7b6c64768fec1446b5edc9cf5712",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2294",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "d1f5af25fd3457868aebb39e6dc3a1a49984722df6fd07fa4daaf32d59163ae7",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2295",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "da8b0fad4829c3f56e54d7b6ad746be0895231ac9a855b06dcf48a3d2a46437e",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2405",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "9e8d95bbabb95004c93dd544c6e389c4f748d308e2e83859c9052ef85bf4a09a",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:2411",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "edc4bea1858f4c2c27df04b71617bb85ea9bc3bac3310340cf17206073272c78",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:11459",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "5c99104147c47ffbc695c90f28cb1c5d97a1948ae2df557381de3f63b5ea71ae",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:dlr:24413",
+      "to": "EQ:XNYS:DLR",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "4cbee691d3ecfa271eae55ba00fa684f0abd9994292907750414cb3142027017",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:eqix:DC2",
+      "to": "EQ:XNAS:EQIX",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "602b82f1eeb5d793c6e4471a31a09024ea6429660bfa16bd836d54bd7fe0c877",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:eqix:SV1",
+      "to": "EQ:XNAS:EQIX",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "e0b4d5db0a39219134434162542c866ac7b13b928d29f1092c035d24c5a875cf",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    },
+    {
+      "project": "dc:eqix:DX1",
+      "to": "EQ:XNAS:EQIX",
+      "kind": "portfolio_association",
+      "exposure": "indirect_corporate_equity",
+      "ownership_pct": null,
+      "evidence_sha256": "b248b2168d43b3c1c09fb7711301146814dd7af455a69523ae60b07e5c8e1929",
+      "direct_project_investment_verified": false,
+      "public_eligible": false
+    }
+  ],
+  "notice": "Portfolio associations only; no verified ownership/developer/power/HQ edges. No public publication approval. Not investment advice."
+}

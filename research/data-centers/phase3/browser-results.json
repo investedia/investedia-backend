@@ -1,0 +1,62 @@
+[
+  {
+    "width": 1440,
+    "theme": "dark",
+    "candidates": 5,
+    "sector_filter": true,
+    "company_filter": true,
+    "exposure_filter": true,
+    "search": true,
+    "globe_rotation": true,
+    "hq_toggle": true,
+    "approximate_label": true,
+    "site_imagery_requests": 0,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "candidates": 5,
+    "sector_filter": true,
+    "company_filter": true,
+    "exposure_filter": true,
+    "search": true,
+    "globe_rotation": true,
+    "hq_toggle": true,
+    "approximate_label": true,
+    "site_imagery_requests": 0,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "theme": "light",
+    "candidates": 5,
+    "sector_filter": true,
+    "company_filter": true,
+    "exposure_filter": true,
+    "search": true,
+    "globe_rotation": true,
+    "hq_toggle": true,
+    "approximate_label": true,
+    "site_imagery_requests": 0,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "candidates": 5,
+    "sector_filter": true,
+    "company_filter": true,
+    "exposure_filter": true,
+    "search": true,
+    "globe_rotation": true,
+    "hq_toggle": true,
+    "approximate_label": true,
+    "site_imagery_requests": 0,
+    "overflow": false,
+    "errors": []
+  }
+]

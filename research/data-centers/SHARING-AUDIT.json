@@ -1,0 +1,61 @@
+{
+  "scope": "Private research collaboration branch push only; no production PR, merge, deployment or new research",
+  "repository": "investedia/investedia-backend",
+  "branch": "codex/data-centers-research",
+  "preserved_commits": [
+    "0495d6b73e71cea12242394319f2e0fa1ec38df9",
+    "d5513edb09ac68887f556f6445eb9eec9bca390f",
+    "7be5c633a50f0722953d05b9a1e285a63391a8ef",
+    "e743e2d7d34b590eed4de625de41a5c5a9682176",
+    "e7faaff09799a32f696ce28b919e66ad27f832a5"
+  ],
+  "original_records": 29,
+  "original_category_counts": {
+    "A": 26,
+    "B": 0,
+    "C": 1,
+    "D": 2
+  },
+  "combined_reviewed_rows": 61,
+  "additional_rows": 32,
+  "context_rows_not_projects": 6,
+  "real_estate_candidates": 10,
+  "missing_requested_material": [],
+  "excluded_by_design": [
+    "Raw HTML/PDF/company source bodies",
+    "Full selected-source directory response",
+    "Source photographs",
+    "Generated synthetic volume/build artifacts",
+    "Secrets or credential files"
+  ],
+  "history_scan": {
+    "unique_new_research_blobs_checked": 313,
+    "credential_pattern_findings": 0,
+    "raw_pdf_office_jpeg_findings": 0,
+    "screenshots": "Own research UI/cartography; no corporate source photos"
+  },
+  "deployment_check": {
+    "checked_main_commit": "3fd405d71fb13b57b7198d2c54307462103c7f69",
+    "only_push_trigger": "Deploy Worker: branches [main], paths workers/live/**",
+    "research_branch_push_matches_deployment_trigger": false,
+    "other_workflows": "PR-only, manual or scheduled; no workflow_run/create/repository_dispatch cascade found",
+    "branch_changes_only_research": true,
+    "workflow_edits": false,
+    "repository_private": true,
+    "webhook_inventory": "GitHub API scope denied listing hooks (403); external webhook settings not inspected. No GitHub Actions deployment trigger applies to this push."
+  },
+  "tests": {
+    "suites": {
+      "original": 14,
+      "phase2": 17,
+      "phase3": 16,
+      "phase4": 35,
+      "scale": 40
+    },
+    "total": 122,
+    "result": "all passed",
+    "new_failures": 0,
+    "network_source_fetches": 0
+  },
+  "notes": "Sharing factual private research and original code preserves all pending commercial/public reuse decisions. It is not source-document redistribution or production approval."
+}

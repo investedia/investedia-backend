@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed Projects sector envelope v2; not installed in shared code",
+  "type": "object",
+  "required": [
+    "schema",
+    "id",
+    "name",
+    "sector",
+    "asset",
+    "status",
+    "location",
+    "identity_evidence",
+    "exposures",
+    "imagery",
+    "verification",
+    "reuse"
+  ],
+  "properties": {
+    "schema": {
+      "const": "investedia.projects.sector-envelope.proposal.v2"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sector": {
+      "type": "string",
+      "pattern": "^[a-z][a-z_]*$",
+      "description": "Runtime requires registered sector; energy, data_centers, real_estate initially"
+    },
+    "asset": {
+      "type": "object",
+      "required": [
+        "category",
+        "parent_id",
+        "count_as_project"
+      ],
+      "properties": {
+        "category": {
+          "enum": [
+            "project",
+            "campus",
+            "building",
+            "existing_asset",
+            "programme"
+          ]
+        },
+        "parent_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "count_as_project": {
+          "type": "boolean"
+        }
+      }
+    },
+    "status": {
+      "type": "object",
+      "required": [
+        "stage",
+        "label",
+        "as_of"
+      ],
+      "properties": {
+        "stage": {
+          "enum": [
+            "announced",
+            "planning",
+            "under_construction",
+            "expanding",
+            "operating",
+            "completed",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "location": {
+      "type": "object",
+      "required": [
+        "precision",
+        "lat",
+        "lon",
+        "satellite_allowed"
+      ],
+      "properties": {
+        "precision": {
+          "enum": [
+            "exact",
+            "approximate",
+            "unknown"
+          ]
+        },
+        "lat": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": -90,
+          "maximum": 90
+        },
+        "lon": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": -180,
+          "maximum": 180
+        }
+      }
+    },
+    "identity_evidence": {
+      "type": "object"
+    },
+    "exposures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "role",
+          "relationship_scope",
+          "property_stake",
+          "evidence",
+          "investment_access"
+        ],
+        "properties": {
+          "role": {
+            "enum": [
+              "direct_property_owner",
+              "indirect_property_owner",
+              "reported_group_owner",
+              "developer",
+              "operator",
+              "lessee",
+              "investor",
+              "contractor",
+              "affiliation"
+            ]
+          }
+        }
+      }
+    },
+    "imagery": {
+      "type": "array"
+    },
+    "verification": {
+      "type": "object"
+    },
+    "reuse": {
+      "type": "object"
+    }
+  },
+  "description": "Structural schema only. sector_adapter.validate also enforces evidence, property scope, listing, image, precision and field-level review rules."
+}

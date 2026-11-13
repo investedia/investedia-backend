@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-11-13",
+  "public_source": "https://investedia.com/assets/globe/projects-invest.json",
+  "frontend_commit": "f1ad144d8553e927d72ae333170eb01887adf223",
+  "git_blob_sha256": "ae5713e8729c1bf090f96e5d12e3286b33b52648ba3733996c90dc333ea7e7ba",
+  "live_response_sha256": "ae5713e8729c1bf090f96e5d12e3286b33b52648ba3733996c90dc333ea7e7ba",
+  "semantic_equality": true,
+  "unique_projects": 186,
+  "verified_exposures": 187,
+  "remote_writes": false
+}

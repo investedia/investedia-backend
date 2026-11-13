@@ -1,0 +1,67 @@
+{
+  "exact_sites_verified": 0,
+  "licensed_project_photos": 0,
+  "satellite_scenes_cleared": 0,
+  "original_map_pins": "Preserved as company-reported; not promoted to exact facility sites.",
+  "checks": [
+    {
+      "source": "OSM Overpass",
+      "record": "DC2",
+      "outcome": "TimeoutError",
+      "interpretation": "Access failure, not absence of a mapped building"
+    },
+    {
+      "source": "OSM Overpass",
+      "record": "SV1",
+      "outcome": "HTTPError",
+      "interpretation": "Access failure, not absence of a mapped building"
+    },
+    {
+      "source": "OSM Overpass",
+      "record": "DX1",
+      "outcome": "HTTPError",
+      "interpretation": "Access failure, not absence of a mapped building"
+    }
+  ],
+  "wikidata": {
+    "source": "wikidata-geo",
+    "outcome": "No exact-label matches in this bounded query; not an exhaustive search"
+  },
+  "commons": {
+    "source": "commons-sv1-search",
+    "outcome": "No matching files returned for the specific SV1 query; no generic substitute"
+  },
+  "licensing": {
+    "OpenStreetMap": {
+      "url": "https://www.openstreetmap.org/copyright",
+      "response_sha256": "e403ae91cd747df24beb11094237af461f445869f5499842b83348bcd506643a",
+      "licence": "ODbL",
+      "reuse_conditions": "Credit OSM contributors; derivative database/share-alike obligations must be assessed. No OSM data imported after failed lookups.",
+      "public_import_approved": false
+    },
+    "Wikidata": {
+      "licence": "CC0 for structured facts only",
+      "usage": "No matching facts imported; never financial ownership proof or a photo licence."
+    },
+    "Wikimedia Commons": {
+      "url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+      "response_sha256": "aa78ec7448a25fff7dddddef253c76690ec32ac8e20ff0651ff5c5517294113c",
+      "reuse_conditions": "Per-file author/licence/version/changes, exact-project match, no NC/ND or generic substitution; none selected."
+    },
+    "USGS Landsat": {
+      "url": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+      "response_sha256": "5eeec876715ee7c9a04426f63b1179b0e03478e2a36f7d6a903b446da2249704",
+      "licence": "USGS-authored data/information generally US public domain; third-party material exceptions apply",
+      "reuse_conditions": "Check scene/product origin and exclusions, retain acquisition date/scene ID/credit, validate exact site before crop. No scene downloaded."
+    },
+    "Company sites and investor presentations": {
+      "licence": "Not cleared for public commercial redistribution",
+      "reuse_conditions": "Document permission or a reviewed lawful basis for the narrowly selected factual reuse before publishing. Full corporate source text remains ignored locally."
+    }
+  },
+  "blocked_actions": [
+    "No satellite generation without verified site",
+    "No clearing a Commons image based on a company-level label",
+    "No guessed HQ coordinates or power-provider lines"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "assets/globe/projects.json": "a35c135d43d9938268b8aae2f4fe4e41e484a5debc6c95d2ea44bd59b4b15f0e",
+  "assets/globe/project-links.json": "190de4e5118b466b1e3883ccbc79e9ceb10f159bbe6838cc4626fdc7006df1a2",
+  "data/registry.json": "915b72036c7e1c7f6c4d7d2f23cd788485af63c98f259d4d8c0501979d2ec873",
+  "tools/projects/build_projects.py": "3a2152e366eeaa2650cf96d23049fbe61a45327ac45cd0222d0be3edc6676a0d",
+  "workers/live/v1/news.js": "743c3feac9b4016f5c95007b373353e9c54fa297e76f3589d3488fc4d0bac6f4"
+}

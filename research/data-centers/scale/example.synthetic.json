@@ -1,0 +1,132 @@
+{
+  "schema": "investedia.projects.import.v1",
+  "synthetic": true,
+  "records": [
+    {
+      "schema": "investedia.projects.sector-envelope.proposal.v2",
+      "id": "test:data_centers:000000",
+      "name": "SYNTHETIC TEST 000000",
+      "sector": "data_centers",
+      "source_identity": {
+        "authority": "synthetic_fixture",
+        "id": "0"
+      },
+      "synthetic": true,
+      "country_code": null,
+      "city": "SYNTHETIC place",
+      "asset": {
+        "category": "project",
+        "subtype": "Synthetic infrastructure fixture",
+        "parent_id": null,
+        "count_as_project": true
+      },
+      "status": {
+        "stage": "planning",
+        "label": "SYNTHETIC status",
+        "as_of": "2026-11-13"
+      },
+      "location": {
+        "precision": "exact",
+        "lat": -60.0,
+        "lon": -175.0,
+        "label": "SYNTHETIC coordinate",
+        "basis": "Procedural test point, no real facility",
+        "satellite_allowed": false,
+        "evidence": {
+          "url": "https://fixtures.example.invalid/evidence",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "checked_at": "2026-11-13",
+          "locator": "SYNTHETIC load-test fixture, no real evidence",
+          "record_id": "test:data_centers:000000",
+          "scope": "specific_site"
+        }
+      },
+      "identity_evidence": {
+        "url": "https://fixtures.example.invalid/evidence",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "checked_at": "2026-11-13",
+        "locator": "SYNTHETIC load-test fixture, no real evidence"
+      },
+      "exposures": [
+        {
+          "role": "developer",
+          "label": "SYNTHETIC relationship",
+          "relationship_scope": "test_only",
+          "property_stake": null,
+          "evidence": {
+            "url": "https://fixtures.example.invalid/evidence",
+            "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+            "checked_at": "2026-11-13",
+            "locator": "SYNTHETIC load-test fixture, no real evidence"
+          },
+          "listing": {
+            "name": "SYNTHETIC COMPANY 00",
+            "ticker": "TEST00",
+            "exchange": "TEST ONLY",
+            "exchange_mic": null,
+            "security_type": "synthetic",
+            "evidence": {
+              "url": "https://fixtures.example.invalid/evidence",
+              "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+              "checked_at": "2026-11-13",
+              "locator": "SYNTHETIC load-test fixture, no real evidence"
+            }
+          },
+          "headquarters": {
+            "city": "SYNTHETIC HQ",
+            "lat": 10,
+            "lon": -120,
+            "precision": "approximate",
+            "evidence": {
+              "url": "https://fixtures.example.invalid/evidence",
+              "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+              "checked_at": "2026-11-13",
+              "locator": "SYNTHETIC load-test fixture, no real evidence"
+            }
+          },
+          "investment_access": {
+            "type": "research_only",
+            "verified": false,
+            "scope": "SYNTHETIC; no investment access"
+          }
+        }
+      ],
+      "imagery": [],
+      "verification": {
+        "classification": "synthetic",
+        "company": "SYNTHETIC COMPANY 00"
+      },
+      "reuse": {
+        "fields": {
+          "identity": {
+            "status": "omit",
+            "basis": "Synthetic fixture, never publish as real"
+          },
+          "status": {
+            "status": "omit",
+            "basis": "Synthetic fixture, never publish as real"
+          },
+          "economic_relationship": {
+            "status": "omit",
+            "basis": "Synthetic fixture, never publish as real"
+          },
+          "listing": {
+            "status": "omit",
+            "basis": "Synthetic fixture, never publish as real"
+          },
+          "location": {
+            "status": "omit",
+            "basis": "Synthetic fixture, never publish as real"
+          }
+        },
+        "review": null
+      },
+      "preview_only": true,
+      "extensions": {
+        "data_centers": {
+          "synthetic_only": true
+        }
+      }
+    }
+  ]
+}

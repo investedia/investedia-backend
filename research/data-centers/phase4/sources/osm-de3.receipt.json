@@ -1,0 +1,8 @@
+{
+  "url": "https://nominatim.openstreetmap.org/search?q=4900+Race+Street+Denver&format=jsonv2&limit=3&addressdetails=1",
+  "retrieved_at": "2026-11-13T11:02:44.570313+00:00",
+  "status": 200,
+  "final_url": "https://nominatim.openstreetmap.org/search?q=4900+Race+Street+Denver&format=jsonv2&limit=3&addressdetails=1",
+  "bytes": 2048,
+  "sha256": "ab720e29b4aa66c9afc7b11f270ddc1c7e35e8048a3ad963655adc6286e259fe"
+}

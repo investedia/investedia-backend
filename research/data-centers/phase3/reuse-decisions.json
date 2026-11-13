@@ -1,0 +1,14 @@
+{
+  "review_scope": "Narrow independently authored factual records, not copied tables, filing prose, photographs or illustrations",
+  "copyright_facts_basis": "Facts are distinguished from protected expression and creative compilation. Absence of an express factual-data licence is not by itself a copyright prohibition.",
+  "not_an_automatic_clearance": "Source-specific access terms and possible database restrictions must also be resolved. SEC hosting does not turn issuer-authored exhibits into government works.",
+  "records": {
+    "project:eqix:MD5": {"status":"pending","reason":"City/HQ CC0 facts and minimal SEC issuer identifiers have a reuse basis; the project/opening/Owned-column facts still rely on corporate sources with copying/republication terms. Need a documented narrow factual-reuse decision covering source access/database conditions, or permission/independent cleared source. No presentation/table republished."},
+    "project:eqix:SV18": {"status":"pending","reason":"Same bounded-facts approach as MD5. Corporate-site/presentation access conditions remain unresolved; no automatic licence asserted for corporate facts just because their expression is rewritten."},
+    "project:eqix:SG6": {"status":"pending","reason":"Opening and scope-qualified capacity/investment facts are separately authored facts, but exact corporate-source access/reuse conditions remain unresolved. No press-release prose, table or image is redistributed."},
+    "project:coresite:DE3": {"status":"pending","reason":"Project/specification facts and conflicting areas are independently recorded; no copying of a brochure or photo. Commercial source/access terms or approved factual-reuse basis still needs a decision; unavailable guessed privacy-policy URL is not clearance."},
+    "project:coresite:NY3": {"status":"pending","reason":"Launch plus current service facility source establish operating exposure. Public factual reuse has no automatic permission inferred from directory availability; source access/reuse basis remains unresolved. No website material or image copied."}
+  },
+  "cleared_components": ["Wikidata CC0 city/HQ reference facts, with attribution and approximate precision", "Narrow SEC issuer/ticker/security identifiers already approved by owner, not issuer filing text", "Original UI/cartography and no corporate imagery"],
+  "record_clearances": []
+}

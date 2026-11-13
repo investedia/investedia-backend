@@ -1,0 +1,62 @@
+{
+  "as_of": "2026-11-13",
+  "sources": {
+    "dlr-terms": {
+      "url": "https://www.digitalrealty.com/about/legal/terms",
+      "final_url": "https://www.digitalrealty.com/about/legal/terms",
+      "retrieved_at": "2026-11-13T00:58:40.460702+00:00",
+      "sha256": "de1a04b3e56b8a3f771497445143e81ba21ea68c4c59a1a88fd5dd1052de6aad",
+      "bytes": 200335,
+      "status": 200
+    },
+    "eqix-terms": {
+      "url": "https://www.equinix.com/about/legal/terms",
+      "final_url": "https://www.equinix.com/about/legal/terms",
+      "retrieved_at": "2026-11-13T00:58:41.623792+00:00",
+      "sha256": "ad1e34b3f3c6cf05cb30726119e0cd983d029d70e0dc9fc7393a740cf4a03b22",
+      "bytes": 106449,
+      "status": 200
+    },
+    "dlr-robots": {
+      "url": "https://www.digitalrealty.com/robots.txt",
+      "final_url": "https://www.digitalrealty.com/robots.txt",
+      "retrieved_at": "2026-11-13T00:56:31.735357+00:00",
+      "sha256": "40e594e9e016e6d18005930bfa837a66cb48f962a6c94883d71b31e5d331ee73",
+      "bytes": 123
+    },
+    "eqix-robots": {
+      "url": "https://www.equinix.com/robots.txt",
+      "final_url": "https://www.equinix.com/robots.txt",
+      "retrieved_at": "2026-11-13T00:58:47.906602+00:00",
+      "sha256": "d934dba7f8df0a57de670edaff19df50b155ee04589f5a533aac6d23321853bb",
+      "bytes": 56,
+      "status": 200
+    },
+    "coresite-robots": {
+      "url": "https://www.coresite.com/robots.txt",
+      "final_url": "https://www.coresite.com/robots.txt",
+      "retrieved_at": "2026-11-13T00:58:46.812200+00:00",
+      "sha256": "ea8e85a2b5420fc4539c4997c85a6821500c4e4a4ebb410b0c926f648fddb5ce",
+      "bytes": 165,
+      "status": 200
+    },
+    "coresite-dir": {
+      "url": "https://www.coresite.com/data-centers",
+      "final_url": "https://www.coresite.com/data-centers/locations",
+      "retrieved_at": "2026-11-13T00:56:34.598639+00:00",
+      "sha256": "1c8a8baa9ec1593f033d9aba5c2ff617d90217e3c3d20a4eb70c6e6bd63e70ff",
+      "bytes": 182680
+    }
+  },
+  "commercial_publication_approved": false,
+  "notes": {
+    "Digital Realty": "Official terms restrict copying/reproduction/republication of site materials. No affirmative commercial directory/database redistribution grant verified. Internal factual review only.",
+    "Equinix": "Official terms restrict copying, distribution and republication absent authorization. No approved image/data republication grant.",
+    "CoreSite": "No per-facility/JV ownership chain or website redistribution grant established; candidate remains C.",
+    "SEC": "Government-hosted numerical listing facts and short issuer-authored common-stock cover evidence are distinct from rights to reproduce complete filings. Common-stock identity only; no quoted prices.",
+    "Wikidata": "Not used in this batch; CC0 is not ownership evidence or a photograph licence.",
+    "OpenStreetMap": "Not fetched or used. Existing owner approval for ODbL use remains absent; new task permits research/review, not waiver of share-alike obligations.",
+    "Imagery": "None downloaded, licensed or displayed. Exact physical site validation required first.",
+    "Natural Earth": "Existing repository low-resolution boundary data used solely for an internal country contradiction screen and preview map. Public-domain map data is not facility-location proof."
+  }
+}

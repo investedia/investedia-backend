@@ -1,0 +1,8 @@
+{
+  "url": "https://query.wikidata.org/sparql?query=SELECT+%3Fitem+%3Flabel+%3Fcoord+%3Fcountry+WHERE+%7B+VALUES+%3Flabel+%7B+%22Secaucus%22%40en+%22Secaucus%2C+New+Jersey%22%40en+%7D+%3Fitem+rdfs%3Alabel+%3Flabel%3B+wdt%3AP625+%3Fcoord%3B+wdt%3AP17+%3Fcountry+.+%7D+LIMIT+10&format=json",
+  "final_url": "https://query.wikidata.org/sparql?query=SELECT+%3Fitem+%3Flabel+%3Fcoord+%3Fcountry+WHERE+%7B+VALUES+%3Flabel+%7B+%22Secaucus%22%40en+%22Secaucus%2C+New+Jersey%22%40en+%7D+%3Fitem+rdfs%3Alabel+%3Flabel%3B+wdt%3AP625+%3Fcoord%3B+wdt%3AP17+%3Fcountry+.+%7D+LIMIT+10&format=json",
+  "retrieved_at": "2026-11-13T09:48:07.823665+00:00",
+  "sha256": "0145ce566ceae2183f6e6c9837d012dcd2a32eb81e8556eb3d9a72ca10bb081a",
+  "bytes": 627,
+  "status": 200
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm",
+  "final_url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm",
+  "retrieved_at": "2026-11-13T00:59:57.823437+00:00",
+  "sha256": "c183a976e239d454422d8e5e0a35963e9af1956b35bdd97a791f39dd969f8d18",
+  "bytes": 8000000,
+  "complete_response": false,
+  "note": "Bounded first 8,000,000 bytes; cover evidence only, not a complete filing"
+}

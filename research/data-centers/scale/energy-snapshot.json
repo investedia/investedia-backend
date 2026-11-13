@@ -1,0 +1,612 @@
+{
+  "commit": "f1ad144d8553e927d72ae333170eb01887adf223",
+  "sha256": "ae5713e8729c1bf090f96e5d12e3286b33b52648ba3733996c90dc333ea7e7ba",
+  "loader_sha256": "8555354c44da460f5189ccf246b9f44b055c9450051e858a3f49991df47ce60f",
+  "as_of": "2026-11-13",
+  "source_schema": "investedia.projects.invest.v1",
+  "source_credit": [
+    "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release (CC BY 4.0)",
+    "Global Energy Monitor, Global Energy Ownership Tracker, November 2026 (CC BY 4.0)",
+    "Source: U.S. Energy Information Administration, EIA-860M (September 2026) and EIA-860 (2024)"
+  ],
+  "projects": [
+    {
+      "raw": {
+        "cc": "US",
+        "cost": null,
+        "country": "United States",
+        "eia_status": "V",
+        "expected": "2026-10",
+        "expected_year": 2026,
+        "exposures": [
+          {
+            "cik": 92122,
+            "company": {
+              "exchange_short": "NYSE",
+              "name": "Southern Company",
+              "symbol": "SO"
+            },
+            "effective_stake": null,
+            "hq": {
+              "checked_at": "2026-11-12",
+              "city": "Atlanta",
+              "lat": 33.754444444,
+              "lon": -84.389722222,
+              "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+              "source_url": "https://www.wikidata.org/entity/Q2304693"
+            },
+            "hq_country": null,
+            "lei": "549300FC3G3YU2FBZD92",
+            "listed_entity_id": "lei:549300FC3G3YU2FBZD92",
+            "listed_name": "SOUTHERN CO",
+            "owner": "Georgia Power Co",
+            "owner_match": "id",
+            "owner_stake": null,
+            "path": [
+              "D981X4Z4RWS7PDMJUZ03",
+              "549300FC3G3YU2FBZD92"
+            ],
+            "path_edges": [
+              [
+                "D981X4Z4RWS7PDMJUZ03",
+                "549300FC3G3YU2FBZD92"
+              ]
+            ],
+            "path_names": [
+              "GEORGIA POWER COMPANY",
+              "THE SOUTHERN COMPANY"
+            ],
+            "type": "E3",
+            "verification": {
+              "batch": "route-b-us-2026-11",
+              "category": "B",
+              "company_states_interest": false,
+              "exposure_type": "indirect",
+              "identity": {
+                "checked_at": "2026-11-13",
+                "id": "549300FC3G3YU2FBZD92",
+                "legal_name": "THE SOUTHERN COMPANY",
+                "scheme": "LEI",
+                "source_url": "https://api.gleif.org/api/v1/lei-records/549300FC3G3YU2FBZD92"
+              },
+              "internal_only": [],
+              "link": [
+                {
+                  "document_date": "2026-09-30",
+                  "proves": "EIA-860M lists Hammond (plant 708) as planned, status V, reported by Georgia Power Co",
+                  "publisher": "U.S. EIA",
+                  "retrieved_at": "2026-11-13",
+                  "url": "https://www.eia.gov/electricity/data/eia860m/"
+                },
+                {
+                  "document_date": null,
+                  "edition": "EIA-860 2025 data",
+                  "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Georgia Power Co owns the generators (EIA instructions, Schedule 4 item 1)",
+                  "publisher": "U.S. EIA",
+                  "retrieved_at": "2026-11-13",
+                  "url": "https://www.eia.gov/electricity/data/eia860/"
+                },
+                {
+                  "document_date": "2026-11-13",
+                  "proves": "Legal entity GEORGIA POWER COMPANY, LEI D981X4Z4RWS7PDMJUZ03",
+                  "publisher": "GLEIF",
+                  "retrieved_at": "2026-11-13",
+                  "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03"
+                },
+                {
+                  "document_date": "2026-11-13",
+                  "edge": [
+                    "D981X4Z4RWS7PDMJUZ03",
+                    "549300FC3G3YU2FBZD92"
+                  ],
+                  "proves": "GEORGIA POWER COMPANY reports THE SOUTHERN COMPANY as its direct parent",
+                  "publisher": "GLEIF",
+                  "retrieved_at": "2026-11-13",
+                  "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03/direct-parent"
+                },
+                {
+                  "document_date": "2026-11-13",
+                  "proves": "SOUTHERN CO has publicly traded common equity: SO on NYSE (CIK 92122; SEC accelerated or large accelerated filer (public common equity))",
+                  "publisher": "U.S. SEC",
+                  "quote": null,
+                  "retrieved_at": "2026-11-13",
+                  "url": "https://data.sec.gov/submissions/CIK0000092122.json"
+                }
+              ],
+              "listing": {
+                "checked_at": "2026-11-13",
+                "cik": 92122,
+                "exchange": "NYSE",
+                "source_url": "https://data.sec.gov/submissions/CIK0000092122.json",
+                "ticker": "SO"
+              },
+              "reviewer": "engine (route B, US)",
+              "stake": {
+                "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+                "value": null
+              },
+              "verified_at": "2026-11-13"
+            }
+          }
+        ],
+        "id": "eia:708",
+        "images": {
+          "before": {
+            "credit": "Contains modified Copernicus Sentinel data 2024",
+            "date": "2024-12-24",
+            "file": "eia-708-before.jpg",
+            "resolution_m": 10,
+            "scene": "S2A_T16SFC_20241224T162708_L2A",
+            "sha256": "fe801e5b80cad738193cf23ecda630f88b1c42da0b0aff1dc76e9338bb690619",
+            "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+            "width_km": 3
+          },
+          "now": {
+            "credit": "Contains modified Copernicus Sentinel data 2026",
+            "date": "2026-10-27",
+            "file": "eia-708-now.jpg",
+            "resolution_m": 10,
+            "scene": "S2A_T16SFC_20261027T162654_L2A",
+            "sha256": "4dddb0f7a3140c6cf3839d498fa79ca4b840b38706fc0e7f3821f1d31f458dfa",
+            "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+            "width_km": 3
+          }
+        },
+        "kind": "Battery storage",
+        "lat": 34.2528,
+        "lon": -85.3456,
+        "mw": 57.5,
+        "name": "Hammond",
+        "other_owners": [],
+        "precision": "exact",
+        "progress": null,
+        "sector": "Energy & Utilities",
+        "source": {
+          "licence": "US public domain",
+          "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+          "url": "https://www.eia.gov/electricity/data/eia860m/"
+        },
+        "stage": "Under construction",
+        "stage_note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked",
+        "state": "GA",
+        "technology": "Batteries"
+      },
+      "normalized": {
+        "id": "eia:708",
+        "name": "Hammond",
+        "country": "United States",
+        "location": "United States",
+        "lat": 34.2528,
+        "lon": -85.3456,
+        "type": "Battery storage",
+        "sector": "Energy",
+        "energy": "Battery storage",
+        "stage": "Under construction",
+        "start_year": null,
+        "status_year": 2026,
+        "milestones": [],
+        "figures": [],
+        "sources": [
+          {
+            "name": "U.S. EIA",
+            "url": "https://www.eia.gov/electricity/data/eia860m/",
+            "checked_at": "2026-09-30"
+          },
+          {
+            "name": "U.S. EIA",
+            "url": "https://www.eia.gov/electricity/data/eia860/",
+            "checked_at": "EIA-860 2025 data"
+          },
+          {
+            "name": "GLEIF",
+            "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03",
+            "checked_at": "2026-11-13"
+          },
+          {
+            "name": "GLEIF",
+            "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03/direct-parent",
+            "checked_at": "2026-11-13"
+          },
+          {
+            "name": "U.S. SEC",
+            "url": "https://data.sec.gov/submissions/CIK0000092122.json",
+            "checked_at": "2026-11-13"
+          }
+        ],
+        "wiki": null,
+        "featured": false,
+        "verified": true,
+        "cc": "US",
+        "capacity": {
+          "unit": "megawatt",
+          "value": 57.5
+        },
+        "cost": null,
+        "owners": [],
+        "aliases": [],
+        "invest": {
+          "exposures": [
+            {
+              "ticker": "SO",
+              "exchange": "NYSE",
+              "name": "Southern Company",
+              "legal_name": "THE SOUTHERN COMPANY",
+              "sym": "SO",
+              "exchange_short": "NYSE",
+              "category": "B",
+              "category_label": "Regulator-confirmed",
+              "direct": false,
+              "path": [
+                "GEORGIA POWER COMPANY",
+                "THE SOUTHERN COMPANY"
+              ],
+              "stake": null,
+              "stake_note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+              "hq": {
+                "checked_at": "2026-11-12",
+                "city": "Atlanta",
+                "lat": 33.754444444,
+                "lon": -84.389722222,
+                "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+                "source_url": "https://www.wikidata.org/entity/Q2304693"
+              },
+              "evidence": [
+                {
+                  "url": "https://www.eia.gov/electricity/data/eia860m/",
+                  "publisher": "U.S. EIA",
+                  "date": "2026-09-30",
+                  "proves": "EIA-860M lists Hammond (plant 708) as planned, status V, reported by Georgia Power Co",
+                  "quote": null
+                },
+                {
+                  "url": "https://www.eia.gov/electricity/data/eia860/",
+                  "publisher": "U.S. EIA",
+                  "date": "EIA-860 2025 data",
+                  "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Georgia Power Co owns the generators (EIA instructions, Schedule 4 item 1)",
+                  "quote": null
+                },
+                {
+                  "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03",
+                  "publisher": "GLEIF",
+                  "date": "2026-11-13",
+                  "proves": "Legal entity GEORGIA POWER COMPANY, LEI D981X4Z4RWS7PDMJUZ03",
+                  "quote": null
+                },
+                {
+                  "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03/direct-parent",
+                  "publisher": "GLEIF",
+                  "date": "2026-11-13",
+                  "proves": "GEORGIA POWER COMPANY reports THE SOUTHERN COMPANY as its direct parent",
+                  "quote": null
+                },
+                {
+                  "url": "https://data.sec.gov/submissions/CIK0000092122.json",
+                  "publisher": "U.S. SEC",
+                  "date": "2026-11-13",
+                  "proves": "SOUTHERN CO has publicly traded common equity: SO on NYSE (CIK 92122; SEC accelerated or large accelerated filer (public common equity))",
+                  "quote": null
+                }
+              ]
+            }
+          ],
+          "other_owners": [],
+          "stage_note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked",
+          "precision": "exact",
+          "location_note": null
+        },
+        "listed": {
+          "ticker": "SO",
+          "name": "Southern Company",
+          "sym": "SO",
+          "stake": null
+        },
+        "satellite": {
+          "url": "https://investedia.com/assets/img/projects/sat/eia-708-now.jpg",
+          "date": "2026-10-27",
+          "before": {
+            "url": "https://investedia.com/assets/img/projects/sat/eia-708-before.jpg",
+            "date": "2024-12-24"
+          },
+          "x": 0.5,
+          "y": 0.5,
+          "s2": true,
+          "km": 3,
+          "credit": "Contains modified Copernicus Sentinel data 2026"
+        }
+      },
+      "normalized_sha256": "b36bf43c42dc312e0906b2726aec60e2fe0d93f422208be05f42be7e880e908c"
+    },
+    {
+      "raw": {
+        "cc": "US",
+        "cost": null,
+        "country": "United States",
+        "eia_status": "P",
+        "expected": "2027-12",
+        "expected_year": 2027,
+        "exposures": [
+          {
+            "cik": 92122,
+            "company": {
+              "exchange_short": "NYSE",
+              "name": "Southern Company",
+              "symbol": "SO"
+            },
+            "effective_stake": null,
+            "hq": {
+              "checked_at": "2026-11-12",
+              "city": "Atlanta",
+              "lat": 33.754444444,
+              "lon": -84.389722222,
+              "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+              "source_url": "https://www.wikidata.org/entity/Q2304693"
+            },
+            "hq_country": null,
+            "lei": "549300FC3G3YU2FBZD92",
+            "listed_entity_id": "lei:549300FC3G3YU2FBZD92",
+            "listed_name": "SOUTHERN CO",
+            "owner": "Georgia Power Co",
+            "owner_match": "id",
+            "owner_stake": null,
+            "path": [
+              "D981X4Z4RWS7PDMJUZ03",
+              "549300FC3G3YU2FBZD92"
+            ],
+            "path_edges": [
+              [
+                "D981X4Z4RWS7PDMJUZ03",
+                "549300FC3G3YU2FBZD92"
+              ]
+            ],
+            "path_names": [
+              "GEORGIA POWER COMPANY",
+              "THE SOUTHERN COMPANY"
+            ],
+            "type": "E3",
+            "verification": {
+              "batch": "route-b-us-2026-11",
+              "category": "B",
+              "company_states_interest": false,
+              "exposure_type": "indirect",
+              "identity": {
+                "checked_at": "2026-11-13",
+                "id": "549300FC3G3YU2FBZD92",
+                "legal_name": "THE SOUTHERN COMPANY",
+                "scheme": "LEI",
+                "source_url": "https://api.gleif.org/api/v1/lei-records/549300FC3G3YU2FBZD92"
+              },
+              "internal_only": [],
+              "link": [
+                {
+                  "document_date": "2026-09-30",
+                  "proves": "EIA-860M lists Yates (plant 728) as planned, status P, reported by Georgia Power Co",
+                  "publisher": "U.S. EIA",
+                  "retrieved_at": "2026-11-13",
+                  "url": "https://www.eia.gov/electricity/data/eia860m/"
+                },
+                {
+                  "document_date": null,
+                  "edition": "EIA-860 2025 data",
+                  "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Georgia Power Co owns the generators (EIA instructions, Schedule 4 item 1)",
+                  "publisher": "U.S. EIA",
+                  "retrieved_at": "2026-11-13",
+                  "url": "https://www.eia.gov/electricity/data/eia860/"
+                },
+                {
+                  "document_date": "2026-11-13",
+                  "proves": "Legal entity GEORGIA POWER COMPANY, LEI D981X4Z4RWS7PDMJUZ03",
+                  "publisher": "GLEIF",
+                  "retrieved_at": "2026-11-13",
+                  "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03"
+                },
+                {
+                  "document_date": "2026-11-13",
+                  "edge": [
+                    "D981X4Z4RWS7PDMJUZ03",
+                    "549300FC3G3YU2FBZD92"
+                  ],
+                  "proves": "GEORGIA POWER COMPANY reports THE SOUTHERN COMPANY as its direct parent",
+                  "publisher": "GLEIF",
+                  "retrieved_at": "2026-11-13",
+                  "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03/direct-parent"
+                },
+                {
+                  "document_date": "2026-11-13",
+                  "proves": "SOUTHERN CO has publicly traded common equity: SO on NYSE (CIK 92122; SEC accelerated or large accelerated filer (public common equity))",
+                  "publisher": "U.S. SEC",
+                  "quote": null,
+                  "retrieved_at": "2026-11-13",
+                  "url": "https://data.sec.gov/submissions/CIK0000092122.json"
+                }
+              ],
+              "listing": {
+                "checked_at": "2026-11-13",
+                "cik": 92122,
+                "exchange": "NYSE",
+                "source_url": "https://data.sec.gov/submissions/CIK0000092122.json",
+                "ticker": "SO"
+              },
+              "reviewer": "engine (route B, US)",
+              "stake": {
+                "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+                "value": null
+              },
+              "verified_at": "2026-11-13"
+            }
+          }
+        ],
+        "id": "eia:728",
+        "images": {
+          "now": {
+            "credit": "Contains modified Copernicus Sentinel data 2026",
+            "date": "2026-10-27",
+            "file": "eia-728-now.jpg",
+            "resolution_m": 10,
+            "scene": "S2A_T16SFC_20261027T162654_L2A",
+            "sha256": "ff34b20bb05d75c7ed6db7bb136e224168d277a49f639abd018ddeb7be8d3ce1",
+            "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+            "width_km": 3
+          }
+        },
+        "kind": "Oil & gas",
+        "lat": 33.4622,
+        "lon": -84.8986,
+        "mw": 1448.4,
+        "name": "Yates",
+        "other_owners": [],
+        "precision": "exact",
+        "progress": null,
+        "sector": "Energy & Utilities",
+        "source": {
+          "licence": "US public domain",
+          "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+          "url": "https://www.eia.gov/electricity/data/eia860m/"
+        },
+        "stage": "Announced",
+        "state": "GA",
+        "technology": "Natural Gas Fired Combustion Turbine"
+      },
+      "normalized": {
+        "id": "eia:728",
+        "name": "Yates",
+        "country": "United States",
+        "location": "United States",
+        "lat": 33.4622,
+        "lon": -84.8986,
+        "type": "Gas power",
+        "sector": "Energy",
+        "energy": "Oil & gas",
+        "stage": "Announced",
+        "start_year": null,
+        "status_year": 2027,
+        "milestones": [],
+        "figures": [],
+        "sources": [
+          {
+            "name": "U.S. EIA",
+            "url": "https://www.eia.gov/electricity/data/eia860m/",
+            "checked_at": "2026-09-30"
+          },
+          {
+            "name": "U.S. EIA",
+            "url": "https://www.eia.gov/electricity/data/eia860/",
+            "checked_at": "EIA-860 2025 data"
+          },
+          {
+            "name": "GLEIF",
+            "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03",
+            "checked_at": "2026-11-13"
+          },
+          {
+            "name": "GLEIF",
+            "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03/direct-parent",
+            "checked_at": "2026-11-13"
+          },
+          {
+            "name": "U.S. SEC",
+            "url": "https://data.sec.gov/submissions/CIK0000092122.json",
+            "checked_at": "2026-11-13"
+          }
+        ],
+        "wiki": null,
+        "featured": false,
+        "verified": true,
+        "cc": "US",
+        "capacity": {
+          "unit": "megawatt",
+          "value": 1448.4
+        },
+        "cost": null,
+        "owners": [],
+        "aliases": [],
+        "invest": {
+          "exposures": [
+            {
+              "ticker": "SO",
+              "exchange": "NYSE",
+              "name": "Southern Company",
+              "legal_name": "THE SOUTHERN COMPANY",
+              "sym": "SO",
+              "exchange_short": "NYSE",
+              "category": "B",
+              "category_label": "Regulator-confirmed",
+              "direct": false,
+              "path": [
+                "GEORGIA POWER COMPANY",
+                "THE SOUTHERN COMPANY"
+              ],
+              "stake": null,
+              "stake_note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+              "hq": {
+                "checked_at": "2026-11-12",
+                "city": "Atlanta",
+                "lat": 33.754444444,
+                "lon": -84.389722222,
+                "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+                "source_url": "https://www.wikidata.org/entity/Q2304693"
+              },
+              "evidence": [
+                {
+                  "url": "https://www.eia.gov/electricity/data/eia860m/",
+                  "publisher": "U.S. EIA",
+                  "date": "2026-09-30",
+                  "proves": "EIA-860M lists Yates (plant 728) as planned, status P, reported by Georgia Power Co",
+                  "quote": null
+                },
+                {
+                  "url": "https://www.eia.gov/electricity/data/eia860/",
+                  "publisher": "U.S. EIA",
+                  "date": "EIA-860 2025 data",
+                  "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Georgia Power Co owns the generators (EIA instructions, Schedule 4 item 1)",
+                  "quote": null
+                },
+                {
+                  "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03",
+                  "publisher": "GLEIF",
+                  "date": "2026-11-13",
+                  "proves": "Legal entity GEORGIA POWER COMPANY, LEI D981X4Z4RWS7PDMJUZ03",
+                  "quote": null
+                },
+                {
+                  "url": "https://api.gleif.org/api/v1/lei-records/D981X4Z4RWS7PDMJUZ03/direct-parent",
+                  "publisher": "GLEIF",
+                  "date": "2026-11-13",
+                  "proves": "GEORGIA POWER COMPANY reports THE SOUTHERN COMPANY as its direct parent",
+                  "quote": null
+                },
+                {
+                  "url": "https://data.sec.gov/submissions/CIK0000092122.json",
+                  "publisher": "U.S. SEC",
+                  "date": "2026-11-13",
+                  "proves": "SOUTHERN CO has publicly traded common equity: SO on NYSE (CIK 92122; SEC accelerated or large accelerated filer (public common equity))",
+                  "quote": null
+                }
+              ]
+            }
+          ],
+          "other_owners": [],
+          "stage_note": null,
+          "precision": "exact",
+          "location_note": null
+        },
+        "listed": {
+          "ticker": "SO",
+          "name": "Southern Company",
+          "sym": "SO",
+          "stake": null
+        },
+        "satellite": {
+          "url": "https://investedia.com/assets/img/projects/sat/eia-728-now.jpg",
+          "date": "2026-10-27",
+          "before": null,
+          "x": 0.5,
+          "y": 0.5,
+          "s2": true,
+          "km": 3,
+          "credit": "Contains modified Copernicus Sentinel data 2026"
+        }
+      },
+      "normalized_sha256": "6b9447a0fe80186c107f8ae14d270bab4d8b8fe1468e344516219e3d4a97d465"
+    }
+  ]
+}

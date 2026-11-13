@@ -1,0 +1,8 @@
+{
+  "url": "https://query.wikidata.org/sparql?query=SELECT+%3Fitem+%3Fname+%3Fcoord+%3Faddress+%3Fwebsite+WHERE+%7B+VALUES+%3Fname+%7B+%22Equinix+DC2%22%40en+%22Equinix+SV1%22%40en+%22Equinix+DX1%22%40en+%22Equinix+SV1+Data+Center%22%40en+%22Equinix+DC2+Data+Center%22%40en+%7D+%3Fitem+rdfs%3Alabel+%3Fname+.+OPTIONAL+%7B%3Fitem+wdt%3AP625+%3Fcoord%7D+OPTIONAL+%7B%3Fitem+wdt%3AP6375+%3Faddress%7D+OPTIONAL+%7B%3Fitem+wdt%3AP856+%3Fwebsite%7D+%7D+LIMIT+20&format=json",
+  "final_url": "https://query.wikidata.org/sparql?query=SELECT+%3Fitem+%3Fname+%3Fcoord+%3Faddress+%3Fwebsite+WHERE+%7B+VALUES+%3Fname+%7B+%22Equinix+DC2%22%40en+%22Equinix+SV1%22%40en+%22Equinix+DX1%22%40en+%22Equinix+SV1+Data+Center%22%40en+%22Equinix+DC2+Data+Center%22%40en+%7D+%3Fitem+rdfs%3Alabel+%3Fname+.+OPTIONAL+%7B%3Fitem+wdt%3AP625+%3Fcoord%7D+OPTIONAL+%7B%3Fitem+wdt%3AP6375+%3Faddress%7D+OPTIONAL+%7B%3Fitem+wdt%3AP856+%3Fwebsite%7D+%7D+LIMIT+20&format=json",
+  "retrieved_at": "2026-11-13T01:45:39.048246+00:00",
+  "sha256": "4c25ed9ba798ae31cbc8079d2450c4ec5c1d1c86aa321fffce6d2f021e5b516a",
+  "bytes": 125,
+  "complete": true
+}

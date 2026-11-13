@@ -1,0 +1,760 @@
+{
+  "schema": "investedia.projects.v2",
+  "projects": [
+    {
+      "k": "dc:dlr:2256",
+      "n": "ACC4",
+      "t": "Data centres",
+      "c": "USA",
+      "cc": "US",
+      "la": 39.0178075,
+      "lo": -77.4624887,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/americas/northern-virginia/acc4",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2257",
+      "n": "ACC5",
+      "t": "Data centres",
+      "c": "USA",
+      "cc": "US",
+      "la": 39.0201312,
+      "lo": -77.4632058,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/americas/northern-virginia/acc5",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2475",
+      "n": "TOR1",
+      "t": "Data centres",
+      "c": "Canada",
+      "cc": "CA",
+      "la": 43.7773553,
+      "lo": -79.5439629,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/americas/toronto/tor1",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2293",
+      "n": "CPS01",
+      "t": "Data centres",
+      "c": "Brazil",
+      "cc": "BR",
+      "la": -22.848037,
+      "lo": -47.153369,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/cps01",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2344",
+      "n": "FTZ01",
+      "t": "Data centres",
+      "c": "Brazil",
+      "cc": "BR",
+      "la": -3.830665,
+      "lo": -38.612192,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/americas/fortaleza/ftz01",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2413",
+      "n": "MEX01",
+      "t": "Data centres",
+      "c": "Mexico",
+      "cc": "MX",
+      "la": 20.592944,
+      "lo": -100.164761,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/americas/queretaro/mex01",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:1790",
+      "n": "AMS7",
+      "t": "Data centres",
+      "c": "Netherlands",
+      "cc": "NL",
+      "la": 52.281585,
+      "lo": 4.766454,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/emea/amsterdam/ams7",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2316",
+      "n": "DUS1",
+      "t": "Data centres",
+      "c": "Germany",
+      "cc": "DE",
+      "la": 51.18785,
+      "lo": 6.86831,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/emea/dusseldorf/dus1",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2416",
+      "n": "MRS1",
+      "t": "Data centres",
+      "c": "France",
+      "cc": "FR",
+      "la": 43.31074,
+      "lo": 5.3733,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/emea/marseille/mrs1",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2408",
+      "n": "MAD1",
+      "t": "Data centres",
+      "c": "Spain",
+      "cc": "ES",
+      "la": 40.43948,
+      "lo": -3.62126,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/emea/madrid/mad1",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2290",
+      "n": "CPH1",
+      "t": "Data centres",
+      "c": "Denmark",
+      "cc": "DK",
+      "la": 55.72808,
+      "lo": 12.37752,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/emea/copenhagen/cph1",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2387",
+      "n": "KIX10",
+      "t": "Data centres",
+      "c": "Japan",
+      "cc": "JP",
+      "la": 34.8614235,
+      "lo": 135.5158993,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/asia-pacific/osaka/kix10",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2388",
+      "n": "KIX11",
+      "t": "Data centres",
+      "c": "Japan",
+      "cc": "JP",
+      "la": 34.8615942,
+      "lo": 135.5120772,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/asia-pacific/osaka/kix11",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2448",
+      "n": "SIN10",
+      "t": "Data centres",
+      "c": "Singapore",
+      "cc": "SG",
+      "la": 1.327732,
+      "lo": 103.745974,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/asia-pacific/singapore/sin10",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2412",
+      "n": "MEL11",
+      "t": "Data centres",
+      "c": "Australia",
+      "cc": "AU",
+      "la": -37.78116034,
+      "lo": 144.7781525,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/asia-pacific/melbourne/mel11",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:3389",
+      "n": "MAA10",
+      "t": "Data centres",
+      "c": "India",
+      "cc": "IN",
+      "la": 13.09899,
+      "lo": 80.16583,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/asia-pacific/chennai/maa10",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2379",
+      "n": "ICN10",
+      "t": "Data centres",
+      "c": "South Korea",
+      "cc": "KR",
+      "la": 37.5818414,
+      "lo": 126.8847847,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/asia-pacific/seoul/icn10",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2294",
+      "n": "CT1",
+      "t": "Data centres",
+      "c": "South Africa",
+      "cc": "ZA",
+      "la": -33.9712,
+      "lo": 18.4649,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/emea/cape-town/ct1",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2295",
+      "n": "CT2",
+      "t": "Data centres",
+      "c": "South Africa",
+      "cc": "ZA",
+      "la": -33.907417,
+      "lo": 18.67936,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/emea/cape-town/ct2",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2405",
+      "n": "LOS1",
+      "t": "Data centres",
+      "c": "Nigeria",
+      "cc": "NG",
+      "la": 6.426722,
+      "lo": 3.417459,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/emea/lagos/los1",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:2411",
+      "n": "MBA1",
+      "t": "Data centres",
+      "c": "Kenya",
+      "cc": "KE",
+      "la": -4.00833,
+      "lo": 39.60574,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/emea/mombasa/mba1",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:11459",
+      "n": "MPM1",
+      "t": "Data centres",
+      "c": "Mozambique",
+      "cc": "MZ",
+      "la": -25.950476,
+      "lo": 32.590457,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/emea/maputo/mpm1",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:dlr:24413",
+      "n": "ACR2 ",
+      "t": "Data centres",
+      "c": "Ghana",
+      "cc": "GH",
+      "la": 5.542241,
+      "lo": -0.206357,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.digitalrealty.com/data-centers/emea/accra/acr2",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:eqix:DC2",
+      "n": "Equinix DC2",
+      "t": "Data centres",
+      "c": "United States of America",
+      "cc": "US",
+      "la": 39.01678723190463,
+      "lo": -77.46054392965522,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/washington-dc-data-centers/dc2",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:eqix:SV1",
+      "n": "Equinix SV1",
+      "t": "Data centres",
+      "c": "United States of America",
+      "cc": "US",
+      "la": 37.241496584550006,
+      "lo": -121.78421121891819,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/silicon-valley-data-centers/sv1",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    },
+    {
+      "k": "dc:eqix:DX1",
+      "n": "Equinix DX1",
+      "t": "Data centres",
+      "c": "United Arab Emirates",
+      "cc": "AE",
+      "la": 25.02544660129486,
+      "lo": 55.18684176173679,
+      "own": [],
+      "coordinate_quality": "company map pin; exact site unverified",
+      "validation_status": "research_only",
+      "src": [
+        {
+          "name": "Official company facility directory",
+          "url": "https://www.equinix.com/data-centers/europe-colocation/united-arab-emirates-colocation/dubai-data-centers/dx1",
+          "licence": "Commercial redistribution not cleared",
+          "checked_at": "2026-11-13",
+          "field_list": [
+            "k",
+            "n",
+            "t",
+            "c",
+            "cc",
+            "la",
+            "lo"
+          ]
+        }
+      ]
+    }
+  ],
+  "notice": "INTERNAL RESEARCH PREVIEW. No commercial reuse cleared. No verified direct project ownership. Not investment advice."
+}
