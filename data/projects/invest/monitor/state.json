@@ -1,0 +1,365 @@
+{
+ "schema": "investedia.projects.monitor.v0",
+ "sources": {
+  "https://acwapower.com/en/media-center/latest-news/acwa-signs-power-purchase-agreement-for-the-expansion-of-rabigh-2-power-plant-project/": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "931c7611afab09cb210eb1e7dbf9da65cb17c20f39fd45c418b03d1aae5432dd",
+   "bytes": 75387,
+   "checked_at": "2026-11-13",
+   "version": 1,
+   "last_error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "https://borsaitaliana.it/borsa/azioni/scheda/IT0003128367.html?lang=en": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "02efd550176b9b8ba0b2053833d8871f6dcac59ea3da58ac9a7e4207316525a3",
+   "bytes": 60566,
+   "checked_at": "2026-11-13",
+   "version": 2,
+   "last_error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "https://data.sec.gov/submissions/CIK0000004904.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "7e91f70a1c8ad6c8a8058355a6f8ce06bd19da09fdfbaba3aac03fbf8ddc49b7",
+   "bytes": 160963,
+   "checked_at": "2026-11-13",
+   "version": 1,
+   "last_error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "https://data.sec.gov/submissions/CIK0000065984.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "50d2025c0184660353058148a00e3aed5452760163384e754cbec2422eaf7ee0",
+   "bytes": 168294,
+   "checked_at": "2026-11-13",
+   "version": 1,
+   "last_error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "https://data.sec.gov/submissions/CIK0000072903.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "1688b89f19c41595bff867a92336905c7006233c676f34be94c75d2f03040362",
+   "bytes": 152277,
+   "checked_at": "2026-11-13",
+   "version": 1,
+   "last_error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "https://data.sec.gov/submissions/CIK0000092122.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "757db0e020550005fe284735c694702a8d299fa088ce08dac3238aaf2492ef72",
+   "bytes": 157622,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0000352541.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "cff70c175565af88e6b7e352eb01fd0364cbe4d19134787795afe578ae0d95ed",
+   "bytes": 162589,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0000715957.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "249b714e35c45a9ebf49669e7a0f099b17e6c165613d9dca9f9a44849f5eb6c4",
+   "bytes": 155268,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0000753308.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "9693784cd74acfce477c1b90aa036fc4f1e72f0c177b79ee09b758cce332aa1c",
+   "bytes": 172149,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0000764622.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "90e3d387cde954fb314f0d9fa533b88e919e6e8088f64ced97d3922e2dbe540c",
+   "bytes": 164067,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0000783325.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "c09eca44a57921e4197a89886511b38f3f1fcb2f32f3fd63951a21e505620238",
+   "bytes": 168197,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0000811156.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "360d5cb8748a1cb72a5ecd9080d03fc0d4782cc4165795dde85c02ecda9bf4ef",
+   "bytes": 163539,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0000827052.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "4193a08b3a74b636453c626b0b39d4e5fc7fdc9762ebf76bf0d96758aabc291a",
+   "bytes": 168066,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0000895728.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "fc5c3b2ff8bc2703315a49d3e79432d2a6f1a693ba999d16ad0171e3a4b05062",
+   "bytes": 160341,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0000922224.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "209eac6602cd82d802fdde5beffe24b752ce83a61174270dc34a1280199e44a2",
+   "bytes": 157695,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0000936340.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "23d9c3efa206435d52b39d3090a3be81ea9fea62c1558eac4f40288aae71ba3d",
+   "bytes": 166366,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0001002910.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "5c423af9fb39828f13fa191d533525eb732f502eed58fbad0221d0aca85cbd0b",
+   "bytes": 162406,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0001021635.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "a56fef8665260a85ac5464687e26843e3bbfac3797ebdffc0a3007c3fc68c1e1",
+   "bytes": 169051,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0001067983.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "f3460fe47bef2c1e639512714c60d5e061c7d40ecf83fd3a961df966a19d3a91",
+   "bytes": 161874,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0001127248.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "3da81324fdb93ace647dcb507f2f47a336d0e2455d3328b0b8755f8a3fb4a08d",
+   "bytes": 45175,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0001130464.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "97382f98064befb68d51256c5a2aa1cf3970979fc2f6f82330b4017dfd92200f",
+   "bytes": 162671,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0001326160.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "758cb8fb962f366eb321736984519e6448fe917470adf36f1765b4ca97e8d3ca",
+   "bytes": 165091,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0001466593.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "9687395727ba2cad77fe9e7d75c2a4801ed18f2a9342b0b1407d4a2964dca0dd",
+   "bytes": 142909,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0001692819.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "aa1c3cb440543c9e3ce53f3f73f2cc252147b7b9b517d171f64c38aaefe1bb13",
+   "bytes": 159830,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://data.sec.gov/submissions/CIK0001711269.json": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "9b7f7e5acb1e5077dffd9b1625c5901ec717e57cf90094d79eca8edc25e58d27",
+   "bytes": 120807,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://live.euronext.com/en/product/equities/PTEDP0AM0009-XLIS": {
+   "etag": "\"1794564050\"",
+   "last_modified": "Fri, 13 Nov 2026 10:00:50 GMT",
+   "sha256": "c8e66ca2f66628f510559ecb43fb33c36003a73016f1999fe1192e572226d37e",
+   "bytes": 242982,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://ntpc.co.in/future-capacity-additions": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "text:16006175a791cdf6390b90c898402abd9cc15b2987e6b6cbe7d4058dcef48b20",
+   "bytes": 53246,
+   "checked_at": "2026-11-13",
+   "version": 3
+  },
+  "https://sjvn.nic.in/en/dhaulasidh-hep": {
+   "etag": "\"1794483401\"",
+   "last_modified": "Thu, 12 Nov 2026 11:36:41 GMT",
+   "sha256": "c6d71afa93a541848ac13355a4700d978fa34d5d2e01c1f923d9ba95a9bbfe1b",
+   "bytes": 102645,
+   "checked_at": "2026-11-13",
+   "version": 0
+  },
+  "https://sjvn.nic.in/en/sunni-dam-hep": {
+   "etag": "\"1794479330\"",
+   "last_modified": "Thu, 12 Nov 2026 10:28:50 GMT",
+   "sha256": "9b6e390f88f64fc3b9ffb397361ce91aa345e1e0968f818bc6dfa9649cbfb9e5",
+   "bytes": 108045,
+   "checked_at": "2026-11-13",
+   "version": 0
+  },
+  "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf": {
+   "etag": "\"28b4614d4b26dd1:0\"",
+   "last_modified": "Fri, 07 Aug 2026 09:01:15 GMT",
+   "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+   "bytes": 7296593,
+   "checked_at": "2026-11-13",
+   "version": 0
+  },
+  "https://storage.mfn.se/a0d6c1c3-c903-4c13-9985-b1d911d0daf7/scatec-q2-2026-report.pdf": {
+   "etag": null,
+   "last_modified": "Thu, 05 Nov 2026 13:37:53 GMT",
+   "sha256": "52cb082ab99c1363a6c65fbf7e728f48c0ef11b73b6537db403992f2afb2e56b",
+   "bytes": 31800285,
+   "checked_at": "2026-11-13",
+   "version": 0
+  },
+  "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf": {
+   "etag": "\"1dc64246753be05\"",
+   "last_modified": "Wed, 03 Dec 2025 07:14:03 GMT",
+   "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+   "bytes": 987525,
+   "checked_at": "2026-11-13",
+   "version": 0
+  },
+  "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.acciona-es0125220311.html": {
+   "etag": null,
+   "last_modified": "Fri, 13 Nov 2026 10:19:51 GMT",
+   "sha256": "text:fa88b207b564ad62537c4f1f6d3ef2a6256d5e95515b39e139d95e88f9c2b5f4",
+   "bytes": 166788,
+   "checked_at": "2026-11-13",
+   "version": 2
+  },
+  "https://www.eia.gov/electricity/data/eia860/": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "text:19013ca459d8354b48a90f61433ce3f3a0998fbeb5d621f61f34fd34629e3f11",
+   "bytes": 67543,
+   "checked_at": "2026-11-13",
+   "version": 2
+  },
+  "https://www.eia.gov/electricity/data/eia860m/": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "text:dedba5bd2e05804c2121b596c8cb14f72f4c459fcc194c88f01d917dfab09152",
+   "bytes": 93617,
+   "checked_at": "2026-11-13",
+   "version": 2
+  },
+  "https://www.enbw.com/company/topics/coal-phaseout/heilbronn-combined-heat-and-power-plant/": {
+   "etag": "W/\"0a50cfff616f18222a7e774c11e3720d\"",
+   "last_modified": "Wed, 11 Nov 2026 14:06:09 GMT",
+   "sha256": "eddbfa468340d85aa9a64b4959f7330e3cefbb2998b416d6156a2242fdbf3879",
+   "bytes": 277053,
+   "checked_at": "2026-11-13",
+   "version": 0
+  },
+  "https://www.enbw.com/unternehmen/konzern/energieerzeugung/neubau-und-projekte/gas-und-dampfturbinenanlage-gud-altbach-deizisau/": {
+   "etag": "W/\"742225e1b43db645d7a2d8582af6564a\"",
+   "last_modified": "Wed, 11 Nov 2026 14:05:54 GMT",
+   "sha256": "text:410058470bd9a1a02e5b015c88a5d43c3df3032e9cfcaa4c7ac64c37447b55f7",
+   "bytes": 322040,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://www.nhpcindia.com/welcome/language/en/project/3//": {
+   "sha256": "2f363e943f30a67e95dc53e9306aed6e9a7f44abf62e95104c575327f77993ba",
+   "last_error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+   "checked_at": "2026-11-13",
+   "version": 0
+  },
+  "https://www.rwe.com/en/investor-relations/rwe-share/share-at-a-glance/": {
+   "etag": null,
+   "last_modified": null,
+   "sha256": "text:6a84633e8da1fe2e9bd1cdb90752629a10a064a1bab72c836e7fd8394bde3c94",
+   "bytes": 138836,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://www.sec.gov/Archives/edgar/data/1021635/000119312526055414/oge-ex21_01.htm": {
+   "etag": null,
+   "last_modified": "Wed, 18 Feb 2026 11:04:52 GMT",
+   "sha256": "4a7b8c361a4596e64fc840aa1a418baeb1944b8ce2ade48702d1e9ec7384f1f8",
+   "bytes": 7388,
+   "checked_at": "2026-11-13",
+   "version": 1,
+   "last_error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "https://www.sec.gov/Archives/edgar/data/1130464/000119312526046028/bkh-ex21.htm": {
+   "etag": null,
+   "last_modified": "Wed, 11 Feb 2026 17:59:37 GMT",
+   "sha256": "1eb42d59b4d1c6cd6726a7df887bd305320c9f350f7c4ab2ccf7c4fd2e2b2de0",
+   "bytes": 53076,
+   "checked_at": "2026-11-13",
+   "version": 1,
+   "last_error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "https://www.sec.gov/Archives/edgar/data/1466593/000146659326000008/a2025ex21subsidiariesofreg.htm": {
+   "etag": null,
+   "last_modified": "Wed, 18 Feb 2026 18:28:25 GMT",
+   "sha256": "84e33e877c734dc1ef4ef29161f99e7609c919b8df1dc25bf37f24bb7334d6bd",
+   "bytes": 6571,
+   "checked_at": "2026-11-13",
+   "version": 1,
+   "last_error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "https://www.sec.gov/Archives/edgar/data/753308/000075330826000015/nee-q42025xex21.htm": {
+   "etag": null,
+   "last_modified": "Fri, 13 Feb 2026 21:20:04 GMT",
+   "sha256": "2f9c7af2194edf4826e28adf2b4eb5fd7a532062916bde6f9f783590339ba85e",
+   "bytes": 7889,
+   "checked_at": "2026-11-13",
+   "version": 1,
+   "last_error": "HTTP 502"
+  },
+  "https://www.sec.gov/Archives/edgar/data/874761/000087476126000063/aes-20251231.htm": {
+   "etag": null,
+   "last_modified": "Mon, 02 Mar 2026 21:20:35 GMT",
+   "sha256": "5680899fb4146c0e5758e650e441f796f72d326ad67e19a8dbb46271f0a8131f",
+   "bytes": 6595743,
+   "checked_at": "2026-11-13",
+   "version": 1,
+   "last_error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+ }
+}

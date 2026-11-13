@@ -1,0 +1,2658 @@
+{
+ "schema": "investedia.projects.portfolios.v0",
+ "companies": {
+  "ETR": {
+   "company": "ENTERGY CORPORATION",
+   "ticker": "ETR",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:66621",
+     "name": "Orange County Advanced Power Station",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 1306.0,
+     "stage": "Commissioning",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Texas Inc.",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:67914",
+     "name": "Delta Blues Advanced Power Station",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 818.7,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Mississippi LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68028",
+     "name": "Delta Solar Plant",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 80.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Mississippi LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68029",
+     "name": "Penton Solar Plant",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 190.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Mississippi LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68053",
+     "name": "Legend Power Station",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 754.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Texas Inc.",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68214",
+     "name": "Franklin Farms 1&2",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 1560.6,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Louisiana LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69077",
+     "name": "Lone Star Power Station",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 467.3,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Texas Inc.",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69184",
+     "name": "Waterford 5",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 820.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Louisiana LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69185",
+     "name": "Jefferson Power Station",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 820.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Arkansas LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69223",
+     "name": "Vicksburg Advanced Power Station",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 819.4,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Mississippi LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69426",
+     "name": "Westlake Power Station",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 819.4,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Louisiana LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69445",
+     "name": "Waterford 6",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 820.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Louisiana LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69449",
+     "name": "Richland Parish Power Station 1&2",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 1560.6,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Louisiana LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69649",
+     "name": "Richland Parish Power Station 3",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 780.3,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Louisiana LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69650",
+     "name": "Richland Parish Power Station 4",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 780.3,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Louisiana LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69750",
+     "name": "Ironwood Power Station",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 467.3,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Arkansas LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69944",
+     "name": "Pointe Coupee Power Station",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 2340.9,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Louisiana LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69952",
+     "name": "Cypress Harvest Solar Station",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 400.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Louisiana LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69989",
+     "name": "Arkansas Cypress Solar Station",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 950.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Arkansas LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69990",
+     "name": "Bogalusa West Solar Station",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 200.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Louisiana LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69991",
+     "name": "Segno Solar Station",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 170.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Louisiana LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69993",
+     "name": "Votaw Solar Station",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 141.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Louisiana LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:70187",
+     "name": "Traceview Advanced Power Station",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 819.4,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Entergy Mississippi LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 23,
+    "project_capacity_mw_not_share_weighted": 17885.2,
+    "by_kind": {
+     "Battery storage": 2,
+     "Oil & gas": 16,
+     "Solar": 5
+    }
+   }
+  },
+  "NEE": {
+   "company": "NEXTERA ENERGY INC",
+   "ticker": "NEE",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:68824",
+     "name": "Middle Lake",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 74.5,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Florida Power & Light Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68825",
+     "name": "Pinecone",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 74.5,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Florida Power & Light Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68826",
+     "name": "Saddle",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 74.5,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Florida Power & Light Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68827",
+     "name": "Spanish Moss",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 74.5,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Florida Power & Light Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68828",
+     "name": "Tangelo",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 74.5,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Florida Power & Light Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68829",
+     "name": "Ambersweet",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 74.5,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Florida Power & Light Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68830",
+     "name": "Catfish",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 74.5,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Florida Power & Light Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68831",
+     "name": "Cocoplum",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 74.5,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Florida Power & Light Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68832",
+     "name": "County Line",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 74.5,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Florida Power & Light Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68833",
+     "name": "Hardwood Hammock",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 74.5,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Florida Power & Light Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68834",
+     "name": "Hendry",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 74.5,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Florida Power & Light Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68835",
+     "name": "Joshua Creek",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 74.5,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Florida Power & Light Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68836",
+     "name": "Maple Trail",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 74.5,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Florida Power & Light Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69657",
+     "name": "New Salem Wind I",
+     "kind": "Wind",
+     "country": "United States",
+     "mw": 200.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Nextera Energy Resources",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69658",
+     "name": "New Salem Wind II",
+     "kind": "Wind",
+     "country": "United States",
+     "mw": 226.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Nextera Energy Resources",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69659",
+     "name": "Red Butte Wind",
+     "kind": "Wind",
+     "country": "United States",
+     "mw": 202.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Nextera Energy Resources",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69823",
+     "name": "Cabokenze Energy Storage",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 76.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Nextera Energy Resources",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69879",
+     "name": "Ninnescah Flats Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 201.6,
+     "stage": "Commissioning",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Nextera Energy Resources",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:70299",
+     "name": "Pioneer Creek Wind, LLC",
+     "kind": "Wind",
+     "country": "United States",
+     "mw": 252.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "NextEra Energy Resources, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:70407",
+     "name": "Roy Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 258.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "NextEra Energy Resources, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:70408",
+     "name": "Willow Creek Energy Storage",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 200.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "NextEra Energy Resources, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 21,
+    "project_capacity_mw_not_share_weighted": 2584.1,
+    "by_kind": {
+     "Battery storage": 2,
+     "Solar": 15,
+     "Wind": 4
+    }
+   }
+  },
+  "2082": {
+   "company": "شركة أكوا باور شركة مساهمة سعودية",
+   "ticker": "2082",
+   "exchange": "Saudi Exchange (Tadawul), main market",
+   "projects": [
+    {
+     "id": "gem:L100000801313",
+     "name": "Saguling solar farm",
+     "kind": "Solar",
+     "country": "Indonesia",
+     "mw": 60.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 49.0,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001063152",
+     "name": "Afif 1 solar farm",
+     "kind": "Solar",
+     "country": "Saudi Arabia",
+     "mw": 2000.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 35.1,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001063155",
+     "name": "Afif 2 solar farm",
+     "kind": "Solar",
+     "country": "Saudi Arabia",
+     "mw": 2000.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 35.1,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001018767",
+     "name": "Al-Khushaybi Solar PV Park",
+     "kind": "Solar",
+     "country": "Saudi Arabia",
+     "mw": 1500.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 35.1,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001018768",
+     "name": "Al-Muwaih Solar PV",
+     "kind": "Solar",
+     "country": "Saudi Arabia",
+     "mw": 2000.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 35.1,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001063143",
+     "name": "Bisha solar farm",
+     "kind": "Solar",
+     "country": "Saudi Arabia",
+     "mw": 3000.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 35.1,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001018770",
+     "name": "Haden solar farm",
+     "kind": "Solar",
+     "country": "Saudi Arabia",
+     "mw": 2000.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 35.1,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001063269",
+     "name": "Shaqra wind farm",
+     "kind": "Wind",
+     "country": "Saudi Arabia",
+     "mw": 1000.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 35.1,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001063265",
+     "name": "Starah wind farm",
+     "kind": "Wind",
+     "country": "Saudi Arabia",
+     "mw": 2000.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 35.1,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001016696:p1",
+     "name": "Aral wind farm (phase 1)",
+     "kind": "Wind",
+     "country": "Uzbekistan",
+     "mw": 1000.0,
+     "stage": "Announced",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 100.0,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001016696:p2",
+     "name": "Aral wind farm (phase 2)",
+     "kind": "Wind",
+     "country": "Uzbekistan",
+     "mw": 1000.0,
+     "stage": "Announced",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 100.0,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001016696:p3",
+     "name": "Aral wind farm (phase 3)",
+     "kind": "Wind",
+     "country": "Uzbekistan",
+     "mw": 1000.0,
+     "stage": "Announced",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 100.0,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001016696:p4",
+     "name": "Aral wind farm (phase 4)",
+     "kind": "Wind",
+     "country": "Uzbekistan",
+     "mw": 1000.0,
+     "stage": "Announced",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 100.0,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001016696:p5",
+     "name": "Aral wind farm (phase 5)",
+     "kind": "Wind",
+     "country": "Uzbekistan",
+     "mw": 1000.0,
+     "stage": "Announced",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 100.0,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001061657",
+     "name": "Gijduvan (ACWA Power) wind farm",
+     "kind": "Wind",
+     "country": "Uzbekistan",
+     "mw": 300.0,
+     "stage": "Announced",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 100.0,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000922142:p4",
+     "name": "Kungrad (ACWA Power) wind farm (phase 4)",
+     "kind": "Wind",
+     "country": "Uzbekistan",
+     "mw": 500.0,
+     "stage": "Announced",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 100.0,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001004183:p1",
+     "name": "Nairyah IPP Power Plant (phase 1)",
+     "kind": "Oil & gas",
+     "country": "Saudi Arabia",
+     "mw": 1800.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 35.0,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000401075:x",
+     "name": "Rabigh 2 IPP power station",
+     "kind": "Oil & gas",
+     "country": "Saudi Arabia",
+     "mw": 2313.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "ACWA Power Co",
+     "stake_pct": 40.0,
+     "confirmation": "company-confirmed"
+    }
+   ],
+   "totals": {
+    "projects": 18,
+    "project_capacity_mw_not_share_weighted": 25473.0,
+    "by_kind": {
+     "Oil & gas": 2,
+     "Solar": 7,
+     "Wind": 9
+    }
+   }
+  },
+  "NTPC": {
+   "company": "NTPC LIMITED",
+   "ticker": "NTPC",
+   "exchange": "National Stock Exchange of India; BSE (532555)",
+   "projects": [
+    {
+     "id": "gem:L100001019874",
+     "name": "Barethi solar park",
+     "kind": "Solar",
+     "country": "India",
+     "mw": 630.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "NTPC Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000808890",
+     "name": "Lalitpur solar park",
+     "kind": "Solar",
+     "country": "India",
+     "mw": 600.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "THDC India Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000800609",
+     "name": "Rihand solar farm",
+     "kind": "Solar",
+     "country": "India",
+     "mw": 20.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "NTPC Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000922381",
+     "name": "Dayapar (NTPC) III wind farm",
+     "kind": "Wind",
+     "country": "India",
+     "mw": 150.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "NTPC Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000602090",
+     "name": "Vishnugad Pipalkoti hydroelectric plant",
+     "kind": "Hydropower",
+     "country": "India",
+     "mw": 444.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "THDC India Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000102458:p2",
+     "name": "Darlipali power station (phase 2)",
+     "kind": "Coal",
+     "country": "India",
+     "mw": 800.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "NTPC Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000102332:x",
+     "name": "Gadarwara Super Thermal Power Project",
+     "kind": "Coal",
+     "country": "India",
+     "mw": 1600.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "NTPC Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000102640:p2",
+     "name": "Meja Thermal Power Project (phase 2)",
+     "kind": "Coal",
+     "country": "India",
+     "mw": 2400.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Meja Urja Nigam Pvt Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000102113:x",
+     "name": "Nabinagar Super Thermal Power Project",
+     "kind": "Coal",
+     "country": "India",
+     "mw": 2400.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "NTPC Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000102281:x:under-construction",
+     "name": "Patratu JSEB power station",
+     "kind": "Coal",
+     "country": "India",
+     "mw": 800.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Patratu Vidyut Utpadan Nigam Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000102652:x",
+     "name": "Singrauli Super Thermal Power Station",
+     "kind": "Coal",
+     "country": "India",
+     "mw": 1600.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "NTPC Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000102185:x",
+     "name": "Sipat power station",
+     "kind": "Coal",
+     "country": "India",
+     "mw": 800.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "NTPC Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000102504:p3",
+     "name": "Talcher power station (phase 3)",
+     "kind": "Coal",
+     "country": "India",
+     "mw": 1320.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "NTPC Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    }
+   ],
+   "totals": {
+    "projects": 13,
+    "project_capacity_mw_not_share_weighted": 13564.0,
+    "by_kind": {
+     "Coal": 8,
+     "Hydropower": 1,
+     "Solar": 3,
+     "Wind": 1
+    }
+   }
+  },
+  "DUK": {
+   "company": "DUKE ENERGY CORPORATION",
+   "ticker": "DUK",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:60434",
+     "name": "Baxter Creek Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 30.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Duke Energy Carolinas, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69119",
+     "name": "New Hill 1 Battery",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 56.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Duke Energy Progress - (NC)",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69148",
+     "name": "Allen 2 BESS",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 167.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Duke Energy Carolinas, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69194",
+     "name": "Maiden Creek Battery",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 50.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Duke Energy Carolinas, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69356",
+     "name": "Powerline Energy Storage",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 100.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Duke Energy Florida, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69771",
+     "name": "Clark Creek Solar Plant",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 54.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Duke Energy Carolinas, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69772",
+     "name": "Bush River Solar Plant",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 45.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Duke Energy Carolinas, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:70220",
+     "name": "Robinson Solar Plant",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 76.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Duke Energy Carolinas, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:70221",
+     "name": "Hudson Place Solar Plant",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 70.7,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Duke Energy Carolinas, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:70222",
+     "name": "Lonesome Camp Solar Plant",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 74.9,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Duke Energy Florida, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:70223",
+     "name": "Turnpike Solar Plant",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 74.9,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Duke Energy Florida, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 11,
+    "project_capacity_mw_not_share_weighted": 798.5,
+    "by_kind": {
+     "Battery storage": 5,
+     "Solar": 6
+    }
+   }
+  },
+  "DTE": {
+   "company": "DTE ENERGY COMPANY",
+   "ticker": "DTE",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:67755",
+     "name": "Little Trout Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 150.0,
+     "stage": "Commissioning",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "DTE Electric Company",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:67759",
+     "name": "Trenton Channel Energy Center",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 220.0,
+     "stage": "Commissioning",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "DTE Electric Company",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68850",
+     "name": "Gratiot Solar Park",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 50.0,
+     "stage": "Commissioning",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "DTE Electric Company",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69462",
+     "name": "Au Gres Solar Park",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 175.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "DTE Electric Company",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69463",
+     "name": "Beecher Solar Park",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 80.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "DTE Electric Company",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69464",
+     "name": "Cedar Field Solar Park",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 145.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "DTE Electric Company",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69467",
+     "name": "Peatville Solar Park",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 185.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "DTE Electric Company",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69468",
+     "name": "Poseyville Solar Park",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 206.4,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "DTE Electric Company",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69470",
+     "name": "Silver Creek Solar Park",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 200.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "DTE Electric Company",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69775",
+     "name": "Strasburg Solar Park",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 100.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "DTE Electric Company",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69776",
+     "name": "Deckerville Solar Park",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 200.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "DTE Electric Company",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 11,
+    "project_capacity_mw_not_share_weighted": 1711.4,
+    "by_kind": {
+     "Battery storage": 1,
+     "Solar": 10
+    }
+   }
+  },
+  "RWE": {
+   "company": "RWE Aktiengesellschaft",
+   "ticker": "RWE",
+   "exchange": "Frankfurt Stock Exchange (Xetra)",
+   "projects": [
+    {
+     "id": "eia:61511",
+     "name": "Burt County Wind",
+     "kind": "Wind",
+     "country": "United States",
+     "mw": 75.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "RWE Americas, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:65338",
+     "name": "Union Ridge Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 108.0,
+     "stage": "Commissioning",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "RWE Americas, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:66124",
+     "name": "Switchgrass Solar, LLC",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 70.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "RWE Americas, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:66238",
+     "name": "Sculpin Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 180.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "RWE Americas, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:66309",
+     "name": "Uvalde Solar 2",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 300.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "RWE Americas, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69027",
+     "name": "Stoneridge Solar, LLC",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 100.0,
+     "stage": "Commissioning",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "RWE Americas, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69579",
+     "name": "Honey Mesquite Wind, LLC",
+     "kind": "Wind",
+     "country": "United States",
+     "mw": 180.5,
+     "stage": "Commissioning",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "RWE Americas, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69588",
+     "name": "Yellow Cat Wind, LLC",
+     "kind": "Wind",
+     "country": "United States",
+     "mw": 270.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "RWE Americas, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 8,
+    "project_capacity_mw_not_share_weighted": 1283.5,
+    "by_kind": {
+     "Battery storage": 1,
+     "Solar": 4,
+     "Wind": 3
+    }
+   }
+  },
+  "SJVN": {
+   "company": "SJVN LIMITED",
+   "ticker": "SJVN",
+   "exchange": "National Stock Exchange of India; BSE (533206)",
+   "projects": [
+    {
+     "id": "gem:L100000829465",
+     "name": "Bagodara Solar Power Project",
+     "kind": "Solar",
+     "country": "India",
+     "mw": 70.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Satluj Jal Vidyut Nigam LTD (SJVN)",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000808871",
+     "name": "Gujarat GUVNL XIV (SJVN) solar farm",
+     "kind": "Solar",
+     "country": "India",
+     "mw": 260.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Satluj Jal Vidyut Nigam LTD (SJVN)",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001020239",
+     "name": "Jamui solar farm",
+     "kind": "Solar",
+     "country": "India",
+     "mw": 75.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "SJVN Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001020610",
+     "name": "Sonitpur solar farm",
+     "kind": "Solar",
+     "country": "India",
+     "mw": 50.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "SJVN Green Energy Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001025754",
+     "name": "Dhaulasidh hydroelectric plant",
+     "kind": "Hydropower",
+     "country": "India",
+     "mw": 66.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "Satluj Jal Vidyut Nigam LTD (SJVN)",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000601950",
+     "name": "Luhri-I hydroelectric plant",
+     "kind": "Hydropower",
+     "country": "India",
+     "mw": 210.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "Satluj Jal Vidyut Nigam LTD (SJVN)",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000601952",
+     "name": "Luhri-III hydroelectric plant",
+     "kind": "Hydropower",
+     "country": "India",
+     "mw": 382.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "Satluj Jal Vidyut Nigam LTD (SJVN)",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000602576",
+     "name": "Arun 3 hydroelectric plant",
+     "kind": "Hydropower",
+     "country": "Nepal",
+     "mw": 900.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Satluj Jal Vidyut Nigam LTD (SJVN)",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    }
+   ],
+   "totals": {
+    "projects": 8,
+    "project_capacity_mw_not_share_weighted": 2013.0,
+    "by_kind": {
+     "Hydropower": 4,
+     "Solar": 4
+    }
+   }
+  },
+  "XEL": {
+   "company": "Xcel Energy Inc.",
+   "ticker": "XEL",
+   "exchange": "Nasdaq",
+   "projects": [
+    {
+     "id": "eia:6112",
+     "name": "Fort St Vrain",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 478.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Public Service Co of Colorado",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68982",
+     "name": "Singing Grass Wind",
+     "kind": "Wind",
+     "country": "United States",
+     "mw": 603.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Public Service Co of Colorado",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69040",
+     "name": "Arroyo Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 335.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Public Service Co of Colorado",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69873",
+     "name": "Cheyenne Ridge II",
+     "kind": "Wind",
+     "country": "United States",
+     "mw": 438.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Public Service Co of Colorado",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:70259",
+     "name": "Cunningham Solar II",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 196.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Southwestern Public Service Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 5,
+    "project_capacity_mw_not_share_weighted": 2050.0,
+    "by_kind": {
+     "Oil & gas": 1,
+     "Solar": 2,
+     "Wind": 2
+    }
+   }
+  },
+  "EVRG": {
+   "company": "Evergy, Inc.",
+   "ticker": "EVRG",
+   "exchange": "Nasdaq",
+   "projects": [
+    {
+     "id": "eia:68294",
+     "name": "Viola Generating Station",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 765.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Evergy Missouri West",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68295",
+     "name": "McNew Generating Station",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 765.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Evergy Missouri West",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68296",
+     "name": "Mullin Creek #1 Generating Station",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 489.7,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Evergy Missouri West",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69481",
+     "name": "Foxtrot Solar Energy LLC",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 108.9,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Evergy Missouri West",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69631",
+     "name": "Sunflower Sky Energy Center",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 65.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Evergy Missouri West",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 5,
+    "project_capacity_mw_not_share_weighted": 2193.6,
+    "by_kind": {
+     "Oil & gas": 3,
+     "Solar": 2
+    }
+   }
+  },
+  "NHPC": {
+   "company": "NHPC LIMITED",
+   "ticker": "NHPC",
+   "exchange": "National Stock Exchange of India and BSE (533098)",
+   "projects": [
+    {
+     "id": "gem:L100001019878",
+     "name": "Ganjam solar farm",
+     "kind": "Solar",
+     "country": "India",
+     "mw": 40.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "NHPC Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000601853",
+     "name": "Dibang Multipurpose hydroelectric plant",
+     "kind": "Hydropower",
+     "country": "India",
+     "mw": 2880.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "NHPC Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000602010",
+     "name": "Rangit IV hydroelectric plant",
+     "kind": "Hydropower",
+     "country": "India",
+     "mw": 120.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "NHPC Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000602048",
+     "name": "Subansiri Lower hydroelectric plant",
+     "kind": "Hydropower",
+     "country": "India",
+     "mw": 2000.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "NHPC Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000602067",
+     "name": "Teesta-VI hydroelectric plant",
+     "kind": "Hydropower",
+     "country": "India",
+     "mw": 500.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "NHPC Ltd",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    }
+   ],
+   "totals": {
+    "projects": 5,
+    "project_capacity_mw_not_share_weighted": 5540.0,
+    "by_kind": {
+     "Hydropower": 4,
+     "Solar": 1
+    }
+   }
+  },
+  "AES": {
+   "company": "THE AES CORPORATION",
+   "ticker": "AES",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:64209",
+     "name": "Bellefield 2 Solar & Energy Storage Farm",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 1000.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "THE AES CORPORATION",
+     "stake_pct": 75.0,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "eia:64349",
+     "name": "Armadillo Solar Center",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 175.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "THE AES CORPORATION",
+     "stake_pct": 75.0,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "eia:69197",
+     "name": "Halifax County Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 80.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "THE AES CORPORATION",
+     "stake_pct": 75.0,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "eia:69964",
+     "name": "Baldy Mesa Storage",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 50.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "THE AES CORPORATION",
+     "stake_pct": 75.0,
+     "confirmation": "company-confirmed"
+    }
+   ],
+   "totals": {
+    "projects": 4,
+    "project_capacity_mw_not_share_weighted": 1305.0,
+    "by_kind": {
+     "Battery storage": 2,
+     "Solar": 2
+    }
+   }
+  },
+  "ANA": {
+   "company": "Acciona SA",
+   "ticker": "ANA",
+   "exchange": "Bolsas y Mercados Españoles (Madrid)",
+   "projects": [
+    {
+     "id": "eia:64658",
+     "name": "AEUG Fleming Solar, LLC",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 188.5,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Acciona Energy USA Global, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:64659",
+     "name": "AEUG Madison Solar, LLC",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 100.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Acciona Energy USA Global, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69004",
+     "name": "Adelite Storage Project LLC",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 230.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Acciona Energy USA Global, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69110",
+     "name": "Coneflower Storage Project LLC",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 170.9,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Acciona Energy USA Global, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 4,
+    "project_capacity_mw_not_share_weighted": 689.4,
+    "by_kind": {
+     "Battery storage": 2,
+     "Solar": 2
+    }
+   }
+  },
+  "CMS": {
+   "company": "CMS ENERGY CORPORATION",
+   "ticker": "CMS",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:67998",
+     "name": "Karn Solar Energy Center",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 80.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Consumers Energy Co - (MI)",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:67999",
+     "name": "Spring Creek Agri-Energy Center",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 140.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Consumers Energy Co - (MI)",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68744",
+     "name": "Liberty Solar Energy Center",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 220.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Consumers Energy Co - (MI)",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68745",
+     "name": "Sunfish Solar 2",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 360.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Consumers Energy Co - (MI)",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 4,
+    "project_capacity_mw_not_share_weighted": 800.0,
+    "by_kind": {
+     "Solar": 4
+    }
+   }
+  },
+  "EMA": {
+   "company": "EMERA INCORPORATED",
+   "ticker": "EMA",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:69461",
+     "name": "Keene Branch Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 74.5,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Tampa Electric Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69522",
+     "name": "Brewster Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 40.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Tampa Electric Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69523",
+     "name": "Mattaniah Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 52.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Tampa Electric Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:70395",
+     "name": "Pace Road Battery Storage",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 20.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Tampa Electric Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 4,
+    "project_capacity_mw_not_share_weighted": 186.5,
+    "by_kind": {
+     "Battery storage": 1,
+     "Solar": 3
+    }
+   }
+  },
+  "SO": {
+   "company": "THE SOUTHERN COMPANY",
+   "ticker": "SO",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:708",
+     "name": "Hammond",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 57.5,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Georgia Power Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:728",
+     "name": "Yates",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 1448.4,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Georgia Power Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69101",
+     "name": "Millers Branch Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 132.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Millers Branch Solar, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 3,
+    "project_capacity_mw_not_share_weighted": 1637.9,
+    "by_kind": {
+     "Battery storage": 1,
+     "Oil & gas": 1,
+     "Solar": 1
+    }
+   }
+  },
+  "PNW": {
+   "company": "PINNACLE WEST CAPITAL CORPORATION",
+   "ticker": "PNW",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:55455",
+     "name": "Red Hawk",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 392.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Arizona Public Service Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:67964",
+     "name": "Agave",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 150.0,
+     "stage": "Commissioning",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Arizona Public Service Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68397",
+     "name": "Ironwood Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 168.0,
+     "stage": "Commissioning",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Arizona Public Service Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 3,
+    "project_capacity_mw_not_share_weighted": 710.0,
+    "by_kind": {
+     "Battery storage": 1,
+     "Oil & gas": 1,
+     "Solar": 1
+    }
+   }
+  },
+  "BKH": {
+   "company": "BLACK HILLS CORPORATION",
+   "ticker": "BKH",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:55478",
+     "name": "Lange Generating Station",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 99.6,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Black Hills Power, Inc.",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:56998",
+     "name": "Pueblo Airport Generating Station",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 50.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Black Hills Colorado Electric, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:57703",
+     "name": "Cheyenne Prairie Generating Station",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 120.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Cheyenne Light Fuel & Power",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 3,
+    "project_capacity_mw_not_share_weighted": 269.6,
+    "by_kind": {
+     "Battery storage": 1,
+     "Oil & gas": 2
+    }
+   }
+  },
+  "ENB": {
+   "company": "Enbridge Inc.",
+   "ticker": "ENB",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:59971",
+     "name": "Easter",
+     "kind": "Wind",
+     "country": "United States",
+     "mw": 152.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Enbridge Wind (Easter), LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:60272",
+     "name": "Cone Renewable Energy Project, LLC",
+     "kind": "Wind",
+     "country": "United States",
+     "mw": 150.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Cone Renewable Energy Project, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69272",
+     "name": "Enbridge Solar (Sequoia II)",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 415.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Enbridge Solar (Sequoia II), LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 3,
+    "project_capacity_mw_not_share_weighted": 717.0,
+    "by_kind": {
+     "Solar": 1,
+     "Wind": 2
+    }
+   }
+  },
+  "PPL": {
+   "company": "PPL CORPORATION",
+   "ticker": "PPL",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:1355",
+     "name": "E W Brown",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 125.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Louisville Gas & Electric Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:1364",
+     "name": "Mill Creek (KY)",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 740.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Louisville Gas & Electric Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 2,
+    "project_capacity_mw_not_share_weighted": 865.0,
+    "by_kind": {
+     "Battery storage": 1,
+     "Oil & gas": 1
+    }
+   }
+  },
+  "D": {
+   "company": "DOMINION ENERGY, INC.",
+   "ticker": "D",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:3797",
+     "name": "Chesterfield",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 1000.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Virginia Electric & Power Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:3797",
+     "name": "Chesterfield",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 1000.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Virginia Electric and Power Co",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    }
+   ],
+   "totals": {
+    "projects": 2,
+    "project_capacity_mw_not_share_weighted": 2000.0,
+    "by_kind": {
+     "Oil & gas": 2
+    }
+   }
+  },
+  "AEP": {
+   "company": "AMERICAN ELECTRIC POWER COMPANY, INC.",
+   "ticker": "AEP",
+   "exchange": "Nasdaq",
+   "projects": [
+    {
+     "id": "eia:8059",
+     "name": "Comanche (OK)",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 1372.8,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Public Service Co of Oklahoma",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68417",
+     "name": "Hallsville",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 450.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Southwestern Electric Power Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 2,
+    "project_capacity_mw_not_share_weighted": 1822.8,
+    "by_kind": {
+     "Oil & gas": 2
+    }
+   }
+  },
+  "EDP": {
+   "company": "EDP, S.A.",
+   "ticker": "EDP",
+   "exchange": "Euronext Lisbon",
+   "projects": [
+    {
+     "id": "eia:62263",
+     "name": "Saddle Mountain East Wind Farm",
+     "kind": "Wind",
+     "country": "United States",
+     "mw": 126.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "EDP Renewables North America LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:62892",
+     "name": "EDPR CA Solar Park VI LLC (CA) Hybrid",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 241.0,
+     "stage": "Commissioning",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "EDP Renewables North America LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 2,
+    "project_capacity_mw_not_share_weighted": 367.0,
+    "by_kind": {
+     "Battery storage": 1,
+     "Wind": 1
+    }
+   }
+  },
+  "ENEL": {
+   "company": "ENEL - SPA",
+   "ticker": "ENEL",
+   "exchange": "Euronext Milan (Borsa Italiana)",
+   "projects": [
+    {
+     "id": "eia:64672",
+     "name": "Blue Jay Solar I, LLC",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 210.0,
+     "stage": "Commissioning",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Blue Jay Solar I, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:65028",
+     "name": "Roseland Solar Project, LLC",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 500.0,
+     "stage": "Commissioning",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Enel Kansas, LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 2,
+    "project_capacity_mw_not_share_weighted": 710.0,
+    "by_kind": {
+     "Solar": 2
+    }
+   }
+  },
+  "OTTR": {
+   "company": "Otter Tail Corp",
+   "ticker": "OTTR",
+   "exchange": "Nasdaq",
+   "projects": [
+    {
+     "id": "eia:68339",
+     "name": "Abercrombie Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 295.1,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Otter Tail Power Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:68340",
+     "name": "Solway Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 50.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Otter Tail Power Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 2,
+    "project_capacity_mw_not_share_weighted": 345.1,
+    "by_kind": {
+     "Solar": 2
+    }
+   }
+  },
+  "SCATC": {
+   "company": "Scatec ASA",
+   "ticker": "SCATC",
+   "exchange": "Oslo Børs (Euronext Oslo)",
+   "projects": [
+    {
+     "id": "gem:L100001045291:p1",
+     "name": "Egypt Aluminium solar farm (phase 1)",
+     "kind": "Solar",
+     "country": "Egypt",
+     "mw": 500.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "Scatec ASA",
+     "stake_pct": 100.0,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100001045291:p2",
+     "name": "Egypt Aluminium solar farm (phase 2)",
+     "kind": "Solar",
+     "country": "Egypt",
+     "mw": 500.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "Scatec ASA",
+     "stake_pct": 100.0,
+     "confirmation": "company-confirmed"
+    }
+   ],
+   "totals": {
+    "projects": 2,
+    "project_capacity_mw_not_share_weighted": 1000.0,
+    "by_kind": {
+     "Solar": 2
+    }
+   }
+  },
+  "EBK": {
+   "company": "EnBW Energie Baden-Württemberg AG",
+   "ticker": "EBK",
+   "exchange": "Frankfurt Stock Exchange and Stuttgart Stock Exchange (regulated market)",
+   "projects": [
+    {
+     "id": "gem:L100000101873:Oil & gas:x",
+     "name": "Altbach power station",
+     "kind": "Oil & gas",
+     "country": "Germany",
+     "mw": 665.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "EnBW Energie Baden-Württemberg AG",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    },
+    {
+     "id": "gem:L100000101875:Oil & gas",
+     "name": "Heilbronn power station",
+     "kind": "Oil & gas",
+     "country": "Germany",
+     "mw": 675.0,
+     "stage": "Under construction",
+     "relationship": "owns the project directly",
+     "direct_owner": "EnBW Energie Baden-Württemberg AG",
+     "stake_pct": null,
+     "confirmation": "company-confirmed"
+    }
+   ],
+   "totals": {
+    "projects": 2,
+    "project_capacity_mw_not_share_weighted": 1340.0,
+    "by_kind": {
+     "Oil & gas": 2
+    }
+   }
+  },
+  "OGE": {
+   "company": "OGE ENERGY CORP.",
+   "ticker": "OGE",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:2951",
+     "name": "Horseshoe Lake",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 896.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Oklahoma Gas & Electric Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 1,
+    "project_capacity_mw_not_share_weighted": 896.0,
+    "by_kind": {
+     "Oil & gas": 1
+    }
+   }
+  },
+  "WEC": {
+   "company": "WEC ENERGY GROUP INC.",
+   "ticker": "WEC",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:4041",
+     "name": "South Oak Creek",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 1181.5,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Wisconsin Electric Power Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 1,
+    "project_capacity_mw_not_share_weighted": 1181.5,
+    "by_kind": {
+     "Oil & gas": 1
+    }
+   }
+  },
+  "LNT": {
+   "company": "ALLIANT ENERGY CORPORATION",
+   "ticker": "LNT",
+   "exchange": "Nasdaq",
+   "projects": [
+    {
+     "id": "eia:4050",
+     "name": "Edgewater",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 99.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Wisconsin Power & Light Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 1,
+    "project_capacity_mw_not_share_weighted": 99.0,
+    "by_kind": {
+     "Battery storage": 1
+    }
+   }
+  },
+  "VST": {
+   "company": "VISTRA CORP.",
+   "ticker": "VST",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:63193",
+     "name": "Alira",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 222.8,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Luminant Generation Company LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 1,
+    "project_capacity_mw_not_share_weighted": 222.8,
+    "by_kind": {
+     "Solar": 1
+    }
+   }
+  },
+  "EIX": {
+   "company": "EDISON INTERNATIONAL",
+   "ticker": "EIX",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:65458",
+     "name": "Anode (Springville) BESS",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 225.0,
+     "stage": "Commissioning",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Southern California Edison Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 1,
+    "project_capacity_mw_not_share_weighted": 225.0,
+    "by_kind": {
+     "Battery storage": 1
+    }
+   }
+  },
+  "AEE": {
+   "company": "AMEREN CORPORATION",
+   "ticker": "AEE",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:67576",
+     "name": "Castle Bluff Energy Center",
+     "kind": "Oil & gas",
+     "country": "United States",
+     "mw": 648.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Union Electric Co - (MO)",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 1,
+    "project_capacity_mw_not_share_weighted": 648.0,
+    "by_kind": {
+     "Oil & gas": 1
+    }
+   }
+  },
+  "BRK-B": {
+   "company": "BERKSHIRE HATHAWAY INC.",
+   "ticker": "BRK-B",
+   "exchange": "NYSE",
+   "projects": [
+    {
+     "id": "eia:70107",
+     "name": "Mills Solar Project",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 50.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "MidAmerican Energy Co",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 1,
+    "project_capacity_mw_not_share_weighted": 50.0,
+    "by_kind": {
+     "Solar": 1
+    }
+   }
+  }
+ }
+}

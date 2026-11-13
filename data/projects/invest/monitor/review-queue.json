@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-11-13",
+ "items": [
+  {
+   "type": "expected_date_passed",
+   "project": "eia:708",
+   "name": "Hammond",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked",
+   "action": "find a newer official status; do not change the stage without a source"
+  },
+  {
+   "type": "expected_date_passed",
+   "project": "eia:60434",
+   "name": "Baxter Creek Solar",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked",
+   "action": "find a newer official status; do not change the stage without a source"
+  },
+  {
+   "type": "expected_date_passed",
+   "project": "eia:62892",
+   "name": "EDPR CA Solar Park VI LLC (CA) Hybrid",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked",
+   "action": "find a newer official status; do not change the stage without a source"
+  },
+  {
+   "type": "expected_date_passed",
+   "project": "eia:64349",
+   "name": "Armadillo Solar Center",
+   "note": "Expected 1H 2026 according to the source; current status to be re-checked",
+   "action": "find a newer official status; do not change the stage without a source"
+  },
+  {
+   "type": "expected_date_passed",
+   "project": "eia:64672",
+   "name": "Blue Jay Solar I, LLC",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked",
+   "action": "find a newer official status; do not change the stage without a source"
+  },
+  {
+   "type": "expected_date_passed",
+   "project": "eia:65028",
+   "name": "Roseland Solar Project, LLC",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked",
+   "action": "find a newer official status; do not change the stage without a source"
+  },
+  {
+   "type": "expected_date_passed",
+   "project": "eia:65338",
+   "name": "Union Ridge Solar",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked",
+   "action": "find a newer official status; do not change the stage without a source"
+  },
+  {
+   "type": "expected_date_passed",
+   "project": "eia:66621",
+   "name": "Orange County Advanced Power Station",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked",
+   "action": "find a newer official status; do not change the stage without a source"
+  },
+  {
+   "type": "expected_date_passed",
+   "project": "eia:68850",
+   "name": "Gratiot Solar Park",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked",
+   "action": "find a newer official status; do not change the stage without a source"
+  },
+  {
+   "type": "expected_date_passed",
+   "project": "eia:69040",
+   "name": "Arroyo Solar",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked",
+   "action": "find a newer official status; do not change the stage without a source"
+  },
+  {
+   "type": "expected_date_passed",
+   "project": "eia:69197",
+   "name": "Halifax County Solar",
+   "note": "Expected 1H 2026 according to the source; current status to be re-checked",
+   "action": "find a newer official status; do not change the stage without a source"
+  },
+  {
+   "type": "expected_date_passed",
+   "project": "gem:L100001020239",
+   "name": "Jamui solar farm",
+   "note": "Expected Q3 2026 according to the source; current status to be re-checked",
+   "action": "find a newer official status; do not change the stage without a source"
+  },
+  {
+   "type": "expected_date_passed",
+   "project": "gem:L100001020610",
+   "name": "Sonitpur solar farm",
+   "note": "Expected Q3 2026 according to the source; current status to be re-checked",
+   "action": "find a newer official status; do not change the stage without a source"
+  }
+ ]
+}
