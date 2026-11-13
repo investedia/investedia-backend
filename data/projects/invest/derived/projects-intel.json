@@ -1736,6 +1736,92 @@
    }
   },
   {
+   "id": "eia:64073",
+   "name": "Great Bear Solar, LLC",
+   "sector": "Energy & Utilities",
+   "kind": "Solar",
+   "country": "United States",
+   "mw": 46.0,
+   "location": {
+    "lat": 40.9397,
+    "lon": -84.5828,
+    "precision": "exact"
+   },
+   "exposures": [
+    {
+     "listed_company": "IBERDROLA SA",
+     "ticker": "IBE",
+     "exchange": "Bolsas y Mercados Españoles (Madrid)",
+     "identity": {
+      "scheme": "LEI",
+      "id": "5QK37QC7NWOJ8D7WVQ45"
+     },
+     "direct_owner": "Avangrid Power LLC",
+     "ownership_chain": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "exposure_type": "indirect",
+     "stake_pct": null,
+     "stake_note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain",
+     "what_an_investor_holds": "shares of IBERDROLA SA (company-level exposure); this is not a direct investment in the project",
+     "evidence": [
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860m/",
+       "date": "2026-09-30"
+      },
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860/",
+       "date": null
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+       "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm",
+       "date": "2024-12-23"
+      },
+      {
+       "publisher": "Official exchange or company investor page",
+       "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "date": "2026-11-13"
+      }
+     ],
+     "verified_at": "2026-11-13"
+    }
+   ],
+   "other_owners_not_listed": [],
+   "financials": {
+    "construction_cost": null,
+    "revised_cost": null,
+    "completion_target": "2027-12",
+    "completion_target_source": "EIA-860M",
+    "original_completion_target": null,
+    "construction_status": "Announced",
+    "status_note": null,
+    "progress": null,
+    "documented_delays": []
+   },
+   "investment_access": {
+    "class": "publicly_listed_company_exposure",
+    "direct_offering": null,
+    "note": "Exposure is through listed shares of the companies shown; no direct project offering is verified."
+   }
+  },
+  {
    "id": "eia:64209",
    "name": "Bellefield 2 Solar & Energy Storage Farm",
    "sector": "Energy & Utilities",
@@ -1786,6 +1872,92 @@
     "completion_target_source": "company document",
     "original_completion_target": null,
     "construction_status": "Under construction",
+    "status_note": null,
+    "progress": null,
+    "documented_delays": []
+   },
+   "investment_access": {
+    "class": "publicly_listed_company_exposure",
+    "direct_offering": null,
+    "note": "Exposure is through listed shares of the companies shown; no direct project offering is verified."
+   }
+  },
+  {
+   "id": "eia:64253",
+   "name": "Mohawk Solar",
+   "sector": "Energy & Utilities",
+   "kind": "Solar",
+   "country": "United States",
+   "mw": 90.5,
+   "location": {
+    "lat": 42.887133,
+    "lon": -74.63781,
+    "precision": "exact"
+   },
+   "exposures": [
+    {
+     "listed_company": "IBERDROLA SA",
+     "ticker": "IBE",
+     "exchange": "Bolsas y Mercados Españoles (Madrid)",
+     "identity": {
+      "scheme": "LEI",
+      "id": "5QK37QC7NWOJ8D7WVQ45"
+     },
+     "direct_owner": "Avangrid Power LLC",
+     "ownership_chain": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "exposure_type": "indirect",
+     "stake_pct": null,
+     "stake_note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain",
+     "what_an_investor_holds": "shares of IBERDROLA SA (company-level exposure); this is not a direct investment in the project",
+     "evidence": [
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860m/",
+       "date": "2026-09-30"
+      },
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860/",
+       "date": null
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+       "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm",
+       "date": "2024-12-23"
+      },
+      {
+       "publisher": "Official exchange or company investor page",
+       "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "date": "2026-11-13"
+      }
+     ],
+     "verified_at": "2026-11-13"
+    }
+   ],
+   "other_owners_not_listed": [],
+   "financials": {
+    "construction_cost": null,
+    "revised_cost": null,
+    "completion_target": "2027-12",
+    "completion_target_source": "EIA-860M",
+    "original_completion_target": null,
+    "construction_status": "Pre-construction",
     "status_note": null,
     "progress": null,
     "documented_delays": []
@@ -2192,6 +2364,92 @@
     "original_completion_target": null,
     "construction_status": "Commissioning",
     "status_note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked",
+    "progress": null,
+    "documented_delays": []
+   },
+   "investment_access": {
+    "class": "publicly_listed_company_exposure",
+    "direct_offering": null,
+    "note": "Exposure is through listed shares of the companies shown; no direct project offering is verified."
+   }
+  },
+  {
+   "id": "eia:65326",
+   "name": "Sunset Solar",
+   "sector": "Energy & Utilities",
+   "kind": "Solar",
+   "country": "United States",
+   "mw": 103.0,
+   "location": {
+    "lat": 45.165062,
+    "lon": -120.8804,
+    "precision": "exact"
+   },
+   "exposures": [
+    {
+     "listed_company": "IBERDROLA SA",
+     "ticker": "IBE",
+     "exchange": "Bolsas y Mercados Españoles (Madrid)",
+     "identity": {
+      "scheme": "LEI",
+      "id": "5QK37QC7NWOJ8D7WVQ45"
+     },
+     "direct_owner": "Avangrid Power LLC",
+     "ownership_chain": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "exposure_type": "indirect",
+     "stake_pct": null,
+     "stake_note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain",
+     "what_an_investor_holds": "shares of IBERDROLA SA (company-level exposure); this is not a direct investment in the project",
+     "evidence": [
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860m/",
+       "date": "2026-09-30"
+      },
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860/",
+       "date": null
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+       "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm",
+       "date": "2024-12-23"
+      },
+      {
+       "publisher": "Official exchange or company investor page",
+       "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "date": "2026-11-13"
+      }
+     ],
+     "verified_at": "2026-11-13"
+    }
+   ],
+   "other_owners_not_listed": [],
+   "financials": {
+    "construction_cost": null,
+    "revised_cost": null,
+    "completion_target": "2028-12",
+    "completion_target_source": "EIA-860M",
+    "original_completion_target": null,
+    "construction_status": "Pre-construction",
+    "status_note": null,
     "progress": null,
     "documented_delays": []
    },
@@ -2682,6 +2940,92 @@
    }
   },
   {
+   "id": "eia:67347",
+   "name": "Osagrove Flats Wind",
+   "sector": "Energy & Utilities",
+   "kind": "Wind",
+   "country": "United States",
+   "mw": 150.0,
+   "location": {
+    "lat": 40.941383,
+    "lon": -88.97152,
+    "precision": "exact"
+   },
+   "exposures": [
+    {
+     "listed_company": "IBERDROLA SA",
+     "ticker": "IBE",
+     "exchange": "Bolsas y Mercados Españoles (Madrid)",
+     "identity": {
+      "scheme": "LEI",
+      "id": "5QK37QC7NWOJ8D7WVQ45"
+     },
+     "direct_owner": "Avangrid Power LLC",
+     "ownership_chain": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "exposure_type": "indirect",
+     "stake_pct": null,
+     "stake_note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain",
+     "what_an_investor_holds": "shares of IBERDROLA SA (company-level exposure); this is not a direct investment in the project",
+     "evidence": [
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860m/",
+       "date": "2026-09-30"
+      },
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860/",
+       "date": null
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+       "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm",
+       "date": "2024-12-23"
+      },
+      {
+       "publisher": "Official exchange or company investor page",
+       "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "date": "2026-11-13"
+      }
+     ],
+     "verified_at": "2026-11-13"
+    }
+   ],
+   "other_owners_not_listed": [],
+   "financials": {
+    "construction_cost": null,
+    "revised_cost": null,
+    "completion_target": "2026-12",
+    "completion_target_source": "EIA-860M",
+    "original_completion_target": null,
+    "construction_status": "Commissioning",
+    "status_note": null,
+    "progress": null,
+    "documented_delays": []
+   },
+   "investment_access": {
+    "class": "publicly_listed_company_exposure",
+    "direct_offering": null,
+    "note": "Exposure is through listed shares of the companies shown; no direct project offering is verified."
+   }
+  },
+  {
    "id": "eia:67576",
    "name": "Castle Bluff Energy Center",
    "sector": "Energy & Utilities",
@@ -3071,6 +3415,92 @@
     "completion_target_source": "EIA-860M",
     "original_completion_target": null,
     "construction_status": "Commissioning",
+    "status_note": null,
+    "progress": null,
+    "documented_delays": []
+   },
+   "investment_access": {
+    "class": "publicly_listed_company_exposure",
+    "direct_offering": null,
+    "note": "Exposure is through listed shares of the companies shown; no direct project offering is verified."
+   }
+  },
+  {
+   "id": "eia:67990",
+   "name": "Bright Mountain Solar",
+   "sector": "Energy & Utilities",
+   "kind": "Solar",
+   "country": "United States",
+   "mw": 80.0,
+   "location": {
+    "lat": 37.29003,
+    "lon": -83.28286,
+    "precision": "exact"
+   },
+   "exposures": [
+    {
+     "listed_company": "IBERDROLA SA",
+     "ticker": "IBE",
+     "exchange": "Bolsas y Mercados Españoles (Madrid)",
+     "identity": {
+      "scheme": "LEI",
+      "id": "5QK37QC7NWOJ8D7WVQ45"
+     },
+     "direct_owner": "Avangrid Power LLC",
+     "ownership_chain": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "exposure_type": "indirect",
+     "stake_pct": null,
+     "stake_note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain",
+     "what_an_investor_holds": "shares of IBERDROLA SA (company-level exposure); this is not a direct investment in the project",
+     "evidence": [
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860m/",
+       "date": "2026-09-30"
+      },
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860/",
+       "date": null
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+       "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm",
+       "date": "2024-12-23"
+      },
+      {
+       "publisher": "Official exchange or company investor page",
+       "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "date": "2026-11-13"
+      }
+     ],
+     "verified_at": "2026-11-13"
+    }
+   ],
+   "other_owners_not_listed": [],
+   "financials": {
+    "construction_cost": null,
+    "revised_cost": null,
+    "completion_target": "2027-12",
+    "completion_target_source": "EIA-860M",
+    "original_completion_target": null,
+    "construction_status": "Announced",
     "status_note": null,
     "progress": null,
     "documented_delays": []
@@ -6617,6 +7047,92 @@
    }
   },
   {
+   "id": "eia:69294",
+   "name": "Oregon Trail Solar",
+   "sector": "Energy & Utilities",
+   "kind": "Solar",
+   "country": "United States",
+   "mw": 41.0,
+   "location": {
+    "lat": 45.553436,
+    "lon": -120.1861,
+    "precision": "exact"
+   },
+   "exposures": [
+    {
+     "listed_company": "IBERDROLA SA",
+     "ticker": "IBE",
+     "exchange": "Bolsas y Mercados Españoles (Madrid)",
+     "identity": {
+      "scheme": "LEI",
+      "id": "5QK37QC7NWOJ8D7WVQ45"
+     },
+     "direct_owner": "Avangrid Power LLC",
+     "ownership_chain": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "exposure_type": "indirect",
+     "stake_pct": null,
+     "stake_note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain",
+     "what_an_investor_holds": "shares of IBERDROLA SA (company-level exposure); this is not a direct investment in the project",
+     "evidence": [
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860m/",
+       "date": "2026-09-30"
+      },
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860/",
+       "date": null
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+       "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm",
+       "date": "2024-12-23"
+      },
+      {
+       "publisher": "Official exchange or company investor page",
+       "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "date": "2026-11-13"
+      }
+     ],
+     "verified_at": "2026-11-13"
+    }
+   ],
+   "other_owners_not_listed": [],
+   "financials": {
+    "construction_cost": null,
+    "revised_cost": null,
+    "completion_target": "2027-03",
+    "completion_target_source": "EIA-860M",
+    "original_completion_target": null,
+    "construction_status": "Under construction",
+    "status_note": null,
+    "progress": null,
+    "documented_delays": []
+   },
+   "investment_access": {
+    "class": "publicly_listed_company_exposure",
+    "direct_offering": null,
+    "note": "Exposure is through listed shares of the companies shown; no direct project offering is verified."
+   }
+  },
+  {
    "id": "eia:69356",
    "name": "Powerline Energy Storage",
    "sector": "Energy & Utilities",
@@ -7572,6 +8088,92 @@
     "completion_target_source": "EIA-860M",
     "original_completion_target": null,
     "construction_status": "Under construction",
+    "status_note": null,
+    "progress": null,
+    "documented_delays": []
+   },
+   "investment_access": {
+    "class": "publicly_listed_company_exposure",
+    "direct_offering": null,
+    "note": "Exposure is through listed shares of the companies shown; no direct project offering is verified."
+   }
+  },
+  {
+   "id": "eia:69482",
+   "name": "Bluebird Solar",
+   "sector": "Energy & Utilities",
+   "kind": "Solar",
+   "country": "United States",
+   "mw": 140.0,
+   "location": {
+    "lat": 45.896375,
+    "lon": -120.3031,
+    "precision": "exact"
+   },
+   "exposures": [
+    {
+     "listed_company": "IBERDROLA SA",
+     "ticker": "IBE",
+     "exchange": "Bolsas y Mercados Españoles (Madrid)",
+     "identity": {
+      "scheme": "LEI",
+      "id": "5QK37QC7NWOJ8D7WVQ45"
+     },
+     "direct_owner": "Avangrid Power LLC",
+     "ownership_chain": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "exposure_type": "indirect",
+     "stake_pct": null,
+     "stake_note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain",
+     "what_an_investor_holds": "shares of IBERDROLA SA (company-level exposure); this is not a direct investment in the project",
+     "evidence": [
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860m/",
+       "date": "2026-09-30"
+      },
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860/",
+       "date": null
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+       "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm",
+       "date": "2024-12-23"
+      },
+      {
+       "publisher": "Official exchange or company investor page",
+       "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "date": "2026-11-13"
+      }
+     ],
+     "verified_at": "2026-11-13"
+    }
+   ],
+   "other_owners_not_listed": [],
+   "financials": {
+    "construction_cost": null,
+    "revised_cost": null,
+    "completion_target": "2027-12",
+    "completion_target_source": "EIA-860M",
+    "original_completion_target": null,
+    "construction_status": "Pre-construction",
     "status_note": null,
     "progress": null,
     "documented_delays": []
@@ -9576,6 +10178,92 @@
    }
   },
   {
+   "id": "eia:70055",
+   "name": "Allen Acres Solar",
+   "sector": "Energy & Utilities",
+   "kind": "Solar",
+   "country": "United States",
+   "mw": 150.0,
+   "location": {
+    "lat": 41.11792,
+    "lon": -88.64038,
+    "precision": "exact"
+   },
+   "exposures": [
+    {
+     "listed_company": "IBERDROLA SA",
+     "ticker": "IBE",
+     "exchange": "Bolsas y Mercados Españoles (Madrid)",
+     "identity": {
+      "scheme": "LEI",
+      "id": "5QK37QC7NWOJ8D7WVQ45"
+     },
+     "direct_owner": "Avangrid Power LLC",
+     "ownership_chain": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "exposure_type": "indirect",
+     "stake_pct": null,
+     "stake_note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain",
+     "what_an_investor_holds": "shares of IBERDROLA SA (company-level exposure); this is not a direct investment in the project",
+     "evidence": [
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860m/",
+       "date": "2026-09-30"
+      },
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860/",
+       "date": null
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+       "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm",
+       "date": "2024-12-23"
+      },
+      {
+       "publisher": "Official exchange or company investor page",
+       "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "date": "2026-11-13"
+      }
+     ],
+     "verified_at": "2026-11-13"
+    }
+   ],
+   "other_owners_not_listed": [],
+   "financials": {
+    "construction_cost": null,
+    "revised_cost": null,
+    "completion_target": "2029-05",
+    "completion_target_source": "EIA-860M",
+    "original_completion_target": null,
+    "construction_status": "Announced",
+    "status_note": null,
+    "progress": null,
+    "documented_delays": []
+   },
+   "investment_access": {
+    "class": "publicly_listed_company_exposure",
+    "direct_offering": null,
+    "note": "Exposure is through listed shares of the companies shown; no direct project offering is verified."
+   }
+  },
+  {
    "id": "eia:70107",
    "name": "Mills Solar Project",
    "sector": "Energy & Utilities",
@@ -10042,6 +10730,92 @@
     "construction_cost": null,
     "revised_cost": null,
     "completion_target": "2027-02",
+    "completion_target_source": "EIA-860M",
+    "original_completion_target": null,
+    "construction_status": "Under construction",
+    "status_note": null,
+    "progress": null,
+    "documented_delays": []
+   },
+   "investment_access": {
+    "class": "publicly_listed_company_exposure",
+    "direct_offering": null,
+    "note": "Exposure is through listed shares of the companies shown; no direct project offering is verified."
+   }
+  },
+  {
+   "id": "eia:70225",
+   "name": "Shutler Energy Storage",
+   "sector": "Energy & Utilities",
+   "kind": "Battery storage",
+   "country": "United States",
+   "mw": 41.0,
+   "location": {
+    "lat": 45.54,
+    "lon": -120.18,
+    "precision": "exact"
+   },
+   "exposures": [
+    {
+     "listed_company": "IBERDROLA SA",
+     "ticker": "IBE",
+     "exchange": "Bolsas y Mercados Españoles (Madrid)",
+     "identity": {
+      "scheme": "LEI",
+      "id": "5QK37QC7NWOJ8D7WVQ45"
+     },
+     "direct_owner": "Avangrid Power LLC",
+     "ownership_chain": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "exposure_type": "indirect",
+     "stake_pct": null,
+     "stake_note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain",
+     "what_an_investor_holds": "shares of IBERDROLA SA (company-level exposure); this is not a direct investment in the project",
+     "evidence": [
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860m/",
+       "date": "2026-09-30"
+      },
+      {
+       "publisher": "U.S. EIA",
+       "url": "https://www.eia.gov/electricity/data/eia860/",
+       "date": null
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "GLEIF",
+       "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent",
+       "date": "2026-11-13"
+      },
+      {
+       "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+       "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm",
+       "date": "2024-12-23"
+      },
+      {
+       "publisher": "Official exchange or company investor page",
+       "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "date": "2026-11-13"
+      }
+     ],
+     "verified_at": "2026-11-13"
+    }
+   ],
+   "other_owners_not_listed": [],
+   "financials": {
+    "construction_cost": null,
+    "revised_cost": null,
+    "completion_target": "2028-03",
     "completion_target_source": "EIA-860M",
     "original_completion_target": null,
     "construction_status": "Under construction",

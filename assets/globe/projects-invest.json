@@ -3301,6 +3301,168 @@
    "cc": "US",
    "cost": null,
    "country": "United States",
+   "eia_status": "P",
+   "expected": "2027-12",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Bilbao",
+      "lat": 43.263,
+      "lon": -2.935,
+      "source": "GLEIF headquarters address (city); city-centre coordinate",
+      "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+     },
+     "hq_country": null,
+     "lei": "5QK37QC7NWOJ8D7WVQ45",
+     "listed_entity_id": "lei:5QK37QC7NWOJ8D7WVQ45",
+     "listed_name": "Iberdrola, S.A.",
+     "owner": "Avangrid Power LLC",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "AH2OTHU2TT1C21ROXH10",
+      "549300OX0Q38NLSKPB49",
+      "5QK37QC7NWOJ8D7WVQ45"
+     ],
+     "path_edges": [
+      [
+       "AH2OTHU2TT1C21ROXH10",
+       "549300OX0Q38NLSKPB49"
+      ],
+      [
+       "549300OX0Q38NLSKPB49",
+       "5QK37QC7NWOJ8D7WVQ45"
+      ]
+     ],
+     "path_names": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-13",
+       "id": "5QK37QC7NWOJ8D7WVQ45",
+       "legal_name": "IBERDROLA SA",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Great Bear Solar, LLC (plant 64073) as planned, status P, reported by Avangrid Power LLC",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": null,
+        "edition": "EIA-860 2025 data",
+        "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Avangrid Power LLC owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Legal entity AVANGRID POWER, LLC, LEI AH2OTHU2TT1C21ROXH10",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10"
+       },
+       {
+        "document_date": "2026-11-13",
+        "edge": [
+         "AH2OTHU2TT1C21ROXH10",
+         "549300OX0Q38NLSKPB49"
+        ],
+        "proves": "AVANGRID POWER, LLC reports AVANGRID, INC. as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent"
+       },
+       {
+        "document_date": "2024-12-23",
+        "edge": [
+         "549300OX0Q38NLSKPB49",
+         "5QK37QC7NWOJ8D7WVQ45"
+        ],
+        "proves": "AVANGRID, INC. states it is a wholly-owned subsidiary of IBERDROLA SA",
+        "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+        "quote": "Merger Sub merged with and into the Company, with the Company surviving the Merger as a wholly-owned subsidiary of Parent",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Iberdrola, S.A. has publicly traded common equity: IBE on Bolsas y Mercados Españoles (Madrid) (CIK None; verified listing)",
+        "publisher": "Official exchange or company investor page",
+        "quote": "IBERDROLA, S.A. ES0144580Y14 (BME share detail page)",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-13",
+       "cik": null,
+       "exchange": "Bolsas y Mercados Españoles (Madrid)",
+       "source_url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "ticker": "IBE"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-13"
+     }
+    }
+   ],
+   "id": "eia:64073",
+   "images": {
+    "now": {
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "date": "2026-11-09",
+     "file": "eia-64073-now.jpg",
+     "resolution_m": 10,
+     "scene": "S2A_T16TFL_20261109T163951_L2A",
+     "sha256": "d9cc1ea52d42e4cd7e9cc97b86f31e36c335aa6112f5099fed1695bb455d11c5",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 3.0
+    }
+   },
+   "kind": "Solar",
+   "lat": 40.9397,
+   "lon": -84.5828,
+   "mw": 46.0,
+   "name": "Great Bear Solar, LLC",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Announced",
+   "state": "OH",
+   "technology": "Solar Photovoltaic"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
    "eia_status": "V",
    "expected": "2026-12",
    "expected_year": 2026,
@@ -3426,6 +3588,168 @@
    "stage": "Under construction",
    "state": "CA",
    "technology": "Batteries"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "L",
+   "expected": "2027-12",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Bilbao",
+      "lat": 43.263,
+      "lon": -2.935,
+      "source": "GLEIF headquarters address (city); city-centre coordinate",
+      "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+     },
+     "hq_country": null,
+     "lei": "5QK37QC7NWOJ8D7WVQ45",
+     "listed_entity_id": "lei:5QK37QC7NWOJ8D7WVQ45",
+     "listed_name": "Iberdrola, S.A.",
+     "owner": "Avangrid Power LLC",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "AH2OTHU2TT1C21ROXH10",
+      "549300OX0Q38NLSKPB49",
+      "5QK37QC7NWOJ8D7WVQ45"
+     ],
+     "path_edges": [
+      [
+       "AH2OTHU2TT1C21ROXH10",
+       "549300OX0Q38NLSKPB49"
+      ],
+      [
+       "549300OX0Q38NLSKPB49",
+       "5QK37QC7NWOJ8D7WVQ45"
+      ]
+     ],
+     "path_names": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-13",
+       "id": "5QK37QC7NWOJ8D7WVQ45",
+       "legal_name": "IBERDROLA SA",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Mohawk Solar (plant 64253) as planned, status L, reported by Avangrid Power LLC",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": null,
+        "edition": "EIA-860 2025 data",
+        "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Avangrid Power LLC owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Legal entity AVANGRID POWER, LLC, LEI AH2OTHU2TT1C21ROXH10",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10"
+       },
+       {
+        "document_date": "2026-11-13",
+        "edge": [
+         "AH2OTHU2TT1C21ROXH10",
+         "549300OX0Q38NLSKPB49"
+        ],
+        "proves": "AVANGRID POWER, LLC reports AVANGRID, INC. as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent"
+       },
+       {
+        "document_date": "2024-12-23",
+        "edge": [
+         "549300OX0Q38NLSKPB49",
+         "5QK37QC7NWOJ8D7WVQ45"
+        ],
+        "proves": "AVANGRID, INC. states it is a wholly-owned subsidiary of IBERDROLA SA",
+        "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+        "quote": "Merger Sub merged with and into the Company, with the Company surviving the Merger as a wholly-owned subsidiary of Parent",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Iberdrola, S.A. has publicly traded common equity: IBE on Bolsas y Mercados Españoles (Madrid) (CIK None; verified listing)",
+        "publisher": "Official exchange or company investor page",
+        "quote": "IBERDROLA, S.A. ES0144580Y14 (BME share detail page)",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-13",
+       "cik": null,
+       "exchange": "Bolsas y Mercados Españoles (Madrid)",
+       "source_url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "ticker": "IBE"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-13"
+     }
+    }
+   ],
+   "id": "eia:64253",
+   "images": {
+    "now": {
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "date": "2026-10-31",
+     "file": "eia-64253-now.jpg",
+     "resolution_m": 10,
+     "scene": "S2B_T18TWN_20261031T155755_L2A",
+     "sha256": "f90acf3e9632fac7e697ce5b31248e27d675517d0b1e42a738857d467b218bd7",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 3.0
+    }
+   },
+   "kind": "Solar",
+   "lat": 42.887133,
+   "lon": -74.63781,
+   "mw": 90.5,
+   "name": "Mohawk Solar",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Pre-construction",
+   "state": "NY",
+   "technology": "Solar Photovoltaic"
   },
   {
    "cc": "US",
@@ -4242,6 +4566,168 @@
    "stage": "Commissioning",
    "stage_note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked",
    "state": "TX",
+   "technology": "Solar Photovoltaic"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "T",
+   "expected": "2028-12",
+   "expected_year": 2028,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Bilbao",
+      "lat": 43.263,
+      "lon": -2.935,
+      "source": "GLEIF headquarters address (city); city-centre coordinate",
+      "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+     },
+     "hq_country": null,
+     "lei": "5QK37QC7NWOJ8D7WVQ45",
+     "listed_entity_id": "lei:5QK37QC7NWOJ8D7WVQ45",
+     "listed_name": "Iberdrola, S.A.",
+     "owner": "Avangrid Power LLC",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "AH2OTHU2TT1C21ROXH10",
+      "549300OX0Q38NLSKPB49",
+      "5QK37QC7NWOJ8D7WVQ45"
+     ],
+     "path_edges": [
+      [
+       "AH2OTHU2TT1C21ROXH10",
+       "549300OX0Q38NLSKPB49"
+      ],
+      [
+       "549300OX0Q38NLSKPB49",
+       "5QK37QC7NWOJ8D7WVQ45"
+      ]
+     ],
+     "path_names": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-13",
+       "id": "5QK37QC7NWOJ8D7WVQ45",
+       "legal_name": "IBERDROLA SA",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Sunset Solar (plant 65326) as planned, status T, reported by Avangrid Power LLC",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": null,
+        "edition": "EIA-860 2025 data",
+        "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Avangrid Power LLC owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Legal entity AVANGRID POWER, LLC, LEI AH2OTHU2TT1C21ROXH10",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10"
+       },
+       {
+        "document_date": "2026-11-13",
+        "edge": [
+         "AH2OTHU2TT1C21ROXH10",
+         "549300OX0Q38NLSKPB49"
+        ],
+        "proves": "AVANGRID POWER, LLC reports AVANGRID, INC. as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent"
+       },
+       {
+        "document_date": "2024-12-23",
+        "edge": [
+         "549300OX0Q38NLSKPB49",
+         "5QK37QC7NWOJ8D7WVQ45"
+        ],
+        "proves": "AVANGRID, INC. states it is a wholly-owned subsidiary of IBERDROLA SA",
+        "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+        "quote": "Merger Sub merged with and into the Company, with the Company surviving the Merger as a wholly-owned subsidiary of Parent",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Iberdrola, S.A. has publicly traded common equity: IBE on Bolsas y Mercados Españoles (Madrid) (CIK None; verified listing)",
+        "publisher": "Official exchange or company investor page",
+        "quote": "IBERDROLA, S.A. ES0144580Y14 (BME share detail page)",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-13",
+       "cik": null,
+       "exchange": "Bolsas y Mercados Españoles (Madrid)",
+       "source_url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "ticker": "IBE"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-13"
+     }
+    }
+   ],
+   "id": "eia:65326",
+   "images": {
+    "now": {
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "date": "2026-10-23",
+     "file": "eia-65326-now.jpg",
+     "resolution_m": 10,
+     "scene": "S2C_T10TFR_20261023T191046_L2A",
+     "sha256": "2915e3812c1ecb81fd056f77dd4d04dbec020487b488fc968220271cc75fcf31",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 3.0
+    }
+   },
+   "kind": "Solar",
+   "lat": 45.165062,
+   "lon": -120.8804,
+   "mw": 103.0,
+   "name": "Sunset Solar",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Pre-construction",
+   "state": "OR",
    "technology": "Solar Photovoltaic"
   },
   {
@@ -5144,6 +5630,178 @@
    "cc": "US",
    "cost": null,
    "country": "United States",
+   "eia_status": "TS",
+   "expected": "2026-12",
+   "expected_year": 2026,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Bilbao",
+      "lat": 43.263,
+      "lon": -2.935,
+      "source": "GLEIF headquarters address (city); city-centre coordinate",
+      "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+     },
+     "hq_country": null,
+     "lei": "5QK37QC7NWOJ8D7WVQ45",
+     "listed_entity_id": "lei:5QK37QC7NWOJ8D7WVQ45",
+     "listed_name": "Iberdrola, S.A.",
+     "owner": "Avangrid Power LLC",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "AH2OTHU2TT1C21ROXH10",
+      "549300OX0Q38NLSKPB49",
+      "5QK37QC7NWOJ8D7WVQ45"
+     ],
+     "path_edges": [
+      [
+       "AH2OTHU2TT1C21ROXH10",
+       "549300OX0Q38NLSKPB49"
+      ],
+      [
+       "549300OX0Q38NLSKPB49",
+       "5QK37QC7NWOJ8D7WVQ45"
+      ]
+     ],
+     "path_names": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-13",
+       "id": "5QK37QC7NWOJ8D7WVQ45",
+       "legal_name": "IBERDROLA SA",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Osagrove Flats Wind (plant 67347) as planned, status TS, reported by Avangrid Power LLC",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": null,
+        "edition": "EIA-860 2025 data",
+        "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Avangrid Power LLC owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Legal entity AVANGRID POWER, LLC, LEI AH2OTHU2TT1C21ROXH10",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10"
+       },
+       {
+        "document_date": "2026-11-13",
+        "edge": [
+         "AH2OTHU2TT1C21ROXH10",
+         "549300OX0Q38NLSKPB49"
+        ],
+        "proves": "AVANGRID POWER, LLC reports AVANGRID, INC. as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent"
+       },
+       {
+        "document_date": "2024-12-23",
+        "edge": [
+         "549300OX0Q38NLSKPB49",
+         "5QK37QC7NWOJ8D7WVQ45"
+        ],
+        "proves": "AVANGRID, INC. states it is a wholly-owned subsidiary of IBERDROLA SA",
+        "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+        "quote": "Merger Sub merged with and into the Company, with the Company surviving the Merger as a wholly-owned subsidiary of Parent",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Iberdrola, S.A. has publicly traded common equity: IBE on Bolsas y Mercados Españoles (Madrid) (CIK None; verified listing)",
+        "publisher": "Official exchange or company investor page",
+        "quote": "IBERDROLA, S.A. ES0144580Y14 (BME share detail page)",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-13",
+       "cik": null,
+       "exchange": "Bolsas y Mercados Españoles (Madrid)",
+       "source_url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "ticker": "IBE"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-13"
+     }
+    }
+   ],
+   "id": "eia:67347",
+   "images": {
+    "before": {
+     "credit": "Contains modified Copernicus Sentinel data 2024",
+     "date": "2024-12-08",
+     "file": "eia-67347-before.jpg",
+     "resolution_m": 10,
+     "scene": "S2B_T16TCL_20241208T170005_L2A",
+     "sha256": "990a7b0fc6b506ee34b72e47eddd7efc44f902279f0fe33e5c5b64fd29e48d3a",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 3.0
+    },
+    "now": {
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "date": "2026-11-10",
+     "file": "eia-67347-now.jpg",
+     "resolution_m": 10,
+     "scene": "S2C_T16TCL_20261110T164519_L2A",
+     "sha256": "6b299c8b74d9ef66d02a478d313534aadfa36efb839c7eb9187a0283c49b51a7",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 3.0
+    }
+   },
+   "kind": "Wind",
+   "lat": 40.941383,
+   "lon": -88.97152,
+   "mw": 150.0,
+   "name": "Osagrove Flats Wind",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Commissioning",
+   "state": "IL",
+   "technology": "Onshore Wind Turbine"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
    "eia_status": "P",
    "expected": "2027-10",
    "expected_year": 2027,
@@ -5879,6 +6537,168 @@
    "stage": "Commissioning",
    "state": "AZ",
    "technology": "Batteries"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "P",
+   "expected": "2027-12",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Bilbao",
+      "lat": 43.263,
+      "lon": -2.935,
+      "source": "GLEIF headquarters address (city); city-centre coordinate",
+      "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+     },
+     "hq_country": null,
+     "lei": "5QK37QC7NWOJ8D7WVQ45",
+     "listed_entity_id": "lei:5QK37QC7NWOJ8D7WVQ45",
+     "listed_name": "Iberdrola, S.A.",
+     "owner": "Avangrid Power LLC",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "AH2OTHU2TT1C21ROXH10",
+      "549300OX0Q38NLSKPB49",
+      "5QK37QC7NWOJ8D7WVQ45"
+     ],
+     "path_edges": [
+      [
+       "AH2OTHU2TT1C21ROXH10",
+       "549300OX0Q38NLSKPB49"
+      ],
+      [
+       "549300OX0Q38NLSKPB49",
+       "5QK37QC7NWOJ8D7WVQ45"
+      ]
+     ],
+     "path_names": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-13",
+       "id": "5QK37QC7NWOJ8D7WVQ45",
+       "legal_name": "IBERDROLA SA",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Bright Mountain Solar (plant 67990) as planned, status P, reported by Avangrid Power LLC",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": null,
+        "edition": "EIA-860 2025 data",
+        "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Avangrid Power LLC owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Legal entity AVANGRID POWER, LLC, LEI AH2OTHU2TT1C21ROXH10",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10"
+       },
+       {
+        "document_date": "2026-11-13",
+        "edge": [
+         "AH2OTHU2TT1C21ROXH10",
+         "549300OX0Q38NLSKPB49"
+        ],
+        "proves": "AVANGRID POWER, LLC reports AVANGRID, INC. as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent"
+       },
+       {
+        "document_date": "2024-12-23",
+        "edge": [
+         "549300OX0Q38NLSKPB49",
+         "5QK37QC7NWOJ8D7WVQ45"
+        ],
+        "proves": "AVANGRID, INC. states it is a wholly-owned subsidiary of IBERDROLA SA",
+        "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+        "quote": "Merger Sub merged with and into the Company, with the Company surviving the Merger as a wholly-owned subsidiary of Parent",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Iberdrola, S.A. has publicly traded common equity: IBE on Bolsas y Mercados Españoles (Madrid) (CIK None; verified listing)",
+        "publisher": "Official exchange or company investor page",
+        "quote": "IBERDROLA, S.A. ES0144580Y14 (BME share detail page)",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-13",
+       "cik": null,
+       "exchange": "Bolsas y Mercados Españoles (Madrid)",
+       "source_url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "ticker": "IBE"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-13"
+     }
+    }
+   ],
+   "id": "eia:67990",
+   "images": {
+    "now": {
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "date": "2026-11-11",
+     "file": "eia-67990-now.jpg",
+     "resolution_m": 10,
+     "scene": "S2C_T17SKB_20261111T161512_L2A",
+     "sha256": "5795b82b4832c326b38d8528d54d2e76093d04eed9c215c152e532c94d41ea78",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 3.0
+    }
+   },
+   "kind": "Solar",
+   "lat": 37.29003,
+   "lon": -83.28286,
+   "mw": 80.0,
+   "name": "Bright Mountain Solar",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Announced",
+   "state": "KY",
+   "technology": "Solar Photovoltaic"
   },
   {
    "cc": "US",
@@ -12578,6 +13398,178 @@
    "cc": "US",
    "cost": null,
    "country": "United States",
+   "eia_status": "V",
+   "expected": "2027-03",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Bilbao",
+      "lat": 43.263,
+      "lon": -2.935,
+      "source": "GLEIF headquarters address (city); city-centre coordinate",
+      "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+     },
+     "hq_country": null,
+     "lei": "5QK37QC7NWOJ8D7WVQ45",
+     "listed_entity_id": "lei:5QK37QC7NWOJ8D7WVQ45",
+     "listed_name": "Iberdrola, S.A.",
+     "owner": "Avangrid Power LLC",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "AH2OTHU2TT1C21ROXH10",
+      "549300OX0Q38NLSKPB49",
+      "5QK37QC7NWOJ8D7WVQ45"
+     ],
+     "path_edges": [
+      [
+       "AH2OTHU2TT1C21ROXH10",
+       "549300OX0Q38NLSKPB49"
+      ],
+      [
+       "549300OX0Q38NLSKPB49",
+       "5QK37QC7NWOJ8D7WVQ45"
+      ]
+     ],
+     "path_names": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-13",
+       "id": "5QK37QC7NWOJ8D7WVQ45",
+       "legal_name": "IBERDROLA SA",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Oregon Trail Solar (plant 69294) as planned, status V, reported by Avangrid Power LLC",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": null,
+        "edition": "EIA-860 2025 data",
+        "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Avangrid Power LLC owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Legal entity AVANGRID POWER, LLC, LEI AH2OTHU2TT1C21ROXH10",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10"
+       },
+       {
+        "document_date": "2026-11-13",
+        "edge": [
+         "AH2OTHU2TT1C21ROXH10",
+         "549300OX0Q38NLSKPB49"
+        ],
+        "proves": "AVANGRID POWER, LLC reports AVANGRID, INC. as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent"
+       },
+       {
+        "document_date": "2024-12-23",
+        "edge": [
+         "549300OX0Q38NLSKPB49",
+         "5QK37QC7NWOJ8D7WVQ45"
+        ],
+        "proves": "AVANGRID, INC. states it is a wholly-owned subsidiary of IBERDROLA SA",
+        "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+        "quote": "Merger Sub merged with and into the Company, with the Company surviving the Merger as a wholly-owned subsidiary of Parent",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Iberdrola, S.A. has publicly traded common equity: IBE on Bolsas y Mercados Españoles (Madrid) (CIK None; verified listing)",
+        "publisher": "Official exchange or company investor page",
+        "quote": "IBERDROLA, S.A. ES0144580Y14 (BME share detail page)",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-13",
+       "cik": null,
+       "exchange": "Bolsas y Mercados Españoles (Madrid)",
+       "source_url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "ticker": "IBE"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-13"
+     }
+    }
+   ],
+   "id": "eia:69294",
+   "images": {
+    "before": {
+     "credit": "Contains modified Copernicus Sentinel data 2024",
+     "date": "2024-11-07",
+     "file": "eia-69294-before.jpg",
+     "resolution_m": 10,
+     "scene": "S2B_T10TGR_20241107T190920_L2A",
+     "sha256": "91c69ea4f93fb2e16095e3ed0a4df053fe7ff5d2279baa7ec8292c89aa90f4da",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 3.0
+    },
+    "now": {
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "date": "2026-10-18",
+     "file": "eia-69294-now.jpg",
+     "resolution_m": 10,
+     "scene": "S2B_T10TGR_20261018T190405_L2A",
+     "sha256": "68e8d762b0c2275082451ca470407cf53915d9f95bf6745abc061cdb442c46d9",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 3.0
+    }
+   },
+   "kind": "Solar",
+   "lat": 45.553436,
+   "lon": -120.1861,
+   "mw": 41.0,
+   "name": "Oregon Trail Solar",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Under construction",
+   "state": "OR",
+   "technology": "Solar Photovoltaic"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
    "eia_status": "U",
    "expected": "2027-03",
    "expected_year": 2027,
@@ -14407,6 +15399,168 @@
    },
    "stage": "Under construction",
    "state": "MO",
+   "technology": "Solar Photovoltaic"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "T",
+   "expected": "2027-12",
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Bilbao",
+      "lat": 43.263,
+      "lon": -2.935,
+      "source": "GLEIF headquarters address (city); city-centre coordinate",
+      "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+     },
+     "hq_country": null,
+     "lei": "5QK37QC7NWOJ8D7WVQ45",
+     "listed_entity_id": "lei:5QK37QC7NWOJ8D7WVQ45",
+     "listed_name": "Iberdrola, S.A.",
+     "owner": "Avangrid Power LLC",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "AH2OTHU2TT1C21ROXH10",
+      "549300OX0Q38NLSKPB49",
+      "5QK37QC7NWOJ8D7WVQ45"
+     ],
+     "path_edges": [
+      [
+       "AH2OTHU2TT1C21ROXH10",
+       "549300OX0Q38NLSKPB49"
+      ],
+      [
+       "549300OX0Q38NLSKPB49",
+       "5QK37QC7NWOJ8D7WVQ45"
+      ]
+     ],
+     "path_names": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-13",
+       "id": "5QK37QC7NWOJ8D7WVQ45",
+       "legal_name": "IBERDROLA SA",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Bluebird Solar (plant 69482) as planned, status T, reported by Avangrid Power LLC",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": null,
+        "edition": "EIA-860 2025 data",
+        "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Avangrid Power LLC owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Legal entity AVANGRID POWER, LLC, LEI AH2OTHU2TT1C21ROXH10",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10"
+       },
+       {
+        "document_date": "2026-11-13",
+        "edge": [
+         "AH2OTHU2TT1C21ROXH10",
+         "549300OX0Q38NLSKPB49"
+        ],
+        "proves": "AVANGRID POWER, LLC reports AVANGRID, INC. as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent"
+       },
+       {
+        "document_date": "2024-12-23",
+        "edge": [
+         "549300OX0Q38NLSKPB49",
+         "5QK37QC7NWOJ8D7WVQ45"
+        ],
+        "proves": "AVANGRID, INC. states it is a wholly-owned subsidiary of IBERDROLA SA",
+        "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+        "quote": "Merger Sub merged with and into the Company, with the Company surviving the Merger as a wholly-owned subsidiary of Parent",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Iberdrola, S.A. has publicly traded common equity: IBE on Bolsas y Mercados Españoles (Madrid) (CIK None; verified listing)",
+        "publisher": "Official exchange or company investor page",
+        "quote": "IBERDROLA, S.A. ES0144580Y14 (BME share detail page)",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-13",
+       "cik": null,
+       "exchange": "Bolsas y Mercados Españoles (Madrid)",
+       "source_url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "ticker": "IBE"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-13"
+     }
+    }
+   ],
+   "id": "eia:69482",
+   "images": {
+    "now": {
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "date": "2026-10-18",
+     "file": "eia-69482-now.jpg",
+     "resolution_m": 10,
+     "scene": "S2B_T10TGR_20261018T190405_L2A",
+     "sha256": "ad8d800ddb30d3d49f46c45449d1ee2191fc47e4142dd72f704b3da0b309eaef",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 3.0
+    }
+   },
+   "kind": "Solar",
+   "lat": 45.896375,
+   "lon": -120.3031,
+   "mw": 140.0,
+   "name": "Bluebird Solar",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Pre-construction",
+   "state": "WA",
    "technology": "Solar Photovoltaic"
   },
   {
@@ -18118,6 +19272,168 @@
    "cc": "US",
    "cost": null,
    "country": "United States",
+   "eia_status": "P",
+   "expected": "2029-05",
+   "expected_year": 2029,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Bilbao",
+      "lat": 43.263,
+      "lon": -2.935,
+      "source": "GLEIF headquarters address (city); city-centre coordinate",
+      "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+     },
+     "hq_country": null,
+     "lei": "5QK37QC7NWOJ8D7WVQ45",
+     "listed_entity_id": "lei:5QK37QC7NWOJ8D7WVQ45",
+     "listed_name": "Iberdrola, S.A.",
+     "owner": "Avangrid Power LLC",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "AH2OTHU2TT1C21ROXH10",
+      "549300OX0Q38NLSKPB49",
+      "5QK37QC7NWOJ8D7WVQ45"
+     ],
+     "path_edges": [
+      [
+       "AH2OTHU2TT1C21ROXH10",
+       "549300OX0Q38NLSKPB49"
+      ],
+      [
+       "549300OX0Q38NLSKPB49",
+       "5QK37QC7NWOJ8D7WVQ45"
+      ]
+     ],
+     "path_names": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-13",
+       "id": "5QK37QC7NWOJ8D7WVQ45",
+       "legal_name": "IBERDROLA SA",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Allen Acres Solar (plant 70055) as planned, status P, reported by Avangrid Power LLC",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": null,
+        "edition": "EIA-860 2025 data",
+        "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Avangrid Power LLC owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Legal entity AVANGRID POWER, LLC, LEI AH2OTHU2TT1C21ROXH10",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10"
+       },
+       {
+        "document_date": "2026-11-13",
+        "edge": [
+         "AH2OTHU2TT1C21ROXH10",
+         "549300OX0Q38NLSKPB49"
+        ],
+        "proves": "AVANGRID POWER, LLC reports AVANGRID, INC. as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent"
+       },
+       {
+        "document_date": "2024-12-23",
+        "edge": [
+         "549300OX0Q38NLSKPB49",
+         "5QK37QC7NWOJ8D7WVQ45"
+        ],
+        "proves": "AVANGRID, INC. states it is a wholly-owned subsidiary of IBERDROLA SA",
+        "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+        "quote": "Merger Sub merged with and into the Company, with the Company surviving the Merger as a wholly-owned subsidiary of Parent",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Iberdrola, S.A. has publicly traded common equity: IBE on Bolsas y Mercados Españoles (Madrid) (CIK None; verified listing)",
+        "publisher": "Official exchange or company investor page",
+        "quote": "IBERDROLA, S.A. ES0144580Y14 (BME share detail page)",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-13",
+       "cik": null,
+       "exchange": "Bolsas y Mercados Españoles (Madrid)",
+       "source_url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "ticker": "IBE"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-13"
+     }
+    }
+   ],
+   "id": "eia:70055",
+   "images": {
+    "now": {
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "date": "2026-11-10",
+     "file": "eia-70055-now.jpg",
+     "resolution_m": 10,
+     "scene": "S2C_T16TCL_20261110T164519_L2A",
+     "sha256": "c485d93f54c49e27858004c471da766ea043ea6129ce30a5249e19b9d96d95ff",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 3.0
+    }
+   },
+   "kind": "Solar",
+   "lat": 41.11792,
+   "lon": -88.64038,
+   "mw": 150.0,
+   "name": "Allen Acres Solar",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Announced",
+   "state": "IL",
+   "technology": "Solar Photovoltaic"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
    "eia_status": "U",
    "expected": "2026-12",
    "expected_year": 2026,
@@ -19017,6 +20333,178 @@
    "stage": "Under construction",
    "state": "FL",
    "technology": "Solar Photovoltaic"
+  },
+  {
+   "cc": "US",
+   "cost": null,
+   "country": "United States",
+   "eia_status": "U",
+   "expected": "2028-03",
+   "expected_year": 2028,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Bilbao",
+      "lat": 43.263,
+      "lon": -2.935,
+      "source": "GLEIF headquarters address (city); city-centre coordinate",
+      "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+     },
+     "hq_country": null,
+     "lei": "5QK37QC7NWOJ8D7WVQ45",
+     "listed_entity_id": "lei:5QK37QC7NWOJ8D7WVQ45",
+     "listed_name": "Iberdrola, S.A.",
+     "owner": "Avangrid Power LLC",
+     "owner_match": "id",
+     "owner_stake": null,
+     "path": [
+      "AH2OTHU2TT1C21ROXH10",
+      "549300OX0Q38NLSKPB49",
+      "5QK37QC7NWOJ8D7WVQ45"
+     ],
+     "path_edges": [
+      [
+       "AH2OTHU2TT1C21ROXH10",
+       "549300OX0Q38NLSKPB49"
+      ],
+      [
+       "549300OX0Q38NLSKPB49",
+       "5QK37QC7NWOJ8D7WVQ45"
+      ]
+     ],
+     "path_names": [
+      "AVANGRID POWER, LLC",
+      "AVANGRID, INC.",
+      "IBERDROLA SA"
+     ],
+     "type": "E3",
+     "verification": {
+      "batch": "route-b-us-2026-11",
+      "category": "B",
+      "company_states_interest": false,
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-13",
+       "id": "5QK37QC7NWOJ8D7WVQ45",
+       "legal_name": "IBERDROLA SA",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-09-30",
+        "proves": "EIA-860M lists Shutler Energy Storage (plant 70225) as planned, status U, reported by Avangrid Power LLC",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860m/"
+       },
+       {
+        "document_date": null,
+        "edition": "EIA-860 2025 data",
+        "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Avangrid Power LLC owns the generators (EIA instructions, Schedule 4 item 1)",
+        "publisher": "U.S. EIA",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.eia.gov/electricity/data/eia860/"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Legal entity AVANGRID POWER, LLC, LEI AH2OTHU2TT1C21ROXH10",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10"
+       },
+       {
+        "document_date": "2026-11-13",
+        "edge": [
+         "AH2OTHU2TT1C21ROXH10",
+         "549300OX0Q38NLSKPB49"
+        ],
+        "proves": "AVANGRID POWER, LLC reports AVANGRID, INC. as its direct parent",
+        "publisher": "GLEIF",
+        "retrieved_at": "2026-11-13",
+        "url": "https://api.gleif.org/api/v1/lei-records/AH2OTHU2TT1C21ROXH10/direct-parent"
+       },
+       {
+        "document_date": "2024-12-23",
+        "edge": [
+         "549300OX0Q38NLSKPB49",
+         "5QK37QC7NWOJ8D7WVQ45"
+        ],
+        "proves": "AVANGRID, INC. states it is a wholly-owned subsidiary of IBERDROLA SA",
+        "publisher": "U.S. SEC (Avangrid Form 8-K (merger completion))",
+        "quote": "Merger Sub merged with and into the Company, with the Company surviving the Merger as a wholly-owned subsidiary of Parent",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm"
+       },
+       {
+        "document_date": "2026-11-13",
+        "proves": "Iberdrola, S.A. has publicly traded common equity: IBE on Bolsas y Mercados Españoles (Madrid) (CIK None; verified listing)",
+        "publisher": "Official exchange or company investor page",
+        "quote": "IBERDROLA, S.A. ES0144580Y14 (BME share detail page)",
+        "retrieved_at": "2026-11-13",
+        "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-13",
+       "cik": null,
+       "exchange": "Bolsas y Mercados Españoles (Madrid)",
+       "source_url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+       "ticker": "IBE"
+      },
+      "reviewer": "engine (route B, US)",
+      "stake": {
+       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
+       "value": null
+      },
+      "verified_at": "2026-11-13"
+     }
+    }
+   ],
+   "id": "eia:70225",
+   "images": {
+    "before": {
+     "credit": "Contains modified Copernicus Sentinel data 2024",
+     "date": "2024-11-07",
+     "file": "eia-70225-before.jpg",
+     "resolution_m": 10,
+     "scene": "S2B_T10TGR_20241107T190920_L2A",
+     "sha256": "f4d04a7d9f871c3e1e09ceee2f8d6cd1111f4d5d7d73a9c155b3164f57fdf8df",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 3.0
+    },
+    "now": {
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "date": "2026-10-18",
+     "file": "eia-70225-now.jpg",
+     "resolution_m": 10,
+     "scene": "S2B_T10TGR_20261018T190405_L2A",
+     "sha256": "22cb29fe617528bff51e1482b1244780628b3cdf11c37043b44cfe7d26e7c0e8",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 3.0
+    }
+   },
+   "kind": "Battery storage",
+   "lat": 45.54,
+   "lon": -120.18,
+   "mw": 41.0,
+   "name": "Shutler Energy Storage",
+   "other_owners": [],
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "US public domain",
+    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
+    "url": "https://www.eia.gov/electricity/data/eia860m/"
+   },
+   "stage": "Under construction",
+   "state": "OR",
+   "technology": "Batteries"
   },
   {
    "cc": "US",

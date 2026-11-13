@@ -1260,6 +1260,130 @@
     }
    }
   },
+  "IBE": {
+   "company": "IBERDROLA SA",
+   "ticker": "IBE",
+   "exchange": "Bolsas y Mercados Españoles (Madrid)",
+   "projects": [
+    {
+     "id": "eia:64073",
+     "name": "Great Bear Solar, LLC",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 46.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Avangrid Power LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:64253",
+     "name": "Mohawk Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 90.5,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Avangrid Power LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:65326",
+     "name": "Sunset Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 103.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Avangrid Power LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:67347",
+     "name": "Osagrove Flats Wind",
+     "kind": "Wind",
+     "country": "United States",
+     "mw": 150.0,
+     "stage": "Commissioning",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Avangrid Power LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:67990",
+     "name": "Bright Mountain Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 80.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Avangrid Power LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69294",
+     "name": "Oregon Trail Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 41.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Avangrid Power LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:69482",
+     "name": "Bluebird Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 140.0,
+     "stage": "Pre-construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Avangrid Power LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:70055",
+     "name": "Allen Acres Solar",
+     "kind": "Solar",
+     "country": "United States",
+     "mw": 150.0,
+     "stage": "Announced",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Avangrid Power LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    },
+    {
+     "id": "eia:70225",
+     "name": "Shutler Energy Storage",
+     "kind": "Battery storage",
+     "country": "United States",
+     "mw": 41.0,
+     "stage": "Under construction",
+     "relationship": "owns the project through subsidiaries or joint ventures",
+     "direct_owner": "Avangrid Power LLC",
+     "stake_pct": null,
+     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
+    }
+   ],
+   "totals": {
+    "projects": 9,
+    "project_capacity_mw_not_share_weighted": 841.5,
+    "by_kind": {
+     "Battery storage": 1,
+     "Solar": 7,
+     "Wind": 1
+    }
+   }
+  },
   "RWE": {
    "company": "RWE Aktiengesellschaft",
    "ticker": "RWE",

@@ -562,6 +562,26 @@
     "Avangrid plants stay C: GLEIF ultimate parent Avangrid Inc is no longer listed; Iberdrola link would need Iberdrola document",
     "EIA expected months already passed are flagged \"to be re-checked\" on the Globe"
    ]
+  },
+  {
+   "date": "2026-11-13",
+   "change": "Avangrid, Inc. -> Iberdrola, S.A. via Avangrid Form 8-K of 23 Dec 2024 (wholly-owned subsidiary); Iberdrola listing from BME page",
+   "new_links": 9,
+   "result": "9/9 correct",
+   "keys": [
+    "eia:64073|lei:5QK37QC7NWOJ8D7WVQ45",
+    "eia:64253|lei:5QK37QC7NWOJ8D7WVQ45",
+    "eia:65326|lei:5QK37QC7NWOJ8D7WVQ45",
+    "eia:67347|lei:5QK37QC7NWOJ8D7WVQ45",
+    "eia:67990|lei:5QK37QC7NWOJ8D7WVQ45",
+    "eia:69294|lei:5QK37QC7NWOJ8D7WVQ45",
+    "eia:69482|lei:5QK37QC7NWOJ8D7WVQ45",
+    "eia:70055|lei:5QK37QC7NWOJ8D7WVQ45",
+    "eia:70225|lei:5QK37QC7NWOJ8D7WVQ45"
+   ],
+   "notes": [
+    "Intersect USA stays C: not in Alphabet 10-K Exhibit 21 (Feb 2026)"
+   ]
   }
  ]
 }

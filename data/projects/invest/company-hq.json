@@ -261,6 +261,14 @@
    "source": "GLEIF headquarters address (city); city-centre coordinate",
    "source_url": "https://api.gleif.org/api/v1/lei-records/54930002KP75TLLLNO21",
    "checked_at": "2026-11-13"
+  },
+  "5QK37QC7NWOJ8D7WVQ45": {
+   "lat": 43.263,
+   "lon": -2.935,
+   "city": "Bilbao",
+   "source": "GLEIF headquarters address (city); city-centre coordinate",
+   "source_url": "https://api.gleif.org/api/v1/lei-records/5QK37QC7NWOJ8D7WVQ45",
+   "checked_at": "2026-11-13"
   }
  },
  "by_ticker": {

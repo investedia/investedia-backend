@@ -37,6 +37,17 @@
    "filing_date": "2026-02-11",
    "source_url": "https://www.sec.gov/Archives/edgar/data/1130464/000119312526046028/bkh-ex21.htm",
    "quote": "Black Hills Colorado Electric, LLC * Delaware"
+  },
+  "549300OX0Q38NLSKPB49": {
+   "child": "AVANGRID, INC.",
+   "parent_lei": "5QK37QC7NWOJ8D7WVQ45",
+   "parent_name": "IBERDROLA SA",
+   "cik": null,
+   "filing_date": "2024-12-23",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm",
+   "source_kind": "Avangrid Form 8-K (merger completion)",
+   "quote": "Merger Sub merged with and into the Company, with the Company surviving the Merger as a wholly-owned subsidiary of Parent",
+   "note": "Parent = Iberdrola, S.A. (defined in the same filing)"
   }
  }
 }

@@ -168,10 +168,10 @@ def run(monthly, annual, today, year=2024):
                 par = parent_of(hit['id'], rel)
                 if par and par['id'] not in [c['lei'] for c in chain]:
                     chain.append({'lei': par['id'], 'name': par['attributes']['entity']['legalName']['name'], 'relationship': rel})
-            if len(chain) == 1 and hit['id'] in subs:  # no GLEIF parent: parent's 10-K Exhibit 21 names this subsidiary verbatim
-                sx = subs[hit['id']]
+            if chain[-1]['lei'] in subs:  # top of GLEIF chain has an SEC-documented parent (10-K Exhibit 21 or merger 8-K)
+                sx = subs[chain[-1]['lei']]
                 chain.append({'lei': sx['parent_lei'], 'name': sx['parent_name'], 'relationship': 'SEC 10-K Exhibit 21 subsidiary',
-                              'source_url': sx['source_url'], 'quote': sx['quote'], 'filing_date': sx['filing_date']})
+                              'source_url': sx['source_url'], 'quote': sx['quote'], 'filing_date': sx['filing_date'], 'source_kind': sx.get('source_kind')})
             # The investable security is the group's top-most company with public common equity.
             L = None
             for c in reversed(chain):
@@ -213,8 +213,8 @@ def run(monthly, annual, today, year=2024):
                          'proves': 'Legal entity %s, LEI %s' % (chain[0]['name'], chain[0]['lei']), 'retrieved_at': today}]
             for a, b in zip(chain, chain[1:]):
                 if b.get('source_url'):  # Exhibit 21 link
-                    evidence.append({'url': b['source_url'], 'publisher': 'U.S. SEC (10-K Exhibit 21 of %s)' % b['name'], 'document_date': b['filing_date'],
-                                     'proves': '%s lists %s as a subsidiary' % (b['name'], a['name']), 'quote': b['quote'], 'retrieved_at': today, 'edge': [a['lei'], b['lei']]})
+                    evidence.append({'url': b['source_url'], 'publisher': 'U.S. SEC (%s)' % (b.get('source_kind') or '10-K Exhibit 21 of ' + b['name']), 'document_date': b['filing_date'],
+                                     'proves': ('%s states it is a wholly-owned subsidiary of %s' % (a['name'], b['name'])) if b.get('source_kind') else '%s lists %s as a subsidiary' % (b['name'], a['name']), 'quote': b['quote'], 'retrieved_at': today, 'edge': [a['lei'], b['lei']]})
                     continue
                 evidence.append({'url': 'https://api.gleif.org/api/v1/lei-records/%s/%s' % (a['lei'], b['relationship']), 'publisher': 'GLEIF', 'document_date': today,
                                  'proves': '%s reports %s as its %s' % (a['name'], b['name'], b['relationship'].replace('-', ' ')), 'retrieved_at': today, 'edge': [a['lei'], b['lei']]})

@@ -33,6 +33,14 @@
    "source_url": "https://borsaitaliana.it/borsa/azioni/scheda/IT0003128367.html?lang=en",
    "quote": "ENEL IT0003128367 (Borsa Italiana share page)",
    "checked_at": "2026-11-13"
+  },
+  "5QK37QC7NWOJ8D7WVQ45": {
+   "name": "Iberdrola, S.A.",
+   "ticker": "IBE",
+   "exchange": "Bolsas y Mercados Españoles (Madrid)",
+   "source_url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+   "quote": "IBERDROLA, S.A. ES0144580Y14 (BME share detail page)",
+   "checked_at": "2026-11-13"
   }
  }
 }
