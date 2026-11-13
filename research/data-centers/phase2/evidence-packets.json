@@ -1,0 +1,256 @@
+{
+  "companies": {
+    "facts": {
+      "EQ:XNYS:DLR": {
+        "id": "EQ:XNYS:DLR",
+        "company_id": "CO:CIK0001297996",
+        "name": "Digital Realty",
+        "ticker": "DLR",
+        "mic": "XNYS",
+        "cik": "0001297996",
+        "security_type": "common_equity",
+        "listing_checked_at": "2026-11-13",
+        "sec_listing_match": {
+          "cik": 1297996,
+          "name": "DIGITAL REALTY TRUST, INC.",
+          "ticker": "DLR",
+          "exchange": "NYSE"
+        },
+        "security_class_evidence": {
+          "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm",
+          "sha256": "c183a976e239d454422d8e5e0a35963e9af1956b35bdd97a791f39dd969f8d18",
+          "cover_row": {
+            "security_titles": [
+              "Common Stock"
+            ],
+            "ticker": "DLR",
+            "exchanges": [
+              "New York Stock Exchange"
+            ]
+          },
+          "form": "10-K",
+          "filing_date": "2026-02-13",
+          "accession": "0001104659-26-015365"
+        },
+        "hq": null,
+        "hq_reason": "Existing registry coordinates are city-level; not a verified office site. No HQ line generated.",
+        "registry_asset_id": "EQ:XNYS:DLR",
+        "listing_verified": true,
+        "listing_as_of": "2026-11-13",
+        "reit_verified": true,
+        "reit_evidence": {
+          "source": "DLR-latest-10q",
+          "locator": "Issuer REIT tax structure / qualification discussion",
+          "scope": "Listed issuer tax status, not a directly investable project fund"
+        }
+      },
+      "EQ:XNAS:EQIX": {
+        "id": "EQ:XNAS:EQIX",
+        "company_id": "CO:CIK0001101239",
+        "name": "Equinix",
+        "ticker": "EQIX",
+        "mic": "XNAS",
+        "cik": "0001101239",
+        "security_type": "common_equity",
+        "listing_checked_at": "2026-11-13",
+        "sec_listing_match": {
+          "cik": 1101239,
+          "name": "EQUINIX INC",
+          "ticker": "EQIX",
+          "exchange": "Nasdaq"
+        },
+        "security_class_evidence": {
+          "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+          "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+          "cover_row": {
+            "security_titles": [
+              "Common Stock, $0.001"
+            ],
+            "ticker": "EQIX",
+            "exchanges": [
+              "The Nasdaq Stock Market LLC"
+            ]
+          },
+          "form": "10-K",
+          "filing_date": "2026-02-11",
+          "accession": "0001101239-26-000032"
+        },
+        "hq": null,
+        "hq_reason": "Existing registry coordinates are city-level; not a verified office site. No HQ line generated.",
+        "registry_asset_id": "EQ:XNAS:EQIX",
+        "listing_verified": true,
+        "listing_as_of": "2026-11-13",
+        "reit_verified": true,
+        "reit_evidence": {
+          "source": "EQIX-latest-10q",
+          "locator": "Issuer REIT tax structure / qualification discussion",
+          "scope": "Listed issuer tax status, not a directly investable project fund"
+        }
+      },
+      "EQ:XNYS:AMT": {
+        "id": "EQ:XNYS:AMT",
+        "company_id": "CO:CIK0001053507",
+        "name": "American Tower",
+        "ticker": "AMT",
+        "mic": "XNYS",
+        "cik": "0001053507",
+        "security_type": "common_equity",
+        "listing_checked_at": "2026-11-13",
+        "sec_listing_match": {
+          "cik": 1053507,
+          "name": "AMERICAN TOWER CORP /MA/",
+          "ticker": "AMT",
+          "exchange": "NYSE"
+        },
+        "security_class_evidence": {
+          "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000035/amt-20251231.htm",
+          "sha256": "fb453bdf34d5cd97ed91e28b37cf34a58cbe267d22e09050d436aea6d0095b01",
+          "cover_row": {
+            "security_titles": [
+              "Common Stock, $0.01 par value"
+            ],
+            "ticker": "AMT",
+            "exchanges": [
+              "New York Stock Exchange"
+            ]
+          },
+          "form": "10-K",
+          "filing_date": "2026-02-24",
+          "accession": "0001053507-26-000035"
+        },
+        "hq": null,
+        "hq_reason": "Existing registry coordinates are city-level; not a verified office site. No HQ line generated.",
+        "registry_asset_id": "EQ:XNYS:AMT",
+        "listing_verified": true,
+        "listing_as_of": "2026-11-13",
+        "reit_verified": true,
+        "reit_evidence": {
+          "source": "AMT-latest-10q",
+          "locator": "Issuer REIT tax structure / qualification discussion",
+          "scope": "Listed issuer tax status, not a directly investable project fund"
+        }
+      },
+      "external:SEC:CIK0001144879:APLD": {
+        "id": "external:SEC:CIK0001144879:APLD",
+        "registry_asset_id": null,
+        "external_listing_id": "SEC:CIK0001144879:APLD",
+        "name": "Applied Digital",
+        "ticker": "APLD",
+        "mic": "XNAS",
+        "cik": "0001144879",
+        "security_type": "common_equity",
+        "listing_verified": true,
+        "listing_as_of": "2026-11-13",
+        "reit_verified": false,
+        "security_evidence": {
+          "source": "APLD-10k",
+          "response_sha256": "0c84f5672956b0fe3cf5cc2d9f1f375adb94e86fea8a35b6fd581afe6221fa03",
+          "url": "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm",
+          "cover_row": {
+            "Security12bTitle": [
+              "Common Stock, par value $0.001 per share"
+            ],
+            "TradingSymbol": [
+              "APLD"
+            ],
+            "SecurityExchangeName": [
+              "Nasdaq Global Select Market"
+            ]
+          }
+        },
+        "integration_hold": "Not yet mapped into shared registry; do not fabricate a registry asset ID."
+      }
+    },
+    "facts_sha256": "a0ab98d6005b49e945b89dacd1449b600d233e0b304a8c7a11aa1da36ef92021"
+  },
+  "business-chains": {
+    "facts": [
+      {
+        "from": "EQ:XNYS:AMT",
+        "to": "CoreSite US operating data-center business",
+        "relationship": "controlling common equity",
+        "share_pct": 64,
+        "as_of": "2026-09-30",
+        "scope": "business, not any particular facility",
+        "source": "AMT-latest-10q",
+        "locator": "Notes 1 and11; August 8 preferred-equity conversion"
+      },
+      {
+        "from": "Stonepeak investment vehicles",
+        "to": "CoreSite US operating data-center business",
+        "relationship": "noncontrolling common equity",
+        "share_pct": 36,
+        "as_of": "2026-09-30",
+        "scope": "business, not any particular facility",
+        "source": "AMT-latest-10q",
+        "locator": "Notes 1 and11"
+      },
+      {
+        "from": "EQ:XNYS:AMT",
+        "to": "Stonepeak Denver development partnership",
+        "relationship": "minority equity investment",
+        "share_pct": null,
+        "as_of": "2025-12-31",
+        "scope": "different JV; not the operating CoreSite business; no assumed DE3 mapping",
+        "source": "AMT-10k",
+        "locator": "Stonepeak Development Partnership note"
+      },
+      {
+        "from": "Stonepeak",
+        "to": "Stonepeak Denver development partnership",
+        "relationship": "controlling interest",
+        "share_pct": null,
+        "as_of": "2025-12-31",
+        "scope": "different JV; percentage not established",
+        "source": "AMT-10k",
+        "locator": "Stonepeak Development Partnership note"
+      }
+    ],
+    "facts_sha256": "fcba74b83be86a2c2b93bdbe45143c86d660009616952b67f08b99965e4dedfa"
+  },
+  "original-equix-schedule": {
+    "facts": {
+      "as_of": "2026-09-30",
+      "source": "eqix-q3-presentation",
+      "roles": {
+        "DC2": "Owned",
+        "SV1": "Owned",
+        "DX1": "Leased",
+        "SV18": "Owned",
+        "MD5": "Owned"
+      },
+      "scope": "Issuer-owned/leased classification, not legal land title; do not assume 100% share",
+      "pages": [
+        35,
+        36
+      ]
+    },
+    "facts_sha256": "b784fa7b84326dfcc9bb11b40411db98721d39e490f5d3b771fb475153de8d2f"
+  },
+  "review-notes": {
+    "facts": {
+      "sg6_conflict": {
+        "timeline_expected": "2027-Q1",
+        "opening_announcement": "2026-11-06",
+        "decision": "Explicit dated announcement establishes opened status; timeline target held"
+      },
+      "de3_capacity": {
+        "project_area_sqft": 180000,
+        "campus_critical_MW": 60,
+        "campus_area_sqft": 600000,
+        "project_MW": null
+      },
+      "APLD": {
+        "building2_phase1_MW": 75,
+        "building2_phase2_MW": 75,
+        "building2_total_MW": 150,
+        "campus_PF1_contracted_MW": 400,
+        "building3_MW": 150,
+        "building3_notes_proceeds_dollars": 1590000000,
+        "bridge_repayment_dollars": 300000000,
+        "notes_proceeds_are_project_cost": false
+      }
+    },
+    "facts_sha256": "274085f4261074a6018fdc54ffae2fb00e61a74a2884658e5d3f6a1c6dc0fe98"
+  }
+}

@@ -1,0 +1,1102 @@
+{
+  "nodes": [
+    {
+      "id": "dc:dlr:2256",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2257",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2475",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2293",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2344",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2413",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2310",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2311",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:1790",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2316",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2416",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2408",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2290",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2387",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2388",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2448",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2412",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:3389",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2379",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2294",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2295",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2405",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:2411",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:11459",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:dlr:24413",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:eqix:DC2",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:eqix:SV1",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:eqix:DX1",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "dc:coresite:VA1",
+      "kind": "existing_asset"
+    },
+    {
+      "id": "project:eqix:PA12x",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:LG3",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:IL3",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:OS5x",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:SG6",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:SP7",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:JH2",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:LD14",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:MX3x",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:PA14",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:SV18",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:MD5",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:phase:Atlanta-10x-1",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:phase:Atlanta-11x-1",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:phase:Paris-12x-1",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:phase:Paris-12x-2",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:phase:Dublin-7x-1",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:phase:Sydney-9x-2",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:eqix:phase:Osaka-5x-1",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:apld:polaris-forge-1",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:apld:polaris-forge-2",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:apld:polaris-forge-3",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:apld:delta-forge-1",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:apld:delta-forge-2",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:apld:polaris-forge-1:building-2-phase-1",
+      "kind": "expansion"
+    },
+    {
+      "id": "project:apld:polaris-forge-1:building-2-phase-2",
+      "kind": "expansion"
+    },
+    {
+      "id": "project:apld:polaris-forge-1:building-3",
+      "kind": "expansion"
+    },
+    {
+      "id": "project:coresite:DE3",
+      "kind": "new_development"
+    },
+    {
+      "id": "project:coresite:NY3",
+      "kind": "new_development"
+    },
+    {
+      "id": "programme:bersama",
+      "kind": "joint_venture_programme"
+    },
+    {
+      "id": "programme:mitsubishi",
+      "kind": "joint_venture_programme"
+    },
+    {
+      "id": "programme:stonepeak-denver",
+      "kind": "joint_venture_programme"
+    },
+    {
+      "id": "EQ:XNYS:DLR",
+      "company_id": "CO:CIK0001297996",
+      "name": "Digital Realty",
+      "ticker": "DLR",
+      "mic": "XNYS",
+      "cik": "0001297996",
+      "security_type": "common_equity",
+      "listing_checked_at": "2026-11-13",
+      "sec_listing_match": {
+        "cik": 1297996,
+        "name": "DIGITAL REALTY TRUST, INC.",
+        "ticker": "DLR",
+        "exchange": "NYSE"
+      },
+      "security_class_evidence": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm",
+        "sha256": "c183a976e239d454422d8e5e0a35963e9af1956b35bdd97a791f39dd969f8d18",
+        "cover_row": {
+          "security_titles": [
+            "Common Stock"
+          ],
+          "ticker": "DLR",
+          "exchanges": [
+            "New York Stock Exchange"
+          ]
+        },
+        "form": "10-K",
+        "filing_date": "2026-02-13",
+        "accession": "0001104659-26-015365"
+      },
+      "hq": null,
+      "hq_reason": "Existing registry coordinates are city-level; not a verified office site. No HQ line generated.",
+      "registry_asset_id": "EQ:XNYS:DLR",
+      "listing_verified": true,
+      "listing_as_of": "2026-11-13",
+      "reit_verified": true,
+      "reit_evidence": {
+        "source": "DLR-latest-10q",
+        "locator": "Issuer REIT tax structure / qualification discussion",
+        "scope": "Listed issuer tax status, not a directly investable project fund"
+      }
+    },
+    {
+      "id": "EQ:XNAS:EQIX",
+      "company_id": "CO:CIK0001101239",
+      "name": "Equinix",
+      "ticker": "EQIX",
+      "mic": "XNAS",
+      "cik": "0001101239",
+      "security_type": "common_equity",
+      "listing_checked_at": "2026-11-13",
+      "sec_listing_match": {
+        "cik": 1101239,
+        "name": "EQUINIX INC",
+        "ticker": "EQIX",
+        "exchange": "Nasdaq"
+      },
+      "security_class_evidence": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+        "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+        "cover_row": {
+          "security_titles": [
+            "Common Stock, $0.001"
+          ],
+          "ticker": "EQIX",
+          "exchanges": [
+            "The Nasdaq Stock Market LLC"
+          ]
+        },
+        "form": "10-K",
+        "filing_date": "2026-02-11",
+        "accession": "0001101239-26-000032"
+      },
+      "hq": null,
+      "hq_reason": "Existing registry coordinates are city-level; not a verified office site. No HQ line generated.",
+      "registry_asset_id": "EQ:XNAS:EQIX",
+      "listing_verified": true,
+      "listing_as_of": "2026-11-13",
+      "reit_verified": true,
+      "reit_evidence": {
+        "source": "EQIX-latest-10q",
+        "locator": "Issuer REIT tax structure / qualification discussion",
+        "scope": "Listed issuer tax status, not a directly investable project fund"
+      }
+    },
+    {
+      "id": "EQ:XNYS:AMT",
+      "company_id": "CO:CIK0001053507",
+      "name": "American Tower",
+      "ticker": "AMT",
+      "mic": "XNYS",
+      "cik": "0001053507",
+      "security_type": "common_equity",
+      "listing_checked_at": "2026-11-13",
+      "sec_listing_match": {
+        "cik": 1053507,
+        "name": "AMERICAN TOWER CORP /MA/",
+        "ticker": "AMT",
+        "exchange": "NYSE"
+      },
+      "security_class_evidence": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000035/amt-20251231.htm",
+        "sha256": "fb453bdf34d5cd97ed91e28b37cf34a58cbe267d22e09050d436aea6d0095b01",
+        "cover_row": {
+          "security_titles": [
+            "Common Stock, $0.01 par value"
+          ],
+          "ticker": "AMT",
+          "exchanges": [
+            "New York Stock Exchange"
+          ]
+        },
+        "form": "10-K",
+        "filing_date": "2026-02-24",
+        "accession": "0001053507-26-000035"
+      },
+      "hq": null,
+      "hq_reason": "Existing registry coordinates are city-level; not a verified office site. No HQ line generated.",
+      "registry_asset_id": "EQ:XNYS:AMT",
+      "listing_verified": true,
+      "listing_as_of": "2026-11-13",
+      "reit_verified": true,
+      "reit_evidence": {
+        "source": "AMT-latest-10q",
+        "locator": "Issuer REIT tax structure / qualification discussion",
+        "scope": "Listed issuer tax status, not a directly investable project fund"
+      }
+    },
+    {
+      "id": "external:SEC:CIK0001144879:APLD",
+      "registry_asset_id": null,
+      "external_listing_id": "SEC:CIK0001144879:APLD",
+      "name": "Applied Digital",
+      "ticker": "APLD",
+      "mic": "XNAS",
+      "cik": "0001144879",
+      "security_type": "common_equity",
+      "listing_verified": true,
+      "listing_as_of": "2026-11-13",
+      "reit_verified": false,
+      "security_evidence": {
+        "source": "APLD-10k",
+        "response_sha256": "0c84f5672956b0fe3cf5cc2d9f1f375adb94e86fea8a35b6fd581afe6221fa03",
+        "url": "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm",
+        "cover_row": {
+          "Security12bTitle": [
+            "Common Stock, par value $0.001 per share"
+          ],
+          "TradingSymbol": [
+            "APLD"
+          ],
+          "SecurityExchangeName": [
+            "Nasdaq Global Select Market"
+          ]
+        }
+      },
+      "integration_hold": "Not yet mapped into shared registry; do not fabricate a registry asset ID."
+    }
+  ],
+  "edges": [
+    {
+      "record_id": "dc:eqix:DC2",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "property_owner",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "qualified_label": "Issuer reports ownership; legal title entity unverified",
+      "evidence": {
+        "source": "eqix-q3-presentation",
+        "url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_presentation/Equinix_Q3_26_Earnings_Presentation_Final.pdf",
+        "response_sha256": "2b2d3aad052aa3b49a3e45e950eaabb0b4bd99498e53384fb813a41691adfaa3",
+        "retrieved_at": "2026-11-13T01:33:01.290679+00:00",
+        "locator": "Portfolio Composition pp35–36, DC2 in Owned column",
+        "publication_date": null
+      },
+      "verification_date": "2026-11-13",
+      "ownership_basis": "issuer asset schedule, not land registry"
+    },
+    {
+      "record_id": "dc:eqix:SV1",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "property_owner",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "qualified_label": "Issuer reports ownership; legal title entity unverified",
+      "evidence": {
+        "source": "eqix-q3-presentation",
+        "url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_presentation/Equinix_Q3_26_Earnings_Presentation_Final.pdf",
+        "response_sha256": "2b2d3aad052aa3b49a3e45e950eaabb0b4bd99498e53384fb813a41691adfaa3",
+        "retrieved_at": "2026-11-13T01:33:01.290679+00:00",
+        "locator": "Portfolio Composition pp35–36, SV1 in Owned column",
+        "publication_date": null
+      },
+      "verification_date": "2026-11-13",
+      "ownership_basis": "issuer asset schedule, not land registry"
+    },
+    {
+      "record_id": "dc:eqix:DX1",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "lessee",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "qualified_label": "Issuer reports leased facility; landlord/title owner unverified",
+      "evidence": {
+        "source": "eqix-q3-presentation",
+        "url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_presentation/Equinix_Q3_26_Earnings_Presentation_Final.pdf",
+        "response_sha256": "2b2d3aad052aa3b49a3e45e950eaabb0b4bd99498e53384fb813a41691adfaa3",
+        "retrieved_at": "2026-11-13T01:33:01.290679+00:00",
+        "locator": "Portfolio Composition pp35–36, DX1 in Leased column",
+        "publication_date": null
+      },
+      "verification_date": "2026-11-13",
+      "ownership_basis": "issuer asset schedule, not land registry"
+    },
+    {
+      "record_id": "dc:coresite:VA1",
+      "company_id": "EQ:XNYS:AMT",
+      "role": "operator",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "qualified_label": "AMT indirect operating-business exposure via CoreSite, not title ownership",
+      "evidence": {
+        "source": "coresite-va1-current",
+        "url": "https://www.coresite.com/data-center/va1-reston-va",
+        "response_sha256": "7396c2c3578b200b7e477f2fb607b62ecc70a968d38a11a0e7bc4e18434e30a0",
+        "retrieved_at": "2026-11-13T01:35:25.701533+00:00",
+        "locator": "Official VA1 service facility / CoreSite operator",
+        "publication_date": null
+      },
+      "chain_evidence": {
+        "source": "AMT-latest-10q",
+        "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000157/amt-20260930.htm",
+        "response_sha256": "610c29ad1b5c8808ae4982a4a0929d39baf51fec866274d7695a836ba9dfb905",
+        "retrieved_at": "2026-11-13T01:30:17.912119+00:00",
+        "locator": "Notes 1 and11; current US data center business control/Stonepeak conversion",
+        "publication_date": "2026-10-27"
+      }
+    },
+    {
+      "record_id": "project:eqix:PA12x",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "developer",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "eqix-expansions",
+        "url": "https://www.equinix.com/data-centers/expansions",
+        "response_sha256": "851c514f806273c20cadd7a0a246c36b474a14426bcf84df20bda176a294fa4a",
+        "retrieved_at": "2026-11-13T01:32:30.634156+00:00",
+        "locator": "Expansion timeline / latest additions",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed developer exposure; property/phase/JV scope retained",
+      "maturity": "announced_development_intent"
+    },
+    {
+      "record_id": "project:eqix:LG3",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "developer",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "eqix-expansions",
+        "url": "https://www.equinix.com/data-centers/expansions",
+        "response_sha256": "851c514f806273c20cadd7a0a246c36b474a14426bcf84df20bda176a294fa4a",
+        "retrieved_at": "2026-11-13T01:32:30.634156+00:00",
+        "locator": "Expansion timeline / latest additions",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed developer exposure; property/phase/JV scope retained",
+      "maturity": "announced_development_intent"
+    },
+    {
+      "record_id": "project:eqix:IL3",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "developer",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "eqix-expansions",
+        "url": "https://www.equinix.com/data-centers/expansions",
+        "response_sha256": "851c514f806273c20cadd7a0a246c36b474a14426bcf84df20bda176a294fa4a",
+        "retrieved_at": "2026-11-13T01:32:30.634156+00:00",
+        "locator": "Expansion timeline / latest additions",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed developer exposure; property/phase/JV scope retained",
+      "maturity": "announced_development_intent"
+    },
+    {
+      "record_id": "project:eqix:OS5x",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "developer",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "eqix-expansions",
+        "url": "https://www.equinix.com/data-centers/expansions",
+        "response_sha256": "851c514f806273c20cadd7a0a246c36b474a14426bcf84df20bda176a294fa4a",
+        "retrieved_at": "2026-11-13T01:32:30.634156+00:00",
+        "locator": "Expansion timeline / latest additions",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed developer exposure; property/phase/JV scope retained",
+      "maturity": "announced_development_intent"
+    },
+    {
+      "record_id": "project:eqix:SG6",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "operator",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "eqix-sg6-open",
+        "url": "https://investor.equinix.com/news-events/press-releases/detail/1130/equinix-opens-sg6-in-singapore-expanding-ai-ready-capacity",
+        "response_sha256": "4ce401970cc1a6a7752766cc9945e8aa45c605cab660518248626a5e2e2b481f",
+        "retrieved_at": "2026-11-13T01:32:32.072839+00:00",
+        "locator": "Dated SG6 opening announcement, first-phase8MW/full-facility20MW/initial investment",
+        "publication_date": "2026-11-06"
+      },
+      "qualified_label": "Disclosed operator exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:eqix:SP7",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "developer",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "eqix-expansions",
+        "url": "https://www.equinix.com/data-centers/expansions",
+        "response_sha256": "851c514f806273c20cadd7a0a246c36b474a14426bcf84df20bda176a294fa4a",
+        "retrieved_at": "2026-11-13T01:32:30.634156+00:00",
+        "locator": "Expansion timeline / latest additions",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed developer exposure; property/phase/JV scope retained",
+      "maturity": "announced_development_intent"
+    },
+    {
+      "record_id": "project:eqix:JH2",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "developer",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "eqix-expansions",
+        "url": "https://www.equinix.com/data-centers/expansions",
+        "response_sha256": "851c514f806273c20cadd7a0a246c36b474a14426bcf84df20bda176a294fa4a",
+        "retrieved_at": "2026-11-13T01:32:30.634156+00:00",
+        "locator": "Expansion timeline / latest additions",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed developer exposure; property/phase/JV scope retained",
+      "maturity": "announced_development_intent"
+    },
+    {
+      "record_id": "project:eqix:LD14",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "developer",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "eqix-expansions",
+        "url": "https://www.equinix.com/data-centers/expansions",
+        "response_sha256": "851c514f806273c20cadd7a0a246c36b474a14426bcf84df20bda176a294fa4a",
+        "retrieved_at": "2026-11-13T01:32:30.634156+00:00",
+        "locator": "Expansion timeline / latest additions",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed developer exposure; property/phase/JV scope retained",
+      "maturity": "announced_development_intent"
+    },
+    {
+      "record_id": "project:eqix:MX3x",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "developer",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "eqix-expansions",
+        "url": "https://www.equinix.com/data-centers/expansions",
+        "response_sha256": "851c514f806273c20cadd7a0a246c36b474a14426bcf84df20bda176a294fa4a",
+        "retrieved_at": "2026-11-13T01:32:30.634156+00:00",
+        "locator": "Expansion timeline / latest additions",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed developer exposure; property/phase/JV scope retained",
+      "maturity": "announced_development_intent"
+    },
+    {
+      "record_id": "project:eqix:PA14",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "developer",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "eqix-expansions",
+        "url": "https://www.equinix.com/data-centers/expansions",
+        "response_sha256": "851c514f806273c20cadd7a0a246c36b474a14426bcf84df20bda176a294fa4a",
+        "retrieved_at": "2026-11-13T01:32:30.634156+00:00",
+        "locator": "Expansion timeline / latest additions",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed developer exposure; property/phase/JV scope retained",
+      "maturity": "announced_development_intent"
+    },
+    {
+      "record_id": "project:eqix:SV18",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "property_owner",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "qualified_label": "Issuer reports ownership; legal title entity unverified",
+      "evidence": {
+        "source": "eqix-q3-presentation",
+        "url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_presentation/Equinix_Q3_26_Earnings_Presentation_Final.pdf",
+        "response_sha256": "2b2d3aad052aa3b49a3e45e950eaabb0b4bd99498e53384fb813a41691adfaa3",
+        "retrieved_at": "2026-11-13T01:33:01.290679+00:00",
+        "locator": "Portfolio Composition, pages 35/36, Owned column",
+        "publication_date": null
+      },
+      "verification_date": "2026-11-13",
+      "ownership_basis": "issuer asset schedule, not land registry",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:eqix:MD5",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "property_owner",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "qualified_label": "Issuer reports ownership; legal title entity unverified",
+      "evidence": {
+        "source": "eqix-q3-presentation",
+        "url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_presentation/Equinix_Q3_26_Earnings_Presentation_Final.pdf",
+        "response_sha256": "2b2d3aad052aa3b49a3e45e950eaabb0b4bd99498e53384fb813a41691adfaa3",
+        "retrieved_at": "2026-11-13T01:33:01.290679+00:00",
+        "locator": "Portfolio Composition, pages 35/36, Owned column",
+        "publication_date": null
+      },
+      "verification_date": "2026-11-13",
+      "ownership_basis": "issuer asset schedule, not land registry",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:eqix:phase:Atlanta-10x-1",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "investor",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "eqix-q3-presentation",
+        "url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_presentation/Equinix_Q3_26_Earnings_Presentation_Final.pdf",
+        "response_sha256": "2b2d3aad052aa3b49a3e45e950eaabb0b4bd99498e53384fb813a41691adfaa3",
+        "retrieved_at": "2026-11-13T01:33:01.290679+00:00",
+        "locator": "xScale Data Center Expansion, page 26",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed investor exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:eqix:phase:Atlanta-11x-1",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "investor",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "eqix-q3-presentation",
+        "url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_presentation/Equinix_Q3_26_Earnings_Presentation_Final.pdf",
+        "response_sha256": "2b2d3aad052aa3b49a3e45e950eaabb0b4bd99498e53384fb813a41691adfaa3",
+        "retrieved_at": "2026-11-13T01:33:01.290679+00:00",
+        "locator": "xScale Data Center Expansion, page 26",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed investor exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:eqix:phase:Paris-12x-1",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "investor",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "eqix-q3-presentation",
+        "url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_presentation/Equinix_Q3_26_Earnings_Presentation_Final.pdf",
+        "response_sha256": "2b2d3aad052aa3b49a3e45e950eaabb0b4bd99498e53384fb813a41691adfaa3",
+        "retrieved_at": "2026-11-13T01:33:01.290679+00:00",
+        "locator": "xScale Data Center Expansion, page 26",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed investor exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:eqix:phase:Paris-12x-2",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "investor",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "eqix-q3-presentation",
+        "url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_presentation/Equinix_Q3_26_Earnings_Presentation_Final.pdf",
+        "response_sha256": "2b2d3aad052aa3b49a3e45e950eaabb0b4bd99498e53384fb813a41691adfaa3",
+        "retrieved_at": "2026-11-13T01:33:01.290679+00:00",
+        "locator": "xScale Data Center Expansion, page 26",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed investor exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:eqix:phase:Dublin-7x-1",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "investor",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "eqix-q3-presentation",
+        "url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_presentation/Equinix_Q3_26_Earnings_Presentation_Final.pdf",
+        "response_sha256": "2b2d3aad052aa3b49a3e45e950eaabb0b4bd99498e53384fb813a41691adfaa3",
+        "retrieved_at": "2026-11-13T01:33:01.290679+00:00",
+        "locator": "xScale Data Center Expansion, page 26",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed investor exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:eqix:phase:Sydney-9x-2",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "investor",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "eqix-q3-presentation",
+        "url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_presentation/Equinix_Q3_26_Earnings_Presentation_Final.pdf",
+        "response_sha256": "2b2d3aad052aa3b49a3e45e950eaabb0b4bd99498e53384fb813a41691adfaa3",
+        "retrieved_at": "2026-11-13T01:33:01.290679+00:00",
+        "locator": "xScale Data Center Expansion, page 26",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed investor exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:eqix:phase:Osaka-5x-1",
+      "company_id": "EQ:XNAS:EQIX",
+      "role": "investor",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "eqix-q3-presentation",
+        "url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_presentation/Equinix_Q3_26_Earnings_Presentation_Final.pdf",
+        "response_sha256": "2b2d3aad052aa3b49a3e45e950eaabb0b4bd99498e53384fb813a41691adfaa3",
+        "retrieved_at": "2026-11-13T01:33:01.290679+00:00",
+        "locator": "xScale Data Center Expansion, page 26",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed investor exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:apld:polaris-forge-1",
+      "company_id": "external:SEC:CIK0001144879:APLD",
+      "role": "developer",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "apld-q1",
+        "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+        "response_sha256": "6ea9c370146a6ca1ba2eb80f8b001645c2921b7f3803e212380b623e81220813",
+        "retrieved_at": "2026-11-13T01:32:33.574588+00:00",
+        "locator": "Fiscal Q1 2027 results / campus development discussion",
+        "publication_date": "2026-10-07"
+      },
+      "qualified_label": "Disclosed developer exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:apld:polaris-forge-2",
+      "company_id": "external:SEC:CIK0001144879:APLD",
+      "role": "developer",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "apld-q1",
+        "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+        "response_sha256": "6ea9c370146a6ca1ba2eb80f8b001645c2921b7f3803e212380b623e81220813",
+        "retrieved_at": "2026-11-13T01:32:33.574588+00:00",
+        "locator": "Fiscal Q1 2027 results / campus development discussion",
+        "publication_date": "2026-10-07"
+      },
+      "qualified_label": "Disclosed developer exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:apld:polaris-forge-3",
+      "company_id": "external:SEC:CIK0001144879:APLD",
+      "role": "developer",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "apld-q1",
+        "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+        "response_sha256": "6ea9c370146a6ca1ba2eb80f8b001645c2921b7f3803e212380b623e81220813",
+        "retrieved_at": "2026-11-13T01:32:33.574588+00:00",
+        "locator": "Fiscal Q1 2027 results / campus development discussion",
+        "publication_date": "2026-10-07"
+      },
+      "qualified_label": "Disclosed developer exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:apld:delta-forge-1",
+      "company_id": "external:SEC:CIK0001144879:APLD",
+      "role": "developer",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "apld-q1",
+        "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+        "response_sha256": "6ea9c370146a6ca1ba2eb80f8b001645c2921b7f3803e212380b623e81220813",
+        "retrieved_at": "2026-11-13T01:32:33.574588+00:00",
+        "locator": "Fiscal Q1 2027 results / campus development discussion",
+        "publication_date": "2026-10-07"
+      },
+      "qualified_label": "Disclosed developer exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:apld:delta-forge-2",
+      "company_id": "external:SEC:CIK0001144879:APLD",
+      "role": "developer",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "apld-q1",
+        "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+        "response_sha256": "6ea9c370146a6ca1ba2eb80f8b001645c2921b7f3803e212380b623e81220813",
+        "retrieved_at": "2026-11-13T01:32:33.574588+00:00",
+        "locator": "Fiscal Q1 2027 results / campus development discussion",
+        "publication_date": "2026-10-07"
+      },
+      "qualified_label": "Disclosed developer exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:apld:polaris-forge-1:building-2-phase-1",
+      "company_id": "external:SEC:CIK0001144879:APLD",
+      "role": "developer",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "apld-q1",
+        "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+        "response_sha256": "6ea9c370146a6ca1ba2eb80f8b001645c2921b7f3803e212380b623e81220813",
+        "retrieved_at": "2026-11-13T01:32:33.574588+00:00",
+        "locator": "Recent highlights / Polaris Forge 1 buildings",
+        "publication_date": "2026-10-07"
+      },
+      "qualified_label": "Disclosed developer exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:apld:polaris-forge-1:building-2-phase-2",
+      "company_id": "external:SEC:CIK0001144879:APLD",
+      "role": "developer",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "apld-q1",
+        "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+        "response_sha256": "6ea9c370146a6ca1ba2eb80f8b001645c2921b7f3803e212380b623e81220813",
+        "retrieved_at": "2026-11-13T01:32:33.574588+00:00",
+        "locator": "Recent highlights / Polaris Forge 1 buildings",
+        "publication_date": "2026-10-07"
+      },
+      "qualified_label": "Disclosed developer exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:apld:polaris-forge-1:building-3",
+      "company_id": "external:SEC:CIK0001144879:APLD",
+      "role": "developer",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "apld-q1",
+        "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+        "response_sha256": "6ea9c370146a6ca1ba2eb80f8b001645c2921b7f3803e212380b623e81220813",
+        "retrieved_at": "2026-11-13T01:32:33.574588+00:00",
+        "locator": "Recent highlights / Polaris Forge 1 buildings",
+        "publication_date": "2026-10-07"
+      },
+      "qualified_label": "Disclosed developer exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:coresite:DE3",
+      "company_id": "EQ:XNYS:AMT",
+      "role": "operator",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "coresite-de3-current",
+        "url": "https://www.coresite.com/data-center/de3-denver-co",
+        "response_sha256": "3c20f0d52e8e96cb22dd7a6da928b053d8e772bb5c6995cc6196f6f155efde31",
+        "retrieved_at": "2026-11-13T01:50:44.861308+00:00",
+        "locator": "Current DE3 facility specification: first building,18 CMW; availability target2026",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed operator exposure; property/phase/JV scope retained",
+      "chain_evidence": {
+        "source": "AMT-latest-10q",
+        "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000157/amt-20260930.htm",
+        "response_sha256": "610c29ad1b5c8808ae4982a4a0929d39baf51fec866274d7695a836ba9dfb905",
+        "retrieved_at": "2026-11-13T01:30:17.912119+00:00",
+        "locator": "US operating business chain; separate minority development JV not assumed to be DE3",
+        "publication_date": "2026-10-27"
+      },
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "project:coresite:NY3",
+      "company_id": "EQ:XNYS:AMT",
+      "role": "operator",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "coresite-ny3",
+        "url": "https://www.coresite.com/news/coresite-launches-ny3-data-center-expanding-ai-optimized-capacity-in-the-new-york-metro-area",
+        "response_sha256": "ab006921111b84402bee22fc54b49847a898f1c049231b4b7506d06aff15253a",
+        "retrieved_at": "2026-11-13T01:32:37.578454+00:00",
+        "locator": "Official named facility development announcement",
+        "publication_date": "2025-09-25"
+      },
+      "qualified_label": "Disclosed operator exposure; property/phase/JV scope retained",
+      "chain_evidence": {
+        "source": "AMT-latest-10q",
+        "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000157/amt-20260930.htm",
+        "response_sha256": "610c29ad1b5c8808ae4982a4a0929d39baf51fec866274d7695a836ba9dfb905",
+        "retrieved_at": "2026-11-13T01:30:17.912119+00:00",
+        "locator": "US operating business chain; separate minority development JV not assumed to be DE3",
+        "publication_date": "2026-10-27"
+      },
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "programme:bersama",
+      "company_id": "EQ:XNYS:DLR",
+      "role": "investor",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "DLR-10k-full",
+        "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm",
+        "response_sha256": "ead77317c7fa72fe1a0e4759c54684c354dfc7af025b268ca5b5eab2bf55c7b4",
+        "retrieved_at": "2026-11-13T01:30:09.584725+00:00",
+        "locator": "JV disclosure / ownership notes",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed investor exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "programme:mitsubishi",
+      "company_id": "EQ:XNYS:DLR",
+      "role": "investor",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "DLR-latest-10q",
+        "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926120710/dlr-20260930x10q.htm",
+        "response_sha256": "a676aee1254860c8b032a9fdaeade0fe0c707c377c901b366a96c192f8f6059f",
+        "retrieved_at": "2026-11-13T01:30:15.119071+00:00",
+        "locator": "JV disclosure / ownership notes",
+        "publication_date": "2026-10-30"
+      },
+      "qualified_label": "Disclosed investor exposure; property/phase/JV scope retained",
+      "maturity": "issuer_disclosed_economic_role"
+    },
+    {
+      "record_id": "programme:stonepeak-denver",
+      "company_id": "EQ:XNYS:AMT",
+      "role": "investor",
+      "scope": "specific_record",
+      "ownership_pct": null,
+      "evidence": {
+        "source": "AMT-10k",
+        "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000035/amt-20251231.htm",
+        "response_sha256": "fb453bdf34d5cd97ed91e28b37cf34a58cbe267d22e09050d436aea6d0095b01",
+        "retrieved_at": "2026-11-13T01:00:08.309701+00:00",
+        "locator": "JV disclosure / ownership notes",
+        "publication_date": null
+      },
+      "qualified_label": "Disclosed investor exposure; property/phase/JV scope retained",
+      "chain_evidence": {
+        "source": "AMT-latest-10q",
+        "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000157/amt-20260930.htm",
+        "response_sha256": "610c29ad1b5c8808ae4982a4a0929d39baf51fec866274d7695a836ba9dfb905",
+        "retrieved_at": "2026-11-13T01:30:17.912119+00:00",
+        "locator": "US operating business chain; separate minority development JV not assumed to be DE3",
+        "publication_date": "2026-10-27"
+      },
+      "maturity": "issuer_disclosed_economic_role"
+    }
+  ],
+  "business_chain_edges": [
+    {
+      "from": "EQ:XNYS:AMT",
+      "to": "CoreSite US operating data-center business",
+      "relationship": "controlling common equity",
+      "share_pct": 64,
+      "as_of": "2026-09-30",
+      "scope": "business, not any particular facility",
+      "source": "AMT-latest-10q",
+      "locator": "Notes 1 and11; August 8 preferred-equity conversion"
+    },
+    {
+      "from": "Stonepeak investment vehicles",
+      "to": "CoreSite US operating data-center business",
+      "relationship": "noncontrolling common equity",
+      "share_pct": 36,
+      "as_of": "2026-09-30",
+      "scope": "business, not any particular facility",
+      "source": "AMT-latest-10q",
+      "locator": "Notes 1 and11"
+    },
+    {
+      "from": "EQ:XNYS:AMT",
+      "to": "Stonepeak Denver development partnership",
+      "relationship": "minority equity investment",
+      "share_pct": null,
+      "as_of": "2025-12-31",
+      "scope": "different JV; not the operating CoreSite business; no assumed DE3 mapping",
+      "source": "AMT-10k",
+      "locator": "Stonepeak Development Partnership note"
+    },
+    {
+      "from": "Stonepeak",
+      "to": "Stonepeak Denver development partnership",
+      "relationship": "controlling interest",
+      "share_pct": null,
+      "as_of": "2025-12-31",
+      "scope": "different JV; percentage not established",
+      "source": "AMT-10k",
+      "locator": "Stonepeak Development Partnership note"
+    }
+  ],
+  "notice": "Private research. No public licensing approval. Not investment advice."
+}

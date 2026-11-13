@@ -1,0 +1,5 @@
+{
+  "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A15%5D%3B%28nwr%28around%3A200%2C39.01678723190463%2C-77.46054392965522%29%5B%22name%22%5D%5B%22building%22%5D%3Bnwr%28around%3A200%2C39.01678723190463%2C-77.46054392965522%29%5B%22telecom%22%3D%22data_center%22%5D%3B%29%3Bout+center+tags%3B",
+  "error": "TimeoutError",
+  "detail": "The read operation timed out"
+}

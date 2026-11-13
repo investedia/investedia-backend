@@ -1,0 +1,5 @@
+{
+  "url": "https://investor.equinix.com/quarterly-results",
+  "error": "HTTPError",
+  "detail": "HTTP Error 404: Not Found"
+}

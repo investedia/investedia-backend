@@ -1,0 +1,58 @@
+{
+  "scope": "Read-only source preparation only; no real estate ingestion, identity creation or shared-schema change",
+  "companies": [
+    {
+      "company": "Prologis",
+      "official_portfolio_source": "https://www.prologis.com/",
+      "source_status": "Direct property site returned HTTP405; official investor portal and Q3 2026 supplemental were accessible.",
+      "pipeline_source": "https://d1io3yog0oux5.cloudfront.net/_3fd53a5288f6d3b808cc28184d7a5926/prologis/db/2346/24099/supplemental_financial_report_pdf/Q3_2026_Prologis_Earnings_Supplemental.pdf",
+      "pipeline_scope": "Q3 2026 Development Stabilizations, Starts, Development Portfolio tables pp18\u201320; regional/programme values cannot identify legal title to an individual warehouse.",
+      "ownership_record_path": "Property-level legal entity + official local land/title record, with country/parcel scope. Not obtained; fee/subscription access is not authorized.",
+      "commercial_use": "Investor-file public access is not a blanket corporate-content licence. Property-directory terms/reuse permission unresolved.",
+      "integration": false
+    },
+    {
+      "company": "SEGRO",
+      "official_portfolio_source": "https://www.segro.com/about/our-properties",
+      "source_status": "Official portfolio, find-a-property and properties-map links accessible.",
+      "pipeline_source": "https://www.segro.com/about/our-properties/building-development-approach",
+      "pipeline_scope": "Building/development approach; project filters and individual official development reports are next audit, not a verified property schedule yet.",
+      "ownership_record_path": "Need property-address/parcel match and legal owner; JV/SELP structures cannot be attributed 100% to listed group by branding.",
+      "terms_url": "https://www.segro.com/disclaimer",
+      "commercial_use": "Disclaimer protects content, images and branding; limited printing is not a commercial database grant.",
+      "integration": false
+    },
+    {
+      "company": "Goodman Group",
+      "official_portfolio_source": "https://www.goodman.com/our-properties/global-property-portfolio",
+      "source_status": "Global property portfolio accessible; official FY27 Q1 operational-update PDF linked on homepage.",
+      "pipeline_source": "Official operational updates and partnership-specific reports; no project data ingested.",
+      "ownership_record_path": "Distinguish managed partnerships, fund/JV ownership and group co-investment per property. Listed stapled security requires its own identity review, not a simple US common-stock assumption.",
+      "terms_url": "https://www.goodman.com/terms-and-conditions",
+      "commercial_use": "Terms restrict sale/distribution for commercial gain and incorporation into another publication/site absent permission.",
+      "integration": false
+    },
+    {
+      "company": "WDP",
+      "official_portfolio_source": "https://wdp.eu/en/investors/portfolio",
+      "source_status": "Official investor portfolio accessible; development/redevelopment paths identified.",
+      "pipeline_source": "Official portfolio/development reports; individual project and legal-title verification pending.",
+      "ownership_record_path": "Property country/legal subsidiary/JV interest and local authoritative title evidence required; RREC portfolio branding alone is not title.",
+      "terms_url": "https://wdp.eu/en/discover-wdp/disclaimer",
+      "commercial_use": "Disclaimer expressly limits site material to personal/non-commercial use and reserves database rights.",
+      "integration": false
+    },
+    {
+      "company": "Montea",
+      "official_portfolio_source": "https://montea.com/en/warehouses",
+      "source_status": "Official warehouse portfolio accessible; flagship-project, annual-report and financial-report paths identified.",
+      "pipeline_source": "https://montea.com/en/flagship-projects",
+      "pipeline_scope": "Read-only source identification; no verified project import.",
+      "ownership_record_path": "Need asset-level legal owner, development/JV interest and authoritative parcel/title verification; corporate portfolio alone insufficient.",
+      "terms_url": "https://montea.com/en/disclaimer",
+      "commercial_use": "Disclaimer states personal/non-commercial use and reserves content/IP rights.",
+      "integration": false
+    }
+  ],
+  "public_reuse_approvals": 0
+}

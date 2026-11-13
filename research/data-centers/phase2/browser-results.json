@@ -1,0 +1,54 @@
+[
+  {
+    "width": 1440,
+    "theme": "dark",
+    "development_records": 26,
+    "background_records": 6,
+    "existing_records": 29,
+    "search": true,
+    "lease_not_ownership": true,
+    "source_conflicts_visible": true,
+    "scope_warnings_visible": true,
+    "overflow": false,
+    "page_errors": []
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "development_records": 26,
+    "background_records": 6,
+    "existing_records": 29,
+    "search": true,
+    "lease_not_ownership": true,
+    "source_conflicts_visible": true,
+    "scope_warnings_visible": true,
+    "overflow": false,
+    "page_errors": []
+  },
+  {
+    "width": 1440,
+    "theme": "light",
+    "development_records": 26,
+    "background_records": 6,
+    "existing_records": 29,
+    "search": true,
+    "lease_not_ownership": true,
+    "source_conflicts_visible": true,
+    "scope_warnings_visible": true,
+    "overflow": false,
+    "page_errors": []
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "development_records": 26,
+    "background_records": 6,
+    "existing_records": 29,
+    "search": true,
+    "lease_not_ownership": true,
+    "source_conflicts_visible": true,
+    "scope_warnings_visible": true,
+    "overflow": false,
+    "page_errors": []
+  }
+]

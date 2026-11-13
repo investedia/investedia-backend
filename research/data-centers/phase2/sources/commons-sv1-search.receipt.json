@@ -1,0 +1,8 @@
+{
+  "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Equinix%22+%22SV1%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata",
+  "final_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Equinix%22+%22SV1%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata",
+  "retrieved_at": "2026-11-13T01:46:02.418420+00:00",
+  "sha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+  "bytes": 20,
+  "complete": true
+}

@@ -1,0 +1,831 @@
+{
+  "re-wdp-terms": {
+    "url": "https://wdp.eu/en/discover-wdp/disclaimer",
+    "final_url": "https://wdp.eu/en/discover-wdp/disclaimer",
+    "retrieved_at": "2026-11-13T01:39:04.987963+00:00",
+    "sha256": "cd595b9a9f287f1ebe03ef20c27a819d013fda05b66f5c54db425dc8e1aaa8b8",
+    "bytes": 185967,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "eqix-q3-release": {
+    "url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_release/Equinix_Q3_2026_Earnings_Press_Release_and_Financials.pdf",
+    "final_url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_release/Equinix_Q3_2026_Earnings_Press_Release_and_Financials.pdf",
+    "retrieved_at": "2026-11-13T01:33:02.606844+00:00",
+    "sha256": "5d6083a8635ce892510378d22a305ab1ca2ff902b6e859c6bcdebfdb8a4d14fd",
+    "bytes": 401125,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "apld-q1": {
+    "url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+    "final_url": "https://ir.applieddigital.com/news-events/press-releases/detail/163/applied-digital-reports-fiscal-first-quarter-2027-results",
+    "retrieved_at": "2026-11-13T01:32:33.574588+00:00",
+    "sha256": "6ea9c370146a6ca1ba2eb80f8b001645c2921b7f3803e212380b623e81220813",
+    "bytes": 264990,
+    "complete": true,
+    "commercial_redistribution_approved": false,
+    "publication_date": "2026-10-07",
+    "report_period": "2026-08-31",
+    "publication_date_pointer": "Press-release heading and fiscal-quarter description"
+  },
+  "commons-licence": {
+    "url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+    "final_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+    "retrieved_at": "2026-11-13T01:37:37.270473+00:00",
+    "sha256": "aa78ec7448a25fff7dddddef253c76690ec32ac8e20ff0651ff5c5517294113c",
+    "bytes": 243207,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "IRM-submissions": {
+    "url": "https://data.sec.gov/submissions/CIK0001020569.json",
+    "final_url": "https://data.sec.gov/submissions/CIK0001020569.json",
+    "retrieved_at": "2026-11-13T01:35:22.886307+00:00",
+    "sha256": "0023c1969e5c0cb08cb5f1f5a7aae8d7ce2ba4709b952bac676fe4c2429bdc08",
+    "bytes": 162952,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "realestate-segro": {
+    "url": "https://www.segro.com/",
+    "final_url": "https://www.segro.com/",
+    "retrieved_at": "2026-11-13T01:31:47.181485+00:00",
+    "sha256": "48f4e184ab773f12eff4f28aeca6f0043a1126d743060007864e1e56b7f350d1",
+    "bytes": 168775,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "dlr-q3-supplement": {
+    "url": "https://investor.digitalrealty.com/static-files/dbe7bde5-da83-4211-8f76-0f7624c48eab",
+    "final_url": "https://investor.digitalrealty.com/static-files/dbe7bde5-da83-4211-8f76-0f7624c48eab",
+    "retrieved_at": "2026-11-13T01:31:41.465609+00:00",
+    "sha256": "769b0fe871bb7fdc7f440a7781bff0387795f21d08d97b6e9ab958deff6b237f",
+    "bytes": 2444446,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "realestate-wdp": {
+    "url": "https://wdp.eu/en",
+    "final_url": "https://wdp.eu/en",
+    "retrieved_at": "2026-11-13T01:31:52.693564+00:00",
+    "sha256": "e0aec149c6d61e05337a6da3028c373bc62f5dd7506c747a3596c4e836f55feb",
+    "bytes": 408401,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "coresite-ny3": {
+    "url": "https://www.coresite.com/news/coresite-launches-ny3-data-center-expanding-ai-optimized-capacity-in-the-new-york-metro-area",
+    "final_url": "https://www.coresite.com/news/coresite-launches-ny3-data-center-expanding-ai-optimized-capacity-in-the-new-york-metro-area",
+    "retrieved_at": "2026-11-13T01:32:37.578454+00:00",
+    "sha256": "ab006921111b84402bee22fc54b49847a898f1c049231b4b7506d06aff15253a",
+    "bytes": 131539,
+    "complete": true,
+    "commercial_redistribution_approved": false,
+    "publication_date": "2025-09-25",
+    "publication_date_pointer": "Article JSON-LD datePublished; dateModified not substituted"
+  },
+  "re-segro-terms": {
+    "url": "https://www.segro.com/disclaimer",
+    "final_url": "https://www.segro.com/disclaimer",
+    "retrieved_at": "2026-11-13T01:38:54.047552+00:00",
+    "sha256": "b4850578dfe9ff6ef9e9ec5261614abd47a608283f3d7418dbd00fdcf9f643bc",
+    "bytes": 113330,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "eqix-q3-presentation": {
+    "url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_presentation/Equinix_Q3_26_Earnings_Presentation_Final.pdf",
+    "final_url": "https://d1io3yog0oux5.cloudfront.net/_5aa07998df365d4c3afc50f9ba1a9099/equinix/db/2183/27073/earnings_presentation/Equinix_Q3_26_Earnings_Presentation_Final.pdf",
+    "retrieved_at": "2026-11-13T01:33:01.290679+00:00",
+    "sha256": "2b2d3aad052aa3b49a3e45e950eaabb0b4bd99498e53384fb813a41691adfaa3",
+    "bytes": 2084236,
+    "complete": true,
+    "commercial_redistribution_approved": false,
+    "report_period": "2026-09-30"
+  },
+  "re-segro-pipeline": {
+    "url": "https://www.segro.com/about/our-properties/building-development-approach",
+    "final_url": "https://www.segro.com/about/our-properties/building-development-approach",
+    "retrieved_at": "2026-11-13T01:38:51.924498+00:00",
+    "sha256": "96bbca5c2efa7d6ce9b25230fa5f80403d2aff4ee8d7914956c8e724bfef4515",
+    "bytes": 184074,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "re-segro-properties": {
+    "url": "https://www.segro.com/about/our-properties",
+    "final_url": "https://www.segro.com/about/our-properties",
+    "retrieved_at": "2026-11-13T01:38:49.627567+00:00",
+    "sha256": "30614a1fcc7c6e0ca7c390a81d73467420f5381f144369a7c87f72b85a8ffbe7",
+    "bytes": 119873,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "re-montea-terms": {
+    "url": "https://montea.com/en/disclaimer",
+    "final_url": "https://montea.com/en/disclaimer",
+    "retrieved_at": "2026-11-13T01:39:06.452533+00:00",
+    "sha256": "ba751a12c171c9c57d013eb79041516e218b5fe7b2c209a74142705db6c3687b",
+    "bytes": 132984,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "eqix-ir-results": {
+    "url": "https://investor.equinix.com/financial-information/financial-results",
+    "final_url": "https://investor.equinix.com/financial-information/financial-results",
+    "retrieved_at": "2026-11-13T01:33:04.021198+00:00",
+    "sha256": "05aba301d21a9e6944486a94d05161d0b0edb21e26d81b4db6e654740e778436",
+    "bytes": 360853,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "IRM-10k": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1020569/000102056926000013/irm-20251231.htm",
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1020569/000102056926000013/irm-20251231.htm",
+    "retrieved_at": "2026-11-13T01:35:24.372377+00:00",
+    "sha256": "4aecbb3312ab4354aff682cfc411ad248f44824a837848f7733de40db4feecef",
+    "bytes": 5086773,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "apld-polaris-building2": {
+    "url": "https://ir.applieddigital.com/news-events/press-releases/detail/157/applied-digital-delivers-second-building-at-polaris-forge-1",
+    "final_url": "https://ir.applieddigital.com/news-events/press-releases/detail/157/applied-digital-delivers-second-building-at-polaris-forge-1",
+    "retrieved_at": "2026-11-13T01:32:34.872240+00:00",
+    "sha256": "050d951b7bb4a5084de61ee3f07c8fccde9a5a6e434b049ef493c2e6f147592a",
+    "bytes": 30289,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "eqix-expansions": {
+    "url": "https://www.equinix.com/data-centers/expansions",
+    "final_url": "https://www.equinix.com/data-centers/expansions",
+    "retrieved_at": "2026-11-13T01:32:30.634156+00:00",
+    "sha256": "851c514f806273c20cadd7a0a246c36b474a14426bcf84df20bda176a294fa4a",
+    "bytes": 169529,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "coresite-news": {
+    "url": "https://www.coresite.com/news",
+    "final_url": "https://www.coresite.com/news",
+    "retrieved_at": "2026-11-13T01:30:21.158627+00:00",
+    "sha256": "5e41aec7ab330ef5e68828a757421c2cdc2c570d4b8a643638cc4e9f5426d4e1",
+    "bytes": 203601,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "eqix-sg6-open": {
+    "url": "https://investor.equinix.com/news-events/press-releases/detail/1130/equinix-opens-sg6-in-singapore-expanding-ai-ready-capacity",
+    "final_url": "https://investor.equinix.com/news-events/press-releases/detail/1130/equinix-opens-sg6-in-singapore-expanding-ai-ready-capacity",
+    "retrieved_at": "2026-11-13T01:32:32.072839+00:00",
+    "sha256": "4ce401970cc1a6a7752766cc9945e8aa45c605cab660518248626a5e2e2b481f",
+    "bytes": 122150,
+    "complete": true,
+    "commercial_redistribution_approved": false,
+    "publication_date": "2026-11-06",
+    "publication_date_pointer": "Released November 6, 2026 footer"
+  },
+  "osm-licence": {
+    "url": "https://www.openstreetmap.org/copyright",
+    "final_url": "https://www.openstreetmap.org/copyright",
+    "retrieved_at": "2026-11-13T01:37:35.879694+00:00",
+    "sha256": "e403ae91cd747df24beb11094237af461f445869f5499842b83348bcd506643a",
+    "bytes": 21314,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "re-goodman-properties": {
+    "url": "https://www.goodman.com/our-properties/global-property-portfolio",
+    "final_url": "https://www.goodman.com/our-properties/global-property-portfolio",
+    "retrieved_at": "2026-11-13T01:38:55.646750+00:00",
+    "sha256": "52ab081e6041041f2ce1d33dedc40e7e82adf19e85ed13fec2c4525b9a3a9b03",
+    "bytes": 178712,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "DLR-latest-10q": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926120710/dlr-20260930x10q.htm",
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926120710/dlr-20260930x10q.htm",
+    "retrieved_at": "2026-11-13T01:30:15.119071+00:00",
+    "sha256": "a676aee1254860c8b032a9fdaeade0fe0c707c377c901b366a96c192f8f6059f",
+    "bytes": 4868218,
+    "complete": true,
+    "commercial_redistribution_approved": false,
+    "publication_date": "2026-10-30",
+    "report_period": "2026-09-30",
+    "accession": "0001104659-26-120710"
+  },
+  "dlr-ir": {
+    "url": "https://investor.digitalrealty.com/financials/quarterly-results",
+    "final_url": "https://investor.digitalrealty.com/financials/quarterly-results",
+    "retrieved_at": "2026-11-13T01:30:19.402701+00:00",
+    "sha256": "ca983d2cd15911f8eedc31e0d12a3d74f5f5f5f59909f0e6d9d654954c73c6bc",
+    "bytes": 249620,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "AMT-latest-10q": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000157/amt-20260930.htm",
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000157/amt-20260930.htm",
+    "retrieved_at": "2026-11-13T01:30:17.912119+00:00",
+    "sha256": "610c29ad1b5c8808ae4982a4a0929d39baf51fec866274d7695a836ba9dfb905",
+    "bytes": 2607746,
+    "complete": true,
+    "commercial_redistribution_approved": false,
+    "publication_date": "2026-10-27",
+    "report_period": "2026-09-30",
+    "accession": "0001053507-26-000157"
+  },
+  "eqix-ir-home": {
+    "url": "https://investor.equinix.com",
+    "final_url": "https://investor.equinix.com",
+    "retrieved_at": "2026-11-13T01:31:42.919893+00:00",
+    "sha256": "d9a364b8e7b02668485b9f3a6a786d6742dbc24173938a6a53168ab0fcd9a67c",
+    "bytes": 138273,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "EQIX-latest-10q": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000180/eqix-20260930.htm",
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000180/eqix-20260930.htm",
+    "retrieved_at": "2026-11-13T01:30:12.254981+00:00",
+    "sha256": "16ecb9d24bb4d0e65a45dfdb95b97f993777c39886097d24d996dc671b719bfd",
+    "bytes": 2908793,
+    "complete": true,
+    "commercial_redistribution_approved": false,
+    "publication_date": "2026-10-28",
+    "report_period": "2026-09-30",
+    "accession": "0001101239-26-000180"
+  },
+  "DLR-submissions": {
+    "url": "https://data.sec.gov/submissions/CIK0001297996.json",
+    "final_url": "https://data.sec.gov/submissions/CIK0001297996.json",
+    "retrieved_at": "2026-11-13T01:30:13.534671+00:00",
+    "sha256": "6e6b59fb95554da58e47e15956fc5c7c0cc465b9941ff4fe22c3c4e5acc7e1f9",
+    "bytes": 161432,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "EQIX-submissions": {
+    "url": "https://data.sec.gov/submissions/CIK0001101239.json",
+    "final_url": "https://data.sec.gov/submissions/CIK0001101239.json",
+    "retrieved_at": "2026-11-13T01:30:10.838260+00:00",
+    "sha256": "55282974969ca99abe97f799fd65204918eb79a718eddbb4362432afd3bc7c8a",
+    "bytes": 158343,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "coresite-va1-current": {
+    "url": "https://www.coresite.com/data-center/va1-reston-va",
+    "final_url": "https://www.coresite.com/data-center/va1-reston-va",
+    "retrieved_at": "2026-11-13T01:35:25.701533+00:00",
+    "sha256": "7396c2c3578b200b7e477f2fb607b62ecc70a968d38a11a0e7bc4e18434e30a0",
+    "bytes": 217547,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "DLR-10k-full": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm",
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm",
+    "retrieved_at": "2026-11-13T01:30:09.584725+00:00",
+    "sha256": "ead77317c7fa72fe1a0e4759c54684c354dfc7af025b268ca5b5eab2bf55c7b4",
+    "bytes": 8453172,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "re-goodman-terms": {
+    "url": "https://www.goodman.com/terms-and-conditions",
+    "final_url": "https://www.goodman.com/terms-and-conditions",
+    "retrieved_at": "2026-11-13T01:38:57.216796+00:00",
+    "sha256": "6f66e5aa83bc4d30c00bacd958c954757c41e844fcc132ad0ac83845ff2d99be",
+    "bytes": 185983,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "re-prologis-ir": {
+    "url": "https://ir.prologis.com/",
+    "final_url": "https://ir.prologis.com/",
+    "retrieved_at": "2026-11-13T01:39:07.895156+00:00",
+    "sha256": "c449c4d559961223a3a46adb3d019f18bfb6665abafe2c23dffff50d1f8ac42d",
+    "bytes": 267406,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "re-wdp-portfolio": {
+    "url": "https://wdp.eu/en/investors/portfolio",
+    "final_url": "https://wdp.eu/en/investors/portfolio",
+    "retrieved_at": "2026-11-13T01:39:01.354305+00:00",
+    "sha256": "1805c1ae39e3ca8661e84e39bb95c7a6e859ba14a9ade856ba8f76d807820608",
+    "bytes": 265267,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "apld-ir": {
+    "url": "https://ir.applieddigital.com/news-events/press-releases",
+    "final_url": "https://ir.applieddigital.com/news-events/press-releases",
+    "retrieved_at": "2026-11-13T01:31:44.368095+00:00",
+    "sha256": "512429568e701a9002656e8cfb18bd13cd1824af5fa36447fd373134f4f934d7",
+    "bytes": 32019,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "APLD-submissions": {
+    "url": "https://data.sec.gov/submissions/CIK0001144879.json",
+    "final_url": "https://data.sec.gov/submissions/CIK0001144879.json",
+    "retrieved_at": "2026-11-13T01:35:20.099479+00:00",
+    "sha256": "2c6ff9d0226bad88a77aaf3aba50b853d3075dea20995bdf6cd3788caf7cd56d",
+    "bytes": 141504,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "landsat-licence": {
+    "url": "https://www.usgs.gov/landsat-missions/landsat-data-access",
+    "final_url": "https://www.usgs.gov/landsat-missions/landsat-data-access",
+    "retrieved_at": "2026-11-13T01:37:41.166270+00:00",
+    "sha256": "27c5a6b9631604fd23dfbbff1015443c435ccf1c408893debc30a4fa20b54bcd",
+    "bytes": 216152,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "coresite-de3": {
+    "url": "https://www.coresite.com/news/coresite-achieves-key-construction-milestone-for-new-de3-data-center-in-denver",
+    "final_url": "https://www.coresite.com/news/coresite-achieves-key-construction-milestone-for-new-de3-data-center-in-denver",
+    "retrieved_at": "2026-11-13T01:32:36.279513+00:00",
+    "sha256": "4d3f2a072a4226246f3664b5c932300e8e7f7391b562f3801ce5b63b11fbe8c8",
+    "bytes": 132710,
+    "complete": true,
+    "commercial_redistribution_approved": false,
+    "publication_date": "2025-10-06",
+    "publication_date_pointer": "Article JSON-LD datePublished; dateModified not substituted"
+  },
+  "APLD-10k": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm",
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000048/apld-20260531.htm",
+    "retrieved_at": "2026-11-13T01:35:21.723158+00:00",
+    "sha256": "0c84f5672956b0fe3cf5cc2d9f1f375adb94e86fea8a35b6fd581afe6221fa03",
+    "bytes": 3089209,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "realestate-goodman": {
+    "url": "https://www.goodman.com/",
+    "final_url": "https://www.goodman.com/",
+    "retrieved_at": "2026-11-13T01:31:48.598355+00:00",
+    "sha256": "ab0a1273aac7af4e005b1b5c837bdccb7b1fce7c03c58251b572e0a9fe996919",
+    "bytes": 245052,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "AMT-submissions": {
+    "url": "https://data.sec.gov/submissions/CIK0001053507.json",
+    "final_url": "https://data.sec.gov/submissions/CIK0001053507.json",
+    "retrieved_at": "2026-11-13T01:30:16.341442+00:00",
+    "sha256": "60eac869e57ded8c1874282b520d7ce243e548fa6a89bb62b14c525a3aad6765",
+    "bytes": 161990,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "realestate-montea": {
+    "url": "https://montea.com/en",
+    "final_url": "https://montea.com/en",
+    "retrieved_at": "2026-11-13T01:31:54.293081+00:00",
+    "sha256": "5a8a657831275f2b7998ca2d185ed39d6c84f83bf4e7591b1a709ac9f7b2ba2a",
+    "bytes": 236122,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "eqix-dir": {
+    "url": "https://www.equinix.com/data-centers",
+    "final_url": "https://www.equinix.com/data-centers",
+    "retrieved_at": "2026-11-13T00:56:33.003344+00:00",
+    "sha256": "b30e6a09868639c2d29b513ed84ec1d87e19cc5246e6af49c04cd891dde9891e",
+    "bytes": 246188,
+    "commercial_redistribution_approved": false
+  },
+  "coresite-va1": {
+    "url": "https://www.coresite.com/data-center/va1-reston-va",
+    "final_url": "https://www.coresite.com/data-center/va1-reston-va",
+    "retrieved_at": "2026-11-13T01:00:09.603401+00:00",
+    "sha256": "7396c2c3578b200b7e477f2fb607b62ecc70a968d38a11a0e7bc4e18434e30a0",
+    "bytes": 217547,
+    "commercial_redistribution_approved": false
+  },
+  "dlr-robots": {
+    "url": "https://www.digitalrealty.com/robots.txt",
+    "final_url": "https://www.digitalrealty.com/robots.txt",
+    "retrieved_at": "2026-11-13T00:56:31.735357+00:00",
+    "sha256": "40e594e9e016e6d18005930bfa837a66cb48f962a6c94883d71b31e5d331ee73",
+    "bytes": 123,
+    "commercial_redistribution_approved": false
+  },
+  "coresite-va": {
+    "url": "https://www.coresite.com/data-center-locations/northern-virginia",
+    "final_url": "https://www.coresite.com/data-center-locations/northern-virginia",
+    "retrieved_at": "2026-11-13T00:58:45.637659+00:00",
+    "sha256": "2e28a9c953f77547fa46d6fab89c00d047f73788671441160a12f46795ef9820",
+    "bytes": 177214,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "2257": {
+    "url": "https://www.digitalrealty.com/data-centers/americas/northern-virginia/acc5",
+    "final_url": "https://www.digitalrealty.com/data-centers/americas/northern-virginia/acc5",
+    "retrieved_at": "2026-11-13T00:57:55.073578+00:00",
+    "sha256": "e15adb7f9d4b84fb4f52398045f2c8b209b23924866e2a94e03d896953f77a26",
+    "bytes": 201122,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "2290": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/copenhagen/cph1",
+    "final_url": "https://www.digitalrealty.com/data-centers/emea/copenhagen/cph1",
+    "retrieved_at": "2026-11-13T00:58:16.214392+00:00",
+    "sha256": "09983620f6b14b3cf43f2f4cbd04a34ca90f051f3f6229db020e245bdec9a7fb",
+    "bytes": 203521,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "EQIX-10k": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "retrieved_at": "2026-11-13T00:59:52.992782+00:00",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "bytes": 4071991,
+    "commercial_redistribution_approved": false
+  },
+  "2413": {
+    "url": "https://www.digitalrealty.com/data-centers/americas/queretaro/mex01",
+    "final_url": "https://www.digitalrealty.com/data-centers/americas/queretaro/mex01",
+    "retrieved_at": "2026-11-13T00:58:02.771444+00:00",
+    "sha256": "8250a65fee9929c2b0529cb1a8bfb571892b767e0262d8d642b5c7a455b74f65",
+    "bytes": 193804,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "sec": {
+    "url": "https://www.sec.gov/files/company_tickers_exchange.json",
+    "sha256": "98d357e2c5b2fb5bfdb085f3d6a9010036e43a2306e63563061b1997d1e8224e",
+    "retrieved_at": "2026-11-13T01:02:07.615487+00:00",
+    "timestamp_note": "Receipt assembled after response; not a source publication date",
+    "bytes": 521966,
+    "commercial_redistribution_approved": false
+  },
+  "2344": {
+    "url": "https://www.digitalrealty.com/data-centers/americas/fortaleza/ftz01",
+    "final_url": "https://www.digitalrealty.com/data-centers/americas/fortaleza/ftz01",
+    "retrieved_at": "2026-11-13T00:58:00.831225+00:00",
+    "sha256": "52a1b8b7ac94c863eb2cb5beb91d943c7c847de91cf8fc65db7e209341eed1b1",
+    "bytes": 197901,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "coresite-dir": {
+    "url": "https://www.coresite.com/data-centers",
+    "final_url": "https://www.coresite.com/data-centers/locations",
+    "retrieved_at": "2026-11-13T00:56:34.598639+00:00",
+    "sha256": "1c8a8baa9ec1593f033d9aba5c2ff617d90217e3c3d20a4eb70c6e6bd63e70ff",
+    "bytes": 182680,
+    "commercial_redistribution_approved": false
+  },
+  "2310": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/dublin/dub1",
+    "final_url": "https://www.digitalrealty.com/data-centers/emea/dublin/dub1",
+    "retrieved_at": "2026-11-13T00:58:04.147528+00:00",
+    "sha256": "92f2f019ca81ece96e288797a792c218ecc76f5b81e124b5a5d88f2f204d1f43",
+    "bytes": 200943,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "2293": {
+    "url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/cps01",
+    "final_url": "https://www.digitalrealty.com/data-centers/americas/sao-paulo/cps01",
+    "retrieved_at": "2026-11-13T00:57:58.932591+00:00",
+    "sha256": "8fca79f7a82f62c75fa32628ceaad3b0377381574dcfe233fdc7370652e7b2da",
+    "bytes": 197123,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "24413": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/accra/acr2",
+    "final_url": "https://www.digitalrealty.com/data-centers/emea/accra/acr2",
+    "retrieved_at": "2026-11-13T00:58:39.259315+00:00",
+    "sha256": "4cbee691d3ecfa271eae55ba00fa684f0abd9994292907750414cb3142027017",
+    "bytes": 190188,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "2294": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/cape-town/ct1",
+    "final_url": "https://www.digitalrealty.com/data-centers/emea/cape-town/ct1",
+    "retrieved_at": "2026-11-13T00:58:29.941090+00:00",
+    "sha256": "d1f5af25fd3457868aebb39e6dc3a1a49984722df6fd07fa4daaf32d59163ae7",
+    "bytes": 182462,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "eqix-dc2": {
+    "url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/washington-dc-data-centers/dc2",
+    "final_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/washington-dc-data-centers/dc2",
+    "retrieved_at": "2026-11-13T00:58:42.950288+00:00",
+    "sha256": "602b82f1eeb5d793c6e4471a31a09024ea6429660bfa16bd836d54bd7fe0c877",
+    "bytes": 311409,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "2256": {
+    "url": "https://www.digitalrealty.com/data-centers/americas/northern-virginia/acc4",
+    "final_url": "https://www.digitalrealty.com/data-centers/americas/northern-virginia/acc4",
+    "retrieved_at": "2026-11-13T00:57:53.637761+00:00",
+    "sha256": "3374c9f47568bfc0bbee39d9e3f212beef24f1532c27e1eeabe83a7304a5bfdd",
+    "bytes": 201603,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "DLR-10k": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm",
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm",
+    "retrieved_at": "2026-11-13T00:59:57.823437+00:00",
+    "sha256": "c183a976e239d454422d8e5e0a35963e9af1956b35bdd97a791f39dd969f8d18",
+    "bytes": 8000000,
+    "complete_response": false,
+    "note": "Bounded first 8,000,000 bytes; cover evidence only, not a complete filing",
+    "commercial_redistribution_approved": false
+  },
+  "2412": {
+    "url": "https://www.digitalrealty.com/data-centers/asia-pacific/melbourne/mel11",
+    "final_url": "https://www.digitalrealty.com/data-centers/asia-pacific/melbourne/mel11",
+    "retrieved_at": "2026-11-13T00:58:24.080157+00:00",
+    "sha256": "89f0d6f03d2e1876f319cd95cc9829192c703da1c61e61c0f4e42371e56e9e4b",
+    "bytes": 201848,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "2311": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/dublin/dub10",
+    "final_url": "https://www.digitalrealty.com/data-centers/emea/dublin/dub10",
+    "retrieved_at": "2026-11-13T00:58:06.077167+00:00",
+    "sha256": "b66d7170d80bd803eb8afa49b23adead4324f617f2cd9d2da9a1d37030c1c479",
+    "bytes": 202597,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "eqix-sv1": {
+    "url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/silicon-valley-data-centers/sv1",
+    "final_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/silicon-valley-data-centers/sv1",
+    "retrieved_at": "2026-11-13T00:58:44.344843+00:00",
+    "sha256": "e0b4d5db0a39219134434162542c866ac7b13b928d29f1092c035d24c5a875cf",
+    "bytes": 308339,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "dlr-global": {
+    "url": "https://www.digitalrealty.com/data-centers",
+    "final_url": "https://www.digitalrealty.com/data-centers",
+    "retrieved_at": "2026-11-13T00:56:29.340267+00:00",
+    "sha256": "8b08643bdba4c301f5dec441adcd7edf3976a0f611f036dccfe0a2181b2448b6",
+    "bytes": 1113663,
+    "commercial_redistribution_approved": false
+  },
+  "2408": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/madrid/mad1",
+    "final_url": "https://www.digitalrealty.com/data-centers/emea/madrid/mad1",
+    "retrieved_at": "2026-11-13T00:58:13.770570+00:00",
+    "sha256": "a94f271c0798e4ef72eafc7d93d64cfc2b1de515108280c78c4eb681fa7e49d0",
+    "bytes": 204517,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "dlr-terms": {
+    "url": "https://www.digitalrealty.com/about/legal/terms",
+    "final_url": "https://www.digitalrealty.com/about/legal/terms",
+    "retrieved_at": "2026-11-13T00:58:40.460702+00:00",
+    "sha256": "de1a04b3e56b8a3f771497445143e81ba21ea68c4c59a1a88fd5dd1052de6aad",
+    "bytes": 200335,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "2388": {
+    "url": "https://www.digitalrealty.com/data-centers/asia-pacific/osaka/kix11",
+    "final_url": "https://www.digitalrealty.com/data-centers/asia-pacific/osaka/kix11",
+    "retrieved_at": "2026-11-13T00:58:20.064270+00:00",
+    "sha256": "c6a5f6a6b99be86fb38cd83dd9759acd8ab0294d9eea52bb18d7ae29fa84b208",
+    "bytes": 192505,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "2416": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/marseille/mrs1",
+    "final_url": "https://www.digitalrealty.com/data-centers/emea/marseille/mrs1",
+    "retrieved_at": "2026-11-13T00:58:11.800887+00:00",
+    "sha256": "7d0e412c10469f592bb183361275a1cc2410af5af7032ccb33eeafdff01aca74",
+    "bytes": 204186,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "11459": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/maputo/mpm1",
+    "final_url": "https://www.digitalrealty.com/data-centers/emea/maputo/mpm1",
+    "retrieved_at": "2026-11-13T00:58:37.360376+00:00",
+    "sha256": "5c99104147c47ffbc695c90f28cb1c5d97a1948ae2df557381de3f63b5ea71ae",
+    "bytes": 187689,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "dlr": {
+    "url": "https://www.digitalrealty.com/data-centers/americas/northern-virginia",
+    "sha256": "8025ec5aca54a94eb3cf61bc092599189c02db7e9ad58823aee0d8e8bc3bfe1a",
+    "retrieved_at": "2026-11-13T01:02:07.613850+00:00",
+    "timestamp_note": "Receipt assembled after response; not a source publication date",
+    "bytes": 615124,
+    "commercial_redistribution_approved": false
+  },
+  "eqix-terms": {
+    "url": "https://www.equinix.com/about/legal/terms",
+    "final_url": "https://www.equinix.com/about/legal/terms",
+    "retrieved_at": "2026-11-13T00:58:41.623792+00:00",
+    "sha256": "ad1e34b3f3c6cf05cb30726119e0cd983d029d70e0dc9fc7393a740cf4a03b22",
+    "bytes": 106449,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "eqix-dx1": {
+    "url": "https://www.equinix.com/data-centers/europe-colocation/united-arab-emirates-colocation/dubai-data-centers/dx1",
+    "final_url": "https://www.equinix.com/data-centers/europe-colocation/united-arab-emirates-colocation/dubai-data-centers/dx1",
+    "retrieved_at": "2026-11-13T01:02:48.099707+00:00",
+    "sha256": "b248b2168d43b3c1c09fb7711301146814dd7af455a69523ae60b07e5c8e1929",
+    "bytes": 286178,
+    "commercial_redistribution_approved": false
+  },
+  "2475": {
+    "url": "https://www.digitalrealty.com/data-centers/americas/toronto/tor1",
+    "final_url": "https://www.digitalrealty.com/data-centers/americas/toronto/tor1",
+    "retrieved_at": "2026-11-13T00:57:57.002131+00:00",
+    "sha256": "f09e33dcb2df1469834dc5e38b9e35dae931561df634ce738b3d23b81e4fab01",
+    "bytes": 219602,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "2411": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/mombasa/mba1",
+    "final_url": "https://www.digitalrealty.com/data-centers/emea/mombasa/mba1",
+    "retrieved_at": "2026-11-13T00:58:35.465894+00:00",
+    "sha256": "edc4bea1858f4c2c27df04b71617bb85ea9bc3bac3310340cf17206073272c78",
+    "bytes": 188043,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "coresite-robots": {
+    "url": "https://www.coresite.com/robots.txt",
+    "final_url": "https://www.coresite.com/robots.txt",
+    "retrieved_at": "2026-11-13T00:58:46.812200+00:00",
+    "sha256": "ea8e85a2b5420fc4539c4997c85a6821500c4e4a4ebb410b0c926f648fddb5ce",
+    "bytes": 165,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "eqix-robots": {
+    "url": "https://www.equinix.com/robots.txt",
+    "final_url": "https://www.equinix.com/robots.txt",
+    "retrieved_at": "2026-11-13T00:58:47.906602+00:00",
+    "sha256": "d934dba7f8df0a57de670edaff19df50b155ee04589f5a533aac6d23321853bb",
+    "bytes": 56,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "2448": {
+    "url": "https://www.digitalrealty.com/data-centers/asia-pacific/singapore/sin10",
+    "final_url": "https://www.digitalrealty.com/data-centers/asia-pacific/singapore/sin10",
+    "retrieved_at": "2026-11-13T00:58:22.118789+00:00",
+    "sha256": "171796c526954f6601c3e68c8cf48cf53cec986d1e56d815d9beb37e9fae7234",
+    "bytes": 206759,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "2295": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/cape-town/ct2",
+    "final_url": "https://www.digitalrealty.com/data-centers/emea/cape-town/ct2",
+    "retrieved_at": "2026-11-13T00:58:31.466339+00:00",
+    "sha256": "da8b0fad4829c3f56e54d7b6ad746be0895231ac9a855b06dcf48a3d2a46437e",
+    "bytes": 203638,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "2387": {
+    "url": "https://www.digitalrealty.com/data-centers/asia-pacific/osaka/kix10",
+    "final_url": "https://www.digitalrealty.com/data-centers/asia-pacific/osaka/kix10",
+    "retrieved_at": "2026-11-13T00:58:18.095916+00:00",
+    "sha256": "e4856d8319ba410ccafedc741ecf4f690acf79583f31253bbffd85870d80326b",
+    "bytes": 191967,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "1790": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/amsterdam/ams7",
+    "final_url": "https://www.digitalrealty.com/data-centers/emea/amsterdam/ams7",
+    "retrieved_at": "2026-11-13T00:58:08.023100+00:00",
+    "sha256": "95cceeeb8db597d34c7b17d79b45491550900005efa339341a66acabc24e8f77",
+    "bytes": 205755,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "2316": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/dusseldorf/dus1",
+    "final_url": "https://www.digitalrealty.com/data-centers/emea/dusseldorf/dus1",
+    "retrieved_at": "2026-11-13T00:58:09.915629+00:00",
+    "sha256": "915166d8113e3956b40a75c2baddd450f207ce6075bcfd2584725d258dac7f2f",
+    "bytes": 201403,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "2405": {
+    "url": "https://www.digitalrealty.com/data-centers/emea/lagos/los1",
+    "final_url": "https://www.digitalrealty.com/data-centers/emea/lagos/los1",
+    "retrieved_at": "2026-11-13T00:58:33.493266+00:00",
+    "sha256": "9e8d95bbabb95004c93dd544c6e389c4f748d308e2e83859c9052ef85bf4a09a",
+    "bytes": 177364,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "3389": {
+    "url": "https://www.digitalrealty.com/data-centers/asia-pacific/chennai/maa10",
+    "final_url": "https://www.digitalrealty.com/data-centers/asia-pacific/chennai/maa10",
+    "retrieved_at": "2026-11-13T00:58:26.048298+00:00",
+    "sha256": "d72e84a0f04dbf37944d17c2e929ea7c57e64f0019baade8834b202210557cc0",
+    "bytes": 187287,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "2379": {
+    "url": "https://www.digitalrealty.com/data-centers/asia-pacific/seoul/icn10",
+    "final_url": "https://www.digitalrealty.com/data-centers/asia-pacific/seoul/icn10",
+    "retrieved_at": "2026-11-13T00:58:28.019351+00:00",
+    "sha256": "90b5108d6f509f3e32a11d5b3a29b037aacf7b6c64768fec1446b5edc9cf5712",
+    "bytes": 203629,
+    "status": 200,
+    "commercial_redistribution_approved": false
+  },
+  "AMT-10k": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000035/amt-20251231.htm",
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000035/amt-20251231.htm",
+    "retrieved_at": "2026-11-13T01:00:08.309701+00:00",
+    "sha256": "fb453bdf34d5cd97ed91e28b37cf34a58cbe267d22e09050d436aea6d0095b01",
+    "bytes": 4332529,
+    "commercial_redistribution_approved": false
+  },
+  "wikidata-geo": {
+    "url": "https://query.wikidata.org/sparql?query=SELECT+%3Fitem+%3Fname+%3Fcoord+%3Faddress+%3Fwebsite+WHERE+%7B+VALUES+%3Fname+%7B+%22Equinix+DC2%22%40en+%22Equinix+SV1%22%40en+%22Equinix+DX1%22%40en+%22Equinix+SV1+Data+Center%22%40en+%22Equinix+DC2+Data+Center%22%40en+%7D+%3Fitem+rdfs%3Alabel+%3Fname+.+OPTIONAL+%7B%3Fitem+wdt%3AP625+%3Fcoord%7D+OPTIONAL+%7B%3Fitem+wdt%3AP6375+%3Faddress%7D+OPTIONAL+%7B%3Fitem+wdt%3AP856+%3Fwebsite%7D+%7D+LIMIT+20&format=json",
+    "final_url": "https://query.wikidata.org/sparql?query=SELECT+%3Fitem+%3Fname+%3Fcoord+%3Faddress+%3Fwebsite+WHERE+%7B+VALUES+%3Fname+%7B+%22Equinix+DC2%22%40en+%22Equinix+SV1%22%40en+%22Equinix+DX1%22%40en+%22Equinix+SV1+Data+Center%22%40en+%22Equinix+DC2+Data+Center%22%40en+%7D+%3Fitem+rdfs%3Alabel+%3Fname+.+OPTIONAL+%7B%3Fitem+wdt%3AP625+%3Fcoord%7D+OPTIONAL+%7B%3Fitem+wdt%3AP6375+%3Faddress%7D+OPTIONAL+%7B%3Fitem+wdt%3AP856+%3Fwebsite%7D+%7D+LIMIT+20&format=json",
+    "retrieved_at": "2026-11-13T01:45:39.048246+00:00",
+    "sha256": "4c25ed9ba798ae31cbc8079d2450c4ec5c1d1c86aa321fffce6d2f021e5b516a",
+    "bytes": 125,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "usgs-copyright": {
+    "url": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+    "final_url": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+    "retrieved_at": "2026-11-13T01:47:28.821421+00:00",
+    "sha256": "5eeec876715ee7c9a04426f63b1179b0e03478e2a36f7d6a903b446da2249704",
+    "bytes": 88994,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "re-montea-properties": {
+    "url": "https://montea.com/en/warehouses",
+    "final_url": "https://montea.com/en/warehouses",
+    "retrieved_at": "2026-11-13T01:45:16.464294+00:00",
+    "sha256": "1a1a5244b67dd7c75a2bf0ecb5c92e6337a069f19f386aa9fad5902183394e5d",
+    "bytes": 743180,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "re-prologis-supplement": {
+    "url": "https://d1io3yog0oux5.cloudfront.net/_3fd53a5288f6d3b808cc28184d7a5926/prologis/db/2346/24099/supplemental_financial_report_pdf/Q3_2026_Prologis_Earnings_Supplemental.pdf",
+    "final_url": "https://d1io3yog0oux5.cloudfront.net/_3fd53a5288f6d3b808cc28184d7a5926/prologis/db/2346/24099/supplemental_financial_report_pdf/Q3_2026_Prologis_Earnings_Supplemental.pdf",
+    "retrieved_at": "2026-11-13T01:45:17.918059+00:00",
+    "sha256": "017c5581a0edd83c4d3bdb20ac781a3dddb6f7203c622e9ce20140fb97ba10fd",
+    "bytes": 6568221,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "commons-sv1-search": {
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Equinix%22+%22SV1%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata",
+    "final_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Equinix%22+%22SV1%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata",
+    "retrieved_at": "2026-11-13T01:46:02.418420+00:00",
+    "sha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+    "bytes": 20,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  },
+  "coresite-de3-current": {
+    "url": "https://www.coresite.com/data-center/de3-denver-co",
+    "final_url": "https://www.coresite.com/data-center/de3-denver-co",
+    "retrieved_at": "2026-11-13T01:50:44.861308+00:00",
+    "sha256": "3c20f0d52e8e96cb22dd7a6da928b053d8e772bb5c6995cc6196f6f155efde31",
+    "bytes": 192178,
+    "complete": true,
+    "commercial_redistribution_approved": false
+  }
+}
