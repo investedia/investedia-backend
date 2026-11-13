@@ -12,5 +12,11 @@
  "gate_blocked": {
   "Required factual reuse unresolved": 10
  },
- "publication": "Not published. Owner approval required; NEXTDC additionally needs permission/legal review."
+ "publication": "29 Equinix records approved by the owner (\"publish the 29\", 13 Nov 2026) and published via investedia-frontend#109 (merge 1bae96bf). NEXTDC (10) not published: reuse decision pending. SC2 on hold.",
+ "owner_approval": {
+  "date": "2026-11-13",
+  "scope": "29 Equinix development phases",
+  "frontend_pr": "investedia/investedia-frontend#109",
+  "merge_commit": "1bae96bfda13c173b7a14ae354d374ef044e0315"
+ }
 }
