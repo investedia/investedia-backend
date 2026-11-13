@@ -188,6 +188,13 @@ def build(power_rows, iso, registry, ledger, today, extra=()):
         for e in p['exposures']:
             v = e['verification']
             e['hq'] = HQ['by_lei'].get(v['identity'].get('id')) or HQ['by_ticker'].get(v['listing'].get('ticker'))
+    # Owner-approved location corrections (location-overrides.json); GEM's point is kept for reference.
+    lo_path = ROOT / 'data/projects/invest/location-overrides.json'
+    LO = json.loads(lo_path.read_text())['overrides'] if lo_path.exists() else {}
+    for p in public:
+        if p['id'] in LO:
+            o = LO[p['id']]
+            p.update(lat=o['lat'], lon=o['lon'], precision=o['precision'], location_note={'gem_point': o['gem_point'], 'method': o['method'], 'sources': o['sources']})
     # Satellite pictures (tools/projects/invest/imagery.py): exact locations only.
     im_path = ROOT / 'data/projects/invest/imagery.json'
     IM = json.loads(im_path.read_text())['images'] if im_path.exists() else {}

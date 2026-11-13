@@ -2091,6 +2091,31 @@
     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
    }
   },
-  "gem:L100000401075:x": {}
+  "gem:L100000401075:x": {
+   "now": {
+    "file": "gem-L100000401075-x-now.jpg",
+    "date": "2026-05-30",
+    "scene": "S2B_T37QDF_20260530T075542_L2A",
+    "sha256": "ef1a2ec8718af17215ccda472aee934306ef6bba4e276879c8e4199ab70704b1",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+    "manual_check": "2026-11-13"
+   }
+  },
+  "gem:L100000601853": {
+   "now": {
+    "file": "gem-L100000601853-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T46RGS_20261108T042411_L2A",
+    "sha256": "cc854d38d3e5f4a20d6b9f61ae8ff2bda0366a933da35ac6c3a4835d68ec4258",
+    "width_km": 4.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+    "manual_check": "2026-11-13"
+   }
+  }
  }
 }

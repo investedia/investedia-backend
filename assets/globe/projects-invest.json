@@ -18033,15 +18033,39 @@
     }
    ],
    "id": "gem:L100000601853",
+   "images": {
+    "now": {
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "date": "2026-11-08",
+     "file": "gem-L100000601853-now.jpg",
+     "manual_check": "2026-11-13",
+     "resolution_m": 10,
+     "scene": "S2C_T46RGS_20261108T042411_L2A",
+     "sha256": "cc854d38d3e5f4a20d6b9f61ae8ff2bda0366a933da35ac6c3a4835d68ec4258",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 4.0
+    }
+   },
    "kind": "Hydropower",
-   "lat": 28.0938,
-   "lon": 94.5921,
+   "lat": 28.3375,
+   "location_note": {
+    "gem_point": [
+     28.0938,
+     94.5921
+    ],
+    "method": "Coordinate from Wikipedia 'Dibang Dam' (secondary); confirmed by Sentinel-2 scene S2C_T46RGS_20261108T042411_L2A showing dam construction at a river confluence, matching NHPC's site description (Munli, ~1.5 km upstream of Ashu Pani-Dibang confluence)",
+    "sources": [
+     "https://www.nhpcindia.com/welcome/project_detail/6/3",
+     "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Dibang_Dam"
+    ]
+   },
+   "lon": 95.7708,
    "mw": 2880.0,
    "name": "Dibang Multipurpose hydroelectric plant",
    "other_owners": [],
    "phase": null,
    "plant_name": "Dibang Multipurpose hydroelectric plant",
-   "precision": "approximate",
+   "precision": "exact",
    "progress": null,
    "sector": "Energy & Utilities",
    "source": {
@@ -20078,6 +20102,19 @@
     }
    ],
    "id": "gem:L100000401075:x",
+   "images": {
+    "now": {
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "date": "2026-05-30",
+     "file": "gem-L100000401075-x-now.jpg",
+     "manual_check": "2026-11-13",
+     "resolution_m": 10,
+     "scene": "S2B_T37QDF_20260530T075542_L2A",
+     "sha256": "ef1a2ec8718af17215ccda472aee934306ef6bba4e276879c8e4199ab70704b1",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 3.0
+    }
+   },
    "kind": "Oil & gas",
    "lat": 22.628931,
    "lon": 39.046689,
