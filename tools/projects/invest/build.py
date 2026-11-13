@@ -188,6 +188,16 @@ def build(power_rows, iso, registry, ledger, today, extra=()):
         for e in p['exposures']:
             v = e['verification']
             e['hq'] = HQ['by_lei'].get(v['identity'].get('id')) or HQ['by_ticker'].get(v['listing'].get('ticker'))
+    # Withheld links (holds.json): relationship changed per a newer company document; kept in research, not public.
+    ho_path = ROOT / 'data/projects/invest/holds.json'
+    HO = json.loads(ho_path.read_text())['by_project'] if ho_path.exists() else {}
+    public = [p for p in public if p['id'] not in HO]
+    # Company-stated construction costs (costs.json), only where the batch record has none.
+    co_path = ROOT / 'data/projects/invest/costs.json'
+    CO = json.loads(co_path.read_text())['by_project'] if co_path.exists() else {}
+    for p in public:
+        if p['id'] in CO and not p.get('cost'):
+            p['cost'] = CO[p['id']]
     # Owner-approved location corrections (location-overrides.json); GEM's point is kept for reference.
     lo_path = ROOT / 'data/projects/invest/location-overrides.json'
     LO = json.loads(lo_path.read_text())['overrides'] if lo_path.exists() else {}

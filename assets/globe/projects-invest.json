@@ -5473,7 +5473,16 @@
   },
   {
    "cc": "US",
-   "cost": null,
+   "cost": {
+    "amount": 1200000000.0,
+    "basis": "initial estimated total cost (company, Sept 2021 application)",
+    "currency": "USD",
+    "document_date": "2026-02-19",
+    "publisher": "Entergy Corporation (Form 10-K)",
+    "quote": "at an initially-estimated expected total cost of $1.2 billion",
+    "revised": null,
+    "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm"
+   },
    "country": "United States",
    "eia_status": "TS",
    "expected": "2026-10",
@@ -6252,7 +6261,16 @@
   },
   {
    "cc": "US",
-   "cost": null,
+   "cost": {
+    "amount": 1200000000.0,
+    "basis": "company estimate",
+    "currency": "USD",
+    "document_date": "2026-02-19",
+    "publisher": "Entergy Corporation (Form 10-K)",
+    "quote": "The Delta Blues Advanced Power Station is estimated to cost $1.2 billion.",
+    "revised": null,
+    "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm"
+   },
    "country": "United States",
    "eia_status": "L",
    "expected": "2028-05",
@@ -7295,150 +7313,6 @@
    "stage": "Announced",
    "state": "MS",
    "technology": "Solar Photovoltaic"
-  },
-  {
-   "cc": "US",
-   "cost": null,
-   "country": "United States",
-   "eia_status": "L",
-   "expected": "2028-07",
-   "expected_year": 2028,
-   "exposures": [
-    {
-     "cik": 65984,
-     "effective_stake": null,
-     "hq": {
-      "checked_at": "2026-11-12",
-      "city": "New Orleans",
-      "lat": 29.976111111,
-      "lon": -90.078333333,
-      "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
-      "source_url": "https://www.wikidata.org/entity/Q1344587"
-     },
-     "hq_country": null,
-     "lei": "4XM3TW50JULSLG8BNC79",
-     "listed_entity_id": "lei:4XM3TW50JULSLG8BNC79",
-     "listed_name": "ENTERGY CORP /DE/",
-     "owner": "Entergy Texas Inc.",
-     "owner_match": "id",
-     "owner_stake": null,
-     "path": [
-      "LWXX58X12AJXISQ28573",
-      "4XM3TW50JULSLG8BNC79"
-     ],
-     "path_edges": [
-      [
-       "LWXX58X12AJXISQ28573",
-       "4XM3TW50JULSLG8BNC79"
-      ]
-     ],
-     "path_names": [
-      "ENTERGY TEXAS, INC.",
-      "ENTERGY CORPORATION"
-     ],
-     "type": "E3",
-     "verification": {
-      "batch": "route-b-us-2026-11",
-      "category": "B",
-      "company_states_interest": false,
-      "exposure_type": "indirect",
-      "identity": {
-       "checked_at": "2026-11-13",
-       "id": "4XM3TW50JULSLG8BNC79",
-       "legal_name": "ENTERGY CORPORATION",
-       "scheme": "LEI",
-       "source_url": "https://api.gleif.org/api/v1/lei-records/4XM3TW50JULSLG8BNC79"
-      },
-      "internal_only": [],
-      "link": [
-       {
-        "document_date": "2026-09-30",
-        "proves": "EIA-860M lists Legend Power Station (plant 68053) as planned, status L, reported by Entergy Texas Inc.",
-        "publisher": "U.S. EIA",
-        "retrieved_at": "2026-11-13",
-        "url": "https://www.eia.gov/electricity/data/eia860m/"
-       },
-       {
-        "document_date": null,
-        "edition": "EIA-860 2025 data",
-        "proves": "EIA-860 2025 Schedule 4 lists no other owner, so the reporting entity Entergy Texas Inc. owns the generators (EIA instructions, Schedule 4 item 1)",
-        "publisher": "U.S. EIA",
-        "retrieved_at": "2026-11-13",
-        "url": "https://www.eia.gov/electricity/data/eia860/"
-       },
-       {
-        "document_date": "2026-11-13",
-        "proves": "Legal entity ENTERGY TEXAS, INC., LEI LWXX58X12AJXISQ28573",
-        "publisher": "GLEIF",
-        "retrieved_at": "2026-11-13",
-        "url": "https://api.gleif.org/api/v1/lei-records/LWXX58X12AJXISQ28573"
-       },
-       {
-        "document_date": "2026-11-13",
-        "edge": [
-         "LWXX58X12AJXISQ28573",
-         "4XM3TW50JULSLG8BNC79"
-        ],
-        "proves": "ENTERGY TEXAS, INC. reports ENTERGY CORPORATION as its direct parent",
-        "publisher": "GLEIF",
-        "retrieved_at": "2026-11-13",
-        "url": "https://api.gleif.org/api/v1/lei-records/LWXX58X12AJXISQ28573/direct-parent"
-       },
-       {
-        "document_date": "2026-11-13",
-        "proves": "ENTERGY CORP /DE/ has publicly traded common equity: ETR on NYSE (CIK 65984; SEC accelerated or large accelerated filer (public common equity))",
-        "publisher": "U.S. SEC",
-        "quote": null,
-        "retrieved_at": "2026-11-13",
-        "url": "https://data.sec.gov/submissions/CIK0000065984.json"
-       }
-      ],
-      "listing": {
-       "checked_at": "2026-11-13",
-       "cik": 65984,
-       "exchange": "NYSE",
-       "source_url": "https://data.sec.gov/submissions/CIK0000065984.json",
-       "ticker": "ETR"
-      },
-      "reviewer": "engine (route B, US)",
-      "stake": {
-       "note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
-       "value": null
-      },
-      "verified_at": "2026-11-13"
-     }
-    }
-   ],
-   "id": "eia:68053",
-   "images": {
-    "now": {
-     "credit": "Contains modified Copernicus Sentinel data 2026",
-     "date": "2026-10-24",
-     "file": "eia-68053-now.jpg",
-     "resolution_m": 10,
-     "scene": "S2C_T15RUP_20261024T170420_L2A",
-     "sha256": "897cc1d3524ffa9291c515aa8e12466b297489e1cc5b9f8638abeb79206fb501",
-     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
-     "width_km": 3.0
-    }
-   },
-   "kind": "Oil & gas",
-   "lat": 29.880219,
-   "lon": -93.99573,
-   "mw": 754.0,
-   "name": "Legend Power Station",
-   "other_owners": [],
-   "precision": "exact",
-   "progress": null,
-   "sector": "Energy & Utilities",
-   "source": {
-    "licence": "US public domain",
-    "name": "U.S. Energy Information Administration, EIA-860M (September 2026)",
-    "url": "https://www.eia.gov/electricity/data/eia860m/"
-   },
-   "stage": "Pre-construction",
-   "state": "TX",
-   "technology": "Natural Gas Fired Combined Cycle"
   },
   {
    "cc": "US",
@@ -11707,7 +11581,21 @@
   },
   {
    "cc": "US",
-   "cost": null,
+   "cost": {
+    "amount": 735300000.0,
+    "basis": "original company estimate",
+    "currency": "USD",
+    "document_date": "2026-02-19",
+    "publisher": "Entergy Corporation (Form 10-K)",
+    "quote": "the Lone Star Power Station was expected to cost an estimated $735.3 million",
+    "revised": {
+     "amount": 771500000.0,
+     "basis": "regulator cost cap after rehearing (Dec 2025), reported by the company",
+     "currency": "USD",
+     "quote": "In December 2025 the PUCT issued an order on rehearing modifying the Lone Star Power Station cost cap to $771.5 million"
+    },
+    "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm"
+   },
    "country": "United States",
    "eia_status": "L",
    "expected": "2028-07",
@@ -13071,7 +12959,16 @@
   },
   {
    "cc": "US",
-   "cost": null,
+   "cost": {
+    "amount": 1200000000.0,
+    "basis": "company estimate",
+    "currency": "USD",
+    "document_date": "2026-02-19",
+    "publisher": "Entergy Corporation (Form 10-K)",
+    "quote": "The Vicksburg Advanced Power Station is estimated to cost $1.2 billion.",
+    "revised": null,
+    "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm"
+   },
    "country": "United States",
    "eia_status": "U",
    "expected": "2028-08",
@@ -13722,7 +13619,16 @@
   },
   {
    "cc": "US",
-   "cost": null,
+   "cost": {
+    "amount": 2091000000.0,
+    "basis": "company estimate in regulatory application",
+    "currency": "USD",
+    "document_date": "2026-02-19",
+    "publisher": "Entergy Corporation (Form 10-K)",
+    "quote": "In its application, Entergy Louisiana noted the estimated costs are approximately $2,027 million for the Waterford 6 Power Station and $2,091 million for the Westlake Power Station.",
+    "revised": null,
+    "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm"
+   },
    "country": "United States",
    "eia_status": "P",
    "expected": "2030-10",
@@ -13866,7 +13772,16 @@
   },
   {
    "cc": "US",
-   "cost": null,
+   "cost": {
+    "amount": 2027000000.0,
+    "basis": "company estimate in regulatory application",
+    "currency": "USD",
+    "document_date": "2026-02-19",
+    "publisher": "Entergy Corporation (Form 10-K)",
+    "quote": "In its application, Entergy Louisiana noted the estimated costs are approximately $2,027 million for the Waterford 6 Power Station and $2,091 million for the Westlake Power Station.",
+    "revised": null,
+    "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm"
+   },
    "country": "United States",
    "eia_status": "P",
    "expected": "2030-06",

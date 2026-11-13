@@ -1,0 +1,71 @@
+{
+ "schema": "investedia.projects.invest.costs.v1",
+ "note": "Construction costs stated by the listed company (hand-reviewed 2026-11-13). Never estimated by Investedia.",
+ "by_project": {
+  "eia:66621": {
+   "amount": 1200000000.0,
+   "currency": "USD",
+   "basis": "initial estimated total cost (company, Sept 2021 application)",
+   "quote": "at an initially-estimated expected total cost of $1.2 billion",
+   "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm",
+   "document_date": "2026-02-19",
+   "publisher": "Entergy Corporation (Form 10-K)",
+   "revised": null
+  },
+  "eia:67914": {
+   "amount": 1200000000.0,
+   "currency": "USD",
+   "basis": "company estimate",
+   "quote": "The Delta Blues Advanced Power Station is estimated to cost $1.2 billion.",
+   "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm",
+   "document_date": "2026-02-19",
+   "publisher": "Entergy Corporation (Form 10-K)",
+   "revised": null
+  },
+  "eia:69223": {
+   "amount": 1200000000.0,
+   "currency": "USD",
+   "basis": "company estimate",
+   "quote": "The Vicksburg Advanced Power Station is estimated to cost $1.2 billion.",
+   "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm",
+   "document_date": "2026-02-19",
+   "publisher": "Entergy Corporation (Form 10-K)",
+   "revised": null
+  },
+  "eia:69426": {
+   "amount": 2091000000.0,
+   "currency": "USD",
+   "basis": "company estimate in regulatory application",
+   "quote": "In its application, Entergy Louisiana noted the estimated costs are approximately $2,027 million for the Waterford 6 Power Station and $2,091 million for the Westlake Power Station.",
+   "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm",
+   "document_date": "2026-02-19",
+   "publisher": "Entergy Corporation (Form 10-K)",
+   "revised": null
+  },
+  "eia:69445": {
+   "amount": 2027000000.0,
+   "currency": "USD",
+   "basis": "company estimate in regulatory application",
+   "quote": "In its application, Entergy Louisiana noted the estimated costs are approximately $2,027 million for the Waterford 6 Power Station and $2,091 million for the Westlake Power Station.",
+   "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm",
+   "document_date": "2026-02-19",
+   "publisher": "Entergy Corporation (Form 10-K)",
+   "revised": null
+  },
+  "eia:69077": {
+   "amount": 735300000.0,
+   "currency": "USD",
+   "basis": "original company estimate",
+   "quote": "the Lone Star Power Station was expected to cost an estimated $735.3 million",
+   "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm",
+   "document_date": "2026-02-19",
+   "publisher": "Entergy Corporation (Form 10-K)",
+   "revised": {
+    "amount": 771500000.0,
+    "currency": "USD",
+    "basis": "regulator cost cap after rehearing (Dec 2025), reported by the company",
+    "quote": "In December 2025 the PUCT issued an order on rehearing modifying the Lone Star Power Station cost cap to $771.5 million"
+   }
+  }
+ }
+}

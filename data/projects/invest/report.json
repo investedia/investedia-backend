@@ -31,17 +31,17 @@
  "pipeline_projects": 33769,
  "public_by_category": {
   "A": 53,
-  "B": 135
+  "B": 134
  },
  "public_by_sector_kind": {
   "Battery storage": 24,
   "Coal": 8,
   "Hydropower": 9,
-  "Oil & gas": 35,
+  "Oil & gas": 34,
   "Solar": 88,
   "Wind": 23
  },
- "public_projects": 187,
+ "public_projects": 186,
  "sources": {
   "ownership": {
    "licence": "CC BY 4.0",

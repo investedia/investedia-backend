@@ -1,0 +1,11 @@
+{
+ "schema": "investedia.projects.invest.holds.v1",
+ "note": "Verified links withheld from the public file until the relationship is re-verified.",
+ "by_project": {
+  "eia:68053": {
+   "reason": "Entergy 10-K (Feb 2026): in Dec 2025 investors purchased the in-process Legend Power Station under a build-to-suit lease and control the asset during construction; Entergy Texas is lessee and construction agent, not owner. EIA-860 2025 owner link is out of date.",
+   "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm",
+   "since": "2026-11-13"
+  }
+ }
+}

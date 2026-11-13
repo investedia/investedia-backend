@@ -2923,7 +2923,13 @@
    ],
    "other_owners_not_listed": [],
    "financials": {
-    "construction_cost": null,
+    "construction_cost": {
+     "amount": 1200000000.0,
+     "currency": "USD",
+     "basis": "initial estimated total cost (company, Sept 2021 application)",
+     "quote": "at an initially-estimated expected total cost of $1.2 billion",
+     "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm"
+    },
     "revised_cost": null,
     "completion_target": "2026-10",
     "completion_target_source": "EIA-860M",
@@ -3329,7 +3335,13 @@
    ],
    "other_owners_not_listed": [],
    "financials": {
-    "construction_cost": null,
+    "construction_cost": {
+     "amount": 1200000000.0,
+     "currency": "USD",
+     "basis": "company estimate",
+     "quote": "The Delta Blues Advanced Power Station is estimated to cost $1.2 billion.",
+     "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm"
+    },
     "revised_cost": null,
     "completion_target": "2028-05",
     "completion_target_source": "EIA-860M",
@@ -3821,86 +3833,6 @@
     "completion_target_source": "EIA-860M",
     "original_completion_target": null,
     "construction_status": "Announced",
-    "status_note": null,
-    "progress": null,
-    "documented_delays": []
-   },
-   "investment_access": {
-    "class": "publicly_listed_company_exposure",
-    "direct_offering": null,
-    "note": "Exposure is through listed shares of the companies shown; no direct project offering is verified."
-   }
-  },
-  {
-   "id": "eia:68053",
-   "name": "Legend Power Station",
-   "sector": "Energy & Utilities",
-   "kind": "Oil & gas",
-   "country": "United States",
-   "mw": 754.0,
-   "location": {
-    "lat": 29.880219,
-    "lon": -93.99573,
-    "precision": "exact"
-   },
-   "exposures": [
-    {
-     "listed_company": "ENTERGY CORPORATION",
-     "ticker": "ETR",
-     "exchange": "NYSE",
-     "identity": {
-      "scheme": "LEI",
-      "id": "4XM3TW50JULSLG8BNC79"
-     },
-     "direct_owner": "Entergy Texas Inc.",
-     "ownership_chain": [
-      "ENTERGY TEXAS, INC.",
-      "ENTERGY CORPORATION"
-     ],
-     "relationship": "owns the project through subsidiaries or joint ventures",
-     "exposure_type": "indirect",
-     "stake_pct": null,
-     "stake_note": "Not stated by EIA (sole owner by reporting rule; no percentage published)",
-     "confirmation": "regulator-confirmed owner + verified listed-parent chain",
-     "what_an_investor_holds": "shares of ENTERGY CORPORATION (company-level exposure); this is not a direct investment in the project",
-     "evidence": [
-      {
-       "publisher": "U.S. EIA",
-       "url": "https://www.eia.gov/electricity/data/eia860m/",
-       "date": "2026-09-30"
-      },
-      {
-       "publisher": "U.S. EIA",
-       "url": "https://www.eia.gov/electricity/data/eia860/",
-       "date": null
-      },
-      {
-       "publisher": "GLEIF",
-       "url": "https://api.gleif.org/api/v1/lei-records/LWXX58X12AJXISQ28573",
-       "date": "2026-11-13"
-      },
-      {
-       "publisher": "GLEIF",
-       "url": "https://api.gleif.org/api/v1/lei-records/LWXX58X12AJXISQ28573/direct-parent",
-       "date": "2026-11-13"
-      },
-      {
-       "publisher": "U.S. SEC",
-       "url": "https://data.sec.gov/submissions/CIK0000065984.json",
-       "date": "2026-11-13"
-      }
-     ],
-     "verified_at": "2026-11-13"
-    }
-   ],
-   "other_owners_not_listed": [],
-   "financials": {
-    "construction_cost": null,
-    "revised_cost": null,
-    "completion_target": "2028-07",
-    "completion_target_source": "EIA-860M",
-    "original_completion_target": null,
-    "construction_status": "Pre-construction",
     "status_note": null,
     "progress": null,
     "documented_delays": []
@@ -6225,7 +6157,13 @@
    ],
    "other_owners_not_listed": [],
    "financials": {
-    "construction_cost": null,
+    "construction_cost": {
+     "amount": 735300000.0,
+     "currency": "USD",
+     "basis": "original company estimate",
+     "quote": "the Lone Star Power Station was expected to cost an estimated $735.3 million",
+     "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm"
+    },
     "revised_cost": null,
     "completion_target": "2028-07",
     "completion_target_source": "EIA-860M",
@@ -6944,7 +6882,13 @@
    ],
    "other_owners_not_listed": [],
    "financials": {
-    "construction_cost": null,
+    "construction_cost": {
+     "amount": 1200000000.0,
+     "currency": "USD",
+     "basis": "company estimate",
+     "quote": "The Vicksburg Advanced Power Station is estimated to cost $1.2 billion.",
+     "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm"
+    },
     "revised_cost": null,
     "completion_target": "2028-08",
     "completion_target_source": "EIA-860M",
@@ -7276,7 +7220,13 @@
    ],
    "other_owners_not_listed": [],
    "financials": {
-    "construction_cost": null,
+    "construction_cost": {
+     "amount": 2091000000.0,
+     "currency": "USD",
+     "basis": "company estimate in regulatory application",
+     "quote": "In its application, Entergy Louisiana noted the estimated costs are approximately $2,027 million for the Waterford 6 Power Station and $2,091 million for the Westlake Power Station.",
+     "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm"
+    },
     "revised_cost": null,
     "completion_target": "2030-10",
     "completion_target_source": "EIA-860M",
@@ -7356,7 +7306,13 @@
    ],
    "other_owners_not_listed": [],
    "financials": {
-    "construction_cost": null,
+    "construction_cost": {
+     "amount": 2027000000.0,
+     "currency": "USD",
+     "basis": "company estimate in regulatory application",
+     "quote": "In its application, Entergy Louisiana noted the estimated costs are approximately $2,027 million for the Waterford 6 Power Station and $2,091 million for the Westlake Power Station.",
+     "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000174/etr-20251231.htm"
+    },
     "revised_cost": null,
     "completion_target": "2030-06",
     "completion_target_source": "EIA-860M",

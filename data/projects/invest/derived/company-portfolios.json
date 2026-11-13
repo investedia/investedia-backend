@@ -55,18 +55,6 @@
      "confirmation": "regulator-confirmed owner + verified listed-parent chain"
     },
     {
-     "id": "eia:68053",
-     "name": "Legend Power Station",
-     "kind": "Oil & gas",
-     "country": "United States",
-     "mw": 754.0,
-     "stage": "Pre-construction",
-     "relationship": "owns the project through subsidiaries or joint ventures",
-     "direct_owner": "Entergy Texas Inc.",
-     "stake_pct": null,
-     "confirmation": "regulator-confirmed owner + verified listed-parent chain"
-    },
-    {
      "id": "eia:68214",
      "name": "Franklin Farms 1&2",
      "kind": "Oil & gas",
@@ -284,11 +272,11 @@
     }
    ],
    "totals": {
-    "projects": 23,
-    "project_capacity_mw_not_share_weighted": 17885.2,
+    "projects": 22,
+    "project_capacity_mw_not_share_weighted": 17131.2,
     "by_kind": {
      "Battery storage": 2,
-     "Oil & gas": 16,
+     "Oil & gas": 15,
      "Solar": 5
     }
    }
