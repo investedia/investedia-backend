@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Projects batch import (local staging only)",
+  "type": "object",
+  "required": [
+    "schema",
+    "synthetic",
+    "records"
+  ],
+  "properties": {
+    "schema": {
+      "const": "investedia.projects.import.v1"
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "records": {
+      "type": "array",
+      "maxItems": 100000,
+      "items": {
+        "allOf": [
+          {
+            "$ref": "../phase4/contract.schema.json"
+          },
+          {
+            "type": "object",
+            "required": [
+              "source_identity",
+              "synthetic",
+              "preview_only"
+            ],
+            "properties": {
+              "source_identity": {
+                "type": "object",
+                "required": [
+                  "authority",
+                  "id"
+                ],
+                "properties": {
+                  "authority": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              },
+              "synthetic": {
+                "type": "boolean"
+              },
+              "preview_only": {
+                "type": "boolean"
+              },
+              "extensions": {
+                "type": "object"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "companies": {
+      "type": "object",
+      "description": "Stable identifier keys (lei/cik/qid/registry); identity evidence required. Never company names as keys."
+    },
+    "retire": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "expected_sha256",
+          "reason",
+          "as_of"
+        ]
+      }
+    }
+  },
+  "description": "Structural schema; executable import_projects.py validation additionally enforces evidence, roles, source identity, synthetic isolation, company conflicts, geography, imagery and hierarchy."
+}
