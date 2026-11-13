@@ -81,7 +81,82 @@
  ],
  "exact_but_no_image": [],
  "incorrect_coordinates_found": {
-  "Dibang Multipurpose": "GEM approximate point 118.6 km west of the satellite-confirmed site; corrected, precision=site"
+  "Dibang Multipurpose": "GEM approximate point 118.6 km west of the satellite-confirmed site; corrected, precision=site",
+  "Luhri-I and Luhri-III (Sunni Dam)": "GEM approximate point 32.20 N, 76.32 E (near Dharamshala) vs SJVN: Satluj river near Khaira, Shimla/Mandi districts; approximate, so no picture"
  },
- "globe_preview_check": "local Globe, PC 1440 and phone 390: Rabigh 2 (30 May 2026) and Dibang (8 Nov 2026) images load (640 px), correct date tag, Sentinel-2 credit, panel matches marker; before/after slider (Hammond) unchanged; 117 projects with images, 71 with before/after"
+ "globe_preview_check": "local Globe, PC 1440 and phone 390: Rabigh 2 (30 May 2026) and Dibang (8 Nov 2026) images load (640 px), correct date tag, Sentinel-2 credit, panel matches marker; before/after slider (Hammond) unchanged; 117 projects with images, 71 with before/after",
+ "after_sjvn_batch": {
+  "verified_projects": 150,
+  "images": 119,
+  "missing": 31,
+  "coverage_pct": 79.3,
+  "before_after_pairs": 73,
+  "by_country": {
+   "Egypt": {
+    "projects": 2,
+    "images": 0
+   },
+   "Germany": {
+    "projects": 2,
+    "images": 2
+   },
+   "India": {
+    "projects": 25,
+    "images": 13
+   },
+   "Indonesia": {
+    "projects": 1,
+    "images": 0
+   },
+   "Nepal": {
+    "projects": 1,
+    "images": 1
+   },
+   "Saudi Arabia": {
+    "projects": 10,
+    "images": 1
+   },
+   "United States": {
+    "projects": 102,
+    "images": 102
+   },
+   "Uzbekistan": {
+    "projects": 7,
+    "images": 0
+   }
+  },
+  "without_exact_location": [
+   "Afif 1 solar farm (Saudi Arabia)",
+   "Afif 2 solar farm (Saudi Arabia)",
+   "Al-Khushaybi Solar PV Park (Saudi Arabia)",
+   "Al-Muwaih Solar PV (Saudi Arabia)",
+   "Aral wind farm (phase 1) (Uzbekistan)",
+   "Aral wind farm (phase 2) (Uzbekistan)",
+   "Aral wind farm (phase 3) (Uzbekistan)",
+   "Aral wind farm (phase 4) (Uzbekistan)",
+   "Aral wind farm (phase 5) (Uzbekistan)",
+   "Bagodara Solar Power Project (India)",
+   "Barethi solar park (India)",
+   "Bisha solar farm (Saudi Arabia)",
+   "Dayapar (NTPC) III wind farm (India)",
+   "Egypt Aluminium solar farm (phase 1) (Egypt)",
+   "Egypt Aluminium solar farm (phase 2) (Egypt)",
+   "Ganjam solar farm (India)",
+   "Gijduvan (ACWA Power) wind farm (Uzbekistan)",
+   "Gujarat GUVNL XIV (SJVN) solar farm (India)",
+   "Haden solar farm (Saudi Arabia)",
+   "Jamui solar farm (India)",
+   "Kungrad (ACWA Power) wind farm (phase 4) (Uzbekistan)",
+   "Lalitpur solar park (India)",
+   "Luhri-I hydroelectric plant (India)",
+   "Luhri-III hydroelectric plant (India)",
+   "Nairyah IPP Power Plant (phase 1) (Saudi Arabia)",
+   "Rihand solar farm (India)",
+   "Saguling solar farm (Indonesia)",
+   "Shaqra wind farm (Saudi Arabia)",
+   "Sonitpur solar farm (India)",
+   "Starah wind farm (Saudi Arabia)",
+   "Vishnugad Pipalkoti hydroelectric plant (India)"
+  ]
+ }
 }

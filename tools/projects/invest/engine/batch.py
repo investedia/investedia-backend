@@ -5,7 +5,7 @@ Reads the research store, fetches each document once, extracts rows, matches, cl
 verified relationships (A/B) into data/projects/invest/verifications.json and a batch report with yield,
 unresolved cases, cost and an audit sample. Nothing is published by this step.
 """
-import argparse, json, random, time
+import argparse, json, random, re, time
 from collections import Counter
 from datetime import date
 from pathlib import Path
@@ -53,6 +53,17 @@ def run(cfg, research, ledger, today):
         rows = extract.table(text, d['extract']) if d['extract']['type'] == 'table' else []
         if d['extract']['type'] == 'html_table':
             rows = extract.html_table(Path(path).read_text(encoding='utf-8', errors='ignore'), d['extract'])
+        if d['extract']['type'] == 'rows':  # rows transcribed by hand from a document whose layout breaks parsing;
+            norm_t = re.sub(r'\s+', ' ', text)  # every quote must appear verbatim in the fetched text or the row is dropped
+            for r in d['extract']['rows']:
+                missing = [q for q in r['quotes'] if re.sub(r'\s+', ' ', q) not in norm_t]
+                if missing:
+                    docs.append({'url': d['url'], 'row_dropped': r['doc_name'], 'quote_not_found': missing})
+                    continue
+                rows.append({'doc_name': r['doc_name'], 'mw': r.get('mw'), 'pct': r.get('pct'), 'cod': r.get('cod'), 'schedule': r.get('schedule'), 'section': r['section'],
+                             'components': [], 'location': None, 'comma_country': False, 'cost': r.get('cost'),
+                             '_project': r.get('project_id'), 'identity_note': r.get('identity_note'), 'indirect': r.get('indirect', False),
+                             'passage': ' / '.join(r['quotes'])[:600], 'line': None})
         if d['extract']['type'] == 'prose':  # project pages: the page must name the candidate and the company's role
             from .match import core
             for p in pool:
@@ -76,6 +87,12 @@ def run(cfg, research, ledger, today):
                     cat, why, stake = classify(p, e, row, kind, doc, today)
                 prev = results.get(p['id'])
                 rank = {'A': 0, 'B': 1, 'D': 2, 'C': 3}
+                if prev and prev['category'] == cat and cat in 'AB' and prev['doc']['url'] != doc['url']:
+                    prev.setdefault('extra', []).append((row, doc))  # second document for the same project: keep as evidence,
+                    for k in ('cost', 'cod', 'schedule'):            # fill only fields the first document lacked
+                        if not prev['row'].get(k) and row.get(k):
+                            prev['row'] = dict(prev['row'], **{k: row[k]})
+                    continue
                 if prev and rank[prev['category']] <= rank[cat]:
                     continue
                 results[p['id']] = {'project': p['id'], 'name': p['name'], 'category': cat, 'reasons': why, 'stake': stake,
@@ -110,9 +127,12 @@ def run(cfg, research, ledger, today):
                        'link': [{'url': d['url'], 'sha256': d['sha256'], 'document_date': d['date'], 'publisher': d['publisher'],
                                  'proves': '%s names %s%s' % (d['publisher'], r['row']['doc_name'],
                                            (' with a %s%% interest' % r['stake']) if r['stake'] is not None else ''),
-                                 'quote': r['row']['passage'], 'retrieved_at': today, 'edge': None}],
+                                 'quote': r['row']['passage'], 'retrieved_at': today, 'edge': None}] +
+                               [{'url': xd['url'], 'sha256': xd['sha256'], 'document_date': xd['date'], 'publisher': xd['publisher'],
+                                 'proves': '%s names %s' % (xd['publisher'], xr['doc_name']), 'quote': xr['passage'], 'retrieved_at': today, 'edge': None}
+                                for xr, xd in r.get('extra', [])],
                        'stake': {'value': r['stake'], 'note': 'As stated in the document' if r['stake'] is not None else 'Not stated in the document'},
-                       'document_row': {'name': r['row']['doc_name'], 'mw': r['row']['mw'], 'cod': r['row']['cod'], 'section': r['row']['section'], 'joint_venture': r['row'].get('joint_venture', False)},
+                       'document_row': {'name': r['row']['doc_name'], 'mw': r['row']['mw'], 'cod': r['row']['cod'], 'schedule': r['row'].get('schedule'), 'section': r['row']['section'], 'joint_venture': r['row'].get('joint_venture', False)},
                        'cost': r['row'].get('cost'),
                        'internal_only': r['internal_only'], 'company_states_interest': d['kind'] == 'company' and d.get('publisher_is_listed_company', False), 'batch': cfg['batch'], 'reviewer': 'engine (batch %s)' % cfg['batch'], 'verified_at': today}
         written += 1

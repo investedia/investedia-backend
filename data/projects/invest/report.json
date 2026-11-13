@@ -1,47 +1,47 @@
 {
  "as_of": "2026-11-13",
- "candidate_listed_companies": 631,
+ "candidate_listed_companies": 634,
  "candidates": {
   "by_kind_Battery storage": 16,
   "by_kind_Bioenergy": 96,
   "by_kind_Coal": 318,
   "by_kind_Geothermal": 24,
-  "by_kind_Hydropower": 176,
+  "by_kind_Hydropower": 214,
   "by_kind_Nuclear": 27,
   "by_kind_Oil & gas": 624,
-  "by_kind_Solar": 1103,
-  "by_kind_Wind": 994,
-  "by_stage_Announced": 787,
+  "by_kind_Solar": 1195,
+  "by_kind_Wind": 1133,
+  "by_stage_Announced": 852,
   "by_stage_Commissioning": 7,
-  "by_stage_Pre-construction": 1622,
-  "by_stage_Under construction": 962,
-  "by_type_E1": 1816,
-  "by_type_E1+E3": 83,
-  "by_type_E3": 1479,
-  "exact_location": 1342,
-  "listed_company_has_lei_or_cik": 3055,
+  "by_stage_Pre-construction": 1753,
+  "by_stage_Under construction": 1035,
+  "by_type_E1": 2042,
+  "by_type_E1+E3": 87,
+  "by_type_E3": 1518,
+  "exact_location": 1406,
+  "listed_company_has_lei_or_cik": 3325,
   "matched_by_gem_id": 1294,
-  "projects_with_candidate": 3378
+  "projects_with_candidate": 3647
  },
  "missing_country_code": 0,
  "not_public_reasons": {
-  "no verified exposure to a listed company": 33626
+  "no verified exposure to a listed company": 33618
  },
  "notice": "Candidates are not verified. Only public_projects are shown. Not investment advice.",
  "pipeline_projects": 33769,
  "public_by_category": {
-  "A": 45,
+  "A": 53,
   "B": 98
  },
  "public_by_sector_kind": {
   "Battery storage": 16,
   "Coal": 8,
-  "Hydropower": 5,
+  "Hydropower": 9,
   "Oil & gas": 34,
-  "Solar": 65,
+  "Solar": 69,
   "Wind": 14
  },
- "public_projects": 142,
+ "public_projects": 150,
  "sources": {
   "ownership": {
    "licence": "CC BY 4.0",
@@ -56,32 +56,40 @@
  },
  "top_candidate_companies": [
   [
+   "Huaneng Power International",
+   97
+  ],
+  [
+   "Iberdrola",
+   94
+  ],
+  [
    "TotalEnergies",
    88
   ],
   [
-   "Huaneng Power International",
-   81
-  ],
-  [
-   "Power Construction Corporation of China",
-   72
+   "RWE",
+   84
   ],
   [
    "Huadian Power International",
-   71
+   77
   ],
   [
-   "Iberdrola",
-   64
+   "Power Construction Corporation of China",
+   76
+  ],
+  [
+   "AES",
+   63
+  ],
+  [
+   "ENGIE",
+   61
   ],
   [
    "GD POWER Development",
    60
-  ],
-  [
-   "ENGIE",
-   58
   ],
   [
    "China Energy Engineering",
@@ -92,7 +100,7 @@
    56
   ],
   [
-   "RWE",
+   "NHPC",
    56
   ],
   [
@@ -108,8 +116,8 @@
    55
   ],
   [
-   "AES",
-   54
+   "SJVN",
+   44
   ],
   [
    "ACWA Power",
@@ -120,12 +128,12 @@
    43
   ],
   [
-   "NHPC",
-   43
-  ],
-  [
    "Ørsted",
    42
+  ],
+  [
+   "China Power International Development",
+   37
   ],
   [
    "Blackstone",
@@ -144,16 +152,8 @@
    33
   ],
   [
-   "Acciona",
-   32
-  ],
-  [
-   "CPFL Energia",
-   32
-  ],
-  [
-   "China Power International Development",
-   32
+   "SSE",
+   33
   ]
  ]
 }

@@ -15584,6 +15584,106 @@
    "exposures": [
     {
      "cik": null,
+     "effective_stake": 100.0,
+     "hq": null,
+     "hq_country": "India",
+     "lei": "335800WHWSIB8LQQMH94",
+     "listed_entity_id": "E100000121210",
+     "listed_name": "SJVN",
+     "owner": "Satluj Jal Vidyut Nigam LTD (SJVN)",
+     "owner_match": "alias",
+     "owner_stake": 100.0,
+     "path": [
+      "E100000121210"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "SJVN"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-sjvn-annual-report",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "Q1 2027",
+       "joint_venture": false,
+       "mw": 70,
+       "name": "Bagodra SPP",
+       "schedule": "March, 2027",
+       "section": "Under-Construction Projects"
+      },
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-13",
+       "id": "335800WHWSIB8LQQMH94",
+       "legal_name": "SJVN LIMITED",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/335800WHWSIB8LQQMH94"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-08-04",
+        "edge": null,
+        "proves": "SJVN Limited names Bagodra SPP",
+        "publisher": "SJVN Limited",
+        "quote": "Under - Construction Projects / Bagodra SPP Gujarat 70 March, 2027",
+        "retrieved_at": "2026-11-13",
+        "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+        "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-13",
+       "exchange": "National Stock Exchange of India; BSE (533206)",
+       "quote": "Scrip Code SJVN-EQ 533206",
+       "source_url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+       "ticker": "SJVN"
+      },
+      "reviewer": "engine (batch 2026-11-sjvn-annual-report)",
+      "stake": {
+       "note": "Not stated in the document",
+       "value": null
+      },
+      "verified_at": "2026-11-13"
+     }
+    }
+   ],
+   "id": "gem:L100000829465",
+   "kind": "Solar",
+   "lat": 22.7212,
+   "lon": 71.6499,
+   "mw": 70.0,
+   "name": "Bagodara Solar Power Project",
+   "other_owners": [],
+   "phase": null,
+   "plant_name": "Bagodara Solar Power Project",
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "units_named": [
+    null
+   ],
+   "wiki": "https://www.gem.wiki/Bagodara_Solar_Power_Project"
+  },
+  {
+   "cc": "IN",
+   "cost": null,
+   "country": "India",
+   "expansion": false,
+   "expected_year": 2026,
+   "exposures": [
+    {
+     "cik": null,
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -15789,6 +15889,207 @@
     null
    ],
    "wiki": "https://www.gem.wiki/Ganjam_solar_farm"
+  },
+  {
+   "cc": "IN",
+   "cost": null,
+   "country": "India",
+   "expansion": false,
+   "expected_year": 2026,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 100.0,
+     "hq": null,
+     "hq_country": "India",
+     "lei": "335800WHWSIB8LQQMH94",
+     "listed_entity_id": "E100000121210",
+     "listed_name": "SJVN",
+     "owner": "Satluj Jal Vidyut Nigam LTD (SJVN)",
+     "owner_match": "alias",
+     "owner_stake": 100.0,
+     "path": [
+      "E100000121210"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "SJVN"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-sjvn-annual-report",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "Q2 2027",
+       "joint_venture": false,
+       "mw": 260,
+       "name": "GUVNL Phase XIV SPP",
+       "schedule": "June, 2027",
+       "section": "Under-Construction Projects"
+      },
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-13",
+       "id": "335800WHWSIB8LQQMH94",
+       "legal_name": "SJVN LIMITED",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/335800WHWSIB8LQQMH94"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-08-04",
+        "edge": null,
+        "proves": "SJVN Limited names GUVNL Phase XIV SPP",
+        "publisher": "SJVN Limited",
+        "quote": "Under - Construction Projects / GUVNL Phase XIV SPP Gujarat 260 June, 2027",
+        "retrieved_at": "2026-11-13",
+        "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+        "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-13",
+       "exchange": "National Stock Exchange of India; BSE (533206)",
+       "quote": "Scrip Code SJVN-EQ 533206",
+       "source_url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+       "ticker": "SJVN"
+      },
+      "reviewer": "engine (batch 2026-11-sjvn-annual-report)",
+      "stake": {
+       "note": "Not stated in the document",
+       "value": null
+      },
+      "verified_at": "2026-11-13"
+     }
+    }
+   ],
+   "id": "gem:L100000808871",
+   "kind": "Solar",
+   "lat": 23.21,
+   "lon": 69.1325,
+   "mw": 260.0,
+   "name": "Gujarat GUVNL XIV (SJVN) solar farm",
+   "other_owners": [],
+   "phase": null,
+   "plant_name": "Gujarat GUVNL XIV (SJVN) solar farm",
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "units_named": [
+    null
+   ],
+   "wiki": "https://www.gem.wiki/Gujarat_GUVNL_XIV_(SJVN)_solar_farm"
+  },
+  {
+   "cc": "IN",
+   "cost": null,
+   "country": "India",
+   "expansion": false,
+   "expected_year": null,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": null,
+     "hq": null,
+     "hq_country": "India",
+     "lei": "335800WHWSIB8LQQMH94",
+     "listed_entity_id": "E100000121210",
+     "listed_name": "SJVN",
+     "owner": "SJVN Ltd",
+     "owner_match": "name",
+     "owner_stake": null,
+     "path": [
+      "E100000121210"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "SJVN"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-sjvn-annual-report",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "Q3 2026",
+       "joint_venture": false,
+       "mw": 75,
+       "name": "Jamui Phase-I SPP",
+       "schedule": "July, 2026",
+       "section": "Under-Construction Projects"
+      },
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-13",
+       "id": "335800WHWSIB8LQQMH94",
+       "legal_name": "SJVN LIMITED",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/335800WHWSIB8LQQMH94"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-08-04",
+        "edge": null,
+        "proves": "SJVN Limited names Jamui Phase-I SPP",
+        "publisher": "SJVN Limited",
+        "quote": "Under - Construction Projects / Jamui Phase-I SPP Bihar 75 July, 2026",
+        "retrieved_at": "2026-11-13",
+        "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+        "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-13",
+       "exchange": "National Stock Exchange of India; BSE (533206)",
+       "quote": "Scrip Code SJVN-EQ 533206",
+       "source_url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+       "ticker": "SJVN"
+      },
+      "reviewer": "engine (batch 2026-11-sjvn-annual-report)",
+      "stake": {
+       "note": "Not stated in the document",
+       "value": null
+      },
+      "verified_at": "2026-11-13"
+     }
+    }
+   ],
+   "id": "gem:L100001020239",
+   "kind": "Solar",
+   "lat": 24.9305,
+   "lon": 86.2326,
+   "mw": 75.0,
+   "name": "Jamui solar farm",
+   "other_owners": [],
+   "phase": null,
+   "plant_name": "Jamui solar farm",
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "stage_note": "Expected Q3 2026 according to the source; current status to be re-checked",
+   "units": 1,
+   "units_named": [
+    null
+   ],
+   "wiki": "https://www.gem.wiki/Jamui_solar_farm"
   },
   {
    "cc": "IN",
@@ -16018,6 +16319,107 @@
     null
    ],
    "wiki": "https://www.gem.wiki/Rihand_solar_farm"
+  },
+  {
+   "cc": "IN",
+   "cost": null,
+   "country": "India",
+   "expansion": false,
+   "expected_year": 2026,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": null,
+     "hq": null,
+     "hq_country": "India",
+     "lei": "335800WHWSIB8LQQMH94",
+     "listed_entity_id": "E100000121210",
+     "listed_name": "SJVN",
+     "owner": "SJVN Green Energy Ltd",
+     "owner_match": "alias",
+     "owner_stake": null,
+     "path": [
+      "E100000121210"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "SJVN"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-sjvn-annual-report",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "Q3 2026",
+       "joint_venture": false,
+       "mw": 50,
+       "name": "Sonitpur SPP (APDCL)",
+       "schedule": "July, 2026",
+       "section": "Under-Construction Projects"
+      },
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-13",
+       "id": "335800WHWSIB8LQQMH94",
+       "legal_name": "SJVN LIMITED",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/335800WHWSIB8LQQMH94"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-08-04",
+        "edge": null,
+        "proves": "SJVN Limited names Sonitpur SPP (APDCL)",
+        "publisher": "SJVN Limited",
+        "quote": "Under - Construction Projects / Sonitpur SPP (APDCL) Assam 50 July, 2026",
+        "retrieved_at": "2026-11-13",
+        "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+        "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-13",
+       "exchange": "National Stock Exchange of India; BSE (533206)",
+       "quote": "Scrip Code SJVN-EQ 533206",
+       "source_url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+       "ticker": "SJVN"
+      },
+      "reviewer": "engine (batch 2026-11-sjvn-annual-report)",
+      "stake": {
+       "note": "Not stated in the document",
+       "value": null
+      },
+      "verified_at": "2026-11-13"
+     }
+    }
+   ],
+   "id": "gem:L100001020610",
+   "kind": "Solar",
+   "lat": 26.7031,
+   "lon": 92.4857,
+   "mw": 50.0,
+   "name": "Sonitpur solar farm",
+   "other_owners": [],
+   "phase": null,
+   "plant_name": "Sonitpur solar farm",
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "stage_note": "Expected Q3 2026 according to the source; current status to be re-checked",
+   "units": 1,
+   "units_named": [
+    null
+   ],
+   "wiki": "https://www.gem.wiki/Sonitpur_solar_farm"
   },
   {
    "cc": "ID",
@@ -17950,6 +18352,149 @@
   },
   {
    "cc": "IN",
+   "cost": {
+    "amount": 6879700000.0,
+    "basis": "estimated cost in Government investment approval of 01.10.2020 (company web page)",
+    "currency": "INR",
+    "quote": "Investment Approval for an estimated cost of Rs. 687.97 crores accorded by GoI on 01.10.2020.",
+    "source": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf"
+   },
+   "country": "India",
+   "expansion": false,
+   "expected_year": 2026,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 100.0,
+     "hq": null,
+     "hq_country": "India",
+     "lei": "335800WHWSIB8LQQMH94",
+     "listed_entity_id": "E100000121210",
+     "listed_name": "SJVN",
+     "owner": "Satluj Jal Vidyut Nigam LTD (SJVN)",
+     "owner_match": "alias",
+     "owner_stake": 100.0,
+     "path": [
+      "E100000121210"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "SJVN"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-sjvn-annual-report",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": {
+       "amount": 6879700000.0,
+       "basis": "estimated cost in Government investment approval of 01.10.2020 (company web page)",
+       "currency": "INR",
+       "quote": "Investment Approval for an estimated cost of Rs. 687.97 crores accorded by GoI on 01.10.2020."
+      },
+      "document_row": {
+       "cod": "Q1 2027",
+       "joint_venture": false,
+       "mw": 69.5,
+       "name": "Dhaulasidh HEP",
+       "schedule": "March, 2027",
+       "section": "Under-Construction Projects"
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-13",
+       "id": "335800WHWSIB8LQQMH94",
+       "legal_name": "SJVN LIMITED",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/335800WHWSIB8LQQMH94"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-08-04",
+        "edge": null,
+        "proves": "SJVN Limited names Dhaulasidh HEP",
+        "publisher": "SJVN Limited",
+        "quote": "Under - Construction Projects / Dhaulasidh HEP Himachal Pradesh 69.50 March, 2027",
+        "retrieved_at": "2026-11-13",
+        "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+        "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf"
+       },
+       {
+        "document_date": "2026-11-13",
+        "edge": null,
+        "proves": "SJVN Limited names Dhaulasidh HEP",
+        "publisher": "SJVN Limited",
+        "quote": "The Dhaulasidh Hydro Electric Project with capacity of 69.5 MW / Investment Approval for an estimated cost of Rs. 687.97 crores accorded by GoI on 01.10.2020.",
+        "retrieved_at": "2026-11-13",
+        "sha256": "c6d71afa93a541848ac13355a4700d978fa34d5d2e01c1f923d9ba95a9bbfe1b",
+        "url": "https://sjvn.nic.in/en/dhaulasidh-hep"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-13",
+       "exchange": "National Stock Exchange of India; BSE (533206)",
+       "quote": "Scrip Code SJVN-EQ 533206",
+       "source_url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+       "ticker": "SJVN"
+      },
+      "reviewer": "engine (batch 2026-11-sjvn-annual-report)",
+      "stake": {
+       "note": "Not stated in the document",
+       "value": null
+      },
+      "verified_at": "2026-11-13"
+     }
+    }
+   ],
+   "id": "gem:L100001025754",
+   "images": {
+    "before": {
+     "credit": "Contains modified Copernicus Sentinel data 2024",
+     "date": "2024-12-29",
+     "file": "gem-L100001025754-before.jpg",
+     "resolution_m": 10,
+     "scene": "S2A_T43SFR_20241229T053232_L2A",
+     "sha256": "d3b266869fe492f4ef9edafdebddb41c33da83175d9a223bd2bae8dcd3098a41",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 3.0
+    },
+    "now": {
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "date": "2026-11-11",
+     "file": "gem-L100001025754-now.jpg",
+     "resolution_m": 10,
+     "scene": "S2A_T43SFR_20261111T053939_L2A",
+     "sha256": "44e37dc1bd3ca85ef1d460ca1302316922bfd21e52e3a7b8cc5746e167fc3edc",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 3.0
+    }
+   },
+   "kind": "Hydropower",
+   "lat": 31.8064,
+   "lon": 76.4419,
+   "mw": 66.0,
+   "name": "Dhaulasidh hydroelectric plant",
+   "other_owners": [],
+   "phase": null,
+   "plant_name": "Dhaulasidh hydroelectric plant",
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "units_named": [
+    null
+   ],
+   "wiki": "https://www.gem.wiki/Dhaulasidh_hydroelectric_plant"
+  },
+  {
+   "cc": "IN",
    "cost": null,
    "country": "India",
    "expansion": false,
@@ -18080,6 +18625,227 @@
     null
    ],
    "wiki": "https://www.gem.wiki/Dibang_Multipurpose_hydroelectric_plant"
+  },
+  {
+   "cc": "IN",
+   "cost": null,
+   "country": "India",
+   "expansion": false,
+   "expected_year": 2029,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 100.0,
+     "hq": null,
+     "hq_country": "India",
+     "lei": "335800WHWSIB8LQQMH94",
+     "listed_entity_id": "E100000121210",
+     "listed_name": "SJVN",
+     "owner": "Satluj Jal Vidyut Nigam LTD (SJVN)",
+     "owner_match": "alias",
+     "owner_stake": 100.0,
+     "path": [
+      "E100000121210"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "SJVN"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-sjvn-annual-report",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "Q2 2030",
+       "joint_venture": false,
+       "mw": 210,
+       "name": "Luhri Stage-I HEP",
+       "schedule": "May, 2030",
+       "section": "Under-Construction Projects"
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-13",
+       "id": "335800WHWSIB8LQQMH94",
+       "legal_name": "SJVN LIMITED",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/335800WHWSIB8LQQMH94"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-08-04",
+        "edge": null,
+        "proves": "SJVN Limited names Luhri Stage-I HEP",
+        "publisher": "SJVN Limited",
+        "quote": "Under - Construction Projects / Luhri Stage-I HEP Himachal Pradesh 210 May, 2030",
+        "retrieved_at": "2026-11-13",
+        "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+        "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-13",
+       "exchange": "National Stock Exchange of India; BSE (533206)",
+       "quote": "Scrip Code SJVN-EQ 533206",
+       "source_url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+       "ticker": "SJVN"
+      },
+      "reviewer": "engine (batch 2026-11-sjvn-annual-report)",
+      "stake": {
+       "note": "Not stated in the document",
+       "value": null
+      },
+      "verified_at": "2026-11-13"
+     }
+    }
+   ],
+   "id": "gem:L100000601950",
+   "kind": "Hydropower",
+   "lat": 32.1978,
+   "lon": 76.3212,
+   "mw": 210.0,
+   "name": "Luhri-I hydroelectric plant",
+   "other_owners": [],
+   "phase": null,
+   "plant_name": "Luhri-I hydroelectric plant",
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "units_named": [
+    null
+   ],
+   "wiki": "https://www.gem.wiki/Luhri-I_hydroelectric_plant"
+  },
+  {
+   "cc": "IN",
+   "cost": {
+    "amount": 26145100000.0,
+    "basis": "approved project cost at March 2021 price level (company web page)",
+    "currency": "INR",
+    "quote": "The approved cost of the project is Rs. 2614.51 crores at March, 2021 price level.",
+    "source": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf"
+   },
+   "country": "India",
+   "expansion": false,
+   "expected_year": 2029,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 100.0,
+     "hq": null,
+     "hq_country": "India",
+     "lei": "335800WHWSIB8LQQMH94",
+     "listed_entity_id": "E100000121210",
+     "listed_name": "SJVN",
+     "owner": "Satluj Jal Vidyut Nigam LTD (SJVN)",
+     "owner_match": "alias",
+     "owner_stake": 100.0,
+     "path": [
+      "E100000121210"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "SJVN"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-sjvn-annual-report",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": {
+       "amount": 26145100000.0,
+       "basis": "approved project cost at March 2021 price level (company web page)",
+       "currency": "INR",
+       "quote": "The approved cost of the project is Rs. 2614.51 crores at March, 2021 price level."
+      },
+      "document_row": {
+       "cod": "Q4 2029",
+       "joint_venture": false,
+       "mw": 382,
+       "name": "Sunni Dam HEP",
+       "schedule": "Dec, 2029",
+       "section": "Under-Construction Projects"
+      },
+      "exposure_type": "direct",
+      "identity": {
+       "checked_at": "2026-11-13",
+       "id": "335800WHWSIB8LQQMH94",
+       "legal_name": "SJVN LIMITED",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/335800WHWSIB8LQQMH94"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-08-04",
+        "edge": null,
+        "proves": "SJVN Limited names Sunni Dam HEP",
+        "publisher": "SJVN Limited",
+        "quote": "Under - Construction Projects / Sunni Dam HEP Himachal Pradesh 382 Dec, 2029",
+        "retrieved_at": "2026-11-13",
+        "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+        "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf"
+       },
+       {
+        "document_date": "2026-11-13",
+        "edge": null,
+        "proves": "SJVN Limited names Sunni Dam HEP",
+        "publisher": "SJVN Limited",
+        "quote": "Sunni Dam HEP is a run of the river type scheme. / The project is in the construction stage / Installed Capacity (MW) 382 / The approved cost of the project is Rs. 2614.51 crores at March, 2021 price level. / Allocation of all three Stages of Luhri project to SJVN",
+        "retrieved_at": "2026-11-13",
+        "sha256": "9b6e390f88f64fc3b9ffb397361ce91aa345e1e0968f818bc6dfa9649cbfb9e5",
+        "url": "https://sjvn.nic.in/en/sunni-dam-hep"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-13",
+       "exchange": "National Stock Exchange of India; BSE (533206)",
+       "quote": "Scrip Code SJVN-EQ 533206",
+       "source_url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+       "ticker": "SJVN"
+      },
+      "reviewer": "engine (batch 2026-11-sjvn-annual-report)",
+      "stake": {
+       "note": "Not stated in the document",
+       "value": null
+      },
+      "verified_at": "2026-11-13"
+     }
+    }
+   ],
+   "id": "gem:L100000601952",
+   "kind": "Hydropower",
+   "lat": 32.1978,
+   "lon": 76.3212,
+   "mw": 382.0,
+   "name": "Luhri-III hydroelectric plant",
+   "other_owners": [],
+   "phase": null,
+   "plant_name": "Luhri-III hydroelectric plant",
+   "precision": "approximate",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "units_named": [
+    null
+   ],
+   "wiki": "https://www.gem.wiki/Luhri-III_hydroelectric_plant"
   },
   {
    "cc": "IN",
@@ -18592,6 +19358,128 @@
     null
    ],
    "wiki": "https://www.gem.wiki/Vishnugad_Pipalkoti_hydroelectric_plant"
+  },
+  {
+   "cc": "NP",
+   "cost": null,
+   "country": "Nepal",
+   "expansion": false,
+   "expected_year": 2027,
+   "exposures": [
+    {
+     "cik": null,
+     "effective_stake": 100.0,
+     "hq": null,
+     "hq_country": "India",
+     "lei": "335800WHWSIB8LQQMH94",
+     "listed_entity_id": "E100000121210",
+     "listed_name": "SJVN",
+     "owner": "Satluj Jal Vidyut Nigam LTD (SJVN)",
+     "owner_match": "alias",
+     "owner_stake": 100.0,
+     "path": [
+      "E100000121210"
+     ],
+     "path_edges": [],
+     "path_names": [
+      "SJVN"
+     ],
+     "type": "E1",
+     "verification": {
+      "batch": "2026-11-sjvn-annual-report",
+      "category": "A",
+      "company_states_interest": true,
+      "cost": null,
+      "document_row": {
+       "cod": "Q4 2028",
+       "joint_venture": false,
+       "mw": 900,
+       "name": "Arun-3 HEP Nepal",
+       "schedule": "Dec, 2028",
+       "section": "Under-Construction Projects"
+      },
+      "exposure_type": "indirect",
+      "identity": {
+       "checked_at": "2026-11-13",
+       "id": "335800WHWSIB8LQQMH94",
+       "legal_name": "SJVN LIMITED",
+       "scheme": "LEI",
+       "source_url": "https://api.gleif.org/api/v1/lei-records/335800WHWSIB8LQQMH94"
+      },
+      "internal_only": [],
+      "link": [
+       {
+        "document_date": "2026-08-04",
+        "edge": null,
+        "proves": "SJVN Limited names Arun-3 HEP Nepal",
+        "publisher": "SJVN Limited",
+        "quote": "Under - Construction Projects / Arun-3 HEP Nepal 900 Dec, 2028",
+        "retrieved_at": "2026-11-13",
+        "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+        "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf"
+       }
+      ],
+      "listing": {
+       "checked_at": "2026-11-13",
+       "exchange": "National Stock Exchange of India; BSE (533206)",
+       "quote": "Scrip Code SJVN-EQ 533206",
+       "source_url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+       "ticker": "SJVN"
+      },
+      "reviewer": "engine (batch 2026-11-sjvn-annual-report)",
+      "stake": {
+       "note": "Not stated in the document",
+       "value": null
+      },
+      "verified_at": "2026-11-13"
+     }
+    }
+   ],
+   "id": "gem:L100000602576",
+   "images": {
+    "before": {
+     "credit": "Contains modified Copernicus Sentinel data 2024",
+     "date": "2024-12-27",
+     "file": "gem-L100000602576-before.jpg",
+     "resolution_m": 10,
+     "scene": "S2A_T45RWL_20241227T045528_L2A",
+     "sha256": "326a643d02bee4e3d87790d91a2cd31722514e5776f24be6efec26bfca9a2f7c",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 3.0
+    },
+    "now": {
+     "credit": "Contains modified Copernicus Sentinel data 2026",
+     "date": "2026-11-12",
+     "file": "gem-L100000602576-now.jpg",
+     "resolution_m": 10,
+     "scene": "S2B_T45RWL_20261112T045411_L2A",
+     "sha256": "4acc91ba011b13141594915048e5cd5b8d99ea52a5fd283c2d8ea36d83ac68e4",
+     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+     "width_km": 3.0
+    }
+   },
+   "kind": "Hydropower",
+   "lat": 27.5106,
+   "lon": 87.1941,
+   "mw": 900.0,
+   "name": "Arun 3 hydroelectric plant",
+   "other_owners": [],
+   "phase": null,
+   "plant_name": "Arun 3 hydroelectric plant",
+   "precision": "exact",
+   "progress": null,
+   "sector": "Energy & Utilities",
+   "source": {
+    "licence": "CC BY 4.0",
+    "name": "Global Energy Monitor, Global Integrated Power Tracker, September 2026 release",
+    "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/"
+   },
+   "stage": "Under construction",
+   "units": 1,
+   "units_named": [
+    null
+   ],
+   "wiki": "https://www.gem.wiki/Arun_3_hydroelectric_plant"
   },
   {
    "cc": "IN",

@@ -2116,6 +2116,50 @@
     "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
     "manual_check": "2026-11-13"
    }
+  },
+  "gem:L100001025754": {
+   "now": {
+    "file": "gem-L100001025754-now.jpg",
+    "date": "2026-11-11",
+    "scene": "S2A_T43SFR_20261111T053939_L2A",
+    "sha256": "44e37dc1bd3ca85ef1d460ca1302316922bfd21e52e3a7b8cc5746e167fc3edc",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "gem-L100001025754-before.jpg",
+    "date": "2024-12-29",
+    "scene": "S2A_T43SFR_20241229T053232_L2A",
+    "sha256": "d3b266869fe492f4ef9edafdebddb41c33da83175d9a223bd2bae8dcd3098a41",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "gem:L100000602576": {
+   "now": {
+    "file": "gem-L100000602576-now.jpg",
+    "date": "2026-11-12",
+    "scene": "S2B_T45RWL_20261112T045411_L2A",
+    "sha256": "4acc91ba011b13141594915048e5cd5b8d99ea52a5fd283c2d8ea36d83ac68e4",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "gem-L100000602576-before.jpg",
+    "date": "2024-12-27",
+    "scene": "S2A_T45RWL_20241227T045528_L2A",
+    "sha256": "326a643d02bee4e3d87790d91a2cd31722514e5776f24be6efec26bfca9a2f7c",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
   }
  }
 }

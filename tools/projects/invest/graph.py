@@ -91,10 +91,15 @@ class Registry:
                     for i in row_ids if i in self.entities), default=None, key=lambda t: max(t[0], t[1]))
         return best[2] if best and max(best[0], best[1]) >= 0.5 else None
 
+    aliases = {}  # hand-reviewed GEM owner name -> entity id (owner-aliases.json), used only when the row has no ID
+
     def resolve(self, owner):
-        """Return (entity, match) where match is 'id', 'name' or None."""
+        """Return (entity, match) where match is 'id', 'alias', 'name' or None."""
         if owner.get('entity_id') in self.entities:
             return self.entities[owner['entity_id']], 'id'
+        al = self.aliases.get(owner.get('name'))
+        if al and al in self.entities:
+            return self.entities[al], 'alias'
         hits = self.by_name.get(norm(owner['name']), set())
         if len(hits) == 1:
             return self.entities[next(iter(hits))], 'name'

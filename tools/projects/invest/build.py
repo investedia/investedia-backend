@@ -261,6 +261,9 @@ def main():
         raise SystemExit('power workbook headers changed: %s' % missing)
     iso = {clean(r.get('GEM Standard Country Name/Area')): clean(r.get('ISO-alpha2 Code')) for r in sheet(pw, 'Regions, area, and countries')}
     registry = Registry(sheet(ow, 'All Entities'), sheet(ow, 'Entity Ownership'))
+    al_path = ROOT / 'data/projects/invest/owner-aliases.json'
+    if al_path.exists():
+        registry.aliases = {k: v['entity_id'] for k, v in json.loads(al_path.read_text())['aliases'].items()}
     ledger = json.loads((ROOT / 'data/projects/invest/verifications.json').read_text())['records']
     eia_path = ROOT / 'data/projects/raw/invest/research-eia.json'
     extra = json.loads(eia_path.read_text())['projects'] if eia_path.exists() else []

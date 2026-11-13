@@ -1,0 +1,134 @@
+{
+ "schema": "investedia.projects.invest.owner-aliases.v1",
+ "note": "Hand-reviewed 2026-11-13: GEM owner names that carry no GEM Entity ID, mapped to the GEM entity for the same company or its named division/subsidiary. Only finds CANDIDATES; every public link still needs an A/B document. Excluded on purpose: name collisions (e.g. Partners Group), parent state groups, divested units (National Grid Renewables), uncertain listings (ReNew).",
+ "aliases": {
+  "National Hydroelectric Power CORP (NHPC)": {
+   "entity_id": "E100000120883",
+   "why": "same company (NHPC Ltd), GEM name variant"
+  },
+  "Satluj Jal Vidyut Nigam LTD (SJVN)": {
+   "entity_id": "E100000121210",
+   "why": "same company: SJVN = Satluj Jal Vidyut Nigam Ltd"
+  },
+  "SSE Renewables": {
+   "entity_id": "E100000001123",
+   "why": "renewables division of SSE plc"
+  },
+  "Acciona Energía SAU": {
+   "entity_id": "E100002026145",
+   "why": "operating unit of Corporación Acciona Energías Renovables SA (listed)"
+  },
+  "RWE Renewables": {
+   "entity_id": "E100000000433",
+   "why": "renewables division of RWE AG"
+  },
+  "NTPC Renewable Energy": {
+   "entity_id": "E100002018463",
+   "why": "subsidiary of NTPC Green Energy Ltd (listed)"
+  },
+  "Tata Power Renewable Energy Ltd": {
+   "entity_id": "E100000001940",
+   "why": "subsidiary of Tata Power Company Ltd"
+  },
+  "Iberdrola Renovables Energia SA": {
+   "entity_id": "E100000000975",
+   "why": "renewables arm of Iberdrola SA"
+  },
+  "ScottishPower Renewables": {
+   "entity_id": "E100000121254",
+   "why": "part of ScottishPower Ltd (Iberdrola group)"
+  },
+  "Eni Plenitude SpA": {
+   "entity_id": "E100000000610",
+   "why": "subsidiary of Eni SpA"
+  },
+  "Repsol Renewables NA": {
+   "entity_id": "E100000000980",
+   "why": "subsidiary of Repsol SA"
+  },
+  "AES Clean Energy": {
+   "entity_id": "E100000001305",
+   "why": "AES Corp renewables business"
+  },
+  "Dominion Energy Inc.": {
+   "entity_id": "E100000001193",
+   "why": "same company, punctuation variant"
+  },
+  "Dominion Renewable Energy": {
+   "entity_id": "E100000001193",
+   "why": "Dominion Energy renewables business"
+  },
+  "Engie ANZ": {
+   "entity_id": "E100000000382",
+   "why": "ENGIE Australia & New Zealand"
+  },
+  "PNE Wind AG": {
+   "entity_id": "E100000151380",
+   "why": "former name of PNE AG"
+  },
+  "Huaneng International Power Co Ltd": {
+   "entity_id": "E100000000217",
+   "why": "Chinese-name translation of Huaneng Power International"
+  },
+  "Huaneng International Power LTD Liaoning Branch Co": {
+   "entity_id": "E100000000217",
+   "why": "branch of Huaneng Power International (same legal entity)"
+  },
+  "Huadian International Power Co Ltd": {
+   "entity_id": "E100000000213",
+   "why": "Chinese-name translation of Huadian Power International"
+  },
+  "Abu Dhabi Future Energy Co": {
+   "entity_id": "E100000133835",
+   "why": "same company (Masdar), name variant"
+  },
+  "Shell Brasil Petróleo Ltda": {
+   "entity_id": "E100000000746",
+   "why": "Shell plc Brazilian subsidiary"
+  },
+  "Shell Brasil Petroleo Ltda": {
+   "entity_id": "E100000000746",
+   "why": "Shell plc Brazilian subsidiary"
+  },
+  "Fortescue Future Industries (FFI)": {
+   "entity_id": "E100002025592",
+   "why": "same company"
+  },
+  "Tokyo Electric Power Company Holdings INC (TEPCO)": {
+   "entity_id": "E100000000659",
+   "why": "same company"
+  },
+  "Neoenergia": {
+   "entity_id": "E100000001801",
+   "why": "same company (Grupo Neoenergia)"
+  },
+  "ACEN Australia": {
+   "entity_id": "E100000000805",
+   "why": "ACEN Corp Australian business"
+  },
+  "PetroChina LTD Qinghai Oilfield Branch Co": {
+   "entity_id": "E100000000245",
+   "why": "branch of PetroChina (same legal entity)"
+  },
+  "Shenzhen Energy Group Ltd": {
+   "entity_id": "E100000001667",
+   "why": "same company"
+  },
+  "PTC India LTD (PTC)": {
+   "entity_id": "E100001000848",
+   "why": "same company"
+  },
+  "Power Construction Corporation of China (POWERCHINA) Hydropower Development Group Co Ltd": {
+   "entity_id": "E100000000247",
+   "why": "POWERCHINA subsidiary"
+  },
+  "Wuling Electric Power Co Ltd": {
+   "entity_id": "E100000124128",
+   "why": "same company (Wuling Power Corp)"
+  },
+  "SJVN Green Energy Ltd": {
+   "entity_id": "E100000121210",
+   "why": "wholly owned subsidiary of SJVN Ltd per SJVN organisation chart (01.05.2026) and annual report 2025-26"
+  }
+ }
+}

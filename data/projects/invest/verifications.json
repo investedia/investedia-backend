@@ -9156,6 +9156,420 @@
    "batch": "route-b-us-2026-11",
    "reviewer": "engine (route B, US)",
    "verified_at": "2026-11-12"
+  },
+  "gem:L100001025754|E100000121210": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "335800WHWSIB8LQQMH94",
+    "legal_name": "SJVN LIMITED",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/335800WHWSIB8LQQMH94",
+    "checked_at": "2026-11-13"
+   },
+   "listing": {
+    "ticker": "SJVN",
+    "exchange": "National Stock Exchange of India; BSE (533206)",
+    "source_url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+    "quote": "Scrip Code SJVN-EQ 533206",
+    "checked_at": "2026-11-13"
+   },
+   "link": [
+    {
+     "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+     "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+     "document_date": "2026-08-04",
+     "publisher": "SJVN Limited",
+     "proves": "SJVN Limited names Dhaulasidh HEP",
+     "quote": "Under - Construction Projects / Dhaulasidh HEP Himachal Pradesh 69.50 March, 2027",
+     "retrieved_at": "2026-11-13",
+     "edge": null
+    },
+    {
+     "url": "https://sjvn.nic.in/en/dhaulasidh-hep",
+     "sha256": "c6d71afa93a541848ac13355a4700d978fa34d5d2e01c1f923d9ba95a9bbfe1b",
+     "document_date": "2026-11-13",
+     "publisher": "SJVN Limited",
+     "proves": "SJVN Limited names Dhaulasidh HEP",
+     "quote": "The Dhaulasidh Hydro Electric Project with capacity of 69.5 MW / Investment Approval for an estimated cost of Rs. 687.97 crores accorded by GoI on 01.10.2020.",
+     "retrieved_at": "2026-11-13",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": null,
+    "note": "Not stated in the document"
+   },
+   "document_row": {
+    "name": "Dhaulasidh HEP",
+    "mw": 69.5,
+    "cod": "Q1 2027",
+    "schedule": "March, 2027",
+    "section": "Under-Construction Projects",
+    "joint_venture": false
+   },
+   "cost": {
+    "amount": 6879700000.0,
+    "currency": "INR",
+    "basis": "estimated cost in Government investment approval of 01.10.2020 (company web page)",
+    "quote": "Investment Approval for an estimated cost of Rs. 687.97 crores accorded by GoI on 01.10.2020."
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-sjvn-annual-report",
+   "reviewer": "engine (batch 2026-11-sjvn-annual-report)",
+   "verified_at": "2026-11-13"
+  },
+  "gem:L100000601950|E100000121210": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "335800WHWSIB8LQQMH94",
+    "legal_name": "SJVN LIMITED",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/335800WHWSIB8LQQMH94",
+    "checked_at": "2026-11-13"
+   },
+   "listing": {
+    "ticker": "SJVN",
+    "exchange": "National Stock Exchange of India; BSE (533206)",
+    "source_url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+    "quote": "Scrip Code SJVN-EQ 533206",
+    "checked_at": "2026-11-13"
+   },
+   "link": [
+    {
+     "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+     "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+     "document_date": "2026-08-04",
+     "publisher": "SJVN Limited",
+     "proves": "SJVN Limited names Luhri Stage-I HEP",
+     "quote": "Under - Construction Projects / Luhri Stage-I HEP Himachal Pradesh 210 May, 2030",
+     "retrieved_at": "2026-11-13",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": null,
+    "note": "Not stated in the document"
+   },
+   "document_row": {
+    "name": "Luhri Stage-I HEP",
+    "mw": 210,
+    "cod": "Q2 2030",
+    "schedule": "May, 2030",
+    "section": "Under-Construction Projects",
+    "joint_venture": false
+   },
+   "cost": null,
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-sjvn-annual-report",
+   "reviewer": "engine (batch 2026-11-sjvn-annual-report)",
+   "verified_at": "2026-11-13"
+  },
+  "gem:L100000601952|E100000121210": {
+   "category": "A",
+   "exposure_type": "direct",
+   "identity": {
+    "scheme": "LEI",
+    "id": "335800WHWSIB8LQQMH94",
+    "legal_name": "SJVN LIMITED",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/335800WHWSIB8LQQMH94",
+    "checked_at": "2026-11-13"
+   },
+   "listing": {
+    "ticker": "SJVN",
+    "exchange": "National Stock Exchange of India; BSE (533206)",
+    "source_url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+    "quote": "Scrip Code SJVN-EQ 533206",
+    "checked_at": "2026-11-13"
+   },
+   "link": [
+    {
+     "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+     "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+     "document_date": "2026-08-04",
+     "publisher": "SJVN Limited",
+     "proves": "SJVN Limited names Sunni Dam HEP",
+     "quote": "Under - Construction Projects / Sunni Dam HEP Himachal Pradesh 382 Dec, 2029",
+     "retrieved_at": "2026-11-13",
+     "edge": null
+    },
+    {
+     "url": "https://sjvn.nic.in/en/sunni-dam-hep",
+     "sha256": "9b6e390f88f64fc3b9ffb397361ce91aa345e1e0968f818bc6dfa9649cbfb9e5",
+     "document_date": "2026-11-13",
+     "publisher": "SJVN Limited",
+     "proves": "SJVN Limited names Sunni Dam HEP",
+     "quote": "Sunni Dam HEP is a run of the river type scheme. / The project is in the construction stage / Installed Capacity (MW) 382 / The approved cost of the project is Rs. 2614.51 crores at March, 2021 price level. / Allocation of all three Stages of Luhri project to SJVN",
+     "retrieved_at": "2026-11-13",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": null,
+    "note": "Not stated in the document"
+   },
+   "document_row": {
+    "name": "Sunni Dam HEP",
+    "mw": 382,
+    "cod": "Q4 2029",
+    "schedule": "Dec, 2029",
+    "section": "Under-Construction Projects",
+    "joint_venture": false
+   },
+   "cost": {
+    "amount": 26145100000.0,
+    "currency": "INR",
+    "basis": "approved project cost at March 2021 price level (company web page)",
+    "quote": "The approved cost of the project is Rs. 2614.51 crores at March, 2021 price level."
+   },
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-sjvn-annual-report",
+   "reviewer": "engine (batch 2026-11-sjvn-annual-report)",
+   "verified_at": "2026-11-13"
+  },
+  "gem:L100000602576|E100000121210": {
+   "category": "A",
+   "exposure_type": "indirect",
+   "identity": {
+    "scheme": "LEI",
+    "id": "335800WHWSIB8LQQMH94",
+    "legal_name": "SJVN LIMITED",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/335800WHWSIB8LQQMH94",
+    "checked_at": "2026-11-13"
+   },
+   "listing": {
+    "ticker": "SJVN",
+    "exchange": "National Stock Exchange of India; BSE (533206)",
+    "source_url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+    "quote": "Scrip Code SJVN-EQ 533206",
+    "checked_at": "2026-11-13"
+   },
+   "link": [
+    {
+     "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+     "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+     "document_date": "2026-08-04",
+     "publisher": "SJVN Limited",
+     "proves": "SJVN Limited names Arun-3 HEP Nepal",
+     "quote": "Under - Construction Projects / Arun-3 HEP Nepal 900 Dec, 2028",
+     "retrieved_at": "2026-11-13",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": null,
+    "note": "Not stated in the document"
+   },
+   "document_row": {
+    "name": "Arun-3 HEP Nepal",
+    "mw": 900,
+    "cod": "Q4 2028",
+    "schedule": "Dec, 2028",
+    "section": "Under-Construction Projects",
+    "joint_venture": false
+   },
+   "cost": null,
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-sjvn-annual-report",
+   "reviewer": "engine (batch 2026-11-sjvn-annual-report)",
+   "verified_at": "2026-11-13"
+  },
+  "gem:L100000829465|E100000121210": {
+   "category": "A",
+   "exposure_type": "indirect",
+   "identity": {
+    "scheme": "LEI",
+    "id": "335800WHWSIB8LQQMH94",
+    "legal_name": "SJVN LIMITED",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/335800WHWSIB8LQQMH94",
+    "checked_at": "2026-11-13"
+   },
+   "listing": {
+    "ticker": "SJVN",
+    "exchange": "National Stock Exchange of India; BSE (533206)",
+    "source_url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+    "quote": "Scrip Code SJVN-EQ 533206",
+    "checked_at": "2026-11-13"
+   },
+   "link": [
+    {
+     "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+     "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+     "document_date": "2026-08-04",
+     "publisher": "SJVN Limited",
+     "proves": "SJVN Limited names Bagodra SPP",
+     "quote": "Under - Construction Projects / Bagodra SPP Gujarat 70 March, 2027",
+     "retrieved_at": "2026-11-13",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": null,
+    "note": "Not stated in the document"
+   },
+   "document_row": {
+    "name": "Bagodra SPP",
+    "mw": 70,
+    "cod": "Q1 2027",
+    "schedule": "March, 2027",
+    "section": "Under-Construction Projects",
+    "joint_venture": false
+   },
+   "cost": null,
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-sjvn-annual-report",
+   "reviewer": "engine (batch 2026-11-sjvn-annual-report)",
+   "verified_at": "2026-11-13"
+  },
+  "gem:L100000808871|E100000121210": {
+   "category": "A",
+   "exposure_type": "indirect",
+   "identity": {
+    "scheme": "LEI",
+    "id": "335800WHWSIB8LQQMH94",
+    "legal_name": "SJVN LIMITED",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/335800WHWSIB8LQQMH94",
+    "checked_at": "2026-11-13"
+   },
+   "listing": {
+    "ticker": "SJVN",
+    "exchange": "National Stock Exchange of India; BSE (533206)",
+    "source_url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+    "quote": "Scrip Code SJVN-EQ 533206",
+    "checked_at": "2026-11-13"
+   },
+   "link": [
+    {
+     "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+     "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+     "document_date": "2026-08-04",
+     "publisher": "SJVN Limited",
+     "proves": "SJVN Limited names GUVNL Phase XIV SPP",
+     "quote": "Under - Construction Projects / GUVNL Phase XIV SPP Gujarat 260 June, 2027",
+     "retrieved_at": "2026-11-13",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": null,
+    "note": "Not stated in the document"
+   },
+   "document_row": {
+    "name": "GUVNL Phase XIV SPP",
+    "mw": 260,
+    "cod": "Q2 2027",
+    "schedule": "June, 2027",
+    "section": "Under-Construction Projects",
+    "joint_venture": false
+   },
+   "cost": null,
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-sjvn-annual-report",
+   "reviewer": "engine (batch 2026-11-sjvn-annual-report)",
+   "verified_at": "2026-11-13"
+  },
+  "gem:L100001020610|E100000121210": {
+   "category": "A",
+   "exposure_type": "indirect",
+   "identity": {
+    "scheme": "LEI",
+    "id": "335800WHWSIB8LQQMH94",
+    "legal_name": "SJVN LIMITED",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/335800WHWSIB8LQQMH94",
+    "checked_at": "2026-11-13"
+   },
+   "listing": {
+    "ticker": "SJVN",
+    "exchange": "National Stock Exchange of India; BSE (533206)",
+    "source_url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+    "quote": "Scrip Code SJVN-EQ 533206",
+    "checked_at": "2026-11-13"
+   },
+   "link": [
+    {
+     "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+     "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+     "document_date": "2026-08-04",
+     "publisher": "SJVN Limited",
+     "proves": "SJVN Limited names Sonitpur SPP (APDCL)",
+     "quote": "Under - Construction Projects / Sonitpur SPP (APDCL) Assam 50 July, 2026",
+     "retrieved_at": "2026-11-13",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": null,
+    "note": "Not stated in the document"
+   },
+   "document_row": {
+    "name": "Sonitpur SPP (APDCL)",
+    "mw": 50,
+    "cod": "Q3 2026",
+    "schedule": "July, 2026",
+    "section": "Under-Construction Projects",
+    "joint_venture": false
+   },
+   "cost": null,
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-sjvn-annual-report",
+   "reviewer": "engine (batch 2026-11-sjvn-annual-report)",
+   "verified_at": "2026-11-13"
+  },
+  "gem:L100001020239|E100000121210": {
+   "category": "A",
+   "exposure_type": "indirect",
+   "identity": {
+    "scheme": "LEI",
+    "id": "335800WHWSIB8LQQMH94",
+    "legal_name": "SJVN LIMITED",
+    "source_url": "https://api.gleif.org/api/v1/lei-records/335800WHWSIB8LQQMH94",
+    "checked_at": "2026-11-13"
+   },
+   "listing": {
+    "ticker": "SJVN",
+    "exchange": "National Stock Exchange of India; BSE (533206)",
+    "source_url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+    "quote": "Scrip Code SJVN-EQ 533206",
+    "checked_at": "2026-11-13"
+   },
+   "link": [
+    {
+     "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+     "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+     "document_date": "2026-08-04",
+     "publisher": "SJVN Limited",
+     "proves": "SJVN Limited names Jamui Phase-I SPP",
+     "quote": "Under - Construction Projects / Jamui Phase-I SPP Bihar 75 July, 2026",
+     "retrieved_at": "2026-11-13",
+     "edge": null
+    }
+   ],
+   "stake": {
+    "value": null,
+    "note": "Not stated in the document"
+   },
+   "document_row": {
+    "name": "Jamui Phase-I SPP",
+    "mw": 75,
+    "cod": "Q3 2026",
+    "schedule": "July, 2026",
+    "section": "Under-Construction Projects",
+    "joint_venture": false
+   },
+   "cost": null,
+   "internal_only": [],
+   "company_states_interest": true,
+   "batch": "2026-11-sjvn-annual-report",
+   "reviewer": "engine (batch 2026-11-sjvn-annual-report)",
+   "verified_at": "2026-11-13"
   }
  }
 }

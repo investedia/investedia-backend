@@ -1,0 +1,102 @@
+{
+ "batch": "2026-11-sjvn-annual-report",
+ "audited_at": "2026-11-13",
+ "auditor": "Claude (manual, 100%)",
+ "result": "8/8 correct",
+ "items": [
+  {
+   "key": "gem:L100001025754|E100000121210",
+   "verdict": "correct",
+   "checked": [
+    "quote present verbatim in fetched document (engine-enforced)",
+    "capacity within 15% of GEM",
+    "state/country of GEM point matches document",
+    "under-construction section with company COD",
+    "subsidiary rows marked indirect"
+   ]
+  },
+  {
+   "key": "gem:L100000601950|E100000121210",
+   "verdict": "correct",
+   "checked": [
+    "quote present verbatim in fetched document (engine-enforced)",
+    "capacity within 15% of GEM",
+    "state/country of GEM point matches document",
+    "under-construction section with company COD",
+    "subsidiary rows marked indirect"
+   ]
+  },
+  {
+   "key": "gem:L100000601952|E100000121210",
+   "verdict": "correct",
+   "checked": [
+    "quote present verbatim in fetched document (engine-enforced)",
+    "capacity within 15% of GEM",
+    "state/country of GEM point matches document",
+    "under-construction section with company COD",
+    "subsidiary rows marked indirect"
+   ]
+  },
+  {
+   "key": "gem:L100000602576|E100000121210",
+   "verdict": "correct",
+   "checked": [
+    "quote present verbatim in fetched document (engine-enforced)",
+    "capacity within 15% of GEM",
+    "state/country of GEM point matches document",
+    "under-construction section with company COD",
+    "subsidiary rows marked indirect"
+   ]
+  },
+  {
+   "key": "gem:L100000829465|E100000121210",
+   "verdict": "correct",
+   "checked": [
+    "quote present verbatim in fetched document (engine-enforced)",
+    "capacity within 15% of GEM",
+    "state/country of GEM point matches document",
+    "under-construction section with company COD",
+    "subsidiary rows marked indirect"
+   ]
+  },
+  {
+   "key": "gem:L100000808871|E100000121210",
+   "verdict": "correct",
+   "checked": [
+    "quote present verbatim in fetched document (engine-enforced)",
+    "capacity within 15% of GEM",
+    "state/country of GEM point matches document",
+    "under-construction section with company COD",
+    "subsidiary rows marked indirect"
+   ]
+  },
+  {
+   "key": "gem:L100001020610|E100000121210",
+   "verdict": "correct",
+   "checked": [
+    "quote present verbatim in fetched document (engine-enforced)",
+    "capacity within 15% of GEM",
+    "state/country of GEM point matches document",
+    "under-construction section with company COD",
+    "subsidiary rows marked indirect"
+   ]
+  },
+  {
+   "key": "gem:L100001020239|E100000121210",
+   "verdict": "correct",
+   "checked": [
+    "quote present verbatim in fetched document (engine-enforced)",
+    "capacity within 15% of GEM",
+    "state/country of GEM point matches document",
+    "under-construction section with company COD",
+    "subsidiary rows marked indirect"
+   ]
+  }
+ ],
+ "notes": [
+  "Sunni Dam HEP = GEM Luhri-III: SJVN Sunni Dam page records allocation of all three Luhri stages; capacity 382 MW identical",
+  "Dhaulasidh: company 69.5 MW vs GEM 66 MW (5%)",
+  "GEM approximate point for Luhri-I/III (32.20 N, 76.32 E) is ~100+ km from the Satluj site near Khaira (Shimla/Mandi) per SJVN: coordinate wrong, approximate so no picture",
+  "Buxar unit 2 deliberately not verified (COD July 2026 precedes report date)"
+ ]
+}

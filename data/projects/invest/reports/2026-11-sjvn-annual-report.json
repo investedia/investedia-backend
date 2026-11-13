@@ -1,0 +1,487 @@
+{
+ "batch": "2026-11-sjvn-annual-report",
+ "run_at": "2026-11-13",
+ "company": "SJVN",
+ "documents": [
+  {
+   "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+   "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+   "date": "2026-08-04",
+   "kind": "company",
+   "rows": 8
+  },
+  {
+   "url": "https://sjvn.nic.in/en/sunni-dam-hep",
+   "sha256": "9b6e390f88f64fc3b9ffb397361ce91aa345e1e0968f818bc6dfa9649cbfb9e5",
+   "date": "2026-11-13",
+   "kind": "company",
+   "rows": 1
+  },
+  {
+   "url": "https://sjvn.nic.in/en/dhaulasidh-hep",
+   "sha256": "c6d71afa93a541848ac13355a4700d978fa34d5d2e01c1f923d9ba95a9bbfe1b",
+   "date": "2026-11-13",
+   "kind": "company",
+   "rows": 1
+  }
+ ],
+ "candidates": 44,
+ "categories": {
+  "A": 8,
+  "C": 36
+ },
+ "verified_written": 8,
+ "yield_pct": 18.2,
+ "unresolved_reasons": {
+  "not named in the batch documents": 36
+ },
+ "internal_only": 0,
+ "cost": {
+  "seconds": 12.7,
+  "documents": 3,
+  "bytes": 7507283
+ },
+ "audit_sample": [
+  {
+   "project": "Bagodara Solar Power Project",
+   "id": "gem:L100000829465",
+   "document_row": "Bagodra SPP",
+   "stake": null,
+   "passage": "Under - Construction Projects / Bagodra SPP Gujarat 70 March, 2027"
+  },
+  {
+   "project": "Sonitpur solar farm",
+   "id": "gem:L100001020610",
+   "document_row": "Sonitpur SPP (APDCL)",
+   "stake": null,
+   "passage": "Under - Construction Projects / Sonitpur SPP (APDCL) Assam 50 July, 2026"
+  },
+  {
+   "project": "Luhri-III hydroelectric plant",
+   "id": "gem:L100000601952",
+   "document_row": "Sunni Dam HEP",
+   "stake": null,
+   "passage": "Under - Construction Projects / Sunni Dam HEP Himachal Pradesh 382 Dec, 2029"
+  },
+  {
+   "project": "Arun 3 hydroelectric plant",
+   "id": "gem:L100000602576",
+   "document_row": "Arun-3 HEP Nepal",
+   "stake": null,
+   "passage": "Under - Construction Projects / Arun-3 HEP Nepal 900 Dec, 2028"
+  },
+  {
+   "project": "Dhaulasidh hydroelectric plant",
+   "id": "gem:L100001025754",
+   "document_row": "Dhaulasidh HEP",
+   "stake": null,
+   "passage": "Under - Construction Projects / Dhaulasidh HEP Himachal Pradesh 69.50 March, 2027"
+  }
+ ],
+ "results": [
+  {
+   "project": "gem:L100000602576",
+   "name": "Arun 3 hydroelectric plant",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000829465",
+   "name": "Bagodara Solar Power Project",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001025754",
+   "name": "Dhaulasidh hydroelectric plant",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000808871",
+   "name": "Gujarat GUVNL XIV (SJVN) solar farm",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001020239",
+   "name": "Jamui solar farm",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000601950",
+   "name": "Luhri-I hydroelectric plant",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000601952",
+   "name": "Luhri-III hydroelectric plant",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001020610",
+   "name": "Sonitpur solar farm",
+   "category": "A",
+   "reasons": [
+    "named in the company publication"
+   ],
+   "stake": null,
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000922380",
+   "name": "Ahmednagar (SJVN) wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000601809",
+   "name": "Amulin hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001019922",
+   "name": "Assam floating solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000601812",
+   "name": "Attunli hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001063964",
+   "name": "Barmer (SJVN) solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001063948",
+   "name": "Bikaner (SJVN) solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000808849:p2",
+   "name": "Bikaner solar park (phase 2)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102095:x:under-construction",
+   "name": "Buxar Thermal Power Station",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000102095:x:pre-construction",
+   "name": "Buxar Thermal Power Station",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001022799",
+   "name": "Darzo Lui Pumped Storage hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001064688",
+   "name": "Gujarat (SJVN) solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000829694",
+   "name": "Hapasar solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001064022",
+   "name": "Jakhol Sankri hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000829765",
+   "name": "Kakanchor solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000829785",
+   "name": "Kanpur District solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000829800",
+   "name": "Katoriya solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001020494",
+   "name": "Khavda (SJVN) II solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001020510",
+   "name": "Khavda (SJVN) IV solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001019758",
+   "name": "Khavda (SJVN) solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001055950",
+   "name": "Kutch (SJVN Green Energy) wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000922390",
+   "name": "Kutch (SJVN) wind farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000602658",
+   "name": "Lower Arun hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001020034:p1",
+   "name": "Maharashtra (SJVN) solar farm (phase 1)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001020034:p2",
+   "name": "Maharashtra (SJVN) solar farm (phase 2)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001020034:p3",
+   "name": "Maharashtra (SJVN) solar farm (phase 3)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001020034:p4",
+   "name": "Maharashtra (SJVN) solar farm (phase 4)",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000829904",
+   "name": "Masharashtra SPP solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000601965",
+   "name": "Mihumdon hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001063084",
+   "name": "Nandyal (SJVN) solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000829961",
+   "name": "Nangal Pond floating solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001022800",
+   "name": "Oju hydroelectric plant",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000800686:x",
+   "name": "Omkareshwar Floating Solar Park",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100000800392",
+   "name": "Punjab SJVN solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001063986",
+   "name": "Rajasar solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001064098",
+   "name": "Rajasthan (SJVN) IV solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  },
+  {
+   "project": "gem:L100001064100",
+   "name": "Rajasthan (SJVN) V solar farm",
+   "category": "C",
+   "reasons": [
+    "not named in the batch documents"
+   ],
+   "internal_only": []
+  }
+ ]
+}
