@@ -1008,7 +1008,15 @@
     {
      "cik": 352541,
      "effective_stake": null,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Madison",
+      "city_url": "https://www.wikidata.org/entity/Q43788",
+      "lat": 43.07472222222222,
+      "lon": -89.38416666666667,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q4732492"
+     },
      "hq_country": null,
      "lei": "5493009ML300G373MZ12",
      "listed_entity_id": "lei:5493009ML300G373MZ12",
@@ -15684,7 +15692,15 @@
     {
      "cik": null,
      "effective_stake": null,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Faridabad",
+      "city_url": "https://www.wikidata.org/entity/Q200663",
+      "lat": 28.416666666667,
+      "lon": 77.3,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q6954097"
+     },
      "hq_country": "India",
      "lei": "3358003ZPPTGWT595J46",
      "listed_entity_id": "E100000120883",
@@ -17942,7 +17958,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Faridabad",
+      "city_url": "https://www.wikidata.org/entity/Q200663",
+      "lat": 28.416666666667,
+      "lon": 77.3,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q6954097"
+     },
      "hq_country": "India",
      "lei": "3358003ZPPTGWT595J46",
      "listed_entity_id": "E100000120883",
@@ -18042,7 +18066,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Faridabad",
+      "city_url": "https://www.wikidata.org/entity/Q200663",
+      "lat": 28.416666666667,
+      "lon": 77.3,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q6954097"
+     },
      "hq_country": "India",
      "lei": "3358003ZPPTGWT595J46",
      "listed_entity_id": "E100000120883",
@@ -18164,7 +18196,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Faridabad",
+      "city_url": "https://www.wikidata.org/entity/Q200663",
+      "lat": 28.416666666667,
+      "lon": 77.3,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q6954097"
+     },
      "hq_country": "India",
      "lei": "3358003ZPPTGWT595J46",
      "listed_entity_id": "E100000120883",
@@ -18286,7 +18326,15 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "checked_at": "2026-11-13",
+      "city": "Faridabad",
+      "city_url": "https://www.wikidata.org/entity/Q200663",
+      "lat": 28.416666666667,
+      "lon": 77.3,
+      "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (matched by name, checked by hand)",
+      "source_url": "https://www.wikidata.org/entity/Q6954097"
+     },
      "hq_country": "India",
      "lei": "3358003ZPPTGWT595J46",
      "listed_entity_id": "E100000120883",

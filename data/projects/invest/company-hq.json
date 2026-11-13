@@ -203,6 +203,24 @@
    "source_url": "https://www.wikidata.org/entity/Q1967805",
    "city_url": "https://www.wikidata.org/entity/Q987",
    "checked_at": "2026-11-13"
+  },
+  "3358003ZPPTGWT595J46": {
+   "lat": 28.416666666667,
+   "lon": 77.3,
+   "city": "Faridabad",
+   "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (matched by name, checked by hand)",
+   "source_url": "https://www.wikidata.org/entity/Q6954097",
+   "city_url": "https://www.wikidata.org/entity/Q200663",
+   "checked_at": "2026-11-13"
+  },
+  "5493009ML300G373MZ12": {
+   "lat": 43.07472222222222,
+   "lon": -89.38416666666667,
+   "city": "Madison",
+   "source": "Wikidata (CC0) company item P159 headquarters -> city P625 (matched by name, checked by hand)",
+   "source_url": "https://www.wikidata.org/entity/Q4732492",
+   "city_url": "https://www.wikidata.org/entity/Q43788",
+   "checked_at": "2026-11-13"
   }
  },
  "by_ticker": {
