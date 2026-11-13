@@ -2,6 +2,58 @@
  "generated_at": "2026-11-13",
  "items": [
   {
+   "type": "source_changed",
+   "url": "https://data.sec.gov/submissions/CIK0000092122.json",
+   "old_sha256": "757db0e020550005fe284735c694702a8d299fa088ce08dac3238aaf2492ef72",
+   "new_sha256": "870c3dca72603121f3f48cadf951c9d7ff52c524bf24fbb34b874bfecc6b9ee1",
+   "affected_projects": [
+    "eia:69101",
+    "eia:708",
+    "eia:728"
+   ],
+   "action": "re-run the batch for this document and audit the differences"
+  },
+  {
+   "type": "source_changed",
+   "url": "https://data.sec.gov/submissions/CIK0000715957.json",
+   "old_sha256": "249b714e35c45a9ebf49669e7a0f099b17e6c165613d9dca9f9a44849f5eb6c4",
+   "new_sha256": "ff1a08a63c217adf34105048e716f5022fe25572e6cd0f3c76ded0dd62f87a4d",
+   "affected_projects": [
+    "eia:3797"
+   ],
+   "action": "re-run the batch for this document and audit the differences"
+  },
+  {
+   "type": "source_changed",
+   "url": "https://data.sec.gov/submissions/CIK0000753308.json",
+   "old_sha256": "9693784cd74acfce477c1b90aa036fc4f1e72f0c177b79ee09b758cce332aa1c",
+   "new_sha256": "5cca5baaaf19c84425741f26c5196e09afe7c7f1d6f8567a9624f72b5d708387",
+   "affected_projects": [
+    "eia:68824",
+    "eia:68825",
+    "eia:68826",
+    "eia:68827",
+    "eia:68828",
+    "eia:68829",
+    "eia:68830",
+    "eia:68831",
+    "eia:68832",
+    "eia:68833",
+    "eia:68834",
+    "eia:68835",
+    "eia:68836",
+    "eia:69657",
+    "eia:69658",
+    "eia:69659",
+    "eia:69823",
+    "eia:69879",
+    "eia:70299",
+    "eia:70407",
+    "eia:70408"
+   ],
+   "action": "re-run the batch for this document and audit the differences"
+  },
+  {
    "type": "expected_date_passed",
    "project": "eia:708",
    "name": "Hammond",

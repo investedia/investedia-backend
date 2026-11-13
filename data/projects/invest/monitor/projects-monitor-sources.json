@@ -1,0 +1,829 @@
+{
+ "schema": "investedia.projects.monitor-sources.v0",
+ "generated_at": "2026-11-13",
+ "sources": [
+  {
+   "url": "https://acwapower.com/en/media-center/latest-news/acwa-signs-power-purchase-agreement-for-the-expansion-of-rabigh-2-power-plant-project/",
+   "sha256": "text:0a6bc53780d420dc058436178f4bac187fd9a655baf4a59cfd00ed491c435c81",
+   "projects": [
+    "gem:L100000401075:x"
+   ]
+  },
+  {
+   "url": "https://borsaitaliana.it/borsa/azioni/scheda/IT0003128367.html?lang=en",
+   "sha256": "text:5a323a6b2526b6c2584f2b287fbe57265d78c072269aa70ca28beb9ddd013ab8",
+   "projects": [
+    "eia:64672",
+    "eia:65028"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0000004904.json",
+   "sha256": "7e91f70a1c8ad6c8a8058355a6f8ce06bd19da09fdfbaba3aac03fbf8ddc49b7",
+   "projects": [
+    "eia:68417",
+    "eia:8059"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0000065984.json",
+   "sha256": "50d2025c0184660353058148a00e3aed5452760163384e754cbec2422eaf7ee0",
+   "projects": [
+    "eia:66621",
+    "eia:67914",
+    "eia:68028",
+    "eia:68029",
+    "eia:68053",
+    "eia:68214",
+    "eia:69077",
+    "eia:69184",
+    "eia:69185",
+    "eia:69223",
+    "eia:69426",
+    "eia:69445",
+    "eia:69449",
+    "eia:69649",
+    "eia:69650",
+    "eia:69750",
+    "eia:69944",
+    "eia:69952",
+    "eia:69989",
+    "eia:69990",
+    "eia:69991",
+    "eia:69993",
+    "eia:70187"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0000072903.json",
+   "sha256": "1688b89f19c41595bff867a92336905c7006233c676f34be94c75d2f03040362",
+   "projects": [
+    "eia:6112",
+    "eia:68982",
+    "eia:69040",
+    "eia:69873",
+    "eia:70259"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0000092122.json",
+   "sha256": "870c3dca72603121f3f48cadf951c9d7ff52c524bf24fbb34b874bfecc6b9ee1",
+   "projects": [
+    "eia:69101",
+    "eia:708",
+    "eia:728"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0000352541.json",
+   "sha256": "cff70c175565af88e6b7e352eb01fd0364cbe4d19134787795afe578ae0d95ed",
+   "projects": [
+    "eia:4050"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0000715957.json",
+   "sha256": "ff1a08a63c217adf34105048e716f5022fe25572e6cd0f3c76ded0dd62f87a4d",
+   "projects": [
+    "eia:3797"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0000753308.json",
+   "sha256": "5cca5baaaf19c84425741f26c5196e09afe7c7f1d6f8567a9624f72b5d708387",
+   "projects": [
+    "eia:68824",
+    "eia:68825",
+    "eia:68826",
+    "eia:68827",
+    "eia:68828",
+    "eia:68829",
+    "eia:68830",
+    "eia:68831",
+    "eia:68832",
+    "eia:68833",
+    "eia:68834",
+    "eia:68835",
+    "eia:68836",
+    "eia:69657",
+    "eia:69658",
+    "eia:69659",
+    "eia:69823",
+    "eia:69879",
+    "eia:70299",
+    "eia:70407",
+    "eia:70408"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0000764622.json",
+   "sha256": "90e3d387cde954fb314f0d9fa533b88e919e6e8088f64ced97d3922e2dbe540c",
+   "projects": [
+    "eia:55455",
+    "eia:67964",
+    "eia:68397"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0000783325.json",
+   "sha256": "c09eca44a57921e4197a89886511b38f3f1fcb2f32f3fd63951a21e505620238",
+   "projects": [
+    "eia:4041"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0000811156.json",
+   "sha256": "360d5cb8748a1cb72a5ecd9080d03fc0d4782cc4165795dde85c02ecda9bf4ef",
+   "projects": [
+    "eia:67998",
+    "eia:67999",
+    "eia:68744",
+    "eia:68745"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0000827052.json",
+   "sha256": "4193a08b3a74b636453c626b0b39d4e5fc7fdc9762ebf76bf0d96758aabc291a",
+   "projects": [
+    "eia:65458"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0000895728.json",
+   "sha256": "fc5c3b2ff8bc2703315a49d3e79432d2a6f1a693ba999d16ad0171e3a4b05062",
+   "projects": [
+    "eia:59971",
+    "eia:60272",
+    "eia:69272"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0000922224.json",
+   "sha256": "209eac6602cd82d802fdde5beffe24b752ce83a61174270dc34a1280199e44a2",
+   "projects": [
+    "eia:1355",
+    "eia:1364"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0000936340.json",
+   "sha256": "23d9c3efa206435d52b39d3090a3be81ea9fea62c1558eac4f40288aae71ba3d",
+   "projects": [
+    "eia:67755",
+    "eia:67759",
+    "eia:68850",
+    "eia:69462",
+    "eia:69463",
+    "eia:69464",
+    "eia:69467",
+    "eia:69468",
+    "eia:69470",
+    "eia:69775",
+    "eia:69776"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0001002910.json",
+   "sha256": "5c423af9fb39828f13fa191d533525eb732f502eed58fbad0221d0aca85cbd0b",
+   "projects": [
+    "eia:67576"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0001021635.json",
+   "sha256": "a56fef8665260a85ac5464687e26843e3bbfac3797ebdffc0a3007c3fc68c1e1",
+   "projects": [
+    "eia:2951"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0001067983.json",
+   "sha256": "f3460fe47bef2c1e639512714c60d5e061c7d40ecf83fd3a961df966a19d3a91",
+   "projects": [
+    "eia:70107"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0001127248.json",
+   "sha256": "3da81324fdb93ace647dcb507f2f47a336d0e2455d3328b0b8755f8a3fb4a08d",
+   "projects": [
+    "eia:69461",
+    "eia:69522",
+    "eia:69523",
+    "eia:70395"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0001130464.json",
+   "sha256": "97382f98064befb68d51256c5a2aa1cf3970979fc2f6f82330b4017dfd92200f",
+   "projects": [
+    "eia:55478",
+    "eia:56998",
+    "eia:57703"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0001326160.json",
+   "sha256": "758cb8fb962f366eb321736984519e6448fe917470adf36f1765b4ca97e8d3ca",
+   "projects": [
+    "eia:60434",
+    "eia:69119",
+    "eia:69148",
+    "eia:69194",
+    "eia:69356",
+    "eia:69771",
+    "eia:69772",
+    "eia:70220",
+    "eia:70221",
+    "eia:70222",
+    "eia:70223"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0001466593.json",
+   "sha256": "9687395727ba2cad77fe9e7d75c2a4801ed18f2a9342b0b1407d4a2964dca0dd",
+   "projects": [
+    "eia:68339",
+    "eia:68340"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0001692819.json",
+   "sha256": "aa1c3cb440543c9e3ce53f3f73f2cc252147b7b9b517d171f64c38aaefe1bb13",
+   "projects": [
+    "eia:63193"
+   ]
+  },
+  {
+   "url": "https://data.sec.gov/submissions/CIK0001711269.json",
+   "sha256": "9b7f7e5acb1e5077dffd9b1625c5901ec717e57cf90094d79eca8edc25e58d27",
+   "projects": [
+    "eia:68294",
+    "eia:68295",
+    "eia:68296",
+    "eia:69481",
+    "eia:69631"
+   ]
+  },
+  {
+   "url": "https://live.euronext.com/en/product/equities/PTEDP0AM0009-XLIS",
+   "sha256": "text:5962e67dfc4ec5aacfc8ae4222d03a12a246e655d2724fd8f5ff7b5fead5d62d",
+   "projects": [
+    "eia:62263",
+    "eia:62892"
+   ]
+  },
+  {
+   "url": "https://ntpc.co.in/future-capacity-additions",
+   "sha256": "text:16006175a791cdf6390b90c898402abd9cc15b2987e6b6cbe7d4058dcef48b20",
+   "projects": [
+    "gem:L100000102113:x",
+    "gem:L100000102185:x",
+    "gem:L100000102281:x:under-construction",
+    "gem:L100000102332:x",
+    "gem:L100000102458:p2",
+    "gem:L100000102504:p3",
+    "gem:L100000102640:p2",
+    "gem:L100000102652:x",
+    "gem:L100000602090",
+    "gem:L100000800609",
+    "gem:L100000808890",
+    "gem:L100000922381",
+    "gem:L100001019874"
+   ]
+  },
+  {
+   "url": "https://sjvn.nic.in/en/dhaulasidh-hep",
+   "sha256": "c6d71afa93a541848ac13355a4700d978fa34d5d2e01c1f923d9ba95a9bbfe1b",
+   "projects": [
+    "gem:L100001025754"
+   ]
+  },
+  {
+   "url": "https://sjvn.nic.in/en/sunni-dam-hep",
+   "sha256": "9b6e390f88f64fc3b9ffb397361ce91aa345e1e0968f818bc6dfa9649cbfb9e5",
+   "projects": [
+    "gem:L100000601952"
+   ]
+  },
+  {
+   "url": "https://sjvn.nic.in/sites/default/files/2026-08/FINAL%20SJVN%20Annual%20Report%20%281-252%29_04.08.26%20PDF%20%28Compressed%29.pdf",
+   "sha256": "cd3e33192cf4192c6bb6564685e9cecb0922de193c8ab8d659181c67cd39b4f4",
+   "projects": [
+    "gem:L100000601950",
+    "gem:L100000601952",
+    "gem:L100000602576",
+    "gem:L100000808871",
+    "gem:L100000829465",
+    "gem:L100001020239",
+    "gem:L100001020610",
+    "gem:L100001025754"
+   ]
+  },
+  {
+   "url": "https://storage.mfn.se/a0d6c1c3-c903-4c13-9985-b1d911d0daf7/scatec-q2-2026-report.pdf",
+   "sha256": "52cb082ab99c1363a6c65fbf7e728f48c0ef11b73b6537db403992f2afb2e56b",
+   "projects": [
+    "gem:L100001045291:p1",
+    "gem:L100001045291:p2"
+   ]
+  },
+  {
+   "url": "https://www.acwapower.com/media/1mxfptjj/interim-investor-report-q3-2025.pdf",
+   "sha256": "effc119f47a16d14c145892b9b4c67b9404ee4bceab959f6abc069adcb4d9c17",
+   "projects": [
+    "gem:L100000801313",
+    "gem:L100000922142:p4",
+    "gem:L100001004183:p1",
+    "gem:L100001016696:p1",
+    "gem:L100001016696:p2",
+    "gem:L100001016696:p3",
+    "gem:L100001016696:p4",
+    "gem:L100001016696:p5",
+    "gem:L100001018767",
+    "gem:L100001018768",
+    "gem:L100001018770",
+    "gem:L100001061657",
+    "gem:L100001063143",
+    "gem:L100001063152",
+    "gem:L100001063155",
+    "gem:L100001063265",
+    "gem:L100001063269"
+   ]
+  },
+  {
+   "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.acciona-es0125220311.html",
+   "sha256": "text:fa88b207b564ad62537c4f1f6d3ef2a6256d5e95515b39e139d95e88f9c2b5f4",
+   "projects": [
+    "eia:64658",
+    "eia:64659",
+    "eia:69004",
+    "eia:69110"
+   ]
+  },
+  {
+   "url": "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html",
+   "sha256": "text:3541a225841801934c6d1bc93d23e244423eeb9b65a1faefcddc15bfbc6ca6f0",
+   "projects": [
+    "eia:64073",
+    "eia:64253",
+    "eia:65326",
+    "eia:67347",
+    "eia:67990",
+    "eia:69294",
+    "eia:69482",
+    "eia:70055",
+    "eia:70225"
+   ]
+  },
+  {
+   "url": "https://www.eia.gov/electricity/data/eia860/",
+   "sha256": "text:19013ca459d8354b48a90f61433ce3f3a0998fbeb5d621f61f34fd34629e3f11",
+   "projects": [
+    "eia:1355",
+    "eia:1364",
+    "eia:2951",
+    "eia:3797",
+    "eia:4041",
+    "eia:4050",
+    "eia:55455",
+    "eia:55478",
+    "eia:56998",
+    "eia:57703",
+    "eia:59971",
+    "eia:60272",
+    "eia:60434",
+    "eia:6112",
+    "eia:61511",
+    "eia:62263",
+    "eia:62892",
+    "eia:63193",
+    "eia:64073",
+    "eia:64253",
+    "eia:64658",
+    "eia:64659",
+    "eia:64672",
+    "eia:65028",
+    "eia:65326",
+    "eia:65338",
+    "eia:65458",
+    "eia:66124",
+    "eia:66238",
+    "eia:66309",
+    "eia:66621",
+    "eia:67347",
+    "eia:67576",
+    "eia:67755",
+    "eia:67759",
+    "eia:67914",
+    "eia:67964",
+    "eia:67990",
+    "eia:67998",
+    "eia:67999",
+    "eia:68028",
+    "eia:68029",
+    "eia:68053",
+    "eia:68214",
+    "eia:68294",
+    "eia:68295",
+    "eia:68296",
+    "eia:68339",
+    "eia:68340",
+    "eia:68397",
+    "eia:68417",
+    "eia:68744",
+    "eia:68745",
+    "eia:68824",
+    "eia:68825",
+    "eia:68826",
+    "eia:68827",
+    "eia:68828",
+    "eia:68829",
+    "eia:68830",
+    "eia:68831",
+    "eia:68832",
+    "eia:68833",
+    "eia:68834",
+    "eia:68835",
+    "eia:68836",
+    "eia:68850",
+    "eia:68982",
+    "eia:69004",
+    "eia:69027",
+    "eia:69040",
+    "eia:69077",
+    "eia:69101",
+    "eia:69110",
+    "eia:69119",
+    "eia:69148",
+    "eia:69184",
+    "eia:69185",
+    "eia:69194",
+    "eia:69223",
+    "eia:69272",
+    "eia:69294",
+    "eia:69356",
+    "eia:69426",
+    "eia:69445",
+    "eia:69449",
+    "eia:69461",
+    "eia:69462",
+    "eia:69463",
+    "eia:69464",
+    "eia:69467",
+    "eia:69468",
+    "eia:69470",
+    "eia:69481",
+    "eia:69482",
+    "eia:69522",
+    "eia:69523",
+    "eia:69579",
+    "eia:69588",
+    "eia:69631",
+    "eia:69649",
+    "eia:69650",
+    "eia:69657",
+    "eia:69658",
+    "eia:69659",
+    "eia:69750",
+    "eia:69771",
+    "eia:69772",
+    "eia:69775",
+    "eia:69776",
+    "eia:69823",
+    "eia:69873",
+    "eia:69879",
+    "eia:69944",
+    "eia:69952",
+    "eia:69989",
+    "eia:69990",
+    "eia:69991",
+    "eia:69993",
+    "eia:70055",
+    "eia:70107",
+    "eia:70187",
+    "eia:70220",
+    "eia:70221",
+    "eia:70222",
+    "eia:70223",
+    "eia:70225",
+    "eia:70259",
+    "eia:70299",
+    "eia:70395",
+    "eia:70407",
+    "eia:70408",
+    "eia:708",
+    "eia:728",
+    "eia:8059"
+   ]
+  },
+  {
+   "url": "https://www.eia.gov/electricity/data/eia860m/",
+   "sha256": "text:dedba5bd2e05804c2121b596c8cb14f72f4c459fcc194c88f01d917dfab09152",
+   "projects": [
+    "eia:1355",
+    "eia:1364",
+    "eia:2951",
+    "eia:3797",
+    "eia:4041",
+    "eia:4050",
+    "eia:55455",
+    "eia:55478",
+    "eia:56998",
+    "eia:57703",
+    "eia:59971",
+    "eia:60272",
+    "eia:60434",
+    "eia:6112",
+    "eia:61511",
+    "eia:62263",
+    "eia:62892",
+    "eia:63193",
+    "eia:64073",
+    "eia:64253",
+    "eia:64658",
+    "eia:64659",
+    "eia:64672",
+    "eia:65028",
+    "eia:65326",
+    "eia:65338",
+    "eia:65458",
+    "eia:66124",
+    "eia:66238",
+    "eia:66309",
+    "eia:66621",
+    "eia:67347",
+    "eia:67576",
+    "eia:67755",
+    "eia:67759",
+    "eia:67914",
+    "eia:67964",
+    "eia:67990",
+    "eia:67998",
+    "eia:67999",
+    "eia:68028",
+    "eia:68029",
+    "eia:68053",
+    "eia:68214",
+    "eia:68294",
+    "eia:68295",
+    "eia:68296",
+    "eia:68339",
+    "eia:68340",
+    "eia:68397",
+    "eia:68417",
+    "eia:68744",
+    "eia:68745",
+    "eia:68824",
+    "eia:68825",
+    "eia:68826",
+    "eia:68827",
+    "eia:68828",
+    "eia:68829",
+    "eia:68830",
+    "eia:68831",
+    "eia:68832",
+    "eia:68833",
+    "eia:68834",
+    "eia:68835",
+    "eia:68836",
+    "eia:68850",
+    "eia:68982",
+    "eia:69004",
+    "eia:69027",
+    "eia:69040",
+    "eia:69077",
+    "eia:69101",
+    "eia:69110",
+    "eia:69119",
+    "eia:69148",
+    "eia:69184",
+    "eia:69185",
+    "eia:69194",
+    "eia:69223",
+    "eia:69272",
+    "eia:69294",
+    "eia:69356",
+    "eia:69426",
+    "eia:69445",
+    "eia:69449",
+    "eia:69461",
+    "eia:69462",
+    "eia:69463",
+    "eia:69464",
+    "eia:69467",
+    "eia:69468",
+    "eia:69470",
+    "eia:69481",
+    "eia:69482",
+    "eia:69522",
+    "eia:69523",
+    "eia:69579",
+    "eia:69588",
+    "eia:69631",
+    "eia:69649",
+    "eia:69650",
+    "eia:69657",
+    "eia:69658",
+    "eia:69659",
+    "eia:69750",
+    "eia:69771",
+    "eia:69772",
+    "eia:69775",
+    "eia:69776",
+    "eia:69823",
+    "eia:69873",
+    "eia:69879",
+    "eia:69944",
+    "eia:69952",
+    "eia:69989",
+    "eia:69990",
+    "eia:69991",
+    "eia:69993",
+    "eia:70055",
+    "eia:70107",
+    "eia:70187",
+    "eia:70220",
+    "eia:70221",
+    "eia:70222",
+    "eia:70223",
+    "eia:70225",
+    "eia:70259",
+    "eia:70299",
+    "eia:70395",
+    "eia:70407",
+    "eia:70408",
+    "eia:708",
+    "eia:728",
+    "eia:8059"
+   ]
+  },
+  {
+   "url": "https://www.enbw.com/company/topics/coal-phaseout/heilbronn-combined-heat-and-power-plant/",
+   "sha256": "eddbfa468340d85aa9a64b4959f7330e3cefbb2998b416d6156a2242fdbf3879",
+   "projects": [
+    "gem:L100000101875:Oil & gas"
+   ]
+  },
+  {
+   "url": "https://www.enbw.com/unternehmen/konzern/energieerzeugung/neubau-und-projekte/gas-und-dampfturbinenanlage-gud-altbach-deizisau/",
+   "sha256": "text:410058470bd9a1a02e5b015c88a5d43c3df3032e9cfcaa4c7ac64c37447b55f7",
+   "projects": [
+    "gem:L100000101873:Oil & gas:x"
+   ]
+  },
+  {
+   "url": "https://www.nhpcindia.com/welcome/language/en/project/3//",
+   "sha256": "text:ef5537fb6988512249196c184a9cbcaad821a2e5634384eb7528b14e4ea04667",
+   "projects": [
+    "gem:L100000601853",
+    "gem:L100000602010",
+    "gem:L100000602048",
+    "gem:L100000602067",
+    "gem:L100001019878"
+   ]
+  },
+  {
+   "url": "https://www.rwe.com/en/investor-relations/rwe-share/share-at-a-glance/",
+   "sha256": "text:6a84633e8da1fe2e9bd1cdb90752629a10a064a1bab72c836e7fd8394bde3c94",
+   "projects": [
+    "eia:61511",
+    "eia:65338",
+    "eia:66124",
+    "eia:66238",
+    "eia:66309",
+    "eia:69027",
+    "eia:69579",
+    "eia:69588"
+   ]
+  },
+  {
+   "url": "https://www.sec.gov/Archives/edgar/data/1021635/000119312526055414/oge-ex21_01.htm",
+   "sha256": "4a7b8c361a4596e64fc840aa1a418baeb1944b8ce2ade48702d1e9ec7384f1f8",
+   "projects": [
+    "eia:2951"
+   ]
+  },
+  {
+   "url": "https://www.sec.gov/Archives/edgar/data/1130464/000119312526046028/bkh-ex21.htm",
+   "sha256": "1eb42d59b4d1c6cd6726a7df887bd305320c9f350f7c4ab2ccf7c4fd2e2b2de0",
+   "projects": [
+    "eia:56998"
+   ]
+  },
+  {
+   "url": "https://www.sec.gov/Archives/edgar/data/1466593/000146659326000008/a2025ex21subsidiariesofreg.htm",
+   "sha256": "84e33e877c734dc1ef4ef29161f99e7609c919b8df1dc25bf37f24bb7334d6bd",
+   "projects": [
+    "eia:68339",
+    "eia:68340"
+   ]
+  },
+  {
+   "url": "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm",
+   "sha256": "text:f260090c2d17e818d9fb64a32a37f7d975b7737def530928a6c61a19e215c7f4",
+   "projects": [
+    "eia:64073",
+    "eia:64253",
+    "eia:65326",
+    "eia:67347",
+    "eia:67990",
+    "eia:69294",
+    "eia:69482",
+    "eia:70055",
+    "eia:70225"
+   ]
+  },
+  {
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000015/nee-q42025xex21.htm",
+   "sha256": "2f9c7af2194edf4826e28adf2b4eb5fd7a532062916bde6f9f783590339ba85e",
+   "projects": [
+    "eia:69657",
+    "eia:69658",
+    "eia:69659",
+    "eia:69823",
+    "eia:69879",
+    "eia:70299",
+    "eia:70407",
+    "eia:70408"
+   ]
+  },
+  {
+   "url": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000063/aes-20251231.htm",
+   "sha256": "5680899fb4146c0e5758e650e441f796f72d326ad67e19a8dbb46271f0a8131f",
+   "projects": [
+    "eia:64209",
+    "eia:64349",
+    "eia:69197",
+    "eia:69964"
+   ]
+  }
+ ],
+ "due": [
+  {
+   "project": "eia:708",
+   "name": "Hammond",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked"
+  },
+  {
+   "project": "eia:60434",
+   "name": "Baxter Creek Solar",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked"
+  },
+  {
+   "project": "eia:62892",
+   "name": "EDPR CA Solar Park VI LLC (CA) Hybrid",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked"
+  },
+  {
+   "project": "eia:64349",
+   "name": "Armadillo Solar Center",
+   "note": "Expected 1H 2026 according to the source; current status to be re-checked"
+  },
+  {
+   "project": "eia:64672",
+   "name": "Blue Jay Solar I, LLC",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked"
+  },
+  {
+   "project": "eia:65028",
+   "name": "Roseland Solar Project, LLC",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked"
+  },
+  {
+   "project": "eia:65338",
+   "name": "Union Ridge Solar",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked"
+  },
+  {
+   "project": "eia:66621",
+   "name": "Orange County Advanced Power Station",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked"
+  },
+  {
+   "project": "eia:68850",
+   "name": "Gratiot Solar Park",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked"
+  },
+  {
+   "project": "eia:69040",
+   "name": "Arroyo Solar",
+   "note": "Expected 2026-10 according to EIA-860M (September 2026); current status to be re-checked"
+  },
+  {
+   "project": "eia:69197",
+   "name": "Halifax County Solar",
+   "note": "Expected 1H 2026 according to the source; current status to be re-checked"
+  },
+  {
+   "project": "gem:L100001020239",
+   "name": "Jamui solar farm",
+   "note": "Expected Q3 2026 according to the source; current status to be re-checked"
+  },
+  {
+   "project": "gem:L100001020610",
+   "name": "Sonitpur solar farm",
+   "note": "Expected Q3 2026 according to the source; current status to be re-checked"
+  }
+ ]
+}

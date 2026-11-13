@@ -1,3 +1,4 @@
+import { PROJECTS_CRON, runProjectsMonitor } from './v1/projects-monitor.js';
 // Investedia live crypto relay (Cloudflare Worker, free plan).
 // Visitors call THIS worker (our own subdomain), not Coinbase, so no third party sees their IP.
 // One edge-cached snapshot of Coinbase's public market data (top 100 coins) is shared by everyone and refreshed at most every 3 seconds.
@@ -43,6 +44,7 @@ export default {
   async scheduled(event, env0, ctx) {
     const env = withAliases(env0);
     const log = (o) => console.log(JSON.stringify(o)), fail = (k) => (e) => log({ cron: k, error: String(e).slice(0, 200) });
+    if (event.cron === PROJECTS_CRON) { if (env.PROJECTS_MONITOR === 'on') ctx.waitUntil(runProjectsMonitor(env).then(r => log({ cron: 'projects-monitor', ...r })).catch(fail('projects-monitor'))); return; } // never falls through to prices
     if (event.cron === '*/5 * * * *') { if (env.NEWS_CRON === 'on') ctx.waitUntil(refreshNews(env).then(r => log({ cron: 'news', fetched: r.fetched, candidates: r.candidates, added: r.added, wrote: r.wrote, gemini_ok: r.gemini_ok, feeds_failed: r.feeds_failed })).catch(fail('news'))); }
     else ctx.waitUntil(refresh(env).then(r => log({ cron: 'prices', ok: r.ok, sent: r.sent, wrote: r.wrote, changed: r.changed, reason: r.reason })).catch(fail('prices'))
       // price-move smart alerts every 10 minutes, from the snapshot the price run just wrote

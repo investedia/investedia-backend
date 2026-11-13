@@ -4,20 +4,18 @@
   "https://acwapower.com/en/media-center/latest-news/acwa-signs-power-purchase-agreement-for-the-expansion-of-rabigh-2-power-plant-project/": {
    "etag": null,
    "last_modified": null,
-   "sha256": "931c7611afab09cb210eb1e7dbf9da65cb17c20f39fd45c418b03d1aae5432dd",
+   "sha256": "text:0a6bc53780d420dc058436178f4bac187fd9a655baf4a59cfd00ed491c435c81",
    "bytes": 75387,
    "checked_at": "2026-11-13",
-   "version": 1,
-   "last_error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "version": 2
   },
   "https://borsaitaliana.it/borsa/azioni/scheda/IT0003128367.html?lang=en": {
    "etag": null,
    "last_modified": null,
-   "sha256": "02efd550176b9b8ba0b2053833d8871f6dcac59ea3da58ac9a7e4207316525a3",
+   "sha256": "text:5a323a6b2526b6c2584f2b287fbe57265d78c072269aa70ca28beb9ddd013ab8",
    "bytes": 60566,
    "checked_at": "2026-11-13",
-   "version": 2,
-   "last_error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "version": 3
   },
   "https://data.sec.gov/submissions/CIK0000004904.json": {
    "etag": null,
@@ -25,8 +23,7 @@
    "sha256": "7e91f70a1c8ad6c8a8058355a6f8ce06bd19da09fdfbaba3aac03fbf8ddc49b7",
    "bytes": 160963,
    "checked_at": "2026-11-13",
-   "version": 1,
-   "last_error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "version": 1
   },
   "https://data.sec.gov/submissions/CIK0000065984.json": {
    "etag": null,
@@ -34,8 +31,7 @@
    "sha256": "50d2025c0184660353058148a00e3aed5452760163384e754cbec2422eaf7ee0",
    "bytes": 168294,
    "checked_at": "2026-11-13",
-   "version": 1,
-   "last_error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "version": 1
   },
   "https://data.sec.gov/submissions/CIK0000072903.json": {
    "etag": null,
@@ -43,16 +39,15 @@
    "sha256": "1688b89f19c41595bff867a92336905c7006233c676f34be94c75d2f03040362",
    "bytes": 152277,
    "checked_at": "2026-11-13",
-   "version": 1,
-   "last_error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+   "version": 1
   },
   "https://data.sec.gov/submissions/CIK0000092122.json": {
    "etag": null,
    "last_modified": null,
-   "sha256": "757db0e020550005fe284735c694702a8d299fa088ce08dac3238aaf2492ef72",
-   "bytes": 157622,
+   "sha256": "870c3dca72603121f3f48cadf951c9d7ff52c524bf24fbb34b874bfecc6b9ee1",
+   "bytes": 157778,
    "checked_at": "2026-11-13",
-   "version": 1
+   "version": 2
   },
   "https://data.sec.gov/submissions/CIK0000352541.json": {
    "etag": null,
@@ -65,18 +60,18 @@
   "https://data.sec.gov/submissions/CIK0000715957.json": {
    "etag": null,
    "last_modified": null,
-   "sha256": "249b714e35c45a9ebf49669e7a0f099b17e6c165613d9dca9f9a44849f5eb6c4",
-   "bytes": 155268,
+   "sha256": "ff1a08a63c217adf34105048e716f5022fe25572e6cd0f3c76ded0dd62f87a4d",
+   "bytes": 155419,
    "checked_at": "2026-11-13",
-   "version": 1
+   "version": 2
   },
   "https://data.sec.gov/submissions/CIK0000753308.json": {
    "etag": null,
    "last_modified": null,
-   "sha256": "9693784cd74acfce477c1b90aa036fc4f1e72f0c177b79ee09b758cce332aa1c",
-   "bytes": 172149,
+   "sha256": "5cca5baaaf19c84425741f26c5196e09afe7c7f1d6f8567a9624f72b5d708387",
+   "bytes": 172280,
    "checked_at": "2026-11-13",
-   "version": 1
+   "version": 2
   },
   "https://data.sec.gov/submissions/CIK0000764622.json": {
    "etag": null,
@@ -207,12 +202,12 @@
    "version": 1
   },
   "https://live.euronext.com/en/product/equities/PTEDP0AM0009-XLIS": {
-   "etag": "\"1794564050\"",
-   "last_modified": "Fri, 13 Nov 2026 10:00:50 GMT",
-   "sha256": "c8e66ca2f66628f510559ecb43fb33c36003a73016f1999fe1192e572226d37e",
+   "etag": "\"1794570857\"",
+   "last_modified": "Fri, 13 Nov 2026 11:54:17 GMT",
+   "sha256": "text:5962e67dfc4ec5aacfc8ae4222d03a12a246e655d2724fd8f5ff7b5fead5d62d",
    "bytes": 242982,
    "checked_at": "2026-11-13",
-   "version": 1
+   "version": 2
   },
   "https://ntpc.co.in/future-capacity-additions": {
    "etag": null,
@@ -264,7 +259,7 @@
   },
   "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.acciona-es0125220311.html": {
    "etag": null,
-   "last_modified": "Fri, 13 Nov 2026 10:19:51 GMT",
+   "last_modified": "Fri, 13 Nov 2026 11:56:38 GMT",
    "sha256": "text:fa88b207b564ad62537c4f1f6d3ef2a6256d5e95515b39e139d95e88f9c2b5f4",
    "bytes": 166788,
    "checked_at": "2026-11-13",
@@ -303,10 +298,12 @@
    "version": 1
   },
   "https://www.nhpcindia.com/welcome/language/en/project/3//": {
-   "sha256": "2f363e943f30a67e95dc53e9306aed6e9a7f44abf62e95104c575327f77993ba",
-   "last_error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+   "etag": null,
+   "last_modified": "Fri, 13 Nov 2026 11:56:47 GMT",
+   "sha256": "text:ef5537fb6988512249196c184a9cbcaad821a2e5634384eb7528b14e4ea04667",
+   "bytes": 156680,
    "checked_at": "2026-11-13",
-   "version": 0
+   "version": 1
   },
   "https://www.rwe.com/en/investor-relations/rwe-share/share-at-a-glance/": {
    "etag": null,
@@ -360,6 +357,22 @@
    "checked_at": "2026-11-13",
    "version": 1,
    "last_error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  "https://www.bolsasymercados.es/en/bme-exchange/prices-and-markets/shares/detail.iberdrola-es0144580y14.html": {
+   "etag": null,
+   "last_modified": "Fri, 13 Nov 2026 11:56:39 GMT",
+   "sha256": "text:3541a225841801934c6d1bc93d23e244423eeb9b65a1faefcddc15bfbc6ca6f0",
+   "bytes": 166976,
+   "checked_at": "2026-11-13",
+   "version": 1
+  },
+  "https://www.sec.gov/Archives/edgar/data/1634997/000119312524284174/d784430d8k.htm": {
+   "etag": null,
+   "last_modified": "Mon, 23 Dec 2024 21:04:54 GMT",
+   "sha256": "text:f260090c2d17e818d9fb64a32a37f7d975b7737def530928a6c61a19e215c7f4",
+   "bytes": 43191,
+   "checked_at": "2026-11-13",
+   "version": 1
   }
  }
 }

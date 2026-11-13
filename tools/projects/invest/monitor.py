@@ -98,6 +98,10 @@ def main():
             if va and date.fromisoformat(va) < today - timedelta(days=180):
                 queue.append({'type': 'evidence_older_than_180_days', 'project': p['id'], 'ticker': e['verification']['listing'].get('ticker')})
     sp.write_text(json.dumps(state, indent=1) + '\n')
+    # Source list for the Worker monitor (workers/live/v1/projects-monitor.js); published with the Globe data on release.
+    srcs = [{'url': u, 'sha256': state['sources'].get(u, {}).get('sha256'), 'projects': sorted(by_url[u])} for u in sorted(by_url)]
+    due = [{'project': i['project'], 'name': i['name'], 'note': i['note']} for i in queue if i['type'] == 'expected_date_passed']
+    (MON / 'projects-monitor-sources.json').write_text(json.dumps({'schema': 'investedia.projects.monitor-sources.v0', 'generated_at': a.today, 'sources': srcs, 'due': due}, indent=1, ensure_ascii=False) + '\n')
     (MON / 'review-queue.json').write_text(json.dumps({'generated_at': a.today, 'items': queue}, indent=1, ensure_ascii=False) + '\n')
     run = {'date': a.today, 'sources_checked': len(urls), **counts, 'queue_items': len(queue), 'seconds': round(time.time() - t0, 1)}
     with (MON / 'history.jsonl').open('a') as f:
