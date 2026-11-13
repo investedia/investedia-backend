@@ -1,0 +1,268 @@
+{
+ "schema": "investedia.projects.invest.osm-sites.v1",
+ "licence": "ODbL 1.0",
+ "credit": "© OpenStreetMap contributors",
+ "licence_url": "https://www.openstreetmap.org/copyright",
+ "sites": {
+  "gem:L100001045291:p1": {
+   "name": "Egypt Aluminium solar farm (phase 1)",
+   "gem_point": [
+    26.0064,
+    32.3116
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001045291:p2": {
+   "name": "Egypt Aluminium solar farm (phase 2)",
+   "gem_point": [
+    26.0064,
+    32.3116
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001019874": {
+   "name": "Barethi solar park",
+   "gem_point": [
+    24.6042,
+    79.206
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001019878": {
+   "name": "Ganjam solar farm",
+   "gem_point": [
+    19.5883,
+    84.7357
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100000808890": {
+   "name": "Lalitpur solar park",
+   "gem_point": [
+    24.6916,
+    78.3977
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100000800609": {
+   "name": "Rihand solar farm",
+   "gem_point": [
+    24.2033,
+    83.0053
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100000801313": {
+   "name": "Saguling solar farm",
+   "gem_point": [
+    -6.4511,
+    108.1781
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001063152": {
+   "name": "Afif 1 solar farm",
+   "gem_point": [
+    23.9332,
+    42.9159
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001063155": {
+   "name": "Afif 2 solar farm",
+   "gem_point": [
+    23.8826,
+    42.9206
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001018767": {
+   "name": "Al-Khushaybi Solar PV Park",
+   "gem_point": [
+    25.5146,
+    43.3166
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001018768": {
+   "name": "Al-Muwaih Solar PV",
+   "gem_point": [
+    22.756,
+    41.5881
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001063143": {
+   "name": "Bisha solar farm",
+   "gem_point": [
+    19.9113,
+    42.5432
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001018770": {
+   "name": "Haden solar farm",
+   "gem_point": [
+    21.4166,
+    41.0763
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100000922381": {
+   "name": "Dayapar (NTPC) III wind farm",
+   "gem_point": [
+    23.6348,
+    68.9012
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001063269": {
+   "name": "Shaqra wind farm",
+   "gem_point": [
+    25.2444,
+    45.2625
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001063265": {
+   "name": "Starah wind farm",
+   "gem_point": [
+    24.8524,
+    47.1219
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001016696:p1": {
+   "name": "Aral wind farm (phase 1)",
+   "gem_point": [
+    43.1013,
+    60.985
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001016696:p2": {
+   "name": "Aral wind farm (phase 2)",
+   "gem_point": [
+    43.1013,
+    60.985
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001016696:p3": {
+   "name": "Aral wind farm (phase 3)",
+   "gem_point": [
+    43.1013,
+    60.985
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001016696:p4": {
+   "name": "Aral wind farm (phase 4)",
+   "gem_point": [
+    43.1013,
+    60.985
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001016696:p5": {
+   "name": "Aral wind farm (phase 5)",
+   "gem_point": [
+    43.1013,
+    60.985
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001061657": {
+   "name": "Gijduvan (ACWA Power) wind farm",
+   "gem_point": [
+    40.5261,
+    64.5794
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100000922142:p4": {
+   "name": "Kungrad (ACWA Power) wind farm (phase 4)",
+   "gem_point": [
+    43.7227,
+    57.0599
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100000601853": {
+   "name": "Dibang Multipurpose hydroelectric plant",
+   "gem_point": [
+    28.0938,
+    94.5921
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100000602090": {
+   "name": "Vishnugad Pipalkoti hydroelectric plant",
+   "gem_point": [
+    30.4877,
+    79.6705
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  },
+  "gem:L100001004183:p1": {
+   "name": "Nairyah IPP Power Plant (phase 1)",
+   "gem_point": [
+    27.47574,
+    48.49949
+   ],
+   "checked_at": "2026-11-13",
+   "matches": [],
+   "status": "not found"
+  }
+ }
+}
