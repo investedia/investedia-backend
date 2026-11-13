@@ -16,6 +16,11 @@
    "exposures": [
     {
      "cik": 92122,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Southern Company",
+      "symbol": "SO"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -171,6 +176,11 @@
    "exposures": [
     {
      "cik": 92122,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Southern Company",
+      "symbol": "SO"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -315,6 +325,11 @@
    "exposures": [
     {
      "cik": 922224,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "PPL",
+      "symbol": "PPL"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -469,6 +484,11 @@
    "exposures": [
     {
      "cik": 922224,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "PPL",
+      "symbol": "PPL"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -629,6 +649,11 @@
    "exposures": [
     {
      "cik": 1021635,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "OGE Energy",
+      "symbol": "OGE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -777,6 +802,11 @@
    "exposures": [
     {
      "cik": 715957,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Dominion Energy",
+      "symbol": "D"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -881,6 +911,11 @@
     },
     {
      "cik": "0000715957",
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Dominion Energy",
+      "symbol": "D"
+     },
      "edge_sources": [
       {
        "imputed": false,
@@ -1015,6 +1050,11 @@
    "exposures": [
     {
      "cik": 783325,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "WEC Energy Group",
+      "symbol": "WEC"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -1159,6 +1199,11 @@
    "exposures": [
     {
      "cik": 352541,
+     "company": {
+      "exchange_short": "Nasdaq",
+      "name": "Alliant Energy",
+      "symbol": "LNT"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -1314,6 +1359,11 @@
    "exposures": [
     {
      "cik": 72903,
+     "company": {
+      "exchange_short": "Nasdaq",
+      "name": "Xcel Energy",
+      "symbol": "XEL"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -1468,6 +1518,11 @@
    "exposures": [
     {
      "cik": 4904,
+     "company": {
+      "exchange_short": "Nasdaq",
+      "name": "American Electric Power",
+      "symbol": "AEP"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -1612,6 +1667,11 @@
    "exposures": [
     {
      "cik": 764622,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Pinnacle West Capital",
+      "symbol": "PNW"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -1756,6 +1816,11 @@
    "exposures": [
     {
      "cik": 1130464,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Black Hills",
+      "symbol": "BKH"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -1910,6 +1975,11 @@
    "exposures": [
     {
      "cik": 1130464,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Black Hills",
+      "symbol": "BKH"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -2055,6 +2125,11 @@
    "exposures": [
     {
      "cik": 1130464,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Black Hills",
+      "symbol": "BKH"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -2199,6 +2274,11 @@
    "exposures": [
     {
      "cik": 895728,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Enbridge",
+      "symbol": "ENB"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -2370,6 +2450,11 @@
    "exposures": [
     {
      "cik": 895728,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Enbridge",
+      "symbol": "ENB"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -2531,6 +2616,11 @@
    "exposures": [
     {
      "cik": 1326160,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Duke Energy",
+      "symbol": "DUK"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -2686,6 +2776,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Xetra",
+      "name": "RWE",
+      "symbol": "RWE.DE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -2830,6 +2925,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Euronext Lisbon",
+      "name": "EDP",
+      "symbol": "EDP.LS"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -2991,6 +3091,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Euronext Lisbon",
+      "name": "EDP",
+      "symbol": "EDP.LS"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -3163,6 +3268,11 @@
    "exposures": [
     {
      "cik": 1692819,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Vistra",
+      "symbol": "VST"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -3307,6 +3417,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "BME Madrid",
+      "name": "Iberdrola",
+      "symbol": "IBE.MC"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -3469,6 +3584,11 @@
    "exposures": [
     {
      "cik": 874761,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "AES",
+      "symbol": "AES"
+     },
      "effective_stake": 75.0,
      "hq": {
       "checked_at": "2026-11-12",
@@ -3599,6 +3719,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "BME Madrid",
+      "name": "Iberdrola",
+      "symbol": "IBE.MC"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -3761,6 +3886,11 @@
    "exposures": [
     {
      "cik": 874761,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "AES",
+      "symbol": "AES"
+     },
      "effective_stake": 75.0,
      "hq": {
       "checked_at": "2026-11-12",
@@ -3892,6 +4022,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "BME Madrid",
+      "name": "Acciona",
+      "symbol": "ANA.MC"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -4063,6 +4198,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "BME Madrid",
+      "name": "Acciona",
+      "symbol": "ANA.MC"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -4234,6 +4374,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Euronext Milan",
+      "name": "Enel",
+      "symbol": "ENEL.MI"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -4406,6 +4551,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Euronext Milan",
+      "name": "Enel",
+      "symbol": "ENEL.MI"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -4578,6 +4728,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "BME Madrid",
+      "name": "Iberdrola",
+      "symbol": "IBE.MC"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -4740,6 +4895,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Xetra",
+      "name": "RWE",
+      "symbol": "RWE.DE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -4895,6 +5055,11 @@
    "exposures": [
     {
      "cik": 827052,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Edison International",
+      "symbol": "EIX"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -5049,6 +5214,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Xetra",
+      "name": "RWE",
+      "symbol": "RWE.DE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -5193,6 +5363,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Xetra",
+      "name": "RWE",
+      "symbol": "RWE.DE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -5337,6 +5512,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Xetra",
+      "name": "RWE",
+      "symbol": "RWE.DE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -5490,6 +5670,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -5645,6 +5830,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "BME Madrid",
+      "name": "Iberdrola",
+      "symbol": "IBE.MC"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -5817,6 +6007,11 @@
    "exposures": [
     {
      "cik": 1002910,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Ameren",
+      "symbol": "AEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -5961,6 +6156,11 @@
    "exposures": [
     {
      "cik": 936340,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "DTE Energy",
+      "symbol": "DTE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -6115,6 +6315,11 @@
    "exposures": [
     {
      "cik": 936340,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "DTE Energy",
+      "symbol": "DTE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -6278,6 +6483,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -6422,6 +6632,11 @@
    "exposures": [
     {
      "cik": 764622,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Pinnacle West Capital",
+      "symbol": "PNW"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -6566,6 +6781,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "BME Madrid",
+      "name": "Iberdrola",
+      "symbol": "IBE.MC"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -6728,6 +6948,11 @@
    "exposures": [
     {
      "cik": 811156,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "CMS Energy",
+      "symbol": "CMS"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -6882,6 +7107,11 @@
    "exposures": [
     {
      "cik": 811156,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "CMS Energy",
+      "symbol": "CMS"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -7036,6 +7266,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -7180,6 +7415,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -7324,6 +7564,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -7468,6 +7713,11 @@
    "exposures": [
     {
      "cik": 1711269,
+     "company": {
+      "exchange_short": "Nasdaq",
+      "name": "Evergy",
+      "symbol": "EVRG"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -7618,6 +7868,11 @@
    "exposures": [
     {
      "cik": 1711269,
+     "company": {
+      "exchange_short": "Nasdaq",
+      "name": "Evergy",
+      "symbol": "EVRG"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -7768,6 +8023,11 @@
    "exposures": [
     {
      "cik": 1711269,
+     "company": {
+      "exchange_short": "Nasdaq",
+      "name": "Evergy",
+      "symbol": "EVRG"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -7912,6 +8172,11 @@
    "exposures": [
     {
      "cik": 1466593,
+     "company": {
+      "exchange_short": "Nasdaq",
+      "name": "Otter Tail",
+      "symbol": "OTTR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -8057,6 +8322,11 @@
    "exposures": [
     {
      "cik": 1466593,
+     "company": {
+      "exchange_short": "Nasdaq",
+      "name": "Otter Tail",
+      "symbol": "OTTR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -8212,6 +8482,11 @@
    "exposures": [
     {
      "cik": 764622,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Pinnacle West Capital",
+      "symbol": "PNW"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -8356,6 +8631,11 @@
    "exposures": [
     {
      "cik": 4904,
+     "company": {
+      "exchange_short": "Nasdaq",
+      "name": "American Electric Power",
+      "symbol": "AEP"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -8500,6 +8780,11 @@
    "exposures": [
     {
      "cik": 811156,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "CMS Energy",
+      "symbol": "CMS"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -8654,6 +8939,11 @@
    "exposures": [
     {
      "cik": 811156,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "CMS Energy",
+      "symbol": "CMS"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -8808,6 +9098,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -8962,6 +9257,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -9116,6 +9416,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -9270,6 +9575,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -9424,6 +9734,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -9578,6 +9893,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -9732,6 +10052,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -9886,6 +10211,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -10040,6 +10370,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -10194,6 +10529,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -10348,6 +10688,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -10502,6 +10847,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -10656,6 +11006,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -10810,6 +11165,11 @@
    "exposures": [
     {
      "cik": 936340,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "DTE Energy",
+      "symbol": "DTE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -10965,6 +11325,11 @@
    "exposures": [
     {
      "cik": 72903,
+     "company": {
+      "exchange_short": "Nasdaq",
+      "name": "Xcel Energy",
+      "symbol": "XEL"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -11119,6 +11484,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "BME Madrid",
+      "name": "Acciona",
+      "symbol": "ANA.MC"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -11280,6 +11650,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Xetra",
+      "name": "RWE",
+      "symbol": "RWE.DE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -11434,6 +11809,11 @@
    "exposures": [
     {
      "cik": 72903,
+     "company": {
+      "exchange_short": "Nasdaq",
+      "name": "Xcel Energy",
+      "symbol": "XEL"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -11603,6 +11983,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -11747,6 +12132,11 @@
    "exposures": [
     {
      "cik": 92122,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Southern Company",
+      "symbol": "SO"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -11918,6 +12308,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "BME Madrid",
+      "name": "Acciona",
+      "symbol": "ANA.MC"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -12079,6 +12474,11 @@
    "exposures": [
     {
      "cik": 1326160,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Duke Energy",
+      "symbol": "DUK"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -12250,6 +12650,11 @@
    "exposures": [
     {
      "cik": 1326160,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Duke Energy",
+      "symbol": "DUK"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -12394,6 +12799,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -12538,6 +12948,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -12682,6 +13097,11 @@
    "exposures": [
     {
      "cik": 1326160,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Duke Energy",
+      "symbol": "DUK"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -12836,6 +13256,11 @@
    "exposures": [
     {
      "cik": 874761,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "AES",
+      "symbol": "AES"
+     },
      "effective_stake": 75.0,
      "hq": {
       "checked_at": "2026-11-12",
@@ -12976,6 +13401,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -13130,6 +13560,11 @@
    "exposures": [
     {
      "cik": 895728,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Enbridge",
+      "symbol": "ENB"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -13301,6 +13736,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "BME Madrid",
+      "name": "Iberdrola",
+      "symbol": "IBE.MC"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -13473,6 +13913,11 @@
    "exposures": [
     {
      "cik": 1326160,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Duke Energy",
+      "symbol": "DUK"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -13636,6 +14081,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -13789,6 +14239,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -13933,6 +14388,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -14077,6 +14537,11 @@
    "exposures": [
     {
      "cik": 1127248,
+     "company": {
+      "exchange_short": "Toronto",
+      "name": "Emera",
+      "symbol": "EMA.TO"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -14248,6 +14713,11 @@
    "exposures": [
     {
      "cik": 936340,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "DTE Energy",
+      "symbol": "DTE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -14402,6 +14872,11 @@
    "exposures": [
     {
      "cik": 936340,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "DTE Energy",
+      "symbol": "DTE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -14556,6 +15031,11 @@
    "exposures": [
     {
      "cik": 936340,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "DTE Energy",
+      "symbol": "DTE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -14710,6 +15190,11 @@
    "exposures": [
     {
      "cik": 936340,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "DTE Energy",
+      "symbol": "DTE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -14864,6 +15349,11 @@
    "exposures": [
     {
      "cik": 936340,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "DTE Energy",
+      "symbol": "DTE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -15018,6 +15508,11 @@
    "exposures": [
     {
      "cik": 936340,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "DTE Energy",
+      "symbol": "DTE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -15172,6 +15667,11 @@
    "exposures": [
     {
      "cik": 1711269,
+     "company": {
+      "exchange_short": "Nasdaq",
+      "name": "Evergy",
+      "symbol": "EVRG"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -15326,6 +15826,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "BME Madrid",
+      "name": "Iberdrola",
+      "symbol": "IBE.MC"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -15488,6 +15993,11 @@
    "exposures": [
     {
      "cik": 1127248,
+     "company": {
+      "exchange_short": "Toronto",
+      "name": "Emera",
+      "symbol": "EMA.TO"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -15659,6 +16169,11 @@
    "exposures": [
     {
      "cik": 1127248,
+     "company": {
+      "exchange_short": "Toronto",
+      "name": "Emera",
+      "symbol": "EMA.TO"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -15830,6 +16345,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Xetra",
+      "name": "RWE",
+      "symbol": "RWE.DE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -15984,6 +16504,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Xetra",
+      "name": "RWE",
+      "symbol": "RWE.DE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -16138,6 +16663,11 @@
    "exposures": [
     {
      "cik": 1711269,
+     "company": {
+      "exchange_short": "Nasdaq",
+      "name": "Evergy",
+      "symbol": "EVRG"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -16292,6 +16822,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -16436,6 +16971,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -16580,6 +17120,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -16725,6 +17270,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -16870,6 +17420,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -17015,6 +17570,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -17159,6 +17719,11 @@
    "exposures": [
     {
      "cik": 1326160,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Duke Energy",
+      "symbol": "DUK"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -17303,6 +17868,11 @@
    "exposures": [
     {
      "cik": 1326160,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Duke Energy",
+      "symbol": "DUK"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -17447,6 +18017,11 @@
    "exposures": [
     {
      "cik": 936340,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "DTE Energy",
+      "symbol": "DTE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -17601,6 +18176,11 @@
    "exposures": [
     {
      "cik": 936340,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "DTE Energy",
+      "symbol": "DTE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -17745,6 +18325,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -17890,6 +18475,11 @@
    "exposures": [
     {
      "cik": 72903,
+     "company": {
+      "exchange_short": "Nasdaq",
+      "name": "Xcel Energy",
+      "symbol": "XEL"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -18044,6 +18634,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -18199,6 +18794,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -18343,6 +18943,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -18487,6 +19092,11 @@
    "exposures": [
     {
      "cik": 874761,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "AES",
+      "symbol": "AES"
+     },
      "effective_stake": 75.0,
      "hq": {
       "checked_at": "2026-11-12",
@@ -18617,6 +19227,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -18761,6 +19376,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -18905,6 +19525,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -19049,6 +19674,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -19193,6 +19823,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "BME Madrid",
+      "name": "Iberdrola",
+      "symbol": "IBE.MC"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -19355,6 +19990,11 @@
    "exposures": [
     {
      "cik": 1067983,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Berkshire Hathaway",
+      "symbol": "BRK-B"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -19509,6 +20149,11 @@
    "exposures": [
     {
      "cik": 65984,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Entergy",
+      "symbol": "ETR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -19663,6 +20308,11 @@
    "exposures": [
     {
      "cik": 1326160,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Duke Energy",
+      "symbol": "DUK"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -19807,6 +20457,11 @@
    "exposures": [
     {
      "cik": 1326160,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Duke Energy",
+      "symbol": "DUK"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -19951,6 +20606,11 @@
    "exposures": [
     {
      "cik": 1326160,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Duke Energy",
+      "symbol": "DUK"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -20105,6 +20765,11 @@
    "exposures": [
     {
      "cik": 1326160,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "Duke Energy",
+      "symbol": "DUK"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -20259,6 +20924,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "BME Madrid",
+      "name": "Iberdrola",
+      "symbol": "IBE.MC"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -20431,6 +21101,11 @@
    "exposures": [
     {
      "cik": 72903,
+     "company": {
+      "exchange_short": "Nasdaq",
+      "name": "Xcel Energy",
+      "symbol": "XEL"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -20575,6 +21250,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -20730,6 +21410,11 @@
    "exposures": [
     {
      "cik": 1127248,
+     "company": {
+      "exchange_short": "Toronto",
+      "name": "Emera",
+      "symbol": "EMA.TO"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-12",
@@ -20891,6 +21576,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -21046,6 +21736,11 @@
    "exposures": [
     {
      "cik": 753308,
+     "company": {
+      "exchange_short": "NYSE",
+      "name": "NextEra Energy",
+      "symbol": "NEE"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-11",
@@ -21200,6 +21895,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Oslo Børs",
+      "name": "Scatec",
+      "symbol": "SCATC.OL"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-12",
@@ -21307,6 +22007,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Oslo Børs",
+      "name": "Scatec",
+      "symbol": "SCATC.OL"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-12",
@@ -21414,6 +22119,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "SJVN",
+      "symbol": "SJVN.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -21521,6 +22231,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NTPC",
+      "symbol": "NTPC.NS"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -21628,6 +22343,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NHPC",
+      "symbol": "NHPC.NS"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -21736,6 +22456,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "SJVN",
+      "symbol": "SJVN.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -21843,6 +22568,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "SJVN",
+      "symbol": "SJVN.NS"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -21951,6 +22681,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NTPC",
+      "symbol": "NTPC.NS"
+     },
      "edge_sources": [
       {
        "imputed": false,
@@ -22073,6 +22808,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NTPC",
+      "symbol": "NTPC.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -22180,6 +22920,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "SJVN",
+      "symbol": "SJVN.NS"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -22288,6 +23033,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": 49.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -22402,6 +23152,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": 35.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -22521,6 +23276,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": 35.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -22640,6 +23400,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -22759,6 +23524,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -22878,6 +23648,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": 35.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -22997,6 +23772,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -23116,6 +23896,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NTPC",
+      "symbol": "NTPC.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -23223,6 +24008,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": 35.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -23342,6 +24132,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": 35.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -23461,6 +24256,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -23569,6 +24369,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -23677,6 +24482,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -23785,6 +24595,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -23893,6 +24708,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -24001,6 +24821,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": null,
      "hq": {
       "checked_at": "2026-11-13",
@@ -24109,6 +24934,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -24223,6 +25053,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "SJVN",
+      "symbol": "SJVN.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -24367,6 +25202,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NHPC",
+      "symbol": "NHPC.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -24500,6 +25340,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "SJVN",
+      "symbol": "SJVN.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -24613,6 +25458,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "SJVN",
+      "symbol": "SJVN.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -24735,6 +25585,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NHPC",
+      "symbol": "NHPC.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -24865,6 +25720,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NHPC",
+      "symbol": "NHPC.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -24995,6 +25855,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NHPC",
+      "symbol": "NHPC.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -25125,6 +25990,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NTPC",
+      "symbol": "NTPC.NS"
+     },
      "edge_sources": [
       {
        "imputed": false,
@@ -25247,6 +26117,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "SJVN",
+      "symbol": "SJVN.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -25376,6 +26251,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NTPC",
+      "symbol": "NTPC.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -25505,6 +26385,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NTPC",
+      "symbol": "NTPC.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -25635,6 +26520,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NTPC",
+      "symbol": "NTPC.NS"
+     },
      "edge_sources": [
       {
        "imputed": false,
@@ -25771,6 +26661,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NTPC",
+      "symbol": "NTPC.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -25902,6 +26797,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NTPC",
+      "symbol": "NTPC.NS"
+     },
      "edge_sources": [
       {
        "imputed": false,
@@ -26046,6 +26946,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NTPC",
+      "symbol": "NTPC.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -26176,6 +27081,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NTPC",
+      "symbol": "NTPC.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -26305,6 +27215,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "NSE India",
+      "name": "NTPC",
+      "symbol": "NTPC.NS"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -26435,6 +27350,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Frankfurt",
+      "name": "EnBW Energie Baden-Württemberg",
+      "symbol": "EBK.DE"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-12",
@@ -26564,6 +27484,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Frankfurt",
+      "name": "EnBW Energie Baden-Württemberg",
+      "symbol": "EBK.DE"
+     },
      "effective_stake": 100.0,
      "hq": {
       "checked_at": "2026-11-12",
@@ -26693,6 +27618,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": 35.0,
      "hq": {
       "checked_at": "2026-11-13",
@@ -26807,6 +27737,11 @@
    "exposures": [
     {
      "cik": null,
+     "company": {
+      "exchange_short": "Saudi Exchange",
+      "name": "ACWA Power",
+      "symbol": "2082.SR"
+     },
      "effective_stake": 40.0,
      "hq": {
       "checked_at": "2026-11-13",

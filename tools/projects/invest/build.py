@@ -188,6 +188,14 @@ def build(power_rows, iso, registry, ledger, today, extra=()):
         for e in p['exposures']:
             v = e['verification']
             e['hq'] = HQ['by_lei'].get(v['identity'].get('id')) or HQ['by_ticker'].get(v['listing'].get('ticker'))
+    # English display name + exact market symbol per listed company (company-symbols.json), used for the in-site company view and prices.
+    cs_path = ROOT / 'data/projects/invest/company-symbols.json'
+    CS = json.loads(cs_path.read_text())['by_ticker'] if cs_path.exists() else {}
+    for p in public:
+        for e in p['exposures']:
+            c = CS.get(e['verification']['listing'].get('ticker'))
+            if c:
+                e['company'] = {'name': c['name'], 'symbol': c['symbol'], 'exchange_short': c['exchange_short']}
     # Withheld links (holds.json): relationship changed per a newer company document; kept in research, not public.
     ho_path = ROOT / 'data/projects/invest/holds.json'
     HO = json.loads(ho_path.read_text())['by_project'] if ho_path.exists() else {}
