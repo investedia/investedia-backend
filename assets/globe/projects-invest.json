@@ -1008,7 +1008,14 @@
     {
      "cik": 352541,
      "effective_stake": null,
-     "hq": null,
+     "hq": {
+      "lat": 43.074722222,
+      "lon": -89.384166666,
+      "city": "Madison",
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
+      "source_url": "https://www.wikidata.org/entity/Q4732492",
+      "checked_at": "2026-11-13"
+     },
      "hq_country": null,
      "lei": "5493009ML300G373MZ12",
      "listed_entity_id": "lei:5493009ML300G373MZ12",
@@ -15684,7 +15691,14 @@
     {
      "cik": null,
      "effective_stake": null,
-     "hq": null,
+     "hq": {
+      "lat": 28.41124,
+      "lon": 77.31316,
+      "city": "Faridabad",
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
+      "source_url": "https://www.wikidata.org/entity/Q6954097",
+      "checked_at": "2026-11-13"
+     },
      "hq_country": "India",
      "lei": "3358003ZPPTGWT595J46",
      "listed_entity_id": "E100000120883",
@@ -17942,7 +17956,14 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "lat": 28.41124,
+      "lon": 77.31316,
+      "city": "Faridabad",
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
+      "source_url": "https://www.wikidata.org/entity/Q6954097",
+      "checked_at": "2026-11-13"
+     },
      "hq_country": "India",
      "lei": "3358003ZPPTGWT595J46",
      "listed_entity_id": "E100000120883",
@@ -18042,7 +18063,14 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "lat": 28.41124,
+      "lon": 77.31316,
+      "city": "Faridabad",
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
+      "source_url": "https://www.wikidata.org/entity/Q6954097",
+      "checked_at": "2026-11-13"
+     },
      "hq_country": "India",
      "lei": "3358003ZPPTGWT595J46",
      "listed_entity_id": "E100000120883",
@@ -18164,7 +18192,14 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "lat": 28.41124,
+      "lon": 77.31316,
+      "city": "Faridabad",
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
+      "source_url": "https://www.wikidata.org/entity/Q6954097",
+      "checked_at": "2026-11-13"
+     },
      "hq_country": "India",
      "lei": "3358003ZPPTGWT595J46",
      "listed_entity_id": "E100000120883",
@@ -18286,7 +18321,14 @@
     {
      "cik": null,
      "effective_stake": 100.0,
-     "hq": null,
+     "hq": {
+      "lat": 28.41124,
+      "lon": 77.31316,
+      "city": "Faridabad",
+      "source": "Wikidata (CC0) P159 headquarters location -> P625 coordinates (company matched by listed English label and class \"business\"; listing confirmed against the project record)",
+      "source_url": "https://www.wikidata.org/entity/Q6954097",
+      "checked_at": "2026-11-13"
+     },
      "hq_country": "India",
      "lei": "3358003ZPPTGWT595J46",
      "listed_entity_id": "E100000120883",
