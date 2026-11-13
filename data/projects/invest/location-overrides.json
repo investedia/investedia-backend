@@ -3,11 +3,27 @@
  "note": "Owner-approved location corrections (13 Nov 2026). GEM point kept in gem_point.",
  "overrides": {
   "gem:L100000601853": {
-   "lat": 28.3375, "lon": 95.7708, "precision": "exact",
-   "gem_point": [28.0938, 94.5921],
+   "lat": 28.3375,
+   "lon": 95.7708,
+   "precision": "site",
+   "gem_point": [
+    28.0938,
+    94.5921
+   ],
    "method": "Coordinate from Wikipedia 'Dibang Dam' (secondary); confirmed by Sentinel-2 scene S2C_T46RGS_20261108T042411_L2A showing dam construction at a river confluence, matching NHPC's site description (Munli, ~1.5 km upstream of Ashu Pani-Dibang confluence)",
-   "sources": ["https://www.nhpcindia.com/welcome/project_detail/6/3", "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Dibang_Dam"],
-   "approved": "owner 2026-11-13"
+   "sources": [
+    "https://www.nhpcindia.com/welcome/project_detail/6/3",
+    "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Dibang_Dam",
+    "https://www.nhpcindia.com/assests/pzi_public/gallery/17876363040.pdf"
+   ],
+   "approved": "owner 2026-11-13 (pictures and location); precision kept at site until an official coordinate is found",
+   "precision_meaning": "site identity confirmed on satellite imagery; coordinate not from an official document",
+   "discrepancy": {
+    "gem_to_new_km": 118.6,
+    "gem_point": "GEM marks its point approximate; it lies in the Siang basin west of the Dibang valley, not on the Dibang river",
+    "official_bounds": "NHPC environmental compliance reports give the project area as 28d11m50s-29d25m59s N, 95d14m47s-95d36m49s E; the new point is inside the latitude range but ~16 km east of the stated eastern limit. NHPC fact sheet gives 96d36m49s as the eastern limit (one of the two is a typo), so the official bounds are inconsistent and not used as a coordinate",
+    "resolution": "NHPC describes the dam at Munli, ~1.5 km upstream of the Ashu Pani-Dibang confluence, ~43 km by road from Roing. Sentinel-2 (8 Nov 2026) at the new point shows a large active dam construction site immediately upstream of a river confluence in the gorge; no other construction of that scale is visible. Straight-line distance to Roing (28.14 N, 95.84 E) is ~23 km, consistent with 43 km by road. GEM point rejected; new point accepted as site-confirmed, not exact."
+   }
   }
  }
 }

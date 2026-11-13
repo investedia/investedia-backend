@@ -1,90 +1,87 @@
 {
  "date": "2026-11-13",
- "totals": {
-  "projects": 142,
-  "before": 115,
-  "after_if_approved": 117
- },
- "commons": {
-  "files_found_by_search": 587,
-  "passed_manual": 0
- },
- "new_candidates_not_published": {
-  "gem:L100000401075:x": "Sentinel-2 30 May 2026 at exact point (bright-desert filter too strict; manual check: plant visible)",
-  "gem:L100000601853": "Sentinel-2 8 Nov 2026 at 28.3375,95.7708 (secondary coordinate; dam construction at river confluence matches NHPC description) - location needs owner OK"
- },
+ "verified_projects": 142,
+ "images_before": 115,
+ "images_after": 117,
+ "missing_before": 27,
+ "missing_after": 25,
+ "coverage_before_pct": 81.0,
+ "coverage_after_pct": 82.4,
+ "before_after_pairs": 71,
  "by_country": {
   "Egypt": {
    "projects": 2,
-   "before": 0,
-   "after_if_approved": 0,
-   "gaps": [
-    "Egypt Aluminium solar farm (phase 1) (approximate)",
-    "Egypt Aluminium solar farm (phase 2) (approximate)"
-   ]
+   "images_before": 0,
+   "images_after": 0,
+   "pct_after": 0
   },
   "Germany": {
    "projects": 2,
-   "before": 2,
-   "after_if_approved": 2,
-   "gaps": []
+   "images_before": 2,
+   "images_after": 2,
+   "pct_after": 100
   },
   "India": {
    "projects": 18,
-   "before": 11,
-   "after_if_approved": 12,
-   "gaps": [
-    "Barethi solar park (approximate)",
-    "Ganjam solar farm (approximate)",
-    "Lalitpur solar park (approximate)",
-    "Rihand solar farm (approximate)",
-    "Dayapar (NTPC) III wind farm (approximate)",
-    "Vishnugad Pipalkoti hydroelectric plant (approximate)"
-   ]
+   "images_before": 11,
+   "images_after": 12,
+   "pct_after": 67
   },
   "Indonesia": {
    "projects": 1,
-   "before": 0,
-   "after_if_approved": 0,
-   "gaps": [
-    "Saguling solar farm (approximate)"
-   ]
+   "images_before": 0,
+   "images_after": 0,
+   "pct_after": 0
   },
   "Saudi Arabia": {
    "projects": 10,
-   "before": 0,
-   "after_if_approved": 1,
-   "gaps": [
-    "Afif 1 solar farm (approximate)",
-    "Afif 2 solar farm (approximate)",
-    "Al-Khushaybi Solar PV Park (approximate)",
-    "Al-Muwaih Solar PV (approximate)",
-    "Bisha solar farm (approximate)",
-    "Haden solar farm (approximate)",
-    "Shaqra wind farm (approximate)",
-    "Starah wind farm (approximate)",
-    "Nairyah IPP Power Plant (phase 1) (approximate)"
-   ]
+   "images_before": 0,
+   "images_after": 1,
+   "pct_after": 10
   },
   "United States": {
    "projects": 102,
-   "before": 102,
-   "after_if_approved": 102,
-   "gaps": []
+   "images_before": 102,
+   "images_after": 102,
+   "pct_after": 100
   },
   "Uzbekistan": {
    "projects": 7,
-   "before": 0,
-   "after_if_approved": 0,
-   "gaps": [
-    "Aral wind farm (phase 1) (approximate)",
-    "Aral wind farm (phase 2) (approximate)",
-    "Aral wind farm (phase 3) (approximate)",
-    "Aral wind farm (phase 4) (approximate)",
-    "Aral wind farm (phase 5) (approximate)",
-    "Gijduvan (ACWA Power) wind farm (approximate)",
-    "Kungrad (ACWA Power) wind farm (phase 4) (approximate)"
-   ]
+   "images_before": 0,
+   "images_after": 0,
+   "pct_after": 0
   }
- }
+ },
+ "without_exact_location": [
+  "Egypt Aluminium solar farm (phase 1) (Egypt)",
+  "Egypt Aluminium solar farm (phase 2) (Egypt)",
+  "Barethi solar park (India)",
+  "Ganjam solar farm (India)",
+  "Lalitpur solar park (India)",
+  "Rihand solar farm (India)",
+  "Saguling solar farm (Indonesia)",
+  "Afif 1 solar farm (Saudi Arabia)",
+  "Afif 2 solar farm (Saudi Arabia)",
+  "Al-Khushaybi Solar PV Park (Saudi Arabia)",
+  "Al-Muwaih Solar PV (Saudi Arabia)",
+  "Bisha solar farm (Saudi Arabia)",
+  "Haden solar farm (Saudi Arabia)",
+  "Dayapar (NTPC) III wind farm (India)",
+  "Shaqra wind farm (Saudi Arabia)",
+  "Starah wind farm (Saudi Arabia)",
+  "Aral wind farm (phase 1) (Uzbekistan)",
+  "Aral wind farm (phase 2) (Uzbekistan)",
+  "Aral wind farm (phase 3) (Uzbekistan)",
+  "Aral wind farm (phase 4) (Uzbekistan)",
+  "Aral wind farm (phase 5) (Uzbekistan)",
+  "Gijduvan (ACWA Power) wind farm (Uzbekistan)",
+  "Kungrad (ACWA Power) wind farm (phase 4) (Uzbekistan)",
+  "Vishnugad Pipalkoti hydroelectric plant (India)",
+  "Nairyah IPP Power Plant (phase 1) (Saudi Arabia)"
+ ],
+ "exact_but_no_image": [],
+ "incorrect_coordinates_found": {
+  "Dibang Multipurpose": "GEM approximate point 118.6 km west of the satellite-confirmed site; corrected, precision=site"
+ },
+ "globe_preview_check": "local Globe, PC 1440 and phone 390: Rabigh 2 (30 May 2026) and Dibang (8 Nov 2026) images load (640 px), correct date tag, Sentinel-2 credit, panel matches marker; before/after slider (Hammond) unchanged; 117 projects with images, 71 with before/after"
 }

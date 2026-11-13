@@ -18056,7 +18056,8 @@
     "method": "Coordinate from Wikipedia 'Dibang Dam' (secondary); confirmed by Sentinel-2 scene S2C_T46RGS_20261108T042411_L2A showing dam construction at a river confluence, matching NHPC's site description (Munli, ~1.5 km upstream of Ashu Pani-Dibang confluence)",
     "sources": [
      "https://www.nhpcindia.com/welcome/project_detail/6/3",
-     "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Dibang_Dam"
+     "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Dibang_Dam",
+     "https://www.nhpcindia.com/assests/pzi_public/gallery/17876363040.pdf"
     ]
    },
    "lon": 95.7708,
@@ -18065,7 +18066,7 @@
    "other_owners": [],
    "phase": null,
    "plant_name": "Dibang Multipurpose hydroelectric plant",
-   "precision": "exact",
+   "precision": "site",
    "progress": null,
    "sector": "Energy & Utilities",
    "source": {

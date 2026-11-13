@@ -195,11 +195,11 @@ def build(power_rows, iso, registry, ledger, today, extra=()):
         if p['id'] in LO:
             o = LO[p['id']]
             p.update(lat=o['lat'], lon=o['lon'], precision=o['precision'], location_note={'gem_point': o['gem_point'], 'method': o['method'], 'sources': o['sources']})
-    # Satellite pictures (tools/projects/invest/imagery.py): exact locations only.
+    # Satellite pictures (tools/projects/invest/imagery.py): exact or satellite-confirmed sites only.
     im_path = ROOT / 'data/projects/invest/imagery.json'
     IM = json.loads(im_path.read_text())['images'] if im_path.exists() else {}
     for p in public:
-        if p.get('precision') == 'exact' and IM.get(p['id']):
+        if p.get('precision') in ('exact', 'site') and IM.get(p['id']):  # 'site' = site identity confirmed on imagery, coordinate not official
             p['images'] = IM[p['id']]
     # One public record per physical plant: GEM and EIA describe some US plants twice.
     public.sort(key=lambda p: (-len(p['exposures']), p['id'].startswith('gem:')))

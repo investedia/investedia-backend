@@ -36,10 +36,16 @@ def crop(href, lat, lon, km):
     return np.moveaxis(a, 0, -1)
 
 
-def usable(img):
-    """Reject clouds, haze, no-data and empty crops."""
+def usable(img, cloud=None):
+    """Reject clouds, haze, no-data and empty crops.
+    Bright deserts, salt flats and white tanks are not cloud: when the scene itself reports <1% cloud and the crop
+    keeps strong contrast (sharp edges), allow up to 50% bright pixels instead of 12% (Rabigh 2 fix, 13 Nov 2026)."""
     g = img.mean(axis=2)
-    return img.size and (g == 0).mean() < 0.02 and (g > 215).mean() < 0.12 and g.std() > 8
+    if not img.size or (g == 0).mean() >= 0.02 or g.std() <= 8:
+        return False
+    bright = (g > 215).mean()
+    edges = np.abs(np.diff(g, axis=0)).mean() + np.abs(np.diff(g, axis=1)).mean()
+    return bright < 0.12 or (cloud is not None and cloud < 1 and bright < 0.5 and g.std() > 25 and edges > 12)
 
 
 def best(lat, lon, start, end, km):
@@ -48,7 +54,7 @@ def best(lat, lon, start, end, km):
             img = crop(f['assets']['visual']['href'], lat, lon, km)
         except Exception:
             continue
-        if usable(img):
+        if usable(img, f['properties'].get('eo:cloud_cover')):
             return f, img
     return None, None
 
@@ -74,7 +80,7 @@ def main():
     import threading
     from concurrent.futures import ThreadPoolExecutor
     lock = threading.Lock()
-    todo = [p for p in projects if p.get('precision') == 'exact' and p['id'] not in man['images']]
+    todo = [p for p in projects if p.get('precision') in ('exact', 'site') and p['id'] not in man['images']]
 
     def one(p):
         rec, slug = {}, p['id'].replace(':', '-')
