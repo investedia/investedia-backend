@@ -71,9 +71,12 @@ def main():
     man_path = ROOT / 'data/projects/invest/imagery.json'
     man = json.loads(man_path.read_text()) if man_path.exists() else {'schema': 'investedia.projects.invest.imagery.v1', 'images': {}}
     projects = json.loads((ROOT / 'assets/globe/projects-invest.json').read_text())['projects']
-    for p in projects:
-        if p.get('precision') != 'exact' or p['id'] in man['images']:
-            continue
+    import threading
+    from concurrent.futures import ThreadPoolExecutor
+    lock = threading.Lock()
+    todo = [p for p in projects if p.get('precision') == 'exact' and p['id'] not in man['images']]
+
+    def one(p):
         rec, slug = {}, p['id'].replace(':', '-')
         for key, (start, end) in (('now', ('2026-06-01', '2026-11-12')), ('before', ('2024-10-01', '2024-12-31'))):
             if key == 'before' and p.get('stage') not in ('Under construction', 'Commissioning'):
@@ -86,9 +89,13 @@ def main():
             d = f['properties']['datetime'][:10]
             rec[key] = {'file': name, 'date': d, 'scene': f['id'], 'sha256': sha, 'width_km': a.km, 'resolution_m': 10,
                         'credit': CREDIT.format(year=d[:4]), 'source': 'https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a'}
-        man['images'][p['id']] = rec
-        man_path.write_text(json.dumps(man, indent=1) + '\n')
-        print(p['id'], p['name'], sorted(rec), flush=True)
+        with lock:
+            man['images'][p['id']] = rec
+            man_path.write_text(json.dumps(man, indent=1) + '\n')
+            print(p['id'], p['name'], sorted(rec), flush=True)
+
+    with ThreadPoolExecutor(8) as pool:
+        list(pool.map(one, todo))
 
 
 if __name__ == '__main__':

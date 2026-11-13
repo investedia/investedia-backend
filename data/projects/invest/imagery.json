@@ -1,0 +1,2096 @@
+{
+ "schema": "investedia.projects.invest.imagery.v1",
+ "images": {
+  "eia:708": {
+   "now": {
+    "file": "eia-708-now.jpg",
+    "date": "2026-10-27",
+    "scene": "S2A_T16SFC_20261027T162654_L2A",
+    "sha256": "4dddb0f7a3140c6cf3839d498fa79ca4b840b38706fc0e7f3821f1d31f458dfa",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-708-before.jpg",
+    "date": "2024-12-24",
+    "scene": "S2A_T16SFC_20241224T162708_L2A",
+    "sha256": "fe801e5b80cad738193cf23ecda630f88b1c42da0b0aff1dc76e9338bb690619",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:728": {
+   "now": {
+    "file": "eia-728-now.jpg",
+    "date": "2026-10-27",
+    "scene": "S2A_T16SFC_20261027T162654_L2A",
+    "sha256": "ff34b20bb05d75c7ed6db7bb136e224168d277a49f639abd018ddeb7be8d3ce1",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:1355": {
+   "now": {
+    "file": "eia-1355-now.jpg",
+    "date": "2026-11-09",
+    "scene": "S2B_T16SFG_20261109T162826_L2A",
+    "sha256": "c402843eae861966d3640c146762d8a99e0e7d80028cdc85e4d35b6ab23d27d8",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-1355-before.jpg",
+    "date": "2024-10-25",
+    "scene": "S2A_T16SFG_20241025T163050_L2A",
+    "sha256": "2a809399e3785e164ae85859d414c911e643cd8aabf516a6b98511e873a37367",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:1364": {
+   "now": {
+    "file": "eia-1364-now.jpg",
+    "date": "2026-11-09",
+    "scene": "S2A_T16SEH_20261109T163951_L2A",
+    "sha256": "32c34d8276a549cf50c7e98e45b9e52923c91e99d7deb9195a572580c7c32978",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-1364-before.jpg",
+    "date": "2024-12-22",
+    "scene": "S2B_T16SEH_20241222T163650_L2A",
+    "sha256": "4170ce997f0de909c8ff96b1d40f23b7e5f4eef1835acde18086cd44e1c6056e",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:3797": {
+   "now": {
+    "file": "eia-3797-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2B_T18STG_20261110T155809_L2A",
+    "sha256": "bfe11b3f95dd0994a19b243bb9ee1af3a1fb3440ecfbd1aa3aff00f2e108778b",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:4041": {
+   "now": {
+    "file": "eia-4041-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2C_T16TDN_20261110T164519_L2A",
+    "sha256": "149f71ba9621ce81c6275e00ac221cb6a357dd3993ab2e94b087138dc601f7ce",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:4050": {
+   "now": {
+    "file": "eia-4050-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2C_T16TDP_20261110T164519_L2A",
+    "sha256": "17dcbc9ba4a494308d8177feee4638490991ad663fbf4fd9d57a2a2f554ecf44",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-4050-before.jpg",
+    "date": "2024-12-30",
+    "scene": "S2A_T16TDP_20241230T164712_L2A",
+    "sha256": "2bb2ac39a5e7b3dccf173c14ee5fb3eceb4018fe97c4698b2680a373c353d7a8",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:6112": {
+   "now": {
+    "file": "eia-6112-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T13TEE_20261108T174949_L2A",
+    "sha256": "23387a0237057eb86f07e32b8d4a5a282ffaa722f48203528879becebaba881c",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-6112-before.jpg",
+    "date": "2024-12-21",
+    "scene": "S2A_T13TEE_20241221T175745_L2A",
+    "sha256": "67f8374e649176f3db3a0a5fdf5edb27a2942c99de824ea6a6fa43ae09f39c84",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:8059": {
+   "now": {
+    "file": "eia-8059-now.jpg",
+    "date": "2026-11-04",
+    "scene": "S2B_T14SND_20261104T171735_L2A",
+    "sha256": "f48f4990a351943b236f20975b987f3f059d15b5df47866e3dca295abff0841e",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:55455": {
+   "now": {
+    "file": "eia-55455-now.jpg",
+    "date": "2026-11-02",
+    "scene": "S2B_T12SUB_20261102T181746_L2A",
+    "sha256": "1d6c0c969245a19f0efd0d324146730ebf9d43103dd4f713ebec131afe4eb843",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:55478": {
+   "now": {
+    "file": "eia-55478-now.jpg",
+    "date": "2026-11-11",
+    "scene": "S2C_T13TFJ_20261111T175554_L2A",
+    "sha256": "6031b8115fad20a78419076345e5238a2a8757c562c0b6f820c1779919fe758c",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-55478-before.jpg",
+    "date": "2024-12-23",
+    "scene": "S2B_T13TFJ_20241223T174803_L2A",
+    "sha256": "1bbbce676db2d8ccc76eb834803bc8387fe7ae0c23e3f994a95a13edfe3dd649",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:57703": {
+   "now": {
+    "file": "eia-57703-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T13TEF_20261108T174949_L2A",
+    "sha256": "55eaed7aa5d92e6d4c53ad367d00df6c1c4d041431d01130680b8428fece2cec",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:59971": {
+   "now": {
+    "file": "eia-59971-now.jpg",
+    "date": "2026-10-11",
+    "scene": "S2B_T13SGU_20261011T174343_L2A",
+    "sha256": "66f78cf7de7d362ef998f1e4a8af93018dc42fa6a3ad5cdf12ad92b03d560362",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-59971-before.jpg",
+    "date": "2024-12-30",
+    "scene": "S2B_T13SGU_20241230T173956_L2A",
+    "sha256": "2a0fdfaafe8823633dbdc5165e98f6d4f6e5f2b32d1ad3088a2dfce728588962",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:60272": {
+   "now": {
+    "file": "eia-60272-now.jpg",
+    "date": "2026-11-12",
+    "scene": "S2C_T14SKC_20261112T172547_L2A",
+    "sha256": "d375f218d59dc87ec056a9dca46b6ee773affdab4fc7c8f01fc184daa01120fc",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:60434": {
+   "now": {
+    "file": "eia-60434-now.jpg",
+    "date": "2026-11-11",
+    "scene": "S2C_T17SNV_20261111T161512_L2A",
+    "sha256": "eaa44ff2fe567c3922172008d11279a645b6a421a6140217d8e58eda5cd223b6",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-60434-before.jpg",
+    "date": "2024-12-23",
+    "scene": "S2B_T17SNV_20241223T161151_L2A",
+    "sha256": "7648ca04ad0886c9f97dd30e196a8959a6219b6d5ac6adf3fb1479b8f14763f4",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:63193": {
+   "now": {
+    "file": "eia-63193-now.jpg",
+    "date": "2026-11-05",
+    "scene": "S2C_T13SFR_20261105T173513_L2A",
+    "sha256": "a60ce87cf69ee38d9a1b4104b46ac0d6feb78fedbc819cd8b56fd78f026b9dd7",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:64209": {
+   "now": {
+    "file": "eia-64209-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2B_T11SMU_20261108T183842_L2A",
+    "sha256": "c2271833d9780aaccc017a8d4823c33f9e83ddcd073e7fbb10b68071fe6abfab",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-64209-before.jpg",
+    "date": "2024-11-13",
+    "scene": "S2A_T11SLU_20241113T183624_L2A",
+    "sha256": "0f3a0a6cc639cad8c77c7a218d7d9321d781bf7f4af000c6913c35e81be4fa11",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:64349": {
+   "now": {
+    "file": "eia-64349-now.jpg",
+    "date": "2026-11-11",
+    "scene": "S2B_T14SQA_20261111T170934_L2A",
+    "sha256": "bf6973a812f6fb33e9446e0575192c12e307156841ab9f36947e8942c084ab0c",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-64349-before.jpg",
+    "date": "2024-12-31",
+    "scene": "S2B_T14SQA_20241231T171326_L2A",
+    "sha256": "477d26db8a180f6c77fb7daf7a7526fb44aff9d3e249f08d746eefe12411ce19",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:67576": {
+   "now": {
+    "file": "eia-67576-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2C_T15SYC_20261110T164519_L2A",
+    "sha256": "0498d1da96c42990ef4748176519acb1489c6a702377a0682adc0fbd016a1a11",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:67914": {
+   "now": {
+    "file": "eia-67914-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2C_T15SXS_20261110T164519_L2A",
+    "sha256": "f5fc6426611f285aa2d45dcc6e32d39d6d8c928d77ffb681de4667eb6c327674",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:66621": {
+   "now": {
+    "file": "eia-66621-now.jpg",
+    "date": "2026-10-24",
+    "scene": "S2C_T15RVP_20261024T170420_L2A",
+    "sha256": "36372e8e6d7e2674a09c8e6f48892f546d3353f5fe2f5c6f85cd0a88756e6744",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-66621-before.jpg",
+    "date": "2024-12-23",
+    "scene": "S2A_T15RVP_20241223T170211_L2A",
+    "sha256": "b434980cb967467dcf3f67eef171bdcab3b8442c7330efeea2c93d88d93d2ddb",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:67998": {
+   "now": {
+    "file": "eia-67998-now.jpg",
+    "date": "2026-10-28",
+    "scene": "S2C_T16TGP_20261028T163831_L2A",
+    "sha256": "e0025ec7aab4f4f2518964ee936db38546950406ff1d3863ee684f494c332407",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-67998-before.jpg",
+    "date": "2024-11-07",
+    "scene": "S2A_T16TGP_20241107T163946_L2A",
+    "sha256": "ef1c78b9a8edc148547c331f6fae8829446886b6232d46fd1d7ad3b4637c0d78",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:67759": {
+   "now": {
+    "file": "eia-67759-now.jpg",
+    "date": "2026-10-20",
+    "scene": "S2B_T17TLG_20261020T163039_L2A",
+    "sha256": "b277e934569a387443bd01bc0a88f37fc4a0f6ab9260bb88ee482b576258ee76",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-67759-before.jpg",
+    "date": "2024-10-10",
+    "scene": "S2B_T17TLG_20241010T162717_L2A",
+    "sha256": "15b291c0972df20ff2f607105efaf35769aac4eee7c5b0f0c6a0e7c959f726ed",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68028": {
+   "now": {
+    "file": "eia-68028-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2C_T15SYT_20261110T164519_L2A",
+    "sha256": "316e377cdbe5c0fc9770bf26da7b04e7cfb75f611c150b61708163ee9ac8cac7",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:67755": {
+   "now": {
+    "file": "eia-67755-now.jpg",
+    "date": "2026-10-28",
+    "scene": "S2C_T16TGR_20261028T163831_L2A",
+    "sha256": "c1f66f64568885e409e3ae9b61add58b7eace1efd8412f4d8989aa7167b52b63",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-67755-before.jpg",
+    "date": "2024-11-12",
+    "scene": "S2B_T16TGR_20241112T163641_L2A",
+    "sha256": "f0ab931fec333ad6437d440d122f5e5c64df32dc17e4848a26745d6b7daf7055",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68029": {
+   "now": {
+    "file": "eia-68029-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2C_T15SYU_20261110T164519_L2A",
+    "sha256": "393810c2435a567dff34e8cffde0ad8b4fa96bf8151a16e809088b606c75de6e",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:67999": {
+   "now": {
+    "file": "eia-67999-now.jpg",
+    "date": "2026-11-09",
+    "scene": "S2A_T16TFM_20261109T163951_L2A",
+    "sha256": "2aa54a0adebde1a90988847016756cdafcaacb55ec4b5ffc2909c337c628676d",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-67999-before.jpg",
+    "date": "2024-11-07",
+    "scene": "S2A_T16TFM_20241107T163946_L2A",
+    "sha256": "8fa14b44b77fef6b9acdfb4f3be59556451a9760477b17d220f90ec5f4b975d2",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:65458": {
+   "now": {
+    "file": "eia-65458-now.jpg",
+    "date": "2026-11-11",
+    "scene": "S2B_T11SLV_20261111T184941_L2A",
+    "sha256": "c6defc1e9502dc86519676fb719f65b641fe7fadf35ef13312d8c25462973757",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-65458-before.jpg",
+    "date": "2024-12-06",
+    "scene": "S2C_T11SLV_20241206T185430_L2A",
+    "sha256": "f935de32df07e539edf9f559f5979d68fe84006fcd04170f5dd04a22c1e8d440",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68294": {
+   "now": {
+    "file": "eia-68294-now.jpg",
+    "date": "2026-11-12",
+    "scene": "S2C_T14SPG_20261112T172547_L2A",
+    "sha256": "cd7dd7c0ed795aaea0efeb01499f4411ca1cd72a3a1598064d8e8ecdcbe2e58b",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68295": {
+   "now": {
+    "file": "eia-68295-now.jpg",
+    "date": "2026-11-09",
+    "scene": "S2C_T14SNH_20261109T171526_L2A",
+    "sha256": "b5a8053df5616fbd5bd17797ba807cbcc0d1f5b2897e7da39180a252926318e8",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68296": {
+   "now": {
+    "file": "eia-68296-now.jpg",
+    "date": "2026-11-09",
+    "scene": "S2C_T14SNH_20261109T171526_L2A",
+    "sha256": "b5a8053df5616fbd5bd17797ba807cbcc0d1f5b2897e7da39180a252926318e8",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68053": {
+   "now": {
+    "file": "eia-68053-now.jpg",
+    "date": "2026-10-24",
+    "scene": "S2C_T15RUP_20261024T170420_L2A",
+    "sha256": "897cc1d3524ffa9291c515aa8e12466b297489e1cc5b9f8638abeb79206fb501",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68417": {
+   "now": {
+    "file": "eia-68417-now.jpg",
+    "date": "2026-11-11",
+    "scene": "S2B_T15SUR_20261111T170934_L2A",
+    "sha256": "d202c48badd31e832d609e8f7b599e48b4a6ab9ac5707a558f4a925719c58006",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68214": {
+   "now": {
+    "file": "eia-68214-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2C_T15SXS_20261110T164519_L2A",
+    "sha256": "7bec6322a16fac5f7624e0bcc9a6b29720614eb72e9a5690c8c902a5781c2f81",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68745": {
+   "now": {
+    "file": "eia-68745-now.jpg",
+    "date": "2026-11-09",
+    "scene": "S2A_T16TFM_20261109T163951_L2A",
+    "sha256": "9138c05b35491cd8a8c28f1d66c1efe3263f3b8b1f3132e6256a98b0245027f0",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-68745-before.jpg",
+    "date": "2024-11-07",
+    "scene": "S2A_T16TFM_20241107T163946_L2A",
+    "sha256": "b1ef89b61d8b14eb4909fe555796612c8d0c72d8048da68c7910bb6f40ec4695",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68744": {
+   "now": {
+    "file": "eia-68744-now.jpg",
+    "date": "2026-11-09",
+    "scene": "S2A_T16TFM_20261109T163951_L2A",
+    "sha256": "61bc1f39d108cd2cf50398b190a648f2ba1b4a79992272b8f62ad8688e394cf8",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-68744-before.jpg",
+    "date": "2024-11-07",
+    "scene": "S2A_T16TFM_20241107T163946_L2A",
+    "sha256": "c6734d869d3af3c90c878f82040511397bff41df80a8498b9f0523c06e791490",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68827": {
+   "now": {
+    "file": "eia-68827-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T17RNL_20261108T161505_L2A",
+    "sha256": "dcfc48aa42c1449ce348f513c98de76db7fce6a0f60684ab498ce0d84350da14",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-68827-before.jpg",
+    "date": "2024-12-03",
+    "scene": "S2B_T17RNL_20241203T160730_L2A",
+    "sha256": "f02a2869b10e8fc5ae081ff46be4e46e7ea594bb29745683865ea7ac2d8f907e",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68824": {
+   "now": {
+    "file": "eia-68824-now.jpg",
+    "date": "2026-11-11",
+    "scene": "S2C_T17RKP_20261111T161512_L2A",
+    "sha256": "d2021e98feadc43864ad78ebcb5bf618c3d879d4280c6442dc95c3071d0740d8",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-68824-before.jpg",
+    "date": "2024-12-21",
+    "scene": "S2A_T17RKP_20241221T162149_L2A",
+    "sha256": "d9175a2dc2c9c6157559482d7a5833649e79f9ea9bf6fc755bfbc06e69f39a61",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68825": {
+   "now": {
+    "file": "eia-68825-now.jpg",
+    "date": "2026-11-09",
+    "scene": "S2B_T16RFU_20261109T162826_L2A",
+    "sha256": "271fb9c48acb1065d763ff875674429304f07b40f5c9ef2fc0d0aa180131a530",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-68825-before.jpg",
+    "date": "2024-12-24",
+    "scene": "S2A_T16RFU_20241224T162708_L2A",
+    "sha256": "ba35bb237d72486dda69136355a677dd4acbb0de9c06c25b75707dba5e746d35",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68826": {
+   "now": {
+    "file": "eia-68826-now.jpg",
+    "date": "2026-11-09",
+    "scene": "S2B_T16RFU_20261109T162826_L2A",
+    "sha256": "271fb9c48acb1065d763ff875674429304f07b40f5c9ef2fc0d0aa180131a530",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-68826-before.jpg",
+    "date": "2024-12-24",
+    "scene": "S2A_T16RFU_20241224T162708_L2A",
+    "sha256": "ba35bb237d72486dda69136355a677dd4acbb0de9c06c25b75707dba5e746d35",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68828": {
+   "now": {
+    "file": "eia-68828-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T17RNL_20261108T161505_L2A",
+    "sha256": "7ee0d9167d2be66b8e815399c59ff14ee3ced705cfb73cf833d56185ffcb36ab",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-68828-before.jpg",
+    "date": "2024-12-03",
+    "scene": "S2B_T17RNL_20241203T160730_L2A",
+    "sha256": "c37551355fb449c29204835e4ddd93e32d6d9cf97ac6415eb5304f9096374983",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68829": {
+   "now": {
+    "file": "eia-68829-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T17RNL_20261108T161505_L2A",
+    "sha256": "77b7e797f0a061bb92bbda64e1670482b70031aea6f905aa141c2f808b5e5d4c",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-68829-before.jpg",
+    "date": "2024-12-03",
+    "scene": "S2B_T17RNL_20241203T160730_L2A",
+    "sha256": "9f64047366ba9e982b4f17413eada48c363989f247f556036f3148c229cab929",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68830": {
+   "now": {
+    "file": "eia-68830-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T17RNL_20261108T161505_L2A",
+    "sha256": "de8ffc37be9087662ba2e28ec48118b37800d4963d22b73ec91bbb499583427b",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-68830-before.jpg",
+    "date": "2024-12-03",
+    "scene": "S2B_T17RNL_20241203T160730_L2A",
+    "sha256": "b12f28c36a769aefc3dc218b8de7f4080f965dd4b00a487b2e389ac6f644e77f",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68835": {
+   "now": {
+    "file": "eia-68835-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T17RML_20261108T161505_L2A",
+    "sha256": "d1d684433d4e259cbd0d3b2c00274218e4793598150aa7b32fbf2f3ba03dde8c",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-68835-before.jpg",
+    "date": "2024-12-23",
+    "scene": "S2B_T17RML_20241223T161151_L2A",
+    "sha256": "b8848e4abec5c6d103d1890bee944d7a17d8cfacfea9bd5abbaf9c9fcd129ae3",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:67964": {
+   "now": {
+    "file": "eia-67964-now.jpg",
+    "date": "2026-11-02",
+    "scene": "S2B_T12SUB_20261102T181746_L2A",
+    "sha256": "e9fe85808bffead0f741faaecd44e06188c867c63f8e84c840dc5b202833d4a7",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68833": {
+   "now": {
+    "file": "eia-68833-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T17RML_20261108T161505_L2A",
+    "sha256": "d1d684433d4e259cbd0d3b2c00274218e4793598150aa7b32fbf2f3ba03dde8c",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-68833-before.jpg",
+    "date": "2024-12-23",
+    "scene": "S2B_T17RML_20241223T161151_L2A",
+    "sha256": "b8848e4abec5c6d103d1890bee944d7a17d8cfacfea9bd5abbaf9c9fcd129ae3",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68832": {
+   "now": {
+    "file": "eia-68832-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T17RML_20261108T161505_L2A",
+    "sha256": "da69e18cc4d5d3c83a7bbebf7353538c8650a858c0488c5dbdad1644284c1b06",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-68832-before.jpg",
+    "date": "2024-12-23",
+    "scene": "S2B_T17RML_20241223T161151_L2A",
+    "sha256": "d02a9ebe89b89eb2b0fdc1594f1d8ad67ef2987db8ae42c56185377b5b5c3f21",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68831": {
+   "now": {
+    "file": "eia-68831-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T17RMK_20261108T161505_L2A",
+    "sha256": "3b21168bf163e3479225e953f0b61168177b927767e28de8afd04819b02bb895",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-68831-before.jpg",
+    "date": "2024-12-13",
+    "scene": "S2B_T17RMK_20241213T161201_L2A",
+    "sha256": "f3638ec294bfa168a679b49adbb064b5e41c398b0c304032734292ad20dcb720",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68834": {
+   "now": {
+    "file": "eia-68834-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T17RMK_20261108T161505_L2A",
+    "sha256": "0cd62bd768bda583b71a9e257c177c8f71b347877bb12f63d0723735e0e9cab3",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-68834-before.jpg",
+    "date": "2024-12-03",
+    "scene": "S2B_T17RMK_20241203T160730_L2A",
+    "sha256": "04e19e5c6099bbe661f515801cd805251c26b18a7900f1bc6bf33bb28d6d92b2",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69077": {
+   "now": {
+    "file": "eia-69077-now.jpg",
+    "date": "2026-10-24",
+    "scene": "S2C_T15RTP_20261024T170420_L2A",
+    "sha256": "4cae6fe05e575648ea8465f3081d94517da855d369a42b685984288e9913c8bb",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68850": {
+   "now": {
+    "file": "eia-68850-now.jpg",
+    "date": "2026-10-28",
+    "scene": "S2C_T16TFP_20261028T163831_L2A",
+    "sha256": "fff29b359c7c725177c8139d71c14640ae58fd59f3feac4baa2ac035b54ceb1b",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-68850-before.jpg",
+    "date": "2024-11-12",
+    "scene": "S2B_T16TFP_20241112T163641_L2A",
+    "sha256": "107ceab8fe05f791b5525fe90120c648611a3d10f4d00435ce507f993f87fe12",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68836": {
+   "now": {
+    "file": "eia-68836-now.jpg",
+    "date": "2026-10-22",
+    "scene": "S2C_T17RLP_20261022T161320_L2A",
+    "sha256": "b90a6cd2e1d6432891019c96dd27d4c23fca584751f169ff3cb9736dd5f19120",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-68836-before.jpg",
+    "date": "2024-12-21",
+    "scene": "S2A_T17RLP_20241221T162149_L2A",
+    "sha256": "28fc27339b176d28753c54793bd7493dec0abb8075d04c2a2ab9f1205cec5e38",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68982": {
+   "now": {
+    "file": "eia-68982-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T13SFD_20261108T174949_L2A",
+    "sha256": "480079088ae3a6d0dbae553d5662b8e71cbf88a36c5c06c80b583723ff545ca0",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-68982-before.jpg",
+    "date": "2024-12-30",
+    "scene": "S2B_T13SFD_20241230T173956_L2A",
+    "sha256": "455498a81b1f2d8e7e7c7c587ad71fbcf2129e178a0d9d9c7f4a8c23de22525a",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69148": {
+   "now": {
+    "file": "eia-69148-now.jpg",
+    "date": "2026-11-11",
+    "scene": "S2C_T17SMV_20261111T161512_L2A",
+    "sha256": "745538438f91b5c963abba0c61787e819e28a992abbcdb5746fc59e56ed2cd31",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:68397": {
+   "now": {
+    "file": "eia-68397-now.jpg",
+    "date": "2026-11-02",
+    "scene": "S2B_T12STB_20261102T181746_L2A",
+    "sha256": "b0ba1cd9d075cdc832be4b8112bae911d7ac66d6865a1b2c561af2670404e904",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69185": {
+   "now": {
+    "file": "eia-69185-now.jpg",
+    "date": "2026-10-09",
+    "scene": "S2B_T15SWU_20261009T170051_L2A",
+    "sha256": "86f1895afec7e266de4907dbb5d683947ac71362bcb8fc66b9dab2858e9fb754",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69184": {
+   "now": {
+    "file": "eia-69184-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2C_T15RYP_20261110T164519_L2A",
+    "sha256": "3a5f01609f04acb52fa44b7e0671cc19a9b5510e7699843c3503728058308de7",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69040": {
+   "now": {
+    "file": "eia-69040-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T13SEC_20261108T174949_L2A",
+    "sha256": "65a247f36cbe54f0dd76d2e7ce77c9a85cc54276758dbe180a1290068b24be05",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69040-before.jpg",
+    "date": "2024-12-03",
+    "scene": "S2B_T13SEC_20241203T174733_L2A",
+    "sha256": "d17b9b9edb6b2b773fc2d82189232f6b5876bbedec932b6a49cf2f7c0eec0960",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69101": {
+   "now": {
+    "file": "eia-69101-now.jpg",
+    "date": "2026-11-12",
+    "scene": "S2C_T14SMB_20261112T172547_L2A",
+    "sha256": "6b8aa73589ba4b78e7301c827fb164537f23c88c2bc31444f2befaf7d893caba",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69101-before.jpg",
+    "date": "2024-12-29",
+    "scene": "S2A_T14SMB_20241229T172051_L2A",
+    "sha256": "6056b89d1c7e21fab33693ea4cc4e42bea29ab9ff64406ca6e107f858ba6929c",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69119": {
+   "now": {
+    "file": "eia-69119-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2A_T17SPV_20261110T160653_L2A",
+    "sha256": "d0a88699c5655ac2bfe68cc85b16bc78d53ade905bee0d9754d01ed7ebbeca45",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69119-before.jpg",
+    "date": "2024-12-23",
+    "scene": "S2B_T17SPV_20241223T161151_L2A",
+    "sha256": "22d015e1f188be29d3d905f026f1c23e8e3d7e5d5da25743add9fcdedf8691f9",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69449": {
+   "now": {
+    "file": "eia-69449-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2C_T15SXR_20261110T164519_L2A",
+    "sha256": "07616db0132aaefadf5f46fd20bdccf8c17813b96411b70b0bae7205979304c0",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69194": {
+   "now": {
+    "file": "eia-69194-now.jpg",
+    "date": "2026-11-11",
+    "scene": "S2C_T17SMV_20261111T161512_L2A",
+    "sha256": "bb8a8bc4753bad947d7d747a8d42001ad9ca52ee5dcd46cd6a0d9f40a8a16fb4",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69194-before.jpg",
+    "date": "2024-12-23",
+    "scene": "S2B_T17SMV_20241223T161151_L2A",
+    "sha256": "c82637b50eb7db4036970ad5522373b585dd5bca3ae2fb24e8021f7ceab31ef5",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69445": {
+   "now": {
+    "file": "eia-69445-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2C_T15RYP_20261110T164519_L2A",
+    "sha256": "3a5f01609f04acb52fa44b7e0671cc19a9b5510e7699843c3503728058308de7",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69426": {
+   "now": {
+    "file": "eia-69426-now.jpg",
+    "date": "2026-10-24",
+    "scene": "S2C_T15RVP_20261024T170420_L2A",
+    "sha256": "41925435421ef70778bf3be6037ab9dde79c3389c7e6289e768668b1f367dc51",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69223": {
+   "now": {
+    "file": "eia-69223-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2C_T15SXR_20261110T164519_L2A",
+    "sha256": "8ebc2f971d93dff6442364483f9c9e57b722b6e69c9fbf3413727d92aaf87b21",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69223-before.jpg",
+    "date": "2024-12-20",
+    "scene": "S2A_T15SXR_20241220T164717_L2A",
+    "sha256": "24026f6222044e153eb79d872e2283cdc6ee59c5804cf24246ade50a34752213",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69197": {
+   "now": {
+    "file": "eia-69197-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2B_T17SQA_20261110T155809_L2A",
+    "sha256": "24ccddbdc7c943303e58aefb6c654749f8ed7e85cf6f9af509eefbfed464038b",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69197-before.jpg",
+    "date": "2024-11-25",
+    "scene": "S2A_T17SQA_20241125T160218_L2A",
+    "sha256": "50065fd36ce36c60903c90af64c235984a833ccca83c13fd75e3c971f8ee6060",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69272": {
+   "now": {
+    "file": "eia-69272-now.jpg",
+    "date": "2026-11-04",
+    "scene": "S2B_T14SMA_20261104T171735_L2A",
+    "sha256": "d5a4ac399d44bb3d648776916e9a0613512ea620895fe517fa35612804110caf",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69272-before.jpg",
+    "date": "2024-12-29",
+    "scene": "S2A_T14SMA_20241229T172051_L2A",
+    "sha256": "0462c9fbfea42159a981ff5b638a9bf55e46eda387c189adcb794ccd02894eab",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69468": {
+   "now": {
+    "file": "eia-69468-now.jpg",
+    "date": "2026-10-28",
+    "scene": "S2C_T16TGP_20261028T163831_L2A",
+    "sha256": "7f1de3a1bbee7ee4bd703622593bae5677ff3dd2dc0d503a225840844a806d08",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69468-before.jpg",
+    "date": "2024-11-07",
+    "scene": "S2A_T16TGP_20241107T163946_L2A",
+    "sha256": "6de12a550d202809c8d0835584d3d1f9642b728f3a931a884381d22b2ee2c54b",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69356": {
+   "now": {
+    "file": "eia-69356-now.jpg",
+    "date": "2026-11-11",
+    "scene": "S2C_T17RLN_20261111T161512_L2A",
+    "sha256": "19571e4745ea2c39f3bf86f115b11b3c27bd227e91cdff44bf888d0aa9ac8880",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69356-before.jpg",
+    "date": "2024-12-13",
+    "scene": "S2B_T17RLN_20241213T161201_L2A",
+    "sha256": "930b3cd2e507865e5d2877b72bd06338e1114277f1145053f7648aaf9b87050f",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69462": {
+   "now": {
+    "file": "eia-69462-now.jpg",
+    "date": "2026-10-28",
+    "scene": "S2C_T16TGP_20261028T163831_L2A",
+    "sha256": "204aea3880a1a1a406b5ca49906600a0de82dc913194690b4ad19e22ab94d159",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69462-before.jpg",
+    "date": "2024-11-07",
+    "scene": "S2A_T16TGP_20241107T163946_L2A",
+    "sha256": "8888db951afc2f8055457b56eff75c8e634a9690d6440605b5d86a1a071f0ee2",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69461": {
+   "now": {
+    "file": "eia-69461-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T17RLL_20261108T161505_L2A",
+    "sha256": "caf0b0bbe91be8c6797280a14cc7298192f28d62f7f08aceec15aa46e72c0d20",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69461-before.jpg",
+    "date": "2024-12-23",
+    "scene": "S2B_T17RLL_20241223T161151_L2A",
+    "sha256": "154bf0856fed6f26c6adc959046b3bc16c6a492e8b17f707e61d83d629d3c813",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69464": {
+   "now": {
+    "file": "eia-69464-now.jpg",
+    "date": "2026-10-28",
+    "scene": "S2C_T16TFP_20261028T163831_L2A",
+    "sha256": "be1627c4d8e39e51d54b778e8de578789eac3905a7541c007625c2a6311175b9",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69464-before.jpg",
+    "date": "2024-11-12",
+    "scene": "S2B_T16TFP_20241112T163641_L2A",
+    "sha256": "549704d6479b5d640aaaa6d4ffebb665e16777fef18bf5ccd27dfe31e241a647",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69467": {
+   "now": {
+    "file": "eia-69467-now.jpg",
+    "date": "2026-10-28",
+    "scene": "S2C_T17TLJ_20261028T163831_L2A",
+    "sha256": "1100bf98ee92bb820dff1badc197859b87ae7a4089b81f88a3d15b920b4f1490",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69467-before.jpg",
+    "date": "2024-11-12",
+    "scene": "S2B_T17TLJ_20241112T163641_L2A",
+    "sha256": "93e2dd04335860491487ecc3badc9783deacbf765bfc9abdcc32fd940b3ced09",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69649": {
+   "now": {
+    "file": "eia-69649-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2C_T15SXR_20261110T164519_L2A",
+    "sha256": "28ee1d48d7fdb1f944b44672cfaba82e3f247d3f56643e575914eb7c9482166a",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69650": {
+   "now": {
+    "file": "eia-69650-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2C_T15SXR_20261110T164519_L2A",
+    "sha256": "bb47ce61a19024e68f1e60460c694a9e3f98a3e20c74a05e6af7f2130d720dcc",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69463": {
+   "now": {
+    "file": "eia-69463-now.jpg",
+    "date": "2026-10-28",
+    "scene": "S2C_T17TKG_20261028T163831_L2A",
+    "sha256": "bd876f1f2796357d7edce4d2aef0d2505aab66e3203d85aa26b344ad1ca2a7fa",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69463-before.jpg",
+    "date": "2024-11-07",
+    "scene": "S2A_T17TKG_20241107T163946_L2A",
+    "sha256": "857695d9435ebb935cd80dbd4a42ed9eb569b367af11661ac5ba474eb613cfa3",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69470": {
+   "now": {
+    "file": "eia-69470-now.jpg",
+    "date": "2026-10-28",
+    "scene": "S2C_T17TLJ_20261028T163831_L2A",
+    "sha256": "0eac53b500c30f2244175ee192c162dd0e5de810a55461cea8c1a92c2be7892e",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69470-before.jpg",
+    "date": "2024-11-12",
+    "scene": "S2B_T17TLJ_20241112T163641_L2A",
+    "sha256": "953182fad373ed59d9638cf7517eac76aa69a4f8d91364daefef029f55869a3f",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69771": {
+   "now": {
+    "file": "eia-69771-now.jpg",
+    "date": "2026-11-11",
+    "scene": "S2C_T17SMV_20261111T161512_L2A",
+    "sha256": "da448350ef4a15bde1da90c62482c90d13a4798543f4afc8467a2db3a16a89e7",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69772": {
+   "now": {
+    "file": "eia-69772-now.jpg",
+    "date": "2026-10-27",
+    "scene": "S2B_T17SMU_20261027T162120_L2A",
+    "sha256": "896aa7d282c881abcbb1da4967cb3889ada345bde3087f69b75369f446f0f41b",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69631": {
+   "now": {
+    "file": "eia-69631-now.jpg",
+    "date": "2026-11-11",
+    "scene": "S2B_T14SQG_20261111T170934_L2A",
+    "sha256": "c9e23fc2c247b16d2763ad79be898c47fe65df62743bb5c3f913c827aac86dc7",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69631-before.jpg",
+    "date": "2024-12-21",
+    "scene": "S2B_T14SQG_20241221T170631_L2A",
+    "sha256": "dbac893de60e76db618760e72e96053e6e64d99a2a72d7f724bc5870aa7c0211",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69523": {
+   "now": {
+    "file": "eia-69523-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T17RLL_20261108T161505_L2A",
+    "sha256": "769baaa44ac313190d3b9a74f5da105dd2050371c3f547909efa85231cc7b241",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69523-before.jpg",
+    "date": "2024-12-23",
+    "scene": "S2B_T17RLL_20241223T161151_L2A",
+    "sha256": "ab8ddc14891df36fdbea75f5fa2b1643bf8e9529bf3f6f781ba3ceaf27c442b3",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69522": {
+   "now": {
+    "file": "eia-69522-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T17RLL_20261108T161505_L2A",
+    "sha256": "d64142d52f182ea90edcbcc62f3c847f9e4161df2d33d4761a54c86618623c5a",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69522-before.jpg",
+    "date": "2024-12-23",
+    "scene": "S2B_T17RLL_20241223T161151_L2A",
+    "sha256": "ab7352885a2e409b234bf03305b0f6a606a96d05ee10aa8898dec638818e726c",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69481": {
+   "now": {
+    "file": "eia-69481-now.jpg",
+    "date": "2026-11-11",
+    "scene": "S2B_T15SUB_20261111T170934_L2A",
+    "sha256": "96fb334f4260347c346cbdccbe0fd81bca677e785d14eda59fd0762abf6bce8b",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69481-before.jpg",
+    "date": "2024-12-21",
+    "scene": "S2B_T15SUB_20241221T170631_L2A",
+    "sha256": "546d8a28fbe85a2006598b28bea4ab6d736aef5b2139ae8dc589e40f76094512",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69750": {
+   "now": {
+    "file": "eia-69750-now.jpg",
+    "date": "2026-10-09",
+    "scene": "S2B_T15SWU_20261009T170051_L2A",
+    "sha256": "7768a7c18644a4d4238f2b5f111fa387b6f7415628c0ec26c88059c316be1d7e",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69952": {
+   "now": {
+    "file": "eia-69952-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2C_T15RXP_20261110T164519_L2A",
+    "sha256": "e9f7ec0b76f0cfd6645ab7b09c04029572327c5c0c894f8bfa2119dee0880c87",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69944": {
+   "now": {
+    "file": "eia-69944-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2C_T15RXQ_20261110T164519_L2A",
+    "sha256": "b6e21cf0aae4a21af898252809e6665e42ea6d74a787a2d2ab7ceb3f9d9e6d41",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69989": {
+   "now": {
+    "file": "eia-69989-now.jpg",
+    "date": "2026-10-09",
+    "scene": "S2B_T15SWU_20261009T170051_L2A",
+    "sha256": "b350c647ea8eb250c34c21f7613732541e501b344390d094d89366dd450aadb7",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69775": {
+   "now": {
+    "file": "eia-69775-now.jpg",
+    "date": "2026-10-28",
+    "scene": "S2C_T17TKG_20261028T163831_L2A",
+    "sha256": "1b89cc271ba57b31161705b3fbbba47cd9676cc7e4703347aaf2ae3c36877591",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69775-before.jpg",
+    "date": "2024-12-22",
+    "scene": "S2B_T17TKG_20241222T163650_L2A",
+    "sha256": "1b6a9eb4096c2795b0ccb42a8f55c23cb1ffe4cb8cd14a90f8450f916440eb4e",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69991": {
+   "now": {
+    "file": "eia-69991-now.jpg",
+    "date": "2026-10-24",
+    "scene": "S2C_T15RUP_20261024T170420_L2A",
+    "sha256": "94567b83a92cabcfbb0417cb19ca257e875453ac477a4d5badd726e8630d59c6",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69873": {
+   "now": {
+    "file": "eia-69873-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2B_T13SGD_20261110T174003_L2A",
+    "sha256": "745ade4823469c7f25b84f90ac4334dfe31af0b711447b9047f7cb3945547c24",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69873-before.jpg",
+    "date": "2024-12-30",
+    "scene": "S2B_T13SGD_20241230T173956_L2A",
+    "sha256": "fad94f619f6ef17be4b537b1418cd22c000e41f6384a1bd7f53ebd228a2844bc",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69993": {
+   "now": {
+    "file": "eia-69993-now.jpg",
+    "date": "2026-10-24",
+    "scene": "S2C_T15RUP_20261024T170420_L2A",
+    "sha256": "a5f8331d8fdc7fe99e359d4a1da5478f38b7e148c7371cfe420bd4ddb05fce40",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69964": {
+   "now": {
+    "file": "eia-69964-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2B_T11SMU_20261108T183842_L2A",
+    "sha256": "8aa0235e5eff882f095b45effeb5679354340197510e1cd0c172ffeeab29c294",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-69964-before.jpg",
+    "date": "2024-12-18",
+    "scene": "S2B_T11SMU_20241218T183708_L2A",
+    "sha256": "7420a49e101d5cb76ce1efd03c5a535a89b8d303c138a01cc093d40d45c4245e",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69990": {
+   "now": {
+    "file": "eia-69990-now.jpg",
+    "date": "2026-11-12",
+    "scene": "S2B_T15RYQ_20261112T164223_L2A",
+    "sha256": "3ac5a5a31f5d6788693d9fab0f7ce112a67f1bfa31b061603f0c1687672a34b6",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:70221": {
+   "now": {
+    "file": "eia-70221-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T17SMT_20261108T160452_L2A",
+    "sha256": "b5c1e0b45ae2148ada55f1912c13dff3130642fa3e45a1d92aaba06638d33cae",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:70259": {
+   "now": {
+    "file": "eia-70259-now.jpg",
+    "date": "2026-11-05",
+    "scene": "S2C_T13SFS_20261105T173513_L2A",
+    "sha256": "5759cd0e648da910a76b6f9eed70217f93473785349226cb06074917fe219cdb",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:70220": {
+   "now": {
+    "file": "eia-70220-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2A_T17SNU_20261110T160653_L2A",
+    "sha256": "782aaaa4fc0b5b4d502765f1886112da463829564aaf3009f059b9286793e165",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:70395": {
+   "now": {
+    "file": "eia-70395-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T17RMM_20261108T161505_L2A",
+    "sha256": "59ccb578cc3ea9ddd3d3eddb2d14583da8c4c3e978964f259989dd3a54bdf9dc",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:70187": {
+   "now": {
+    "file": "eia-70187-now.jpg",
+    "date": "2026-11-10",
+    "scene": "S2C_T15SYR_20261110T164519_L2A",
+    "sha256": "7777874f5a16deb41f137f4a804e7332658fcf4dbed81bf518d003b4d57e7c86",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-70187-before.jpg",
+    "date": "2024-12-20",
+    "scene": "S2A_T15SYR_20241220T164717_L2A",
+    "sha256": "8c640445db9b346238ee9031b6b543c6172ce36b35427520f9223ff633f24293",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:70107": {
+   "now": {
+    "file": "eia-70107-now.jpg",
+    "date": "2026-11-09",
+    "scene": "S2C_T14TQL_20261109T171526_L2A",
+    "sha256": "47f055d0933996a607746a49131f5387c17ac0e9354c199010a998ea6c49671e",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-70107-before.jpg",
+    "date": "2024-12-19",
+    "scene": "S2A_T14TQL_20241219T172100_L2A",
+    "sha256": "84d179ca3067a2ab2f8da7ad6295ce4df2c9159a817ebe926a2f328ce693eb13",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:70223": {
+   "now": {
+    "file": "eia-70223-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T17RMM_20261108T161505_L2A",
+    "sha256": "7522a01838ee831460e007b86fd2cb0271246234fcee951183ba7dcc98bb2cbb",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-70223-before.jpg",
+    "date": "2024-12-03",
+    "scene": "S2B_T17RMM_20241203T160730_L2A",
+    "sha256": "60b76bb2424c368dfab4cf0e541115364289f512c629031159aecbfead9255f7",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:70222": {
+   "now": {
+    "file": "eia-70222-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T17RMM_20261108T161505_L2A",
+    "sha256": "b0c975c35d9df7fb26e355bd6a9887e31c0e51e600397c714f7db99fb4fa3427",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "eia-70222-before.jpg",
+    "date": "2024-12-03",
+    "scene": "S2B_T17RMM_20241203T160730_L2A",
+    "sha256": "08c8250d65fed477affe6daa3622f854eb526664a696e80589a4ee7ff58a0269",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "gem:L100000602010": {
+   "now": {
+    "file": "gem-L100000602010-now.jpg",
+    "date": "2026-11-09",
+    "scene": "S2B_T45RXL_20261109T045004_L2A",
+    "sha256": "13d1a31187b6d3935a613ba6759aef2e37823b3e4652d10cbb4cac8736303361",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "gem-L100000602010-before.jpg",
+    "date": "2024-12-24",
+    "scene": "S2A_T45RXL_20241224T044213_L2A",
+    "sha256": "98fff5bfd7c05f99607f3231f3cf3d3c28ac1bcf125bcc2e3a4a05eb928b3635",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "gem:L100000102640:p2": {
+   "now": {
+    "file": "gem-L100000102640-p2-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2B_T44RNN_20261108T051418_L2A",
+    "sha256": "119b476d02babaedab7b55bb165e44973476eb24dd7e9c1c39c838ea81bdcc32",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "eia:69776": {
+   "now": {
+    "file": "eia-69776-now.jpg",
+    "date": "2026-10-03",
+    "scene": "S2B_T17TLK_20261003T164046_L2A",
+    "sha256": "142c0406b85a7a8a75b1ce04c0d8571f9d0433a8abc5211a52316bba44b46c1c",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "gem:L100000602067": {
+   "now": {
+    "file": "gem-L100000602067-now.jpg",
+    "date": "2026-11-09",
+    "scene": "S2B_T45RXL_20261109T045004_L2A",
+    "sha256": "1e8288e9e3ea5e45c69e377f7f9f7fbcdb6c5933c8e5ae42c4d718df0aea7e11",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "gem-L100000602067-before.jpg",
+    "date": "2024-12-24",
+    "scene": "S2A_T45RXL_20241224T044213_L2A",
+    "sha256": "f8547e2c2f166b363c2f3537fdb0825b035ff0c9ff84d7fd7eabc0ee7bd898bf",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "gem:L100000102458:p2": {
+   "now": {
+    "file": "gem-L100000102458-p2-now.jpg",
+    "date": "2026-11-12",
+    "scene": "S2A_T44QQK_20261112T050640_L2A",
+    "sha256": "ba4ff7ffe96954dc173c2ca8dce3ea457e847302f4f46d4b6a07abb5ccb8ceb8",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "gem-L100000102458-p2-before.jpg",
+    "date": "2024-12-30",
+    "scene": "S2A_T44QQK_20241230T051135_L2A",
+    "sha256": "a6f991d77a83d7b4cbcb8be1c40757c709c712e323ecb08dc91febdd033cfeb7",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "gem:L100000602048": {
+   "now": {
+    "file": "gem-L100000602048-now.jpg",
+    "date": "2026-11-08",
+    "scene": "S2C_T46RFR_20261108T042411_L2A",
+    "sha256": "ce5f60635f633068716072b836695f84f9cadc0d2e7bab81d1a84e4bdeab81ff",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "gem-L100000602048-before.jpg",
+    "date": "2024-12-28",
+    "scene": "S2A_T46RFR_20241228T042612_L2A",
+    "sha256": "f016939a3f713fcd93f956db68d9638bae1ce659d122b3eb6836e1f608b50c15",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "gem:L100000102332:x": {
+   "now": {
+    "file": "gem-L100000102332-x-now.jpg",
+    "date": "2026-11-11",
+    "scene": "S2B_T43QHF_20261111T052319_L2A",
+    "sha256": "90aca9aee40482a1992d044f598a9aedcb9211f3fbdc537662203a68ab99c32a",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "gem-L100000102332-x-before.jpg",
+    "date": "2024-12-26",
+    "scene": "S2A_T43QHF_20241226T052232_L2A",
+    "sha256": "02d4d4a04a9e0222b788c308873bacd373da94841be887cb8127312678735fc7",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "gem:L100000102113:x": {
+   "now": {
+    "file": "gem-L100000102113-x-now.jpg",
+    "date": "2026-11-12",
+    "scene": "S2A_T44RRN_20261112T050640_L2A",
+    "sha256": "e3402eb445b453b270932f758fae10cce067465f157273292f43396209489db0",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "gem-L100000102113-x-before.jpg",
+    "date": "2024-12-15",
+    "scene": "S2B_T44RRN_20241215T050610_L2A",
+    "sha256": "50ffc65ea190b6b9e919b9aeb798e430232d100108ef86b3e5349e42f916a188",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "gem:L100000102652:x": {
+   "now": {
+    "file": "gem-L100000102652-x-now.jpg",
+    "date": "2026-11-12",
+    "scene": "S2A_T44QPM_20261112T050640_L2A",
+    "sha256": "c0c4c80715cf020a4b5ea3645c5aacc39d8fadd96a88675c0efd2d5cea0fd1c4",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "gem-L100000102652-x-before.jpg",
+    "date": "2024-12-30",
+    "scene": "S2A_T44QPM_20241230T051135_L2A",
+    "sha256": "d75f0911c9420bd2f35cc1a7b6a7da0e5ec5d5d1ab724d2ce0ee1e1907dd4a71",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "gem:L100000102185:x": {
+   "now": {
+    "file": "gem-L100000102185-x-now.jpg",
+    "date": "2026-11-12",
+    "scene": "S2A_T44QPK_20261112T050640_L2A",
+    "sha256": "a48d3e12a9b7b93d3d2d4db573ebbbfbb447c55092481761b26605cc38f85554",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "gem-L100000102185-x-before.jpg",
+    "date": "2024-12-30",
+    "scene": "S2A_T44QPK_20241230T051135_L2A",
+    "sha256": "4dce98b4a853fafe6aeb7685159a5ea647a98a396745b726a70202a9967ec0d9",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "gem:L100000102281:x:under-construction": {
+   "now": {
+    "file": "gem-L100000102281-x-under-construction-now.jpg",
+    "date": "2026-11-12",
+    "scene": "S2B_T45QUG_20261112T045411_L2A",
+    "sha256": "5cda0832f5af0815b084ec614a8168e736cc4bd92cb91982ab348e348bd1a93b",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "gem-L100000102281-x-under-construction-before.jpg",
+    "date": "2024-12-27",
+    "scene": "S2A_T45QUG_20241227T045528_L2A",
+    "sha256": "aba295669568a86ce4c5b38948e747c6ff04cf1a5476fea1649ff83b431e6fed",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "gem:L100000101873:Oil & gas:x": {
+   "now": {
+    "file": "gem-L100000101873-Oil & gas-x-now.jpg",
+    "date": "2026-10-30",
+    "scene": "S2C_T32UNU_20261030T103142_L2A",
+    "sha256": "1c2d6ed4e62974c7cb7a38618da83298e278550a8f69e679b71fb653a67b3fec",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "gem-L100000101873-Oil & gas-x-before.jpg",
+    "date": "2024-12-26",
+    "scene": "S2A_T32UNV_20241226T102436_L2A",
+    "sha256": "f014056f7846e969cf13f00ae8f0c2d91c51e751acd168c7309a001765ddea1f",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "gem:L100000102504:p3": {
+   "now": {
+    "file": "gem-L100000102504-p3-now.jpg",
+    "date": "2026-11-12",
+    "scene": "S2B_T45QUD_20261112T045411_L2A",
+    "sha256": "fb40856c2d620a5ab939ceb177b829bad7fbe090ba4ecb45122d00a1126dbceb",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "gem-L100000102504-p3-before.jpg",
+    "date": "2024-12-27",
+    "scene": "S2A_T45QUD_20241227T045528_L2A",
+    "sha256": "fa2eecef0f95a93dac0061991d01c1a6538f00567e4d8917784188ab7ed356a6",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "gem:L100000101875:Oil & gas": {
+   "now": {
+    "file": "gem-L100000101875-Oil & gas-now.jpg",
+    "date": "2026-10-27",
+    "scene": "S2C_T32UNV_20261027T102515_L2A",
+    "sha256": "3a5aca3b89a5e7e1df86f61644b7b2f8614c846807ffea9108bbd3aa76da1c07",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2026",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   },
+   "before": {
+    "file": "gem-L100000101875-Oil & gas-before.jpg",
+    "date": "2024-12-26",
+    "scene": "S2A_T32UNV_20241226T102436_L2A",
+    "sha256": "39b93699b8cdb7a0389e7b8aaf297a644ef60dc41485512d37825e1ffb94e3c8",
+    "width_km": 3.0,
+    "resolution_m": 10,
+    "credit": "Contains modified Copernicus Sentinel data 2024",
+    "source": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a"
+   }
+  },
+  "gem:L100000401075:x": {}
+ }
+}
