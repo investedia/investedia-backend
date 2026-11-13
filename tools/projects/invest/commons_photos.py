@@ -59,7 +59,7 @@ def main():
             info = api({'action': 'query', 'titles': '|'.join(titles), 'prop': 'imageinfo|coordinates', 'iiprop': 'url|extmetadata|sha1|size', 'iiurlwidth': 800})
             for pg in info.get('query', {}).get('pages', {}).values():
                 ii = (pg.get('imageinfo') or [{}])[0]
-                md = {k: re.sub('<[^>]+>', '', v.get('value', '')) for k, v in (ii.get('extmetadata') or {}).items()}
+                md = {k: re.sub('<[^>]+>', '', str(v.get('value', ''))) for k, v in (ii.get('extmetadata') or {}).items()}
                 lic = md.get('LicenseShortName', '')
                 text = ' '.join([pg['title'], md.get('ImageDescription', ''), md.get('Categories', '')])
                 if not OK.match(lic) or re.search(r'\b(NC|ND)\b', lic) or not set(words) <= set(core(text)):
