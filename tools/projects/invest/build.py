@@ -181,6 +181,19 @@ def build(power_rows, iso, registry, ledger, today, extra=()):
                 p = dict(p, cost=dict(costs[0], source=next(e['verification']['link'][0]['url'] for e in verified if e['verification'].get('cost'))))
             public.append(dict({k: v for k, v in p.items() if k not in ('owners', 'route_b')}, exposures=verified,
                                other_owners=[o for o in p.get('owners', []) if o['name'] not in {v['owner'] for v in verified}]))
+    # Company headquarters for relationship lines: matched by LEI (Wikidata P1278), else by ticker. No HQ, no line.
+    hq_path = ROOT / 'data/projects/invest/company-hq.json'
+    HQ = json.loads(hq_path.read_text()) if hq_path.exists() else {'by_lei': {}, 'by_ticker': {}}
+    for p in public:
+        for e in p['exposures']:
+            v = e['verification']
+            e['hq'] = HQ['by_lei'].get(v['identity'].get('id')) or HQ['by_ticker'].get(v['listing'].get('ticker'))
+    # Satellite pictures (tools/projects/invest/imagery.py): exact locations only.
+    im_path = ROOT / 'data/projects/invest/imagery.json'
+    IM = json.loads(im_path.read_text())['images'] if im_path.exists() else {}
+    for p in public:
+        if p.get('precision') == 'exact' and IM.get(p['id']):
+            p['images'] = IM[p['id']]
     # One public record per physical plant: GEM and EIA describe some US plants twice.
     public.sort(key=lambda p: (-len(p['exposures']), p['id'].startswith('gem:')))
     kept = []

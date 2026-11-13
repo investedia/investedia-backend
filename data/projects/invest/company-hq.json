@@ -1,0 +1,2784 @@
+{
+ "schema": "investedia.projects.invest.company-hq.v1",
+ "licence": "CC0 (Wikidata)",
+ "by_lei": {
+  "C6J3FGIWG6MBDGTE8F80": {
+   "lat": 43.670277777,
+   "lon": -79.386666666,
+   "city": "Toronto",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q908324",
+   "checked_at": "2026-11-12"
+  },
+  "5967007LIEEXZXIARK36": {
+   "lat": 59.913333333,
+   "lon": 10.738888888,
+   "city": "Oslo",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q7430576",
+   "checked_at": "2026-11-12"
+  },
+  "529900JSFZ4TS59HKD79": {
+   "lat": 49.016666666,
+   "lon": 8.4,
+   "city": "Karlsruhe",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q644304",
+   "checked_at": "2026-11-12"
+  },
+  "NQZVQT2P5IUF2PGA1Q48": {
+   "lat": 44.647777777,
+   "lon": -63.571388888,
+   "city": "Halifax",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q5370387",
+   "checked_at": "2026-11-12"
+  },
+  "549300IX8SD6XXD71I78": {
+   "lat": 42.331666666,
+   "lon": -83.0475,
+   "city": "Detroit",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q5206232",
+   "checked_at": "2026-11-12"
+  },
+  "TWSEY0NEDUDCKS27AH81": {
+   "lat": 33.448333333,
+   "lon": -112.073888888,
+   "city": "Phoenix",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q26110522",
+   "checked_at": "2026-11-12"
+  },
+  "I1BZKREC126H0VB1BL91": {
+   "lat": 35.226944444,
+   "lon": -80.843333333,
+   "city": "Charlotte",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q1264404",
+   "checked_at": "2026-11-12"
+  },
+  "1B4S6S7G0TW5EE83BO58": {
+   "lat": 39.962222222,
+   "lon": -83.000555555,
+   "city": "Columbus",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q464092",
+   "checked_at": "2026-11-12"
+  },
+  "549300FC3G3YU2FBZD92": {
+   "lat": 33.754444444,
+   "lon": -84.389722222,
+   "city": "Atlanta",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q2304693",
+   "checked_at": "2026-11-12"
+  },
+  "4XM3TW50JULSLG8BNC79": {
+   "lat": 29.976111111,
+   "lon": -90.078333333,
+   "city": "New Orleans",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q1344587",
+   "checked_at": "2026-11-12"
+  },
+  "LGJNMI9GH8XIDG5RCM61": {
+   "lat": 44.981944444,
+   "lon": -93.269166666,
+   "city": "Minneapolis",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q1486956",
+   "checked_at": "2026-11-12"
+  },
+  "98TPTUM4IVMFCZBCUR27": {
+   "lat": 51.0475,
+   "lon": -114.0625,
+   "city": "Calgary",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q1339966",
+   "checked_at": "2026-11-12"
+  },
+  "549300IGLYTZUK3PVP70": {
+   "lat": 43.05,
+   "lon": -87.95,
+   "city": "Milwaukee",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q8027166",
+   "checked_at": "2026-11-12"
+  },
+  "XRZQ5S7HYJFPHJ78L959": {
+   "lat": 38.626388888,
+   "lon": -90.199444444,
+   "city": "St. Louis",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q462984",
+   "checked_at": "2026-11-12"
+  },
+  "549300PGTHDQY6PSUI61": {
+   "lat": 39.04833,
+   "lon": -95.67804,
+   "city": "Topeka",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q7987107",
+   "checked_at": "2026-11-12"
+  },
+  "5493000C01ZX7D35SD85": {
+   "lat": 41.258611111,
+   "lon": -95.9375,
+   "city": "Omaha",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q217583",
+   "checked_at": "2026-11-12"
+  },
+  "ILUL7B6Z54MRYCF6H308": {
+   "lat": 37.540833333,
+   "lon": -77.436666666,
+   "city": "Richmond",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q677464",
+   "checked_at": "2026-11-12"
+  },
+  "549300KP43CPCUJOOG15": {
+   "lat": 32.811666666,
+   "lon": -96.950833333,
+   "city": "Irving",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q104158381",
+   "checked_at": "2026-11-12"
+  },
+  "2NUNNB7D43COUIRE5295": {
+   "lat": 38.880277777,
+   "lon": -77.108333333,
+   "city": "Arlington County",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q291508",
+   "checked_at": "2026-11-12"
+  },
+  "9N3UAJSNOUXFKQLF3V18": {
+   "lat": 40.6,
+   "lon": -75.483333333,
+   "city": "Allentown",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q2044512",
+   "checked_at": "2026-11-12"
+  },
+  "3MGELCRSTNSAMJ962671": {
+   "lat": 44.081055555,
+   "lon": -103.228666666,
+   "city": "Rapid City",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q880296",
+   "checked_at": "2026-11-12"
+  },
+  "549300I7ROF15MAEVP56": {
+   "lat": 34.070555555,
+   "lon": -118.082222222,
+   "city": "Rosemead",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q662095",
+   "checked_at": "2026-11-12"
+  },
+  "549300IA9XFBAGNIBW29": {
+   "lat": 42.245833333,
+   "lon": -84.401388888,
+   "city": "Jackson",
+   "source": "Wikidata (CC0) P1278 LEI -> P159 headquarters -> P625",
+   "source_url": "https://www.wikidata.org/entity/Q5013012",
+   "checked_at": "2026-11-12"
+  }
+ },
+ "by_ticker": {
+  "NVDA": {
+   "lat": 37.35,
+   "lon": -121.9667,
+   "city": "Santa Clara",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q182477",
+   "checked_at": "2026-11-11"
+  },
+  "AAPL": {
+   "lat": 37.3175,
+   "lon": -122.0419,
+   "city": "Cupertino",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q312",
+   "checked_at": "2026-11-11"
+  },
+  "MSFT": {
+   "lat": 47.6694,
+   "lon": -122.1239,
+   "city": "Redmond",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2283",
+   "checked_at": "2026-11-11"
+  },
+  "AMZN": {
+   "lat": 47.605,
+   "lon": -122.33,
+   "city": "Seattle",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3884",
+   "checked_at": "2026-11-11"
+  },
+  "GOOGL": {
+   "lat": 37.3928,
+   "lon": -122.0419,
+   "city": "Mountain View",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q20800404",
+   "checked_at": "2026-11-11"
+  },
+  "META": {
+   "lat": 37.4542,
+   "lon": -122.1786,
+   "city": "Menlo Park",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q380",
+   "checked_at": "2026-11-11"
+  },
+  "TSLA": {
+   "lat": 30.3,
+   "lon": -97.7333,
+   "city": "Austin",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q478214",
+   "checked_at": "2026-11-11"
+  },
+  "AVGO": {
+   "lat": 37.4444,
+   "lon": -122.16,
+   "city": "Palo Alto",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q790060",
+   "checked_at": "2026-11-11"
+  },
+  "JPM": {
+   "lat": 40.7128,
+   "lon": -74.0061,
+   "city": "New York City",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q192314",
+   "checked_at": "2026-11-11"
+  },
+  "LLY": {
+   "lat": 39.7686,
+   "lon": -86.1581,
+   "city": "Indianapolis",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q632240",
+   "checked_at": "2026-11-11"
+  },
+  "V": {
+   "lat": 37.7744,
+   "lon": -122.3883,
+   "city": "Mission Rock",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q328840",
+   "checked_at": "2026-11-11"
+  },
+  "DELL": {
+   "lat": 30.515,
+   "lon": -97.6725,
+   "city": "Round Rock",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q27500963",
+   "checked_at": "2026-11-11"
+  },
+  "INTC": {
+   "lat": 37.35,
+   "lon": -121.9667,
+   "city": "Santa Clara",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q248",
+   "checked_at": "2026-11-11"
+  },
+  "NFLX": {
+   "lat": 37.2361,
+   "lon": -121.9617,
+   "city": "Los Gatos",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q116452644",
+   "checked_at": "2026-11-11"
+  },
+  "GME": {
+   "lat": 32.935,
+   "lon": -97.0858,
+   "city": "Grapevine",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q202210",
+   "checked_at": "2026-11-11"
+  },
+  "ORCL": {
+   "lat": 30.3,
+   "lon": -97.7333,
+   "city": "Austin",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q19900",
+   "checked_at": "2026-11-11"
+  },
+  "ADBE": {
+   "lat": 37.3042,
+   "lon": -121.8728,
+   "city": "San Jose",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q11463",
+   "checked_at": "2026-11-11"
+  },
+  "SAP": {
+   "lat": 49.3,
+   "lon": 8.65,
+   "city": "Walldorf",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q552581",
+   "checked_at": "2026-11-11"
+  },
+  "KO": {
+   "lat": 33.7544,
+   "lon": -84.3897,
+   "city": "Atlanta",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3295867",
+   "checked_at": "2026-11-11"
+  },
+  "PEP": {
+   "lat": 41.0406,
+   "lon": -73.7144,
+   "city": "Purchase",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q334800",
+   "checked_at": "2026-11-11"
+  },
+  "BAC": {
+   "lat": 35.2269,
+   "lon": -80.8433,
+   "city": "Charlotte",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q487907",
+   "checked_at": "2026-11-11"
+  },
+  "WFC": {
+   "lat": 37.775,
+   "lon": -122.4194,
+   "city": "San Francisco",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q744149",
+   "checked_at": "2026-11-11"
+  },
+  "UNH": {
+   "lat": 44.9133,
+   "lon": -93.5033,
+   "city": "Minnetonka",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2103926",
+   "checked_at": "2026-11-11"
+  },
+  "JNJ": {
+   "lat": 40.4867,
+   "lon": -74.4444,
+   "city": "New Brunswick",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q333718",
+   "checked_at": "2026-11-11"
+  },
+  "PFE": {
+   "lat": 40.7128,
+   "lon": -74.0061,
+   "city": "New York City",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q206921",
+   "checked_at": "2026-11-11"
+  },
+  "SHEL": {
+   "lat": 51.5072,
+   "lon": -0.1275,
+   "city": "London",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q154950",
+   "checked_at": "2026-11-11"
+  },
+  "TTE": {
+   "lat": 48.8972,
+   "lon": 2.2522,
+   "city": "Courbevoie",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q154037",
+   "checked_at": "2026-11-11"
+  },
+  "NEE": {
+   "lat": 26.8733,
+   "lon": -80.0542,
+   "city": "Juno Beach",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q967868",
+   "checked_at": "2026-11-11"
+  },
+  "FSLR": {
+   "lat": 33.4256,
+   "lon": -111.94,
+   "city": "Tempe",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1138888",
+   "checked_at": "2026-11-11"
+  },
+  "MC": {
+   "lat": 48.8663,
+   "lon": 2.3055,
+   "city": "Paris",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
+   "source_url": "https://www.wikidata.org/entity/Q504998",
+   "checked_at": "2026-11-11"
+  },
+  "BABA": {
+   "lat": 30.2108,
+   "lon": 120.2075,
+   "city": "Binjiang District",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1359568",
+   "checked_at": "2026-11-11"
+  },
+  "SHOP": {
+   "lat": 45.4247,
+   "lon": -75.695,
+   "city": "Ottawa",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7501150",
+   "checked_at": "2026-11-11"
+  },
+  "PBR": {
+   "lat": -22.9111,
+   "lon": -43.2056,
+   "city": "Rio de Janeiro",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q210047",
+   "checked_at": "2026-11-11"
+  },
+  "NESN": {
+   "lat": 46.4667,
+   "lon": 6.85,
+   "city": "Vevey",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q160746",
+   "checked_at": "2026-11-11"
+  },
+  "NOVN": {
+   "lat": 47.5581,
+   "lon": 7.5878,
+   "city": "Basel",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q507154",
+   "checked_at": "2026-11-11"
+  },
+  "ROG": {
+   "lat": 47.5581,
+   "lon": 7.5878,
+   "city": "Basel",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q25463170",
+   "checked_at": "2026-11-11"
+  },
+  "ULVR": {
+   "lat": 51.5072,
+   "lon": -0.1275,
+   "city": "London",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q157062",
+   "checked_at": "2026-11-11"
+  },
+  "SIE": {
+   "lat": 48.1375,
+   "lon": 11.575,
+   "city": "Munich",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q81230",
+   "checked_at": "2026-11-11"
+  },
+  "ALV": {
+   "lat": 48.1375,
+   "lon": 11.575,
+   "city": "Munich",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q487292",
+   "checked_at": "2026-11-11"
+  },
+  "RHM": {
+   "lat": 51.2256,
+   "lon": 6.7767,
+   "city": "Düsseldorf",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q161544",
+   "checked_at": "2026-11-11"
+  },
+  "AIR": {
+   "lat": 52.16,
+   "lon": 4.49,
+   "city": "Leiden",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2311",
+   "checked_at": "2026-11-11"
+  },
+  "OR": {
+   "lat": 48.8567,
+   "lon": 2.3522,
+   "city": "Paris",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q156077",
+   "checked_at": "2026-11-11"
+  },
+  "ITX": {
+   "lat": 43.3,
+   "lon": -8.5,
+   "city": "Arteixo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q44504",
+   "checked_at": "2026-11-11"
+  },
+  "SAN": {
+   "lat": 43.4667,
+   "lon": -3.8,
+   "city": "Santander",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q6496310",
+   "checked_at": "2026-11-11"
+  },
+  "ENEL": {
+   "lat": 41.8931,
+   "lon": 12.4828,
+   "city": "Rome",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q651222",
+   "checked_at": "2026-11-11"
+  },
+  "SONY": {
+   "lat": 35.658,
+   "lon": 139.7515,
+   "city": "Minato",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q41187",
+   "checked_at": "2026-11-11"
+  },
+  "NTDOY": {
+   "lat": 35.0116,
+   "lon": 135.7681,
+   "city": "Kyoto",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q8093",
+   "checked_at": "2026-11-11"
+  },
+  "INFY": {
+   "lat": 12.9791,
+   "lon": 77.5913,
+   "city": "Bengaluru",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q26989",
+   "checked_at": "2026-11-11"
+  },
+  "HDB": {
+   "lat": 19.0758,
+   "lon": 72.8775,
+   "city": "Mumbai",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q631047",
+   "checked_at": "2026-11-11"
+  },
+  "ENB": {
+   "lat": 51.0475,
+   "lon": -114.0625,
+   "city": "Calgary",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1339966",
+   "checked_at": "2026-11-11"
+  },
+  "CNQ": {
+   "lat": 51.0475,
+   "lon": -114.0625,
+   "city": "Calgary",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1032229",
+   "checked_at": "2026-11-11"
+  },
+  "VALE": {
+   "lat": -22.9111,
+   "lon": -43.2056,
+   "city": "Rio de Janeiro",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q583268",
+   "checked_at": "2026-11-11"
+  },
+  "ITUB": {
+   "lat": -23.5504,
+   "lon": -46.6339,
+   "city": "São Paulo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1424293",
+   "checked_at": "2026-11-11"
+  },
+  "AMX": {
+   "lat": 19.3538,
+   "lon": -99.1359,
+   "city": "Mexico City",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q482267",
+   "checked_at": "2026-11-11"
+  },
+  "FMX": {
+   "lat": 25.6844,
+   "lon": -100.3181,
+   "city": "Monterrey",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1435628",
+   "checked_at": "2026-11-11"
+  },
+  "BHP": {
+   "lat": -37.8142,
+   "lon": 144.9631,
+   "city": "Melbourne",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q625713",
+   "checked_at": "2026-11-11"
+  },
+  "FMG": {
+   "lat": -31.9558,
+   "lon": 115.8597,
+   "city": "Perth",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1438957",
+   "checked_at": "2026-11-11"
+  },
+  "CBA": {
+   "lat": -33.8678,
+   "lon": 151.21,
+   "city": "Sydney",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q285328",
+   "checked_at": "2026-11-11"
+  },
+  "WBC": {
+   "lat": -33.8658,
+   "lon": 151.2041,
+   "city": "Westpac Place",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2031726",
+   "checked_at": "2026-11-11"
+  },
+  "NAB": {
+   "lat": -37.8142,
+   "lon": 144.9631,
+   "city": "Melbourne",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1430985",
+   "checked_at": "2026-11-11"
+  },
+  "CSL": {
+   "lat": -37.8142,
+   "lon": 144.9631,
+   "city": "Melbourne",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q908265",
+   "checked_at": "2026-11-11"
+  },
+  "WES": {
+   "lat": -31.9558,
+   "lon": 115.8597,
+   "city": "Perth",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q908144",
+   "checked_at": "2026-11-11"
+  },
+  "FPH": {
+   "lat": -36.8492,
+   "lon": 174.7653,
+   "city": "Auckland",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5454753",
+   "checked_at": "2026-11-11"
+  },
+  "GFI": {
+   "lat": -26.2044,
+   "lon": 28.0416,
+   "city": "Johannesburg",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1534597",
+   "checked_at": "2026-11-11"
+  },
+  "SSL": {
+   "lat": -26.2044,
+   "lon": 28.0416,
+   "city": "Johannesburg",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q905998",
+   "checked_at": "2026-11-11"
+  },
+  "SHP": {
+   "lat": -33.8667,
+   "lon": 18.6833,
+   "city": "Brackenfell",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1857639",
+   "checked_at": "2026-11-11"
+  },
+  "EMAAR": {
+   "lat": 25.2697,
+   "lon": 55.3094,
+   "city": "Dubai",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1153463",
+   "checked_at": "2026-11-11"
+  },
+  "NICE": {
+   "lat": 32.1833,
+   "lon": 34.8667,
+   "city": "Ra'anana",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2091479",
+   "checked_at": "2026-11-11"
+  },
+  "BP.L": {
+   "lat": 51.5072,
+   "lon": -0.1275,
+   "city": "London",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q152057",
+   "checked_at": "2026-11-11"
+  },
+  "GSK.L": {
+   "lat": 51.5072,
+   "lon": -0.1275,
+   "city": "London",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q212322",
+   "checked_at": "2026-11-11"
+  },
+  "BATS.L": {
+   "lat": 51.5072,
+   "lon": -0.1275,
+   "city": "London",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q856411",
+   "checked_at": "2026-11-11"
+  },
+  "DGE.L": {
+   "lat": 51.5072,
+   "lon": -0.1275,
+   "city": "London",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q161140",
+   "checked_at": "2026-11-11"
+  },
+  "LSEG.L": {
+   "lat": 51.5072,
+   "lon": -0.1275,
+   "city": "London",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5573225",
+   "checked_at": "2026-11-11"
+  },
+  "LLOY.L": {
+   "lat": 51.5072,
+   "lon": -0.1275,
+   "city": "London",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1152764",
+   "checked_at": "2026-11-11"
+  },
+  "RR.L": {
+   "lat": 51.5072,
+   "lon": -0.1275,
+   "city": "London",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q243278",
+   "checked_at": "2026-11-11"
+  },
+  "DTE.DE": {
+   "lat": 50.7353,
+   "lon": 7.1022,
+   "city": "Bonn",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q9396",
+   "checked_at": "2026-11-11"
+  },
+  "MBG.DE": {
+   "lat": 48.7775,
+   "lon": 9.18,
+   "city": "Stuttgart",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q27530",
+   "checked_at": "2026-11-11"
+  },
+  "BAS.DE": {
+   "lat": 49.4811,
+   "lon": 8.4353,
+   "city": "Ludwigshafen",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q9401",
+   "checked_at": "2026-11-11"
+  },
+  "BAYN.DE": {
+   "lat": 51.0333,
+   "lon": 6.9833,
+   "city": "Leverkusen",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q152051",
+   "checked_at": "2026-11-11"
+  },
+  "ADS.DE": {
+   "lat": 49.57,
+   "lon": 10.8819,
+   "city": "Herzogenaurach",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3895",
+   "checked_at": "2026-11-11"
+  },
+  "IFX.DE": {
+   "lat": 48.0747,
+   "lon": 11.6769,
+   "city": "Neubiberg",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q311394",
+   "checked_at": "2026-11-11"
+  },
+  "VOW3.DE": {
+   "lat": 52.4231,
+   "lon": 10.7872,
+   "city": "Wolfsburg",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q156578",
+   "checked_at": "2026-11-11"
+  },
+  "DHL.DE": {
+   "lat": 50.7155,
+   "lon": 7.13,
+   "city": "Bonn",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
+   "source_url": "https://www.wikidata.org/entity/Q157645",
+   "checked_at": "2026-11-11"
+  },
+  "OR.PA": {
+   "lat": 48.8567,
+   "lon": 2.3522,
+   "city": "Paris",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q156077",
+   "checked_at": "2026-11-11"
+  },
+  "SAN.PA": {
+   "lat": 48.8567,
+   "lon": 2.3522,
+   "city": "Paris",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q158205",
+   "checked_at": "2026-11-11"
+  },
+  "KER.PA": {
+   "lat": 48.8567,
+   "lon": 2.3522,
+   "city": "Paris",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q931207",
+   "checked_at": "2026-11-11"
+  },
+  "AI.PA": {
+   "lat": 48.8628,
+   "lon": 2.31,
+   "city": "Paris",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
+   "source_url": "https://www.wikidata.org/entity/Q407448",
+   "checked_at": "2026-11-11"
+  },
+  "SAF.PA": {
+   "lat": 48.8567,
+   "lon": 2.3522,
+   "city": "Paris",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1886126",
+   "checked_at": "2026-11-11"
+  },
+  "CS.PA": {
+   "lat": 48.8567,
+   "lon": 2.3522,
+   "city": "Paris",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q160054",
+   "checked_at": "2026-11-11"
+  },
+  "DG.PA": {
+   "lat": 48.8906,
+   "lon": 2.2036,
+   "city": "Nanterre",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1475312",
+   "checked_at": "2026-11-11"
+  },
+  "EL.PA": {
+   "lat": 48.8214,
+   "lon": 2.4119,
+   "city": "Charenton-le-Pont",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q56853086",
+   "checked_at": "2026-11-11"
+  },
+  "PRX.AS": {
+   "lat": 52.3667,
+   "lon": 4.8833,
+   "city": "Amsterdam",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q67389109",
+   "checked_at": "2026-11-11"
+  },
+  "ADYEN.AS": {
+   "lat": 52.3667,
+   "lon": 4.8833,
+   "city": "Amsterdam",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4686934",
+   "checked_at": "2026-11-11"
+  },
+  "HEIA.AS": {
+   "lat": 52.3667,
+   "lon": 4.8833,
+   "city": "Amsterdam",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q180855",
+   "checked_at": "2026-11-11"
+  },
+  "WKL.AS": {
+   "lat": 52.1333,
+   "lon": 4.65,
+   "city": "Alphen aan den Rijn",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q249798",
+   "checked_at": "2026-11-11"
+  },
+  "NESN.SW": {
+   "lat": 46.4667,
+   "lon": 6.85,
+   "city": "Vevey",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q160746",
+   "checked_at": "2026-11-11"
+  },
+  "UBSG.SW": {
+   "lat": 47.3744,
+   "lon": 8.5411,
+   "city": "Zurich",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q193199",
+   "checked_at": "2026-11-11"
+  },
+  "ZURN.SW": {
+   "lat": 47.3744,
+   "lon": 8.5411,
+   "city": "Zurich",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q230426",
+   "checked_at": "2026-11-11"
+  },
+  "SIKA.SW": {
+   "lat": 47.1956,
+   "lon": 8.5264,
+   "city": "Baar",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q691382",
+   "checked_at": "2026-11-11"
+  },
+  "REP.MC": {
+   "lat": 40.3978,
+   "lon": -3.6831,
+   "city": "Madrid",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P36 country capital",
+   "source_url": "https://www.wikidata.org/entity/Q174747",
+   "checked_at": "2026-11-11"
+  },
+  "AMS.MC": {
+   "lat": 40.4169,
+   "lon": -3.7033,
+   "city": "Madrid",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q696061",
+   "checked_at": "2026-11-11"
+  },
+  "ISP.MI": {
+   "lat": 45.0792,
+   "lon": 7.6761,
+   "city": "Turin",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1343118",
+   "checked_at": "2026-11-11"
+  },
+  "UCG.MI": {
+   "lat": 45.4838,
+   "lon": 9.1899,
+   "city": "Milan",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
+   "source_url": "https://www.wikidata.org/entity/Q45568",
+   "checked_at": "2026-11-11"
+  },
+  "STLAM.MI": {
+   "lat": 52.3667,
+   "lon": 4.8833,
+   "city": "Amsterdam",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q97439162",
+   "checked_at": "2026-11-11"
+  },
+  "G.MI": {
+   "lat": 45.6503,
+   "lon": 13.7703,
+   "city": "Trieste",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q670482",
+   "checked_at": "2026-11-11"
+  },
+  "DSV.CO": {
+   "lat": 55.65,
+   "lon": 12.1986,
+   "city": "Hedehusene",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1155771",
+   "checked_at": "2026-11-11"
+  },
+  "EQNR.OL": {
+   "lat": 58.97,
+   "lon": 5.7314,
+   "city": "Stavanger",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1776022",
+   "checked_at": "2026-11-11"
+  },
+  "DNB.OL": {
+   "lat": 59.9133,
+   "lon": 10.7389,
+   "city": "Oslo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q80788",
+   "checked_at": "2026-11-11"
+  },
+  "NHY.OL": {
+   "lat": 59.9133,
+   "lon": 10.7389,
+   "city": "Oslo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q511031",
+   "checked_at": "2026-11-11"
+  },
+  "TEL.OL": {
+   "lat": 59.8958,
+   "lon": 10.6167,
+   "city": "Fornebu",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q845632",
+   "checked_at": "2026-11-11"
+  },
+  "MOWI.OL": {
+   "lat": 60.3925,
+   "lon": 5.3233,
+   "city": "Bergen",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q776750",
+   "checked_at": "2026-11-11"
+  },
+  "KNEBV.HE": {
+   "lat": 60.2056,
+   "lon": 24.6556,
+   "city": "Espoo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1146592",
+   "checked_at": "2026-11-11"
+  },
+  "SAMPO.HE": {
+   "lat": 60.1708,
+   "lon": 24.9375,
+   "city": "Helsinki",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1640495",
+   "checked_at": "2026-11-11"
+  },
+  "6861.T": {
+   "lat": 34.6938,
+   "lon": 135.5021,
+   "city": "Osaka",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1475699",
+   "checked_at": "2026-11-11"
+  },
+  "6098.T": {
+   "lat": 35.6939,
+   "lon": 139.7536,
+   "city": "Chiyoda",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2135836",
+   "checked_at": "2026-11-11"
+  },
+  "9432.T": {
+   "lat": 35.6871,
+   "lon": 139.7643,
+   "city": "Ōtemachi",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1054787",
+   "checked_at": "2026-11-11"
+  },
+  "8035.T": {
+   "lat": 35.6714,
+   "lon": 139.7344,
+   "city": "Akasaka",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1351484",
+   "checked_at": "2026-11-11"
+  },
+  "4063.T": {
+   "lat": 35.6939,
+   "lon": 139.7536,
+   "city": "Chiyoda",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q904284",
+   "checked_at": "2026-11-11"
+  },
+  "600519.SS": {
+   "lat": 27.8116,
+   "lon": 106.4133,
+   "city": "Renhuai",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1518607",
+   "checked_at": "2026-11-11"
+  },
+  "600036.SS": {
+   "lat": 22.5467,
+   "lon": 114.0544,
+   "city": "Shenzhen",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1073327",
+   "checked_at": "2026-11-11"
+  },
+  "000858.SZ": {
+   "lat": 28.7596,
+   "lon": 104.64,
+   "city": "Yibin",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3570160",
+   "checked_at": "2026-11-11"
+  },
+  "1299.HK": {
+   "lat": 22.2812,
+   "lon": 114.1618,
+   "city": "AIA Central",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1152465",
+   "checked_at": "2026-11-11"
+  },
+  "0941.HK": {
+   "lat": 39.91,
+   "lon": 116.36,
+   "city": "Xicheng District",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q741618",
+   "checked_at": "2026-11-11"
+  },
+  "2318.HK": {
+   "lat": 22.5467,
+   "lon": 114.0544,
+   "city": "Shenzhen",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1256188",
+   "checked_at": "2026-11-11"
+  },
+  "ICICIBANK.NS": {
+   "lat": 18.96,
+   "lon": 72.82,
+   "city": "Mumbai City district",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1653258",
+   "checked_at": "2026-11-11"
+  },
+  "ITC.NS": {
+   "lat": 22.5675,
+   "lon": 88.37,
+   "city": "Kolkata",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1655008",
+   "checked_at": "2026-11-11"
+  },
+  "SBIN.NS": {
+   "lat": 19.0758,
+   "lon": 72.8775,
+   "city": "Mumbai",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1340361",
+   "checked_at": "2026-11-11"
+  },
+  "HINDUNILVR.NS": {
+   "lat": 19.0758,
+   "lon": 72.8775,
+   "city": "Mumbai",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1619376",
+   "checked_at": "2026-11-11"
+  },
+  "000660.KS": {
+   "lat": 37.2792,
+   "lon": 127.4425,
+   "city": "Icheon",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q370719",
+   "checked_at": "2026-11-11"
+  },
+  "373220.KS": {
+   "lat": 37.56,
+   "lon": 126.99,
+   "city": "Seoul",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q109464416",
+   "checked_at": "2026-11-11"
+  },
+  "035420.KS": {
+   "lat": 37.4386,
+   "lon": 127.1378,
+   "city": "Seongnam",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q489247",
+   "checked_at": "2026-11-11"
+  },
+  "2454.TW": {
+   "lat": 24.8047,
+   "lon": 120.9714,
+   "city": "Hsinchu City",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q699848",
+   "checked_at": "2026-11-11"
+  },
+  "2412.TW": {
+   "lat": 25.0375,
+   "lon": 121.5625,
+   "city": "Taipei",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q717531",
+   "checked_at": "2026-11-11"
+  },
+  "CBA.AX": {
+   "lat": -33.8678,
+   "lon": 151.21,
+   "city": "Sydney",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q285328",
+   "checked_at": "2026-11-11"
+  },
+  "NAB.AX": {
+   "lat": -37.8142,
+   "lon": 144.9631,
+   "city": "Melbourne",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1430985",
+   "checked_at": "2026-11-11"
+  },
+  "WES.AX": {
+   "lat": -31.9558,
+   "lon": 115.8597,
+   "city": "Perth",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q908144",
+   "checked_at": "2026-11-11"
+  },
+  "BMO.TO": {
+   "lat": 43.6486,
+   "lon": -79.3817,
+   "city": "First Canadian Place",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q806693",
+   "checked_at": "2026-11-11"
+  },
+  "CNQ.TO": {
+   "lat": 51.0475,
+   "lon": -114.0625,
+   "city": "Calgary",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1032229",
+   "checked_at": "2026-11-11"
+  },
+  "TRI.TO": {
+   "lat": 43.6703,
+   "lon": -79.3867,
+   "city": "Toronto",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1141267",
+   "checked_at": "2026-11-11"
+  },
+  "ITUB4.SA": {
+   "lat": -23.5504,
+   "lon": -46.6339,
+   "city": "São Paulo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1424293",
+   "checked_at": "2026-11-11"
+  },
+  "ABEV3.SA": {
+   "lat": -23.5504,
+   "lon": -46.6339,
+   "city": "São Paulo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2142669",
+   "checked_at": "2026-11-11"
+  },
+  "WEGE3.SA": {
+   "lat": -26.4858,
+   "lon": -49.0669,
+   "city": "Jaraguá do Sul",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q634794",
+   "checked_at": "2026-11-11"
+  },
+  "PRX.JO": {
+   "lat": 52.3667,
+   "lon": 4.8833,
+   "city": "Amsterdam",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q67389109",
+   "checked_at": "2026-11-11"
+  },
+  "AGL.JO": {
+   "lat": 51.5072,
+   "lon": -0.1275,
+   "city": "London",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q541451",
+   "checked_at": "2026-11-11"
+  },
+  "Z74.SI": {
+   "lat": 1.3,
+   "lon": 103.8,
+   "city": "Singapore",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q864923",
+   "checked_at": "2026-11-11"
+  },
+  "C6L.SI": {
+   "lat": 1.3,
+   "lon": 103.8,
+   "city": "Singapore",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q32245",
+   "checked_at": "2026-11-11"
+  },
+  "BBCA.JK": {
+   "lat": -6.1753,
+   "lon": 106.8269,
+   "city": "Jakarta",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q806626",
+   "checked_at": "2026-11-11"
+  },
+  "TLKM.JK": {
+   "lat": -6.9219,
+   "lon": 107.6069,
+   "city": "Bandung",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2305438",
+   "checked_at": "2026-11-11"
+  },
+  "ASII.JK": {
+   "lat": -6.1753,
+   "lon": 106.8269,
+   "city": "Jakarta",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4688912",
+   "checked_at": "2026-11-11"
+  },
+  "POLI.TA": {
+   "lat": 32.08,
+   "lon": 34.78,
+   "city": "Tel Aviv",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2666775",
+   "checked_at": "2026-11-11"
+  },
+  "ESLT.TA": {
+   "lat": 32.8192,
+   "lon": 34.9992,
+   "city": "Haifa",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1325369",
+   "checked_at": "2026-11-11"
+  },
+  "THYAO.IS": {
+   "lat": 41.01,
+   "lon": 28.9603,
+   "city": "Istanbul",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4548",
+   "checked_at": "2026-11-11"
+  },
+  "KCHOL.IS": {
+   "lat": 41.01,
+   "lon": 28.9603,
+   "city": "Istanbul",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1306571",
+   "checked_at": "2026-11-11"
+  },
+  "BIMAS.IS": {
+   "lat": 41.01,
+   "lon": 28.9603,
+   "city": "Istanbul",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1022075",
+   "checked_at": "2026-11-11"
+  },
+  "AKBNK.IS": {
+   "lat": 41.01,
+   "lon": 28.9603,
+   "city": "Istanbul",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q416624",
+   "checked_at": "2026-11-11"
+  },
+  "1295.KL": {
+   "lat": 3.1478,
+   "lon": 101.6953,
+   "city": "Kuala Lumpur",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3046561",
+   "checked_at": "2026-11-11"
+  },
+  "5347.KL": {
+   "lat": 3.1478,
+   "lon": 101.6953,
+   "city": "Kuala Lumpur",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1584297",
+   "checked_at": "2026-11-11"
+  },
+  "PTT.BK": {
+   "lat": 13.7962,
+   "lon": 100.5505,
+   "city": "Chatuchak",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1810389",
+   "checked_at": "2026-11-11"
+  },
+  "AOT.BK": {
+   "lat": 13.75,
+   "lon": 100.5167,
+   "city": "Bangkok",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q409075",
+   "checked_at": "2026-11-11"
+  },
+  "PKN.WA": {
+   "lat": 52.55,
+   "lon": 19.7,
+   "city": "Płock",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q971649",
+   "checked_at": "2026-11-11"
+  },
+  "YPFD.BA": {
+   "lat": -34.5997,
+   "lon": -58.3819,
+   "city": "Buenos Aires",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2006989",
+   "checked_at": "2026-11-11"
+  },
+  "CHILE.SN": {
+   "lat": -33.4375,
+   "lon": -70.65,
+   "city": "Santiago",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2882085",
+   "checked_at": "2026-11-11"
+  },
+  "FALABELLA.SN": {
+   "lat": -33.4375,
+   "lon": -70.65,
+   "city": "Santiago",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5135229",
+   "checked_at": "2026-11-11"
+  },
+  "GALP.LS": {
+   "lat": 38.708,
+   "lon": -9.139,
+   "city": "Lisbon",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1492739",
+   "checked_at": "2026-11-11"
+  },
+  "RYA.IR": {
+   "lat": 53.4214,
+   "lon": -6.27,
+   "city": "Dublin Airport",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q170614",
+   "checked_at": "2026-11-11"
+  },
+  "ETE.AT": {
+   "lat": 37.9842,
+   "lon": 23.7281,
+   "city": "Athens",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1816028",
+   "checked_at": "2026-11-11"
+  },
+  "CPG.L": {
+   "lat": 51.3902,
+   "lon": -0.5074,
+   "city": "Chertsey",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q782697",
+   "checked_at": "2026-11-11"
+  },
+  "AAL.L": {
+   "lat": 51.5072,
+   "lon": -0.1275,
+   "city": "London",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q541451",
+   "checked_at": "2026-11-11"
+  },
+  "GLEN.L": {
+   "lat": 47.1956,
+   "lon": 8.5264,
+   "city": "Baar",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q169339",
+   "checked_at": "2026-11-11"
+  },
+  "TSCO.L": {
+   "lat": 51.8062,
+   "lon": -0.1932,
+   "city": "Welwyn Garden City",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q487494",
+   "checked_at": "2026-11-11"
+  },
+  "III.L": {
+   "lat": 51.5072,
+   "lon": -0.1275,
+   "city": "London",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q229764",
+   "checked_at": "2026-11-11"
+  },
+  "EXPN.L": {
+   "lat": 53.3497,
+   "lon": -6.2603,
+   "city": "Dublin",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q692157",
+   "checked_at": "2026-11-11"
+  },
+  "IMB.L": {
+   "lat": 51.4536,
+   "lon": -2.5975,
+   "city": "Bristol",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1471161",
+   "checked_at": "2026-11-11"
+  },
+  "SSE.L": {
+   "lat": 56.3958,
+   "lon": -3.4333,
+   "city": "Perth",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q493854",
+   "checked_at": "2026-11-11"
+  },
+  "HEN3.DE": {
+   "lat": 51.2256,
+   "lon": 6.7767,
+   "city": "Düsseldorf",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q276507",
+   "checked_at": "2026-11-11"
+  },
+  "SY1.DE": {
+   "lat": 51.8297,
+   "lon": 9.4483,
+   "city": "Holzminden",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q73251",
+   "checked_at": "2026-11-11"
+  },
+  "BN.PA": {
+   "lat": 48.8567,
+   "lon": 2.3522,
+   "city": "Paris",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q329426",
+   "checked_at": "2026-11-11"
+  },
+  "ORA.PA": {
+   "lat": 48.8231,
+   "lon": 2.2692,
+   "city": "Issy-les-Moulineaux",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1431486",
+   "checked_at": "2026-11-11"
+  },
+  "DSY.PA": {
+   "lat": 48.7833,
+   "lon": 2.1883,
+   "city": "Vélizy-Villacoublay",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1172038",
+   "checked_at": "2026-11-11"
+  },
+  "CAP.PA": {
+   "lat": 48.8567,
+   "lon": 2.3522,
+   "city": "Paris",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1034621",
+   "checked_at": "2026-11-11"
+  },
+  "ENGI.PA": {
+   "lat": 48.8567,
+   "lon": 2.3522,
+   "city": "Paris",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q13416787",
+   "checked_at": "2026-11-11"
+  },
+  "UNA.AS": {
+   "lat": 51.5072,
+   "lon": -0.1275,
+   "city": "London",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q157062",
+   "checked_at": "2026-11-11"
+  },
+  "NN.AS": {
+   "lat": 52.08,
+   "lon": 4.31,
+   "city": "The Hague",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1834291",
+   "checked_at": "2026-11-11"
+  },
+  "ASM.AS": {
+   "lat": 52.3758,
+   "lon": 5.2256,
+   "city": "Almere",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2478569",
+   "checked_at": "2026-11-11"
+  },
+  "RAND.AS": {
+   "lat": 52.3439,
+   "lon": 4.9625,
+   "city": "Diemen",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q267840",
+   "checked_at": "2026-11-11"
+  },
+  "ALC.SW": {
+   "lat": 46.2,
+   "lon": 6.15,
+   "city": "Geneva",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q684825",
+   "checked_at": "2026-11-11"
+  },
+  "FER.MC": {
+   "lat": 40.4169,
+   "lon": -3.7033,
+   "city": "Madrid",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1408037",
+   "checked_at": "2026-11-11"
+  },
+  "PRY.MI": {
+   "lat": 45.4669,
+   "lon": 9.19,
+   "city": "Milan",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1964784",
+   "checked_at": "2026-11-11"
+  },
+  "LDO.MI": {
+   "lat": 41.8931,
+   "lon": 12.4828,
+   "city": "Rome",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q910379",
+   "checked_at": "2026-11-11"
+  },
+  "MONC.MI": {
+   "lat": 45.4384,
+   "lon": 9.2049,
+   "city": "Milan",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
+   "source_url": "https://www.wikidata.org/entity/Q1548951",
+   "checked_at": "2026-11-11"
+  },
+  "SOLB.BR": {
+   "lat": 50.8467,
+   "lon": 4.3517,
+   "city": "Brussels",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q706184",
+   "checked_at": "2026-11-11"
+  },
+  "AGS.BR": {
+   "lat": 50.8508,
+   "lon": 4.3692,
+   "city": "Saint-Josse-ten-Noode",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q392338",
+   "checked_at": "2026-11-11"
+  },
+  "UMI.BR": {
+   "lat": 50.8467,
+   "lon": 4.3525,
+   "city": "Brussels metropolitan area",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q902769",
+   "checked_at": "2026-11-11"
+  },
+  "DANSKE.CO": {
+   "lat": 55.6761,
+   "lon": 12.5689,
+   "city": "Copenhagen",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1636974",
+   "checked_at": "2026-11-11"
+  },
+  "ORK.OL": {
+   "lat": 59.9133,
+   "lon": 10.7389,
+   "city": "Oslo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q60003",
+   "checked_at": "2026-11-11"
+  },
+  "YAR.OL": {
+   "lat": 59.9133,
+   "lon": 10.7389,
+   "city": "Oslo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q901886",
+   "checked_at": "2026-11-11"
+  },
+  "KOG.OL": {
+   "lat": 59.665,
+   "lon": 9.6464,
+   "city": "Kongsberg",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1770909",
+   "checked_at": "2026-11-11"
+  },
+  "AKRBP.OL": {
+   "lat": 59.8958,
+   "lon": 10.6167,
+   "city": "Fornebu",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q25434685",
+   "checked_at": "2026-11-11"
+  },
+  "SALM.OL": {
+   "lat": 63.7256,
+   "lon": 8.7442,
+   "city": "Frøya Municipality",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7403259",
+   "checked_at": "2026-11-11"
+  },
+  "ELISA.HE": {
+   "lat": 60.1708,
+   "lon": 24.9375,
+   "city": "Helsinki",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q965268",
+   "checked_at": "2026-11-11"
+  },
+  "WRT1V.HE": {
+   "lat": 60.1708,
+   "lon": 24.9375,
+   "city": "Helsinki",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q327429",
+   "checked_at": "2026-11-11"
+  },
+  "BIRG.IR": {
+   "lat": 53.3497,
+   "lon": -6.2603,
+   "city": "Dublin",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q806689",
+   "checked_at": "2026-11-11"
+  },
+  "VER.VI": {
+   "lat": 48.2083,
+   "lon": 16.3725,
+   "city": "Vienna",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q688816",
+   "checked_at": "2026-11-11"
+  },
+  "ANDR.VI": {
+   "lat": 47.0708,
+   "lon": 15.4386,
+   "city": "Graz",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q442018",
+   "checked_at": "2026-11-11"
+  },
+  "VOE.VI": {
+   "lat": 48.3058,
+   "lon": 14.2864,
+   "city": "Linz",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q689750",
+   "checked_at": "2026-11-11"
+  },
+  "ALPHA.AT": {
+   "lat": 37.9842,
+   "lon": 23.7281,
+   "city": "Athens",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q747394",
+   "checked_at": "2026-11-11"
+  },
+  "TUPRS.IS": {
+   "lat": 40.7608,
+   "lon": 29.7839,
+   "city": "Körfez",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3546423",
+   "checked_at": "2026-11-11"
+  },
+  "CEZ.PR": {
+   "lat": 50.0875,
+   "lon": 14.4214,
+   "city": "Prague",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q336735",
+   "checked_at": "2026-11-11"
+  },
+  "6501.T": {
+   "lat": 35.6814,
+   "lon": 139.7658,
+   "city": "Marunouchi",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q53238",
+   "checked_at": "2026-11-11"
+  },
+  "8031.T": {
+   "lat": 35.6894,
+   "lon": 139.6917,
+   "city": "Tokyo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q904240",
+   "checked_at": "2026-11-11"
+  },
+  "6902.T": {
+   "lat": 34.9893,
+   "lon": 137.0021,
+   "city": "Kariya",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q176508",
+   "checked_at": "2026-11-11"
+  },
+  "8316.T": {
+   "lat": 35.6849,
+   "lon": 139.7623,
+   "city": "Tokyo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
+   "source_url": "https://www.wikidata.org/entity/Q2094989",
+   "checked_at": "2026-11-11"
+  },
+  "8766.T": {
+   "lat": 35.6939,
+   "lon": 139.7536,
+   "city": "Chiyoda",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1812086",
+   "checked_at": "2026-11-11"
+  },
+  "6367.T": {
+   "lat": 34.7,
+   "lon": 135.497,
+   "city": "Umeda",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1157589",
+   "checked_at": "2026-11-11"
+  },
+  "601988.SS": {
+   "lat": 39.91,
+   "lon": 116.36,
+   "city": "Xicheng District",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q790068",
+   "checked_at": "2026-11-11"
+  },
+  "000333.SZ": {
+   "lat": 22.9311,
+   "lon": 113.2018,
+   "city": "Beijiao Town",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2609533",
+   "checked_at": "2026-11-11"
+  },
+  "600030.SS": {
+   "lat": 22.5467,
+   "lon": 114.0544,
+   "city": "Shenzhen",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q737443",
+   "checked_at": "2026-11-11"
+  },
+  "0883.HK": {
+   "lat": 22.2783,
+   "lon": 114.1586,
+   "city": "Hong Kong",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q795221",
+   "checked_at": "2026-11-11"
+  },
+  "KOTAKBANK.NS": {
+   "lat": 19.0758,
+   "lon": 72.8775,
+   "city": "Mumbai",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2040404",
+   "checked_at": "2026-11-11"
+  },
+  "AXISBANK.NS": {
+   "lat": 19.0758,
+   "lon": 72.8775,
+   "city": "Mumbai",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2003549",
+   "checked_at": "2026-11-11"
+  },
+  "HCLTECH.NS": {
+   "lat": 28.57,
+   "lon": 77.32,
+   "city": "Noida",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5629103",
+   "checked_at": "2026-11-11"
+  },
+  "WIPRO.NS": {
+   "lat": 12.9791,
+   "lon": 77.5913,
+   "city": "Bengaluru",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1364176",
+   "checked_at": "2026-11-11"
+  },
+  "ADANIENT.NS": {
+   "lat": 23.0219,
+   "lon": 72.5797,
+   "city": "Ahmedabad",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q107646415",
+   "checked_at": "2026-11-11"
+  },
+  "BAJFINANCE.NS": {
+   "lat": 18.5211,
+   "lon": 73.8553,
+   "city": "Pune",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q28173355",
+   "checked_at": "2026-11-11"
+  },
+  "068270.KS": {
+   "lat": 37.4639,
+   "lon": 126.6486,
+   "city": "Incheon",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q16175734",
+   "checked_at": "2026-11-11"
+  },
+  "000270.KS": {
+   "lat": 37.56,
+   "lon": 126.99,
+   "city": "Seoul",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q35349",
+   "checked_at": "2026-11-11"
+  },
+  "2891.TW": {
+   "lat": 25.0375,
+   "lon": 121.5625,
+   "city": "Taipei",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5100188",
+   "checked_at": "2026-11-11"
+  },
+  "2886.TW": {
+   "lat": 25.0375,
+   "lon": 121.5625,
+   "city": "Taipei",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1791912",
+   "checked_at": "2026-11-11"
+  },
+  "BCE.TO": {
+   "lat": 45.5033,
+   "lon": -73.5868,
+   "city": "Montreal",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q24525746",
+   "checked_at": "2026-11-11"
+  },
+  "SU.TO": {
+   "lat": 51.0475,
+   "lon": -114.0625,
+   "city": "Calgary",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1516410",
+   "checked_at": "2026-11-11"
+  },
+  "NTR.TO": {
+   "lat": 52.1352,
+   "lon": -106.6584,
+   "city": "Saskatoon",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q48742870",
+   "checked_at": "2026-11-11"
+  },
+  "CSU.TO": {
+   "lat": 43.6703,
+   "lon": -79.3867,
+   "city": "Toronto",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q48801091",
+   "checked_at": "2026-11-11"
+  },
+  "L.TO": {
+   "lat": 43.6833,
+   "lon": -79.7667,
+   "city": "Brampton",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q909856",
+   "checked_at": "2026-11-11"
+  },
+  "RENT3.SA": {
+   "lat": -19.9281,
+   "lon": -43.9419,
+   "city": "Belo Horizonte",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q10319490",
+   "checked_at": "2026-11-11"
+  },
+  "EQTL3.SA": {
+   "lat": -15.7939,
+   "lon": -47.8828,
+   "city": "Brasília",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q18474582",
+   "checked_at": "2026-11-11"
+  },
+  "ABG.JO": {
+   "lat": -26.2044,
+   "lon": 28.0416,
+   "city": "Johannesburg",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q58641733",
+   "checked_at": "2026-11-11"
+  },
+  "VOD.JO": {
+   "lat": -26.0,
+   "lon": 28.1333,
+   "city": "Midrand",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1856518",
+   "checked_at": "2026-11-11"
+  },
+  "2280.SR": {
+   "lat": 24.6383,
+   "lon": 46.715,
+   "city": "Riyadh",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3535226",
+   "checked_at": "2026-11-11"
+  },
+  "2050.SR": {
+   "lat": 21.5292,
+   "lon": 39.1611,
+   "city": "Jeddah",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7762363",
+   "checked_at": "2026-11-11"
+  },
+  "1150.SR": {
+   "lat": 24.6383,
+   "lon": 46.715,
+   "city": "Riyadh",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4120111",
+   "checked_at": "2026-11-11"
+  },
+  "4280.SR": {
+   "lat": 24.6383,
+   "lon": 46.715,
+   "city": "Riyadh",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1742118",
+   "checked_at": "2026-11-11"
+  },
+  "Y92.SI": {
+   "lat": 13.75,
+   "lon": 100.5167,
+   "city": "Bangkok",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q15304350",
+   "checked_at": "2026-11-11"
+  },
+  "ICL.TA": {
+   "lat": 32.08,
+   "lon": 34.78,
+   "city": "Tel Aviv",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q903957",
+   "checked_at": "2026-11-11"
+  },
+  "AZRG.TA": {
+   "lat": 32.08,
+   "lon": 34.78,
+   "city": "Tel Aviv",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7220966",
+   "checked_at": "2026-11-11"
+  },
+  "1023.KL": {
+   "lat": 3.1478,
+   "lon": 101.6953,
+   "city": "Kuala Lumpur",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3045976",
+   "checked_at": "2026-11-11"
+  },
+  "6888.KL": {
+   "lat": 3.1478,
+   "lon": 101.6953,
+   "city": "Kuala Lumpur",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q792500",
+   "checked_at": "2026-11-11"
+  },
+  "5225.KL": {
+   "lat": 3.1478,
+   "lon": 101.6953,
+   "city": "Kuala Lumpur",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q18342621",
+   "checked_at": "2026-11-11"
+  },
+  "SPK.NZ": {
+   "lat": -36.8492,
+   "lon": 174.7653,
+   "city": "Auckland",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1549526",
+   "checked_at": "2026-11-11"
+  },
+  "IFT.NZ": {
+   "lat": -41.2889,
+   "lon": 174.7772,
+   "city": "Wellington",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1662683",
+   "checked_at": "2026-11-11"
+  },
+  "CEN.NZ": {
+   "lat": -41.2889,
+   "lon": 174.7772,
+   "city": "Wellington",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1128439",
+   "checked_at": "2026-11-11"
+  },
+  "FBU.NZ": {
+   "lat": -36.873,
+   "lon": 174.755,
+   "city": "Auckland City",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q246946",
+   "checked_at": "2026-11-11"
+  },
+  "MFT.NZ": {
+   "lat": -36.8492,
+   "lon": 174.7653,
+   "city": "Auckland",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3278352",
+   "checked_at": "2026-11-11"
+  },
+  "EC": {
+   "lat": 4.6097,
+   "lon": -74.0817,
+   "city": "Bogotá",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1282130",
+   "checked_at": "2026-11-11"
+  },
+  "PLD": {
+   "lat": 37.775,
+   "lon": -122.4194,
+   "city": "San Francisco",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q16983765",
+   "checked_at": "2026-11-11"
+  },
+  "AMT": {
+   "lat": 42.3603,
+   "lon": -71.0578,
+   "city": "Boston",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4745263",
+   "checked_at": "2026-11-11"
+  },
+  "EQIX": {
+   "lat": 37.4828,
+   "lon": -122.2361,
+   "city": "Redwood City",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q851641",
+   "checked_at": "2026-11-11"
+  },
+  "WELL": {
+   "lat": 41.6528,
+   "lon": -83.5378,
+   "city": "Toledo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q20486917",
+   "checked_at": "2026-11-11"
+  },
+  "SPG": {
+   "lat": 39.7667,
+   "lon": -86.1624,
+   "city": "Indianapolis",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
+   "source_url": "https://www.wikidata.org/entity/Q2287759",
+   "checked_at": "2026-11-11"
+  },
+  "PSA": {
+   "lat": 34.1708,
+   "lon": -118.25,
+   "city": "Glendale",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1156045",
+   "checked_at": "2026-11-11"
+  },
+  "O": {
+   "lat": 32.715,
+   "lon": -117.1625,
+   "city": "San Diego",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7301386",
+   "checked_at": "2026-11-11"
+  },
+  "DLR": {
+   "lat": 30.3,
+   "lon": -97.7333,
+   "city": "Austin",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5275969",
+   "checked_at": "2026-11-11"
+  },
+  "CCI": {
+   "lat": 29.7628,
+   "lon": -95.3831,
+   "city": "Houston",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5189320",
+   "checked_at": "2026-11-11"
+  },
+  "VICI": {
+   "lat": 40.7128,
+   "lon": -74.0061,
+   "city": "New York City",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q54263910",
+   "checked_at": "2026-11-11"
+  },
+  "DUK": {
+   "lat": 35.2269,
+   "lon": -80.8433,
+   "city": "Charlotte",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1264404",
+   "checked_at": "2026-11-11"
+  },
+  "SO": {
+   "lat": 33.7544,
+   "lon": -84.3897,
+   "city": "Atlanta",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2304693",
+   "checked_at": "2026-11-11"
+  },
+  "D": {
+   "lat": 37.5408,
+   "lon": -77.4367,
+   "city": "Richmond",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q677464",
+   "checked_at": "2026-11-11"
+  },
+  "EXC": {
+   "lat": 41.8819,
+   "lon": -87.6278,
+   "city": "Chicago",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1383669",
+   "checked_at": "2026-11-11"
+  },
+  "SRE": {
+   "lat": 32.715,
+   "lon": -117.1625,
+   "city": "San Diego",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7449804",
+   "checked_at": "2026-11-11"
+  },
+  "XEL": {
+   "lat": 44.9819,
+   "lon": -93.2692,
+   "city": "Minneapolis",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1486956",
+   "checked_at": "2026-11-11"
+  },
+  "ED": {
+   "lat": 40.7283,
+   "lon": -73.9942,
+   "city": "Manhattan",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1127536",
+   "checked_at": "2026-11-11"
+  },
+  "NGG": {
+   "lat": 51.5072,
+   "lon": -0.1275,
+   "city": "London",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1465461",
+   "checked_at": "2026-11-11"
+  },
+  "PEG": {
+   "lat": 40.7356,
+   "lon": -74.1722,
+   "city": "Newark",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q930919",
+   "checked_at": "2026-11-11"
+  },
+  "WEC": {
+   "lat": 43.05,
+   "lon": -87.95,
+   "city": "Milwaukee",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q8027166",
+   "checked_at": "2026-11-11"
+  },
+  "PGR": {
+   "lat": 41.5478,
+   "lon": -81.4433,
+   "city": "Mayfield",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7248721",
+   "checked_at": "2026-11-11"
+  },
+  "AIG": {
+   "lat": 40.7128,
+   "lon": -74.0061,
+   "city": "New York City",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q212235",
+   "checked_at": "2026-11-11"
+  },
+  "MET": {
+   "lat": 40.7128,
+   "lon": -74.0061,
+   "city": "New York City",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q607131",
+   "checked_at": "2026-11-11"
+  },
+  "ALL": {
+   "lat": 42.1292,
+   "lon": -87.8408,
+   "city": "Northbrook",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2645636",
+   "checked_at": "2026-11-11"
+  },
+  "AFL": {
+   "lat": 32.4922,
+   "lon": -84.9403,
+   "city": "Columbus",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q26311",
+   "checked_at": "2026-11-11"
+  },
+  "GM": {
+   "lat": 42.3317,
+   "lon": -83.0475,
+   "city": "Detroit",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q81965",
+   "checked_at": "2026-11-11"
+  },
+  "F": {
+   "lat": 42.3113,
+   "lon": -83.2135,
+   "city": "Dearborn",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q44294",
+   "checked_at": "2026-11-11"
+  },
+  "STLA": {
+   "lat": 52.3667,
+   "lon": 4.8833,
+   "city": "Amsterdam",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q97439162",
+   "checked_at": "2026-11-11"
+  },
+  "LCID": {
+   "lat": 37.5333,
+   "lon": -122.0333,
+   "city": "Newark",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q28027517",
+   "checked_at": "2026-11-11"
+  },
+  "NIO": {
+   "lat": 31.8639,
+   "lon": 117.2808,
+   "city": "Hefei",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q29921278",
+   "checked_at": "2026-11-11"
+  },
+  "XPEV": {
+   "lat": 23.13,
+   "lon": 113.26,
+   "city": "Guangzhou",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q63035278",
+   "checked_at": "2026-11-11"
+  },
+  "LI": {
+   "lat": 39.904,
+   "lon": 116.4075,
+   "city": "Beijing",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q98139925",
+   "checked_at": "2026-11-11"
+  },
+  "LMT": {
+   "lat": 38.9848,
+   "lon": -77.0946,
+   "city": "Bethesda",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7240",
+   "checked_at": "2026-11-11"
+  },
+  "RTX": {
+   "lat": 38.8803,
+   "lon": -77.1083,
+   "city": "Arlington County",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q89368734",
+   "checked_at": "2026-11-11"
+  },
+  "NOC": {
+   "lat": 38.8822,
+   "lon": -77.1711,
+   "city": "Falls Church",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q329953",
+   "checked_at": "2026-11-11"
+  },
+  "GD": {
+   "lat": 38.9589,
+   "lon": -77.3586,
+   "city": "Reston",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q502940",
+   "checked_at": "2026-11-11"
+  },
+  "LHX": {
+   "lat": 28.0836,
+   "lon": -80.6081,
+   "city": "Melbourne",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q30291091",
+   "checked_at": "2026-11-11"
+  },
+  "HII": {
+   "lat": 37.0708,
+   "lon": -76.4844,
+   "city": "Newport News",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7257522",
+   "checked_at": "2026-11-11"
+  },
+  "TDG": {
+   "lat": 41.4992,
+   "lon": -81.6947,
+   "city": "Cleveland",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7833612",
+   "checked_at": "2026-11-11"
+  },
+  "CAT": {
+   "lat": 32.8117,
+   "lon": -96.9508,
+   "city": "Irving",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q459965",
+   "checked_at": "2026-11-11"
+  },
+  "DE": {
+   "lat": 41.4858,
+   "lon": -90.4997,
+   "city": "Moline",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q496302",
+   "checked_at": "2026-11-11"
+  },
+  "HON": {
+   "lat": 35.2269,
+   "lon": -80.8433,
+   "city": "Charlotte",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q898208",
+   "checked_at": "2026-11-11"
+  },
+  "GE": {
+   "lat": 39.2475,
+   "lon": -84.4311,
+   "city": "Evendale",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1485061",
+   "checked_at": "2026-11-11"
+  },
+  "UPS": {
+   "lat": 33.9375,
+   "lon": -84.3686,
+   "city": "Sandy Springs",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q155026",
+   "checked_at": "2026-11-11"
+  },
+  "MMM": {
+   "lat": 44.9531,
+   "lon": -92.9953,
+   "city": "Maplewood",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q159433",
+   "checked_at": "2026-11-11"
+  },
+  "UNP": {
+   "lat": 41.2586,
+   "lon": -95.9375,
+   "city": "Omaha",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q20183163",
+   "checked_at": "2026-11-11"
+  },
+  "ETN": {
+   "lat": 41.4992,
+   "lon": -81.6947,
+   "city": "Cleveland",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q48872",
+   "checked_at": "2026-11-11"
+  },
+  "EMR": {
+   "lat": 38.6264,
+   "lon": -90.1994,
+   "city": "St. Louis",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1335585",
+   "checked_at": "2026-11-11"
+  },
+  "FDX": {
+   "lat": 35.1461,
+   "lon": -90.0519,
+   "city": "Memphis",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q459477",
+   "checked_at": "2026-11-11"
+  },
+  "SLB": {
+   "lat": 29.7628,
+   "lon": -95.3831,
+   "city": "Houston",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1425316",
+   "checked_at": "2026-11-11"
+  },
+  "COP": {
+   "lat": 29.7628,
+   "lon": -95.3831,
+   "city": "Houston",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q214763",
+   "checked_at": "2026-11-11"
+  },
+  "EOG": {
+   "lat": 29.7628,
+   "lon": -95.3831,
+   "city": "Houston",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1275577",
+   "checked_at": "2026-11-11"
+  },
+  "OXY": {
+   "lat": 29.7628,
+   "lon": -95.3831,
+   "city": "Houston",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2013357",
+   "checked_at": "2026-11-11"
+  },
+  "ABBV": {
+   "lat": 42.3172,
+   "lon": -87.8594,
+   "city": "North Chicago",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q14662364",
+   "checked_at": "2026-11-11"
+  },
+  "TMO": {
+   "lat": 42.3806,
+   "lon": -71.235,
+   "city": "Waltham",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q643674",
+   "checked_at": "2026-11-11"
+  },
+  "ABT": {
+   "lat": 42.3172,
+   "lon": -87.8594,
+   "city": "North Chicago",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q306764",
+   "checked_at": "2026-11-11"
+  },
+  "SHW": {
+   "lat": 41.4992,
+   "lon": -81.6947,
+   "city": "Cleveland",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q48881",
+   "checked_at": "2026-11-11"
+  },
+  "FCX": {
+   "lat": 33.4483,
+   "lon": -112.0739,
+   "city": "Phoenix",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1453620",
+   "checked_at": "2026-11-11"
+  },
+  "NEM": {
+   "lat": 39.7392,
+   "lon": -104.9847,
+   "city": "Denver",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1785405",
+   "checked_at": "2026-11-11"
+  },
+  "DOW": {
+   "lat": 43.6156,
+   "lon": -84.2472,
+   "city": "Midland",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q62739842",
+   "checked_at": "2026-11-11"
+  },
+  "MU": {
+   "lat": 43.6136,
+   "lon": -116.2378,
+   "city": "Boise",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1197548",
+   "checked_at": "2026-11-11"
+  },
+  "QCOM": {
+   "lat": 32.715,
+   "lon": -117.1625,
+   "city": "San Diego",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q544847",
+   "checked_at": "2026-11-11"
+  },
+  "TXN": {
+   "lat": 32.7792,
+   "lon": -96.8089,
+   "city": "Dallas",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q193412",
+   "checked_at": "2026-11-11"
+  },
+  "AMAT": {
+   "lat": 37.35,
+   "lon": -121.9667,
+   "city": "Santa Clara",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q621610",
+   "checked_at": "2026-11-11"
+  },
+  "LRCX": {
+   "lat": 37.5486,
+   "lon": -121.9883,
+   "city": "Fremont",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1342041",
+   "checked_at": "2026-11-11"
+  },
+  "KLAC": {
+   "lat": 37.4347,
+   "lon": -121.895,
+   "city": "Milpitas",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q624649",
+   "checked_at": "2026-11-11"
+  },
+  "MRVL": {
+   "lat": 37.35,
+   "lon": -121.9667,
+   "city": "Santa Clara",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1347782",
+   "checked_at": "2026-11-11"
+  },
+  "ARM": {
+   "lat": 52.2081,
+   "lon": 0.1225,
+   "city": "Cambridge",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q296782",
+   "checked_at": "2026-11-11"
+  },
+  "NXPI": {
+   "lat": 51.4344,
+   "lon": 5.4842,
+   "city": "Eindhoven",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1155668",
+   "checked_at": "2026-11-11"
+  },
+  "MCHP": {
+   "lat": 33.3033,
+   "lon": -111.8414,
+   "city": "Chandler",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1545076",
+   "checked_at": "2026-11-11"
+  },
+  "STM": {
+   "lat": 46.1667,
+   "lon": 6.1167,
+   "city": "Plan-les-Ouates",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q661845",
+   "checked_at": "2026-11-11"
+  }
+ }
+}
