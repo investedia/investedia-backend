@@ -1,0 +1,11 @@
+{
+ "release": "data-centres-v1",
+ "date": "2026-11-13",
+ "records": 29,
+ "held": 0,
+ "elapsed_targets": 6,
+ "source": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+ "source_sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+ "file_sha256": "d8990f7b08b1f1b8420fdc80bcebfdb7892817174b77e563bd03517af7a5af8f",
+ "publication": "Prepared, not published. Needs owner push/merge and the Projects UI integration."
+}

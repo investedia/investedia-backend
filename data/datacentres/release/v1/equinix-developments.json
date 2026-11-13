@@ -1,0 +1,4383 @@
+{
+ "schema": "investedia.projects.import.v1",
+ "synthetic": false,
+ "companies": {
+  "cik:0001101239": {
+   "identity": {
+    "scheme": "cik",
+    "value": "0001101239",
+    "evidence": {
+     "url": "https://data.sec.gov/submissions/CIK0001101239.json",
+     "sha256": "55282974969ca99abe97f799fd65204918eb79a718eddbb4362432afd3bc7c8a",
+     "checked_at": "2026-11-13",
+     "locator": "SEC company submissions: CIK and legal name"
+    }
+   },
+   "listing": {
+    "name": "Equinix, Inc.",
+    "ticker": "EQIX",
+    "exchange": "XNAS",
+    "exchange_mic": "XNAS",
+    "security_type": "common_equity",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+    }
+   },
+   "headquarters": {
+    "city": "Redwood City",
+    "lat": 37.4828,
+    "lon": -122.2361,
+    "precision": "approximate",
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q851641",
+     "sha256": "31b5dcd843ec537a5959578f077807ececf19761ac61f7e466ccd6ac012972ad",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata (CC0) P159 HQ city, P625 city coordinates"
+    }
+   }
+  }
+ },
+ "records": [
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:NY11:phase-5",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "NY11:phase-5"
+   },
+   "synthetic": false,
+   "name": "Equinix NY11 phase 5",
+   "sector": "data_centers",
+   "country_code": "US",
+   "city": "New York",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025 (latest filing). Target opening Q1 2026 has passed; current status not confirmed by a later filing.",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported_target_elapsed",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'NY11 phase 5, New York, target open Q1 2026'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 40.7128,
+    "lon": -74.0061,
+    "label": "New York metro reference",
+    "basis": "Wikidata (CC0) city reference Q60 (New York City); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q60",
+     "sha256": "4d4c8e5b17f35ca6b48334b1fbde996d930b96b406b174ec554b7646bc6bbd25",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:NY11:phase-5",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'NY11 phase 5, New York, target open Q1 2026'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'NY11 phase 5, New York, target open Q1 2026'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q1 2026",
+    "sellable_cabinets": 600,
+    "total_capex": {
+     "value": 38,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "0c1061c6414a28a95147f1bd8bf2c7cc8493e6ffc17ea1616eb89d6621635a42",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "status",
+     "disposition": "Target Q1 2026 may have elapsed; an elapsed target never proves completion. Stage stays as reported at 31 Dec 2025."
+    },
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q30 -> US)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility NY11 (dc:eqix:NY11, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:BG2:phase-2",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "BG2:phase-2"
+   },
+   "synthetic": false,
+   "name": "Equinix BG2 phase 2",
+   "sector": "data_centers",
+   "country_code": "CO",
+   "city": "Bogotá",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025 (latest filing). Target opening Q2 2026 has passed; current status not confirmed by a later filing.",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported_target_elapsed",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'BG2 phase 2, Bogotá, target open Q2 2026'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 4.6097,
+    "lon": -74.0817,
+    "label": "Bogotá metro reference",
+    "basis": "Wikidata (CC0) city reference Q2841 (Bogotá); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q2841",
+     "sha256": "c39aef6b779ccd9e647213766e507bb31943b0ab93212e28ab904972535b057e",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:BG2:phase-2",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'BG2 phase 2, Bogotá, target open Q2 2026'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'BG2 phase 2, Bogotá, target open Q2 2026'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q2 2026",
+    "sellable_cabinets": 550,
+    "total_capex": {
+     "value": 28,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "be677e8f0755156d539669f6fa9f91ec9ef26e88652256a363748d36502843e6",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "status",
+     "disposition": "Target Q2 2026 may have elapsed; an elapsed target never proves completion. Stage stays as reported at 31 Dec 2025."
+    },
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q739 -> CO)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility BG2 (dc:eqix:BG2, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:MI1:redevelopment",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "MI1:redevelopment"
+   },
+   "synthetic": false,
+   "name": "Equinix MI1 redevelopment",
+   "sector": "data_centers",
+   "country_code": "US",
+   "city": "Miami",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center redevelopment",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025 (latest filing). Target opening Q3 2026 has passed; current status not confirmed by a later filing.",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported_target_elapsed",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'MI1 redevelopment, Miami, target open Q3 2026'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 25.7742,
+    "lon": -80.1936,
+    "label": "Miami metro reference",
+    "basis": "Wikidata (CC0) city reference Q8652 (Miami); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q8652",
+     "sha256": "2768ab18e8a5b6e3c6eeb6717ceabc1d494d3cc877f88ecbf48d084ceef4d24c",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:MI1:redevelopment",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'MI1 redevelopment, Miami, target open Q3 2026'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'MI1 redevelopment, Miami, target open Q3 2026'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q3 2026",
+    "sellable_cabinets": 475,
+    "total_capex": {
+     "value": 59,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "c28d2f5fe7d73fd08e9d39333c7072049edde568383ed4800e448465d15737df",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "status",
+     "disposition": "Target Q3 2026 may have elapsed; an elapsed target never proves completion. Stage stays as reported at 31 Dec 2025."
+    },
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q30 -> US)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility MI1 (dc:eqix:MI1, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:MT1:phase-3",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "MT1:phase-3"
+   },
+   "synthetic": false,
+   "name": "Equinix MT1 phase 3",
+   "sector": "data_centers",
+   "country_code": "CA",
+   "city": "Montreal",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q4 2026 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'MT1 phase 3, Montreal, target open Q4 2026'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 45.5033,
+    "lon": -73.5868,
+    "label": "Montreal metro reference",
+    "basis": "Wikidata (CC0) city reference Q340 (Montreal); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q340",
+     "sha256": "cb57c32669e984ef92be85236fa6f4d6dcc0f25276fd9fa12a6bdd24c7a7fbef",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:MT1:phase-3",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'MT1 phase 3, Montreal, target open Q4 2026'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'MT1 phase 3, Montreal, target open Q4 2026'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q4 2026",
+    "sellable_cabinets": 300,
+    "total_capex": {
+     "value": 37,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "57784805e50d6906ebdf061a0095e290e3bcdd0eb2f61cbfbcf54cc9a50726cf",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q16 -> CA)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility MT1 (dc:eqix:MT1, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:RJ3:phase-2",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "RJ3:phase-2"
+   },
+   "synthetic": false,
+   "name": "Equinix RJ3 phase 2",
+   "sector": "data_centers",
+   "country_code": "BR",
+   "city": "Rio de Janeiro",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q4 2026 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'RJ3 phase 2, Rio de Janeiro, target open Q4 2026'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": -22.9111,
+    "lon": -43.2056,
+    "label": "Rio de Janeiro metro reference",
+    "basis": "Wikidata (CC0) city reference Q8678 (Rio de Janeiro); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q8678",
+     "sha256": "dd856921f82644f206fc5086e99ffc8c7db936e450ba315063eba37e8d390f09",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:RJ3:phase-2",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'RJ3 phase 2, Rio de Janeiro, target open Q4 2026'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'RJ3 phase 2, Rio de Janeiro, target open Q4 2026'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q4 2026",
+    "sellable_cabinets": 550,
+    "total_capex": {
+     "value": 46,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "6865328bef2c3b08df94a1de9c6074a685b4e6682884108992d6cf1f9e290e9b",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q155 -> BR)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility RJ3 (dc:eqix:RJ3, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:SP4:phase-5",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "SP4:phase-5"
+   },
+   "synthetic": false,
+   "name": "Equinix SP4 phase 5",
+   "sector": "data_centers",
+   "country_code": "BR",
+   "city": "São Paulo",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q2 2027 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'SP4 phase 5, São Paulo, target open Q2 2027'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": -23.5504,
+    "lon": -46.6339,
+    "label": "São Paulo metro reference",
+    "basis": "Wikidata (CC0) city reference Q174 (São Paulo); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q174",
+     "sha256": "40b4386e3bac4a8cb08d4e5ac87c50a1ca6c1a75b6fc822b2ded8e7c0cea91bb",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:SP4:phase-5",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'SP4 phase 5, São Paulo, target open Q2 2027'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'SP4 phase 5, São Paulo, target open Q2 2027'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q2 2027",
+    "sellable_cabinets": 700,
+    "total_capex": {
+     "value": 74,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "e599e234a502411a1180ea169a6cdaf4cd1ddc7e372315c124bd884a2c5cdfe7",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q155 -> BR)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility SP4 (dc:eqix:SP4, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:DC17:phases-1-and-2",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "DC17:phases-1-and-2"
+   },
+   "synthetic": false,
+   "name": "Equinix DC17 phases 1 and 2",
+   "sector": "data_centers",
+   "country_code": "US",
+   "city": "Washington, D.C.",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q2 2027 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'DC17 phases 1 and 2, Washington, D.C., target open Q2 2027'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 38.895,
+    "lon": -77.0367,
+    "label": "Washington, D.C. metro reference",
+    "basis": "Wikidata (CC0) city reference Q61 (Washington, D.C.); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q61",
+     "sha256": "10bf219f934a3edb323bdd538807252a02d0f9d9e27893ba802859fb05f9a65c",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:DC17:phases-1-and-2",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'DC17 phases 1 and 2, Washington, D.C., target open Q2 2027'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'DC17 phases 1 and 2, Washington, D.C., target open Q2 2027'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q2 2027",
+    "sellable_cabinets": 4700,
+    "total_capex": {
+     "value": 622,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "43e069fc45759b2b1cf55f600f838f774a2f787f20add79d4023d33138e6ffb5",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q30 -> US)."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:DC22:phase-2",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "DC22:phase-2"
+   },
+   "synthetic": false,
+   "name": "Equinix DC22 phase 2",
+   "sector": "data_centers",
+   "country_code": "US",
+   "city": "Washington, D.C.",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q2 2027 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'DC22 phase 2, Washington, D.C., target open Q2 2027'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 38.895,
+    "lon": -77.0367,
+    "label": "Washington, D.C. metro reference",
+    "basis": "Wikidata (CC0) city reference Q61 (Washington, D.C.); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q61",
+     "sha256": "10bf219f934a3edb323bdd538807252a02d0f9d9e27893ba802859fb05f9a65c",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:DC22:phase-2",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'DC22 phase 2, Washington, D.C., target open Q2 2027'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'DC22 phase 2, Washington, D.C., target open Q2 2027'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q2 2027",
+    "sellable_cabinets": 2125,
+    "total_capex": {
+     "value": 144,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "80e41079b5c568a1a7d8380b3f9f26ffb313ee2a89ba72d246fb5ac9e5bae483",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q30 -> US)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility DC22 (dc:eqix:DC22, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:TR6:phase-3",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "TR6:phase-3"
+   },
+   "synthetic": false,
+   "name": "Equinix TR6 phase 3",
+   "sector": "data_centers",
+   "country_code": "CA",
+   "city": "Toronto",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q3 2027 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'TR6 phase 3, Toronto, target open Q3 2027'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 43.6703,
+    "lon": -79.3867,
+    "label": "Toronto metro reference",
+    "basis": "Wikidata (CC0) city reference Q172 (Toronto); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q172",
+     "sha256": "7a620a39e8b1f63ce3dd1e4d9cbb518d5afc38c972d41927424cbc4096c545c9",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:TR6:phase-3",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'TR6 phase 3, Toronto, target open Q3 2027'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'TR6 phase 3, Toronto, target open Q3 2027'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q3 2027",
+    "sellable_cabinets": 1075,
+    "total_capex": {
+     "value": 123,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "c6f7be087090e43c2c4b47da9fc4ff9b4ea6fc6635776d505761d7d187e19501",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q16 -> CA)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility TR6 (dc:eqix:TR6, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:CH5:phase-2",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "CH5:phase-2"
+   },
+   "synthetic": false,
+   "name": "Equinix CH5 phase 2",
+   "sector": "data_centers",
+   "country_code": "US",
+   "city": "Chicago",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q3 2027 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'CH5 phase 2, Chicago, target open Q3 2027'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 41.8819,
+    "lon": -87.6278,
+    "label": "Chicago metro reference",
+    "basis": "Wikidata (CC0) city reference Q1297 (Chicago); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q1297",
+     "sha256": "127bbc150b2f1a77add38121ea6206da4c86068cc2f082a5b87f5ec2bffce2df",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:CH5:phase-2",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'CH5 phase 2, Chicago, target open Q3 2027'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'CH5 phase 2, Chicago, target open Q3 2027'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q3 2027",
+    "sellable_cabinets": 1625,
+    "total_capex": {
+     "value": 165,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "0ef3fbe116e7d94ad58b9102d42342f9d578f4afa7dcb88945061c079ca35801",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q30 -> US)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility CH5 (dc:eqix:CH5, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:DA12:phase-1",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "DA12:phase-1"
+   },
+   "synthetic": false,
+   "name": "Equinix DA12 phase 1",
+   "sector": "data_centers",
+   "country_code": "US",
+   "city": "Dallas",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q2 2028 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'DA12 phase 1, Dallas, target open Q2 2028'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 32.7792,
+    "lon": -96.8089,
+    "label": "Dallas metro reference",
+    "basis": "Wikidata (CC0) city reference Q16557 (Dallas); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q16557",
+     "sha256": "b52b646c1491ac97ed186c1e71fad904e0736f68f70ef3c39b480fd8bd898986",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:DA12:phase-1",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'DA12 phase 1, Dallas, target open Q2 2028'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'DA12 phase 1, Dallas, target open Q2 2028'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q2 2028",
+    "sellable_cabinets": 3700,
+    "total_capex": {
+     "value": 837,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "0165b9b468efe95f700f053e849dae874275022e12670a2ce3fe324f325d7585",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q30 -> US)."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:DX3:phase-2",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "DX3:phase-2"
+   },
+   "synthetic": false,
+   "name": "Equinix DX3 phase 2",
+   "sector": "data_centers",
+   "country_code": "AE",
+   "city": "Dubai",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025 (latest filing). Target opening Q2 2026 has passed; current status not confirmed by a later filing.",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported_target_elapsed",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'DX3 phase 2, Dubai, target open Q2 2026'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 25.2697,
+    "lon": 55.3094,
+    "label": "Dubai metro reference",
+    "basis": "Wikidata (CC0) city reference Q612 (Dubai); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q612",
+     "sha256": "7b25779f42b48fdb6e81022fbd947be94d7f8e4036e8f20488ada8ab76c1d77f",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:DX3:phase-2",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'DX3 phase 2, Dubai, target open Q2 2026'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'DX3 phase 2, Dubai, target open Q2 2026'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q2 2026",
+    "sellable_cabinets": 800,
+    "total_capex": {
+     "value": 81,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "3c2becefcff6984b3f2695cc98ef313f83a8b802932a7d683d96e58b665420c0",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "status",
+     "disposition": "Target Q2 2026 may have elapsed; an elapsed target never proves completion. Stage stays as reported at 31 Dec 2025."
+    },
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q878 -> AE)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility DX3 (dc:eqix:DX3, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:FR8:phase-3",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "FR8:phase-3"
+   },
+   "synthetic": false,
+   "name": "Equinix FR8 phase 3",
+   "sector": "data_centers",
+   "country_code": "DE",
+   "city": "Frankfurt",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q4 2026 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'FR8 phase 3, Frankfurt, target open Q4 2026'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 50.1106,
+    "lon": 8.6822,
+    "label": "Frankfurt metro reference",
+    "basis": "Wikidata (CC0) city reference Q1794 (Frankfurt); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q1794",
+     "sha256": "06560a7744884e8693cd969fdc9189da1e77bb5970d84331eb7849e604b8a6ba",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:FR8:phase-3",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'FR8 phase 3, Frankfurt, target open Q4 2026'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'FR8 phase 3, Frankfurt, target open Q4 2026'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q4 2026",
+    "sellable_cabinets": 1400,
+    "total_capex": {
+     "value": 107,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "25b77ab7361f06013c26e5a83d591f59305e6d066e5ac0ca0dc2d58100812380",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q183 -> DE)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility FR8 (dc:eqix:FR8, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:LS2:phase-2",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "LS2:phase-2"
+   },
+   "synthetic": false,
+   "name": "Equinix LS2 phase 2",
+   "sector": "data_centers",
+   "country_code": "PT",
+   "city": "Lisbon",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q3 2027 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'LS2 phase 2, Lisbon, target open Q3 2027'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 38.708,
+    "lon": -9.139,
+    "label": "Lisbon metro reference",
+    "basis": "Wikidata (CC0) city reference Q597 (Lisbon); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q597",
+     "sha256": "5779887df5d45299ec025a2a41a61d9ab9bbf9a5591b116f4a2ebcd48a826e65",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:LS2:phase-2",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'LS2 phase 2, Lisbon, target open Q3 2027'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'LS2 phase 2, Lisbon, target open Q3 2027'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q3 2027",
+    "sellable_cabinets": 325,
+    "total_capex": {
+     "value": 31,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "e5cc30e51106769a0a07f3a08a7b72ed3d3e5773b1e85f1f53fd4531cf0ff12e",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q45 -> PT)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility LS2 (dc:eqix:LS2, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:ZH4:phase-6",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "ZH4:phase-6"
+   },
+   "synthetic": false,
+   "name": "Equinix ZH4 phase 6",
+   "sector": "data_centers",
+   "country_code": "CH",
+   "city": "Zurich",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q3 2027 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'ZH4 phase 6, Zurich, target open Q3 2027'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 47.3744,
+    "lon": 8.5411,
+    "label": "Zurich metro reference",
+    "basis": "Wikidata (CC0) city reference Q72 (Zurich); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q72",
+     "sha256": "370b635f6bd9e79580212331fe9d0575bc74e0823ad0a6039eddc5530e75cbed",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:ZH4:phase-6",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'ZH4 phase 6, Zurich, target open Q3 2027'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'ZH4 phase 6, Zurich, target open Q3 2027'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q3 2027",
+    "sellable_cabinets": 200,
+    "total_capex": {
+     "value": 47,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "8b2214a72dbdd6e69f7210139345dfab385bd5acafb1054023c0bd6962d55a70",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q39 -> CH)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility ZH4 (dc:eqix:ZH4, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:LG4:phase-1",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "LG4:phase-1"
+   },
+   "synthetic": false,
+   "name": "Equinix LG4 phase 1",
+   "sector": "data_centers",
+   "country_code": "NG",
+   "city": "Lagos",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q4 2027 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'LG4 phase 1, Lagos, target open Q4 2027'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 6.4561,
+    "lon": 3.3936,
+    "label": "Lagos metro reference",
+    "basis": "Wikidata (CC0) city reference Q8673 (Lagos); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q8673",
+     "sha256": "97ed55f849d383d2a101f2f58320140448b7cc6da77c5e615829c90b6f665117",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:LG4:phase-1",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'LG4 phase 1, Lagos, target open Q4 2027'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'LG4 phase 1, Lagos, target open Q4 2027'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q4 2027",
+    "sellable_cabinets": 975,
+    "total_capex": {
+     "value": 78,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "ba122abfe89d6a56bc2f7218877b099f51f2f590b2c031f797682a8bf2ae77b9",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q1033 -> NG)."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:DB10:phase-1",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "DB10:phase-1"
+   },
+   "synthetic": false,
+   "name": "Equinix DB10 phase 1",
+   "sector": "data_centers",
+   "country_code": "IE",
+   "city": "Dublin",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q1 2028 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'DB10 phase 1, Dublin, target open Q1 2028'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 53.3497,
+    "lon": -6.2603,
+    "label": "Dublin metro reference",
+    "basis": "Wikidata (CC0) city reference Q1761 (Dublin); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q1761",
+     "sha256": "047eafc83a1d04d5cb28770eb14462352d0b07c4c5b30f67a9bf35fcfab76349",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:DB10:phase-1",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'DB10 phase 1, Dublin, target open Q1 2028'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'DB10 phase 1, Dublin, target open Q1 2028'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q1 2028",
+    "sellable_cabinets": 475,
+    "total_capex": {
+     "value": 14,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "aa1b027cbe741ba40308fdd004a4dd2f5488037715ab45eb7d10c3e633888c00",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q27 -> IE)."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:FR12:phase-1",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "FR12:phase-1"
+   },
+   "synthetic": false,
+   "name": "Equinix FR12 phase 1",
+   "sector": "data_centers",
+   "country_code": "DE",
+   "city": "Frankfurt",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q2 2028 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'FR12 phase 1, Frankfurt, target open Q2 2028'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 50.1106,
+    "lon": 8.6822,
+    "label": "Frankfurt metro reference",
+    "basis": "Wikidata (CC0) city reference Q1794 (Frankfurt); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q1794",
+     "sha256": "06560a7744884e8693cd969fdc9189da1e77bb5970d84331eb7849e604b8a6ba",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:FR12:phase-1",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'FR12 phase 1, Frankfurt, target open Q2 2028'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'FR12 phase 1, Frankfurt, target open Q2 2028'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q2 2028",
+    "sellable_cabinets": 1750,
+    "total_capex": {
+     "value": 381,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "299855e791114d96ca3301eae53a00a25359b65594780dad78202f7a0d006891",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q183 -> DE)."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:MU4:phase-3",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "MU4:phase-3"
+   },
+   "synthetic": false,
+   "name": "Equinix MU4 phase 3",
+   "sector": "data_centers",
+   "country_code": "DE",
+   "city": "Munich",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q2 2028 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'MU4 phase 3, Munich, target open Q2 2028'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 48.1375,
+    "lon": 11.575,
+    "label": "Munich metro reference",
+    "basis": "Wikidata (CC0) city reference Q1726 (Munich); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q1726",
+     "sha256": "6a18014da87d6cd87963968039af92d0e3af812f5f7ff67995f1cef4a5987856",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:MU4:phase-3",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'MU4 phase 3, Munich, target open Q2 2028'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'MU4 phase 3, Munich, target open Q2 2028'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q2 2028",
+    "sellable_cabinets": 1375,
+    "total_capex": {
+     "value": 342,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "8620de09357c65a8db2083584a4addff48436828eab90ef702f52c8cfc054c95",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q183 -> DE)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility MU4 (dc:eqix:MU4, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:FR15:phase-1",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "FR15:phase-1"
+   },
+   "synthetic": false,
+   "name": "Equinix FR15 phase 1",
+   "sector": "data_centers",
+   "country_code": "DE",
+   "city": "Frankfurt",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q3 2028 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'FR15 phase 1, Frankfurt, target open Q3 2028'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 50.1106,
+    "lon": 8.6822,
+    "label": "Frankfurt metro reference",
+    "basis": "Wikidata (CC0) city reference Q1794 (Frankfurt); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q1794",
+     "sha256": "06560a7744884e8693cd969fdc9189da1e77bb5970d84331eb7849e604b8a6ba",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:FR15:phase-1",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'FR15 phase 1, Frankfurt, target open Q3 2028'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'FR15 phase 1, Frankfurt, target open Q3 2028'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q3 2028",
+    "sellable_cabinets": 1550,
+    "total_capex": {
+     "value": 487,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "b00c692edc8f876e0d0d59d48e2d1ee91c1e9848c14682c3e5906399f4f90f1f",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q183 -> DE)."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:HK6:phase-1",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "HK6:phase-1"
+   },
+   "synthetic": false,
+   "name": "Equinix HK6 phase 1",
+   "sector": "data_centers",
+   "country_code": "HK",
+   "city": "Hong Kong",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025 (latest filing). Target opening Q1 2026 has passed; current status not confirmed by a later filing.",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported_target_elapsed",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'HK6 phase 1, Hong Kong, target open Q1 2026'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 22.2783,
+    "lon": 114.1586,
+    "label": "Hong Kong metro reference",
+    "basis": "Wikidata (CC0) city reference Q8646 (Hong Kong); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q8646",
+     "sha256": "0602e8a6d4f37e83b0feaac780653d462209b161e23bae78c32d8ff1f40ef7b9",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:HK6:phase-1",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'HK6 phase 1, Hong Kong, target open Q1 2026'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'HK6 phase 1, Hong Kong, target open Q1 2026'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q1 2026",
+    "sellable_cabinets": 1000,
+    "total_capex": {
+     "value": 124,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "50336dbf8e7c15fab9c00b19f9b43c2ceeb19b400e41d73447fc56c0570781b6",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "status",
+     "disposition": "Target Q1 2026 may have elapsed; an elapsed target never proves completion. Stage stays as reported at 31 Dec 2025."
+    },
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q8646 -> HK)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility HK6 (dc:eqix:HK6, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:OS3:phase-4",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "OS3:phase-4"
+   },
+   "synthetic": false,
+   "name": "Equinix OS3 phase 4",
+   "sector": "data_centers",
+   "country_code": "JP",
+   "city": "Osaka",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025 (latest filing). Target opening Q1 2026 has passed; current status not confirmed by a later filing.",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported_target_elapsed",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'OS3 phase 4, Osaka, target open Q1 2026'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 34.6938,
+    "lon": 135.5021,
+    "label": "Osaka metro reference",
+    "basis": "Wikidata (CC0) city reference Q35765 (Osaka); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q35765",
+     "sha256": "5c84aee8fdebbc52f882f0af7dc475e6722041a617a294f02ac03dc72cd005da",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:OS3:phase-4",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'OS3 phase 4, Osaka, target open Q1 2026'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'OS3 phase 4, Osaka, target open Q1 2026'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q1 2026",
+    "sellable_cabinets": 550,
+    "total_capex": {
+     "value": 30,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "405c1ecd4065830456f4e5d3e3114af6902975e347d1e5612bad93497316905c",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "status",
+     "disposition": "Target Q1 2026 may have elapsed; an elapsed target never proves completion. Stage stays as reported at 31 Dec 2025."
+    },
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q17 -> JP)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility OS3 (dc:eqix:OS3, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:JK1:phase-2",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "JK1:phase-2"
+   },
+   "synthetic": false,
+   "name": "Equinix JK1 phase 2",
+   "sector": "data_centers",
+   "country_code": "ID",
+   "city": "Jakarta",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q4 2026 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'JK1 phase 2, Jakarta, target open Q4 2026'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": -6.1753,
+    "lon": 106.8269,
+    "label": "Jakarta metro reference",
+    "basis": "Wikidata (CC0) city reference Q3630 (Jakarta); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q3630",
+     "sha256": "a9effa50799afafad06e7764ac22acdee2677980de183c839ef9b5c153d828bc",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:JK1:phase-2",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'JK1 phase 2, Jakarta, target open Q4 2026'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'JK1 phase 2, Jakarta, target open Q4 2026'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q4 2026",
+    "sellable_cabinets": 1125,
+    "total_capex": {
+     "value": 39,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "96ce806d182dadd50ec8dcce6f7465d690920ca5b2b16ae58fb48e545242012e",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q252 -> ID)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility JK1 (dc:eqix:JK1, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:SY5:phase-4",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "SY5:phase-4"
+   },
+   "synthetic": false,
+   "name": "Equinix SY5 phase 4",
+   "sector": "data_centers",
+   "country_code": "AU",
+   "city": "Sydney",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q1 2027 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'SY5 phase 4, Sydney, target open Q1 2027'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": -33.8678,
+    "lon": 151.21,
+    "label": "Sydney metro reference",
+    "basis": "Wikidata (CC0) city reference Q3130 (Sydney); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q3130",
+     "sha256": "36df852d2aafe0fbb0061b18b4026beafa02815e29f8cd26f392292b51519d17",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:SY5:phase-4",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'SY5 phase 4, Sydney, target open Q1 2027'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'SY5 phase 4, Sydney, target open Q1 2027'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q1 2027",
+    "sellable_cabinets": 1350,
+    "total_capex": {
+     "value": 96,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "076103151c4c77bbce1b703dd6508589d1cf97b652035274e89e2b592cd513be",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q408 -> AU)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility SY5 (dc:eqix:SY5, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:KL2:phases-1-and-2",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "KL2:phases-1-and-2"
+   },
+   "synthetic": false,
+   "name": "Equinix KL2 phases 1 and 2",
+   "sector": "data_centers",
+   "country_code": "MY",
+   "city": "Kuala Lumpur",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q2 2027 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'KL2 phases 1 and 2, Kuala Lumpur, target open Q2 2027'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 3.1478,
+    "lon": 101.6953,
+    "label": "Kuala Lumpur metro reference",
+    "basis": "Wikidata (CC0) city reference Q1865 (Kuala Lumpur); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q1865",
+     "sha256": "c5a990e39d310687df3177ef6a824eb460a42f35756f1ed97feef28c85b125ab",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:KL2:phases-1-and-2",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'KL2 phases 1 and 2, Kuala Lumpur, target open Q2 2027'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'KL2 phases 1 and 2, Kuala Lumpur, target open Q2 2027'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q2 2027",
+    "sellable_cabinets": 2200,
+    "total_capex": {
+     "value": 192,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "efcffcbe50dd3e6e1eb844b96bf916125232c8f027c29e4c238d4fb4936060b7",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q833 -> MY)."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:MB3:phase-2",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "MB3:phase-2"
+   },
+   "synthetic": false,
+   "name": "Equinix MB3 phase 2",
+   "sector": "data_centers",
+   "country_code": "IN",
+   "city": "Mumbai",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q2 2027 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'MB3 phase 2, Mumbai, target open Q2 2027'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 19.0758,
+    "lon": 72.8775,
+    "label": "Mumbai metro reference",
+    "basis": "Wikidata (CC0) city reference Q1156 (Mumbai); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q1156",
+     "sha256": "9436f31fd744b2264e0e013ace87d96e5ef83e512f5b81908f17fe8fa6a5d3ba",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:MB3:phase-2",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'MB3 phase 2, Mumbai, target open Q2 2027'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'MB3 phase 2, Mumbai, target open Q2 2027'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q2 2027",
+    "sellable_cabinets": 1375,
+    "total_capex": {
+     "value": 38,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "95247b327194cb26880db4b04a2e7c98674cf86af6c4ba3299cfad20698aea8d",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q668 -> IN)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility MB3 (dc:eqix:MB3, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:BK1:phase-1",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "BK1:phase-1"
+   },
+   "synthetic": false,
+   "name": "Equinix BK1 phase 1",
+   "sector": "data_centers",
+   "country_code": "TH",
+   "city": "Bangkok",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q3 2027 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'BK1 phase 1, Bangkok, target open Q3 2027'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 13.75,
+    "lon": 100.5167,
+    "label": "Bangkok metro reference",
+    "basis": "Wikidata (CC0) city reference Q1861 (Bangkok); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q1861",
+     "sha256": "d144fa217338d6235215031b827aae33026ff22164a6b00b508014534fe9fc2a",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:BK1:phase-1",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'BK1 phase 1, Bangkok, target open Q3 2027'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'BK1 phase 1, Bangkok, target open Q3 2027'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q3 2027",
+    "sellable_cabinets": 1175,
+    "total_capex": {
+     "value": 110,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "aa22d2fd8db88fbe2f16dab10b36bbb82545faede4c8febc81a3906e49de471d",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q869 -> TH)."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:CN1:phase-2",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "CN1:phase-2"
+   },
+   "synthetic": false,
+   "name": "Equinix CN1 phase 2",
+   "sector": "data_centers",
+   "country_code": "IN",
+   "city": "Chennai",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q4 2027 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'CN1 phase 2, Chennai, target open Q4 2027'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 13.0825,
+    "lon": 80.275,
+    "label": "Chennai metro reference",
+    "basis": "Wikidata (CC0) city reference Q1352 (Chennai); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q1352",
+     "sha256": "a33d2725392f3a22216217a2d6f22a5bdff10387d6aa8191342d44fa104f3290",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:CN1:phase-2",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'CN1 phase 2, Chennai, target open Q4 2027'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'CN1 phase 2, Chennai, target open Q4 2027'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q4 2027",
+    "sellable_cabinets": 1375,
+    "total_capex": {
+     "value": 88,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "2703fc6163b7cd1d60860b989e429ea7c7c75d9f4d38071daea4ac1c97520d12",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q668 -> IN)."
+    },
+    {
+     "field": "asset",
+     "disposition": "Phase of Equinix facility CN1 (dc:eqix:CN1, research tier); link withheld from the public record."
+    }
+   ]
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "project:eqix:OS6:phase-1",
+   "source_identity": {
+    "authority": "sec:eqix:10-K-2025:projects-under-construction",
+    "id": "OS6:phase-1"
+   },
+   "synthetic": false,
+   "name": "Equinix OS6 phase 1",
+   "sector": "data_centers",
+   "country_code": "JP",
+   "city": "Osaka",
+   "asset": {
+    "category": "project",
+    "subtype": "Data center construction phase",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Under construction at 31 Dec 2025; target opening Q4 2028 (company target, not a completion)",
+    "as_of": "2025-12-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+     "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+     "checked_at": "2026-11-13",
+     "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'OS6 phase 1, Osaka, target open Q4 2028'"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "lat": 34.6938,
+    "lon": 135.5021,
+    "label": "Osaka metro reference",
+    "basis": "Wikidata (CC0) city reference Q35765 (Osaka); not the facility site",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/entity/Q35765",
+     "sha256": "5c84aee8fdebbc52f882f0af7dc475e6722041a617a294f02ac03dc72cd005da",
+     "checked_at": "2026-11-13",
+     "locator": "Wikidata P625 city coordinates",
+     "sha256_scope": "source_body",
+     "record_id": "project:eqix:OS6:phase-1",
+     "scope": "source_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+    "checked_at": "2026-11-13",
+    "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'OS6 phase 1, Osaka, target open Q4 2028'"
+   },
+   "imagery": [],
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company development project (issuer filing)",
+     "relationship_scope": "Equinix project under construction per FY2025 10-K; property title/JV for the site not established",
+     "maturity": "reported",
+     "property_stake": null,
+     "company_ref": "cik:0001101239",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+      "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+      "checked_at": "2026-11-13",
+      "locator": "FY2025 10-K Item 2: 'summary of our significant IBX data center projects under construction as of December 31, 2025': row 'OS6 phase 1, Osaka, target open Q4 2028'",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure; no direct property purchase"
+     },
+     "listing": {
+      "name": "Equinix, Inc.",
+      "ticker": "EQIX",
+      "exchange": "XNAS",
+      "exchange_mic": "XNAS",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+       "sha256": "2dca26ada4afd704a0cd3fc81f938e826310378ad77c4d47278513708f69bc23",
+       "checked_at": "2026-11-13",
+       "locator": "10-K cover securities table: common equity ticker and exchange (Codex receipt)"
+      }
+     }
+    }
+   ],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-13",
+    "property_title_verified": false,
+    "rule": "R-EQIX-DEV (SEC filing table)"
+   },
+   "reported_metrics": {
+    "target_open": "Q4 2028",
+    "sellable_cabinets": 1850,
+    "total_capex": {
+     "value": 355,
+     "unit": "USD million",
+     "basis": "approximate per filing footnote (1)"
+    }
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "status": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "economic_relationship": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "listing": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "reported_metrics": {
+      "status": "cleared",
+      "basis": "Facts from SEC filing (owner-approved SEC scope); no prose copied; Equinix credited"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata CC0 city reference; credited"
+     }
+    },
+    "review": {
+     "fact_sha256": "0df9b11a4c0f89735f7880bc2c9fec89289acce109cd9b2db7e0a773c25642cf",
+     "reviewer": "Claude (research agent), delegated by owner instruction 2026-11-13; owner merge = final approval",
+     "date": "2026-11-13",
+     "basis": "Checks C1-C7 passed: SEC FY2025 10-K table row verbatim; Codex-matching filing hash; Wikidata CC0 city/country; facts only, no prose/images"
+    }
+   },
+   "preview_only": true,
+   "notes": [
+    {
+     "field": "country",
+     "disposition": "From the Wikidata (CC0) city reference's country (Q17 -> JP)."
+    }
+   ]
+  }
+ ]
+}

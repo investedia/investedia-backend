@@ -1,0 +1,411 @@
+{
+ "reviewed": [
+  {
+   "id": "project:eqix:NY11:phase-5",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": true,
+   "fact_sha256": "0c1061c6414a28a95147f1bd8bf2c7cc8493e6ffc17ea1616eb89d6621635a42"
+  },
+  {
+   "id": "project:eqix:BG2:phase-2",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": true,
+   "fact_sha256": "be677e8f0755156d539669f6fa9f91ec9ef26e88652256a363748d36502843e6"
+  },
+  {
+   "id": "project:eqix:MI1:redevelopment",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": true,
+   "fact_sha256": "c28d2f5fe7d73fd08e9d39333c7072049edde568383ed4800e448465d15737df"
+  },
+  {
+   "id": "project:eqix:MT1:phase-3",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "57784805e50d6906ebdf061a0095e290e3bcdd0eb2f61cbfbcf54cc9a50726cf"
+  },
+  {
+   "id": "project:eqix:RJ3:phase-2",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "6865328bef2c3b08df94a1de9c6074a685b4e6682884108992d6cf1f9e290e9b"
+  },
+  {
+   "id": "project:eqix:SP4:phase-5",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "e599e234a502411a1180ea169a6cdaf4cd1ddc7e372315c124bd884a2c5cdfe7"
+  },
+  {
+   "id": "project:eqix:DC17:phases-1-and-2",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "43e069fc45759b2b1cf55f600f838f774a2f787f20add79d4023d33138e6ffb5"
+  },
+  {
+   "id": "project:eqix:DC22:phase-2",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "80e41079b5c568a1a7d8380b3f9f26ffb313ee2a89ba72d246fb5ac9e5bae483"
+  },
+  {
+   "id": "project:eqix:TR6:phase-3",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "c6f7be087090e43c2c4b47da9fc4ff9b4ea6fc6635776d505761d7d187e19501"
+  },
+  {
+   "id": "project:eqix:CH5:phase-2",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "0ef3fbe116e7d94ad58b9102d42342f9d578f4afa7dcb88945061c079ca35801"
+  },
+  {
+   "id": "project:eqix:DA12:phase-1",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "0165b9b468efe95f700f053e849dae874275022e12670a2ce3fe324f325d7585"
+  },
+  {
+   "id": "project:eqix:DX3:phase-2",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": true,
+   "fact_sha256": "3c2becefcff6984b3f2695cc98ef313f83a8b802932a7d683d96e58b665420c0"
+  },
+  {
+   "id": "project:eqix:FR8:phase-3",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "25b77ab7361f06013c26e5a83d591f59305e6d066e5ac0ca0dc2d58100812380"
+  },
+  {
+   "id": "project:eqix:LS2:phase-2",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "e5cc30e51106769a0a07f3a08a7b72ed3d3e5773b1e85f1f53fd4531cf0ff12e"
+  },
+  {
+   "id": "project:eqix:ZH4:phase-6",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "8b2214a72dbdd6e69f7210139345dfab385bd5acafb1054023c0bd6962d55a70"
+  },
+  {
+   "id": "project:eqix:LG4:phase-1",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "ba122abfe89d6a56bc2f7218877b099f51f2f590b2c031f797682a8bf2ae77b9"
+  },
+  {
+   "id": "project:eqix:DB10:phase-1",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "aa1b027cbe741ba40308fdd004a4dd2f5488037715ab45eb7d10c3e633888c00"
+  },
+  {
+   "id": "project:eqix:FR12:phase-1",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "299855e791114d96ca3301eae53a00a25359b65594780dad78202f7a0d006891"
+  },
+  {
+   "id": "project:eqix:MU4:phase-3",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "8620de09357c65a8db2083584a4addff48436828eab90ef702f52c8cfc054c95"
+  },
+  {
+   "id": "project:eqix:FR15:phase-1",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "b00c692edc8f876e0d0d59d48e2d1ee91c1e9848c14682c3e5906399f4f90f1f"
+  },
+  {
+   "id": "project:eqix:HK6:phase-1",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": true,
+   "fact_sha256": "50336dbf8e7c15fab9c00b19f9b43c2ceeb19b400e41d73447fc56c0570781b6"
+  },
+  {
+   "id": "project:eqix:OS3:phase-4",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": true,
+   "fact_sha256": "405c1ecd4065830456f4e5d3e3114af6902975e347d1e5612bad93497316905c"
+  },
+  {
+   "id": "project:eqix:JK1:phase-2",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "96ce806d182dadd50ec8dcce6f7465d690920ca5b2b16ae58fb48e545242012e"
+  },
+  {
+   "id": "project:eqix:SY5:phase-4",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "076103151c4c77bbce1b703dd6508589d1cf97b652035274e89e2b592cd513be"
+  },
+  {
+   "id": "project:eqix:KL2:phases-1-and-2",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "efcffcbe50dd3e6e1eb844b96bf916125232c8f027c29e4c238d4fb4936060b7"
+  },
+  {
+   "id": "project:eqix:MB3:phase-2",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "95247b327194cb26880db4b04a2e7c98674cf86af6c4ba3299cfad20698aea8d"
+  },
+  {
+   "id": "project:eqix:BK1:phase-1",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "aa22d2fd8db88fbe2f16dab10b36bbb82545faede4c8febc81a3906e49de471d"
+  },
+  {
+   "id": "project:eqix:CN1:phase-2",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "2703fc6163b7cd1d60860b989e429ea7c7c75d9f4d38071daea4ac1c97520d12"
+  },
+  {
+   "id": "project:eqix:OS6:phase-1",
+   "checks": {
+    "C1_row_verbatim": true,
+    "C2_filing_hash_matches_codex": true,
+    "C3_no_codex_duplicate": true,
+    "C4_city_reference": true,
+    "C5_listing_current": true,
+    "C6_facts_only": true,
+    "C7_status_honest": true
+   },
+   "target_elapsed": false,
+   "fact_sha256": "0df9b11a4c0f89735f7880bc2c9fec89289acce109cd9b2db7e0a773c25642cf"
+  }
+ ],
+ "held": []
+}
