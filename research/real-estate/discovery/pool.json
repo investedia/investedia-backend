@@ -1,0 +1,1827 @@
+{
+ "schema": "investedia.realestate.discovery-pool.v1",
+ "as_of": "2026-11-14",
+ "notice": "Discovery only. Nothing here is a verified or publishable record. Leads are unverified reminders, not facts.",
+ "counts": {
+  "total": 139,
+  "by_status": {
+   "evidence_located": 37,
+   "lead_unverified": 102
+  },
+  "by_type": {
+   "hotel_resort": 110,
+   "food_led": 20,
+   "other": 9
+  },
+  "by_region": {
+   "Middle East": 9,
+   "North America": 44,
+   "Singapore & SE Asia": 21,
+   "Asia": 14,
+   "UK & Europe": 21,
+   "Japan": 11,
+   "Australia & NZ": 6,
+   "Africa": 6,
+   "Latin America & Caribbean": 7
+  }
+ },
+ "rows": [
+  {
+   "name": "Wynn Al Marjan Island",
+   "country": "AE",
+   "region": "Middle East",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Under construction; expected to open 2027",
+   "issuer_ticker": "WYNN",
+   "relationship_as_stated": "40% equity interest in the developing affiliate (Island 3 AMI FZ-LLC)",
+   "route_hypothesis": "indirect listed equity",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000013/wynn-20251231.htm",
+    "sha256": "860de236f4e84bc15b3aaf52c55397224eabbb50ada927759c61118c60cb94c4",
+    "retrieved_at": "2026-11-14T18:31:02+00:00",
+    "form": "10-K",
+    "filed": "2026-03-02",
+    "locator": "Additionally, the Company has a 40% equity interest in Island 3 AMI FZ-LLC, an unconsolidated affiliate, which is constructing an integrated resort property (\"Wynn Al Marjan Island\") in Ras Al Khaimah, United Arab Emirates, currently expected to open in 2027.",
+    "issuer": "WYNN RESORTS LTD",
+    "cik": "0001174922"
+   }
+  },
+  {
+   "name": "Turtle Bay Resort (conversion to The Ritz-Carlton)",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Acquired for $680M; brand conversion; 49-acre parcel entitled for development",
+   "issuer_ticker": "HST",
+   "relationship_as_stated": "owner (acquirer)",
+   "route_hypothesis": "indirect listed REIT",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+    "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+    "retrieved_at": "2026-11-14T18:30:18+00:00",
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "locator": "• the 450 -room Turtle Bay Resort, including a 49 -acre land parcel entitled for development, for a total purchase price of $ 680 million, net of key money received from Marriott International as part of an agreement to transition management to Marriott and convert the property to The Ritz-Carlton brand.",
+    "issuer": "HOST HOTELS & RESORTS, INC.",
+    "cik": "0001070750"
+   }
+  },
+  {
+   "name": "The Westin Kierland Resort & Spa transformational program",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Second transformational capital program agreed 2025 (four properties, four years)",
+   "issuer_ticker": "HST",
+   "relationship_as_stated": "owner",
+   "route_hypothesis": "indirect listed REIT",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+    "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+    "retrieved_at": "2026-11-14T18:30:18+00:00",
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "locator": "In 2025, we also reached an agreement with Marriott International to complete a second transformational capital program at four properties over a four-year period, including The Westin Kierland Resort & Spa, New Orleans Marriott, The Ritz-Carlton Naples, Tiburón and The Ritz-Carlton, Marina del Rey.",
+    "issuer": "HOST HOTELS & RESORTS, INC.",
+    "cik": "0001070750"
+   }
+  },
+  {
+   "name": "New Orleans Marriott transformational program",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Same program",
+   "issuer_ticker": "HST",
+   "relationship_as_stated": "owner",
+   "route_hypothesis": "indirect listed REIT",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+    "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+    "retrieved_at": "2026-11-14T18:30:18+00:00",
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "locator": "In 2025, we also reached an agreement with Marriott International to complete a second transformational capital program at four properties over a four-year period, including The Westin Kierland Resort & Spa, New Orleans Marriott, The Ritz-Carlton Naples, Tiburón and The Ritz-Carlton, Marina del Rey.",
+    "issuer": "HOST HOTELS & RESORTS, INC.",
+    "cik": "0001070750"
+   }
+  },
+  {
+   "name": "The Ritz-Carlton Naples, Tiburón transformational program",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Same program",
+   "issuer_ticker": "HST",
+   "relationship_as_stated": "owner",
+   "route_hypothesis": "indirect listed REIT",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+    "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+    "retrieved_at": "2026-11-14T18:30:18+00:00",
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "locator": "In 2025, we also reached an agreement with Marriott International to complete a second transformational capital program at four properties over a four-year period, including The Westin Kierland Resort & Spa, New Orleans Marriott, The Ritz-Carlton Naples, Tiburón and The Ritz-Carlton, Marina del Rey.",
+    "issuer": "HOST HOTELS & RESORTS, INC.",
+    "cik": "0001070750"
+   }
+  },
+  {
+   "name": "The Ritz-Carlton, Marina del Rey transformational program",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Same program",
+   "issuer_ticker": "HST",
+   "relationship_as_stated": "owner",
+   "route_hypothesis": "indirect listed REIT",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+    "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+    "retrieved_at": "2026-11-14T18:30:18+00:00",
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "locator": "In 2025, we also reached an agreement with Marriott International to complete a second transformational capital program at four properties over a four-year period, including The Westin Kierland Resort & Spa, New Orleans Marriott, The Ritz-Carlton Naples, Tiburón and The Ritz-Carlton, Marina del Rey.",
+    "issuer": "HOST HOTELS & RESORTS, INC.",
+    "cik": "0001070750"
+   }
+  },
+  {
+   "name": "Hilton Hawaiian Village Waikiki Beach Resort renovation (final phase)",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Final phase expected complete March 2026",
+   "issuer_ticker": "PK",
+   "relationship_as_stated": "owner",
+   "route_hypothesis": "indirect listed REIT",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1617406/000161740626000006/pk-20251231.htm",
+    "sha256": "a77d183d3820f034946588b33127034c61182f1e2011da0e5b1bcd56c1bfc192",
+    "retrieved_at": "2026-11-14T18:30:24+00:00",
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "locator": "completed in January 2026 and the second and final phase at the Hilton Hawaiian Village Waikiki Beach Resort expected to be completed in March 2026 for approximately $85 million for both hotels; and",
+    "issuer": "Park Hotels & Resorts Inc.",
+    "cik": "0001617406"
+   }
+  },
+  {
+   "name": "Category 10 Las Vegas",
+   "country": "US",
+   "region": "North America",
+   "type": "food_led",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Bar/music venue expected to open late 2026",
+   "issuer_ticker": "RHP",
+   "relationship_as_stated": "brand owner/operator via entertainment segment (property owner not stated)",
+   "route_hypothesis": "indirect listed REIT (operational exposure)",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1040829/000110465926019035/rhp-20251231x10k.htm",
+    "sha256": "81f37ac2645d4a712ec95ac5c1b76d52ccb983492ec286f106a72c47b7acf8d6",
+    "retrieved_at": "2026-11-14T18:30:21+00:00",
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "locator": "Category 10, a brand of Luke Combs-themed bar, music venue and event spaces that opened in Nashville, Tennessee in November 2024, with additional locations expected to open in Las Vegas, Nevada in late 2026 and at Universal Orlando Resort’s CityWalk in late 2027;",
+    "issuer": "Ryman Hospitality Properties, Inc.",
+    "cik": "0001040829"
+   }
+  },
+  {
+   "name": "Category 10 at Universal CityWalk Orlando",
+   "country": "US",
+   "region": "North America",
+   "type": "food_led",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Expected to open late 2027",
+   "issuer_ticker": "RHP",
+   "relationship_as_stated": "brand owner/operator (property owner not stated)",
+   "route_hypothesis": "indirect listed REIT (operational exposure)",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1040829/000110465926019035/rhp-20251231x10k.htm",
+    "sha256": "81f37ac2645d4a712ec95ac5c1b76d52ccb983492ec286f106a72c47b7acf8d6",
+    "retrieved_at": "2026-11-14T18:30:21+00:00",
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "locator": "Category 10, a brand of Luke Combs-themed bar, music venue and event spaces that opened in Nashville, Tennessee in November 2024, with additional locations expected to open in Las Vegas, Nevada in late 2026 and at Universal Orlando Resort’s CityWalk in late 2027;",
+    "issuer": "Ryman Hospitality Properties, Inc.",
+    "cik": "0001040829"
+   }
+  },
+  {
+   "name": "Category 10 Nashville",
+   "country": "US",
+   "region": "North America",
+   "type": "food_led",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Opened November 2024",
+   "issuer_ticker": "RHP",
+   "relationship_as_stated": "brand owner/operator",
+   "route_hypothesis": "indirect listed REIT (operational exposure)",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1040829/000110465926019035/rhp-20251231x10k.htm",
+    "sha256": "81f37ac2645d4a712ec95ac5c1b76d52ccb983492ec286f106a72c47b7acf8d6",
+    "retrieved_at": "2026-11-14T18:30:21+00:00",
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "locator": "Category 10, a brand of Luke Combs-themed bar, music venue and event spaces that opened in Nashville, Tennessee in November 2024, with additional locations expected to open in Las Vegas, Nevada in late 2026 and at Universal Orlando Resort’s CityWalk in late 2027;",
+    "issuer": "Ryman Hospitality Properties, Inc.",
+    "cik": "0001040829"
+   }
+  },
+  {
+   "name": "Acorn Ridge casino (Ione Band)",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Scheduled to open February 2026; $56.6M of $110M loan funded at 31 Dec 2025",
+   "issuer_ticker": "GLPI",
+   "relationship_as_stated": "lender (project loan), not owner",
+   "route_hypothesis": "indirect listed REIT; project loan held by issuer (not a public bond)",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1575965/000157596526000032/glpi-20251231.htm",
+    "sha256": "84b446290c044495b411c72956d4f981c7c47f48dd7be8e7d3270fab1af0ba19",
+    "retrieved_at": "2026-11-14T18:31:13+00:00",
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "locator": "◦ As of December 31, 2025, the Company has funded $56.6 million of the $110 million Ione Loan at an 11% interest rate for the tribe's Acorn Ridge casino development that is scheduled to open in February 2026.",
+    "issuer": "Gaming & Leisure Properties, Inc.",
+    "cik": "0001575965"
+   }
+  },
+  {
+   "name": "M Resort second hotel tower and conference center",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Opened 1 Dec 2025; GLPI funded $150M",
+   "issuer_ticker": "GLPI",
+   "relationship_as_stated": "funding landlord; PENN operator",
+   "route_hypothesis": "indirect listed REIT",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1575965/000157596526000032/glpi-20251231.htm",
+    "sha256": "84b446290c044495b411c72956d4f981c7c47f48dd7be8e7d3270fab1af0ba19",
+    "retrieved_at": "2026-11-14T18:31:13+00:00",
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "locator": "On November 3, 2025, GLPI funded $ 150 million for PENN's M Resort new hotel tower and conference center expansion, which opened to the public on December 1, 2025, at a capitalization rate of 7.79 %.",
+    "issuer": "Gaming & Leisure Properties, Inc.",
+    "cik": "0001575965"
+   }
+  },
+  {
+   "name": "Hollywood Casino Joliet (land-based relocation)",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Opened 11 Aug 2025; $130M GLPI funding",
+   "issuer_ticker": "PENN",
+   "relationship_as_stated": "operator/developer; GLPI funding",
+   "route_hypothesis": "indirect listed equity",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/921738/000092173826000008/penn-20251231.htm",
+    "sha256": "90876b364f0f9bb0fc6c6d109e5c19cb2ef5cc1b206d929955846e0f8ea4d919",
+    "retrieved_at": "2026-11-14T18:31:24+00:00",
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "locator": "On August 1, 2025, the Company received the full $ 130.0 million in committed funding from GLPI for the Joliet Project which opened on August 11, 2025, and on November 3, 2025, the Company received the full $ 150.0 million in committed funding from GLPI for the M Resort Project, of which the new hotel tower opened on December 1, 2025.",
+    "issuer": "PENN Entertainment, Inc.",
+    "cik": "0000921738"
+   }
+  },
+  {
+   "name": "Hollywood Casino Aurora (land-based relocation)",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Expected to open late Q2 2026",
+   "issuer_ticker": "PENN",
+   "relationship_as_stated": "operator/developer",
+   "route_hypothesis": "indirect listed equity",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/921738/000092173826000008/penn-20251231.htm",
+    "sha256": "90876b364f0f9bb0fc6c6d109e5c19cb2ef5cc1b206d929955846e0f8ea4d919",
+    "retrieved_at": "2026-11-14T18:31:24+00:00",
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "locator": "The Aurora Project to relocate its riverboat casino operations to a new, land-based facility is expected to open late in the second quarter of 2026.",
+    "issuer": "PENN Entertainment, Inc.",
+    "cik": "0000921738"
+   }
+  },
+  {
+   "name": "Hollywood Casino Columbus new hotel",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Expected to open late Q2 2026",
+   "issuer_ticker": "PENN",
+   "relationship_as_stated": "operator/developer",
+   "route_hypothesis": "indirect listed equity",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/921738/000092173826000008/penn-20251231.htm",
+    "sha256": "90876b364f0f9bb0fc6c6d109e5c19cb2ef5cc1b206d929955846e0f8ea4d919",
+    "retrieved_at": "2026-11-14T18:31:24+00:00",
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "locator": "The new hotel at Columbus is expected to open late in the second quarter of 2026.",
+    "issuer": "PENN Entertainment, Inc.",
+    "cik": "0000921738"
+   }
+  },
+  {
+   "name": "Cadence Crossing Casino",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Expected to open late March 2026; several restaurants",
+   "issuer_ticker": "BYD",
+   "relationship_as_stated": "developer/owner-operator (as described)",
+   "route_hypothesis": "indirect listed equity",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/906553/000143774926004908/bgc20251121_10k.htm",
+    "sha256": "639eb974eb03a152d5ecd2ada5edceb0360f75d79c8749dc83fc7270ab7020be",
+    "retrieved_at": "2026-11-14T18:31:19+00:00",
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "locator": "Cadence Crossing will feature a 10,000 square foot casino, 450 slots and several restaurants, and is expected to open in late March 2026.",
+    "issuer": "BOYD GAMING CORP",
+    "cik": "0000906553"
+   }
+  },
+  {
+   "name": "Norfolk casino resort (permanent)",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Transitional casino opened 7 Nov 2025; permanent resort with 200-room hotel expected late 2027",
+   "issuer_ticker": "BYD",
+   "relationship_as_stated": "manager funding losses, entitled to economic benefits (management agreement)",
+   "route_hypothesis": "indirect listed equity",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/906553/000143774926004908/bgc20251121_10k.htm",
+    "sha256": "639eb974eb03a152d5ecd2ada5edceb0360f75d79c8749dc83fc7270ab7020be",
+    "retrieved_at": "2026-11-14T18:31:19+00:00",
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "locator": "The transitional casino opened to the public on November 7, 2025 and the full casino resort is expected to open in late 2027, pending receipt of final regulatory approval.",
+    "issuer": "BOYD GAMING CORP",
+    "cik": "0000906553"
+   }
+  },
+  {
+   "name": "Durango Casino & Resort next master-plan phase",
+   "country": "US",
+   "region": "North America",
+   "type": "food_led",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Construction commenced January 2026; new restaurant and food hall outlets",
+   "issuer_ticker": "RRR",
+   "relationship_as_stated": "owner-developer",
+   "route_hypothesis": "indirect listed equity",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1653653/000165365326000004/rrr-20251231.htm",
+    "sha256": "08028802805dbe37e4552b36bd22631bf6e9028032449833ffcedce4c3edf804",
+    "retrieved_at": "2026-11-14T18:31:21+00:00",
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "locator": "In January 2026 we commenced construction on the next phase of Durango’s master plan which will include an expanded casino floor, a 36-lane state-of-the-art bowling facility, luxury movie theaters, a new restaurant and new food hall outlets and entertainment venues.",
+    "issuer": "Red Rock Resorts, Inc.",
+    "cik": "0001653653"
+   }
+  },
+  {
+   "name": "The Ritz-Carlton Residences, The Woodlands",
+   "country": "US",
+   "region": "North America",
+   "type": "other",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Broke ground October 2024; completion expected 2027",
+   "issuer_ticker": "HHH",
+   "relationship_as_stated": "developer",
+   "route_hypothesis": "indirect listed equity",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1981792/000162828026009710/hhh-20251231.htm",
+    "sha256": "c99b0c9ee79fcff109d4d323e69fa441aa56f8afc8eca8f4c39e5ce8f9af80d1",
+    "retrieved_at": "2026-11-14T18:31:35+00:00",
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "locator": "The Woodlands We broke ground on The Ritz-Carlton Residences in October 2024, and expect to complete construction in 2027.",
+    "issuer": "Howard Hughes Holdings Inc.",
+    "cik": "0001981792"
+   }
+  },
+  {
+   "name": "The Park Ward Village (Ward Village)",
+   "country": "US",
+   "region": "North America",
+   "type": "other",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Condominium tower under construction; 96% of units (two towers) under contract",
+   "issuer_ticker": "HHH",
+   "relationship_as_stated": "developer",
+   "route_hypothesis": "indirect listed equity",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1981792/000162828026009710/hhh-20251231.htm",
+    "sha256": "c99b0c9ee79fcff109d4d323e69fa441aa56f8afc8eca8f4c39e5ce8f9af80d1",
+    "retrieved_at": "2026-11-14T18:31:35+00:00",
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "locator": "Ward Village As of December 31, 2025, 96% of the units at our two towers under construction, The Park Ward Village and Kalae, are under contract.",
+    "issuer": "Howard Hughes Holdings Inc.",
+    "cik": "0001981792"
+   }
+  },
+  {
+   "name": "Kalae (Ward Village)",
+   "country": "US",
+   "region": "North America",
+   "type": "other",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Condominium tower under construction",
+   "issuer_ticker": "HHH",
+   "relationship_as_stated": "developer",
+   "route_hypothesis": "indirect listed equity",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1981792/000162828026009710/hhh-20251231.htm",
+    "sha256": "c99b0c9ee79fcff109d4d323e69fa441aa56f8afc8eca8f4c39e5ce8f9af80d1",
+    "retrieved_at": "2026-11-14T18:31:35+00:00",
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "locator": "Ward Village As of December 31, 2025, 96% of the units at our two towers under construction, The Park Ward Village and Kalae, are under contract.",
+    "issuer": "Howard Hughes Holdings Inc.",
+    "cik": "0001981792"
+   }
+  },
+  {
+   "name": "Melia and ‘Ilima (Ward Village)",
+   "country": "US",
+   "region": "North America",
+   "type": "other",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Pre-sales launched June 2025; predevelopment",
+   "issuer_ticker": "HHH",
+   "relationship_as_stated": "developer",
+   "route_hypothesis": "indirect listed equity",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1981792/000162828026009710/hhh-20251231.htm",
+    "sha256": "c99b0c9ee79fcff109d4d323e69fa441aa56f8afc8eca8f4c39e5ce8f9af80d1",
+    "retrieved_at": "2026-11-14T18:31:35+00:00",
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "locator": "Leasing activity at The Launiu remained strong and we launched pre-sales for two new Ward Village condominiums, Melia and ‘Ilima in June 2025, with 66% of the units at these predevelopment towers pre-sold at year end representing $2.0 billion of future contracted revenue.",
+    "issuer": "Howard Hughes Holdings Inc.",
+    "cik": "0001981792"
+   }
+  },
+  {
+   "name": "Caesars Virginia permanent facility",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Permanent facility opened (date to confirm)",
+   "issuer_ticker": "CZR",
+   "relationship_as_stated": "owner/operator (stake to confirm)",
+   "route_hypothesis": "indirect listed equity",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1590895/000159089526000011/czr-20251231.htm",
+    "sha256": "275be7f9a299d25e5bd28ba645c938a12b525f5b55f4ccdcd5ed0b06fc391b06",
+    "retrieved_at": "2026-11-14T18:31:16+00:00",
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "locator": "Food and beverage and hotel expenses have increased due to incremental wages correlating with additional revenues associated with the opening of Caesars Virginia’s permanent facility and the completed renovation and expansion of Caesars New Orleans, as well as higher union and non-union wages.",
+    "issuer": "Caesars Entertainment, Inc.",
+    "cik": "0001590895"
+   }
+  },
+  {
+   "name": "Caesars New Orleans renovation and expansion",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Renovation and expansion completed",
+   "issuer_ticker": "CZR",
+   "relationship_as_stated": "operator",
+   "route_hypothesis": "indirect listed equity",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1590895/000159089526000011/czr-20251231.htm",
+    "sha256": "275be7f9a299d25e5bd28ba645c938a12b525f5b55f4ccdcd5ed0b06fc391b06",
+    "retrieved_at": "2026-11-14T18:31:16+00:00",
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "locator": "Food and beverage and hotel expenses have increased due to incremental wages correlating with additional revenues associated with the opening of Caesars Virginia’s permanent facility and the completed renovation and expansion of Caesars New Orleans, as well as higher union and non-union wages.",
+    "issuer": "Caesars Entertainment, Inc.",
+    "cik": "0001590895"
+   }
+  },
+  {
+   "name": "Marina Bay Sands Tower 3 suites renovation",
+   "country": "SG",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Completed Q2 2025",
+   "issuer_ticker": "LVS",
+   "relationship_as_stated": "owner-operator via subsidiary",
+   "route_hypothesis": "indirect listed equity",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1300514/000130051426000013/lvs-20251231.htm",
+    "sha256": "57924c3d15ae15df83b696adf8eb8087d1fd6a9cc2fe87107e9c4f7e11073912",
+    "retrieved_at": "2026-11-14T18:31:08+00:00",
+    "form": "10-K",
+    "filed": "2026-02-06",
+    "locator": "Additionally, we completed the renovations of the Tower 3 hotel rooms at Marina Bay Sands into world class suites in the second quarter of 2025.",
+    "issuer": "LAS VEGAS SANDS CORP",
+    "cik": "0001300514"
+   }
+  },
+  {
+   "name": "Galaxy Macau Phase 4",
+   "country": "MO",
+   "region": "Asia",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Under development; construction expected complete 2027 (stated by a competitor filing; needs Galaxy source)",
+   "issuer_ticker": "MLCO",
+   "relationship_as_stated": "competitor mention only",
+   "route_hypothesis": "lead: Galaxy Entertainment (HKEX) to verify",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+    "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+    "retrieved_at": "2026-11-14T18:31:41+00:00",
+    "form": "20-F",
+    "filed": "2026-03-13",
+    "locator": "For example, Phase 3 of the Galaxy Macau Resort progressively opened from the second quarter of 2023, while Phase 4 is currently under development with its construction expected to be completed in 2027.",
+    "issuer": "Melco Resorts & Entertainment LTD",
+    "cik": "0001381640"
+   }
+  },
+  {
+   "name": "Londoner Grand (Macau)",
+   "country": "MO",
+   "region": "Asia",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Opened June 2025 (competitor filing; needs LVS/Sands China source)",
+   "issuer_ticker": "MLCO",
+   "relationship_as_stated": "competitor mention only",
+   "route_hypothesis": "lead: LVS / Sands China to verify",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+    "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+    "retrieved_at": "2026-11-14T18:31:41+00:00",
+    "form": "20-F",
+    "filed": "2026-03-13",
+    "locator": "Sands China Ltd., a subsidiary of Las Vegas Sands Corporation, has rebranded and redeveloped Sands Cotai Central in Cotai into The Londoner Macau, which opened in February 2021, and completed renovations of the former Sheraton Grand, rebranding the hotel as the Londoner Grand, which opened in June 2025.",
+    "issuer": "Melco Resorts & Entertainment LTD",
+    "cik": "0001381640"
+   }
+  },
+  {
+   "name": "Solaire Resort North (Quezon City)",
+   "country": "PH",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Opened 2025 (competitor filing; needs Bloomberry source)",
+   "issuer_ticker": "MLCO",
+   "relationship_as_stated": "competitor mention only",
+   "route_hypothesis": "lead: Bloomberry Resorts (PSE) to verify",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+    "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+    "retrieved_at": "2026-11-14T18:31:41+00:00",
+    "form": "20-F",
+    "filed": "2026-03-13",
+    "locator": "In 2025, Bloomberry Resorts Corporation opened Solaire Resort North in Quezon City, and Suntrust Resort Holdings is expected to open its integrated resort in Westside City, Manila in the second half of 2026.",
+    "issuer": "Melco Resorts & Entertainment LTD",
+    "cik": "0001381640"
+   }
+  },
+  {
+   "name": "Westside City integrated resort (Manila)",
+   "country": "PH",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Expected to open H2 2026 (competitor filing)",
+   "issuer_ticker": "MLCO",
+   "relationship_as_stated": "competitor mention only",
+   "route_hypothesis": "lead: Suntrust Resort Holdings (PSE) to verify",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+    "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+    "retrieved_at": "2026-11-14T18:31:41+00:00",
+    "form": "20-F",
+    "filed": "2026-03-13",
+    "locator": "In 2025, Bloomberry Resorts Corporation opened Solaire Resort North in Quezon City, and Suntrust Resort Holdings is expected to open its integrated resort in Westside City, Manila in the second half of 2026.",
+    "issuer": "Melco Resorts & Entertainment LTD",
+    "cik": "0001381640"
+   }
+  },
+  {
+   "name": "Hard Rock Hotel & Casino Athens",
+   "country": "GR",
+   "region": "UK & Europe",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Expected to open 2027 (competitor filing)",
+   "issuer_ticker": "MLCO",
+   "relationship_as_stated": "competitor mention only",
+   "route_hypothesis": "lead: GEK Terna (Athens) to verify",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+    "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+    "retrieved_at": "2026-11-14T18:31:41+00:00",
+    "form": "20-F",
+    "filed": "2026-03-13",
+    "locator": "We expect additional competition from new integrated resorts scheduled to open in the region, including the Hard Rock Hotel & Casino Athens which is expected to open in 2027, and Wynn Al Marjan Island, which is currently under construction at Ras Al Khaimah in the UAE and expected to open in the spring of 2027.",
+    "issuer": "Melco Resorts & Entertainment LTD",
+    "cik": "0001381640"
+   }
+  },
+  {
+   "name": "MGM Osaka integrated resort",
+   "country": "JP",
+   "region": "Japan",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Scheduled to open 2030; MGM with JV partner Orix (competitor filing; needs MGM/ORIX source)",
+   "issuer_ticker": "MLCO",
+   "relationship_as_stated": "competitor mention only",
+   "route_hypothesis": "lead: MGM (NYSE) and ORIX (TSE) to verify",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+    "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+    "retrieved_at": "2026-11-14T18:31:41+00:00",
+    "form": "20-F",
+    "filed": "2026-03-13",
+    "locator": "In Japan, a proposed project in Osaka was awarded to MGM Resorts International and its joint venture partner Orix Corporation which is currently scheduled to open in 2030.",
+    "issuer": "Melco Resorts & Entertainment LTD",
+    "cik": "0001381640"
+   }
+  },
+  {
+   "name": "Scottsdale Fashion Square Nordstrom-wing redevelopment",
+   "country": "US",
+   "region": "North America",
+   "type": "food_led",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "JV redeveloping a two-level wing with luxury retail and restaurant uses",
+   "issuer_ticker": "MAC",
+   "relationship_as_stated": "joint-venture owner",
+   "route_hypothesis": "indirect listed REIT",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/912242/000091224226000016/mac-20251231.htm",
+    "sha256": "872a4fcdb915365af877d2019aba3dea125dacc839cd2db0ada7385e908c061d",
+    "retrieved_at": "2026-11-14T18:32:16+00:00",
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "locator": "The Company’s joint venture in Scottsdale Fashion Square, a 1,879,000 square foot regional retail center in Scottsdale, Arizona, is redeveloping a two-level Nordstrom wing with luxury-focused retail and restaurant uses.",
+    "issuer": "MACERICH CO",
+    "cik": "0000912242"
+   }
+  },
+  {
+   "name": "350 Park Avenue",
+   "country": "US",
+   "region": "North America",
+   "type": "other",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Listed among development sites",
+   "issuer_ticker": "VNO",
+   "relationship_as_stated": "owner/developer (structure to confirm)",
+   "route_hypothesis": "indirect listed REIT",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/899689/000089968926000009/vno-20251231.htm",
+    "sha256": "22b24a6ca554f21bd5d1d609993ecd389e0150b32de9fd2bfe59316de775f7b0",
+    "retrieved_at": "2026-11-14T18:32:37+00:00",
+    "form": "10-K",
+    "filed": "2026-02-09",
+    "locator": "• Multiple development sites and redevelopment projects, including 350 Park Avenue, Sunset Pier 94 Studios, 623 Fifth Avenue, the Hotel Pennsylvania site (PENN 15) and other PENN district sites;",
+    "issuer": "VORNADO REALTY TRUST",
+    "cik": "0000899689"
+   }
+  },
+  {
+   "name": "Sunset Pier 94 Studios",
+   "country": "US",
+   "region": "North America",
+   "type": "other",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Listed among development/redevelopment projects",
+   "issuer_ticker": "VNO",
+   "relationship_as_stated": "JV developer (to confirm)",
+   "route_hypothesis": "indirect listed REIT",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/899689/000089968926000009/vno-20251231.htm",
+    "sha256": "22b24a6ca554f21bd5d1d609993ecd389e0150b32de9fd2bfe59316de775f7b0",
+    "retrieved_at": "2026-11-14T18:32:37+00:00",
+    "form": "10-K",
+    "filed": "2026-02-09",
+    "locator": "• Multiple development sites and redevelopment projects, including 350 Park Avenue, Sunset Pier 94 Studios, 623 Fifth Avenue, the Hotel Pennsylvania site (PENN 15) and other PENN district sites;",
+    "issuer": "VORNADO REALTY TRUST",
+    "cik": "0000899689"
+   }
+  },
+  {
+   "name": "Hotel Pennsylvania site (PENN 15)",
+   "country": "US",
+   "region": "North America",
+   "type": "other",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Development site",
+   "issuer_ticker": "VNO",
+   "relationship_as_stated": "owner",
+   "route_hypothesis": "indirect listed REIT",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/899689/000089968926000009/vno-20251231.htm",
+    "sha256": "22b24a6ca554f21bd5d1d609993ecd389e0150b32de9fd2bfe59316de775f7b0",
+    "retrieved_at": "2026-11-14T18:32:37+00:00",
+    "form": "10-K",
+    "filed": "2026-02-09",
+    "locator": "• Multiple development sites and redevelopment projects, including 350 Park Avenue, Sunset Pier 94 Studios, 623 Fifth Avenue, the Hotel Pennsylvania site (PENN 15) and other PENN district sites;",
+    "issuer": "VORNADO REALTY TRUST",
+    "cik": "0000899689"
+   }
+  },
+  {
+   "name": "LaPlaya Beach Resort & Club reopening",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Closed 2024 after Hurricane Milton; Beach House reopened 2025",
+   "issuer_ticker": "PEB",
+   "relationship_as_stated": "owner",
+   "route_hypothesis": "indirect listed REIT",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1474098/000147409826000015/peb-20251231.htm",
+    "sha256": "59ab33c63e9ca4421eca88ca9d88cfb8d87b5a907cda183296dec8b8cabc6a5d",
+    "retrieved_at": "2026-11-14T18:30:27+00:00",
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "locator": "LaPlaya Beach Resort & Club, where the Beach House was closed in 2024 due to hurricane damage and reopened in 2025; recovery in demand at our San Francisco properties; and higher revenues at Estancia La Jolla Hotel & Spa and The Westin Copley Place, Boston.",
+    "issuer": "Pebblebrook Hotel Trust",
+    "cik": "0001474098"
+   }
+  },
+  {
+   "name": "Hilton Grand Vacations Japan resorts (Sesoko, Odawara, Kyoto)",
+   "country": "JP",
+   "region": "Japan",
+   "type": "hotel_resort",
+   "discovery_status": "evidence_located",
+   "event_as_stated": "Continuing sales and expansion in Japan",
+   "issuer_ticker": "HGV",
+   "relationship_as_stated": "timeshare developer/operator",
+   "route_hypothesis": "indirect listed equity",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1674168/000167416826000017/hgv-20251231.htm",
+    "sha256": "efd650409f46b6bd14263266021b9b714c2603db75ea42104e629d323ab94d9d",
+    "retrieved_at": "2026-11-14T18:31:33+00:00",
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "locator": "In addition, as part of our business strategy, we intend to continue the expansion of our operations in Japan, including by continuing to market and sell VOIs at Sesoko, Odawara and Kyoto resorts and continuing to opportunistically develop additional property or acquire additional inventory, as well as explore further expansion opportunities in other countries located in the Asia Pacific region, M",
+    "issuer": "Hilton Grand Vacations Inc.",
+    "cik": "0001674168"
+   }
+  },
+  {
+   "name": "Marina Bay Sands expansion (fourth tower)",
+   "country": "SG",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Las Vegas Sands (NYSE)",
+   "source_to_check": "LVS 10-K / STB development agreement",
+   "evidence": null
+  },
+  {
+   "name": "Resorts World Sentosa 2.0 expansion",
+   "country": "SG",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Genting Singapore (SGX)",
+   "source_to_check": "SGX announcements",
+   "evidence": null
+  },
+  {
+   "name": "Wynn Palace / Wynn Macau concession investments",
+   "country": "MO",
+   "region": "Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Wynn Macau (HKEX)",
+   "source_to_check": "HKEX annual report",
+   "evidence": null
+  },
+  {
+   "name": "Studio City Phase 2",
+   "country": "MO",
+   "region": "Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Melco / Studio City International (NYSE)",
+   "source_to_check": "20-F",
+   "evidence": null
+  },
+  {
+   "name": "City of Dreams Sri Lanka",
+   "country": "LK",
+   "region": "Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Melco (Nasdaq) with John Keells (CSE)",
+   "source_to_check": "20-F / CSE filings",
+   "evidence": null
+  },
+  {
+   "name": "City of Dreams Mediterranean",
+   "country": "CY",
+   "region": "UK & Europe",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Melco (Nasdaq)",
+   "source_to_check": "20-F (opened 2023; check event recency)",
+   "evidence": null
+  },
+  {
+   "name": "Inspire Entertainment Resort (Incheon)",
+   "country": "KR",
+   "region": "Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Mohegan (private; bonds)",
+   "source_to_check": "issuer debt documents — likely research only",
+   "evidence": null
+  },
+  {
+   "name": "Paradise City expansion / Jangchung-dong hotel",
+   "country": "KR",
+   "region": "Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Paradise Co (KRX)",
+   "source_to_check": "DART filings",
+   "evidence": null
+  },
+  {
+   "name": "Hoiana Resort (Vietnam)",
+   "country": "VN",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Chow Tai Fook Ent. (private)",
+   "source_to_check": "likely research only",
+   "evidence": null
+  },
+  {
+   "name": "Okada Manila expansion",
+   "country": "PH",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Universal Entertainment (TSE)",
+   "source_to_check": "TDnet",
+   "evidence": null
+  },
+  {
+   "name": "Solaire Entertainment City / Paniman project",
+   "country": "PH",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Bloomberry (PSE)",
+   "source_to_check": "PSE Edge",
+   "evidence": null
+  },
+  {
+   "name": "Azabudai Hills (Janu Tokyo, food market)",
+   "country": "JP",
+   "region": "Japan",
+   "type": "food_led",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Mori Building (private)",
+   "source_to_check": "likely research only",
+   "evidence": null
+  },
+  {
+   "name": "Tokyo Midtown Yaesu / Bulgari Hotel Tokyo",
+   "country": "JP",
+   "region": "Japan",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Mitsui Fudosan (TSE)",
+   "source_to_check": "integrated report",
+   "evidence": null
+  },
+  {
+   "name": "Torch Tower (Tokyo Torch) with Dorchester Collection hotel",
+   "country": "JP",
+   "region": "Japan",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Mitsubishi Estate (TSE)",
+   "source_to_check": "IR releases",
+   "evidence": null
+  },
+  {
+   "name": "Takanawa Gateway City (JW Marriott Tokyo)",
+   "country": "JP",
+   "region": "Japan",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "JR East (TSE)",
+   "source_to_check": "IR releases",
+   "evidence": null
+  },
+  {
+   "name": "Umekita 2nd Project / Grand Green Osaka (Waldorf Astoria Osaka)",
+   "country": "JP",
+   "region": "Japan",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Mitsubishi Estate, ORIX, Hankyu Hanshin (TSE)",
+   "source_to_check": "IR releases",
+   "evidence": null
+  },
+  {
+   "name": "Hoshino Resorts REIT new acquisitions",
+   "country": "JP",
+   "region": "Japan",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Hoshino Resorts REIT (TSE)",
+   "source_to_check": "J-REIT disclosures",
+   "evidence": null
+  },
+  {
+   "name": "Japan Hotel REIT acquisitions 2025–26",
+   "country": "JP",
+   "region": "Japan",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Japan Hotel REIT (TSE)",
+   "source_to_check": "J-REIT disclosures",
+   "evidence": null
+  },
+  {
+   "name": "Tokyu Kabukicho Tower hotels (event: sale/financing)",
+   "country": "JP",
+   "region": "Japan",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Tokyu Corp (TSE)",
+   "source_to_check": "IR releases",
+   "evidence": null
+  },
+  {
+   "name": "Raffles Sentosa Singapore",
+   "country": "SG",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Royal Group (private)",
+   "source_to_check": "likely research only",
+   "evidence": null
+  },
+  {
+   "name": "The Standard Singapore / Mondrian Singapore Duxton",
+   "country": "SG",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "owners private; Hyatt brand (Standard)",
+   "source_to_check": "brand ≠ owner; check",
+   "evidence": null
+  },
+  {
+   "name": "CDL Hospitality Trusts acquisitions/developments (e.g. The Castings Manchester, Moxy Singapore Clarke Quay)",
+   "country": "SG",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "CDL Hospitality Trusts (SGX)",
+   "source_to_check": "SGX annual report",
+   "evidence": null
+  },
+  {
+   "name": "CapitaLand Ascott Trust developments (lyf one-north, Somerset Liang Court)",
+   "country": "SG",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "CapitaLand Ascott Trust (SGX)",
+   "source_to_check": "SGX annual report",
+   "evidence": null
+  },
+  {
+   "name": "Far East Hospitality Trust — Four Points Nagoya / Sentosa assets",
+   "country": "SG",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Far East Hospitality Trust (SGX)",
+   "source_to_check": "SGX announcements",
+   "evidence": null
+  },
+  {
+   "name": "Marina Bay Sands-adjacent CanningHill / Liang Court redevelopment hotel",
+   "country": "SG",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "City Developments (SGX)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "Dusit Central Park (Bangkok)",
+   "country": "TH",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Dusit Thani (SET), Central Pattana (SET)",
+   "source_to_check": "SET filings",
+   "evidence": null
+  },
+  {
+   "name": "One Bangkok hotels (Ritz-Carlton, Andaz)",
+   "country": "TH",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Frasers Property (SGX) / Asset World (SET) affiliates",
+   "source_to_check": "annual reports",
+   "evidence": null
+  },
+  {
+   "name": "Asset World Corp pipeline (Aquatique Pattaya, Asiatique expansion)",
+   "country": "TH",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Asset World Corp (SET)",
+   "source_to_check": "SET 56-1",
+   "evidence": null
+  },
+  {
+   "name": "Minor Hotels developments",
+   "country": "TH",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Minor International (SET)",
+   "source_to_check": "SET filings",
+   "evidence": null
+  },
+  {
+   "name": "Indian Hotels (Taj) owned developments — Taj Bandstand Mumbai",
+   "country": "IN",
+   "region": "Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Indian Hotels Co (NSE)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "Chalet Hotels developments (Taj at Delhi airport, Varca Goa)",
+   "country": "IN",
+   "region": "Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Chalet Hotels (NSE)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "Juniper Hotels / Ventive Hospitality pipeline",
+   "country": "IN",
+   "region": "Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Juniper Hotels, Ventive (NSE)",
+   "source_to_check": "prospectus / annual report",
+   "evidence": null
+  },
+  {
+   "name": "Lemon Tree Aurika Mumbai Skycity (opened 2023; check newer)",
+   "country": "IN",
+   "region": "Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Lemon Tree Hotels (NSE)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "ITC Hotels new builds (demerged listing)",
+   "country": "IN",
+   "region": "Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "ITC Hotels (NSE)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "Shangri-La developments (Kunming, Zhengzhou, Kyoto)",
+   "country": "CN",
+   "region": "Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Shangri-La Asia (HKEX)",
+   "source_to_check": "HKEX annual report",
+   "evidence": null
+  },
+  {
+   "name": "Rosewood / New World hotel developments (HK 11 Skies)",
+   "country": "HK",
+   "region": "Asia",
+   "type": "food_led",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "New World Development (HKEX)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "Crown Sydney (event recency) / Queen’s Wharf Brisbane",
+   "country": "AU",
+   "region": "Australia & NZ",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Star Entertainment (ASX) JV",
+   "source_to_check": "ASX announcements",
+   "evidence": null
+  },
+  {
+   "name": "One Sydney Harbour / Barangaroo Central",
+   "country": "AU",
+   "region": "Australia & NZ",
+   "type": "other",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Lendlease (ASX)",
+   "source_to_check": "ASX annual report",
+   "evidence": null
+  },
+  {
+   "name": "Waterfront Brisbane",
+   "country": "AU",
+   "region": "Australia & NZ",
+   "type": "other",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Dexus (ASX)",
+   "source_to_check": "ASX announcements",
+   "evidence": null
+  },
+  {
+   "name": "Harbourside redevelopment (Sydney)",
+   "country": "AU",
+   "region": "Australia & NZ",
+   "type": "food_led",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Mirvac (ASX)",
+   "source_to_check": "ASX annual report",
+   "evidence": null
+  },
+  {
+   "name": "Ritz-Carlton Melbourne / W Sydney (event recency)",
+   "country": "AU",
+   "region": "Australia & NZ",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "owners private / Far East Consortium (HKEX)",
+   "source_to_check": "check",
+   "evidence": null
+  },
+  {
+   "name": "SkyCity Adelaide / NZICC and Horizon Hotel (Auckland)",
+   "country": "NZ",
+   "region": "Australia & NZ",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "SkyCity Entertainment (NZX/ASX)",
+   "source_to_check": "NZX announcements",
+   "evidence": null
+  },
+  {
+   "name": "Premier Inn / hub pipeline: Accelerating Growth Plan conversions",
+   "country": "GB",
+   "region": "UK & Europe",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Whitbread (LSE)",
+   "source_to_check": "annual report / RNS",
+   "evidence": null
+  },
+  {
+   "name": "art’otel London Hoxton (opened 2024) and Zagreb/Belgrade pipeline",
+   "country": "GB",
+   "region": "UK & Europe",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "PPHE Hotel Group (LSE)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "The Peninsula London (event recency)",
+   "country": "GB",
+   "region": "UK & Europe",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Hongkong & Shanghai Hotels (HKEX)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "The OWO / Raffles London",
+   "country": "GB",
+   "region": "UK & Europe",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Hinduja (private)",
+   "source_to_check": "likely research only",
+   "evidence": null
+  },
+  {
+   "name": "Battersea Power Station later phases (food hall, hotel)",
+   "country": "GB",
+   "region": "UK & Europe",
+   "type": "food_led",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "S P Setia, Sime Darby Property (Bursa)",
+   "source_to_check": "Bursa filings",
+   "evidence": null
+  },
+  {
+   "name": "Canada Water / Printworks",
+   "country": "GB",
+   "region": "UK & Europe",
+   "type": "food_led",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "British Land (LSE)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "Liverpool ONE / Cardiff St David’s food-led repositioning",
+   "country": "GB",
+   "region": "UK & Europe",
+   "type": "food_led",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Landsec (LSE)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "Olympia London redevelopment (hotels, food)",
+   "country": "GB",
+   "region": "UK & Europe",
+   "type": "food_led",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Deutsche Finance / Yoo (private)",
+   "source_to_check": "likely research only",
+   "evidence": null
+  },
+  {
+   "name": "Pandox acquisitions and developments (incl. Dalata)",
+   "country": "SE",
+   "region": "UK & Europe",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Pandox (Nasdaq Stockholm)",
+   "source_to_check": "annual report; verify Dalata transaction status",
+   "evidence": null
+  },
+  {
+   "name": "Covivio Hotels asset-management projects",
+   "country": "FR",
+   "region": "UK & Europe",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Covivio Hotels (Euronext Paris)",
+   "source_to_check": "URD",
+   "evidence": null
+  },
+  {
+   "name": "Scandic new hotel pipeline",
+   "country": "SE",
+   "region": "UK & Europe",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Scandic Hotels (Nasdaq Stockholm) — lessee",
+   "source_to_check": "lessee exposure only",
+   "evidence": null
+  },
+  {
+   "name": "Meliá owned-hotel repositionings",
+   "country": "ES",
+   "region": "UK & Europe",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Meliá Hotels International (BME)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "NH/Minor Europe; Millenium Hospitality SOCIMI developments",
+   "country": "ES",
+   "region": "UK & Europe",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Millenium Hospitality Real Estate (BME)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "Ellinikon (Athens) hotels and Riviera Galleria",
+   "country": "GR",
+   "region": "UK & Europe",
+   "type": "food_led",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Lamda Development (Athens)",
+   "source_to_check": "annual report; has listed bond — check project link",
+   "evidence": null
+  },
+  {
+   "name": "Costa Navarino expansions",
+   "country": "GR",
+   "region": "UK & Europe",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "TEMES (private)",
+   "source_to_check": "likely research only",
+   "evidence": null
+  },
+  {
+   "name": "MSC / Explora; Arsenale Orient Express hotels",
+   "country": "IT",
+   "region": "UK & Europe",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Accor (Euronext) JV stake",
+   "source_to_check": "brand+JV; check",
+   "evidence": null
+  },
+  {
+   "name": "Emaar hotel developments (Dubai Creek Harbour, Address hotels)",
+   "country": "AE",
+   "region": "Middle East",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Emaar Properties (DFM)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "Aldar Saadiyat hospitality / Nobu Abu Dhabi",
+   "country": "AE",
+   "region": "Middle East",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Aldar Properties (ADX)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "Atlantis The Royal (event recency) / Kerzner",
+   "country": "AE",
+   "region": "Middle East",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "ICD (state)",
+   "source_to_check": "research only",
+   "evidence": null
+  },
+  {
+   "name": "Red Sea Global / AMAALA / Diriyah hotels",
+   "country": "SA",
+   "region": "Middle East",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "PIF (state)",
+   "source_to_check": "research only unless listed sukuk documented",
+   "evidence": null
+  },
+  {
+   "name": "Jabal Omar Address / Makkah hotels",
+   "country": "SA",
+   "region": "Middle East",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Jabal Omar Development (Tadawul)",
+   "source_to_check": "Tadawul filings",
+   "evidence": null
+  },
+  {
+   "name": "Umm Al Qura Masar destination hotels",
+   "country": "SA",
+   "region": "Middle East",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Umm Al Qura for Development (Tadawul, IPO 2025 — verify)",
+   "source_to_check": "prospectus",
+   "evidence": null
+  },
+  {
+   "name": "Dur Hospitality developments",
+   "country": "SA",
+   "region": "Middle East",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Dur Hospitality (Tadawul)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "Katara Hospitality / Lusail hotels",
+   "country": "QA",
+   "region": "Middle East",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "state-owned",
+   "source_to_check": "research only",
+   "evidence": null
+  },
+  {
+   "name": "Sun City / Time Square developments",
+   "country": "ZA",
+   "region": "Africa",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Sun International (JSE)",
+   "source_to_check": "integrated report",
+   "evidence": null
+  },
+  {
+   "name": "Southern Sun and City Lodge refurbishments/new builds",
+   "country": "ZA",
+   "region": "Africa",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Southern Sun, City Lodge Hotels (JSE)",
+   "source_to_check": "integrated reports",
+   "evidence": null
+  },
+  {
+   "name": "V&A Waterfront expansion (Cape Town)",
+   "country": "ZA",
+   "region": "Africa",
+   "type": "food_led",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Growthpoint Properties (JSE) 50%",
+   "source_to_check": "integrated report",
+   "evidence": null
+  },
+  {
+   "name": "Transcorp Hilton Abuja event centre",
+   "country": "NG",
+   "region": "Africa",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Transcorp Hotels (NGX)",
+   "source_to_check": "NGX filings",
+   "evidence": null
+  },
+  {
+   "name": "Kasada (Accor/QIA) hotels",
+   "country": "CI",
+   "region": "Africa",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "private fund",
+   "source_to_check": "research only",
+   "evidence": null
+  },
+  {
+   "name": "Mauritius resort redevelopments",
+   "country": "MU",
+   "region": "Africa",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Sun Ltd, Lux Island Resorts, New Mauritius Hotels (SEM)",
+   "source_to_check": "SEM annual reports",
+   "evidence": null
+  },
+  {
+   "name": "Hyatt-owned / Playa all-inclusive developments",
+   "country": "MX",
+   "region": "Latin America & Caribbean",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Hyatt (NYSE) — Playa acquired 2025, real estate sale announced: verify",
+   "source_to_check": "10-K",
+   "evidence": null
+  },
+  {
+   "name": "FibraHotel / Fibra Inn developments",
+   "country": "MX",
+   "region": "Latin America & Caribbean",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "FibraHotel, Fibra Inn (BMV)",
+   "source_to_check": "BMV annual reports",
+   "evidence": null
+  },
+  {
+   "name": "Grupo Posadas owned developments",
+   "country": "MX",
+   "region": "Latin America & Caribbean",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Grupo Posadas (BMV)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "RLH Properties (Rosewood Mayakoba, Fairmont) developments",
+   "country": "MX",
+   "region": "Latin America & Caribbean",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "RLH Properties (BMV)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "Baha Mar expansion",
+   "country": "BS",
+   "region": "Latin America & Caribbean",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Chow Tai Fook Ent. (private)",
+   "source_to_check": "research only",
+   "evidence": null
+  },
+  {
+   "name": "Sandals / Royalton new resorts",
+   "country": "JM",
+   "region": "Latin America & Caribbean",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "private",
+   "source_to_check": "research only",
+   "evidence": null
+  },
+  {
+   "name": "Hotel developments by Iguatemi / JHSF (Fasano)",
+   "country": "BR",
+   "region": "Latin America & Caribbean",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "JHSF Participações (B3)",
+   "source_to_check": "B3 filings",
+   "evidence": null
+  },
+  {
+   "name": "Universal Epic Universe hotels (Stella Nova, Terra Luna, Helios Grand)",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Comcast (Nasdaq) with Loews (NYSE) JV",
+   "source_to_check": "10-K of each",
+   "evidence": null
+  },
+  {
+   "name": "Disney resort hotel projects (Lakeshore Lodge)",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Walt Disney (NYSE)",
+   "source_to_check": "10-K",
+   "evidence": null
+  },
+  {
+   "name": "Gaylord Pacific Resort (Chula Vista) — opened May 2025",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "RIDA (private); Marriott brand only",
+   "source_to_check": "brand ≠ owner; RHP not owner — verify",
+   "evidence": null
+  },
+  {
+   "name": "Gaylord Opryland / Gaylord Rockies expansions",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Ryman Hospitality (NYSE)",
+   "source_to_check": "10-K capital projects section",
+   "evidence": null
+  },
+  {
+   "name": "JW Marriott Phoenix Desert Ridge renovation (acquired 2025)",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Ryman Hospitality (NYSE)",
+   "source_to_check": "10-K / 8-K",
+   "evidence": null
+  },
+  {
+   "name": "Fontainebleau Las Vegas (event recency)",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "private; Koch financing",
+   "source_to_check": "research only",
+   "evidence": null
+  },
+  {
+   "name": "Hard Rock Las Vegas (Mirage redevelopment, guitar tower)",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "VICI (NYSE) landlord; Hard Rock private",
+   "source_to_check": "VICI 10-K",
+   "evidence": null
+  },
+  {
+   "name": "Athletics / Bally’s Las Vegas Tropicana site resort",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Bally’s (NYSE), GLPI (Nasdaq) landowner",
+   "source_to_check": "10-Ks",
+   "evidence": null
+  },
+  {
+   "name": "Bally’s Chicago permanent casino",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Bally’s (NYSE); GLPI funding; Bally’s Chicago Inc. public offering (direct equity — check status/eligibility)",
+   "source_to_check": "SEC filings of Bally’s Chicago, Inc.",
+   "evidence": null
+  },
+  {
+   "name": "Resorts World Las Vegas / Resorts World NYC expansion",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Genting Malaysia (Bursa)",
+   "source_to_check": "Bursa filings",
+   "evidence": null
+  },
+  {
+   "name": "MGM Springfield / Empire City expansion (licence status — verify)",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "MGM (NYSE), VICI (NYSE)",
+   "source_to_check": "10-Ks",
+   "evidence": null
+  },
+  {
+   "name": "Hudson’s Detroit (EDITION hotel)",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Bedrock (private)",
+   "source_to_check": "research only",
+   "evidence": null
+  },
+  {
+   "name": "Waldorf Astoria New York reopening (2025)",
+   "country": "US",
+   "region": "North America",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Dajia Insurance (state)",
+   "source_to_check": "research only; Hilton is brand only",
+   "evidence": null
+  },
+  {
+   "name": "Pier 70 / Mission Rock food-led phases",
+   "country": "US",
+   "region": "North America",
+   "type": "food_led",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Tishman Speyer (private) / Giants",
+   "source_to_check": "research only",
+   "evidence": null
+  },
+  {
+   "name": "The Wharf / Santana West / Pike & Rose phases",
+   "country": "US",
+   "region": "North America",
+   "type": "food_led",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Federal Realty (NYSE)",
+   "source_to_check": "10-K development table",
+   "evidence": null
+  },
+  {
+   "name": "Simon Premium Outlets / mall restaurant-led redevelopments (named)",
+   "country": "US",
+   "region": "North America",
+   "type": "food_led",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Simon Property (NYSE)",
+   "source_to_check": "10-K / supplemental",
+   "evidence": null
+  },
+  {
+   "name": "Time Out Market new sites (owned vs managed)",
+   "country": "GB",
+   "region": "UK & Europe",
+   "type": "food_led",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Time Out Group (LSE AIM)",
+   "source_to_check": "annual report",
+   "evidence": null
+  },
+  {
+   "name": "Eataly new flagships",
+   "country": "IT",
+   "region": "UK & Europe",
+   "type": "food_led",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "private (Investindustrial)",
+   "source_to_check": "research only",
+   "evidence": null
+  },
+  {
+   "name": "Soho House new houses (take-private status — verify)",
+   "country": "GB",
+   "region": "UK & Europe",
+   "type": "food_led",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Soho House & Co (NYSE: SHCO — verify listing status)",
+   "source_to_check": "SEC filings",
+   "evidence": null
+  },
+  {
+   "name": "Four Seasons / Aman developments by listed owners (e.g. Aman Nai Lert Bangkok)",
+   "country": "TH",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "owners private",
+   "source_to_check": "research only",
+   "evidence": null
+  },
+  {
+   "name": "Niseko / Hokkaido resort developments (YTL: Niseko Village)",
+   "country": "JP",
+   "region": "Japan",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "YTL Corp / YTL Hospitality REIT (Bursa)",
+   "source_to_check": "Bursa annual report",
+   "evidence": null
+  },
+  {
+   "name": "Sunway / Genting Highlands expansions",
+   "country": "MY",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Genting Malaysia, Sunway (Bursa)",
+   "source_to_check": "Bursa filings",
+   "evidence": null
+  },
+  {
+   "name": "Vinpearl new resorts (listed 2025 — verify)",
+   "country": "VN",
+   "region": "Singapore & SE Asia",
+   "type": "hotel_resort",
+   "discovery_status": "lead_unverified",
+   "company_to_check": "Vinpearl JSC (HOSE)",
+   "source_to_check": "HOSE filings",
+   "evidence": null
+  }
+ ]
+}

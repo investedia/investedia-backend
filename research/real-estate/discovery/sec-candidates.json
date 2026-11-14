@@ -1,0 +1,3970 @@
+{
+ "schema": "investedia.realestate.discovery.sec.v1",
+ "note": "Discovery only: sentences are short factual locators for review, not publishable text.",
+ "issuers": 41,
+ "sentences": 251,
+ "stopped_hosts": [],
+ "items": [
+  {
+   "ticker": "HST",
+   "issuer": "HOST HOTELS & RESORTS, INC.",
+   "cik": "0001070750",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+   "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+   "retrieved_at": "2026-11-14T18:30:18+00:00",
+   "sentence": "In addition to general economic conditions affecting the lodging industry, new hotel room supply is an important factor that can affect the lodging industry’s performance and overbuilding has the potential to further exacerbate the negative impact of an economic downturn."
+  },
+  {
+   "ticker": "HST",
+   "issuer": "HOST HOTELS & RESORTS, INC.",
+   "cik": "0001070750",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+   "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+   "retrieved_at": "2026-11-14T18:30:18+00:00",
+   "sentence": "New hotel construction adds to supply, creating new competitors, in some cases without corresponding increases in demand for hotel rooms."
+  },
+  {
+   "ticker": "HST",
+   "issuer": "HOST HOTELS & RESORTS, INC.",
+   "cik": "0001070750",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+   "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+   "retrieved_at": "2026-11-14T18:30:18+00:00",
+   "sentence": "It also may increase the bargaining power of hotel owners seeking to sell to us, making it more difficult for us to acquire new hotels on attractive terms or on the terms contemplated in our business plan."
+  },
+  {
+   "ticker": "HST",
+   "issuer": "HOST HOTELS & RESORTS, INC.",
+   "cik": "0001070750",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+   "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+   "retrieved_at": "2026-11-14T18:30:18+00:00",
+   "sentence": "We may not achieve the value we anticipate from new hotel developments or value enhancement projects at our existing hotels."
+  },
+  {
+   "ticker": "HST",
+   "issuer": "HOST HOTELS & RESORTS, INC.",
+   "cik": "0001070750",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+   "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+   "retrieved_at": "2026-11-14T18:30:18+00:00",
+   "sentence": "We currently are, and in the future may be, involved in the development or redevelopment of hotels, timeshare units or other alternate uses of portions of our existing hotels, including the development of retail, office, condominium or apartments, and including through joint ventures."
+  },
+  {
+   "ticker": "HST",
+   "issuer": "HOST HOTELS & RESORTS, INC.",
+   "cik": "0001070750",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+   "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+   "retrieved_at": "2026-11-14T18:30:18+00:00",
+   "sentence": "In 2025, we also reached an agreement with Marriott International to complete a second transformational capital program at four properties over a four-year period, including The Westin Kierland Resort & Spa, New Orleans Marriott, The Ritz-Carlton Naples, Tiburón and The Ritz-Carlton, Marina del Rey."
+  },
+  {
+   "ticker": "HST",
+   "issuer": "HOST HOTELS & RESORTS, INC.",
+   "cik": "0001070750",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+   "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+   "retrieved_at": "2026-11-14T18:30:18+00:00",
+   "sentence": "• the 450 -room Turtle Bay Resort, including a 49 -acre land parcel entitled for development, for a total purchase price of $ 680 million, net of key money received from Marriott International as part of an agreement to transition management to Marriott and convert the property to The Ritz-Carlton brand."
+  },
+  {
+   "ticker": "RHP",
+   "issuer": "Ryman Hospitality Properties, Inc.",
+   "cik": "0001040829",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1040829/000110465926019035/rhp-20251231x10k.htm",
+   "sha256": "81f37ac2645d4a712ec95ac5c1b76d52ccb983492ec286f106a72c47b7acf8d6",
+   "retrieved_at": "2026-11-14T18:30:21+00:00",
+   "sentence": "Category 10, a brand of Luke Combs-themed bar, music venue and event spaces that opened in Nashville, Tennessee in November 2024, with additional locations expected to open in Las Vegas, Nevada in late 2026 and at Universal Orlando Resort’s CityWalk in late 2027;"
+  },
+  {
+   "ticker": "RHP",
+   "issuer": "Ryman Hospitality Properties, Inc.",
+   "cik": "0001040829",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1040829/000110465926019035/rhp-20251231x10k.htm",
+   "sha256": "81f37ac2645d4a712ec95ac5c1b76d52ccb983492ec286f106a72c47b7acf8d6",
+   "retrieved_at": "2026-11-14T18:30:21+00:00",
+   "sentence": "● the opening of other new hotels could impact the group convention business at our current hotel properties, including the May 2025 opening of Gaylord Pacific, which we do not own;"
+  },
+  {
+   "ticker": "RHP",
+   "issuer": "Ryman Hospitality Properties, Inc.",
+   "cik": "0001040829",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1040829/000110465926019035/rhp-20251231x10k.htm",
+   "sha256": "81f37ac2645d4a712ec95ac5c1b76d52ccb983492ec286f106a72c47b7acf8d6",
+   "retrieved_at": "2026-11-14T18:30:21+00:00",
+   "sentence": "Category 10, a brand of Luke Combs-themed bar, music venue and event space that opened in Nashville, Tennessee in November 2024 with additional locations expected to open in Las Vegas, Nevada in late 2026 and at Universal Orlando Resort’s CityWalk in late 2027;"
+  },
+  {
+   "ticker": "RHP",
+   "issuer": "Ryman Hospitality Properties, Inc.",
+   "cik": "0001040829",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1040829/000110465926019035/rhp-20251231x10k.htm",
+   "sha256": "81f37ac2645d4a712ec95ac5c1b76d52ccb983492ec286f106a72c47b7acf8d6",
+   "retrieved_at": "2026-11-14T18:30:21+00:00",
+   "sentence": "Category 10, a brand of Luke Combs-themed bar, music venue and event spaces that opened in Nashville, Tennessee in November 2024, with additional locations expected to open in Las Vegas, Nevada in late 2026 and at Universal Orlando Resort’s CityWalk in late 2027;"
+  },
+  {
+   "ticker": "RHP",
+   "issuer": "Ryman Hospitality Properties, Inc.",
+   "cik": "0001040829",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1040829/000110465926019035/rhp-20251231x10k.htm",
+   "sha256": "81f37ac2645d4a712ec95ac5c1b76d52ccb983492ec286f106a72c47b7acf8d6",
+   "retrieved_at": "2026-11-14T18:30:21+00:00",
+   "sentence": "Gaylord Rockies is party to an incentive agreement with the local government that provides that Gaylord Rockies is entitled to receive monthly rebates of certain city and state taxes, including property, sales and lodging taxes."
+  },
+  {
+   "ticker": "PK",
+   "issuer": "Park Hotels & Resorts Inc.",
+   "cik": "0001617406",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1617406/000161740626000006/pk-20251231.htm",
+   "sha256": "a77d183d3820f034946588b33127034c61182f1e2011da0e5b1bcd56c1bfc192",
+   "retrieved_at": "2026-11-14T18:30:24+00:00",
+   "sentence": "These may include the expansion of meeting platforms in convention and resort markets; the upgrade or redevelopment of existing amenities, including retail platforms, food and beverage outlets, pools and other facilities; the development of vacant land into income-generating uses, including retail or mixed-use properties; or the redevelopment or optimization of underutilized spaces."
+  },
+  {
+   "ticker": "PK",
+   "issuer": "Park Hotels & Resorts Inc.",
+   "cik": "0001617406",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1617406/000161740626000006/pk-20251231.htm",
+   "sha256": "a77d183d3820f034946588b33127034c61182f1e2011da0e5b1bcd56c1bfc192",
+   "retrieved_at": "2026-11-14T18:30:24+00:00",
+   "sentence": "completed in January 2026 and the second and final phase at the Hilton Hawaiian Village Waikiki Beach Resort expected to be completed in March 2026 for approximately $85 million for both hotels; and"
+  },
+  {
+   "ticker": "PK",
+   "issuer": "Park Hotels & Resorts Inc.",
+   "cik": "0001617406",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1617406/000161740626000006/pk-20251231.htm",
+   "sha256": "a77d183d3820f034946588b33127034c61182f1e2011da0e5b1bcd56c1bfc192",
+   "retrieved_at": "2026-11-14T18:30:24+00:00",
+   "sentence": "Competition is often specific to the individual markets in which our hotels are located and includes competition from existing and new hotels operated under brands primarily in the upper upscale chain scale segments."
+  },
+  {
+   "ticker": "PK",
+   "issuer": "Park Hotels & Resorts Inc.",
+   "cik": "0001617406",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1617406/000161740626000006/pk-20251231.htm",
+   "sha256": "a77d183d3820f034946588b33127034c61182f1e2011da0e5b1bcd56c1bfc192",
+   "retrieved_at": "2026-11-14T18:30:24+00:00",
+   "sentence": "Since our acquisition of Chesapeake Lodging Trust in 2019, we have not acquired any new hotels, and we can provide no assurances that we will be successful in identifying attractive hotels in the future or that, once identified, we will be successful in consummating future acquisitions."
+  },
+  {
+   "ticker": "PK",
+   "issuer": "Park Hotels & Resorts Inc.",
+   "cik": "0001617406",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1617406/000161740626000006/pk-20251231.htm",
+   "sha256": "a77d183d3820f034946588b33127034c61182f1e2011da0e5b1bcd56c1bfc192",
+   "retrieved_at": "2026-11-14T18:30:24+00:00",
+   "sentence": "New hotels may be constructed, and these additions create new competitors, in some cases without corresponding increases in demand for hotel rooms."
+  },
+  {
+   "ticker": "PK",
+   "issuer": "Park Hotels & Resorts Inc.",
+   "cik": "0001617406",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1617406/000161740626000006/pk-20251231.htm",
+   "sha256": "a77d183d3820f034946588b33127034c61182f1e2011da0e5b1bcd56c1bfc192",
+   "retrieved_at": "2026-11-14T18:30:24+00:00",
+   "sentence": "Changes in depreciation expense are due to renovations of existing hotels, acquisition or development of new hotels, the disposition of existing hotels through sale or closure or changes in estimates of the useful lives of our assets."
+  },
+  {
+   "ticker": "PEB",
+   "issuer": "Pebblebrook Hotel Trust",
+   "cik": "0001474098",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1474098/000147409826000015/peb-20251231.htm",
+   "sha256": "59ab33c63e9ca4421eca88ca9d88cfb8d87b5a907cda183296dec8b8cabc6a5d",
+   "retrieved_at": "2026-11-14T18:30:27+00:00",
+   "sentence": "We believe that hotel supply growth will be favorable, declining significantly from the historical growth rate prior to the pandemic with minimal new hotel openings in a number of our markets for many years."
+  },
+  {
+   "ticker": "PEB",
+   "issuer": "Pebblebrook Hotel Trust",
+   "cik": "0001474098",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1474098/000147409826000015/peb-20251231.htm",
+   "sha256": "59ab33c63e9ca4421eca88ca9d88cfb8d87b5a907cda183296dec8b8cabc6a5d",
+   "retrieved_at": "2026-11-14T18:30:27+00:00",
+   "sentence": "We may engage in full or partial redevelopment, renovation and repositioning of certain properties, as we seek to maximize the financial performance of our hotels."
+  },
+  {
+   "ticker": "PEB",
+   "issuer": "Pebblebrook Hotel Trust",
+   "cik": "0001474098",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1474098/000147409826000015/peb-20251231.htm",
+   "sha256": "59ab33c63e9ca4421eca88ca9d88cfb8d87b5a907cda183296dec8b8cabc6a5d",
+   "retrieved_at": "2026-11-14T18:30:27+00:00",
+   "sentence": "We also may acquire hotel properties that we believe would benefit from significant redevelopment or expansion, including, for example, adding guest rooms, meeting facilities or other amenities."
+  },
+  {
+   "ticker": "PEB",
+   "issuer": "Pebblebrook Hotel Trust",
+   "cik": "0001474098",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1474098/000147409826000015/peb-20251231.htm",
+   "sha256": "59ab33c63e9ca4421eca88ca9d88cfb8d87b5a907cda183296dec8b8cabc6a5d",
+   "retrieved_at": "2026-11-14T18:30:27+00:00",
+   "sentence": "• over building of new hotels in our markets, which could adversely affect occupancy and revenues at our hotel properties;"
+  },
+  {
+   "ticker": "PEB",
+   "issuer": "Pebblebrook Hotel Trust",
+   "cik": "0001474098",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1474098/000147409826000015/peb-20251231.htm",
+   "sha256": "59ab33c63e9ca4421eca88ca9d88cfb8d87b5a907cda183296dec8b8cabc6a5d",
+   "retrieved_at": "2026-11-14T18:30:27+00:00",
+   "sentence": "In addition to general economic conditions, new hotel room supply is an important factor that can affect lodging industry fundamentals, and over-building has the potential to exacerbate the negative impact of poor economic conditions."
+  },
+  {
+   "ticker": "PEB",
+   "issuer": "Pebblebrook Hotel Trust",
+   "cik": "0001474098",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1474098/000147409826000015/peb-20251231.htm",
+   "sha256": "59ab33c63e9ca4421eca88ca9d88cfb8d87b5a907cda183296dec8b8cabc6a5d",
+   "retrieved_at": "2026-11-14T18:30:27+00:00",
+   "sentence": "Hotel and resort development and redevelopment is subject to timing, budgeting and other risks that may adversely affect our financial condition, results of operations, the market price of our common shares and our ability to make distributions to our shareholders."
+  },
+  {
+   "ticker": "PEB",
+   "issuer": "Pebblebrook Hotel Trust",
+   "cik": "0001474098",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1474098/000147409826000015/peb-20251231.htm",
+   "sha256": "59ab33c63e9ca4421eca88ca9d88cfb8d87b5a907cda183296dec8b8cabc6a5d",
+   "retrieved_at": "2026-11-14T18:30:27+00:00",
+   "sentence": "We may engage in hotel development and redevelopment if suitable opportunities arise."
+  },
+  {
+   "ticker": "PEB",
+   "issuer": "Pebblebrook Hotel Trust",
+   "cik": "0001474098",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1474098/000147409826000015/peb-20251231.htm",
+   "sha256": "59ab33c63e9ca4421eca88ca9d88cfb8d87b5a907cda183296dec8b8cabc6a5d",
+   "retrieved_at": "2026-11-14T18:30:27+00:00",
+   "sentence": "Hotel development and redevelopment involves a number of risks, including risks associated with:"
+  },
+  {
+   "ticker": "PEB",
+   "issuer": "Pebblebrook Hotel Trust",
+   "cik": "0001474098",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1474098/000147409826000015/peb-20251231.htm",
+   "sha256": "59ab33c63e9ca4421eca88ca9d88cfb8d87b5a907cda183296dec8b8cabc6a5d",
+   "retrieved_at": "2026-11-14T18:30:27+00:00",
+   "sentence": "The above table of hotel operating statistics includes information from all hotels owned as of December 31, 2025, except for LaPlaya Beach Resort & Club which was excluded for the fourth quarter due to its closure in 2024 following Hurricane Milton and Newport Harbor Island Resort which was excluded for the first and second quarters due to its redevelopment."
+  },
+  {
+   "ticker": "PEB",
+   "issuer": "Pebblebrook Hotel Trust",
+   "cik": "0001474098",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1474098/000147409826000015/peb-20251231.htm",
+   "sha256": "59ab33c63e9ca4421eca88ca9d88cfb8d87b5a907cda183296dec8b8cabc6a5d",
+   "retrieved_at": "2026-11-14T18:30:27+00:00",
+   "sentence": "LaPlaya Beach Resort & Club, where the Beach House was closed in 2024 due to hurricane damage and reopened in 2025; recovery in demand at our San Francisco properties; and higher revenues at Estancia La Jolla Hotel & Spa and The Westin Copley Place, Boston."
+  },
+  {
+   "ticker": "PEB",
+   "issuer": "Pebblebrook Hotel Trust",
+   "cik": "0001474098",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1474098/000147409826000015/peb-20251231.htm",
+   "sha256": "59ab33c63e9ca4421eca88ca9d88cfb8d87b5a907cda183296dec8b8cabc6a5d",
+   "retrieved_at": "2026-11-14T18:30:27+00:00",
+   "sentence": "As a result of this requirement, we cannot rely on retained earnings to fund long-term liquidity requirements such as hotel property acquisitions, redevelopments and repayments of long-term debt."
+  },
+  {
+   "ticker": "SHO",
+   "issuer": "Sunstone Hotel Investors, Inc.",
+   "cik": "0001295810",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1295810/000110465926021440/sho-20251231x10k.htm",
+   "sha256": "28a3407a113a1ce420e3abefb5a111d3fda997f358fdba9ea4245b11991a0144",
+   "retrieved_at": "2026-11-14T18:30:30+00:00",
+   "sentence": "Competition is often specific to the individual markets in which our hotels are located and includes competition from existing and new hotels operated under brands in the luxury, upper upscale, and upscale segments and competition from timeshare, vacation rentals, or sharing services."
+  },
+  {
+   "ticker": "SHO",
+   "issuer": "Sunstone Hotel Investors, Inc.",
+   "cik": "0001295810",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1295810/000110465926021440/sho-20251231x10k.htm",
+   "sha256": "28a3407a113a1ce420e3abefb5a111d3fda997f358fdba9ea4245b11991a0144",
+   "retrieved_at": "2026-11-14T18:30:30+00:00",
+   "sentence": "● a significant portion of our hotels are geographically concentrated and, accordingly, we could be disproportionately harmed by economic conditions, competition, new hotel supply, real and personal property tax rates, civil unrest, or natural disasters in these areas of the country;"
+  },
+  {
+   "ticker": "SHO",
+   "issuer": "Sunstone Hotel Investors, Inc.",
+   "cik": "0001295810",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1295810/000110465926021440/sho-20251231x10k.htm",
+   "sha256": "28a3407a113a1ce420e3abefb5a111d3fda997f358fdba9ea4245b11991a0144",
+   "retrieved_at": "2026-11-14T18:30:30+00:00",
+   "sentence": "New hotels may be constructed, creating additional competition, in some cases without corresponding increases in demand for hotel rooms."
+  },
+  {
+   "ticker": "SHO",
+   "issuer": "Sunstone Hotel Investors, Inc.",
+   "cik": "0001295810",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1295810/000110465926021440/sho-20251231x10k.htm",
+   "sha256": "28a3407a113a1ce420e3abefb5a111d3fda997f358fdba9ea4245b11991a0144",
+   "retrieved_at": "2026-11-14T18:30:30+00:00",
+   "sentence": "We believe that both new hotel construction and new hotel openings were delayed or even cancelled over the past several years due to construction supply constraints, the cost and availability of financing, economic uncertainty, and inflationary pressures on the cost of building materials which made new hotel development less financially feasible."
+  },
+  {
+   "ticker": "SHO",
+   "issuer": "Sunstone Hotel Investors, Inc.",
+   "cik": "0001295810",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1295810/000110465926021440/sho-20251231x10k.htm",
+   "sha256": "28a3407a113a1ce420e3abefb5a111d3fda997f358fdba9ea4245b11991a0144",
+   "retrieved_at": "2026-11-14T18:30:30+00:00",
+   "sentence": "We believe that many of these same factors combined with the recent imposition of tariffs, will continue to discourage new hotel supply in many markets although some markets may experience new hotel openings at or greater than historical levels."
+  },
+  {
+   "ticker": "SHO",
+   "issuer": "Sunstone Hotel Investors, Inc.",
+   "cik": "0001295810",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1295810/000110465926021440/sho-20251231x10k.htm",
+   "sha256": "28a3407a113a1ce420e3abefb5a111d3fda997f358fdba9ea4245b11991a0144",
+   "retrieved_at": "2026-11-14T18:30:30+00:00",
+   "sentence": "A significant portion of our hotels are geographically concentrated and, accordingly, we could be disproportionately harmed by economic conditions, competition, new hotel supply, real and personal property tax rates, civil unrest, or natural disasters in these areas of the country."
+  },
+  {
+   "ticker": "SHO",
+   "issuer": "Sunstone Hotel Investors, Inc.",
+   "cik": "0001295810",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1295810/000110465926021440/sho-20251231x10k.htm",
+   "sha256": "28a3407a113a1ce420e3abefb5a111d3fda997f358fdba9ea4245b11991a0144",
+   "retrieved_at": "2026-11-14T18:30:30+00:00",
+   "sentence": "The concentration of our hotels in California, Florida, Hawaii, and Washington, DC exposes our business to economic conditions, competition, new hotel supply, and real and personal property tax rates unique to these locales."
+  },
+  {
+   "ticker": "SHO",
+   "issuer": "Sunstone Hotel Investors, Inc.",
+   "cik": "0001295810",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1295810/000110465926021440/sho-20251231x10k.htm",
+   "sha256": "28a3407a113a1ce420e3abefb5a111d3fda997f358fdba9ea4245b11991a0144",
+   "retrieved_at": "2026-11-14T18:30:30+00:00",
+   "sentence": "The primary factors affecting our operating results include overall demand for hotel rooms, the pace of new hotel development, or supply, and the relative performance of our operators in increasing revenue and controlling hotel operating expenses."
+  },
+  {
+   "ticker": "SHO",
+   "issuer": "Sunstone Hotel Investors, Inc.",
+   "cik": "0001295810",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1295810/000110465926021440/sho-20251231x10k.htm",
+   "sha256": "28a3407a113a1ce420e3abefb5a111d3fda997f358fdba9ea4245b11991a0144",
+   "retrieved_at": "2026-11-14T18:30:30+00:00",
+   "sentence": "The development of new hotels is largely driven by construction costs, the cost and availability of financing, and the expected performance of existing hotels."
+  },
+  {
+   "ticker": "SHO",
+   "issuer": "Sunstone Hotel Investors, Inc.",
+   "cik": "0001295810",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1295810/000110465926021440/sho-20251231x10k.htm",
+   "sha256": "28a3407a113a1ce420e3abefb5a111d3fda997f358fdba9ea4245b11991a0144",
+   "retrieved_at": "2026-11-14T18:30:30+00:00",
+   "sentence": "We believe that both new hotel construction and new hotel openings were delayed or even cancelled over the past several years due to construction supply constraints, the cost and availability of financing, and inflationary pressures on the cost of building materials, which made new hotel development less financially feasible."
+  },
+  {
+   "ticker": "SHO",
+   "issuer": "Sunstone Hotel Investors, Inc.",
+   "cik": "0001295810",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1295810/000110465926021440/sho-20251231x10k.htm",
+   "sha256": "28a3407a113a1ce420e3abefb5a111d3fda997f358fdba9ea4245b11991a0144",
+   "retrieved_at": "2026-11-14T18:30:30+00:00",
+   "sentence": "We believe that many of these same factors combined with the recent imposition of tariffs will continue to discourage new hotel supply in many markets, although some markets may experience new hotel openings at or greater than historical levels."
+  },
+  {
+   "ticker": "SHO",
+   "issuer": "Sunstone Hotel Investors, Inc.",
+   "cik": "0001295810",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1295810/000110465926021440/sho-20251231x10k.htm",
+   "sha256": "28a3407a113a1ce420e3abefb5a111d3fda997f358fdba9ea4245b11991a0144",
+   "retrieved_at": "2026-11-14T18:30:30+00:00",
+   "sentence": "Separate from the development of new hotels, an increase in the supply of vacation rental or sharing services such as Airbnb may negatively affect the ability of existing hotels to generate growth in RevPAR and profits."
+  },
+  {
+   "ticker": "SHO",
+   "issuer": "Sunstone Hotel Investors, Inc.",
+   "cik": "0001295810",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1295810/000110465926021440/sho-20251231x10k.htm",
+   "sha256": "28a3407a113a1ce420e3abefb5a111d3fda997f358fdba9ea4245b11991a0144",
+   "retrieved_at": "2026-11-14T18:30:30+00:00",
+   "sentence": "Capital allocation decisions to acquire, sell, enhance, redevelop, or perform renewal and replacement expenditures are determined on a hotel-by-hotel basis."
+  },
+  {
+   "ticker": "DRH",
+   "issuer": "DiamondRock Hospitality Co",
+   "cik": "0001298946",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1298946/000129894626000013/drh-20251231.htm",
+   "sha256": "accfa5b0b6f9cc30b98bd254e6aaf89d47e0ad51705ccf9762713470a0b00ee2",
+   "retrieved_at": "2026-11-14T18:30:33+00:00",
+   "sentence": "New hotels may be constructed, and these additions create new competitors, in some cases without corresponding increases in demand for hotel rooms."
+  },
+  {
+   "ticker": "DRH",
+   "issuer": "DiamondRock Hospitality Co",
+   "cik": "0001298946",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1298946/000129894626000013/drh-20251231.htm",
+   "sha256": "accfa5b0b6f9cc30b98bd254e6aaf89d47e0ad51705ccf9762713470a0b00ee2",
+   "retrieved_at": "2026-11-14T18:30:33+00:00",
+   "sentence": "A material increase in the supply of new hotel rooms to a market can quickly destabilize that market and existing hotels can experience rapidly decreasing RevPAR and profitability."
+  },
+  {
+   "ticker": "DRH",
+   "issuer": "DiamondRock Hospitality Co",
+   "cik": "0001298946",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1298946/000129894626000013/drh-20251231.htm",
+   "sha256": "accfa5b0b6f9cc30b98bd254e6aaf89d47e0ad51705ccf9762713470a0b00ee2",
+   "retrieved_at": "2026-11-14T18:30:33+00:00",
+   "sentence": "(4) Hotel manager is entitled to one five-year extension option upon achievement of a certain level of net operating income, which is significantly above current net operating income at the hotel."
+  },
+  {
+   "ticker": "DRH",
+   "issuer": "DiamondRock Hospitality Co",
+   "cik": "0001298946",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1298946/000129894626000013/drh-20251231.htm",
+   "sha256": "accfa5b0b6f9cc30b98bd254e6aaf89d47e0ad51705ccf9762713470a0b00ee2",
+   "retrieved_at": "2026-11-14T18:30:33+00:00",
+   "sentence": "(5) Hotel manager is entitled to one five-year extension option if the manager earns an incentive management fee in both 2027 and 2028."
+  },
+  {
+   "ticker": "DRH",
+   "issuer": "DiamondRock Hospitality Co",
+   "cik": "0001298946",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1298946/000129894626000013/drh-20251231.htm",
+   "sha256": "accfa5b0b6f9cc30b98bd254e6aaf89d47e0ad51705ccf9762713470a0b00ee2",
+   "retrieved_at": "2026-11-14T18:30:33+00:00",
+   "sentence": "(6) Hotel manager is entitled to one ten-year extension option if the manager achieves a certain level of operating profit for the three-year period ending December 31, 2029."
+  },
+  {
+   "ticker": "DRH",
+   "issuer": "DiamondRock Hospitality Co",
+   "cik": "0001298946",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1298946/000129894626000013/drh-20251231.htm",
+   "sha256": "accfa5b0b6f9cc30b98bd254e6aaf89d47e0ad51705ccf9762713470a0b00ee2",
+   "retrieved_at": "2026-11-14T18:30:33+00:00",
+   "sentence": "Hotel manager is entitled to a second ten-year extension option if the manager achieves a certain level of operating profit for the three-year period ending December 31, 2039."
+  },
+  {
+   "ticker": "DRH",
+   "issuer": "DiamondRock Hospitality Co",
+   "cik": "0001298946",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1298946/000129894626000013/drh-20251231.htm",
+   "sha256": "accfa5b0b6f9cc30b98bd254e6aaf89d47e0ad51705ccf9762713470a0b00ee2",
+   "retrieved_at": "2026-11-14T18:30:33+00:00",
+   "sentence": "Our ADR, occupancy percentage, RevPAR, and Total RevPAR performance may be impacted by macroeconomic factors such as U.S. economic conditions generally, inflation, interest rates, tariffs, regional and local employment growth, personal income and corporate earnings, office vacancy rates and business relocation decisions, airport and other business and leisure travel, increased use of lodging alternatives, new hotel construction and the pricing strategies of our competitors."
+  },
+  {
+   "ticker": "DRH",
+   "issuer": "DiamondRock Hospitality Co",
+   "cik": "0001298946",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1298946/000129894626000013/drh-20251231.htm",
+   "sha256": "accfa5b0b6f9cc30b98bd254e6aaf89d47e0ad51705ccf9762713470a0b00ee2",
+   "retrieved_at": "2026-11-14T18:30:33+00:00",
+   "sentence": "• Courtyard New York Manhattan/Midtown East: We commenced a renovation of the hotel's guestrooms, which is expected to be completed by the end of the first quarter of 2026."
+  },
+  {
+   "ticker": "DRH",
+   "issuer": "DiamondRock Hospitality Co",
+   "cik": "0001298946",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1298946/000129894626000013/drh-20251231.htm",
+   "sha256": "accfa5b0b6f9cc30b98bd254e6aaf89d47e0ad51705ccf9762713470a0b00ee2",
+   "retrieved_at": "2026-11-14T18:30:33+00:00",
+   "sentence": "• Henderson Park Inn: We commenced a renovation of the hotel's guestrooms and bathrooms, which is expected to be completed during the first quarter of 2026."
+  },
+  {
+   "ticker": "DRH",
+   "issuer": "DiamondRock Hospitality Co",
+   "cik": "0001298946",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1298946/000129894626000013/drh-20251231.htm",
+   "sha256": "accfa5b0b6f9cc30b98bd254e6aaf89d47e0ad51705ccf9762713470a0b00ee2",
+   "retrieved_at": "2026-11-14T18:30:33+00:00",
+   "sentence": "• Hotel Manager Transition and Hotel Pre-Opening Costs : We exclude the transition costs associated with a change in hotel manager and the pre-opening costs associated with the redevelopment or rebranding of a hotel because we believe these items do not reflect the ongoing performance of the Company or our hotels."
+  },
+  {
+   "ticker": "XHR",
+   "issuer": "Xenia Hotels & Resorts, Inc.",
+   "cik": "0001616000",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1616000/000162828026011060/xhr-20251231.htm",
+   "sha256": "fa07c5e52ac9e1c39a5b7b08b606190910362a9820ec5b31de1ed70b65618898",
+   "retrieved_at": "2026-11-14T18:30:35+00:00",
+   "sentence": "• fluctuations in the supply of hotels due to hotel construction and/or renovation and expansion of existing hotels and demand for hotel rooms;"
+  },
+  {
+   "ticker": "XHR",
+   "issuer": "Xenia Hotels & Resorts, Inc.",
+   "cik": "0001616000",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1616000/000162828026011060/xhr-20251231.htm",
+   "sha256": "fa07c5e52ac9e1c39a5b7b08b606190910362a9820ec5b31de1ed70b65618898",
+   "retrieved_at": "2026-11-14T18:30:35+00:00",
+   "sentence": "• disruption resulting from the impact of hotel renovations, repositionings, redevelopments and re-branding activities;"
+  },
+  {
+   "ticker": "XHR",
+   "issuer": "Xenia Hotels & Resorts, Inc.",
+   "cik": "0001616000",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1616000/000162828026011060/xhr-20251231.htm",
+   "sha256": "fa07c5e52ac9e1c39a5b7b08b606190910362a9820ec5b31de1ed70b65618898",
+   "retrieved_at": "2026-11-14T18:30:35+00:00",
+   "sentence": "Competition is often specific to the individual markets in which our hotels are located and includes competition from existing and new hotels and alternative accommodation options."
+  },
+  {
+   "ticker": "XHR",
+   "issuer": "Xenia Hotels & Resorts, Inc.",
+   "cik": "0001616000",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1616000/000162828026011060/xhr-20251231.htm",
+   "sha256": "fa07c5e52ac9e1c39a5b7b08b606190910362a9820ec5b31de1ed70b65618898",
+   "retrieved_at": "2026-11-14T18:30:35+00:00",
+   "sentence": "New hotels may be constructed and these additions to supply create new competitors, in some cases without corresponding increases in demand for hotel rooms."
+  },
+  {
+   "ticker": "XHR",
+   "issuer": "Xenia Hotels & Resorts, Inc.",
+   "cik": "0001616000",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1616000/000162828026011060/xhr-20251231.htm",
+   "sha256": "fa07c5e52ac9e1c39a5b7b08b606190910362a9820ec5b31de1ed70b65618898",
+   "retrieved_at": "2026-11-14T18:30:35+00:00",
+   "sentence": "Some of our competitors also have greater financial and marketing resources than we do, which could allow them to reduce their rates, offer greater convenience, services or amenities, build new hotels in direct competition with our existing hotels, improve their properties, expand and improve their marketing efforts, all of which could adversely affect the ability of our hotels to attract prospective guests and materially and adversely affect our revenues and profitability as well as limit or slow our future growth."
+  },
+  {
+   "ticker": "XHR",
+   "issuer": "Xenia Hotels & Resorts, Inc.",
+   "cik": "0001616000",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1616000/000162828026011060/xhr-20251231.htm",
+   "sha256": "fa07c5e52ac9e1c39a5b7b08b606190910362a9820ec5b31de1ed70b65618898",
+   "retrieved_at": "2026-11-14T18:30:35+00:00",
+   "sentence": "In addition to general economic conditions, new hotel room supply is an important factor that can affect the lodging industry's performance and overbuilding has the potential to further exacerbate the negative impact of an economic downturn."
+  },
+  {
+   "ticker": "XHR",
+   "issuer": "Xenia Hotels & Resorts, Inc.",
+   "cik": "0001616000",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1616000/000162828026011060/xhr-20251231.htm",
+   "sha256": "fa07c5e52ac9e1c39a5b7b08b606190910362a9820ec5b31de1ed70b65618898",
+   "retrieved_at": "2026-11-14T18:30:35+00:00",
+   "sentence": "Furthermore, if the state or federal government seizes a hotel subject to a ground lease under its eminent domain power, we may only be entitled to a portion of any compensation awarded for the seizure."
+  },
+  {
+   "ticker": "XHR",
+   "issuer": "Xenia Hotels & Resorts, Inc.",
+   "cik": "0001616000",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1616000/000162828026011060/xhr-20251231.htm",
+   "sha256": "fa07c5e52ac9e1c39a5b7b08b606190910362a9820ec5b31de1ed70b65618898",
+   "retrieved_at": "2026-11-14T18:30:35+00:00",
+   "sentence": "We may not be able to fund capital improvements for our existing hotels or acquisitions of new hotels solely from cash provided from our operating activities because we must distribute annually at least 90% of our REIT taxable income to maintain our qualification as a REIT"
+  },
+  {
+   "ticker": "XHR",
+   "issuer": "Xenia Hotels & Resorts, Inc.",
+   "cik": "0001616000",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1616000/000162828026011060/xhr-20251231.htm",
+   "sha256": "fa07c5e52ac9e1c39a5b7b08b606190910362a9820ec5b31de1ed70b65618898",
+   "retrieved_at": "2026-11-14T18:30:35+00:00",
+   "sentence": "As a result, our ability to fund capital expenditures or hotel redevelopment through retained earnings may be restricted."
+  },
+  {
+   "ticker": "XHR",
+   "issuer": "Xenia Hotels & Resorts, Inc.",
+   "cik": "0001616000",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1616000/000162828026011060/xhr-20251231.htm",
+   "sha256": "fa07c5e52ac9e1c39a5b7b08b606190910362a9820ec5b31de1ed70b65618898",
+   "retrieved_at": "2026-11-14T18:30:35+00:00",
+   "sentence": "Our acquisition, redevelopment, repositioning, renovation and re-branding activities are subject to various risks, any of which could, among other things, result in disruptions to our hotel operations, strain management resources and materially and adversely affect our results of operations and profitability as well as limit or slow our future growth."
+  },
+  {
+   "ticker": "XHR",
+   "issuer": "Xenia Hotels & Resorts, Inc.",
+   "cik": "0001616000",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1616000/000162828026011060/xhr-20251231.htm",
+   "sha256": "fa07c5e52ac9e1c39a5b7b08b606190910362a9820ec5b31de1ed70b65618898",
+   "retrieved_at": "2026-11-14T18:30:35+00:00",
+   "sentence": "We intend to acquire, redevelop, reposition, renovate and re-brand hotels, subject to the availability of attractive hotels or projects and our ability to undertake such activities on satisfactory terms."
+  },
+  {
+   "ticker": "XHR",
+   "issuer": "Xenia Hotels & Resorts, Inc.",
+   "cik": "0001616000",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1616000/000162828026011060/xhr-20251231.htm",
+   "sha256": "fa07c5e52ac9e1c39a5b7b08b606190910362a9820ec5b31de1ed70b65618898",
+   "retrieved_at": "2026-11-14T18:30:35+00:00",
+   "sentence": "However, newly acquired, redeveloped, renovated, repositioned or re-branded hotels may fail to perform as expected and the costs necessary to bring such hotels up to brand standards may exceed our expectations, which may result in the hotels’ failure to achieve projected returns."
+  },
+  {
+   "ticker": "XHR",
+   "issuer": "Xenia Hotels & Resorts, Inc.",
+   "cik": "0001616000",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1616000/000162828026011060/xhr-20251231.htm",
+   "sha256": "fa07c5e52ac9e1c39a5b7b08b606190910362a9820ec5b31de1ed70b65618898",
+   "retrieved_at": "2026-11-14T18:30:35+00:00",
+   "sentence": "• acquired, redeveloped, repositioned, renovated or re-branded hotels may not initially be accretive to our results, and we and the hotel management companies may not successfully manage newly acquired, renovated, redeveloped, repositioned or re-branded hotels to meet our expectations;"
+  },
+  {
+   "ticker": "XHR",
+   "issuer": "Xenia Hotels & Resorts, Inc.",
+   "cik": "0001616000",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1616000/000162828026011060/xhr-20251231.htm",
+   "sha256": "fa07c5e52ac9e1c39a5b7b08b606190910362a9820ec5b31de1ed70b65618898",
+   "retrieved_at": "2026-11-14T18:30:35+00:00",
+   "sentence": "Overall industry lodging demand decreased 0.5% and new hotel supply increased by 0.7% during the year ended December 31, 2025 compared to 2024."
+  },
+  {
+   "ticker": "XHR",
+   "issuer": "Xenia Hotels & Resorts, Inc.",
+   "cik": "0001616000",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1616000/000162828026011060/xhr-20251231.htm",
+   "sha256": "fa07c5e52ac9e1c39a5b7b08b606190910362a9820ec5b31de1ed70b65618898",
+   "retrieved_at": "2026-11-14T18:30:35+00:00",
+   "sentence": "• Supply - New hotel room supply is an important factor that can affect the lodging industry’s performance."
+  },
+  {
+   "ticker": "XHR",
+   "issuer": "Xenia Hotels & Resorts, Inc.",
+   "cik": "0001616000",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1616000/000162828026011060/xhr-20251231.htm",
+   "sha256": "fa07c5e52ac9e1c39a5b7b08b606190910362a9820ec5b31de1ed70b65618898",
+   "retrieved_at": "2026-11-14T18:30:35+00:00",
+   "sentence": "Competition is often specific to the individual markets in which our hotels are located and includes competition from existing and new hotels."
+  },
+  {
+   "ticker": "APLE",
+   "issuer": "Apple Hospitality REIT, Inc.",
+   "cik": "0001418121",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-23",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1418121/000119312526064008/aple-20251231.htm",
+   "sha256": "ca8fcb2824c4b1154f76052265d0937b06330564aa472d1d2d47033e7865553d",
+   "retrieved_at": "2026-11-14T18:30:38+00:00",
+   "sentence": "Renovations and capital improvements at the Company’s existing hotels or new hotel developments may reduce the Company’s profitability."
+  },
+  {
+   "ticker": "APLE",
+   "issuer": "Apple Hospitality REIT, Inc.",
+   "cik": "0001418121",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-23",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1418121/000119312526064008/aple-20251231.htm",
+   "sha256": "ca8fcb2824c4b1154f76052265d0937b06330564aa472d1d2d47033e7865553d",
+   "retrieved_at": "2026-11-14T18:30:38+00:00",
+   "sentence": "The Company may also need to make significant capital improvements to hotels that it acquires, or may be involved in the development of new hotels."
+  },
+  {
+   "ticker": "APLE",
+   "issuer": "Apple Hospitality REIT, Inc.",
+   "cik": "0001418121",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-23",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1418121/000119312526064008/aple-20251231.htm",
+   "sha256": "ca8fcb2824c4b1154f76052265d0937b06330564aa472d1d2d47033e7865553d",
+   "retrieved_at": "2026-11-14T18:30:38+00:00",
+   "sentence": "The costs of renovations and capital improvements the Company needs or chooses to make at the Company’s existing hotels, or the costs related to the development of new hotels, could reduce the funds available for other purposes and may reduce the Company’s profitability."
+  },
+  {
+   "ticker": "RLJ",
+   "issuer": "RLJ Lodging Trust",
+   "cik": "0001511337",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1511337/000151133726000007/rlj-20251231.htm",
+   "sha256": "1ecdea7218c76fb7ce5096e5c64534be3089809cea5b8bacfeef27e5a6219bdb",
+   "retrieved_at": "2026-11-14T18:30:41+00:00",
+   "sentence": "Competition is often specific to the individual markets in which our hotel properties are located and includes competition from existing and new hotels in the focused-service and compact full-service hotel segments and non-traditional accommodations for travelers, such as online services that market homes, apartments and condominiums as an alternative to hotel rooms."
+  },
+  {
+   "ticker": "RLJ",
+   "issuer": "RLJ Lodging Trust",
+   "cik": "0001511337",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1511337/000151133726000007/rlj-20251231.htm",
+   "sha256": "1ecdea7218c76fb7ce5096e5c64534be3089809cea5b8bacfeef27e5a6219bdb",
+   "retrieved_at": "2026-11-14T18:30:41+00:00",
+   "sentence": "Additionally, our hotels may be impacted by periodic and prolonged closures, renovations and expansion of convention centers that are significant drivers of demand."
+  },
+  {
+   "ticker": "RLJ",
+   "issuer": "RLJ Lodging Trust",
+   "cik": "0001511337",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1511337/000151133726000007/rlj-20251231.htm",
+   "sha256": "1ecdea7218c76fb7ce5096e5c64534be3089809cea5b8bacfeef27e5a6219bdb",
+   "retrieved_at": "2026-11-14T18:30:41+00:00",
+   "sentence": "Our hotel properties have an ongoing need for renovations and other capital improvements, including the replacement of furniture, fixtures and equipment (\"FF&E\"), franchisor-required improvements, and renovation or redevelopment of acquisitions."
+  },
+  {
+   "ticker": "RLJ",
+   "issuer": "RLJ Lodging Trust",
+   "cik": "0001511337",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1511337/000151133726000007/rlj-20251231.htm",
+   "sha256": "1ecdea7218c76fb7ce5096e5c64534be3089809cea5b8bacfeef27e5a6219bdb",
+   "retrieved_at": "2026-11-14T18:30:41+00:00",
+   "sentence": "Such joint venture investments involve risks not otherwise present in a wholly-owned hotel property or a redevelopment project, including the following:"
+  },
+  {
+   "ticker": "RLJ",
+   "issuer": "RLJ Lodging Trust",
+   "cik": "0001511337",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1511337/000151133726000007/rlj-20251231.htm",
+   "sha256": "1ecdea7218c76fb7ce5096e5c64534be3089809cea5b8bacfeef27e5a6219bdb",
+   "retrieved_at": "2026-11-14T18:30:41+00:00",
+   "sentence": "In addition to general economic conditions, new hotel room supply is an important factor that can affect the lodging industry's performance, and over-building has the potential to further exacerbate the negative impact of an economic recession."
+  },
+  {
+   "ticker": "RLJ",
+   "issuer": "RLJ Lodging Trust",
+   "cik": "0001511337",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1511337/000151133726000007/rlj-20251231.htm",
+   "sha256": "1ecdea7218c76fb7ce5096e5c64534be3089809cea5b8bacfeef27e5a6219bdb",
+   "retrieved_at": "2026-11-14T18:30:41+00:00",
+   "sentence": "• Supply — The development of new hotels is driven largely by construction costs, the availability of financing, the expected performance of existing hotels and other lodging options."
+  },
+  {
+   "ticker": "RLJ",
+   "issuer": "RLJ Lodging Trust",
+   "cik": "0001511337",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1511337/000151133726000007/rlj-20251231.htm",
+   "sha256": "1ecdea7218c76fb7ce5096e5c64534be3089809cea5b8bacfeef27e5a6219bdb",
+   "retrieved_at": "2026-11-14T18:30:41+00:00",
+   "sentence": "We expect that our ADR, Occupancy and RevPAR performance will be impacted by macroeconomic factors and government policies such as regional and local employment growth, government spending, personal income and corporate earnings, office vacancy rates, business relocation decisions, airport activity, business and leisure travel demand, new hotel construction and the pricing strategies of our competitors, as well as any changes in inbound international travel as a result of visa policies."
+  },
+  {
+   "ticker": "INN",
+   "issuer": "Summit Hotel Properties, Inc.",
+   "cik": "0001497645",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1497645/000149764526000015/inn-20251231.htm",
+   "sha256": "60a1df1e0eab3551feaca03603e515a9bc78e0b5365ed41ef4938d44a8cd35c4",
+   "retrieved_at": "2026-11-14T18:30:44+00:00",
+   "sentence": "Competition is often specific to the individual markets in which our lodging properties are located and includes competition from existing and new hotel properties and alternative accommodations."
+  },
+  {
+   "ticker": "CLDT",
+   "issuer": "Chatham Lodging Trust",
+   "cik": "0001476045",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1476045/000143774926006103/cldt20251231_10k.htm",
+   "sha256": "6efdba70b82d19a86714525a897b014172f9e311eeb5e6459a1bde095ae554a2",
+   "retrieved_at": "2026-11-14T18:30:47+00:00",
+   "sentence": "Competition is often specific to the individual markets in which our hotels are located and includes competition from existing and new hotels and alternative lodging market places."
+  },
+  {
+   "ticker": "CLDT",
+   "issuer": "Chatham Lodging Trust",
+   "cik": "0001476045",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1476045/000143774926006103/cldt20251231_10k.htm",
+   "sha256": "6efdba70b82d19a86714525a897b014172f9e311eeb5e6459a1bde095ae554a2",
+   "retrieved_at": "2026-11-14T18:30:47+00:00",
+   "sentence": "Acquisitions of new hotel properties will require significant additional capital and existing hotels (including those owned through joint ventures) require periodic capital improvement initiatives to remain competitive."
+  },
+  {
+   "ticker": "CLDT",
+   "issuer": "Chatham Lodging Trust",
+   "cik": "0001476045",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1476045/000143774926006103/cldt20251231_10k.htm",
+   "sha256": "6efdba70b82d19a86714525a897b014172f9e311eeb5e6459a1bde095ae554a2",
+   "retrieved_at": "2026-11-14T18:30:47+00:00",
+   "sentence": "Hotel revenue can decrease for a number of reasons, including increased competition from new hotels and decreased demand for hotel rooms."
+  },
+  {
+   "ticker": "CLDT",
+   "issuer": "Chatham Lodging Trust",
+   "cik": "0001476045",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1476045/000143774926006103/cldt20251231_10k.htm",
+   "sha256": "6efdba70b82d19a86714525a897b014172f9e311eeb5e6459a1bde095ae554a2",
+   "retrieved_at": "2026-11-14T18:30:47+00:00",
+   "sentence": "New hotels create new competitors, in some cases without corresponding increases in demand for hotel rooms."
+  },
+  {
+   "ticker": "CLDT",
+   "issuer": "Chatham Lodging Trust",
+   "cik": "0001476045",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1476045/000143774926006103/cldt20251231_10k.htm",
+   "sha256": "6efdba70b82d19a86714525a897b014172f9e311eeb5e6459a1bde095ae554a2",
+   "retrieved_at": "2026-11-14T18:30:47+00:00",
+   "sentence": "In addition to general economic conditions, new hotel room supply is an important factor that can affect the lodging industry's performance and overbuilding has the potential to further exacerbate the negative impact of an economic recession."
+  },
+  {
+   "ticker": "BHR",
+   "issuer": "Braemar Hotels & Resorts Inc.",
+   "cik": "0001574085",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1574085/000157408526000038/bhr-20251231.htm",
+   "sha256": "e48889b900e642e82abfcd11f99ddf6c9253c117d6fdf38264bba026a473afb0",
+   "retrieved_at": "2026-11-14T18:30:50+00:00",
+   "sentence": "Finally, Ashford LLC participates in brand advisory committee and industry advocacy association meetings to provide feedback and input on new hotel brand and industry initiatives."
+  },
+  {
+   "ticker": "BHR",
+   "issuer": "Braemar Hotels & Resorts Inc.",
+   "cik": "0001574085",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1574085/000157408526000038/bhr-20251231.htm",
+   "sha256": "e48889b900e642e82abfcd11f99ddf6c9253c117d6fdf38264bba026a473afb0",
+   "retrieved_at": "2026-11-14T18:30:50+00:00",
+   "sentence": "If, however, the master hotel management agreement remains in effect with respect to such damaged hotel, but the damage does result in a reduction of gross revenues at the hotel, the TRS lessee will be entitled to partial, pro rata abatement of the management fees while the hotel is being repaired."
+  },
+  {
+   "ticker": "BHR",
+   "issuer": "Braemar Hotels & Resorts Inc.",
+   "cik": "0001574085",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1574085/000157408526000038/bhr-20251231.htm",
+   "sha256": "e48889b900e642e82abfcd11f99ddf6c9253c117d6fdf38264bba026a473afb0",
+   "retrieved_at": "2026-11-14T18:30:50+00:00",
+   "sentence": "If, however, the lease remains in effect but the damage does result in a reduction of gross revenues at the hotel, the TRS lessee will be entitled to a certain amount of rent abatement while the hotel is being repaired."
+  },
+  {
+   "ticker": "BHR",
+   "issuer": "Braemar Hotels & Resorts Inc.",
+   "cik": "0001574085",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1574085/000157408526000038/bhr-20251231.htm",
+   "sha256": "e48889b900e642e82abfcd11f99ddf6c9253c117d6fdf38264bba026a473afb0",
+   "retrieved_at": "2026-11-14T18:30:50+00:00",
+   "sentence": "Competition is often specific to the individual markets in which our properties are located and includes competition from existing and new hotels."
+  },
+  {
+   "ticker": "BHR",
+   "issuer": "Braemar Hotels & Resorts Inc.",
+   "cik": "0001574085",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1574085/000157408526000038/bhr-20251231.htm",
+   "sha256": "e48889b900e642e82abfcd11f99ddf6c9253c117d6fdf38264bba026a473afb0",
+   "retrieved_at": "2026-11-14T18:30:50+00:00",
+   "sentence": "Furthermore, if the state or federal government seizes a hotel subject to a ground lease under its eminent domain power, we may only be entitled to a portion of any compensation awarded for the seizure."
+  },
+  {
+   "ticker": "BHR",
+   "issuer": "Braemar Hotels & Resorts Inc.",
+   "cik": "0001574085",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1574085/000157408526000038/bhr-20251231.htm",
+   "sha256": "e48889b900e642e82abfcd11f99ddf6c9253c117d6fdf38264bba026a473afb0",
+   "retrieved_at": "2026-11-14T18:30:50+00:00",
+   "sentence": "In addition to general economic conditions, new hotel room supply is an important factor that can affect the lodging industry’s performance, and overbuilding has the potential to further exacerbate the negative impact of an economic recession."
+  },
+  {
+   "ticker": "BHR",
+   "issuer": "Braemar Hotels & Resorts Inc.",
+   "cik": "0001574085",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1574085/000157408526000038/bhr-20251231.htm",
+   "sha256": "e48889b900e642e82abfcd11f99ddf6c9253c117d6fdf38264bba026a473afb0",
+   "retrieved_at": "2026-11-14T18:30:50+00:00",
+   "sentence": "In addition, newly acquired or renovated hotels may not produce the revenues we anticipate immediately, or at all, and the hotel’s operating cash flow may be insufficient to pay the operating expenses and debt service associated with these new hotels."
+  },
+  {
+   "ticker": "BHR",
+   "issuer": "Braemar Hotels & Resorts Inc.",
+   "cik": "0001574085",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1574085/000157408526000038/bhr-20251231.htm",
+   "sha256": "e48889b900e642e82abfcd11f99ddf6c9253c117d6fdf38264bba026a473afb0",
+   "retrieved_at": "2026-11-14T18:30:50+00:00",
+   "sentence": "For example, the implementation of new occupational health and safety regulations, minimum wage laws, and overtime, working conditions, employment status and citizenship requirements and the Department of Labor’s proposed regulations expanding the scope of non-exempt employees under the Fair Labor Standards Act to increase the entitlement to overtime pay could significantly increase the cost of labor in the workforce, which would increase the operating costs of our hotel properties and may have a material adverse effect on our business or profitability."
+  },
+  {
+   "ticker": "BHR",
+   "issuer": "Braemar Hotels & Resorts Inc.",
+   "cik": "0001574085",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1574085/000157408526000038/bhr-20251231.htm",
+   "sha256": "e48889b900e642e82abfcd11f99ddf6c9253c117d6fdf38264bba026a473afb0",
+   "retrieved_at": "2026-11-14T18:30:50+00:00",
+   "sentence": "The development of new hotels is driven largely by construction costs, the availability of financing and expected performance of existing hotels."
+  },
+  {
+   "ticker": "BHR",
+   "issuer": "Braemar Hotels & Resorts Inc.",
+   "cik": "0001574085",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1574085/000157408526000038/bhr-20251231.htm",
+   "sha256": "e48889b900e642e82abfcd11f99ddf6c9253c117d6fdf38264bba026a473afb0",
+   "retrieved_at": "2026-11-14T18:30:50+00:00",
+   "sentence": "We expect that our ADR, occupancy and RevPAR performance will be impacted by macroeconomic factors such as national and local employment growth, personal income and corporate earnings, GDP, consumer confidence, office vacancy rates and business relocation decisions, airport and other business and leisure travel, new hotel construction, the pricing strategies of competitors and currency fluctuations."
+  },
+  {
+   "ticker": "BHR",
+   "issuer": "Braemar Hotels & Resorts Inc.",
+   "cik": "0001574085",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1574085/000157408526000038/bhr-20251231.htm",
+   "sha256": "e48889b900e642e82abfcd11f99ddf6c9253c117d6fdf38264bba026a473afb0",
+   "retrieved_at": "2026-11-14T18:30:50+00:00",
+   "sentence": "Our long-term liquidity requirements consist primarily of funds necessary to pay for the costs of acquiring additional hotel properties and redevelopments, renovations, expansions and other capital expenditures that need to be made periodically with respect to our hotel properties and scheduled debt payments."
+  },
+  {
+   "ticker": "BHR",
+   "issuer": "Braemar Hotels & Resorts Inc.",
+   "cik": "0001574085",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1574085/000157408526000038/bhr-20251231.htm",
+   "sha256": "e48889b900e642e82abfcd11f99ddf6c9253c117d6fdf38264bba026a473afb0",
+   "retrieved_at": "2026-11-14T18:30:50+00:00",
+   "sentence": "In addition, acquisitions, redevelopments or expansions of hotel properties may require significant capital outlays."
+  },
+  {
+   "ticker": "BHR",
+   "issuer": "Braemar Hotels & Resorts Inc.",
+   "cik": "0001574085",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1574085/000157408526000038/bhr-20251231.htm",
+   "sha256": "e48889b900e642e82abfcd11f99ddf6c9253c117d6fdf38264bba026a473afb0",
+   "retrieved_at": "2026-11-14T18:30:50+00:00",
+   "sentence": "As a result, our ability to fund capital expenditures, acquisitions or hotel redevelopment through retained earnings is very limited."
+  },
+  {
+   "ticker": "BHR",
+   "issuer": "Braemar Hotels & Resorts Inc.",
+   "cik": "0001574085",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1574085/000157408526000038/bhr-20251231.htm",
+   "sha256": "e48889b900e642e82abfcd11f99ddf6c9253c117d6fdf38264bba026a473afb0",
+   "retrieved_at": "2026-11-14T18:30:50+00:00",
+   "sentence": "Capital allocation decisions to acquire, sell, enhance, redevelop, or perform renewal and replacement expenditures are determined on a hotel-by-hotel basis."
+  },
+  {
+   "ticker": "AHT",
+   "issuer": "ASHFORD HOSPITALITY TRUST INC",
+   "cik": "0001232582",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-23",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1232582/000123258226000067/aht-20251231.htm",
+   "sha256": "31ff73944e191c6d1bb06204bde96c3b0a32fba0ae0de57d7eb4bbbf241426b1",
+   "retrieved_at": "2026-11-14T18:30:53+00:00",
+   "sentence": "Competition is often specific to the individual markets in which our properties are located and includes competition from existing and new hotels."
+  },
+  {
+   "ticker": "AHT",
+   "issuer": "ASHFORD HOSPITALITY TRUST INC",
+   "cik": "0001232582",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-23",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1232582/000123258226000067/aht-20251231.htm",
+   "sha256": "31ff73944e191c6d1bb06204bde96c3b0a32fba0ae0de57d7eb4bbbf241426b1",
+   "retrieved_at": "2026-11-14T18:30:53+00:00",
+   "sentence": "New hotels may be constructed and these additions to supply create new competitors, in some cases without corresponding increases in demand for hotel rooms."
+  },
+  {
+   "ticker": "AHT",
+   "issuer": "ASHFORD HOSPITALITY TRUST INC",
+   "cik": "0001232582",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-23",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1232582/000123258226000067/aht-20251231.htm",
+   "sha256": "31ff73944e191c6d1bb06204bde96c3b0a32fba0ae0de57d7eb4bbbf241426b1",
+   "retrieved_at": "2026-11-14T18:30:53+00:00",
+   "sentence": "In addition to general economic conditions, new hotel room supply is an important factor that can affect the lodging industry’s performance, and overbuilding has the potential to further exacerbate the negative impact of an economic recession."
+  },
+  {
+   "ticker": "AHT",
+   "issuer": "ASHFORD HOSPITALITY TRUST INC",
+   "cik": "0001232582",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-23",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1232582/000123258226000067/aht-20251231.htm",
+   "sha256": "31ff73944e191c6d1bb06204bde96c3b0a32fba0ae0de57d7eb4bbbf241426b1",
+   "retrieved_at": "2026-11-14T18:30:53+00:00",
+   "sentence": "In addition, newly acquired or renovated hotels may not produce the revenues we anticipate immediately, or at all, and the hotel’s operating cash flow may be insufficient to pay the operating expenses and debt service associated with these new hotels."
+  },
+  {
+   "ticker": "AHT",
+   "issuer": "ASHFORD HOSPITALITY TRUST INC",
+   "cik": "0001232582",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-23",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1232582/000123258226000067/aht-20251231.htm",
+   "sha256": "31ff73944e191c6d1bb06204bde96c3b0a32fba0ae0de57d7eb4bbbf241426b1",
+   "retrieved_at": "2026-11-14T18:30:53+00:00",
+   "sentence": "to increase the entitlement to overtime pay could significantly increase the cost of labor in the workforce, which would increase the operating costs of our hotel properties and may have a material adverse effect on us."
+  },
+  {
+   "ticker": "AHT",
+   "issuer": "ASHFORD HOSPITALITY TRUST INC",
+   "cik": "0001232582",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-23",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1232582/000123258226000067/aht-20251231.htm",
+   "sha256": "31ff73944e191c6d1bb06204bde96c3b0a32fba0ae0de57d7eb4bbbf241426b1",
+   "retrieved_at": "2026-11-14T18:30:53+00:00",
+   "sentence": "Supply —The development of new hotels is driven largely by construction costs, the availability of financing and expected performance of existing hotels."
+  },
+  {
+   "ticker": "AHT",
+   "issuer": "ASHFORD HOSPITALITY TRUST INC",
+   "cik": "0001232582",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-23",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1232582/000123258226000067/aht-20251231.htm",
+   "sha256": "31ff73944e191c6d1bb06204bde96c3b0a32fba0ae0de57d7eb4bbbf241426b1",
+   "retrieved_at": "2026-11-14T18:30:53+00:00",
+   "sentence": "We expect that our ADR, occupancy and RevPAR performance will be impacted by macroeconomic factors such as national and local employment growth, personal income and corporate earnings, GDP, consumer confidence, office vacancy rates and business relocation decisions, airport and other business and leisure travel, new hotel construction, the pricing strategies of competitors and currency fluctuations."
+  },
+  {
+   "ticker": "AHT",
+   "issuer": "ASHFORD HOSPITALITY TRUST INC",
+   "cik": "0001232582",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-23",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1232582/000123258226000067/aht-20251231.htm",
+   "sha256": "31ff73944e191c6d1bb06204bde96c3b0a32fba0ae0de57d7eb4bbbf241426b1",
+   "retrieved_at": "2026-11-14T18:30:53+00:00",
+   "sentence": "Capital allocation decisions to acquire, sell, enhance, redevelop or perform renewal and replacement expenditures are determined on a hotel-by-hotel basis."
+  },
+  {
+   "ticker": "H",
+   "issuer": "Hyatt Hotels Corp",
+   "cik": "0001468174",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1468174/000146817426000007/h-20251231.htm",
+   "sha256": "d51c7f365894e9a9bb93ad9cba5baa942649c4d25f07018f5aa462450f448ff8",
+   "retrieved_at": "2026-11-14T18:30:59+00:00",
+   "sentence": "programs, reservation and e-commerce system capacity and efficiency, distribution channels, limitations on the expansion of one or more of our brands in certain geographic areas due to restrictions previously agreed to in order to secure management and franchise opportunities, and the ability to provide capital that may be necessary to obtain management and hotel services agreements and franchise agreements."
+  },
+  {
+   "ticker": "H",
+   "issuer": "Hyatt Hotels Corp",
+   "cik": "0001468174",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1468174/000146817426000007/h-20251231.htm",
+   "sha256": "d51c7f365894e9a9bb93ad9cba5baa942649c4d25f07018f5aa462450f448ff8",
+   "retrieved_at": "2026-11-14T18:30:59+00:00",
+   "sentence": "• Some of our existing development pipeline may not be developed into new hotels or may not open on the anticipated timeline, which could affect our growth prospects."
+  },
+  {
+   "ticker": "H",
+   "issuer": "Hyatt Hotels Corp",
+   "cik": "0001468174",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1468174/000146817426000007/h-20251231.htm",
+   "sha256": "d51c7f365894e9a9bb93ad9cba5baa942649c4d25f07018f5aa462450f448ff8",
+   "retrieved_at": "2026-11-14T18:30:59+00:00",
+   "sentence": "In addition to general economic conditions, new hotel room supply is an important factor that can affect the hospitality industry's performance."
+  },
+  {
+   "ticker": "H",
+   "issuer": "Hyatt Hotels Corp",
+   "cik": "0001468174",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1468174/000146817426000007/h-20251231.htm",
+   "sha256": "d51c7f365894e9a9bb93ad9cba5baa942649c4d25f07018f5aa462450f448ff8",
+   "retrieved_at": "2026-11-14T18:30:59+00:00",
+   "sentence": "Some of our existing development pipeline may not be developed into new hotels or may not open on the anticipated timeline, which could materially adversely affect our growth prospects."
+  },
+  {
+   "ticker": "H",
+   "issuer": "Hyatt Hotels Corp",
+   "cik": "0001468174",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1468174/000146817426000007/h-20251231.htm",
+   "sha256": "d51c7f365894e9a9bb93ad9cba5baa942649c4d25f07018f5aa462450f448ff8",
+   "retrieved_at": "2026-11-14T18:30:59+00:00",
+   "sentence": "As a result, we cannot assure you that our entire development pipeline will be completed and developed into new hotels or that those hotels will open when anticipated, which may impact our net rooms growth."
+  },
+  {
+   "ticker": "H",
+   "issuer": "Hyatt Hotels Corp",
+   "cik": "0001468174",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1468174/000146817426000007/h-20251231.htm",
+   "sha256": "d51c7f365894e9a9bb93ad9cba5baa942649c4d25f07018f5aa462450f448ff8",
+   "retrieved_at": "2026-11-14T18:30:59+00:00",
+   "sentence": "The current macroeconomic environment and rising interest rates have resulted in, and could continue to result in, difficulties for certain hotel owners and franchisees to obtain commercially viable financing, which may negatively impact our future development pipeline."
+  },
+  {
+   "ticker": "H",
+   "issuer": "Hyatt Hotels Corp",
+   "cik": "0001468174",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1468174/000146817426000007/h-20251231.htm",
+   "sha256": "d51c7f365894e9a9bb93ad9cba5baa942649c4d25f07018f5aa462450f448ff8",
+   "retrieved_at": "2026-11-14T18:30:59+00:00",
+   "sentence": "• Design services —We provide certain hotel design and construction review services to third-party owners and franchisees, generally prior to a hotel's opening or during renovation or redevelopment."
+  },
+  {
+   "ticker": "H",
+   "issuer": "Hyatt Hotels Corp",
+   "cik": "0001468174",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1468174/000146817426000007/h-20251231.htm",
+   "sha256": "d51c7f365894e9a9bb93ad9cba5baa942649c4d25f07018f5aa462450f448ff8",
+   "retrieved_at": "2026-11-14T18:30:59+00:00",
+   "sentence": "In addition, the acquisition included expected synergies from the integration and future expansion of our destination management services and our management of and licensing of the Bahia Principe brand to the Unlimited Vacation Club business at Bahia Principe Hotels & Resorts-branded properties through separate contractual agreements."
+  },
+  {
+   "ticker": "H",
+   "issuer": "Hyatt Hotels Corp",
+   "cik": "0001468174",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1468174/000146817426000007/h-20251231.htm",
+   "sha256": "d51c7f365894e9a9bb93ad9cba5baa942649c4d25f07018f5aa462450f448ff8",
+   "retrieved_at": "2026-11-14T18:30:59+00:00",
+   "sentence": "Standard International —During the year ended December 31, 2024, we acquired 100 % of the issued and outstanding equity interests of certain entities collectively doing business as Standard International for $ 150 million of base consideration, subject to customary adjustments related to working capital, cash, and indebtedness, and up to an additional $ 185 million of contingent consideration to be paid upon the achievement of certain milestones related to the development of additional hotels and/or potential new hotels identified by the sellers through 2028."
+  },
+  {
+   "ticker": "H",
+   "issuer": "Hyatt Hotels Corp",
+   "cik": "0001468174",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1468174/000146817426000007/h-20251231.htm",
+   "sha256": "d51c7f365894e9a9bb93ad9cba5baa942649c4d25f07018f5aa462450f448ff8",
+   "retrieved_at": "2026-11-14T18:30:59+00:00",
+   "sentence": "The acquisition included management, franchise, and license agreements for both operating and additional hotels that are expected to open in the future and the affiliated trade names."
+  },
+  {
+   "ticker": "H",
+   "issuer": "Hyatt Hotels Corp",
+   "cik": "0001468174",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1468174/000146817426000007/h-20251231.htm",
+   "sha256": "d51c7f365894e9a9bb93ad9cba5baa942649c4d25f07018f5aa462450f448ff8",
+   "retrieved_at": "2026-11-14T18:30:59+00:00",
+   "sentence": "The acquisition included management and license agreements for both operating and additional hotels that are expected to open in the future, primarily across North America, and the affiliated trade names."
+  },
+  {
+   "ticker": "WYNN",
+   "issuer": "WYNN RESORTS LTD",
+   "cik": "0001174922",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-02",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000013/wynn-20251231.htm",
+   "sha256": "860de236f4e84bc15b3aaf52c55397224eabbb50ada927759c61118c60cb94c4",
+   "retrieved_at": "2026-11-14T18:31:02+00:00",
+   "sentence": "Additionally, the Company has a 40% equity interest in Island 3 AMI FZ-LLC, an unconsolidated affiliate, which is constructing an integrated resort property (\"Wynn Al Marjan Island\") in Ras Al Khaimah, United Arab Emirates, currently expected to open in 2027."
+  },
+  {
+   "ticker": "WYNN",
+   "issuer": "WYNN RESORTS LTD",
+   "cik": "0001174922",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-02",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000013/wynn-20251231.htm",
+   "sha256": "860de236f4e84bc15b3aaf52c55397224eabbb50ada927759c61118c60cb94c4",
+   "retrieved_at": "2026-11-14T18:31:02+00:00",
+   "sentence": "Wynn Al Marjan Island, which is currently under construction, is anticipated to be completed and open to the public in 2027, featuring an over 1,500-room hotel, luxury villas, a high-end shopping mall, a state-of-the-art meeting and convention facility, an exclusive spa, more than 20 restaurants and lounges, 225,000 square feet of gaming area, a wide array of entertainment choices including a nightclub and a beach club, and other amenities."
+  },
+  {
+   "ticker": "WYNN",
+   "issuer": "WYNN RESORTS LTD",
+   "cik": "0001174922",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-02",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000013/wynn-20251231.htm",
+   "sha256": "860de236f4e84bc15b3aaf52c55397224eabbb50ada927759c61118c60cb94c4",
+   "retrieved_at": "2026-11-14T18:31:02+00:00",
+   "sentence": "As a result, and in connection with expansion of our resorts and gaming activities outside the U.S., we have undertaken a program to register our trademarks and other intellectual property rights in relevant jurisdictions."
+  },
+  {
+   "ticker": "WYNN",
+   "issuer": "WYNN RESORTS LTD",
+   "cik": "0001174922",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-02",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000013/wynn-20251231.htm",
+   "sha256": "860de236f4e84bc15b3aaf52c55397224eabbb50ada927759c61118c60cb94c4",
+   "retrieved_at": "2026-11-14T18:31:02+00:00",
+   "sentence": "The Company's articles of incorporation provide that, to the extent required by the gaming authority making the determination of unsuitability or to the extent the Board of Directors determines, in its sole discretion, that a person is likely to jeopardize the Company's or any affiliate's application for, receipt of, approval for, right to the use of, or entitlement to, any gaming license, shares of Wynn Resorts' capital stock that are owned or controlled by such unsuitable person or its affiliates are subject to redemption by Wynn Resorts."
+  },
+  {
+   "ticker": "WYNN",
+   "issuer": "WYNN RESORTS LTD",
+   "cik": "0001174922",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-02",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000013/wynn-20251231.htm",
+   "sha256": "860de236f4e84bc15b3aaf52c55397224eabbb50ada927759c61118c60cb94c4",
+   "retrieved_at": "2026-11-14T18:31:02+00:00",
+   "sentence": "Additionally, the Company has a 40 % equity interest in Island 3 AMI FZ-LLC (\"Island 3\"), an unconsolidated affiliate, which is constructing an integrated resort property (\"Wynn Al Marjan Island\") in Ras Al Khaimah, United Arab Emirates, currently expected to open in 2027."
+  },
+  {
+   "ticker": "MGM",
+   "issuer": "MGM Resorts International",
+   "cik": "0000789570",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-11",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/789570/000078957026000018/mgm-20251231.htm",
+   "sha256": "efea305b36ed1177accea87de6c8a18b0187d8ab93f91d4d2e679c3575e06f5d",
+   "retrieved_at": "2026-11-14T18:31:05+00:00",
+   "sentence": "Major competitors, including newer entrants, have either recently expanded their hotel room capacity and convention space offerings, or have plans to expand their capacity or construct new resorts in Las Vegas."
+  },
+  {
+   "ticker": "MGM",
+   "issuer": "MGM Resorts International",
+   "cik": "0000789570",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-11",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/789570/000078957026000018/mgm-20251231.htm",
+   "sha256": "efea305b36ed1177accea87de6c8a18b0187d8ab93f91d4d2e679c3575e06f5d",
+   "retrieved_at": "2026-11-14T18:31:05+00:00",
+   "sentence": "Any of our future construction, development or expansion projects, such as our integrated resort under construction in Japan, will be subject to a number of risks, including:"
+  },
+  {
+   "ticker": "LVS",
+   "issuer": "LAS VEGAS SANDS CORP",
+   "cik": "0001300514",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-06",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1300514/000130051426000013/lvs-20251231.htm",
+   "sha256": "57924c3d15ae15df83b696adf8eb8087d1fd6a9cc2fe87107e9c4f7e11073912",
+   "retrieved_at": "2026-11-14T18:31:08+00:00",
+   "sentence": "There has been significant investment announced and recently completed by concessionaires in new resort development projects on Cotai."
+  },
+  {
+   "ticker": "LVS",
+   "issuer": "LAS VEGAS SANDS CORP",
+   "cik": "0001300514",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-06",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1300514/000130051426000013/lvs-20251231.htm",
+   "sha256": "57924c3d15ae15df83b696adf8eb8087d1fd6a9cc2fe87107e9c4f7e11073912",
+   "retrieved_at": "2026-11-14T18:31:08+00:00",
+   "sentence": "Additionally, under the terms of our development agreements with the STB, either or both the casino concession and the casino license may be terminated on public interest grounds, in which case, we are entitled to fair compensation."
+  },
+  {
+   "ticker": "LVS",
+   "issuer": "LAS VEGAS SANDS CORP",
+   "cik": "0001300514",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-06",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1300514/000130051426000013/lvs-20251231.htm",
+   "sha256": "57924c3d15ae15df83b696adf8eb8087d1fd6a9cc2fe87107e9c4f7e11073912",
+   "retrieved_at": "2026-11-14T18:31:08+00:00",
+   "sentence": "Additionally, we completed the renovations of the Tower 3 hotel rooms at Marina Bay Sands into world class suites in the second quarter of 2025."
+  },
+  {
+   "ticker": "VICI",
+   "issuer": "VICI PROPERTIES INC.",
+   "cik": "0001705696",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1705696/000170569626000034/vici-20251231.htm",
+   "sha256": "6190d0f4b5ff3d32989abc3dc8c38b32a5cbe3be14afc5bdd5e8660bae376548",
+   "retrieved_at": "2026-11-14T18:31:10+00:00",
+   "sentence": "Additionally, we have entered into a right of first financing agreement with Canyon Ranch pursuant to which we will have the first right, but not the obligation, to serve as the real estate capital financing partner for Canyon Ranch with respect to the acquisition, build-out and/or redevelopment of future greenfield and build-to-suit wellness resorts."
+  },
+  {
+   "ticker": "GLPI",
+   "issuer": "Gaming & Leisure Properties, Inc.",
+   "cik": "0001575965",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-19",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1575965/000157596526000032/glpi-20251231.htm",
+   "sha256": "84b446290c044495b411c72956d4f981c7c47f48dd7be8e7d3270fab1af0ba19",
+   "retrieved_at": "2026-11-14T18:31:13+00:00",
+   "sentence": "The permanent casino and entertainment destination remains under construction."
+  },
+  {
+   "ticker": "GLPI",
+   "issuer": "Gaming & Leisure Properties, Inc.",
+   "cik": "0001575965",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-19",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1575965/000157596526000032/glpi-20251231.htm",
+   "sha256": "84b446290c044495b411c72956d4f981c7c47f48dd7be8e7d3270fab1af0ba19",
+   "retrieved_at": "2026-11-14T18:31:13+00:00",
+   "sentence": "◦ As of December 31, 2025, the Company has funded $56.6 million of the $110 million Ione Loan at an 11% interest rate for the tribe's Acorn Ridge casino development that is scheduled to open in February 2026."
+  },
+  {
+   "ticker": "GLPI",
+   "issuer": "Gaming & Leisure Properties, Inc.",
+   "cik": "0001575965",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-19",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1575965/000157596526000032/glpi-20251231.htm",
+   "sha256": "84b446290c044495b411c72956d4f981c7c47f48dd7be8e7d3270fab1af0ba19",
+   "retrieved_at": "2026-11-14T18:31:13+00:00",
+   "sentence": "On November 3, 2025, GLPI funded $ 150 million for PENN's M Resort new hotel tower and conference center expansion, which opened to the public on December 1, 2025, at a capitalization rate of 7.79 %."
+  },
+  {
+   "ticker": "CZR",
+   "issuer": "Caesars Entertainment, Inc.",
+   "cik": "0001590895",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-17",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1590895/000159089526000011/czr-20251231.htm",
+   "sha256": "275be7f9a299d25e5bd28ba645c938a12b525f5b55f4ccdcd5ed0b06fc391b06",
+   "retrieved_at": "2026-11-14T18:31:16+00:00",
+   "sentence": "For example, we have contracts to purchase energy from solar covered parking canopies completed at two Atlantic City properties, we installed solar covered parking at Harrah’s Pompano Beach and the Harrah’s Atlantic City convention center solar rooftop project is expected to be completed in 2026."
+  },
+  {
+   "ticker": "CZR",
+   "issuer": "Caesars Entertainment, Inc.",
+   "cik": "0001590895",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-17",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1590895/000159089526000011/czr-20251231.htm",
+   "sha256": "275be7f9a299d25e5bd28ba645c938a12b525f5b55f4ccdcd5ed0b06fc391b06",
+   "retrieved_at": "2026-11-14T18:31:16+00:00",
+   "sentence": "The expansion of online betting and gaming in new jurisdictions and the growth of the number of competitors in the online betting and gaming market, the expansion of existing casino entertainment properties, the increase in the number of properties, and the aggressive marketing strategies of many of our competitors have increased competition in many markets in which we operate, and this intense competition is expected to continue."
+  },
+  {
+   "ticker": "CZR",
+   "issuer": "Caesars Entertainment, Inc.",
+   "cik": "0001590895",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-17",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1590895/000159089526000011/czr-20251231.htm",
+   "sha256": "275be7f9a299d25e5bd28ba645c938a12b525f5b55f4ccdcd5ed0b06fc391b06",
+   "retrieved_at": "2026-11-14T18:31:16+00:00",
+   "sentence": "Further expansion of legalized casino gaming in jurisdictions in or near our markets or changes to gaming laws in states in which we have operations and in states near our operations could increase competition and could adversely affect our operations."
+  },
+  {
+   "ticker": "CZR",
+   "issuer": "Caesars Entertainment, Inc.",
+   "cik": "0001590895",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-17",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1590895/000159089526000011/czr-20251231.htm",
+   "sha256": "275be7f9a299d25e5bd28ba645c938a12b525f5b55f4ccdcd5ed0b06fc391b06",
+   "retrieved_at": "2026-11-14T18:31:16+00:00",
+   "sentence": "However, the expansion of betting and online gaming in new jurisdictions is dependent on a number of factors that are beyond our control and there can be no assurances of when, or if, such regulations will be adopted or the terms of such regulations, including restrictions, tax rates and license fees and availability of such licenses to casino owners exclusively or at all."
+  },
+  {
+   "ticker": "CZR",
+   "issuer": "Caesars Entertainment, Inc.",
+   "cik": "0001590895",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-17",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1590895/000159089526000011/czr-20251231.htm",
+   "sha256": "275be7f9a299d25e5bd28ba645c938a12b525f5b55f4ccdcd5ed0b06fc391b06",
+   "retrieved_at": "2026-11-14T18:31:16+00:00",
+   "sentence": "Food and beverage and hotel expenses have increased due to incremental wages correlating with additional revenues associated with the opening of Caesars Virginia’s permanent facility and the completed renovation and expansion of Caesars New Orleans, as well as higher union and non-union wages."
+  },
+  {
+   "ticker": "BYD",
+   "issuer": "BOYD GAMING CORP",
+   "cik": "0000906553",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/906553/000143774926004908/bgc20251121_10k.htm",
+   "sha256": "639eb974eb03a152d5ecd2ada5edceb0360f75d79c8749dc83fc7270ab7020be",
+   "retrieved_at": "2026-11-14T18:31:19+00:00",
+   "sentence": "The permanent casino resort is expected to open in late 2027."
+  },
+  {
+   "ticker": "BYD",
+   "issuer": "BOYD GAMING CORP",
+   "cik": "0000906553",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/906553/000143774926004908/bgc20251121_10k.htm",
+   "sha256": "639eb974eb03a152d5ecd2ada5edceb0360f75d79c8749dc83fc7270ab7020be",
+   "retrieved_at": "2026-11-14T18:31:19+00:00",
+   "sentence": "Cadence Crossing will feature a 10,000 square foot casino, 450 slots and several restaurants, and is expected to open in late March 2026."
+  },
+  {
+   "ticker": "BYD",
+   "issuer": "BOYD GAMING CORP",
+   "cik": "0000906553",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/906553/000143774926004908/bgc20251121_10k.htm",
+   "sha256": "639eb974eb03a152d5ecd2ada5edceb0360f75d79c8749dc83fc7270ab7020be",
+   "retrieved_at": "2026-11-14T18:31:19+00:00",
+   "sentence": "The permanent casino resort, featuring a 65,000 square-foot casino, a 200-room hotel, multiple food and beverage outlets and other amenities is expected to open in late 2027."
+  },
+  {
+   "ticker": "BYD",
+   "issuer": "BOYD GAMING CORP",
+   "cik": "0000906553",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/906553/000143774926004908/bgc20251121_10k.htm",
+   "sha256": "639eb974eb03a152d5ecd2ada5edceb0360f75d79c8749dc83fc7270ab7020be",
+   "retrieved_at": "2026-11-14T18:31:19+00:00",
+   "sentence": "With the recent expansion of sports wagering in various states, and online casinos on a more limited basis, a federal government may enact legislation taxing and regulating sports wagering and online casino wagering, or alternatively may elect to prohibit such wagering."
+  },
+  {
+   "ticker": "BYD",
+   "issuer": "BOYD GAMING CORP",
+   "cik": "0000906553",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/906553/000143774926004908/bgc20251121_10k.htm",
+   "sha256": "639eb974eb03a152d5ecd2ada5edceb0360f75d79c8749dc83fc7270ab7020be",
+   "retrieved_at": "2026-11-14T18:31:19+00:00",
+   "sentence": "For example, there has been recent expansion of sports betting in various states with legislation allowing for sports betting in casinos and/or online."
+  },
+  {
+   "ticker": "BYD",
+   "issuer": "BOYD GAMING CORP",
+   "cik": "0000906553",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/906553/000143774926004908/bgc20251121_10k.htm",
+   "sha256": "639eb974eb03a152d5ecd2ada5edceb0360f75d79c8749dc83fc7270ab7020be",
+   "retrieved_at": "2026-11-14T18:31:19+00:00",
+   "sentence": "This expansion of existing casino entertainment properties, the increase in the number of properties and the aggressive marketing strategies of many of our competitors have increased competition in many markets in which we compete, and we expect this to continue."
+  },
+  {
+   "ticker": "BYD",
+   "issuer": "BOYD GAMING CORP",
+   "cik": "0000906553",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/906553/000143774926004908/bgc20251121_10k.htm",
+   "sha256": "639eb974eb03a152d5ecd2ada5edceb0360f75d79c8749dc83fc7270ab7020be",
+   "retrieved_at": "2026-11-14T18:31:19+00:00",
+   "sentence": "In particular, the expansion of casino gaming in or near any geographic area from which we attract or expect to attract a significant number of our customers could have a significant adverse effect on our business, financial condition and results of operations."
+  },
+  {
+   "ticker": "BYD",
+   "issuer": "BOYD GAMING CORP",
+   "cik": "0000906553",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/906553/000143774926004908/bgc20251121_10k.htm",
+   "sha256": "639eb974eb03a152d5ecd2ada5edceb0360f75d79c8749dc83fc7270ab7020be",
+   "retrieved_at": "2026-11-14T18:31:19+00:00",
+   "sentence": "The transitional casino opened to the public on November 7, 2025 and the full casino resort is expected to open in late 2027, pending receipt of final regulatory approval."
+  },
+  {
+   "ticker": "BYD",
+   "issuer": "BOYD GAMING CORP",
+   "cik": "0000906553",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/906553/000143774926004908/bgc20251121_10k.htm",
+   "sha256": "639eb974eb03a152d5ecd2ada5edceb0360f75d79c8749dc83fc7270ab7020be",
+   "retrieved_at": "2026-11-14T18:31:19+00:00",
+   "sentence": "Through the Norfolk Management Agreement, the Company is responsible for funding any operational losses and is entitled to significant economic benefits from the developed casino’s operations."
+  },
+  {
+   "ticker": "RRR",
+   "issuer": "Red Rock Resorts, Inc.",
+   "cik": "0001653653",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1653653/000165365326000004/rrr-20251231.htm",
+   "sha256": "08028802805dbe37e4552b36bd22631bf6e9028032449833ffcedce4c3edf804",
+   "retrieved_at": "2026-11-14T18:31:21+00:00",
+   "sentence": "In January 2026 we commenced construction on the next phase of Durango’s master plan which will include an expanded casino floor, a 36-lane state-of-the-art bowling facility, luxury movie theaters, a new restaurant and new food hall outlets and entertainment venues."
+  },
+  {
+   "ticker": "RRR",
+   "issuer": "Red Rock Resorts, Inc.",
+   "cik": "0001653653",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1653653/000165365326000004/rrr-20251231.htm",
+   "sha256": "08028802805dbe37e4552b36bd22631bf6e9028032449833ffcedce4c3edf804",
+   "retrieved_at": "2026-11-14T18:31:21+00:00",
+   "sentence": "This site is the only casino gaming-entitled property in the master-planned community of Inspirada."
+  },
+  {
+   "ticker": "RRR",
+   "issuer": "Red Rock Resorts, Inc.",
+   "cik": "0001653653",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1653653/000165365326000004/rrr-20251231.htm",
+   "sha256": "08028802805dbe37e4552b36bd22631bf6e9028032449833ffcedce4c3edf804",
+   "retrieved_at": "2026-11-14T18:31:21+00:00",
+   "sentence": "Even if the current growth trend continues, there can be no assurance that such population growth will justify future development, additional casinos or the expansion of any of our existing casinos, which can affect our results of operations and financial condition and limits our ability to expand our business."
+  },
+  {
+   "ticker": "RRR",
+   "issuer": "Red Rock Resorts, Inc.",
+   "cik": "0001653653",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1653653/000165365326000004/rrr-20251231.htm",
+   "sha256": "08028802805dbe37e4552b36bd22631bf6e9028032449833ffcedce4c3edf804",
+   "retrieved_at": "2026-11-14T18:31:21+00:00",
+   "sentence": "Under the terms of the Development Agreement, the Company is entitled to receive a development fee of 4 % of the costs of construction for its development services, which will be due and payable on the date the casino opens to the public."
+  },
+  {
+   "ticker": "PENN",
+   "issuer": "PENN Entertainment, Inc.",
+   "cik": "0000921738",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-26",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/921738/000092173826000008/penn-20251231.htm",
+   "sha256": "90876b364f0f9bb0fc6c6d109e5c19cb2ef5cc1b206d929955846e0f8ea4d919",
+   "retrieved_at": "2026-11-14T18:31:24+00:00",
+   "sentence": "On October 10, 2022, the Company announced its intent to pursue four new development projects, including the land-based relocations of Hollywood Casino Joliet (“Joliet”) and Hollywood Casino Aurora (“Aurora”), a second hotel tower at M Resort Spa Casino (“M Resort”), and a new hotel at Hollywood Casino Columbus (“Columbus”)."
+  },
+  {
+   "ticker": "PENN",
+   "issuer": "PENN Entertainment, Inc.",
+   "cik": "0000921738",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-26",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/921738/000092173826000008/penn-20251231.htm",
+   "sha256": "90876b364f0f9bb0fc6c6d109e5c19cb2ef5cc1b206d929955846e0f8ea4d919",
+   "retrieved_at": "2026-11-14T18:31:24+00:00",
+   "sentence": "The Aurora Project to relocate its riverboat casino operations to a new, land-based facility is expected to open late in the second quarter of 2026."
+  },
+  {
+   "ticker": "PENN",
+   "issuer": "PENN Entertainment, Inc.",
+   "cik": "0000921738",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-26",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/921738/000092173826000008/penn-20251231.htm",
+   "sha256": "90876b364f0f9bb0fc6c6d109e5c19cb2ef5cc1b206d929955846e0f8ea4d919",
+   "retrieved_at": "2026-11-14T18:31:24+00:00",
+   "sentence": "The new hotel at Columbus is expected to open late in the second quarter of 2026."
+  },
+  {
+   "ticker": "PENN",
+   "issuer": "PENN Entertainment, Inc.",
+   "cik": "0000921738",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-26",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/921738/000092173826000008/penn-20251231.htm",
+   "sha256": "90876b364f0f9bb0fc6c6d109e5c19cb2ef5cc1b206d929955846e0f8ea4d919",
+   "retrieved_at": "2026-11-14T18:31:24+00:00",
+   "sentence": "We seek to grow our customer database and PENN Play loyalty program through our iCasino and OSB businesses, the development of new properties, the expansion of existing properties and other business lines, and through partnerships with third-party partners, such as Shake Shack Inc., Ticketmaster Entertainment, LLC, Norwegian Cruise Line Holdings Ltd., Live Nation Entertainment, Inc., and Choice Hotels International, Inc."
+  },
+  {
+   "ticker": "PENN",
+   "issuer": "PENN Entertainment, Inc.",
+   "cik": "0000921738",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-26",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/921738/000092173826000008/penn-20251231.htm",
+   "sha256": "90876b364f0f9bb0fc6c6d109e5c19cb2ef5cc1b206d929955846e0f8ea4d919",
+   "retrieved_at": "2026-11-14T18:31:24+00:00",
+   "sentence": "On August 1, 2025, the Company received the full $ 130.0 million in committed funding from GLPI for the Joliet Project which opened on August 11, 2025, and on November 3, 2025, the Company received the full $ 150.0 million in committed funding from GLPI for the M Resort Project, of which the new hotel tower opened on December 1, 2025."
+  },
+  {
+   "ticker": "VAC",
+   "issuer": "MARRIOTT VACATIONS WORLDWIDE Corp",
+   "cik": "0001524358",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-02",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1524358/000152435826000010/vac-20251231.htm",
+   "sha256": "a5d257957a0aafff87d2e6ab9001117d38a6fe2dce926ea8276993302520976c",
+   "retrieved_at": "2026-11-14T18:31:30+00:00",
+   "sentence": "The vacation ownership industry has grown through expansion of established vacation ownership developers as well as entrance into the market of well-known lodging and entertainment brands, including Marriott, Sheraton, Hilton, Hyatt, Westin and Disney."
+  },
+  {
+   "ticker": "VAC",
+   "issuer": "MARRIOTT VACATIONS WORLDWIDE Corp",
+   "cik": "0001524358",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-02",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1524358/000152435826000010/vac-20251231.htm",
+   "sha256": "a5d257957a0aafff87d2e6ab9001117d38a6fe2dce926ea8276993302520976c",
+   "retrieved_at": "2026-11-14T18:31:30+00:00",
+   "sentence": "Our efforts to avoid the risk of temporary inventory depletion by maintaining a surplus supply of completed inventory based on our forecasted sales pace, and by employing other mitigation strategies such as accelerating completion of resorts under construction, acquiring VOIs on the secondary market, or reducing sales pace by adjusting prices or sales incentives, may not be successful."
+  },
+  {
+   "ticker": "HGV",
+   "issuer": "Hilton Grand Vacations Inc.",
+   "cik": "0001674168",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-26",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674168/000167416826000017/hgv-20251231.htm",
+   "sha256": "efd650409f46b6bd14263266021b9b714c2603db75ea42104e629d323ab94d9d",
+   "retrieved_at": "2026-11-14T18:31:33+00:00",
+   "sentence": "In addition, as part of our business strategy, we intend to continue the expansion of our operations in Japan, including by continuing to market and sell VOIs at Sesoko, Odawara and Kyoto resorts and continuing to opportunistically develop additional property or acquire additional inventory, as well as explore further expansion opportunities in other countries located in the Asia Pacific region, Mexico, Europe and the Caribbean."
+  },
+  {
+   "ticker": "HGV",
+   "issuer": "Hilton Grand Vacations Inc.",
+   "cik": "0001674168",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-26",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674168/000167416826000017/hgv-20251231.htm",
+   "sha256": "efd650409f46b6bd14263266021b9b714c2603db75ea42104e629d323ab94d9d",
+   "retrieved_at": "2026-11-14T18:31:33+00:00",
+   "sentence": "Commissions for VOI sales for resorts under construction are expensed when the associated VOI revenue is recognized which is upon completion of the resort."
+  },
+  {
+   "ticker": "HGV",
+   "issuer": "Hilton Grand Vacations Inc.",
+   "cik": "0001674168",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-26",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674168/000167416826000017/hgv-20251231.htm",
+   "sha256": "efd650409f46b6bd14263266021b9b714c2603db75ea42104e629d323ab94d9d",
+   "retrieved_at": "2026-11-14T18:31:33+00:00",
+   "sentence": "Such contract liabilities include advance deposits received on prepaid vacation packages for future stays at our resorts, deferred revenues related to sales of VOIs of projects under construction, Club activation fees and annual dues, the liability for bonus points awarded to our customers for purchase of VOIs at our properties or properties under our fee-for-service arrangements that may be redeemed in the future and other deferred revenue."
+  },
+  {
+   "ticker": "HHH",
+   "issuer": "Howard Hughes Holdings Inc.",
+   "cik": "0001981792",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-19",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1981792/000162828026009710/hhh-20251231.htm",
+   "sha256": "c99b0c9ee79fcff109d4d323e69fa441aa56f8afc8eca8f4c39e5ce8f9af80d1",
+   "retrieved_at": "2026-11-14T18:31:35+00:00",
+   "sentence": "Our Strategic Developments segment consists of various development or redevelopment projects, including developments within our MPCs that will transition to Operating Assets upon completion and condominium towers at Ward Village in Hawai‘i and The Woodlands."
+  },
+  {
+   "ticker": "HHH",
+   "issuer": "Howard Hughes Holdings Inc.",
+   "cik": "0001981792",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-19",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1981792/000162828026009710/hhh-20251231.htm",
+   "sha256": "c99b0c9ee79fcff109d4d323e69fa441aa56f8afc8eca8f4c39e5ce8f9af80d1",
+   "retrieved_at": "2026-11-14T18:31:35+00:00",
+   "sentence": "As of December 31, 2025, we have two condominium towers under construction that are 96% pre-sold representing $1.5 billion of contracted future revenue and three condominium towers in predevelopment that are 66% pre-sold representing $2.0 billion of contracted future revenue."
+  },
+  {
+   "ticker": "HHH",
+   "issuer": "Howard Hughes Holdings Inc.",
+   "cik": "0001981792",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-19",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1981792/000162828026009710/hhh-20251231.htm",
+   "sha256": "c99b0c9ee79fcff109d4d323e69fa441aa56f8afc8eca8f4c39e5ce8f9af80d1",
+   "retrieved_at": "2026-11-14T18:31:35+00:00",
+   "sentence": "The Company estimates this amendment increases its potential residential entitlements in Ward Village between 2.5 to 3.5 million gross square feet, which could be used for the development of additional condominium towers in future years."
+  },
+  {
+   "ticker": "HHH",
+   "issuer": "Howard Hughes Holdings Inc.",
+   "cik": "0001981792",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-19",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1981792/000162828026009710/hhh-20251231.htm",
+   "sha256": "c99b0c9ee79fcff109d4d323e69fa441aa56f8afc8eca8f4c39e5ce8f9af80d1",
+   "retrieved_at": "2026-11-14T18:31:35+00:00",
+   "sentence": "(e) Represents land acquired or transferred to the Strategic Developments segment for future development, excluding acreage related to assets that are now in service in our Operating Assets segment or related to completed or under construction condominium towers."
+  },
+  {
+   "ticker": "HHH",
+   "issuer": "Howard Hughes Holdings Inc.",
+   "cik": "0001981792",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-19",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1981792/000162828026009710/hhh-20251231.htm",
+   "sha256": "c99b0c9ee79fcff109d4d323e69fa441aa56f8afc8eca8f4c39e5ce8f9af80d1",
+   "retrieved_at": "2026-11-14T18:31:35+00:00",
+   "sentence": "Leasing activity at The Launiu remained strong and we launched pre-sales for two new Ward Village condominiums, Melia and ‘Ilima in June 2025, with 66% of the units at these predevelopment towers pre-sold at year end representing $2.0 billion of future contracted revenue."
+  },
+  {
+   "ticker": "HHH",
+   "issuer": "Howard Hughes Holdings Inc.",
+   "cik": "0001981792",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-19",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1981792/000162828026009710/hhh-20251231.htm",
+   "sha256": "c99b0c9ee79fcff109d4d323e69fa441aa56f8afc8eca8f4c39e5ce8f9af80d1",
+   "retrieved_at": "2026-11-14T18:31:35+00:00",
+   "sentence": "During 2025, we contracted 283 pre-development units and as of December 31, 2025, 66% of the units at our three pre-development towers are under contract."
+  },
+  {
+   "ticker": "HHH",
+   "issuer": "Howard Hughes Holdings Inc.",
+   "cik": "0001981792",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-19",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1981792/000162828026009710/hhh-20251231.htm",
+   "sha256": "c99b0c9ee79fcff109d4d323e69fa441aa56f8afc8eca8f4c39e5ce8f9af80d1",
+   "retrieved_at": "2026-11-14T18:31:35+00:00",
+   "sentence": "Ward Village As of December 31, 2025, 96% of the units at our two towers under construction, The Park Ward Village and Kalae, are under contract."
+  },
+  {
+   "ticker": "HHH",
+   "issuer": "Howard Hughes Holdings Inc.",
+   "cik": "0001981792",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-19",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1981792/000162828026009710/hhh-20251231.htm",
+   "sha256": "c99b0c9ee79fcff109d4d323e69fa441aa56f8afc8eca8f4c39e5ce8f9af80d1",
+   "retrieved_at": "2026-11-14T18:31:35+00:00",
+   "sentence": "The Woodlands We broke ground on The Ritz-Carlton Residences in October 2024, and expect to complete construction in 2027."
+  },
+  {
+   "ticker": "MLCO",
+   "issuer": "Melco Resorts & Entertainment LTD",
+   "cik": "0001381640",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-03-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+   "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+   "retrieved_at": "2026-11-14T18:31:41+00:00",
+   "sentence": "For example, Phase 3 of the Galaxy Macau Resort progressively opened from the second quarter of 2023, while Phase 4 is currently under development with its construction expected to be completed in 2027."
+  },
+  {
+   "ticker": "MLCO",
+   "issuer": "Melco Resorts & Entertainment LTD",
+   "cik": "0001381640",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-03-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+   "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+   "retrieved_at": "2026-11-14T18:31:41+00:00",
+   "sentence": "Sands China Ltd., a subsidiary of Las Vegas Sands Corporation, has rebranded and redeveloped Sands Cotai Central in Cotai into The Londoner Macau, which opened in February 2021, and completed renovations of the former Sheraton Grand, rebranding the hotel as the Londoner Grand, which opened in June 2025."
+  },
+  {
+   "ticker": "MLCO",
+   "issuer": "Melco Resorts & Entertainment LTD",
+   "cik": "0001381640",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-03-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+   "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+   "retrieved_at": "2026-11-14T18:31:41+00:00",
+   "sentence": "In 2025, Bloomberry Resorts Corporation opened Solaire Resort North in Quezon City, and Suntrust Resort Holdings is expected to open its integrated resort in Westside City, Manila in the second half of 2026."
+  },
+  {
+   "ticker": "MLCO",
+   "issuer": "Melco Resorts & Entertainment LTD",
+   "cik": "0001381640",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-03-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+   "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+   "retrieved_at": "2026-11-14T18:31:41+00:00",
+   "sentence": "We expect additional competition from new integrated resorts scheduled to open in the region, including the Hard Rock Hotel & Casino Athens which is expected to open in 2027, and Wynn Al Marjan Island, which is currently under construction at Ras Al Khaimah in the UAE and expected to open in the spring of 2027."
+  },
+  {
+   "ticker": "MLCO",
+   "issuer": "Melco Resorts & Entertainment LTD",
+   "cik": "0001381640",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-03-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+   "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+   "retrieved_at": "2026-11-14T18:31:41+00:00",
+   "sentence": "entitled to certain fiscal incentives provided to some of Melco Resorts Leisure’s competitors that are registered as tourism enterprises under TIEZA."
+  },
+  {
+   "ticker": "MLCO",
+   "issuer": "Melco Resorts & Entertainment LTD",
+   "cik": "0001381640",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-03-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+   "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+   "retrieved_at": "2026-11-14T18:31:41+00:00",
+   "sentence": "Received The European Property Awards 2023 for achievements in three categories, Best Hotel Architecture Cyprus, Best Sustainable Commercial Development Cyprus and Best New Hotel Construction & Design Cyprus, and was named Best International Sustainable Commercial Development and Best Sustainable Commercial Development Europe at the International Property Awards 2023."
+  },
+  {
+   "ticker": "MLCO",
+   "issuer": "Melco Resorts & Entertainment LTD",
+   "cik": "0001381640",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-03-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+   "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+   "retrieved_at": "2026-11-14T18:31:41+00:00",
+   "sentence": "Galaxy progressively opened Phase 3 of the Galaxy Macau Resort from the second quarter 2023, while Phase 4 is currently under development, and construction is expected to be completed in 2027."
+  },
+  {
+   "ticker": "MLCO",
+   "issuer": "Melco Resorts & Entertainment LTD",
+   "cik": "0001381640",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-03-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+   "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+   "retrieved_at": "2026-11-14T18:31:41+00:00",
+   "sentence": "In 2025, Bloomberry Resorts Corporation opened Solaire Resort North in Quezon City, and Suntrust Resort Holdings is expected to open its integrated resort in Westside City, Manila in the second half of 2026."
+  },
+  {
+   "ticker": "MLCO",
+   "issuer": "Melco Resorts & Entertainment LTD",
+   "cik": "0001381640",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-03-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+   "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+   "retrieved_at": "2026-11-14T18:31:41+00:00",
+   "sentence": "In Japan, a proposed project in Osaka was awarded to MGM Resorts International and its joint venture partner Orix Corporation which is currently scheduled to open in 2030."
+  },
+  {
+   "ticker": "MLCO",
+   "issuer": "Melco Resorts & Entertainment LTD",
+   "cik": "0001381640",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-03-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+   "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+   "retrieved_at": "2026-11-14T18:31:41+00:00",
+   "sentence": "Further, if we terminate or suspend the operation of all or a part of our gaming operations without permission for reasons not due to force majeure , or in the event of serious disruptions or deficiencies in our organization and operation or in the general condition of our facilities and equipment which may affect the normal operation of our gaming business, the Macau government would be entitled to replace Melco Resorts Macau during such disruption and to ensure the continued operation of the gaming business."
+  },
+  {
+   "ticker": "MLCO",
+   "issuer": "Melco Resorts & Entertainment LTD",
+   "cik": "0001381640",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-03-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+   "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+   "retrieved_at": "2026-11-14T18:31:41+00:00",
+   "sentence": "The investment plan includes gaming and non-gaming related projects in the expansion of foreign market patrons, conventions and exhibitions, entertainment shows, sports events, art and culture, health and well-being, thematic entertainment, gastronomy, community and maritime tourism and others."
+  },
+  {
+   "ticker": "MLCO",
+   "issuer": "Melco Resorts & Entertainment LTD",
+   "cik": "0001381640",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-03-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+   "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+   "retrieved_at": "2026-11-14T18:31:41+00:00",
+   "sentence": "In September 2017, the Macau government granted Studio City Hotels the declaration of touristic utility purpose pursuant to which Studio City Hotels is entitled to a property tax holiday for a period of twelve years on the immovable property to which the touristic utility was granted, owned or operated by Studio City Hotels."
+  },
+  {
+   "ticker": "MLCO",
+   "issuer": "Melco Resorts & Entertainment LTD",
+   "cik": "0001381640",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-03-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+   "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+   "retrieved_at": "2026-11-14T18:31:41+00:00",
+   "sentence": "During the construction and development stage of the Company’s integrated resort facilities, direct and incremental costs related to the design and construction, including costs under construction contracts, duties and tariffs, equipment installations, shipping costs, payroll and payroll-benefit related costs, applicable portions of interest, including amortization of deferred financing costs and the net interest of related interest rate hedging instruments designated for hedge, are capitalized in property and equipment."
+  },
+  {
+   "ticker": "MLCO",
+   "issuer": "Melco Resorts & Entertainment LTD",
+   "cik": "0001381640",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-03-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+   "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+   "retrieved_at": "2026-11-14T18:31:41+00:00",
+   "sentence": "For the hotel property that the Company acts as the hotel manager but not the controlling entity, the Company has performance obligations to provide hotel management services to the owner of the hotel property, and is entitled to receive quarterly base management fees which are a percentage of the revenues of the hotel, and quarterly incentive management fees which are based on a measure of hotel profitability."
+  },
+  {
+   "ticker": "MLCO",
+   "issuer": "Melco Resorts & Entertainment LTD",
+   "cik": "0001381640",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-03-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+   "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+   "retrieved_at": "2026-11-14T18:31:41+00:00",
+   "sentence": "The Company is also entitled to be reimbursed quarterly for costs incurred by the Company in providing certain administrative and support services to the hotel operation, with no added mark-up."
+  },
+  {
+   "ticker": "MLCO",
+   "issuer": "Melco Resorts & Entertainment LTD",
+   "cik": "0001381640",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-03-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+   "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+   "retrieved_at": "2026-11-14T18:31:41+00:00",
+   "sentence": "Had MRM and MRL not have been entitled to the income tax exemption on profits generated by gaming operations for the years ended December 31, 2025 and 2024 in Macau and the Philippines, respectively, the Company’s consolidated net income attributable to Melco Resorts & Entertainment Limited for the years ended December 31, 2025 and 2024 would have been decreased by $ 109,111"
+  },
+  {
+   "ticker": "MLCO",
+   "issuer": "Melco Resorts & Entertainment LTD",
+   "cik": "0001381640",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-03-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381640/000119312526105023/d55680d20f.htm",
+   "sha256": "c41e1e8a69870db98a8fc08714b764dee6ac1c7d44ca47e01945c1a3d4e7e556",
+   "retrieved_at": "2026-11-14T18:31:41+00:00",
+   "sentence": "related projects in the expansion of foreign market patrons, conventions and exhibitions, entertainment shows, sports events, art and culture, health and well-being, thematic entertainment, gastronomy, community and maritime tourism and others."
+  },
+  {
+   "ticker": "HTHT",
+   "issuer": "H World Group Ltd",
+   "cik": "0001483994",
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1483994/000110465926048058/htht-20251231x20f.htm",
+   "sha256": "cb7052c602b2fcad4abecf3f0cf85dbe745c1a20ae9dce165e3179e8361366c0",
+   "retrieved_at": "2026-11-14T18:31:44+00:00",
+   "sentence": "● our anticipated growth strategies, including developing new hotels at desirable locations in a timely and cost-effective manner and launching a new hotel brand;"
+  },
+  {
+   "ticker": "HTHT",
+   "issuer": "H World Group Ltd",
+   "cik": "0001483994",
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1483994/000110465926048058/htht-20251231x20f.htm",
+   "sha256": "cb7052c602b2fcad4abecf3f0cf85dbe745c1a20ae9dce165e3179e8361366c0",
+   "retrieved_at": "2026-11-14T18:31:44+00:00",
+   "sentence": "There can be no assurance that any expansion, new hotel products or brands we introduce will be well received by our customers and become profitable in a timely fashion, or at all."
+  },
+  {
+   "ticker": "HTHT",
+   "issuer": "H World Group Ltd",
+   "cik": "0001483994",
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1483994/000110465926048058/htht-20251231x20f.htm",
+   "sha256": "cb7052c602b2fcad4abecf3f0cf85dbe745c1a20ae9dce165e3179e8361366c0",
+   "retrieved_at": "2026-11-14T18:31:44+00:00",
+   "sentence": "Our multi-brand business strategy exposes us to potential risks and if any of the new hotel brands are not well received by the market, we may not be able to generate sufficient revenue to offset related costs and expenses, and our overall financial performance and condition may be adversely affected."
+  },
+  {
+   "ticker": "HTHT",
+   "issuer": "H World Group Ltd",
+   "cik": "0001483994",
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1483994/000110465926048058/htht-20251231x20f.htm",
+   "sha256": "cb7052c602b2fcad4abecf3f0cf85dbe745c1a20ae9dce165e3179e8361366c0",
+   "retrieved_at": "2026-11-14T18:31:44+00:00",
+   "sentence": "Even if we are able to successfully identify and acquire new hotel properties, new hotels may not generate the returns we expect."
+  },
+  {
+   "ticker": "HTHT",
+   "issuer": "H World Group Ltd",
+   "cik": "0001483994",
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1483994/000110465926048058/htht-20251231x20f.htm",
+   "sha256": "cb7052c602b2fcad4abecf3f0cf85dbe745c1a20ae9dce165e3179e8361366c0",
+   "retrieved_at": "2026-11-14T18:31:44+00:00",
+   "sentence": "A majority of the construction materials and supplies used in the construction of our new hotels are purchased by us through a centralized procurement system."
+  },
+  {
+   "ticker": "HTHT",
+   "issuer": "H World Group Ltd",
+   "cik": "0001483994",
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1483994/000110465926048058/htht-20251231x20f.htm",
+   "sha256": "cb7052c602b2fcad4abecf3f0cf85dbe745c1a20ae9dce165e3179e8361366c0",
+   "retrieved_at": "2026-11-14T18:31:44+00:00",
+   "sentence": "Whether we can successfully increase the number of hotels and hotel rooms in our hotel group is largely affected by our ability to effectively identify and lease, own, manachise or franchise additional hotel properties at desirable locations on commercially favorable terms and the availability of funding to make necessary capital investments to open these new hotels."
+  },
+  {
+   "ticker": "HTHT",
+   "issuer": "H World Group Ltd",
+   "cik": "0001483994",
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1483994/000110465926048058/htht-20251231x20f.htm",
+   "sha256": "cb7052c602b2fcad4abecf3f0cf85dbe745c1a20ae9dce165e3179e8361366c0",
+   "retrieved_at": "2026-11-14T18:31:44+00:00",
+   "sentence": "When a new hotel starts operation and goes through the ramp-up stage, the occupancy rate is relatively low, and the room rate may be subject to discount."
+  },
+  {
+   "ticker": "HTHT",
+   "issuer": "H World Group Ltd",
+   "cik": "0001483994",
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1483994/000110465926048058/htht-20251231x20f.htm",
+   "sha256": "cb7052c602b2fcad4abecf3f0cf85dbe745c1a20ae9dce165e3179e8361366c0",
+   "retrieved_at": "2026-11-14T18:31:44+00:00",
+   "sentence": "New hotels opened in lower-tier cities generally have longer ramp-up period."
+  },
+  {
+   "ticker": "HTHT",
+   "issuer": "H World Group Ltd",
+   "cik": "0001483994",
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1483994/000110465926048058/htht-20251231x20f.htm",
+   "sha256": "cb7052c602b2fcad4abecf3f0cf85dbe745c1a20ae9dce165e3179e8361366c0",
+   "retrieved_at": "2026-11-14T18:31:44+00:00",
+   "sentence": "We anticipate that our hotel operating costs in absolute amount will increase as we continue to open new hotels."
+  },
+  {
+   "ticker": "HTHT",
+   "issuer": "H World Group Ltd",
+   "cik": "0001483994",
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1483994/000110465926048058/htht-20251231x20f.htm",
+   "sha256": "cb7052c602b2fcad4abecf3f0cf85dbe745c1a20ae9dce165e3179e8361366c0",
+   "retrieved_at": "2026-11-14T18:31:44+00:00",
+   "sentence": "This increase was primarily due to the expansion of our hotel network."
+  },
+  {
+   "ticker": "HTHT",
+   "issuer": "H World Group Ltd",
+   "cik": "0001483994",
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1483994/000110465926048058/htht-20251231x20f.htm",
+   "sha256": "cb7052c602b2fcad4abecf3f0cf85dbe745c1a20ae9dce165e3179e8361366c0",
+   "retrieved_at": "2026-11-14T18:31:44+00:00",
+   "sentence": "This increase was primarily due to expansion of our hotel network."
+  },
+  {
+   "ticker": "HTHT",
+   "issuer": "H World Group Ltd",
+   "cik": "0001483994",
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1483994/000110465926048058/htht-20251231x20f.htm",
+   "sha256": "cb7052c602b2fcad4abecf3f0cf85dbe745c1a20ae9dce165e3179e8361366c0",
+   "retrieved_at": "2026-11-14T18:31:44+00:00",
+   "sentence": "Initial one-time license/franchise fee : For the manachised and franchised hotel, the Group is entitled to an initial one-time franchise fee, which is typically fixed and collected upfront."
+  },
+  {
+   "ticker": "HTHT",
+   "issuer": "H World Group Ltd",
+   "cik": "0001483994",
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1483994/000110465926048058/htht-20251231x20f.htm",
+   "sha256": "cb7052c602b2fcad4abecf3f0cf85dbe745c1a20ae9dce165e3179e8361366c0",
+   "retrieved_at": "2026-11-14T18:31:44+00:00",
+   "sentence": "Reimbursements for hotel manager fees : Under the management and franchise agreements, the Group is entitled to be reimbursed for payroll related for the appointed hotel general managers and other out-of-pocket expenses the Group incurs on behalf of the manachised hotels."
+  },
+  {
+   "ticker": "HTHT",
+   "issuer": "H World Group Ltd",
+   "cik": "0001483994",
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-24",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1483994/000110465926048058/htht-20251231x20f.htm",
+   "sha256": "cb7052c602b2fcad4abecf3f0cf85dbe745c1a20ae9dce165e3179e8361366c0",
+   "retrieved_at": "2026-11-14T18:31:44+00:00",
+   "sentence": "The Group is entitled to reimbursement in the period the Group incurs the related reimbursable costs, which are recognized within manachised and franchised hotels revenue."
+  },
+  {
+   "ticker": "ATAT",
+   "issuer": "Atour Lifestyle Holdings Ltd",
+   "cik": "0001853717",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-17",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1853717/000110465926044551/atat-20251231x20f.htm",
+   "sha256": "f528b7761e17d41a90ed82ae000d47ccfb04b116612aa35b3bf35b1ef5d9240b",
+   "retrieved_at": "2026-11-14T18:31:47+00:00",
+   "sentence": "● Some of our existing development pipeline may not be developed into new hotels, which could materially and adversely affect our growth prospects."
+  },
+  {
+   "ticker": "ATAT",
+   "issuer": "Atour Lifestyle Holdings Ltd",
+   "cik": "0001853717",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-17",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1853717/000110465926044551/atat-20251231x20f.htm",
+   "sha256": "f528b7761e17d41a90ed82ae000d47ccfb04b116612aa35b3bf35b1ef5d9240b",
+   "retrieved_at": "2026-11-14T18:31:47+00:00",
+   "sentence": "We cannot assure you that our efforts in developing new hotel brands will be successful."
+  },
+  {
+   "ticker": "ATAT",
+   "issuer": "Atour Lifestyle Holdings Ltd",
+   "cik": "0001853717",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-17",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1853717/000110465926044551/atat-20251231x20f.htm",
+   "sha256": "f528b7761e17d41a90ed82ae000d47ccfb04b116612aa35b3bf35b1ef5d9240b",
+   "retrieved_at": "2026-11-14T18:31:47+00:00",
+   "sentence": "If a new hotel brand is not well received by our customers, we may not be able to generate sufficient revenue to offset related costs and expenses, and our overall financial performance and condition may be adversely affected."
+  },
+  {
+   "ticker": "ATAT",
+   "issuer": "Atour Lifestyle Holdings Ltd",
+   "cik": "0001853717",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-17",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1853717/000110465926044551/atat-20251231x20f.htm",
+   "sha256": "f528b7761e17d41a90ed82ae000d47ccfb04b116612aa35b3bf35b1ef5d9240b",
+   "retrieved_at": "2026-11-14T18:31:47+00:00",
+   "sentence": "While sales growth will depend in part on our plans for new hotel openings, deeper penetration into existing and new geographic markets and increased sales at our existing hotels will also affect our sales growth and will continue to be critical factors affecting our revenue and profit."
+  },
+  {
+   "ticker": "ATAT",
+   "issuer": "Atour Lifestyle Holdings Ltd",
+   "cik": "0001853717",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-17",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1853717/000110465926044551/atat-20251231x20f.htm",
+   "sha256": "f528b7761e17d41a90ed82ae000d47ccfb04b116612aa35b3bf35b1ef5d9240b",
+   "retrieved_at": "2026-11-14T18:31:47+00:00",
+   "sentence": "Some of our existing development pipeline may not be developed into new hotels, which could materially and adversely affect our growth prospects."
+  },
+  {
+   "ticker": "ATAT",
+   "issuer": "Atour Lifestyle Holdings Ltd",
+   "cik": "0001853717",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-17",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1853717/000110465926044551/atat-20251231x20f.htm",
+   "sha256": "f528b7761e17d41a90ed82ae000d47ccfb04b116612aa35b3bf35b1ef5d9240b",
+   "retrieved_at": "2026-11-14T18:31:47+00:00",
+   "sentence": "As of December 31, 2025, we had a pipeline of 779 manachised hotels with a total of 85,901 hotel rooms under development, which we define as hotels under construction or approved for development under our hotel brands."
+  },
+  {
+   "ticker": "ATAT",
+   "issuer": "Atour Lifestyle Holdings Ltd",
+   "cik": "0001853717",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-17",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1853717/000110465926044551/atat-20251231x20f.htm",
+   "sha256": "f528b7761e17d41a90ed82ae000d47ccfb04b116612aa35b3bf35b1ef5d9240b",
+   "retrieved_at": "2026-11-14T18:31:47+00:00",
+   "sentence": "As a result, not every hotel in our development pipeline may develop into a new hotel that enters our hotel network."
+  },
+  {
+   "ticker": "ATAT",
+   "issuer": "Atour Lifestyle Holdings Ltd",
+   "cik": "0001853717",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-17",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1853717/000110465926044551/atat-20251231x20f.htm",
+   "sha256": "f528b7761e17d41a90ed82ae000d47ccfb04b116612aa35b3bf35b1ef5d9240b",
+   "retrieved_at": "2026-11-14T18:31:47+00:00",
+   "sentence": "Any expansion of our leased hotel portfolio or rebranding of existing leased hotels would incur significant upfront capital expenditures and relatively low revenues during the ramp-up stage, which could materially impact our financial performance."
+  },
+  {
+   "ticker": "ATAT",
+   "issuer": "Atour Lifestyle Holdings Ltd",
+   "cik": "0001853717",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-17",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1853717/000110465926044551/atat-20251231x20f.htm",
+   "sha256": "f528b7761e17d41a90ed82ae000d47ccfb04b116612aa35b3bf35b1ef5d9240b",
+   "retrieved_at": "2026-11-14T18:31:47+00:00",
+   "sentence": "We mainly rely on the manachised model to drive a scalable, asset-light expansion of our hotel network."
+  },
+  {
+   "ticker": "ATAT",
+   "issuer": "Atour Lifestyle Holdings Ltd",
+   "cik": "0001853717",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-17",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1853717/000110465926044551/atat-20251231x20f.htm",
+   "sha256": "f528b7761e17d41a90ed82ae000d47ccfb04b116612aa35b3bf35b1ef5d9240b",
+   "retrieved_at": "2026-11-14T18:31:47+00:00",
+   "sentence": "With standardized workflows, visual dashboards and transparent data integration, HLM systematically addresses the pain points in hotel development such as prolonged cycles, fragmented information and uncontrolled costs, and significantly improves the efficiency of opening new hotels while ensuring the consistent quality standard in newly opened hotels, which maximizes the value of our assets."
+  },
+  {
+   "ticker": "ATAT",
+   "issuer": "Atour Lifestyle Holdings Ltd",
+   "cik": "0001853717",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-17",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1853717/000110465926044551/atat-20251231x20f.htm",
+   "sha256": "f528b7761e17d41a90ed82ae000d47ccfb04b116612aa35b3bf35b1ef5d9240b",
+   "retrieved_at": "2026-11-14T18:31:47+00:00",
+   "sentence": "During the ramp-up stage, when the occupancy rate is relatively low, revenues generated from these new hotels may be insufficient to cover their operating costs."
+  },
+  {
+   "ticker": "GHG",
+   "issuer": "GreenTree Hospitality Group Ltd.",
+   "cik": "0001724755",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-30",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1724755/000121390026050417/ea0287763-20f_greentree.htm",
+   "sha256": "053bee3012899f9e96e9a5d6b08899a3b109bb46a0a10461801ccdaf5c2795fd",
+   "retrieved_at": "2026-11-14T18:31:50+00:00",
+   "sentence": "depend in part on our plans for new hotel and restaurant openings, deeper penetration into existing and new geographic markets and increased"
+  },
+  {
+   "ticker": "GHG",
+   "issuer": "GreenTree Hospitality Group Ltd.",
+   "cik": "0001724755",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-30",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1724755/000121390026050417/ea0287763-20f_greentree.htm",
+   "sha256": "053bee3012899f9e96e9a5d6b08899a3b109bb46a0a10461801ccdaf5c2795fd",
+   "retrieved_at": "2026-11-14T18:31:50+00:00",
+   "sentence": "our ability to open and profitably operate new hotels under both franchised-and-managed model and leased-and-operated model."
+  },
+  {
+   "ticker": "GHG",
+   "issuer": "GreenTree Hospitality Group Ltd.",
+   "cik": "0001724755",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-30",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1724755/000121390026050417/ea0287763-20f_greentree.htm",
+   "sha256": "053bee3012899f9e96e9a5d6b08899a3b109bb46a0a10461801ccdaf5c2795fd",
+   "retrieved_at": "2026-11-14T18:31:50+00:00",
+   "sentence": "growth depends on our ability to open and profitably operate new hotels under both franchised-and-managed model and"
+  },
+  {
+   "ticker": "GHG",
+   "issuer": "GreenTree Hospitality Group Ltd.",
+   "cik": "0001724755",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-30",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1724755/000121390026050417/ea0287763-20f_greentree.htm",
+   "sha256": "053bee3012899f9e96e9a5d6b08899a3b109bb46a0a10461801ccdaf5c2795fd",
+   "retrieved_at": "2026-11-14T18:31:50+00:00",
+   "sentence": "As a result, any new hotels and restaurants we open in those markets may be less successful than hotels and restaurants"
+  },
+  {
+   "ticker": "GHG",
+   "issuer": "GreenTree Hospitality Group Ltd.",
+   "cik": "0001724755",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-30",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1724755/000121390026050417/ea0287763-20f_greentree.htm",
+   "sha256": "053bee3012899f9e96e9a5d6b08899a3b109bb46a0a10461801ccdaf5c2795fd",
+   "retrieved_at": "2026-11-14T18:31:50+00:00",
+   "sentence": "the timing of new hotel openings, revenue loss associated with the temporary closure of existing hotels or restaurants for refurbishment,"
+  },
+  {
+   "ticker": "GHG",
+   "issuer": "GreenTree Hospitality Group Ltd.",
+   "cik": "0001724755",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-30",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1724755/000121390026050417/ea0287763-20f_greentree.htm",
+   "sha256": "053bee3012899f9e96e9a5d6b08899a3b109bb46a0a10461801ccdaf5c2795fd",
+   "retrieved_at": "2026-11-14T18:31:50+00:00",
+   "sentence": "The amount and timing of such additional financing needs will vary depending on the timing of our new hotel and restaurant openings,"
+  },
+  {
+   "ticker": "GHG",
+   "issuer": "GreenTree Hospitality Group Ltd.",
+   "cik": "0001724755",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-30",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1724755/000121390026050417/ea0287763-20f_greentree.htm",
+   "sha256": "053bee3012899f9e96e9a5d6b08899a3b109bb46a0a10461801ccdaf5c2795fd",
+   "retrieved_at": "2026-11-14T18:31:50+00:00",
+   "sentence": "hotels, we require our development team and operations team to assess the potential financial return of every proposed new hotel."
+  },
+  {
+   "ticker": "GHG",
+   "issuer": "GreenTree Hospitality Group Ltd.",
+   "cik": "0001724755",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-30",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1724755/000121390026050417/ea0287763-20f_greentree.htm",
+   "sha256": "053bee3012899f9e96e9a5d6b08899a3b109bb46a0a10461801ccdaf5c2795fd",
+   "retrieved_at": "2026-11-14T18:31:50+00:00",
+   "sentence": "on in the process of constructing or converting a new property through the opening of the new hotel."
+  },
+  {
+   "ticker": "GHG",
+   "issuer": "GreenTree Hospitality Group Ltd.",
+   "cik": "0001724755",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-30",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1724755/000121390026050417/ea0287763-20f_greentree.htm",
+   "sha256": "053bee3012899f9e96e9a5d6b08899a3b109bb46a0a10461801ccdaf5c2795fd",
+   "retrieved_at": "2026-11-14T18:31:50+00:00",
+   "sentence": "delivering training to our new hotel employees and regional general managers, each course program with different focuses."
+  },
+  {
+   "ticker": "GHG",
+   "issuer": "GreenTree Hospitality Group Ltd.",
+   "cik": "0001724755",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-30",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1724755/000121390026050417/ea0287763-20f_greentree.htm",
+   "sha256": "053bee3012899f9e96e9a5d6b08899a3b109bb46a0a10461801ccdaf5c2795fd",
+   "retrieved_at": "2026-11-14T18:31:50+00:00",
+   "sentence": "and efficiency of our entire business process, from the moment when a new hotel project is signed, to our construction or conversion,"
+  },
+  {
+   "ticker": "GHG",
+   "issuer": "GreenTree Hospitality Group Ltd.",
+   "cik": "0001724755",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-30",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1724755/000121390026050417/ea0287763-20f_greentree.htm",
+   "sha256": "053bee3012899f9e96e9a5d6b08899a3b109bb46a0a10461801ccdaf5c2795fd",
+   "retrieved_at": "2026-11-14T18:31:50+00:00",
+   "sentence": "to the decrease in RevPAR and the closure of lease-and-operated hotels, but offset by the expansion of franchised-and-managed hotels."
+  },
+  {
+   "ticker": "GHG",
+   "issuer": "GreenTree Hospitality Group Ltd.",
+   "cik": "0001724755",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "20-F",
+   "filed": "2026-04-30",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1724755/000121390026050417/ea0287763-20f_greentree.htm",
+   "sha256": "053bee3012899f9e96e9a5d6b08899a3b109bb46a0a10461801ccdaf5c2795fd",
+   "retrieved_at": "2026-11-14T18:31:50+00:00",
+   "sentence": "the organic expansion of our hotel chain and the improvement of existing hotel properties, including conversion of existing leased-and-operated"
+  },
+  {
+   "ticker": "PRKS",
+   "issuer": "United Parks & Resorts Inc.",
+   "cik": "0001564902",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-03-03",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1564902/000119312526088288/prks-20251231.htm",
+   "sha256": "c28873ed7e5deeea32ff5abd0337954920e38578bd7c6d668406bd00266eb6f1",
+   "retrieved_at": "2026-11-14T18:31:56+00:00",
+   "sentence": "The Company has commenced construction of certain new theme park attractions and other projects under contracts with various third parties."
+  },
+  {
+   "ticker": "MSGE",
+   "issuer": "Madison Square Garden Entertainment Corp.",
+   "cik": "0001952073",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-08-12",
+   "period": "2026-06-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1952073/000162828026056286/msge-20260630.htm",
+   "sha256": "a24d65d2a7ae6e652de214188a2d09023b3a3593ca7692d6874f9fc10c5f8195",
+   "retrieved_at": "2026-11-14T18:31:59+00:00",
+   "sentence": "MSG Sports is entitled to a 67.5 % share of the Company’s suite license revenue pursuant to the terms of the Arena License Agreements, which is recognized as a component of Direct operating expenses in the consolidated statements of operations."
+  },
+  {
+   "ticker": "MSGE",
+   "issuer": "Madison Square Garden Entertainment Corp.",
+   "cik": "0001952073",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-08-12",
+   "period": "2026-06-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1952073/000162828026056286/msge-20260630.htm",
+   "sha256": "a24d65d2a7ae6e652de214188a2d09023b3a3593ca7692d6874f9fc10c5f8195",
+   "retrieved_at": "2026-11-14T18:31:59+00:00",
+   "sentence": "In accordance with the Arena License Agreements, MSG Sports is entitled to a share of the revenue generated from certain signage performance obligations where the Company is the principal."
+  },
+  {
+   "ticker": "JOE",
+   "issuer": "ST JOE Co",
+   "cik": "0000745308",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/745308/000110465926019676/joe-20251231x10k.htm",
+   "sha256": "1e442a498a69e055461c0113a7ae38af4b10c312233c86749e41bfd9d7743c9c",
+   "retrieved_at": "2026-11-14T18:32:02+00:00",
+   "sentence": "A portion of our land is within the Bay-Walton Sector Plan (“Sector Plan”) that entitles or gives legal rights for us to originally develop over 170,000 residential dwelling units, over 22 million square feet of retail, commercial and industrial space and over 3,000 hotel rooms on lands within Florida’s Bay and Walton counties."
+  },
+  {
+   "ticker": "JOE",
+   "issuer": "ST JOE Co",
+   "cik": "0000745308",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/745308/000110465926019676/joe-20251231x10k.htm",
+   "sha256": "1e442a498a69e055461c0113a7ae38af4b10c312233c86749e41bfd9d7743c9c",
+   "retrieved_at": "2026-11-14T18:32:02+00:00",
+   "sentence": "A portion of our land is within the Sector Plan that entitles or gives legal rights for us to originally develop over 170,000 residential dwelling units, over 22 million square feet of retail, commercial and industrial space and over 3,000 hotel rooms on lands within Florida’s Bay and Walton counties."
+  },
+  {
+   "ticker": "JOE",
+   "issuer": "ST JOE Co",
+   "cik": "0000745308",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/745308/000110465926019676/joe-20251231x10k.htm",
+   "sha256": "1e442a498a69e055461c0113a7ae38af4b10c312233c86749e41bfd9d7743c9c",
+   "retrieved_at": "2026-11-14T18:32:02+00:00",
+   "sentence": "We have significant additional entitlements for future hotel projects on our land holdings."
+  },
+  {
+   "ticker": "JOE",
+   "issuer": "ST JOE Co",
+   "cik": "0000745308",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/745308/000110465926019676/joe-20251231x10k.htm",
+   "sha256": "1e442a498a69e055461c0113a7ae38af4b10c312233c86749e41bfd9d7743c9c",
+   "retrieved_at": "2026-11-14T18:32:02+00:00",
+   "sentence": "The commercial segment also oversees the planning, development, entitlement, management and sale of the Company’s commercial and forestry land holdings for a variety of uses, including a broad range of retail, office, hotel, senior living, multi-family, self-storage and industrial properties."
+  },
+  {
+   "ticker": "MAC",
+   "issuer": "MACERICH CO",
+   "cik": "0000912242",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/912242/000091224226000016/mac-20251231.htm",
+   "sha256": "872a4fcdb915365af877d2019aba3dea125dacc839cd2db0ada7385e908c061d",
+   "retrieved_at": "2026-11-14T18:32:16+00:00",
+   "sentence": "The Company’s joint venture in Scottsdale Fashion Square, a 1,879,000 square foot regional retail center in Scottsdale, Arizona, is redeveloping a two-level Nordstrom wing with luxury-focused retail and restaurant uses."
+  },
+  {
+   "ticker": "MAC",
+   "issuer": "MACERICH CO",
+   "cik": "0000912242",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/912242/000091224226000016/mac-20251231.htm",
+   "sha256": "872a4fcdb915365af877d2019aba3dea125dacc839cd2db0ada7385e908c061d",
+   "retrieved_at": "2026-11-14T18:32:16+00:00",
+   "sentence": "On a selective basis, the Company's business strategy may include mixed-use densification to maximize space at the Company’s Regional Retail Centers, including by developing available land at the Regional Retail Centers or by demolishing underperforming department store boxes and redeveloping the land."
+  },
+  {
+   "ticker": "MAC",
+   "issuer": "MACERICH CO",
+   "cik": "0000912242",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/912242/000091224226000016/mac-20251231.htm",
+   "sha256": "872a4fcdb915365af877d2019aba3dea125dacc839cd2db0ada7385e908c061d",
+   "retrieved_at": "2026-11-14T18:32:16+00:00",
+   "sentence": "Additionally, if we fail to identify and secure the right blend of tenants at our retail and mixed-use properties, including our properties under development or redevelopment, our Centers may not appeal to the communities they are intended to serve, which could reduce customer traffic and the operations of our tenants and adversely affect our financial condition and results of operations."
+  },
+  {
+   "ticker": "MAC",
+   "issuer": "MACERICH CO",
+   "cik": "0000912242",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/912242/000091224226000016/mac-20251231.htm",
+   "sha256": "872a4fcdb915365af877d2019aba3dea125dacc839cd2db0ada7385e908c061d",
+   "retrieved_at": "2026-11-14T18:32:16+00:00",
+   "sentence": "On a selective basis, our business strategy may include mixed-use densification to maximize space at our Regional Retail Centers, including by developing available land at our Regional Retail Centers or by demolishing underperforming department store boxes and redeveloping the land."
+  },
+  {
+   "ticker": "MAC",
+   "issuer": "MACERICH CO",
+   "cik": "0000912242",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/912242/000091224226000016/mac-20251231.htm",
+   "sha256": "872a4fcdb915365af877d2019aba3dea125dacc839cd2db0ada7385e908c061d",
+   "retrieved_at": "2026-11-14T18:32:16+00:00",
+   "sentence": "The Company’s joint venture in Scottsdale Fashion Square, a 1,879,000 square foot regional retail center in Scottsdale, Arizona, is redeveloping a two-level Nordstrom wing with luxury-focused retail and restaurant uses."
+  },
+  {
+   "ticker": "SPG",
+   "issuer": "SIMON PROPERTY GROUP INC.",
+   "cik": "0001063761",
+   "exchanges": [
+    null,
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926019419/spg-20251231x10k.htm",
+   "sha256": "f187007c9fcfa395b0e0c83f2acef96a22f653770118cc87b36567f87e471018",
+   "retrieved_at": "2026-11-14T18:32:19+00:00",
+   "sentence": "In addition, we have redevelopment and expansion projects, including the addition of anchors, big box tenants, and restaurants, underway at several properties in North America, Europe and Asia."
+  },
+  {
+   "ticker": "SPG",
+   "issuer": "SIMON PROPERTY GROUP INC.",
+   "cik": "0001063761",
+   "exchanges": [
+    null,
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-25",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926019419/spg-20251231x10k.htm",
+   "sha256": "f187007c9fcfa395b0e0c83f2acef96a22f653770118cc87b36567f87e471018",
+   "retrieved_at": "2026-11-14T18:32:19+00:00",
+   "sentence": "Redevelopment and expansion projects, including the addition of anchors, big box tenants, and restaurants are underway at several properties in North America, Europe, and Asia."
+  },
+  {
+   "ticker": "FRT",
+   "issuer": "FEDERAL REALTY INVESTMENT TRUST",
+   "cik": "0000034903",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000017/frt-20251231.htm",
+   "sha256": "14ac48dfc00682f797b66a9f04e148293d9709d201bf09f11ac96a8d2e5714f6",
+   "retrieved_at": "2026-11-14T18:32:22+00:00",
+   "sentence": "We specialize in the ownership, management, and redevelopment of high quality retail and mixed-use properties."
+  },
+  {
+   "ticker": "FRT",
+   "issuer": "FEDERAL REALTY INVESTMENT TRUST",
+   "cik": "0000034903",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000017/frt-20251231.htm",
+   "sha256": "14ac48dfc00682f797b66a9f04e148293d9709d201bf09f11ac96a8d2e5714f6",
+   "retrieved_at": "2026-11-14T18:32:22+00:00",
+   "sentence": "Our portfolio includes, and we continue to acquire and redevelop, high quality retail in many formats ranging from regional, community and neighborhood shopping centers that often are anchored by grocery stores to mixed-use properties that are typically centered around a retail component but also include residential and office components."
+  },
+  {
+   "ticker": "FRT",
+   "issuer": "FEDERAL REALTY INVESTMENT TRUST",
+   "cik": "0000034903",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000017/frt-20251231.htm",
+   "sha256": "14ac48dfc00682f797b66a9f04e148293d9709d201bf09f11ac96a8d2e5714f6",
+   "retrieved_at": "2026-11-14T18:32:22+00:00",
+   "sentence": "Our current business plan focuses on our investment in high quality retail based properties that are typically neighborhood and community shopping centers or mixed-use properties, principally through redevelopments and acquisitions."
+  },
+  {
+   "ticker": "FRT",
+   "issuer": "FEDERAL REALTY INVESTMENT TRUST",
+   "cik": "0000034903",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000017/frt-20251231.htm",
+   "sha256": "14ac48dfc00682f797b66a9f04e148293d9709d201bf09f11ac96a8d2e5714f6",
+   "retrieved_at": "2026-11-14T18:32:22+00:00",
+   "sentence": "The Parent Company specializes in the ownership, management, and redevelopment of retail and mixed-use properties through the Operating Partnership, and has no other substantial assets or liabilities other than through its investment in the Operating Partnership."
+  },
+  {
+   "ticker": "FRT",
+   "issuer": "FEDERAL REALTY INVESTMENT TRUST",
+   "cik": "0000034903",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-12",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000017/frt-20251231.htm",
+   "sha256": "14ac48dfc00682f797b66a9f04e148293d9709d201bf09f11ac96a8d2e5714f6",
+   "retrieved_at": "2026-11-14T18:32:22+00:00",
+   "sentence": "Our primary business is the ownership, management, and redevelopment of retail and mixed-use properties."
+  },
+  {
+   "ticker": "KIM",
+   "issuer": "KIMCO REALTY CORP",
+   "cik": "0000879101",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/879101/000119312526060760/kim-20251231.htm",
+   "sha256": "1799a5649caefddd221059fdff45b9b5261d56c5ab25287cca97fef934a36c92",
+   "retrieved_at": "2026-11-14T18:32:26+00:00",
+   "sentence": "Additionally, the Company has developed, and continues to develop, various residential and mixed-use operating properties, as well as obtain entitlements to embark on additional projects of this nature through re-development opportunities."
+  },
+  {
+   "ticker": "KIM",
+   "issuer": "KIMCO REALTY CORP",
+   "cik": "0000879101",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/879101/000119312526060760/kim-20251231.htm",
+   "sha256": "1799a5649caefddd221059fdff45b9b5261d56c5ab25287cca97fef934a36c92",
+   "retrieved_at": "2026-11-14T18:32:26+00:00",
+   "sentence": "In addition, the Company, on a selective basis, has developed or redeveloped projects, which include residential and mixed-use components."
+  },
+  {
+   "ticker": "KIM",
+   "issuer": "KIMCO REALTY CORP",
+   "cik": "0000879101",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-20",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/879101/000119312526060760/kim-20251231.htm",
+   "sha256": "1799a5649caefddd221059fdff45b9b5261d56c5ab25287cca97fef934a36c92",
+   "retrieved_at": "2026-11-14T18:32:26+00:00",
+   "sentence": "The Company is actively pursuing redevelopment opportunities within its operating portfolio, including residential and mixed-use components, which it believes will increase the overall value by bringing in new tenants and improving the assets’ value."
+  },
+  {
+   "ticker": "REG",
+   "issuer": "REGENCY CENTERS CORP",
+   "cik": "0000910606",
+   "exchanges": [
+    "Nasdaq",
+    "Nasdaq",
+    "Nasdaq"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-13",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/910606/000119312526051668/reg-20251231.htm",
+   "sha256": "2f4dd61a3b4c5ea56f86f97a1285426dfa173a2ba45ea4bc350a4997773423e9",
+   "retrieved_at": "2026-11-14T18:32:30+00:00",
+   "sentence": "If we engage in more complex acquisitions and mixed-use development and redevelopment projects, there could be more unique risks to our return on investment."
+  },
+  {
+   "ticker": "BXP",
+   "issuer": "BXP, Inc.",
+   "cik": "0001037540",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+   "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+   "retrieved_at": "2026-11-14T18:32:34+00:00",
+   "sentence": "As lessor, BPLP is entitled to a percentage of gross receipts from the hotel property."
+  },
+  {
+   "ticker": "BXP",
+   "issuer": "BXP, Inc.",
+   "cik": "0001037540",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+   "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+   "retrieved_at": "2026-11-14T18:32:34+00:00",
+   "sentence": "Our properties consisted of (1) 157 office and life sciences properties (including four properties under construction/redevelopment), (2) 14 retail properties (including one property under construction), (3) seven residential properties (including three properties under construction) and (4) one hotel."
+  },
+  {
+   "ticker": "BXP",
+   "issuer": "BXP, Inc.",
+   "cik": "0001037540",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+   "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+   "retrieved_at": "2026-11-14T18:32:34+00:00",
+   "sentence": "As lessor, BPLP is entitled to a percentage of gross receipts from the hotel property."
+  },
+  {
+   "ticker": "BXP",
+   "issuer": "BXP, Inc.",
+   "cik": "0001037540",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-27",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+   "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+   "retrieved_at": "2026-11-14T18:32:34+00:00",
+   "sentence": "As lessor, BPLP is entitled to a percentage of gross receipts from the hotel property."
+  },
+  {
+   "ticker": "VNO",
+   "issuer": "VORNADO REALTY TRUST",
+   "cik": "0000899689",
+   "exchanges": [
+    "NYSE",
+    "OTC",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-09",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/899689/000089968926000009/vno-20251231.htm",
+   "sha256": "22b24a6ca554f21bd5d1d609993ecd389e0150b32de9fd2bfe59316de775f7b0",
+   "retrieved_at": "2026-11-14T18:32:37+00:00",
+   "sentence": "• Multiple development sites and redevelopment projects, including 350 Park Avenue, Sunset Pier 94 Studios, 623 Fifth Avenue, the Hotel Pennsylvania site (PENN 15) and other PENN district sites;"
+  },
+  {
+   "ticker": "VNO",
+   "issuer": "VORNADO REALTY TRUST",
+   "cik": "0000899689",
+   "exchanges": [
+    "NYSE",
+    "OTC",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-09",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/899689/000089968926000009/vno-20251231.htm",
+   "sha256": "22b24a6ca554f21bd5d1d609993ecd389e0150b32de9fd2bfe59316de775f7b0",
+   "retrieved_at": "2026-11-14T18:32:37+00:00",
+   "sentence": "• Multiple development sites and redevelopment projects, including 350 Park Avenue, Sunset Pier 94 Studios, 623 Fifth Avenue, the Hotel Pennsylvania site (PENN 15) and other PENN District sites;"
+  },
+  {
+   "ticker": "KRC",
+   "issuer": "KILROY REALTY CORP",
+   "cik": "0001025996",
+   "exchanges": [
+    "NYSE"
+   ],
+   "form": "10-K",
+   "filed": "2026-02-11",
+   "period": "2025-12-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1025996/000162828026007051/krc-20251231.htm",
+   "sha256": "a10cf3eda8e9594c63ef42c44ff91d702b84fac86bc296d1bda03119a44461d6",
+   "retrieved_at": "2026-11-14T18:32:54+00:00",
+   "sentence": "We may engage in the additional development and redevelopment of office, life science, and mixed-use properties when market conditions support a favorable risk-adjusted return on such projects."
+  }
+ ]
+}
