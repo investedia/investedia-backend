@@ -4,26 +4,32 @@
  "live": 160,
  "new_acquisitions": 2,
  "location": {
-  "approximate/-/-": 47,
-  "exact/address_point/high": 27,
-  "exact/address_point/medium": 59,
+  "approximate/-/-": 46,
+  "approximate/address_point/high": 27,
+  "approximate/address_point/medium": 60,
   "unknown/-/-": 6,
   "approximate/city_reference/-": 11,
   "exact/building_point/high": 10
  },
  "precision": {
-  "approximate": 58,
-  "exact": 96,
-  "unknown": 6
+  "approximate": 144,
+  "unknown": 6,
+  "exact": 10
  },
- "with_address": 112,
+ "location_class": {
+  "approximate city point": 57,
+  "verified address point": 87,
+  "unknown": 6,
+  "building point": 10
+ },
+ "with_address": 113,
  "with_aliases": 8,
  "imagery": {
-  "accepted": 13,
-  "pending": 6,
+  "accepted": 14,
+  "pending": 5,
   "rejected": 2
  },
- "records_with_photo": 13,
+ "records_with_photo": 14,
  "stage": {
   "operating": 152,
   "under_construction": 5,
@@ -47,5 +53,5 @@
   "acquisition": 2
  },
  "release_proposed": 20,
- "release_proposed_with_photo": 13
+ "release_proposed_with_photo": 14
 }

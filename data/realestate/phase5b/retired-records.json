@@ -321,12 +321,12 @@
    "certainty": "company_reported"
   },
   "location": {
-   "precision": "exact",
+   "precision": "approximate",
    "point_type": "address_point",
    "confidence": "medium",
    "lat": 38.907807,
    "lon": -77.042459,
-   "label": "1330 Connecticut Ave Nw, Washington, Dc, 20036 (address point)",
+   "label": "1330 Connecticut Ave Nw, Washington, Dc, 20036 (verified address point, not a building outline)",
    "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
    "satellite_allowed": false,
    "evidence": {
@@ -460,7 +460,7 @@
     }
    ],
    "last_verified_at": "2026-11-14T00:00:00Z",
-   "fact_fingerprint": "61d71db52cecb3ffbd552851b88c91d17229d2ec1cc96466905c0863c0245219",
+   "fact_fingerprint": "ee869952530152c9452b08c2cfe48652481f5d015ee323cad3104bdd9eac0fa0",
    "watch": [
     "status",
     "ownership",
@@ -654,12 +654,12 @@
    "certainty": "company_reported"
   },
   "location": {
-   "precision": "exact",
+   "precision": "approximate",
    "point_type": "address_point",
    "confidence": "medium",
    "lat": 42.364393,
    "lon": -71.088249,
-   "label": "121 Broadway, Cambridge, Ma, 02142 (address point)",
+   "label": "121 Broadway, Cambridge, Ma, 02142 (verified address point, not a building outline)",
    "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
    "satellite_allowed": false,
    "evidence": {
@@ -793,7 +793,7 @@
     }
    ],
    "last_verified_at": "2026-11-14T00:00:00Z",
-   "fact_fingerprint": "274bcba3360fb0a115df83957c8dd7bce618bad75d952a29bc0c6952bfdefc3c",
+   "fact_fingerprint": "f1bbd1f6a99e1335d8bc894e41756f90b8903ae8686708f1536f361de7c82d01",
    "watch": [
     "status",
     "ownership",

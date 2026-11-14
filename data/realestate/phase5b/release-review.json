@@ -23,14 +23,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": true,
   "proposed_release": true,
   "score": 65,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "a176dd98bf895836100296b2f5a531a82a1d13d61f12d3943aa7e0a8562be5af"
+  "fact_sha256": "bd3b5bae5cc8734a322cdbe4703283eb8e4131f11412b064beeb23d65a450819"
  },
  {
   "id": "re:bxp:103-citypoint",
@@ -56,14 +56,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "6c152fa1942349b80719404c7519b89a4f9a20b14ef5648905967fb0c7cb8942"
+  "fact_sha256": "ef2325f389ab915c49a9ebd26f2c009714910a2c01b105c3bda27d598f58d644"
  },
  {
   "id": "re:bxp:121-broadway",
@@ -72,7 +72,7 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "unknown",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
@@ -81,7 +81,7 @@
    "status unresolved",
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "6e1194e7039290b0e5cc4055dc963c120bc97192a67b6b492937420110345869"
+  "fact_sha256": "843179a28e1c0866609489eab79d0d5bea8298c910e88e86230aad6bf031ef5e"
  },
  {
   "id": "re:bxp:121-broadway-street",
@@ -90,14 +90,14 @@
   "role": "developer",
   "stake": null,
   "stage": "under_construction",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": true,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "cda6ae5365e1d9a6f359d86431d84ec6daef9497289a1f0974eecc5fb2f3c466"
+  "fact_sha256": "06e448484fdc6e2300acd00ec8010c5175e28a6961009acf4632501609af54bc"
  },
  {
   "id": "re:bxp:125-broadway",
@@ -106,14 +106,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "92a201b9980f5c0d252d7c7ed557f402540007c0c425b210d57c5218ec5abd82"
+  "fact_sha256": "46a36e5676c0192b693c27fdb47e8bad1ac19bab67daa7d0411c5fb6e4f7d021"
  },
  {
   "id": "re:bxp:1330-connecticut-avenue",
@@ -122,7 +122,7 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
@@ -130,7 +130,7 @@
    "disposed (retired)",
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "4142d783d69432f5025734f93be0ded4c046e88d6d4f88fc39aef0c9afc2e4a8"
+  "fact_sha256": "a108fa755f8c709b363858ebf46559a24f8de762a7d40c86e80cc99e51aafc6d"
  },
  {
   "id": "re:bxp:145-broadway",
@@ -139,14 +139,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "f306d636de15054b41a19ae5ed990656028bf9838dc3e2071c3b913506e6eaa8"
+  "fact_sha256": "151829828defcdc193d547cca9a4a50085e9853bf927c89e4a8fb3a369da2912"
  },
  {
   "id": "re:bxp:150-broadway",
@@ -155,14 +155,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "10a7c33683e1696cf9e130de5a85087b7fa56997dc08c378a265c33d7bbd13af"
+  "fact_sha256": "80a9329fbb3997e9d4c1c1b064ed689a80f90a88e060a687c6b8bab7df351dd6"
  },
  {
   "id": "re:bxp:153-211-second-avenue",
@@ -188,14 +188,14 @@
   "role": "developer",
   "stake": 20.0,
   "stage": "under_construction",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": true,
   "score": 45,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "f07a142cbec34f7a4a28c294fae918269c04208d154ea3d67f8d0e37a2aaee94"
+  "fact_sha256": "562dcd0de920a2672d82123bfae051bc51d05a10e576e68518137259f1b0963f"
  },
  {
   "id": "re:bxp:17fifty-presidents-street",
@@ -255,14 +255,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "dcf94b5f1e2d84f5952137cd675ce65f3ec0b8a16bdf337f4f8e505610eb8cf9"
+  "fact_sha256": "ca129dce3b76700d368a3a48780aef7491f169b7fdb624971ecb935a07a60cd1"
  },
  {
   "id": "re:bxp:200-west-street",
@@ -271,14 +271,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "ec12ebd5d40ca614d994a8ec491a5ff7929b937e0a7238fb2a71abf6c6843b3f"
+  "fact_sha256": "a77dacfa875a4ad55a508bcede6083bbc65cb9aa113f908723b303ac6ecc6690"
  },
  {
   "id": "re:bxp:2100-pennsylvania-avenue",
@@ -287,14 +287,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "953ca9a932706f614bb92ab6b3f769b925d29c4d52a1af62c319c667e1495d28"
+  "fact_sha256": "18cb3a87e8331f58a7b74271bfe971f57bd1387cb001dcab2cd1e37b8406322c"
  },
  {
   "id": "re:bxp:2200-pennsylvania-avenue",
@@ -303,14 +303,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "4633852963544816380749ca70602426f0f6f52d845b35257423fcc489d960eb"
+  "fact_sha256": "4c280394c85cee5df947f713e9ff5cd91f7b9ca3795d90c0e321ba25f22ac1dd"
  },
  {
   "id": "re:bxp:230-citypoint",
@@ -336,14 +336,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "cf66defcaa33d860a1ebf197c2865874ff0e69ddde0323c0123c4f85d0322659"
+  "fact_sha256": "b8802744ed72382819ea931fb3ff9dbc701332aeb37475c47c359af0a78b7fe9"
  },
  {
   "id": "re:bxp:250-binney-street",
@@ -352,14 +352,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "57c80a7b5d5e533158f4352d1e160ee47fa5c587bbe3683b3e209edff7bccc76"
+  "fact_sha256": "2230bb9e2266a8908d6fd420ac46971945f629e8eb034f3341c286bda9f9c212"
  },
  {
   "id": "re:bxp:250-west-55th-street",
@@ -368,14 +368,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
-  "image": false,
-  "proposed_release": false,
-  "score": 40,
+  "location": "approximate/address_point/high",
+  "image": true,
+  "proposed_release": true,
+  "score": 65,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "8389670d4f42f955c31dad8d8753b0868c592d7cb3bab17fd5f029e4a5599ce9"
+  "fact_sha256": "b8174a7212691ae93a3f80e11d42fb20b60d51aacf03f33f504ff17da12dc73d"
  },
  {
   "id": "re:bxp:255-main-street",
@@ -384,14 +384,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "faff6c0fbe0cd709a327853e628eae6bbef614e466a759bf266534a4c360cb4e"
+  "fact_sha256": "eca97ecd9e8c3f747f3929ac88fd426107812f7fb9f8391d7ea56866cd2ff098"
  },
  {
   "id": "re:bxp:290-binney-street",
@@ -400,14 +400,14 @@
   "role": "developer",
   "stake": 55.0,
   "stage": "completed",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": true,
   "score": 45,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "5dbbb6016711b0e248d4a39d7b46c68cc4a75ef8c09c11772dcaa9627d1e6430"
+  "fact_sha256": "8e3da014e0fec976da8d2a04be6f893916d73166111f3b82aeb5c13819a87225"
  },
  {
   "id": "re:bxp:290-coles-street",
@@ -416,14 +416,14 @@
   "role": "developer",
   "stake": 19.46,
   "stage": "under_construction",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": true,
   "score": 45,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "2aa9c08e4495cf33c3ee4f19bdad3bd94740dca2c43e481dbc04774827b728af"
+  "fact_sha256": "d4f560386ff4e18bcf2bd2623527d51f33b14c26684d42c70f4fcbeea2eb554d"
  },
  {
   "id": "re:bxp:300-binney-street",
@@ -432,14 +432,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "1a637f9ff3da0aab94fed5dd8a246211705720297c266a52e033a574aa7efd78"
+  "fact_sha256": "a8628b307b3f33b0cbfc36ca67abf27a4d654730d6647d0268b510fce4770d0a"
  },
  {
   "id": "re:bxp:32-hartwell-avenue",
@@ -448,14 +448,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "57960b653e2aba2208141ccfcfd81f4f4bb4be1746fd3029308afe75c735f2b6"
+  "fact_sha256": "bfb3dae16e977e06b73a216811f1048d3ad22f47a61bec02c1d90e43fd20b1b2"
  },
  {
   "id": "re:bxp:325-main-street",
@@ -464,14 +464,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "3602be793618f6e640fba45b66c79bf75fbc2af6c603af2d2493f4fc310b9758"
+  "fact_sha256": "d223f136062e1c3b743129223c2141ede7dea2d7ced596a19bd594984f87868b"
  },
  {
   "id": "re:bxp:33-hayden-avenue",
@@ -480,14 +480,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "724a52023a2b8b1b3855cf6738393a12d2a77d6528c891922a35d0839eb348e1"
+  "fact_sha256": "a08085c6ac7b0bfca82e5f2a3d5cf40c1772dd558a22a6c3ae08be993b435385"
  },
  {
   "id": "re:bxp:343-madison-avenue",
@@ -496,14 +496,14 @@
   "role": "developer",
   "stake": 89.45,
   "stage": "under_construction",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": true,
   "score": 45,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "4fff943e7b056d60aa2c7f9f28c48fda81f370d2aaff610ad5cc718d39f91fb8"
+  "fact_sha256": "35973c11e8b13fcb72fd33547d4666fc6044432b93d0875353a9fc3d69c20070"
  },
  {
   "id": "re:bxp:355-main-street",
@@ -512,14 +512,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "9f7404079ccd92a974f4255be2dea66f731f266392ebc986952d503aa01d11de"
+  "fact_sha256": "ed2c798eb0b143a12002affb641bdad1511145a82d8294fb3fc9fe2f8cf0edbb"
  },
  {
   "id": "re:bxp:399-park-avenue",
@@ -528,14 +528,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": true,
   "proposed_release": true,
   "score": 65,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "7edcef9eb005b2cd49820265cc16212e91b7175300258a6516260748ba246832"
+  "fact_sha256": "884e31ebddf44ed2a4ba1db383138342d813184030b35dc162b0ef495f5f1805"
  },
  {
   "id": "re:bxp:453-ravendale-drive",
@@ -544,14 +544,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "c5cd52a8f79b5c88bd6e6df21c1877b059515c1af4407bd7dee8849ce9cf41ea"
+  "fact_sha256": "0db5d0973e76f008d1863ac520263ef7da5f7077c62420d5ab67c8794b20c5f2"
  },
  {
   "id": "re:bxp:510-madison-avenue",
@@ -560,14 +560,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "5449e9a2a4a6e7f2cc279767ab0de27e9e70683b145dd566022463de3dc4d5ef"
+  "fact_sha256": "8373893a79c1d64085fc396997f93869c34beeeeab85af0c695f890f989d5007"
  },
  {
   "id": "re:bxp:535-mission-street",
@@ -576,14 +576,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": true,
   "proposed_release": true,
   "score": 65,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "abf8ccdee5bffd0cfe12c70cdef6fb8d14d362626e4586944a1dbadc2ab14962"
+  "fact_sha256": "4c630bccd5b74f4544f33532f234860f8a351d8c291777d4f8ad2405b2b78cb7"
  },
  {
   "id": "re:bxp:599-lexington-avenue",
@@ -592,14 +592,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "00e3a1a4539ecfbe69d7474a7fb9dc39745993e3dcf0c5f72c4ad3ab5ffa1ded"
+  "fact_sha256": "f1e14ce69d0f5d7c0d9e91563e30af1598ed0b83110fe87d1c5ebfe68fdb6216"
  },
  {
   "id": "re:bxp:601-lexington-avenue",
@@ -608,14 +608,14 @@
   "role": "reported_group_owner",
   "stake": 55.0,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 35,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "757ba1085f7719ce8daa2bd1919a9700b647cbec8552d4ec9a175ef17294fdb6"
+  "fact_sha256": "0a46ca03e079ee531b61a9ca07d26e8e0d23b23731466b38fd24ba532222faf5"
  },
  {
   "id": "re:bxp:651-gateway",
@@ -624,7 +624,7 @@
   "role": "developer",
   "stake": 50.0,
   "stage": "unknown",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 35,
@@ -632,7 +632,7 @@
    "status unresolved",
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "31aa081fe99b6267fbe70fea1610f5f5d16ee5a4e96efc36f05f754d8c4d0d4c"
+  "fact_sha256": "ad00214ee7cfd95b8f0339898a00b5a434285871d898794e5d716fd07b0709ea"
  },
  {
   "id": "re:bxp:680-folsom-street",
@@ -641,14 +641,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "1044003ad18394fba367c36b5d642eae3a932680027e25a8699a1bdbe359692b"
+  "fact_sha256": "0ebcf2669cc0cc58f1d8febb300e157bbd7db33ac73838f6723ecc6d47e913d1"
  },
  {
   "id": "re:bxp:690-folsom-street",
@@ -657,14 +657,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "013e4ea9940e21a08bf2e2212084d24428eaa7773c64388119d11ce4e35046ae"
+  "fact_sha256": "0141f0ee705baeb8c2533ec0a63eb553c41008d43ffbeb03062288e8b17ad388"
  },
  {
   "id": "re:bxp:7-times-square",
@@ -690,15 +690,14 @@
   "role": "developer",
   "stake": null,
   "stage": "under_construction",
-  "location": "approximate/-/-",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": true,
-  "score": 10,
+  "score": 40,
   "blockers": [
-   "location approximate",
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "a12597a646fc97a9f2295bb6cc9cbc306b0b35777f9996aa3e3daf73317779f9"
+  "fact_sha256": "3597bf838e9a92821b84a2c8018a92596bce7b820bba2ddcc21d54e54620bba2"
  },
  {
   "id": "re:bxp:767-fifth-avenue-the-general-motors-building",
@@ -707,14 +706,14 @@
   "role": "reported_group_owner",
   "stake": 60.0,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 35,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "97610375784a56de08ef45036a69d5501bd579954036eefe29a69bc642475466"
+  "fact_sha256": "445bf5129b3a2b29b63672e60e68f481bd91d8e5d183cb442f79a743e8867cf4"
  },
  {
   "id": "re:bxp:77-citypoint",
@@ -774,14 +773,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "b2ebac414a785c9b85025e9b6a6c428cab29403c0929598e6a8352b857e88b9c"
+  "fact_sha256": "ec0183c6f44367e495a12e07e23480a166561a134b4862e224913cc690659bfc"
  },
  {
   "id": "re:bxp:901-new-york-avenue",
@@ -790,14 +789,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "79648b51f817a45e00f9d78fb88b1aeb78ee8ac9f66789bfdfe08e54a7d5d749"
+  "fact_sha256": "d1056ce0d8ff19a823255fce3e43566fb566656aaea5567a7d0d66e4d1f1ebc4"
  },
  {
   "id": "re:bxp:92-100-hayden-avenue",
@@ -1217,7 +1216,7 @@
   "stage": "completed",
   "location": "approximate/-/-",
   "image": false,
-  "proposed_release": true,
+  "proposed_release": false,
   "score": 10,
   "blockers": [
    "location approximate",
@@ -1455,14 +1454,14 @@
   "role": "lessee",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "6b2b1a07c964ab086d4bae1059cb05d1ea4d3a17596350848a79f1757b57f5b9"
+  "fact_sha256": "ae54bfb6c0c2834b8389977e472db02f8ad386c92724e63c66f64bec35296e9b"
  },
  {
   "id": "re:hst:1-hotel-central-park",
@@ -1476,7 +1475,7 @@
   "proposed_release": false,
   "score": 0,
   "blockers": [
-   "location approximate",
+   "location city_reference",
    "owner record-bound review not signed"
   ],
   "fact_sha256": "785a2e8c07337c3a71c94dd3f5508dbc2ecb19c093498791dfd9304b4548fd95"
@@ -1488,14 +1487,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "9aa29d051e03923cd329ee91f523236716468bce9b317121fde4eb08c8ef9d6b"
+  "fact_sha256": "c0e59a8ff40454b098e56f7279336ae1e82d4b88bbfb6cd803f37e4a1dc2cded"
  },
  {
   "id": "re:hst:1-hotel-south-beach",
@@ -1504,14 +1503,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "dcda3986e8091063f929be7810c98fda052190737869ff2ef7332a5c0f673eb9"
+  "fact_sha256": "e58dd26a5254076ae97ffe487f09921f12dc792267504792266f219bd5e4d2f4"
  },
  {
   "id": "re:hst:ac-hotel-scottsdale-north",
@@ -1520,14 +1519,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "e53e19be2ff83565b777b7314cd60f79906778273efc4a772d8540b3e129eefe"
+  "fact_sha256": "dca2134599c592ab64f1bc5f246cf75624dfe6898184dc5dd0051cd547fb3854"
  },
  {
   "id": "re:hst:alila-ventana-big-sur",
@@ -1553,14 +1552,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "eaa6d7bd63c9a7c332ede65ec3a25acd202f1772eef90f1e50b1bd7769610382"
+  "fact_sha256": "597b210a558aeb1d6920394bb9cec493280bbca4fad8b819a952e0d35c351cb9"
  },
  {
   "id": "re:hst:axiom-hotel",
@@ -1569,14 +1568,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "a8be672efa269a2757fb2d97a2b6df96d82fddba283cb3ad4510ca3b1f1daa5c"
+  "fact_sha256": "eb96861e0b04cbeb838277d63fda652e419673ae2fc9dbb58eae7dda1a4dae6d"
  },
  {
   "id": "re:hst:baker-s-cay-resort-key-largo-curio-collection-by-hilton",
@@ -1585,14 +1584,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "af70048eb288fc6a8c6d33192d54c64c6ea517ccfcf67c3a4b16376b42e669ae"
+  "fact_sha256": "3982190a74d9e270e0e7e6c43b48bb476c8e64b86b19407135497c29c630dbb5"
  },
  {
   "id": "re:hst:boston-marriott-copley-place",
@@ -1601,14 +1600,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "3528ddcdb5a3a69e8039362a4fc9810e98f9d42fef6bc215e259380efd693640"
+  "fact_sha256": "ea41879f55c8d62345e5617390150b0271fa143faa11eb3b05b3969387465374"
  },
  {
   "id": "re:hst:calgary-marriott-downtown-hotel",
@@ -1638,7 +1637,7 @@
   "proposed_release": false,
   "score": 0,
   "blockers": [
-   "location approximate",
+   "location city_reference",
    "owner record-bound review not signed"
   ],
   "fact_sha256": "3becd338ef5fa9af75ba50847fcb4d81f1b8f61932aca22092c3e4419bbf058e"
@@ -1650,14 +1649,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "4c61df7de6f1439d703e4159102d1e59f0f7d77a44f361642657be977b910127"
+  "fact_sha256": "d13d0f4decd38887036b2396e6a87ebcc85924739effc8721149696637b997fe"
  },
  {
   "id": "re:hst:denver-marriott-west",
@@ -1666,14 +1665,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "77bb63b847385093ba6df054884a9fac7b152cfbbc0ddac0e3d3fdb60641b1d8"
+  "fact_sha256": "54d7110b11e88c91db74a7b0ef620b5234b29096416354d68ab7b274780c3672"
  },
  {
   "id": "re:hst:embassy-suites-by-hilton-chicago-downtown-magnificent-mile",
@@ -1687,7 +1686,7 @@
   "proposed_release": false,
   "score": 0,
   "blockers": [
-   "location approximate",
+   "location city_reference",
    "owner record-bound review not signed"
   ],
   "fact_sha256": "4d59ddfec187753740be6e885cd232eaa4f7a362e3032b43ea9b11809b1c4467"
@@ -1699,14 +1698,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "2ec42a4c8e55849407c2d3c0440edb8de542de8b336304bae48a06cbe721a800"
+  "fact_sha256": "74b8c3f2f08eb1b50a53637c5db9779418340b4f26cc2c36504f047791f6591c"
  },
  {
   "id": "re:hst:fairmont-kea-lani-maui",
@@ -1731,14 +1730,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "ef9353f68e0a98b42bcb7ab00e09868bff9ce65795ffc01c880dc3d7a5a4aa3c"
+  "fact_sha256": "895764c2da2c6b5418e65a13de12762d72331d985bab6a67054b400adfe66d6c"
  },
  {
   "id": "re:hst:grand-hyatt-atlanta-in-buckhead",
@@ -1752,7 +1751,7 @@
   "proposed_release": false,
   "score": 0,
   "blockers": [
-   "location approximate",
+   "location city_reference",
    "owner record-bound review not signed"
   ],
   "fact_sha256": "85bbb779bf90dba53d6ebdee6cad2983331a7fb2e33057106447f91bab910614"
@@ -1764,14 +1763,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "036937d588a0affc80b2aa652e44e94823e35c431e4b5846de4d4f29cbb53633"
+  "fact_sha256": "3de62090a976b376582d5e06ecf3fbf10df11618258821c3f8904da57386b722"
  },
  {
   "id": "re:hst:grand-hyatt-washington",
@@ -1780,14 +1779,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "32d07685bbb7e3f400dd04c34ad60350c7630d98e32ead41179bfb7079f45e67"
+  "fact_sha256": "88a76b93ad0b93209714be1867f910f39cc5a91700b0151c68b720bf6d1d992d"
  },
  {
   "id": "re:hst:hotel-van-zandt",
@@ -1796,14 +1795,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "b3589f03eb0a1922edc3ea1fb0bbff4b94e613bcc1cec17327cad32c36687ba3"
+  "fact_sha256": "c64370c63acfd65e9c529bc9e07b7ba321879c10a2e64c0a597acf521c5411bd"
  },
  {
   "id": "re:hst:houston-airport-marriott-at-george-bush-intercontinental",
@@ -1812,14 +1811,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "4a5e5114c6d92d84c9c7c0b183c1eb24b54ee52e3a21e4bdbe1e83b31959be11"
+  "fact_sha256": "e54b7fff797128dd63367413eb103ba74263f9a0a34362eefe70a3a75b553146"
  },
  {
   "id": "re:hst:houston-marriott-medical-center-museum-district",
@@ -1828,14 +1827,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "59bdf505a51fbaa75b570b6bab6767a60c911cd06c27db746f1e26d2fc1dc9de"
+  "fact_sha256": "494776cacddd52f768d1b930d1dfdaf5177cc2f7be1b1c8a1a97af3c5f0ab529"
  },
  {
   "id": "re:hst:hyatt-place-waikiki-beach",
@@ -1860,14 +1859,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "ecae08e6ef51558da74ddac443e84056599cb62455346c2b5e902e6151ec6083"
+  "fact_sha256": "579ae00578207b8eadb30939bc030ba0c863ff119d30b18487a3b413f950e5ee"
  },
  {
   "id": "re:hst:hyatt-regency-coconut-point-resort-and-spa",
@@ -1876,14 +1875,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "07f0f4edd5739623c943d41d36b6ec16c2f3e5f3e949bc57af7d024146e6593e"
+  "fact_sha256": "15623f030e129d95115d7bc9562bdf102b68cc695e743eac0868e29f33dc028c"
  },
  {
   "id": "re:hst:hyatt-regency-maui-resort-and-spa",
@@ -1892,14 +1891,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "12c5334539ebf1f1bc0048411dd0575dc939e15f7925fa30037dc754bc99431e"
+  "fact_sha256": "f426fb07feaff01f19e664bf83e90ec970465c9ddae225f2bb5a93de68458665"
  },
  {
   "id": "re:hst:hyatt-regency-reston",
@@ -1908,14 +1907,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "31cf6301b793f5ad7517582296b72166a28563c385826409f44fff1603d32aae"
+  "fact_sha256": "c28cc266595103ee562d1c60e719173ef55c4f17f4ff538830e590b9dc20f9b7"
  },
  {
   "id": "re:hst:hyatt-regency-san-francisco-airport",
@@ -1940,14 +1939,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "b43b332682123148535ba25f1fa8d6d5bd369aa8edaa5d09c875fc739963f2a5"
+  "fact_sha256": "8ed1ca192ef55faccaf84542228906ca6067e40199eaef67f34be1523208c1dd"
  },
  {
   "id": "re:hst:ibis-rio-de-janeiro-parque-olimpico",
@@ -1973,14 +1972,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "7824c6a8b5a3fbf99282cef43f3217439337dfec99de3e8740152f385f2884c3"
+  "fact_sha256": "427c9525675c9ca33109b2058f0b8779685c56ec60bde6416eaa7cb8ed693420"
  },
  {
   "id": "re:hst:jw-marriott-hotel-rio-de-janeiro",
@@ -2006,14 +2005,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "094c109a57bab5d4a144fce7b18427b7c5aa3ab8ce2e274c838239172108f5d9"
+  "fact_sha256": "9341b3bc4da0d8b139ad13732994528652ef1564e91832bcb4403fe7ad7130b5"
  },
  {
   "id": "re:hst:jw-marriott-washington-dc",
@@ -2022,14 +2021,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "5eb5087b5ba8b1d3dd131caf4feb240aba5e8f009e6fb87797eef25cc3b33787"
+  "fact_sha256": "0880207366b86ba22aa3bf35831ef5f1e638caa0710f9b0a0cc71d17a2b31c61"
  },
  {
   "id": "re:hst:manchester-grand-hyatt-san-diego",
@@ -2038,14 +2037,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "eba4fafe1ad28b823922b96e6d0d3d38f18a9badf5caca0bddb8bcbc6fa17e99"
+  "fact_sha256": "a4f6923c90945c2aefd8b54065e2681cc9567269d4d9130dcdb2af58db58face"
  },
  {
   "id": "re:hst:marina-del-rey-marriott",
@@ -2054,14 +2053,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "205d1a420d1f819ae7fa9052616bd16fdd60310173797493e2cd789564ec1094"
+  "fact_sha256": "4311a0b6edd03cf086bd2e5f0021d633f66b145c8084a01f529d4c8f636be908"
  },
  {
   "id": "re:hst:marriott-downtown-at-cf-toronto-eaton-centre",
@@ -2087,14 +2086,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "3841920cc355d70db3b38b5be3a7b3edac83108ab82abd3b9e13db46364c54b8"
+  "fact_sha256": "abc221f34450ec9db3c30cf1d5876686230646cc0b2ac0f1442c5192e598358e"
  },
  {
   "id": "re:hst:miami-marriott-biscayne-bay",
@@ -2103,14 +2102,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "d18faba2d5d8b141de6f0fc0af1ec2a2cec93bf2fe1c408562a0ae583737a313"
+  "fact_sha256": "f45743d7a382e5851225af9450fd69c626c4b2d98e6d14c10bc3f7b3f2a0e680"
  },
  {
   "id": "re:hst:minneapolis-marriott-city-center",
@@ -2119,14 +2118,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "8e93c1ba9ff7d206ff0dc6e7e98c34e4ae02925e2f2c96a49cccbe3051107d03"
+  "fact_sha256": "c4d7fd7ea94b2599f3de68406324f0b9292280b3cb69ef216ea0114a1c0f1c00"
  },
  {
   "id": "re:hst:new-orleans-marriott",
@@ -2172,7 +2171,7 @@
   "proposed_release": false,
   "score": 0,
   "blockers": [
-   "location approximate",
+   "location city_reference",
    "owner record-bound review not signed"
   ],
   "fact_sha256": "1b81a7cefd5ffefaf8028c629a5a8a44d23c76387bfc0921863bb982ce3b5a3e"
@@ -2189,7 +2188,7 @@
   "proposed_release": false,
   "score": 0,
   "blockers": [
-   "location approximate",
+   "location city_reference",
    "owner record-bound review not signed"
   ],
   "fact_sha256": "b008b6dde3f0b1c6d0773c8b9c593c973ec626f0498e6ce997fc693273a975f3"
@@ -2218,14 +2217,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "783a58f40182e8871ba9e749c597e94ba77e5983bc0c319bcab1a2412d089da1"
+  "fact_sha256": "2961ab68d2446f093f202442ef17f0a348df6717dfc0148301e5aa37f39f9880"
  },
  {
   "id": "re:hst:philadelphia-airport-marriott",
@@ -2239,7 +2238,7 @@
   "proposed_release": false,
   "score": 0,
   "blockers": [
-   "location approximate",
+   "location city_reference",
    "owner record-bound review not signed"
   ],
   "fact_sha256": "f3b43ad15f5ff2e24119706fbd5c20037413009ce275beb73cc2be6dadbb6caf"
@@ -2251,14 +2250,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "1ae950e5db3e54fb54910acf3822dc7211479bfe1ace74cebbcb9706da4f0332"
+  "fact_sha256": "76ede205d4785ad7f8249b4434e4bae79ea717112ef2bed148604916403d97ae"
  },
  {
   "id": "re:hst:san-antonio-marriott-rivercenter",
@@ -2267,14 +2266,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "b465c4d00a0d2acb41ee326fc26c9635176852af6e8bd6802865618b565a0d18"
+  "fact_sha256": "ea9f7e1374c65f97c0cfcf41e9b0b9cc83d2513e8131d29c9f828dcbe670ac72"
  },
  {
   "id": "re:hst:san-antonio-marriott-riverwalk",
@@ -2283,14 +2282,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "111fccad015b8515120949001d1e6df5279cfce365ef91a33c9693a04c7859d1"
+  "fact_sha256": "1a873e9c535be53eb451f1b7dad55955692ff1dec2954998dcd5f72e2c5328e5"
  },
  {
   "id": "re:hst:san-francisco-marriott-fisherman-s-wharf",
@@ -2331,14 +2330,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "73394158a374aaeaf5f14df9f42d13edaeca08a96600fa3a387f54297ea0e3af"
+  "fact_sha256": "8c98068fea417e056687ae4079b9f9ae72f368636fbc539a38176777c544a117"
  },
  {
   "id": "re:hst:sheraton-parsippany-hotel",
@@ -2386,7 +2385,7 @@
   "proposed_release": false,
   "score": 0,
   "blockers": [
-   "location approximate",
+   "location city_reference",
    "owner record-bound review not signed"
   ],
   "fact_sha256": "c57c678567f9257eb0e4323ce4e2b9b0a7a4fa807718069725b9b8e71394a8ff"
@@ -2398,14 +2397,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "9a2e2ab5c4b241c99ac78e5ed0889436735760428829f7a5838898517d863941"
+  "fact_sha256": "f3d5473b05394b965ea3d7e431bad2502c1ec96a134cd10f0ccb41b7edf6a95c"
  },
  {
   "id": "re:hst:the-don-cesar",
@@ -2414,14 +2413,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": true,
   "proposed_release": true,
   "score": 55,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "0e07990b9d0d9a32f1407682673d42929ebdf4df2d20756c5f207c0d8341f0b1"
+  "fact_sha256": "d8b87477567705ab9ada2448a39d8868fb132e733602659591c8f406850b9137"
  },
  {
   "id": "re:hst:the-laura-hotel-houston-downtown-autograph-collection",
@@ -2430,14 +2429,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "8b5ef07a4f47e3fb7062c3f25c8b92fc698978ce01e1f64503700f61ac2fcbca"
+  "fact_sha256": "7d0138a6299de54c6a4125a789309342f35750576f5197dd62bce4d07e76ee30"
  },
  {
   "id": "re:hst:the-logan-philadelphia-curio-collection-by-hilton",
@@ -2451,7 +2450,7 @@
   "proposed_release": false,
   "score": 0,
   "blockers": [
-   "location approximate",
+   "location city_reference",
    "owner record-bound review not signed"
   ],
   "fact_sha256": "f5df7af55331428e97fabc8d145d3d6b70a7b31cd0dc5438d626e32cb904716e"
@@ -2468,7 +2467,7 @@
   "proposed_release": false,
   "score": 0,
   "blockers": [
-   "location approximate",
+   "location city_reference",
    "owner record-bound review not signed"
   ],
   "fact_sha256": "d92c753ab78f7b4c7f4e636cecbb475c0efef1da9c3f122befeeab012d60b3f1"
@@ -2480,14 +2479,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "f3857766255ed35818650398ca753c87b67cd29136d0d8bd655d3c2345d529da"
+  "fact_sha256": "fe210c1947cffde69e7f80d55bbf6242c8242db3d0eab952676b321ccb7b59a4"
  },
  {
   "id": "re:hst:the-ritz-carlton-marina-del-rey",
@@ -2512,14 +2511,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "df7e84094dd66a925585d113a9689f7e66b820d981bc0856fd39a5475b5ddfcf"
+  "fact_sha256": "960acc226708f7acda6ecd0a8bbe272b6338cd966d37e352211e67f5f43addb2"
  },
  {
   "id": "re:hst:the-ritz-carlton-naples-tibur-n",
@@ -2528,14 +2527,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "fab159594326fbaff00c194412713a5131e3e7e46acf2fe1c9bfbbddaffd0c4a"
+  "fact_sha256": "22780927d26ce8c51243166e8eb50dc88167f7291d62370e0b3560e01498304e"
  },
  {
   "id": "re:hst:the-ritz-carlton-o-ahu-turtle-bay",
@@ -2549,7 +2548,7 @@
   "proposed_release": false,
   "score": 0,
   "blockers": [
-   "location approximate",
+   "location city_reference",
    "owner record-bound review not signed"
   ],
   "fact_sha256": "a8cfb633138d46d7e9b5496d9056459919e5297eaad22db95515350033592379"
@@ -2561,14 +2560,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "87958f6de3eabae44117f309d49209617f7490b011c9e14ec910dd9eab4ecff2"
+  "fact_sha256": "e1dcb7604640d88a29f9b908b03c5f672ebe72618f1b64314ec8fb7d0c790eed"
  },
  {
   "id": "re:hst:the-singer-oceanfront-resort-curio-collection-by-hilton",
@@ -2577,14 +2576,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "7527c2cbd8dfe0a9869ec9baf608be1a08cc24ebd42ef91294f0deda8aed5de8"
+  "fact_sha256": "1e840c765c4022062904f1da75e8d65ea3737c9eb04020d2f644684589833831"
  },
  {
   "id": "re:hst:the-westin-chicago-river-north",
@@ -2593,14 +2592,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "64be2db96ed81ac28023f567fac319fa1dbb692f1a12c743cd622ae11bf4d467"
+  "fact_sha256": "871fa690e185ef227cbc026f9e19f93c5528dae54bb732eef8d07596c1023465"
  },
  {
   "id": "re:hst:the-westin-denver-downtown",
@@ -2609,14 +2608,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "d5b0f8d5d95f896444bc9067de4ae31d528a0d3c45a14049dfa2519cd9cee31e"
+  "fact_sha256": "ec906ac3cd3d658ad642861efc6e05265e86bdb6b8746ee588f217e58096956c"
  },
  {
   "id": "re:hst:the-westin-georgetown-washington-d-c",
@@ -2625,14 +2624,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": true,
   "proposed_release": true,
   "score": 55,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "1ea9339fe50aaaa423f45565df2c6b30848b8aa8b050284e3d82b174d5997854"
+  "fact_sha256": "4d547b19e1d2915c466aa0fb98456e94f29381a5d26450622989c453fad89beb"
  },
  {
   "id": "re:hst:the-westin-kierland-resort-spa",
@@ -2641,14 +2640,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "12cefbb3df46cf0ad22dee71e2d43aab71b6bf5fb25a657f4f8ae72fe72b3e93"
+  "fact_sha256": "16f4e1af5b4cfc0abd55742bebef570a069d0b3bd7775574114e8f7c531c6394"
  },
  {
   "id": "re:hst:the-westin-seattle",
@@ -2657,14 +2656,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": true,
   "proposed_release": true,
   "score": 55,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "27ecbb9e6e82f152b652d6ece96ca263a5c8df9ed0707d26954c287f0264b9c2"
+  "fact_sha256": "381f3369be299c6674fc0eb48647fa8f51a515bb704919d3ebb0478e8e9d8c17"
  },
  {
   "id": "re:hst:the-westin-south-coast-plaza-costa-mesa",
@@ -2673,14 +2672,14 @@
   "role": "lessee",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "8a9e7b30ba03d45dd96adfb3940a7778e6df0be69b6143f1133891a64774d70d"
+  "fact_sha256": "384b8fbc0137387ad93634b2f986c18b877f9658f36c138f3cbb4325acd50888"
  },
  {
   "id": "re:hst:the-westin-waltham-boston",
@@ -2689,14 +2688,14 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/medium",
+  "location": "approximate/address_point/medium",
   "image": false,
   "proposed_release": false,
   "score": 30,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "97585f11214566504926682cb0cc383d44f17b9f699c3cc259a73b113506b159"
+  "fact_sha256": "82c8b80bf41056d2b9c1e042a23109eecfac2e7cd2cd777d356d2276bb6bed0a"
  },
  {
   "id": "re:hst:w-seattle",
@@ -2705,13 +2704,13 @@
   "role": "reported_group_owner",
   "stake": null,
   "stage": "operating",
-  "location": "exact/address_point/high",
+  "location": "approximate/address_point/high",
   "image": false,
   "proposed_release": false,
   "score": 40,
   "blockers": [
    "owner record-bound review not signed"
   ],
-  "fact_sha256": "9c10085d7410bf3df930e556a422948013b00cb13eb3e3b4a054c8bab615be39"
+  "fact_sha256": "2a0f4c7441d56adfba7ba05e15bebc83d13557fd9f938748ea10fd69678518a8"
  }
 ]

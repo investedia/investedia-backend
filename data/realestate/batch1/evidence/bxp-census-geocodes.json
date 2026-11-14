@@ -354,7 +354,18 @@
   "nomatch": true
  },
  "re:bxp:725-12th-street": {
-  "skip": "name is not a single street address"
+  "query": "725 12th St NW, Washington, DC",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=725+12th+St+NW%2C+Washington%2C+DC&benchmark=Public_AR_Current&format=json",
+  "sha256": "f7062b55a2e2d9ea00f7b084f6cae177e64414f28e5c1ef93ee27983e4a1a7b7",
+  "n": 1,
+  "matched": "725 12TH ST NW, WASHINGTON, DC, 20005",
+  "lat": 38.898710835839,
+  "lon": -77.02800648639,
+  "quadrant_basis": {
+   "url": "https://www.bxp.com/properties/725-12th-street",
+   "sha256": "122bc56a2ae12ecbcad7593efc352214755d7530f92829186380fe5964912af5",
+   "locator": "Company property page: central business district, steps from Metro Center, frontage on 11th and G streets (NW quadrant)"
+  }
  },
  "re:bxp:767-fifth-avenue-the-general-motors-building": {
   "query": "767 Fifth Avenue, New York, NY",

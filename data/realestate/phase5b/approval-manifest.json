@@ -1,0 +1,1946 @@
+{
+ "schema": "investedia.realestate.approval-manifest.v1",
+ "created": "2026-11-14",
+ "status": "AWAITING OWNER APPROVAL PER RECORD - nothing published",
+ "count": 20,
+ "how_to_approve": "Set owner_approval to {\"approved\": true, \"date\": \"YYYY-MM-DD\"} on each record you approve. The fact_sha256 must still match at release time; any change to a record needs re-approval.",
+ "records": [
+  {
+   "id": "re:hst:calgary-marriott-downtown-hotel",
+   "name": "Calgary Marriott Downtown Hotel",
+   "aliases": [],
+   "address": "110 9th Avenue SE, Calgary, AB T2G 5A6 CANADA",
+   "company": {
+    "name": "HOST HOTELS & RESORTS, INC.",
+    "ticker": "HST",
+    "exchange": "XNAS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "10-K cover securities table: Common Stock, $.01 par value / HST / The Nasdaq Stock Market LLC; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "reported_group_owner",
+    "label": "Consolidated hotel reported in the company's portfolio",
+    "scope": "Company-reported consolidated hotel; holding entity not established",
+    "stated_share_pct": null,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "Item 2 consolidated hotels table: Calgary Marriott Downtown Hotel | Canada | 388 rooms",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "verified_photograph",
+     "file_page": "https://commons.wikimedia.org/wiki/File:Calgary_Marriott_Downtown_Hotel.jpg",
+     "licence": "CC BY-SA 4.0",
+     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "author_credit": "Silver Dovelet / Wikimedia Commons, CC BY-SA 4.0",
+     "capture_date": "2026-09-13",
+     "identity_check": "Commons file is the Wikidata image (P18) of Q111231346 'Calgary Marriott Downtown Hotel', 51 m from the property point; visually checked 2026-11-14",
+     "local_copy_sha256": "e2ba92519e9e87e6935bf6815f017122e84e5da51c24698c82ad9f63c22c19b8"
+    }
+   ],
+   "coordinates": {
+    "class": "Building point",
+    "lat": 51.04471,
+    "lon": -114.06224,
+    "label": "110 9th Avenue SE, Calgary, AB T2G 5A6 CANADA (building point)",
+    "basis": "Wikidata Q111231346 coordinate (CC0) within 51 m of the company's own property pin",
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q111231346",
+     "sha256": "7130a8b05c3d9cf434b1f116f486a12ef663f4c7719a6087025357e04033fee6",
+     "checked_at": "2026-11-14T04:00:00Z",
+     "locator": "Wikidata Q111231346 P625 (Calgary Marriott Downtown Hotel)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:hst:calgary-marriott-downtown-hotel",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "No point published"
+    },
+    "imagery": {
+     "status": "cleared",
+     "basis": "CC BY-SA 4.0 with attribution; share-alike applies to the image file only"
+    }
+   },
+   "attribution": [
+    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Location: Wikidata (CC0)",
+    "Photo: Silver Dovelet / Wikimedia Commons, CC BY-SA 4.0 (via Wikimedia Commons)"
+   ],
+   "fact_sha256": "45c0fbce89533f5ab2684a0e9f7804a4ae61dda8e6ca1dac356f18c25c2285e4",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:hst:hyatt-place-waikiki-beach",
+   "name": "Hyatt Place Waikiki Beach",
+   "aliases": [],
+   "address": "175 Paoakalani Ave, Honolulu, HI 96815\tUSA",
+   "company": {
+    "name": "HOST HOTELS & RESORTS, INC.",
+    "ticker": "HST",
+    "exchange": "XNAS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "10-K cover securities table: Common Stock, $.01 par value / HST / The Nasdaq Stock Market LLC; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "reported_group_owner",
+    "label": "Consolidated hotel reported in the company's portfolio",
+    "scope": "Company-reported consolidated hotel; holding entity not established",
+    "stated_share_pct": null,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "Item 2 consolidated hotels table: Hyatt Place Waikiki Beach | Hawaii | 426 rooms",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "verified_photograph",
+     "file_page": "https://commons.wikimedia.org/wiki/File:Hyatt_Place_Waikiki_Beach.jpg",
+     "licence": "CC BY-SA 3.0",
+     "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "author_credit": "Peaceray / Wikimedia Commons, CC BY-SA 3.0",
+     "capture_date": "2022-12-05",
+     "identity_check": "Commons file is the Wikidata image (P18) of Q16980507 'Hyatt Place Waikiki Beach', 27 m from the property point; visually checked 2026-11-14",
+     "local_copy_sha256": "0e91e455c7efd35fbec9cee5306c6b8709c1ef54ce21c2149b34d41d15d479b1"
+    }
+   ],
+   "coordinates": {
+    "class": "Building point",
+    "lat": 21.273464,
+    "lon": -157.821395,
+    "label": "175 Paoakalani Ave, Honolulu, HI 96815\tUSA (building point)",
+    "basis": "Wikidata Q16980507 coordinate (CC0) within 27 m of the company's own property pin",
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q16980507",
+     "sha256": "ec92d2c02742e1c4636aa637fe3b4caf645c498c233e8a9616c70d6be85b0694",
+     "checked_at": "2026-11-14T04:00:00Z",
+     "locator": "Wikidata Q16980507 P625 (Hyatt Place Waikiki Beach)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:hst:hyatt-place-waikiki-beach",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "No point published"
+    },
+    "imagery": {
+     "status": "cleared",
+     "basis": "CC BY-SA 3.0 with attribution; share-alike applies to the image file only"
+    }
+   },
+   "attribution": [
+    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Location: Wikidata (CC0)",
+    "Photo: Peaceray / Wikimedia Commons, CC BY-SA 3.0 (via Wikimedia Commons)"
+   ],
+   "fact_sha256": "d067b8221c55ae34e143376891d3fb9c70c0ebac7aec821e013f87a7bd94e0ee",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:hst:new-orleans-marriott",
+   "name": "New Orleans Marriott",
+   "aliases": [],
+   "address": "555 Canal Street, New Orleans, LA 70130 USA",
+   "company": {
+    "name": "HOST HOTELS & RESORTS, INC.",
+    "ticker": "HST",
+    "exchange": "XNAS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "10-K cover securities table: Common Stock, $.01 par value / HST / The Nasdaq Stock Market LLC; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "reported_group_owner",
+    "label": "Consolidated hotel reported in the company's portfolio",
+    "scope": "Company-reported consolidated hotel; holding entity not established",
+    "stated_share_pct": null,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "Item 2 consolidated hotels table: New Orleans Marriott | Louisiana | 1,333 rooms",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "verified_photograph",
+     "file_page": "https://commons.wikimedia.org/wiki/File:Vxla-us-la-neworleans-frenchquarter-hotel-marriott.jpg",
+     "licence": "CC BY 3.0",
+     "licence_url": "https://creativecommons.org/licenses/by/3.0",
+     "author_credit": "Eric Pancer  / Vxla at en.wikipedia / Wikimedia Commons, CC BY 3.0",
+     "capture_date": "2010-10-17",
+     "identity_check": "Commons file is the Wikidata image (P18) of Q7010746 'New Orleans Marriott', 72 m from the property point; visually checked 2026-11-14",
+     "local_copy_sha256": "3eca07be51464f2bbababad94c69e983eabd9d646962124f4c50e4181908d8bf"
+    }
+   ],
+   "coordinates": {
+    "class": "Building point",
+    "lat": 29.95243,
+    "lon": -90.06763,
+    "label": "555 Canal Street, New Orleans, LA 70130 USA (building point)",
+    "basis": "Wikidata Q7010746 coordinate (CC0) within 72 m of the company's own property pin",
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q7010746",
+     "sha256": "b64a27df7caac68d7691a6622cf683358c1a2d7ec40b17802785d7f48fbdd793",
+     "checked_at": "2026-11-14T04:00:00Z",
+     "locator": "Wikidata Q7010746 P625 (New Orleans Marriott)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:hst:new-orleans-marriott",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "No point published"
+    },
+    "imagery": {
+     "status": "cleared",
+     "basis": "CC BY 3.0 with attribution"
+    }
+   },
+   "attribution": [
+    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Location: Wikidata (CC0)",
+    "Photo: Eric Pancer  / Vxla at en.wikipedia / Wikimedia Commons, CC BY 3.0 (via Wikimedia Commons)"
+   ],
+   "fact_sha256": "83542d47b1ffce8c56be99376280b55cc99bde9780f8f08d4a5593cfca79c19e",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:hst:new-york-marriott-downtown",
+   "name": "New York Marriott Downtown",
+   "aliases": [],
+   "address": "85 West Street, New York, NY 10006 USA",
+   "company": {
+    "name": "HOST HOTELS & RESORTS, INC.",
+    "ticker": "HST",
+    "exchange": "XNAS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "10-K cover securities table: Common Stock, $.01 par value / HST / The Nasdaq Stock Market LLC; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "reported_group_owner",
+    "label": "Consolidated hotel reported in the company's portfolio",
+    "scope": "Company-reported consolidated hotel; holding entity not established",
+    "stated_share_pct": null,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "Item 2 consolidated hotels table: New York Marriott Downtown | New York | 515 rooms",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "verified_photograph",
+     "file_page": "https://commons.wikimedia.org/wiki/File:New_York_Marriott_Downtown,_Manhattan,_New_York,_US.jpg",
+     "licence": "CC BY-SA 4.0",
+     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "author_credit": "Clyde Charles Brown / Wikimedia Commons, CC BY-SA 4.0",
+     "capture_date": "2025-06-19",
+     "identity_check": "Commons file is the Wikidata image (P18) of Q111394961 'New York Marriott Downtown', 41 m from the property point; visually checked 2026-11-14",
+     "local_copy_sha256": "169e657bfdad875d6da20aad24b85bff81030fd1fabde59ab422e9a6fa30b159"
+    }
+   ],
+   "coordinates": {
+    "class": "Building point",
+    "lat": 40.70948,
+    "lon": -74.0146,
+    "label": "85 West Street, New York, NY 10006 USA (building point)",
+    "basis": "Wikidata Q111394961 coordinate (CC0) within 41 m of the company's own property pin",
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q111394961",
+     "sha256": "0b6268b22afa9a7d0b09c03c7d1393de1c337e275752b3c5ce365e74cc8f6408",
+     "checked_at": "2026-11-14T04:00:00Z",
+     "locator": "Wikidata Q111394961 P625 (New York Marriott Downtown)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:hst:new-york-marriott-downtown",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "No point published"
+    },
+    "imagery": {
+     "status": "cleared",
+     "basis": "CC BY-SA 4.0 with attribution; share-alike applies to the image file only"
+    }
+   },
+   "attribution": [
+    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Location: Wikidata (CC0)",
+    "Photo: Clyde Charles Brown / Wikimedia Commons, CC BY-SA 4.0 (via Wikimedia Commons)"
+   ],
+   "fact_sha256": "9bbaa4b06d5756f8dcc3e44f68d03c716fe496e7b308d447dc76831a72374782",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:hst:san-francisco-marriott-fisherman-s-wharf",
+   "name": "San Francisco Marriott Fisherman's Wharf",
+   "aliases": [],
+   "address": "1250 Columbus Avenue, San Francisco, CA 94133 USA",
+   "company": {
+    "name": "HOST HOTELS & RESORTS, INC.",
+    "ticker": "HST",
+    "exchange": "XNAS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "10-K cover securities table: Common Stock, $.01 par value / HST / The Nasdaq Stock Market LLC; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "reported_group_owner",
+    "label": "Consolidated hotel reported in the company's portfolio",
+    "scope": "Company-reported consolidated hotel; holding entity not established",
+    "stated_share_pct": null,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "Item 2 consolidated hotels table: San Francisco Marriott Fisherman's Wharf | California | 285 rooms",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "verified_photograph",
+     "file_page": "https://commons.wikimedia.org/wiki/File:Marriott_Fisherman%27s_Wharf,_San_Francisco,_California,_US.jpg",
+     "licence": "CC BY-SA 4.0",
+     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "author_credit": "Clyde Charles Brown / Wikimedia Commons, CC BY-SA 4.0",
+     "capture_date": "2024-12-06",
+     "identity_check": "Commons file is the Wikidata image (P18) of Q65923212 'San Francisco Marriott Fisherman's Wharf', 89 m from the property point; visually checked 2026-11-14",
+     "local_copy_sha256": "b75a6f4ca97785cee384a73dd23fa2c622cd3bfce19264d6e836e94e6e26e422"
+    }
+   ],
+   "coordinates": {
+    "class": "Building point",
+    "lat": 37.80561,
+    "lon": -122.41769,
+    "label": "1250 Columbus Avenue, San Francisco, CA 94133 USA (building point)",
+    "basis": "Wikidata Q65923212 coordinate (CC0) within 89 m of the company's own property pin",
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q65923212",
+     "sha256": "a158e81fbde675d82d1db196eb280330725006f65fda0b772a73bd021d70d698",
+     "checked_at": "2026-11-14T04:00:00Z",
+     "locator": "Wikidata Q65923212 P625 (San Francisco Marriott Fisherman's Wharf)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:hst:san-francisco-marriott-fisherman-s-wharf",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "No point published"
+    },
+    "imagery": {
+     "status": "cleared",
+     "basis": "CC BY-SA 4.0 with attribution; share-alike applies to the image file only"
+    }
+   },
+   "attribution": [
+    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Location: Wikidata (CC0)",
+    "Photo: Clyde Charles Brown / Wikimedia Commons, CC BY-SA 4.0 (via Wikimedia Commons)"
+   ],
+   "fact_sha256": "9ed6ad20372c7085239a7834e1048843702c7c5100ecb8b5b6a958c97c9f1583",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:hst:swiss-tel-chicago",
+   "name": "Swissôtel Chicago",
+   "aliases": [],
+   "address": "323 E Upper Wacker Dr, Chicago, IL 60601 USA",
+   "company": {
+    "name": "HOST HOTELS & RESORTS, INC.",
+    "ticker": "HST",
+    "exchange": "XNAS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "10-K cover securities table: Common Stock, $.01 par value / HST / The Nasdaq Stock Market LLC; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "reported_group_owner",
+    "label": "Consolidated hotel reported in the company's portfolio",
+    "scope": "Company-reported consolidated hotel; holding entity not established",
+    "stated_share_pct": null,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "Item 2 consolidated hotels table: Swissôtel Chicago | Illinois | 662 rooms",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "verified_photograph",
+     "file_page": "https://commons.wikimedia.org/wiki/File:Triangular_Building_(Chicago).JPG",
+     "licence": "CC BY-SA 4.0",
+     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "author_credit": "Dima Sergiyenko; Please attribute this image as the work of \"DiscoverWithDima.\" / Wikimedia Commons, CC BY-SA 4.0",
+     "capture_date": "2006-10-14",
+     "identity_check": "Commons file is the Wikidata image (P18) of Q21609099 'Swissôtel Chicago', 103 m from the property point; visually checked 2026-11-14",
+     "local_copy_sha256": "892e8ebab6aa010e8897958048250b5679fc133437e598c54bf51c834484b3a7"
+    }
+   ],
+   "coordinates": {
+    "class": "Building point",
+    "lat": 41.88737,
+    "lon": -87.61973,
+    "label": "323 E Upper Wacker Dr, Chicago, IL 60601 USA (building point)",
+    "basis": "Wikidata Q21609099 coordinate (CC0) within 103 m of the company's own property pin",
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q21609099",
+     "sha256": "cd31a2a3fea5f3af7adad5828ddba412cf4578cd1dfcd9720fe763264c74809c",
+     "checked_at": "2026-11-14T04:00:00Z",
+     "locator": "Wikidata Q21609099 P625 (Swissôtel Chicago)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:hst:swiss-tel-chicago",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "No point published"
+    },
+    "imagery": {
+     "status": "cleared",
+     "basis": "CC BY-SA 4.0 with attribution; share-alike applies to the image file only"
+    }
+   },
+   "attribution": [
+    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Location: Wikidata (CC0)",
+    "Photo: Dima Sergiyenko; Please attribute this image as the work of \"DiscoverWithDima.\" / Wikimedia Commons, CC BY-SA 4.0 (via Wikimedia Commons)"
+   ],
+   "fact_sha256": "2f44b0c9c901887eb97670370114a3e86a2130efbf594b996379076ffac41f6c",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:hst:the-ritz-carlton-marina-del-rey",
+   "name": "The Ritz-Carlton, Marina del Rey",
+   "aliases": [
+    "The Ritz-Carlton, Marina Del Rey"
+   ],
+   "address": "4375 Admiralty Way, Marina del Rey, CA 90292 USA",
+   "company": {
+    "name": "HOST HOTELS & RESORTS, INC.",
+    "ticker": "HST",
+    "exchange": "XNAS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "10-K cover securities table: Common Stock, $.01 par value / HST / The Nasdaq Stock Market LLC; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "reported_group_owner",
+    "label": "Consolidated hotel reported in the company's portfolio",
+    "scope": "Company-reported consolidated hotel; land leased from a third party (ground lease); holding entity not established",
+    "stated_share_pct": null,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "Item 2 consolidated hotels table: The Ritz-Carlton, Marina del Rey | California | 304 rooms | footnote 1",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "verified_photograph",
+     "file_page": "https://commons.wikimedia.org/wiki/File:Ritz_Carlton_Hotel_(5415399846).jpg",
+     "licence": "CC BY 2.0",
+     "licence_url": "https://creativecommons.org/licenses/by/2.0",
+     "author_credit": "Prayitno / Thank you for (12 millions +) view from Los Angeles, USA / Wikimedia Commons, CC BY 2.0",
+     "capture_date": "2011-02-02",
+     "identity_check": "Commons file is the Wikidata image (P18) of Q111393700 'The Ritz-Carlton, Marina del Rey', 94 m from the property point; visually checked 2026-11-14",
+     "local_copy_sha256": "126ac9155c393da7e4f9aa4de81b3d2e30ccbdb678330fe0e9c8697ba1b00562"
+    }
+   ],
+   "coordinates": {
+    "class": "Building point",
+    "lat": 33.98426,
+    "lon": -118.450684,
+    "label": "4375 Admiralty Way, Marina del Rey, CA 90292 USA (building point)",
+    "basis": "Wikidata Q111393700 coordinate (CC0) within 94 m of the company's own property pin",
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q111393700",
+     "sha256": "258a14996581f99e2e06340e8088d975f680e2a66fdd051acde9dc64bead28d3",
+     "checked_at": "2026-11-14T04:00:00Z",
+     "locator": "Wikidata Q111393700 P625 (The Ritz-Carlton, Marina del Rey)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:hst:the-ritz-carlton-marina-del-rey",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "No point published"
+    },
+    "imagery": {
+     "status": "cleared",
+     "basis": "CC BY 2.0 with attribution"
+    }
+   },
+   "attribution": [
+    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Location: Wikidata (CC0)",
+    "Photo: Prayitno / Thank you for (12 millions +) view from Los Angeles, USA / Wikimedia Commons, CC BY 2.0 (via Wikimedia Commons)"
+   ],
+   "fact_sha256": "ebb5b7ef19390eda5e0789c3aca93bd8e6e157b240689e4b7d8041e1145e442a",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:bxp:100-federal-street",
+   "name": "100 Federal Street",
+   "aliases": [],
+   "address": "100 Federal St, Boston, Ma, 02110",
+   "company": {
+    "name": "BXP, Inc.",
+    "ticker": "BXP",
+    "exchange": "XNYS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "10-K cover securities table: Common Stock, par value $.01 per share / BXP / New York Stock Exchange; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "reported_group_owner",
+    "label": "Held in the company's consolidated real estate (Schedule III)",
+    "scope": "Company-reported consolidated holding of this named property; holding entity, joint-venture share and ground leases not established",
+    "stated_share_pct": null,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "Schedule III row: 100 Federal Street | Office | Boston, MA",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "verified_photograph",
+     "file_page": "https://commons.wikimedia.org/wiki/File:100_Federal_Street_Boston_Massachusetts.jpg",
+     "licence": "CC BY-SA 3.0",
+     "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "author_credit": "Tim Pierce / Wikimedia Commons, CC BY-SA 3.0",
+     "capture_date": "2014-03-06",
+     "identity_check": "Commons file is the Wikidata image (P18) of Q1419501 '100 Federal Street', 45 m from the property point; visually checked 2026-11-14",
+     "local_copy_sha256": "8c220dd4cde2de83dee6ecfbb8e2c4bed3f306debd4948aa2b1b1d2d84d8b145"
+    }
+   ],
+   "coordinates": {
+    "class": "Verified address point (not a building outline)",
+    "lat": 42.354718,
+    "lon": -71.056229,
+    "label": "100 Federal St, Boston, Ma, 02110 (verified address point, not a building outline)",
+    "basis": "US Census geocode of the street address that is the property name in the 10-K; Wikidata building coordinate within 150 m",
+    "evidence": {
+     "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=100+Federal+Street%2C+Boston%2C+MA&benchmark=Public_AR_Current&format=json",
+     "sha256": "2be845387ca28a905a34a0426ff5b1b7a7c340fc3ca27808b8db94b4f6d2411f",
+     "checked_at": "2026-11-14T03:10:00Z",
+     "locator": "US Census Geocoder match: 100 FEDERAL ST, BOSTON, MA, 02110",
+     "sha256_scope": "source_body",
+     "record_id": "re:bxp:100-federal-street",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "US Census Gazetteer (public domain) city point"
+    },
+    "imagery": {
+     "status": "cleared",
+     "basis": "CC BY-SA 3.0 with attribution; share-alike applies to the image file only"
+    }
+   },
+   "attribution": [
+    "Facts: BXP, Inc. SEC filings (Form 10-K FY2025)",
+    "Location: US Census Geocoder (public domain)",
+    "Photo: Tim Pierce / Wikimedia Commons, CC BY-SA 3.0 (via Wikimedia Commons)"
+   ],
+   "fact_sha256": "bd3b5bae5cc8734a322cdbe4703283eb8e4131f11412b064beeb23d65a450819",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:bxp:399-park-avenue",
+   "name": "399 Park Avenue",
+   "aliases": [],
+   "address": "399 Park Ave, New York, Ny, 10022",
+   "company": {
+    "name": "BXP, Inc.",
+    "ticker": "BXP",
+    "exchange": "XNYS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "10-K cover securities table: Common Stock, par value $.01 per share / BXP / New York Stock Exchange; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "reported_group_owner",
+    "label": "Held in the company's consolidated real estate (Schedule III)",
+    "scope": "Company-reported consolidated holding of this named property; holding entity, joint-venture share and ground leases not established",
+    "stated_share_pct": null,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "Schedule III row: 399 Park Avenue | Office | New York, NY",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "verified_photograph",
+     "file_page": "https://commons.wikimedia.org/wiki/File:399park.jpg",
+     "licence": "CC BY 3.0",
+     "licence_url": "https://creativecommons.org/licenses/by/3.0",
+     "author_credit": "Americasroof / Wikimedia Commons, CC BY 3.0",
+     "capture_date": "2009-08-25",
+     "identity_check": "Commons file is the Wikidata image (P18) of Q4636099 '399 Park Avenue', 50 m from the property point; visually checked 2026-11-14",
+     "local_copy_sha256": "420c58e5b738dfeb8849e4236ae7ced5aed8bc0cba5827fc20e867636e20732c"
+    }
+   ],
+   "coordinates": {
+    "class": "Verified address point (not a building outline)",
+    "lat": 40.759551,
+    "lon": -73.972164,
+    "label": "399 Park Ave, New York, Ny, 10022 (verified address point, not a building outline)",
+    "basis": "US Census geocode of the street address that is the property name in the 10-K; Wikidata building coordinate within 150 m",
+    "evidence": {
+     "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=399+Park+Avenue%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+     "sha256": "bf6aa3ea376d87dc49bb06394cdb67ed474418cd058e68f90ab0d50b78a826b7",
+     "checked_at": "2026-11-14T03:10:00Z",
+     "locator": "US Census Geocoder match: 399 PARK AVE, NEW YORK, NY, 10022",
+     "sha256_scope": "source_body",
+     "record_id": "re:bxp:399-park-avenue",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "US Census Gazetteer (public domain) city point"
+    },
+    "imagery": {
+     "status": "cleared",
+     "basis": "CC BY 3.0 with attribution"
+    }
+   },
+   "attribution": [
+    "Facts: BXP, Inc. SEC filings (Form 10-K FY2025)",
+    "Location: US Census Geocoder (public domain)",
+    "Photo: Americasroof / Wikimedia Commons, CC BY 3.0 (via Wikimedia Commons)"
+   ],
+   "fact_sha256": "884e31ebddf44ed2a4ba1db383138342d813184030b35dc162b0ef495f5f1805",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:bxp:535-mission-street",
+   "name": "535 Mission Street",
+   "aliases": [],
+   "address": "535 Mission St, San Francisco, Ca, 94105",
+   "company": {
+    "name": "BXP, Inc.",
+    "ticker": "BXP",
+    "exchange": "XNYS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "10-K cover securities table: Common Stock, par value $.01 per share / BXP / New York Stock Exchange; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "reported_group_owner",
+    "label": "Held in the company's consolidated real estate (Schedule III)",
+    "scope": "Company-reported consolidated holding of this named property; holding entity, joint-venture share and ground leases not established",
+    "stated_share_pct": null,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "Schedule III row: 535 Mission Street | Office | San Francisco, CA",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "verified_photograph",
+     "file_page": "https://commons.wikimedia.org/wiki/File:535_Mission_Street,_San_Francisco.jpg",
+     "licence": "CC BY-SA 4.0",
+     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "author_credit": "Minesweeper / Wikimedia Commons, CC BY-SA 4.0",
+     "capture_date": "2015-08-23",
+     "identity_check": "Commons file is the Wikidata image (P18) of Q14681523 '535 Mission Street', 36 m from the property point; visually checked 2026-11-14",
+     "local_copy_sha256": "f419d5f5413a2e74b23ab1fd420d52f19da8e5590b420d77e2ed1b4c19c05ed3"
+    }
+   ],
+   "coordinates": {
+    "class": "Verified address point (not a building outline)",
+    "lat": 37.789067,
+    "lon": -122.398352,
+    "label": "535 Mission St, San Francisco, Ca, 94105 (verified address point, not a building outline)",
+    "basis": "US Census geocode of the street address that is the property name in the 10-K; Wikidata building coordinate within 150 m",
+    "evidence": {
+     "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=535+Mission+Street%2C+San+Francisco%2C+CA&benchmark=Public_AR_Current&format=json",
+     "sha256": "2d8668be4b8b9a8c3681f458f2a961e618f917c04cfe6619dff5d846e0e7f4a3",
+     "checked_at": "2026-11-14T03:10:00Z",
+     "locator": "US Census Geocoder match: 535 MISSION ST, SAN FRANCISCO, CA, 94105",
+     "sha256_scope": "source_body",
+     "record_id": "re:bxp:535-mission-street",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "US Census Gazetteer (public domain) city point"
+    },
+    "imagery": {
+     "status": "cleared",
+     "basis": "CC BY-SA 4.0 with attribution; share-alike applies to the image file only"
+    }
+   },
+   "attribution": [
+    "Facts: BXP, Inc. SEC filings (Form 10-K FY2025)",
+    "Location: US Census Geocoder (public domain)",
+    "Photo: Minesweeper / Wikimedia Commons, CC BY-SA 4.0 (via Wikimedia Commons)"
+   ],
+   "fact_sha256": "4c630bccd5b74f4544f33532f234860f8a351d8c291777d4f8ad2405b2b78cb7",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:hst:the-don-cesar",
+   "name": "The Don CeSar",
+   "aliases": [
+    "Don CeSar"
+   ],
+   "address": "3400 Gulf Boulevard, St. Pete Beach, FL 33706 USA",
+   "company": {
+    "name": "HOST HOTELS & RESORTS, INC.",
+    "ticker": "HST",
+    "exchange": "XNAS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "10-K cover securities table: Common Stock, $.01 par value / HST / The Nasdaq Stock Market LLC; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "reported_group_owner",
+    "label": "Consolidated hotel reported in the company's portfolio",
+    "scope": "Company-reported consolidated hotel; holding entity not established",
+    "stated_share_pct": null,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "Item 2 consolidated hotels table: The Don CeSar | Florida | 348 rooms",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "verified_photograph",
+     "file_page": "https://commons.wikimedia.org/wiki/File:Don_Cesar.jpg",
+     "licence": "CC BY 2.0",
+     "licence_url": "https://creativecommons.org/licenses/by/2.0",
+     "author_credit": "porkfork6 from Saint Petersburg, FL, USA / Wikimedia Commons, CC BY 2.0",
+     "capture_date": "2006-12-31",
+     "identity_check": "Commons file is the Wikidata image (P18) of Q1239042 'Don CeSar', 235 m from the property point; visually checked 2026-11-14",
+     "local_copy_sha256": "3c2fbd5a84a62261b64d202aee698b38b0576b7982ef4524de86e9845833207a"
+    }
+   ],
+   "coordinates": {
+    "class": "Verified address point (not a building outline)",
+    "lat": 27.708614,
+    "lon": -82.736861,
+    "label": "3400 Gulf Blvd, St Pete Beach, Fl, 33706 (verified address point, not a building outline)",
+    "basis": "US Census geocode of the company-published address; 268 m from the company's own pin",
+    "evidence": {
+     "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3400+Gulf+Boulevard%2C+St.+Pete+Beach%2C+FL+33706&benchmark=Public_AR_Current&format=json",
+     "sha256": "51c23a4097dd273a3555d58e3a25fbbbee6801f4c16bf77ac07f51839606ff3a",
+     "checked_at": "2026-11-14T03:10:00Z",
+     "locator": "US Census Geocoder match: 3400 GULF BLVD, ST PETE BEACH, FL, 33706",
+     "sha256_scope": "source_body",
+     "record_id": "re:hst:the-don-cesar",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "No point published"
+    },
+    "imagery": {
+     "status": "cleared",
+     "basis": "CC BY 2.0 with attribution"
+    }
+   },
+   "attribution": [
+    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Location: US Census Geocoder (public domain)",
+    "Photo: porkfork6 from Saint Petersburg, FL, USA / Wikimedia Commons, CC BY 2.0 (via Wikimedia Commons)"
+   ],
+   "fact_sha256": "d8b87477567705ab9ada2448a39d8868fb132e733602659591c8f406850b9137",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:hst:the-westin-georgetown-washington-d-c",
+   "name": "The Westin Georgetown, Washington D.C.",
+   "aliases": [
+    "The Westin Georgetown, Washington, D.C."
+   ],
+   "address": "2350 M St NW, Washington, DC 20037 USA",
+   "company": {
+    "name": "HOST HOTELS & RESORTS, INC.",
+    "ticker": "HST",
+    "exchange": "XNAS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "10-K cover securities table: Common Stock, $.01 par value / HST / The Nasdaq Stock Market LLC; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "reported_group_owner",
+    "label": "Consolidated hotel reported in the company's portfolio",
+    "scope": "Company-reported consolidated hotel; holding entity not established",
+    "stated_share_pct": null,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "Item 2 consolidated hotels table: The Westin Georgetown, Washington D.C. | Washington, D.C. | 269 rooms",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "verified_photograph",
+     "file_page": "https://commons.wikimedia.org/wiki/File:The_Westin_Grand_-_Washington,_D.C..JPG",
+     "licence": "CC BY-SA 3.0",
+     "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "author_credit": "AgnosticPreachersKid / Wikimedia Commons, CC BY-SA 3.0",
+     "capture_date": "2009-02-20",
+     "identity_check": "Commons file is the Wikidata image (P18) of Q18393956 'The Westin Georgetown, Washington, D.C.', 176 m from the property point; visually checked 2026-11-14",
+     "local_copy_sha256": "fdd58d17274f10733d3a07e649b2cf6b485ce7cf45f3d143b7b8e8f35029b048"
+    }
+   ],
+   "coordinates": {
+    "class": "Verified address point (not a building outline)",
+    "lat": 38.905205,
+    "lon": -77.05077,
+    "label": "2350 M St Nw, Washington, Dc, 20037 (verified address point, not a building outline)",
+    "basis": "US Census geocode of the company-published address; 210 m from the company's own pin",
+    "evidence": {
+     "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2350+M+St+NW%2C+Washington%2C+DC+20037&benchmark=Public_AR_Current&format=json",
+     "sha256": "a6a0be70a94856ca406f11640a9935fe542cea70aed627f4d70b1060be463bef",
+     "checked_at": "2026-11-14T03:10:00Z",
+     "locator": "US Census Geocoder match: 2350 M ST NW, WASHINGTON, DC, 20037",
+     "sha256_scope": "source_body",
+     "record_id": "re:hst:the-westin-georgetown-washington-d-c",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "No point published"
+    },
+    "imagery": {
+     "status": "cleared",
+     "basis": "CC BY-SA 3.0 with attribution; share-alike applies to the image file only"
+    }
+   },
+   "attribution": [
+    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Location: US Census Geocoder (public domain)",
+    "Photo: AgnosticPreachersKid / Wikimedia Commons, CC BY-SA 3.0 (via Wikimedia Commons)"
+   ],
+   "fact_sha256": "4d547b19e1d2915c466aa0fb98456e94f29381a5d26450622989c453fad89beb",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:hst:the-westin-seattle",
+   "name": "The Westin Seattle",
+   "aliases": [
+    "Westin Seattle"
+   ],
+   "address": "1900 5th Ave, Seattle, WA 98101 USA",
+   "company": {
+    "name": "HOST HOTELS & RESORTS, INC.",
+    "ticker": "HST",
+    "exchange": "XNAS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "10-K cover securities table: Common Stock, $.01 par value / HST / The Nasdaq Stock Market LLC; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "reported_group_owner",
+    "label": "Consolidated hotel reported in the company's portfolio",
+    "scope": "Company-reported consolidated hotel; holding entity not established",
+    "stated_share_pct": null,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "Item 2 consolidated hotels table: The Westin Seattle | Washington | 891 rooms",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "verified_photograph",
+     "file_page": "https://commons.wikimedia.org/wiki/File:Westinseattle.jpg",
+     "licence": "CC BY 2.5",
+     "licence_url": "https://creativecommons.org/licenses/by/2.5",
+     "author_credit": "Davidphogan74 at English Wikipedia / Wikimedia Commons, CC BY 2.5",
+     "capture_date": "17 June 20",
+     "identity_check": "Commons file is the Wikidata image (P18) of Q7988924 'Westin Seattle', 167 m from the property point; visually checked 2026-11-14",
+     "local_copy_sha256": "45963bdf90cffeafb6b0bae2b9bb3c16144035af0afa01d5ed2c691945891fa0"
+    }
+   ],
+   "coordinates": {
+    "class": "Verified address point (not a building outline)",
+    "lat": 47.613061,
+    "lon": -122.337856,
+    "label": "1900 5Th Ave, Seattle, Wa, 98101 (verified address point, not a building outline)",
+    "basis": "US Census geocode of the company-published address; 190 m from the company's own pin",
+    "evidence": {
+     "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1900+5th+Ave%2C+Seattle%2C+WA+98101&benchmark=Public_AR_Current&format=json",
+     "sha256": "ad22e63e0f72bd47f715fa5021fb06d753753ef03cf9c18c7b87c89e753eed04",
+     "checked_at": "2026-11-14T03:10:00Z",
+     "locator": "US Census Geocoder match: 1900 5TH AVE, SEATTLE, WA, 98101",
+     "sha256_scope": "source_body",
+     "record_id": "re:hst:the-westin-seattle",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "No point published"
+    },
+    "imagery": {
+     "status": "cleared",
+     "basis": "CC BY 2.5 with attribution"
+    }
+   },
+   "attribution": [
+    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Location: US Census Geocoder (public domain)",
+    "Photo: Davidphogan74 at English Wikipedia / Wikimedia Commons, CC BY 2.5 (via Wikimedia Commons)"
+   ],
+   "fact_sha256": "381f3369be299c6674fc0eb48647fa8f51a515bb704919d3ebb0478e8e9d8c17",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:bxp:17-hartwell-avenue",
+   "name": "17 Hartwell Avenue",
+   "aliases": [],
+   "address": "17 Hartwell Ave, Lexington, Ma, 02421",
+   "company": {
+    "name": "BXP, Inc.",
+    "ticker": "BXP",
+    "exchange": "XNYS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "10-K cover securities table: Common Stock, par value $.01 per share / BXP / New York Stock Exchange; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "developer",
+    "label": "Company-reported developer of this construction/redevelopment project",
+    "scope": "Named project in the company's construction/redevelopment table; company-stated 20% ownership of this property",
+    "stated_share_pct": 20.0,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "Construction/Redevelopment table row: 17 Hartwell Avenue (312 units) (20% ownership) | estimated stabilization Q2 2028 | Lexington, MA",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "development_plan",
+     "stage": "under_construction",
+     "statement": "Under construction; company-estimated stabilization Q2 2028 (target, not a milestone)",
+     "as_of": "2026-09-30",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+      "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+      "checked_at": "2026-11-14T03:20:00Z",
+      "locator": "Construction/Redevelopment table at September 30, 2026: Reverie - 17 Hartwell Avenue (312 units) (20% ownership) Q2 2028",
+      "sha256_scope": "source_body"
+     }
+    }
+   ],
+   "coordinates": {
+    "class": "Verified address point (not a building outline)",
+    "lat": 42.474568,
+    "lon": -71.254345,
+    "label": "17 Hartwell Ave, Lexington, Ma, 02421 (verified address point, not a building outline)",
+    "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
+    "evidence": {
+     "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=17+Hartwell+Avenue%2C+Lexington%2C+MA&benchmark=Public_AR_Current&format=json",
+     "sha256": "86403d41c89397c45cb3bf26501e4b2e8c1922cb0b22868d36c0a427dda49899",
+     "checked_at": "2026-11-14T03:10:00Z",
+     "locator": "US Census Geocoder match: 17 HARTWELL AVE, LEXINGTON, MA, 02421",
+     "sha256_scope": "source_body",
+     "record_id": "re:bxp:17-hartwell-avenue",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "US Census Gazetteer (public domain) city point"
+    }
+   },
+   "attribution": [
+    "Facts: BXP, Inc. SEC filings (Form 10-K FY2025, Form 10-Q Q3 2026)",
+    "Location: US Census Geocoder (public domain)"
+   ],
+   "fact_sha256": "562dcd0de920a2672d82123bfae051bc51d05a10e576e68518137259f1b0963f",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:bxp:290-binney-street",
+   "name": "290 Binney Street",
+   "aliases": [],
+   "address": "290 Binney St, Cambridge, Ma, 02142",
+   "company": {
+    "name": "BXP, Inc.",
+    "ticker": "BXP",
+    "exchange": "XNYS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "10-K cover securities table: Common Stock, par value $.01 per share / BXP / New York Stock Exchange; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "developer",
+    "label": "Company-reported developer of this construction/redevelopment project",
+    "scope": "Named project in the company's construction/redevelopment table; company-stated 55% ownership of this property",
+    "stated_share_pct": 55.0,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "Construction/Redevelopment table row: 290 Binney Street (55% ownership) | estimated stabilization Q2 2026 | Cambridge, MA",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "development_plan",
+     "stage": "completed",
+     "statement": "Placed in service 2026-04-30 (company-reported)",
+     "as_of": "2026-09-30",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+      "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+      "checked_at": "2026-11-14T03:20:00Z",
+      "locator": "Development: on April 30, 2026, the Company fully placed in-service 290 Binney Street (55% consolidated JV)",
+      "sha256_scope": "source_body"
+     }
+    }
+   ],
+   "coordinates": {
+    "class": "Verified address point (not a building outline)",
+    "lat": 42.366068,
+    "lon": -71.085883,
+    "label": "290 Binney St, Cambridge, Ma, 02142 (verified address point, not a building outline)",
+    "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
+    "evidence": {
+     "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=290+Binney+Street%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json",
+     "sha256": "b315ebef1400c6dba6fcefbfe95f7e7052acc6ce71b0635ec5a2b1bed27a4a78",
+     "checked_at": "2026-11-14T03:10:00Z",
+     "locator": "US Census Geocoder match: 290 BINNEY ST, CAMBRIDGE, MA, 02142",
+     "sha256_scope": "source_body",
+     "record_id": "re:bxp:290-binney-street",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "US Census Gazetteer (public domain) city point"
+    }
+   },
+   "attribution": [
+    "Facts: BXP, Inc. SEC filings (Form 10-K FY2025, Form 10-Q Q3 2026)",
+    "Location: US Census Geocoder (public domain)"
+   ],
+   "fact_sha256": "8e3da014e0fec976da8d2a04be6f893916d73166111f3b82aeb5c13819a87225",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:bxp:290-coles-street",
+   "name": "290 Coles Street",
+   "aliases": [],
+   "address": "290 Coles St, Jersey City, Nj, 07310",
+   "company": {
+    "name": "BXP, Inc.",
+    "ticker": "BXP",
+    "exchange": "XNYS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "10-K cover securities table: Common Stock, par value $.01 per share / BXP / New York Stock Exchange; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "developer",
+    "label": "Company-reported developer of this construction/redevelopment project",
+    "scope": "Named project in the company's construction/redevelopment table; company-stated 19.46% ownership of this property",
+    "stated_share_pct": 19.46,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "Construction/Redevelopment table row: 290 Coles Street (670 Units) (19.46% ownership) | estimated stabilization Q3 2029 | Jersey City, NJ",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "development_plan",
+     "stage": "under_construction",
+     "statement": "Under construction; company-estimated stabilization Q3 2029 (target, not a milestone)",
+     "as_of": "2026-09-30",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+      "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+      "checked_at": "2026-11-14T03:20:00Z",
+      "locator": "Construction/Redevelopment table at September 30, 2026: 290 Coles Street (670 Units) (19.46% ownership) Q3 2029",
+      "sha256_scope": "source_body"
+     }
+    }
+   ],
+   "coordinates": {
+    "class": "Verified address point (not a building outline)",
+    "lat": 40.733346,
+    "lon": -74.045843,
+    "label": "290 Coles St, Jersey City, Nj, 07310 (verified address point, not a building outline)",
+    "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
+    "evidence": {
+     "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=290+Coles+Street%2C+Jersey+City%2C+NJ&benchmark=Public_AR_Current&format=json",
+     "sha256": "dbc8d5a9051d2fa42a0b5571da39ea2f995acae43976c7c5b9eb110a47428032",
+     "checked_at": "2026-11-14T03:10:00Z",
+     "locator": "US Census Geocoder match: 290 COLES ST, JERSEY CITY, NJ, 07310",
+     "sha256_scope": "source_body",
+     "record_id": "re:bxp:290-coles-street",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "US Census Gazetteer (public domain) city point"
+    }
+   },
+   "attribution": [
+    "Facts: BXP, Inc. SEC filings (Form 10-K FY2025, Form 10-Q Q3 2026)",
+    "Location: US Census Geocoder (public domain)"
+   ],
+   "fact_sha256": "d4f560386ff4e18bcf2bd2623527d51f33b14c26684d42c70f4fcbeea2eb554d",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:bxp:343-madison-avenue",
+   "name": "343 Madison Avenue",
+   "aliases": [],
+   "address": "343 Madison Ave, New York, Ny, 10017",
+   "company": {
+    "name": "BXP, Inc.",
+    "ticker": "BXP",
+    "exchange": "XNYS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "10-K cover securities table: Common Stock, par value $.01 per share / BXP / New York Stock Exchange; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "developer",
+    "label": "Company-reported developer of this construction/redevelopment project",
+    "scope": "Named project in the company's construction/redevelopment table; company-stated 89.45% ownership through a consolidated joint venture",
+    "stated_share_pct": 89.45,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "Construction/Redevelopment table row: 343 Madison Avenue | estimated stabilization Q2 2031 | New York, NY",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "development_plan",
+     "stage": "under_construction",
+     "statement": "Under construction; company-estimated stabilization Q2 2031 (target, not a milestone)",
+     "as_of": "2026-09-30",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+      "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+      "checked_at": "2026-11-14T03:20:00Z",
+      "locator": "Construction/Redevelopment table at September 30, 2026: 343 Madison Avenue (89.45% ownership) Q2 2031",
+      "sha256_scope": "source_body"
+     }
+    }
+   ],
+   "coordinates": {
+    "class": "Verified address point (not a building outline)",
+    "lat": 40.754198,
+    "lon": -73.978174,
+    "label": "343 Madison Ave, New York, Ny, 10017 (verified address point, not a building outline)",
+    "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
+    "evidence": {
+     "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=343+Madison+Avenue%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+     "sha256": "ca0cfa2eab8d19cbafa34be7687d0df1a6b42b8a77ea7f54a0408c24a5330192",
+     "checked_at": "2026-11-14T03:10:00Z",
+     "locator": "US Census Geocoder match: 343 MADISON AVE, NEW YORK, NY, 10017",
+     "sha256_scope": "source_body",
+     "record_id": "re:bxp:343-madison-avenue",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "US Census Gazetteer (public domain) city point"
+    }
+   },
+   "attribution": [
+    "Facts: BXP, Inc. SEC filings (Form 10-K FY2025, Form 10-Q Q3 2026)",
+    "Location: US Census Geocoder (public domain)"
+   ],
+   "fact_sha256": "35973c11e8b13fcb72fd33547d4666fc6044432b93d0875353a9fc3d69c20070",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:bxp:121-broadway-street",
+   "name": "121 Broadway Street",
+   "aliases": [
+    "121 Broadway"
+   ],
+   "address": "121 Broadway, Cambridge, Ma, 02142",
+   "company": {
+    "name": "BXP, Inc.",
+    "ticker": "BXP",
+    "exchange": "XNYS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "10-K cover securities table: Common Stock, par value $.01 per share / BXP / New York Stock Exchange; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "developer",
+    "label": "Company-reported developer of this construction/redevelopment project",
+    "scope": "Named project in the company's construction/redevelopment table; ownership share not stated (treated as not established)",
+    "stated_share_pct": null,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "Construction/Redevelopment table row: 121 Broadway Street (439 units) | estimated stabilization Q2 2029 | Cambridge, MA",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "development_plan",
+     "stage": "under_construction",
+     "statement": "Under construction; company-estimated stabilization Q2 2029 (target, not a milestone)",
+     "as_of": "2026-09-30",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+      "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+      "checked_at": "2026-11-14T03:20:00Z",
+      "locator": "Construction/Redevelopment table at September 30, 2026: 121 Broadway Street (439 units) Q2 2029",
+      "sha256_scope": "source_body"
+     }
+    }
+   ],
+   "coordinates": {
+    "class": "Verified address point (not a building outline)",
+    "lat": 42.364393,
+    "lon": -71.088249,
+    "label": "121 Broadway, Cambridge, Ma, 02142 (verified address point, not a building outline)",
+    "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
+    "evidence": {
+     "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=121+Broadway+Street%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json",
+     "sha256": "7cf9bc67120786d19450435c12fb03ad9a9c71c4d0922bb02fb1c957cc13d8de",
+     "checked_at": "2026-11-14T03:10:00Z",
+     "locator": "US Census Geocoder match: 121 BROADWAY, CAMBRIDGE, MA, 02142",
+     "sha256_scope": "source_body",
+     "record_id": "re:bxp:121-broadway-street",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "US Census Gazetteer (public domain) city point"
+    }
+   },
+   "attribution": [
+    "Facts: BXP, Inc. SEC filings (Form 10-K FY2025, Form 10-Q Q3 2026)",
+    "Location: US Census Geocoder (public domain)"
+   ],
+   "fact_sha256": "06e448484fdc6e2300acd00ec8010c5175e28a6961009acf4632501609af54bc",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:bxp:725-12th-street",
+   "name": "725 12th Street",
+   "aliases": [],
+   "address": "725 12Th St Nw, Washington, Dc, 20005",
+   "company": {
+    "name": "BXP, Inc.",
+    "ticker": "BXP",
+    "exchange": "XNYS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "10-K cover securities table: Common Stock, par value $.01 per share / BXP / New York Stock Exchange; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "developer",
+    "label": "Company-reported developer of this construction/redevelopment project",
+    "scope": "Named project in the company's construction/redevelopment table; ownership share not stated (treated as not established)",
+    "stated_share_pct": null,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "Construction/Redevelopment table row: 725 12th Street (Redevelopment) | estimated stabilization Q4 2030 | Washington, DC",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "development_plan",
+     "stage": "under_construction",
+     "statement": "Under redevelopment; company-estimated stabilization Q3 2029 (target, not a milestone)",
+     "as_of": "2026-09-30",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+      "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+      "checked_at": "2026-11-14T03:20:00Z",
+      "locator": "Construction/Redevelopment table at September 30, 2026: 725 12th Street (Redevelopment) Q3 2029 Washington, DC",
+      "sha256_scope": "source_body"
+     }
+    }
+   ],
+   "coordinates": {
+    "class": "Verified address point (not a building outline)",
+    "lat": 38.898711,
+    "lon": -77.028006,
+    "label": "725 12Th St Nw, Washington, Dc, 20005 (verified address point, not a building outline)",
+    "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
+    "evidence": {
+     "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=725+12th+St+NW%2C+Washington%2C+DC&benchmark=Public_AR_Current&format=json",
+     "sha256": "f7062b55a2e2d9ea00f7b084f6cae177e64414f28e5c1ef93ee27983e4a1a7b7",
+     "checked_at": "2026-11-14T03:10:00Z",
+     "locator": "US Census Geocoder match: 725 12TH ST NW, WASHINGTON, DC, 20005",
+     "sha256_scope": "source_body",
+     "record_id": "re:bxp:725-12th-street",
+     "scope": "specific_site"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "US Census Gazetteer (public domain) city point"
+    }
+   },
+   "attribution": [
+    "Facts: BXP, Inc. SEC filings (Form 10-K FY2025, Form 10-Q Q3 2026)",
+    "Location: US Census Geocoder (public domain)"
+   ],
+   "fact_sha256": "3597bf838e9a92821b84a2c8018a92596bce7b820bba2ddcc21d54e54620bba2",
+   "blockers": [
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  },
+  {
+   "id": "re:bxp:reston-next-retail",
+   "name": "Reston Next Retail",
+   "aliases": [],
+   "address": null,
+   "company": {
+    "name": "BXP, Inc.",
+    "ticker": "BXP",
+    "exchange": "XNYS",
+    "listing_evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "10-K cover securities table: Common Stock, par value $.01 per share / BXP / New York Stock Exchange; matched to current SEC submissions",
+     "sha256_scope": "source_body"
+    }
+   },
+   "relationship": {
+    "role": "developer",
+    "label": "Company-reported developer of this construction/redevelopment project",
+    "scope": "Named project in the company's construction/redevelopment table; ownership share not stated (treated as not established)",
+    "stated_share_pct": null,
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "Construction/Redevelopment table row: Reston Next Retail | estimated stabilization Q4 2026 | Reston, VA",
+     "sha256_scope": "source_body"
+    },
+    "title_claimed": false,
+    "investor_note": "Buying shares gives exposure to the company only, not title to this property"
+   },
+   "qualifies_by": [
+    {
+     "type": "development_plan",
+     "stage": "completed",
+     "statement": "Placed in service 2026-01-16 (company-reported)",
+     "as_of": "2026-09-30",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+      "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+      "checked_at": "2026-11-14T03:20:00Z",
+      "locator": "Development: on January 16, 2026, the Company fully placed in-service Reston Next Retail",
+      "sha256_scope": "source_body"
+     }
+    }
+   ],
+   "coordinates": {
+    "class": "Approximate city point",
+    "lat": 38.94976,
+    "lon": -77.34624,
+    "label": "Reston, VA (city reference point, not the building)",
+    "basis": "US Census 2024 Gazetteer place internal point for the city named in the filing (public domain)",
+    "evidence": {
+     "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_place_national.zip",
+     "sha256": "cf262fc92b2326f7a8c62a89d156a60eb17d64d6d35f7a62310c43bb08972c06",
+     "checked_at": "2026-11-14T02:37:00Z",
+     "locator": "Gazetteer place GEOID 5166672 (Reston CDP, VA) INTPTLAT/INTPTLONG",
+     "sha256_scope": "source_body",
+     "record_id": "re:bxp:reston-next-retail",
+     "scope": "city_reference"
+    }
+   },
+   "licensing": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "US Census Gazetteer (public domain) city point"
+    }
+   },
+   "attribution": [
+    "Facts: BXP, Inc. SEC filings (Form 10-K FY2025, Form 10-Q Q3 2026)",
+    "Location: US Census Gazetteer (public domain)"
+   ],
+   "fact_sha256": "0a9270530b4a1edb9f742841adecbe2de5049d0b7f09637875996bbc11aa46cb",
+   "blockers": [
+    "Location is only an approximate city point; the marker will show the city, not the building",
+    "Owner approval not yet given for this record"
+   ],
+   "owner_approval": null
+  }
+ ]
+}

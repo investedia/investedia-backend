@@ -1,0 +1,21 @@
+{
+ "matched_candidates": 10,
+ "licence_checked": 2,
+ "accepted": [
+  "re:jre:nagoya-hirokoji-building",
+  "re:jre:tokyo-opera-city-building"
+ ],
+ "rejected": {
+  "re:jre:jre-kanda-ogawamachi-building": "matched the Ogawamachi neighbourhood / a road photo, not the building"
+ },
+ "pending": [
+  "re:jre:aer",
+  "re:jre:jre-umeda-square-building",
+  "re:jre:kitanomaru-square",
+  "re:jre:mm-park-building",
+  "re:jre:nishiki-park-building",
+  "re:jre:shinjuku-eastside-square",
+  "re:jre:shiodome-building",
+  "re:jre:yurakucho-denki-building"
+ ]
+}

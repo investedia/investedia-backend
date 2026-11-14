@@ -1,0 +1,102 @@
+{
+ "re:jre:nagoya-hirokoji-building": {
+  "qid": "Q11415169",
+  "ja": "名古屋広小路ビルヂング",
+  "en": "Nagoya Hirokōji Building",
+  "file": "Nagoya Hirokoji Building 20140824.JPG",
+  "dist_m": 33,
+  "match": "ja",
+  "lat": 35.168056,
+  "lon": 136.90025
+ },
+ "re:jre:tokyo-opera-city-building": {
+  "qid": "Q1201889",
+  "ja": "東京オペラシティ",
+  "en": "Tokyo Opera City Tower",
+  "file": "Tokyo Opera City-2.jpg",
+  "dist_m": 157,
+  "match": "ja",
+  "lat": 35.68309,
+  "lon": 139.68707
+ },
+ "re:jre:kitanomaru-square": {
+  "qid": "Q11400778",
+  "ja": "北の丸スクエア",
+  "en": null,
+  "file": "Kitanomaru Square Tokyo.jpg",
+  "dist_m": 48,
+  "match": "ja",
+  "lat": 35.69575,
+  "lon": 139.75069444
+ },
+ "re:jre:nishiki-park-building": {
+  "qid": "Q11650413",
+  "ja": "錦パークビル",
+  "en": "Nishiki Park Building",
+  "file": "View of Nishiki Park Building, Marunouchi Naka Ward Nagoya 2022.jpg",
+  "dist_m": 19,
+  "match": "ja",
+  "lat": 35.1729,
+  "lon": 136.900814
+ },
+ "re:jre:mm-park-building": {
+  "qid": "Q10854660",
+  "ja": "MMパークビル",
+  "en": "MM Park Building",
+  "file": "MM Park Building.jpg",
+  "dist_m": 49,
+  "match": "ja",
+  "lat": 35.458583,
+  "lon": 139.632528
+ },
+ "re:jre:shinjuku-eastside-square": {
+  "qid": "Q17217521",
+  "ja": "新宿イーストサイドスクエア",
+  "en": "Shinjuku Eastside Square",
+  "file": "Square Enix HQ (Shinjuku Eastside Square).jpg",
+  "dist_m": 46,
+  "match": "ja",
+  "lat": 35.69675,
+  "lon": 139.708194
+ },
+ "re:jre:jre-umeda-square-building": {
+  "qid": "Q11538597",
+  "ja": "梅田スクエアビル",
+  "en": "Umeda Square Building",
+  "file": "Umeda Square Bldg Osaka Japan01-r.jpg",
+  "dist_m": 17,
+  "match": "ja",
+  "lat": 34.700444,
+  "lon": 135.497944
+ },
+ "re:jre:yurakucho-denki-building": {
+  "qid": "Q24862459",
+  "ja": "有楽町電気ビルヂング",
+  "en": null,
+  "file": "Yurakucho Denki Building.JPG",
+  "dist_m": 25,
+  "match": "ja",
+  "lat": 35.67458611,
+  "lon": 139.76145556
+ },
+ "re:jre:shiodome-building": {
+  "qid": "Q11550511",
+  "ja": "汐留ビルディング",
+  "en": "Shiodome Building",
+  "file": "Shiodome Building2.JPG",
+  "dist_m": 29,
+  "match": "ja",
+  "lat": 35.656917,
+  "lon": 139.7595
+ },
+ "re:jre:aer": {
+  "qid": "Q6358682",
+  "ja": "アエル",
+  "en": "Aer",
+  "file": "AER from south-southwest 2010-06-02.jpg",
+  "dist_m": 12,
+  "match": "en",
+  "lat": 38.262565,
+  "lon": 140.8815
+ }
+}

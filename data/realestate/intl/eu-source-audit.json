@@ -1,0 +1,36 @@
+{
+ "as_of": "2026-11-14",
+ "sources": {
+  "bl": {
+   "name": "British Land FY26 results (31 Mar 2026)",
+   "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+   "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2"
+  },
+  "bl_share": {
+   "name": "British Land share price tools page",
+   "url": "https://www.britishland.com/investors/shareholder-information/share-price-tools/",
+   "sha256": "1d67753cecde56f3323deb79125b6372273f15f95e1d0e854ca1bb2042b9ac15"
+  },
+  "ls": {
+   "name": "Landsec FY26 results (31 Mar 2026)",
+   "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+   "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278"
+  },
+  "sg": {
+   "name": "SEGRO H1 2026 results",
+   "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+   "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf"
+  },
+  "mt": {
+   "name": "Montea interim release Q3 2026 (29 Oct 2026)",
+   "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+   "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df"
+  }
+ },
+ "blocked": {
+  "WDP": "Q3 2026 results PDF returns HTTP 403 to scripted download (page text readable: WDP-ARGAN all-share merger announced 23 Jul 2026, EGMs 20/24 Nov 2026, completion expected Q1 2027)",
+  "SEGRO property-level": "H1 2026 Property Analysis Report gives regional development totals only; named projects come from narrative text, without addresses",
+  "Landsec/SEGRO tickers": "not stated in fetched company documents; access left research_only"
+ },
+ "excluded_figures": "ERV, rents, yields on cost, market values and occupancy present in the sources were deliberately not carried"
+}

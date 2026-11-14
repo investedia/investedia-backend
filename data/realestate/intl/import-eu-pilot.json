@@ -1,0 +1,4320 @@
+{
+ "schema": "investedia.projects.import.v1",
+ "synthetic": false,
+ "companies": {
+  "registry:lse:BLND": {
+   "identity": {
+    "scheme": "registry",
+    "value": "lse:BLND",
+    "evidence": {
+     "url": "https://www.britishland.com/investors/shareholder-information/share-price-tools/",
+     "sha256": "1d67753cecde56f3323deb79125b6372273f15f95e1d0e854ca1bb2042b9ac15",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Company share-price tool embeds company code UK-BLND (London Stock Exchange)",
+     "sha256_scope": "source_body"
+    }
+   },
+   "listing": {
+    "name": "The British Land Company PLC",
+    "ticker": "BLND",
+    "exchange": "XLON",
+    "exchange_mic": "XLON",
+    "security_type": "common_equity",
+    "evidence": {
+     "url": "https://www.britishland.com/investors/shareholder-information/share-price-tools/",
+     "sha256": "1d67753cecde56f3323deb79125b6372273f15f95e1d0e854ca1bb2042b9ac15",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Company share-price tool embeds company code UK-BLND (London Stock Exchange)",
+     "sha256_scope": "source_body"
+    }
+   },
+   "headquarters": null
+  },
+  "registry:lse:LAND": {
+   "identity": {
+    "scheme": "registry",
+    "value": "lse:LAND",
+    "evidence": {
+     "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+     "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Results announcement names LAND SECURITIES GROUP PLC; ticker not stated in fetched documents",
+     "sha256_scope": "source_body"
+    }
+   },
+   "listing": {
+    "name": "Land Securities Group PLC",
+    "ticker": null,
+    "exchange": "XLON",
+    "exchange_mic": "XLON",
+    "security_type": "common_equity",
+    "evidence": {
+     "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+     "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Results announcement names LAND SECURITIES GROUP PLC; ticker not stated in fetched documents",
+     "sha256_scope": "source_body"
+    }
+   },
+   "headquarters": null
+  },
+  "registry:lse:SGRO": {
+   "identity": {
+    "scheme": "registry",
+    "value": "lse:SGRO",
+    "evidence": {
+     "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+     "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Results state listing on the London Stock Exchange and Euronext Paris; ticker not stated",
+     "sha256_scope": "source_body"
+    }
+   },
+   "listing": {
+    "name": "SEGRO plc",
+    "ticker": null,
+    "exchange": "XLON",
+    "exchange_mic": "XLON",
+    "security_type": "common_equity",
+    "evidence": {
+     "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+     "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Results state listing on the London Stock Exchange and Euronext Paris; ticker not stated",
+     "sha256_scope": "source_body"
+    }
+   },
+   "headquarters": null
+  },
+  "registry:euronext:MONT": {
+   "identity": {
+    "scheme": "registry",
+    "value": "euronext:MONT",
+    "evidence": {
+     "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+     "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "About Montea: listed on Euronext Brussels (MONT) and Euronext Paris (MONTP)",
+     "sha256_scope": "source_body"
+    }
+   },
+   "listing": {
+    "name": "Montea NV",
+    "ticker": "MONT",
+    "exchange": "XBRU",
+    "exchange_mic": "XBRU",
+    "security_type": "reit_shares",
+    "evidence": {
+     "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+     "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "About Montea: listed on Euronext Brussels (MONT) and Euronext Paris (MONTP)",
+     "sha256_scope": "source_body"
+    }
+   },
+   "headquarters": null
+  }
+ },
+ "records": [
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:blnd:2-finsbury-avenue",
+   "source_identity": {
+    "authority": "company-results:BLND",
+    "id": "2-finsbury-avenue"
+   },
+   "synthetic": false,
+   "name": "2 Finsbury Avenue",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "London",
+   "asset": {
+    "category": "project",
+    "subtype": "Office development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Committed development; practical completion targeted Q2 2027 (company target)",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+     "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Committed Developments table: 2 Finsbury Avenue | Office | BL share 25% | PC Q2 2027",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 51.507222222,
+    "lon": -0.1275,
+    "label": "London (city reference point, not the building)",
+    "basis": "Wikidata Q84 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q84",
+     "sha256": "338ce8069c1d9eab848b87cb8cfcc38f56df018cbe28254567334654d1c8673e",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q84 P625 (London)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:blnd:2-finsbury-avenue",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+    "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Committed Developments table: 2 Finsbury Avenue | Office | BL share 25% | PC Q2 2027",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer (joint venture)",
+     "relationship_scope": "Named project in the company results; company-stated share 25%; title not checked",
+     "property_stake": 25,
+     "company_ref": "registry:lse:BLND",
+     "listing": {
+      "name": "The British Land Company PLC",
+      "ticker": "BLND",
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.britishland.com/investors/shareholder-information/share-price-tools/",
+       "sha256": "1d67753cecde56f3323deb79125b6372273f15f95e1d0e854ca1bb2042b9ac15",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Company share-price tool embeds company code UK-BLND (London Stock Exchange)",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Committed Developments table: 2 Finsbury Avenue | Office | BL share 25% | PC Q2 2027",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure only; buying shares gives no title to this property"
+     },
+     "stake_scope": "specific_property",
+     "property_evidence": {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Committed Developments table: 2 Finsbury Avenue | Office | BL share 25% | PC Q2 2027",
+      "sha256_scope": "source_body",
+      "record_id": "re:blnd:2-finsbury-avenue",
+      "scope": "specific_property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:blnd:2-finsbury-avenue",
+    "evidence_refs": [
+     {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "fa27275b4fc69777fdb4eef379a75a9ac562ce0edd2ffff3d2d2562c1f9818e5"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:blnd:broadgate-tower",
+   "source_identity": {
+    "authority": "company-results:BLND",
+    "id": "broadgate-tower"
+   },
+   "synthetic": false,
+   "name": "Broadgate Tower (refurbishment)",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "London",
+   "asset": {
+    "category": "project",
+    "subtype": "Office redevelopment",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Major refurbishment; completion targeted Q1 2027 (company target)",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+     "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Committed Developments table: Broadgate Tower | Office | BL share 50% | PC Q1 2027; text: major refurbishment rather than a new build",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "exact",
+    "point_type": "building_point",
+    "confidence": "medium",
+    "lat": 51.5211,
+    "lon": -0.079533,
+    "label": "Broadgate Tower (building point)",
+    "basis": "Wikidata Q922589 coordinate (CC0) for the named building; not cross-checked against a company pin",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q922589",
+     "sha256": "735a583f7ae170a44bafeafb501c13c11b789fc55e9b1f2b00944b9c665ff728",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q922589 P625 (Broadgate Tower)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:blnd:broadgate-tower",
+     "scope": "specific_site"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+    "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Committed Developments table: Broadgate Tower | Office | BL share 50% | PC Q1 2027; text: major refurbishment rather than a new build",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer (joint venture)",
+     "relationship_scope": "Named project in the company results; company-stated share 50%; title not checked",
+     "property_stake": 50,
+     "company_ref": "registry:lse:BLND",
+     "listing": {
+      "name": "The British Land Company PLC",
+      "ticker": "BLND",
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.britishland.com/investors/shareholder-information/share-price-tools/",
+       "sha256": "1d67753cecde56f3323deb79125b6372273f15f95e1d0e854ca1bb2042b9ac15",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Company share-price tool embeds company code UK-BLND (London Stock Exchange)",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Committed Developments table: Broadgate Tower | Office | BL share 50% | PC Q1 2027; text: major refurbishment rather than a new build",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure only; buying shares gives no title to this property"
+     },
+     "stake_scope": "specific_property",
+     "property_evidence": {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Committed Developments table: Broadgate Tower | Office | BL share 50% | PC Q1 2027; text: major refurbishment rather than a new build",
+      "sha256_scope": "source_body",
+      "record_id": "re:blnd:broadgate-tower",
+      "scope": "specific_property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:blnd:broadgate-tower",
+    "evidence_refs": [
+     {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "570039f44893d2604b1d42a584006a1034ee3dc5b371f1c7f03e1016a0025274"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:blnd:1-appold-street",
+   "source_identity": {
+    "authority": "company-results:BLND",
+    "id": "1-appold-street"
+   },
+   "synthetic": false,
+   "name": "1 Appold Street",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "London",
+   "asset": {
+    "category": "project",
+    "subtype": "Office development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Committed development; construction well underway, completion targeted Q1 2029 (company target)",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+     "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Committed Developments table: 1 Appold Street | Office | BL share 50% | PC Q1 2029",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 51.507222222,
+    "lon": -0.1275,
+    "label": "London (city reference point, not the building)",
+    "basis": "Wikidata Q84 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q84",
+     "sha256": "338ce8069c1d9eab848b87cb8cfcc38f56df018cbe28254567334654d1c8673e",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q84 P625 (London)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:blnd:1-appold-street",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+    "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Committed Developments table: 1 Appold Street | Office | BL share 50% | PC Q1 2029",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer (joint venture)",
+     "relationship_scope": "Named project in the company results; company-stated share 50%; title not checked",
+     "property_stake": 50,
+     "company_ref": "registry:lse:BLND",
+     "listing": {
+      "name": "The British Land Company PLC",
+      "ticker": "BLND",
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.britishland.com/investors/shareholder-information/share-price-tools/",
+       "sha256": "1d67753cecde56f3323deb79125b6372273f15f95e1d0e854ca1bb2042b9ac15",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Company share-price tool embeds company code UK-BLND (London Stock Exchange)",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Committed Developments table: 1 Appold Street | Office | BL share 50% | PC Q1 2029",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure only; buying shares gives no title to this property"
+     },
+     "stake_scope": "specific_property",
+     "property_evidence": {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Committed Developments table: 1 Appold Street | Office | BL share 50% | PC Q1 2029",
+      "sha256_scope": "source_body",
+      "record_id": "re:blnd:1-appold-street",
+      "scope": "specific_property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:blnd:1-appold-street",
+    "evidence_refs": [
+     {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "f196e616e8eace98f9d0bd80243669a04e0f170341b6f9d3ed7124c23490a6cf"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:blnd:west-one",
+   "source_identity": {
+    "authority": "company-results:BLND",
+    "id": "west-one"
+   },
+   "synthetic": false,
+   "name": "West One (Oxford Street)",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "London",
+   "asset": {
+    "category": "project",
+    "subtype": "Mixed-use development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Committed March 2026 with Norges; completion targeted Q1 2029 (company target)",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+     "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Committed Developments table: West One | Office | BL share 25% | PC Q1 2029; text: above Bond Street station on Oxford Street",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 51.507222222,
+    "lon": -0.1275,
+    "label": "London (city reference point, not the building)",
+    "basis": "Wikidata Q84 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q84",
+     "sha256": "338ce8069c1d9eab848b87cb8cfcc38f56df018cbe28254567334654d1c8673e",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q84 P625 (London)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:blnd:west-one",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+    "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Committed Developments table: West One | Office | BL share 25% | PC Q1 2029; text: above Bond Street station on Oxford Street",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer (joint venture)",
+     "relationship_scope": "Named project in the company results; company-stated share 25%; title not checked",
+     "property_stake": 25,
+     "company_ref": "registry:lse:BLND",
+     "listing": {
+      "name": "The British Land Company PLC",
+      "ticker": "BLND",
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.britishland.com/investors/shareholder-information/share-price-tools/",
+       "sha256": "1d67753cecde56f3323deb79125b6372273f15f95e1d0e854ca1bb2042b9ac15",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Company share-price tool embeds company code UK-BLND (London Stock Exchange)",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Committed Developments table: West One | Office | BL share 25% | PC Q1 2029; text: above Bond Street station on Oxford Street",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure only; buying shares gives no title to this property"
+     },
+     "stake_scope": "specific_property",
+     "property_evidence": {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Committed Developments table: West One | Office | BL share 25% | PC Q1 2029; text: above Bond Street station on Oxford Street",
+      "sha256_scope": "source_body",
+      "record_id": "re:blnd:west-one",
+      "scope": "specific_property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:blnd:west-one",
+    "evidence_refs": [
+     {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "134b853b000fce54f3d23ce42c83e44dbdc0c1904b937fd21939ff61603ae5d4"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:blnd:the-founding-canada-water",
+   "source_identity": {
+    "authority": "company-results:BLND",
+    "id": "the-founding-canada-water"
+   },
+   "synthetic": false,
+   "name": "The Founding, Canada Water",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "London",
+   "asset": {
+    "category": "project",
+    "subtype": "Residential development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "completed",
+    "label": "Completed Q1 2026 (Canada Water Masterplan Phase 1)",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+     "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Text: final buildings of Phase 1 of the Canada Water Masterplan completed in Q1 2026 - The Founding (35-storey, 186 apartments)",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "district_reference",
+    "lat": 51.497030555,
+    "lon": -0.048252777,
+    "label": "Canada Water (district point, not the building)",
+    "basis": "Wikidata Q1032006 (CC0) district coordinate",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q1032006",
+     "sha256": "75e7acb7572ca79074e2d0743367f5ec3abc4c236bb5cfa022ca2181c18e4f8b",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q1032006 P625 (Canada Water)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:blnd:the-founding-canada-water",
+     "scope": "district_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+    "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Text: final buildings of Phase 1 of the Canada Water Masterplan completed in Q1 2026 - The Founding (35-storey, 186 apartments)",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:BLND",
+     "listing": {
+      "name": "The British Land Company PLC",
+      "ticker": "BLND",
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.britishland.com/investors/shareholder-information/share-price-tools/",
+       "sha256": "1d67753cecde56f3323deb79125b6372273f15f95e1d0e854ca1bb2042b9ac15",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Company share-price tool embeds company code UK-BLND (London Stock Exchange)",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Text: final buildings of Phase 1 of the Canada Water Masterplan completed in Q1 2026 - The Founding (35-storey, 186 apartments)",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure only; buying shares gives no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:blnd:the-founding-canada-water",
+    "evidence_refs": [
+     {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "29a66e6e87c9261d6c1ae7931cf0183366de9db28fe8426c6ef0cffd3d49e9a0"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:blnd:three-deal-porters-canada-water",
+   "source_identity": {
+    "authority": "company-results:BLND",
+    "id": "three-deal-porters-canada-water"
+   },
+   "synthetic": false,
+   "name": "Three Deal Porters, Canada Water",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "London",
+   "asset": {
+    "category": "project",
+    "subtype": "Mixed-use development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "completed",
+    "label": "Completed Q1 2026 (Canada Water Masterplan Phase 1)",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+     "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Text: Phase 1 completed in Q1 2026 - Three Deal Porters (ground-floor retail and five floors of workspace)",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "district_reference",
+    "lat": 51.497030555,
+    "lon": -0.048252777,
+    "label": "Canada Water (district point, not the building)",
+    "basis": "Wikidata Q1032006 (CC0) district coordinate",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q1032006",
+     "sha256": "75e7acb7572ca79074e2d0743367f5ec3abc4c236bb5cfa022ca2181c18e4f8b",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q1032006 P625 (Canada Water)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:blnd:three-deal-porters-canada-water",
+     "scope": "district_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+    "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Text: Phase 1 completed in Q1 2026 - Three Deal Porters (ground-floor retail and five floors of workspace)",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:BLND",
+     "listing": {
+      "name": "The British Land Company PLC",
+      "ticker": "BLND",
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.britishland.com/investors/shareholder-information/share-price-tools/",
+       "sha256": "1d67753cecde56f3323deb79125b6372273f15f95e1d0e854ca1bb2042b9ac15",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Company share-price tool embeds company code UK-BLND (London Stock Exchange)",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Text: Phase 1 completed in Q1 2026 - Three Deal Porters (ground-floor retail and five floors of workspace)",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure only; buying shares gives no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:blnd:three-deal-porters-canada-water",
+    "evidence_refs": [
+     {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "dd47794eeedaf6be438835c5271f5bfd83aac8704f01af3dd4dd37164a51f5b5"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:blnd:euston-tower",
+   "source_identity": {
+    "authority": "company-results:BLND",
+    "id": "euston-tower"
+   },
+   "synthetic": false,
+   "name": "Euston Tower",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "London",
+   "asset": {
+    "category": "project",
+    "subtype": "Office redevelopment",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "planning",
+    "label": "Planning consent for a 568,000 sq ft office and innovation tower (medium-term pipeline; not committed)",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+     "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Medium Term Pipeline text: Euston Tower, planning consent for a 568,000 sq ft office and innovation tower",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "exact",
+    "point_type": "building_point",
+    "confidence": "medium",
+    "lat": 51.525583333,
+    "lon": -0.139277777,
+    "label": "Euston Tower (building point)",
+    "basis": "Wikidata Q2389056 coordinate (CC0) for the named building; not cross-checked against a company pin",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q2389056",
+     "sha256": "8da4e6b89f4acfdeec6bc932f52a14168ffb78e1b41b7d4eb94af00932a75159",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q2389056 P625 (Euston Tower)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:blnd:euston-tower",
+     "scope": "specific_site"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+    "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Medium Term Pipeline text: Euston Tower, planning consent for a 568,000 sq ft office and innovation tower",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:BLND",
+     "listing": {
+      "name": "The British Land Company PLC",
+      "ticker": "BLND",
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.britishland.com/investors/shareholder-information/share-price-tools/",
+       "sha256": "1d67753cecde56f3323deb79125b6372273f15f95e1d0e854ca1bb2042b9ac15",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Company share-price tool embeds company code UK-BLND (London Stock Exchange)",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Medium Term Pipeline text: Euston Tower, planning consent for a 568,000 sq ft office and innovation tower",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure only; buying shares gives no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:blnd:euston-tower",
+    "evidence_refs": [
+     {
+      "url": "https://www.britishland.com/media/5vqpkh3q/fy26-press-release-vfinal.pdf",
+      "sha256": "bff158b356c3841ece48f930199f41a6328a9eddb87ea74e787d9681255ef8d2"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "5dab777d3b7f40b0c0ec0bdcedeb0d635d3bcb54f5cfa9ec8297aa25cea7efae"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:land:thirty-high-sw1",
+   "source_identity": {
+    "authority": "company-results:LAND",
+    "id": "thirty-high-sw1"
+   },
+   "synthetic": false,
+   "name": "Thirty High, SW1",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "London",
+   "asset": {
+    "category": "project",
+    "subtype": "Office development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Committed pipeline; estimated completion Q2 FY27 (company estimate)",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+     "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Table 4 Committed pipeline: Thirty High, SW1 | Office | Q2 FY27 | TDC £446m",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 51.507222222,
+    "lon": -0.1275,
+    "label": "London (city reference point, not the building)",
+    "basis": "Wikidata Q84 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q84",
+     "sha256": "338ce8069c1d9eab848b87cb8cfcc38f56df018cbe28254567334654d1c8673e",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q84 P625 (London)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:land:thirty-high-sw1",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+    "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Table 4 Committed pipeline: Thirty High, SW1 | Office | Q2 FY27 | TDC £446m",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:LAND",
+     "listing": {
+      "name": "Land Securities Group PLC",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+       "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results announcement names LAND SECURITIES GROUP PLC; ticker not stated in fetched documents",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Table 4 Committed pipeline: Thirty High, SW1 | Office | Q2 FY27 | TDC £446m",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "company figure"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "reported_metrics": {
+    "label": "Total development cost (company-published)",
+    "value": "GBP 446 million",
+    "basis": "company-published investment figure (not a valuation)"
+   },
+   "monitoring": {
+    "stable_id": "re:land:thirty-high-sw1",
+    "evidence_refs": [
+     {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "a32561ce5851464aed1b33ab98463f6f9d29796f9f60f60aacdfa130e08be9cc"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:land:republic-manchester",
+   "source_identity": {
+    "authority": "company-results:LAND",
+    "id": "republic-manchester"
+   },
+   "synthetic": false,
+   "name": "Republic, Mayfield, Manchester",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "Manchester",
+   "asset": {
+    "category": "project",
+    "subtype": "Office development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Committed pipeline; estimated completion Q4 FY28 (company estimate)",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+     "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Table 4 Committed pipeline: Republic, Manchester | Office | Q4 FY28 | TDC £154m; text: £154m development at Mayfield, Manchester",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 53.479444444,
+    "lon": -2.245277777,
+    "label": "Manchester (city reference point, not the building)",
+    "basis": "Wikidata Q18125 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q18125",
+     "sha256": "1479b42c562ddfb4d791dd914555c3502fb9c427c97ef0c25dabc2791bd6cace",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q18125 P625 (Manchester)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:land:republic-manchester",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+    "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Table 4 Committed pipeline: Republic, Manchester | Office | Q4 FY28 | TDC £154m; text: £154m development at Mayfield, Manchester",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:LAND",
+     "listing": {
+      "name": "Land Securities Group PLC",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+       "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results announcement names LAND SECURITIES GROUP PLC; ticker not stated in fetched documents",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Table 4 Committed pipeline: Republic, Manchester | Office | Q4 FY28 | TDC £154m; text: £154m development at Mayfield, Manchester",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "company figure"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "reported_metrics": {
+    "label": "Total development cost (company-published)",
+    "value": "GBP 154 million",
+    "basis": "company-published investment figure (not a valuation)"
+   },
+   "monitoring": {
+    "stable_id": "re:land:republic-manchester",
+    "evidence_refs": [
+     {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "cd782d9a62293a3b0ad9012d1b913fa3bdace6932ba7706162ce9dc62f2b4493"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:land:timber-square-se1",
+   "source_identity": {
+    "authority": "company-results:LAND",
+    "id": "timber-square-se1"
+   },
+   "synthetic": false,
+   "name": "Timber Square, SE1",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "London",
+   "asset": {
+    "category": "project",
+    "subtype": "Office development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "completed",
+    "label": "Completed during FY26 (company-reported)",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+     "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Text: following the completion of Timber Square, committed development exposure down from £1.1bn to £0.6bn",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 51.507222222,
+    "lon": -0.1275,
+    "label": "London (city reference point, not the building)",
+    "basis": "Wikidata Q84 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q84",
+     "sha256": "338ce8069c1d9eab848b87cb8cfcc38f56df018cbe28254567334654d1c8673e",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q84 P625 (London)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:land:timber-square-se1",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+    "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Text: following the completion of Timber Square, committed development exposure down from £1.1bn to £0.6bn",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:LAND",
+     "listing": {
+      "name": "Land Securities Group PLC",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+       "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results announcement names LAND SECURITIES GROUP PLC; ticker not stated in fetched documents",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Text: following the completion of Timber Square, committed development exposure down from £1.1bn to £0.6bn",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:land:timber-square-se1",
+    "evidence_refs": [
+     {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "b59ada1e34b0e7b74b190a786bf983cdafa9feb4687f228f545d6b3aee33c616"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:land:bluewater-next",
+   "source_identity": {
+    "authority": "company-results:LAND",
+    "id": "bluewater-next"
+   },
+   "synthetic": false,
+   "name": "Bluewater: former House of Fraser repositioning for Next",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "Greenhithe",
+   "asset": {
+    "category": "project",
+    "subtype": "Retail redevelopment",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "On site: repositioning of the former House of Fraser store for a new 133,000 sq ft Next store",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+     "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Text: on site with smaller retail projects including the repositioning of the former House of Fraser department store at Bluewater for a new 133,000 sq ft Next store",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 51.4504,
+    "lon": 0.2823,
+    "label": "Greenhithe (city reference point, not the building)",
+    "basis": "Wikidata Q3028239 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q3028239",
+     "sha256": "336a4b17638859f4444a31d52332d68ec63734a15f217fb1b3131c4db6ef8076",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q3028239 P625 (Greenhithe)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:land:bluewater-next",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+    "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Text: on site with smaller retail projects including the repositioning of the former House of Fraser department store at Bluewater for a new 133,000 sq ft Next store",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:LAND",
+     "listing": {
+      "name": "Land Securities Group PLC",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+       "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results announcement names LAND SECURITIES GROUP PLC; ticker not stated in fetched documents",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Text: on site with smaller retail projects including the repositioning of the former House of Fraser department store at Bluewater for a new 133,000 sq ft Next store",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:land:bluewater-next",
+    "evidence_refs": [
+     {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "158de03d512857417ca00128b7d5a415722910943f87fb06f1ac6920b29f8c9a"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:land:white-rose-primark-extension",
+   "source_identity": {
+    "authority": "company-results:LAND",
+    "id": "white-rose-primark-extension"
+   },
+   "synthetic": false,
+   "name": "White Rose, Leeds: Primark extension",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "Leeds",
+   "asset": {
+    "category": "project",
+    "subtype": "Retail redevelopment",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "On site: extension of Primark's store at White Rose to double its footprint",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+     "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Text: the extension of Primark's store at White Rose, Leeds to double its footprint",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 53.7975,
+    "lon": -1.543611111,
+    "label": "Leeds (city reference point, not the building)",
+    "basis": "Wikidata Q39121 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q39121",
+     "sha256": "91121ec81196a7ff1d104905410163f9450f1768d056a3fd03b3009d59d435be",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q39121 P625 (Leeds)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:land:white-rose-primark-extension",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+    "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Text: the extension of Primark's store at White Rose, Leeds to double its footprint",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:LAND",
+     "listing": {
+      "name": "Land Securities Group PLC",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+       "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results announcement names LAND SECURITIES GROUP PLC; ticker not stated in fetched documents",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Text: the extension of Primark's store at White Rose, Leeds to double its footprint",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:land:white-rose-primark-extension",
+    "evidence_refs": [
+     {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "396a7ccacb26697655ee665f012ad894462a8850fc12c6b05dde78193dce2df4"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:land:trinity-leeds-dining",
+   "source_identity": {
+    "authority": "company-results:LAND",
+    "id": "trinity-leeds-dining"
+   },
+   "synthetic": false,
+   "name": "Trinity Leeds: social eating destination",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "Leeds",
+   "asset": {
+    "category": "project",
+    "subtype": "Retail redevelopment",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "On site: creation of a new social eating destination",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+     "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Text: the creation of a new social eating destination at Trinity, Leeds",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "exact",
+    "point_type": "building_point",
+    "confidence": "medium",
+    "lat": 53.797,
+    "lon": -1.545,
+    "label": "Trinity Leeds (building point)",
+    "basis": "Wikidata Q12071482 coordinate (CC0) for the named building; not cross-checked against a company pin",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q12071482",
+     "sha256": "72cf3cde6d51ad5bac6e75f956910e2d4302c4c85c2851d34bee4c3702cb6c5a",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q12071482 P625 (Trinity Leeds)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:land:trinity-leeds-dining",
+     "scope": "specific_site"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+    "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Text: the creation of a new social eating destination at Trinity, Leeds",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:LAND",
+     "listing": {
+      "name": "Land Securities Group PLC",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+       "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results announcement names LAND SECURITIES GROUP PLC; ticker not stated in fetched documents",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Text: the creation of a new social eating destination at Trinity, Leeds",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:land:trinity-leeds-dining",
+    "evidence_refs": [
+     {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "645d0efd8be0bb13053c5725d69b0434a60bbf8ac752aeb6595f9f8ad439f321"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:land:old-broad-street-ec2",
+   "source_identity": {
+    "authority": "company-results:LAND",
+    "id": "old-broad-street-ec2"
+   },
+   "synthetic": false,
+   "name": "Old Broad Street, EC2",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "London",
+   "asset": {
+    "category": "project",
+    "subtype": "Office development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "planning",
+    "label": "Pre-development asset; planning status: Consented",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+     "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Table 5 Pre-development assets: Old Broad Street, EC2 | Consented",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 51.507222222,
+    "lon": -0.1275,
+    "label": "London (city reference point, not the building)",
+    "basis": "Wikidata Q84 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q84",
+     "sha256": "338ce8069c1d9eab848b87cb8cfcc38f56df018cbe28254567334654d1c8673e",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q84 P625 (London)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:land:old-broad-street-ec2",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+    "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Table 5 Pre-development assets: Old Broad Street, EC2 | Consented",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:LAND",
+     "listing": {
+      "name": "Land Securities Group PLC",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+       "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results announcement names LAND SECURITIES GROUP PLC; ticker not stated in fetched documents",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Table 5 Pre-development assets: Old Broad Street, EC2 | Consented",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:land:old-broad-street-ec2",
+    "evidence_refs": [
+     {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "c96b47aded57ac11f8d98b0dd0391abf89fa826ddb01e6954c303de65d0af22c"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:land:liberty-of-southwark-se1",
+   "source_identity": {
+    "authority": "company-results:LAND",
+    "id": "liberty-of-southwark-se1"
+   },
+   "synthetic": false,
+   "name": "Liberty of Southwark, SE1",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "London",
+   "asset": {
+    "category": "project",
+    "subtype": "Office development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "planning",
+    "label": "Pre-development asset; planning status: Consented",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+     "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Table 5 Pre-development assets: Liberty of Southwark, SE1 | Consented",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 51.507222222,
+    "lon": -0.1275,
+    "label": "London (city reference point, not the building)",
+    "basis": "Wikidata Q84 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q84",
+     "sha256": "338ce8069c1d9eab848b87cb8cfcc38f56df018cbe28254567334654d1c8673e",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q84 P625 (London)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:land:liberty-of-southwark-se1",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+    "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Table 5 Pre-development assets: Liberty of Southwark, SE1 | Consented",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:LAND",
+     "listing": {
+      "name": "Land Securities Group PLC",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+       "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results announcement names LAND SECURITIES GROUP PLC; ticker not stated in fetched documents",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Table 5 Pre-development assets: Liberty of Southwark, SE1 | Consented",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:land:liberty-of-southwark-se1",
+    "evidence_refs": [
+     {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "94c69514ef7f184c48c1735a4853436907fd0be83b0cf379ab4711bd9e24aaf1"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:land:hill-house-ec4",
+   "source_identity": {
+    "authority": "company-results:LAND",
+    "id": "hill-house-ec4"
+   },
+   "synthetic": false,
+   "name": "Hill House, EC4",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "London",
+   "asset": {
+    "category": "project",
+    "subtype": "Office development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "planning",
+    "label": "Pre-development asset; planning status: Consented",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+     "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Table 5 Pre-development assets: Hill House, EC4 | Consented",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 51.507222222,
+    "lon": -0.1275,
+    "label": "London (city reference point, not the building)",
+    "basis": "Wikidata Q84 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q84",
+     "sha256": "338ce8069c1d9eab848b87cb8cfcc38f56df018cbe28254567334654d1c8673e",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q84 P625 (London)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:land:hill-house-ec4",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+    "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Table 5 Pre-development assets: Hill House, EC4 | Consented",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:LAND",
+     "listing": {
+      "name": "Land Securities Group PLC",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+       "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results announcement names LAND SECURITIES GROUP PLC; ticker not stated in fetched documents",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Table 5 Pre-development assets: Hill House, EC4 | Consented",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:land:hill-house-ec4",
+    "evidence_refs": [
+     {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "42a85c5ef8a53c3d6b2d49506a4c9ee0d9f2632d13c46c39ba69cc3233263b56"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:land:nova-place-sw1",
+   "source_identity": {
+    "authority": "company-results:LAND",
+    "id": "nova-place-sw1"
+   },
+   "synthetic": false,
+   "name": "Nova Place, SW1",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "London",
+   "asset": {
+    "category": "project",
+    "subtype": "Office development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "planning",
+    "label": "Pre-development asset; planning status: Consented",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+     "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Table 5 Pre-development assets: Nova Place, SW1 | Consented",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 51.507222222,
+    "lon": -0.1275,
+    "label": "London (city reference point, not the building)",
+    "basis": "Wikidata Q84 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q84",
+     "sha256": "338ce8069c1d9eab848b87cb8cfcc38f56df018cbe28254567334654d1c8673e",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q84 P625 (London)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:land:nova-place-sw1",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+    "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Table 5 Pre-development assets: Nova Place, SW1 | Consented",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:LAND",
+     "listing": {
+      "name": "Land Securities Group PLC",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+       "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results announcement names LAND SECURITIES GROUP PLC; ticker not stated in fetched documents",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Table 5 Pre-development assets: Nova Place, SW1 | Consented",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:land:nova-place-sw1",
+    "evidence_refs": [
+     {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "244433cc72bb81d2130d75ba8caebcb0118f2ff20a8da64c126a4949ee73dcf4"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:land:timber-square-phase-2-se1",
+   "source_identity": {
+    "authority": "company-results:LAND",
+    "id": "timber-square-phase-2-se1"
+   },
+   "synthetic": false,
+   "name": "Timber Square Phase 2, SE1",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "London",
+   "asset": {
+    "category": "project",
+    "subtype": "Office development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "planning",
+    "label": "Pre-development asset; planning status: Consented",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+     "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Table 5 Pre-development assets: Timber Square Phase 2, SE1 | Consented",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 51.507222222,
+    "lon": -0.1275,
+    "label": "London (city reference point, not the building)",
+    "basis": "Wikidata Q84 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q84",
+     "sha256": "338ce8069c1d9eab848b87cb8cfcc38f56df018cbe28254567334654d1c8673e",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q84 P625 (London)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:land:timber-square-phase-2-se1",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+    "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Table 5 Pre-development assets: Timber Square Phase 2, SE1 | Consented",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:LAND",
+     "listing": {
+      "name": "Land Securities Group PLC",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+       "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results announcement names LAND SECURITIES GROUP PLC; ticker not stated in fetched documents",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Table 5 Pre-development assets: Timber Square Phase 2, SE1 | Consented",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:land:timber-square-phase-2-se1",
+    "evidence_refs": [
+     {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "43cf43fb128cb71841d4e47d357cf3e8b097522392c280e1c2f13ad366b745c0"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:land:mayfield-manchester-residential",
+   "source_identity": {
+    "authority": "company-results:LAND",
+    "id": "mayfield-manchester-residential"
+   },
+   "synthetic": false,
+   "name": "Mayfield, Manchester (residential-led)",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "Manchester",
+   "asset": {
+    "category": "project",
+    "subtype": "Residential development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "planning",
+    "label": "Pre-development asset; planning status: Consented; potential start 2027",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+     "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Table 5 Pre-development assets: Mayfield, Manchester (residential-led) | Consented; potential start 2027",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 53.479444444,
+    "lon": -2.245277777,
+    "label": "Manchester (city reference point, not the building)",
+    "basis": "Wikidata Q18125 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q18125",
+     "sha256": "1479b42c562ddfb4d791dd914555c3502fb9c427c97ef0c25dabc2791bd6cace",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q18125 P625 (Manchester)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:land:mayfield-manchester-residential",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+    "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Table 5 Pre-development assets: Mayfield, Manchester (residential-led) | Consented; potential start 2027",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:LAND",
+     "listing": {
+      "name": "Land Securities Group PLC",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+       "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results announcement names LAND SECURITIES GROUP PLC; ticker not stated in fetched documents",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Table 5 Pre-development assets: Mayfield, Manchester (residential-led) | Consented; potential start 2027",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:land:mayfield-manchester-residential",
+    "evidence_refs": [
+     {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "634bb55ca82744925de640ca84b07bf54572c0fa26a6e60846557fbaa111b613"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:land:finchley-road-nw3",
+   "source_identity": {
+    "authority": "company-results:LAND",
+    "id": "finchley-road-nw3"
+   },
+   "synthetic": false,
+   "name": "Finchley Road, NW3",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "London",
+   "asset": {
+    "category": "project",
+    "subtype": "Residential development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "planning",
+    "label": "Pre-development asset; planning status: Consented; potential start 2027",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+     "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Table 5 Pre-development assets: Finchley Road, NW3 | Consented; potential start 2027",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 51.507222222,
+    "lon": -0.1275,
+    "label": "London (city reference point, not the building)",
+    "basis": "Wikidata Q84 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q84",
+     "sha256": "338ce8069c1d9eab848b87cb8cfcc38f56df018cbe28254567334654d1c8673e",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q84 P625 (London)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:land:finchley-road-nw3",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+    "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Table 5 Pre-development assets: Finchley Road, NW3 | Consented; potential start 2027",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:LAND",
+     "listing": {
+      "name": "Land Securities Group PLC",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+       "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results announcement names LAND SECURITIES GROUP PLC; ticker not stated in fetched documents",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Table 5 Pre-development assets: Finchley Road, NW3 | Consented; potential start 2027",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:land:finchley-road-nw3",
+    "evidence_refs": [
+     {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "df1857bceff47de9bbcfe8e5f866c7775f27a98deda4e5cfb2c2a7fefbb14cbb"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:land:lewisham-se13",
+   "source_identity": {
+    "authority": "company-results:LAND",
+    "id": "lewisham-se13"
+   },
+   "synthetic": false,
+   "name": "Lewisham, SE13",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "London",
+   "asset": {
+    "category": "project",
+    "subtype": "Residential development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "planning",
+    "label": "Pre-development asset; planning status: Consented; potential start 2028",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+     "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Table 5 Pre-development assets: Lewisham, SE13 | Consented; potential start 2028",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 51.507222222,
+    "lon": -0.1275,
+    "label": "London (city reference point, not the building)",
+    "basis": "Wikidata Q84 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q84",
+     "sha256": "338ce8069c1d9eab848b87cb8cfcc38f56df018cbe28254567334654d1c8673e",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q84 P625 (London)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:land:lewisham-se13",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+    "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Table 5 Pre-development assets: Lewisham, SE13 | Consented; potential start 2028",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:LAND",
+     "listing": {
+      "name": "Land Securities Group PLC",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+       "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results announcement names LAND SECURITIES GROUP PLC; ticker not stated in fetched documents",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Table 5 Pre-development assets: Lewisham, SE13 | Consented; potential start 2028",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:land:lewisham-se13",
+    "evidence_refs": [
+     {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "7a1d703fde4a264f7ab1e004abe568dfbd3d2b907bd8f1eea13797e7a55333f5"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:land:mediacity-phase-2-salford",
+   "source_identity": {
+    "authority": "company-results:LAND",
+    "id": "mediacity-phase-2-salford"
+   },
+   "synthetic": false,
+   "name": "MediaCity Phase 2, Salford",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "Salford",
+   "asset": {
+    "category": "project",
+    "subtype": "Residential development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "planning",
+    "label": "Pre-development asset; planning status: Design",
+    "as_of": "2026-03-31",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+     "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Table 5 Pre-development assets: MediaCity Phase 2, Salford | Design",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "unknown",
+    "lat": null,
+    "lon": null,
+    "label": "Salford; no verified point",
+    "satellite_allowed": false
+   },
+   "identity_evidence": {
+    "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+    "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Table 5 Pre-development assets: MediaCity Phase 2, Salford | Design",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:LAND",
+     "listing": {
+      "name": "Land Securities Group PLC",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+       "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results announcement names LAND SECURITIES GROUP PLC; ticker not stated in fetched documents",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Table 5 Pre-development assets: MediaCity Phase 2, Salford | Design",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "omit",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:land:mediacity-phase-2-salford",
+    "evidence_refs": [
+     {
+      "url": "https://content.landsec.com/media/w4xfozna/results-for-the-year-ended-31-march-2026-announcement.pdf",
+      "sha256": "cc3e555c6255666aff5cd8ba8629ee708ef47b763194ab2d4867a73ec2239278"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "bd0b7f8390c51203cbc07398a471b938adf3477c20df98e2b7d03a8886c9f0bf"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:sgro:segro-park-coventry-prelet",
+   "source_identity": {
+    "authority": "company-results:SGRO",
+    "id": "segro-park-coventry-prelet"
+   },
+   "synthetic": false,
+   "name": "SEGRO Park Coventry (pre-let warehouses)",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "Coventry",
+   "asset": {
+    "category": "project",
+    "subtype": "Logistics development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "planning",
+    "label": "Agreements signed in H1 2026 to develop logistics warehouses (pre-let)",
+    "as_of": "2026-06-30",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+     "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Text: we also signed agreements to develop logistics warehouses at SEGRO Park Coventry",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "unknown",
+    "lat": null,
+    "lon": null,
+    "label": "Coventry; no verified point",
+    "satellite_allowed": false
+   },
+   "identity_evidence": {
+    "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+    "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Text: we also signed agreements to develop logistics warehouses at SEGRO Park Coventry",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:SGRO",
+     "listing": {
+      "name": "SEGRO plc",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+       "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results state listing on the London Stock Exchange and Euronext Paris; ticker not stated",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+      "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Text: we also signed agreements to develop logistics warehouses at SEGRO Park Coventry",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "omit",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:sgro:segro-park-coventry-prelet",
+    "evidence_refs": [
+     {
+      "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+      "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "474c9259385a9cef8811e66840de19af8e0c71b2eac8b3b809e49f2168dcb8b4"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:sgro:segro-park-dortmund-prelet",
+   "source_identity": {
+    "authority": "company-results:SGRO",
+    "id": "segro-park-dortmund-prelet"
+   },
+   "synthetic": false,
+   "name": "SEGRO Park Dortmund (pre-let warehouses)",
+   "sector": "real_estate",
+   "country_code": "DE",
+   "city": "Dortmund",
+   "asset": {
+    "category": "project",
+    "subtype": "Logistics development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "planning",
+    "label": "Agreements signed in H1 2026 to develop logistics warehouses (pre-let)",
+    "as_of": "2026-06-30",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+     "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Text: agreements to develop logistics warehouses at SEGRO Park Coventry and at SEGRO Park Dortmund",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 51.513888888,
+    "lon": 7.465277777,
+    "label": "Dortmund (city reference point, not the building)",
+    "basis": "Wikidata Q1295 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q1295",
+     "sha256": "93f6d58184faffaf9b093d7d45b9e78d46fb52f02583e38677812e47a0ab9e17",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q1295 P625 (Dortmund)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:sgro:segro-park-dortmund-prelet",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+    "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Text: agreements to develop logistics warehouses at SEGRO Park Coventry and at SEGRO Park Dortmund",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:SGRO",
+     "listing": {
+      "name": "SEGRO plc",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+       "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results state listing on the London Stock Exchange and Euronext Paris; ticker not stated",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+      "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Text: agreements to develop logistics warehouses at SEGRO Park Coventry and at SEGRO Park Dortmund",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:sgro:segro-park-dortmund-prelet",
+    "evidence_refs": [
+     {
+      "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+      "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "76acb1fc2732725ba070c8c89b574b62771205798b7c2d8d98e8d738f4184d37"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:sgro:smartparc-segro-derby-unit",
+   "source_identity": {
+    "authority": "company-results:SGRO",
+    "id": "smartparc-segro-derby-unit"
+   },
+   "synthetic": false,
+   "name": "SmartParc SEGRO Derby (food campus unit)",
+   "sector": "real_estate",
+   "country_code": "GB",
+   "city": "Derby",
+   "asset": {
+    "category": "project",
+    "subtype": "Logistics development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "completed",
+    "label": "Unit completed in H1 2026 (company-reported)",
+    "as_of": "2026-06-30",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+     "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Text: completed big box developments during the period, including a unit on our food campus, SmartParc SEGRO Derby",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 52.921666666,
+    "lon": -1.476666666,
+    "label": "Derby (city reference point, not the building)",
+    "basis": "Wikidata Q43475 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q43475",
+     "sha256": "fb5dbab7328f0b2437a0263ca56715b739eb843c75a44b2dd215b3bfd045d28e",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q43475 P625 (Derby)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:sgro:smartparc-segro-derby-unit",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+    "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Text: completed big box developments during the period, including a unit on our food campus, SmartParc SEGRO Derby",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:SGRO",
+     "listing": {
+      "name": "SEGRO plc",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+       "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results state listing on the London Stock Exchange and Euronext Paris; ticker not stated",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+      "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Text: completed big box developments during the period, including a unit on our food campus, SmartParc SEGRO Derby",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:sgro:smartparc-segro-derby-unit",
+    "evidence_refs": [
+     {
+      "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+      "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "9d04fdc21ad20ae9f05ab737bba395237cd3cfe6427c00c7eaedb2074df683e2"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:sgro:segro-park-amsterdam-airport-spec",
+   "source_identity": {
+    "authority": "company-results:SGRO",
+    "id": "segro-park-amsterdam-airport-spec"
+   },
+   "synthetic": false,
+   "name": "SEGRO Park Amsterdam Airport (speculative unit)",
+   "sector": "real_estate",
+   "country_code": "NL",
+   "city": "Amsterdam",
+   "asset": {
+    "category": "project",
+    "subtype": "Logistics development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "completed",
+    "label": "Small speculative development completed in H1 2026 (company-reported)",
+    "as_of": "2026-06-30",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+     "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Text: and a small speculative development in SEGRO Park Amsterdam Airport",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 52.366666666,
+    "lon": 4.883333333,
+    "label": "Amsterdam (city reference point, not the building)",
+    "basis": "Wikidata Q727 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q727",
+     "sha256": "1d2700f549af5c36b5f7132ee3e76d6036bf5e8649cd434c88af2927cdd0b08e",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q727 P625 (Amsterdam)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:sgro:segro-park-amsterdam-airport-spec",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+    "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Text: and a small speculative development in SEGRO Park Amsterdam Airport",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:lse:SGRO",
+     "listing": {
+      "name": "SEGRO plc",
+      "ticker": null,
+      "exchange": "XLON",
+      "exchange_mic": "XLON",
+      "security_type": "common_equity",
+      "evidence": {
+       "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+       "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "Results state listing on the London Stock Exchange and Euronext Paris; ticker not stated",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+      "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Text: and a small speculative development in SEGRO Park Amsterdam Airport",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "research_only",
+      "verified": false,
+      "scope": "Ticker not yet documented from a company source; no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "monitoring": {
+    "stable_id": "re:sgro:segro-park-amsterdam-airport-spec",
+    "evidence_refs": [
+     {
+      "url": "https://www.segro.com/media/xlibxjqh/press-release-full-version-final.pdf",
+      "sha256": "485dca20de026388b38483f5b4c96743c8676a92acc76d056ba488eadf16abaf"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "8fca7131b7cc2e3219512cacaf44c12a441c530e2f3fac3a4d77774d79624719"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:mont:halle-noorderstraat-solucious",
+   "source_identity": {
+    "authority": "company-results:MONT",
+    "id": "halle-noorderstraat-solucious"
+   },
+   "synthetic": false,
+   "name": "Halle, Noorderstraat (Solucious distribution centre)",
+   "sector": "real_estate",
+   "country_code": "BE",
+   "city": "Halle",
+   "asset": {
+    "category": "project",
+    "subtype": "Logistics development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Construction started Q4 2025; completion expected Q4 2026 (company)",
+    "as_of": "2026-09-30",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+     "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Brand new logistics center in Halle (BE): Noorderstraat; start Q4 2025; expected completion Q4 2026; budget ca. €34 million",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 50.736111111,
+    "lon": 4.237222222,
+    "label": "Halle (city reference point, not the building)",
+    "basis": "Wikidata Q210003 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q210003",
+     "sha256": "652c997a1fc21f03c74de4a23a5ecbb9967a118564b24bca5a280c5d65771a3f",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q210003 P625 (Halle)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:mont:halle-noorderstraat-solucious",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+    "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Brand new logistics center in Halle (BE): Noorderstraat; start Q4 2025; expected completion Q4 2026; budget ca. €34 million",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:euronext:MONT",
+     "listing": {
+      "name": "Montea NV",
+      "ticker": "MONT",
+      "exchange": "XBRU",
+      "exchange_mic": "XBRU",
+      "security_type": "reit_shares",
+      "evidence": {
+       "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+       "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "About Montea: listed on Euronext Brussels (MONT) and Euronext Paris (MONTP)",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+      "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Brand new logistics center in Halle (BE): Noorderstraat; start Q4 2025; expected completion Q4 2026; budget ca. €34 million",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure only; buying shares gives no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "company figure"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "reported_metrics": {
+    "label": "Estimated investment budget, plot + development (company)",
+    "value": "c. EUR 34 million",
+    "basis": "company-published investment figure (not a valuation)"
+   },
+   "monitoring": {
+    "stable_id": "re:mont:halle-noorderstraat-solucious",
+    "evidence_refs": [
+     {
+      "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+      "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "4b1f488f56dcd864eefc81d01e45f7eb008169bb18a1eaa31be1b7a09a05c98c"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:mont:tiel-glassworks-arjo",
+   "source_identity": {
+    "authority": "company-results:MONT",
+    "id": "tiel-glassworks-arjo"
+   },
+   "synthetic": false,
+   "name": "Logistic Park Glassworks, Tiel (Arjo)",
+   "sector": "real_estate",
+   "country_code": "NL",
+   "city": "Tiel",
+   "asset": {
+    "category": "project",
+    "subtype": "Logistics development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Construction started Q2 2026; completion expected Q1 2027 (company)",
+    "as_of": "2026-09-30",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+     "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Tiel: 4,000 m² distribution center for Arjo AB; start Q2 2026; expected completion Q1 2027; budget ca. €6 million",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 51.8833,
+    "lon": 5.4333,
+    "label": "Tiel (city reference point, not the building)",
+    "basis": "Wikidata Q73221 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q73221",
+     "sha256": "988cc81f9b9481f7e824b154d0bb5f6b59eae790a7dea7cabc98e848198c8d03",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q73221 P625 (Tiel)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:mont:tiel-glassworks-arjo",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+    "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Tiel: 4,000 m² distribution center for Arjo AB; start Q2 2026; expected completion Q1 2027; budget ca. €6 million",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:euronext:MONT",
+     "listing": {
+      "name": "Montea NV",
+      "ticker": "MONT",
+      "exchange": "XBRU",
+      "exchange_mic": "XBRU",
+      "security_type": "reit_shares",
+      "evidence": {
+       "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+       "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "About Montea: listed on Euronext Brussels (MONT) and Euronext Paris (MONTP)",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+      "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Tiel: 4,000 m² distribution center for Arjo AB; start Q2 2026; expected completion Q1 2027; budget ca. €6 million",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure only; buying shares gives no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "company figure"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "reported_metrics": {
+    "label": "Estimated investment budget, plot + development (company)",
+    "value": "c. EUR 6 million",
+    "basis": "company-published investment figure (not a valuation)"
+   },
+   "monitoring": {
+    "stable_id": "re:mont:tiel-glassworks-arjo",
+    "evidence_refs": [
+     {
+      "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+      "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "886510072029168a659ecea38c810f3c912d5d7e3e828f88f22158fadea8cba1"
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:mont:tiel-glassworks-dc-quartz",
+   "source_identity": {
+    "authority": "company-results:MONT",
+    "id": "tiel-glassworks-dc-quartz"
+   },
+   "synthetic": false,
+   "name": "DC Quartz, Logistic Park Glassworks, Tiel",
+   "sector": "real_estate",
+   "country_code": "NL",
+   "city": "Tiel",
+   "asset": {
+    "category": "project",
+    "subtype": "Logistics development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Construction started Q3 2026; completion expected Q4 2027 (company)",
+    "as_of": "2026-09-30",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+     "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "DC Quartz: 67,400 m², 70% pre-let to BSH Home Appliances; start Q3 2026; expected completion Q4 2027; budget ca. €69 million",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 51.8833,
+    "lon": 5.4333,
+    "label": "Tiel (city reference point, not the building)",
+    "basis": "Wikidata Q73221 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q73221",
+     "sha256": "988cc81f9b9481f7e824b154d0bb5f6b59eae790a7dea7cabc98e848198c8d03",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q73221 P625 (Tiel)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:mont:tiel-glassworks-dc-quartz",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+    "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "DC Quartz: 67,400 m², 70% pre-let to BSH Home Appliances; start Q3 2026; expected completion Q4 2027; budget ca. €69 million",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer",
+     "relationship_scope": "Named project in the company results; share not stated; title not checked",
+     "property_stake": null,
+     "company_ref": "registry:euronext:MONT",
+     "listing": {
+      "name": "Montea NV",
+      "ticker": "MONT",
+      "exchange": "XBRU",
+      "exchange_mic": "XBRU",
+      "security_type": "reit_shares",
+      "evidence": {
+       "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+       "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "About Montea: listed on Euronext Brussels (MONT) and Euronext Paris (MONTP)",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+      "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "DC Quartz: 67,400 m², 70% pre-let to BSH Home Appliances; start Q3 2026; expected completion Q4 2027; budget ca. €69 million",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure only; buying shares gives no title to this property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "company figure"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "reported_metrics": {
+    "label": "Estimated investment budget, plot + development (company)",
+    "value": "c. EUR 69 million",
+    "basis": "company-published investment figure (not a valuation)"
+   },
+   "monitoring": {
+    "stable_id": "re:mont:tiel-glassworks-dc-quartz",
+    "evidence_refs": [
+     {
+      "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+      "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "6bd9f34899fa06ac4838b8df55c54183afcf7464fba5f060a51d207674d154a6"
+   },
+   "identity": {
+    "related_records": [
+     "Codex pilot record for DC Quartz (phase4/real-estate-pilot.json) - same building; Codex record unchanged, this one adds the Q3 2026 construction start"
+    ]
+   }
+  },
+  {
+   "schema": "investedia.projects.sector-envelope.proposal.v2",
+   "id": "re:mont:liege-skechers",
+   "source_identity": {
+    "authority": "company-results:MONT",
+    "id": "liege-skechers"
+   },
+   "synthetic": false,
+   "name": "Skechers European distribution centre, Liège",
+   "sector": "real_estate",
+   "country_code": "BE",
+   "city": "Liège",
+   "asset": {
+    "category": "project",
+    "subtype": "Logistics development",
+    "parent_id": null,
+    "count_as_project": true
+   },
+   "status": {
+    "stage": "under_construction",
+    "label": "Joint development with Weerts Group; rent commencement expected end 2027 (company)",
+    "as_of": "2026-09-30",
+    "certainty": "company_reported",
+    "evidence": {
+     "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+     "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Skechers, Liège: Montea holds a 40% stake in the project company (increase to 49% announced 29 Oct 2026); 230,000 m²; total project capex = maximum exposure €167 million",
+     "sha256_scope": "source_body"
+    }
+   },
+   "location": {
+    "precision": "approximate",
+    "point_type": "city_reference",
+    "lat": 50.639722222,
+    "lon": 5.570555555,
+    "label": "Liège (city reference point, not the building)",
+    "basis": "Wikidata Q3992 city coordinate (CC0)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www.wikidata.org/wiki/Q3992",
+     "sha256": "bc5770e10e4377c3d8425080b3e1bfb2922202ee76cdcb0000bf127cc5942e3f",
+     "checked_at": "2026-11-14T06:00:00Z",
+     "locator": "Wikidata Q3992 P625 (Liège)",
+     "sha256_scope": "query_result_row",
+     "record_id": "re:mont:liege-skechers",
+     "scope": "city_reference"
+    }
+   },
+   "identity_evidence": {
+    "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+    "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+    "checked_at": "2026-11-14T06:00:00Z",
+    "locator": "Skechers, Liège: Montea holds a 40% stake in the project company (increase to 49% announced 29 Oct 2026); 230,000 m²; total project capex = maximum exposure €167 million",
+    "sha256_scope": "source_body"
+   },
+   "exposures": [
+    {
+     "role": "developer",
+     "label": "Company-reported developer (joint venture)",
+     "relationship_scope": "Named project in the company results; company-stated share 40%; title not checked",
+     "property_stake": 40,
+     "company_ref": "registry:euronext:MONT",
+     "listing": {
+      "name": "Montea NV",
+      "ticker": "MONT",
+      "exchange": "XBRU",
+      "exchange_mic": "XBRU",
+      "security_type": "reit_shares",
+      "evidence": {
+       "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+       "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+       "checked_at": "2026-11-14T06:00:00Z",
+       "locator": "About Montea: listed on Euronext Brussels (MONT) and Euronext Paris (MONTP)",
+       "sha256_scope": "source_body"
+      }
+     },
+     "headquarters": null,
+     "evidence": {
+      "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+      "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Skechers, Liège: Montea holds a 40% stake in the project company (increase to 49% announced 29 Oct 2026); 230,000 m²; total project capex = maximum exposure €167 million",
+      "sha256_scope": "source_body"
+     },
+     "investment_access": {
+      "type": "listed_REIT",
+      "verified": true,
+      "scope": "Indirect listed-company equity exposure only; buying shares gives no title to this property"
+     },
+     "stake_scope": "specific_property",
+     "property_evidence": {
+      "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+      "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df",
+      "checked_at": "2026-11-14T06:00:00Z",
+      "locator": "Skechers, Liège: Montea holds a 40% stake in the project company (increase to 49% announced 29 Oct 2026); 230,000 m²; total project capex = maximum exposure €167 million",
+      "sha256_scope": "source_body",
+      "record_id": "re:mont:liege-skechers",
+      "scope": "specific_property"
+     }
+    }
+   ],
+   "imagery": [],
+   "verification": {
+    "classification": "company_confirmed",
+    "date": "2026-11-14",
+    "property_title_verified": false
+   },
+   "reuse": {
+    "fields": {
+     "identity": {
+      "status": "pending",
+      "basis": "Company results document; corporate website terms not reviewed"
+     },
+     "status": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "economic_relationship": {
+      "status": "pending",
+      "basis": "same"
+     },
+     "listing": {
+      "status": "pending",
+      "basis": "company page; exchange data source not yet cross-checked"
+     },
+     "location": {
+      "status": "cleared",
+      "basis": "Wikidata (CC0)"
+     },
+     "reported_metrics": {
+      "status": "pending",
+      "basis": "company figure"
+     }
+    },
+    "review": {}
+   },
+   "preview_only": true,
+   "reported_metrics": {
+    "label": "Montea maximum project exposure (company)",
+    "value": "EUR 167 million",
+    "basis": "company-published investment figure (not a valuation)"
+   },
+   "monitoring": {
+    "stable_id": "re:mont:liege-skechers",
+    "evidence_refs": [
+     {
+      "url": "https://cdn.craft.cloud/4a7b09b1-5035-4e87-85b5-d0881d103040/assets/documents/20261029Press-Release-EN.pdf",
+      "sha256": "93e323a1c9460878a733e972d6766463e027749e50099ae2bc4ca1c3a60aa1df"
+     }
+    ],
+    "last_verified_at": "2026-11-14T06:00:00Z",
+    "enabled": false,
+    "fact_fingerprint": "80cb61383d2c6361b58e4f1b92a7e6e712253e058f96565232cc71b748c22aeb"
+   }
+  }
+ ]
+}

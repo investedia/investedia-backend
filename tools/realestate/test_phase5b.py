@@ -40,8 +40,10 @@ class Contract(unittest.TestCase):
     def test_location_ladder(self):
         for r in R:
             l = r['location']
-            if l['precision'] == 'exact': self.assertIn(l['point_type'], {'address_point', 'building_point'}); self.assertEqual(l['evidence']['scope'], 'specific_site')
-            if l['precision'] == 'approximate': self.assertIn('not the building', l['label'])
+            # owner rule 6: only Wikidata building points are "exact"; address geocodes are never exact building coordinates
+            if l['precision'] == 'exact': self.assertEqual(l['point_type'], 'building_point'); self.assertEqual(l['evidence']['scope'], 'specific_site')
+            if l.get('point_type') == 'address_point': self.assertEqual(l['precision'], 'approximate'); self.assertIn('not a building outline', l['label'])
+            elif l['precision'] == 'approximate': self.assertIn('not the building', l['label'])
             if l.get('satellite_allowed'): self.assertEqual(l.get('confidence'), 'high')
     def test_images_identified_and_licensed(self):
         for r in R:
@@ -54,7 +56,7 @@ class Contract(unittest.TestCase):
         self.assertTrue(0 < MAN['count'] <= 50); self.assertIn('not published', MAN['status'])
         byid = {r['id']: r for r in R}
         for m in MAN['records']:
-            r = byid[m['id']]; self.assertEqual(REV[m['id']]['fact_sha256'], m['fact_sha256']); self.assertNotEqual(r['location']['precision'], 'unknown')
+            r = byid[m['id']]; self.assertEqual(REV[m['id']]['fact_sha256'], m['fact_sha256']); self.assertIn(r['location'].get('point_type'), ('building_point', 'address_point'))
             self.assertTrue(r['imagery'] or r['status']['stage'] in ('under_construction', 'completed') or 'evelopment' in r['asset']['subtype'], m['id'])
 
 class ChangeDetection(unittest.TestCase):

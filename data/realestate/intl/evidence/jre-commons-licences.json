@@ -1,0 +1,26 @@
+{
+ "re:jre:nagoya-hirokoji-building": {
+  "file": "Nagoya Hirokoji Building 20140824.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Nagoya_Hirokoji_Building_20140824.JPG",
+  "w": 3216,
+  "h": 4288,
+  "licence": "CC BY-SA 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "artist": "円周率３パーセント",
+  "date": "Taken on 24 August 2014 09:01:14",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Nagoya_Hirokoji_Building_20140824.JPG/960px-Nagoya_Hirokoji_Building_20140824.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "thumb_sha256": "92ba259ea9a068ed779505f0ecb1cfd3d891c772bc5ba9c8734b6d95b1fa84bc"
+ },
+ "re:jre:tokyo-opera-city-building": {
+  "file": "Tokyo Opera City-2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tokyo_Opera_City-2.jpg",
+  "w": 1536,
+  "h": 2048,
+  "licence": "CC BY-SA 3.0",
+  "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "artist": "Tokyo_Opera_City.jpg: Ons\nderivative work: Torsodog (talk)",
+  "date": "2009-09-24 14:25",
+  "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Tokyo_Opera_City-2.jpg/960px-Tokyo_Opera_City-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "thumb_sha256": "15f20c9e9e0c3866a66e15cf53eb37445215d910dcd0831057d2db52ba17a4aa"
+ }
+}

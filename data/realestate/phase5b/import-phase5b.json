@@ -242,14 +242,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 42.354718,
     "lon": -71.056229,
-    "label": "100 Federal St, Boston, Ma, 02110 (address point)",
+    "label": "100 Federal St, Boston, Ma, 02110 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; Wikidata building coordinate within 150 m",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=100+Federal+Street%2C+Boston%2C+MA&benchmark=Public_AR_Current&format=json",
      "sha256": "2be845387ca28a905a34a0426ff5b1b7a7c340fc3ca27808b8db94b4f6d2411f",
@@ -400,7 +400,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "8468b3173a5b3e0d00641a948836bcbc570ca928cefa7c2129d53593ce05f16c",
+    "fact_fingerprint": "cabecec233f4bc9e613e58461920768df2dbc0605f37727b2ba5f49f49ff6fa0",
     "watch": [
      "status",
      "ownership",
@@ -594,12 +594,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.364101,
     "lon": -71.08754,
-    "label": "105 Broadway, Cambridge, Ma, 02142 (address point)",
+    "label": "105 Broadway, Cambridge, Ma, 02142 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -733,7 +733,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "b29545f38e0adc320f872eda93a043371854a706403005ced55d0eb00dc1b1b7",
+    "fact_fingerprint": "ec8d775e0cc43ac93526b9d3cf6952c2ea1df980fe2cc4688ca27b72785fc953",
     "watch": [
      "status",
      "ownership",
@@ -775,12 +775,12 @@
     }
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.364393,
     "lon": -71.088249,
-    "label": "121 Broadway, Cambridge, Ma, 02142 (address point)",
+    "label": "121 Broadway, Cambridge, Ma, 02142 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -923,7 +923,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "08b7840443c265b35b14fca1b22566734ad0fb8a83b352e5c637eb40df11e140",
+    "fact_fingerprint": "578fd6e73e06b72029a4ab9eae13510246ea20999efa659041986d7ed3b07dff",
     "watch": [
      "status",
      "ownership",
@@ -958,12 +958,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.364466,
     "lon": -71.088427,
-    "label": "125 Broadway, Cambridge, Ma, 02142 (address point)",
+    "label": "125 Broadway, Cambridge, Ma, 02142 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -1097,7 +1097,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "2c5094903b392feb1e49ee3262245b6ee7550f144b4bbe0400e3222a80edbc56",
+    "fact_fingerprint": "244f0a0c941e337167310ee3241fc661a5bf24bbcc13cefbf1fed560258763b9",
     "watch": [
      "status",
      "ownership",
@@ -1132,12 +1132,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.364815,
     "lon": -71.089328,
-    "label": "145 Broadway, Cambridge, Ma, 02142 (address point)",
+    "label": "145 Broadway, Cambridge, Ma, 02142 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -1271,7 +1271,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "2dbdc6d806b242aef9783505d278a053d11275e694c508be41e47d99bb7a9641",
+    "fact_fingerprint": "8916dba477b557e70d8ed43d154bbe5b95a122c4e34ff1c673d16a08ccab3309",
     "watch": [
      "status",
      "ownership",
@@ -1306,12 +1306,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.364713,
     "lon": -71.089398,
-    "label": "150 Broadway, Cambridge, Ma, 02142 (address point)",
+    "label": "150 Broadway, Cambridge, Ma, 02142 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -1445,7 +1445,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "4749de40d2b134ed71798f2095c9610c8ad4988e3edddd8880a2703e50c5d677",
+    "fact_fingerprint": "e52f1022f873595a15f985892727d06f98299e21d996b80f47fbd60869c1e2a1",
     "watch": [
      "status",
      "ownership",
@@ -1646,12 +1646,12 @@
     }
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.474568,
     "lon": -71.254345,
-    "label": "17 Hartwell Ave, Lexington, Ma, 02421 (address point)",
+    "label": "17 Hartwell Ave, Lexington, Ma, 02421 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -1799,7 +1799,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "9017d9713f673093514a158b1ed22cf32216c2beed82cfd00f4d4cef1e972183",
+    "fact_fingerprint": "f1ccf40cb2b0d96b463a2765ea8ad99cb04fdd59ba0a30b76aaab87cfce8804f",
     "watch": [
      "status",
      "ownership",
@@ -2311,12 +2311,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.349893,
     "lon": -71.074892,
-    "label": "200 Clarendon St, Boston, Ma, 02116 (address point)",
+    "label": "200 Clarendon St, Boston, Ma, 02116 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -2450,7 +2450,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "1d93f3834c535871e28f1273b683ee80c6107c924d1a5293c2288c45e5597a7a",
+    "fact_fingerprint": "d502a06dc3dfc325ca0587e848816dab01b5b1659cafa187a09714cff002e97b",
     "watch": [
      "status",
      "ownership",
@@ -2485,12 +2485,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.393935,
     "lon": -71.270339,
-    "label": "200 West St, Waltham, Ma, 02451 (address point)",
+    "label": "200 West St, Waltham, Ma, 02451 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -2624,7 +2624,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "a141f03c285fa6b671e49a818d366d548462c78b46cfdc5ff0ec792022ca998e",
+    "fact_fingerprint": "e73c8335f8eb935f61b2ad18e764fe4095410387feb79c7eb09a48e3dabd4ec4",
     "watch": [
      "status",
      "ownership",
@@ -2659,12 +2659,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 38.901289,
     "lon": -77.04675,
-    "label": "2100 Pennsylvania Ave Nw, Washington, Dc, 20037 (address point)",
+    "label": "2100 Pennsylvania Ave Nw, Washington, Dc, 20037 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -2798,7 +2798,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "3eed61368934bca076420411620b51b8e875f90a8290be204064eab223d305b9",
+    "fact_fingerprint": "8a25a42aff684808bc1bb09c44645ec013d827ff605e90be3a6574801351ce2d",
     "watch": [
      "status",
      "ownership",
@@ -2833,12 +2833,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 38.902025,
     "lon": -77.048897,
-    "label": "2200 Pennsylvania Ave Nw, Washington, Dc, 20052 (address point)",
+    "label": "2200 Pennsylvania Ave Nw, Washington, Dc, 20052 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -2972,7 +2972,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "7cc066f9859659015285fbc59faebc47f9bb107496735071a6a90f86d6783466",
+    "fact_fingerprint": "ae90961ff7a9dba6866bd5205e1caddb2df24887c64d6db4a299bd7891b80b4d",
     "watch": [
      "status",
      "ownership",
@@ -3166,12 +3166,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 37.398494,
     "lon": -122.107786,
-    "label": "2440 W El Camino Real, Mountain View, Ca, 94040 (address point)",
+    "label": "2440 W El Camino Real, Mountain View, Ca, 94040 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -3305,7 +3305,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "685b4d1e1d14ff496b7ad7885a722cddddc1f02e1fc0186cadf9153b696a3256",
+    "fact_fingerprint": "05764b30b70adeb2255eec86cf62d601a3bd973d22b6a605ddf532ecc6845829",
     "watch": [
      "status",
      "ownership",
@@ -3340,12 +3340,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.365993,
     "lon": -71.085297,
-    "label": "250 Binney St, Cambridge, Ma, 02142 (address point)",
+    "label": "250 Binney St, Cambridge, Ma, 02142 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -3479,7 +3479,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "626e848f7f2e144cddb1fe07f69276f23a30cc24b520001e73ea5aa7002f50de",
+    "fact_fingerprint": "dde800b9d8924cbc628a84176ccf9944e5e752248aa204d012ba3b6644bc4a36",
     "watch": [
      "status",
      "ownership",
@@ -3514,14 +3514,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 40.764954,
     "lon": -73.982886,
-    "label": "250 W 55Th St, New York, Ny, 10019 (address point)",
+    "label": "250 W 55Th St, New York, Ny, 10019 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; Wikidata building coordinate within 150 m",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=250+West+55th+Street%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
      "sha256": "4bfde28281a3f6e4ff861fcfb7d88eb0a8139813522ce4897ce92056b2ddd7a1",
@@ -3575,7 +3575,22 @@
      "headquarters": null
     }
    ],
-   "imagery": [],
+   "imagery": [
+    {
+     "type": "photo",
+     "project_id": "re:bxp:250-west-55th-street",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/250_W_55th.jpg/960px-250_W_55th.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "source_url": "https://commons.wikimedia.org/wiki/File:250_W_55th.jpg",
+     "rights_status": "cleared",
+     "licence": "CC BY-SA 4.0",
+     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "credit": "TastyPoutine / Wikimedia Commons, CC BY-SA 4.0",
+     "capture_date": "2017-08-02",
+     "sha256": "60e491003a7ec2b534d723d14b5536e32e3f1ddad354cbbfca77d6496d588dce",
+     "identity_check": "Commons file is the Wikidata image (P18) of Q65128090 '250 West 55th Street', 47 m from the property point; visually checked 2026-11-14",
+     "geo_accuracy": "building photo"
+    }
+   ],
    "verification": {
     "classification": "company_confirmed",
     "date": "2026-11-14",
@@ -3602,6 +3617,10 @@
      "location": {
       "status": "cleared",
       "basis": "US Census Gazetteer (public domain) city point"
+     },
+     "imagery": {
+      "status": "cleared",
+      "basis": "CC BY-SA 4.0 with attribution; share-alike applies to the image file only"
      }
     },
     "review": {}
@@ -3653,7 +3672,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "054ff9945750eb8cc4e77ffac3a2f07077eb9ad0f1d629c18b7142ddf01f3f59",
+    "fact_fingerprint": "84c1cbb34b33c93760a37417bab8eef0f005cdadd333de42694b9b56ea46d116",
     "watch": [
      "status",
      "ownership",
@@ -3688,12 +3707,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.362427,
     "lon": -71.085126,
-    "label": "255 Main St, Cambridge, Ma, 02142 (address point)",
+    "label": "255 Main St, Cambridge, Ma, 02142 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -3827,7 +3846,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "fd8b7a1e1ba0c8b3abb2ef46e9433a349d15dc2df28cdff7c509ca735b34e8f7",
+    "fact_fingerprint": "f4a9b0d958126ee577ee5dd1bace28f4e2e1cc9acaf84805fbff2b72009f3829",
     "watch": [
      "status",
      "ownership",
@@ -3869,12 +3888,12 @@
     }
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.366068,
     "lon": -71.085883,
-    "label": "290 Binney St, Cambridge, Ma, 02142 (address point)",
+    "label": "290 Binney St, Cambridge, Ma, 02142 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -4028,7 +4047,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "eb6bbd88e5b22db6adaa7c0254482a9fc02abbe74d595de4344b2eabe7e4cc02",
+    "fact_fingerprint": "6cc6ae4ac68f3ce09a01e71b95d1b46a00ddf154615a400335aba2e6dce8d651",
     "watch": [
      "status",
      "ownership",
@@ -4070,12 +4089,12 @@
     }
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 40.733346,
     "lon": -74.045843,
-    "label": "290 Coles St, Jersey City, Nj, 07310 (address point)",
+    "label": "290 Coles St, Jersey City, Nj, 07310 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -4223,7 +4242,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "7dff3b656e7963a9035f85c58a02f627a9f2167875ccb8127fd1661cf6c422e6",
+    "fact_fingerprint": "0d5b6357903b13ff651698073ead651d749a44e7d7c551c402bee4b3f8edbcea",
     "watch": [
      "status",
      "ownership",
@@ -4258,12 +4277,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.366281,
     "lon": -71.087588,
-    "label": "300 Binney St, Cambridge, Ma, 02142 (address point)",
+    "label": "300 Binney St, Cambridge, Ma, 02142 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -4397,7 +4416,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "31d86a7dbedd68b8289c20e697425937e14d424b010a232963fbab1513e40c0b",
+    "fact_fingerprint": "09b48471f3521b945b2df068129b6517aaefa789bfe410b4410fd7e2392fedf1",
     "watch": [
      "status",
      "ownership",
@@ -4432,12 +4451,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.473735,
     "lon": -71.255084,
-    "label": "32 Hartwell Ave, Lexington, Ma, 02421 (address point)",
+    "label": "32 Hartwell Ave, Lexington, Ma, 02421 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -4571,7 +4590,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "fbae42d3e8aa78e39837374957c767038852d29c0d40e6503a0b53ebef2c2b76",
+    "fact_fingerprint": "25d82ef6b78ba8df2004abe3a7a4aa457a1a819bb893701910094d883297eaa7",
     "watch": [
      "status",
      "ownership",
@@ -4606,12 +4625,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.362552,
     "lon": -71.08671,
-    "label": "325 Main St, Cambridge, Ma, 02142 (address point)",
+    "label": "325 Main St, Cambridge, Ma, 02142 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -4745,7 +4764,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "2b1134c56f7240c9ed16ca848bec1a50c25207ed9bb7bdf7b4bcfba13a36f8b0",
+    "fact_fingerprint": "35c35eb19f14f59451b7dacd7279362647023d9547cbeccb7b98586519077b2d",
     "watch": [
      "status",
      "ownership",
@@ -4780,12 +4799,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.42239,
     "lon": -71.236891,
-    "label": "33 Hayden Ave, Lexington, Ma, 02421 (address point)",
+    "label": "33 Hayden Ave, Lexington, Ma, 02421 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -4919,7 +4938,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "db9d6fd5fcf008108f4c0c2ada2075603db27d9c2b366e9cab3f3e2d83186c5d",
+    "fact_fingerprint": "186310360e9c4d2e0ea7da65ee8946ec549b959ec7fdcc7ee2db939790ce3b55",
     "watch": [
      "status",
      "ownership",
@@ -4961,12 +4980,12 @@
     }
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 40.754198,
     "lon": -73.978174,
-    "label": "343 Madison Ave, New York, Ny, 10017 (address point)",
+    "label": "343 Madison Ave, New York, Ny, 10017 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -5114,7 +5133,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "aefd38d0ae16ca87b536445ebec6a1bf9e30cab34906f0acbdb0c24e41d7a417",
+    "fact_fingerprint": "dd6452e66d306c805634ede2de01ae781e800edadb6c134644bf4a05df8a15c1",
     "watch": [
      "status",
      "ownership",
@@ -5149,12 +5168,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.362603,
     "lon": -71.087375,
-    "label": "355 Main St, Cambridge, Ma, 02142 (address point)",
+    "label": "355 Main St, Cambridge, Ma, 02142 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -5288,7 +5307,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "88bf24842dd1b7ee7675130b72b2e0310995f4db9e31ddb877a67f417a5f3953",
+    "fact_fingerprint": "4cb9a5b15517e0906563bc20083fcf8686f844ba09916408720fa4edd503e288",
     "watch": [
      "status",
      "ownership",
@@ -5323,14 +5342,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 40.759551,
     "lon": -73.972164,
-    "label": "399 Park Ave, New York, Ny, 10022 (address point)",
+    "label": "399 Park Ave, New York, Ny, 10022 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; Wikidata building coordinate within 150 m",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=399+Park+Avenue%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
      "sha256": "bf6aa3ea376d87dc49bb06394cdb67ed474418cd058e68f90ab0d50b78a826b7",
@@ -5481,7 +5500,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "5625fc50215fadf867f60c595a6590a7e2c4109ab1d2452423bee52932e510a6",
+    "fact_fingerprint": "43c69cf97104c80a3d988133c3eb3e8bbcade9fe98c4f705cc136d8079267571",
     "watch": [
      "status",
      "ownership",
@@ -5516,12 +5535,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 37.390506,
     "lon": -122.052058,
-    "label": "453 Ravendale Dr, Mountain View, Ca, 94043 (address point)",
+    "label": "453 Ravendale Dr, Mountain View, Ca, 94043 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -5655,7 +5674,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "4ba054f1a944b4e590c984f5479cb744d5a633911b6870768050adb606fea17d",
+    "fact_fingerprint": "04af7968c0c65d98b2eaa6d68eacd3e329176b46bbe94b29ff297f3ec0337fc4",
     "watch": [
      "status",
      "ownership",
@@ -5690,12 +5709,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 40.759718,
     "lon": -73.974326,
-    "label": "510 Madison Ave, New York, Ny, 10022 (address point)",
+    "label": "510 Madison Ave, New York, Ny, 10022 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -5829,7 +5848,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "b406445b2945ac50ead5d48ff0bc0533da63cc4a7957991f00132b9d677123f8",
+    "fact_fingerprint": "c38421fbbe9e3c0ea1573851cea93d9edfb9a4f2c5ff69029a7ce1c2deffdc20",
     "watch": [
      "status",
      "ownership",
@@ -5864,14 +5883,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 37.789067,
     "lon": -122.398352,
-    "label": "535 Mission St, San Francisco, Ca, 94105 (address point)",
+    "label": "535 Mission St, San Francisco, Ca, 94105 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; Wikidata building coordinate within 150 m",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=535+Mission+Street%2C+San+Francisco%2C+CA&benchmark=Public_AR_Current&format=json",
      "sha256": "2d8668be4b8b9a8c3681f458f2a961e618f917c04cfe6619dff5d846e0e7f4a3",
@@ -6022,7 +6041,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "1b943f0bc45146c0d04cb6797edee5568b9679c38f5bc2351d7a53599f4de503",
+    "fact_fingerprint": "92cb99eca1d5ec4df92fd577318a11d334f37de08f436ed33182e92c35ae220e",
     "watch": [
      "status",
      "ownership",
@@ -6057,14 +6076,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 40.758295,
     "lon": -73.970964,
-    "label": "599 Lexington Ave, New York, Ny, 10022 (address point)",
+    "label": "599 Lexington Ave, New York, Ny, 10022 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; Wikidata building coordinate within 150 m",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=599+Lexington+Avenue%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
      "sha256": "ae714e1fa4f9c9e9f36b31dd2761cda001c35edfcf1ad0a3fae65edc6a412a41",
@@ -6196,7 +6215,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "c59fcf8568e0264047fa615efb5c47804e86c88642666394b16b8f8682114267",
+    "fact_fingerprint": "84c09fa55e54a24cda49d278925e4d95f008d790737977ba5253136a77b1c331",
     "watch": [
      "status",
      "ownership",
@@ -6231,12 +6250,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 40.758395,
     "lon": -73.97089,
-    "label": "601 Lexington Ave, New York, Ny, 10022 (address point)",
+    "label": "601 Lexington Ave, New York, Ny, 10022 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -6380,7 +6399,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "44237981837edc336507b797eefa8644f8be45bf0a53238be2dffa7953fb5c6e",
+    "fact_fingerprint": "e218f53c9cc7e7b97aa47846bbf9f7c63f58c0cb614751be79b16f3c7bd60e5e",
     "watch": [
      "status",
      "ownership",
@@ -6415,12 +6434,12 @@
     "certainty": "unresolved"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 37.657306,
     "lon": -122.400345,
-    "label": "651 Gateway Blvd, South San Francisco, Ca, 94080 (address point)",
+    "label": "651 Gateway Blvd, South San Francisco, Ca, 94080 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -6564,7 +6583,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "08e5ebb2f04f711a7ecc36bff4be1f494ba1c74df70f501bb16a80fd74cc12bd",
+    "fact_fingerprint": "6ee9a2dfa3c48b33e0e346bcd57ff997706095a367f6f227ec2b77c18b24ec92",
     "watch": [
      "status",
      "ownership",
@@ -6599,12 +6618,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 37.784209,
     "lon": -122.398495,
-    "label": "680 Folsom St, San Francisco, Ca, 94107 (address point)",
+    "label": "680 Folsom St, San Francisco, Ca, 94107 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -6738,7 +6757,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "6455da5d7a6041be4c0ce6be709375606496fe680f569b56397d02e10fa29289",
+    "fact_fingerprint": "dd88ab99a951ce08c0c294ba3d819397a8512a4e31af2ba2b067ff2a0f3cac1d",
     "watch": [
      "status",
      "ownership",
@@ -6773,12 +6792,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 37.784019,
     "lon": -122.398736,
-    "label": "690 Folsom St, San Francisco, Ca, 94107 (address point)",
+    "label": "690 Folsom St, San Francisco, Ca, 94107 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -6912,7 +6931,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "e734346effb8c548c48a2c9d42ea7b19b898f8e68d186d3edff666d8495a3bb2",
+    "fact_fingerprint": "374da7df9c668c0394c8ff27db77ea532245f64ff8eb95416125c34adf675281",
     "watch": [
      "status",
      "ownership",
@@ -7114,19 +7133,21 @@
    },
    "location": {
     "precision": "approximate",
-    "lat": 38.90425,
-    "lon": -77.01652,
-    "label": "Washington, DC (city reference point, not the building)",
-    "basis": "US Census 2024 Gazetteer place internal point for the city named in the filing (public domain)",
+    "point_type": "address_point",
+    "confidence": "medium",
+    "lat": 38.898711,
+    "lon": -77.028006,
+    "label": "725 12Th St Nw, Washington, Dc, 20005 (verified address point, not a building outline)",
+    "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
-     "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_place_national.zip",
-     "sha256": "cf262fc92b2326f7a8c62a89d156a60eb17d64d6d35f7a62310c43bb08972c06",
-     "checked_at": "2026-11-14T02:37:00Z",
-     "locator": "Gazetteer place GEOID 1150000 (Washington city, DC) INTPTLAT/INTPTLONG",
+     "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=725+12th+St+NW%2C+Washington%2C+DC&benchmark=Public_AR_Current&format=json",
+     "sha256": "f7062b55a2e2d9ea00f7b084f6cae177e64414f28e5c1ef93ee27983e4a1a7b7",
+     "checked_at": "2026-11-14T03:10:00Z",
+     "locator": "US Census Geocoder match: 725 12TH ST NW, WASHINGTON, DC, 20005",
      "sha256_scope": "source_body",
      "record_id": "re:bxp:725-12th-street",
-     "scope": "city_reference"
+     "scope": "specific_site"
     }
    },
    "identity_evidence": {
@@ -7204,6 +7225,19 @@
     "review": {}
    },
    "preview_only": true,
+   "address": {
+    "text": "725 12Th St Nw, Washington, Dc, 20005",
+    "source": "10-K property name geocoded by US Census",
+    "evidence": {
+     "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=725+12th+St+NW%2C+Washington%2C+DC&benchmark=Public_AR_Current&format=json",
+     "sha256": "f7062b55a2e2d9ea00f7b084f6cae177e64414f28e5c1ef93ee27983e4a1a7b7",
+     "checked_at": "2026-11-14T03:10:00Z",
+     "locator": "US Census Geocoder match: 725 12TH ST NW, WASHINGTON, DC, 20005",
+     "sha256_scope": "source_body",
+     "record_id": "re:bxp:725-12th-street",
+     "scope": "specific_site"
+    }
+   },
    "history": {
     "batch1_location": {
      "precision": "approximate",
@@ -7236,12 +7270,12 @@
       "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm"
      },
      {
-      "sha256": "cf262fc92b2326f7a8c62a89d156a60eb17d64d6d35f7a62310c43bb08972c06",
-      "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_place_national.zip"
+      "sha256": "f7062b55a2e2d9ea00f7b084f6cae177e64414f28e5c1ef93ee27983e4a1a7b7",
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=725+12th+St+NW%2C+Washington%2C+DC&benchmark=Public_AR_Current&format=json"
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "2bbb6274db8694a7fe776349e39a37dc82df38d9256f603de1e6121de04cf235",
+    "fact_fingerprint": "59ea23df47f9ec09cce33923c911cd1b1db4f9e45640f02ad5bf29e655f9f58d",
     "watch": [
      "status",
      "ownership",
@@ -7276,12 +7310,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 40.764201,
     "lon": -73.972985,
-    "label": "767 5Th Ave, New York, Ny, 10153 (address point)",
+    "label": "767 5Th Ave, New York, Ny, 10153 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -7425,7 +7459,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "d99041df77856b86de2d785f506b66e5f3c8fb85341e77434f0f6104eb838a65",
+    "fact_fingerprint": "aed3836e2b97626780c145c724d5e43357a23ec6ea972974d05020ad11af7e4e",
     "watch": [
      "status",
      "ownership",
@@ -7937,12 +7971,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.363829,
     "lon": -71.087195,
-    "label": "90 Broadway, Cambridge, Ma, 02142 (address point)",
+    "label": "90 Broadway, Cambridge, Ma, 02142 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -8076,7 +8110,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "9daf5d15c0578c8d0761240b11fd1a7e1084b45e222f60c5f30201ddbe7b55fb",
+    "fact_fingerprint": "ab588863219229b513e5f7d9642502b7c090ce2dbbcc024c1bda83e49da831c1",
     "watch": [
      "status",
      "ownership",
@@ -8111,12 +8145,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 38.902146,
     "lon": -77.024063,
-    "label": "901 New York Ave Nw, Washington, Dc, 20001 (address point)",
+    "label": "901 New York Ave Nw, Washington, Dc, 20001 (verified address point, not a building outline)",
     "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
     "satellite_allowed": false,
     "evidence": {
@@ -8250,7 +8284,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "ad6c1dc64b37729942ebc596b8d2b6c50360ceeabc36078586008feff9c8d26e",
+    "fact_fingerprint": "f1caf6d05cf9887aa40eb9bb37c33835861c69d7b253731ec3db524aed758f69",
     "watch": [
      "status",
      "ownership",
@@ -14005,12 +14039,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 40.70176,
     "lon": -73.995504,
-    "label": "60 Furman St, Brooklyn, Ny, 11201 (address point)",
+    "label": "60 Furman St, Brooklyn, Ny, 11201 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 248 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -14125,7 +14159,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "8d4e8bec3048883e4de86672a4492dcc84f8d93e6df91a69e8137eb6f0514ede",
+    "fact_fingerprint": "72983959a7f0c8334c819eba2b0c688a6fde3a0fcb2def5f3b65b970e9180d74",
     "watch": [
      "status",
      "ownership",
@@ -14339,14 +14373,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 36.157156,
     "lon": -86.78036,
-    "label": "710 Demonbreun St, Nashville, Tn, 37203 (address point; large sites may extend beyond it)",
+    "label": "710 Demonbreun St, Nashville, Tn, 37203 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 32 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=710+Demonbreun+Street%2C+Nashville%2C+TN+37203&benchmark=Public_AR_Current&format=json",
      "sha256": "d85af670451618c8d2300840f741cd7498fc5bbffb6a4912e986dbb03ae10d82",
@@ -14483,7 +14517,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "cf8bf64198587c48f925656d7a611ef4c9287891ccffd87b33a5933d8ff8fd5a",
+    "fact_fingerprint": "c4e3a15b743ce828731c0fba1cac812228d93593087cb02308edb954174255e5",
     "watch": [
      "status",
      "ownership",
@@ -14518,14 +14552,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 25.799054,
     "lon": -80.127641,
-    "label": "2341 Collins Ave, Miami Beach, Fl, 33139 (address point; large sites may extend beyond it)",
+    "label": "2341 Collins Ave, Miami Beach, Fl, 33139 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 76 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2341+Collins+Avenue%2C+Miami+Beach%2C+FL+33139&benchmark=Public_AR_Current&format=json",
      "sha256": "7c5032d1d4078bc13a3112570f243b4747560ab34ad33eb9eef3c5872acd1d68",
@@ -14662,7 +14696,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "eaec72fa36cb05b7cd8103ee86bcbce7d18752ea70c53fa17ebafdeba109c193",
+    "fact_fingerprint": "bba0e987dd35b52073210c0303119c4dcf86b0f9c409dcd65f3480eb89c68c27",
     "watch": [
      "status",
      "ownership",
@@ -14697,12 +14731,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 33.624046,
     "lon": -111.930966,
-    "label": "15200 N Kierland Blvd, Scottsdale, Az, 85254 (address point; large sites may extend beyond it)",
+    "label": "15200 N Kierland Blvd, Scottsdale, Az, 85254 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 210 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -14841,7 +14875,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "f4df5881b5282d85d5a36d03ff35f295b9f113596960230dd35ae08183cdcef9",
+    "fact_fingerprint": "e72647c6b8b30db234b5bb0e08174f727dfa4aaa746403db3c48f19479f773dd",
     "watch": [
      "status",
      "ownership",
@@ -15040,12 +15074,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 20.692984,
     "lon": -156.441141,
-    "label": "3550 Wailea Alanui Dr, Wailea, Hi, 96753 (address point; large sites may extend beyond it)",
+    "label": "3550 Wailea Alanui Dr, Wailea, Hi, 96753 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 372 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -15184,7 +15218,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "64c80cc507598fa96d371f2b7762a2d1944372a6ab2bbbd5b5585a81082511e2",
+    "fact_fingerprint": "9104dff5fbc5dbcffd29ba73c90b9b4fe125d7232364f884fd89c9de40c94870",
     "watch": [
      "status",
      "ownership",
@@ -15219,12 +15253,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 37.784518,
     "lon": -122.408432,
-    "label": "28 Cyril Magnin St, San Francisco, Ca, 94102 (address point; large sites may extend beyond it)",
+    "label": "28 Cyril Magnin St, San Francisco, Ca, 94102 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 177 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -15363,7 +15397,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "3c6ac24a66ae880161e8c4929062c31b163cd9a3bc22915e5bec09a05c9eb9f5",
+    "fact_fingerprint": "fb2ea2f3b146a5c5d56e0a352eb08e61f6db7455b49ca9260b2ad67c358dcf72",
     "watch": [
      "status",
      "ownership",
@@ -15398,12 +15432,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 25.066097,
     "lon": -80.471258,
-    "label": "97000 Overseas Hwy, Key Largo, Fl, 33037 (address point; large sites may extend beyond it)",
+    "label": "97000 Overseas Hwy, Key Largo, Fl, 33037 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 322 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -15542,7 +15576,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "892d2bd5d8b4bc4713b7d8989da745753e34fd07f937595bee22fe3bf3133905",
+    "fact_fingerprint": "8381e4d82069381bc8a3f98983f2cd0e9713770195a61b53dbfd984b327a2654",
     "watch": [
      "status",
      "ownership",
@@ -15577,14 +15611,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 42.346938,
     "lon": -71.079472,
-    "label": "110 Huntington Ave, Boston, Ma, 02116 (address point; large sites may extend beyond it)",
+    "label": "110 Huntington Ave, Boston, Ma, 02116 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 70 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=110+Huntington+Avenue%2C+Boston%2C+MA+02116&benchmark=Public_AR_Current&format=json",
      "sha256": "3b0e423aae66486dbb9064b2672aeb1c543c32f719fb712215181c989d77cbc0",
@@ -15721,7 +15755,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "87a59809fa3fb29c390ef1a465cdb6d42f4be1050504a057d1cba82af27506fa",
+    "fact_fingerprint": "9f84e7274775cdb623722d22c032466c86d4d5959b18ca2421e06d4aacc8c1a8",
     "watch": [
      "status",
      "ownership",
@@ -16133,12 +16167,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 39.625318,
     "lon": -104.90026,
-    "label": "4900 S Syracuse St, Denver, Co, 80237 (address point; large sites may extend beyond it)",
+    "label": "4900 S Syracuse St, Denver, Co, 80237 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 204 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -16277,7 +16311,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "4c4337a1840ded2d020c323ea58b7bc03786459b0c808d691f8bf98a86bea809",
+    "fact_fingerprint": "1eb2dc74fb9c4492cd2d4ee152cedfa4966fb02f7d42ecb0cf604adb167299cf",
     "watch": [
      "status",
      "ownership",
@@ -16312,14 +16346,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 39.74058,
     "lon": -105.160554,
-    "label": "1717 Denver West Blvd, Golden, Co, 80401 (address point; large sites may extend beyond it)",
+    "label": "1717 Denver West Blvd, Golden, Co, 80401 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 132 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1717+Denver+West+Drive%2C+Golden%2C+CO+80401&benchmark=Public_AR_Current&format=json",
      "sha256": "a5fa58c77a0dc61f066af528266950341b8db62dedaf234af9319bfd1949ba52",
@@ -16456,7 +16490,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "6ad0baa2e22927f3fa9164ecb883b3ff22064b7b7f6777a0513481ebcde40793",
+    "fact_fingerprint": "165d367c02ac7c606e2aab35cda0a990b433ff249b85f0bc94659185fa20fa86",
     "watch": [
      "status",
      "ownership",
@@ -16670,14 +16704,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 36.157211,
     "lon": -86.780235,
-    "label": "708 Demonbreun St, Nashville, Tn, 37203 (address point; large sites may extend beyond it)",
+    "label": "708 Demonbreun St, Nashville, Tn, 37203 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 13 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=708+Demonbreun+Street%2C+Nashville%2C+TN+37203&benchmark=Public_AR_Current&format=json",
      "sha256": "64f99f9b9bbfc825aa731737b35c17ca7ee2f93b08ddd030d2f9c1f6c425fa7c",
@@ -16814,7 +16848,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "4360a6920431ce75e0b105df4afdf96f7b4ebae0e46cafd70c4d37bb309bc3a4",
+    "fact_fingerprint": "5cff64f01a0a81d9ecccb55c13685408ae7307aff97b99967093887d071e9e55",
     "watch": [
      "status",
      "ownership",
@@ -17034,12 +17068,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 39.113924,
     "lon": -77.194584,
-    "label": "9751 Washingtonian Blvd, Gaithersburg, Md, 20878 (address point; large sites may extend beyond it)",
+    "label": "9751 Washingtonian Blvd, Gaithersburg, Md, 20878 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 203 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -17178,7 +17212,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "d03c48d780520a7b6a4cc6019db454ba9536b0098e348a37d175c62c8308e0dd",
+    "fact_fingerprint": "c7625bac19a43363439fe73014058e9334452d13805e12fd662e00dd0c03e842",
     "watch": [
      "status",
      "ownership",
@@ -17392,12 +17426,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 37.788715,
     "lon": -122.406886,
-    "label": "345 Stockton St, San Francisco, Ca, 94108 (address point; large sites may extend beyond it)",
+    "label": "345 Stockton St, San Francisco, Ca, 94108 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 226 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -17536,7 +17570,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "9646738cd8549c5be3c2f13753f3cdce170ef64701ffd379c02ce2c717ca63dc",
+    "fact_fingerprint": "99d062890ca747a1aee03e4b761db4da89ab2f469c2030e43b48fb75ed9975ad",
     "watch": [
      "status",
      "ownership",
@@ -17571,12 +17605,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 38.899761,
     "lon": -77.026066,
-    "label": "1000 H St Nw, Washington, Dc, 20001 (address point; large sites may extend beyond it)",
+    "label": "1000 H St Nw, Washington, Dc, 20001 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 234 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -17715,7 +17749,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "44fbfe03b5a46d4fd8f2e0c879629759672c3ef7209edb9aca042b37088c496d",
+    "fact_fingerprint": "478cd6e0bde43dfd0b4f5aba1d736f18bfbb91064ad49ed3e2f416aa4f3bcb1f",
     "watch": [
      "status",
      "ownership",
@@ -17750,12 +17784,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 30.26034,
     "lon": -97.739197,
-    "label": "605 Davis St, Austin, Tx, 78701 (address point; large sites may extend beyond it)",
+    "label": "605 Davis St, Austin, Tx, 78701 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 201 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -17894,7 +17928,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "508afbb7d8386c1dd6cec6868cc166c3f838e4f21d8d324ca7a6c3b1c7dc94ca",
+    "fact_fingerprint": "83becbcd06cff7303f2b3a6bde7cdf6f1abdf86056ed91b8791faf7ee074358a",
     "watch": [
      "status",
      "ownership",
@@ -17929,12 +17963,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 29.986067,
     "lon": -95.343093,
-    "label": "18700 John F Kennedy Blvd, Houston, Tx, 77032 (address point; large sites may extend beyond it)",
+    "label": "18700 John F Kennedy Blvd, Houston, Tx, 77032 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 169 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -18073,7 +18107,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "e23f79089444f40ac92e748be8f8eb01098a303bfcddbae2b0314ce43e989fbb",
+    "fact_fingerprint": "dd8d6cdd23ab6cf2febc2717b146019a23a2352c4edf43349dcec3a1fd61c202",
     "watch": [
      "status",
      "ownership",
@@ -18108,12 +18142,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 29.711177,
     "lon": -95.3998,
-    "label": "6580 Fannin St, Houston, Tx, 77030 (address point; large sites may extend beyond it)",
+    "label": "6580 Fannin St, Houston, Tx, 77030 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 158 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -18252,7 +18286,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "561a32a00b3f08cb7e5839a477993c9a874c1e7dc9addbeabf29bb7d39689c7b",
+    "fact_fingerprint": "2eb98f06145726514a941f5d36134ecd76b240036234bea6d6d2c1ec5cf9fcc0",
     "watch": [
      "status",
      "ownership",
@@ -18485,12 +18519,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 30.258992,
     "lon": -97.747002,
-    "label": "208 Barton Springs Rd, Austin, Tx, 78704 (address point; large sites may extend beyond it)",
+    "label": "208 Barton Springs Rd, Austin, Tx, 78704 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 276 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -18629,7 +18663,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "d1fe8e240125df8c7fffd42de13b939afb672041cabcaad3dadf615558b55e7c",
+    "fact_fingerprint": "5dd228d206c334ffe2d6e29ad9826154d3a90c6ba8744e42f5632a80d897107b",
     "watch": [
      "status",
      "ownership",
@@ -18664,12 +18698,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 26.397902,
     "lon": -81.836233,
-    "label": "5001 Coconut Rd, Bonita Springs, Fl, 34134 (address point; large sites may extend beyond it)",
+    "label": "5001 Coconut Rd, Bonita Springs, Fl, 34134 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 372 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -18808,7 +18842,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "87aefd7b85a9d67b32c4560b9e2f9c2d4f092aa68d4654eba5bc7fdea68eb060",
+    "fact_fingerprint": "1e1928f2d0cc1c3f8f997883bceedbe64c6ed95de85bcfbe5d889cd9a9f0f289",
     "watch": [
      "status",
      "ownership",
@@ -18843,12 +18877,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 20.914754,
     "lon": -156.693998,
-    "label": "200 Nohea Kai Dr, Lahaina, Hi, 96761 (address point; large sites may extend beyond it)",
+    "label": "200 Nohea Kai Dr, Lahaina, Hi, 96761 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 217 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -18987,7 +19021,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "8650e4f56d483b9ab355f5adf5977d79b0747934baa5b892b5eb02bc4cc03ad2",
+    "fact_fingerprint": "cd4fe6484dcbf45f3433a38ea3d0acd1622551f06bae6174e774f92e7b6d156e",
     "watch": [
      "status",
      "ownership",
@@ -19022,14 +19056,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 38.958651,
     "lon": -77.355532,
-    "label": "1800 Presidents St, Reston, Va, 20190 (address point; large sites may extend beyond it)",
+    "label": "1800 Presidents St, Reston, Va, 20190 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 76 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1800+Presidents+Street%2C+Reston%2C+VA+20190&benchmark=Public_AR_Current&format=json",
      "sha256": "7f64d0a4837c1b92c697351ec70dac8c2749ec8e74b84c9c74570687417ecb56",
@@ -19166,7 +19200,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "0bfd5249e52a61076f91e1bf76b76218fe0288afe5d291513af1681ee417c74d",
+    "fact_fingerprint": "b4754d16cb336a2707f39a539bd0eb0a5fa22dad95fdebf802b24b94395d0035",
     "watch": [
      "status",
      "ownership",
@@ -19380,14 +19414,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 38.894827,
     "lon": -77.011034,
-    "label": "400 New Jersey Ave Nw, Washington, Dc, 20001 (address point; large sites may extend beyond it)",
+    "label": "400 New Jersey Ave Nw, Washington, Dc, 20001 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 102 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=400+New+Jersey+Ave+NW%2C+Washington%2C+DC+20001&benchmark=Public_AR_Current&format=json",
      "sha256": "9373a216adafa97558fb04e8042b61d2ecfafbd7849f1a4f1523cb40bb9649de",
@@ -19524,7 +19558,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "d124878c70246721af2d8e9fbb45f8c5d18896ea56af6f834fa4152ee9053986",
+    "fact_fingerprint": "0120d896200d5047e431407f9bacb1afb2488ed64f2b3fdef287f663dcf4fb46",
     "watch": [
      "status",
      "ownership",
@@ -19729,14 +19763,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 33.845327,
     "lon": -84.358481,
-    "label": "3300 Lenox Rd, Atlanta, Ga, 30326 (address point; large sites may extend beyond it)",
+    "label": "3300 Lenox Rd, Atlanta, Ga, 30326 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 117 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3300+Lenox+Road+NE%2C+Atlanta%2C+GA+30326&benchmark=Public_AR_Current&format=json",
      "sha256": "5763a7364e26d9ebfad43fde867cb5d7cef0ff966ed89f57f0352edd7fb2e07d",
@@ -19873,7 +19907,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "a5e19a72b0c6557b7b38b6821be0620f05d9cf407aafb2e4e2017f53d0f8b5e6",
+    "fact_fingerprint": "a4d7e99d62e61d8399db4468c03bc0001df562781641d77d4f56e408a59d5851",
     "watch": [
      "status",
      "ownership",
@@ -20072,12 +20106,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 29.740705,
     "lon": -95.465611,
-    "label": "5150 Westheimer Rd, Houston, Tx, 77056 (address point; large sites may extend beyond it)",
+    "label": "5150 Westheimer Rd, Houston, Tx, 77056 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 349 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -20216,7 +20250,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "f3768cdd45238d1c17efa71f67c517b97a6e9eebb506cdd0b1cc325de6d0cc2d",
+    "fact_fingerprint": "7e2be31d80890b947e550aad4e88bd0e909f8cb038208a24248831338b4518bf",
     "watch": [
      "status",
      "ownership",
@@ -20251,12 +20285,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 38.895561,
     "lon": -77.030001,
-    "label": "1331 Pennsylvania Ave Nw, Washington, Dc, 20004 (address point; large sites may extend beyond it)",
+    "label": "1331 Pennsylvania Ave Nw, Washington, Dc, 20004 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 285 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -20395,7 +20429,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "1cd9de216826e03a4e9af304fd272f07268b378dc8343b3d4a23c8c212144440",
+    "fact_fingerprint": "6da4ca0383c1164d9794f2bc301121089deb74e2770b3dd18d28274c6c2e1a7c",
     "watch": [
      "status",
      "ownership",
@@ -20430,14 +20464,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 32.710839,
     "lon": -117.168241,
-    "label": "1 Market Pl, San Diego, Ca, 92101 (address point; large sites may extend beyond it)",
+    "label": "1 Market Pl, San Diego, Ca, 92101 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 50 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1+Market+Place%2C+San+Diego%2C+CA+92101&benchmark=Public_AR_Current&format=json",
      "sha256": "b89e331b49d82276f3580b85cba9682dc71223051d08d85c253d414d617ae48b",
@@ -20574,7 +20608,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "1b31eabf183ae2b1a9c0ca217309f6a598bf022face901a0add3a558cb9ca983",
+    "fact_fingerprint": "a4bc56ccd71e19f0d4b8071795c4bd1c09d11fc42c05746d436e7c511b9c2a41",
     "watch": [
      "status",
      "ownership",
@@ -20609,14 +20643,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 33.982118,
     "lon": -118.459132,
-    "label": "4100 Admiralty Way, Marina Del Rey, Ca, 90292 (address point; large sites may extend beyond it)",
+    "label": "4100 Admiralty Way, Marina Del Rey, Ca, 90292 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 51 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4100+Admiralty+Way%2C+Marina+del+Rey%2C+CA+90292&benchmark=Public_AR_Current&format=json",
      "sha256": "74e425b0ab1141889ea1dfbc834ccd84ddaff112c9727faf0795b435bc5e25fb",
@@ -20753,7 +20787,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "edde0c6aec89e731e10c840fbe12e0f1b8f40cc40f053ec91058365954fbfd1c",
+    "fact_fingerprint": "4592a71d66a549e35799d1fa6a6bbf309fea2e4a9c1e4689df9d4a0f9c475f00",
     "watch": [
      "status",
      "ownership",
@@ -20952,14 +20986,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 32.709497,
     "lon": -117.165476,
-    "label": "333 W Harbor Dr, San Diego, Ca, 92101 (address point; large sites may extend beyond it)",
+    "label": "333 W Harbor Dr, San Diego, Ca, 92101 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 90 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=333+West+Harbor+Drive%2C+San+Diego%2C+CA+92101&benchmark=Public_AR_Current&format=json",
      "sha256": "a4b31e06aa5af4df9a3f05e7eacf98fa3821b3ae5742ed0dd98074ebcc606c3e",
@@ -21096,7 +21130,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "b5fa90e3c767de86f879373f7045367f219a3b4cc1bab765d983ddb151eed6f3",
+    "fact_fingerprint": "23af7cf004f0c856748a352d35596d548fa0c32cdc98de15fa7856a201ae4c65",
     "watch": [
      "status",
      "ownership",
@@ -21131,14 +21165,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 25.790866,
     "lon": -80.187024,
-    "label": "1633 N Bayshore Dr, Miami, Fl, 33132 (address point; large sites may extend beyond it)",
+    "label": "1633 N Bayshore Dr, Miami, Fl, 33132 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 88 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1633+North+Bayshore+Drive%2C+Miami%2C+FL+33132&benchmark=Public_AR_Current&format=json",
      "sha256": "fe6858070411790c1bc605807f9cd47b2c4ab190bfe2d691f3a4aaac5f5a8e9e",
@@ -21275,7 +21309,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "83bf6bcd379eecb1aed657c0e6b565e0d981facdcbd994c9f5ce5077a4ade446",
+    "fact_fingerprint": "5f6d0cd9c20b5cbf22de01d738208c5a6f63382a556628836b3df86a6ad69317",
     "watch": [
      "status",
      "ownership",
@@ -21310,14 +21344,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 44.977473,
     "lon": -93.273802,
-    "label": "31 7Th St S, Minneapolis, Mn, 55402 (address point; large sites may extend beyond it)",
+    "label": "31 7Th St S, Minneapolis, Mn, 55402 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 39 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=31+South+7th+Street%2C+Minneapolis%2C+MN+55402&benchmark=Public_AR_Current&format=json",
      "sha256": "dd184c74322871206fe9ca30a279381581b1bbc2bda5ce6daae66795e6f39507",
@@ -21454,7 +21488,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "0abc6b4bce22184c46352195eeb08537770e501a6cff19a9e1c0d2957986140c",
+    "fact_fingerprint": "a88a6e973eaf5090c54c229898734cffdba9e3145ee587ca42990b41b2f3098f",
     "watch": [
      "status",
      "ownership",
@@ -22407,14 +22441,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 28.360547,
     "lon": -81.509141,
-    "label": "8701 World Center Dr, Orlando, Fl, 32821 (address point; large sites may extend beyond it)",
+    "label": "8701 World Center Dr, Orlando, Fl, 32821 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 100 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=8701+World+Center+Drive%2C+Orlando%2C+FL+32821&benchmark=Public_AR_Current&format=json",
      "sha256": "fea44c0224e9a299b2f2e00e9dc0863e28fcd2687f304e7b4416a8759867896a",
@@ -22551,7 +22585,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "0e4687b85ecd631144bb7b2ad2afd574a45474eba345fe3b60a37faec7b7c4be",
+    "fact_fingerprint": "60d7c2808338aa68e035c46705c5e7b15dbdff2a6254390437a30b77133be74d",
     "watch": [
      "status",
      "ownership",
@@ -22765,14 +22799,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 33.078129,
     "lon": -96.826903,
-    "label": "6007 Legacy Dr, Plano, Tx, 75024 (address point)",
+    "label": "6007 Legacy Dr, Plano, Tx, 75024 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 37 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6007+Legacy+Drive%2C+Plano%2C+TX+75024&benchmark=Public_AR_Current&format=json",
      "sha256": "5b89fac686001328600b48ad0319c0824de76f3b24486785e78a551412c04974",
@@ -22885,7 +22919,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "8c3fe35761706000c71fd5e2b3a79b834648c5bc28b393e9f8b26d97018a2875",
+    "fact_fingerprint": "7533c099edc32772c1766e2b40029f93ac37fe53da480079c385fdf5532c958c",
     "watch": [
      "status",
      "ownership",
@@ -22920,14 +22954,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 29.422784,
     "lon": -98.483319,
-    "label": "101 Bowie St, San Antonio, Tx, 78205 (address point; large sites may extend beyond it)",
+    "label": "101 Bowie St, San Antonio, Tx, 78205 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 75 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=101+Bowie+Street%2C+San+Antonio%2C+TX+78205&benchmark=Public_AR_Current&format=json",
      "sha256": "17db067e6428c7a61e27cb83ac1af2d97ae2dd67658c874e0c04895d0171caf3",
@@ -23064,7 +23098,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "e56fe11fb3cbe831f6a3ba9f2e73abe5b74fa256667c5cd1239cb1aed97b91f1",
+    "fact_fingerprint": "d0689a247050fb4fbb81e841036b7181f1e3f1713249b9d475362178348470b5",
     "watch": [
      "status",
      "ownership",
@@ -23099,12 +23133,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 29.422042,
     "lon": -98.483582,
-    "label": "889 E Market St, San Antonio, Tx, 78205 (address point; large sites may extend beyond it)",
+    "label": "889 E Market St, San Antonio, Tx, 78205 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 209 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -23243,7 +23277,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "508a05a5b7f908abdcdb312d34a74b4485409f6ccdaeb580cab0d0e8925c411b",
+    "fact_fingerprint": "5f0ce1aa6ffed21b8eaa0dfed72426a7a2d12cdef8e5423d07c6b145accb3ace",
     "watch": [
      "status",
      "ownership",
@@ -23655,14 +23689,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 37.392423,
     "lon": -121.974822,
-    "label": "2700 Mission College Blvd, Santa Clara, Ca, 95054 (address point; large sites may extend beyond it)",
+    "label": "2700 Mission College Blvd, Santa Clara, Ca, 95054 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 94 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2700+Mission+College+Boulevard%2C+Santa+Clara%2C+CA+95054&benchmark=Public_AR_Current&format=json",
      "sha256": "9c8f2bab5b33536142c7373d0f169b481d778a16dec6079f2df7dd30642692e2",
@@ -23799,7 +23833,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "568be5becc0c6e7fe9d586b48d779a94ba5e30441eaf261e674f967a80c8d680",
+    "fact_fingerprint": "964732b817b374aabb98e20ce0b38da628ac5b1ffcdf921873d9ad39fbc2d05e",
     "watch": [
      "status",
      "ownership",
@@ -24211,12 +24245,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 32.082765,
     "lon": -81.095454,
-    "label": "412 Williamson St, Savannah, Ga, 31401 (address point; large sites may extend beyond it)",
+    "label": "412 Williamson St, Savannah, Ga, 31401 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 231 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -24355,7 +24389,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "5a992c7c82d42349cae27e08c398d11c6df223d927707896ca7c736b9afb9035",
+    "fact_fingerprint": "2116ed8c620be97635431250c37c3d42e31b249450b8b2e11a32453543ec7b7e",
     "watch": [
      "status",
      "ownership",
@@ -24390,12 +24424,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 27.708614,
     "lon": -82.736861,
-    "label": "3400 Gulf Blvd, St Pete Beach, Fl, 33706 (address point; large sites may extend beyond it)",
+    "label": "3400 Gulf Blvd, St Pete Beach, Fl, 33706 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 268 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -24559,7 +24593,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "bc75764cc8fb0fb9034d20435525d99b3f634a6b391ac51b65071a16a9959e79",
+    "fact_fingerprint": "a5c4d1607b7ca73b5303adb007e16390601a3ecfe7d9f21f72b0e893061bb038",
     "watch": [
      "status",
      "ownership",
@@ -24594,12 +24628,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 29.755047,
     "lon": -95.365543,
-    "label": "1070 Dallas St, Houston, Tx, 77002 (address point; large sites may extend beyond it)",
+    "label": "1070 Dallas St, Houston, Tx, 77002 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 216 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -24738,7 +24772,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "60404ff67dcba10d8aea6aa4fe938f797f91a3ed5913196e29453a9c5ea90740",
+    "fact_fingerprint": "8da257d76a3c8d1b442095a7ab9be3a0a87d252878fda04c368642c6cd67c74b",
     "watch": [
      "status",
      "ownership",
@@ -25131,12 +25165,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 30.592893,
     "lon": -81.44613,
-    "label": "4750 Amelia Island Pkwy, Fernandina Beach, Fl, 32034 (address point; large sites may extend beyond it)",
+    "label": "4750 Amelia Island Pkwy, Fernandina Beach, Fl, 32034 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 163 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -25275,7 +25309,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "fed6433001618347a74d2346dff8835c5c4a441955cedcab38348e792c4efe51",
+    "fact_fingerprint": "5811cc80e129c294ec0b0bc17c49a99d037a8a4b0848d47e547f38670077eeab",
     "watch": [
      "status",
      "ownership",
@@ -25514,12 +25548,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 26.253365,
     "lon": -81.820383,
-    "label": "280 Vanderbilt Beach Rd, Naples, Fl, 34108 (address point; large sites may extend beyond it)",
+    "label": "280 Vanderbilt Beach Rd, Naples, Fl, 34108 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 322 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -25658,7 +25692,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "a5448c5cebc071108a4b1118d9f8d958b438945bba88977f0ee8ae05c09e1248",
+    "fact_fingerprint": "de70aef3833f2e8882d2861d3fec30cd75bbd52b9eca07f8ead741b50f566f8e",
     "watch": [
      "status",
      "ownership",
@@ -25693,12 +25727,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 26.247174,
     "lon": -81.766602,
-    "label": "2600 Tiburon Dr, Naples, Fl, 34109 (address point; large sites may extend beyond it)",
+    "label": "2600 Tiburon Dr, Naples, Fl, 34109 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 261 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -25837,7 +25871,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "a7118ed38f2d9b7dcbd93036e04263554da4c5570ed5173581eb20e5d228fec8",
+    "fact_fingerprint": "e528d81843b8babac533161f62fc3382aff2f4f821dea0608706717bcdfef04c",
     "watch": [
      "status",
      "ownership",
@@ -26057,14 +26091,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 38.92579,
     "lon": -77.223334,
-    "label": "1700 Tysons Blvd, Mclean, Va, 22102 (address point; large sites may extend beyond it)",
+    "label": "1700 Tysons Blvd, Mclean, Va, 22102 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 72 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1700+Tysons+Boulevard%2C+McLean%2C+VA+22102&benchmark=Public_AR_Current&format=json",
      "sha256": "28d81f966fcaf9be43a4c48e246fea7dd68265f7f399d55616554ee733862967",
@@ -26201,7 +26235,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "89a295e192ff886a4ed8fb61d32f22e88df466cdacbc3bdbce2fe514074448d9",
+    "fact_fingerprint": "4f24733fd927d86b3acda5ad1c3d72ae8b0d51f94febc257d1a15846e10463dd",
     "watch": [
      "status",
      "ownership",
@@ -26236,14 +26270,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 26.791075,
     "lon": -80.034602,
-    "label": "3700 N Ocean Dr, Riviera Beach, Fl, 33404 (address point; large sites may extend beyond it)",
+    "label": "3700 N Ocean Dr, Riviera Beach, Fl, 33404 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 73 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3700+N+Ocean+Dr%2C+Riviera+Beach%2C+FL+33404&benchmark=Public_AR_Current&format=json",
      "sha256": "9a3cbcb9bbec60a798dd155a5758c375bfcd59363e4beeaa3fa0de341a558813",
@@ -26380,7 +26414,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "acd3fa78c483a5a1267864202a52eb3c78a55ce89ee92c6c25c97c80bea0a12a",
+    "fact_fingerprint": "c431cd27e0c8988b175083aa402892a88e5df655d02b56b76bb36099ee1d2af2",
     "watch": [
      "status",
      "ownership",
@@ -26415,14 +26449,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 41.888105,
     "lon": -87.629623,
-    "label": "320 N Dearborn St, Chicago, Il, 60654 (address point; large sites may extend beyond it)",
+    "label": "320 N Dearborn St, Chicago, Il, 60654 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 43 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=320+North+Dearborn+Street%2C+Chicago%2C+IL+60654&benchmark=Public_AR_Current&format=json",
      "sha256": "e6c7211b63abe4e12db1059961ba98b57b2afcb5bb24a50254ddc10cce759932",
@@ -26559,7 +26593,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "690a397fd0d6c2e7ae9bacfdc0bd64363cf6aa619c7ac08e6e687d129c3e4663",
+    "fact_fingerprint": "aeee495dd0075266011cf5e53970e23e49b64842ec8dbb90ec49f98b27897e03",
     "watch": [
      "status",
      "ownership",
@@ -26594,12 +26628,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 39.749151,
     "lon": -104.995628,
-    "label": "1672 Lawrence St, Denver, Co, 80202 (address point; large sites may extend beyond it)",
+    "label": "1672 Lawrence St, Denver, Co, 80202 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 181 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -26738,7 +26772,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "b64be72e75e0303f7f6eb7d8b492ab8e504e6fe9f2ec1749310973f7230b3cb8",
+    "fact_fingerprint": "01c1b680dd8a3e8227653d603ac620941857db8120bf62c940dfba3e01134db1",
     "watch": [
      "status",
      "ownership",
@@ -26773,12 +26807,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 38.905205,
     "lon": -77.05077,
-    "label": "2350 M St Nw, Washington, Dc, 20037 (address point; large sites may extend beyond it)",
+    "label": "2350 M St Nw, Washington, Dc, 20037 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 210 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -26942,7 +26976,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "fc6fbc1d80b9097cc651939a0b1bcf466666603a282a1f90ebff10e5fa32d506",
+    "fact_fingerprint": "26cba743833a8d823351d63bb13036e0f6ec1513a63d29a801d26e839ca229e6",
     "watch": [
      "status",
      "ownership",
@@ -26977,12 +27011,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 33.622886,
     "lon": -111.933219,
-    "label": "6902 E Greenway Pkwy, Scottsdale, Az, 85254 (address point; large sites may extend beyond it)",
+    "label": "6902 E Greenway Pkwy, Scottsdale, Az, 85254 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 281 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -27121,7 +27155,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "36825e118d39ae1b9bb2beca7a3e7ced40ac8e5a545e3aa2041717191343709e",
+    "fact_fingerprint": "fdad3617f82a5b7a0bf1407f86265884fda57a8ab76e3680f407d7b17da9e891",
     "watch": [
      "status",
      "ownership",
@@ -27156,12 +27190,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 47.613061,
     "lon": -122.337856,
-    "label": "1900 5Th Ave, Seattle, Wa, 98101 (address point; large sites may extend beyond it)",
+    "label": "1900 5Th Ave, Seattle, Wa, 98101 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 190 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -27325,7 +27359,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "02b399d9940e008ce3e3688b9e6922131eb853dbe1bca3fd87a8a30f698ef376",
+    "fact_fingerprint": "de632f5b9f37987f6e458a13101f338862c42ee9b19417c51c9b98219f9fad49",
     "watch": [
      "status",
      "ownership",
@@ -27360,14 +27394,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 33.6903,
     "lon": -117.884865,
-    "label": "686 Anton Blvd, Costa Mesa, Ca, 92626 (address point; large sites may extend beyond it)",
+    "label": "686 Anton Blvd, Costa Mesa, Ca, 92626 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 146 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=686+Anton+Blvd%2C+Costa+Mesa%2C+CA+92626&benchmark=Public_AR_Current&format=json",
      "sha256": "43d5caae2f166a870ebc0bb184842b68459b1e8a356ef60f777d3e26a1c45b0a",
@@ -27504,7 +27538,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "4bdea13b4a36f18aaceb7ab2fe8bd16158537ad1f348095c43ffae9eb0736887",
+    "fact_fingerprint": "c8e1a989d6dce7c8a49c8e54cff3060365652fed540d9a39127954d17001bce0",
     "watch": [
      "status",
      "ownership",
@@ -27539,12 +27573,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 42.394197,
     "lon": -71.260675,
-    "label": "70 3Rd Ave, Waltham, Ma, 02451 (address point; large sites may extend beyond it)",
+    "label": "70 3Rd Ave, Waltham, Ma, 02451 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 179 m from the company's own pin",
     "satellite_allowed": false,
     "evidence": {
@@ -27683,7 +27717,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "2c70266ff7fcb15ed5b11ee7729eca9e67a1d6499a4e8ebabf103b9843d0028a",
+    "fact_fingerprint": "6431353915d6956e0ee510a3cc60cb6514023a3e00e77111f72e826547f25983",
     "watch": [
      "status",
      "ownership",
@@ -27718,14 +27752,14 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "high",
     "lat": 47.606953,
     "lon": -122.333605,
-    "label": "1112 4Th Ave, Seattle, Wa, 98101 (address point; large sites may extend beyond it)",
+    "label": "1112 4Th Ave, Seattle, Wa, 98101 (verified address point, not a building outline)",
     "basis": "US Census geocode of the company-published address; 80 m from the company's own pin",
-    "satellite_allowed": true,
+    "satellite_allowed": false,
     "evidence": {
      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1112+4th+Ave%2C+Seattle%2C+WA+98101&benchmark=Public_AR_Current&format=json",
      "sha256": "45e5054edf5b9619691daec6f9f1587c4c4d73b792facd308afeaea10bd55f8d",
@@ -27862,7 +27896,7 @@
      }
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
-    "fact_fingerprint": "84b41cf0c8c76d7b5a54d4cc5df3399605435fa2e15fdc75675751fd3dc10a6f",
+    "fact_fingerprint": "0f9672048e6a02bc75d69adf5b255974f49b85833f75b94637d74fa615b01222",
     "watch": [
      "status",
      "ownership",

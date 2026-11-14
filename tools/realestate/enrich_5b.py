@@ -69,8 +69,8 @@ for rid, r0 in base.items():
                    'label': f"{p['address'].strip()} (building point)", 'basis': f"Wikidata {w['qid']} coordinate (CC0) within {round(hav(p['lat'], p['lon'], w['wd_lat'], w['wd_lon']))} m of the company's own property pin", 'satellite_allowed': True,
                    'evidence': {'url': f"https://www.wikidata.org/wiki/{w['qid']}", 'sha256': hashlib.sha256(json.dumps(w, sort_keys=True).encode()).hexdigest(), 'checked_at': '2026-11-14T04:00:00Z', 'locator': f"Wikidata {w['qid']} P625 ({w['label']})", 'sha256_scope': 'query_result_row', 'record_id': rid, 'scope': 'specific_site'}}
         elif 'lat' in g and g['dist_m'] <= 400:
-            loc = {'precision': 'exact', 'point_type': 'address_point', 'confidence': 'high' if g['dist_m'] <= 150 else 'medium', 'lat': round(g['lat'], 6), 'lon': round(g['lon'], 6),
-                   'label': f"{g['matched'].title()} (address point; large sites may extend beyond it)", 'basis': f"US Census geocode of the company-published address; {g['dist_m']} m from the company's own pin", 'satellite_allowed': g['dist_m'] <= 150, 'evidence': cen_ev(g, rid)}
+            loc = {'precision': 'approximate', 'point_type': 'address_point', 'confidence': 'high' if g['dist_m'] <= 150 else 'medium', 'lat': round(g['lat'], 6), 'lon': round(g['lon'], 6),
+                   'label': f"{g['matched'].title()} (verified address point, not a building outline)", 'basis': f"US Census geocode of the company-published address; {g['dist_m']} m from the company's own pin", 'satellite_allowed': False, 'evidence': cen_ev(g, rid)}
         else:
             reason = 'Census geocode disagrees with the company pin by more than 400 m' if 'lat' in g else 'no Census match' if 'skip' not in g else 'non-US address (no public-domain geocoder used)'
             r['research']['location_gap'] = reason
@@ -80,9 +80,9 @@ for rid, r0 in base.items():
     elif rid in bcen and 'lat' in bcen[rid]:
         g = bcen[rid]; w = wd.get(rid)
         conf = 'high' if (w and hav(g['lat'], g['lon'], w['wd_lat'], w['wd_lon']) <= 150) else 'medium'
-        loc = {'precision': 'exact', 'point_type': 'address_point', 'confidence': conf, 'lat': round(g['lat'], 6), 'lon': round(g['lon'], 6),
-               'label': f"{g['matched'].title()} (address point)", 'basis': 'US Census geocode of the street address that is the property name in the 10-K' + ('; Wikidata building coordinate within 150 m' if conf == 'high' else '; single geocode, no second point'),
-               'satellite_allowed': conf == 'high', 'evidence': cen_ev(g, rid)}
+        loc = {'precision': 'approximate', 'point_type': 'address_point', 'confidence': conf, 'lat': round(g['lat'], 6), 'lon': round(g['lon'], 6),
+               'label': f"{g['matched'].title()} (verified address point, not a building outline)", 'basis': 'US Census geocode of the street address that is the property name in the 10-K' + ('; Wikidata building coordinate within 150 m' if conf == 'high' else '; single geocode, no second point'),
+               'satellite_allowed': False, 'evidence': cen_ev(g, rid)}
         r['address'] = {'text': g['matched'].title(), 'source': '10-K property name geocoded by US Census', 'evidence': cen_ev(g, rid)}
     if loc: r['location'] = loc
     if rid in wd: aliases.add(wd[rid]['label'])
@@ -136,7 +136,7 @@ for name, slug, date, role, interest, url in [('Renaissance Dallas at Plano Lega
     e0 = ev('hst_10q', loc_ev)
     r = {'schema': base['re:hst:the-don-cesar']['schema'], 'id': rid, 'source_identity': {'authority': 'sec.gov:10-Q:HST', 'id': slug}, 'synthetic': False, 'name': name, 'sector': 'real_estate', 'country_code': 'US', 'city': None,
          'asset': {'category': 'existing_asset', 'subtype': 'Hotel', 'parent_id': None, 'count_as_project': True}, 'status': {'stage': 'operating', 'label': f'Acquired {date} (company-reported)', 'as_of': '2026-11-06', 'certainty': 'company_reported'},
-         'location': {'precision': 'exact', 'point_type': 'address_point', 'confidence': 'high' if g['dist_m'] <= 150 else 'medium', 'lat': round(g['lat'], 6), 'lon': round(g['lon'], 6), 'label': f"{g['matched'].title()} (address point)", 'basis': f"US Census geocode of the company-published address; {g['dist_m']} m from the company's own pin", 'satellite_allowed': g['dist_m'] <= 150, 'evidence': cen_ev(g, rid)},
+         'location': {'precision': 'approximate', 'point_type': 'address_point', 'confidence': 'high' if g['dist_m'] <= 150 else 'medium', 'lat': round(g['lat'], 6), 'lon': round(g['lon'], 6), 'label': f"{g['matched'].title()} (verified address point, not a building outline)", 'basis': f"US Census geocode of the company-published address; {g['dist_m']} m from the company's own pin", 'satellite_allowed': False, 'evidence': cen_ev(g, rid)},
          'identity_evidence': e0, 'exposures': [{'role': role, 'label': 'Acquired hotel (fee simple)' if role != 'lessee' else 'Acquired leasehold interest (not freehold)', 'relationship_scope': f'Company-reported acquisition of the {interest}; holding entity not established', 'property_stake': None, 'company_ref': hst_ref, 'evidence': e0, 'listing': companies[hst_ref]['listing'], 'headquarters': None, 'investment_access': {'type': 'listed_REIT', 'verified': True, 'scope': 'Indirect listed-REIT equity exposure only; buying shares gives no title to this property'}}],
          'imagery': [], 'verification': {'classification': 'company_confirmed', 'date': '2026-11-14', 'property_title_verified': False}, 'address': {'text': p['address'].strip(), 'source': 'company website portfolio page', 'evidence': ev('host_web', f'Portfolio page entry {url}: address')},
          'reuse': copy.deepcopy(base['re:hst:the-don-cesar']['reuse']), 'preview_only': True, 'history': {'created': 'phase5b acquisition event'}}
@@ -184,7 +184,7 @@ def score(r):
     s += 5 if r['exposures'][0].get('property_stake') else 0
     return s
 retired = {x['id'] for x in retire}
-pool = [r for r in records.values() if (r['imagery'] or r['status']['stage'] in ('under_construction', 'completed') or 'evelopment' in r['asset']['subtype']) and r['id'] not in retired and not r.get('flags') and r['status']['stage'] != 'unknown' and r['location']['precision'] != 'unknown']  # owner rule: picture or development plan
+pool = [r for r in records.values() if (r['imagery'] or r['status']['stage'] in ('under_construction', 'completed') or 'evelopment' in r['asset']['subtype']) and r['id'] not in retired and not r.get('flags') and r['status']['stage'] != 'unknown' and r['location'].get('point_type') in ('building_point', 'address_point')]  # owner rule: picture or development plan
 pool.sort(key=lambda r: (-score(r), r['id'])); chosen = pool[:45]
 review = []
 for r in sorted(records.values(), key=lambda r: r['id']):
@@ -192,7 +192,7 @@ for r in sorted(records.values(), key=lambda r: r['id']):
     if r['id'] in retired: blockers.append('disposed (retired)')
     if r.get('flags'): blockers += r['flags']
     if r['status']['stage'] == 'unknown': blockers.append('status unresolved')
-    if r['location']['precision'] != 'exact': blockers.append(f"location {r['location']['precision']}")
+    if r['location'].get('point_type') not in ('building_point', 'address_point'): blockers.append(f"location {r['location'].get('point_type') or r['location']['precision']}")
     if any(f['status'] != 'cleared' for f in r['reuse']['fields'].values()): blockers.append('reuse pending')
     blockers.append('owner record-bound review not signed')
     review.append({'id': r['id'], 'name': r['name'], 'company': r['exposures'][0]['listing']['ticker'], 'role': r['exposures'][0]['role'], 'stake': r['exposures'][0].get('property_stake'),
@@ -214,7 +214,7 @@ from collections import Counter
 live = [r for r in records.values() if r['id'] not in retired]
 st = {'records_total': len(records), 'retired_disposed': len(retired), 'live': len(live), 'new_acquisitions': 2,
       'location': Counter(f"{r['location']['precision']}/{r['location'].get('point_type', '-')}/{r['location'].get('confidence', '-')}" for r in live),
-      'precision': Counter(r['location']['precision'] for r in live), 'with_address': sum('address' in r for r in live), 'with_aliases': sum('identity' in r for r in live),
+      'precision': Counter(r['location']['precision'] for r in live), 'location_class': Counter({'building_point': 'building point', 'address_point': 'verified address point', 'city_reference': 'approximate city point', 'district_reference': 'approximate district point'}.get(r['location'].get('point_type'), 'approximate city point' if r['location']['precision'] == 'approximate' else 'unknown') for r in live), 'with_address': sum('address' in r for r in live), 'with_aliases': sum('identity' in r for r in live),
       'imagery': Counter(v['status'].split(':')[0] for v in img_audit.values()), 'records_with_photo': sum(bool(r['imagery']) for r in live),
       'stage': Counter(r['status']['stage'] for r in live), 'roles': Counter(r['exposures'][0]['role'] for r in live), 'stated_stakes': sum(r['exposures'][0].get('property_stake') is not None for r in live),
       'events': Counter(e['type'] for e in events), 'release_proposed': len(chosen), 'release_proposed_with_photo': sum(bool(r['imagery']) for r in chosen)}

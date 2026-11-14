@@ -35,7 +35,7 @@ for o in D:
     gev = {'url': g['url'], 'sha256': g['sha256'], 'checked_at': '2026-11-14T05:30:00Z', 'locator': f"GSI address search: {g['title']}", 'sha256_scope': 'source_body', 'record_id': rid}
     if g['lat'] is None: skipped.append({'name': o['name'], 'reason': 'no GSI result'}); continue
     if g['block_match']:
-        loc = {'precision': 'exact', 'point_type': 'address_point', 'confidence': 'medium', 'lat': g['lat'], 'lon': g['lon'], 'label': f"{o['address_en']} (address point)", 'basis': 'GSI geocode of the official Japanese address; block and lot numbers match', 'satellite_allowed': False, 'evidence': {**gev, 'scope': 'specific_site'}}
+        loc = {'precision': 'approximate', 'point_type': 'address_point', 'confidence': 'medium', 'lat': g['lat'], 'lon': g['lon'], 'label': f"{o['address_en']} (verified address point, not a building outline)", 'basis': 'GSI geocode of the official Japanese address; block and lot numbers match', 'satellite_allowed': False, 'evidence': {**gev, 'scope': 'specific_site'}}
     else:
         loc = {'precision': 'approximate', 'point_type': 'district_reference', 'lat': g['lat'], 'lon': g['lon'], 'label': f"{o['address_en']} (district point, not the building)", 'basis': 'GSI geocode resolved only to the district/block, not the lot', 'satellite_allowed': False, 'evidence': {**gev, 'scope': 'district_reference'}}
     stake = round(o['ownership_ratio'] * 100, 4) if isinstance(o['ownership_ratio'], (int, float)) else None
@@ -55,7 +55,21 @@ for o in D:
          'monitoring': {'stable_id': rid, 'evidence_refs': [{'url': WB_EN['url'], 'sha256': WB_EN['sha256']}, {'url': g['url'], 'sha256': g['sha256']}], 'last_verified_at': '2026-11-14T00:00:00Z', 'enabled': False},
          'preview_only': True}
     r['monitoring']['fact_fingerprint'] = digest({k: v for k, v in r.items() if k not in ('reuse', 'monitoring')})
-    validate(r); (records if loc['precision'] == 'exact' else approx).append(r)
+    validate(r); (records if loc['point_type'] == 'address_point' else approx).append(r)
+# Photos: Wikidata P18 of the same named building (ja/en name match, within 250 m of the address point / 600 m of a district point),
+# Commons licence checked, and visually checked by Claude. Only ACCEPTED ids are attached.
+PH = json.loads((OUT / 'evidence/jre-commons-licences.json').read_text(encoding='utf-8')) if (OUT / 'evidence/jre-commons-licences.json').exists() else {}
+WM = json.loads((OUT / 'evidence/jre-wikidata-photo-matches.json').read_text(encoding='utf-8'))
+ACCEPTED = {'re:jre:nagoya-hirokoji-building', 're:jre:tokyo-opera-city-building'}  # visually checked 2026-11-14
+for r in records + approx:
+    m = PH.get(r['id'])
+    if r['id'] in ACCEPTED and m and re.match(r'^(CC BY(-SA)? [0-9.]+|CC0|Public domain)$', m['licence']):
+        w = WM[r['id']]
+        r['imagery'] = [{'type': 'photo', 'project_id': r['id'], 'url': m['thumb'], 'source_url': m['page'], 'rights_status': 'cleared', 'licence': m['licence'], 'licence_url': m['licence_url'], 'credit': f"{m['artist'] or 'Unknown'} / Wikimedia Commons, {m['licence']}", 'capture_date': (m['date'] or '')[:10] or None, 'sha256': m['thumb_sha256'],
+                         'identity_check': f"Commons file is the Wikidata image (P18) of {w['qid']} ({w['ja']}), {w['dist_m']} m from the property point; visually checked 2026-11-14", 'geo_accuracy': 'building photo'}]
+        r['reuse']['fields']['imagery'] = {'status': 'cleared', 'basis': m['licence'] + ' with attribution'}
+        validate(r)
+(OUT / 'jre-photo-review.json').write_text(json.dumps({'matched_candidates': len(WM), 'licence_checked': len(PH), 'accepted': sorted(ACCEPTED & set(PH)), 'rejected': {'re:jre:jre-kanda-ogawamachi-building': 'matched the Ogawamachi neighbourhood / a road photo, not the building'}, 'pending': sorted(set(WM) - set(PH))}, indent=1, ensure_ascii=False))
 pilot = records[:50]
 env = {'schema': 'investedia.projects.import.v1', 'synthetic': False, 'companies': {REF: company}, 'records': pilot}
 (OUT / 'import-jre-pilot.json').write_text(json.dumps(env, indent=1, ensure_ascii=False))

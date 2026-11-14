@@ -62,12 +62,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.731968,
     "lon": 139.706726,
-    "label": "2-14-2, Ikebukuro, Toshima-ku, Tokyo (address point)",
+    "label": "2-14-2, Ikebukuro, Toshima-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -191,7 +191,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "72a0b944ee20878833cc597b7cd8655d19021ceaf929c34f3d55dc619104b906"
+    "fact_fingerprint": "9dfe0462094542814ad8fa2ae4922ccf90bef06f9bdec9d2842b0ca6469c8df6"
    },
    "preview_only": true
   },
@@ -227,12 +227,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 38.263481,
     "lon": 140.877441,
-    "label": "2-1-29, Honcho, Aoba-ku, Sendai City, Miyagi Prefecture (address point)",
+    "label": "2-1-29, Honcho, Aoba-ku, Sendai City, Miyagi Prefecture (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -356,7 +356,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "650e0ac6b868e904a9377cfe060872057b6ebb87fa5f1f7c706da6e044edc800"
+    "fact_fingerprint": "85cedd9342c95605a23d7608d0f8f29510ae7a96414c048995ef34b1f8d8e6cd"
    },
    "preview_only": true
   },
@@ -392,12 +392,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 34.680733,
     "lon": 135.501144,
-    "label": "3-6-8, Kyutarocho, Chuo-ku, Osaka City, Osaka Prefecture (address point)",
+    "label": "3-6-8, Kyutarocho, Chuo-ku, Osaka City, Osaka Prefecture (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -521,7 +521,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "7240958b83868fa71f1a0e3829623b3ed64a5a9a2115cc8d557c802a40054a9a"
+    "fact_fingerprint": "f2a1631edeae3161ad875aeb4c0d661b4e8737ba232e6e846a0fb747b6bda4c2"
    },
    "preview_only": true
   },
@@ -557,12 +557,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 34.682987,
     "lon": 135.506607,
-    "label": "1-8-14, Minamihonmachi, Chuo-ku, Osaka City, Osaka Prefecture (address point)",
+    "label": "1-8-14, Minamihonmachi, Chuo-ku, Osaka City, Osaka Prefecture (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -686,7 +686,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "1f76a1b0149decf887214f4ecc3ec1a38104943d3660745e9605a93b69441a67"
+    "fact_fingerprint": "1398634f14d51fd876f9cb5db1743482c8d6fcb6988183b04083d627438edb18"
    },
    "preview_only": true
   },
@@ -722,12 +722,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.168289,
     "lon": 136.900024,
-    "label": "2-3-1, Sakae, Naka-ku, Nagoya City, Aichi Prefecture (address point)",
+    "label": "2-3-1, Sakae, Naka-ku, Nagoya City, Aichi Prefecture (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -798,7 +798,22 @@
      }
     }
    ],
-   "imagery": [],
+   "imagery": [
+    {
+     "type": "photo",
+     "project_id": "re:jre:nagoya-hirokoji-building",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Nagoya_Hirokoji_Building_20140824.JPG/960px-Nagoya_Hirokoji_Building_20140824.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "source_url": "https://commons.wikimedia.org/wiki/File:Nagoya_Hirokoji_Building_20140824.JPG",
+     "rights_status": "cleared",
+     "licence": "CC BY-SA 4.0",
+     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "credit": "円周率３パーセント / Wikimedia Commons, CC BY-SA 4.0",
+     "capture_date": "Taken on 2",
+     "sha256": "92ba259ea9a068ed779505f0ecb1cfd3d891c772bc5ba9c8734b6d95b1fa84bc",
+     "identity_check": "Commons file is the Wikidata image (P18) of Q11415169 (名古屋広小路ビルヂング), 33 m from the property point; visually checked 2026-11-14",
+     "geo_accuracy": "building photo"
+    }
+   ],
    "verification": {
     "classification": "company_confirmed",
     "date": "2026-11-14",
@@ -833,6 +848,10 @@
      "reported_metrics": {
       "status": "pending",
       "basis": "company figure; reuse pending"
+     },
+     "imagery": {
+      "status": "cleared",
+      "basis": "CC BY-SA 4.0 with attribution"
      }
     },
     "review": {}
@@ -851,7 +870,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "8caf7c827fb7cb0b1ae51e6db73300f79cd56532dd778c8e9145c6a3d4de0f00"
+    "fact_fingerprint": "96ce84bc59df34f95cbfb08d912c0cb69a1162c58ceca4ac78bbcf14a8fe95ae"
    },
    "preview_only": true
   },
@@ -887,12 +906,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.587521,
     "lon": 139.72789,
-    "label": "1-5-1, Omori-Kita, Ota-ku, Tokyo (address point)",
+    "label": "1-5-1, Omori-Kita, Ota-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -1016,7 +1035,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "d74f7c19f77f2302fdd27ad6949fd31a7a688741026ed385b41796ed2900f371"
+    "fact_fingerprint": "02ab150df5bb5e7390be50ead97dab5dbbe4706902c85bc95faed7d984bcffad"
    },
    "preview_only": true
   },
@@ -1052,12 +1071,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 33.592281,
     "lon": 130.399307,
-    "label": "1-12-20, Tenjin, Chuo-ku, Fukuoka City, Fukuoka Prefecture (address point)",
+    "label": "1-12-20, Tenjin, Chuo-ku, Fukuoka City, Fukuoka Prefecture (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -1181,7 +1200,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "499b341a547e66b883e2dfa0df51f6bd9b8babf6322f61b5d670d2b5a66b19c9"
+    "fact_fingerprint": "cad9432142d6b801427ea7b2d2aecd6c4cf0ca9f01338afebcff87b22572656a"
    },
    "preview_only": true
   },
@@ -1217,12 +1236,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 33.594746,
     "lon": 130.394791,
-    "label": "3-9-25, Tenjin, Chuo-ku, Fukuoka City, Fukuoka Prefecture (address point)",
+    "label": "3-9-25, Tenjin, Chuo-ku, Fukuoka City, Fukuoka Prefecture (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -1346,7 +1365,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "6c10104614a074946323e940eebbe55d7cadf973bba84df2d70b2c4b0b89a260"
+    "fact_fingerprint": "519579cfb8532d2020c1db9d73b5fe4d2b2a70bff3d38f471dc8f3300a067a0e"
    },
    "preview_only": true
   },
@@ -1382,12 +1401,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.85704,
     "lon": 139.654175,
-    "label": "2-2-3, Takasago, Urawa-ku, Saitama City, Saitama Prefecture (address point)",
+    "label": "2-2-3, Takasago, Urawa-ku, Saitama City, Saitama Prefecture (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -1511,7 +1530,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "4c3e3728c3c491acdda2c2b5fd4f52afe37fcdfc649ef997fee26c146583457d"
+    "fact_fingerprint": "e3f365305ac97c8d81cf488793611f86a223a80524ae002238627daa1b95f545"
    },
    "preview_only": true
   },
@@ -1547,12 +1566,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 36.579609,
     "lon": 136.645493,
-    "label": "3-1-1, Hirooka, Kanazawa City, Ishikawa Prefecture (address point)",
+    "label": "3-1-1, Hirooka, Kanazawa City, Ishikawa Prefecture (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -1676,7 +1695,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "2b825995b27f57fce213df36803eff3bb9a3ae19856e7fd423fcef01ee0eab34"
+    "fact_fingerprint": "35eaaa49c111c580b121a0f1b9191eeaf7a9af6d95bcfed691d11b2dcae11ddb"
    },
    "preview_only": true
   },
@@ -1712,12 +1731,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.676823,
     "lon": 139.771164,
-    "label": "2-7-14, Kyobashi, Chuo-ku, Tokyo (address point)",
+    "label": "2-7-14, Kyobashi, Chuo-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -1841,7 +1860,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "7a2759664407c4ee7e34aafdc8cd32509488795010123826ed1b75a1f60947fa"
+    "fact_fingerprint": "fbdf101b6335939065a43c18307eb90be2c9ddba1c455588cdfb3e087412325e"
    },
    "preview_only": true
   },
@@ -1877,12 +1896,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.671688,
     "lon": 139.708008,
-    "label": "3-25-15, Jingumae, Shibuya-ku, Tokyo (address point)",
+    "label": "3-25-15, Jingumae, Shibuya-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -2006,7 +2025,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "4b9b9eccc71a89e5ad67430c4fb066f73082167952dc854b3a988f10183000ca"
+    "fact_fingerprint": "7a44fb1497eace5173164ef3d004006bf9d6e3f72316f7035c7fbf5baf576b3f"
    },
    "preview_only": true
   },
@@ -2042,12 +2061,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.665535,
     "lon": 139.703033,
-    "label": "6-25-14, Jingumae, Shibuya-ku, Tokyo (address point)",
+    "label": "6-25-14, Jingumae, Shibuya-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -2171,7 +2190,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "214d905df49a7fe0b78622f6f3335e63d6745d7555b21f04bd99c3bd343aa445"
+    "fact_fingerprint": "c7e0dcbfde33ba77c5f49b4d442cf3ca66236588a1b1b80717c1e0919171f2ed"
    },
    "preview_only": true
   },
@@ -2207,12 +2226,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.64579,
     "lon": 139.711151,
-    "label": "4-1-18, Ebisu, Shibuya-ku, Tokyo (address point)",
+    "label": "4-1-18, Ebisu, Shibuya-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -2336,7 +2355,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "915f1ab9193ba4d0cf4810cc9ad938ee6ae1d42dee0540e8c268ef0e4bf7fec2"
+    "fact_fingerprint": "0b5872e1662b310523fb826265db9ec714c924081925935237da620112762c9d"
    },
    "preview_only": true
   },
@@ -2372,12 +2391,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 34.390347,
     "lon": 132.455399,
-    "label": "2-11-10, Otemachi, Naka-ku, Hiroshima City, Hiroshima Prefecture (address point)",
+    "label": "2-11-10, Otemachi, Naka-ku, Hiroshima City, Hiroshima Prefecture (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -2501,7 +2520,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "7f591a1b3c26edd128cd6a3ddf917427e0c4020bf137ab3938f24aa74fd46959"
+    "fact_fingerprint": "70078448db9b2b9cabcb82bef648c4cc80ad01fa1a2d6237210051e3b740d8d2"
    },
    "preview_only": true
   },
@@ -2537,12 +2556,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.681225,
     "lon": 139.702164,
-    "label": "1-22-1, Yoyogi, Shibuya-ku, Tokyo (address point)",
+    "label": "1-22-1, Yoyogi, Shibuya-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -2666,7 +2685,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "c7383b94e21b88ab454565079e0689ef6284e6ee890705618dd602c889733de3"
+    "fact_fingerprint": "7407b8f4e1c73ba15cf0967ef8174f6c75b6c195b8bfabc7e2a35ef037f061e0"
    },
    "preview_only": true
   },
@@ -2702,12 +2721,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.725636,
     "lon": 139.711258,
-    "label": "1-13-23, Minami-Ikebukuro, Toshima-ku, Tokyo (address point)",
+    "label": "1-13-23, Minami-Ikebukuro, Toshima-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -2831,7 +2850,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "d41ced1970b98a222db4a737507ee59afb9a1fca84197f9a5ca2b1860f4260f1"
+    "fact_fingerprint": "a4691986ae4a9381d43bef3deced1b377e9c392bea0f9171dc53bec0abe89247"
    },
    "preview_only": true
   },
@@ -2867,12 +2886,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.686836,
     "lon": 139.69426,
-    "label": "3-2-4, Nishi-Shinjuku, Shinjuku-ku, Tokyo (address point)",
+    "label": "3-2-4, Nishi-Shinjuku, Shinjuku-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -2996,7 +3015,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "6a1dc3561b801ce70a7943457559b0574fd86ed9469bbfdc9b9065cf17f89fc0"
+    "fact_fingerprint": "d346e8034fa6ec24d14187c3821669c24adda60b8b333fe5b14d5e5d8e991d0a"
    },
    "preview_only": true
   },
@@ -3032,12 +3051,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.626461,
     "lon": 139.727524,
-    "label": "1-24-2, Higashi-Gotanda, Shinagawa-ku, Tokyo (address point)",
+    "label": "1-24-2, Higashi-Gotanda, Shinagawa-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -3161,7 +3180,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "7b6dc8b7bcfb17444017fccdddea33453ad6ade5c54bcbff6cbba3aac7c803bd"
+    "fact_fingerprint": "ac4d526eb967f485fbcae27261c982ce95ee064ec8692ab73fe182445fa1885b"
    },
    "preview_only": true
   },
@@ -3197,12 +3216,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 38.265263,
     "lon": 140.867813,
-    "label": "2-14-18, Kokubuncho, Aoba-ku, Sendai City, Miyagi Prefecture (address point)",
+    "label": "2-14-18, Kokubuncho, Aoba-ku, Sendai City, Miyagi Prefecture (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -3326,7 +3345,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "d2c16c2653fb1a6a138b657624206156ceebe1ee916569c1bbec3819fe7f4ca4"
+    "fact_fingerprint": "bfd1188c253dc5a5c84f276c01d8dd052d55dc3207cc63d903e3b7c9fbba4ce5"
    },
    "preview_only": true
   },
@@ -3362,12 +3381,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.695988,
     "lon": 139.68425,
-    "label": "1-32-2, Honcho, Nakano-ku, Tokyo (address point)",
+    "label": "1-32-2, Honcho, Nakano-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -3491,7 +3510,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "dbe005db93693a3bfeb7021fff01423fc3be00c9b69cbb52f9c7305f5df194c4"
+    "fact_fingerprint": "263ca09dbdadd5677cd5c03d73690d1b7e4dfc0917facccb1b42f8a6fb5c4347"
    },
    "preview_only": true
   },
@@ -3527,12 +3546,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.671875,
     "lon": 139.766022,
-    "label": "4-6-1, Ginza, Chuo-ku, Tokyo (address point)",
+    "label": "4-6-1, Ginza, Chuo-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -3656,7 +3675,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "d1df9b82e96cbf9e6643b3312e91218d542a3df86080bc4798ec6ac4581dc71c"
+    "fact_fingerprint": "b538d1b7b2ac2166d31d570c18f232f72037f900eacd04885c317a9d048ceaee"
    },
    "preview_only": true
   },
@@ -3692,12 +3711,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.66964,
     "lon": 139.769623,
-    "label": "3-15-10, Ginza, Chuo-ku, Tokyo (address point)",
+    "label": "3-15-10, Ginza, Chuo-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -3821,7 +3840,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "e1ea4f53f88aa7e88cc026fcb08843dcca186fdd4601fc32cf6ed1c3f7b1a1de"
+    "fact_fingerprint": "13d06cb1d407f444b0d64d435fc2b3cea538ff4f6cf99cd2172a206b27358b83"
    },
    "preview_only": true
   },
@@ -3857,12 +3876,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.657604,
     "lon": 139.342117,
-    "label": "3-20-6, Myojincho, Hachioji City, Tokyo (address point)",
+    "label": "3-20-6, Myojincho, Hachioji City, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -3986,7 +4005,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "d1824240d93ecd3683d62411d9b806f9b3bd2676073b6866f263bdeaa7027259"
+    "fact_fingerprint": "bccd22c22ba3bcac00821a01f2279d324909593e0c91f9b2fe9e6d914d631d2d"
    },
    "preview_only": true
   },
@@ -4022,12 +4041,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.684101,
     "lon": 139.685852,
-    "label": "3-20-2, Nishi-Shinjuku, Shinjuku-ku, Tokyo (address point)",
+    "label": "3-20-2, Nishi-Shinjuku, Shinjuku-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -4098,7 +4117,22 @@
      }
     }
    ],
-   "imagery": [],
+   "imagery": [
+    {
+     "type": "photo",
+     "project_id": "re:jre:tokyo-opera-city-building",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Tokyo_Opera_City-2.jpg/960px-Tokyo_Opera_City-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "source_url": "https://commons.wikimedia.org/wiki/File:Tokyo_Opera_City-2.jpg",
+     "rights_status": "cleared",
+     "licence": "CC BY-SA 3.0",
+     "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+     "credit": "Tokyo_Opera_City.jpg: Ons\nderivative work: Torsodog (talk) / Wikimedia Commons, CC BY-SA 3.0",
+     "capture_date": "2009-09-24",
+     "sha256": "15f20c9e9e0c3866a66e15cf53eb37445215d910dcd0831057d2db52ba17a4aa",
+     "identity_check": "Commons file is the Wikidata image (P18) of Q1201889 (東京オペラシティ), 157 m from the property point; visually checked 2026-11-14",
+     "geo_accuracy": "building photo"
+    }
+   ],
    "verification": {
     "classification": "company_confirmed",
     "date": "2026-11-14",
@@ -4133,6 +4167,10 @@
      "reported_metrics": {
       "status": "pending",
       "basis": "company figure; reuse pending"
+     },
+     "imagery": {
+      "status": "cleared",
+      "basis": "CC BY-SA 3.0 with attribution"
      }
     },
     "review": {}
@@ -4151,7 +4189,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "2ac8cb57eaadac1ceb4e86ca0a6b0d3dfd79fc2fdff1a6f16ec910b36fc62136"
+    "fact_fingerprint": "f20f95bbe2afb016bedc72ce3a8ddb25a832648e751f4f61c3fada4107fd0f30"
    },
    "preview_only": true
   },
@@ -4187,12 +4225,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.695705,
     "lon": 139.751221,
-    "label": "1-13-12, Kudan-Kita, Chiyoda-ku, Tokyo (address point)",
+    "label": "1-13-12, Kudan-Kita, Chiyoda-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -4316,7 +4354,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "be5cde26f6301a853bb92f12c841ebc4687bebb2b09c3694ee40340f44e525e4"
+    "fact_fingerprint": "075f80d5a4b6c2f52e10894e62cb6e8829e21391f19dfb3ed2a081e433a604bc"
    },
    "preview_only": true
   },
@@ -4352,12 +4390,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.173058,
     "lon": 136.900894,
-    "label": "2-4-3, Nishiki, Naka-ku, Nagoya City, Aichi Prefecture (address point)",
+    "label": "2-4-3, Nishiki, Naka-ku, Nagoya City, Aichi Prefecture (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -4481,7 +4519,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "64664f22e2731dfc16b2ba249c066da6a1f62bee09e96f470f6b4a20b7a95522"
+    "fact_fingerprint": "d62c4a07b98dc108c3f5ff023c794c691a758d546d6ac2d7b42af336eee649d4"
    },
    "preview_only": true
   },
@@ -4517,12 +4555,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 43.070866,
     "lon": 141.350281,
-    "label": "Kita 8 Nishi 3  32, Kita-ku, Sapporo City, Hokkaido (address point)",
+    "label": "Kita 8 Nishi 3  32, Kita-ku, Sapporo City, Hokkaido (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -4646,7 +4684,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "98cf1401530f0d8729725f5a2a99da4812b84494f908294bf4dacde7558e5539"
+    "fact_fingerprint": "ebae284a11ad2a41ed2990ba6224a34657d7b729a3e47539b93b1f08d74b626a"
    },
    "preview_only": true
   },
@@ -4682,12 +4720,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.458584,
     "lon": 139.631989,
-    "label": "3-6-3, Minatomirai, Nishi-ku, Yokohama City, Kanagawa Prefecture (address point)",
+    "label": "3-6-3, Minatomirai, Nishi-ku, Yokohama City, Kanagawa Prefecture (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -4811,7 +4849,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "149c50ef281428fc12d6f719f1e2e9d59f27aefeeff1756d9e58291cafcde367"
+    "fact_fingerprint": "6b88b1ecaafa9533eb8b62896ed450dd084df58fc489973fe2841392c31295dd"
    },
    "preview_only": true
   },
@@ -4847,12 +4885,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.621891,
     "lon": 139.728485,
-    "label": "1-2-1, Osaki, Shinagawa-ku, Tokyo (address point)",
+    "label": "1-2-1, Osaki, Shinagawa-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -4976,7 +5014,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "1493a3b29dd5088c73a86be2515cd1fc3e45109ae200534beffb9eb718f8ae6d"
+    "fact_fingerprint": "9b3b9195b7a796d4a35da389202b0d1c5a1e492dcaf97789de5c21a30642db4a"
    },
    "preview_only": true
   },
@@ -5012,12 +5050,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.679241,
     "lon": 139.779907,
-    "label": "2-13-13, Nihonbashi-Kayabacho, Chuo-ku, Tokyo (address point)",
+    "label": "2-13-13, Nihonbashi-Kayabacho, Chuo-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -5141,7 +5179,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "314a94c7b889868bd510b18bd8fad04ab685f17d9bc913229c4cf5f7cc5d4264"
+    "fact_fingerprint": "da8d6ded5d2ac2b4dc3ba688a98550b3f84d9adef7c6a0d0caf99eb3901f6810"
    },
    "preview_only": true
   },
@@ -5177,12 +5215,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.712959,
     "lon": 139.779358,
-    "label": "4-8-1, Higashi-Ueno, Taito-ku, Tokyo (address point)",
+    "label": "4-8-1, Higashi-Ueno, Taito-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -5306,7 +5344,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "a5a75eb3fe0ae223291e1ce954b6ff14690fa3f3e5cdfd6de5e6f5948a1b9464"
+    "fact_fingerprint": "4075ec2556528a6a3aa35d31ec943382a0e2ada99af33fd2d3aee1d97b410670"
    },
    "preview_only": true
   },
@@ -5342,12 +5380,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 38.263542,
     "lon": 140.872757,
-    "label": "4-1-25, Ichibancho, Aoba-ku, Sendai City, Miyagi Prefecture (address point)",
+    "label": "4-1-25, Ichibancho, Aoba-ku, Sendai City, Miyagi Prefecture (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -5471,7 +5509,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "53986026396f4f00fbfb7a923f49e2eeedd964c98220fd5e1935b3a211191557"
+    "fact_fingerprint": "ce71ee15a6f3fa6698e9609b9b11646d8b924eb5370a0ba34ae56fb7a02f78e5"
    },
    "preview_only": true
   },
@@ -5507,12 +5545,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.168839,
     "lon": 136.910751,
-    "label": "4-2-29, Sakae, Naka-ku, Nagoya City, Aichi Prefecture (address point)",
+    "label": "4-2-29, Sakae, Naka-ku, Nagoya City, Aichi Prefecture (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -5636,7 +5674,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "27be259a454a47b5960f3f18c6c4b1e96c0dbd16e1c76e5a1f94fe8dfc576bd2"
+    "fact_fingerprint": "2efb1b3ede13849bc9d7500b2e34f4a46eaf3a105e7a1b7a4121c33559b92493"
    },
    "preview_only": true
   },
@@ -5672,12 +5710,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.696678,
     "lon": 139.707687,
-    "label": "6-27-30, Shinjuku, Shinjuku-ku, Tokyo (address point)",
+    "label": "6-27-30, Shinjuku, Shinjuku-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -5801,7 +5839,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "2cfe8879ac6045fa6348a1510dc3f68f1ee2715a85a173a01fc244dd35539c86"
+    "fact_fingerprint": "5dcbdc83ecfa1845571eb91b1a8b43eb57cd497c0fe4375980c60dd06c593edf"
    },
    "preview_only": true
   },
@@ -5837,12 +5875,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.673229,
     "lon": 139.771149,
-    "label": "1-19-7, Ginza, Chuo-ku, Tokyo (address point)",
+    "label": "1-19-7, Ginza, Chuo-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -5966,7 +6004,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "7d0396d71a682add2682a1725d424d731dc001312677a6bfb4ffe300c6a7c2cf"
+    "fact_fingerprint": "292049474ffca0b0299832995a5ce50413c2f93965b2b455b78277f60abb8b78"
    },
    "preview_only": true
   },
@@ -6002,12 +6040,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 34.732738,
     "lon": 135.430237,
-    "label": "1-2-6, Shioe, Amagasaki City, Hyogo Prefecture (address point)",
+    "label": "1-2-6, Shioe, Amagasaki City, Hyogo Prefecture (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -6131,7 +6169,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "7bf49f2efbdcd0dfd4bb447963453dc61aac6f6d6612a1859ea5c1daec6300fd"
+    "fact_fingerprint": "fc699698931f6b8173f337fb569dd9e60854838208719ec004de9f91472bea63"
    },
    "preview_only": true
   },
@@ -6167,12 +6205,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 34.700317,
     "lon": 135.497833,
-    "label": "1-12-17, Umeda, Kita-ku, Osaka City, Osaka Prefecture (address point)",
+    "label": "1-12-17, Umeda, Kita-ku, Osaka City, Osaka Prefecture (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -6296,7 +6334,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "0231461926f259efa473dda170f4eca7c47d1bf73932f50935e1d0d957317c18"
+    "fact_fingerprint": "aff374a4856346014c067e594ab693d684867db4af8fb12de64fc3b3c8486b2f"
    },
    "preview_only": true
   },
@@ -6332,12 +6370,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.681072,
     "lon": 139.775742,
-    "label": "2-14-1, Nihonbashi, Chuo-ku, Tokyo (address point)",
+    "label": "2-14-1, Nihonbashi, Chuo-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -6461,7 +6499,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "bbbffbfcde9d0f1f2d40d6c8c2e69bed392e1a97c40e906b67d25334398c6545"
+    "fact_fingerprint": "10815df9cf715294538d21c35e2cc4fdc081433c30d1331d56bef1396e537708"
    },
    "preview_only": true
   },
@@ -6497,12 +6535,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.687138,
     "lon": 139.703156,
-    "label": "5-33-6, Sendagaya, Shibuya-ku, Tokyo (address point)",
+    "label": "5-33-6, Sendagaya, Shibuya-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -6626,7 +6664,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "0744bbd4b4ffabd8331a5ea061d281f30874e5aaa1ff99b42762b59322ee34ee"
+    "fact_fingerprint": "b4ad0e8a452ad52f93e4b3291c73a2bc098d7467f97354be06af7a187c60e87d"
    },
    "preview_only": true
   },
@@ -6662,12 +6700,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.656315,
     "lon": 139.795486,
-    "label": "3-2-20, Toyosu, Koto-ku, Tokyo (address point)",
+    "label": "3-2-20, Toyosu, Koto-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -6791,7 +6829,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "5fe3af16dd41b0da317ebffca6f826bd982a78cc714b0f1e1bdb475b3020aec4"
+    "fact_fingerprint": "a79180de4c38e943fb39f8e2d9dfd8cc50e992bdddd02e898f0111d5ebc9c02c"
    },
    "preview_only": true
   },
@@ -6827,12 +6865,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.656982,
     "lon": 139.794495,
-    "label": "3-2-24 Toyosu, Koto-ku, Tokyo (address point)",
+    "label": "3-2-24 Toyosu, Koto-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -6956,7 +6994,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "591c83b995565747d9f876782c77b8cd817dc7856f9db4f13f1cc8f946d31da9"
+    "fact_fingerprint": "91b6668923c5e4037fb7bfde18da9c85a30fc4a74d66eaacca7261d5a17c0585"
    },
    "preview_only": true
   },
@@ -6992,12 +7030,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 35.683113,
     "lon": 139.739792,
-    "label": "1-3-13 Hirakawacho, Chiyoda-ku, Tokyo (address point)",
+    "label": "1-3-13 Hirakawacho, Chiyoda-ku, Tokyo (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -7121,7 +7159,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "c5b1d8c7df5829fc53b994d1b2e62b38763f3912e5f49ef3fac3c35f5a565853"
+    "fact_fingerprint": "8971d441271f63e0815736c3f74930f099ba673fed660e052a1b5df5c8b39b20"
    },
    "preview_only": true
   },
@@ -7157,12 +7195,12 @@
     "certainty": "company_reported"
    },
    "location": {
-    "precision": "exact",
+    "precision": "approximate",
     "point_type": "address_point",
     "confidence": "medium",
     "lat": 34.681458,
     "lon": 135.507996,
-    "label": "1-6-29, Kyutarocho, Chuo-ku, Osaka City, Osaka Prefecture (address point)",
+    "label": "1-6-29, Kyutarocho, Chuo-ku, Osaka City, Osaka Prefecture (verified address point, not a building outline)",
     "basis": "GSI geocode of the official Japanese address; block and lot numbers match",
     "satellite_allowed": false,
     "evidence": {
@@ -7286,7 +7324,7 @@
     ],
     "last_verified_at": "2026-11-14T00:00:00Z",
     "enabled": false,
-    "fact_fingerprint": "d5f6b615a8f3883bb78a0626b5dc98be3d478ee7d8b41641cfad01d26883104d"
+    "fact_fingerprint": "088f01fd88c8bc8a8e1dbbe399d5dc626c1adedeb61fc5d9a37ec7b987bdc9e5"
    },
    "preview_only": true
   }

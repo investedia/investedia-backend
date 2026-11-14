@@ -34,55 +34,55 @@
   },
   {
    "id": "re:bxp:100-federal-street",
-   "fact_sha256": "a176dd98bf895836100296b2f5a531a82a1d13d61f12d3943aa7e0a8562be5af"
+   "fact_sha256": "bd3b5bae5cc8734a322cdbe4703283eb8e4131f11412b064beeb23d65a450819"
+  },
+  {
+   "id": "re:bxp:250-west-55th-street",
+   "fact_sha256": "b8174a7212691ae93a3f80e11d42fb20b60d51aacf03f33f504ff17da12dc73d"
   },
   {
    "id": "re:bxp:399-park-avenue",
-   "fact_sha256": "7edcef9eb005b2cd49820265cc16212e91b7175300258a6516260748ba246832"
+   "fact_sha256": "884e31ebddf44ed2a4ba1db383138342d813184030b35dc162b0ef495f5f1805"
   },
   {
    "id": "re:bxp:535-mission-street",
-   "fact_sha256": "abf8ccdee5bffd0cfe12c70cdef6fb8d14d362626e4586944a1dbadc2ab14962"
+   "fact_sha256": "4c630bccd5b74f4544f33532f234860f8a351d8c291777d4f8ad2405b2b78cb7"
   },
   {
    "id": "re:hst:the-don-cesar",
-   "fact_sha256": "0e07990b9d0d9a32f1407682673d42929ebdf4df2d20756c5f207c0d8341f0b1"
+   "fact_sha256": "d8b87477567705ab9ada2448a39d8868fb132e733602659591c8f406850b9137"
   },
   {
    "id": "re:hst:the-westin-georgetown-washington-d-c",
-   "fact_sha256": "1ea9339fe50aaaa423f45565df2c6b30848b8aa8b050284e3d82b174d5997854"
+   "fact_sha256": "4d547b19e1d2915c466aa0fb98456e94f29381a5d26450622989c453fad89beb"
   },
   {
    "id": "re:hst:the-westin-seattle",
-   "fact_sha256": "27ecbb9e6e82f152b652d6ece96ca263a5c8df9ed0707d26954c287f0264b9c2"
+   "fact_sha256": "381f3369be299c6674fc0eb48647fa8f51a515bb704919d3ebb0478e8e9d8c17"
   },
   {
    "id": "re:bxp:17-hartwell-avenue",
-   "fact_sha256": "f07a142cbec34f7a4a28c294fae918269c04208d154ea3d67f8d0e37a2aaee94"
+   "fact_sha256": "562dcd0de920a2672d82123bfae051bc51d05a10e576e68518137259f1b0963f"
   },
   {
    "id": "re:bxp:290-binney-street",
-   "fact_sha256": "5dbbb6016711b0e248d4a39d7b46c68cc4a75ef8c09c11772dcaa9627d1e6430"
+   "fact_sha256": "8e3da014e0fec976da8d2a04be6f893916d73166111f3b82aeb5c13819a87225"
   },
   {
    "id": "re:bxp:290-coles-street",
-   "fact_sha256": "2aa9c08e4495cf33c3ee4f19bdad3bd94740dca2c43e481dbc04774827b728af"
+   "fact_sha256": "d4f560386ff4e18bcf2bd2623527d51f33b14c26684d42c70f4fcbeea2eb554d"
   },
   {
    "id": "re:bxp:343-madison-avenue",
-   "fact_sha256": "4fff943e7b056d60aa2c7f9f28c48fda81f370d2aaff610ad5cc718d39f91fb8"
+   "fact_sha256": "35973c11e8b13fcb72fd33547d4666fc6044432b93d0875353a9fc3d69c20070"
   },
   {
    "id": "re:bxp:121-broadway-street",
-   "fact_sha256": "cda6ae5365e1d9a6f359d86431d84ec6daef9497289a1f0974eecc5fb2f3c466"
+   "fact_sha256": "06e448484fdc6e2300acd00ec8010c5175e28a6961009acf4632501609af54bc"
   },
   {
    "id": "re:bxp:725-12th-street",
-   "fact_sha256": "a12597a646fc97a9f2295bb6cc9cbc306b0b35777f9996aa3e3daf73317779f9"
-  },
-  {
-   "id": "re:bxp:reston-next-retail",
-   "fact_sha256": "0a9270530b4a1edb9f742841adecbe2de5049d0b7f09637875996bbc11aa46cb"
+   "fact_sha256": "3597bf838e9a92821b84a2c8018a92596bce7b820bba2ddcc21d54e54620bba2"
   }
  ],
  "gates": [
