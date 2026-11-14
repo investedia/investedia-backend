@@ -32,7 +32,7 @@ class ShareCards(unittest.TestCase):
 
     def test_page_has_escaped_open_graph_tags_and_redirect(self):
         h = sc.page(STORY)
-        self.assertIn('property="og:image" content="https://investedia.com/assets/share/nabc.png"', h)
+        self.assertIn('property="og:image" content="https://www.investedia.com/assets/share/nabc.png"', h)
         self.assertIn('twitter:card" content="summary_large_image"', h)
         self.assertIn('noindex', h)
         self.assertIn('story.html?id=nabc', h)
