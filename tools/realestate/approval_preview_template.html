@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Real Estate approval preview (mock)</title>
+<style>
+:root{--bg:#0a0a0b;--panel:#121214;--line:#232327;--fg:#f4f4f5;--fg2:#a1a1aa;--fg3:#71717a;--acc:#ff7a1a;--ok:#4ade80;--warn:#fbbf24;--bad:#f87171}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 Inter,system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+header{position:sticky;top:0;z-index:2;background:rgba(10,10,11,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:18px 32px;display:flex;gap:24px;align-items:center}
+header h1{font-size:17px;margin:0;font-weight:600;letter-spacing:-.01em}header .sub{color:var(--fg2);font-size:13px}
+.kpis{margin-left:auto;display:flex;gap:22px}.kpis div{font-size:12px;color:var(--fg2)}.kpis b{display:block;font-size:18px;color:var(--fg);font-weight:600}
+.bar{display:flex;gap:8px;padding:14px 32px;border-bottom:1px solid var(--line)}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:12px;color:var(--fg2);background:transparent}.chip.on{color:var(--fg);border-color:#3f3f46;background:#1a1a1d}
+main{padding:24px 32px 60px;display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.media{height:220px;position:relative;background:#16161a;overflow:hidden}.media img{width:100%;height:100%;object-fit:cover;display:block}
+.media .cap{position:absolute;left:10px;bottom:8px;right:10px;font-size:10.5px;color:#e4e4e7;text-shadow:0 1px 2px #000}
+.ph{height:100%;display:grid;place-items:center;background:radial-gradient(circle at 50% 45%,rgba(255,122,26,.16),transparent 55%),repeating-linear-gradient(0deg,transparent 0 17px,rgba(255,255,255,.035) 17px 18px),repeating-linear-gradient(90deg,transparent 0 17px,rgba(255,255,255,.035) 17px 18px)}
+.ph span{font-size:12px;color:var(--fg2);text-align:center;max-width:70%}.ph i{display:block;width:8px;height:8px;border-radius:50%;background:var(--acc);margin:0 auto 10px;box-shadow:0 0 18px var(--acc)}
+.body{padding:16px 18px 6px}.top{display:flex;justify-content:space-between;gap:10px}.name{font-size:16px;font-weight:600;letter-spacing:-.01em;margin:0}.loc{color:var(--fg2);font-size:12.5px;margin-top:2px}
+.tag{font-size:11px;border-radius:6px;padding:3px 7px;white-space:nowrap;height:fit-content;border:1px solid}.t-op{color:#d4d4d8;border-color:#3f3f46}.t-uc{color:var(--warn);border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.06)}.t-done{color:var(--ok);border-color:rgba(74,222,128,.3);background:rgba(74,222,128,.06)}
+dl{display:grid;grid-template-columns:118px 1fr;gap:7px 12px;margin:14px 0 4px;font-size:12.5px}dt{color:var(--fg3)}dd{margin:0;color:#e4e4e7}
+.tk{font-weight:600;border:1px solid #3f3f46;border-radius:5px;padding:0 5px;margin-right:6px;font-size:11.5px}
+.prec{display:inline-flex;align-items:center;gap:6px}.dot{width:7px;height:7px;border-radius:50%}.d-b{background:var(--ok)}.d-a{background:#60a5fa}.d-c{background:var(--warn)}
+.issues{margin:10px 18px 0;padding:10px 12px;border-radius:10px;background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.22);font-size:12px;color:#fde68a}.issues b{color:var(--warn);font-weight:600;display:block;margin-bottom:3px}
+.none{margin:10px 18px 0;font-size:12px;color:var(--fg3)}
+.ev{padding:0 18px;font-size:12px}.ev a{color:var(--fg2);text-decoration:underline;text-underline-offset:2px}
+.appr{margin-top:auto;border-top:1px solid var(--line);padding:12px 18px;display:flex;align-items:center;gap:10px;font-size:12.5px}
+.appr .st{color:var(--fg3)}.appr .btns{margin-left:auto;display:flex;gap:8px}.btn{border-radius:9px;padding:7px 12px;font-size:12px;border:1px solid var(--line);background:#18181b;color:var(--fg2)}.btn.p{color:#111;background:#e4e4e7;border-color:#e4e4e7;opacity:.45}
+.note{grid-column:1/-1;color:var(--fg3);font-size:12px}
+@media(max-width:700px){header{padding:14px 16px;flex-wrap:wrap}.kpis{margin:0;width:100%;justify-content:space-between}.bar{padding:10px 16px;overflow-x:auto}main{padding:14px 12px 40px;grid-template-columns:1fr;gap:12px}dl{grid-template-columns:104px 1fr}}
+</style></head><body>
+<header><div><h1>Real Estate · release approval</h1><div class="sub">20 shortlisted properties · nothing is published until you approve each one</div></div>
+<div class="kpis"><div><b>0 / 20</b>approved</div><div><b>13</b>verified photo</div><div><b>7</b>development plan</div><div><b id="kIss">–</b>with open issues</div></div></header>
+<div class="bar"><span class="chip on">All 20</span><span class="chip">Open issues</span><span class="chip">Photo</span><span class="chip">Development</span><span class="chip">Building point</span><span class="chip">Address point</span></div>
+<main id="m"></main>
+<script>
+const A=__DATA__;
+__JS__
+</script></body></html>

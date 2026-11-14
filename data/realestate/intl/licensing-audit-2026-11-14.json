@@ -1,0 +1,14 @@
+{
+ "schema": "investedia.realestate.licensing-audit.v1",
+ "date": "2026-11-14",
+ "note": "Facts themselves are generally not protected by copyright, but each company's website terms govern use of material taken from its site. Records stay research-only until the owner decides (or permission is obtained).",
+ "sources": {
+  "Japan Real Estate Investment Corporation (j-re.co.jp)": {"status": "unresolved", "finding": "Disclaimer page grants no reuse rights and states none; property data workbook has no licence statement", "action": "ask JRE IR for permission, or use TDnet/EDINET statutory filings as the fact source"},
+  "British Land (britishland.com)": {"status": "blocked_pending_permission", "finding": "Legal page: 'all content and materials published on the Website are presented solely for your private, personal and non-commercial use'; content protected by copyright", "action": "request permission, or rely on regulatory announcements (RNS) / filed annual report with legal review"},
+  "Landsec (landsec.com)": {"status": "unresolved", "finding": "Terms page not found at /en/terms-and-conditions or /en/legal (404); ticker not stated in fetched documents", "action": "locate terms; confirm LSE ticker from an exchange source"},
+  "SEGRO (segro.com)": {"status": "unresolved", "finding": "Terms page not found at /terms-and-conditions or /legal (404); ticker not stated in fetched documents", "action": "locate terms; confirm LSE ticker from an exchange source"},
+  "Montea (montea.com)": {"status": "blocked_pending_permission", "finding": "Disclaimer: personal and non-commercial use only; items 'may not be copied for distribution ... or published in any other form without prior written consent of Montea'", "action": "request written consent"},
+  "Wikimedia Commons photos": {"status": "cleared_per_file", "finding": "CC BY / CC BY-SA / public domain with attribution; author-specified credit honoured (Swissotel: DiscoverWithDima)"},
+  "Wikidata / US Census / GSI": {"status": "cleared", "finding": "CC0 / public domain / GSI attribution"}
+ }
+}

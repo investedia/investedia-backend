@@ -1,0 +1,17 @@
+{
+ "schema": "investedia.realestate.holds.v1",
+ "decided_by": "owner",
+ "date": "2026-11-14",
+ "holds": {
+  "re:bxp:399-park-avenue": {"type": "imagery", "reason": "Only photo is 320 x 518 px (2009). Held until a better verified photo is found; no development plan qualifies it independently."},
+  "re:hst:the-don-cesar": {"type": "imagery", "reason": "Only photo is dated 2006, before the 2024-25 restoration. Held until the image is confirmed representative or a newer one is obtained."},
+  "re:hst:the-westin-georgetown-washington-d-c": {"type": "imagery", "reason": "Photo file is titled 'The Westin Grand'. Wikidata Q18393956 records no former name, so the rename at 2350 M St NW is not yet verified from an authoritative source."},
+  "re:bxp:reston-next-retail": {"type": "location", "reason": "No verified address or site. The city centre must not be shown as the project location; excluded from the map until verified."}
+ },
+ "retained_historical_photos": {
+  "re:hst:swiss-tel-chicago": {"capture": "2006-10-14", "label": "Photo 2006", "size": "2048 x 1536", "credit_override": "DiscoverWithDima (Dima Sergiyenko)", "note": "Author asks to be credited as DiscoverWithDima; identity: Wikidata P18 of Q21609099 Swissotel Chicago, 103 m from the property point"},
+  "re:hst:the-westin-seattle": {"capture": null, "label": "Uploaded 2007 (capture date not recorded)", "size": "1813 x 800", "note": "Identity: Wikidata P18 of Q7988924 Westin Seattle"},
+  "re:hst:new-orleans-marriott": {"capture": "2010-10-17", "label": "Photo 2010", "size": "680 x 1024", "note": "Identity: Wikidata P18 of Q7010746 New Orleans Marriott"}
+ },
+ "photo_quality_rule": "Retained only if the short side is at least 600 px and the long side at least 1000 px, the identity is verified, and the licence is CC BY / CC BY-SA / CC0 / public domain."
+}

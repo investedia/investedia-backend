@@ -1,0 +1,50 @@
+// Phase 5C regression: first visit (cookie card visible, no consent stored), real taps/clicks only.
+const { chromium, devices } = require('playwright');
+const O = '/tmp/claude-0/-home-user/391906c2-a0bf-5571-b36f-e2e0f74c4114/scratchpad/re/final5c/';
+const U = 'http://localhost:8765/assets/globe/news.html?mode=projects&re=preview';
+const DEV = [['iphone-se', devices['iPhone SE']], ['iphone-13', devices['iPhone 13']], ['pixel-7', devices['Pixel 7']], ['tablet', devices['iPad Mini']], ['desktop', { viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1 }]];
+(async () => {
+  require('fs').mkdirSync(O, { recursive: true });
+  const b = await chromium.launch({ args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
+  const all = {};
+  for (const [name, opts] of DEV.filter(d => !process.argv[2] || d[0] === process.argv[2])) {
+    const r = {}; const errs = [];
+    const c = await b.newContext({ ...opts, serviceWorkers: 'block' });
+    await c.addInitScript(() => { for (const k of ['inv-auth-seen', 'inv-pop', 'inv-app-x']) localStorage.setItem(k, '1'); });
+    const pg = await c.newPage(); pg.on('pageerror', e => errs.push(e.message));
+    const click = async sel => { try { await pg.click(sel, { timeout: 4000 }); return true; } catch (e) { (r.click_fail = r.click_fail || []).push(sel + ' :: ' + ((e.message.match(/<[^>]+>[^<]{0,30}(<\/\w+>)? from <[^>]+>|not visible|outside of the viewport|not stable/) || [e.message.slice(0, 60)])[0])); return false; } };
+    const phone = (opts.viewport?.width || 1440) <= 760;
+    await pg.goto(U); await pg.waitForSelector('[data-pj-sector="Real estate"]', { timeout: 60000 }); await pg.waitForTimeout(800);
+    r.banner_visible = await pg.evaluate(() => !document.getElementById('inv-consent-panel')?.hidden);
+    r.banner_overlaps = await pg.evaluate(() => { const c = document.getElementById('inv-consent-panel').getBoundingClientRect(); const ov = s => [...document.querySelectorAll(s)].filter(e => e.getClientRects().length).some(e => { const b = e.getBoundingClientRect(); return b.width && c.left < b.right && c.right > b.left && c.top < b.bottom && c.bottom > b.top; }); return { tabs: ov('[data-pj-sector]'), list: ov('.pjr'), detail_controls: ov('#projPanel button, #projPanel a, #projPanel [role=tab]'), list_controls: ov('#pjList button, #pjList input, #pjList select'), stats: ov('#pjStats > div'), dock: ov('#dock'), topbar_controls: ov('#project-topbar a, #project-topbar input, #project-topbar button') }; });
+    r.consent_buttons_equal = await pg.evaluate(() => { const bs = [...document.querySelectorAll('#inv-consent-panel .consent-actions button')].filter(b => b.getClientRects().length).map(b => Math.round(b.getBoundingClientRect().width)); return bs.length >= 2 && Math.max(...bs) - Math.min(...bs) <= 2 ? bs : 'UNEQUAL ' + bs; });
+    r.whats_included_reachable = await pg.evaluate(() => { const s = document.querySelector('#inv-consent-panel summary'); return !!s && s.getClientRects().length > 0; });
+    await pg.screenshot({ path: O + name + '-1-first-visit.png' });
+    r.tab_with_banner = await click('[data-pj-sector="Real estate"]'); await pg.waitForTimeout(700);
+    if (phone && await pg.evaluate(() => document.documentElement.classList.contains('proj-collapsed'))) r.expand = await click('[data-pj-collapse]');
+    await pg.waitForTimeout(900);
+    r.layout = await pg.evaluate(() => { const l = document.querySelector('.pjl-list'), rows = [...document.querySelectorAll('.pjr')], d = document.getElementById('dock'), dt = d && d.getClientRects().length ? d.getBoundingClientRect().top : innerHeight, lr = l.getBoundingClientRect(); return { list_h: l.clientHeight, list_bottom: Math.round(lr.bottom), dock_top: Math.round(dt), rows_fully_visible: rows.filter(e => { const b = e.getBoundingClientRect(); return b.top >= lr.top - 1 && b.bottom <= Math.min(lr.bottom, dt) + 1; }).length, rows_total: rows.length, list_scrolls: l.scrollHeight > l.clientHeight, sector_rows: new Set([...document.querySelectorAll('[data-pj-sector]')].map(b => Math.round(b.getBoundingClientRect().top))).size }; });
+    await pg.screenshot({ path: O + name + '-2-real-estate-list.png' });
+    // scrolling inside the list moves rows, not the page
+    r.list_scroll = await pg.evaluate(() => { const l = document.querySelector('.pjl-list'); const before = l.scrollTop; l.scrollTop += 200; return l.scrollTop > before; });
+    await pg.evaluate(() => { document.querySelector('.pjl-list').scrollTop = 0; });
+    if (phone) { r.filters_toggle = await click('[data-pj-ftoggle]'); await pg.waitForTimeout(400); r.filters_open = await pg.evaluate(() => document.getElementById('pjFilters')?.getClientRects().length > 0); await pg.screenshot({ path: O + name + '-3-filters-open.png' }); await click('[data-pj-ftoggle]'); await pg.waitForTimeout(400); }
+    r.select_row = await click('.pjr .pj-pick >> nth=1'); await pg.waitForTimeout(1800);
+    r.detail_open = await pg.evaluate(() => !!document.querySelector('#projPanel .pjd h2')?.textContent);
+    await pg.screenshot({ path: O + name + '-4-detail.png' });
+    // consent choice still works and can be reopened
+    if (r.banner_visible) { r.consent_choice = await click('#inv-consent-panel [data-consent="essential"]'); await pg.waitForTimeout(300); r.banner_closed = await pg.evaluate(() => document.getElementById('inv-consent-panel').hidden); }
+    // sector switching: Energy and Data Centers still list and open
+    for (const s of ['Energy', 'Data centers']) {
+      if (phone) { await pg.goto(U); await pg.waitForSelector('[data-pj-sector="Energy"]'); await pg.waitForTimeout(2500); if (await pg.evaluate(() => !!document.querySelector('[data-pj-back]')?.getClientRects().length)) { await click('[data-pj-back]'); await pg.waitForTimeout(500); } if (await pg.evaluate(() => document.documentElement.classList.contains('proj-collapsed'))) await click('[data-pj-collapse]'); await pg.waitForTimeout(600); }
+      const ok = await click(`[data-pj-sector="${s}"]`); await pg.waitForTimeout(800);
+      await pg.waitForTimeout(800);
+      const n = await pg.evaluate(() => document.querySelectorAll('.pjr').length);
+      const open = await click('.pjr .pj-pick >> nth=0'); await pg.waitForTimeout(1200);
+      r['sector_' + s] = { switched: ok, rows: n, opens: open && await pg.evaluate(() => !!document.querySelector('#projPanel .pjd h2')) };
+    }
+    r.overflow_px = await pg.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    r.errors = errs; all[name] = r; require('fs').writeFileSync(O + name + '.json', JSON.stringify(r, null, 1)); await c.close();
+  }
+  console.log(JSON.stringify(all, null, 1)); await b.close();
+})();

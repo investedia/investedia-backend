@@ -92,11 +92,12 @@
     }
    },
    "attribution": [
-    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Facts: Host Hotels & Resorts, Inc. SEC filings (Form 10-K FY2025)",
     "Location: Wikidata (CC0)",
-    "Photo: Silver Dovelet / Wikimedia Commons, CC BY-SA 4.0 (via Wikimedia Commons)"
+    "Photo: Silver Dovelet, CC BY-SA 4.0, via Wikimedia Commons"
    ],
    "fact_sha256": "45c0fbce89533f5ab2684a0e9f7804a4ae61dda8e6ca1dac356f18c25c2285e4",
+   "hold": null,
    "blockers": [
     "Owner approval not yet given for this record"
    ],
@@ -189,11 +190,12 @@
     }
    },
    "attribution": [
-    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Facts: Host Hotels & Resorts, Inc. SEC filings (Form 10-K FY2025)",
     "Location: Wikidata (CC0)",
-    "Photo: Peaceray / Wikimedia Commons, CC BY-SA 3.0 (via Wikimedia Commons)"
+    "Photo: Peaceray, CC BY-SA 3.0, via Wikimedia Commons"
    ],
    "fact_sha256": "d067b8221c55ae34e143376891d3fb9c70c0ebac7aec821e013f87a7bd94e0ee",
+   "hold": null,
    "blockers": [
     "Owner approval not yet given for this record"
    ],
@@ -286,12 +288,14 @@
     }
    },
    "attribution": [
-    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Facts: Host Hotels & Resorts, Inc. SEC filings (Form 10-K FY2025)",
     "Location: Wikidata (CC0)",
-    "Photo: Eric Pancer  / Vxla at en.wikipedia / Wikimedia Commons, CC BY 3.0 (via Wikimedia Commons)"
+    "Photo: Eric Pancer , CC BY 3.0, via Wikimedia Commons (Photo 2010)"
    ],
    "fact_sha256": "83542d47b1ffce8c56be99376280b55cc99bde9780f8f08d4a5593cfca79c19e",
+   "hold": null,
    "blockers": [
+    "Historical photo retained: label \"Photo 2010\" must be shown",
     "Owner approval not yet given for this record"
    ],
    "owner_approval": null
@@ -383,11 +387,12 @@
     }
    },
    "attribution": [
-    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Facts: Host Hotels & Resorts, Inc. SEC filings (Form 10-K FY2025)",
     "Location: Wikidata (CC0)",
-    "Photo: Clyde Charles Brown / Wikimedia Commons, CC BY-SA 4.0 (via Wikimedia Commons)"
+    "Photo: Clyde Charles Brown, CC BY-SA 4.0, via Wikimedia Commons"
    ],
    "fact_sha256": "9bbaa4b06d5756f8dcc3e44f68d03c716fe496e7b308d447dc76831a72374782",
+   "hold": null,
    "blockers": [
     "Owner approval not yet given for this record"
    ],
@@ -480,11 +485,12 @@
     }
    },
    "attribution": [
-    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Facts: Host Hotels & Resorts, Inc. SEC filings (Form 10-K FY2025)",
     "Location: Wikidata (CC0)",
-    "Photo: Clyde Charles Brown / Wikimedia Commons, CC BY-SA 4.0 (via Wikimedia Commons)"
+    "Photo: Clyde Charles Brown, CC BY-SA 4.0, via Wikimedia Commons"
    ],
    "fact_sha256": "9ed6ad20372c7085239a7834e1048843702c7c5100ecb8b5b6a958c97c9f1583",
+   "hold": null,
    "blockers": [
     "Owner approval not yet given for this record"
    ],
@@ -577,12 +583,14 @@
     }
    },
    "attribution": [
-    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Facts: Host Hotels & Resorts, Inc. SEC filings (Form 10-K FY2025)",
     "Location: Wikidata (CC0)",
-    "Photo: Dima Sergiyenko; Please attribute this image as the work of \"DiscoverWithDima.\" / Wikimedia Commons, CC BY-SA 4.0 (via Wikimedia Commons)"
+    "Photo: DiscoverWithDima (Dima Sergiyenko), CC BY-SA 4.0, via Wikimedia Commons (Photo 2006)"
    ],
    "fact_sha256": "2f44b0c9c901887eb97670370114a3e86a2130efbf594b996379076ffac41f6c",
+   "hold": null,
    "blockers": [
+    "Historical photo retained: label \"Photo 2006\" must be shown",
     "Owner approval not yet given for this record"
    ],
    "owner_approval": null
@@ -676,11 +684,12 @@
     }
    },
    "attribution": [
-    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Facts: Host Hotels & Resorts, Inc. SEC filings (Form 10-K FY2025)",
     "Location: Wikidata (CC0)",
-    "Photo: Prayitno / Thank you for (12 millions +) view from Los Angeles, USA / Wikimedia Commons, CC BY 2.0 (via Wikimedia Commons)"
+    "Photo: Prayitno, CC BY 2.0, via Wikimedia Commons"
    ],
    "fact_sha256": "ebb5b7ef19390eda5e0789c3aca93bd8e6e157b240689e4b7d8041e1145e442a",
+   "hold": null,
    "blockers": [
     "Owner approval not yet given for this record"
    ],
@@ -775,9 +784,10 @@
    "attribution": [
     "Facts: BXP, Inc. SEC filings (Form 10-K FY2025)",
     "Location: US Census Geocoder (public domain)",
-    "Photo: Tim Pierce / Wikimedia Commons, CC BY-SA 3.0 (via Wikimedia Commons)"
+    "Photo: Tim Pierce, CC BY-SA 3.0, via Wikimedia Commons"
    ],
    "fact_sha256": "bd3b5bae5cc8734a322cdbe4703283eb8e4131f11412b064beeb23d65a450819",
+   "hold": null,
    "blockers": [
     "Owner approval not yet given for this record"
    ],
@@ -872,10 +882,15 @@
    "attribution": [
     "Facts: BXP, Inc. SEC filings (Form 10-K FY2025)",
     "Location: US Census Geocoder (public domain)",
-    "Photo: Americasroof / Wikimedia Commons, CC BY 3.0 (via Wikimedia Commons)"
+    "Photo: Americasroof, CC BY 3.0, via Wikimedia Commons"
    ],
    "fact_sha256": "884e31ebddf44ed2a4ba1db383138342d813184030b35dc162b0ef495f5f1805",
+   "hold": {
+    "type": "imagery",
+    "reason": "Only photo is 320 x 518 px (2009). Held until a better verified photo is found; no development plan qualifies it independently."
+   },
    "blockers": [
+    "OWNER HOLD (imagery): Only photo is 320 x 518 px (2009). Held until a better verified photo is found; no development plan qualifies it independently.",
     "Owner approval not yet given for this record"
    ],
    "owner_approval": null
@@ -969,9 +984,10 @@
    "attribution": [
     "Facts: BXP, Inc. SEC filings (Form 10-K FY2025)",
     "Location: US Census Geocoder (public domain)",
-    "Photo: Minesweeper / Wikimedia Commons, CC BY-SA 4.0 (via Wikimedia Commons)"
+    "Photo: Minesweeper, CC BY-SA 4.0, via Wikimedia Commons"
    ],
    "fact_sha256": "4c630bccd5b74f4544f33532f234860f8a351d8c291777d4f8ad2405b2b78cb7",
+   "hold": null,
    "blockers": [
     "Owner approval not yet given for this record"
    ],
@@ -1066,12 +1082,17 @@
     }
    },
    "attribution": [
-    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Facts: Host Hotels & Resorts, Inc. SEC filings (Form 10-K FY2025)",
     "Location: US Census Geocoder (public domain)",
-    "Photo: porkfork6 from Saint Petersburg, FL, USA / Wikimedia Commons, CC BY 2.0 (via Wikimedia Commons)"
+    "Photo: porkfork6 from Saint Petersburg, FL, USA, CC BY 2.0, via Wikimedia Commons"
    ],
    "fact_sha256": "d8b87477567705ab9ada2448a39d8868fb132e733602659591c8f406850b9137",
+   "hold": {
+    "type": "imagery",
+    "reason": "Only photo is dated 2006, before the 2024-25 restoration. Held until the image is confirmed representative or a newer one is obtained."
+   },
    "blockers": [
+    "OWNER HOLD (imagery): Only photo is dated 2006, before the 2024-25 restoration. Held until the image is confirmed representative or a newer one is obtained.",
     "Owner approval not yet given for this record"
    ],
    "owner_approval": null
@@ -1165,12 +1186,17 @@
     }
    },
    "attribution": [
-    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Facts: Host Hotels & Resorts, Inc. SEC filings (Form 10-K FY2025)",
     "Location: US Census Geocoder (public domain)",
-    "Photo: AgnosticPreachersKid / Wikimedia Commons, CC BY-SA 3.0 (via Wikimedia Commons)"
+    "Photo: AgnosticPreachersKid, CC BY-SA 3.0, via Wikimedia Commons"
    ],
    "fact_sha256": "4d547b19e1d2915c466aa0fb98456e94f29381a5d26450622989c453fad89beb",
+   "hold": {
+    "type": "imagery",
+    "reason": "Photo file is titled 'The Westin Grand'. Wikidata Q18393956 records no former name, so the rename at 2350 M St NW is not yet verified from an authoritative source."
+   },
    "blockers": [
+    "OWNER HOLD (imagery): Photo file is titled 'The Westin Grand'. Wikidata Q18393956 records no former name, so the rename at 2350 M St NW is not yet verified from an authoritative source.",
     "Owner approval not yet given for this record"
    ],
    "owner_approval": null
@@ -1264,12 +1290,14 @@
     }
    },
    "attribution": [
-    "Facts: HOST HOTELS & RESORTS, INC. SEC filings (Form 10-K FY2025)",
+    "Facts: Host Hotels & Resorts, Inc. SEC filings (Form 10-K FY2025)",
     "Location: US Census Geocoder (public domain)",
-    "Photo: Davidphogan74 at English Wikipedia / Wikimedia Commons, CC BY 2.5 (via Wikimedia Commons)"
+    "Photo: Davidphogan74 at English Wikipedia, CC BY 2.5, via Wikimedia Commons (Uploaded 2007 (capture date not recorded))"
    ],
    "fact_sha256": "381f3369be299c6674fc0eb48647fa8f51a515bb704919d3ebb0478e8e9d8c17",
+   "hold": null,
    "blockers": [
+    "Historical photo retained: label \"Uploaded 2007 (capture date not recorded)\" must be shown",
     "Owner approval not yet given for this record"
    ],
    "owner_approval": null
@@ -1364,6 +1392,7 @@
     "Location: US Census Geocoder (public domain)"
    ],
    "fact_sha256": "562dcd0de920a2672d82123bfae051bc51d05a10e576e68518137259f1b0963f",
+   "hold": null,
    "blockers": [
     "Owner approval not yet given for this record"
    ],
@@ -1459,6 +1488,7 @@
     "Location: US Census Geocoder (public domain)"
    ],
    "fact_sha256": "8e3da014e0fec976da8d2a04be6f893916d73166111f3b82aeb5c13819a87225",
+   "hold": null,
    "blockers": [
     "Owner approval not yet given for this record"
    ],
@@ -1554,6 +1584,7 @@
     "Location: US Census Geocoder (public domain)"
    ],
    "fact_sha256": "d4f560386ff4e18bcf2bd2623527d51f33b14c26684d42c70f4fcbeea2eb554d",
+   "hold": null,
    "blockers": [
     "Owner approval not yet given for this record"
    ],
@@ -1649,6 +1680,7 @@
     "Location: US Census Geocoder (public domain)"
    ],
    "fact_sha256": "35973c11e8b13fcb72fd33547d4666fc6044432b93d0875353a9fc3d69c20070",
+   "hold": null,
    "blockers": [
     "Owner approval not yet given for this record"
    ],
@@ -1746,6 +1778,7 @@
     "Location: US Census Geocoder (public domain)"
    ],
    "fact_sha256": "06e448484fdc6e2300acd00ec8010c5175e28a6961009acf4632501609af54bc",
+   "hold": null,
    "blockers": [
     "Owner approval not yet given for this record"
    ],
@@ -1841,6 +1874,7 @@
     "Location: US Census Geocoder (public domain)"
    ],
    "fact_sha256": "3597bf838e9a92821b84a2c8018a92596bce7b820bba2ddcc21d54e54620bba2",
+   "hold": null,
    "blockers": [
     "Owner approval not yet given for this record"
    ],
@@ -1936,7 +1970,12 @@
     "Location: US Census Gazetteer (public domain)"
    ],
    "fact_sha256": "0a9270530b4a1edb9f742841adecbe2de5049d0b7f09637875996bbc11aa46cb",
+   "hold": {
+    "type": "location",
+    "reason": "No verified address or site. The city centre must not be shown as the project location; excluded from the map until verified."
+   },
    "blockers": [
+    "OWNER HOLD (location): No verified address or site. The city centre must not be shown as the project location; excluded from the map until verified.",
     "Location is only an approximate city point; the marker will show the city, not the building",
     "Owner approval not yet given for this record"
    ],

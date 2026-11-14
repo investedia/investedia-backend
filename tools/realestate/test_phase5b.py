@@ -91,3 +91,36 @@ class ChangeDetection(unittest.TestCase):
         c = self._counts(self._apply([copy.deepcopy(r)])); self.assertEqual(c['inserted'], 1)
 
 if __name__ == '__main__': unittest.main()
+
+
+class ReleaseControl(unittest.TestCase):
+    """Owner decision 14 Nov 2026: only individually approved records may enter the release file."""
+    def setUp(self):
+        sys.path.insert(0, str(ROOT / 'tools/realestate'))
+        import release_build as rb; self.rb = rb; self.man, self.holds = rb.load()
+        self.prev = json.loads((ROOT.parent / 'investedia-frontend/assets/globe/projects-realestate-preview.json').read_text())
+    def _doc(self, projects): return {'schema': 'investedia.projects.realestate.v1', 'preview': False, 'count': len(projects), 'projects': projects}
+    def test_no_owner_approvals_recorded(self):
+        self.assertTrue(all(r['owner_approval'] is None for r in self.man['records']))
+    def test_empty_release_valid(self):
+        self.assertEqual(self.rb.validate_release(self._doc([]), self.man, self.holds), [])
+    def test_unapproved_record_fails(self):
+        p = dict(self.prev['projects'][0], release_status='approved')
+        self.assertTrue(self.rb.validate_release(self._doc([p]), self.man, self.holds))
+    def test_preview_record_fails_even_with_photo(self):
+        p = next(x for x in self.prev['projects'] if x.get('photo'))
+        self.assertTrue(any('not approved' in e or 'release_status' in e for e in self.rb.validate_release(self._doc([p]), self.man, self.holds)))
+    def test_held_record_fails_even_if_approved(self):
+        import copy; man = copy.deepcopy(self.man)
+        r = next(x for x in man['records'] if x['id'] == 're:hst:the-don-cesar'); r['owner_approval'] = {'approved': True, 'date': '2026-11-14'}
+        p = {'id': r['id'], 'release_status': 'approved', 'fact_sha256': r['fact_sha256']}
+        self.assertTrue(any('hold' in e for e in self.rb.validate_release(self._doc([p]), man, self.holds)))
+    def test_changed_record_fails_after_approval(self):
+        import copy; man = copy.deepcopy(self.man)
+        r = next(x for x in man['records'] if x['id'] == 're:bxp:100-federal-street'); r['owner_approval'] = {'approved': True, 'date': '2026-11-14'}
+        p = {'id': r['id'], 'release_status': 'approved', 'fact_sha256': '0' * 64}
+        self.assertTrue(any('changed since approval' in e for e in self.rb.validate_release(self._doc([p]), man, self.holds)))
+    def test_preview_marked_and_location_holds_excluded(self):
+        self.assertTrue(self.prev['preview']); self.assertTrue(all(p['release_status'] == 'preview_not_approved' for p in self.prev['projects']))
+        self.assertNotIn('re:bxp:reston-next-retail', {p['id'] for p in self.prev['projects']})
+        for p in self.prev['projects']: self.assertTrue(p.get('photo') or p['stage'] in ('Under construction', 'Redevelopment', 'Completed', 'Planned (consented)'), p['id'])
