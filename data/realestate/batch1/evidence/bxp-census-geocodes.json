@@ -1,0 +1,521 @@
+{
+ "re:bxp:10-citypoint": {
+  "query": "10 CityPoint, Waltham, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=10+CityPoint%2C+Waltham%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "4ebeaa372a3b8771f3687805b0baa04065238eeb3403da3966cc8b1efe40b0f2",
+  "n": 0,
+  "nomatch": true
+ },
+ "re:bxp:100-federal-street": {
+  "query": "100 Federal Street, Boston, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=100+Federal+Street%2C+Boston%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "2be845387ca28a905a34a0426ff5b1b7a7c340fc3ca27808b8db94b4f6d2411f",
+  "n": 1,
+  "matched": "100 FEDERAL ST, BOSTON, MA, 02110",
+  "lat": 42.354717750874,
+  "lon": -71.05622903079
+ },
+ "re:bxp:103-citypoint": {
+  "query": "103 CityPoint, Waltham, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=103+CityPoint%2C+Waltham%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "8e71a12f2007898434d4f38c631198e2e4621d00efc9a2f2adbe8f748f0b9d5b",
+  "n": 0,
+  "nomatch": true
+ },
+ "re:bxp:105-broadway": {
+  "query": "105 Broadway, Cambridge, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=105+Broadway%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "dda7ee900adfd8ebb0ccb0fd15d453660e784afb1d3e67463299c96ce14d0d79",
+  "n": 1,
+  "matched": "105 BROADWAY, CAMBRIDGE, MA, 02142",
+  "lat": 42.364101447438,
+  "lon": -71.087539546358
+ },
+ "re:bxp:121-broadway": {
+  "query": "121 Broadway, Cambridge, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=121+Broadway%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "ab96e296ca4cadec25b214547ea830c13feac8562c49b072bc97711b993ed187",
+  "n": 1,
+  "matched": "121 BROADWAY, CAMBRIDGE, MA, 02142",
+  "lat": 42.364392815902,
+  "lon": -71.088249280041
+ },
+ "re:bxp:121-broadway-street": {
+  "query": "121 Broadway Street, Cambridge, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=121+Broadway+Street%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "7cf9bc67120786d19450435c12fb03ad9a9c71c4d0922bb02fb1c957cc13d8de",
+  "n": 1,
+  "matched": "121 BROADWAY, CAMBRIDGE, MA, 02142",
+  "lat": 42.364392815902,
+  "lon": -71.088249280041
+ },
+ "re:bxp:125-broadway": {
+  "query": "125 Broadway, Cambridge, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=125+Broadway%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "75b829902f51c540c34775d40eec934730ad54136e8a068deccaebf832a04d5f",
+  "n": 1,
+  "matched": "125 BROADWAY, CAMBRIDGE, MA, 02142",
+  "lat": 42.364465658018,
+  "lon": -71.088426713462
+ },
+ "re:bxp:1330-connecticut-avenue": {
+  "query": "1330 Connecticut Avenue, Washington, DC",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1330+Connecticut+Avenue%2C+Washington%2C+DC&benchmark=Public_AR_Current&format=json",
+  "sha256": "ad68a148307c698a7c1332c6ae4d22645bcd67910640573a17a3ea0ea3e25ce1",
+  "n": 1,
+  "matched": "1330 CONNECTICUT AVE NW, WASHINGTON, DC, 20036",
+  "lat": 38.907807253187,
+  "lon": -77.042459070172
+ },
+ "re:bxp:145-broadway": {
+  "query": "145 Broadway, Cambridge, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=145+Broadway%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "107ea52bda3cf317384b9404a652617c20dcdbbfa883224e355033b228325d80",
+  "n": 1,
+  "matched": "145 BROADWAY, CAMBRIDGE, MA, 02142",
+  "lat": 42.364814928098,
+  "lon": -71.089327682235
+ },
+ "re:bxp:150-broadway": {
+  "query": "150 Broadway, Cambridge, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=150+Broadway%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "b3f344a621033b22b4ae1b16b0e39a7634f5339ffd74e378162316bc35c3002d",
+  "n": 1,
+  "matched": "150 BROADWAY, CAMBRIDGE, MA, 02142",
+  "lat": 42.364712910994,
+  "lon": -71.089398316108
+ },
+ "re:bxp:153-211-second-avenue": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:17-hartwell-avenue": {
+  "query": "17 Hartwell Avenue, Lexington, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=17+Hartwell+Avenue%2C+Lexington%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "86403d41c89397c45cb3bf26501e4b2e8c1922cb0b22868d36c0a427dda49899",
+  "n": 1,
+  "matched": "17 HARTWELL AVE, LEXINGTON, MA, 02421",
+  "lat": 42.474568359141,
+  "lon": -71.254344973971
+ },
+ "re:bxp:17fifty-presidents-street": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:180-citypoint": {
+  "query": "180 CityPoint, Waltham, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=180+CityPoint%2C+Waltham%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "7815e5e23d54b944568e8b51a3c1451c8e6610a9ec03878d4b3d62dcc2a1cbfb",
+  "n": 0,
+  "nomatch": true
+ },
+ "re:bxp:20-citypoint": {
+  "query": "20 CityPoint, Waltham, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=20+CityPoint%2C+Waltham%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "ed7ad43090f99623f71dd6f53b6d95241fcec2b453f6a6339e5fac6a9267b712",
+  "n": 0,
+  "nomatch": true
+ },
+ "re:bxp:200-clarendon-street-and-garage": {
+  "query": "200 Clarendon Street, Boston, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=200+Clarendon+Street%2C+Boston%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "b522a4c15b05f6e8929959e7478a566dbb6226b18c8c2d2d42608138bdf7689e",
+  "n": 1,
+  "matched": "200 CLARENDON ST, BOSTON, MA, 02116",
+  "lat": 42.349893160603,
+  "lon": -71.074892080086
+ },
+ "re:bxp:200-west-street": {
+  "query": "200 West Street, Waltham, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=200+West+Street%2C+Waltham%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "e36d315548d6339909f798700709a1782c751ef44ba36d210ddb234986413c21",
+  "n": 1,
+  "matched": "200 WEST ST, WALTHAM, MA, 02451",
+  "lat": 42.393934733042,
+  "lon": -71.270339118507
+ },
+ "re:bxp:2100-pennsylvania-avenue": {
+  "query": "2100 Pennsylvania Avenue, Washington, DC",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2100+Pennsylvania+Avenue%2C+Washington%2C+DC&benchmark=Public_AR_Current&format=json",
+  "sha256": "f9d7a31d03953b063dfd925bd2f0d240f442c497c51a45f6ec7e8fe63715f4f6",
+  "n": 1,
+  "matched": "2100 PENNSYLVANIA AVE NW, WASHINGTON, DC, 20037",
+  "lat": 38.901289366155,
+  "lon": -77.046750416388
+ },
+ "re:bxp:2200-pennsylvania-avenue": {
+  "query": "2200 Pennsylvania Avenue, Washington, DC",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2200+Pennsylvania+Avenue%2C+Washington%2C+DC&benchmark=Public_AR_Current&format=json",
+  "sha256": "c028f2db09fe09de646b89b0533e5e1de9d7d6c4025ea81db2d1135ed915c588",
+  "n": 1,
+  "matched": "2200 PENNSYLVANIA AVE NW, WASHINGTON, DC, 20052",
+  "lat": 38.902025025848,
+  "lon": -77.048896529089
+ },
+ "re:bxp:230-citypoint": {
+  "query": "230 CityPoint, Waltham, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=230+CityPoint%2C+Waltham%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "2a76b5c81dd666b205699b04f3d5e59e23f85fab5e42c5016959e1c42082d459",
+  "n": 0,
+  "nomatch": true
+ },
+ "re:bxp:2440-west-el-camino-real": {
+  "query": "2440 West El Camino Real, Mountain View, CA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2440+West+El+Camino+Real%2C+Mountain+View%2C+CA&benchmark=Public_AR_Current&format=json",
+  "sha256": "927efa801a896a966626c71433f9938e4ac197eede918b8d2d48fee618ec57a9",
+  "n": 1,
+  "matched": "2440 W EL CAMINO REAL, MOUNTAIN VIEW, CA, 94040",
+  "lat": 37.398493918742,
+  "lon": -122.107786197754
+ },
+ "re:bxp:250-binney-street": {
+  "query": "250 Binney Street, Cambridge, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=250+Binney+Street%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "69a18441ac0587b30721f11b3bf77e4e57b018488a6722dea03504e1e2656041",
+  "n": 1,
+  "matched": "250 BINNEY ST, CAMBRIDGE, MA, 02142",
+  "lat": 42.365993027939,
+  "lon": -71.085296683505
+ },
+ "re:bxp:250-west-55th-street": {
+  "query": "250 West 55th Street, New York, NY",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=250+West+55th+Street%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+  "sha256": "4bfde28281a3f6e4ff861fcfb7d88eb0a8139813522ce4897ce92056b2ddd7a1",
+  "n": 1,
+  "matched": "250 W 55TH ST, NEW YORK, NY, 10019",
+  "lat": 40.764954225083,
+  "lon": -73.982885936742
+ },
+ "re:bxp:255-main-street": {
+  "query": "255 Main Street, Cambridge, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=255+Main+Street%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "908b7a7cbef591f0d6807114ae489650e964395e83e2aad76e218c8fc61b3383",
+  "n": 1,
+  "matched": "255 MAIN ST, CAMBRIDGE, MA, 02142",
+  "lat": 42.362426791121,
+  "lon": -71.085125512714
+ },
+ "re:bxp:290-binney-street": {
+  "query": "290 Binney Street, Cambridge, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=290+Binney+Street%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "b315ebef1400c6dba6fcefbfe95f7e7052acc6ce71b0635ec5a2b1bed27a4a78",
+  "n": 1,
+  "matched": "290 BINNEY ST, CAMBRIDGE, MA, 02142",
+  "lat": 42.366067836831,
+  "lon": -71.085882617183
+ },
+ "re:bxp:290-coles-street": {
+  "query": "290 Coles Street, Jersey City, NJ",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=290+Coles+Street%2C+Jersey+City%2C+NJ&benchmark=Public_AR_Current&format=json",
+  "sha256": "dbc8d5a9051d2fa42a0b5571da39ea2f995acae43976c7c5b9eb110a47428032",
+  "n": 1,
+  "matched": "290 COLES ST, JERSEY CITY, NJ, 07310",
+  "lat": 40.733345844972,
+  "lon": -74.045842741387
+ },
+ "re:bxp:300-binney-street": {
+  "query": "300 Binney Street, Cambridge, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=300+Binney+Street%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "af304e21afc23edd24cbfa88c990b6b8f41c00a088471d9300c6b2511c8d497d",
+  "n": 1,
+  "matched": "300 BINNEY ST, CAMBRIDGE, MA, 02142",
+  "lat": 42.366281152879,
+  "lon": -71.08758765149
+ },
+ "re:bxp:32-hartwell-avenue": {
+  "query": "32 Hartwell Avenue, Lexington, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=32+Hartwell+Avenue%2C+Lexington%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "65c88ffc530018295356b8999ea02736cfe7603c9f8457958c0c7388e5307745",
+  "n": 1,
+  "matched": "32 HARTWELL AVE, LEXINGTON, MA, 02421",
+  "lat": 42.473735302126,
+  "lon": -71.255084273194
+ },
+ "re:bxp:325-main-street": {
+  "query": "325 Main Street, Cambridge, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=325+Main+Street%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "ce64a3e4c4b2f66c6d822857d5839deda3782ec1f0647cb0d91795949e0172e8",
+  "n": 1,
+  "matched": "325 MAIN ST, CAMBRIDGE, MA, 02142",
+  "lat": 42.362552406802,
+  "lon": -71.086710032173
+ },
+ "re:bxp:33-hayden-avenue": {
+  "query": "33 Hayden Avenue, Lexington, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=33+Hayden+Avenue%2C+Lexington%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "aaf1ccc350825af871361aec0bcfd2005fcd2e45bfb3aa7ba6b63f47ea998e3b",
+  "n": 1,
+  "matched": "33 HAYDEN AVE, LEXINGTON, MA, 02421",
+  "lat": 42.422389640953,
+  "lon": -71.236891209151
+ },
+ "re:bxp:343-madison-avenue": {
+  "query": "343 Madison Avenue, New York, NY",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=343+Madison+Avenue%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+  "sha256": "ca0cfa2eab8d19cbafa34be7687d0df1a6b42b8a77ea7f54a0408c24a5330192",
+  "n": 1,
+  "matched": "343 MADISON AVE, NEW YORK, NY, 10017",
+  "lat": 40.754197910243,
+  "lon": -73.978174387903
+ },
+ "re:bxp:355-main-street": {
+  "query": "355 Main Street, Cambridge, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=355+Main+Street%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "a9044e201b740c02ca49c03bde261ff53e04a2e3a9fb6f86fdab3936c164d7ce",
+  "n": 1,
+  "matched": "355 MAIN ST, CAMBRIDGE, MA, 02142",
+  "lat": 42.362602767068,
+  "lon": -71.08737495666
+ },
+ "re:bxp:399-park-avenue": {
+  "query": "399 Park Avenue, New York, NY",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=399+Park+Avenue%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+  "sha256": "bf6aa3ea376d87dc49bb06394cdb67ed474418cd058e68f90ab0d50b78a826b7",
+  "n": 1,
+  "matched": "399 PARK AVE, NEW YORK, NY, 10022",
+  "lat": 40.759550844627,
+  "lon": -73.972164246824
+ },
+ "re:bxp:453-ravendale-drive": {
+  "query": "453 Ravendale Drive, Mountain View, CA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=453+Ravendale+Drive%2C+Mountain+View%2C+CA&benchmark=Public_AR_Current&format=json",
+  "sha256": "f576e6caf7b688ec851c6238998229e7ea5e32c279ed2a5e171ad931d4e434ed",
+  "n": 1,
+  "matched": "453 RAVENDALE DR, MOUNTAIN VIEW, CA, 94043",
+  "lat": 37.390506395579,
+  "lon": -122.05205839566
+ },
+ "re:bxp:510-madison-avenue": {
+  "query": "510 Madison Avenue, New York, NY",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=510+Madison+Avenue%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+  "sha256": "19db372b21ef55bb093f5dbd37a4a54ea9c87a0f17142297c6cd1b6deab44dc5",
+  "n": 1,
+  "matched": "510 MADISON AVE, NEW YORK, NY, 10022",
+  "lat": 40.759717575641,
+  "lon": -73.974325814309
+ },
+ "re:bxp:535-mission-street": {
+  "query": "535 Mission Street, San Francisco, CA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=535+Mission+Street%2C+San+Francisco%2C+CA&benchmark=Public_AR_Current&format=json",
+  "sha256": "2d8668be4b8b9a8c3681f458f2a961e618f917c04cfe6619dff5d846e0e7f4a3",
+  "n": 1,
+  "matched": "535 MISSION ST, SAN FRANCISCO, CA, 94105",
+  "lat": 37.789067232449,
+  "lon": -122.398352361536
+ },
+ "re:bxp:599-lexington-avenue": {
+  "query": "599 Lexington Avenue, New York, NY",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=599+Lexington+Avenue%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+  "sha256": "ae714e1fa4f9c9e9f36b31dd2761cda001c35edfcf1ad0a3fae65edc6a412a41",
+  "n": 1,
+  "matched": "599 LEXINGTON AVE, NEW YORK, NY, 10022",
+  "lat": 40.758295067514,
+  "lon": -73.970963618839
+ },
+ "re:bxp:601-lexington-avenue": {
+  "query": "601 Lexington Avenue, New York, NY",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=601+Lexington+Avenue%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+  "sha256": "7515e13e26410d1fea8932458609b214ae71cf08561954cb4b3c64db06d10484",
+  "n": 1,
+  "matched": "601 LEXINGTON AVE, NEW YORK, NY, 10022",
+  "lat": 40.758395363187,
+  "lon": -73.970890153569
+ },
+ "re:bxp:651-gateway": {
+  "query": "651 Gateway, South San Francisco, CA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=651+Gateway%2C+South+San+Francisco%2C+CA&benchmark=Public_AR_Current&format=json",
+  "sha256": "d149beaa1fdf01c33500bcba478ab133906753ca74a07b7c6063c4ea009e9679",
+  "n": 1,
+  "matched": "651 GATEWAY BLVD, SOUTH SAN FRANCISCO, CA, 94080",
+  "lat": 37.6573061404,
+  "lon": -122.400345268542
+ },
+ "re:bxp:680-folsom-street": {
+  "query": "680 Folsom Street, San Francisco, CA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=680+Folsom+Street%2C+San+Francisco%2C+CA&benchmark=Public_AR_Current&format=json",
+  "sha256": "808aefd1cc4628e556036a6a878286ba2ba218840e28a1bbd51cb3655500d870",
+  "n": 1,
+  "matched": "680 FOLSOM ST, SAN FRANCISCO, CA, 94107",
+  "lat": 37.784209218036,
+  "lon": -122.398494571892
+ },
+ "re:bxp:690-folsom-street": {
+  "query": "690 Folsom Street, San Francisco, CA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=690+Folsom+Street%2C+San+Francisco%2C+CA&benchmark=Public_AR_Current&format=json",
+  "sha256": "1644b0a5841baaaf999f912dedd6a4c487be443efaab52719e8400961f1af1c1",
+  "n": 1,
+  "matched": "690 FOLSOM ST, SAN FRANCISCO, CA, 94107",
+  "lat": 37.784018561741,
+  "lon": -122.398736406054
+ },
+ "re:bxp:7-times-square": {
+  "query": "7 Times Square, New York, NY",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=7+Times+Square%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+  "sha256": "ed1fd2335b79bf706d14afc415ad3f48403db8318318e858204f862ceab7d50b",
+  "n": 0,
+  "nomatch": true
+ },
+ "re:bxp:725-12th-street": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:767-fifth-avenue-the-general-motors-building": {
+  "query": "767 Fifth Avenue, New York, NY",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=767+Fifth+Avenue%2C+New+York%2C+NY&benchmark=Public_AR_Current&format=json",
+  "sha256": "7dc60b9749d5cf2bb81ffd293c3ad9e9042e2ef026a440d8db4964aa6578112a",
+  "n": 1,
+  "matched": "767 5TH AVE, NEW YORK, NY, 10153",
+  "lat": 40.764201189455,
+  "lon": -73.972985168821
+ },
+ "re:bxp:77-citypoint": {
+  "query": "77 CityPoint, Waltham, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=77+CityPoint%2C+Waltham%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "de66005dec1ee4fda52322cf60c33ed740496ab810b4ecc0bec200654f4a79d4",
+  "n": 0,
+  "nomatch": true
+ },
+ "re:bxp:880-winter-street": {
+  "query": "880 Winter Street, Waltham, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=880+Winter+Street%2C+Waltham%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "75706d61ae1cb2661a766b959b7feb5bf7e5dd5d97a8c26871c876fade75681e",
+  "n": 0,
+  "nomatch": true
+ },
+ "re:bxp:890-winter-street": {
+  "query": "890 Winter Street, Waltham, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=890+Winter+Street%2C+Waltham%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "df1f1e679cf4da0f990398981b313bc194a08a4b048b8e5588f71e9935c943a2",
+  "n": 0,
+  "nomatch": true
+ },
+ "re:bxp:90-broadway": {
+  "query": "90 Broadway, Cambridge, MA",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=90+Broadway%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json",
+  "sha256": "bf7a48ab9ec44b923f4c3148d38ef002aa4099fce478f60a79c01bd9b52ea386",
+  "n": 1,
+  "matched": "90 BROADWAY, CAMBRIDGE, MA, 02142",
+  "lat": 42.363828678296,
+  "lon": -71.087195028323
+ },
+ "re:bxp:901-new-york-avenue": {
+  "query": "901 New York Avenue, Washington, DC",
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=901+New+York+Avenue%2C+Washington%2C+DC&benchmark=Public_AR_Current&format=json",
+  "sha256": "eb42bc4357ce2500b4670b3147a68835078ec6a3f5ffe663457785b023260484",
+  "n": 2,
+  "matched": "901 NEW YORK AVE NW, WASHINGTON, DC, 20001",
+  "lat": 38.902146280014,
+  "lon": -77.024062659208
+ },
+ "re:bxp:92-100-hayden-avenue": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:atlantic-wharf": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:avant-retail": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:bay-colony-corporate-center": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:boston-marriott-cambridge": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:capital-gallery": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:carnegie-center": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:discovery-square": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:embarcadero-center": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:fountain-square": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:kendall-center-green-garage": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:kendall-center-yellow-garage": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:kingstowne-towne-center": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:lexington-office-park": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:madison-centre": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:mountain-view-research-park": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:north-first-business-park": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:one-and-two-reston-overlook": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:one-freedom-square": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:prudential-center": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:reservoir-place": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:reston-corporate-center": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:reston-next": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:reston-next-office-phase-ii": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:reston-next-retail": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:salesforce-tower": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:santa-monica-business-park": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:shady-grove-innovation-district": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:south-of-market-and-democracy-tower": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:sumner-square": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:the-lofts-at-atlantic-wharf": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:the-point": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:the-skylyne": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:two-freedom-square": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:university-place": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:waltham-weston-corporate-center": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:weston-corporate-center": {
+  "skip": "name is not a single street address"
+ },
+ "re:bxp:wisconsin-place": {
+  "skip": "name is not a single street address"
+ }
+}

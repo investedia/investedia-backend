@@ -1,0 +1,51 @@
+{
+ "records_total": 165,
+ "retired_disposed": 5,
+ "live": 160,
+ "new_acquisitions": 2,
+ "location": {
+  "approximate/-/-": 47,
+  "exact/address_point/high": 27,
+  "exact/address_point/medium": 59,
+  "unknown/-/-": 6,
+  "approximate/city_reference/-": 11,
+  "exact/building_point/high": 10
+ },
+ "precision": {
+  "approximate": 58,
+  "exact": 96,
+  "unknown": 6
+ },
+ "with_address": 112,
+ "with_aliases": 8,
+ "imagery": {
+  "accepted": 13,
+  "pending": 6,
+  "rejected": 2
+ },
+ "records_with_photo": 13,
+ "stage": {
+  "operating": 152,
+  "under_construction": 5,
+  "completed": 2,
+  "unknown": 1
+ },
+ "roles": {
+  "reported_group_owner": 150,
+  "developer": 8,
+  "lessee": 2
+ },
+ "stated_stakes": 7,
+ "events": {
+  "disposal": 4,
+  "duplicate_merged": 1,
+  "partial_disposal": 1,
+  "development_completed": 2,
+  "target_date_change": 1,
+  "status_unresolved": 1,
+  "ownership_share_documented": 3,
+  "acquisition": 2
+ },
+ "release_proposed": 20,
+ "release_proposed_with_photo": 13
+}

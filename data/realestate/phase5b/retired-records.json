@@ -1,0 +1,806 @@
+[
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:hst:sheraton-parsippany-hotel",
+  "source_identity": {
+   "authority": "sec.gov:10-K:HST",
+   "id": "sheraton-parsippany-hotel"
+  },
+  "synthetic": false,
+  "name": "Sheraton Parsippany Hotel",
+  "sector": "real_estate",
+  "country_code": "US",
+  "city": null,
+  "asset": {
+   "category": "existing_asset",
+   "subtype": "Hotel",
+   "parent_id": null,
+   "count_as_project": true
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Consolidated hotel as of 20 Feb 2026 (370 rooms, company-reported)",
+   "as_of": "2025-12-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "unknown",
+   "lat": null,
+   "lon": null,
+   "label": "New Jersey, United States (filing gives state/country only)",
+   "satellite_allowed": false
+  },
+  "identity_evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+   "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+   "checked_at": "2026-11-14T00:03:53Z",
+   "locator": "Item 2 consolidated hotels table: Sheraton Parsippany Hotel | New Jersey | 370 rooms",
+   "sha256_scope": "source_body"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Consolidated hotel reported in the company's portfolio",
+    "relationship_scope": "Company-reported consolidated hotel; holding entity not established",
+    "property_stake": null,
+    "company_ref": "cik:0001070750",
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT equity exposure only; buying shares gives no title to this property"
+    },
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "checked_at": "2026-11-14T00:03:53Z",
+     "locator": "Item 2 consolidated hotels table: Sheraton Parsippany Hotel | New Jersey | 370 rooms",
+     "sha256_scope": "source_body"
+    },
+    "listing": {
+     "name": "HOST HOTELS & RESORTS, INC.",
+     "ticker": "HST",
+     "exchange": "XNAS",
+     "exchange_mic": "XNAS",
+     "security_type": "common_equity",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+      "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+      "checked_at": "2026-11-14T00:03:53Z",
+      "locator": "10-K cover securities table: Common Stock, $.01 par value / HST / The Nasdaq Stock Market LLC; matched to current SEC submissions",
+      "sha256_scope": "source_body"
+     }
+    },
+    "headquarters": null
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "No point published"
+    }
+   },
+   "review": {}
+  },
+  "preview_only": true,
+  "corroboration": {
+   "schedule_iii_name_match": true
+  },
+  "history": {
+   "batch1_location": {
+    "precision": "unknown",
+    "lat": null,
+    "lon": null,
+    "label": "New Jersey, United States (filing gives state/country only)",
+    "satellite_allowed": false
+   },
+   "batch1_fact_sha256": "151652b4e47c163b77b3adeffd7e439fa7ca0f617edbe54e511996d68add1f84"
+  },
+  "monitoring": {
+   "stable_id": "re:hst:sheraton-parsippany-hotel",
+   "evidence_refs": [
+    {
+     "sha256": "45a1523bbe75e844604d1b7664a43715e700f05974365860dc4aacd2d19cb3e5",
+     "url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "fact_fingerprint": "151652b4e47c163b77b3adeffd7e439fa7ca0f617edbe54e511996d68add1f84",
+   "watch": [
+    "status",
+    "ownership",
+    "acquisition_disposal",
+    "evidence_hash"
+   ],
+   "enabled": false
+  }
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:bxp:sumner-square",
+  "source_identity": {
+   "authority": "sec.gov:10-K:BXP",
+   "id": "sumner-square"
+  },
+  "synthetic": false,
+  "name": "Sumner Square",
+  "sector": "real_estate",
+  "country_code": "US",
+  "city": "Washington",
+  "asset": {
+   "category": "existing_asset",
+   "subtype": "Office",
+   "parent_id": null,
+   "count_as_project": true
+  },
+  "status": {
+   "stage": "operating",
+   "label": "In-service property: building cost depreciated in Schedule III at 31 Dec 2025",
+   "as_of": "2025-12-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "lat": 38.90425,
+   "lon": -77.01652,
+   "label": "Washington, DC (city reference point, not the building)",
+   "basis": "US Census 2024 Gazetteer place internal point for the city named in the filing (public domain)",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_place_national.zip",
+    "sha256": "cf262fc92b2326f7a8c62a89d156a60eb17d64d6d35f7a62310c43bb08972c06",
+    "checked_at": "2026-11-14T02:37:00Z",
+    "locator": "Gazetteer place GEOID 1150000 (Washington city, DC) INTPTLAT/INTPTLONG",
+    "sha256_scope": "source_body",
+    "record_id": "re:bxp:sumner-square",
+    "scope": "city_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+   "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+   "checked_at": "2026-11-14T00:03:56Z",
+   "locator": "Schedule III row: Sumner Square | Office | Washington, DC",
+   "sha256_scope": "source_body"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the company's consolidated real estate (Schedule III)",
+    "relationship_scope": "Company-reported consolidated holding of this named property; holding entity, joint-venture share and ground leases not established",
+    "property_stake": null,
+    "company_ref": "cik:0001037540",
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT equity exposure only; buying shares gives no title to this property"
+    },
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "Schedule III row: Sumner Square | Office | Washington, DC",
+     "sha256_scope": "source_body"
+    },
+    "listing": {
+     "name": "BXP, Inc.",
+     "ticker": "BXP",
+     "exchange": "XNYS",
+     "exchange_mic": "XNYS",
+     "security_type": "common_equity",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+      "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+      "checked_at": "2026-11-14T00:03:56Z",
+      "locator": "10-K cover securities table: Common Stock, par value $.01 per share / BXP / New York Stock Exchange; matched to current SEC submissions",
+      "sha256_scope": "source_body"
+     }
+    },
+    "headquarters": null
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "US Census Gazetteer (public domain) city point"
+    }
+   },
+   "review": {}
+  },
+  "preview_only": true,
+  "history": {
+   "batch1_location": {
+    "precision": "approximate",
+    "lat": 38.90425,
+    "lon": -77.01652,
+    "label": "Washington, DC (city reference point, not the building)",
+    "basis": "US Census 2024 Gazetteer place internal point for the city named in the filing (public domain)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_place_national.zip",
+     "sha256": "cf262fc92b2326f7a8c62a89d156a60eb17d64d6d35f7a62310c43bb08972c06",
+     "checked_at": "2026-11-14T02:37:00Z",
+     "locator": "Gazetteer place GEOID 1150000 (Washington city, DC) INTPTLAT/INTPTLONG",
+     "sha256_scope": "source_body",
+     "record_id": "re:bxp:sumner-square",
+     "scope": "city_reference"
+    }
+   },
+   "batch1_fact_sha256": "a04d233fe6368e10c69c5e7cc8a9fd5e77798cc011dcfd8eb609737ff30ecd6e"
+  },
+  "monitoring": {
+   "stable_id": "re:bxp:sumner-square",
+   "evidence_refs": [
+    {
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm"
+    },
+    {
+     "sha256": "cf262fc92b2326f7a8c62a89d156a60eb17d64d6d35f7a62310c43bb08972c06",
+     "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_place_national.zip"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "fact_fingerprint": "a04d233fe6368e10c69c5e7cc8a9fd5e77798cc011dcfd8eb609737ff30ecd6e",
+   "watch": [
+    "status",
+    "ownership",
+    "acquisition_disposal",
+    "evidence_hash"
+   ],
+   "enabled": false
+  }
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:bxp:1330-connecticut-avenue",
+  "source_identity": {
+   "authority": "sec.gov:10-K:BXP",
+   "id": "1330-connecticut-avenue"
+  },
+  "synthetic": false,
+  "name": "1330 Connecticut Avenue",
+  "sector": "real_estate",
+  "country_code": "US",
+  "city": "Washington",
+  "asset": {
+   "category": "existing_asset",
+   "subtype": "Office",
+   "parent_id": null,
+   "count_as_project": true
+  },
+  "status": {
+   "stage": "operating",
+   "label": "In-service property: building cost depreciated in Schedule III at 31 Dec 2025",
+   "as_of": "2025-12-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "exact",
+   "point_type": "address_point",
+   "confidence": "medium",
+   "lat": 38.907807,
+   "lon": -77.042459,
+   "label": "1330 Connecticut Ave Nw, Washington, Dc, 20036 (address point)",
+   "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1330+Connecticut+Avenue%2C+Washington%2C+DC&benchmark=Public_AR_Current&format=json",
+    "sha256": "ad68a148307c698a7c1332c6ae4d22645bcd67910640573a17a3ea0ea3e25ce1",
+    "checked_at": "2026-11-14T03:10:00Z",
+    "locator": "US Census Geocoder match: 1330 CONNECTICUT AVE NW, WASHINGTON, DC, 20036",
+    "sha256_scope": "source_body",
+    "record_id": "re:bxp:1330-connecticut-avenue",
+    "scope": "specific_site"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+   "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+   "checked_at": "2026-11-14T00:03:56Z",
+   "locator": "Schedule III row: 1330 Connecticut Avenue | Office | Washington, DC",
+   "sha256_scope": "source_body"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the company's consolidated real estate (Schedule III)",
+    "relationship_scope": "Company-reported consolidated holding of this named property; holding entity, joint-venture share and ground leases not established",
+    "property_stake": null,
+    "company_ref": "cik:0001037540",
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT equity exposure only; buying shares gives no title to this property"
+    },
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "Schedule III row: 1330 Connecticut Avenue | Office | Washington, DC",
+     "sha256_scope": "source_body"
+    },
+    "listing": {
+     "name": "BXP, Inc.",
+     "ticker": "BXP",
+     "exchange": "XNYS",
+     "exchange_mic": "XNYS",
+     "security_type": "common_equity",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+      "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+      "checked_at": "2026-11-14T00:03:56Z",
+      "locator": "10-K cover securities table: Common Stock, par value $.01 per share / BXP / New York Stock Exchange; matched to current SEC submissions",
+      "sha256_scope": "source_body"
+     }
+    },
+    "headquarters": null
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "US Census Gazetteer (public domain) city point"
+    }
+   },
+   "review": {}
+  },
+  "preview_only": true,
+  "address": {
+   "text": "1330 Connecticut Ave Nw, Washington, Dc, 20036",
+   "source": "10-K property name geocoded by US Census",
+   "evidence": {
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1330+Connecticut+Avenue%2C+Washington%2C+DC&benchmark=Public_AR_Current&format=json",
+    "sha256": "ad68a148307c698a7c1332c6ae4d22645bcd67910640573a17a3ea0ea3e25ce1",
+    "checked_at": "2026-11-14T03:10:00Z",
+    "locator": "US Census Geocoder match: 1330 CONNECTICUT AVE NW, WASHINGTON, DC, 20036",
+    "sha256_scope": "source_body",
+    "record_id": "re:bxp:1330-connecticut-avenue",
+    "scope": "specific_site"
+   }
+  },
+  "history": {
+   "batch1_location": {
+    "precision": "approximate",
+    "lat": 38.90425,
+    "lon": -77.01652,
+    "label": "Washington, DC (city reference point, not the building)",
+    "basis": "US Census 2024 Gazetteer place internal point for the city named in the filing (public domain)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_place_national.zip",
+     "sha256": "cf262fc92b2326f7a8c62a89d156a60eb17d64d6d35f7a62310c43bb08972c06",
+     "checked_at": "2026-11-14T02:37:00Z",
+     "locator": "Gazetteer place GEOID 1150000 (Washington city, DC) INTPTLAT/INTPTLONG",
+     "sha256_scope": "source_body",
+     "record_id": "re:bxp:1330-connecticut-avenue",
+     "scope": "city_reference"
+    }
+   },
+   "batch1_fact_sha256": "7022de70d555050a581098a105a02692572d3057c0baee9574645ae5a4525ef8"
+  },
+  "monitoring": {
+   "stable_id": "re:bxp:1330-connecticut-avenue",
+   "evidence_refs": [
+    {
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm"
+    },
+    {
+     "sha256": "ad68a148307c698a7c1332c6ae4d22645bcd67910640573a17a3ea0ea3e25ce1",
+     "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1330+Connecticut+Avenue%2C+Washington%2C+DC&benchmark=Public_AR_Current&format=json"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "fact_fingerprint": "61d71db52cecb3ffbd552851b88c91d17229d2ec1cc96466905c0863c0245219",
+   "watch": [
+    "status",
+    "ownership",
+    "acquisition_disposal",
+    "evidence_hash"
+   ],
+   "enabled": false
+  }
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:bxp:the-lofts-at-atlantic-wharf",
+  "source_identity": {
+   "authority": "sec.gov:10-K:BXP",
+   "id": "the-lofts-at-atlantic-wharf"
+  },
+  "synthetic": false,
+  "name": "The Lofts at Atlantic Wharf",
+  "sector": "real_estate",
+  "country_code": "US",
+  "city": "Boston",
+  "asset": {
+   "category": "existing_asset",
+   "subtype": "Residential portfolio property",
+   "parent_id": null,
+   "count_as_project": true
+  },
+  "status": {
+   "stage": "operating",
+   "label": "In-service property: building cost depreciated in Schedule III at 31 Dec 2025",
+   "as_of": "2025-12-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "lat": 42.33855,
+   "lon": -71.01825,
+   "label": "Boston, MA (city reference point, not the building)",
+   "basis": "US Census 2024 Gazetteer place internal point for the city named in the filing (public domain)",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_place_national.zip",
+    "sha256": "cf262fc92b2326f7a8c62a89d156a60eb17d64d6d35f7a62310c43bb08972c06",
+    "checked_at": "2026-11-14T02:37:00Z",
+    "locator": "Gazetteer place GEOID 2507000 (Boston city, MA) INTPTLAT/INTPTLONG",
+    "sha256_scope": "source_body",
+    "record_id": "re:bxp:the-lofts-at-atlantic-wharf",
+    "scope": "city_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+   "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+   "checked_at": "2026-11-14T00:03:56Z",
+   "locator": "Schedule III row: The Lofts at Atlantic Wharf | Residential | Boston, MA",
+   "sha256_scope": "source_body"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the company's consolidated real estate (Schedule III)",
+    "relationship_scope": "Company-reported consolidated holding of this named property; holding entity, joint-venture share and ground leases not established",
+    "property_stake": null,
+    "company_ref": "cik:0001037540",
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT equity exposure only; buying shares gives no title to this property"
+    },
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "Schedule III row: The Lofts at Atlantic Wharf | Residential | Boston, MA",
+     "sha256_scope": "source_body"
+    },
+    "listing": {
+     "name": "BXP, Inc.",
+     "ticker": "BXP",
+     "exchange": "XNYS",
+     "exchange_mic": "XNYS",
+     "security_type": "common_equity",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+      "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+      "checked_at": "2026-11-14T00:03:56Z",
+      "locator": "10-K cover securities table: Common Stock, par value $.01 per share / BXP / New York Stock Exchange; matched to current SEC submissions",
+      "sha256_scope": "source_body"
+     }
+    },
+    "headquarters": null
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "US Census Gazetteer (public domain) city point"
+    }
+   },
+   "review": {}
+  },
+  "preview_only": true,
+  "history": {
+   "batch1_location": {
+    "precision": "approximate",
+    "lat": 42.33855,
+    "lon": -71.01825,
+    "label": "Boston, MA (city reference point, not the building)",
+    "basis": "US Census 2024 Gazetteer place internal point for the city named in the filing (public domain)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_place_national.zip",
+     "sha256": "cf262fc92b2326f7a8c62a89d156a60eb17d64d6d35f7a62310c43bb08972c06",
+     "checked_at": "2026-11-14T02:37:00Z",
+     "locator": "Gazetteer place GEOID 2507000 (Boston city, MA) INTPTLAT/INTPTLONG",
+     "sha256_scope": "source_body",
+     "record_id": "re:bxp:the-lofts-at-atlantic-wharf",
+     "scope": "city_reference"
+    }
+   },
+   "batch1_fact_sha256": "bad59a61d02fbbbb8ea086aafdb5232b30c6562be32b8427068181d999167add"
+  },
+  "monitoring": {
+   "stable_id": "re:bxp:the-lofts-at-atlantic-wharf",
+   "evidence_refs": [
+    {
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm"
+    },
+    {
+     "sha256": "cf262fc92b2326f7a8c62a89d156a60eb17d64d6d35f7a62310c43bb08972c06",
+     "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_place_national.zip"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "fact_fingerprint": "bad59a61d02fbbbb8ea086aafdb5232b30c6562be32b8427068181d999167add",
+   "watch": [
+    "status",
+    "ownership",
+    "acquisition_disposal",
+    "evidence_hash"
+   ],
+   "enabled": false
+  }
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:bxp:121-broadway",
+  "source_identity": {
+   "authority": "sec.gov:10-K:BXP",
+   "id": "121-broadway"
+  },
+  "synthetic": false,
+  "name": "121 Broadway",
+  "sector": "real_estate",
+  "country_code": "US",
+  "city": "Cambridge",
+  "asset": {
+   "category": "existing_asset",
+   "subtype": "Development",
+   "parent_id": null,
+   "count_as_project": true
+  },
+  "status": {
+   "stage": "unknown",
+   "label": "Schedule III carries development/construction-in-progress cost at 31 Dec 2025; milestone not stated",
+   "as_of": "2025-12-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "exact",
+   "point_type": "address_point",
+   "confidence": "medium",
+   "lat": 42.364393,
+   "lon": -71.088249,
+   "label": "121 Broadway, Cambridge, Ma, 02142 (address point)",
+   "basis": "US Census geocode of the street address that is the property name in the 10-K; single geocode, no second point",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=121+Broadway%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json",
+    "sha256": "ab96e296ca4cadec25b214547ea830c13feac8562c49b072bc97711b993ed187",
+    "checked_at": "2026-11-14T03:10:00Z",
+    "locator": "US Census Geocoder match: 121 BROADWAY, CAMBRIDGE, MA, 02142",
+    "sha256_scope": "source_body",
+    "record_id": "re:bxp:121-broadway",
+    "scope": "specific_site"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+   "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+   "checked_at": "2026-11-14T00:03:56Z",
+   "locator": "Schedule III row: 121 Broadway | Development | Cambridge, MA",
+   "sha256_scope": "source_body"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the company's consolidated real estate (Schedule III)",
+    "relationship_scope": "Company-reported consolidated holding of this named property; holding entity, joint-venture share and ground leases not established",
+    "property_stake": null,
+    "company_ref": "cik:0001037540",
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT equity exposure only; buying shares gives no title to this property"
+    },
+    "evidence": {
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "checked_at": "2026-11-14T00:03:56Z",
+     "locator": "Schedule III row: 121 Broadway | Development | Cambridge, MA",
+     "sha256_scope": "source_body"
+    },
+    "listing": {
+     "name": "BXP, Inc.",
+     "ticker": "BXP",
+     "exchange": "XNYS",
+     "exchange_mic": "XNYS",
+     "security_type": "common_equity",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+      "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+      "checked_at": "2026-11-14T00:03:56Z",
+      "locator": "10-K cover securities table: Common Stock, par value $.01 per share / BXP / New York Stock Exchange; matched to current SEC submissions",
+      "sha256_scope": "source_body"
+     }
+    },
+    "headquarters": null
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "status": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "economic_relationship": {
+     "status": "cleared",
+     "basis": "Facts extracted from a US SEC 10-K (federal filing; facts only, no tables or prose copied); same SEC scope the owner approved for the Equinix release (#109)"
+    },
+    "listing": {
+     "status": "cleared",
+     "basis": "10-K cover securities table + current SEC submissions"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "US Census Gazetteer (public domain) city point"
+    }
+   },
+   "review": {}
+  },
+  "preview_only": true,
+  "address": {
+   "text": "121 Broadway, Cambridge, Ma, 02142",
+   "source": "10-K property name geocoded by US Census",
+   "evidence": {
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=121+Broadway%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json",
+    "sha256": "ab96e296ca4cadec25b214547ea830c13feac8562c49b072bc97711b993ed187",
+    "checked_at": "2026-11-14T03:10:00Z",
+    "locator": "US Census Geocoder match: 121 BROADWAY, CAMBRIDGE, MA, 02142",
+    "sha256_scope": "source_body",
+    "record_id": "re:bxp:121-broadway",
+    "scope": "specific_site"
+   }
+  },
+  "history": {
+   "batch1_location": {
+    "precision": "approximate",
+    "lat": 42.37604,
+    "lon": -71.11868,
+    "label": "Cambridge, MA (city reference point, not the building)",
+    "basis": "US Census 2024 Gazetteer place internal point for the city named in the filing (public domain)",
+    "satellite_allowed": false,
+    "evidence": {
+     "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_place_national.zip",
+     "sha256": "cf262fc92b2326f7a8c62a89d156a60eb17d64d6d35f7a62310c43bb08972c06",
+     "checked_at": "2026-11-14T02:37:00Z",
+     "locator": "Gazetteer place GEOID 2511000 (Cambridge city, MA) INTPTLAT/INTPTLONG",
+     "sha256_scope": "source_body",
+     "record_id": "re:bxp:121-broadway",
+     "scope": "city_reference"
+    }
+   },
+   "batch1_fact_sha256": "b275b70c5cca771f1795aaeeab767ec2ef38ebd8392cf5ac39eff58853e730f3"
+  },
+  "monitoring": {
+   "stable_id": "re:bxp:121-broadway",
+   "evidence_refs": [
+    {
+     "sha256": "1292ef99680acbb62611f599e7a5710e5463622f5a9e31db9d76b4136191ecd4",
+     "url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm"
+    },
+    {
+     "sha256": "ab96e296ca4cadec25b214547ea830c13feac8562c49b072bc97711b993ed187",
+     "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=121+Broadway%2C+Cambridge%2C+MA&benchmark=Public_AR_Current&format=json"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "fact_fingerprint": "274bcba3360fb0a115df83957c8dd7bce618bad75d952a29bc0c6952bfdefc3c",
+   "watch": [
+    "status",
+    "ownership",
+    "acquisition_disposal",
+    "evidence_hash"
+   ],
+   "enabled": false
+  }
+ }
+]

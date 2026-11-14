@@ -1,0 +1,96 @@
+{
+ "schema": "investedia.realestate.release-proposal.v1",
+ "created": "2026-11-14",
+ "status": "PROPOSED - not published; needs owner sign-off per record",
+ "count": 20,
+ "records": [
+  {
+   "id": "re:hst:calgary-marriott-downtown-hotel",
+   "fact_sha256": "45c0fbce89533f5ab2684a0e9f7804a4ae61dda8e6ca1dac356f18c25c2285e4"
+  },
+  {
+   "id": "re:hst:hyatt-place-waikiki-beach",
+   "fact_sha256": "d067b8221c55ae34e143376891d3fb9c70c0ebac7aec821e013f87a7bd94e0ee"
+  },
+  {
+   "id": "re:hst:new-orleans-marriott",
+   "fact_sha256": "83542d47b1ffce8c56be99376280b55cc99bde9780f8f08d4a5593cfca79c19e"
+  },
+  {
+   "id": "re:hst:new-york-marriott-downtown",
+   "fact_sha256": "9bbaa4b06d5756f8dcc3e44f68d03c716fe496e7b308d447dc76831a72374782"
+  },
+  {
+   "id": "re:hst:san-francisco-marriott-fisherman-s-wharf",
+   "fact_sha256": "9ed6ad20372c7085239a7834e1048843702c7c5100ecb8b5b6a958c97c9f1583"
+  },
+  {
+   "id": "re:hst:swiss-tel-chicago",
+   "fact_sha256": "2f44b0c9c901887eb97670370114a3e86a2130efbf594b996379076ffac41f6c"
+  },
+  {
+   "id": "re:hst:the-ritz-carlton-marina-del-rey",
+   "fact_sha256": "ebb5b7ef19390eda5e0789c3aca93bd8e6e157b240689e4b7d8041e1145e442a"
+  },
+  {
+   "id": "re:bxp:100-federal-street",
+   "fact_sha256": "a176dd98bf895836100296b2f5a531a82a1d13d61f12d3943aa7e0a8562be5af"
+  },
+  {
+   "id": "re:bxp:399-park-avenue",
+   "fact_sha256": "7edcef9eb005b2cd49820265cc16212e91b7175300258a6516260748ba246832"
+  },
+  {
+   "id": "re:bxp:535-mission-street",
+   "fact_sha256": "abf8ccdee5bffd0cfe12c70cdef6fb8d14d362626e4586944a1dbadc2ab14962"
+  },
+  {
+   "id": "re:hst:the-don-cesar",
+   "fact_sha256": "0e07990b9d0d9a32f1407682673d42929ebdf4df2d20756c5f207c0d8341f0b1"
+  },
+  {
+   "id": "re:hst:the-westin-georgetown-washington-d-c",
+   "fact_sha256": "1ea9339fe50aaaa423f45565df2c6b30848b8aa8b050284e3d82b174d5997854"
+  },
+  {
+   "id": "re:hst:the-westin-seattle",
+   "fact_sha256": "27ecbb9e6e82f152b652d6ece96ca263a5c8df9ed0707d26954c287f0264b9c2"
+  },
+  {
+   "id": "re:bxp:17-hartwell-avenue",
+   "fact_sha256": "f07a142cbec34f7a4a28c294fae918269c04208d154ea3d67f8d0e37a2aaee94"
+  },
+  {
+   "id": "re:bxp:290-binney-street",
+   "fact_sha256": "5dbbb6016711b0e248d4a39d7b46c68cc4a75ef8c09c11772dcaa9627d1e6430"
+  },
+  {
+   "id": "re:bxp:290-coles-street",
+   "fact_sha256": "2aa9c08e4495cf33c3ee4f19bdad3bd94740dca2c43e481dbc04774827b728af"
+  },
+  {
+   "id": "re:bxp:343-madison-avenue",
+   "fact_sha256": "4fff943e7b056d60aa2c7f9f28c48fda81f370d2aaff610ad5cc718d39f91fb8"
+  },
+  {
+   "id": "re:bxp:121-broadway-street",
+   "fact_sha256": "cda6ae5365e1d9a6f359d86431d84ec6daef9497289a1f0974eecc5fb2f3c466"
+  },
+  {
+   "id": "re:bxp:725-12th-street",
+   "fact_sha256": "a12597a646fc97a9f2295bb6cc9cbc306b0b35777f9996aa3e3daf73317779f9"
+  },
+  {
+   "id": "re:bxp:reston-next-retail",
+   "fact_sha256": "0a9270530b4a1edb9f742841adecbe2de5049d0b7f09637875996bbc11aa46cb"
+  }
+ ],
+ "gates": [
+  "verified listing (10-K cover = current SEC)",
+  "company-confirmed relationship",
+  "exact address/building point",
+  "status known and not disposed",
+  "all reuse fields cleared",
+  "owner signs fact_sha256"
+ ]
+}

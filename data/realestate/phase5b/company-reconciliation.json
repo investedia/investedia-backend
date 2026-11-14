@@ -1,0 +1,79 @@
+{
+ "as_of": "2026-11-14",
+ "companies": [
+  {
+   "name": "BXP, Inc.",
+   "ticker": "BXP",
+   "exchange": "XNYS",
+   "status": "listed",
+   "former_names": [
+    "Boston Properties, Inc."
+   ],
+   "records": 87
+  },
+  {
+   "name": "Host Hotels & Resorts, Inc.",
+   "ticker": "HST",
+   "exchange": "XNAS",
+   "status": "listed",
+   "former_names": [
+    "Host Marriott Corp"
+   ],
+   "records": 78
+  },
+  {
+   "name": "Vivmark Residential",
+   "ticker": "VMRK",
+   "exchange": "XNYS",
+   "status": "listed",
+   "former_names": [
+    {
+     "name": "Equity Residential",
+     "until": "2026-08-12",
+     "ticker": "EQR"
+    }
+   ],
+   "events": [
+    {
+     "type": "rename",
+     "date": "2026-08-12",
+     "detail": "Equity Residential renamed Vivmark Residential (SEC former-name record ends 2026-08-12)"
+    },
+    {
+     "type": "merger",
+     "date": "2026-08-17",
+     "detail": "AvalonBay Communities merged into a Vivmark subsidiary; each AVB share converted into 2.793 Vivmark common shares",
+     "evidence": {
+      "url": "https://www.sec.gov/Archives/edgar/data/915912/000110465926097833/tm2623381d1_8k.htm",
+      "sha256": "c24565f909291f79e2a9f0d9d9391642ca341c27f48e058886f28091caab5c31",
+      "checked_at": "2026-11-14T03:40:00Z",
+      "locator": "Introductory Note / Item 2.01: closing on August 17, 2026; exchange ratio 2.793",
+      "sha256_scope": "source_body"
+     }
+    }
+   ],
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/906107/000119312526448699/vmrk-20261104.htm",
+    "sha256": "22e5561ef981210e280a7415eedbd8a2a937a2b12b5c4af52932929abebd3142",
+    "checked_at": "2026-11-14T03:40:00Z",
+    "locator": "8-K cover: Common Shares of Beneficial Interest, VMRK, New York Stock Exchange",
+    "sha256_scope": "source_body"
+   },
+   "records": 0,
+   "next": "AvalonBay (316) and Equity Residential FY2025 Schedule III communities map to Vivmark only after a post-merger Vivmark property list confirms current holding"
+  },
+  {
+   "name": "AvalonBay Communities, Inc.",
+   "ticker": "AVB",
+   "status": "delisted 2026-08-17 (merged into Vivmark)",
+   "evidence": {
+    "url": "https://www.sec.gov/Archives/edgar/data/915912/000110465926097833/tm2623381d1_8k.htm",
+    "sha256": "c24565f909291f79e2a9f0d9d9391642ca341c27f48e058886f28091caab5c31",
+    "checked_at": "2026-11-14T03:40:00Z",
+    "locator": "Item 3.01: shares removed from trading on the NYSE prior to market open on August 17, 2026",
+    "sha256_scope": "source_body"
+   },
+   "live_exposure": false
+  }
+ ]
+}

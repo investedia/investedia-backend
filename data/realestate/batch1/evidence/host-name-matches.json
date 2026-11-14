@@ -1,0 +1,382 @@
+{
+ "re:hst:1-hotel-central-park": [
+  "/Properties/Domestic/New-York/1-Hotel-Central-Park",
+  1.0,
+  "1 Hotel Central Park"
+ ],
+ "re:hst:1-hotel-nashville": [
+  "/Properties/Domestic/Tennessee/1-Hotel-Nashville",
+  1.0,
+  "1 Hotel Nashville"
+ ],
+ "re:hst:1-hotel-south-beach": [
+  "/Properties/Domestic/Florida/1-Hotel-South-Beach",
+  1.0,
+  "1 Hotel South Beach"
+ ],
+ "re:hst:ac-hotel-scottsdale-north": [
+  "/Properties/Domestic/Arizona/AC-Hotel-Scottsdale-North",
+  1.0,
+  "AC Hotel Scottsdale North"
+ ],
+ "re:hst:alila-ventana-big-sur": [
+  "/Properties/Domestic/California/Alila-Ventana-Big-Sur",
+  1.0,
+  "Alila Ventana Big Sur"
+ ],
+ "re:hst:andaz-maui-at-wailea-resort": [
+  "/Properties/Domestic/Hawaii/Andaz-Maui-at-Wailea-Resort",
+  1.0,
+  "Andaz Maui at Wailea Resort"
+ ],
+ "re:hst:axiom-hotel": [
+  "/Properties/Domestic/California/Axiom-Hotel",
+  1.0,
+  "Axiom Hotel"
+ ],
+ "re:hst:baker-s-cay-resort-key-largo-curio-collection-by-hilton": [
+  "/Properties/Domestic/Florida/Bakers-Cay-Resort-Key-Largo",
+  1.0,
+  "Baker's Cay Resort Key Largo, Curio Collection by Hilton"
+ ],
+ "re:hst:boston-marriott-copley-place": [
+  "/Properties/Domestic/Massachusetts/Boston-Marriott-Copley-Place",
+  1.0,
+  "Boston Marriott Copley Place"
+ ],
+ "re:hst:calgary-marriott-downtown-hotel": [
+  "/Properties/International/Canada/Calgary-Marriott-Downtown-Hotel",
+  1.0,
+  "Calgary Marriott Downtown Hotel"
+ ],
+ "re:hst:coronado-island-marriott-resort-spa": [
+  "/Properties/Domestic/California/Coronado-Island-Marriott-Resort-and-Spa",
+  1.0,
+  "Coronado Island Marriott Resort & Spa"
+ ],
+ "re:hst:denver-marriott-tech-center": [
+  "/Properties/Domestic/Colorado/Denver-Marriott-Tech-Center",
+  1.0,
+  "Denver Marriott Tech Center"
+ ],
+ "re:hst:denver-marriott-west": [
+  "/Properties/Domestic/Colorado/Denver-Marriott-West",
+  1.0,
+  "Denver Marriott West"
+ ],
+ "re:hst:embassy-suites-by-hilton-chicago-downtown-magnificent-mile": [
+  "/Properties/Domestic/Illinois/Embassy-Suites-by-Hilton-Chicago-Downtown-Magnificent-Mile",
+  1.0,
+  "Embassy Suites by Hilton Chicago Downtown Magnificent Mile"
+ ],
+ "re:hst:embassy-suites-by-hilton-nashville-downtown": [
+  "/Properties/Domestic/Tennessee/Embassy-Suites-by-Hilton-Nashville-Downtown",
+  1.0,
+  "Embassy Suites by Hilton Nashville Downtown"
+ ],
+ "re:hst:fairmont-kea-lani-maui": [
+  "/Properties/Domestic/Hawaii/The-Fairmont-Kea-Lani",
+  1.0,
+  "Fairmont Kea Lani, Maui"
+ ],
+ "re:hst:gaithersburg-marriott-washingtonian-center": [
+  "/Properties/Domestic/Maryland/Gaithersburg-Marriott-Washingtonian-Center",
+  1.0,
+  "Gaithersburg Marriott Washingtonian Center"
+ ],
+ "re:hst:grand-hyatt-atlanta-in-buckhead": [
+  "/Properties/Domestic/Georgia/Grand-Hyatt-Atlanta-in-Buckhead",
+  1.0,
+  "Grand Hyatt Atlanta in Buckhead"
+ ],
+ "re:hst:grand-hyatt-san-francisco": [
+  "/Properties/Domestic/California/Grand-Hyatt-San-Francisco",
+  1.0,
+  "Grand Hyatt San Francisco"
+ ],
+ "re:hst:grand-hyatt-washington": [
+  "/Properties/Domestic/District-of-Columbia/Grand-Hyatt-Washington",
+  1.0,
+  "Grand Hyatt Washington"
+ ],
+ "re:hst:hotel-van-zandt": [
+  "/Properties/Domestic/Texas/Hotel-Van-Zandt",
+  1.0,
+  "Hotel Van Zandt"
+ ],
+ "re:hst:houston-airport-marriott-at-george-bush-intercontinental": [
+  "/Properties/Domestic/Texas/Houston-Airport-Marriott-at-George-Bush-Intercontinental",
+  1.0,
+  "Houston Airport Marriott at George Bush Intercontinental"
+ ],
+ "re:hst:houston-marriott-medical-center-museum-district": [
+  "/Properties/Domestic/Texas/Houston-Marriott-Medical-Center-Museum-District",
+  1.0,
+  "Houston Marriott Medical Center/Museum District"
+ ],
+ "re:hst:hyatt-place-waikiki-beach": [
+  "/Properties/Domestic/Hawaii/Hyatt-Place-Waikiki-Beach",
+  1.0,
+  "Hyatt Place Waikiki Beach"
+ ],
+ "re:hst:hyatt-regency-austin": [
+  "/Properties/Domestic/Texas/Hyatt-Regency-Austin",
+  1.0,
+  "Hyatt Regency Austin"
+ ],
+ "re:hst:hyatt-regency-coconut-point-resort-and-spa": [
+  "/Properties/Domestic/Florida/Hyatt-Regency-Coconut-Point-Resort-and-Spa",
+  1.0,
+  "Hyatt Regency Coconut Point Resort and Spa"
+ ],
+ "re:hst:hyatt-regency-maui-resort-and-spa": [
+  "/Properties/Domestic/Hawaii/Hyatt-Regency-Maui-Resort-and-Spa",
+  1.0,
+  "Hyatt Regency Maui Resort and Spa"
+ ],
+ "re:hst:hyatt-regency-reston": [
+  "/Properties/Domestic/Virginia/Hyatt-Regency-Reston",
+  1.0,
+  "Hyatt Regency Reston"
+ ],
+ "re:hst:hyatt-regency-san-francisco-airport": [
+  "/Properties/Domestic/California/Hyatt-Regency-San-Francisco-Airport",
+  1.0,
+  "Hyatt Regency San Francisco Airport"
+ ],
+ "re:hst:hyatt-regency-washington-on-capitol-hill": [
+  "/Properties/Domestic/District-of-Columbia/Hyatt-Regency-Washington-on-Capitol-Hill",
+  1.0,
+  "Hyatt Regency Washington on Capitol Hill"
+ ],
+ "re:hst:ibis-rio-de-janeiro-parque-olimpico": [
+  "/Properties/International/Brazil/ibis-Rio-de-Janeiro-Parque-Olimpico-Hotel",
+  1.0,
+  "Ibis Rio de Janeiro Parque Olimpico"
+ ],
+ "re:hst:jw-marriott-atlanta-buckhead": [
+  "/Properties/Domestic/Georgia/JW-Marriott-Atlanta-Buckhead",
+  1.0,
+  "JW Marriott Atlanta Buckhead"
+ ],
+ "re:hst:jw-marriott-hotel-rio-de-janeiro": [
+  "/Properties/International/Brazil/JW-Marriott-Hotel-Rio-de-Janeiro",
+  1.0,
+  "JW Marriott Hotel Rio de Janeiro"
+ ],
+ "re:hst:jw-marriott-houston-by-the-galleria": [
+  "/Properties/Domestic/Texas/JW-Marriott-Houston",
+  1.0,
+  "JW Marriott Houston by The Galleria"
+ ],
+ "re:hst:jw-marriott-washington-dc": [
+  "/Properties/Domestic/District-of-Columbia/JW-Marriott-Washington-DC",
+  1.0,
+  "JW Marriott Washington, DC"
+ ],
+ "re:hst:manchester-grand-hyatt-san-diego": [
+  "/Properties/Domestic/California/Manchester-Grand-Hyatt-San-Diego",
+  1.0,
+  "Manchester Grand Hyatt San Diego"
+ ],
+ "re:hst:marina-del-rey-marriott": [
+  "/Properties/Domestic/California/Marina-del-Rey-Marriott",
+  1.0,
+  "Marina del Rey Marriott"
+ ],
+ "re:hst:marriott-downtown-at-cf-toronto-eaton-centre": [
+  "/Properties/International/Canada/Marriott-Downtown-at-CF-Toronto-Eaton-Centre",
+  1.0,
+  "Marriott Downtown at CF Toronto Eaton Centre"
+ ],
+ "re:hst:marriott-marquis-san-diego-marina": [
+  "/Properties/Domestic/California/Marriott-Marquis-San-Diego-Marina",
+  1.0,
+  "Marriott Marquis San Diego Marina"
+ ],
+ "re:hst:miami-marriott-biscayne-bay": [
+  "/Properties/Domestic/Florida/Miami-Marriott-Biscayne-Bay",
+  1.0,
+  "Miami Marriott Biscayne Bay"
+ ],
+ "re:hst:minneapolis-marriott-city-center": [
+  "/Properties/Domestic/Minnesota/Minneapolis-Marriott-City-Center",
+  1.0,
+  "Minneapolis Marriott City Center"
+ ],
+ "re:hst:new-orleans-marriott": [
+  "/Properties/Domestic/Louisiana/New-Orleans-Marriott",
+  1.0,
+  "New Orleans Marriott"
+ ],
+ "re:hst:new-york-marriott-downtown": [
+  "/Properties/Domestic/New-York/New-York-Marriott-Downtown",
+  1.0,
+  "New York Marriott Downtown"
+ ],
+ "re:hst:new-york-marriott-marquis": [
+  "/Properties/Domestic/New-York/New-York-Marriott-Marquis",
+  1.0,
+  "New York Marriott Marquis"
+ ],
+ "re:hst:newark-liberty-international-airport-marriott": [
+  "/Properties/Domestic/New-Jersey/Newark-Liberty-International-Airport-Marriott",
+  1.0,
+  "Newark Liberty International Airport Marriott"
+ ],
+ "re:hst:novotel-rio-de-janeiro-parque-olimpico": [
+  "/Properties/International/Brazil/Novotel-Rio-de-Janeiro-Parque-Olimpico-Hotel",
+  1.0,
+  "Novotel Rio de Janeiro Parque Olimpico"
+ ],
+ "re:hst:orlando-world-center-marriott": [
+  "/Properties/Domestic/Florida/Orlando-World-Center-Marriott",
+  1.0,
+  "Orlando World Center Marriott"
+ ],
+ "re:hst:philadelphia-airport-marriott": [
+  "/Properties/Domestic/Pennsylvania/Philadelphia-Airport-Marriott",
+  1.0,
+  "Philadelphia Airport Marriott"
+ ],
+ "re:hst:san-antonio-marriott-rivercenter": [
+  "/Properties/Domestic/Texas/San-Antonio-Marriott-Rivercenter",
+  1.0,
+  "San Antonio Marriott Rivercenter"
+ ],
+ "re:hst:san-antonio-marriott-riverwalk": [
+  "/Properties/Domestic/Texas/San-Antonio-Marriott-Riverwalk",
+  1.0,
+  "San Antonio Marriott Riverwalk"
+ ],
+ "re:hst:san-francisco-marriott-fisherman-s-wharf": [
+  "/Properties/Domestic/California/San-Francisco-Marriott-Fishermans-Wharf",
+  1.0,
+  "San Francisco Marriott Fisherman's Wharf"
+ ],
+ "re:hst:san-francisco-marriott-marquis": [
+  "/Properties/Domestic/California/San-Francisco-Marriott-Marquis",
+  1.0,
+  "San Francisco Marriott Marquis"
+ ],
+ "re:hst:santa-clara-marriott": [
+  "/Properties/Domestic/California/Santa-Clara-Marriott",
+  1.0,
+  "Santa Clara Marriott"
+ ],
+ "re:hst:sheraton-parsippany-hotel": [
+  "/Properties/Domestic/Texas/Hyatt-Regency-Austin",
+  0.0,
+  "Hyatt Regency Austin"
+ ],
+ "re:hst:swiss-tel-chicago": [
+  "/Properties/Domestic/Illinois/Swissotel-Chicago",
+  1.0,
+  "Swiss\u00f4tel Chicago"
+ ],
+ "re:hst:tampa-airport-marriott": [
+  "/Properties/Domestic/Florida/Tampa-Airport-Marriott",
+  1.0,
+  "Tampa Airport Marriott"
+ ],
+ "re:hst:the-alida-savannah-a-tribute-portfolio-hotel": [
+  "/Properties/Domestic/Georgia/The-Alida-Savannah-a-Tribute-Portfolio-Hotel",
+  1.0,
+  "The Alida, Savannah, a Tribute Portfolio Hotel"
+ ],
+ "re:hst:the-don-cesar": [
+  "/Properties/Domestic/Florida/The-Don-CeSar",
+  1.0,
+  "The Don CeSar"
+ ],
+ "re:hst:the-laura-hotel-houston-downtown-autograph-collection": [
+  "/Properties/Domestic/Texas/The-Laura-Hotel",
+  1.0,
+  "The Laura Hotel, Houston Downtown, Autograph Collection"
+ ],
+ "re:hst:the-logan-philadelphia-curio-collection-by-hilton": [
+  "/Properties/Domestic/Pennsylvania/The-Logan-Philadelphia-Hotel",
+  1.0,
+  "The Logan Philadelphia, Curio Collection by Hilton"
+ ],
+ "re:hst:the-phoenician-a-luxury-collection-resort-scottsdale": [
+  "/Properties/Domestic/Arizona/The-Phoenician-A-Luxury-Collection-Resort",
+  1.0,
+  "The Phoenician, A Luxury Collection Resort, Scottsdale"
+ ],
+ "re:hst:the-ritz-carlton-amelia-island": [
+  "/Properties/Domestic/Florida/The-Ritz-Carlton-Amelia-Island",
+  1.0,
+  "The Ritz-Carlton, Amelia Island"
+ ],
+ "re:hst:the-ritz-carlton-marina-del-rey": [
+  "/Properties/Domestic/California/Ritz-Carlton-Marina-Del-Rey",
+  1.0,
+  "The Ritz-Carlton, Marina Del Rey"
+ ],
+ "re:hst:the-ritz-carlton-naples": [
+  "/Properties/Domestic/Florida/The-Ritz-Carlton-Naples",
+  1.0,
+  "The Ritz-Carlton, Naples"
+ ],
+ "re:hst:the-ritz-carlton-naples-tibur-n": [
+  "/Properties/Domestic/Florida/The-Ritz-Carlton-Naples-Tiburon",
+  1.0,
+  "The Ritz-Carlton Naples, Tibur\u00f3n"
+ ],
+ "re:hst:the-ritz-carlton-o-ahu-turtle-bay": [
+  "/Properties/Domestic/Hawaii/The-Ritz-Carlton-Oahu-Turtle-Bay",
+  0.71,
+  "The Ritz-Carlton O\u02bbahu, Turtle Bay"
+ ],
+ "re:hst:the-ritz-carlton-tysons-corner": [
+  "/Properties/Domestic/Virginia/The-Ritz-Carlton-Tysons-Corner",
+  1.0,
+  "The Ritz-Carlton, Tysons Corner"
+ ],
+ "re:hst:the-singer-oceanfront-resort-curio-collection-by-hilton": [
+  "/Properties/Domestic/Florida/The-Singer-Oceanfront-Resort",
+  1.0,
+  "The Singer Oceanfront Resort, Curio Collection by Hilton"
+ ],
+ "re:hst:the-westin-chicago-river-north": [
+  "/Properties/Domestic/Illinois/The-Westin-Chicago-River-North",
+  1.0,
+  "The Westin Chicago River North"
+ ],
+ "re:hst:the-westin-denver-downtown": [
+  "/Properties/Domestic/Colorado/The-Westin-Denver-Downtown",
+  1.0,
+  "The Westin Denver Downtown"
+ ],
+ "re:hst:the-westin-georgetown-washington-d-c": [
+  "/Properties/Domestic/District-of-Columbia/The-Westin-Georgetown-Washington-DC",
+  0.83,
+  "The Westin Georgetown, Washington D.C."
+ ],
+ "re:hst:the-westin-kierland-resort-spa": [
+  "/Properties/Domestic/Arizona/The-Westin-Kierland-Resort-and-Spa",
+  1.0,
+  "The Westin Kierland Resort & Spa"
+ ],
+ "re:hst:the-westin-seattle": [
+  "/Properties/Domestic/Washington/The-Westin-Seattle",
+  1.0,
+  "The Westin Seattle"
+ ],
+ "re:hst:the-westin-south-coast-plaza-costa-mesa": [
+  "/Properties/Domestic/California/The-Westin-South-Coast-Plaza-Costa-Mesa",
+  1.0,
+  "The Westin South Coast Plaza, Costa Mesa"
+ ],
+ "re:hst:the-westin-waltham-boston": [
+  "/Properties/Domestic/Massachusetts/The-Westin-Waltham-Boston",
+  1.0,
+  "The Westin Waltham Boston"
+ ],
+ "re:hst:w-seattle": [
+  "/Properties/Domestic/Washington/W-Seattle",
+  1.0,
+  "W Seattle"
+ ]
+}

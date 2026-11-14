@@ -1,0 +1,2717 @@
+[
+ {
+  "id": "re:bxp:10-citypoint",
+  "name": "10 CityPoint",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "ed83c30d421d234cb1da9912f9c5cb068309e8482177bc4056ffc18854519462"
+ },
+ {
+  "id": "re:bxp:100-federal-street",
+  "name": "100 Federal Street",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": true,
+  "proposed_release": true,
+  "score": 65,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "a176dd98bf895836100296b2f5a531a82a1d13d61f12d3943aa7e0a8562be5af"
+ },
+ {
+  "id": "re:bxp:103-citypoint",
+  "name": "103 CityPoint",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "2a5e7e8f9e48a6a449b50945554dc66a1d1f614fb965150a6a8e2bd9cbde8bfa"
+ },
+ {
+  "id": "re:bxp:105-broadway",
+  "name": "105 Broadway",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "6c152fa1942349b80719404c7519b89a4f9a20b14ef5648905967fb0c7cb8942"
+ },
+ {
+  "id": "re:bxp:121-broadway",
+  "name": "121 Broadway",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "unknown",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "disposed (retired)",
+   "status unresolved",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "6e1194e7039290b0e5cc4055dc963c120bc97192a67b6b492937420110345869"
+ },
+ {
+  "id": "re:bxp:121-broadway-street",
+  "name": "121 Broadway Street",
+  "company": "BXP",
+  "role": "developer",
+  "stake": null,
+  "stage": "under_construction",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": true,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "cda6ae5365e1d9a6f359d86431d84ec6daef9497289a1f0974eecc5fb2f3c466"
+ },
+ {
+  "id": "re:bxp:125-broadway",
+  "name": "125 Broadway",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "92a201b9980f5c0d252d7c7ed557f402540007c0c425b210d57c5218ec5abd82"
+ },
+ {
+  "id": "re:bxp:1330-connecticut-avenue",
+  "name": "1330 Connecticut Avenue",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "disposed (retired)",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "4142d783d69432f5025734f93be0ded4c046e88d6d4f88fc39aef0c9afc2e4a8"
+ },
+ {
+  "id": "re:bxp:145-broadway",
+  "name": "145 Broadway",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "f306d636de15054b41a19ae5ed990656028bf9838dc3e2071c3b913506e6eaa8"
+ },
+ {
+  "id": "re:bxp:150-broadway",
+  "name": "150 Broadway",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "10a7c33683e1696cf9e130de5a85087b7fa56997dc08c378a265c33d7bbd13af"
+ },
+ {
+  "id": "re:bxp:153-211-second-avenue",
+  "name": "153 & 211 Second Avenue",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "1ddfc0ec0f4e3fe567f749dc234ed37d9d8901dd0eafd80c2037548bb14fade7"
+ },
+ {
+  "id": "re:bxp:17-hartwell-avenue",
+  "name": "17 Hartwell Avenue",
+  "company": "BXP",
+  "role": "developer",
+  "stake": 20.0,
+  "stage": "under_construction",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": true,
+  "score": 45,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "f07a142cbec34f7a4a28c294fae918269c04208d154ea3d67f8d0e37a2aaee94"
+ },
+ {
+  "id": "re:bxp:17fifty-presidents-street",
+  "name": "17Fifty Presidents Street",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "da0781fa81e3553b5300e27e2e5fc786bea7aacc20d6047c5d49f4dbd98ac650"
+ },
+ {
+  "id": "re:bxp:180-citypoint",
+  "name": "180 CityPoint",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "5944e3cefe1cbe93ccf2b67ed3f5fc3f7db972c1291b1c7249f0901d944267a7"
+ },
+ {
+  "id": "re:bxp:20-citypoint",
+  "name": "20 CityPoint",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "71797af908557e181fbe049853728b74affdfad693f0a05c4245d173132f1bd3"
+ },
+ {
+  "id": "re:bxp:200-clarendon-street-and-garage",
+  "name": "200 Clarendon Street and Garage",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "dcf94b5f1e2d84f5952137cd675ce65f3ec0b8a16bdf337f4f8e505610eb8cf9"
+ },
+ {
+  "id": "re:bxp:200-west-street",
+  "name": "200 West Street",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "ec12ebd5d40ca614d994a8ec491a5ff7929b937e0a7238fb2a71abf6c6843b3f"
+ },
+ {
+  "id": "re:bxp:2100-pennsylvania-avenue",
+  "name": "2100 Pennsylvania Avenue",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "953ca9a932706f614bb92ab6b3f769b925d29c4d52a1af62c319c667e1495d28"
+ },
+ {
+  "id": "re:bxp:2200-pennsylvania-avenue",
+  "name": "2200 Pennsylvania Avenue",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "4633852963544816380749ca70602426f0f6f52d845b35257423fcc489d960eb"
+ },
+ {
+  "id": "re:bxp:230-citypoint",
+  "name": "230 CityPoint",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "a2d763a92952f97115fcaa9024946e339a90f6b03bb76864a02edcde4ead59e0"
+ },
+ {
+  "id": "re:bxp:2440-west-el-camino-real",
+  "name": "2440 West El Camino Real",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "cf66defcaa33d860a1ebf197c2865874ff0e69ddde0323c0123c4f85d0322659"
+ },
+ {
+  "id": "re:bxp:250-binney-street",
+  "name": "250 Binney Street",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "57c80a7b5d5e533158f4352d1e160ee47fa5c587bbe3683b3e209edff7bccc76"
+ },
+ {
+  "id": "re:bxp:250-west-55th-street",
+  "name": "250 West 55th Street",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "8389670d4f42f955c31dad8d8753b0868c592d7cb3bab17fd5f029e4a5599ce9"
+ },
+ {
+  "id": "re:bxp:255-main-street",
+  "name": "255 Main Street",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "faff6c0fbe0cd709a327853e628eae6bbef614e466a759bf266534a4c360cb4e"
+ },
+ {
+  "id": "re:bxp:290-binney-street",
+  "name": "290 Binney Street",
+  "company": "BXP",
+  "role": "developer",
+  "stake": 55.0,
+  "stage": "completed",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": true,
+  "score": 45,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "5dbbb6016711b0e248d4a39d7b46c68cc4a75ef8c09c11772dcaa9627d1e6430"
+ },
+ {
+  "id": "re:bxp:290-coles-street",
+  "name": "290 Coles Street",
+  "company": "BXP",
+  "role": "developer",
+  "stake": 19.46,
+  "stage": "under_construction",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": true,
+  "score": 45,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "2aa9c08e4495cf33c3ee4f19bdad3bd94740dca2c43e481dbc04774827b728af"
+ },
+ {
+  "id": "re:bxp:300-binney-street",
+  "name": "300 Binney Street",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "1a637f9ff3da0aab94fed5dd8a246211705720297c266a52e033a574aa7efd78"
+ },
+ {
+  "id": "re:bxp:32-hartwell-avenue",
+  "name": "32 Hartwell Avenue",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "57960b653e2aba2208141ccfcfd81f4f4bb4be1746fd3029308afe75c735f2b6"
+ },
+ {
+  "id": "re:bxp:325-main-street",
+  "name": "325 Main Street",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "3602be793618f6e640fba45b66c79bf75fbc2af6c603af2d2493f4fc310b9758"
+ },
+ {
+  "id": "re:bxp:33-hayden-avenue",
+  "name": "33 Hayden Avenue",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "724a52023a2b8b1b3855cf6738393a12d2a77d6528c891922a35d0839eb348e1"
+ },
+ {
+  "id": "re:bxp:343-madison-avenue",
+  "name": "343 Madison Avenue",
+  "company": "BXP",
+  "role": "developer",
+  "stake": 89.45,
+  "stage": "under_construction",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": true,
+  "score": 45,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "4fff943e7b056d60aa2c7f9f28c48fda81f370d2aaff610ad5cc718d39f91fb8"
+ },
+ {
+  "id": "re:bxp:355-main-street",
+  "name": "355 Main Street",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "9f7404079ccd92a974f4255be2dea66f731f266392ebc986952d503aa01d11de"
+ },
+ {
+  "id": "re:bxp:399-park-avenue",
+  "name": "399 Park Avenue",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": true,
+  "proposed_release": true,
+  "score": 65,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "7edcef9eb005b2cd49820265cc16212e91b7175300258a6516260748ba246832"
+ },
+ {
+  "id": "re:bxp:453-ravendale-drive",
+  "name": "453 Ravendale Drive",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "c5cd52a8f79b5c88bd6e6df21c1877b059515c1af4407bd7dee8849ce9cf41ea"
+ },
+ {
+  "id": "re:bxp:510-madison-avenue",
+  "name": "510 Madison Avenue",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "5449e9a2a4a6e7f2cc279767ab0de27e9e70683b145dd566022463de3dc4d5ef"
+ },
+ {
+  "id": "re:bxp:535-mission-street",
+  "name": "535 Mission Street",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": true,
+  "proposed_release": true,
+  "score": 65,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "abf8ccdee5bffd0cfe12c70cdef6fb8d14d362626e4586944a1dbadc2ab14962"
+ },
+ {
+  "id": "re:bxp:599-lexington-avenue",
+  "name": "599 Lexington Avenue",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "00e3a1a4539ecfbe69d7474a7fb9dc39745993e3dcf0c5f72c4ad3ab5ffa1ded"
+ },
+ {
+  "id": "re:bxp:601-lexington-avenue",
+  "name": "601 Lexington Avenue",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": 55.0,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 35,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "757ba1085f7719ce8daa2bd1919a9700b647cbec8552d4ec9a175ef17294fdb6"
+ },
+ {
+  "id": "re:bxp:651-gateway",
+  "name": "651 Gateway",
+  "company": "BXP",
+  "role": "developer",
+  "stake": 50.0,
+  "stage": "unknown",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 35,
+  "blockers": [
+   "status unresolved",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "31aa081fe99b6267fbe70fea1610f5f5d16ee5a4e96efc36f05f754d8c4d0d4c"
+ },
+ {
+  "id": "re:bxp:680-folsom-street",
+  "name": "680 Folsom Street",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "1044003ad18394fba367c36b5d642eae3a932680027e25a8699a1bdbe359692b"
+ },
+ {
+  "id": "re:bxp:690-folsom-street",
+  "name": "690 Folsom Street",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "013e4ea9940e21a08bf2e2212084d24428eaa7773c64388119d11ce4e35046ae"
+ },
+ {
+  "id": "re:bxp:7-times-square",
+  "name": "7 Times Square",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "8c388ddc31b4ce29ca3c21c567cc46a6260d2c7ca31fb0d3b301477bb2a6d1aa"
+ },
+ {
+  "id": "re:bxp:725-12th-street",
+  "name": "725 12th Street",
+  "company": "BXP",
+  "role": "developer",
+  "stake": null,
+  "stage": "under_construction",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": true,
+  "score": 10,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "a12597a646fc97a9f2295bb6cc9cbc306b0b35777f9996aa3e3daf73317779f9"
+ },
+ {
+  "id": "re:bxp:767-fifth-avenue-the-general-motors-building",
+  "name": "767 Fifth Avenue (the General Motors Building)",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": 60.0,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 35,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "97610375784a56de08ef45036a69d5501bd579954036eefe29a69bc642475466"
+ },
+ {
+  "id": "re:bxp:77-citypoint",
+  "name": "77 CityPoint",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "b46a9b7750ea92db588938bc21a64eea7ccff7802be8d96ffad7941b7ff82d75"
+ },
+ {
+  "id": "re:bxp:880-winter-street",
+  "name": "880 Winter Street",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "bc103b4b7ae1ac5df02b7bbf8d4528e5d98c85be6244826455d8a493b94819f1"
+ },
+ {
+  "id": "re:bxp:890-winter-street",
+  "name": "890 Winter Street",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "c5b55cde66a72030209ec6078ea6d9f0a0958486e9a2cc15fdbcf6588e5cc72c"
+ },
+ {
+  "id": "re:bxp:90-broadway",
+  "name": "90 Broadway",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "b2ebac414a785c9b85025e9b6a6c428cab29403c0929598e6a8352b857e88b9c"
+ },
+ {
+  "id": "re:bxp:901-new-york-avenue",
+  "name": "901 New York Avenue",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "79648b51f817a45e00f9d78fb88b1aeb78ee8ac9f66789bfdfe08e54a7d5d749"
+ },
+ {
+  "id": "re:bxp:92-100-hayden-avenue",
+  "name": "92-100 Hayden Avenue",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "b0a8746695c93bafda0fc8bc822ef8d83f9cdf44bdbe4ab685357c144b4fd45c"
+ },
+ {
+  "id": "re:bxp:atlantic-wharf",
+  "name": "Atlantic Wharf",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "4c1d0090772aaac3a01876fbb9c909a6a427f0af66aca45a7ac70f461f5f58fc"
+ },
+ {
+  "id": "re:bxp:avant-retail",
+  "name": "Avant Retail",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "3a882084d236068c367038652b6a13b7f0c1ddcdce1ec9e6f5a5a68345201ab1"
+ },
+ {
+  "id": "re:bxp:bay-colony-corporate-center",
+  "name": "Bay Colony Corporate Center",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "34b43a389ea452bfb6ff6fac44816572d6c581792b0a1eb78d994fac7d630c02"
+ },
+ {
+  "id": "re:bxp:boston-marriott-cambridge",
+  "name": "Boston Marriott Cambridge",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "288535c4a6fab144977b53c873645eba594ce3fa15b6700d6e2ee8b703789e30"
+ },
+ {
+  "id": "re:bxp:capital-gallery",
+  "name": "Capital Gallery",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "4d492aec8bc7e0af62a1c7469297a250b0fbdb44a624c4c65885c9a32c15a9c2"
+ },
+ {
+  "id": "re:bxp:carnegie-center",
+  "name": "Carnegie Center",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "f596eb46693815029df0f806770bb63a4e784170c4dad0435956b0a45d60d845"
+ },
+ {
+  "id": "re:bxp:discovery-square",
+  "name": "Discovery Square",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "2fe52adfde4dfbb19988b43ea66d75a7f33f004936dd483a188babf8b9084151"
+ },
+ {
+  "id": "re:bxp:embarcadero-center",
+  "name": "Embarcadero Center",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "329a2ea44a44e6fe664f2baeaeda00cd58f3ead164ef495e4aa9e27402d0a31c"
+ },
+ {
+  "id": "re:bxp:fountain-square",
+  "name": "Fountain Square",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "c46c269f2171571a987654da4ca5983adbe09904d41be04ff046b4e9ca44eccc"
+ },
+ {
+  "id": "re:bxp:kendall-center-green-garage",
+  "name": "Kendall Center Green Garage",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "e30de1d07c4f9471ef701cbf49d8a89081933e09ffffeb920868a6e9251ef993"
+ },
+ {
+  "id": "re:bxp:kendall-center-yellow-garage",
+  "name": "Kendall Center Yellow Garage",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "59d414c56c278994337a34c07343e2070f835c9b2e022ed3bff332132ffa4f20"
+ },
+ {
+  "id": "re:bxp:kingstowne-towne-center",
+  "name": "Kingstowne Towne Center",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "Kingstowne Retail (88,300 sq ft) sold 17 Apr 2026; confirm what remains",
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "1080fd07a06f5847394acfffe216f40924477631fbebdf4a319097ad561506fe"
+ },
+ {
+  "id": "re:bxp:lexington-office-park",
+  "name": "Lexington Office Park",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "a68b12925d60fed0f48b56da5ad362b4009f7e305f26e2038c5bc1cb34e5969e"
+ },
+ {
+  "id": "re:bxp:madison-centre",
+  "name": "Madison Centre",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "2fdc891ed34c5c7c18ad513b0dcef6b55dd401f6f02d40e2fb380eaa29aba443"
+ },
+ {
+  "id": "re:bxp:mountain-view-research-park",
+  "name": "Mountain View Research Park",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "5cd16ec351707cf7b19af974b222803d184c8b18082d1b173693f377059bdd58"
+ },
+ {
+  "id": "re:bxp:north-first-business-park",
+  "name": "North First Business Park",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "25afd7d9af816863f7ca2ee07710001e2134991e41c174b37980dc327458a37d"
+ },
+ {
+  "id": "re:bxp:one-and-two-reston-overlook",
+  "name": "One and Two Reston Overlook",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "2637601b29963868f53898e4b7b8bf95473c1e3030a580781339720c08083e94"
+ },
+ {
+  "id": "re:bxp:one-freedom-square",
+  "name": "One Freedom Square",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "82103eb5d918f4970b2305beea32681f9608a8240a593e517248f6316d9b435c"
+ },
+ {
+  "id": "re:bxp:prudential-center",
+  "name": "Prudential Center",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "0a45dbce5e63329e9db98f5c0d5ec83b04264bcca95912c3c90342541e15c540"
+ },
+ {
+  "id": "re:bxp:reservoir-place",
+  "name": "Reservoir Place",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "4cb3c0912f48ea8cc2b5cc8193cacdc9f38b5392e05b9ea613403f11eef1e4de"
+ },
+ {
+  "id": "re:bxp:reston-corporate-center",
+  "name": "Reston Corporate Center",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "528ba7268869277089310a266d7c3bcbcf7994af0ac959ceca607389dcad6aab"
+ },
+ {
+  "id": "re:bxp:reston-next",
+  "name": "Reston Next",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "2d0c067ebe8cd5c9cc48d40613b768f1fb77510f486d3662a53dc41cb18d9958"
+ },
+ {
+  "id": "re:bxp:reston-next-office-phase-ii",
+  "name": "Reston Next Office Phase II",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "76cb0a255b01c9923fb74e51cf7145bd84629e105969fd8b423c5c0636778b36"
+ },
+ {
+  "id": "re:bxp:reston-next-retail",
+  "name": "Reston Next Retail",
+  "company": "BXP",
+  "role": "developer",
+  "stake": null,
+  "stage": "completed",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": true,
+  "score": 10,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "0a9270530b4a1edb9f742841adecbe2de5049d0b7f09637875996bbc11aa46cb"
+ },
+ {
+  "id": "re:bxp:salesforce-tower",
+  "name": "Salesforce Tower",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "959e3642a1e915c27d0e54aeccd39dd37ada5d0ca1e07539d30afda353239523"
+ },
+ {
+  "id": "re:bxp:santa-monica-business-park",
+  "name": "Santa Monica Business Park",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "da7d5dd64e2d20f07e7a6cf1cf6b732b64659da2a67b68efc6895040054d69ac"
+ },
+ {
+  "id": "re:bxp:shady-grove-innovation-district",
+  "name": "Shady Grove Innovation District",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "a79b823c3b57fe93eb0259f285e575166a7baa56e07d111ac3fb3b32e3500ca2"
+ },
+ {
+  "id": "re:bxp:south-of-market-and-democracy-tower",
+  "name": "South of Market and Democracy Tower",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "fbb228e898506b6f365ee60458fcc839204ca77be65fbabf50a49c6be6f60011"
+ },
+ {
+  "id": "re:bxp:sumner-square",
+  "name": "Sumner Square",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "disposed (retired)",
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "deebdfc88355f436968c02b01eae06dabf537fdab85827b9dc781b1a8ac3573f"
+ },
+ {
+  "id": "re:bxp:the-lofts-at-atlantic-wharf",
+  "name": "The Lofts at Atlantic Wharf",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "disposed (retired)",
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "10629442ebe0d99927a0f3506dd21a049931bd7cc3035b6299e86ee79ac08b52"
+ },
+ {
+  "id": "re:bxp:the-point",
+  "name": "The Point",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "cb67636fe3acf6299317b8b49ed301c851c3f7ba5123b03bb74e885e5190fa3d"
+ },
+ {
+  "id": "re:bxp:the-skylyne",
+  "name": "The Skylyne",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "2b208953da5cbc58f9c7a1e776293d7a7b97bc3ff57ab9650065853eb79c530f"
+ },
+ {
+  "id": "re:bxp:two-freedom-square",
+  "name": "Two Freedom Square",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "ef0ce3e56a834cee82db4021b5d21a37fe058fe8f7513100db15636be6ce096f"
+ },
+ {
+  "id": "re:bxp:university-place",
+  "name": "University Place",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "4798e4c9ee7cf96c3aa9216e7981293ed9b0f339669f4325bd45307b67402b7c"
+ },
+ {
+  "id": "re:bxp:waltham-weston-corporate-center",
+  "name": "Waltham Weston Corporate Center",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "6cb0d2fc75083de721366926dad743b7a17e1f5bccb04a5340bf3323433c9106"
+ },
+ {
+  "id": "re:bxp:weston-corporate-center",
+  "name": "Weston Corporate Center",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "unknown/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location unknown",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "6d71fb3fe3f4c7f3febec186809a21a11c0bdb7cb074fc54dae725361cebfe42"
+ },
+ {
+  "id": "re:bxp:wisconsin-place",
+  "name": "Wisconsin Place",
+  "company": "BXP",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "9c06cc368d1466bd781b567f7f49f7a1744dfedf9875032ac0d908c5a9263775"
+ },
+ {
+  "id": "re:hst:1-hotel-brooklyn-bridge",
+  "name": "1 Hotel Brooklyn Bridge",
+  "company": "HST",
+  "role": "lessee",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "6b2b1a07c964ab086d4bae1059cb05d1ea4d3a17596350848a79f1757b57f5b9"
+ },
+ {
+  "id": "re:hst:1-hotel-central-park",
+  "name": "1 Hotel Central Park",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/city_reference/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "785a2e8c07337c3a71c94dd3f5508dbc2ecb19c093498791dfd9304b4548fd95"
+ },
+ {
+  "id": "re:hst:1-hotel-nashville",
+  "name": "1 Hotel Nashville",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "9aa29d051e03923cd329ee91f523236716468bce9b317121fde4eb08c8ef9d6b"
+ },
+ {
+  "id": "re:hst:1-hotel-south-beach",
+  "name": "1 Hotel South Beach",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "dcda3986e8091063f929be7810c98fda052190737869ff2ef7332a5c0f673eb9"
+ },
+ {
+  "id": "re:hst:ac-hotel-scottsdale-north",
+  "name": "AC Hotel Scottsdale North",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "e53e19be2ff83565b777b7314cd60f79906778273efc4a772d8540b3e129eefe"
+ },
+ {
+  "id": "re:hst:alila-ventana-big-sur",
+  "name": "Alila Ventana Big Sur",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "unknown/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location unknown",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "8d7b1ec6c1d49f3d24682e62b170485ab16c87f642897a08850e38241e7df4d2"
+ },
+ {
+  "id": "re:hst:andaz-maui-at-wailea-resort",
+  "name": "Andaz Maui at Wailea Resort",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "eaa6d7bd63c9a7c332ede65ec3a25acd202f1772eef90f1e50b1bd7769610382"
+ },
+ {
+  "id": "re:hst:axiom-hotel",
+  "name": "Axiom Hotel",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "a8be672efa269a2757fb2d97a2b6df96d82fddba283cb3ad4510ca3b1f1daa5c"
+ },
+ {
+  "id": "re:hst:baker-s-cay-resort-key-largo-curio-collection-by-hilton",
+  "name": "Baker's Cay Resort Key Largo, Curio Collection by Hilton",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "af70048eb288fc6a8c6d33192d54c64c6ea517ccfcf67c3a4b16376b42e669ae"
+ },
+ {
+  "id": "re:hst:boston-marriott-copley-place",
+  "name": "Boston Marriott Copley Place",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "3528ddcdb5a3a69e8039362a4fc9810e98f9d42fef6bc215e259380efd693640"
+ },
+ {
+  "id": "re:hst:calgary-marriott-downtown-hotel",
+  "name": "Calgary Marriott Downtown Hotel",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/building_point/high",
+  "image": true,
+  "proposed_release": true,
+  "score": 75,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "45c0fbce89533f5ab2684a0e9f7804a4ae61dda8e6ca1dac356f18c25c2285e4"
+ },
+ {
+  "id": "re:hst:coronado-island-marriott-resort-spa",
+  "name": "Coronado Island Marriott Resort & Spa",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/city_reference/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "3becd338ef5fa9af75ba50847fcb4d81f1b8f61932aca22092c3e4419bbf058e"
+ },
+ {
+  "id": "re:hst:denver-marriott-tech-center",
+  "name": "Denver Marriott Tech Center",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "4c61df7de6f1439d703e4159102d1e59f0f7d77a44f361642657be977b910127"
+ },
+ {
+  "id": "re:hst:denver-marriott-west",
+  "name": "Denver Marriott West",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "77bb63b847385093ba6df054884a9fac7b152cfbbc0ddac0e3d3fdb60641b1d8"
+ },
+ {
+  "id": "re:hst:embassy-suites-by-hilton-chicago-downtown-magnificent-mile",
+  "name": "Embassy Suites by Hilton Chicago Downtown Magnificent Mile",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/city_reference/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "4d59ddfec187753740be6e885cd232eaa4f7a362e3032b43ea9b11809b1c4467"
+ },
+ {
+  "id": "re:hst:embassy-suites-by-hilton-nashville-downtown",
+  "name": "Embassy Suites by Hilton Nashville Downtown",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "2ec42a4c8e55849407c2d3c0440edb8de542de8b336304bae48a06cbe721a800"
+ },
+ {
+  "id": "re:hst:fairmont-kea-lani-maui",
+  "name": "Fairmont Kea Lani, Maui",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/building_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 50,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "90872e56b6b36b8fcc82c1721cc897240e9efd2ea38c5703f02d1dd66716cd24"
+ },
+ {
+  "id": "re:hst:gaithersburg-marriott-washingtonian-center",
+  "name": "Gaithersburg Marriott Washingtonian Center",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "ef9353f68e0a98b42bcb7ab00e09868bff9ce65795ffc01c880dc3d7a5a4aa3c"
+ },
+ {
+  "id": "re:hst:grand-hyatt-atlanta-in-buckhead",
+  "name": "Grand Hyatt Atlanta in Buckhead",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/city_reference/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "85bbb779bf90dba53d6ebdee6cad2983331a7fb2e33057106447f91bab910614"
+ },
+ {
+  "id": "re:hst:grand-hyatt-san-francisco",
+  "name": "Grand Hyatt San Francisco",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "036937d588a0affc80b2aa652e44e94823e35c431e4b5846de4d4f29cbb53633"
+ },
+ {
+  "id": "re:hst:grand-hyatt-washington",
+  "name": "Grand Hyatt Washington",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "32d07685bbb7e3f400dd04c34ad60350c7630d98e32ead41179bfb7079f45e67"
+ },
+ {
+  "id": "re:hst:hotel-van-zandt",
+  "name": "Hotel Van Zandt",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "b3589f03eb0a1922edc3ea1fb0bbff4b94e613bcc1cec17327cad32c36687ba3"
+ },
+ {
+  "id": "re:hst:houston-airport-marriott-at-george-bush-intercontinental",
+  "name": "Houston Airport Marriott at George Bush Intercontinental",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "4a5e5114c6d92d84c9c7c0b183c1eb24b54ee52e3a21e4bdbe1e83b31959be11"
+ },
+ {
+  "id": "re:hst:houston-marriott-medical-center-museum-district",
+  "name": "Houston Marriott Medical Center/Museum District",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "59bdf505a51fbaa75b570b6bab6767a60c911cd06c27db746f1e26d2fc1dc9de"
+ },
+ {
+  "id": "re:hst:hyatt-place-waikiki-beach",
+  "name": "Hyatt Place Waikiki Beach",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/building_point/high",
+  "image": true,
+  "proposed_release": true,
+  "score": 75,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "d067b8221c55ae34e143376891d3fb9c70c0ebac7aec821e013f87a7bd94e0ee"
+ },
+ {
+  "id": "re:hst:hyatt-regency-austin",
+  "name": "Hyatt Regency Austin",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "ecae08e6ef51558da74ddac443e84056599cb62455346c2b5e902e6151ec6083"
+ },
+ {
+  "id": "re:hst:hyatt-regency-coconut-point-resort-and-spa",
+  "name": "Hyatt Regency Coconut Point Resort and Spa",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "07f0f4edd5739623c943d41d36b6ec16c2f3e5f3e949bc57af7d024146e6593e"
+ },
+ {
+  "id": "re:hst:hyatt-regency-maui-resort-and-spa",
+  "name": "Hyatt Regency Maui Resort and Spa",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "12c5334539ebf1f1bc0048411dd0575dc939e15f7925fa30037dc754bc99431e"
+ },
+ {
+  "id": "re:hst:hyatt-regency-reston",
+  "name": "Hyatt Regency Reston",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "31cf6301b793f5ad7517582296b72166a28563c385826409f44fff1603d32aae"
+ },
+ {
+  "id": "re:hst:hyatt-regency-san-francisco-airport",
+  "name": "Hyatt Regency San Francisco Airport",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/building_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 50,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "5a3676799346e95928fccc13a01f5ff3286f7a5a3708bbbf74ada7701dbe0f11"
+ },
+ {
+  "id": "re:hst:hyatt-regency-washington-on-capitol-hill",
+  "name": "Hyatt Regency Washington on Capitol Hill",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "b43b332682123148535ba25f1fa8d6d5bd369aa8edaa5d09c875fc739963f2a5"
+ },
+ {
+  "id": "re:hst:ibis-rio-de-janeiro-parque-olimpico",
+  "name": "ibis Rio de Janeiro Parque Olimpico",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "unknown/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location unknown",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "a6b84af1c3d3d3121c0dbb01c16e1660c36b03945769c00eb2d67d8a27028eff"
+ },
+ {
+  "id": "re:hst:jw-marriott-atlanta-buckhead",
+  "name": "JW Marriott Atlanta Buckhead",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "7824c6a8b5a3fbf99282cef43f3217439337dfec99de3e8740152f385f2884c3"
+ },
+ {
+  "id": "re:hst:jw-marriott-hotel-rio-de-janeiro",
+  "name": "JW Marriott Hotel Rio de Janeiro",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "unknown/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location unknown",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "f44f718062a08e1f56611f98b2ef7b18e4df6f5886ed1a84b0c98d1f8ee0e85f"
+ },
+ {
+  "id": "re:hst:jw-marriott-houston-by-the-galleria",
+  "name": "JW Marriott Houston by The Galleria",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "094c109a57bab5d4a144fce7b18427b7c5aa3ab8ce2e274c838239172108f5d9"
+ },
+ {
+  "id": "re:hst:jw-marriott-washington-dc",
+  "name": "JW Marriott Washington, DC",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "5eb5087b5ba8b1d3dd131caf4feb240aba5e8f009e6fb87797eef25cc3b33787"
+ },
+ {
+  "id": "re:hst:manchester-grand-hyatt-san-diego",
+  "name": "Manchester Grand Hyatt San Diego",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "eba4fafe1ad28b823922b96e6d0d3d38f18a9badf5caca0bddb8bcbc6fa17e99"
+ },
+ {
+  "id": "re:hst:marina-del-rey-marriott",
+  "name": "Marina del Rey Marriott",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "205d1a420d1f819ae7fa9052616bd16fdd60310173797493e2cd789564ec1094"
+ },
+ {
+  "id": "re:hst:marriott-downtown-at-cf-toronto-eaton-centre",
+  "name": "Marriott Downtown at CF Toronto Eaton Centre",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "unknown/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location unknown",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "00fd6458e63e9237e69e94e31680996d4533bef38f2374c8248f20a6d89dcf27"
+ },
+ {
+  "id": "re:hst:marriott-marquis-san-diego-marina",
+  "name": "Marriott Marquis San Diego Marina",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "3841920cc355d70db3b38b5be3a7b3edac83108ab82abd3b9e13db46364c54b8"
+ },
+ {
+  "id": "re:hst:miami-marriott-biscayne-bay",
+  "name": "Miami Marriott Biscayne Bay",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "d18faba2d5d8b141de6f0fc0af1ec2a2cec93bf2fe1c408562a0ae583737a313"
+ },
+ {
+  "id": "re:hst:minneapolis-marriott-city-center",
+  "name": "Minneapolis Marriott City Center",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "8e93c1ba9ff7d206ff0dc6e7e98c34e4ae02925e2f2c96a49cccbe3051107d03"
+ },
+ {
+  "id": "re:hst:new-orleans-marriott",
+  "name": "New Orleans Marriott",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/building_point/high",
+  "image": true,
+  "proposed_release": true,
+  "score": 75,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "83542d47b1ffce8c56be99376280b55cc99bde9780f8f08d4a5593cfca79c19e"
+ },
+ {
+  "id": "re:hst:new-york-marriott-downtown",
+  "name": "New York Marriott Downtown",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/building_point/high",
+  "image": true,
+  "proposed_release": true,
+  "score": 75,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "9bbaa4b06d5756f8dcc3e44f68d03c716fe496e7b308d447dc76831a72374782"
+ },
+ {
+  "id": "re:hst:new-york-marriott-marquis",
+  "name": "New York Marriott Marquis",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/city_reference/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "1b81a7cefd5ffefaf8028c629a5a8a44d23c76387bfc0921863bb982ce3b5a3e"
+ },
+ {
+  "id": "re:hst:newark-liberty-international-airport-marriott",
+  "name": "Newark Liberty International Airport Marriott",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/city_reference/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "b008b6dde3f0b1c6d0773c8b9c593c973ec626f0498e6ce997fc693273a975f3"
+ },
+ {
+  "id": "re:hst:novotel-rio-de-janeiro-parque-olimpico",
+  "name": "Novotel Rio de Janeiro Parque Olimpico",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "unknown/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location unknown",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "e54b52b7afeae4250fa2a0af58e6d77f3b9a93c5c036dc52ea7a1ba1931b706f"
+ },
+ {
+  "id": "re:hst:orlando-world-center-marriott",
+  "name": "Orlando World Center Marriott",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "783a58f40182e8871ba9e749c597e94ba77e5983bc0c319bcab1a2412d089da1"
+ },
+ {
+  "id": "re:hst:philadelphia-airport-marriott",
+  "name": "Philadelphia Airport Marriott",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/city_reference/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "f3b43ad15f5ff2e24119706fbd5c20037413009ce275beb73cc2be6dadbb6caf"
+ },
+ {
+  "id": "re:hst:renaissance-dallas-at-plano-legacy-west-hotel",
+  "name": "Renaissance Dallas at Plano Legacy West Hotel",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "1ae950e5db3e54fb54910acf3822dc7211479bfe1ace74cebbcb9706da4f0332"
+ },
+ {
+  "id": "re:hst:san-antonio-marriott-rivercenter",
+  "name": "San Antonio Marriott Rivercenter",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "b465c4d00a0d2acb41ee326fc26c9635176852af6e8bd6802865618b565a0d18"
+ },
+ {
+  "id": "re:hst:san-antonio-marriott-riverwalk",
+  "name": "San Antonio Marriott Riverwalk",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "111fccad015b8515120949001d1e6df5279cfce365ef91a33c9693a04c7859d1"
+ },
+ {
+  "id": "re:hst:san-francisco-marriott-fisherman-s-wharf",
+  "name": "San Francisco Marriott Fisherman's Wharf",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/building_point/high",
+  "image": true,
+  "proposed_release": true,
+  "score": 75,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "9ed6ad20372c7085239a7834e1048843702c7c5100ecb8b5b6a958c97c9f1583"
+ },
+ {
+  "id": "re:hst:san-francisco-marriott-marquis",
+  "name": "San Francisco Marriott Marquis",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/building_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 50,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "69fc814d6725926be389a0ecc2758d4bff30c73da933c726f16c0666294a3993"
+ },
+ {
+  "id": "re:hst:santa-clara-marriott",
+  "name": "Santa Clara Marriott",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "73394158a374aaeaf5f14df9f42d13edaeca08a96600fa3a387f54297ea0e3af"
+ },
+ {
+  "id": "re:hst:sheraton-parsippany-hotel",
+  "name": "Sheraton Parsippany Hotel",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "unknown/-/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "disposed (retired)",
+   "location unknown",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "a02d9b7afa8722ac755f6215ef02f7a5902022ccabdca9ca449e7e4b4f266206"
+ },
+ {
+  "id": "re:hst:swiss-tel-chicago",
+  "name": "Swissôtel Chicago",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/building_point/high",
+  "image": true,
+  "proposed_release": true,
+  "score": 75,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "2f44b0c9c901887eb97670370114a3e86a2130efbf594b996379076ffac41f6c"
+ },
+ {
+  "id": "re:hst:tampa-airport-marriott",
+  "name": "Tampa Airport Marriott",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/city_reference/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "c57c678567f9257eb0e4323ce4e2b9b0a7a4fa807718069725b9b8e71394a8ff"
+ },
+ {
+  "id": "re:hst:the-alida-savannah-a-tribute-portfolio-hotel",
+  "name": "The Alida, Savannah, a Tribute Portfolio Hotel",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "9a2e2ab5c4b241c99ac78e5ed0889436735760428829f7a5838898517d863941"
+ },
+ {
+  "id": "re:hst:the-don-cesar",
+  "name": "The Don CeSar",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": true,
+  "proposed_release": true,
+  "score": 55,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "0e07990b9d0d9a32f1407682673d42929ebdf4df2d20756c5f207c0d8341f0b1"
+ },
+ {
+  "id": "re:hst:the-laura-hotel-houston-downtown-autograph-collection",
+  "name": "The Laura Hotel, Houston Downtown, Autograph Collection",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "8b5ef07a4f47e3fb7062c3f25c8b92fc698978ce01e1f64503700f61ac2fcbca"
+ },
+ {
+  "id": "re:hst:the-logan-philadelphia-curio-collection-by-hilton",
+  "name": "The Logan Philadelphia, Curio Collection by Hilton",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/city_reference/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "f5df7af55331428e97fabc8d145d3d6b70a7b31cd0dc5438d626e32cb904716e"
+ },
+ {
+  "id": "re:hst:the-phoenician-a-luxury-collection-resort-scottsdale",
+  "name": "The Phoenician, A Luxury Collection Resort, Scottsdale",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/city_reference/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "d92c753ab78f7b4c7f4e636cecbb475c0efef1da9c3f122befeeab012d60b3f1"
+ },
+ {
+  "id": "re:hst:the-ritz-carlton-amelia-island",
+  "name": "The Ritz-Carlton, Amelia Island",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "f3857766255ed35818650398ca753c87b67cd29136d0d8bd655d3c2345d529da"
+ },
+ {
+  "id": "re:hst:the-ritz-carlton-marina-del-rey",
+  "name": "The Ritz-Carlton, Marina del Rey",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/building_point/high",
+  "image": true,
+  "proposed_release": true,
+  "score": 75,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "ebb5b7ef19390eda5e0789c3aca93bd8e6e157b240689e4b7d8041e1145e442a"
+ },
+ {
+  "id": "re:hst:the-ritz-carlton-naples",
+  "name": "The Ritz-Carlton, Naples",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "df7e84094dd66a925585d113a9689f7e66b820d981bc0856fd39a5475b5ddfcf"
+ },
+ {
+  "id": "re:hst:the-ritz-carlton-naples-tibur-n",
+  "name": "The Ritz-Carlton Naples, Tiburón",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "fab159594326fbaff00c194412713a5131e3e7e46acf2fe1c9bfbbddaffd0c4a"
+ },
+ {
+  "id": "re:hst:the-ritz-carlton-o-ahu-turtle-bay",
+  "name": "The Ritz-Carlton O'ahu, Turtle Bay",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "approximate/city_reference/-",
+  "image": false,
+  "proposed_release": false,
+  "score": 0,
+  "blockers": [
+   "location approximate",
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "a8cfb633138d46d7e9b5496d9056459919e5297eaad22db95515350033592379"
+ },
+ {
+  "id": "re:hst:the-ritz-carlton-tysons-corner",
+  "name": "The Ritz-Carlton, Tysons Corner",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "87958f6de3eabae44117f309d49209617f7490b011c9e14ec910dd9eab4ecff2"
+ },
+ {
+  "id": "re:hst:the-singer-oceanfront-resort-curio-collection-by-hilton",
+  "name": "The Singer Oceanfront Resort, Curio Collection by Hilton",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "7527c2cbd8dfe0a9869ec9baf608be1a08cc24ebd42ef91294f0deda8aed5de8"
+ },
+ {
+  "id": "re:hst:the-westin-chicago-river-north",
+  "name": "The Westin Chicago River North",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "64be2db96ed81ac28023f567fac319fa1dbb692f1a12c743cd622ae11bf4d467"
+ },
+ {
+  "id": "re:hst:the-westin-denver-downtown",
+  "name": "The Westin Denver Downtown",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "d5b0f8d5d95f896444bc9067de4ae31d528a0d3c45a14049dfa2519cd9cee31e"
+ },
+ {
+  "id": "re:hst:the-westin-georgetown-washington-d-c",
+  "name": "The Westin Georgetown, Washington D.C.",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": true,
+  "proposed_release": true,
+  "score": 55,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "1ea9339fe50aaaa423f45565df2c6b30848b8aa8b050284e3d82b174d5997854"
+ },
+ {
+  "id": "re:hst:the-westin-kierland-resort-spa",
+  "name": "The Westin Kierland Resort & Spa",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "12cefbb3df46cf0ad22dee71e2d43aab71b6bf5fb25a657f4f8ae72fe72b3e93"
+ },
+ {
+  "id": "re:hst:the-westin-seattle",
+  "name": "The Westin Seattle",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": true,
+  "proposed_release": true,
+  "score": 55,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "27ecbb9e6e82f152b652d6ece96ca263a5c8df9ed0707d26954c287f0264b9c2"
+ },
+ {
+  "id": "re:hst:the-westin-south-coast-plaza-costa-mesa",
+  "name": "The Westin South Coast Plaza, Costa Mesa",
+  "company": "HST",
+  "role": "lessee",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "8a9e7b30ba03d45dd96adfb3940a7778e6df0be69b6143f1133891a64774d70d"
+ },
+ {
+  "id": "re:hst:the-westin-waltham-boston",
+  "name": "The Westin Waltham Boston",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/medium",
+  "image": false,
+  "proposed_release": false,
+  "score": 30,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "97585f11214566504926682cb0cc383d44f17b9f699c3cc259a73b113506b159"
+ },
+ {
+  "id": "re:hst:w-seattle",
+  "name": "W Seattle",
+  "company": "HST",
+  "role": "reported_group_owner",
+  "stake": null,
+  "stage": "operating",
+  "location": "exact/address_point/high",
+  "image": false,
+  "proposed_release": false,
+  "score": 40,
+  "blockers": [
+   "owner record-bound review not signed"
+  ],
+  "fact_sha256": "9c10085d7410bf3df930e556a422948013b00cb13eb3e3b4a054c8bab615be39"
+ }
+]

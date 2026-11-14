@@ -1,0 +1,227 @@
+[
+ {
+  "event_id": "re:hst:sheraton-parsippany-hotel#disposal#2026-06-30",
+  "property_id": "re:hst:sheraton-parsippany-hotel",
+  "type": "disposal",
+  "event_date": "2026-06-30",
+  "evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000156/hst-20260930.htm",
+   "sha256": "e185f8b047a1ed9bf53604213e2477e53feee050c32bc990aa1d1a203f5e6dca",
+   "checked_at": "2026-11-14T03:20:00Z",
+   "locator": "MD&A: sales of ... and the Sheraton Parsippany Hotel during the first half of 2026",
+   "sha256_scope": "source_body"
+  },
+  "effect": "company no longer holds the property; record retired (history kept)",
+  "review": "proposed (human review required)"
+ },
+ {
+  "event_id": "re:bxp:sumner-square#disposal#2026-08-05",
+  "property_id": "re:bxp:sumner-square",
+  "type": "disposal",
+  "event_date": "2026-08-05",
+  "evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+   "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+   "checked_at": "2026-11-14T03:20:00Z",
+   "locator": "Dispositions table: Sumner Square, Washington, DC, August 5, 2026",
+   "sha256_scope": "source_body"
+  },
+  "effect": "company no longer holds the property; record retired (history kept)",
+  "review": "proposed (human review required)"
+ },
+ {
+  "event_id": "re:bxp:1330-connecticut-avenue#disposal#2026-09-23",
+  "property_id": "re:bxp:1330-connecticut-avenue",
+  "type": "disposal",
+  "event_date": "2026-09-23",
+  "evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+   "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+   "checked_at": "2026-11-14T03:20:00Z",
+   "locator": "Dispositions table: 1330 Connecticut Avenue, Washington, DC, September 23, 2026",
+   "sha256_scope": "source_body"
+  },
+  "effect": "company no longer holds the property; record retired (history kept)",
+  "review": "proposed (human review required)"
+ },
+ {
+  "event_id": "re:bxp:the-lofts-at-atlantic-wharf#disposal#2026-02-25",
+  "property_id": "re:bxp:the-lofts-at-atlantic-wharf",
+  "type": "disposal",
+  "event_date": "2026-02-25",
+  "evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+   "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+   "checked_at": "2026-11-14T03:20:00Z",
+   "locator": "Dispositions table: The Lofts at Atlantic Wharf, Boston, MA, February 25, 2026",
+   "sha256_scope": "source_body"
+  },
+  "effect": "company no longer holds the property; record retired (history kept)",
+  "review": "proposed (human review required)"
+ },
+ {
+  "event_id": "re:bxp:121-broadway#duplicate_merged#2025-12-31",
+  "property_id": "re:bxp:121-broadway",
+  "type": "duplicate_merged",
+  "event_date": "2025-12-31",
+  "evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+   "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+   "checked_at": "2026-11-14T03:20:00Z",
+   "locator": "Construction/Redevelopment table: 121 Broadway Street (439 units) - same project as the Schedule III row \"121 Broadway\"",
+   "sha256_scope": "source_body"
+  },
+  "effect": "merged into re:bxp:121-broadway-street",
+  "review": "proposed (human review required)"
+ },
+ {
+  "event_id": "re:bxp:kingstowne-towne-center#partial_disposal#2026-04-17",
+  "property_id": "re:bxp:kingstowne-towne-center",
+  "type": "partial_disposal",
+  "event_date": "2026-04-17",
+  "evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+   "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+   "checked_at": "2026-11-14T03:20:00Z",
+   "locator": "Dispositions table: Kingstowne Retail, Alexandria, VA, April 17, 2026",
+   "sha256_scope": "source_body"
+  },
+  "effect": "retail component sold; office record kept, flagged for review",
+  "review": "proposed (human review required)"
+ },
+ {
+  "event_id": "re:bxp:reston-next-retail#development_completed#2026-01-16",
+  "property_id": "re:bxp:reston-next-retail",
+  "type": "development_completed",
+  "event_date": "2026-01-16",
+  "evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+   "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+   "checked_at": "2026-11-14T03:20:00Z",
+   "locator": "Development: on January 16, 2026, the Company fully placed in-service Reston Next Retail",
+   "sha256_scope": "source_body"
+  },
+  "effect": "status -> completed",
+  "review": "proposed (human review required)"
+ },
+ {
+  "event_id": "re:bxp:290-binney-street#development_completed#2026-04-30",
+  "property_id": "re:bxp:290-binney-street",
+  "type": "development_completed",
+  "event_date": "2026-04-30",
+  "evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+   "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+   "checked_at": "2026-11-14T03:20:00Z",
+   "locator": "Development: on April 30, 2026, the Company fully placed in-service 290 Binney Street (55% consolidated JV)",
+   "sha256_scope": "source_body"
+  },
+  "effect": "status -> completed",
+  "review": "proposed (human review required)"
+ },
+ {
+  "event_id": "re:bxp:725-12th-street#target_date_change#2026-09-30",
+  "property_id": "re:bxp:725-12th-street",
+  "type": "target_date_change",
+  "event_date": "2026-09-30",
+  "evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+   "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+   "checked_at": "2026-11-14T03:20:00Z",
+   "locator": "725 12th Street (Redevelopment) Q3 2029 Washington, DC",
+   "sha256_scope": "source_body"
+  },
+  "effect": "Under redevelopment; company-estimated stabilization Q4 2030 (target, not a milestone) -> Under redevelopment; company-estimated stabilization Q3 2029 (target, not a milestone)",
+  "review": "proposed (human review required)"
+ },
+ {
+  "event_id": "re:bxp:651-gateway#status_unresolved#2026-09-30",
+  "property_id": "re:bxp:651-gateway",
+  "type": "status_unresolved",
+  "event_date": "2026-09-30",
+  "evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+   "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+   "checked_at": "2026-11-14T03:20:00Z",
+   "locator": "Absent from Construction/Redevelopment table at September 30, 2026",
+   "sha256_scope": "source_body"
+  },
+  "effect": "status -> unknown pending a source",
+  "review": "proposed (human review required)"
+ },
+ {
+  "event_id": "re:bxp:767-fifth-avenue-the-general-motors-building#ownership_share_documented#2026-09-30",
+  "property_id": "re:bxp:767-fifth-avenue-the-general-motors-building",
+  "type": "ownership_share_documented",
+  "event_date": "2026-09-30",
+  "evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+   "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+   "checked_at": "2026-11-14T03:20:00Z",
+   "locator": "Mortgage notes table, Consolidated Joint Ventures: 767 Fifth Avenue (the General Motors Building) (60% ownership)",
+   "sha256_scope": "source_body"
+  },
+  "effect": "stake 60%",
+  "review": "proposed (human review required)"
+ },
+ {
+  "event_id": "re:bxp:601-lexington-avenue#ownership_share_documented#2026-09-30",
+  "property_id": "re:bxp:601-lexington-avenue",
+  "type": "ownership_share_documented",
+  "event_date": "2026-09-30",
+  "evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+   "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+   "checked_at": "2026-11-14T03:20:00Z",
+   "locator": "Mortgage notes table, Consolidated Joint Ventures: 601 Lexington Avenue (55% ownership)",
+   "sha256_scope": "source_body"
+  },
+  "effect": "stake 55%",
+  "review": "proposed (human review required)"
+ },
+ {
+  "event_id": "re:bxp:343-madison-avenue#ownership_share_documented#2026-09-30",
+  "property_id": "re:bxp:343-madison-avenue",
+  "type": "ownership_share_documented",
+  "event_date": "2026-09-30",
+  "evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/0001037540/000103754026000043/bxp-20260930.htm",
+   "sha256": "1ba0289c105f2d816f2c8c9804fb4295fa74ea350bab5325cd03e117112d5d9f",
+   "checked_at": "2026-11-14T03:20:00Z",
+   "locator": "Mortgage notes table, Consolidated Joint Ventures: 343 Madison Avenue (89.45% ownership)",
+   "sha256_scope": "source_body"
+  },
+  "effect": "stake 89.45%",
+  "review": "proposed (human review required)"
+ },
+ {
+  "event_id": "re:hst:renaissance-dallas-at-plano-legacy-west-hotel#acquisition#2026-10-14",
+  "property_id": "re:hst:renaissance-dallas-at-plano-legacy-west-hotel",
+  "type": "acquisition",
+  "event_date": "2026-10-14",
+  "evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000156/hst-20260930.htm",
+   "sha256": "e185f8b047a1ed9bf53604213e2477e53feee050c32bc990aa1d1a203f5e6dca",
+   "checked_at": "2026-11-14T03:20:00Z",
+   "locator": "Subsequent events: on 2026-10-14, we acquired the fee simple interest in the Renaissance Dallas at Plano Legacy West Hotel",
+   "sha256_scope": "source_body"
+  },
+  "effect": "new record",
+  "review": "proposed (human review required)"
+ },
+ {
+  "event_id": "re:hst:1-hotel-brooklyn-bridge#acquisition#2026-10-30",
+  "property_id": "re:hst:1-hotel-brooklyn-bridge",
+  "type": "acquisition",
+  "event_date": "2026-10-30",
+  "evidence": {
+   "url": "https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000156/hst-20260930.htm",
+   "sha256": "e185f8b047a1ed9bf53604213e2477e53feee050c32bc990aa1d1a203f5e6dca",
+   "checked_at": "2026-11-14T03:20:00Z",
+   "locator": "Subsequent events: on 2026-10-30, we acquired the leasehold interest in the 1 Hotel Brooklyn Bridge",
+   "sha256_scope": "source_body"
+  },
+  "effect": "new record",
+  "review": "proposed (human review required)"
+ }
+]

@@ -1,0 +1,212 @@
+{
+ "re:bxp:100-federal-street": {
+  "qid": "Q1419501",
+  "label": "100 Federal Street",
+  "file": "100 Federal Street Boston Massachusetts.jpg",
+  "score": 1.0,
+  "dist_m": 45,
+  "ref": "address point",
+  "wd_lat": 42.355055892,
+  "wd_lon": -71.055934471
+ },
+ "re:bxp:250-west-55th-street": {
+  "qid": "Q65128090",
+  "label": "250 West 55th Street",
+  "file": "250 W 55th.jpg",
+  "score": 1.0,
+  "dist_m": 47,
+  "ref": "address point",
+  "wd_lat": 40.764877777,
+  "wd_lon": -73.983436111
+ },
+ "re:bxp:399-park-avenue": {
+  "qid": "Q4636099",
+  "label": "399 Park Avenue",
+  "file": "399park.jpg",
+  "score": 1.0,
+  "dist_m": 50,
+  "ref": "address point",
+  "wd_lat": 40.7592,
+  "wd_lon": -73.9718
+ },
+ "re:bxp:535-mission-street": {
+  "qid": "Q14681523",
+  "label": "535 Mission Street",
+  "file": "535 Mission Street, San Francisco.jpg",
+  "score": 1.0,
+  "dist_m": 36,
+  "ref": "address point",
+  "wd_lat": 37.7889,
+  "wd_lon": -122.398
+ },
+ "re:bxp:599-lexington-avenue": {
+  "qid": "Q245308",
+  "label": "599 Lexington Avenue",
+  "file": "Citigroup center.jpg",
+  "score": 1.0,
+  "dist_m": 54,
+  "ref": "address point",
+  "wd_lat": 40.75784,
+  "wd_lon": -73.97073
+ },
+ "re:hst:calgary-marriott-downtown-hotel": {
+  "qid": "Q111231346",
+  "label": "Calgary Marriott Downtown Hotel",
+  "file": "Calgary Marriott Downtown Hotel.jpg",
+  "score": 1.0,
+  "dist_m": 51,
+  "ref": "company pin",
+  "wd_lat": 51.04471,
+  "wd_lon": -114.06224
+ },
+ "re:hst:fairmont-kea-lani-maui": {
+  "qid": "Q111393260",
+  "label": "The Fairmont Kea Lani Maui",
+  "file": "Fairmont Kea Lani Hotel - panoramio - harley photo.jpg",
+  "score": 0.8,
+  "dist_m": 79,
+  "ref": "company pin",
+  "wd_lat": 20.675944209,
+  "wd_lon": -156.441288515
+ },
+ "re:hst:grand-hyatt-san-francisco": {
+  "qid": "Q5594662",
+  "label": "Grand Hyatt San Francisco",
+  "file": "Grand Hyatt San Francisco.jpg",
+  "score": 1.0,
+  "dist_m": 191,
+  "ref": "company pin",
+  "wd_lat": 37.78911,
+  "wd_lon": -122.40723
+ },
+ "re:hst:grand-hyatt-washington": {
+  "qid": "Q5594664",
+  "label": "Grand Hyatt Washington",
+  "file": "Grand Hyatt Washington.jpg",
+  "score": 1.0,
+  "dist_m": 201,
+  "ref": "company pin",
+  "wd_lat": 38.8992,
+  "wd_lon": -77.0264
+ },
+ "re:hst:hyatt-place-waikiki-beach": {
+  "qid": "Q16980507",
+  "label": "Hyatt Place Waikiki Beach",
+  "file": "Hyatt Place Waikiki Beach.jpg",
+  "score": 1.0,
+  "dist_m": 27,
+  "ref": "company pin",
+  "wd_lat": 21.273464,
+  "wd_lon": -157.821395
+ },
+ "re:hst:hyatt-regency-san-francisco-airport": {
+  "qid": "Q51319282",
+  "label": "Hyatt Regency San Francisco Airport",
+  "file": "Hotel-Hyatt-Burlingame (cropped).jpg",
+  "score": 1.0,
+  "dist_m": 59,
+  "ref": "company pin",
+  "wd_lat": 37.59363,
+  "wd_lon": -122.36469
+ },
+ "re:hst:new-orleans-marriott": {
+  "qid": "Q7010746",
+  "label": "New Orleans Marriott",
+  "file": "Vxla-us-la-neworleans-frenchquarter-hotel-marriott.jpg",
+  "score": 1.0,
+  "dist_m": 72,
+  "ref": "company pin",
+  "wd_lat": 29.95243,
+  "wd_lon": -90.06763
+ },
+ "re:hst:new-york-marriott-downtown": {
+  "qid": "Q111394961",
+  "label": "New York Marriott Downtown",
+  "file": "New York Marriott Downtown, Manhattan, New York, US.jpg",
+  "score": 1.0,
+  "dist_m": 41,
+  "ref": "company pin",
+  "wd_lat": 40.70948,
+  "wd_lon": -74.0146
+ },
+ "re:hst:san-francisco-marriott-fisherman-s-wharf": {
+  "qid": "Q65923212",
+  "label": "San Francisco Marriott Fisherman's Wharf",
+  "file": "Marriott Fisherman's Wharf, San Francisco, California, US.jpg",
+  "score": 1.0,
+  "dist_m": 89,
+  "ref": "company pin",
+  "wd_lat": 37.80561,
+  "wd_lon": -122.41769
+ },
+ "re:hst:san-francisco-marriott-marquis": {
+  "qid": "Q3471438",
+  "label": "San Francisco Marriott Marquis",
+  "file": "San Francisco Marriott Marquis.jpg",
+  "score": 1.0,
+  "dist_m": 51,
+  "ref": "company pin",
+  "wd_lat": 37.78507,
+  "wd_lon": -122.40482
+ },
+ "re:hst:swiss-tel-chicago": {
+  "qid": "Q21609099",
+  "label": "Swiss\u00f4tel Chicago",
+  "file": "Triangular Building (Chicago).JPG",
+  "score": 1.0,
+  "dist_m": 103,
+  "ref": "company pin",
+  "wd_lat": 41.88737,
+  "wd_lon": -87.61973
+ },
+ "re:hst:tampa-airport-marriott": {
+  "qid": "Q111392822",
+  "label": "Tampa Airport Marriott",
+  "file": "Tampa Airport Marriott.jpg",
+  "score": 1.0,
+  "dist_m": 171,
+  "ref": "company pin",
+  "wd_lat": 27.98144,
+  "wd_lon": -82.5351
+ },
+ "re:hst:the-don-cesar": {
+  "qid": "Q1239042",
+  "label": "Don CeSar",
+  "file": "Don Cesar.jpg",
+  "score": 0.67,
+  "dist_m": 235,
+  "ref": "company pin",
+  "wd_lat": 27.70933,
+  "wd_lon": -82.73707
+ },
+ "re:hst:the-ritz-carlton-marina-del-rey": {
+  "qid": "Q111393700",
+  "label": "The Ritz-Carlton, Marina del Rey",
+  "file": "Ritz Carlton Hotel (5415399846).jpg",
+  "score": 1.0,
+  "dist_m": 94,
+  "ref": "company pin",
+  "wd_lat": 33.9842595,
+  "wd_lon": -118.450684
+ },
+ "re:hst:the-westin-georgetown-washington-d-c": {
+  "qid": "Q18393956",
+  "label": "The Westin Georgetown, Washington, D.C.",
+  "file": "The Westin Grand - Washington, D.C..JPG",
+  "score": 1.0,
+  "dist_m": 176,
+  "ref": "company pin",
+  "wd_lat": 38.90505,
+  "wd_lon": -77.05114
+ },
+ "re:hst:the-westin-seattle": {
+  "qid": "Q7988924",
+  "label": "Westin Seattle",
+  "file": "Westinseattle.jpg",
+  "score": 0.67,
+  "dist_m": 167,
+  "ref": "company pin",
+  "wd_lat": 47.61326,
+  "wd_lon": -122.33808
+ }
+}

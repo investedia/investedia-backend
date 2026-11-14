@@ -1,0 +1,634 @@
+[
+ {
+  "name": "Hyatt Regency Austin",
+  "address": "208 Barton Springs, Austin, TX 78704 USA",
+  "lat": 30.260523,
+  "lon": -97.7492627,
+  "url": "/Properties/Domestic/Texas/Hyatt-Regency-Austin",
+  "image": null
+ },
+ {
+  "name": "The Ritz-Carlton, Naples",
+  "address": "280 Vanderbilt Beach Road, Naples, FL 34108 USA",
+  "lat": 26.2520117,
+  "lon": -81.823237,
+  "url": "/Properties/Domestic/Florida/The-Ritz-Carlton-Naples",
+  "image": null
+ },
+ {
+  "name": "Alila Ventana Big Sur",
+  "address": "48123 Highway One, Big Sur, CA 93920 USA",
+  "lat": 36.2291113,
+  "lon": -121.766635,
+  "url": "/Properties/Domestic/California/Alila-Ventana-Big-Sur",
+  "image": null
+ },
+ {
+  "name": "New York Marriott Marquis",
+  "address": "1535 Broadway, New York, NY 10036 USA ",
+  "lat": 40.760496,
+  "lon": -73.99543,
+  "url": "/Properties/Domestic/New-York/New-York-Marriott-Marquis",
+  "image": null
+ },
+ {
+  "name": "Embassy Suites by Hilton Nashville Downtown",
+  "address": "708 Demonbreun Street, Nashville, TN 37203 USA",
+  "lat": 36.157306,
+  "lon": -86.780146,
+  "url": "/Properties/Domestic/Tennessee/Embassy-Suites-by-Hilton-Nashville-Downtown",
+  "image": null
+ },
+ {
+  "name": "The Don CeSar",
+  "address": "3400 Gulf Boulevard, St. Pete Beach, FL 33706 USA",
+  "lat": 27.7093275,
+  "lon": -82.7394581,
+  "url": "/Properties/Domestic/Florida/The-Don-CeSar",
+  "image": "/-/media/HostHotels/Images/Properties/Florida/The-Don-CeSar/Exterior/Don-CeSar_0182_Full-Rez_Square.jpg?h=1080&iar=0&w=1080&hash=662FE7C7E160E1850AC7331469CED624"
+ },
+ {
+  "name": "The Phoenician, A Luxury Collection Resort, Scottsdale",
+  "address": "6000 East Camelback Road, Scottsdale, AZ 85251 USA",
+  "lat": 33.5067666,
+  "lon": -111.9546167,
+  "url": "/Properties/Domestic/Arizona/The-Phoenician-A-Luxury-Collection-Resort",
+  "image": null
+ },
+ {
+  "name": "The Westin Kierland Resort & Spa",
+  "address": "6902 East Greenway Parkway, Scottsdale, AZ 85254 USA",
+  "lat": 33.6248018,
+  "lon": -111.9351964,
+  "url": "/Properties/Domestic/Arizona/The-Westin-Kierland-Resort-and-Spa",
+  "image": null
+ },
+ {
+  "name": "1 Hotel Brooklyn Bridge",
+  "address": "60 Furman Street, Brooklyn, NY 11201 USA",
+  "lat": 40.7030694,
+  "lon": -73.9978787,
+  "url": "/Properties/Domestic/New-York/1-Hotel-Brooklyn-Bridge",
+  "image": "/-/media/HostHotels/Images/Properties/New-York/1-Hotel-Brooklyn/1HBB_Exterior-Entrance.jpg?h=1333&iar=0&w=2000&hash=AD35FC08F49D3293F648702106B9235B"
+ },
+ {
+  "name": "1 Hotel Central Park",
+  "address": "1414 6th Ave, New York, NY 10019 USA",
+  "lat": 40.7648252,
+  "lon": -73.9765189,
+  "url": "/Properties/Domestic/New-York/1-Hotel-Central-Park",
+  "image": null
+ },
+ {
+  "name": "1 Hotel Nashville",
+  "address": "710 Demonbreun Street, Nashville, TN 37203 USA",
+  "lat": 36.157433,
+  "lon": -86.780434,
+  "url": "/Properties/Domestic/Tennessee/1-Hotel-Nashville",
+  "image": null
+ },
+ {
+  "name": "1 Hotel South Beach",
+  "address": "2341 Collins Avenue, Miami Beach, FL 33139 USA",
+  "lat": 25.7989787,
+  "lon": -80.1268868,
+  "url": "/Properties/Domestic/Florida/1-Hotel-South-Beach",
+  "image": null
+ },
+ {
+  "name": "AC Hotel Scottsdale North",
+  "address": "15200 North Kierland Boulevard, Scottsdale, AZ 85254 USA",
+  "lat": 33.624141,
+  "lon": -111.9332322,
+  "url": "/Properties/Domestic/Arizona/AC-Hotel-Scottsdale-North",
+  "image": null
+ },
+ {
+  "name": "Andaz Maui at Wailea Resort",
+  "address": "3550 Wailea Alanui Drive, Wailea, HI 96753 USA",
+  "lat": 20.69285,
+  "lon": -156.4447111,
+  "url": "/Properties/Domestic/Hawaii/Andaz-Maui-at-Wailea-Resort",
+  "image": null
+ },
+ {
+  "name": "Axiom Hotel",
+  "address": "28 Cyril Magnin Street, San Francisco, CA 94102 USA",
+  "lat": 37.7849047,
+  "lon": -122.41038,
+  "url": "/Properties/Domestic/California/Axiom-Hotel",
+  "image": null
+ },
+ {
+  "name": "Baker's Cay Resort Key Largo, Curio Collection by Hilton",
+  "address": "97000 Overseas Highway, Key Largo, FL, 33037, USA",
+  "lat": 25.0666897,
+  "lon": -80.4743835,
+  "url": "/Properties/Domestic/Florida/Bakers-Cay-Resort-Key-Largo",
+  "image": null
+ },
+ {
+  "name": "Boston Marriott Copley Place",
+  "address": "110 Huntington Avenue, Boston, MA 02116 USA",
+  "lat": 42.34757,
+  "lon": -71.079468,
+  "url": "/Properties/Domestic/Massachusetts/Boston-Marriott-Copley-Place",
+  "image": null
+ },
+ {
+  "name": "Calgary Marriott Downtown Hotel",
+  "address": "110 9th Avenue SE, Calgary, AB T2G 5A6 CANADA",
+  "lat": 51.044968,
+  "lon": -114.062839,
+  "url": "/Properties/International/Canada/Calgary-Marriott-Downtown-Hotel",
+  "image": null
+ },
+ {
+  "name": "Coronado Island Marriott Resort & Spa",
+  "address": "2000 Second Street, Coronado, CA 92118 USA ",
+  "lat": 32.695188,
+  "lon": -117.166218,
+  "url": "/Properties/Domestic/California/Coronado-Island-Marriott-Resort-and-Spa",
+  "image": null
+ },
+ {
+  "name": "Denver Marriott Tech Center",
+  "address": "4900 S. Syracuse Street, Denver, CO 80237 USA ",
+  "lat": 39.626761,
+  "lon": -104.901739,
+  "url": "/Properties/Domestic/Colorado/Denver-Marriott-Tech-Center",
+  "image": null
+ },
+ {
+  "name": "Denver Marriott West",
+  "address": "1717 Denver West Drive, Golden, CO 80401 USA ",
+  "lat": 39.740367,
+  "lon": -105.162078,
+  "url": "/Properties/Domestic/Colorado/Denver-Marriott-West",
+  "image": null
+ },
+ {
+  "name": "Embassy Suites by Hilton Chicago Downtown Magnificent Mile",
+  "address": "511 North Columbus Drive, Chicago, IL 60611 USA ",
+  "lat": 41.89153,
+  "lon": -87.619489,
+  "url": "/Properties/Domestic/Illinois/Embassy-Suites-by-Hilton-Chicago-Downtown-Magnificent-Mile",
+  "image": null
+ },
+ {
+  "name": "Fairmont Kea Lani, Maui",
+  "address": "4100 Wailea Alanui Dr, Wailea, HI 96753 USA",
+  "lat": 20.675237,
+  "lon": -156.44131,
+  "url": "/Properties/Domestic/Hawaii/The-Fairmont-Kea-Lani",
+  "image": null
+ },
+ {
+  "name": "Fort Lauderdale Marriott Harbor Beach Resort & Spa",
+  "address": "3030 Holiday Drive, Fort Lauderdale, FL 33316 USA",
+  "lat": 26.1067251,
+  "lon": -80.1080337,
+  "url": "/Properties/Domestic/Florida/Fort-Lauderdale-Marriott-Harbor-Beach-Resort-and-Spa",
+  "image": null
+ },
+ {
+  "name": "Gaithersburg Marriott Washingtonian Center",
+  "address": "9751 Washingtonian Blvd, Gaithersburg, MD 20878 USA ",
+  "lat": 39.115673,
+  "lon": -77.195242,
+  "url": "/Properties/Domestic/Maryland/Gaithersburg-Marriott-Washingtonian-Center",
+  "image": null
+ },
+ {
+  "name": "Grand Hyatt Atlanta in Buckhead",
+  "address": "3300 Peachtree Road NE, Atlanta, GA 30305 USA ",
+  "lat": 33.845352,
+  "lon": -84.370301,
+  "url": "/Properties/Domestic/Georgia/Grand-Hyatt-Atlanta-in-Buckhead",
+  "image": null
+ },
+ {
+  "name": "Grand Hyatt San Francisco",
+  "address": "345 Stockton Street, San Francisco, CA 94108 USA",
+  "lat": 37.7891412,
+  "lon": -122.4094048,
+  "url": "/Properties/Domestic/California/Grand-Hyatt-San-Francisco",
+  "image": null
+ },
+ {
+  "name": "Grand Hyatt Washington",
+  "address": "1000 H Street NW, Washington, DC 20001 USA",
+  "lat": 38.8993306,
+  "lon": -77.0287142,
+  "url": "/Properties/Domestic/District-of-Columbia/Grand-Hyatt-Washington",
+  "image": null
+ },
+ {
+  "name": "Hotel Van Zandt",
+  "address": "605 Davis Street, Austin, TX 78701 USA",
+  "lat": 30.2598906,
+  "lon": -97.7412279,
+  "url": "/Properties/Domestic/Texas/Hotel-Van-Zandt",
+  "image": null
+ },
+ {
+  "name": "Houston Airport Marriott at George Bush Intercontinental",
+  "address": "18700 John F. Kennedy Blvd, Houston, TX 77032 USA ",
+  "lat": 29.987002,
+  "lon": -95.341713,
+  "url": "/Properties/Domestic/Texas/Houston-Airport-Marriott-at-George-Bush-Intercontinental",
+  "image": null
+ },
+ {
+  "name": "Houston Marriott Medical Center/Museum District",
+  "address": "6580 Fannin Street, Houston, TX 77030 USA ",
+  "lat": 29.710235,
+  "lon": -95.401019,
+  "url": "/Properties/Domestic/Texas/Houston-Marriott-Medical-Center-Museum-District",
+  "image": null
+ },
+ {
+  "name": "Hyatt Place Nashville Downtown",
+  "address": "301 3rd Avenue South, Nashville, TN 37201 USA",
+  "lat": 36.158696,
+  "lon": -86.774361,
+  "url": "/Properties/Domestic/Tennessee/Hyatt-Place-Nashville-Downtown",
+  "image": null
+ },
+ {
+  "name": "Hyatt Place Waikiki Beach",
+  "address": "175 Paoakalani Ave, Honolulu, HI 96815\tUSA",
+  "lat": 21.273701,
+  "lon": -157.821469,
+  "url": "/Properties/Domestic/Hawaii/Hyatt-Place-Waikiki-Beach",
+  "image": null
+ },
+ {
+  "name": "Hyatt Regency Coconut Point Resort and Spa",
+  "address": "5001 Coconut Road, Bonita Springs, FL 34134 USA ",
+  "lat": 26.3977362,
+  "lon": -81.8399589,
+  "url": "/Properties/Domestic/Florida/Hyatt-Regency-Coconut-Point-Resort-and-Spa",
+  "image": null
+ },
+ {
+  "name": "Hyatt Regency Maui Resort and Spa",
+  "address": "200 Nohea Kai Drive, Lahaina, HI 96761 USA",
+  "lat": 20.91342,
+  "lon": -156.69248,
+  "url": "/Properties/Domestic/Hawaii/Hyatt-Regency-Maui-Resort-and-Spa",
+  "image": null
+ },
+ {
+  "name": "Hyatt Regency Reston",
+  "address": "1800 Presidents Street, Reston, VA 20190 USA ",
+  "lat": 38.958312,
+  "lon": -77.356297,
+  "url": "/Properties/Domestic/Virginia/Hyatt-Regency-Reston",
+  "image": null
+ },
+ {
+  "name": "Hyatt Regency San Francisco Airport",
+  "address": "1333 Bayshore Highway, Burlingame, CA 94010 USA ",
+  "lat": 37.593857,
+  "lon": -122.365291,
+  "url": "/Properties/Domestic/California/Hyatt-Regency-San-Francisco-Airport",
+  "image": null
+ },
+ {
+  "name": "Hyatt Regency Washington on Capitol Hill",
+  "address": "400 New Jersey Ave NW, Washington, DC 20001 USA",
+  "lat": 38.895514,
+  "lon": -77.011807,
+  "url": "/Properties/Domestic/District-of-Columbia/Hyatt-Regency-Washington-on-Capitol-Hill",
+  "image": null
+ },
+ {
+  "name": "Ibis Rio de Janeiro Parque Olimpico",
+  "address": "Av. Embaixador Abelardo Bueno, 1511, Barra da Tijuca, Rio de Janeiro 22775-039 BRAZIL",
+  "lat": -22.9733096,
+  "lon": -43.3916398,
+  "url": "/Properties/International/Brazil/ibis-Rio-de-Janeiro-Parque-Olimpico-Hotel",
+  "image": null
+ },
+ {
+  "name": "JW Marriott Atlanta Buckhead",
+  "address": "3300 Lenox Road NE, Atlanta, GA 30326 USA ",
+  "lat": 33.845627,
+  "lon": -84.359691,
+  "url": "/Properties/Domestic/Georgia/JW-Marriott-Atlanta-Buckhead",
+  "image": null
+ },
+ {
+  "name": "JW Marriott Hotel Rio de Janeiro",
+  "address": "Av. Atl\u00e2ntica 2600, Copacabana, Rio de Janeiro, RJ 22041-001 BRAZIL",
+  "lat": -22.971966,
+  "lon": -43.18585,
+  "url": "/Properties/International/Brazil/JW-Marriott-Hotel-Rio-de-Janeiro",
+  "image": null
+ },
+ {
+  "name": "JW Marriott Houston by The Galleria",
+  "address": "5150 Westheimer Road, Houston, TX 77056 USA ",
+  "lat": 29.743839,
+  "lon": -95.465432,
+  "url": "/Properties/Domestic/Texas/JW-Marriott-Houston",
+  "image": null
+ },
+ {
+  "name": "JW Marriott Washington, DC",
+  "address": "1331 Pennsylvania Avenue NW, Washington, DC 20004 USA",
+  "lat": 38.8963281,
+  "lon": -77.0331435,
+  "url": "/Properties/Domestic/District-of-Columbia/JW-Marriott-Washington-DC",
+  "image": null
+ },
+ {
+  "name": "Manchester Grand Hyatt San Diego",
+  "address": "1 Market Place, San Diego, CA 92101 USA ",
+  "lat": 32.711286,
+  "lon": -117.16826,
+  "url": "/Properties/Domestic/California/Manchester-Grand-Hyatt-San-Diego",
+  "image": null
+ },
+ {
+  "name": "Marina del Rey Marriott",
+  "address": "4100 Admiralty Way, Marina del Rey, CA 90292 USA ",
+  "lat": 33.982354,
+  "lon": -118.459609,
+  "url": "/Properties/Domestic/California/Marina-del-Rey-Marriott",
+  "image": null
+ },
+ {
+  "name": "Marriott Downtown at CF Toronto Eaton Centre",
+  "address": "525 Bay Street, Toronto, Ontario, M5G 2L2 CANADA",
+  "lat": 43.655476,
+  "lon": -79.382233,
+  "url": "/Properties/International/Canada/Marriott-Downtown-at-CF-Toronto-Eaton-Centre",
+  "image": null
+ },
+ {
+  "name": "Marriott Marquis San Diego Marina",
+  "address": "333 West Harbor Drive, San Diego, CA 92101 USA",
+  "lat": 32.708722,
+  "lon": -117.165207,
+  "url": "/Properties/Domestic/California/Marriott-Marquis-San-Diego-Marina",
+  "image": null
+ },
+ {
+  "name": "Miami Marriott Biscayne Bay",
+  "address": "1633 North Bayshore Drive, Miami, FL 33132 USA ",
+  "lat": 25.791085,
+  "lon": -80.186177,
+  "url": "/Properties/Domestic/Florida/Miami-Marriott-Biscayne-Bay",
+  "image": null
+ },
+ {
+  "name": "Minneapolis Marriott City Center",
+  "address": "31 South 7th Street, Minneapolis, MN 55402 USA ",
+  "lat": 44.977748,
+  "lon": -93.273489,
+  "url": "/Properties/Domestic/Minnesota/Minneapolis-Marriott-City-Center",
+  "image": null
+ },
+ {
+  "name": "New Orleans Marriott",
+  "address": "555 Canal Street, New Orleans, LA 70130 USA",
+  "lat": 29.952996,
+  "lon": -90.067272,
+  "url": "/Properties/Domestic/Louisiana/New-Orleans-Marriott",
+  "image": null
+ },
+ {
+  "name": "New York Marriott Downtown",
+  "address": "85 West Street, New York, NY 10006 USA",
+  "lat": 40.709844,
+  "lon": -74.014527,
+  "url": "/Properties/Domestic/New-York/New-York-Marriott-Downtown",
+  "image": null
+ },
+ {
+  "name": "Newark Liberty International Airport Marriott",
+  "address": "Newark Liberty International Airport, 1 Hotel Road, Newark, NJ 07114 USA ",
+  "lat": 40.692436,
+  "lon": -74.181779,
+  "url": "/Properties/Domestic/New-Jersey/Newark-Liberty-International-Airport-Marriott",
+  "image": null
+ },
+ {
+  "name": "Novotel Rio de Janeiro Parque Olimpico",
+  "address": "Av. Embaixador Abelardo, Bueno 1511, Barra da Tijuca, Rio de Janeiro, RJ 22775-040 BRAZIL",
+  "lat": -22.973717,
+  "lon": -43.371932,
+  "url": "/Properties/International/Brazil/Novotel-Rio-de-Janeiro-Parque-Olimpico-Hotel",
+  "image": null
+ },
+ {
+  "name": "Orlando World Center Marriott",
+  "address": "8701 World Center Drive, Orlando, FL 32821 USA ",
+  "lat": 28.361304,
+  "lon": -81.509698,
+  "url": "/Properties/Domestic/Florida/Orlando-World-Center-Marriott",
+  "image": null
+ },
+ {
+  "name": "Philadelphia Airport Marriott",
+  "address": "1 Arrivals Road, Terminal B, Philadelphia, PA 19153 USA ",
+  "lat": 39.87804,
+  "lon": -75.244423,
+  "url": "/Properties/Domestic/Pennsylvania/Philadelphia-Airport-Marriott",
+  "image": null
+ },
+ {
+  "name": "Renaissance Dallas at Plano Legacy West Hotel",
+  "address": "6007 Legacy Drive, Plano, TX 75024 USA",
+  "lat": 33.0780837,
+  "lon": -96.8265099,
+  "url": "/Properties/Domestic/Texas/Renaissance-Dallas-at-Plano-Legacy-West-Hotel",
+  "image": "/-/media/HostHotels/Images/Properties/Texas/Renaissance-Plano/Renaissance_Square.jpg?h=1080&iar=0&w=1080&hash=7469C46449E45AFC8D148D7383ACAC2F"
+ },
+ {
+  "name": "San Antonio Marriott Rivercenter",
+  "address": "101 Bowie Street, San Antonio, TX 78205 USA",
+  "lat": 29.423408,
+  "lon": -98.483603,
+  "url": "/Properties/Domestic/Texas/San-Antonio-Marriott-Rivercenter",
+  "image": null
+ },
+ {
+  "name": "San Antonio Marriott Riverwalk",
+  "address": "889 East Market Street, San Antonio, TX 78205 USA",
+  "lat": 29.423564,
+  "lon": -98.484849,
+  "url": "/Properties/Domestic/Texas/San-Antonio-Marriott-Riverwalk",
+  "image": null
+ },
+ {
+  "name": "San Francisco Marriott Fisherman's Wharf",
+  "address": "1250 Columbus Avenue, San Francisco, CA 94133 USA",
+  "lat": 37.80627,
+  "lon": -122.417119,
+  "url": "/Properties/Domestic/California/San-Francisco-Marriott-Fishermans-Wharf",
+  "image": null
+ },
+ {
+  "name": "San Francisco Marriott Marquis",
+  "address": "780 Mission Street, San Francisco, CA 94103 USA",
+  "lat": 37.785423,
+  "lon": -122.404453,
+  "url": "/Properties/Domestic/California/San-Francisco-Marriott-Marquis",
+  "image": null
+ },
+ {
+  "name": "Santa Clara Marriott",
+  "address": "2700 Mission College Boulevard, Santa Clara, CA 95054 USA",
+  "lat": 37.391791,
+  "lon": -121.974123,
+  "url": "/Properties/Domestic/California/Santa-Clara-Marriott",
+  "image": null
+ },
+ {
+  "name": "Swiss\u00f4tel Chicago",
+  "address": "323 E Upper Wacker Dr, Chicago, IL 60601 USA",
+  "lat": 41.888255,
+  "lon": -87.619364,
+  "url": "/Properties/Domestic/Illinois/Swissotel-Chicago",
+  "image": null
+ },
+ {
+  "name": "Tampa Airport Marriott",
+  "address": "4200 George J Bean Parkway, Tampa, FL 33607 USA",
+  "lat": 27.9815934,
+  "lon": -82.5368349,
+  "url": "/Properties/Domestic/Florida/Tampa-Airport-Marriott",
+  "image": null
+ },
+ {
+  "name": "The Alida, Savannah, a Tribute Portfolio Hotel",
+  "address": "412 Williamson Street, Savannah, GA 31401 USA",
+  "lat": 32.0829362,
+  "lon": -81.0978963,
+  "url": "/Properties/Domestic/Georgia/The-Alida-Savannah-a-Tribute-Portfolio-Hotel",
+  "image": null
+ },
+ {
+  "name": "The Laura Hotel, Houston Downtown, Autograph Collection",
+  "address": "1070 Dallas St, Houston, TX 77002 USA",
+  "lat": 29.754811,
+  "lon": -95.3677682,
+  "url": "/Properties/Domestic/Texas/The-Laura-Hotel",
+  "image": null
+ },
+ {
+  "name": "The Logan Philadelphia, Curio Collection by Hilton",
+  "address": "One Logan Square, Philadelphia, PA 19103 USA",
+  "lat": 39.957904,
+  "lon": -75.170184,
+  "url": "/Properties/Domestic/Pennsylvania/The-Logan-Philadelphia-Hotel",
+  "image": null
+ },
+ {
+  "name": "The Ritz-Carlton Naples, Tibur\u00f3n",
+  "address": "2600 Tiburon Dr, Naples, FL 34109 USA",
+  "lat": 26.2488775,
+  "lon": -81.7683957,
+  "url": "/Properties/Domestic/Florida/The-Ritz-Carlton-Naples-Tiburon",
+  "image": null
+ },
+ {
+  "name": "The Ritz-Carlton O\u02bbahu, Turtle Bay",
+  "address": "57-091 Kamehameha Highway, Kahuku, HI 96712 USA",
+  "lat": 21.703112,
+  "lon": -157.9976695,
+  "url": "/Properties/Domestic/Hawaii/The-Ritz-Carlton-Oahu-Turtle-Bay",
+  "image": null
+ },
+ {
+  "name": "The Ritz-Carlton, Amelia Island",
+  "address": "4750 Amelia Island Pkwy, Fernandina Beach, FL 32034 USA",
+  "lat": 30.5940312,
+  "lon": -81.4471951,
+  "url": "/Properties/Domestic/Florida/The-Ritz-Carlton-Amelia-Island",
+  "image": null
+ },
+ {
+  "name": "The Ritz-Carlton, Marina Del Rey",
+  "address": "4375 Admiralty Way, Marina del Rey, CA 90292 USA",
+  "lat": 33.985105,
+  "lon": -118.450718,
+  "url": "/Properties/Domestic/California/Ritz-Carlton-Marina-Del-Rey",
+  "image": null
+ },
+ {
+  "name": "The Ritz-Carlton, Tysons Corner",
+  "address": "1700 Tysons Boulevard, McLean, VA 22102 USA",
+  "lat": 38.92518,
+  "lon": -77.223599,
+  "url": "/Properties/Domestic/Virginia/The-Ritz-Carlton-Tysons-Corner",
+  "image": null
+ },
+ {
+  "name": "The Singer Oceanfront Resort, Curio Collection by Hilton",
+  "address": "3700 N Ocean Dr, Riviera Beach, FL 33404 USA",
+  "lat": 26.7911415,
+  "lon": -80.0353294,
+  "url": "/Properties/Domestic/Florida/The-Singer-Oceanfront-Resort",
+  "image": null
+ },
+ {
+  "name": "The Westin Chicago River North",
+  "address": "320 North Dearborn Street, Chicago, IL 60654 USA",
+  "lat": 41.88836,
+  "lon": -87.63002,
+  "url": "/Properties/Domestic/Illinois/The-Westin-Chicago-River-North",
+  "image": null
+ },
+ {
+  "name": "The Westin Denver Downtown",
+  "address": "1672 Lawrence St, Denver, CO 80202 USA",
+  "lat": 39.7488741,
+  "lon": -104.9977152,
+  "url": "/Properties/Domestic/Colorado/The-Westin-Denver-Downtown",
+  "image": null
+ },
+ {
+  "name": "The Westin Georgetown, Washington D.C.",
+  "address": "2350 M St NW, Washington, DC 20037 USA",
+  "lat": 38.9049295,
+  "lon": -77.0531668,
+  "url": "/Properties/Domestic/District-of-Columbia/The-Westin-Georgetown-Washington-DC",
+  "image": null
+ },
+ {
+  "name": "The Westin Seattle",
+  "address": "1900 5th Ave, Seattle, WA 98101 USA",
+  "lat": 47.614763,
+  "lon": -122.338047,
+  "url": "/Properties/Domestic/Washington/The-Westin-Seattle",
+  "image": null
+ },
+ {
+  "name": "The Westin South Coast Plaza, Costa Mesa",
+  "address": "686 Anton Blvd, Costa Mesa, CA 92626 USA",
+  "lat": 33.691572,
+  "lon": -117.884473,
+  "url": "/Properties/Domestic/California/The-Westin-South-Coast-Plaza-Costa-Mesa",
+  "image": null
+ },
+ {
+  "name": "The Westin Waltham Boston",
+  "address": "70 3rd Ave, Waltham, MA 02451 USA",
+  "lat": 42.395596,
+  "lon": -71.259587,
+  "url": "/Properties/Domestic/Massachusetts/The-Westin-Waltham-Boston",
+  "image": null
+ },
+ {
+  "name": "W Seattle",
+  "address": "1112 4th Ave, Seattle, WA 98101 USA",
+  "lat": 47.607669,
+  "lon": -122.333611,
+  "url": "/Properties/Domestic/Washington/W-Seattle",
+  "image": null
+ }
+]

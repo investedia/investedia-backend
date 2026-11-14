@@ -1,0 +1,647 @@
+{
+ "/Properties/Domestic/Texas/Hyatt-Regency-Austin": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=208+Barton+Springs%2C+Austin%2C+TX+78704&benchmark=Public_AR_Current&format=json",
+  "sha256": "3ce8fd3398aa3e9e2b125160e191a0f6366ef6b27895eb5d525c26692a1ace20",
+  "matched": "208 BARTON SPRINGS RD, AUSTIN, TX, 78704",
+  "lat": 30.258992250833,
+  "lon": -97.747002330946,
+  "n": 1,
+  "dist_m": 276
+ },
+ "/Properties/Domestic/Florida/The-Ritz-Carlton-Naples": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=280+Vanderbilt+Beach+Road%2C+Naples%2C+FL+34108&benchmark=Public_AR_Current&format=json",
+  "sha256": "0eb5fc6af99f41fe3a423dbdd6f24cb69053e7ee64da796060d4696cd41df4bd",
+  "matched": "280 VANDERBILT BEACH RD, NAPLES, FL, 34108",
+  "lat": 26.253364532319,
+  "lon": -81.82038328098,
+  "n": 1,
+  "dist_m": 322
+ },
+ "/Properties/Domestic/California/Alila-Ventana-Big-Sur": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=48123+Highway+One%2C+Big+Sur%2C+CA+93920&benchmark=Public_AR_Current&format=json",
+  "sha256": "e52a1512f580fb9abbe5f2e28ebfbce6acdda50cdb6786c3081c997154b44c78",
+  "nomatch": true
+ },
+ "/Properties/Domestic/New-York/New-York-Marriott-Marquis": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1535+Broadway%2C+New+York%2C+NY+10036&benchmark=Public_AR_Current&format=json",
+  "sha256": "b74787d06c79f9d8650092836c5fe4e7441c866c2c4fa124e47ba3dd44406d50",
+  "matched": "1535 BROADWAY, NEW YORK, NY, 10036",
+  "lat": 40.758290318892,
+  "lon": -73.985526146836,
+  "n": 1,
+  "dist_m": 869
+ },
+ "/Properties/Domestic/Tennessee/Embassy-Suites-by-Hilton-Nashville-Downtown": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=708+Demonbreun+Street%2C+Nashville%2C+TN+37203&benchmark=Public_AR_Current&format=json",
+  "sha256": "64f99f9b9bbfc825aa731737b35c17ca7ee2f93b08ddd030d2f9c1f6c425fa7c",
+  "matched": "708 DEMONBREUN ST, NASHVILLE, TN, 37203",
+  "lat": 36.157210589354,
+  "lon": -86.780235141155,
+  "n": 1,
+  "dist_m": 13
+ },
+ "/Properties/Domestic/Florida/The-Don-CeSar": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3400+Gulf+Boulevard%2C+St.+Pete+Beach%2C+FL+33706&benchmark=Public_AR_Current&format=json",
+  "sha256": "51c23a4097dd273a3555d58e3a25fbbbee6801f4c16bf77ac07f51839606ff3a",
+  "matched": "3400 GULF BLVD, ST PETE BEACH, FL, 33706",
+  "lat": 27.708613692134,
+  "lon": -82.73686137069,
+  "n": 1,
+  "dist_m": 268
+ },
+ "/Properties/Domestic/Arizona/The-Phoenician-A-Luxury-Collection-Resort": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6000+East+Camelback+Road%2C+Scottsdale%2C+AZ+85251&benchmark=Public_AR_Current&format=json",
+  "sha256": "86906dde10d5c2dce5ba1a0e75e0afd6130838d00cae1a162b0e3e401beca9ff",
+  "matched": "6000 E CAMELBACK RD, SCOTTSDALE, AZ, 85251",
+  "lat": 33.501986770586,
+  "lon": -111.951953119868,
+  "n": 1,
+  "dist_m": 586
+ },
+ "/Properties/Domestic/Arizona/The-Westin-Kierland-Resort-and-Spa": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6902+East+Greenway+Parkway%2C+Scottsdale%2C+AZ+85254&benchmark=Public_AR_Current&format=json",
+  "sha256": "2edddf2fca05197f102e7fcb66e379688ed79133ad8242825c5d84ec5235ff2f",
+  "matched": "6902 E GREENWAY PKWY, SCOTTSDALE, AZ, 85254",
+  "lat": 33.622886414031,
+  "lon": -111.933219258678,
+  "n": 1,
+  "dist_m": 281
+ },
+ "/Properties/Domestic/New-York/1-Hotel-Brooklyn-Bridge": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=60+Furman+Street%2C+Brooklyn%2C+NY+11201&benchmark=Public_AR_Current&format=json",
+  "sha256": "a332c56ab4ea7b734e1aa059cdec9e821892ef9bbe788c093129b2ca693fbb67",
+  "matched": "60 FURMAN ST, BROOKLYN, NY, 11201",
+  "lat": 40.701759951404,
+  "lon": -73.995504039169,
+  "n": 1,
+  "dist_m": 248
+ },
+ "/Properties/Domestic/New-York/1-Hotel-Central-Park": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1414+6th+Ave%2C+New+York%2C+NY+10019&benchmark=Public_AR_Current&format=json",
+  "sha256": "83f0122a4ebba024f7ac080f41e17b6a8300dff0fdf42c96f5ac0d595b8e1e0f",
+  "nomatch": true
+ },
+ "/Properties/Domestic/Tennessee/1-Hotel-Nashville": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=710+Demonbreun+Street%2C+Nashville%2C+TN+37203&benchmark=Public_AR_Current&format=json",
+  "sha256": "d85af670451618c8d2300840f741cd7498fc5bbffb6a4912e986dbb03ae10d82",
+  "matched": "710 DEMONBREUN ST, NASHVILLE, TN, 37203",
+  "lat": 36.157156038716,
+  "lon": -86.78036022257,
+  "n": 1,
+  "dist_m": 32
+ },
+ "/Properties/Domestic/Florida/1-Hotel-South-Beach": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2341+Collins+Avenue%2C+Miami+Beach%2C+FL+33139&benchmark=Public_AR_Current&format=json",
+  "sha256": "7c5032d1d4078bc13a3112570f243b4747560ab34ad33eb9eef3c5872acd1d68",
+  "matched": "2341 COLLINS AVE, MIAMI BEACH, FL, 33139",
+  "lat": 25.799054167479,
+  "lon": -80.127640530942,
+  "n": 1,
+  "dist_m": 76
+ },
+ "/Properties/Domestic/Arizona/AC-Hotel-Scottsdale-North": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=15200+North+Kierland+Boulevard%2C+Scottsdale%2C+AZ+85254&benchmark=Public_AR_Current&format=json",
+  "sha256": "d1654331ff0038ae0b2488bd10832d53981261637711a4d3d1248924203394f6",
+  "matched": "15200 N KIERLAND BLVD, SCOTTSDALE, AZ, 85254",
+  "lat": 33.624045647788,
+  "lon": -111.930966104982,
+  "n": 1,
+  "dist_m": 210
+ },
+ "/Properties/Domestic/Hawaii/Andaz-Maui-at-Wailea-Resort": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3550+Wailea+Alanui+Drive%2C+Wailea%2C+HI+96753&benchmark=Public_AR_Current&format=json",
+  "sha256": "4b97100b04742200a58a3436b8164b4facd338a56aaca1dfa7c95c84956fe261",
+  "matched": "3550 WAILEA ALANUI DR, WAILEA, HI, 96753",
+  "lat": 20.692983800716,
+  "lon": -156.441140701758,
+  "n": 1,
+  "dist_m": 372
+ },
+ "/Properties/Domestic/California/Axiom-Hotel": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=28+Cyril+Magnin+Street%2C+San+Francisco%2C+CA+94102&benchmark=Public_AR_Current&format=json",
+  "sha256": "6134c9b1aa08ae7502f8dbf9385303b02aacc008069bb3d446e5a3efd68c9fb9",
+  "matched": "28 CYRIL MAGNIN ST, SAN FRANCISCO, CA, 94102",
+  "lat": 37.784518028296,
+  "lon": -122.408431819937,
+  "n": 1,
+  "dist_m": 177
+ },
+ "/Properties/Domestic/Florida/Bakers-Cay-Resort-Key-Largo": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=97000+Overseas+Highway%2C+Key+Largo%2C+FL%2C+33037%2C&benchmark=Public_AR_Current&format=json",
+  "sha256": "752115a9277002c6541cbc273d6f124f7ec56a76624e83d8bffa506d4bf9a37e",
+  "matched": "97000 OVERSEAS HWY, KEY LARGO, FL, 33037",
+  "lat": 25.066096798672,
+  "lon": -80.471257902332,
+  "n": 1,
+  "dist_m": 322
+ },
+ "/Properties/Domestic/Massachusetts/Boston-Marriott-Copley-Place": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=110+Huntington+Avenue%2C+Boston%2C+MA+02116&benchmark=Public_AR_Current&format=json",
+  "sha256": "3b0e423aae66486dbb9064b2672aeb1c543c32f719fb712215181c989d77cbc0",
+  "matched": "110 HUNTINGTON AVE, BOSTON, MA, 02116",
+  "lat": 42.346937806444,
+  "lon": -71.079471687835,
+  "n": 1,
+  "dist_m": 70
+ },
+ "/Properties/International/Canada/Calgary-Marriott-Downtown-Hotel": {
+  "skip": "non-US"
+ },
+ "/Properties/Domestic/California/Coronado-Island-Marriott-Resort-and-Spa": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2000+Second+Street%2C+Coronado%2C+CA+92118&benchmark=Public_AR_Current&format=json",
+  "sha256": "5bad33529f797912ae7073c2773f52c6e2e4a1f7ad0271f88db94ff49fc278f5",
+  "nomatch": true
+ },
+ "/Properties/Domestic/Colorado/Denver-Marriott-Tech-Center": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4900+S.+Syracuse+Street%2C+Denver%2C+CO+80237&benchmark=Public_AR_Current&format=json",
+  "sha256": "2871396a59601a5b2f8e6749cbfaa518a42be64ecf521578acd9e7699d67f420",
+  "matched": "4900 S SYRACUSE ST, DENVER, CO, 80237",
+  "lat": 39.625317987584,
+  "lon": -104.900259674798,
+  "n": 1,
+  "dist_m": 204
+ },
+ "/Properties/Domestic/Colorado/Denver-Marriott-West": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1717+Denver+West+Drive%2C+Golden%2C+CO+80401&benchmark=Public_AR_Current&format=json",
+  "sha256": "a5fa58c77a0dc61f066af528266950341b8db62dedaf234af9319bfd1949ba52",
+  "matched": "1717 DENVER WEST BLVD, GOLDEN, CO, 80401",
+  "lat": 39.740580068947,
+  "lon": -105.160553839845,
+  "n": 1,
+  "dist_m": 132
+ },
+ "/Properties/Domestic/Illinois/Embassy-Suites-by-Hilton-Chicago-Downtown-Magnificent-Mile": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=511+North+Columbus+Drive%2C+Chicago%2C+IL+60611&benchmark=Public_AR_Current&format=json",
+  "sha256": "fe78c27282b9b6c6e9cc435907e2a733027b7f24eb458059386bd2b8edbbed3a",
+  "nomatch": true
+ },
+ "/Properties/Domestic/Hawaii/The-Fairmont-Kea-Lani": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4100+Wailea+Alanui+Dr%2C+Wailea%2C+HI+96753&benchmark=Public_AR_Current&format=json",
+  "sha256": "820e0d959081ea3294a661d9461c7d96cc2944ffef561370733647e94a599c65",
+  "matched": "4100 WAILEA ALANUI DR, WAILEA, HI, 96753",
+  "lat": 20.676527057205,
+  "lon": -156.440629678429,
+  "n": 1,
+  "dist_m": 160
+ },
+ "/Properties/Domestic/Florida/Fort-Lauderdale-Marriott-Harbor-Beach-Resort-and-Spa": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3030+Holiday+Drive%2C+Fort+Lauderdale%2C+FL+33316&benchmark=Public_AR_Current&format=json",
+  "sha256": "ba353fffab7bd652d73c162d37defc6e16c0cfee3593b3289e223dcaa147eacf",
+  "matched": "3030 HOLIDAY DR, FORT LAUDERDALE, FL, 33316",
+  "lat": 26.107818671911,
+  "lon": -80.106495453391,
+  "n": 1,
+  "dist_m": 196
+ },
+ "/Properties/Domestic/Maryland/Gaithersburg-Marriott-Washingtonian-Center": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=9751+Washingtonian+Blvd%2C+Gaithersburg%2C+MD+20878&benchmark=Public_AR_Current&format=json",
+  "sha256": "5fc52ea19992fd42f6d4320e6408ac52e326f47c2e987d71a2ad583b2b6236f4",
+  "matched": "9751 WASHINGTONIAN BLVD, GAITHERSBURG, MD, 20878",
+  "lat": 39.113923932629,
+  "lon": -77.194583888301,
+  "n": 1,
+  "dist_m": 203
+ },
+ "/Properties/Domestic/Georgia/Grand-Hyatt-Atlanta-in-Buckhead": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3300+Peachtree+Road+NE%2C+Atlanta%2C+GA+30305&benchmark=Public_AR_Current&format=json",
+  "sha256": "b03e7300f50e78d4d50f25893927f99514984c006e21561b9c1c2a05e2173f98",
+  "matched": "3300 PEACHTREE RD NE, ATLANTA, GA, 30326",
+  "lat": 33.848758618544,
+  "lon": -84.366355276733,
+  "n": 1,
+  "dist_m": 526
+ },
+ "/Properties/Domestic/California/Grand-Hyatt-San-Francisco": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=345+Stockton+Street%2C+San+Francisco%2C+CA+94108&benchmark=Public_AR_Current&format=json",
+  "sha256": "52b86973929bf1980bded6959063311fa05663b41df53d2a38e4857b6d780ae2",
+  "matched": "345 STOCKTON ST, SAN FRANCISCO, CA, 94108",
+  "lat": 37.788714782145,
+  "lon": -122.406885991125,
+  "n": 1,
+  "dist_m": 226
+ },
+ "/Properties/Domestic/District-of-Columbia/Grand-Hyatt-Washington": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1000+H+Street+NW%2C+Washington%2C+DC+20001&benchmark=Public_AR_Current&format=json",
+  "sha256": "ed459510701e8755940a1c2f858208efb3fa01575ca4ff37cfa15fe9554843c3",
+  "matched": "1000 H ST NW, WASHINGTON, DC, 20001",
+  "lat": 38.899761378339,
+  "lon": -77.026066183336,
+  "n": 1,
+  "dist_m": 234
+ },
+ "/Properties/Domestic/Texas/Hotel-Van-Zandt": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=605+Davis+Street%2C+Austin%2C+TX+78701&benchmark=Public_AR_Current&format=json",
+  "sha256": "4e445f92569cedcec2754605b8ed1c9ca98df782ecf92df36e23e306330e2565",
+  "matched": "605 DAVIS ST, AUSTIN, TX, 78701",
+  "lat": 30.260340398658,
+  "lon": -97.739197492954,
+  "n": 1,
+  "dist_m": 201
+ },
+ "/Properties/Domestic/Texas/Houston-Airport-Marriott-at-George-Bush-Intercontinental": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=18700+John+F.+Kennedy+Blvd%2C+Houston%2C+TX+77032&benchmark=Public_AR_Current&format=json",
+  "sha256": "ebfef867d3602a04bf7d3eae0875cac834649e88e9d956c4f46560a341d27caf",
+  "matched": "18700 JOHN F KENNEDY BLVD, HOUSTON, TX, 77032",
+  "lat": 29.986067202816,
+  "lon": -95.343092529469,
+  "n": 1,
+  "dist_m": 169
+ },
+ "/Properties/Domestic/Texas/Houston-Marriott-Medical-Center-Museum-District": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6580+Fannin+Street%2C+Houston%2C+TX+77030&benchmark=Public_AR_Current&format=json",
+  "sha256": "b56a836a2b7834f71dec6c485a2b065e0826c05ba5f6ef641418be7bc356390b",
+  "matched": "6580 FANNIN ST, HOUSTON, TX, 77030",
+  "lat": 29.711177434105,
+  "lon": -95.399800218518,
+  "n": 1,
+  "dist_m": 158
+ },
+ "/Properties/Domestic/Tennessee/Hyatt-Place-Nashville-Downtown": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=301+3rd+Avenue+South%2C+Nashville%2C+TN+37201&benchmark=Public_AR_Current&format=json",
+  "sha256": "1d121e2c615710a95e6eeccd559dba6490b730aa8d2108db77d67a3314b91f9a",
+  "nomatch": true
+ },
+ "/Properties/Domestic/Hawaii/Hyatt-Place-Waikiki-Beach": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=175+Paoakalani+Ave%2C+Honolulu%2C+HI+96815&benchmark=Public_AR_Current&format=json",
+  "sha256": "299321b68fa1bf073a1187adcf99e6dc53340d0a1a5bc58e9ed720b0459adf3c",
+  "matched": "175 PAOAKALANI AVE, HONOLULU, HI, 96815",
+  "lat": 21.273527738882,
+  "lon": -157.821654632159,
+  "n": 1,
+  "dist_m": 27
+ },
+ "/Properties/Domestic/Florida/Hyatt-Regency-Coconut-Point-Resort-and-Spa": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=5001+Coconut+Road%2C+Bonita+Springs%2C+FL+34134&benchmark=Public_AR_Current&format=json",
+  "sha256": "553c960252d17bef404efdbdf5fc3d0174822e63ad21b7eccaaf6818c74dd6ee",
+  "matched": "5001 COCONUT RD, BONITA SPRINGS, FL, 34134",
+  "lat": 26.397902122073,
+  "lon": -81.836232523436,
+  "n": 1,
+  "dist_m": 372
+ },
+ "/Properties/Domestic/Hawaii/Hyatt-Regency-Maui-Resort-and-Spa": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=200+Nohea+Kai+Drive%2C+Lahaina%2C+HI+96761&benchmark=Public_AR_Current&format=json",
+  "sha256": "37e695a529eb9b379930f63ea20dc2309d2eef97a8791f6616f6215b471376a4",
+  "matched": "200 NOHEA KAI DR, LAHAINA, HI, 96761",
+  "lat": 20.914754179943,
+  "lon": -156.693998134361,
+  "n": 1,
+  "dist_m": 217
+ },
+ "/Properties/Domestic/Virginia/Hyatt-Regency-Reston": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1800+Presidents+Street%2C+Reston%2C+VA+20190&benchmark=Public_AR_Current&format=json",
+  "sha256": "7f64d0a4837c1b92c697351ec70dac8c2749ec8e74b84c9c74570687417ecb56",
+  "matched": "1800 PRESIDENTS ST, RESTON, VA, 20190",
+  "lat": 38.958651202766,
+  "lon": -77.355532329677,
+  "n": 1,
+  "dist_m": 76
+ },
+ "/Properties/Domestic/California/Hyatt-Regency-San-Francisco-Airport": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1333+Bayshore+Highway%2C+Burlingame%2C+CA+94010&benchmark=Public_AR_Current&format=json",
+  "sha256": "16387bb5ea6d090251bd074c883258c9cc48384af130e8a45809914987904978",
+  "matched": "1333 BAYSHORE HWY, BURLINGAME, CA, 94010",
+  "lat": 37.594879296382,
+  "lon": -122.364783529921,
+  "n": 1,
+  "dist_m": 122
+ },
+ "/Properties/Domestic/District-of-Columbia/Hyatt-Regency-Washington-on-Capitol-Hill": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=400+New+Jersey+Ave+NW%2C+Washington%2C+DC+20001&benchmark=Public_AR_Current&format=json",
+  "sha256": "9373a216adafa97558fb04e8042b61d2ecfafbd7849f1a4f1523cb40bb9649de",
+  "matched": "400 NEW JERSEY AVE NW, WASHINGTON, DC, 20001",
+  "lat": 38.894826767475,
+  "lon": -77.011034455535,
+  "n": 1,
+  "dist_m": 102
+ },
+ "/Properties/International/Brazil/ibis-Rio-de-Janeiro-Parque-Olimpico-Hotel": {
+  "skip": "non-US"
+ },
+ "/Properties/Domestic/Georgia/JW-Marriott-Atlanta-Buckhead": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3300+Lenox+Road+NE%2C+Atlanta%2C+GA+30326&benchmark=Public_AR_Current&format=json",
+  "sha256": "5763a7364e26d9ebfad43fde867cb5d7cef0ff966ed89f57f0352edd7fb2e07d",
+  "matched": "3300 LENOX RD, ATLANTA, GA, 30326",
+  "lat": 33.845327194879,
+  "lon": -84.358480791088,
+  "n": 1,
+  "dist_m": 117
+ },
+ "/Properties/International/Brazil/JW-Marriott-Hotel-Rio-de-Janeiro": {
+  "skip": "non-US"
+ },
+ "/Properties/Domestic/Texas/JW-Marriott-Houston": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=5150+Westheimer+Road%2C+Houston%2C+TX+77056&benchmark=Public_AR_Current&format=json",
+  "sha256": "abfc4a60509b8616612b1b1183c137dcff9d0451ea5560b501d389ab00772dff",
+  "matched": "5150 WESTHEIMER RD, HOUSTON, TX, 77056",
+  "lat": 29.740705384945,
+  "lon": -95.465611005681,
+  "n": 1,
+  "dist_m": 349
+ },
+ "/Properties/Domestic/District-of-Columbia/JW-Marriott-Washington-DC": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1331+Pennsylvania+Avenue+NW%2C+Washington%2C+DC+20004&benchmark=Public_AR_Current&format=json",
+  "sha256": "6dbad10c83a321955021a59478521a116a54a2d3b0e1d2e50f9c2a204a35c9cb",
+  "matched": "1331 PENNSYLVANIA AVE NW, WASHINGTON, DC, 20004",
+  "lat": 38.895560728064,
+  "lon": -77.030001391392,
+  "n": 1,
+  "dist_m": 285
+ },
+ "/Properties/Domestic/California/Manchester-Grand-Hyatt-San-Diego": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1+Market+Place%2C+San+Diego%2C+CA+92101&benchmark=Public_AR_Current&format=json",
+  "sha256": "b89e331b49d82276f3580b85cba9682dc71223051d08d85c253d414d617ae48b",
+  "matched": "1 MARKET PL, SAN DIEGO, CA, 92101",
+  "lat": 32.710838996242,
+  "lon": -117.168240623206,
+  "n": 1,
+  "dist_m": 50
+ },
+ "/Properties/Domestic/California/Marina-del-Rey-Marriott": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4100+Admiralty+Way%2C+Marina+del+Rey%2C+CA+90292&benchmark=Public_AR_Current&format=json",
+  "sha256": "74e425b0ab1141889ea1dfbc834ccd84ddaff112c9727faf0795b435bc5e25fb",
+  "matched": "4100 ADMIRALTY WAY, MARINA DEL REY, CA, 90292",
+  "lat": 33.98211776136,
+  "lon": -118.459131929106,
+  "n": 1,
+  "dist_m": 51
+ },
+ "/Properties/International/Canada/Marriott-Downtown-at-CF-Toronto-Eaton-Centre": {
+  "skip": "non-US"
+ },
+ "/Properties/Domestic/California/Marriott-Marquis-San-Diego-Marina": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=333+West+Harbor+Drive%2C+San+Diego%2C+CA+92101&benchmark=Public_AR_Current&format=json",
+  "sha256": "a4b31e06aa5af4df9a3f05e7eacf98fa3821b3ae5742ed0dd98074ebcc606c3e",
+  "matched": "333 W HARBOR DR, SAN DIEGO, CA, 92101",
+  "lat": 32.709497260169,
+  "lon": -117.165476410578,
+  "n": 1,
+  "dist_m": 90
+ },
+ "/Properties/Domestic/Florida/Miami-Marriott-Biscayne-Bay": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1633+North+Bayshore+Drive%2C+Miami%2C+FL+33132&benchmark=Public_AR_Current&format=json",
+  "sha256": "fe6858070411790c1bc605807f9cd47b2c4ab190bfe2d691f3a4aaac5f5a8e9e",
+  "matched": "1633 N BAYSHORE DR, MIAMI, FL, 33132",
+  "lat": 25.790865826825,
+  "lon": -80.187024415402,
+  "n": 1,
+  "dist_m": 88
+ },
+ "/Properties/Domestic/Minnesota/Minneapolis-Marriott-City-Center": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=31+South+7th+Street%2C+Minneapolis%2C+MN+55402&benchmark=Public_AR_Current&format=json",
+  "sha256": "dd184c74322871206fe9ca30a279381581b1bbc2bda5ce6daae66795e6f39507",
+  "matched": "31 7TH ST S, MINNEAPOLIS, MN, 55402",
+  "lat": 44.977473423232,
+  "lon": -93.273801915799,
+  "n": 1,
+  "dist_m": 39
+ },
+ "/Properties/Domestic/Louisiana/New-Orleans-Marriott": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=555+Canal+Street%2C+New+Orleans%2C+LA+70130&benchmark=Public_AR_Current&format=json",
+  "sha256": "547afa4d00925286c341eddc80bcc214eafeac58a582cadb8aef57e01d9db158",
+  "matched": "555 CANAL ST, NEW ORLEANS, LA, 70130",
+  "lat": 29.952441992242,
+  "lon": -90.06764048237,
+  "n": 1,
+  "dist_m": 71
+ },
+ "/Properties/Domestic/New-York/New-York-Marriott-Downtown": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=85+West+Street%2C+New+York%2C+NY+10006&benchmark=Public_AR_Current&format=json",
+  "sha256": "63891d12f58839b7a17a27ee9676d64b1c7a525d15201549113ab8500ac89ec4",
+  "matched": "85 WEST RD, NEW YORK, NY, 10044",
+  "lat": 40.756428073291,
+  "lon": -73.95592537359,
+  "n": 1,
+  "dist_m": 7156
+ },
+ "/Properties/Domestic/New-Jersey/Newark-Liberty-International-Airport-Marriott": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=Newark+Liberty+International+Airport%2C+1+Hotel+Road%2C+Newark%2C+NJ+07114&benchmark=Public_AR_Current&format=json",
+  "sha256": "76bfbd317b8177f01b1f1772ed8eeb381450c584e0e7242b103a52f1ed40def5",
+  "nomatch": true
+ },
+ "/Properties/International/Brazil/Novotel-Rio-de-Janeiro-Parque-Olimpico-Hotel": {
+  "skip": "non-US"
+ },
+ "/Properties/Domestic/Florida/Orlando-World-Center-Marriott": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=8701+World+Center+Drive%2C+Orlando%2C+FL+32821&benchmark=Public_AR_Current&format=json",
+  "sha256": "fea44c0224e9a299b2f2e00e9dc0863e28fcd2687f304e7b4416a8759867896a",
+  "matched": "8701 WORLD CENTER DR, ORLANDO, FL, 32821",
+  "lat": 28.360546615864,
+  "lon": -81.509141281033,
+  "n": 1,
+  "dist_m": 100
+ },
+ "/Properties/Domestic/Pennsylvania/Philadelphia-Airport-Marriott": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1+Arrivals+Road%2C+Terminal+B%2C+Philadelphia%2C+PA+19153&benchmark=Public_AR_Current&format=json",
+  "sha256": "863c47b931c5b60bf97682dc58d365f719b2368fc4aa895d8c70265e7fff9a06",
+  "nomatch": true
+ },
+ "/Properties/Domestic/Texas/Renaissance-Dallas-at-Plano-Legacy-West-Hotel": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6007+Legacy+Drive%2C+Plano%2C+TX+75024&benchmark=Public_AR_Current&format=json",
+  "sha256": "5b89fac686001328600b48ad0319c0824de76f3b24486785e78a551412c04974",
+  "matched": "6007 LEGACY DR, PLANO, TX, 75024",
+  "lat": 33.078129486348,
+  "lon": -96.826902655273,
+  "n": 1,
+  "dist_m": 37
+ },
+ "/Properties/Domestic/Texas/San-Antonio-Marriott-Rivercenter": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=101+Bowie+Street%2C+San+Antonio%2C+TX+78205&benchmark=Public_AR_Current&format=json",
+  "sha256": "17db067e6428c7a61e27cb83ac1af2d97ae2dd67658c874e0c04895d0171caf3",
+  "matched": "101 BOWIE ST, SAN ANTONIO, TX, 78205",
+  "lat": 29.42278371714,
+  "lon": -98.483319083114,
+  "n": 1,
+  "dist_m": 75
+ },
+ "/Properties/Domestic/Texas/San-Antonio-Marriott-Riverwalk": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=889+East+Market+Street%2C+San+Antonio%2C+TX+78205&benchmark=Public_AR_Current&format=json",
+  "sha256": "22777407e8b91e50dcfa20aba75f2c5b9356f29ba3fbe6b358c957c234eae9e4",
+  "matched": "889 E MARKET ST, SAN ANTONIO, TX, 78205",
+  "lat": 29.422042438542,
+  "lon": -98.483582017412,
+  "n": 1,
+  "dist_m": 209
+ },
+ "/Properties/Domestic/California/San-Francisco-Marriott-Fishermans-Wharf": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1250+Columbus+Avenue%2C+San+Francisco%2C+CA+94133&benchmark=Public_AR_Current&format=json",
+  "sha256": "6367ceb5893af15fedf23e7f80ac8ff4ffdfb3f35cc0e1add4de84fdcb07a7e2",
+  "matched": "1250 COLUMBUS AVE, SAN FRANCISCO, CA, 94133",
+  "lat": 37.805623895066,
+  "lon": -122.417766164434,
+  "n": 1,
+  "dist_m": 92
+ },
+ "/Properties/Domestic/California/San-Francisco-Marriott-Marquis": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=780+Mission+Street%2C+San+Francisco%2C+CA+94103&benchmark=Public_AR_Current&format=json",
+  "sha256": "dd0ec8a186f71f8d219e85857842f70968624304db17f5e856be1af5740b234a",
+  "matched": "780 MISSION ST, SAN FRANCISCO, CA, 94103",
+  "lat": 37.784849392611,
+  "lon": -122.403900190726,
+  "n": 1,
+  "dist_m": 80
+ },
+ "/Properties/Domestic/California/Santa-Clara-Marriott": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2700+Mission+College+Boulevard%2C+Santa+Clara%2C+CA+95054&benchmark=Public_AR_Current&format=json",
+  "sha256": "9c8f2bab5b33536142c7373d0f169b481d778a16dec6079f2df7dd30642692e2",
+  "matched": "2700 MISSION COLLEGE BLVD, SANTA CLARA, CA, 95054",
+  "lat": 37.392422918654,
+  "lon": -121.974822394664,
+  "n": 1,
+  "dist_m": 94
+ },
+ "/Properties/Domestic/Illinois/Swissotel-Chicago": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=323+E+Upper+Wacker+Dr%2C+Chicago%2C+IL+60601&benchmark=Public_AR_Current&format=json",
+  "sha256": "e6f1d1ddf245c8779efffbd1e4d9245900d68f1c8131b4459b30e44beaf99961",
+  "matched": "323 E WACKER DR, CHICAGO, IL, 60601",
+  "lat": 41.8876646954,
+  "lon": -87.620012503046,
+  "n": 1,
+  "dist_m": 85
+ },
+ "/Properties/Domestic/Florida/Tampa-Airport-Marriott": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4200+George+J+Bean+Parkway%2C+Tampa%2C+FL+33607&benchmark=Public_AR_Current&format=json",
+  "sha256": "c060b260faaf23b0e567a378be194283b70d44dbb037e897c397bf6df677e97a",
+  "nomatch": true
+ },
+ "/Properties/Domestic/Georgia/The-Alida-Savannah-a-Tribute-Portfolio-Hotel": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=412+Williamson+Street%2C+Savannah%2C+GA+31401&benchmark=Public_AR_Current&format=json",
+  "sha256": "827c02e9df60eb327e25930abb3ee77fea58f332cd9767f314c68d4906787b4c",
+  "matched": "412 WILLIAMSON ST, SAVANNAH, GA, 31401",
+  "lat": 32.08276476563,
+  "lon": -81.09545366903,
+  "n": 1,
+  "dist_m": 231
+ },
+ "/Properties/Domestic/Texas/The-Laura-Hotel": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1070+Dallas+St%2C+Houston%2C+TX+77002&benchmark=Public_AR_Current&format=json",
+  "sha256": "230e4f5fd37c0524dc3e1d736fa400fd738315be4e4d86e57c7bf09031d7e57d",
+  "matched": "1070 DALLAS ST, HOUSTON, TX, 77002",
+  "lat": 29.755047241729,
+  "lon": -95.365542929563,
+  "n": 1,
+  "dist_m": 216
+ },
+ "/Properties/Domestic/Pennsylvania/The-Logan-Philadelphia-Hotel": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=One+Logan+Square%2C+Philadelphia%2C+PA+19103&benchmark=Public_AR_Current&format=json",
+  "sha256": "b8493a5e9f4684a7532cbaad3ae8e86389f14f1379c26c8e1241503b52f3101d",
+  "nomatch": true
+ },
+ "/Properties/Domestic/Florida/The-Ritz-Carlton-Naples-Tiburon": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2600+Tiburon+Dr%2C+Naples%2C+FL+34109&benchmark=Public_AR_Current&format=json",
+  "sha256": "28420f48dc78efce7dbd66244b0fe9768bba48cfdd4369f1be2db54c15d33021",
+  "matched": "2600 TIBURON DR, NAPLES, FL, 34109",
+  "lat": 26.247174014541,
+  "lon": -81.766602282173,
+  "n": 1,
+  "dist_m": 261
+ },
+ "/Properties/Domestic/Hawaii/The-Ritz-Carlton-Oahu-Turtle-Bay": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=57-091+Kamehameha+Highway%2C+Kahuku%2C+HI+96712&benchmark=Public_AR_Current&format=json",
+  "sha256": "086483e6aee32f509b3f712a56756b000e3cebc983c58f24991ef94abb9f1556",
+  "matched": "57-091 KAMEHAMEHA HWY, KAHUKU, HI, 96731",
+  "lat": 21.696760364898,
+  "lon": -157.995908179392,
+  "n": 1,
+  "dist_m": 729
+ },
+ "/Properties/Domestic/Florida/The-Ritz-Carlton-Amelia-Island": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4750+Amelia+Island+Pkwy%2C+Fernandina+Beach%2C+FL+32034&benchmark=Public_AR_Current&format=json",
+  "sha256": "d41b6ed3bd7c2c081c2b4e1543622a7cdd98270d3664f40a73964ade6d0b8ccd",
+  "matched": "4750 AMELIA ISLAND PKWY, FERNANDINA BEACH, FL, 32034",
+  "lat": 30.592892705202,
+  "lon": -81.446130357394,
+  "n": 1,
+  "dist_m": 163
+ },
+ "/Properties/Domestic/California/Ritz-Carlton-Marina-Del-Rey": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4375+Admiralty+Way%2C+Marina+del+Rey%2C+CA+90292&benchmark=Public_AR_Current&format=json",
+  "sha256": "c31515411d976fb14154186b43e12b4e1af1a3e015e25944dc1eea3460a1dc93",
+  "matched": "4375 ADMIRALTY WAY, MARINA DEL REY, CA, 90292",
+  "lat": 33.98495046339,
+  "lon": -118.451560459412,
+  "n": 1,
+  "dist_m": 80
+ },
+ "/Properties/Domestic/Virginia/The-Ritz-Carlton-Tysons-Corner": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1700+Tysons+Boulevard%2C+McLean%2C+VA+22102&benchmark=Public_AR_Current&format=json",
+  "sha256": "28d81f966fcaf9be43a4c48e246fea7dd68265f7f399d55616554ee733862967",
+  "matched": "1700 TYSONS BLVD, MCLEAN, VA, 22102",
+  "lat": 38.925789785745,
+  "lon": -77.223334425344,
+  "n": 1,
+  "dist_m": 72
+ },
+ "/Properties/Domestic/Florida/The-Singer-Oceanfront-Resort": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3700+N+Ocean+Dr%2C+Riviera+Beach%2C+FL+33404&benchmark=Public_AR_Current&format=json",
+  "sha256": "9a3cbcb9bbec60a798dd155a5758c375bfcd59363e4beeaa3fa0de341a558813",
+  "matched": "3700 N OCEAN DR, RIVIERA BEACH, FL, 33404",
+  "lat": 26.791074661191,
+  "lon": -80.034601956522,
+  "n": 1,
+  "dist_m": 73
+ },
+ "/Properties/Domestic/Illinois/The-Westin-Chicago-River-North": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=320+North+Dearborn+Street%2C+Chicago%2C+IL+60654&benchmark=Public_AR_Current&format=json",
+  "sha256": "e6c7211b63abe4e12db1059961ba98b57b2afcb5bb24a50254ddc10cce759932",
+  "matched": "320 N DEARBORN ST, CHICAGO, IL, 60654",
+  "lat": 41.888105011219,
+  "lon": -87.629623239878,
+  "n": 1,
+  "dist_m": 43
+ },
+ "/Properties/Domestic/Colorado/The-Westin-Denver-Downtown": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1672+Lawrence+St%2C+Denver%2C+CO+80202&benchmark=Public_AR_Current&format=json",
+  "sha256": "4abe5c8f293bfdbf7fa1d379547cdfc91f1f48fa3fd06b510eb554286571a59c",
+  "matched": "1672 LAWRENCE ST, DENVER, CO, 80202",
+  "lat": 39.749151430142,
+  "lon": -104.995628460231,
+  "n": 1,
+  "dist_m": 181
+ },
+ "/Properties/Domestic/District-of-Columbia/The-Westin-Georgetown-Washington-DC": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2350+M+St+NW%2C+Washington%2C+DC+20037&benchmark=Public_AR_Current&format=json",
+  "sha256": "a6a0be70a94856ca406f11640a9935fe542cea70aed627f4d70b1060be463bef",
+  "matched": "2350 M ST NW, WASHINGTON, DC, 20037",
+  "lat": 38.905204682268,
+  "lon": -77.050770084761,
+  "n": 1,
+  "dist_m": 210
+ },
+ "/Properties/Domestic/Washington/The-Westin-Seattle": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1900+5th+Ave%2C+Seattle%2C+WA+98101&benchmark=Public_AR_Current&format=json",
+  "sha256": "ad22e63e0f72bd47f715fa5021fb06d753753ef03cf9c18c7b87c89e753eed04",
+  "matched": "1900 5TH AVE, SEATTLE, WA, 98101",
+  "lat": 47.613060777296,
+  "lon": -122.337855619155,
+  "n": 1,
+  "dist_m": 190
+ },
+ "/Properties/Domestic/California/The-Westin-South-Coast-Plaza-Costa-Mesa": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=686+Anton+Blvd%2C+Costa+Mesa%2C+CA+92626&benchmark=Public_AR_Current&format=json",
+  "sha256": "43d5caae2f166a870ebc0bb184842b68459b1e8a356ef60f777d3e26a1c45b0a",
+  "matched": "686 ANTON BLVD, COSTA MESA, CA, 92626",
+  "lat": 33.690299751089,
+  "lon": -117.884864682788,
+  "n": 1,
+  "dist_m": 146
+ },
+ "/Properties/Domestic/Massachusetts/The-Westin-Waltham-Boston": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=70+3rd+Ave%2C+Waltham%2C+MA+02451&benchmark=Public_AR_Current&format=json",
+  "sha256": "d0f4141887a1ecf7400f48ef49ebc082998517fa909baa6ef3dbc25773050ebd",
+  "matched": "70 3RD AVE, WALTHAM, MA, 02451",
+  "lat": 42.394197370861,
+  "lon": -71.260675156944,
+  "n": 1,
+  "dist_m": 179
+ },
+ "/Properties/Domestic/Washington/W-Seattle": {
+  "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1112+4th+Ave%2C+Seattle%2C+WA+98101&benchmark=Public_AR_Current&format=json",
+  "sha256": "45e5054edf5b9619691daec6f9f1587c4c4d73b792facd308afeaea10bd55f8d",
+  "matched": "1112 4TH AVE, SEATTLE, WA, 98101",
+  "lat": 47.606953274145,
+  "lon": -122.333604901203,
+  "n": 1,
+  "dist_m": 80
+ }
+}

@@ -1,0 +1,4758 @@
+[
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:jre-cosmo-kanasugibashi-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "jre-cosmo-kanasugibashi-building"
+  },
+  "synthetic": false,
+  "name": "JRE Cosmo Kanasugibashi Building",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: JRE COSMO KANASUGIBASHI BUILDING | 1-10-11, Shiba, Minato-ku, Tokyo | ownership ratio 1",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 1992-03-23",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.651428,
+   "lon": 139.754181,
+   "label": "1-10-11, Shiba, Minato-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E8%8A%9D%E4%B8%80%E4%B8%81%E7%9B%AE10%E7%95%AA11%E5%8F%B7",
+    "sha256": "2f083360cdae1bac1f8ce40798572164fae277e07ab6212adf8d6c1fb57653f2",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都港区芝一丁目１０番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:jre-cosmo-kanasugibashi-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: JRE COSMO KANASUGIBASHI BUILDING | 1-10-11, Shiba, Minato-ku, Tokyo | ownership ratio 1",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "ＪＲＥコスモ金杉橋ビル"
+   ],
+   "address_ja": "東京都港区芝一丁目10番11号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 100%; title registry not checked",
+    "property_stake": 100,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: JRE COSMO KANASUGIBASHI BUILDING | 1-10-11, Shiba, Minato-ku, Tokyo | ownership ratio 1",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: JRE COSMO KANASUGIBASHI BUILDING | 1-10-11, Shiba, Minato-ku, Tokyo | ownership ratio 1",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:jre-cosmo-kanasugibashi-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 2808000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:jre-cosmo-kanasugibashi-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E8%8A%9D%E4%B8%80%E4%B8%81%E7%9B%AE10%E7%95%AA11%E5%8F%B7",
+     "sha256": "2f083360cdae1bac1f8ce40798572164fae277e07ab6212adf8d6c1fb57653f2"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "f5ce52cea24cf7bc26a1b0e4faf329bc28a2dc8a01736c1ee0deff8e4d75651d"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:jre-shiba-2chome-daimon-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "jre-shiba-2chome-daimon-building"
+  },
+  "synthetic": false,
+  "name": "JRE Shiba 2Chome Daimon Building",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: JRE SHIBA 2CHOME DAIMON BUILDING | 2-3-3, Shiba, Minato-ku, Tokyo | ownership ratio 1",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 1984-03-31",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.652126,
+   "lon": 139.753632,
+   "label": "2-3-3, Shiba, Minato-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E8%8A%9D%E4%BA%8C%E4%B8%81%E7%9B%AE3%E7%95%AA3%E5%8F%B7",
+    "sha256": "89dd1d1a7a8103e868c245ac3991caacb18f9f23d3bf7fdb60a6015999e0ddc3",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都港区芝二丁目３番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:jre-shiba-2chome-daimon-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: JRE SHIBA 2CHOME DAIMON BUILDING | 2-3-3, Shiba, Minato-ku, Tokyo | ownership ratio 1",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "ＪＲＥ芝二丁目大門ビル"
+   ],
+   "address_ja": "東京都港区芝二丁目３番３号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 100%; title registry not checked",
+    "property_stake": 100,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: JRE SHIBA 2CHOME DAIMON BUILDING | 2-3-3, Shiba, Minato-ku, Tokyo | ownership ratio 1",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: JRE SHIBA 2CHOME DAIMON BUILDING | 2-3-3, Shiba, Minato-ku, Tokyo | ownership ratio 1",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:jre-shiba-2chome-daimon-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 4859000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:jre-shiba-2chome-daimon-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E8%8A%9D%E4%BA%8C%E4%B8%81%E7%9B%AE3%E7%95%AA3%E5%8F%B7",
+     "sha256": "89dd1d1a7a8103e868c245ac3991caacb18f9f23d3bf7fdb60a6015999e0ddc3"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "81ca687effc26580485c201663aa85fb1de6273638d086fd85286cf93452f8e4"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:jre-kanda-ogawamachi-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "jre-kanda-ogawamachi-building"
+  },
+  "synthetic": false,
+  "name": "JRE Kanda-Ogawamachi Building",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: JRE KANDA-OGAWAMACHI BUILDING | 9-1, Kanda-Mitoshirocho, Chiyoda-ku, Tokyo | ownership ratio 1",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 1998-02-20",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.693741,
+   "lon": 139.76561,
+   "label": "9-1, Kanda-Mitoshirocho, Chiyoda-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E7%A5%9E%E7%94%B0%E7%BE%8E%E5%9C%9F%E4%BB%A3%E7%94%BA9%E7%95%AA%E5%9C%B01",
+    "sha256": "9a20f76bf2cd0e66a018ae5d8acb8e73601eed0acf325307e477a053fe9a8611",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都千代田区神田美土代町９番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:jre-kanda-ogawamachi-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: JRE KANDA-OGAWAMACHI BUILDING | 9-1, Kanda-Mitoshirocho, Chiyoda-ku, Tokyo | ownership ratio 1",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "ＪＲＥ神田小川町ビル"
+   ],
+   "address_ja": "東京都千代田区神田美土代町９番地１"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 100%; title registry not checked",
+    "property_stake": 100,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: JRE KANDA-OGAWAMACHI BUILDING | 9-1, Kanda-Mitoshirocho, Chiyoda-ku, Tokyo | ownership ratio 1",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: JRE KANDA-OGAWAMACHI BUILDING | 9-1, Kanda-Mitoshirocho, Chiyoda-ku, Tokyo | ownership ratio 1",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:jre-kanda-ogawamachi-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 9520000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:jre-kanda-ogawamachi-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E7%A5%9E%E7%94%B0%E7%BE%8E%E5%9C%9F%E4%BB%A3%E7%94%BA9%E7%95%AA%E5%9C%B01",
+     "sha256": "9a20f76bf2cd0e66a018ae5d8acb8e73601eed0acf325307e477a053fe9a8611"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "df999bc764ce4a3aa05e4d55bf51b5d3772c33df291f29fddb5fc178f3d63e50"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:kandabashi-park-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "kandabashi-park-building"
+  },
+  "synthetic": false,
+  "name": "Kandabashi Park Building",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: KANDABASHI PARK BUILDING | 1-19-1, Kanda-Nishikicho, Chiyoda-ku, Tokyo | ownership ratio 0.8544",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 1993-07-21",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.69112,
+   "lon": 139.764267,
+   "label": "1-19-1, Kanda-Nishikicho, Chiyoda-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E7%A5%9E%E7%94%B0%E9%8C%A6%E7%94%BA%E4%B8%80%E4%B8%81%E7%9B%AE19%E7%95%AA%E5%9C%B01",
+    "sha256": "97e3c42e3fda22a8c5001b14c8ad9c57dbae29635c95a0fe463e26f26f841cd1",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都千代田区神田錦町一丁目１９番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:kandabashi-park-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: KANDABASHI PARK BUILDING | 1-19-1, Kanda-Nishikicho, Chiyoda-ku, Tokyo | ownership ratio 0.8544",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "神田橋パークビルヂング"
+   ],
+   "address_ja": "東京都千代田区神田錦町一丁目19番地１"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 85.44%; title registry not checked",
+    "property_stake": 85.44,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: KANDABASHI PARK BUILDING | 1-19-1, Kanda-Nishikicho, Chiyoda-ku, Tokyo | ownership ratio 0.8544",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: KANDABASHI PARK BUILDING | 1-19-1, Kanda-Nishikicho, Chiyoda-ku, Tokyo | ownership ratio 0.8544",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:kandabashi-park-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 6960000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:kandabashi-park-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E7%A5%9E%E7%94%B0%E9%8C%A6%E7%94%BA%E4%B8%80%E4%B8%81%E7%9B%AE19%E7%95%AA%E5%9C%B01",
+     "sha256": "97e3c42e3fda22a8c5001b14c8ad9c57dbae29635c95a0fe463e26f26f841cd1"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "04d056a68a6149940c65cfe9a889aac3e7e31bdbe199995c904a53f9b425e159"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:jre-aoyama-crystal-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "jre-aoyama-crystal-building"
+  },
+  "synthetic": false,
+  "name": "JRE Aoyama Crystal Building",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: JRE AOYAMA CRYSTAL BUILDING | 3-5-12, Kita-Aoyama, Minato-ku, Tokyo | ownership ratio 1",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 1982-12-08",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.665634,
+   "lon": 139.712769,
+   "label": "3-5-12, Kita-Aoyama, Minato-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E5%8C%97%E9%9D%92%E5%B1%B1%E4%B8%89%E4%B8%81%E7%9B%AE5%E7%95%AA12%E5%8F%B7",
+    "sha256": "51a835bbc6547a5f07ccfec897c01af11e5dfb946fdd118f9830fc13a433ae31",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都港区北青山三丁目５番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:jre-aoyama-crystal-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: JRE AOYAMA CRYSTAL BUILDING | 3-5-12, Kita-Aoyama, Minato-ku, Tokyo | ownership ratio 1",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "ＪＲＥ青山クリスタルビル"
+   ],
+   "address_ja": "東京都港区北青山三丁目５番12号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 100%; title registry not checked",
+    "property_stake": 100,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: JRE AOYAMA CRYSTAL BUILDING | 3-5-12, Kita-Aoyama, Minato-ku, Tokyo | ownership ratio 1",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: JRE AOYAMA CRYSTAL BUILDING | 3-5-12, Kita-Aoyama, Minato-ku, Tokyo | ownership ratio 1",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:jre-aoyama-crystal-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 7680000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:jre-aoyama-crystal-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E5%8C%97%E9%9D%92%E5%B1%B1%E4%B8%89%E4%B8%81%E7%9B%AE5%E7%95%AA12%E5%8F%B7",
+     "sha256": "51a835bbc6547a5f07ccfec897c01af11e5dfb946fdd118f9830fc13a433ae31"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "1dd445d7ee049bbfded640898843bbce0c55c1ba02fd8d4e3c7490d6a23f9df3"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:yurakucho-denki-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "yurakucho-denki-building"
+  },
+  "synthetic": false,
+  "name": "Yurakucho Denki Building",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: YURAKUCHO DENKI BUILDING | 1-7-1, Yurakucho, Chiyoda-ku, Tokyo | ownership ratio 0.1078",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 1975-09-23",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.674358,
+   "lon": 139.761444,
+   "label": "1-7-1, Yurakucho, Chiyoda-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E6%9C%89%E6%A5%BD%E7%94%BA%E4%B8%80%E4%B8%81%E7%9B%AE7%E7%95%AA1%E5%8F%B7",
+    "sha256": "f661870e80751747f46da47d0af4b6f81129f47202c2799b12173a8e860fb51b",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都千代田区有楽町一丁目７番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:yurakucho-denki-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: YURAKUCHO DENKI BUILDING | 1-7-1, Yurakucho, Chiyoda-ku, Tokyo | ownership ratio 0.1078",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "有楽町電気ビルヂング"
+   ],
+   "address_ja": "東京都千代田区有楽町一丁目７番１号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 10.78%; title registry not checked",
+    "property_stake": 10.78,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: YURAKUCHO DENKI BUILDING | 1-7-1, Yurakucho, Chiyoda-ku, Tokyo | ownership ratio 0.1078",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: YURAKUCHO DENKI BUILDING | 1-7-1, Yurakucho, Chiyoda-ku, Tokyo | ownership ratio 0.1078",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:yurakucho-denki-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 7200000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:yurakucho-denki-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E6%9C%89%E6%A5%BD%E7%94%BA%E4%B8%80%E4%B8%81%E7%9B%AE7%E7%95%AA1%E5%8F%B7",
+     "sha256": "f661870e80751747f46da47d0af4b6f81129f47202c2799b12173a8e860fb51b"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "2dbc5c7215e5902241c753a1f91f4ea7412a164498edb5271fd3b32f444fb4e5"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:sanno-grand-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "sanno-grand-building"
+  },
+  "synthetic": false,
+  "name": "Sanno Grand Building",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: SANNO GRAND BUILDING | 2-14-2, Nagatacho, Chiyoda-ku, Tokyo | ownership ratio 0.99",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 1966-09-27",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.676807,
+   "lon": 139.738052,
+   "label": "2-14-2, Nagatacho, Chiyoda-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E6%B0%B8%E7%94%B0%E7%94%BA%E4%BA%8C%E4%B8%81%E7%9B%AE14%E7%95%AA2%E5%8F%B7",
+    "sha256": "d8d0fce4edb85bd88fcff2344d35c01b230b6b52765d9e491baf2f9ba045c43f",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都千代田区永田町二丁目１４番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:sanno-grand-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: SANNO GRAND BUILDING | 2-14-2, Nagatacho, Chiyoda-ku, Tokyo | ownership ratio 0.99",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "山王グランドビル"
+   ],
+   "address_ja": "東京都千代田区永田町二丁目14番２号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 99%; title registry not checked",
+    "property_stake": 99.0,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: SANNO GRAND BUILDING | 2-14-2, Nagatacho, Chiyoda-ku, Tokyo | ownership ratio 0.99",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: SANNO GRAND BUILDING | 2-14-2, Nagatacho, Chiyoda-ku, Tokyo | ownership ratio 0.99",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:sanno-grand-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 20900000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:sanno-grand-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E6%B0%B8%E7%94%B0%E7%94%BA%E4%BA%8C%E4%B8%81%E7%9B%AE14%E7%95%AA2%E5%8F%B7",
+     "sha256": "d8d0fce4edb85bd88fcff2344d35c01b230b6b52765d9e491baf2f9ba045c43f"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "de81f9d7be9f19a63b0aa21d9540165c05397c67452841cae5c9189f8e0b3571"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:nibancho-garden",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "nibancho-garden"
+  },
+  "synthetic": false,
+  "name": "Nibancho Garden",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: NIBANCHO GARDEN | 8-8, Nibancho, Chiyoda-ku, Tokyo | ownership ratio 0.31345",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2004-04-05",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.685673,
+   "lon": 139.734558,
+   "label": "8-8, Nibancho, Chiyoda-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E4%BA%8C%E7%95%AA%E7%94%BA8%E7%95%AA%E5%9C%B08",
+    "sha256": "0d825ae30a633c157a181e9e4482d406352ead2cdcd92e0151323b43274ee570",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都千代田区二番町８番地",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:nibancho-garden",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: NIBANCHO GARDEN | 8-8, Nibancho, Chiyoda-ku, Tokyo | ownership ratio 0.31345",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "二番町ガーデン"
+   ],
+   "address_ja": "東京都千代田区二番町８番地８"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 31.345%; title registry not checked",
+    "property_stake": 31.345,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: NIBANCHO GARDEN | 8-8, Nibancho, Chiyoda-ku, Tokyo | ownership ratio 0.31345",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: NIBANCHO GARDEN | 8-8, Nibancho, Chiyoda-ku, Tokyo | ownership ratio 0.31345",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:nibancho-garden",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 14700000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:nibancho-garden",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E4%BA%8C%E7%95%AA%E7%94%BA8%E7%95%AA%E5%9C%B08",
+     "sha256": "0d825ae30a633c157a181e9e4482d406352ead2cdcd92e0151323b43274ee570"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "d3eae28da6b017d7a02c93b20995ba1b95621cc4f67b5c84d3b13e14a9400794"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:burex-kojimachi-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "burex-kojimachi-building"
+  },
+  "synthetic": false,
+  "name": "Burex Kojimachi Building",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: BUREX KOJIMACHI BUILDING | 3-5-2, Kojimachi, Chiyoda-ku, Tokyo | ownership ratio 1",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2005-01-07",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.683281,
+   "lon": 139.738708,
+   "label": "3-5-2, Kojimachi, Chiyoda-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E9%BA%B9%E7%94%BA%E4%B8%89%E4%B8%81%E7%9B%AE5%E7%95%AA%E5%9C%B02",
+    "sha256": "8c7a23aae323a54ea71952a8cfc4c1ef77a6c1d6abb4f40526720c5ec4080b50",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都千代田区麹町三丁目５番地",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:burex-kojimachi-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: BUREX KOJIMACHI BUILDING | 3-5-2, Kojimachi, Chiyoda-ku, Tokyo | ownership ratio 1",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "ビュレックス麹町"
+   ],
+   "address_ja": "東京都千代田区麹町三丁目５番地２"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 100%; title registry not checked",
+    "property_stake": 100,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: BUREX KOJIMACHI BUILDING | 3-5-2, Kojimachi, Chiyoda-ku, Tokyo | ownership ratio 1",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: BUREX KOJIMACHI BUILDING | 3-5-2, Kojimachi, Chiyoda-ku, Tokyo | ownership ratio 1",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:burex-kojimachi-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 7000000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:burex-kojimachi-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E9%BA%B9%E7%94%BA%E4%B8%89%E4%B8%81%E7%9B%AE5%E7%95%AA%E5%9C%B02",
+     "sha256": "8c7a23aae323a54ea71952a8cfc4c1ef77a6c1d6abb4f40526720c5ec4080b50"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "470e8801f1d28e0411a225fb00f29f7dfb3593f289df4d7be5e4cab6a5b8fcee"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:mitsubishi-ufj-trust-and-banking-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "mitsubishi-ufj-trust-and-banking-building"
+  },
+  "synthetic": false,
+  "name": "Mitsubishi Ufj Trust And Banking Building",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: MITSUBISHI UFJ TRUST AND BANKING BUILDING | 1-4-5, Marunouchi, Chiyoda-ku, Tokyo | ownership ratio 0.1938402",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2003-02-14",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.684025,
+   "lon": 139.764786,
+   "label": "1-4-5, Marunouchi, Chiyoda-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E4%B8%B8%E3%81%AE%E5%86%85%E4%B8%80%E4%B8%81%E7%9B%AE4%E7%95%AA5%E5%8F%B7",
+    "sha256": "3c107fe101507360ff870d422e9b60eb12e341588b06bc0a4536ef4dda6e8568",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都千代田区丸の内一丁目４番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:mitsubishi-ufj-trust-and-banking-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: MITSUBISHI UFJ TRUST AND BANKING BUILDING | 1-4-5, Marunouchi, Chiyoda-ku, Tokyo | ownership ratio 0.1938402",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "三菱ＵＦＪ信託銀行本店ビル"
+   ],
+   "address_ja": "東京都千代田区丸の内一丁目４番５号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 19.384%; title registry not checked",
+    "property_stake": 19.384,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: MITSUBISHI UFJ TRUST AND BANKING BUILDING | 1-4-5, Marunouchi, Chiyoda-ku, Tokyo | ownership ratio 0.1938402",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: MITSUBISHI UFJ TRUST AND BANKING BUILDING | 1-4-5, Marunouchi, Chiyoda-ku, Tokyo | ownership ratio 0.1938402",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:mitsubishi-ufj-trust-and-banking-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 44700000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:mitsubishi-ufj-trust-and-banking-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E4%B8%B8%E3%81%AE%E5%86%85%E4%B8%80%E4%B8%81%E7%9B%AE4%E7%95%AA5%E5%8F%B7",
+     "sha256": "3c107fe101507360ff870d422e9b60eb12e341588b06bc0a4536ef4dda6e8568"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "bca102b771a6e985c751507afb31149393176c33e438c872d5825ebd5907fcf5"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:musashi-kosugi-stm-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "musashi-kosugi-stm-building"
+  },
+  "synthetic": false,
+  "name": "Musashi Kosugi Stm Building",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Kanagawa",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: MUSASHI KOSUGI STM BUILDING | 1-403-9, Kosugimachi, Nakahara-ku, Kawasaki City, Kanagawa Prefecture | ownership ratio 0.3432",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 1990-10-01",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.577137,
+   "lon": 139.65802,
+   "label": "1-403-9, Kosugimachi, Nakahara-ku, Kawasaki City, Kanagawa Prefecture (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E5%B7%9D%E5%B4%8E%E5%B8%82%E4%B8%AD%E5%8E%9F%E5%8C%BA%E5%B0%8F%E6%9D%89%E7%94%BA%E4%B8%80%E4%B8%81%E7%9B%AE403%E7%95%AA%E5%9C%B09",
+    "sha256": "0b594f51809167e45c5c36ddb3af620d2c444abb258890637cb49b723f87ed82",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 神奈川県川崎市中原区小杉町一丁目４０３番地",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:musashi-kosugi-stm-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: MUSASHI KOSUGI STM BUILDING | 1-403-9, Kosugimachi, Nakahara-ku, Kawasaki City, Kanagawa Prefecture | ownership ratio 0.3432",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "武蔵小杉ＳＴＭビル"
+   ],
+   "address_ja": "神奈川県川崎市中原区小杉町一丁目403番地９"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 34.32%; title registry not checked",
+    "property_stake": 34.32,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: MUSASHI KOSUGI STM BUILDING | 1-403-9, Kosugimachi, Nakahara-ku, Kawasaki City, Kanagawa Prefecture | ownership ratio 0.3432",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: MUSASHI KOSUGI STM BUILDING | 1-403-9, Kosugimachi, Nakahara-ku, Kawasaki City, Kanagawa Prefecture | ownership ratio 0.3432",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:musashi-kosugi-stm-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 4000000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:musashi-kosugi-stm-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E5%B7%9D%E5%B4%8E%E5%B8%82%E4%B8%AD%E5%8E%9F%E5%8C%BA%E5%B0%8F%E6%9D%89%E7%94%BA%E4%B8%80%E4%B8%81%E7%9B%AE403%E7%95%AA%E5%9C%B09",
+     "sha256": "0b594f51809167e45c5c36ddb3af620d2c444abb258890637cb49b723f87ed82"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "8cb8071379b7983f1b82df5ec4a13e10768e7ad3eb022883dfbeaa874284c945"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:shiodome-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "shiodome-building"
+  },
+  "synthetic": false,
+  "name": "Shiodome Building",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: SHIODOME BUILDING | 1-2-20, Kaigan, Minato-ku, Tokyo | ownership ratio 0.55",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2007-12-14",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.656849,
+   "lon": 139.759186,
+   "label": "1-2-20, Kaigan, Minato-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E6%B5%B7%E5%B2%B8%E4%B8%80%E4%B8%81%E7%9B%AE2%E7%95%AA20%E5%8F%B7",
+    "sha256": "292f08e07d4d2af63d194dc32566c9a1ab71268c2d7ee720e6ebaf1e48552c66",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都港区海岸一丁目２番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:shiodome-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: SHIODOME BUILDING | 1-2-20, Kaigan, Minato-ku, Tokyo | ownership ratio 0.55",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "汐留ビルディング"
+   ],
+   "address_ja": "東京都港区海岸一丁目２番20号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 55%; title registry not checked",
+    "property_stake": 55.0,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: SHIODOME BUILDING | 1-2-20, Kaigan, Minato-ku, Tokyo | ownership ratio 0.55",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: SHIODOME BUILDING | 1-2-20, Kaigan, Minato-ku, Tokyo | ownership ratio 0.55",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:shiodome-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 106930000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:shiodome-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E6%B5%B7%E5%B2%B8%E4%B8%80%E4%B8%81%E7%9B%AE2%E7%95%AA20%E5%8F%B7",
+     "sha256": "292f08e07d4d2af63d194dc32566c9a1ab71268c2d7ee720e6ebaf1e48552c66"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "f953ff30dfd041e7f4f69b0548658630c7648d5a01af77ad9229be6772f1f10a"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:jre-shijo-karasuma-center-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "jre-shijo-karasuma-center-building"
+  },
+  "synthetic": false,
+  "name": "JRE Shijo Karasuma Center Building",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Kyoto",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: JRE SHIJO KARASUMA CENTER BUILDING | 159-1, Dojisha-cho, Karasumanishiiru, Ayanokojidori, Shimogyo-ku, Kyoto City, Kyoto Prefecture | ownership ratio 1",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2010-01-25",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.002567,
+   "lon": 135.76329,
+   "label": "159-1, Dojisha-cho, Karasumanishiiru, Ayanokojidori, Shimogyo-ku, Kyoto City, Kyoto Prefecture (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8B%E4%BA%AC%E5%8C%BA%E7%B6%BE%E5%B0%8F%E8%B7%AF%E9%80%9A%E7%83%8F%E4%B8%B8%E8%A5%BF%E5%85%A5%E7%AB%A5%E4%BE%8D%E8%80%85%E7%94%BA159%E7%95%AA1",
+    "sha256": "2e2d2f9c0a6d98be698f6bf441ea4a26eda55d2063308678965b12f2f0c2ff2a",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 京都府京都市下京区綾材木町",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:jre-shijo-karasuma-center-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: JRE SHIJO KARASUMA CENTER BUILDING | 159-1, Dojisha-cho, Karasumanishiiru, Ayanokojidori, Shimogyo-ku, Kyoto City, Kyoto Prefecture | ownership ratio 1",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "ＪＲＥ四条烏丸センタービル"
+   ],
+   "address_ja": "京都府京都市下京区綾小路通烏丸西入童侍者町159番1"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 100%; title registry not checked",
+    "property_stake": 100,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: JRE SHIJO KARASUMA CENTER BUILDING | 159-1, Dojisha-cho, Karasumanishiiru, Ayanokojidori, Shimogyo-ku, Kyoto City, Kyoto Prefecture | ownership ratio 1",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: JRE SHIJO KARASUMA CENTER BUILDING | 159-1, Dojisha-cho, Karasumanishiiru, Ayanokojidori, Shimogyo-ku, Kyoto City, Kyoto Prefecture | ownership ratio 1",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:jre-shijo-karasuma-center-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 4400000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:jre-shijo-karasuma-center-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8B%E4%BA%AC%E5%8C%BA%E7%B6%BE%E5%B0%8F%E8%B7%AF%E9%80%9A%E7%83%8F%E4%B8%B8%E8%A5%BF%E5%85%A5%E7%AB%A5%E4%BE%8D%E8%80%85%E7%94%BA159%E7%95%AA1",
+     "sha256": "2e2d2f9c0a6d98be698f6bf441ea4a26eda55d2063308678965b12f2f0c2ff2a"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "2f95f741cb54eb922d62d3561c0cbe7926a643517f036791d6a772fd3f352e3b"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:queen-s-tower-a",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "queen-s-tower-a"
+  },
+  "synthetic": false,
+  "name": "Queen'S Tower A",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Kanagawa",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: QUEEN'S TOWER A | 2-3-1, Minatomirai, Nishi-ku, Yokohama City, Kanagawa Prefecture | ownership ratio 0.1111481",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 1997-06-30",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.456661,
+   "lon": 139.634018,
+   "label": "2-3-1, Minatomirai, Nishi-ku, Yokohama City, Kanagawa Prefecture (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E8%A5%BF%E5%8C%BA%E3%81%BF%E3%81%AA%E3%81%A8%E3%81%BF%E3%82%89%E3%81%84%E4%BA%8C%E4%B8%81%E7%9B%AE3%E7%95%AA1%E5%8F%B7",
+    "sha256": "b48dbfaba9081327b11ce3e53910d38320f9dd387d33413c3dc23005344e35a9",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 神奈川県横浜市西区みなとみらい二丁目３番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:queen-s-tower-a",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: QUEEN'S TOWER A | 2-3-1, Minatomirai, Nishi-ku, Yokohama City, Kanagawa Prefecture | ownership ratio 0.1111481",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "クイーンズタワーＡ"
+   ],
+   "address_ja": "神奈川県横浜市西区みなとみらい二丁目３番１号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 11.1148%; title registry not checked",
+    "property_stake": 11.1148,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: QUEEN'S TOWER A | 2-3-1, Minatomirai, Nishi-ku, Yokohama City, Kanagawa Prefecture | ownership ratio 0.1111481",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: QUEEN'S TOWER A | 2-3-1, Minatomirai, Nishi-ku, Yokohama City, Kanagawa Prefecture | ownership ratio 0.1111481",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:queen-s-tower-a",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 17200000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:queen-s-tower-a",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E8%A5%BF%E5%8C%BA%E3%81%BF%E3%81%AA%E3%81%A8%E3%81%BF%E3%82%89%E3%81%84%E4%BA%8C%E4%B8%81%E7%9B%AE3%E7%95%AA1%E5%8F%B7",
+     "sha256": "b48dbfaba9081327b11ce3e53910d38320f9dd387d33413c3dc23005344e35a9"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "676e8a588c9a04f3b6d2bbe7593968d0f9e8c9ffb73802cce556180f3a672309"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:otemachi-financial-city-north-tower",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "otemachi-financial-city-north-tower"
+  },
+  "synthetic": false,
+  "name": "Otemachi Financial City North Tower",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: OTEMACHI FINANCIAL CITY NORTH TOWER | 1-9-5, Otemachi, Chiyoda-ku, Tokyo | ownership ratio 0.048046340800000004",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2012-10-01",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.688286,
+   "lon": 139.765411,
+   "label": "1-9-5, Otemachi, Chiyoda-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E5%A4%A7%E6%89%8B%E7%94%BA%E4%B8%80%E4%B8%81%E7%9B%AE9%E7%95%AA5%E5%8F%B7",
+    "sha256": "3ff39c2e3c996417b4d100a4fec65a2c6494e55b11bed231369e30ef0c077892",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都千代田区大手町一丁目９番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:otemachi-financial-city-north-tower",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: OTEMACHI FINANCIAL CITY NORTH TOWER | 1-9-5, Otemachi, Chiyoda-ku, Tokyo | ownership ratio 0.048046340800000004",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "大手町フィナンシャルシティノースタワー"
+   ],
+   "address_ja": "東京都千代田区大手町一丁目９番５号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 4.8046%; title registry not checked",
+    "property_stake": 4.8046,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: OTEMACHI FINANCIAL CITY NORTH TOWER | 1-9-5, Otemachi, Chiyoda-ku, Tokyo | ownership ratio 0.048046340800000004",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: OTEMACHI FINANCIAL CITY NORTH TOWER | 1-9-5, Otemachi, Chiyoda-ku, Tokyo | ownership ratio 0.048046340800000004",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:otemachi-financial-city-north-tower",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 21842900000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:otemachi-financial-city-north-tower",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E5%A4%A7%E6%89%8B%E7%94%BA%E4%B8%80%E4%B8%81%E7%9B%AE9%E7%95%AA5%E5%8F%B7",
+     "sha256": "3ff39c2e3c996417b4d100a4fec65a2c6494e55b11bed231369e30ef0c077892"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "fff4b9d265814541b7dda82e8552d54e4087aa5cafcbf3553a81919c267427f8"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:clover-shiba-koen",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "clover-shiba-koen"
+  },
+  "synthetic": false,
+  "name": "Clover Shiba-Koen",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: CLOVER SHIBA-KOEN | 1-3-12, Shibakoen, Minato-ku, Tokyo | ownership ratio 1",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2006-02-10",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.659645,
+   "lon": 139.751511,
+   "label": "1-3-12, Shibakoen, Minato-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E8%8A%9D%E5%85%AC%E5%9C%92%E4%B8%80%E4%B8%81%E7%9B%AE3%E7%95%AA12%E5%8F%B7",
+    "sha256": "95fb5e37f2a3b9a3a309928ecb6e62cd763e4d774e5159dd2f256123a26bd989",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都港区芝公園一丁目３番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:clover-shiba-koen",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: CLOVER SHIBA-KOEN | 1-3-12, Shibakoen, Minato-ku, Tokyo | ownership ratio 1",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "クローバー芝公園"
+   ],
+   "address_ja": "東京都港区芝公園一丁目３番12号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 100%; title registry not checked",
+    "property_stake": 100,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: CLOVER SHIBA-KOEN | 1-3-12, Shibakoen, Minato-ku, Tokyo | ownership ratio 1",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: CLOVER SHIBA-KOEN | 1-3-12, Shibakoen, Minato-ku, Tokyo | ownership ratio 1",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:clover-shiba-koen",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 4500000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:clover-shiba-koen",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E8%8A%9D%E5%85%AC%E5%9C%92%E4%B8%80%E4%B8%81%E7%9B%AE3%E7%95%AA12%E5%8F%B7",
+     "sha256": "95fb5e37f2a3b9a3a309928ecb6e62cd763e4d774e5159dd2f256123a26bd989"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "ddae8985cbeea7342090ad032791cf092f5bbf73503f5c5938a1021101b26721"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:aer",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "aer"
+  },
+  "synthetic": false,
+  "name": "Aer",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Miyagi",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: AER | 1-3-1, Chuo, Aoba-ku, Sendai City, Miyagi Prefecture | ownership ratio 0.5535443",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 1998-03-02",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 38.262653,
+   "lon": 140.881424,
+   "label": "1-3-1, Chuo, Aoba-ku, Sendai City, Miyagi Prefecture (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%AE%AE%E5%9F%8E%E7%9C%8C%E4%BB%99%E5%8F%B0%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA%E4%B8%AD%E5%A4%AE%E4%B8%80%E4%B8%81%E7%9B%AE3%E7%95%AA1%E5%8F%B7",
+    "sha256": "6cab8a0af1ce21ea360f4fc1a9548ca7ffcc9474d6db9d1bdbb6e7f5e8877846",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 宮城県仙台市青葉区中央一丁目３番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:aer",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: AER | 1-3-1, Chuo, Aoba-ku, Sendai City, Miyagi Prefecture | ownership ratio 0.5535443",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "ＡＥＲ"
+   ],
+   "address_ja": "宮城県仙台市青葉区中央一丁目３番１号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 55.3544%; title registry not checked",
+    "property_stake": 55.3544,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: AER | 1-3-1, Chuo, Aoba-ku, Sendai City, Miyagi Prefecture | ownership ratio 0.5535443",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: AER | 1-3-1, Chuo, Aoba-ku, Sendai City, Miyagi Prefecture | ownership ratio 0.5535443",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:aer",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 18640000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:aer",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%AE%AE%E5%9F%8E%E7%9C%8C%E4%BB%99%E5%8F%B0%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA%E4%B8%AD%E5%A4%AE%E4%B8%80%E4%B8%81%E7%9B%AE3%E7%95%AA1%E5%8F%B7",
+     "sha256": "6cab8a0af1ce21ea360f4fc1a9548ca7ffcc9474d6db9d1bdbb6e7f5e8877846"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "c3dbb41bf0285ef8dda5f942e1684425d64c821787f403560a91cc4fcc40590b"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:jre-kanazawa-kamitsutsumicho-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "jre-kanazawa-kamitsutsumicho-building"
+  },
+  "synthetic": false,
+  "name": "JRE Kanazawa Kamitsutsumicho Building",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Ishikawa",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: JRE KANAZAWA KAMITSUTSUMICHO BUILDING | 1-15, Kamitsutsumicho, Kanazawa City, Ishikawa Prefecture | ownership ratio 1",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2009-08-31",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 36.568787,
+   "lon": 136.654709,
+   "label": "1-15, Kamitsutsumicho, Kanazawa City, Ishikawa Prefecture (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E4%B8%8A%E5%A0%A4%E7%94%BA1%E7%95%AA15%E5%8F%B7",
+    "sha256": "8cd0d0c0e3989a60762ae4bec11a7e20ad6b6cbe36759fa830f66d7412674be8",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 石川県金沢市上堤町１番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:jre-kanazawa-kamitsutsumicho-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: JRE KANAZAWA KAMITSUTSUMICHO BUILDING | 1-15, Kamitsutsumicho, Kanazawa City, Ishikawa Prefecture | ownership ratio 1",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "ＪＲＥ金沢上堤町ビル"
+   ],
+   "address_ja": "石川県金沢市上堤町１番15号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 100%; title registry not checked",
+    "property_stake": 100,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: JRE KANAZAWA KAMITSUTSUMICHO BUILDING | 1-15, Kamitsutsumicho, Kanazawa City, Ishikawa Prefecture | ownership ratio 1",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: JRE KANAZAWA KAMITSUTSUMICHO BUILDING | 1-15, Kamitsutsumicho, Kanazawa City, Ishikawa Prefecture | ownership ratio 1",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:jre-kanazawa-kamitsutsumicho-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 2780000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:jre-kanazawa-kamitsutsumicho-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%87%91%E6%B2%A2%E5%B8%82%E4%B8%8A%E5%A0%A4%E7%94%BA1%E7%95%AA15%E5%8F%B7",
+     "sha256": "8cd0d0c0e3989a60762ae4bec11a7e20ad6b6cbe36759fa830f66d7412674be8"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "26a8dfe396fb412441117718b0f9f0ccd55d157b78234d3105038511e9c809b5"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:tamachi-front-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "tamachi-front-building"
+  },
+  "synthetic": false,
+  "name": "Tamachi Front Building",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: TAMACHI FRONT BUILDING | 4-13-2, Shiba, Minato-ku, Tokyo | ownership ratio 1",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2014-07-14",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.647701,
+   "lon": 139.749695,
+   "label": "4-13-2, Shiba, Minato-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E8%8A%9D%E5%9B%9B%E4%B8%81%E7%9B%AE13%E7%95%AA2%E5%8F%B7",
+    "sha256": "2bbd836bb0d122a985c891bd1ea9b3f75b13bc07537fe9de3f93d9b35bc5d830",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都港区芝四丁目１３番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:tamachi-front-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: TAMACHI FRONT BUILDING | 4-13-2, Shiba, Minato-ku, Tokyo | ownership ratio 1",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "田町フロントビル"
+   ],
+   "address_ja": "東京都港区芝四丁目13番2号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 100%; title registry not checked",
+    "property_stake": 100,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: TAMACHI FRONT BUILDING | 4-13-2, Shiba, Minato-ku, Tokyo | ownership ratio 1",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: TAMACHI FRONT BUILDING | 4-13-2, Shiba, Minato-ku, Tokyo | ownership ratio 1",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:tamachi-front-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 6210000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:tamachi-front-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E8%8A%9D%E5%9B%9B%E4%B8%81%E7%9B%AE13%E7%95%AA2%E5%8F%B7",
+     "sha256": "2bbd836bb0d122a985c891bd1ea9b3f75b13bc07537fe9de3f93d9b35bc5d830"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "85d8175852c42858ab5f061886c6462c10cf947efc90100604bb0e32efa50893"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:shinjuku-front-tower",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "shinjuku-front-tower"
+  },
+  "synthetic": false,
+  "name": "Shinjuku Front Tower",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: SHINJUKU FRONT TOWER | 2-21-1, Kita-Shinjuku, Shinjuku-ku, Tokyo | ownership ratio 0.371563377",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2011-08-31",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.696228,
+   "lon": 139.689133,
+   "label": "2-21-1, Kita-Shinjuku, Shinjuku-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E5%8C%97%E6%96%B0%E5%AE%BF%E4%BA%8C%E4%B8%81%E7%9B%AE21%E7%95%AA1%E5%8F%B7",
+    "sha256": "bc4d61cf1a3669561684d1572b2d0425d8fc2aecc8bb08e97205170bf2e651d5",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都新宿区北新宿二丁目２１番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:shinjuku-front-tower",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: SHINJUKU FRONT TOWER | 2-21-1, Kita-Shinjuku, Shinjuku-ku, Tokyo | ownership ratio 0.371563377",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "新宿フロントタワー"
+   ],
+   "address_ja": "東京都新宿区北新宿二丁目21番１号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 37.1563%; title registry not checked",
+    "property_stake": 37.1563,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: SHINJUKU FRONT TOWER | 2-21-1, Kita-Shinjuku, Shinjuku-ku, Tokyo | ownership ratio 0.371563377",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: SHINJUKU FRONT TOWER | 2-21-1, Kita-Shinjuku, Shinjuku-ku, Tokyo | ownership ratio 0.371563377",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:shinjuku-front-tower",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 35125000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:shinjuku-front-tower",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E5%8C%97%E6%96%B0%E5%AE%BF%E4%BA%8C%E4%B8%81%E7%9B%AE21%E7%95%AA1%E5%8F%B7",
+     "sha256": "bc4d61cf1a3669561684d1572b2d0425d8fc2aecc8bb08e97205170bf2e651d5"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "c2967d10d3e6f1bc2c3d3508b2e3982ea2123121ec29a307b300913a829da441"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:seavans-s-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "seavans-s-building"
+  },
+  "synthetic": false,
+  "name": "Seavans S Building",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: SEAVANS S BUILDING | 1-2-3, Shibaura, Minato-ku, Tokyo | ownership ratio 0.1766725",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 1991-01-31",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.649799,
+   "lon": 139.756607,
+   "label": "1-2-3, Shibaura, Minato-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E8%8A%9D%E6%B5%A6%E4%B8%80%E4%B8%81%E7%9B%AE2%E7%95%AA3%E5%8F%B7",
+    "sha256": "2928f9fb532f5bade34a1df598f5a708191358b9719380f5b70b5e1bff2dbc0d",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都港区芝浦一丁目２番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:seavans-s-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: SEAVANS S BUILDING | 1-2-3, Shibaura, Minato-ku, Tokyo | ownership ratio 0.1766725",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "シーバンスS棟"
+   ],
+   "address_ja": "東京都港区芝浦一丁目２番３号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 17.6673%; title registry not checked",
+    "property_stake": 17.6673,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: SEAVANS S BUILDING | 1-2-3, Shibaura, Minato-ku, Tokyo | ownership ratio 0.1766725",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: SEAVANS S BUILDING | 1-2-3, Shibaura, Minato-ku, Tokyo | ownership ratio 0.1766725",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:seavans-s-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 7690000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:seavans-s-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E8%8A%9D%E6%B5%A6%E4%B8%80%E4%B8%81%E7%9B%AE2%E7%95%AA3%E5%8F%B7",
+     "sha256": "2928f9fb532f5bade34a1df598f5a708191358b9719380f5b70b5e1bff2dbc0d"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "41ddf3f6f160a8867fb95dfe79d03b28cc606017043cffdffbdd4447b94e124a"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:otemachi-park-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "otemachi-park-building"
+  },
+  "synthetic": false,
+  "name": "Otemachi Park Building",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: OTEMACHI PARK BUILDING | 1-1, Otemachi 1-Chome, Chiyoda-ku, Tokyo  | ownership ratio 0.0290875",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2017-01-06",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.685982,
+   "lon": 139.762329,
+   "label": "1-1, Otemachi 1-Chome, Chiyoda-ku, Tokyo  (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E5%A4%A7%E6%89%8B%E7%94%BA%E4%B8%80%E4%B8%81%E7%9B%AE1%E7%95%AA1%E5%8F%B7",
+    "sha256": "2168215771f1d5effd08e4954a11e4658fc30e5529d96fdf404334ce08c5f267",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都千代田区大手町一丁目１番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:otemachi-park-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: OTEMACHI PARK BUILDING | 1-1, Otemachi 1-Chome, Chiyoda-ku, Tokyo  | ownership ratio 0.0290875",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "大手町パークビルディング"
+   ],
+   "address_ja": "東京都千代田区大手町一丁目1番1号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 2.9087%; title registry not checked",
+    "property_stake": 2.9087,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: OTEMACHI PARK BUILDING | 1-1, Otemachi 1-Chome, Chiyoda-ku, Tokyo  | ownership ratio 0.0290875",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: OTEMACHI PARK BUILDING | 1-1, Otemachi 1-Chome, Chiyoda-ku, Tokyo  | ownership ratio 0.0290875",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:otemachi-park-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 10175000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:otemachi-park-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E5%A4%A7%E6%89%8B%E7%94%BA%E4%B8%80%E4%B8%81%E7%9B%AE1%E7%95%AA1%E5%8F%B7",
+     "sha256": "2168215771f1d5effd08e4954a11e4658fc30e5529d96fdf404334ce08c5f267"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "4cea78caa01e65f51777a09d9bae9a89ee60c228a00919fb3b8a4030a763b4d3"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:grand-front-osaka-north-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "grand-front-osaka-north-building"
+  },
+  "synthetic": false,
+  "name": "Grand Front Osaka (North Building)",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Osaka",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: GRAND FRONT OSAKA (North Building) | 3-1 Ofukacho Ofukacho, Kita-ku, Osaka City, Osaka Prefecture | ownership ratio 0.049",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2013-02-28",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 34.705833,
+   "lon": 135.494339,
+   "label": "3-1 Ofukacho Ofukacho, Kita-ku, Osaka City, Osaka Prefecture (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E5%A4%A7%E6%B7%B1%E7%94%BA3%E7%95%AA1%E5%8F%B7",
+    "sha256": "60630115529062b97f9c79e127407bea61b40c0f4901ac0db27e2769f88fec4c",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 大阪府大阪市北区大深町３番地",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:grand-front-osaka-north-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: GRAND FRONT OSAKA (North Building) | 3-1 Ofukacho Ofukacho, Kita-ku, Osaka City, Osaka Prefecture | ownership ratio 0.049",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "グランフロント大阪（北館）"
+   ],
+   "address_ja": "大阪府⼤阪市北区⼤深町３番１号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 4.9%; title registry not checked",
+    "property_stake": 4.9,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: GRAND FRONT OSAKA (North Building) | 3-1 Ofukacho Ofukacho, Kita-ku, Osaka City, Osaka Prefecture | ownership ratio 0.049",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: GRAND FRONT OSAKA (North Building) | 3-1 Ofukacho Ofukacho, Kita-ku, Osaka City, Osaka Prefecture | ownership ratio 0.049",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:grand-front-osaka-north-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 9750000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:grand-front-osaka-north-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E5%A4%A7%E6%B7%B1%E7%94%BA3%E7%95%AA1%E5%8F%B7",
+     "sha256": "60630115529062b97f9c79e127407bea61b40c0f4901ac0db27e2769f88fec4c"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "6126f35dbbb13eac578c96f7a07bb6070a911231586baafa82126998f93b5793"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:grand-front-osaka-umekita-plaza-and-south-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "grand-front-osaka-umekita-plaza-and-south-building"
+  },
+  "synthetic": false,
+  "name": "Grand Front Osaka (Umekita Plaza And South Building)",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Osaka",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: GRAND FRONT OSAKA (Umekita Plaza and South Building) | 4-1 (Umekita Plaza) & 4-20 (South Building) Ofukacho, Kita-ku, Osaka City, Osaka Prefecture | ownership ratio 0.049",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2013-03-29",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 34.703659,
+   "lon": 135.494705,
+   "label": "4-1 (Umekita Plaza) & 4-20 (South Building) Ofukacho, Kita-ku, Osaka City, Osaka Prefecture (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E5%A4%A7%E6%B7%B1%E7%94%BA4%E7%95%AA1%E5%8F%B7%28%E3%81%86%E3%82%81%E3%81%8D%E3%81%9F%E5%BA%83%E5%A0%B4%29%E3%80%814%E7%95%AA20+%E5%8F%B7%28%E5%8D%97%E9%A4%A8%29",
+    "sha256": "c4a769400ad3ada3ae166b53ade2c79974d410720241d6602804771746109349",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 大阪府大阪市北区大深町４番地",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:grand-front-osaka-umekita-plaza-and-south-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: GRAND FRONT OSAKA (Umekita Plaza and South Building) | 4-1 (Umekita Plaza) & 4-20 (South Building) Ofukacho, Kita-ku, Osaka City, Osaka Prefecture | ownership ratio 0.049",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "グランフロント大阪（うめきた広場・南館）"
+   ],
+   "address_ja": "⼤阪市北区⼤深町４番１号（うめきた広場）、４番20 号（南館）"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 4.9%; title registry not checked",
+    "property_stake": 4.9,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: GRAND FRONT OSAKA (Umekita Plaza and South Building) | 4-1 (Umekita Plaza) & 4-20 (South Building) Ofukacho, Kita-ku, Osaka City, Osaka Prefecture | ownership ratio 0.049",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: GRAND FRONT OSAKA (Umekita Plaza and South Building) | 4-1 (Umekita Plaza) & 4-20 (South Building) Ofukacho, Kita-ku, Osaka City, Osaka Prefecture | ownership ratio 0.049",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:grand-front-osaka-umekita-plaza-and-south-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 11250000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:grand-front-osaka-umekita-plaza-and-south-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%A4%A7%E9%98%AA%E5%B8%82%E5%8C%97%E5%8C%BA%E5%A4%A7%E6%B7%B1%E7%94%BA4%E7%95%AA1%E5%8F%B7%28%E3%81%86%E3%82%81%E3%81%8D%E3%81%9F%E5%BA%83%E5%A0%B4%29%E3%80%814%E7%95%AA20+%E5%8F%B7%28%E5%8D%97%E9%A4%A8%29",
+     "sha256": "c4a769400ad3ada3ae166b53ade2c79974d410720241d6602804771746109349"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "6a938eeeb497fceb1c79e22882b919b83ad8aaa0c654c3729ef14574c1ba9ba1"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:the-argyle-aoyama",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "the-argyle-aoyama"
+  },
+  "synthetic": false,
+  "name": "The Argyle Aoyama",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: the ARGYLE aoyama | 2-14-4 Kita-aoyama, Minato-ku, Tokyo | ownership ratio 0.5",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2020-06-15",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.669521,
+   "lon": 139.715851,
+   "label": "2-14-4 Kita-aoyama, Minato-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E5%8C%97%E9%9D%92%E5%B1%B1%E4%BA%8C%E4%B8%81%E7%9B%AE14%E7%95%AA4%E5%8F%B7",
+    "sha256": "1c237baf68e206d4a2654647ada8abb6488644674927c4e8850383f3ff046f32",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都港区北青山二丁目１４番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:the-argyle-aoyama",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: the ARGYLE aoyama | 2-14-4 Kita-aoyama, Minato-ku, Tokyo | ownership ratio 0.5",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "the ARGYLE aoyama"
+   ],
+   "address_ja": "東京都港区北青山二丁目14番4号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 50%; title registry not checked",
+    "property_stake": 50.0,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: the ARGYLE aoyama | 2-14-4 Kita-aoyama, Minato-ku, Tokyo | ownership ratio 0.5",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: the ARGYLE aoyama | 2-14-4 Kita-aoyama, Minato-ku, Tokyo | ownership ratio 0.5",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:the-argyle-aoyama",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 23900000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:the-argyle-aoyama",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E5%8C%97%E9%9D%92%E5%B1%B1%E4%BA%8C%E4%B8%81%E7%9B%AE14%E7%95%AA4%E5%8F%B7",
+     "sha256": "1c237baf68e206d4a2654647ada8abb6488644674927c4e8850383f3ff046f32"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "b76a8d1159f6df8bf10095780b237891457ae4366dedc0dadc648b8710d606f0"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:3rd-minami-aoyama",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "3rd-minami-aoyama"
+  },
+  "synthetic": false,
+  "name": "3Rd Minami Aoyama",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: 3rd MINAMI AOYAMA | 3-1-34 Minami-aoyama, Minato-ku, Tokyo | ownership ratio 0.7776",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2023-02-06",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.668217,
+   "lon": 139.715881,
+   "label": "3-1-34 Minami-aoyama, Minato-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E5%8D%97%E9%9D%92%E5%B1%B1%E4%B8%89%E4%B8%81%E7%9B%AE1%E7%95%AA34%E5%8F%B7",
+    "sha256": "108ba6f0046e5a9e9db06f70b269ade86716b7422502cbb7e9c721f1bb2b35ef",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都港区南青山三丁目１番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:3rd-minami-aoyama",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: 3rd MINAMI AOYAMA | 3-1-34 Minami-aoyama, Minato-ku, Tokyo | ownership ratio 0.7776",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "3rd MINAMI AOYAMA"
+   ],
+   "address_ja": "東京都港区南青山三丁目1番34号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 77.76%; title registry not checked",
+    "property_stake": 77.76,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: 3rd MINAMI AOYAMA | 3-1-34 Minami-aoyama, Minato-ku, Tokyo | ownership ratio 0.7776",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: 3rd MINAMI AOYAMA | 3-1-34 Minami-aoyama, Minato-ku, Tokyo | ownership ratio 0.7776",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:3rd-minami-aoyama",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 21000000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:3rd-minami-aoyama",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E5%8D%97%E9%9D%92%E5%B1%B1%E4%B8%89%E4%B8%81%E7%9B%AE1%E7%95%AA34%E5%8F%B7",
+     "sha256": "108ba6f0046e5a9e9db06f70b269ade86716b7422502cbb7e9c721f1bb2b35ef"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "ce05c69d99bd207eda3d8f840187b932cde8c03f60993473c5e85ed1badc083d"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:co-mo-re-yotsuya",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "co-mo-re-yotsuya"
+  },
+  "synthetic": false,
+  "name": "Co･Mo･Re Yotsuya",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Tokyo",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: CO･MO･RE YOTSUYA | 1-6-1 Yotsuya, Shinjuku-ku, Tokyo | ownership ratio 0.23",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2020-01-31",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 35.687668,
+   "lon": 139.72905,
+   "label": "1-6-1 Yotsuya, Shinjuku-ku, Tokyo (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E5%9B%9B%E8%B0%B7%E4%B8%80%E4%B8%81%E7%9B%AE6%E7%95%AA1%E5%8F%B7",
+    "sha256": "7e3b1f58ff58fb4d14bb82731db3135b9f534113c05a7dd9f7f0526c410f5b07",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 東京都新宿区四谷一丁目６番",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:co-mo-re-yotsuya",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: CO･MO･RE YOTSUYA | 1-6-1 Yotsuya, Shinjuku-ku, Tokyo | ownership ratio 0.23",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "コモレ四谷"
+   ],
+   "address_ja": "東京都新宿区四谷一丁目６番１号"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 23%; title registry not checked",
+    "property_stake": 23.0,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: CO･MO･RE YOTSUYA | 1-6-1 Yotsuya, Shinjuku-ku, Tokyo | ownership ratio 0.23",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: CO･MO･RE YOTSUYA | 1-6-1 Yotsuya, Shinjuku-ku, Tokyo | ownership ratio 0.23",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:co-mo-re-yotsuya",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 29050000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:co-mo-re-yotsuya",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E5%9B%9B%E8%B0%B7%E4%B8%80%E4%B8%81%E7%9B%AE6%E7%95%AA1%E5%8F%B7",
+     "sha256": "7e3b1f58ff58fb4d14bb82731db3135b9f534113c05a7dd9f7f0526c410f5b07"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "f089b4d0ca1dae4915f0c29396d40cd7d9aadad5ade8af8e43b5b44687154a0e"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:the-link-sapporo",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "the-link-sapporo"
+  },
+  "synthetic": false,
+  "name": "The Link Sapporo",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Hokkaido",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: THE LINK SAPPORO | Kita 6-jo Nishi 1-1-3, Kita-ku, Sapporo City, Hokkaido | ownership ratio 1",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2023-08-29",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 43.06921,
+   "lon": 141.354019,
+   "label": "Kita 6-jo Nishi 1-1-3, Kita-ku, Sapporo City, Hokkaido (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E5%8C%97%E5%8C%BA%E5%8C%976%E6%9D%A1%E8%A5%BF1%E4%B8%81%E7%9B%AE1%E7%95%AA%E5%9C%B03",
+    "sha256": "6cb09c5d340389886559fba7154d1921e9df21bbfedae3be0ee30b2b817e54ab",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 北海道札幌市北区北六条西一丁目１番地",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:the-link-sapporo",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: THE LINK SAPPORO | Kita 6-jo Nishi 1-1-3, Kita-ku, Sapporo City, Hokkaido | ownership ratio 1",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "The Link Sapporo"
+   ],
+   "address_ja": "北海道札幌市北区北６条西１丁目１番地３"
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 100%; title registry not checked",
+    "property_stake": 100,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: THE LINK SAPPORO | Kita 6-jo Nishi 1-1-3, Kita-ku, Sapporo City, Hokkaido | ownership ratio 1",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: THE LINK SAPPORO | Kita 6-jo Nishi 1-1-3, Kita-ku, Sapporo City, Hokkaido | ownership ratio 1",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:the-link-sapporo",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 21340000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:the-link-sapporo",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E5%8C%97%E5%8C%BA%E5%8C%976%E6%9D%A1%E8%A5%BF1%E4%B8%81%E7%9B%AE1%E7%95%AA%E5%9C%B03",
+     "sha256": "6cb09c5d340389886559fba7154d1921e9df21bbfedae3be0ee30b2b817e54ab"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "1c309ae53300911b757084c0742a8b8b8335f1d1947dd14b928a53897998658c"
+  },
+  "preview_only": true
+ },
+ {
+  "schema": "investedia.projects.sector-envelope.proposal.v2",
+  "id": "re:jre:sapporo-arch-building",
+  "source_identity": {
+   "authority": "j-re.co.jp:portfolio-data",
+   "id": "sapporo-arch-building"
+  },
+  "synthetic": false,
+  "name": "Sapporo Arch Building",
+  "sector": "real_estate",
+  "country_code": "JP",
+  "city": "Hokkaido",
+  "asset": {
+   "category": "building",
+   "subtype": "Commercial building",
+   "parent_id": null,
+   "count_as_project": true,
+   "building_identity_evidence": {
+    "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+    "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+    "checked_at": "2026-11-14T05:10:00Z",
+    "locator": "Basic data sheet: SAPPORO ARCH BUILDING | 6-11-1 Minami 2-jo Nishi, Chuo-ku, Sapporo-shi, Hokkaido | ownership ratio 1",
+    "sha256_scope": "source_body"
+   }
+  },
+  "status": {
+   "stage": "operating",
+   "label": "Held at 31 Mar 2026; building completed 2025-11-18",
+   "as_of": "2026-03-31",
+   "certainty": "company_reported"
+  },
+  "location": {
+   "precision": "approximate",
+   "point_type": "district_reference",
+   "lat": 43.057606,
+   "lon": 141.348785,
+   "label": "6-11-1 Minami 2-jo Nishi, Chuo-ku, Sapporo-shi, Hokkaido (district point, not the building)",
+   "basis": "GSI geocode resolved only to the district/block, not the lot",
+   "satellite_allowed": false,
+   "evidence": {
+    "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%E4%BA%8C%E6%9D%A1%E8%A5%BF%E5%85%AD%E4%B8%81%E7%9B%AE11%E7%95%AA%E5%9C%B01+",
+    "sha256": "6ad6d766cc1a224d3ebf04dd5e4c26737103da2d4d5b0c6e4eac25d9ea9f77b9",
+    "checked_at": "2026-11-14T05:30:00Z",
+    "locator": "GSI address search: 北海道札幌市中央区南二条西六丁目１１番地",
+    "sha256_scope": "source_body",
+    "record_id": "re:jre:sapporo-arch-building",
+    "scope": "district_reference"
+   }
+  },
+  "identity_evidence": {
+   "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+   "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+   "checked_at": "2026-11-14T05:10:00Z",
+   "locator": "Basic data sheet: SAPPORO ARCH BUILDING | 6-11-1 Minami 2-jo Nishi, Chuo-ku, Sapporo-shi, Hokkaido | ownership ratio 1",
+   "sha256_scope": "source_body"
+  },
+  "identity": {
+   "aliases": [
+    "サッポロアーチビル"
+   ],
+   "address_ja": "北海道札幌市中央区南二条西六丁目11番地１ "
+  },
+  "exposures": [
+   {
+    "role": "reported_group_owner",
+    "label": "Held in the REIT's portfolio (company data file)",
+    "relationship_scope": "Company-reported holding of this named property; company-stated ownership share 100%; title registry not checked",
+    "property_stake": 100,
+    "company_ref": "registry:tse:8952",
+    "listing": {
+     "name": "Japan Real Estate Investment Corporation",
+     "ticker": "8952",
+     "exchange": "XTKS",
+     "exchange_mic": "XTKS",
+     "security_type": "reit_investment_units",
+     "evidence": {
+      "url": "https://www.j-re.co.jp/en/",
+      "sha256": "377b7d67fd200f15374107b8ca9a11cb24a0e70cf2cd127dde6fdbf693d52f6a",
+      "checked_at": "2026-11-14T05:25:00Z",
+      "locator": "Home page: (TSE code: 8952)"
+     }
+    },
+    "headquarters": null,
+    "evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: SAPPORO ARCH BUILDING | 6-11-1 Minami 2-jo Nishi, Chuo-ku, Sapporo-shi, Hokkaido | ownership ratio 1",
+     "sha256_scope": "source_body"
+    },
+    "investment_access": {
+     "type": "listed_REIT",
+     "verified": true,
+     "scope": "Indirect listed-REIT investment-unit exposure only; buying units gives no title to this property"
+    },
+    "stake_scope": "specific_property",
+    "property_evidence": {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b",
+     "checked_at": "2026-11-14T05:10:00Z",
+     "locator": "Basic data sheet: SAPPORO ARCH BUILDING | 6-11-1 Minami 2-jo Nishi, Chuo-ku, Sapporo-shi, Hokkaido | ownership ratio 1",
+     "sha256_scope": "source_body",
+     "record_id": "re:jre:sapporo-arch-building",
+     "scope": "specific_property"
+    }
+   }
+  ],
+  "imagery": [],
+  "verification": {
+   "classification": "company_confirmed",
+   "date": "2026-11-14",
+   "property_title_verified": false
+  },
+  "reported_metrics": {
+   "acquisition_price_jpy": 8175000000,
+   "basis": "Company-published total acquisition price (not a valuation)"
+  },
+  "reuse": {
+   "fields": {
+    "identity": {
+     "status": "pending",
+     "basis": "JRE website disclaimer does not grant reuse; ask JRE or rely on TDnet filings"
+    },
+    "status": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "economic_relationship": {
+     "status": "pending",
+     "basis": "same"
+    },
+    "listing": {
+     "status": "pending",
+     "basis": "Company page only; cross-check with JPX listing data"
+    },
+    "location": {
+     "status": "cleared",
+     "basis": "GSI (Geospatial Information Authority of Japan) content, attribution \"出典：国土地理院\""
+    },
+    "reported_metrics": {
+     "status": "pending",
+     "basis": "company figure; reuse pending"
+    }
+   },
+   "review": {}
+  },
+  "monitoring": {
+   "stable_id": "re:jre:sapporo-arch-building",
+   "evidence_refs": [
+    {
+     "url": "https://www.j-re.co.jp/file/en-portfolio_statement_excel-577b451f22aa79125522e7cabbc9beed09852a8e.xlsx",
+     "sha256": "19674cd3209b548917f03e5820baf62d1225bb4d1dafa28f39f89d92c319fc8b"
+    },
+    {
+     "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%E4%BA%8C%E6%9D%A1%E8%A5%BF%E5%85%AD%E4%B8%81%E7%9B%AE11%E7%95%AA%E5%9C%B01+",
+     "sha256": "6ad6d766cc1a224d3ebf04dd5e4c26737103da2d4d5b0c6e4eac25d9ea9f77b9"
+    }
+   ],
+   "last_verified_at": "2026-11-14T00:00:00Z",
+   "enabled": false,
+   "fact_fingerprint": "a438bb1c94fca595a3468dd256f93b0c8a9267c356ddbe9d5e1959ffe2bd4b25"
+  },
+  "preview_only": true
+ }
+]
