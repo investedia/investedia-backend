@@ -1,0 +1,189 @@
+{
+ "HST": {
+  "legal_name": "HOST HOTELS & RESORTS, INC.",
+  "cik": "0001070750",
+  "cover_common": [
+   [
+    "Common Stock, $.01 par value",
+    "HST",
+    "The Nasdaq Stock Market LLC"
+   ]
+  ],
+  "current_sec_tickers": {
+   "HST": "Nasdaq"
+  },
+  "listing_verified": true,
+  "filing": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+  "period": "2025-12-31",
+  "note": "cover ticker matches current SEC submissions"
+ },
+ "SPG": {
+  "legal_name": "SIMON PROPERTY GROUP INC.",
+  "cik": "0001063761",
+  "cover_common": [
+   [
+    "Common stock, $0.0001 par value",
+    "SPG",
+    "New York Stock Exchange"
+   ]
+  ],
+  "current_sec_tickers": {
+   "SPGJ": null,
+   "SPG": "NYSE",
+   "SPG-PJ": "NYSE"
+  },
+  "listing_verified": true,
+  "filing": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926019419/spg-20251231x10k.htm",
+  "period": "2025-12-31",
+  "note": "cover ticker matches current SEC submissions"
+ },
+ "BXP": {
+  "legal_name": "BXP, Inc.",
+  "cik": "0001037540",
+  "cover_common": [
+   [
+    "Common Stock, par value $.01 per share",
+    "BXP",
+    "New York Stock Exchange"
+   ]
+  ],
+  "current_sec_tickers": {
+   "BXP": "NYSE"
+  },
+  "listing_verified": true,
+  "filing": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000006/bxp-20251231.htm",
+  "period": "2025-12-31",
+  "note": "cover ticker matches current SEC submissions"
+ },
+ "VNO": {
+  "legal_name": "VORNADO REALTY TRUST",
+  "cik": "0000899689",
+  "cover_common": [
+   [
+    "Common Shares of beneficial interest,  $.04 par value per share",
+    "VNO",
+    "New York Stock Exchange"
+   ]
+  ],
+  "current_sec_tickers": {
+   "VNO": "NYSE",
+   "VNORP": "OTC",
+   "VNO-PL": "NYSE",
+   "VNO-PM": "NYSE",
+   "VNO-PN": "NYSE",
+   "VNO-PO": "NYSE"
+  },
+  "listing_verified": true,
+  "filing": "https://www.sec.gov/Archives/edgar/data/899689/000089968926000009/vno-20251231.htm",
+  "period": "2025-12-31",
+  "note": "cover ticker matches current SEC submissions"
+ },
+ "AVB": {
+  "legal_name": "AVALONBAY COMMUNITIES INC",
+  "cik": "0000915912",
+  "cover_common": [
+   [
+    "Common Stock, par value $0.01 per share",
+    "AVB",
+    "New York Stock Exchange"
+   ]
+  ],
+  "current_sec_tickers": {},
+  "listing_verified": false,
+  "filing": "https://www.sec.gov/Archives/edgar/data/915912/000091591226000004/avb-20251231.htm",
+  "period": "2025-12-31",
+  "note": "BLOCKED: 10-K cover ticker not in current SEC submissions (renamed, delisted or changed); listing not asserted"
+ },
+ "EQR": {
+  "legal_name": "VIVMARK RESIDENTIAL",
+  "cik": "0000906107",
+  "cover_common": [
+   [
+    "Common Shares of Beneficial Interest,$0.01 Par Value (Equity Residential)",
+    "EQR",
+    "New York Stock Exchange"
+   ]
+  ],
+  "current_sec_tickers": {
+   "VMRK": "NYSE"
+  },
+  "listing_verified": false,
+  "filing": "https://www.sec.gov/Archives/edgar/data/906107/000119312526051433/eqr-20251231.htm",
+  "period": "2025-12-31",
+  "note": "BLOCKED: 10-K cover ticker not in current SEC submissions (renamed, delisted or changed); listing not asserted"
+ },
+ "PK": {
+  "legal_name": "Park Hotels & Resorts Inc.",
+  "cik": "0001617406",
+  "cover_common": [
+   [
+    "Common Stock, $0.01 par value per share",
+    "PK",
+    "New York Stock Exchange"
+   ]
+  ],
+  "current_sec_tickers": {
+   "PK": "NYSE"
+  },
+  "listing_verified": true,
+  "filing": "https://www.sec.gov/Archives/edgar/data/1617406/000161740626000006/pk-20251231.htm",
+  "period": "2025-12-31",
+  "note": "cover ticker matches current SEC submissions"
+ },
+ "SLG": {
+  "legal_name": "SL GREEN REALTY CORP",
+  "cik": "0001040971",
+  "cover_common": [
+   [
+    "Common Stock, $0.01 par value",
+    "SLG",
+    "New York Stock Exchange"
+   ]
+  ],
+  "current_sec_tickers": {
+   "SLG": "NYSE",
+   "SLG-PI": "NYSE"
+  },
+  "listing_verified": true,
+  "filing": "https://www.sec.gov/Archives/edgar/data/1040971/000162828026008669/slg-20251231.htm",
+  "period": "2025-12-31",
+  "note": "cover ticker matches current SEC submissions"
+ },
+ "FRT": {
+  "legal_name": "FEDERAL REALTY INVESTMENT TRUST",
+  "cik": "0000034903",
+  "cover_common": [
+   [
+    "Common Shares of Beneficial Interest",
+    "FRT",
+    "New York Stock Exchange"
+   ]
+  ],
+  "current_sec_tickers": {
+   "FRT": "NYSE",
+   "FRT-PC": "NYSE"
+  },
+  "listing_verified": true,
+  "filing": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000017/frt-20251231.htm",
+  "period": "2025-12-31",
+  "note": "cover ticker matches current SEC submissions"
+ },
+ "ESS": {
+  "legal_name": "ESSEX PROPERTY TRUST, INC.",
+  "cik": "0000920522",
+  "cover_common": [
+   [
+    "Common Stock, $.0001 par value (Essex Property Trust, Inc.)",
+    "ESS",
+    "New York Stock Exchange"
+   ]
+  ],
+  "current_sec_tickers": {
+   "ESS": "NYSE"
+  },
+  "listing_verified": true,
+  "filing": "https://www.sec.gov/Archives/edgar/data/920522/000092052226000003/ess-20251231.htm",
+  "period": "2025-12-31",
+  "note": "cover ticker matches current SEC submissions"
+ }
+}

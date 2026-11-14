@@ -1,0 +1,72 @@
+[
+ {
+  "id": "re:bxp:777-harrison-street",
+  "company": "BXP",
+  "name": "777 Harrison Street",
+  "location": "San Francisco, CA",
+  "reason": "Land / land held for development in Schedule III; no building or project milestone evidenced"
+ },
+ {
+  "id": "re:bxp:back-bay-station-master-plan",
+  "company": "BXP",
+  "name": "Back Bay Station Master Plan",
+  "location": "Boston, MA",
+  "reason": "Land / land held for development in Schedule III; no building or project milestone evidenced"
+ },
+ {
+  "id": "re:bxp:2100-m-street",
+  "company": "BXP",
+  "name": "2100 M Street",
+  "location": "Washington, DC",
+  "reason": "Land / land held for development in Schedule III; no building or project milestone evidenced"
+ },
+ {
+  "id": "re:bxp:citypoint-south-master-plan",
+  "company": "BXP",
+  "name": "CityPoint South Master Plan",
+  "location": "Waltham, MA",
+  "reason": "Land / land held for development in Schedule III; no building or project milestone evidenced"
+ },
+ {
+  "id": "re:bxp:north-first-master-plan",
+  "company": "BXP",
+  "name": "North First Master Plan",
+  "location": "San Jose, CA",
+  "reason": "Land / land held for development in Schedule III; no building or project milestone evidenced"
+ },
+ {
+  "id": "re:bxp:kendall-center-master-plan",
+  "company": "BXP",
+  "name": "Kendall Center Master Plan",
+  "location": "Cambridge, MA",
+  "reason": "Land / land held for development in Schedule III; no building or project milestone evidenced"
+ },
+ {
+  "id": "re:bxp:reston-gateway-master-plan",
+  "company": "BXP",
+  "name": "Reston Gateway Master Plan",
+  "location": "Reston, VA",
+  "reason": "Land / land held for development in Schedule III; no building or project milestone evidenced"
+ },
+ {
+  "id": "re:bxp:springfield-metro-center",
+  "company": "BXP",
+  "name": "Springfield Metro Center",
+  "location": "Springfield, VA",
+  "reason": "Land / land held for development in Schedule III; no building or project milestone evidenced"
+ },
+ {
+  "id": "re:bxp:weston-quarry",
+  "company": "BXP",
+  "name": "Weston Quarry",
+  "location": "Weston, MA",
+  "reason": "Land / land held for development in Schedule III; no building or project milestone evidenced"
+ },
+ {
+  "id": "re:bxp:reston-overlook-master-plan",
+  "company": "BXP",
+  "name": "Reston Overlook Master Plan",
+  "location": "Reston, VA",
+  "reason": "Land / land held for development in Schedule III; no building or project milestone evidenced"
+ }
+]

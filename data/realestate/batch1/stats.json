@@ -1,0 +1,43 @@
+{
+ "records": 163,
+ "by_company": {
+  "bxp": 87,
+  "hst": 76
+ },
+ "by_country": {
+  "US": 158,
+  "BR": 3,
+  "CA": 2
+ },
+ "by_subtype": {
+  "Office": 63,
+  "Life Sciences": 10,
+  "Residential portfolio property": 2,
+  "Hotel": 77,
+  "Parking": 2,
+  "Development": 7,
+  "Redevelopment": 2
+ },
+ "by_stage": {
+  "operating": 154,
+  "unknown": 1,
+  "under_construction": 8
+ },
+ "by_role": {
+  "reported_group_owner": 154,
+  "developer": 8,
+  "lessee": 1
+ },
+ "precision": {
+  "approximate": 86,
+  "unknown": 77
+ },
+ "with_stated_stake": 4,
+ "ground_lease": 17,
+ "not_wholly_owned": 1,
+ "hst_schedule_iii_corroborated": 72,
+ "reuse_cleared_awaiting_owner_review": 163,
+ "research_candidates": 10,
+ "rejected": 0,
+ "imagery": 0
+}
