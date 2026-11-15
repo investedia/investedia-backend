@@ -1,0 +1,60 @@
+# Publish the article library to the website after each successful news robot run (owner, 15 Nov 2026).
+# Copies every full article the robot holds into investedia-frontend (assets/globe/library), rebuilds the library
+# index and homepage totals, and pushes to the website's main branch, which redeploys the site.
+# Needs: secret FRONTEND_PUSH_TOKEN (fine-grained token: investedia-frontend only, Contents read/write)
+#        and variable LIBRARY_PUBLISH_ENABLED=true. Without them the job does nothing.
+name: Publish article library
+on:
+  workflow_run:
+    workflows: ['Priority news proposal', 'Broad news (every 2 hours)']
+    types: [completed]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: publish-library
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: vars.LIBRARY_PUBLISH_ENABLED == 'true' && (github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: backend
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restore the robot's latest articles (read only; this job never saves the cache)
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            backend/assets/globe/news-live.json
+            backend/assets/globe/news-48h.json
+            backend/assets/globe/news-archive.json
+          key: publish-library-${{ github.run_id }}
+          restore-keys: priority-news-state-
+      - name: Check out the website
+        uses: actions/checkout@v4
+        with:
+          repository: investedia/investedia-frontend
+          ref: main
+          path: frontend
+          token: ${{ secrets.FRONTEND_PUSH_TOKEN }}
+          fetch-depth: 1
+      - name: Add new articles and rebuild the library index
+        working-directory: backend
+        run: python tools/publish_library.py --frontend ../frontend | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Commit and push to the website
+        working-directory: frontend
+        run: |
+          git add assets/globe/library assets/globe/library-index assets/globe/site-stats.json docs/assets/globe 2>/dev/null || true
+          if git diff --cached --quiet; then echo 'No new articles.' >> "$GITHUB_STEP_SUMMARY"; exit 0; fi
+          git -c user.name='Investedia news robot' -c user.email='robot@investedia.com' commit -q -m "Article library: add new articles from the news robot"
+          for i in 1 2 3 4; do
+            git push -q origin HEAD:main && exit 0
+            sleep $((i * 10)); git pull -q --rebase origin main || exit 1
+          done
+          echo '::error::Could not push the article library to the website.'; exit 1
