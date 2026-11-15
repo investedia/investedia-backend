@@ -28,14 +28,25 @@ jobs:
         with:
           python-version: '3.12'
       - name: Restore the robot's latest articles (read only; this job never saves the cache)
+        id: state
         uses: actions/cache/restore@v4
         with:
+          # Must list exactly the paths the robot saves (priority/broad news), or GitHub treats it as a different cache.
           path: |
+            backend/assets/globe/news-seen.json
             backend/assets/globe/news-live.json
             backend/assets/globe/news-48h.json
             backend/assets/globe/news-archive.json
+            backend/assets/globe/news-status.json
+            backend/assets/globe/events
+            backend/assets/globe/threads.json
+            backend/assets/globe/news-gap-history-cache.json
+            backend/assets/globe/regional-backfill-state.json
           key: publish-library-${{ github.run_id }}
           restore-keys: priority-news-state-
+      - name: Stop if the robot's saved state was not found
+        if: steps.state.outputs.cache-matched-key == ''
+        run: echo "::error::Robot state cache not found; nothing published." && exit 1
       - name: Check out the website
         uses: actions/checkout@v4
         with:
