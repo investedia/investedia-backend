@@ -33,6 +33,7 @@ import { ingestCalls, readCalls } from './v1/calls.js';
 import { joinWaitlist } from './v1/waitlist.js';
 import { ingestConnections, readConnections } from './v1/connections.js';
 import { ingestCalendar, readCalendar } from './v1/calendar.js';
+import { handleGreeting } from './v1/briefing.js';
 export { refresh };
 const json = (h, status, body, cache = 'no-store') => new Response(JSON.stringify(body), { status, headers: { ...h, 'Content-Type': 'application/json', 'Cache-Control': cache } });
 
@@ -51,6 +52,13 @@ export default {
   async fetch(req, env0, ctx) {
     const env = withAliases(env0);
     const h = cors(req), url = new URL(req.url);
+    if (req.method === 'GET' && url.pathname === '/v1/briefing/greeting') {
+      const ck = new Request(url.toString()), hit = await caches.default.match(ck);
+      if (hit) return new Response(hit.body, { headers: { ...Object.fromEntries(hit.headers), ...h } });
+      const res = await handleGreeting(req, env, h);
+      if (res.ok) ctx.waitUntil(caches.default.put(ck, res.clone()));
+      return res;
+    }
     if (req.method === 'POST' && url.pathname === '/v1/ingest/connections') {
       const r=await ingestConnections(req,env);
       if(r.status===200&&r.body.written)ctx.waitUntil(Promise.all(['/v1/connections','/v1/news','/v1/globe','/v1/status'].map(path=>caches.default.delete(new Request(url.origin+path+'#v1')))));
