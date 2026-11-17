@@ -251,8 +251,25 @@ EXTRA_FEEDS_2026_11_12 = [
     ('https://www.ktpress.rw/feed/', 'KT Press Rwanda', 'af'),
     ('https://www.independent.co.ug/feed/', 'The Independent Uganda', 'af'),
 ]
+EXTRA_FEEDS_2026_11_17 = [  # checked 17 Nov 2026: live, dated items, robots allow, not used elsewhere
+    ('https://dailynews.co.tz/feed/', 'Daily News Tanzania', 'af'),
+    ('https://www.financialafrik.com/feed/', 'Financial Afrik', 'af'),
+    ('https://www.tbsnews.net/economy/rss.xml', 'The Business Standard Bangladesh', 'asia'),
+    ('https://economynext.com/feed/', 'EconomyNext', 'asia'),
+    ('https://business.inquirer.net/feed', 'Inquirer Business', 'asia'),
+    ('https://www.cnbcindonesia.com/market/rss', 'CNBC Indonesia', 'asia'),
+    ('https://www.antaranews.com/rss/ekonomi.xml', 'ANTARA Ekonomi', 'asia'),
+    ('https://kursiv.media/en/feed/', 'Kursiv', 'asia'),
+    ('https://www.money.pl/rss/rss.xml', 'Money.pl', 'eu'),
+    ('https://www.zf.ro/rss', 'Ziarul Financiar', 'eu'),
+    ('https://www.novinite.com/services/news_rdf.php', 'Novinite', 'eu'),
+    ('https://www.eleconomista.com.mx/rss/ultimas-noticias', 'El Economista', 'latam'),
+    ('https://www.fbcnews.com.fj/feed/', 'FBC News', 'oc'),
+    ('https://www.businessadvantagepng.com/feed/', 'Business Advantage PNG', 'oc'),
+]
 SOURCE_SETS = {'all': None, 'official-2026-11-11': lambda: {u for u,_,_ in robot.OFFICIAL_REGION_FEEDS_2026_11_11},
-               'extra-2026-11-12': lambda: {u for u,_,_ in EXTRA_FEEDS_2026_11_12}}  # named sets for --sources
+               'extra-2026-11-12': lambda: {u for u,_,_ in EXTRA_FEEDS_2026_11_12},
+               'extra-2026-11-17': lambda: {u for u,_,_ in EXTRA_FEEDS_2026_11_17}}  # named sets for --sources
 
 
 def feed_sources(inventory, only=None):
@@ -260,7 +277,7 @@ def feed_sources(inventory, only=None):
     if not health and only is None: raise ValueError('feed_inventory_required_run_coverage_fetch_first')
     configured = [(u,n,'',r) for u,n,r in robot.REGION_FEEDS]
     configured += [(u,n,h,None) for u,n,h in robot.FEEDS if robot.OFFICIAL_RE.search(n)]
-    if only is not None: configured += [(u,n,'',r) for u,n,r in EXTRA_FEEDS_2026_11_12]  # only through a named set
+    if only is not None: configured += [(u,n,'',r) for u,n,r in EXTRA_FEEDS_2026_11_12 + EXTRA_FEEDS_2026_11_17]  # only through a named set
     if only is not None: configured = [c for c in configured if c[0] in only]  # a named set: feeds added after the last coverage inventory
     seen = set(); enabled = []; skipped = []
     for url,name,hint,region in configured:
