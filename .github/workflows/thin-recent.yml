@@ -29,6 +29,11 @@ jobs:
           gh workflow run regional-backfill.yml --ref main -f days=2 -f confirm=BACKFILL -f dry_run=false \
             -f writer=claude-haiku-5-5 -f max_usd=0.3 -f gemini_calls=10 -f batch_size=25 \
             -f sources=extra-2026-11-12 -f connections_only=false
+          # feeds checked 17 Nov 2026 (Tanzania, Francophone Africa, Bangladesh, Sri Lanka, Philippines, Indonesia,
+          # Kazakhstan, Poland, Romania, Bulgaria, Mexico, Fiji, Papua New Guinea); own small cap
+          gh workflow run regional-backfill.yml --ref main -f days=2 -f confirm=BACKFILL -f dry_run=false \
+            -f writer=claude-haiku-5-5 -f max_usd=0.15 -f gemini_calls=10 -f batch_size=25 \
+            -f sources=extra-2026-11-17 -f connections_only=false
       - name: Start the GDELT recent search unless a GDELT run is already waiting or running
         env:
           GH_TOKEN: ${{ github.token }}

@@ -12,7 +12,7 @@ FIXTURE = ROOT/'tests/fixtures/gdelt-backfill'
 GKG = (FIXTURE/'gkg-sample.csv').read_text()
 PAGE = (FIXTURE/'publisher-page.html').read_text()
 NOW = datetime(2026, 11, 11, 12, tzinfo=timezone.utc)
-START, END = m.window('2026-08-01', '2026-10-15')
+START, END = m.window('2026-06-01', '2026-11-14')
 UTC = timezone.utc
 FILE_TIME = datetime(2026, 9, 2, 12, tzinfo=UTC)
 
@@ -36,20 +36,20 @@ def http_error(url, code, location=None):
 
 class WindowsAndRegions(unittest.TestCase):
     def test_window_is_inclusive_and_bounded_to_aug_oct(self):
-        self.assertEqual((START, END), (datetime(2026, 8, 1, tzinfo=UTC), datetime(2026, 10, 16, tzinfo=UTC)))
-        for a, b in [('2026-07-31', '2026-08-02'), ('2026-10-01', '2026-10-16'), ('2026-09-10', '2026-09-01'), ('2026-9-1', '2026-09-02')]:
+        self.assertEqual((START, END), (datetime(2026, 6, 1, tzinfo=UTC), datetime(2026, 11, 15, tzinfo=UTC)))
+        for a, b in [('2026-05-31', '2026-06-02'), ('2026-11-01', '2026-11-15'), ('2026-09-10', '2026-09-01'), ('2026-9-1', '2026-09-02')]:
             with self.assertRaises(ValueError): m.window(a, b)
 
     def test_file_plan_covers_every_day_first_then_adds_hours(self):
         days = (END - START).days
-        self.assertEqual(days, 76)
-        plan = m.gkg_plan(START, END, 160)
-        self.assertEqual(len(plan), 160); self.assertEqual(len(set(plan)), 160)
-        self.assertEqual(plan[0], datetime(2026, 8, 1, 12, tzinfo=UTC)); self.assertEqual(plan[days - 1], datetime(2026, 10, 15, 12, tzinfo=UTC))
-        self.assertEqual(plan[days], datetime(2026, 8, 1, 0, tzinfo=UTC))  # second round: midnight files
+        self.assertEqual(days, 167)
+        plan = m.gkg_plan(START, END, 200)
+        self.assertEqual(len(plan), 200); self.assertEqual(len(set(plan)), 200)
+        self.assertEqual(plan[0], datetime(2026, 6, 1, 12, tzinfo=UTC)); self.assertEqual(plan[days - 1], datetime(2026, 11, 14, 12, tzinfo=UTC))
+        self.assertEqual(plan[days], datetime(2026, 6, 1, 0, tzinfo=UTC))  # second round: midnight files
         self.assertEqual({p.date() for p in plan[:days]}, {(START + timedelta(days=i)).date() for i in range(days)})
         self.assertTrue(all(START <= p < END for p in m.gkg_plan(START, END, 400)))
-        self.assertEqual(m.gkg_url(plan[0]), 'https://data.gdeltproject.org/gdeltv2/20260801120000.gkg.csv.zip')
+        self.assertEqual(m.gkg_url(plan[0]), 'https://data.gdeltproject.org/gdeltv2/20260601120000.gkg.csv.zip')
         for bad in (0, 401):
             with self.assertRaises(ValueError): m.gkg_plan(START, END, bad)
 
@@ -165,7 +165,7 @@ class PublisherPageTests(unittest.TestCase):
     def test_missing_naive_outside_modified_and_paywalled_pages_are_rejected(self):
         cases = {
             'no_original_publication_time_on_page': PAGE.replace('article:published_time', 'x-none'),
-            'original_date_outside_requested_window': PAGE.replace('2026-09-02T07:40:00+03:00', '2026-07-30T07:40:00+03:00'),
+            'original_date_outside_requested_window': PAGE.replace('2026-09-02T07:40:00+03:00', '2026-05-29T07:40:00+03:00'),
             'paywalled_page': PAGE.replace('</head>', '<script type="application/ld+json">{"isAccessibleForFree": "False"}</script></head>'),
             'no_source_description': PAGE.replace('og:description', 'x-none'),
         }
@@ -507,7 +507,7 @@ class ClaudeProviderTests(EndToEndTests):
 class CommandLineTests(unittest.TestCase):
     def test_confirm_word_bounds_and_settings_are_checked_before_any_request(self):
         with patch.object(m, 'run', side_effect=AssertionError('run started')), patch.dict('os.environ', {}, clear=True):
-            for argv in (['--confirm', 'yes'], ['--confirm', 'BACKFILL', '--gemini-calls', '81'], ['--confirm', 'BACKFILL', '--start', '2026-07-01'],
+            for argv in (['--confirm', 'yes'], ['--confirm', 'BACKFILL', '--gemini-calls', '81'], ['--confirm', 'BACKFILL', '--start', '2026-05-01'],
                          ['--confirm', 'BACKFILL', '--regions', 'atlantis'], ['--confirm', 'BACKFILL'],
                          ['--confirm', 'BACKFILL', '--phase', 'ingest', '--dry-run', 'true'],
                          ['--confirm', 'BACKFILL', '--provider', 'claude', '--max-usd', '0'],
@@ -532,12 +532,12 @@ if __name__ == '__main__': unittest.main()
 class RecentWindowTests(unittest.TestCase):
     def test_recent_window_allowed_and_old_gap_refused(self):
         from datetime import datetime, timezone
-        today = datetime(2026, 11, 12, 10, tzinfo=timezone.utc)
-        a, b = m.window('2026-11-11', '2026-11-12', today=today)
+        today = datetime(2026, 11, 20, 10, tzinfo=timezone.utc)
+        a, b = m.window('2026-11-19', '2026-11-20', today=today)
         self.assertEqual((b - a).days, 2)
-        with self.assertRaises(ValueError): m.window('2026-11-01', '2026-11-12', today=today)
-        with self.assertRaises(ValueError): m.window('2026-10-20', '2026-10-21', today=today)
-        m.window('2026-08-01', '2026-10-15', today=today)
+        with self.assertRaises(ValueError): m.window('2026-11-15', '2026-11-16', today=today)
+        with self.assertRaises(ValueError): m.window('2026-05-20', '2026-05-21', today=today)
+        m.window('2026-06-01', '2026-11-14', today=today)
 
 
 class CountryCapTests(unittest.TestCase):
@@ -553,10 +553,10 @@ class CountryCapTests(unittest.TestCase):
 class RecentIngestTests(unittest.TestCase):
     def test_recent_dates_pass_the_ingest_check_but_old_gap_does_not(self):
         from datetime import datetime, timezone
-        now = datetime(2026, 11, 12, 14, tzinfo=timezone.utc)
+        now = datetime(2026, 11, 20, 14, tzinfo=timezone.utc)
         def story(t): return {'backfilled': True, 'published_at': t, 'source': {'url': 'https://x.invalid/a', 'name': 'X'},
                               'backfill_provenance': {'version': m.VERSION, 'original_published_at': t}}
-        self.assertTrue(m.valid_backfilled(story('2026-11-11T10:00:00Z'), now))
-        self.assertTrue(m.valid_backfilled(story('2026-09-01T10:00:00Z'), now))
-        self.assertFalse(m.valid_backfilled(story('2026-10-25T10:00:00Z'), now))
-        self.assertFalse(m.valid_backfilled(story('2026-11-12T15:00:00Z'), now))
+        self.assertTrue(m.valid_backfilled(story('2026-11-19T10:00:00Z'), now))
+        self.assertTrue(m.valid_backfilled(story('2026-10-25T10:00:00Z'), now))
+        self.assertFalse(m.valid_backfilled(story('2026-11-16T10:00:00Z'), now))
+        self.assertFalse(m.valid_backfilled(story('2026-11-20T15:00:00Z'), now))
