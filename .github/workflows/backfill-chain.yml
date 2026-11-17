@@ -1,0 +1,67 @@
+# Owner request 17 Nov 2026: finish the 2026 history backfill without anyone watching.
+# Runs one gdelt-backfill.yml window (real run, capped), waits for it, adds its Claude cost to the running
+# total, then starts itself again with the rest of the queue. Stops when the queue is empty or the total
+# would pass max_total_usd. Manual start only; no schedule.
+name: Backfill chain (manual)
+on:
+  workflow_dispatch:
+    inputs:
+      queue:
+        description: 'Windows to run, newest first: start:end separated by spaces'
+        default: '2026-06-01:2026-06-15 2026-05-16:2026-05-31 2026-05-01:2026-05-15 2026-04-16:2026-04-30 2026-04-01:2026-04-15 2026-03-16:2026-03-31 2026-03-01:2026-03-15 2026-02-15:2026-02-28 2026-02-01:2026-02-14 2026-01-16:2026-01-31 2026-01-01:2026-01-15'
+      spent_usd:
+        description: 'Claude spend already used by earlier links of this chain'
+        default: '0'
+      max_total_usd:
+        description: 'Stop the chain before the total would pass this'
+        default: '4'
+permissions:
+  actions: write
+  contents: read
+concurrency:
+  group: backfill-chain
+  cancel-in-progress: false
+jobs:
+  next:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Run the next window and start the rest
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          QUEUE: ${{ inputs.queue }}
+          SPENT: ${{ inputs.spent_usd }}
+          MAX_TOTAL: ${{ inputs.max_total_usd }}
+        run: |
+          set -euo pipefail
+          read -r -a items <<< "$QUEUE"
+          if [ ${#items[@]} -eq 0 ]; then echo "Queue empty: chain finished. Total spent \$$SPENT"; exit 0; fi
+          python3 -c "import sys; s,m=float('$SPENT'),float('$MAX_TOTAL'); sys.exit(0 if s+0.3<=m else 1)" || { echo "::warning::Stopping: \$$SPENT spent, next run could pass \$$MAX_TOTAL"; exit 0; }
+          first=${items[0]}; rest="${items[*]:1}"; a=${first%%:*}; b=${first##*:}
+          days=$(( ( $(date -ud "$b" +%s) - $(date -ud "$a" +%s) ) / 86400 + 1 )); files=$(( days * 4 )); [ $files -gt 400 ] && files=400
+          # wait while another GDELT run is busy (the hourly thin-region job also uses it)
+          for i in $(seq 1 60); do
+            busy=$(gh run list --workflow gdelt-backfill.yml --limit 20 --json status --jq '[.[] | select(.status != "completed")] | length')
+            [ "$busy" = "0" ] && break; sleep 60
+          done
+          before=$(gh run list --workflow gdelt-backfill.yml --limit 1 --json databaseId --jq '.[0].databaseId // 0')
+          gh workflow run gdelt-backfill.yml --ref main -f confirm=BACKFILL -f dry_run=false -f start_date="$a" -f end_date="$b" \
+            -f regions=all -f gemini_calls=80 -f batch_size=25 -f gdelt_files="$files" -f writer=claude-haiku-5-5 \
+            -f sources=english -f max_usd=0.3 -f country_cap=40
+          id=$before
+          for i in $(seq 1 30); do sleep 10; id=$(gh run list --workflow gdelt-backfill.yml --limit 1 --json databaseId --jq '.[0].databaseId'); [ "$id" != "$before" ] && break; done
+          [ "$id" = "$before" ] && { echo "::error::Backfill run for $a..$b did not start"; exit 1; }
+          echo "Window $a..$b -> run $id"
+          gh run watch "$id" --interval 60 > /dev/null || true
+          conclusion=$(gh run view "$id" --json conclusion --jq .conclusion)
+          cost=$(gh run view "$id" --log 2>/dev/null | grep -oE '"cost_usd": ?[0-9.]+' | tail -1 | grep -oE '[0-9.]+$' || true)
+          new=$(gh run view "$id" --log 2>/dev/null | grep -oE '"new_articles": ?[0-9]+' | tail -1 | grep -oE '[0-9]+$' || true)
+          total=$(python3 -c "print(round(float('$SPENT') + float('${cost:-0.3}'), 4))")   # unknown cost counts as the full cap
+          echo "Window $a..$b: $conclusion, new articles ${new:-?}, cost \$${cost:-unknown}, chain total \$$total" | tee -a "$GITHUB_STEP_SUMMARY"
+          if [ -n "$rest" ]; then
+            gh workflow run backfill-chain.yml --ref main -f queue="$rest" -f spent_usd="$total" -f max_total_usd="$MAX_TOTAL"
+            echo "Started the next link: $rest"
+          else
+            echo "Chain finished. Total spent \$$total" | tee -a "$GITHUB_STEP_SUMMARY"
+          fi
