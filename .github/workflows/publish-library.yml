@@ -6,11 +6,12 @@
 name: Publish article library
 on:
   workflow_run:
-    workflows: ['Priority news proposal', 'Broad news (every 2 hours)']
+    workflows: ['Priority news proposal', 'Broad news (every 2 hours)', 'GDELT months-back article backfill (manual)']
     types: [completed]
   workflow_dispatch:
 permissions:
   contents: read
+  actions: read
 concurrency:
   group: publish-library
   cancel-in-progress: false
@@ -55,9 +56,18 @@ jobs:
           path: frontend
           token: ${{ secrets.FRONTEND_PUSH_TOKEN }}
           fetch-depth: 1
+      - name: Download the backfill run's articles (only when a backfill run triggered this)
+        if: github.event_name == 'workflow_run' && github.event.workflow_run.name == 'GDELT months-back article backfill (manual)'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p extra
+          gh run download ${{ github.event.workflow_run.id }} -R ${{ github.repository }} -n gdelt-backfill-ingested -D extra || echo 'No ingested articles in this run.'
       - name: Add new articles and rebuild the library index
         working-directory: backend
-        run: python tools/publish_library.py --frontend ../frontend | tee -a "$GITHUB_STEP_SUMMARY"
+        run: |
+          extra=''; [ -f ../extra/new-articles.json ] && extra='--extra ../extra/new-articles.json'
+          python tools/publish_library.py --frontend ../frontend $extra | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Commit and push to the website
         working-directory: frontend
         run: |
