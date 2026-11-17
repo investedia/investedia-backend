@@ -74,6 +74,16 @@ def main():
             'listings': [{'s': a['s'], 'name': (x.get('listing_names') or {}).get(a['s'], a['n']), 'exchange': (x.get('exchanges') or {}).get(a['s'], exchange(a['s'])), 'cur': a.get('cur'), 'tracked': True} for a in ls]
                         + [dict(l, tracked=False) for l in x.get('more_listings', [])],  # real listings whose price we do not track yet
         })
+    # Companies added from official exchange lists (tools/listings/*.py in the website repo: e.g. NGX) have no tracked
+    # price, so they are not in markets.json. Keep them: carry over every earlier company whose listings are all untracked
+    # exchange identities ("NGX:SYMBOL"), unless the same listing now has a tracked price.
+    prev_path = os.path.join(ROOT, 'data/companies.json')
+    if os.path.exists(prev_path):
+        have = {l['s'] for c in out for l in c['listings']}
+        for c in json.load(open(prev_path)).get('companies', []):
+            ls = c.get('listings') or []
+            if ls and all(l.get('tracked') is False and ':' in l['s'] for l in ls) and not any(l['s'] in have for l in ls) and c['slug'] not in used:
+                used.add(c['slug']); out.append(c)
     data = {'about': 'Investedia company directory. A company is the business; listings are its tradable stocks. Built from markets.json; '
                       'facts beyond name, country, sector and listings come only from tools/companies-extra.json with sources.',
             'count': len(out), 'companies': out}
