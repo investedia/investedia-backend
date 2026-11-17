@@ -64,7 +64,7 @@ GKG_BASE = 'https://data.gdeltproject.org/gdeltv2/'  # GDELT 2.0 Global Knowledg
 GKG_INTERVAL = 2.0            # polite spacing between file downloads (static files, not the rate-limited search API)
 GKG_MAX_BYTES = 60_000_000
 HOUR_ROUNDS = (12, 0, 6, 18, 3, 9, 15, 21)  # every day at noon first, then midnight, ...: a file cap still covers every day
-ALLOWED_START = '2026-07-01'  # owner 17 Nov 2026: extend history one month before the oldest stored day
+ALLOWED_START = '2026-06-01'  # owner 17 Nov 2026: keep extending history back (July, then June)
 ALLOWED_END = '2026-11-14'    # inclusive day (owner 17 Nov 2026: whole 90 days, incl. the 16-18 Oct and 8-9 Nov gaps)
 DEFAULT_CALLS = 40
 HARD_CALL_LIMIT = 80
@@ -127,7 +127,7 @@ RECENT_DAYS = 3  # owner request 12 Nov 2026 (item 1): the same thin-region disc
 
 
 def window(start, end, today=None):
-    """Inclusive day range inside Jul 1 - Nov 14 2026, or inside the last RECENT_DAYS days -> half-open UTC datetimes."""
+    """Inclusive day range inside Jun 1 - Nov 14 2026, or inside the last RECENT_DAYS days -> half-open UTC datetimes."""
     a, b = day(start), day(end)
     today = (today or datetime.now(timezone.utc)).replace(hour=0, minute=0, second=0, microsecond=0)
     historic = day(ALLOWED_START) <= a <= b <= day(ALLOWED_END)
