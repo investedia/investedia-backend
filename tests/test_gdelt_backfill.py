@@ -122,7 +122,7 @@ class DiscoveryTests(unittest.TestCase):
                                     'missing_title': 1, 'not_web_article': 1})
         self.assertEqual(rows[0]['gdelt_seen'], '2026-09-02T12:00:00Z'); self.assertNotIn('published', rows[0])
         self.assertEqual(rows[0]['gdelt_country'], 'KE'); self.assertEqual(rows[0]['gdelt_region'], 'east_africa')
-        self.assertEqual(rows[0]['feed_region'], 'af'); self.assertEqual(rows[3]['gdelt_region'], 'oceania')
+        self.assertEqual(rows[0]['feed_region'], 'af'); self.assertEqual(rows[4]['gdelt_region'], 'oceania'); self.assertEqual(rows[3]['gdelt_region'], 'north_america')
         self.assertEqual(m.main_country('1#A#AS#x#0#0#1;1#B#KE#x#0#0#1;1#B#KE#x#0#0#1'), 'KE')
 
     def test_dedupe_against_ids_urls_headlines_events_and_earlier_runs(self):
