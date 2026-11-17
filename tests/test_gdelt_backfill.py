@@ -62,7 +62,7 @@ class WindowsAndRegions(unittest.TestCase):
         self.assertEqual(m.REGIONS['east_africa']['balance'], 'af'); self.assertEqual(m.REGIONS['caribbean']['balance'], 'latam')
         self.assertEqual(m.REGIONS['central_asia']['balance'], 'asia'); self.assertEqual(m.REGIONS['oceania']['balance'], 'oc')
         self.assertEqual(m.FIPS_REGION['KE'], 'east_africa'); self.assertEqual(m.FIPS_REGION['AS'], 'oceania')
-        self.assertEqual(m.FIPS_REGION['JM'], 'caribbean'); self.assertNotIn('US', m.FIPS_REGION)
+        self.assertEqual(m.FIPS_REGION['JM'], 'caribbean'); self.assertEqual(m.FIPS_REGION['US'], 'north_america')  # owner 17 Nov 2026: all regions
         codes = [c for r in m.REGIONS.values() for c in r['fips']]; self.assertEqual(len(codes), len(set(codes)))
 
     def test_model_choice_skips_non_gemini_placeholders(self):
@@ -94,7 +94,7 @@ class GkgClientTests(unittest.TestCase):
         self.assertTrue(self.sent[0][0].startswith('https://data.gdeltproject.org/gdeltv2/20260902120000'))
         again = self.client([])
         rows, status = again.fetch(FILE_TIME)
-        self.assertEqual(status, 'cache'); self.assertEqual(len(rows), 4); self.assertEqual(again.downloads, 0)
+        self.assertEqual(status, 'cache'); self.assertEqual(len(rows), 5); self.assertEqual(again.downloads, 0)
 
     def test_missing_files_errors_and_budget(self):
         c = self.client([http_error('u', 404), b'not a zip', gkg_zip()], limit=3)
@@ -117,18 +117,18 @@ class DiscoveryTests(unittest.TestCase):
 
     def test_parse_keeps_business_articles_in_backfill_regions_and_never_uses_file_time_as_publication(self):
         rows, rejected = self.rows()
-        self.assertEqual([r['url'].rsplit('/', 1)[1] for r in rows], ['test-only-shilling', 'test-only-tea', 'test-only-shilling#amp', 'test-only-rba'])
-        self.assertEqual(rejected, {'not_public_https_url': 1, 'not_business_theme': 1, 'outside_backfill_regions': 1,
+        self.assertEqual([r['url'].rsplit('/', 1)[1] for r in rows], ['test-only-shilling', 'test-only-tea', 'test-only-shilling#amp', 'test-only-us', 'test-only-rba'])
+        self.assertEqual(rejected, {'not_public_https_url': 1, 'not_business_theme': 1,
                                     'missing_title': 1, 'not_web_article': 1})
         self.assertEqual(rows[0]['gdelt_seen'], '2026-09-02T12:00:00Z'); self.assertNotIn('published', rows[0])
         self.assertEqual(rows[0]['gdelt_country'], 'KE'); self.assertEqual(rows[0]['gdelt_region'], 'east_africa')
-        self.assertEqual(rows[0]['feed_region'], 'af'); self.assertEqual(rows[3]['gdelt_region'], 'oceania')
+        self.assertEqual(rows[0]['feed_region'], 'af'); self.assertEqual(rows[4]['gdelt_region'], 'oceania'); self.assertEqual(rows[3]['gdelt_region'], 'north_america')
         self.assertEqual(m.main_country('1#A#AS#x#0#0#1;1#B#KE#x#0#0#1;1#B#KE#x#0#0#1'), 'KE')
 
     def test_dedupe_against_ids_urls_headlines_events_and_earlier_runs(self):
         rows, _ = self.rows()
         fresh, dup = m.dedupe(rows, m.known_keys([], [], [], {}))
-        self.assertEqual(len(fresh), 3); self.assertEqual(dup, {'duplicate_id_or_source_url': 1})  # '#amp' copy
+        self.assertEqual(len(fresh), 4); self.assertEqual(dup, {'duplicate_id_or_source_url': 1})  # '#amp' copy
         first = rows[0]
         cases = [m.known_keys([{'id': m.sid(first['url'])}], [], [], {}),
                  m.known_keys([{'id': 'x', 'source': {'url': first['url'].replace('https://', 'https://www.') + '/'}}], [], [], {}),

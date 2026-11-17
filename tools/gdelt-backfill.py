@@ -102,6 +102,16 @@ REGIONS = {
                         'fips': ['IT', 'SP', 'PO', 'GR', 'HR', 'SI', 'RI', 'CY', 'MT']},
     'caribbean': {'label': 'Caribbean', 'balance': 'latam',
                   'fips': ['JM', 'TD', 'BB', 'BF', 'DR', 'CJ', 'RQ', 'HA']},
+    # owner 17 Nov 2026: every region gets an equal turn (round-robin in order()); thin regions stay first.
+    'west_africa': {'label': 'West Africa', 'balance': 'af',
+                    'fips': ['NI', 'GH', 'IV', 'SG', 'CM', 'BN', 'TO', 'ML', 'UV', 'SL', 'LI', 'GA', 'NG']},
+    'north_africa': {'label': 'North Africa', 'balance': 'af', 'fips': ['EG', 'MO', 'AG', 'TS', 'LY', 'SU']},
+    'southern_africa': {'label': 'Southern Africa', 'balance': 'af', 'fips': ['SF', 'ZI', 'WA', 'BC', 'AO', 'MA', 'MP', 'WZ', 'LT']},
+    'latin_america': {'label': 'Latin America', 'balance': 'latam',
+                      'fips': ['BR', 'MX', 'AR', 'CI', 'CO', 'PE', 'EC', 'VE', 'UY', 'PA', 'BL', 'CS', 'PM', 'GT', 'HO', 'NU', 'ES']},
+    'western_europe': {'label': 'Western Europe', 'balance': 'eu',
+                       'fips': ['UK', 'GM', 'FR', 'NL', 'BE', 'SZ', 'AU', 'EI', 'LU', 'SW', 'NO', 'DA', 'FI', 'IC']},
+    'north_america': {'label': 'North America', 'balance': 'na', 'fips': ['US', 'CA']},
 }
 # Hard paywalls: never fetched, even for the meta description.
 PAYWALLED_HOSTS = {'wsj.com', 'ft.com', 'bloomberg.com', 'economist.com', 'barrons.com', 'nikkei.com',
