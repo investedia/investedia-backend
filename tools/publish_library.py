@@ -37,6 +37,10 @@ def publish(frontend, stories, check=False):
     lib = frontend / 'assets/globe/library'
     mirrors = [lib] + ([frontend / 'docs/assets/globe/library'] if (frontend / 'docs/assets/globe').is_dir() else [])
     have = {p.stem for p in lib.glob('*.json')} if lib.is_dir() else set()
+    ids = frontend / 'assets/globe/library-days/ids.json'  # articles already rolled into day bundles
+    if ids.is_file():
+        try: have |= set(json.loads(ids.read_text(encoding='utf-8')))
+        except Exception: pass
     new = sorted(sid for sid in stories if sid not in have)
     if check: return new
     for d in mirrors: d.mkdir(parents=True, exist_ok=True)
@@ -76,7 +80,7 @@ def main(argv=None):
     dates = sorted(stories[s]['published_at'] for s in new)
     print(json.dumps({'robot_articles': len(stories), 'new_on_site': len(new), 'first_new': dates[0] if dates else None, 'last_new': dates[-1] if dates else None, 'check': a.check}))
     if a.check or not new: return 0
-    out = subprocess.run([sys.executable, 'tools/news_library_index.py'], cwd=fe, check=True, capture_output=True, text=True).stdout
+    out = subprocess.run([sys.executable, 'tools/news_library_index.py', '--roll', '10'], cwd=fe, check=True, capture_output=True, text=True).stdout
     print(out.strip())
     meta = json.loads((fe / 'assets/globe/library-index/meta.json').read_text(encoding='utf-8'))
     site_stats(fe, meta)
