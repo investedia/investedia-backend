@@ -37,6 +37,10 @@ def publish(frontend, stories, check=False):
     lib = frontend / 'assets/globe/library'
     mirrors = [lib] + ([frontend / 'docs/assets/globe/library'] if (frontend / 'docs/assets/globe').is_dir() else [])
     have = {p.stem for p in lib.glob('*.json')} if lib.is_dir() else set()
+    ids = frontend / 'assets/globe/library-days/ids.json'  # articles already rolled into day bundles
+    if ids.is_file():
+        try: have |= set(json.loads(ids.read_text(encoding='utf-8')))
+        except Exception: pass
     new = sorted(sid for sid in stories if sid not in have)
     if check: return new
     for d in mirrors: d.mkdir(parents=True, exist_ok=True)
@@ -61,15 +65,22 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument('--frontend', required=True, type=pathlib.Path)
     ap.add_argument('--check', action='store_true')
+    ap.add_argument('--extra', type=pathlib.Path, action='append', default=[], help='extra new-articles.json files (backfill runs)')
     a = ap.parse_args(argv)
     fe = a.frontend.resolve()
     if not (fe / 'tools/news_library_index.py').is_file(): sys.exit(f'not a website checkout: {fe}')
     stories = robot_stories()
+    for f in a.extra:  # owner 17 Nov 2026: backfilled articles keep their original dates; only complete records
+        try: rows = json.loads(f.read_text(encoding='utf-8'))
+        except Exception: continue
+        for st in rows if isinstance(rows, list) else []:
+            if isinstance(st, dict) and st.get('backfilled') and all(st.get(k) for k in REQUIRED) and SAFE_ID.match(str(st['id'])):
+                stories.setdefault(st['id'], st)
     new = publish(fe, stories, check=a.check)
     dates = sorted(stories[s]['published_at'] for s in new)
     print(json.dumps({'robot_articles': len(stories), 'new_on_site': len(new), 'first_new': dates[0] if dates else None, 'last_new': dates[-1] if dates else None, 'check': a.check}))
     if a.check or not new: return 0
-    out = subprocess.run([sys.executable, 'tools/news_library_index.py'], cwd=fe, check=True, capture_output=True, text=True).stdout
+    out = subprocess.run([sys.executable, 'tools/news_library_index.py', '--roll', '10'], cwd=fe, check=True, capture_output=True, text=True).stdout
     print(out.strip())
     meta = json.loads((fe / 'assets/globe/library-index/meta.json').read_text(encoding='utf-8'))
     site_stats(fe, meta)
