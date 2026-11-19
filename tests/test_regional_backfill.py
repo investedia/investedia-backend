@@ -157,7 +157,7 @@ class RecoveryIntegrationTests(unittest.TestCase):
   self.assertIn('workflow_dispatch:',manual);self.assertNotIn('schedule:',manual);self.assertIn('group: news-production',manual)
   self.assertIn('dry_run:',manual);self.assertIn('default: true',manual);self.assertIn("inputs.confirm == 'BACKFILL'",manual)
   self.assertIn("!inputs.dry_run",manual)
-  for name,cron in [('priority-news.yml',"17 * * * *"),('broad-news.yml',"47 */2 * * *")]:
+  for name,cron in [('priority-news.yml',"17,47 * * * *"),('broad-news.yml',"47 */2 * * *")]:
    text=(ROOT/'.github/workflows'/name).read_text();self.assertIn(cron,text);self.assertIn('group: news-production',text)
    for path in ['news-seen.json','news-live.json','news-48h.json','news-archive.json','news-status.json','events','threads.json','news-gap-history-cache.json','regional-backfill-state.json']:
     self.assertIn('backend/assets/globe/'+path,text);self.assertIn('backend/assets/globe/'+path,manual)
