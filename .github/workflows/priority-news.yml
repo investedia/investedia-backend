@@ -3,7 +3,7 @@ name: Priority news proposal
 on:
   workflow_dispatch: # owner can run once by hand (Actions > Run workflow); still gated by PRIORITY_NEWS_ENABLED
   schedule:
-    - cron: '17 * * * *' # At most hourly; enable only after owner approval.
+    - cron: '17,47 * * * *' # every 30 min (owner, 13 Nov 2026, after the Workers Paid upgrade)
 permissions:
   contents: read
 concurrency:
