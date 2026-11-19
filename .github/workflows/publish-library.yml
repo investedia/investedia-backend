@@ -9,6 +9,10 @@ on:
     workflows: ['Priority news proposal', 'Broad news (every 2 hours)', 'GDELT months-back article backfill (manual)']
     types: [completed]
   workflow_dispatch:
+    inputs:
+      backfill_run:
+        description: 'Optional GDELT backfill run id whose articles to add (the backfill chain passes it)'
+        default: ''
 permissions:
   contents: read
   actions: read
@@ -57,12 +61,12 @@ jobs:
           token: ${{ secrets.FRONTEND_PUSH_TOKEN }}
           fetch-depth: 1
       - name: Download the backfill run's articles (only when a backfill run triggered this)
-        if: github.event_name == 'workflow_run' && github.event.workflow_run.name == 'GDELT months-back article backfill (manual)'
+        if: (github.event_name == 'workflow_run' && github.event.workflow_run.name == 'GDELT months-back article backfill (manual)') || inputs.backfill_run != ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p extra
-          gh run download ${{ github.event.workflow_run.id }} -R ${{ github.repository }} -n gdelt-backfill-ingested -D extra || echo 'No ingested articles in this run.'
+          gh run download ${{ inputs.backfill_run || github.event.workflow_run.id }} -R ${{ github.repository }} -n gdelt-backfill-ingested -D extra || echo 'No ingested articles in this run.'
       - name: Add new articles and rebuild the library index
         working-directory: backend
         run: |
