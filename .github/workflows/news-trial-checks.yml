@@ -1,0 +1,37 @@
+name: Isolated news trial checks
+on:
+  pull_request:
+    paths:
+      - 'workers/news-trial/**'
+      - 'tests/test_news_trial.py'
+      - '.github/workflows/news-trial-checks.yml'
+      - 'update_globe_news.py'
+      - 'news_core.py'
+      - 'registry.py'
+      - 'events.py'
+      - 'tools/news_library.py'
+      - 'tools/globe-news/connections.py'
+permissions:
+  contents: read
+jobs:
+  offline-trial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: node --test workers/news-trial/policy.test.mjs
+      - run: python -m unittest discover -s tests -p test_news_trial.py
+      - name: Build image locally (no registry push or deployment)
+        run: docker build -f workers/news-trial/Dockerfile -t investedia-news-trial-check .
+      - name: Check image without network or credentials
+        run: docker run --rm --network none --read-only investedia-news-trial-check python workers/news-trial/runner.py --preflight
+      - name: Bundle Worker and validate container configuration without deployment
+        run: npx --yes wrangler@4.136.0 deploy --dry-run --config workers/news-trial/wrangler.toml --outdir /tmp/news-trial-bundle
