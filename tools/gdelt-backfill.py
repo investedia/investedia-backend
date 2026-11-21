@@ -64,7 +64,7 @@ GKG_BASE = 'https://data.gdeltproject.org/gdeltv2/'  # GDELT 2.0 Global Knowledg
 GKG_INTERVAL = 2.0            # polite spacing between file downloads (static files, not the rate-limited search API)
 GKG_MAX_BYTES = 60_000_000
 HOUR_ROUNDS = (12, 0, 6, 18, 3, 9, 15, 21)  # every day at noon first, then midnight, ...: a file cap still covers every day
-ALLOWED_START = '2023-01-01'  # owner 21 Nov 2026: extend history to 2023
+ALLOWED_START = '2022-01-01'  # owner 21 Nov 2026: extend history to 2022 (not 2021 or 2020)
 ALLOWED_END = '2026-11-14'    # inclusive day (owner 17 Nov 2026: whole 90 days, incl. the 16-18 Oct and 8-9 Nov gaps)
 DEFAULT_CALLS = 40
 HARD_CALL_LIMIT = 80
@@ -142,7 +142,7 @@ def window(start, end, today=None):
     today = (today or datetime.now(timezone.utc)).replace(hour=0, minute=0, second=0, microsecond=0)
     historic = day(ALLOWED_START) <= a <= b <= day(ALLOWED_END)
     recent = today - timedelta(days=RECENT_DAYS - 1) <= a <= b <= today
-    if not (historic or recent): raise ValueError('window_outside_2026-08-01_to_2026-10-15_or_last_3_days')
+    if not (historic or recent): raise ValueError('window_outside_allowed_history_or_last_3_days')
     return a, b + timedelta(days=1)
 
 
