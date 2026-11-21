@@ -1,0 +1,10 @@
+{
+  "workflow_block_sha256": "a84178d14332ddd278b0904bfbc40ff7eb5913042fbc3d0977ab01a406cbe001",
+  "exit_code": 0,
+  "first_push_rejected": true,
+  "rebase_succeeded": true,
+  "both_changes_preserved": true,
+  "external_requests": 0,
+  "original_workflow_reproduced_failure": true,
+  "original_exit_code": 1
+}
