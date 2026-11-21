@@ -75,9 +75,11 @@ jobs:
       - name: Commit and push to the website
         working-directory: frontend
         run: |
+          git config user.name 'Investedia news robot'
+          git config user.email 'robot@investedia.com'
           git add -A assets/globe/library assets/globe/library-days assets/globe/library-index assets/globe/site-stats.json docs/assets/globe 2>/dev/null || true
           if git diff --cached --quiet; then echo 'No new articles.' >> "$GITHUB_STEP_SUMMARY"; exit 0; fi
-          git -c user.name='Investedia news robot' -c user.email='robot@investedia.com' commit -q -m "Article library: add new articles from the news robot"
+          git commit -q -m "Article library: add new articles from the news robot"
           for i in 1 2 3 4; do
             git push -q origin HEAD:main && exit 0
             sleep $((i * 10)); git pull -q --rebase origin main || exit 1
