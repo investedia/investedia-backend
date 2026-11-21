@@ -15,7 +15,7 @@ export async function ingestLibrary(req, env, now = Date.now()) {
   let body; try { body = JSON.parse(text); } catch { return { status: 400, body: { error: 'invalid json' } }; }
   const days = body && typeof body.days === 'object' && !Array.isArray(body.days) ? Object.entries(body.days) : null;
   if (!days || !days.length || days.length > 3) return { status: 422, body: { error: 'send 1 to 3 days' } };
-  let meta = {}; try { meta = JSON.parse(await env.PRICES.get('library:meta'))?.days || {}; } catch {}
+  let meta = {}, storedMeta; try { storedMeta = await env.PRICES.get('library:meta'); meta = JSON.parse(storedMeta)?.days || {}; } catch {}
   let written = 0;
   for (const [day, rows] of days) {
     if (!DAY.test(day) || !Array.isArray(rows) || rows.length > MAX_ROWS || Date.parse(day) > now + 864e5) return { status: 422, body: { error: 'bad day ' + day } };
@@ -26,7 +26,7 @@ export async function ingestLibrary(req, env, now = Date.now()) {
     meta[day] = out.length;
   }
   const keep = Object.keys(meta).sort().slice(-KEEP_DAYS), metaNext = JSON.stringify({ updated_at: new Date(now).toISOString(), days: Object.fromEntries(keep.map(d => [d, meta[d]])) });
-  if (written || (await env.PRICES.get('library:meta')) === null) { await env.PRICES.put('library:meta', metaNext); }
+  if (written || (storedMeta === undefined ? await env.PRICES.get('library:meta') : storedMeta) === null) { await env.PRICES.put('library:meta', metaNext); }
   return { status: 200, body: { ok: true, written } };
 }
 export async function handleLibrary(url, env) {

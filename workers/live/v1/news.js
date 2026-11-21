@@ -106,8 +106,10 @@ export async function refreshNews(env, now = Date.now(), fx = {}) {
 export async function handleNews(env, now = Date.now()) {
   let st = null; try { st = JSON.parse(await env.PRICES.get('news')); } catch {}
   if (!st || !Array.isArray(st.stories) || !st.stories.length) return { status: 503, body: { error: 'no data yet', meta: { state: 'unavailable', provider: PROVIDER.id, version: 1 } } };
-  let history = []; try { history = JSON.parse(await env.PRICES.get('news-gap-history'))?.stories || []; } catch {}
-  if (!Array.isArray(history)) history = [];
+  const [historyResult, connectionsResult] = await Promise.allSettled(
+    ['news-gap-history', 'connections:meta'].map(async key => JSON.parse(await env.PRICES.get(key))));
+  const savedHistory = historyResult.status === 'fulfilled' ? historyResult.value?.stories : null;
+  const history = Array.isArray(savedHistory) ? savedHistory : [];
   const merged = [...st.stories], seen = new Set(), firstIndexById = new Map();
   for (const [index, story] of merged.entries()) {
     if (!firstIndexById.has(story.id)) firstIndexById.set(story.id, index);
@@ -128,7 +130,7 @@ export async function handleNews(env, now = Date.now()) {
   const dated = merged.map(story => ({ story, time: Date.parse(story.published_at) }));
   dated.sort((a, b) => b.time - a.time);
   const stories = dated.map(entry => entry.story);
-  let connectionsGenerated=null;try{connectionsGenerated=JSON.parse(await env.PRICES.get('connections:meta'))?.generated_at||null;}catch{}
+  const connectionsGenerated = connectionsResult.status === 'fulfilled' ? connectionsResult.value?.generated_at || null : null;
   return { status: 200, body: envelope({ stories }, { provider: PROVIDER, snapT: st.t, now, ttl: 30, extra: { count: stories.length, stats: st.stats || null, connections_generated_at:connectionsGenerated, model: st.model || null, note: 'newest AI-enriched priority articles; the client merges them with the static broad feed' } }) };
 }
 // Globe events are a compact view of the same articles: no second pipeline, no extra KV writes.
