@@ -1,0 +1,32 @@
+name = "investedia-news-trial"
+main = "index.js"
+compatibility_date = "2026-11-21"
+workers_dev = true
+preview_urls = false
+
+[vars]
+TRIAL_ENABLED = "false"
+
+[triggers]
+crons = []
+
+[[containers]]
+class_name = "NewsTrial"
+scheduling_policy = "durable_object"
+
+[containers.images.base]
+dockerfile = "./Dockerfile"
+# Build from repository root; the Dockerfile-specific allowlist excludes everything else.
+build_context = "../.."
+
+[[durable_objects.bindings]]
+name = "TRIAL_CONTAINER"
+class_name = "NewsTrial"
+
+[exports.NewsTrial]
+type = "durable-object"
+storage = "sqlite"
+
+[[r2_buckets]]
+binding = "TRIAL_STORE"
+bucket_name = "investedia-news-trial"
