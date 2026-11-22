@@ -41,7 +41,7 @@ Prepare a fresh seed from the latest successful producer cache, not an old repos
 python workers/news-trial/runner.py --pack <temporary-seed-path>
 ```
 
-This command only reads saved JSON and writes a local package. It excludes the historical article library (not needed by priority generation), includes event/seen/photo state, and enforces a 32 MiB limit. Upload it privately as `trial/seed.json` in the trial bucket after approval. Do not commit it. Reference data and registry are copied from the image's reviewed commit. The seed's dates are never rewritten to make it appear current.
+This command only reads saved JSON and writes a local package. It excludes the historical article library (not needed by priority generation), includes event/seen/photo state, and enforces a 32 MiB compressed-transfer limit plus a 128 MiB expanded-data limit. Upload it privately as `trial/seed.json.gz` in the trial bucket after approval. Do not commit it. Reference data and registry are copied from the image's reviewed commit. The seed's dates are never rewritten to make it appear current.
 
 Authenticated endpoints on the trial Worker's workers.dev address:
 
@@ -49,12 +49,14 @@ Authenticated endpoints on the trial Worker's workers.dev address:
 |---|---|---|
 | GET | `/health` | Trial enabled/disabled; confirms there is no schedule |
 | POST | `/run` | One priority generation, only after explicitly enabling `TRIAL_ENABLED` and adding both secrets |
-| GET | `/result` | Last successful artifact: full trial files, connections and measured summary |
+| GET | `/result` | Last successful gzip-compressed JSON artifact: full trial files, connections and measured summary |
 
-Send `Authorization: Bearer <trial token>` securely; do not place the token in the URL or terminal history. `/run` waits for the producer, so use a client with a sufficiently long timeout. A failed request is not automatically retried. `trial/state.json` resumes the trial's own seen/archive state on later runs; production continues independently. To restart from a fresh seed, remove only the trial state object after reviewing/saving the old artifact.
+Send `Authorization: Bearer <trial token>` securely; do not place the token in the URL or terminal history. `/run` waits for the producer, so use a client with a sufficiently long timeout. A failed request is not automatically retried. `trial/state.json.gz` resumes the trial's own seen/archive state on later runs; production continues independently. To restart from a fresh seed, remove only the trial state object after reviewing/saving the old artifact.
 
 ## What remains to prove
 
 Docker/runtime checks, HTTPS interception/certificate support and real-source redirect behavior must pass in the deployed isolated environment before any comparison is trusted. Source descriptions hosted outside the exact source allowlist are blocked; the producer retains its normal description fallback. Review failed-source diagnostics and extend only specific verified publisher hosts if needed. No Pixabay downloads are allowed; existing photo references are reused just as in the priority GitHub workflow. The container does not serve photo files or a website preview.
 
 This is a manual first trial, not the completed 24-hour comparison or a replacement scheduler. Before a production switch, compare source failures, new article IDs/counts, countries/regions, archive/library, photo references, connections, errors and duration over representative runs. Show website previews when wiring any alternative feed. Only after a successful comparison and a separate owner approval may production ingestion or schedules change. This PR makes neither change.
+
+The real producer state can exceed 32 MiB uncompressed. Seeds/results now use gzip without trimming articles, events or timestamps. The Worker stores opaque compressed bytes and parses only a small summary header; the container enforces both compressed and expanded size bounds. Legacy raw JSON seeds remain readable. The container uses the `basic` (1 GiB) instance to accommodate parsing the archive, and still stops after every run. This uses more resources than the old `lite` setting; actual trial cost and peak memory must be measured before scheduling. The trial still has no automatic schedule or production credentials.

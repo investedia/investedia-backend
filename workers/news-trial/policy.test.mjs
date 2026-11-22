@@ -1,4 +1,5 @@
 import test from "node:test";
+import { gzipSync } from "node:zlib";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { destination, egress, route } from "./policy.mjs";
@@ -53,10 +54,10 @@ function bindings(fail = false) {
     start(options) { starts.push(options); this.running = true; },
     async setInactivityTimeout() {}, async interceptOutboundHttps(host) { assert.equal(host, "*"); },
     getTcpPort() { return { fetch: async url => url.endsWith("/health") ? new Response() : fail
-      ? new Response("failed", { status: 422 }) : Response.json({ files: {}, summary: { trial: true } }) }; },
+      ? new Response("failed", { status: 422 }) : new Response(gzipSync(JSON.stringify({ files: {}, summary: { trial: true } })), { headers: { "X-Trial-Summary": JSON.stringify({ trial: true }) } }) }; },
     async destroy() { this.running = false; } };
   const env = { TRIAL_ENABLED: "true", GEMINI_API_KEY: "test-key", TRIAL_STORE: {
-    get: async name => name.endsWith("seed.json") ? { size: 2, arrayBuffer: async () => new TextEncoder().encode("{}") } : null,
+    get: async name => name.endsWith("seed.json.gz") ? { size: 2, arrayBuffer: async () => new TextEncoder().encode("{}") } : null,
     put: async (name, value) => puts.push(name),
   } };
   return { instance: new NewsTrial({ container: c, exports: { TrialEgress: () => ({}) } }, env), c, puts, starts };
@@ -64,7 +65,7 @@ function bindings(fail = false) {
 test("successful trial stores only isolated artifacts and stops the container", async () => {
   const b = bindings();
   assert.equal((await b.instance.fetch()).status, 200);
-  assert.deepEqual(b.puts, ["trial/latest.json", "trial/state.json"]);
+  assert.deepEqual(b.puts, ["trial/latest.json.gz", "trial/state.json.gz"]);
   assert.equal(b.starts[0].enableInternet, false);
   assert.equal(b.starts[0].env, undefined);
   assert.equal(b.c.running, false);
@@ -81,4 +82,14 @@ test("overlapping requests cannot start a second container", async () => {
   assert.equal((await b.instance.fetch()).status, 409);
   await first;
   assert.equal(b.starts.length, 1);
+});
+
+test("malformed compressed output or summary never advances state", async () => {
+  for (const [body, header] of [["not gzip", '{"trial":true}'], [gzipSync("{}"), "invalid JSON"], [gzipSync("{}"), "x".repeat(4097)]]) {
+    const b = bindings();
+    b.c.getTcpPort = () => ({ fetch: async url => url.endsWith("/health") ? new Response() : new Response(body, { headers: { "X-Trial-Summary": header } }) });
+    assert.equal((await b.instance.fetch()).status, 502);
+    assert.deepEqual(b.puts, []);
+    assert.equal(b.c.running, false);
+  }
 });
