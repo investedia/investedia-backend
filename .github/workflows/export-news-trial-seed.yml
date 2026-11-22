@@ -1,0 +1,68 @@
+# Manual read-only cache export. No generation, publishing, cache save or deployment.
+name: Export isolated news trial seed
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: export-news-trial-seed
+  cancel-in-progress: false
+jobs:
+  export:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: backend
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restore latest producer state without modifying the cache
+        id: state
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            backend/assets/globe/news-seen.json
+            backend/assets/globe/news-live.json
+            backend/assets/globe/news-48h.json
+            backend/assets/globe/news-archive.json
+            backend/assets/globe/news-status.json
+            backend/assets/globe/events
+            backend/assets/globe/threads.json
+            backend/assets/globe/news-gap-history-cache.json
+            backend/assets/globe/regional-backfill-state.json
+          key: trial-seed-export-${{ github.run_id }}
+          restore-keys: priority-news-state-
+      - name: Require a cache hit
+        if: steps.state.outputs.cache-matched-key == ''
+        run: echo '::error::Producer cache missing; no seed exported.' && exit 1
+      - name: Check successful recent priority state
+        working-directory: backend
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+          status = json.loads(Path('assets/globe/news-status.json').read_text(encoding='utf-8'))
+          value = status.get('tiers', {}).get('priority', {}).get('last_success')
+          if not value:
+              raise SystemExit('No successful priority run in saved state')
+          age = (datetime.now(timezone.utc) - datetime.fromisoformat(value.replace('Z', '+00:00'))).total_seconds()
+          if not 0 <= age <= 6 * 3600:
+              raise SystemExit('Saved priority state is stale or future-dated; no seed exported')
+          print('Saved priority last_success:', value)
+          PY
+      - name: Package saved state without changing article timestamps
+        working-directory: backend
+        run: python workers/news-trial/runner.py --pack ../trial-seed.json
+      - name: Retain seed privately for one day
+        uses: actions/upload-artifact@v4
+        with:
+          name: isolated-news-trial-seed
+          path: trial-seed.json
+          if-no-files-found: error
+          retention-days: 1
