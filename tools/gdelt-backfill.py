@@ -596,7 +596,7 @@ class ClaudeEditor:
 
 # Azure OpenAI (owner 22 Nov 2026: use the Azure credit). Same prompt, same validation, same budget and dollar cap;
 # only the HTTP call differs. Prices: $ per million input / output tokens, Azure standard (global) list price.
-AZURE_PRICES = {'gpt-4o-mini': (0.15, 0.60)}
+AZURE_PRICES = {'gpt-4o-mini': (0.15, 0.60), 'gpt-4.1-mini': (0.40, 1.60), 'gpt-4.1-nano': (0.10, 0.40), 'gpt-5-mini': (0.25, 2.00), 'gpt-5-nano': (0.05, 0.40)}
 AZURE_API_VERSION = '2024-10-21'
 
 
@@ -618,7 +618,10 @@ class AzureEditor(ClaudeEditor):
         worst = self.cost(len(prompt.encode()) // 2, AZURE_MAX_TOKENS)
         if self.spent + worst > self.max_usd: b.stop_reason = 'dollar_cap_reached'; raise BudgetExceeded(b.stop_reason)
         b.calls += 1; b.call_log.append({'call': b.calls, 'model': self.model, **b.context})
-        body = json.dumps({'messages': [{'role': 'user', 'content': prompt}], 'max_tokens': AZURE_MAX_TOKENS, 'temperature': 0.2}).encode()
+        msg = {'messages': [{'role': 'user', 'content': prompt}]}
+        if self.model.startswith('gpt-5'): msg.update(max_completion_tokens=AZURE_MAX_TOKENS, reasoning_effort='minimal')  # reasoning models: no temperature
+        else: msg.update(max_tokens=AZURE_MAX_TOKENS, temperature=0.2)
+        body = json.dumps(msg).encode()
         r = None
         for attempt in range(4):
             req = urllib.request.Request(self.url, data=body, method='POST', headers={'Content-Type': 'application/json', 'api-key': self.key})
@@ -943,8 +946,9 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         if not current or not live.get('meta', {}).get('fetched_at'): raise ValueError('valid_live_worker_feed_required')
         report['provider'] = provider
         if provider == 'azure':
-            editor = AzureEditor(os.environ.get('AZURE_OPENAI_ENDPOINT', ''), os.environ.get('AZURE_OPENAI_API_KEY', ''),
-                                 os.environ.get('AZURE_OPENAI_DEPLOYMENT', 'gpt-4o-mini'), budget, max_usd)
+            dep = os.environ.get('AZURE_OPENAI_DEPLOYMENT') or 'gpt-4.1-mini'
+            model = os.environ.get('AZURE_OPENAI_MODEL') or next((k for k in sorted(AZURE_PRICES, key=len, reverse=True) if dep.startswith(k)), dep)
+            editor = AzureEditor(os.environ.get('AZURE_OPENAI_ENDPOINT', ''), os.environ.get('AZURE_OPENAI_API_KEY', ''), dep, budget, max_usd, model=model)
             robot.gemini = editor
             report.update(selected_model=editor.model, model_order=[editor.model], max_usd=float(max_usd))
         elif provider == 'claude':

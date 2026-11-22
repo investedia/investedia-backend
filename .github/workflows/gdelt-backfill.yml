@@ -42,9 +42,9 @@ on:
         description: 'Optional exact successful hourly model; blank reads live/status model'
         default: ''
       writer:
-        description: 'Which model writes the summaries (claude: secret ANTHROPIC_API_KEY; azure-gpt-4o-mini: secrets AZURE_OPENAI_ENDPOINT, AZURE_OPENAI_API_KEY, optional AZURE_OPENAI_DEPLOYMENT)'
+        description: 'Which model writes the summaries (claude: secret ANTHROPIC_API_KEY; azure-openai: secrets AZURE_OPENAI_ENDPOINT, AZURE_OPENAI_API_KEY, AZURE_OPENAI_DEPLOYMENT e.g. gpt-4.1-mini)'
         type: choice
-        options: [claude-haiku-5-5, azure-gpt-4o-mini, gemini]
+        options: [claude-haiku-5-5, azure-openai, gemini]
         default: claude-haiku-5-5
       sources:
         description: 'english, translated (local-language press; English headlines marked translated; Claude writer only), or english+translated'
@@ -156,9 +156,9 @@ jobs:
           COUNTRY_CAP: ${{ inputs.country_cap }}
           GEMINI_API_KEY: ${{ inputs.writer == 'gemini' && secrets.GEMINI_API_KEY || '' }}
           ANTHROPIC_API_KEY: ${{ startsWith(inputs.writer, 'claude') && secrets.ANTHROPIC_API_KEY || '' }}
-          AZURE_OPENAI_ENDPOINT: ${{ inputs.writer == 'azure-gpt-4o-mini' && secrets.AZURE_OPENAI_ENDPOINT || '' }}
-          AZURE_OPENAI_API_KEY: ${{ inputs.writer == 'azure-gpt-4o-mini' && secrets.AZURE_OPENAI_API_KEY || '' }}
-          AZURE_OPENAI_DEPLOYMENT: ${{ inputs.writer == 'azure-gpt-4o-mini' && (secrets.AZURE_OPENAI_DEPLOYMENT || 'gpt-4o-mini') || '' }}
+          AZURE_OPENAI_ENDPOINT: ${{ inputs.writer == 'azure-openai' && secrets.AZURE_OPENAI_ENDPOINT || '' }}
+          AZURE_OPENAI_API_KEY: ${{ inputs.writer == 'azure-openai' && secrets.AZURE_OPENAI_API_KEY || '' }}
+          AZURE_OPENAI_DEPLOYMENT: ${{ inputs.writer == 'azure-openai' && (secrets.AZURE_OPENAI_DEPLOYMENT || 'gpt-4.1-mini') || '' }}
           WORKER_URL: ${{ secrets.WORKER_URL }}
           PIXABAY_KEY: ''
         run: >-
