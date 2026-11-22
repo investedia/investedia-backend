@@ -604,6 +604,7 @@ class AzureEditor(ClaudeEditor):
     """Azure OpenAI chat completions via the REST API (no extra package). Endpoint, key and deployment come from the environment."""
     def __init__(self, endpoint, key, deployment, budget, max_usd, model='gpt-4o-mini', opener=None):
         if model not in AZURE_PRICES: raise ValueError('unsupported_azure_model')
+        endpoint = '/'.join(str(endpoint).strip().split('/')[:3])  # keep https://host only, whatever path was copied from the portal
         if not str(endpoint).startswith('https://') or not key or not re.fullmatch(r'[A-Za-z0-9._-]{1,64}', str(deployment)): raise ValueError('azure_settings_invalid')
         self.client, self.model, self.budget, self.max_usd, self.effort = None, model, budget, float(max_usd), None
         self.spent = 0.0; self.unusable = Counter()
@@ -913,7 +914,7 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         provider='gemini', claude_model='claude-haiku-5-5', max_usd=3.0, claude_client=None, sources='english', country_cap=0):
     if sources not in ('english', 'english+translated', 'translated'): raise ValueError('sources_invalid')
     if 'translated' in sources and provider not in ('claude', 'azure'): raise ValueError('translated_sources_need_claude_writer')
-    if provider not in ('gemini', 'claude'): raise ValueError('provider_must_be_gemini_or_claude')
+    if provider not in ('gemini', 'claude', 'azure'): raise ValueError('provider_must_be_gemini_claude_or_azure')
     if not 0 < float(max_usd) <= 50: raise ValueError('max_usd_must_be_0_to_50')
     a, b = window(start, end); regions = regions_from(','.join(regions) if isinstance(regions, list) else regions)
     if not 1 <= gemini_calls <= HARD_CALL_LIMIT: raise ValueError('gemini_calls_must_be_1_to_80')
@@ -946,7 +947,7 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         if not current or not live.get('meta', {}).get('fetched_at'): raise ValueError('valid_live_worker_feed_required')
         report['provider'] = provider
         if provider == 'azure':
-            dep = os.environ.get('AZURE_OPENAI_DEPLOYMENT') or 'gpt-4.1-mini'
+            dep = (os.environ.get('AZURE_OPENAI_DEPLOYMENT') or 'gpt-4.1-mini').strip()
             model = os.environ.get('AZURE_OPENAI_MODEL') or next((k for k in sorted(AZURE_PRICES, key=len, reverse=True) if dep.startswith(k)), dep)
             editor = AzureEditor(os.environ.get('AZURE_OPENAI_ENDPOINT', ''), os.environ.get('AZURE_OPENAI_API_KEY', ''), dep, budget, max_usd, model=model)
             robot.gemini = editor
@@ -1108,8 +1109,9 @@ def main(argv=None):
                 provider=a.provider, claude_model=a.claude_model, max_usd=a.max_usd, sources=a.sources, country_cap=a.country_cap)
         print(json.dumps({k: r.get(k) for k in ('state', 'new_articles', 'by_region', 'gemini_calls', 'cost_usd', 'elapsed_seconds')}))
         return 0
-    except (ValueError, OSError):
-        print('GDELT backfill incomplete; inspect the saved report. No success claimed.', file=sys.stderr); return 1
+    except (ValueError, OSError) as e:
+        why = str(e) if isinstance(e, ValueError) and re.fullmatch(r'[A-Za-z0-9_]{1,160}', str(e)) else type(e).__name__
+        print('GDELT backfill incomplete (' + why + '); inspect the saved report. No success claimed.', file=sys.stderr); return 1
 
 
 if __name__ == '__main__': sys.exit(main())

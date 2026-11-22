@@ -594,3 +594,9 @@ class AzureEditorTests(unittest.TestCase):
         sink = []; e = m.AzureEditor('https://x.openai.azure.com', 'k', 'gpt-4o-mini', self.B(), 0.0001, opener=self.opener({}, sink))
         with self.assertRaises(m.BudgetExceeded): e('x' * 2000)
         self.assertEqual(sink, [])
+
+
+class AzureProviderAccepted(unittest.TestCase):
+    def test_run_accepts_azure_provider(self):
+        import inspect
+        self.assertIn("'azure'", inspect.getsource(m.run).split('provider_must_be')[0].splitlines()[-1])
