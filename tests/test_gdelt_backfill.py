@@ -37,7 +37,7 @@ def http_error(url, code, location=None):
 class WindowsAndRegions(unittest.TestCase):
     def test_window_is_inclusive_and_bounded_to_aug_oct(self):
         self.assertEqual((START, END), (datetime(2026, 1, 1, tzinfo=UTC), datetime(2026, 11, 15, tzinfo=UTC)))
-        for a, b in [('2021-12-31', '2022-01-02'), ('2026-11-01', '2026-11-15'), ('2026-09-10', '2026-09-01'), ('2026-9-1', '2026-09-02')]:
+        for a, b in [('2019-12-31', '2020-01-02'), ('2026-11-01', '2026-11-15'), ('2026-09-10', '2026-09-01'), ('2026-9-1', '2026-09-02')]:
             with self.assertRaises(ValueError): m.window(a, b)
 
     def test_file_plan_covers_every_day_first_then_adds_hours(self):
@@ -507,7 +507,7 @@ class ClaudeProviderTests(EndToEndTests):
 class CommandLineTests(unittest.TestCase):
     def test_confirm_word_bounds_and_settings_are_checked_before_any_request(self):
         with patch.object(m, 'run', side_effect=AssertionError('run started')), patch.dict('os.environ', {}, clear=True):
-            for argv in (['--confirm', 'yes'], ['--confirm', 'BACKFILL', '--gemini-calls', '81'], ['--confirm', 'BACKFILL', '--start', '2021-12-01'],
+            for argv in (['--confirm', 'yes'], ['--confirm', 'BACKFILL', '--gemini-calls', '81'], ['--confirm', 'BACKFILL', '--start', '2019-12-01'],
                          ['--confirm', 'BACKFILL', '--regions', 'atlantis'], ['--confirm', 'BACKFILL'],
                          ['--confirm', 'BACKFILL', '--phase', 'ingest', '--dry-run', 'true'],
                          ['--confirm', 'BACKFILL', '--provider', 'claude', '--max-usd', '0'],
@@ -536,7 +536,7 @@ class RecentWindowTests(unittest.TestCase):
         a, b = m.window('2026-11-19', '2026-11-20', today=today)
         self.assertEqual((b - a).days, 2)
         with self.assertRaises(ValueError): m.window('2026-11-15', '2026-11-16', today=today)
-        with self.assertRaises(ValueError): m.window('2021-12-20', '2021-12-21', today=today)
+        with self.assertRaises(ValueError): m.window('2019-12-20', '2019-12-21', today=today)
         m.window('2026-01-01', '2026-11-14', today=today)
 
 
