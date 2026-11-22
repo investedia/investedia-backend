@@ -15,7 +15,7 @@ on:
         type: boolean
         default: true
       start_date:
-        description: 'First day, YYYY-MM-DD (2020-01-01..2026-11-14, or within the last 3 days)'
+        description: 'First day, YYYY-MM-DD (2016-01-01..2026-11-14, or within the last 3 days)'
         default: '2026-06-01'
         required: true
       end_date:
@@ -68,7 +68,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     concurrency:
-      group: gdelt-backfill
+      group: gdelt-backfill-${{ inputs.start_date }}  # owner 22 Nov 2026: different years run side by side
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
@@ -99,7 +99,7 @@ jobs:
           import datetime as dt
           today = dt.datetime.now(dt.timezone.utc).date(); recent = (today - dt.timedelta(days=2)).isoformat()
           a, b = os.environ['START_DATE'], os.environ['END_DATE']
-          assert a <= b and (('2020-01-01' <= a and b <= '2026-11-14') or (recent <= a and b <= today.isoformat())), 'window must be inside 2020-01-01..2026-11-14 or the last 3 days'
+          assert a <= b and (('2016-01-01' <= a and b <= '2026-11-14') or (recent <= a and b <= today.isoformat())), 'window must be inside 2016-01-01..2026-11-14 or the last 3 days'
           assert re.fullmatch(r'[a-z_,\s]{1,200}', os.environ['REGIONS']), 'regions: names separated by commas'
           assert 0 <= int(os.environ['COUNTRY_CAP']) <= 200, 'country_cap must be 0–200'
           assert 0 < float(os.environ['MAX_USD']) <= 50, 'max_usd must be above 0 and at most 50'
@@ -133,8 +133,9 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: backend/.local/gdelt-cache
-          key: gdelt-discovery-${{ github.run_id }}-${{ github.run_attempt }}
-          restore-keys: gdelt-discovery-
+          key: gdelt-discovery-${{ inputs.start_date }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            gdelt-discovery-${{ inputs.start_date }}-
       - name: Install the official Anthropic SDK (Claude writer only)
         if: startsWith(inputs.writer, 'claude')
         run: python -m pip install --disable-pip-version-check -q 'anthropic==2.8.0'
@@ -179,7 +180,7 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: backend/.local/gdelt-cache
-          key: gdelt-discovery-${{ github.run_id }}-${{ github.run_attempt }}
+          key: gdelt-discovery-${{ inputs.start_date }}-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Upload complete or partial review artifact
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
