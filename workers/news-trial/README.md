@@ -33,7 +33,7 @@ Use Wrangler **4.136.0 or later** for the direct Durable Object Container API. C
 
 Create only the separate private trial bucket and deploy only this configuration. Keep its preview/public R2 access off. Add `TRIAL_TOKEN` (new independent random token) and `GEMINI_API_KEY` through Cloudflare's secret store; never put values in files or chat. No production credential is needed. Keep generation disabled for the first health check.
 
-The manual **Export isolated news trial seed** GitHub workflow restores the latest producer cache read-only, rejects missing or more-than-six-hour-old priority success, and packages a private `isolated-news-trial-seed` artifact retained for one day. Run it on `main` after a successful priority run. It does not call Gemini, save the cache, publish, or deploy. Download and inspect the artifact before uploading the seed to the isolated R2 bucket.
+The manual **Export isolated news trial seed** GitHub workflow restores the exact cache of the latest successful priority workflow run read-only (no broad prefix fallback to unrelated backfills), rejects missing or more-than-six-hour-old priority success, and packages a private `isolated-news-trial-seed` artifact retained for one day. Run it on `main` after a successful priority run. It does not call Gemini, save the cache, publish, or deploy. Download and inspect the artifact before uploading the seed to the isolated R2 bucket.
 
 Prepare a fresh seed from the latest successful producer cache, not an old repository snapshot. Restore the cache into a disposable checkout without running the publisher, then execute:
 
