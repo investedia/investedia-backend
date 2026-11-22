@@ -914,7 +914,7 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         provider='gemini', claude_model='claude-haiku-5-5', max_usd=3.0, claude_client=None, sources='english', country_cap=0):
     if sources not in ('english', 'english+translated', 'translated'): raise ValueError('sources_invalid')
     if 'translated' in sources and provider not in ('claude', 'azure'): raise ValueError('translated_sources_need_claude_writer')
-    if provider not in ('gemini', 'claude'): raise ValueError('provider_must_be_gemini_or_claude')
+    if provider not in ('gemini', 'claude', 'azure'): raise ValueError('provider_must_be_gemini_claude_or_azure')
     if not 0 < float(max_usd) <= 50: raise ValueError('max_usd_must_be_0_to_50')
     a, b = window(start, end); regions = regions_from(','.join(regions) if isinstance(regions, list) else regions)
     if not 1 <= gemini_calls <= HARD_CALL_LIMIT: raise ValueError('gemini_calls_must_be_1_to_80')
