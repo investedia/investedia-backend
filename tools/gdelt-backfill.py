@@ -548,7 +548,7 @@ class ClaudeEditor:
         self.spent = 0.0; self.unusable = Counter()
 
     def cost(self, tokens_in, tokens_out):
-        p_in, p_out = CLAUDE_PRICES[self.model]
+        p_in, p_out = (CLAUDE_PRICES.get(self.model) or AZURE_PRICES[self.model])
         return tokens_in * p_in / 1e6 + tokens_out * p_out / 1e6
 
     def __call__(self, prompt):
@@ -592,6 +592,60 @@ class ClaudeEditor:
             except (KeyError, TypeError, ValueError): continue
             if 0 <= i < len(items) and 12 <= len(t) <= 300 and 40 <= len(d) <= 600: out[i] = (t, d[:400])
         return out
+
+
+# Azure OpenAI (owner 22 Nov 2026: use the Azure credit). Same prompt, same validation, same budget and dollar cap;
+# only the HTTP call differs. Prices: $ per million input / output tokens, Azure standard (global) list price.
+AZURE_PRICES = {'gpt-4o-mini': (0.15, 0.60), 'gpt-4.1-mini': (0.40, 1.60), 'gpt-4.1-nano': (0.10, 0.40), 'gpt-5-mini': (0.25, 2.00), 'gpt-5-nano': (0.05, 0.40)}
+AZURE_API_VERSION = '2024-10-21'
+
+
+class AzureEditor(ClaudeEditor):
+    """Azure OpenAI chat completions via the REST API (no extra package). Endpoint, key and deployment come from the environment."""
+    def __init__(self, endpoint, key, deployment, budget, max_usd, model='gpt-4o-mini', opener=None):
+        if model not in AZURE_PRICES: raise ValueError('unsupported_azure_model')
+        if not str(endpoint).startswith('https://') or not key or not re.fullmatch(r'[A-Za-z0-9._-]{1,64}', str(deployment)): raise ValueError('azure_settings_invalid')
+        self.client, self.model, self.budget, self.max_usd, self.effort = None, model, budget, float(max_usd), None
+        self.spent = 0.0; self.unusable = Counter()
+        self.url = '%s/openai/deployments/%s/chat/completions?api-version=%s' % (str(endpoint).rstrip('/'), deployment, AZURE_API_VERSION)
+        self.key = key; self.opener = opener or urllib.request.urlopen
+
+    def __call__(self, prompt):
+        b = self.budget
+        if b.deadline is not None and time.monotonic() >= b.deadline: b.stop_reason = 'run_deadline_reached'; raise BudgetExceeded(b.stop_reason)
+        if b.calls >= b.limit: b.stop_reason = 'fixed_model_call_budget_exhausted'; raise BudgetExceeded(b.stop_reason)
+        if len(prompt.encode()) > regional.MAX_PROMPT_BYTES: b.stop_reason = 'model_prompt_limit'; raise BudgetExceeded(b.stop_reason)
+        worst = self.cost(len(prompt.encode()) // 2, AZURE_MAX_TOKENS)
+        if self.spent + worst > self.max_usd: b.stop_reason = 'dollar_cap_reached'; raise BudgetExceeded(b.stop_reason)
+        b.calls += 1; b.call_log.append({'call': b.calls, 'model': self.model, **b.context})
+        msg = {'messages': [{'role': 'user', 'content': prompt}]}
+        if self.model.startswith('gpt-5'): msg.update(max_completion_tokens=AZURE_MAX_TOKENS, reasoning_effort='minimal')  # reasoning models: no temperature
+        else: msg.update(max_tokens=AZURE_MAX_TOKENS, temperature=0.2)
+        body = json.dumps(msg).encode()
+        r = None
+        for attempt in range(4):
+            req = urllib.request.Request(self.url, data=body, method='POST', headers={'Content-Type': 'application/json', 'api-key': self.key})
+            try:
+                with self.opener(req, timeout=180) as resp: r = json.loads(resp.read().decode()); break
+            except urllib.error.HTTPError as e:
+                if e.code in (429, 500, 502, 503, 504) and attempt < 3: time.sleep(2 * 2 ** attempt); continue
+                b.failed[self.model] = 'http_%d' % e.code; raise RuntimeError('azure_request_failed') from None
+            except (urllib.error.URLError, TimeoutError, OSError) as e:
+                if attempt < 3: time.sleep(2 * 2 ** attempt); continue
+                b.failed[self.model] = type(e).__name__; raise RuntimeError('azure_request_failed') from None
+        usage = (r or {}).get('usage') or {}
+        t_in, t_out = int(usage.get('prompt_tokens') or 0), int(usage.get('completion_tokens') or 0)
+        b.usage['input_tokens'] += t_in; b.usage['output_tokens'] += t_out; b.usage_known_calls += 1
+        self.spent += self.cost(t_in, t_out)
+        robot.status['gemini_model'] = self.model
+        choice = ((r or {}).get('choices') or [{}])[0]
+        if choice.get('finish_reason') != 'stop': self.unusable['stop_' + str(choice.get('finish_reason'))] += 1; return []
+        text = ((choice.get('message') or {}).get('content') or '')
+        try: return json.loads(re.sub(r'^```(json)?|```$', '', text.strip()))
+        except ValueError: self.unusable['invalid_json'] += 1; return []
+
+
+AZURE_MAX_TOKENS = 16000
 
 
 def provenance(story, original, now):
@@ -858,7 +912,7 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         gdelt_get=None, page_get=None, model_get=None, library_push=None, sleep=time.sleep, state_root=None, ingest=True,
         provider='gemini', claude_model='claude-haiku-5-5', max_usd=3.0, claude_client=None, sources='english', country_cap=0):
     if sources not in ('english', 'english+translated', 'translated'): raise ValueError('sources_invalid')
-    if 'translated' in sources and provider != 'claude': raise ValueError('translated_sources_need_claude_writer')
+    if 'translated' in sources and provider not in ('claude', 'azure'): raise ValueError('translated_sources_need_claude_writer')
     if provider not in ('gemini', 'claude'): raise ValueError('provider_must_be_gemini_or_claude')
     if not 0 < float(max_usd) <= 50: raise ValueError('max_usd_must_be_0_to_50')
     a, b = window(start, end); regions = regions_from(','.join(regions) if isinstance(regions, list) else regions)
@@ -891,7 +945,13 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
         current = live.get('data', {}).get('stories', [])
         if not current or not live.get('meta', {}).get('fetched_at'): raise ValueError('valid_live_worker_feed_required')
         report['provider'] = provider
-        if provider == 'claude':
+        if provider == 'azure':
+            dep = os.environ.get('AZURE_OPENAI_DEPLOYMENT') or 'gpt-4.1-mini'
+            model = os.environ.get('AZURE_OPENAI_MODEL') or next((k for k in sorted(AZURE_PRICES, key=len, reverse=True) if dep.startswith(k)), dep)
+            editor = AzureEditor(os.environ.get('AZURE_OPENAI_ENDPOINT', ''), os.environ.get('AZURE_OPENAI_API_KEY', ''), dep, budget, max_usd, model=model)
+            robot.gemini = editor
+            report.update(selected_model=editor.model, model_order=[editor.model], max_usd=float(max_usd))
+        elif provider == 'claude':
             if claude_client is None:
                 import anthropic  # official SDK; reads ANTHROPIC_API_KEY from the environment
                 claude_client = anthropic.Anthropic(max_retries=3, timeout=180.0)
@@ -1009,7 +1069,7 @@ def main(argv=None):
     p.add_argument('--gemini-calls', type=int, default=DEFAULT_CALLS); p.add_argument('--batch-size', type=int, default=MODEL_BATCH)
     p.add_argument('--gdelt-files', type=int, default=DEFAULT_GDELT_FILES); p.add_argument('--max-minutes', type=int, default=100)
     p.add_argument('--phase', choices=['all', 'generate', 'ingest', 'rescue'], default='all')
-    p.add_argument('--provider', choices=['gemini', 'claude'], default='gemini')
+    p.add_argument('--provider', choices=['gemini', 'claude', 'azure'], default='gemini')
     p.add_argument('--claude-model', choices=sorted(CLAUDE_PRICES), default='claude-haiku-5-5')
     p.add_argument('--max-usd', type=float, default=3.0); p.add_argument('--country-cap', type=int, default=0)
     p.add_argument('--sources', choices=['english', 'english+translated', 'translated'], default='english')
@@ -1039,7 +1099,7 @@ def main(argv=None):
         except (ValueError, OSError, KeyError, TypeError) as e:
             print('GDELT backfill ingestion incomplete: ' + (str(e) if isinstance(e, ValueError) and re.fullmatch(r'[A-Za-z0-9_]{1,160}', str(e)) else type(e).__name__), file=sys.stderr)
             return 1
-    required = ['ANTHROPIC_API_KEY' if a.provider == 'claude' else 'GEMINI_API_KEY', 'WORKER_URL'] + (['NEWS_INGEST_TOKEN'] if a.dry_run == 'false' and a.phase == 'all' else [])
+    required = {'claude': ['ANTHROPIC_API_KEY'], 'azure': ['AZURE_OPENAI_ENDPOINT', 'AZURE_OPENAI_API_KEY']}.get(a.provider, ['GEMINI_API_KEY']) + ['WORKER_URL'] + (['NEWS_INGEST_TOKEN'] if a.dry_run == 'false' and a.phase == 'all' else [])
     missing = [k for k in required if not os.environ.get(k)]
     if missing: p.error('missing_required_settings: ' + ', '.join(missing))
     try:

@@ -560,3 +560,37 @@ class RecentIngestTests(unittest.TestCase):
         self.assertTrue(m.valid_backfilled(story('2026-10-25T10:00:00Z'), now))
         self.assertFalse(m.valid_backfilled(story('2026-11-16T10:00:00Z'), now))
         self.assertFalse(m.valid_backfilled(story('2026-11-20T15:00:00Z'), now))
+
+
+class AzureEditorTests(unittest.TestCase):
+    """Owner 22 Nov 2026: Azure OpenAI gpt-4o-mini as a writer (same budget and dollar cap as Claude)."""
+    class B:
+        def __init__(s): s.deadline = None; s.calls = 0; s.limit = 5; s.call_log = []; s.context = {}; s.failed = {}; s.usage = {'input_tokens': 0, 'output_tokens': 0}; s.usage_known_calls = 0; s.stop_reason = None
+
+    def opener(self, payload, sink):
+        class R(io.BytesIO):
+            def __enter__(s): return s
+            def __exit__(s, *a): return False
+        def op(req, timeout=0): sink.append((req.full_url, dict(req.header_items()), json.loads(req.data))); return R(json.dumps(payload).encode())
+        return op
+
+    def test_call_cost_and_parse(self):
+        sink = []; payload = {'choices': [{'finish_reason': 'stop', 'message': {'content': '[{"i": 1}]'}}], 'usage': {'prompt_tokens': 1000, 'completion_tokens': 500}}
+        e = m.AzureEditor('https://x.openai.azure.com/', 'k', 'gpt-4o-mini', self.B(), 1, opener=self.opener(payload, sink))
+        self.assertEqual(e('hello'), [{'i': 1}])
+        self.assertAlmostEqual(e.spent, 1000 * 0.15 / 1e6 + 500 * 0.60 / 1e6)
+        url, headers, body = sink[0]
+        self.assertTrue(url.startswith('https://x.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version='))
+        self.assertEqual(headers.get('Api-key'), 'k'); self.assertEqual(body['messages'][0]['content'], 'hello')
+
+    def test_cut_off_and_bad_settings(self):
+        payload = {'choices': [{'finish_reason': 'length', 'message': {'content': '[{"i"'}}], 'usage': {}}
+        e = m.AzureEditor('https://x.openai.azure.com', 'k', 'gpt-4o-mini', self.B(), 1, opener=self.opener(payload, []))
+        self.assertEqual(e('hi'), []); self.assertEqual(e.unusable['stop_length'], 1)
+        for args in (('http://x', 'k', 'd'), ('https://x', '', 'd'), ('https://x', 'k', 'bad name/')):
+            with self.assertRaises(ValueError): m.AzureEditor(*args, self.B(), 1)
+
+    def test_dollar_cap(self):
+        sink = []; e = m.AzureEditor('https://x.openai.azure.com', 'k', 'gpt-4o-mini', self.B(), 0.0001, opener=self.opener({}, sink))
+        with self.assertRaises(m.BudgetExceeded): e('x' * 2000)
+        self.assertEqual(sink, [])
