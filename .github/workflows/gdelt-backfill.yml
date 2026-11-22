@@ -42,9 +42,9 @@ on:
         description: 'Optional exact successful hourly model; blank reads live/status model'
         default: ''
       writer:
-        description: 'Which model writes the summaries (claude uses secret ANTHROPIC_API_KEY and leaves the Gemini quota to live news)'
+        description: 'Which model writes the summaries (claude: secret ANTHROPIC_API_KEY; azure-gpt-4o-mini: secrets AZURE_OPENAI_ENDPOINT, AZURE_OPENAI_API_KEY, optional AZURE_OPENAI_DEPLOYMENT)'
         type: choice
-        options: [claude-haiku-5-5, gemini]
+        options: [claude-haiku-5-5, azure-gpt-4o-mini, gemini]
         default: claude-haiku-5-5
       sources:
         description: 'english, translated (local-language press; English headlines marked translated; Claude writer only), or english+translated'
@@ -136,7 +136,7 @@ jobs:
           key: gdelt-discovery-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: gdelt-discovery-
       - name: Install the official Anthropic SDK (Claude writer only)
-        if: inputs.writer != 'gemini'
+        if: startsWith(inputs.writer, 'claude')
         run: python -m pip install --disable-pip-version-check -q 'anthropic==2.8.0'
       - name: Discover and generate (review artifact only)
         working-directory: backend
@@ -155,12 +155,15 @@ jobs:
           SOURCES: ${{ inputs.sources }}
           COUNTRY_CAP: ${{ inputs.country_cap }}
           GEMINI_API_KEY: ${{ inputs.writer == 'gemini' && secrets.GEMINI_API_KEY || '' }}
-          ANTHROPIC_API_KEY: ${{ inputs.writer != 'gemini' && secrets.ANTHROPIC_API_KEY || '' }}
+          ANTHROPIC_API_KEY: ${{ startsWith(inputs.writer, 'claude') && secrets.ANTHROPIC_API_KEY || '' }}
+          AZURE_OPENAI_ENDPOINT: ${{ inputs.writer == 'azure-gpt-4o-mini' && secrets.AZURE_OPENAI_ENDPOINT || '' }}
+          AZURE_OPENAI_API_KEY: ${{ inputs.writer == 'azure-gpt-4o-mini' && secrets.AZURE_OPENAI_API_KEY || '' }}
+          AZURE_OPENAI_DEPLOYMENT: ${{ inputs.writer == 'azure-gpt-4o-mini' && (secrets.AZURE_OPENAI_DEPLOYMENT || 'gpt-4o-mini') || '' }}
           WORKER_URL: ${{ secrets.WORKER_URL }}
           PIXABAY_KEY: ''
         run: >-
           python tools/gdelt-backfill.py --phase generate
-          $( [ "$WRITER" = gemini ] && echo --provider gemini || echo --provider claude --claude-model "$WRITER" ) --max-usd "$MAX_USD" --sources "$SOURCES" --country-cap "$COUNTRY_CAP"
+          $( case "$WRITER" in gemini) echo --provider gemini;; azure-*) echo --provider azure;; *) echo --provider claude --claude-model "$WRITER";; esac ) --max-usd "$MAX_USD" --sources "$SOURCES" --country-cap "$COUNTRY_CAP"
           --confirm "$CONFIRM" --dry-run "$DRY_RUN"
           --start "$START_DATE" --end "$END_DATE" --regions "$REGIONS"
           --gemini-calls "$CALLS" --batch-size "$BATCH" --gdelt-files "$GDELT" --max-minutes 100
