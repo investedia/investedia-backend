@@ -222,7 +222,8 @@ async function geminiFailure(response) {
   let reason = !data ? "unreadable_provider_error" : "request_rejected";
   if (/api[_ ]?key/.test(message) && /invalid|not valid|expired|not found/.test(message)) reason = "key_rejected";
   else if (/location|region|country/.test(message) && /not available|unsupported|not supported|restricted|not enabled/.test(message)) reason = "region_restricted";
-  else if (response.status === 429 || provider_status === "RESOURCE_EXHAUSTED" || /quota|billing/.test(message)) reason = "quota_or_rate_limit";
+  else if (/billing/.test(message)) reason = "billing_restricted";
+  else if (response.status === 429 || provider_status === "RESOURCE_EXHAUSTED" || /quota/.test(message)) reason = "quota_or_rate_limit";
   else if (response.status === 403 || provider_status === "PERMISSION_DENIED") reason = "permission_denied";
   else if (/overload|capacity/.test(message)) reason = "model_capacity";
   else if (data && (response.status >= 500 || provider_status === "UNAVAILABLE")) reason = "upstream_unavailable";

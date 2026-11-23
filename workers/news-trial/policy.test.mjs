@@ -354,6 +354,7 @@ test("news provider failures log fixed categories without messages, keys or prom
       [400, "INVALID_ARGUMENT", "API key not valid never-log-this", "key_rejected"],
       [400, "FAILED_PRECONDITION", "region not supported never-log-this", "region_restricted"],
       [429, "RESOURCE_EXHAUSTED", "quota exceeded never-log-this", "quota_or_rate_limit"],
+      [400, "FAILED_PRECONDITION", "Billing is not enabled never-log-this", "billing_restricted"],
       [403, "PERMISSION_DENIED", "not permitted never-log-this", "permission_denied"],
       [400, "INVALID_ARGUMENT", "invalid request never-log-this", "request_invalid"],
       [503, "PRIVATE_STATUS", "unavailable never-log-this", "upstream_unavailable"],
