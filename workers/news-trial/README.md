@@ -94,3 +94,18 @@ Before building, run `python tools/cloudflare/stage_frontend.py <frontend-checko
 Upload a gzip JSON seed to `trial/<job>/seed.json.gz`: markets requires `files.markets.json` from the real frontend snapshot; the other jobs start with `{"files":{}}`. Never submit invented prices. Successful runs retain their own state; failed generators retain the previous good R2 state. Results are available through `/result?job=<job>`. World Bank and Yahoo access is GET-only on their fixed data API paths; source credentials are stripped. Real deployed comparisons, production storage/read adapters and the final coordinated scheduler switch remain required before retiring any GitHub job.
 
 The subsequent calendar retest returned FRED HTTP 200, 39 official events, no official-source failures and zero FRED failures. That establishes that the stored FRED key currently works; it does not establish the earlier rejection's cause or a completed production cutover.
+
+
+## Full-article storage trial
+
+After a successful news generation, the container exports full articles in bounded pages. The Worker writes them to private `trial/library/articles/<id>.json` objects before advancing its saved producer state. Existing saved articles remain byte-identical, matching the GitHub publisher's first-copy behavior. The large archive remains opaque gzip in the Worker; no R2 or repository credentials enter the container. Only news jobs export articles. A failed export leaves the previous producer state in place; complete individual article objects already written may remain as isolated artifacts and are safe to reuse.
+
+`GET /article?id=<id>` reads one saved full article and requires the same trial bearer token as every other endpoint. Missing/malformed IDs fail closed; this endpoint is not a public website feed. No production API, website URL, scheduler or GitHub publishing workflow changes. Historical static files stay available. Production read routing, library index updates, backfill coverage and website previews remain necessary before retiring the old publishing job.
+
+Real PR #118 trials passed: 951 market assets, 29 ECB currencies (provider date 23 November 2026), 224 country records with zero refresh failures and 243 history files containing 35,452 dated observations. Country basics and history remain review-only. The trial was disabled afterward; these results do not mean the production data schedules have moved.
+
+
+`POST /run?job=library` copies complete saved articles into the same trial R2 article namespace without fetching sources, generating text or publishing. Seed `trial/library/seed.json.gz` with the validated news-state export. The adapter reuses the existing publisher's `robot_stories` selection unchanged and preserves every article field/date. Its producer-state prefix is separate, but it shares the news Durable Object lock to serialize immutable article writes. It has no Gemini, ingest or repository credentials. This provides an AI-free storage verification/backfill path while generation is unavailable; it does not retire the live GitHub publisher.
+
+
+Fresh-state news retries on 23 November 2026 remained unsuccessful: priority fetched 226 items (30 candidates, five failed sources) and broad fetched 2,437 items (200 candidates, 19 failed sources). Both reported `gemini_ok=false` and generation HTTP 503, returned a producer-stage failure and retained the last good trial result. This does not establish successful source parity, a global provider outage or a completed news migration. Production GitHub schedules remain in place.

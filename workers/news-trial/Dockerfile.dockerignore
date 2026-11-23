@@ -26,3 +26,5 @@
 !.local/cloudflare-frontend/scripts/fx_ecb.py
 !.local/cloudflare-frontend/scripts/economy_history.py
 !.local/cloudflare-frontend/data/registry.json
+
+!tools/publish_library.py

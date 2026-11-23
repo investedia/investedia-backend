@@ -1,4 +1,5 @@
 import { DurableObject, WorkerEntrypoint } from "cloudflare:workers";
+import { storeTrialLibrary } from "./library.mjs";
 import { egress, route, trialTier, trialJob, safeDiagnostic } from "./policy.mjs";
 
 export class TrialEgress extends WorkerEntrypoint {
@@ -51,6 +52,11 @@ export class NewsTrial extends DurableObject {
       if (!header || header.length > 4096) throw new Error("Invalid summary");
       const summary = JSON.parse(header);
       if (summary?.trial !== true || (job === "news" ? summary.tier !== tier : summary.job !== job)) throw new Error("Invalid result");
+      if (["news", "library"].includes(job)) {
+        stage = "library";
+        const library = await storeTrialLibrary(port, this.env.TRIAL_STORE, summary.library_articles);
+        summary.library_written = library.written;
+      }
       // Keep the large archive opaque here; parsing it in the Worker can exhaust memory.
       stage = "storage";
       await this.env.TRIAL_STORE.put(`${prefix}/latest.json.gz`, result, { httpMetadata: { contentType: "application/gzip" } });

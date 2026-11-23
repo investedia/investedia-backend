@@ -2,6 +2,7 @@
 import argparse
 import gzip
 import io
+import importlib.util
 import json
 import os
 from pathlib import Path
@@ -256,31 +257,82 @@ def run_data(state, job, base=BASE):
         return result
 
 
+LIBRARY_SOURCES = ("tools/publish_library.py",)
+
+
+def run_library(state, base=BASE):
+    validate(state)
+    started = datetime.now(timezone.utc)
+    spec = importlib.util.spec_from_file_location("trial_existing_publisher", base / LIBRARY_SOURCES[0])
+    publisher = importlib.util.module_from_spec(spec); spec.loader.exec_module(publisher)
+    with tempfile.TemporaryDirectory(prefix="library-trial-") as tmp:
+        root = Path(tmp); g = root / "assets/globe"; g.mkdir(parents=True)
+        for name in publisher.FEEDS:
+            (g / name).write_text(json.dumps(state["files"].get(name, {}), ensure_ascii=False), encoding="utf-8")
+        articles = publisher.robot_stories(root)
+    if not articles:
+        raise ValueError("No complete saved articles")
+    files = {**state["files"], **{"library/" + sid + ".json": article for sid, article in articles.items()}}
+    return {"files": files, "summary": {"trial": True, "job": "library", "gemini_calls": 0,
+            "started_at": started.isoformat(), "finished_at": datetime.now(timezone.utc).isoformat(),
+            "articles": len(articles)}}
+
+
+def library_page(articles, cursor):
+    if not isinstance(cursor, int) or cursor < 0 or cursor > len(articles) or len(articles) > 10000:
+        raise ValueError("Invalid library cursor")
+    rows = articles[cursor:cursor + 10]
+    for article in rows:
+        if (not isinstance(article, dict) or not re.fullmatch(r"[A-Za-z0-9_-]{4,80}", str(article.get("id", "")))
+                or not article.get("headline") or not article.get("published_at") or not article.get("source")
+                or not article.get("location") or article.get("demo")
+                or len(json.dumps(article, ensure_ascii=False).encode()) > 512 * 1024):
+            raise ValueError("Invalid library article")
+    return {"articles": rows, "next": cursor + len(rows), "total": len(articles)}
+
+
 class Handler(BaseHTTPRequestHandler):
     def log_message(self, *args):
         pass
 
     def do_GET(self):
-        self.send_response(200 if self.path == "/health" else 404)
-        self.end_headers()
+        if self.path == "/health":
+            self.send_response(200); self.end_headers(); return
+        try:
+            url = urlsplit(self.path); query = parse_qs(url.query)
+            cursors = query.get("cursor", [])
+            if url.path != "/library" or set(query) != {"cursor"} or len(cursors) != 1 or not cursors[0].isascii() or not cursors[0].isdigit():
+                raise ValueError("Invalid library request")
+            body = json.dumps(library_page(getattr(self.server, "library", []), int(cursors[0])), ensure_ascii=False).encode()
+            self.send_response(200)
+        except (ValueError, TypeError):
+            body = b'{"error":"Invalid library request"}'; self.send_response(400)
+        self.send_header("Content-Type", "application/json")
+        self.send_header("Content-Length", str(len(body))); self.end_headers(); self.wfile.write(body)
 
     def do_POST(self):
+        self.server.library = []
         try:
             length = int(self.headers.get("Content-Length", "0"))
             url = urlsplit(self.path)
             query = parse_qs(url.query)
             jobs = query.get("job", ["news"])
             tiers = query.get("tier", ["priority"])
-            if url.path != "/run" or len(jobs) != 1 or jobs[0] not in ("news", "calendar", *DATA_JOBS) or len(tiers) != 1 or tiers[0] not in ("priority", "broad") or not 0 < length <= LIMIT:
+            if url.path != "/run" or len(jobs) != 1 or jobs[0] not in ("news", "calendar", "library", *DATA_JOBS) or len(tiers) != 1 or tiers[0] not in ("priority", "broad") or not 0 < length <= LIMIT:
                 raise ValueError("Invalid request")
             raw = self.rfile.read(length)
-            if jobs[0] in DATA_JOBS:
+            if jobs[0] == "library":
+                result = run_library(decode_bundle(raw))
+            elif jobs[0] in DATA_JOBS:
                 job = jobs[0]
                 result = run_data(decode_bundle(raw, lambda value: validate_data(value, job)), job)
             elif jobs[0] == "calendar":
                 result = run_calendar(decode_bundle(raw, validate_calendar), fred_enabled=self.headers.get("X-Fred-Enabled") == "1")
             else:
                 result = run(decode_bundle(raw), tier=tiers[0])
+            if jobs[0] in ("news", "library"):
+                self.server.library = [data for name, data in sorted(result["files"].items()) if name.startswith("library/")]
+                result["summary"]["library_articles"] = len(self.server.library)
             body = encode_bundle(result)
             self.send_response(200)
             self.send_header("X-Trial-Summary", json.dumps(result["summary"], ensure_ascii=True))
@@ -309,7 +361,7 @@ if __name__ == "__main__":
         args.pack.write_bytes(body)
         print("Wrote compressed trial seed locally:", len(body), "bytes; no articles generated or published")
     elif args.preflight:
-        for name in SOURCES + CALENDAR_SOURCES + tuple(name for sources in DATA_SOURCES.values() for name in sources):
+        for name in SOURCES + CALENDAR_SOURCES + LIBRARY_SOURCES + tuple(name for sources in DATA_SOURCES.values() for name in sources):
             if not (BASE / name).is_file():
                 raise SystemExit("Missing trial source: " + name)
         print("Offline preflight passed")

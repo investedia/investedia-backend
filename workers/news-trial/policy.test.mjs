@@ -46,7 +46,8 @@ test("disabled egress and unauthenticated/default-disabled routes make no bindin
 const source = (await readFile(new URL("./index.js", import.meta.url), "utf8"))
   .replace('import { DurableObject, WorkerEntrypoint } from "cloudflare:workers";',
     'class DurableObject { constructor(ctx, env) { this.ctx=ctx; this.env=env; } } class WorkerEntrypoint {}')
-  .replace('"./policy.mjs"', JSON.stringify(new URL("./policy.mjs", import.meta.url).href));
+  .replace('"./policy.mjs"', JSON.stringify(new URL("./policy.mjs", import.meta.url).href))
+  .replace('"./library.mjs"', JSON.stringify(new URL("./library.mjs", import.meta.url).href));
 const { NewsTrial } = await import(`data:text/javascript;base64,${Buffer.from(source).toString("base64")}`);
 function bindings(fail = false) {
   const puts = [], starts = [];
@@ -55,9 +56,10 @@ function bindings(fail = false) {
     async setInactivityTimeout() {}, async interceptAllOutboundHttp() {}, async interceptOutboundHttps(host) { assert.equal(host, "*"); },
     getTcpPort() { return { fetch: async url => {
       if (url.endsWith("/health")) return new Response();
+      if (new URL(url).pathname === "/library") return Response.json({ articles: [], next: 0, total: 0 });
       if (fail) return new Response("failed", { status: 422 });
       const u = new URL(url);
-      const summary = u.searchParams.get("job") && u.searchParams.get("job") !== "news" ? { trial: true, job: u.searchParams.get("job") } : { trial: true, tier: u.searchParams.get("tier") || "priority" };
+      const summary = u.searchParams.get("job") && u.searchParams.get("job") !== "news" ? { trial: true, job: u.searchParams.get("job"), library_articles: 0 } : { trial: true, tier: u.searchParams.get("tier") || "priority", library_articles: 0 };
       return new Response(gzipSync(JSON.stringify({ files: {}, summary })), { headers: { "X-Trial-Summary": JSON.stringify(summary) } });
     } }; },
     async destroy() { this.running = false; } };
@@ -217,4 +219,33 @@ test("data providers allow only fixed read-only API paths and receive no credent
   }
   for (const url of ["https://api.worldbank.org/admin", "https://query1.finance.yahoo.com/account", "https://query2.finance.yahoo.com/v8/finance/chart/x"])
     assert.equal(destination(url, "GET"), null);
+});
+
+
+test("library export failure keeps the previous producer state and stops the container", async () => {
+  const b = bindings();
+  b.c.getTcpPort = () => ({ fetch: async url => {
+    const path = new URL(url).pathname;
+    if (path === "/health") return new Response();
+    if (path === "/library") return new Response("unavailable", { status: 500 });
+    const summary = { trial: true, tier: "priority", library_articles: 1 };
+    return new Response(gzipSync("{}"), { headers: { "X-Trial-Summary": JSON.stringify(summary) } });
+  } });
+  const response = await b.instance.fetch();
+  assert.equal(response.status, 502);
+  assert.equal((await response.json()).stage, "library");
+  assert.deepEqual(b.puts, []);
+  assert.equal(b.c.running, false);
+});
+
+test("saved library transfer requires no AI key and shares the news lock", async () => {
+  const b = bindings(); delete b.instance.env.GEMINI_API_KEY;
+  assert.equal((await b.instance.fetch(new Request("https://trial/run?job=library"))).status, 200);
+  assert.deepEqual(b.puts, ["trial/library/latest.json.gz", "trial/library/state.json.gz"]);
+  let lock;
+  const env = { TRIAL_TOKEN: "test-token", TRIAL_ENABLED: "true", TRIAL_CONTAINER: {
+    getByName: name => { lock = name; return { fetch: async () => new Response() }; },
+  } };
+  const response = await route(new Request("https://trial/run?job=library", { method: "POST", headers: { Authorization: "Bearer test-token" } }), env);
+  assert.equal(response.status, 200); assert.equal(lock, "priority-trial");
 });
