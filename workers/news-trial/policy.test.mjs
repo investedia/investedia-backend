@@ -49,17 +49,17 @@ const source = (await readFile(new URL("./index.js", import.meta.url), "utf8"))
   .replace('"./policy.mjs"', JSON.stringify(new URL("./policy.mjs", import.meta.url).href))
   .replace('"./library.mjs"', JSON.stringify(new URL("./library.mjs", import.meta.url).href));
 const { NewsTrial } = await import(`data:text/javascript;base64,${Buffer.from(source).toString("base64")}`);
-function bindings(fail = false) {
+function bindings(fail = false, articles = []) {
   const puts = [], starts = [];
   const c = { running: false, images: { base: "image" },
     start(options) { starts.push(options); this.running = true; },
     async setInactivityTimeout() {}, async interceptAllOutboundHttp() {}, async interceptOutboundHttps(host) { assert.equal(host, "*"); },
     getTcpPort() { return { fetch: async url => {
       if (url.endsWith("/health")) return new Response();
-      if (new URL(url).pathname === "/library") return Response.json({ articles: [], next: 0, total: 0 });
+      if (new URL(url).pathname === "/library") { const cursor = Number(new URL(url).searchParams.get("cursor")); return Response.json({ articles: articles.slice(cursor, cursor + 10), next: Math.min(cursor + 10, articles.length), total: articles.length }); }
       if (fail) return new Response("failed", { status: 422 });
       const u = new URL(url);
-      const summary = u.searchParams.get("job") && u.searchParams.get("job") !== "news" ? { trial: true, job: u.searchParams.get("job"), library_articles: 0 } : { trial: true, tier: u.searchParams.get("tier") || "priority", library_articles: 0 };
+      const summary = u.searchParams.get("job") && u.searchParams.get("job") !== "news" ? { trial: true, job: u.searchParams.get("job"), library_articles: articles.length } : { trial: true, tier: u.searchParams.get("tier") || "priority", library_articles: articles.length };
       return new Response(gzipSync(JSON.stringify({ files: {}, summary })), { headers: { "X-Trial-Summary": JSON.stringify(summary) } });
     } }; },
     async destroy() { this.running = false; } };
@@ -275,4 +275,71 @@ test("article pages reacquire container ports after a closed producer response",
   assert.equal(handles, 3);
   assert.deepEqual(b.puts, [...rows.map(row => `trial/library/articles/${row.id}.json`), "trial/latest.json.gz", "trial/state.json.gz"]);
   assert.equal(b.c.running, false);
+});
+
+
+test("publication requires its separate flag and bearer authentication", async () => {
+  const b = bindings();
+  assert.equal((await b.instance.fetch(new Request("http://trial/publish-library"))).status, 409);
+  const request = new Request("https://trial/publish-library", { method: "POST", headers: { Authorization: "Bearer test-token" } });
+  const env = { TRIAL_TOKEN: "test-token", TRIAL_ENABLED: "false" };
+  assert.equal((await route(request, env)).status, 409);
+  assert.equal((await route(new Request("https://trial/publish-library", { method: "POST" }), { ...env, PUBLISH_LIBRARY_ENABLED: "true" })).status, 401);
+  let target;
+  env.PUBLISH_LIBRARY_ENABLED = "true";
+  env.TRIAL_CONTAINER = { getByName: name => { assert.equal(name, "priority-trial"); return { fetch: async (url, init) => { target = [url, init.method]; return new Response(); } }; } };
+  assert.equal((await route(request, env)).status, 200);
+  assert.deepEqual(target, ["http://trial/publish-library", "POST"]);
+});
+test("publication checkpoints completed pages, preserves bytes and starts no container", async () => {
+  const b = bindings();
+  b.instance.env.PUBLISH_LIBRARY_ENABLED = "true"; b.instance.env.TRIAL_ENABLED = "false";
+  const rows = JSON.parse(await readFile(new URL("../../assets/globe/news-live.json", import.meta.url), "utf8")).stories.slice(0, 2);
+  const objects = new Map(rows.map(row => [`trial/library/articles/${row.id}.json`, JSON.stringify(row)]));
+  const checkpoints = new Map();
+  b.instance.ctx.storage = { get: async key => checkpoints.get(key), put: async (key, value) => checkpoints.set(key, value), delete: async key => checkpoints.delete(key) };
+  b.instance.env.TRIAL_STORE = {
+    head: async key => objects.has(key) ? {} : null,
+    get: async key => objects.has(key) ? { size: objects.get(key).length, text: async () => objects.get(key) } : null,
+    put: async (key, value) => objects.set(key, value),
+    list: async options => { const row = rows[options.cursor ? 1 : 0]; return { objects: [{ key: `trial/library/articles/${row.id}.json`, size: 1 }], truncated: !options.cursor, cursor: options.cursor ? undefined : "next-page" }; },
+  };
+  const request = new Request("http://trial/publish-library", { method: "POST" });
+  const first = b.instance.fetch(request);
+  assert.equal((await b.instance.fetch(request)).status, 409);
+  assert.deepEqual(await (await first).json(), { examined: 1, written: 1, done: false });
+  assert.equal(checkpoints.get("library:publish:cursor"), "next-page");
+  assert.deepEqual(await (await b.instance.fetch(request)).json(), { examined: 1, written: 1, done: true });
+  assert.equal(checkpoints.size, 0);
+  for (const row of rows) assert.equal(objects.get(`published/library/articles/${row.id}.json`), JSON.stringify(row));
+  assert.equal((await (await b.instance.fetch(request)).json()).written, 0);
+  assert.equal((await (await b.instance.fetch(request)).json()).written, 0);
+  assert.equal(b.starts.length, 0); assert.equal(b.instance.busy, false);
+});
+test("failed publication retains its checkpoint and returns no raw exception", async () => {
+  const b = bindings(); b.instance.env.PUBLISH_LIBRARY_ENABLED = "true";
+  const changes = [];
+  b.instance.ctx.storage = { get: async () => "saved-checkpoint", put: async (...args) => changes.push(args), delete: async (...args) => changes.push(args) };
+  b.instance.env.TRIAL_STORE.list = async () => { throw Error("private provider response"); };
+  const response = await b.instance.fetch(new Request("http://trial/publish-library", { method: "POST" }));
+  assert.equal(response.status, 502);
+  assert.deepEqual(await response.json(), { error: "article_publication_failed", existing_articles_preserved: true });
+  assert.deepEqual(changes, []); assert.equal(b.starts.length, 0); assert.equal(b.instance.busy, false);
+});
+
+test("enabled news publication uses the validated saved copy before advancing state", async () => {
+  const rows = JSON.parse(await readFile(new URL("../../assets/globe/news-live.json", import.meta.url), "utf8")).stories.slice(0, 2);
+  const b = bindings(false, rows), objects = new Map();
+  b.instance.env.PUBLISH_LIBRARY_ENABLED = "true";
+  b.instance.env.TRIAL_STORE.head = async key => objects.has(key) ? {} : null;
+  b.instance.env.TRIAL_STORE.get = async key => key.endsWith("seed.json.gz") ? { size: 2, arrayBuffer: async () => new TextEncoder().encode("{}") }
+    : objects.has(key) ? { size: new TextEncoder().encode(objects.get(key)).length, text: async () => objects.get(key) } : null;
+  b.instance.env.TRIAL_STORE.put = async (key, value) => { objects.set(key, value); b.puts.push(key); };
+  const response = await b.instance.fetch();
+  assert.equal(response.status, 200);
+  assert.equal((await response.json()).published_articles_written, rows.length);
+  for (const row of rows) assert.equal(objects.get(`published/library/articles/${row.id}.json`), objects.get(`trial/library/articles/${row.id}.json`));
+  assert.deepEqual(b.puts.slice(-2), ["trial/latest.json.gz", "trial/state.json.gz"]);
+  const health = await route(new Request("https://trial/health", { headers: { Authorization: "Bearer test-token" } }), { TRIAL_TOKEN: "test-token", PUBLISH_LIBRARY_ENABLED: "true" });
+  assert.equal((await health.json()).publication_enabled, true);
 });

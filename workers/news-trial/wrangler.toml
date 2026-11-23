@@ -6,6 +6,7 @@ preview_urls = false
 
 [vars]
 TRIAL_ENABLED = "false"
+PUBLISH_LIBRARY_ENABLED = "false"
 
 [triggers]
 crons = []

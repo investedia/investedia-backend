@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { storeTrialLibrary, readTrialArticle, validArticle } from "./library.mjs";
+import { storeTrialLibrary, readTrialArticle, validArticle, publishLibraryPage } from "./library.mjs";
 import { route } from "./policy.mjs";
 
 const rows = JSON.parse(await readFile(new URL("../../assets/globe/news-live.json", import.meta.url), "utf8")).stories.slice(0, 2);
@@ -9,7 +9,7 @@ function storage() {
   const files = new Map(), puts = [];
   return { files, puts, head: async key => files.has(key) ? {} : null,
     put: async (key, value) => { files.set(key, value); puts.push(key); },
-    get: async key => files.has(key) ? { body: files.get(key) } : null };
+    get: async key => files.has(key) ? { body: files.get(key), size: new TextEncoder().encode(files.get(key)).length, text: async () => files.get(key) } : null };
 }
 function exportPage(page) { return { fetch: async url => {
   assert.equal(new URL(url).pathname, "/library");
@@ -51,4 +51,36 @@ test("article reads require authentication, reject paths and return exact stored
   assert.equal(response.status, 200); assert.equal(response.headers.get("Cache-Control"), "no-store");
   assert.deepEqual(await response.json(), rows[0]);
   assert.equal((await readTrialArticle(new Request("https://trial/article?id=missing-article"), store)).status, 404);
+});
+
+
+test("publication copies exact saved bytes, stays in its namespace and never overwrites", async () => {
+  const store = storage();
+  for (const row of rows) store.files.set(`trial/library/articles/${row.id}.json`, JSON.stringify(row, null, 2));
+  store.list = async options => {
+    assert.deepEqual(options, { prefix: "trial/library/articles/", limit: 250 });
+    return { objects: rows.map(row => ({ key: `trial/library/articles/${row.id}.json`, size: store.files.get(`trial/library/articles/${row.id}.json`).length })), truncated: false };
+  };
+  assert.deepEqual(await publishLibraryPage(store), { examined: rows.length, written: rows.length, cursor: null });
+  for (const row of rows) assert.equal(store.files.get(`published/library/articles/${row.id}.json`), JSON.stringify(row, null, 2));
+  const before = new Map(store.files);
+  assert.equal((await publishLibraryPage(store)).written, 0);
+  assert.deepEqual(store.files, before);
+  const other = storage();
+  for (const row of rows) other.files.set(`trial/library/articles/${row.id}.json`, JSON.stringify(row, null, 2));
+  assert.equal((await storeTrialLibrary(exportPage({ articles: rows, next: rows.length, total: rows.length }), other, rows.length, "published")).written, rows.length);
+  for (const row of rows) assert.equal(other.files.get(`published/library/articles/${row.id}.json`), JSON.stringify(row, null, 2));
+  await assert.rejects(storeTrialLibrary({}, other, rows.length, "../private"));
+});
+test("publication rejects invalid paths, excess pages and mismatched source IDs", async () => {
+  for (const page of [{ objects: Array(251).fill({}), truncated: false },
+    { objects: [{ key: "trial/library/articles/../key.json", size: 1 }], truncated: false },
+    { objects: [], truncated: true, cursor: "same" }]) {
+    const store = storage(); store.list = async () => page;
+    await assert.rejects(publishLibraryPage(store, "same")); assert.deepEqual(store.puts, []);
+  }
+  const store = storage();
+  store.files.set(`trial/library/articles/${rows[0].id}.json`, JSON.stringify(rows[1]));
+  store.list = async () => ({ objects: [{ key: `trial/library/articles/${rows[0].id}.json`, size: 1 }], truncated: false });
+  await assert.rejects(publishLibraryPage(store)); assert.deepEqual(store.puts, []);
 });
