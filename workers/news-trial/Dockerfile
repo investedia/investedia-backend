@@ -20,6 +20,10 @@ COPY update_calendar.py update_calendar.py
 COPY calendar_fred.py calendar_fred.py
 COPY calendar_official.py calendar_official.py
 COPY workers/news-trial/calendar_job.py workers/news-trial/calendar_job.py
+COPY .local/cloudflare-frontend/ .local/cloudflare-frontend/
+COPY tools/coverage/country_basics.py tools/coverage/country_basics.py
+COPY assets/globe/economy.json assets/globe/economy.json
+COPY data/market-country-facts.json data/market-country-facts.json
 USER 65532:65532
 EXPOSE 8080
 CMD ["python", "workers/news-trial/runner.py"]

@@ -57,7 +57,7 @@ function bindings(fail = false) {
       if (url.endsWith("/health")) return new Response();
       if (fail) return new Response("failed", { status: 422 });
       const u = new URL(url);
-      const summary = u.searchParams.get("job") === "calendar" ? { trial: true, job: "calendar" } : { trial: true, tier: u.searchParams.get("tier") || "priority" };
+      const summary = u.searchParams.get("job") && u.searchParams.get("job") !== "news" ? { trial: true, job: u.searchParams.get("job") } : { trial: true, tier: u.searchParams.get("tier") || "priority" };
       return new Response(gzipSync(JSON.stringify({ files: {}, summary })), { headers: { "X-Trial-Summary": JSON.stringify(summary) } });
     } }; },
     async destroy() { this.running = false; } };
@@ -186,4 +186,35 @@ test("malformed or oversized provider errors stay generic and bounded", async ()
     const response=await egress(new Request("https://api.stlouisfed.org/fred/releases/dates"),"",true,async()=>new Response(raw,{status:400}),"a".repeat(32));
     assert.deepEqual(await response.json(),{trial_fred_reason:"request_rejected"});
   }
+});
+
+
+test("data jobs use independent state without requiring AI credentials", async () => {
+  for (const job of ["markets", "fx", "economy-history", "country-basics"]) {
+    const b = bindings();
+    delete b.instance.env.GEMINI_API_KEY;
+    assert.equal((await b.instance.fetch(new Request(`https://trial/run?job=${job}`))).status, 200);
+    assert.deepEqual(b.puts, [`trial/${job}/latest.json.gz`, `trial/${job}/state.json.gz`]);
+    assert.equal(b.c.running, false);
+    let name;
+    const env = { TRIAL_TOKEN: "test-token", TRIAL_ENABLED: "true", TRIAL_CONTAINER: {
+      getByName: value => { name = value; return { fetch: async () => new Response() }; },
+    } };
+    assert.equal((await route(new Request(`https://trial/run?job=${job}`, { method: "POST", headers: { Authorization: "Bearer test-token" } }), env)).status, 200);
+    assert.equal(name, `${job}-trial`);
+  }
+});
+test("data providers allow only fixed read-only API paths and receive no credentials", async () => {
+  for (const url of ["https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?format=json", "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1mo&interval=1d"]) {
+    assert.equal(destination(url, "GET"), "source");
+    assert.equal(destination(url, "POST"), null);
+    const response = await egress(new Request(url, { headers: { Authorization: "private" } }), "", true, async (target, init) => {
+      assert.equal(init.headers.get("Authorization"), null);
+      assert.equal(init.headers.get("x-goog-api-key"), null);
+      return new Response("ok");
+    });
+    assert.equal(response.status, 200);
+  }
+  for (const url of ["https://api.worldbank.org/admin", "https://query1.finance.yahoo.com/account", "https://query2.finance.yahoo.com/v8/finance/chart/x"])
+    assert.equal(destination(url, "GET"), null);
 });

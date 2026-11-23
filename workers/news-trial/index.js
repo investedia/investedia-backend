@@ -2,14 +2,14 @@ import { DurableObject, WorkerEntrypoint } from "cloudflare:workers";
 import { egress, route, trialTier, trialJob, safeDiagnostic } from "./policy.mjs";
 
 export class TrialEgress extends WorkerEntrypoint {
-  fetch(request) { return egress(request, this.ctx.props.job === "calendar" ? "" : this.env.GEMINI_API_KEY, this.env.TRIAL_ENABLED === "true", fetch, this.ctx.props.job === "calendar" ? this.env.FRED_API_KEY : ""); }
+  fetch(request) { return egress(request, this.ctx.props.job === "news" ? this.env.GEMINI_API_KEY : "", this.env.TRIAL_ENABLED === "true", fetch, this.ctx.props.job === "calendar" ? this.env.FRED_API_KEY : ""); }
 }
 export class NewsTrial extends DurableObject {
   busy = false;
   async fetch(request = new Request("http://trial/run")) {
     const job = trialJob(request);
     if (!job) return new Response("Unknown trial job", { status: 400 });
-    const prefix = job === "calendar" ? "trial/calendar" : "trial";
+    const prefix = job === "news" ? "trial" : `trial/${job}`;
     const tier = trialTier(request);
     if (!tier) return new Response("Unknown news tier", { status: 400 });
     if (this.busy) return new Response("Trial already running", { status: 409 });
@@ -50,7 +50,7 @@ export class NewsTrial extends DurableObject {
       const header = response.headers.get("X-Trial-Summary");
       if (!header || header.length > 4096) throw new Error("Invalid summary");
       const summary = JSON.parse(header);
-      if (summary?.trial !== true || (job === "calendar" ? summary.job !== "calendar" : summary.tier !== tier)) throw new Error("Invalid result");
+      if (summary?.trial !== true || (job === "news" ? summary.tier !== tier : summary.job !== job)) throw new Error("Invalid result");
       // Keep the large archive opaque here; parsing it in the Worker can exhaust memory.
       stage = "storage";
       await this.env.TRIAL_STORE.put(`${prefix}/latest.json.gz`, result, { httpMetadata: { contentType: "application/gzip" } });

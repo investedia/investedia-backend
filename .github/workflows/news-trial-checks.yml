@@ -4,6 +4,9 @@ on:
     paths:
       - 'workers/news-trial/**'
       - 'tests/test_news_trial.py'
+      - 'tests/test_data_trials.py'
+      - 'tools/cloudflare/stage_frontend.py'
+      - 'tools/coverage/country_basics.py'
       - '.github/workflows/news-trial-checks.yml'
       - 'update_globe_news.py'
       - 'news_core.py'
@@ -15,20 +18,30 @@ permissions:
   contents: read
 jobs:
   offline-trial:
+    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: investedia/investedia-frontend
+          ref: 2402119767e01574d478e3df72398bba21ffc132
+          token: ${{ secrets.FRONTEND_PUSH_TOKEN }}
+          persist-credentials: false
+          path: .local/frontend-source
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - run: python tools/cloudflare/stage_frontend.py .local/frontend-source
       - run: node --test workers/news-trial/*.test.mjs
       - run: python -m unittest discover -s tests -p test_news_trial.py
+      - run: python -m unittest discover -s tests -p test_data_trials.py
       - name: Build image locally (no registry push or deployment)
         run: docker build -f workers/news-trial/Dockerfile -t investedia-news-trial-check .
       - name: Check image without network or credentials
