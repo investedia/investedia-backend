@@ -179,6 +179,8 @@ export function destination(url, method) {
   const u = new URL(url);
   if (u.protocol !== "https:" || u.username || u.password || (u.port && u.port !== "443")) return null;
   if (u.hostname === "api.stlouisfed.org" && method === "GET" && ["/fred/releases/dates", "/fred/series/observations"].includes(u.pathname)) return "fred";
+  if (method === "GET" && ((u.hostname === "api.worldbank.org" && /^\/v2\/country\/all\/indicator\/[A-Z0-9.]+$/.test(u.pathname))
+      || (u.hostname === "query1.finance.yahoo.com" && /^\/v8\/finance\/chart\/[^/]+$/.test(u.pathname)))) return "source";
   if (SOURCE_HOSTS.has(u.hostname) && method === "GET") return "source";
   if (u.hostname !== "generativelanguage.googleapis.com") return null;
   if (method === "GET" && u.pathname === "/v1beta/models" && u.search === "?pageSize=200") return "gemini";
@@ -270,7 +272,7 @@ export function trialJob(request) {
   const values = new URL(request.url).searchParams.getAll("job");
   if (values.length > 1) return null;
   const job = values[0] || "news";
-  return ["news", "calendar"].includes(job) ? job : null;
+  return ["news", "calendar", "markets", "fx", "economy-history", "country-basics"].includes(job) ? job : null;
 }
 export async function route(request, env) {
   if (!env.TRIAL_TOKEN || request.headers.get("Authorization") !== `Bearer ${env.TRIAL_TOKEN}`)
@@ -278,7 +280,7 @@ export async function route(request, env) {
   const path = new URL(request.url).pathname;
   const job = trialJob(request);
   if (!job) return new Response("Unknown trial job", { status: 400 });
-  const prefix = job === "calendar" ? "trial/calendar" : "trial";
+  const prefix = job === "news" ? "trial" : `trial/${job}`;
   if (path === "/health" && request.method === "GET") return Response.json({ trial: true, enabled: env.TRIAL_ENABLED === "true", scheduled: false });
   if (path === "/result" && request.method === "GET") {
     const compressed = await env.TRIAL_STORE.get(`${prefix}/latest.json.gz`);
@@ -289,5 +291,5 @@ export async function route(request, env) {
   if (env.TRIAL_ENABLED !== "true" || (job === "news" && !env.GEMINI_API_KEY)) return new Response("Trial disabled", { status: 409 });
   const tier = trialTier(request);
   if (!tier) return new Response("Unknown news tier", { status: 400 });
-  return env.TRIAL_CONTAINER.getByName(job === "calendar" ? "calendar-trial" : "priority-trial").fetch(`http://trial/run?tier=${tier}&job=${job}`, { method: "POST" });
+  return env.TRIAL_CONTAINER.getByName(job === "news" ? "priority-trial" : `${job}-trial`).fetch(`http://trial/run?tier=${tier}&job=${job}`, { method: "POST" });
 }

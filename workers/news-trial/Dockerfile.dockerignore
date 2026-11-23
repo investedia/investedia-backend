@@ -18,3 +18,11 @@
 !calendar_fred.py
 !calendar_official.py
 !workers/news-trial/calendar_job.py
+
+!tools/coverage/country_basics.py
+!assets/globe/economy.json
+!data/market-country-facts.json
+!.local/cloudflare-frontend/scripts/update_markets.py
+!.local/cloudflare-frontend/scripts/fx_ecb.py
+!.local/cloudflare-frontend/scripts/economy_history.py
+!.local/cloudflare-frontend/data/registry.json
