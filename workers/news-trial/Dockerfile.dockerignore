@@ -14,3 +14,7 @@
 !assets/globe/markets.json
 !assets/globe/projects.json
 !workers/news-trial/runner.py
+!update_calendar.py
+!calendar_fred.py
+!calendar_official.py
+!workers/news-trial/calendar_job.py

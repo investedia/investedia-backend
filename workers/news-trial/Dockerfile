@@ -16,6 +16,10 @@ COPY assets/globe/iso.json assets/globe/iso.json
 COPY assets/globe/markets.json assets/globe/markets.json
 COPY assets/globe/projects.json assets/globe/projects.json
 COPY workers/news-trial/runner.py workers/news-trial/runner.py
+COPY update_calendar.py update_calendar.py
+COPY calendar_fred.py calendar_fred.py
+COPY calendar_official.py calendar_official.py
+COPY workers/news-trial/calendar_job.py workers/news-trial/calendar_job.py
 USER 65532:65532
 EXPOSE 8080
 CMD ["python", "workers/news-trial/runner.py"]
