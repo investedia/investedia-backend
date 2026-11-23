@@ -2,7 +2,7 @@ import test from "node:test";
 import { gzipSync } from "node:zlib";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { destination, egress, route } from "./policy.mjs";
+import { destination, egress, route, trialTier } from "./policy.mjs";
 
 test("egress rejects production, secrets in URLs, non-HTTPS and all non-Gemini writes", () => {
   for (const url of ["https://api.investedia.com/v1/news/ingest", "https://127.0.0.1/", "http://www.ecb.europa.eu/",
@@ -52,7 +52,7 @@ function bindings(fail = false) {
   const puts = [], starts = [];
   const c = { running: false, images: { base: "image" },
     start(options) { starts.push(options); this.running = true; },
-    async setInactivityTimeout() {}, async interceptOutboundHttps(host) { assert.equal(host, "*"); },
+    async setInactivityTimeout() {}, async interceptAllOutboundHttp() {}, async interceptOutboundHttps(host) { assert.equal(host, "*"); },
     getTcpPort() { return { fetch: async url => url.endsWith("/health") ? new Response() : fail
       ? new Response("failed", { status: 422 }) : new Response(gzipSync(JSON.stringify({ files: {}, summary: { trial: true } })), { headers: { "X-Trial-Summary": JSON.stringify({ trial: true }) } }) }; },
     async destroy() { this.running = false; } };
@@ -92,4 +92,32 @@ test("malformed compressed output or summary never advances state", async () => 
     assert.deepEqual(b.puts, []);
     assert.equal(b.c.running, false);
   }
+});
+
+test("only the two fixed news tiers can reach a container", async () => {
+  assert.equal(trialTier(new Request("https://trial/run")), "priority");
+  assert.equal(trialTier(new Request("https://trial/run?tier=broad")), "broad");
+  assert.equal(trialTier(new Request("https://trial/run?tier=../../other")), null);
+  assert.equal(trialTier(new Request("https://trial/run?tier=priority&tier=broad")), null);
+  let target;
+  const env = { TRIAL_TOKEN: "test-token", TRIAL_ENABLED: "true", GEMINI_API_KEY: "test-key", TRIAL_CONTAINER: {
+    getByName: name => { assert.equal(name, "priority-trial"); return { fetch: async url => { target = url; return new Response(); } }; },
+  } };
+  const headers = { Authorization: "Bearer test-token" };
+  assert.equal((await route(new Request("https://trial/run?tier=bad", { method: "POST", headers }), env)).status, 400);
+  await route(new Request("https://trial/run?tier=broad", { method: "POST", headers }), env);
+  assert.equal(target, "http://trial/run?tier=broad");
+});
+test("legacy HTTP feed requests are upgraded to HTTPS without opening arbitrary HTTP access", async () => {
+  let target;
+  const response = await egress(new Request("http://www.ecb.europa.eu/rss"), "test-key", true, async url => { target = url; return new Response("ok"); });
+  assert.equal(response.status, 200);
+  assert.equal(target, "https://www.ecb.europa.eu/rss");
+  assert.equal((await egress(new Request("http://127.0.0.1/"), "test-key", true)).status, 403);
+});
+test("failure reports only a controlled stage and stops the container", async () => {
+  const b = bindings(true);
+  const response = await b.instance.fetch(new Request("http://trial/run?tier=broad"));
+  assert.deepEqual(await response.json(), { error: "trial_failed", stage: "producer", tier: "broad", production_untouched: true });
+  assert.deepEqual(b.puts, []);
 });

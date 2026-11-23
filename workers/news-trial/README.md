@@ -2,13 +2,13 @@
 
 This is preparation only. It does not deploy, generate news during CI, change the live Worker, publish articles, send alerts, or disable GitHub jobs. Owner approval is required before creating resources, adding secrets, deploying, or enabling generation.
 
-The older `workers/live/v1/news.js` prototype is not equivalent to the Python producer: its sources, IDs, retention, archive and connection handling differ. This container runs the current `update_globe_news.py` priority tier and `tools/globe-news/connections.py` unchanged. The usual `tools/news-pipeline.py --run` wrapper is deliberately excluded because it also ingests into production.
+The older `workers/live/v1/news.js` prototype is not equivalent to the Python producer: its sources, IDs, retention, archive and connection handling differ. This container runs the current `update_globe_news.py` priority or broad tier and `tools/globe-news/connections.py` unchanged. The usual `tools/news-pipeline.py --run` wrapper is deliberately excluded because it also ingests into production.
 
 ## Isolation
 
 - Separate Worker `investedia-news-trial`, Durable Object and private R2 bucket of the same name. No production routes, KV, Supabase, ingest token, alert credentials or publishing scripts.
 - `TRIAL_ENABLED = "false"` and no cron triggers. Every public endpoint requires a separate `TRIAL_TOKEN` secret, including health/results. The HTTP API accepts no input files, URLs, environment or commands.
-- Container Internet access is disabled. HTTPS interception permits GETs only to exact priority-source hosts, plus Gemini model listing/generation. Redirects are checked again; production destinations, bare IPs and other writes are denied. The real Gemini key stays in the Worker and is injected only into Gemini requests; the Python process gets a proxy placeholder.
+- Container Internet access is disabled. HTTPS interception permits GETs only to exact declared producer-source hosts, plus Gemini model listing/generation. Redirects are checked again; production destinations, bare IPs and other writes are denied. The real Gemini key stays in the Worker and is injected only into Gemini requests; the Python process gets a proxy placeholder.
 - Docker copies an explicit list of source/reference files. Its matching ignore file excludes everything else, including `.git`, local configs and secrets. No GitHub/Cloudflare credentials enter the image. It runs as an unprivileged user.
 - Each run creates disposable files, retains original article timestamps and IDs, and saves artifacts only under `trial/` in the new bucket. Failed generation does not advance trial state. No empty/no-source run counts as a successful comparison. The container stops in `finally` and has an inactivity limit.
 - One manual run at a time, no automated retry and no automatic schedule. This limits the initial trial's API/container spend; Workers Paid does not make container use unlimited.
@@ -49,6 +49,7 @@ Authenticated endpoints on the trial Worker's workers.dev address:
 |---|---|---|
 | GET | `/health` | Trial enabled/disabled; confirms there is no schedule |
 | POST | `/run` | One priority generation, only after explicitly enabling `TRIAL_ENABLED` and adding both secrets |
+| POST | `/run?tier=broad` | One broad generation; shares the same locked trial state, never publishes |
 | GET | `/result` | Last successful gzip-compressed JSON artifact: full trial files, connections and measured summary |
 
 Send `Authorization: Bearer <trial token>` securely; do not place the token in the URL or terminal history. `/run` waits for the producer, so use a client with a sufficiently long timeout. A failed request is not automatically retried. `trial/state.json.gz` resumes the trial's own seen/archive state on later runs; production continues independently. To restart from a fresh seed, remove only the trial state object after reviewing/saving the old artifact.
@@ -60,3 +61,14 @@ Docker/runtime checks, HTTPS interception/certificate support and real-source re
 This is a manual first trial, not the completed 24-hour comparison or a replacement scheduler. Before a production switch, compare source failures, new article IDs/counts, countries/regions, archive/library, photo references, connections, errors and duration over representative runs. Show website previews when wiring any alternative feed. Only after a successful comparison and a separate owner approval may production ingestion or schedules change. This PR makes neither change.
 
 The real producer state can exceed 32 MiB uncompressed. Seeds/results now use gzip without trimming articles, events or timestamps. The Worker stores opaque compressed bytes and parses only a small summary header; the container enforces both compressed and expanded size bounds. Legacy raw JSON seeds remain readable. The container uses the `basic` (1 GiB) instance to accommodate parsing the archive, and still stops after every run. This uses more resources than the old `lite` setting; actual trial cost and peak memory must be measured before scheduling. The trial still has no automatic schedule or production credentials.
+
+Use Wrangler to enable/disable the trial, preserving the full Container/exports/image configuration:
+
+```text
+npx wrangler@4.136.0 deploy --config workers/news-trial/wrangler.toml --keep-vars --var TRIAL_ENABLED:true
+npx wrangler@4.136.0 deploy --config workers/news-trial/wrangler.toml --keep-vars --var TRIAL_ENABLED:false
+```
+
+A generic settings-only API patch omits Container image metadata, and caused the first runtime startup failure. Always restore the disabled configuration after a manual test. Never copy these trial controls to the production Worker.
+
+The first completed isolated priority run produced two new articles, retained 358 existing publication dates without duplicate IDs, saved 360 library entries and built 291 connections. It exposed 31 source failures versus two in its GitHub seed: the old proxy omitted the appended official-region feeds. The allowlist now includes all explicit producer feed hosts (including appended lists), with a regression check against the Python definitions; it permits GETs only. Legacy HTTP feed requests are intercepted and upgraded to HTTPS; arbitrary HTTP, nonstandard ports, production hosts and publisher writes remain blocked. Broad trials use the unchanged broad tier, including GDELT, and share the same Durable Object lock/state with priority. Failed runs report only a fixed stage and tier, never raw logs, URLs, keys or prompts. Coverage and broad-runtime parity still require real checks before any live switch.
