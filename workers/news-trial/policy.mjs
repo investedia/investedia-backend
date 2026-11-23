@@ -188,31 +188,46 @@ export function destination(url, method) {
   if (method === "POST" && /^\/v1beta\/models\/[a-zA-Z0-9.-]+:generateContent$/.test(u.pathname) && !u.search) return "gemini";
   return null;
 }
-// Return a fixed category only; provider messages may contain credentials.
+// Provider errors may contain credentials; read a bounded body and expose fixed categories only.
+async function providerError(response) {
+  if (!response.body) return null;
+  const reader = response.body.getReader(), chunks = []; let size = 0;
+  try {
+    while (true) {
+      const { value, done } = await reader.read(); if (done) break;
+      size += value.length; if (size > 16384) return null;
+      chunks.push(value);
+    }
+    const body = new Uint8Array(size); let offset = 0;
+    for (const chunk of chunks) { body.set(chunk, offset); offset += chunk.length; }
+    return JSON.parse(new TextDecoder().decode(body));
+  } catch { return null; } finally { await reader.cancel().catch(() => {}); }
+}
 async function fredFailure(response) {
   if (response.status === 429 || response.status >= 500) {
     if (response.body) await response.body.cancel().catch(() => {});
     return response.status === 429 ? "rate_limited" : "upstream_unavailable";
   }
-  let message = "";
-  if (response.body) {
-    const reader = response.body.getReader();
-    const chunks = []; let size = 0;
-    try {
-      while (true) {
-        const { value, done } = await reader.read(); if (done) break;
-        size += value.length; if (size > 16384) return "request_rejected";
-        chunks.push(value);
-      }
-      const body = new Uint8Array(size); let offset = 0;
-      for (const chunk of chunks) { body.set(chunk, offset); offset += chunk.length; }
-      const data = JSON.parse(new TextDecoder().decode(body));
-      if (typeof data.error_message === "string") message = data.error_message.replace(/https?:\/\/\S+/g, "").toLowerCase();
-    } catch {} finally { await reader.cancel().catch(() => {}); }
-  }
+  const data = await providerError(response);
+  const message = typeof data?.error_message === "string" ? data.error_message.replace(/https?:\/\/\S+/g, "").toLowerCase() : "";
   if (/api[_ ]key/.test(message) && /not registered|not set|invalid|32 character/.test(message)) return "key_rejected";
   if (/realtime_start|realtime_end|order_by|sort_order|limit|include_release_dates_with_no_data/.test(message)) return "request_parameters";
   return "request_rejected";
+}
+async function geminiFailure(response) {
+  const data = await providerError(response);
+  const allowed = ["INVALID_ARGUMENT", "PERMISSION_DENIED", "UNAUTHENTICATED", "RESOURCE_EXHAUSTED", "FAILED_PRECONDITION", "UNAVAILABLE", "INTERNAL", "NOT_FOUND"];
+  const provider_status = allowed.includes(data?.error?.status) ? data.error.status : "unknown";
+  const message = typeof data?.error?.message === "string" ? data.error.message.replace(/https?:\/\/\S+/g, "").toLowerCase() : "";
+  let reason = !data ? "unreadable_provider_error" : "request_rejected";
+  if (/api[_ ]?key/.test(message) && /invalid|not valid|expired|not found/.test(message)) reason = "key_rejected";
+  else if (/location|region|country/.test(message) && /not available|unsupported|not supported|restricted|not enabled/.test(message)) reason = "region_restricted";
+  else if (response.status === 429 || provider_status === "RESOURCE_EXHAUSTED" || /quota|billing/.test(message)) reason = "quota_or_rate_limit";
+  else if (response.status === 403 || provider_status === "PERMISSION_DENIED") reason = "permission_denied";
+  else if (/overload|capacity/.test(message)) reason = "model_capacity";
+  else if (data && (response.status >= 500 || provider_status === "UNAVAILABLE")) reason = "upstream_unavailable";
+  else if (data && response.status === 400) reason = "request_invalid";
+  return { provider_status, reason };
 }
 export async function egress(request, key, enabled, upstream = fetch, fredKey = "") {
   if (!enabled) return new Response("Trial egress disabled", { status: 403 });
@@ -245,6 +260,7 @@ export async function egress(request, key, enabled, upstream = fetch, fredKey = 
     }
     if (!response.ok) {
       if (type === "fred") return Response.json({ trial_fred_reason: await fredFailure(response) }, { status: response.status });
+      if (type === "gemini") console.log("news_provider_failure", JSON.stringify({ http_status: response.status, ...await geminiFailure(response) }));
       return new Response("Trial upstream failed", { status: response.status });
     }
     return new Response(response.body, { status: response.status,

@@ -343,3 +343,53 @@ test("enabled news publication uses the validated saved copy before advancing st
   const health = await route(new Request("https://trial/health", { headers: { Authorization: "Bearer test-token" } }), { TRIAL_TOKEN: "test-token", PUBLISH_LIBRARY_ENABLED: "true" });
   assert.equal((await health.json()).publication_enabled, true);
 });
+
+
+test("news provider failures log fixed categories without messages, keys or prompts", async () => {
+  const captured = [], original = console.log;
+  console.log = (...args) => captured.push(args);
+  try {
+    const cases = [
+      [503, "UNAVAILABLE", "model overloaded never-log-this", "model_capacity"],
+      [400, "INVALID_ARGUMENT", "API key not valid never-log-this", "key_rejected"],
+      [400, "FAILED_PRECONDITION", "region not supported never-log-this", "region_restricted"],
+      [429, "RESOURCE_EXHAUSTED", "quota exceeded never-log-this", "quota_or_rate_limit"],
+      [403, "PERMISSION_DENIED", "not permitted never-log-this", "permission_denied"],
+      [400, "INVALID_ARGUMENT", "invalid request never-log-this", "request_invalid"],
+      [503, "PRIVATE_STATUS", "unavailable never-log-this", "upstream_unavailable"],
+      [503, "UNAVAILABLE", "details https://example.invalid/region/not-supported?key=never-log-this", "upstream_unavailable"],
+    ];
+    for (const [status, provider, message, reason] of cases) {
+      const response = await egress(new Request("https://generativelanguage.googleapis.com/v1beta/models/flash:generateContent", { method: "POST", body: "private-prompt" }),
+        "private-key", true, async () => Response.json({ error: { status: provider, message } }, { status }));
+      assert.equal(response.status, status); assert.equal(await response.text(), "Trial upstream failed");
+      const record = captured.at(-1); assert.equal(record[0], "news_provider_failure");
+      const diagnostic = JSON.parse(record[1]);
+      assert.equal(diagnostic.reason, reason);
+      assert.equal(diagnostic.provider_status, provider === "PRIVATE_STATUS" ? "unknown" : provider);
+      assert.equal(diagnostic.http_status, status);
+    }
+    assert.doesNotMatch(JSON.stringify(captured), /never-log-this|private-key|private-prompt|PRIVATE_STATUS/);
+  } finally { console.log = original; }
+});
+test("malformed and oversized news-provider errors stay bounded and unreadable", async () => {
+  const captured = [], original = console.log; console.log = (...args) => captured.push(args);
+  try {
+    let cancelled = false;
+    const huge = new ReadableStream({ start(controller) { controller.enqueue(new TextEncoder().encode("x".repeat(17000))); }, cancel() { cancelled = true; } });
+    for (const body of ["<html>never-log-this</html>", huge]) {
+      const response = await egress(new Request("https://generativelanguage.googleapis.com/v1beta/models?pageSize=200"), "private-key", true, async () => new Response(body, { status: 503 }));
+      assert.equal(response.status, 503);
+      assert.equal(JSON.parse(captured.at(-1)[1]).reason, "unreadable_provider_error");
+    }
+    assert.equal(cancelled, true);
+    assert.doesNotMatch(JSON.stringify(captured), /never-log-this|private-key/);
+  } finally { console.log = original; }
+});
+test("successful provider requests retain their response without failure logging", async () => {
+  const original = console.log, captured = []; console.log = (...args) => captured.push(args);
+  try {
+    const response = await egress(new Request("https://generativelanguage.googleapis.com/v1beta/models?pageSize=200"), "private-key", true, async () => Response.json({ models: [] }));
+    assert.deepEqual(await response.json(), { models: [] }); assert.deepEqual(captured, []);
+  } finally { console.log = original; }
+});
