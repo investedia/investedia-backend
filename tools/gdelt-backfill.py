@@ -226,9 +226,16 @@ def parse_gkg(text, at, translated=False):
         if u.scheme != 'https' or not u.hostname or u.username or u.password: rejected['not_public_https_url'] += 1; continue
         m = re.search(r'<PAGE_TITLE>(.*?)</PAGE_TITLE>', c[26])
         title = html.unescape(m.group(1)).strip() if m else ''
+        from_url = False
+        if not title and at < datetime(2019, 10, 1, tzinfo=timezone.utc):  # GKG files before ~2019 have no PAGE_TITLE: provisional title from the URL slug, replaced by the page's og:title later
+            slug = [p for p in u.path.split('/') if p][-1:] or ['']
+            slug = re.sub(r'\.(s?html?|php|aspx?)$', '', slug[0], flags=re.I)
+            words = [w for w in re.split(r'[-_+]+', slug) if w and not re.fullmatch(r'[0-9a-f]{6,}|\d+', w, re.I)]
+            title, from_url = ' '.join(words)[:300], True
         if len(title) < 12: rejected['missing_title'] += 1; continue
         row = {'title': title[:300], 'url': url, 'domain': (c[3] or u.hostname).lower()[:120], 'gdelt_seen': iso(at),
                'gdelt_country': main_country(c[9]), 'gdelt_region': region, 'feed_region': REGIONS[region]['balance']}
+        if from_url: row['title_from_url'] = True
         if translated:
             lang = re.search(r'srclc:([a-z]{2,3})', c[25])
             row.update(translated=True, source_language=lang.group(1) if lang else 'und')
@@ -389,7 +396,9 @@ def enrich_page(row, page, start, end):
     desc = re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', desc or '')).strip()[:400]
     if len(desc) < 40: return None, 'no_source_description'
     site = (meta(page, 'og:site_name') or '').strip()[:80]
-    title = clean_title(meta(page, 'og:title') or row['title'], site)[:300]
+    og = meta(page, 'og:title', 'twitter:title')
+    if row.get('title_from_url') and not og: return None, 'missing_title'  # never publish a headline guessed from the URL
+    title = clean_title(og or row['title'], site)[:300]
     if len(title) < 12: return None, 'missing_title'
     c = {'title': title, 'url': row['url'], 'source': site or row['domain'], 'published': iso(published), 'kind': 'news', 'hint': '',
          'desc': desc, 'feed_url': GKG_BASE, 'feed_region': row['feed_region'], 'gdelt_region': row['gdelt_region'],
