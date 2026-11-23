@@ -144,7 +144,7 @@ test("calendar uses separate storage and a separate container without a Gemini k
 test("FRED gets only its own key and redirects cannot carry it elsewhere", async () => {
   let calls=0;
   const response = await egress(new Request("https://api.stlouisfed.org/fred/releases/dates?api_key=trial-proxy&file_type=json"), "", true,
-    async (url, init) => { calls++; assert.equal(new URL(url).searchParams.get("api_key"), "test-fred"); assert.equal(init.headers.get("x-goog-api-key"), null); return new Response(null,{status:302,headers:{location:"https://www.ecb.europa.eu/"}}); }, "test-fred");
+    async (url, init) => { calls++; assert.equal(new URL(url).searchParams.get("api_key"), "a".repeat(32)); assert.equal(init.headers.get("x-goog-api-key"), null); return new Response(null,{status:302,headers:{location:"https://www.ecb.europa.eu/"}}); }, "a".repeat(32));
   assert.equal(response.status,502);assert.equal(calls,1);
   assert.equal(destination("https://api.stlouisfed.org/fred/series/observations", "POST"),null);
   assert.equal(destination("https://api.stlouisfed.org/private", "GET"),null);
@@ -160,4 +160,30 @@ test("a result for another job cannot overwrite calendar state", async () => {
   b.c.getTcpPort=()=>({fetch:async url=>url.endsWith("/health")?new Response():new Response(gzipSync("{}"),{headers:{"X-Trial-Summary":JSON.stringify({trial:true,tier:"priority"})}})});
   assert.equal((await b.instance.fetch(new Request("http://trial/run?job=calendar"))).status,502);
   assert.deepEqual(b.puts,[]);
+});
+
+test("FRED errors return fixed reasons without provider bodies or key values", async () => {
+  const key = "a".repeat(32);
+  const cases = [[400, "The value for variable api_key is not registered: " + key, "key_rejected"],
+    [400, "Invalid realtime_end", "request_parameters"], [429, key, "rate_limited"], [503, key, "upstream_unavailable"], [400, key, "request_rejected"]];
+  for (const [status, message, reason] of cases) {
+    const response = await egress(new Request("https://api.stlouisfed.org/fred/releases/dates"), "", true,
+      async () => Response.json({ error_message: message }, { status }), key);
+    const body = await response.text(); assert.deepEqual(JSON.parse(body), { trial_fred_reason: reason }); assert.equal(body.includes(key), false);
+  }
+});
+test("FRED key format fails before network and surrounding whitespace is normalized", async () => {
+  let calls=0;
+  const upstream=async url=>{calls++;assert.equal(new URL(url).searchParams.get("api_key"),"a".repeat(32));return Response.json({ok:true});};
+  const bad=await egress(new Request("https://api.stlouisfed.org/fred/releases/dates"),"",true,upstream,"not-a-key");
+  assert.deepEqual(await bad.json(),{trial_fred_reason:"key_format"});assert.equal(calls,0);
+  assert.equal((await egress(new Request("https://api.stlouisfed.org/fred/releases/dates"),"",true,upstream,"  "+"a".repeat(32)+"\n")).status,200);
+  assert.equal(calls,1);
+});
+
+test("malformed or oversized provider errors stay generic and bounded", async () => {
+  for (const raw of ["not JSON", JSON.stringify({error_message:"x".repeat(20000)})]) {
+    const response=await egress(new Request("https://api.stlouisfed.org/fred/releases/dates"),"",true,async()=>new Response(raw,{status:400}),"a".repeat(32));
+    assert.deepEqual(await response.json(),{trial_fred_reason:"request_rejected"});
+  }
 });

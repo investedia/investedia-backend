@@ -185,8 +185,35 @@ export function destination(url, method) {
   if (method === "POST" && /^\/v1beta\/models\/[a-zA-Z0-9.-]+:generateContent$/.test(u.pathname) && !u.search) return "gemini";
   return null;
 }
+// Return a fixed category only; provider messages may contain credentials.
+async function fredFailure(response) {
+  if (response.status === 429 || response.status >= 500) {
+    if (response.body) await response.body.cancel().catch(() => {});
+    return response.status === 429 ? "rate_limited" : "upstream_unavailable";
+  }
+  let message = "";
+  if (response.body) {
+    const reader = response.body.getReader();
+    const chunks = []; let size = 0;
+    try {
+      while (true) {
+        const { value, done } = await reader.read(); if (done) break;
+        size += value.length; if (size > 16384) return "request_rejected";
+        chunks.push(value);
+      }
+      const body = new Uint8Array(size); let offset = 0;
+      for (const chunk of chunks) { body.set(chunk, offset); offset += chunk.length; }
+      const data = JSON.parse(new TextDecoder().decode(body));
+      if (typeof data.error_message === "string") message = data.error_message.replace(/https?:\/\/\S+/g, "").toLowerCase();
+    } catch {} finally { await reader.cancel().catch(() => {}); }
+  }
+  if (/api[_ ]key/.test(message) && /not registered|not set|invalid|32 character/.test(message)) return "key_rejected";
+  if (/realtime_start|realtime_end|order_by|sort_order|limit|include_release_dates_with_no_data/.test(message)) return "request_parameters";
+  return "request_rejected";
+}
 export async function egress(request, key, enabled, upstream = fetch, fredKey = "") {
   if (!enabled) return new Response("Trial egress disabled", { status: 403 });
+  fredKey = typeof fredKey === "string" ? fredKey.trim() : "";
   let url = request.url;
   for (let hop = 0; hop < 5; hop++) {
     const source = new URL(url);
@@ -194,7 +221,7 @@ export async function egress(request, key, enabled, upstream = fetch, fredKey = 
       source.protocol = "https:"; url = source.href;
     }
     const type = destination(url, request.method);
-    if (!type || (type === "gemini" && !key) || (type === "fred" && !fredKey)) return new Response("Trial destination denied", { status: 403 });
+    if (!type || (type === "gemini" && !key)) return new Response("Trial destination denied", { status: 403 });
     // Preserve only the producer's public negotiation headers, never cookies or credentials.
     const headers = new Headers({ "User-Agent": (request.headers.get("User-Agent") || "InvestediaNews/1.0").slice(0, 256) });
     for (const name of ["Accept", "Accept-Language"]) {
@@ -202,6 +229,7 @@ export async function egress(request, key, enabled, upstream = fetch, fredKey = 
     }
     if (type === "gemini") { headers.set("x-goog-api-key", key); headers.set("Content-Type", "application/json"); }
     if (type === "fred") {
+      if (!/^[a-z0-9]{32}$/.test(fredKey)) return Response.json({ trial_fred_reason: "key_format" }, { status: 400 });
       const target = new URL(url); target.searchParams.set("api_key", fredKey); url = target.href;
     }
     const response = await upstream(url, { method: request.method, headers,
@@ -212,7 +240,10 @@ export async function egress(request, key, enabled, upstream = fetch, fredKey = 
       url = new URL(next, url).href;
       continue;
     }
-    if (!response.ok) return new Response("Trial upstream failed", { status: response.status });
+    if (!response.ok) {
+      if (type === "fred") return Response.json({ trial_fred_reason: await fredFailure(response) }, { status: response.status });
+      return new Response("Trial upstream failed", { status: response.status });
+    }
     return new Response(response.body, { status: response.status,
       headers: { "Content-Type": response.headers.get("Content-Type") || "application/octet-stream" } });
   }
