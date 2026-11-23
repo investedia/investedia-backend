@@ -1,31 +1,31 @@
-# Graph Report - investedia-library-fix-u3afif3o  (2026-11-23)
+# Graph Report - investedia-published-library-19mbzk6_  (2026-11-23)
 
 ## Corpus Check
-- 8199 files · ~1,937,975 words
+- 8199 files · ~1,939,385 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 17 file(s) not represented in the graph (top: (none) 5, .csv 3, .otf 3)
 
 ## Summary
-- 3409 nodes · 6388 edges · 233 communities (153 shown, 80 thin omitted)
+- 3413 nodes · 6399 edges · 228 communities (150 shown, 78 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 153 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6468dcce`
+- Built from commit: `9de0979e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - Outcome
-- FakeFred
+- calendar_fred.py
 - pathlib
 - regional-backfill.py
 - json
-- update_news_track.py
+- update
 - MarketsPilotTests
 - SnapshotRepositoryTest.java
 - ApiContractTest.java
-- calendar_fred.py
+- urllib_request
 - live/index.js
 - prices.js
 - registry.py
@@ -47,14 +47,14 @@
 - steps
 - steps
 - extract.py
-- test_projects_scale.py
+- transport.py
 - NewsService.java
 - markets_audit/run.py
 - news_core.py
 - SnapshotResponseHeaders.java
 - fetch.py
 - markets.js
-- media.py
+- test_projects_media.py
 - update_market.py
 - FileMarketRepository.java
 - ref_node_assert
@@ -70,17 +70,17 @@
 - math
 - env
 - AzureEditorTests
-- policy.mjs
+- news-trial/library.test.mjs
 - newscore.js
 - with
-- market_data.py
+- discover_media.py
 - with
 - LicensingEvidenceTests
 - server
 - update_news_prices.py
 - inputs
-- sys
-- audit.py
+- judge_daily
+- test_news_core.py
 - news-gap-backfill.yml
 - steps
 - runner.py
@@ -88,15 +88,15 @@
 - regional-backfill.yml
 - Policy
 - StrictNewsTests
-- methods.py
-- test_markets_pilot.py
+- fx_audit
+- parse_gkg
 - Prediction Engine v4: design and frozen rules
 - ApiConfiguration.java
 - test_projects_pipeline.py
 - inputs
 - with
 - with
-- re
+- time
 - balance
 - source_licensing.py
 - ClaudeEditor
@@ -130,8 +130,8 @@
 - FeedsTests
 - StageIntegrationTests
 - PushNews
-- build_projects.py
-- calendar_official.py
+- re
+- publish_library.py
 - sources
 - com.investedia:investedia-backend
 - com.investedia:investedia-services
@@ -140,22 +140,22 @@
 - os
 - thin-recent.yml
 - alert-email-preview.yml
-- reconcile
+- test_projects_scale.py
 - env
-- enrich_page
+- copy
 - RegionalTests
 - collections
 - Identity
 - ProjectsPipelineTests
 - feed_inventory.py
 - ClaudeProviderTests
-- markets_pilot/registry.py
+- fiscal_year
 - batch_size
 - org.springframework.web.bind.annotation.GetMapping
 - connections.test.mjs
 - ingest
 - backfill-photos.py
-- gen-companies.py
+- methods.py
 - Downloads
 - gkg_zip
 - generate
@@ -164,7 +164,7 @@
 - AuditInputTests
 - PublishLibrary
 - argparse
-- PageFetcher
+- enrich_page
 - inputs
 - CalendarTrialTests
 - sources/wikidata.py
@@ -174,21 +174,19 @@
 - writer
 - sources
 - writer
-- update_asset_analysis.py
+- call
 - ClaudeWriterTests
 - error_message
 - WindowsAndRegions
 - country_cap
-- DataTrialTests
+- parse_time
 - end_date
 - gdelt_files
-- ArticleText
-- OldGkgWithoutPageTitle
+- .test_activation_is_last
 - regions
 - start_date
 - connections_only
 - ConnectionTests
-- news_gap_history.py
 - Regional article and connection recovery
 - NewsTrialTests
 - P19 Part A · draft ingestion foundation, expanded coverage blocked
@@ -200,11 +198,9 @@
 - TrialExportTests
 - AuditTests
 - Deployment preparation — inactive proposal
-- CachedRepresentationTests
 - LegacyRetryBudgetTests
 - One-off outage recovery — staging only
-- generate
-- PhotoPoolTests
+- test_gdelt_backfill.py
 - waitlist.test.mjs
 - Live Globe connections — draft delivery fix
 - Backend news cleanup
@@ -221,7 +217,6 @@
 - Markets coverage preparation
 - Source licensing audit — phase 01
 - Budget
-- RecentIngestTests
 - CLAUDE.md
 - country-basics.md
 - API.md
@@ -253,10 +248,10 @@
 10. `Prediction Engine v4: design and frozen rules` - 19 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Full-article storage trial` --references--> `robot_stories()`  [INFERRED]
-  workers/news-trial/README.md → tools/publish_library.py
 - `1. Audit of the current live engine (Prediction Engine v2, `impact-gemini-v2`)` --references--> `dedupe()`  [INFERRED]
   research/ENGINE-V4.md → news_core.py
+- `Full-article storage trial` --references--> `robot_stories()`  [INFERRED]
+  workers/news-trial/README.md → tools/publish_library.py
 - `Source and evidence rules` --references--> `backfill_impacts()`  [INFERRED]
   data/coverage/BACKFILL.md → update_globe_news.py
 - `Source and evidence rules` --references--> `pick_stories()`  [INFERRED]
@@ -267,35 +262,35 @@
 ## Import Cycles
 - None detected.
 
-## Communities (233 total, 80 thin omitted)
+## Communities (228 total, 78 thin omitted)
 
 ### Community 0 - "Outcome"
 Cohesion: 0.29
 Nodes (3): Context, Outcome, session()
 
-### Community 1 - "FakeFred"
-Cohesion: 0.10
-Nodes (15): _calc(), covered(), _day(), enrich(), fill_actuals(), _fmt(), release_events(), Base (+7 more)
+### Community 1 - "calendar_fred.py"
+Cohesion: 0.08
+Nodes (19): _calc(), covered(), _day(), enrich(), fill_actuals(), _fmt(), FredError, _get() (+11 more)
 
 ### Community 2 - "pathlib"
-Cohesion: 0.05
-Nodes (10): AzureProviderAccepted, CommandLineTests, CountryCapTests, http_error(), RecentWindowTests, TitleJunkTests, HistoryConnections, EnglishHeadlineTests (+2 more)
+Cohesion: 0.07
+Nodes (5): HistoryConnections, CachedRepresentationTests, EnglishHeadlineTests, ExtraFeedsTests, ThinCapTests
 
 ### Community 3 - "regional-backfill.py"
 Cohesion: 0.10
-Nodes (32): records(), content_hash(), archive(), batches(), cached_patch(), contains_secret(), dedupe(), draw_connections() (+24 more)
+Nodes (33): records(), content_hash(), archive(), batches(), cached_patch(), contains_secret(), dedupe(), draw_connections() (+25 more)
 
 ### Community 4 - "json"
-Cohesion: 0.06
-Nodes (23): ok(), get(), group(), fetch(), NoRedirect, sparql(), main(), publish() (+15 more)
-
-### Community 5 - "update_news_track.py"
 Cohesion: 0.08
-Nodes (18): Ledger, story(), Track, call(), OutcomeV2, bars(), bench_of(), call_start() (+10 more)
+Nodes (22): daily(), load(), atomic_write(), stage(), facts(), load(), main(), parse() (+14 more)
+
+### Community 5 - "update"
+Cohesion: 0.11
+Nodes (14): Ledger, story(), Track, bench_of(), call_start(), freeze(), judge(), load() (+6 more)
 
 ### Community 6 - "MarketsPilotTests"
-Cohesion: 0.13
-Nodes (5): MarketsPilotTests, runner(), reconcile(), find(), union()
+Cohesion: 0.10
+Nodes (16): MarketsPilotTests, plan(), build(), coverage(), digest(), finite(), fx_relationships(), ident() (+8 more)
 
 ### Community 7 - "SnapshotRepositoryTest.java"
 Cohesion: 0.10
@@ -305,9 +300,9 @@ Nodes (6): RepositoryProperties, SnapshotUnavailableException, FileCallRepositor
 Cohesion: 0.06
 Nodes (4): ApiContractTest, TimeConfiguration, LayeredArchitectureTest, LocalStartupTest
 
-### Community 9 - "calendar_fred.py"
-Cohesion: 0.14
-Nodes (5): FredError, _get(), _obs(), FredTrialErrorTests, get()
+### Community 9 - "urllib_request"
+Cohesion: 0.15
+Nodes (5): ok(), group(), fetch(), NoRedirect, sparql()
 
 ### Community 10 - "live/index.js"
 Cohesion: 0.10
@@ -318,8 +313,8 @@ Cohesion: 0.13
 Nodes (31): fetchQuotes(), MAX_SYMBOLS, parseSpark(), PROVIDER, TIER_A, TIER_B, NOW, day() (+23 more)
 
 ### Community 12 - "registry.py"
-Cohesion: 0.08
-Nodes (14): call_of(), main(), context_of(), series(), v5(), ascii_lower(), get(), name_key() (+6 more)
+Cohesion: 0.06
+Nodes (20): call_of(), main(), context_of(), series(), v5(), ascii_lower(), get(), name_key() (+12 more)
 
 ### Community 13 - "with"
 Cohesion: 0.06
@@ -370,16 +365,16 @@ Cohesion: 0.07
 Nodes (27): concurrency, cancel-in-progress, group, GH_REPO, GH_TOKEN, jobs, notices, name (+19 more)
 
 ### Community 25 - "update_share_cards.py"
-Cohesion: 0.14
-Nodes (16): ShareCards, ago_text(), caption(), draw_logo(), load(), move_since(), page(), parse() (+8 more)
+Cohesion: 0.09
+Nodes (24): all_official(), bea(), bls(), _event(), fomc(), _get(), _text(), OfficialCalendar (+16 more)
 
 ### Community 26 - "news-gap-backfill.py"
-Cohesion: 0.30
-Nodes (14): articles(), confirm(), dedupe(), digest(), get(), in_window(), keys(), main() (+6 more)
+Cohesion: 0.15
+Nodes (19): articles(), ArticleText, confirm(), dedupe(), digest(), get(), in_window(), keys() (+11 more)
 
 ### Community 27 - "update_globe_news.py"
-Cohesion: 0.12
-Nodes (23): Source and evidence rules, backfill_impacts(), compact48(), dedupe(), describe(), err(), gdelt(), gemini() (+15 more)
+Cohesion: 0.14
+Nodes (20): Source and evidence rules, backfill_impacts(), compact48(), dedupe(), describe(), err(), gdelt(), gemini() (+12 more)
 
 ### Community 28 - "steps"
 Cohesion: 0.07
@@ -390,40 +385,40 @@ Cohesion: 0.07
 Nodes (26): concurrency, cancel-in-progress, group, description, required, NEWS_INGEST_TOKEN, WORKER_URL, confirm (+18 more)
 
 ### Community 30 - "extract.py"
-Cohesion: 0.10
-Nodes (15): build_prompt(), calendar_expectations(), _num(), story_block(), validate(), exit_bar(), judge(), move_between() (+7 more)
+Cohesion: 0.31
+Nodes (5): build_prompt(), calendar_expectations(), _num(), story_block(), validate()
 
-### Community 31 - "test_projects_scale.py"
-Cohesion: 0.08
-Nodes (15): DiscoveryTests, ScaleTransportTests, commons_candidate(), discover(), main(), query(), text(), run() (+7 more)
+### Community 31 - "transport.py"
+Cohesion: 0.21
+Nodes (6): ScaleTransportTests, run(), BudgetExceeded, Client, Deferred, NoRedirect
 
 ### Community 32 - "NewsService.java"
 Cohesion: 0.17
 Nodes (5): NewsController, ApiEnvelope, NewsSnapshot, NewsRepository, NewsService
 
 ### Community 33 - "markets_audit/run.py"
-Cohesion: 0.17
+Cohesion: 0.16
 Nodes (12): AuditScopeTests, RunnerBoundaryTests, coverage(), ecb_xml(), fetch_audit(), licensing(), main(), read() (+4 more)
 
 ### Community 34 - "news_core.py"
-Cohesion: 0.08
-Nodes (21): age_minutes(), atomic_write(), authority_of(), canon(), dedupe(), entities(), freshness(), from_iso() (+13 more)
+Cohesion: 0.12
+Nodes (14): age_minutes(), authority_of(), canon(), dedupe(), entities(), freshness(), from_iso(), jaccard() (+6 more)
 
 ### Community 35 - "SnapshotResponseHeaders.java"
 Cohesion: 0.14
 Nodes (3): SnapshotResponseHeaders, ApiExceptionHandler, UnknownGroupException
 
 ### Community 36 - "fetch.py"
-Cohesion: 0.17
+Cohesion: 0.16
 Nodes (12): collect(), companies_house(), confirmed_ogl(), gleif(), golden_urls(), walk(), local(), sec_directory() (+4 more)
 
 ### Community 37 - "markets.js"
 Cohesion: 0.23
 Nodes (17): fixture, setup(), ApiError, CREDITS, error(), fail(), handleMarkets(), integer() (+9 more)
 
-### Community 38 - "media.py"
-Cohesion: 0.16
-Nodes (7): MediaTests, attach(), contained(), date(), https(), sha(), validate()
+### Community 38 - "test_projects_media.py"
+Cohesion: 0.13
+Nodes (8): MediaTests, attach(), contained(), date(), https(), sha(), site_hash(), validate()
 
 ### Community 39 - "update_market.py"
 Cohesion: 0.21
@@ -438,8 +433,8 @@ Cohesion: 0.11
 Nodes (23): article(), gap(), now, req(), seed(), article(), backfilled(), body() (+15 more)
 
 ### Community 43 - "gdelt-backfill.py"
-Cohesion: 0.07
-Nodes (35): day(), dedupe(), gkg_plan(), gkg_url(), GkgClient, headline_key(), ingest_artifact(), acknowledged() (+27 more)
+Cohesion: 0.08
+Nodes (34): country_allowed(), day(), dedupe(), finalize(), generate(), gkg_plan(), headline_key(), ingest_artifact() (+26 more)
 
 ### Community 44 - "alerts.js"
 Cohesion: 0.11
@@ -462,16 +457,16 @@ Cohesion: 0.16
 Nodes (5): CallController, LedgerDocument, CallRepository, CallService, SnapshotRepositoryTest
 
 ### Community 51 - "math"
-Cohesion: 0.18
-Nodes (5): features(), _last(), session_start(), sigma_daily(), expected()
+Cohesion: 0.05
+Nodes (36): features(), _last(), session_start(), sigma_daily(), expected(), decide(), horizon(), meaningful() (+28 more)
 
 ### Community 52 - "env"
 Cohesion: 0.11
 Nodes (18): ANTHROPIC_API_KEY, BACKFILL_BATCH_INPUT, BACKFILL_CALLS_INPUT, BACKFILL_CONFIRM_INPUT, BACKFILL_CONNECTIONS_INPUT, BACKFILL_DAYS_INPUT, BACKFILL_DRY_RUN_INPUT, BACKFILL_SOURCES_INPUT (+10 more)
 
-### Community 54 - "policy.mjs"
-Cohesion: 0.16
-Nodes (16): NewsTrial, TrialEgress, boundedJson(), readTrialArticle(), storeTrialLibrary(), rows, validArticle(), destination() (+8 more)
+### Community 54 - "news-trial/library.test.mjs"
+Cohesion: 0.15
+Nodes (18): NewsTrial, TrialEgress, boundedJson(), publishLibraryPage(), publishSavedArticle(), readTrialArticle(), storeTrialLibrary(), rows (+10 more)
 
 ### Community 55 - "newscore.js"
 Cohesion: 0.21
@@ -481,9 +476,9 @@ Nodes (16): NOW, V, authority(), canon(), dedupe(), EC, entities(), entitiesRaw(
 Cohesion: 0.05
 Nodes (40): default, description, concurrency, cancel-in-progress, group, GH_TOKEN, backfill_run, jobs (+32 more)
 
-### Community 57 - "market_data.py"
-Cohesion: 0.25
-Nodes (8): correlation(), dated(), ecb_rates(), exchange_connections(), fetch(), main(), NoRedirect, valid()
+### Community 57 - "discover_media.py"
+Cohesion: 0.19
+Nodes (6): DiscoveryTests, commons_candidate(), discover(), main(), query(), text()
 
 ### Community 58 - "with"
 Cohesion: 0.05
@@ -494,20 +489,20 @@ Cohesion: 0.17
 Nodes (11): name, include-message, include-stacktrace, investedia, repository-root, server, address, error (+3 more)
 
 ### Community 61 - "update_news_prices.py"
-Cohesion: 0.33
-Nodes (5): alias_known(), fetch(), fred(), main(), wanted_assets()
+Cohesion: 0.18
+Nodes (9): fetch(), main(), registry_listing(), ysym(), alias_known(), fetch(), fred(), main() (+1 more)
 
 ### Community 62 - "inputs"
 Cohesion: 0.13
 Nodes (15): description, required, default, description, required, default, description, confirm (+7 more)
 
-### Community 63 - "sys"
-Cohesion: 0.11
-Nodes (9): Daily, facts(), load(), main(), parse(), day(), judge_daily(), load() (+1 more)
+### Community 63 - "judge_daily"
+Cohesion: 0.23
+Nodes (5): Daily, day(), judge_daily(), load(), run()
 
-### Community 64 - "audit.py"
-Cohesion: 0.30
-Nodes (11): assets_for(), date(), fetch_api(), finite(), generate(), main(), markdown(), NoRedirect (+3 more)
+### Community 64 - "test_news_core.py"
+Cohesion: 0.23
+Nodes (5): iso(), cand(), Core, story(), load_seen()
 
 ### Community 65 - "news-gap-backfill.yml"
 Cohesion: 0.18
@@ -518,8 +513,8 @@ Cohesion: 0.17
 Nodes (12): if, runs-on, steps, timeout-minutes, jobs, backfill, id, if (+4 more)
 
 ### Community 67 - "runner.py"
-Cohesion: 0.12
-Nodes (15): stage(), allowed(), decode_bundle(), encode_bundle(), GenerationFailed, Handler, library_page(), pack() (+7 more)
+Cohesion: 0.13
+Nodes (16): backfill(), store(), allowed(), decode_bundle(), encode_bundle(), GenerationFailed, Handler, library_page() (+8 more)
 
 ### Community 68 - "README.md"
 Cohesion: 0.09
@@ -529,17 +524,17 @@ Nodes (17): Architecture and data map, Contracts and verification, Local Java / 
 Cohesion: 0.20
 Nodes (9): concurrency, cancel-in-progress, group, name, on, workflow_dispatch, permissions, actions (+1 more)
 
-### Community 72 - "methods.py"
-Cohesion: 0.20
-Nodes (7): FXTests, IdentifierTests, fx_audit(), match(), pearson(), returns(), valid_isin()
+### Community 72 - "fx_audit"
+Cohesion: 0.38
+Nodes (4): FXTests, fx_audit(), pearson(), returns()
 
-### Community 73 - "test_markets_pilot.py"
-Cohesion: 0.14
-Nodes (9): execute(), main(), plan(), build(), coverage(), fx_relationships(), read(), write() (+1 more)
+### Community 73 - "parse_gkg"
+Cohesion: 0.20
+Nodes (6): gkg_url(), GkgClient, main_country(), parse_gkg(), strong_theme(), themes_ok()
 
 ### Community 74 - "Prediction Engine v4: design and frozen rules"
-Cohesion: 0.11
-Nodes (18): 10. Outcome rule outcome-v4 (for v4 calls), 11. Evaluation (no tuning on the holdout), 11a. Track Record datasets, 11b. Expected volume (archive proxy, 22–30 Oct; development estimate, not a target), 12. Data, 13. Known risks, 2. Architecture of v4 (shadow first, then promotion), 2a. Products (one engine, three outputs; never blurred) (+10 more)
+Cohesion: 0.10
+Nodes (19): 10. Outcome rule outcome-v4 (for v4 calls), 11. Evaluation (no tuning on the holdout), 11a. Track Record datasets, 11b. Expected volume (archive proxy, 22–30 Oct; development estimate, not a target), 12. Data, 13. Known risks, 1. Audit of the current live engine (Prediction Engine v2, `impact-gemini-v2`), 2. Architecture of v4 (shadow first, then promotion) (+11 more)
 
 ### Community 76 - "test_projects_pipeline.py"
 Cohesion: 0.21
@@ -557,9 +552,9 @@ Nodes (9): with, github-token, if-no-files-found, name, path, persist-credential
 Cohesion: 0.22
 Nodes (9): with, if-no-files-found, key, name, path, persist-credentials, python-version, restore-keys (+1 more)
 
-### Community 80 - "re"
-Cohesion: 0.19
-Nodes (12): normalize_sector(), fetch(), main(), registry_listing(), ysym(), assets(), clean(), fetch() (+4 more)
+### Community 80 - "time"
+Cohesion: 0.27
+Nodes (8): get(), assets(), clean(), fetch(), for_asset(), google(), main(), parse()
 
 ### Community 81 - "balance"
 Cohesion: 0.36
@@ -598,8 +593,8 @@ Cohesion: 0.06
 Nodes (32): concurrency, cancel-in-progress, group, GH_REPO, GH_TOKEN, MAX_TOTAL, QUEUE, SPENT (+24 more)
 
 ### Community 94 - "country_basics.py"
-Cohesion: 0.26
-Nodes (9): output(), apply_indicator(), get(), main(), NoRedirect, numeric(), observation(), read() (+1 more)
+Cohesion: 0.15
+Nodes (10): DataTrialTests, output(), apply_indicator(), get(), main(), NoRedirect, numeric(), observation() (+2 more)
 
 ### Community 97 - "env"
 Cohesion: 0.33
@@ -633,13 +628,13 @@ Nodes (4): default, description, type, dry_run
 Cohesion: 0.50
 Nodes (4): default, description, required, gemini_calls
 
-### Community 114 - "build_projects.py"
+### Community 114 - "re"
 Cohesion: 0.14
-Nodes (13): ScaleArtifactTests, build(), covered(), digest(), distance(), featured(), finite(), licence_gate() (+5 more)
+Nodes (16): build(), canonical(), company_links(), covered(), digest(), distance(), featured(), finite() (+8 more)
 
-### Community 115 - "calendar_official.py"
-Cohesion: 0.28
-Nodes (8): all_official(), bea(), bls(), _event(), fomc(), _get(), _text(), OfficialCalendar
+### Community 115 - "publish_library.py"
+Cohesion: 0.27
+Nodes (5): main(), publish(), robot_stories(), site_stats(), Full-article storage trial
 
 ### Community 116 - "sources"
 Cohesion: 0.40
@@ -654,8 +649,8 @@ Cohesion: 0.08
 Nodes (25): ANTHROPIC_API_KEY, MAX_USD, runs-on, steps, timeout-minutes, max_usd, jobs, fill (+17 more)
 
 ### Community 123 - "os"
-Cohesion: 0.07
-Nodes (10): daily(), freeze(), judge(), load(), save(), Extraction, Runner, Shadow (+2 more)
+Cohesion: 0.05
+Nodes (12): exit_bar(), judge(), move_between(), _sessions(), freeze(), judge(), save(), Extraction (+4 more)
 
 ### Community 124 - "thin-recent.yml"
 Cohesion: 0.09
@@ -665,37 +660,29 @@ Nodes (21): concurrency, cancel-in-progress, group, GH_REPO, GH_TOKEN, jobs, sta
 Cohesion: 0.10
 Nodes (20): TO, TOKEN, WORKER_URL, to, jobs, send, name, on (+12 more)
 
-### Community 126 - "reconcile"
-Cohesion: 0.15
-Nodes (10): bind(), row(), ScalePolicyTests, ScaleReconciliationTests, canonical(), merge_rows(), current(), identity() (+2 more)
+### Community 126 - "test_projects_scale.py"
+Cohesion: 0.12
+Nodes (11): bind(), row(), ScaleArtifactTests, ScalePolicyTests, ScaleReconciliationTests, current(), details(), ids() (+3 more)
 
 ### Community 127 - "env"
 Cohesion: 0.09
 Nodes (22): ANTHROPIC_API_KEY, AZURE_OPENAI_API_KEY, AZURE_OPENAI_DEPLOYMENT, AZURE_OPENAI_ENDPOINT, BATCH, CALLS, CONFIRM, COUNTRY_CAP (+14 more)
 
-### Community 128 - "enrich_page"
-Cohesion: 0.24
-Nodes (7): clean_title(), enrich_page(), finalize(), meta(), paywalled(), published_time(), stamp()
+### Community 128 - "copy"
+Cohesion: 0.39
+Nodes (6): choose(), country_map(), eligible(), main(), read(), resolve()
 
 ### Community 130 - "collections"
 Cohesion: 0.50
 Nodes (5): history(), km(), load(), main(), _rules()
 
-### Community 132 - "ProjectsPipelineTests"
-Cohesion: 0.32
-Nodes (3): ProjectsPipelineTests, row(), company_links()
-
 ### Community 133 - "feed_inventory.py"
-Cohesion: 0.22
+Cohesion: 0.24
 Nodes (6): configured(), dates(), get(), main(), NoRedirect, probe()
 
 ### Community 134 - "ClaudeProviderTests"
 Cohesion: 0.20
 Nodes (3): ClaudeProviderTests, FakeClaude, boom()
-
-### Community 135 - "markets_pilot/registry.py"
-Cohesion: 0.28
-Nodes (9): normal_id(), digest(), finite(), fiscal_year(), ident(), provenance(), entity(), listing() (+1 more)
 
 ### Community 136 - "batch_size"
 Cohesion: 0.50
@@ -713,9 +700,9 @@ Nodes (12): if, needs, runs-on, timeout-minutes, jobs, ingest, name, on (+4 more
 Cohesion: 0.26
 Nodes (7): main(), resize(), run(), save(), save_progress(), slug(), top_up()
 
-### Community 141 - "gen-companies.py"
-Cohesion: 0.31
-Nodes (5): clean(), display(), exchange(), main(), slugify()
+### Community 141 - "methods.py"
+Cohesion: 0.39
+Nodes (4): IdentifierTests, match(), normal_id(), valid_isin()
 
 ### Community 142 - "Downloads"
 Cohesion: 0.25
@@ -735,18 +722,18 @@ Nodes (8): steps, steps, id, if, name, run, uses, working-directory
 
 ### Community 149 - "argparse"
 Cohesion: 0.11
-Nodes (18): active_time(), calendar_metadata(), value(), enrich(), main(), choose(), country_map(), eligible() (+10 more)
+Nodes (15): active_time(), calendar_metadata(), value(), enrich(), main(), execute(), main(), write() (+7 more)
 
-### Community 150 - "PageFetcher"
-Cohesion: 0.32
-Nodes (3): PageFetcher, paywalled_host(), same_site()
+### Community 150 - "enrich_page"
+Cohesion: 0.16
+Nodes (8): clean_title(), enrich_page(), meta(), PageFetcher, paywalled(), paywalled_host(), published_time(), same_site()
 
 ### Community 151 - "inputs"
 Cohesion: 0.11
 Nodes (19): description, required, default, description, type, default, description, required (+11 more)
 
 ### Community 153 - "sources/wikidata.py"
-Cohesion: 0.38
+Cohesion: 0.28
 Nodes (3): parse(), parse(), query()
 
 ### Community 155 - "Projects scale — stage 1, 11 November 2026"
@@ -765,17 +752,17 @@ Nodes (5): sources, default, description, options, type
 Cohesion: 0.40
 Nodes (5): writer, default, description, options, type
 
-### Community 160 - "update_asset_analysis.py"
-Cohesion: 0.43
-Nodes (6): ai(), load(), main(), related(), template(), vol()
-
 ### Community 162 - "error_message"
-Cohesion: 0.40
-Nodes (3): error_message(), recording(), call()
+Cohesion: 0.29
+Nodes (4): transport(), error_message(), recording(), call()
 
 ### Community 164 - "country_cap"
 Cohesion: 0.50
 Nodes (4): default, description, required, country_cap
+
+### Community 165 - "parse_time"
+Cohesion: 0.33
+Nodes (3): parse_time(), rss(), one()
 
 ### Community 166 - "end_date"
 Cohesion: 0.50
@@ -797,10 +784,6 @@ Nodes (4): start_date, default, description, required
 Cohesion: 0.50
 Nodes (4): default, description, type, connections_only
 
-### Community 174 - "news_gap_history.py"
-Cohesion: 0.47
-Nodes (4): locate(), named(), read(), reference()
-
 ### Community 175 - "Regional article and connection recovery"
 Cohesion: 0.22
 Nodes (8): Before running, Dry run first, Model, regional reserves, repairs and cost, Months-back backfill through GDELT (Aug 1 – Oct 15 2026), Offline verification, Regional article and connection recovery, Routing, persistence and capacity, Writer: Claude Haiku 5.5 (default) or Gemini
@@ -815,7 +798,7 @@ Nodes (7): Attribution, budget and sizing, Current result and limits, FX, Read-o
 
 ### Community 181 - "Isolated priority-news trial"
 Cohesion: 0.22
-Nodes (8): Full-article storage trial, Isolated calendar adapter, Isolated non-AI data jobs, Isolated priority-news trial, Isolation, Offline checks, Operation after explicit deployment approval, What remains to prove
+Nodes (8): Explicit publication boundary, Isolated calendar adapter, Isolated non-AI data jobs, Isolated priority-news trial, Isolation, Offline checks, Operation after explicit deployment approval, What remains to prove
 
 ### Community 182 - "Country coverage audit"
 Cohesion: 0.33
@@ -833,9 +816,9 @@ Nodes (5): Deployment preparation — inactive proposal, DNS preservation and ap
 Cohesion: 0.33
 Nodes (5): Actual one-hour staging attempt, Boundary evidence (UTC), Implementation and safety, One-off outage recovery — staging only, Operator steps after review
 
-### Community 190 - "generate"
-Cohesion: 0.29
-Nodes (4): country_allowed(), generate(), provenance(), topic_photo()
+### Community 191 - "test_gdelt_backfill.py"
+Cohesion: 0.06
+Nodes (10): jpeg(), PhotoPoolTests, AzureProviderAccepted, CommandLineTests, CountryCapTests, http_error(), OldGkgWithoutPageTitle, RecentIngestTests (+2 more)
 
 ### Community 192 - "waitlist.test.mjs"
 Cohesion: 0.43
@@ -883,23 +866,23 @@ Nodes (3): Audit of the original (v1) scoring, 653 judged calls, Early calls: sc
 
 ## Knowledge Gaps
 - **4 isolated node(s):** `com.investedia:investedia-backend`, `com.investedia:investedia-services`, `RFC-8291`, `RFC-8292`
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 1510 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **80 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 1511 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **78 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Ledger` connect `update_news_track.py` to `pathlib`?**
+- **Why does `Ledger` connect `update` to `os`?**
   _High betweenness centrality (0.012) - this node is a cross-community bridge._
 - **What connects `com.investedia:investedia-backend`, `com.investedia:investedia-services`, `RFC-8291` to the rest of the system?**
   _4 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `FakeFred` be split into smaller, more focused modules?**
-  _Cohesion score 0.10256410256410256 - nodes in this community are weakly interconnected._
+- **Should `calendar_fred.py` be split into smaller, more focused modules?**
+  _Cohesion score 0.08078431372549019 - nodes in this community are weakly interconnected._
 - **Why does `Client` connect `Downloads` to `markets_audit/run.py`, `fetch.py`?**
   _High betweenness centrality (0.009) - this node is a cross-community bridge._
 - **Should `pathlib` be split into smaller, more focused modules?**
-  _Cohesion score 0.05277777777777778 - nodes in this community are weakly interconnected._
-- **Why does `RegionalTests` connect `RegionalTests` to `pathlib`?**
+  _Cohesion score 0.06949152542372881 - nodes in this community are weakly interconnected._
+- **Why does `RegionalTests` connect `RegionalTests` to `error_message`, `pathlib`?**
   _High betweenness centrality (0.008) - this node is a cross-community bridge._
 - **Should `regional-backfill.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.09619450317124736 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09936575052854123 - nodes in this community are weakly interconnected._

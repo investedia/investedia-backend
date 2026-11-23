@@ -115,3 +115,12 @@ The first real saved-library run failed before writing articles because reusing 
 
 
 Additional verification: a second local native-Container transfer reported zero article writes; all 1,501 local stored articles matched every original field/date. An independent localhost Worker using the real isolated R2 binding also copied all 1,501 articles, and every actual private R2 readback matched its saved source. This verifies the bucket/artifacts while the deployed Container connection fix is still awaiting owner merge. No production readers or publishing schedules were switched.
+
+
+## Explicit publication boundary
+
+`PUBLISH_LIBRARY_ENABLED` defaults to `false`. When separately enabled, authenticated `POST /publish-library` copies at most 250 validated full articles from `trial/library/articles/` to `published/library/articles/` per call, preserving exact bytes and every existing published object. The news Durable Object lock serializes this with generation. A listing cursor is checkpointed only after a completed page; partial writes are safe to reuse after failure. Continue until `done:true`. This path starts no Container and calls no AI provider. Trial generation can remain disabled while copying already validated articles.
+
+When the same publication flag is enabled, successful priority/broad generation also writes its exported articles to the published prefix before advancing producer state. Ordinary saved-library trials continue to write only trial artifacts. Neither flag configures a schedule. The website's separate `ARTICLE_STORE` binding and read-only Pages Function accept only the published prefix, keeping seeds, state, trial articles and other private objects inaccessible. Without that binding or when an object is missing, the website retains its static article fallback. No provider key belongs in Pages bindings or browser files.
+
+After PR #120 merged, the deployed Container library transfer and a repeat both passed with zero rewrites; all 1,501 deployed authenticated article readbacks matched their saved source. The trial was confirmed disabled with no schedule afterward. Article listing/index migration, news-provider failures and the coordinated scheduler cutover remain outstanding.

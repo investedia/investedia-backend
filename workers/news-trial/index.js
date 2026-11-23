@@ -1,5 +1,5 @@
 import { DurableObject, WorkerEntrypoint } from "cloudflare:workers";
-import { storeTrialLibrary } from "./library.mjs";
+import { storeTrialLibrary, publishLibraryPage } from "./library.mjs";
 import { egress, route, trialTier, trialJob, safeDiagnostic } from "./policy.mjs";
 
 export class TrialEgress extends WorkerEntrypoint {
@@ -7,7 +7,22 @@ export class TrialEgress extends WorkerEntrypoint {
 }
 export class NewsTrial extends DurableObject {
   busy = false;
+  async publishLibrary() {
+    if (this.env.PUBLISH_LIBRARY_ENABLED !== "true") return new Response("Article publication disabled", { status: 409 });
+    if (this.busy) return new Response("Trial already running", { status: 409 });
+    this.busy = true;
+    try {
+      const cursor = await this.ctx.storage.get("library:publish:cursor");
+      const result = await publishLibraryPage(this.env.TRIAL_STORE, cursor);
+      if (result.cursor) await this.ctx.storage.put("library:publish:cursor", result.cursor);
+      else await this.ctx.storage.delete("library:publish:cursor");
+      return Response.json({ examined: result.examined, written: result.written, done: result.cursor === null });
+    } catch {
+      return Response.json({ error: "article_publication_failed", existing_articles_preserved: true }, { status: 502 });
+    } finally { this.busy = false; }
+  }
   async fetch(request = new Request("http://trial/run")) {
+    if (new URL(request.url).pathname === "/publish-library") return this.publishLibrary();
     const job = trialJob(request);
     if (!job) return new Response("Unknown trial job", { status: 400 });
     const prefix = job === "news" ? "trial" : `trial/${job}`;
@@ -57,6 +72,10 @@ export class NewsTrial extends DurableObject {
         // Reacquire the port after each HTTP/1.0 response closes its connection.
         const library = await storeTrialLibrary({ fetch: request => c.getTcpPort(8080).fetch(request) }, this.env.TRIAL_STORE, summary.library_articles);
         summary.library_written = library.written;
+        if (job === "news" && this.env.PUBLISH_LIBRARY_ENABLED === "true") {
+          const published = await storeTrialLibrary({ fetch: request => c.getTcpPort(8080).fetch(request) }, this.env.TRIAL_STORE, summary.library_articles, "published");
+          summary.published_articles_written = published.written;
+        }
       }
       // Keep the large archive opaque here; parsing it in the Worker can exhaust memory.
       stage = "storage";
