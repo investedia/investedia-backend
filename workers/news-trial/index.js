@@ -54,7 +54,8 @@ export class NewsTrial extends DurableObject {
       if (summary?.trial !== true || (job === "news" ? summary.tier !== tier : summary.job !== job)) throw new Error("Invalid result");
       if (["news", "library"].includes(job)) {
         stage = "library";
-        const library = await storeTrialLibrary(port, this.env.TRIAL_STORE, summary.library_articles);
+        // Reacquire the port after each HTTP/1.0 response closes its connection.
+        const library = await storeTrialLibrary({ fetch: request => c.getTcpPort(8080).fetch(request) }, this.env.TRIAL_STORE, summary.library_articles);
         summary.library_written = library.written;
       }
       // Keep the large archive opaque here; parsing it in the Worker can exhaust memory.

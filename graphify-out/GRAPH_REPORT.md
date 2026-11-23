@@ -1,7 +1,7 @@
-# Graph Report - investedia-library-trial-s80__xoq  (2026-11-23)
+# Graph Report - investedia-library-fix-u3afif3o  (2026-11-23)
 
 ## Corpus Check
-- 8199 files · ~1,937,650 words
+- 8199 files · ~1,937,975 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 17 file(s) not represented in the graph (top: (none) 5, .csv 3, .otf 3)
 
@@ -11,13 +11,13 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `65edbc78`
+- Built from commit: `6468dcce`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - Outcome
-- calendar_fred.py
+- FakeFred
 - pathlib
 - regional-backfill.py
 - json
@@ -47,9 +47,9 @@
 - steps
 - steps
 - extract.py
-- discover_media.py
+- test_projects_scale.py
 - NewsService.java
-- hashlib
+- markets_audit/run.py
 - news_core.py
 - SnapshotResponseHeaders.java
 - fetch.py
@@ -58,7 +58,7 @@
 - update_market.py
 - FileMarketRepository.java
 - ref_node_assert
-- regional-backfill.test.mjs
+- handleNews
 - gdelt-backfill.py
 - alerts.js
 - with
@@ -67,19 +67,19 @@
 - NewsPhotos
 - with
 - .missingAndMalformedSnapshotsFailClosedWithoutLeakingPaths
-- context.py
+- math
 - env
 - AzureEditorTests
 - policy.mjs
 - newscore.js
 - with
-- math
+- market_data.py
 - with
 - LicensingEvidenceTests
 - server
 - update_news_prices.py
 - inputs
-- update_track_backfill.py
+- sys
 - audit.py
 - news-gap-backfill.yml
 - steps
@@ -140,7 +140,7 @@
 - os
 - thin-recent.yml
 - alert-email-preview.yml
-- current
+- reconcile
 - env
 - enrich_page
 - RegionalTests
@@ -148,7 +148,7 @@
 - Identity
 - ProjectsPipelineTests
 - feed_inventory.py
-- .run_once
+- ClaudeProviderTests
 - markets_pilot/registry.py
 - batch_size
 - org.springframework.web.bind.annotation.GetMapping
@@ -157,7 +157,7 @@
 - backfill-photos.py
 - gen-companies.py
 - Downloads
-- GkgClientTests
+- gkg_zip
 - generate
 - with
 - steps
@@ -273,7 +273,7 @@
 Cohesion: 0.29
 Nodes (3): Context, Outcome, session()
 
-### Community 1 - "calendar_fred.py"
+### Community 1 - "FakeFred"
 Cohesion: 0.10
 Nodes (15): _calc(), covered(), _day(), enrich(), fill_actuals(), _fmt(), release_events(), Base (+7 more)
 
@@ -393,7 +393,7 @@ Nodes (26): concurrency, cancel-in-progress, group, description, required, NEWS_
 Cohesion: 0.10
 Nodes (15): build_prompt(), calendar_expectations(), _num(), story_block(), validate(), exit_bar(), judge(), move_between() (+7 more)
 
-### Community 31 - "discover_media.py"
+### Community 31 - "test_projects_scale.py"
 Cohesion: 0.08
 Nodes (15): DiscoveryTests, ScaleTransportTests, commons_candidate(), discover(), main(), query(), text(), run() (+7 more)
 
@@ -401,7 +401,7 @@ Nodes (15): DiscoveryTests, ScaleTransportTests, commons_candidate(), discover()
 Cohesion: 0.17
 Nodes (5): NewsController, ApiEnvelope, NewsSnapshot, NewsRepository, NewsService
 
-### Community 33 - "hashlib"
+### Community 33 - "markets_audit/run.py"
 Cohesion: 0.17
 Nodes (12): AuditScopeTests, RunnerBoundaryTests, coverage(), ecb_xml(), fetch_audit(), licensing(), main(), read() (+4 more)
 
@@ -433,7 +433,7 @@ Nodes (13): from_fred(), from_yahoo(), chg(), get(), history(), perf(), main(), 
 Cohesion: 0.08
 Nodes (15): target, feed, NOW, at, now, row, saved, snapshot (+7 more)
 
-### Community 42 - "regional-backfill.test.mjs"
+### Community 42 - "handleNews"
 Cohesion: 0.11
 Nodes (23): article(), gap(), now, req(), seed(), article(), backfilled(), body() (+15 more)
 
@@ -461,7 +461,7 @@ Nodes (30): concurrency, cancel-in-progress, group, if, runs-on, steps, timeout-
 Cohesion: 0.16
 Nodes (5): CallController, LedgerDocument, CallRepository, CallService, SnapshotRepositoryTest
 
-### Community 51 - "context.py"
+### Community 51 - "math"
 Cohesion: 0.18
 Nodes (5): features(), _last(), session_start(), sigma_daily(), expected()
 
@@ -481,7 +481,7 @@ Nodes (16): NOW, V, authority(), canon(), dedupe(), EC, entities(), entitiesRaw(
 Cohesion: 0.05
 Nodes (40): default, description, concurrency, cancel-in-progress, group, GH_TOKEN, backfill_run, jobs (+32 more)
 
-### Community 57 - "math"
+### Community 57 - "market_data.py"
 Cohesion: 0.25
 Nodes (8): correlation(), dated(), ecb_rates(), exchange_connections(), fetch(), main(), NoRedirect, valid()
 
@@ -501,7 +501,7 @@ Nodes (5): alias_known(), fetch(), fred(), main(), wanted_assets()
 Cohesion: 0.13
 Nodes (15): description, required, default, description, required, default, description, confirm (+7 more)
 
-### Community 63 - "update_track_backfill.py"
+### Community 63 - "sys"
 Cohesion: 0.11
 Nodes (9): Daily, facts(), load(), main(), parse(), day(), judge_daily(), load() (+1 more)
 
@@ -665,7 +665,7 @@ Nodes (21): concurrency, cancel-in-progress, group, GH_REPO, GH_TOKEN, jobs, sta
 Cohesion: 0.10
 Nodes (20): TO, TOKEN, WORKER_URL, to, jobs, send, name, on (+12 more)
 
-### Community 126 - "current"
+### Community 126 - "reconcile"
 Cohesion: 0.15
 Nodes (10): bind(), row(), ScalePolicyTests, ScaleReconciliationTests, canonical(), merge_rows(), current(), identity() (+2 more)
 
@@ -689,7 +689,7 @@ Nodes (3): ProjectsPipelineTests, row(), company_links()
 Cohesion: 0.22
 Nodes (6): configured(), dates(), get(), main(), NoRedirect, probe()
 
-### Community 134 - ".run_once"
+### Community 134 - "ClaudeProviderTests"
 Cohesion: 0.20
 Nodes (3): ClaudeProviderTests, FakeClaude, boom()
 
@@ -893,13 +893,13 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.012) - this node is a cross-community bridge._
 - **What connects `com.investedia:investedia-backend`, `com.investedia:investedia-services`, `RFC-8291` to the rest of the system?**
   _4 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `calendar_fred.py` be split into smaller, more focused modules?**
+- **Should `FakeFred` be split into smaller, more focused modules?**
   _Cohesion score 0.10256410256410256 - nodes in this community are weakly interconnected._
-- **Why does `dedupe()` connect `news_core.py` to `update_globe_news.py`?**
+- **Why does `Client` connect `Downloads` to `markets_audit/run.py`, `fetch.py`?**
   _High betweenness centrality (0.009) - this node is a cross-community bridge._
 - **Should `pathlib` be split into smaller, more focused modules?**
   _Cohesion score 0.05277777777777778 - nodes in this community are weakly interconnected._
-- **Why does `1. Audit of the current live engine (Prediction Engine v2, `impact-gemini-v2`)` connect `news_core.py` to `Prediction Engine v4: design and frozen rules`?**
-  _High betweenness centrality (0.009) - this node is a cross-community bridge._
+- **Why does `RegionalTests` connect `RegionalTests` to `pathlib`?**
+  _High betweenness centrality (0.008) - this node is a cross-community bridge._
 - **Should `regional-backfill.py` be split into smaller, more focused modules?**
   _Cohesion score 0.09619450317124736 - nodes in this community are weakly interconnected._

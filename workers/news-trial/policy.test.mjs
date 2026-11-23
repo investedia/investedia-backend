@@ -249,3 +249,30 @@ test("saved library transfer requires no AI key and shares the news lock", async
   const response = await route(new Request("https://trial/run?job=library", { method: "POST", headers: { Authorization: "Bearer test-token" } }), env);
   assert.equal(response.status, 200); assert.equal(lock, "priority-trial");
 });
+
+
+test("article pages reacquire container ports after a closed producer response", async () => {
+  const b = bindings();
+  const rows = JSON.parse(await readFile(new URL("../../assets/globe/news-live.json", import.meta.url), "utf8")).stories.slice(0, 2);
+  let handles = 0;
+  b.instance.env.TRIAL_STORE.head = async () => null;
+  b.c.getTcpPort = () => {
+    handles++; let closed = false;
+    return { fetch: async url => {
+      const u = new URL(url);
+      if (u.pathname === "/health") return new Response();
+      if (closed) throw new Error("Network connection lost");
+      closed = true;
+      if (u.pathname === "/run") {
+        const summary = { trial: true, tier: "priority", library_articles: rows.length };
+        return new Response(gzipSync("{}"), { headers: { "X-Trial-Summary": JSON.stringify(summary) } });
+      }
+      const cursor = Number(u.searchParams.get("cursor"));
+      return Response.json({ articles: [rows[cursor]], next: cursor + 1, total: rows.length });
+    } };
+  };
+  assert.equal((await b.instance.fetch()).status, 200);
+  assert.equal(handles, 3);
+  assert.deepEqual(b.puts, [...rows.map(row => `trial/library/articles/${row.id}.json`), "trial/latest.json.gz", "trial/state.json.gz"]);
+  assert.equal(b.c.running, false);
+});
