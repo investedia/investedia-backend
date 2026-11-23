@@ -65,7 +65,7 @@ def encode_bundle(value):
     return body
 
 
-def decode_bundle(body):
+def decode_bundle(body, validator=validate):
     if len(body) > LIMIT:
         raise ValueError("Trial transfer exceeds 32 MiB")
     if body.startswith(b"\x1f\x8b"):
@@ -73,7 +73,19 @@ def decode_bundle(body):
             body = source.read(EXPANDED_LIMIT + 1)
         if len(body) > EXPANDED_LIMIT:
             raise ValueError("Expanded trial state exceeds 128 MiB")
-    return validate(json.loads(body))
+    return validator(json.loads(body))
+
+
+class GenerationFailed(ValueError):
+    def __init__(self, status):
+        super().__init__("News generation did not report a fresh success")
+        self.diagnostic = {
+            "fetched": int(status.get("fetched") or 0),
+            "candidates": int(status.get("candidates") or 0),
+            "gemini_ok": status.get("gemini_ok") is True,
+            "failed_source_count": len(status.get("failed_sources") or []),
+            "http_statuses": sorted({int(code) for message in status.get("errors", []) for code in re.findall(r"HTTP\s+(\d{3})", str(message))})[:10],
+        }
 
 
 def run(state, base=BASE, tier="priority"):
@@ -107,7 +119,7 @@ def run(state, base=BASE, tier="priority"):
                 success = tier_status.get("last_success")
                 if (not success or success != status.get("ran_at") or success != tier_status.get("last_run")
                         or datetime.fromisoformat(success.replace("Z", "+00:00")) < started.replace(microsecond=0)):
-                    raise ValueError("News generation did not report a fresh success")
+                    raise GenerationFailed(status)
                 if not status.get("fetched"):
                     raise ValueError("No sources fetched; trial cannot count as a successful comparison")
         result = pack(root)
@@ -117,6 +129,45 @@ def run(state, base=BASE, tier="priority"):
                              "articles": len(result["files"]["news-live.json"]["stories"]),
                              "failed_sources": status.get("failed_sources", []),
                              "new_articles": status.get("new_stories", 0)}
+        return result
+
+
+CALENDAR_SOURCES = ("update_calendar.py", "calendar_fred.py", "calendar_official.py", "workers/news-trial/calendar_job.py")
+
+
+def validate_calendar(state):
+    if not isinstance(state, dict) or not isinstance(state.get("files"), dict) or set(state.get("files", {})) != {"calendar-live.json"}:
+        raise ValueError("Invalid calendar trial state")
+    data = state["files"]["calendar-live.json"]
+    if not isinstance(data, dict) or not all(isinstance(data.get(key), list) for key in ("events", "earnings")):
+        raise ValueError("Invalid saved calendar")
+    return state
+
+
+def run_calendar(state, base=BASE, fred_enabled=False):
+    validate_calendar(state)
+    started = datetime.now(timezone.utc)
+    with tempfile.TemporaryDirectory(prefix="calendar-trial-") as tmp:
+        root = Path(tmp)
+        for name in CALENDAR_SOURCES:
+            target = root / name
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(base / name, target)
+        (root / "assets").mkdir(exist_ok=True)
+        (root / "assets/calendar-live.json").write_text(json.dumps(state["files"]["calendar-live.json"]), encoding="utf-8")
+        env = {"PATH": os.environ.get("PATH", ""), "PYTHONIOENCODING": "utf-8", "PYTHONUTF8": "1",
+               "CALENDAR_UNLICENSED": "off", "FRED_API_KEY": "trial-proxy" if fred_enabled else "",
+               "SSL_CERT_FILE": "/etc/cloudflare/certs/cloudflare-containers-ca.crt"}
+        subprocess.run([sys.executable, str(root / "workers/news-trial/calendar_job.py")], cwd=root, env=env,
+                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True, timeout=360)
+        data = json.loads((root / "assets/calendar-live.json").read_text(encoding="utf-8"))
+        status = json.loads((root / "calendar-trial-status.json").read_text(encoding="utf-8"))
+        if not status.get("official_events") or datetime.fromisoformat(data["updated_at"].replace("Z", "+00:00")) < started.replace(microsecond=0):
+            raise ValueError("No fresh official calendar result")
+        result = validate_calendar({"files": {"calendar-live.json": data}})
+        result["summary"] = {"trial": True, "job": "calendar", "started_at": started.isoformat(),
+                             "finished_at": datetime.now(timezone.utc).isoformat(), "events": len(data["events"]),
+                             "earnings": len(data["earnings"]), **status}
         return result
 
 
@@ -132,13 +183,22 @@ class Handler(BaseHTTPRequestHandler):
         try:
             length = int(self.headers.get("Content-Length", "0"))
             url = urlsplit(self.path)
-            tiers = parse_qs(url.query).get("tier", ["priority"])
-            if url.path != "/run" or len(tiers) != 1 or tiers[0] not in ("priority", "broad") or not 0 < length <= LIMIT:
+            query = parse_qs(url.query)
+            jobs = query.get("job", ["news"])
+            tiers = query.get("tier", ["priority"])
+            if url.path != "/run" or len(jobs) != 1 or jobs[0] not in ("news", "calendar") or len(tiers) != 1 or tiers[0] not in ("priority", "broad") or not 0 < length <= LIMIT:
                 raise ValueError("Invalid request")
-            result = run(decode_bundle(self.rfile.read(length)), tier=tiers[0])
+            raw = self.rfile.read(length)
+            if jobs[0] == "calendar":
+                result = run_calendar(decode_bundle(raw, validate_calendar), fred_enabled=self.headers.get("X-Fred-Enabled") == "1")
+            else:
+                result = run(decode_bundle(raw), tier=tiers[0])
             body = encode_bundle(result)
             self.send_response(200)
             self.send_header("X-Trial-Summary", json.dumps(result["summary"], ensure_ascii=True))
+        except GenerationFailed as error:
+            body = json.dumps({"error": "generation_failed", "diagnostic": error.diagnostic}).encode()
+            self.send_response(422)
         except Exception:
             body = b'{"error":"Trial failed; previous trial state retained"}'
             self.send_response(422)
@@ -161,7 +221,7 @@ if __name__ == "__main__":
         args.pack.write_bytes(body)
         print("Wrote compressed trial seed locally:", len(body), "bytes; no articles generated or published")
     elif args.preflight:
-        for name in SOURCES:
+        for name in SOURCES + CALENDAR_SOURCES:
             if not (BASE / name).is_file():
                 raise SystemExit("Missing trial source: " + name)
         print("Offline preflight passed")

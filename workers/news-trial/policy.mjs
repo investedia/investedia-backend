@@ -178,14 +178,15 @@ export const SOURCE_HOSTS = new Set([
 export function destination(url, method) {
   const u = new URL(url);
   if (u.protocol !== "https:" || u.username || u.password || (u.port && u.port !== "443")) return null;
+  if (u.hostname === "api.stlouisfed.org" && method === "GET" && ["/fred/releases/dates", "/fred/series/observations"].includes(u.pathname)) return "fred";
   if (SOURCE_HOSTS.has(u.hostname) && method === "GET") return "source";
   if (u.hostname !== "generativelanguage.googleapis.com") return null;
   if (method === "GET" && u.pathname === "/v1beta/models" && u.search === "?pageSize=200") return "gemini";
   if (method === "POST" && /^\/v1beta\/models\/[a-zA-Z0-9.-]+:generateContent$/.test(u.pathname) && !u.search) return "gemini";
   return null;
 }
-export async function egress(request, key, enabled, upstream = fetch) {
-  if (!enabled || !key) return new Response("Trial egress disabled", { status: 403 });
+export async function egress(request, key, enabled, upstream = fetch, fredKey = "") {
+  if (!enabled) return new Response("Trial egress disabled", { status: 403 });
   let url = request.url;
   for (let hop = 0; hop < 5; hop++) {
     const source = new URL(url);
@@ -193,15 +194,21 @@ export async function egress(request, key, enabled, upstream = fetch) {
       source.protocol = "https:"; url = source.href;
     }
     const type = destination(url, request.method);
-    if (!type) return new Response("Trial destination denied", { status: 403 });
-    // Do not forward caller headers, cookies or credentials to publisher sites.
-    const headers = new Headers({ "User-Agent": "InvestediaNews/1.0 (+https://investedia.com; info@investedia.com)" });
+    if (!type || (type === "gemini" && !key) || (type === "fred" && !fredKey)) return new Response("Trial destination denied", { status: 403 });
+    // Preserve only the producer's public negotiation headers, never cookies or credentials.
+    const headers = new Headers({ "User-Agent": (request.headers.get("User-Agent") || "InvestediaNews/1.0").slice(0, 256) });
+    for (const name of ["Accept", "Accept-Language"]) {
+      const value = request.headers.get(name); if (value) headers.set(name, value.slice(0, 256));
+    }
     if (type === "gemini") { headers.set("x-goog-api-key", key); headers.set("Content-Type", "application/json"); }
+    if (type === "fred") {
+      const target = new URL(url); target.searchParams.set("api_key", fredKey); url = target.href;
+    }
     const response = await upstream(url, { method: request.method, headers,
       body: request.method === "POST" ? await request.clone().arrayBuffer() : undefined, redirect: "manual" });
     if (response.status >= 300 && response.status < 400) {
       const next = response.headers.get("location");
-      if (!next || request.method !== "GET") return new Response("Trial redirect denied", { status: 502 });
+      if (!next || request.method !== "GET" || type === "fred") return new Response("Trial redirect denied", { status: 502 });
       url = new URL(next, url).href;
       continue;
     }
@@ -217,19 +224,39 @@ export function trialTier(request) {
   const tier = values[0] || "priority";
   return ["priority", "broad"].includes(tier) ? tier : null;
 }
+export function safeDiagnostic(value) {
+  if (!value || typeof value !== "object") return null;
+  const out = {};
+  for (const name of ["fetched", "candidates", "failed_source_count"]) {
+    if (!Number.isSafeInteger(value[name]) || value[name] < 0 || value[name] > 1000000) return null;
+    out[name] = value[name];
+  }
+  out.gemini_ok = value.gemini_ok === true;
+  out.http_statuses = Array.isArray(value.http_statuses) ? value.http_statuses.filter(n => Number.isSafeInteger(n) && n >= 100 && n <= 599).slice(0, 10) : [];
+  return out;
+}
+export function trialJob(request) {
+  const values = new URL(request.url).searchParams.getAll("job");
+  if (values.length > 1) return null;
+  const job = values[0] || "news";
+  return ["news", "calendar"].includes(job) ? job : null;
+}
 export async function route(request, env) {
   if (!env.TRIAL_TOKEN || request.headers.get("Authorization") !== `Bearer ${env.TRIAL_TOKEN}`)
     return new Response("Unauthorized", { status: 401 });
   const path = new URL(request.url).pathname;
+  const job = trialJob(request);
+  if (!job) return new Response("Unknown trial job", { status: 400 });
+  const prefix = job === "calendar" ? "trial/calendar" : "trial";
   if (path === "/health" && request.method === "GET") return Response.json({ trial: true, enabled: env.TRIAL_ENABLED === "true", scheduled: false });
   if (path === "/result" && request.method === "GET") {
-    const compressed = await env.TRIAL_STORE.get("trial/latest.json.gz");
-    const saved = compressed || await env.TRIAL_STORE.get("trial/latest.json");
+    const compressed = await env.TRIAL_STORE.get(`${prefix}/latest.json.gz`);
+    const saved = compressed || await env.TRIAL_STORE.get(`${prefix}/latest.json`);
     return saved ? new Response(saved.body, { headers: { "Content-Type": compressed ? "application/gzip" : "application/json", "Cache-Control": "no-store" } }) : new Response("No trial result", { status: 404 });
   }
   if (path !== "/run" || request.method !== "POST") return new Response("Not found", { status: 404 });
-  if (env.TRIAL_ENABLED !== "true" || !env.GEMINI_API_KEY) return new Response("Trial disabled", { status: 409 });
+  if (env.TRIAL_ENABLED !== "true" || (job === "news" && !env.GEMINI_API_KEY)) return new Response("Trial disabled", { status: 409 });
   const tier = trialTier(request);
   if (!tier) return new Response("Unknown news tier", { status: 400 });
-  return env.TRIAL_CONTAINER.getByName("priority-trial").fetch(`http://trial/run?tier=${tier}`, { method: "POST" });
+  return env.TRIAL_CONTAINER.getByName(job === "calendar" ? "calendar-trial" : "priority-trial").fetch(`http://trial/run?tier=${tier}&job=${job}`, { method: "POST" });
 }
