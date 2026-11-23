@@ -600,3 +600,16 @@ class AzureProviderAccepted(unittest.TestCase):
     def test_run_accepts_azure_provider(self):
         import inspect
         self.assertIn("'azure'", inspect.getsource(m.run).split('provider_must_be')[0].splitlines()[-1])
+
+
+class OldGkgWithoutPageTitle(unittest.TestCase):
+    """GKG files before ~2019 have no <PAGE_TITLE>: a provisional title comes from the URL, and only the page's own og:title is ever published."""
+    def test_slug_title_used_for_discovery(self):
+        from datetime import datetime, timezone
+        c = [''] * 27; c[2] = '1'; c[4] = 'https://www.example.com/markets/pound-sterling-dollar-rate-struggles-123456.html'; c[3] = 'example.com'
+        c[7] = 'ECON_CURRENCY_EXCHANGE_RATE,1;'; c[9] = '1#United Kingdom#UK#UK#51.5#-0.1#UK'
+        rows, rej = m.parse_gkg('\t'.join(c), datetime(2018, 6, 15, tzinfo=timezone.utc))
+        if rows:
+            self.assertEqual(rows[0]['title'], 'pound sterling dollar rate struggles'); self.assertTrue(rows[0]['title_from_url'])
+        else:
+            self.assertNotIn('missing_title', rej)
