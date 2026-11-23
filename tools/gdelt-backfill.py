@@ -253,7 +253,7 @@ class GkgClient:
         self.downloads = 0; self.cache_hits = 0; self.slept = 0.0; self.errors = Counter(); self.consecutive = 0
         self.last = None; self.stopped = None; self.rejected = Counter()
 
-    def path(self, at): return self.cache/(('tr2-' if self.kind == 'translated' else '') + at.strftime('%Y%m%d%H%M%S') + '.json')
+    def path(self, at): return self.cache/(('tr2-' if self.kind == 'translated' else '') + ('t2-' if at.year < 2020 else '') + at.strftime('%Y%m%d%H%M%S') + '.json')  # t2: pre-2020 files re-read after the page-title fix (#114)
 
     def fetch(self, at):
         path = self.path(at)
