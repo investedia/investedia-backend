@@ -28,6 +28,35 @@ class NewsTrialTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             trial.validate({"files": {}})
 
+    def test_compressed_bundle_preserves_all_saved_data(self):
+        encoded = trial.encode_bundle(self.seed)
+        self.assertTrue(encoded.startswith(b"\x1f\x8b"))
+        self.assertEqual(trial.decode_bundle(encoded), self.seed)
+        self.assertEqual(trial.decode_bundle(json.dumps(self.seed).encode()), self.seed)
+
+    def test_bundle_larger_than_old_raw_limit_roundtrips(self):
+        value = {**self.seed, "transport_test_padding": "x" * (32 * 1024 * 1024)}
+        encoded = trial.encode_bundle(value)
+        self.assertLess(len(encoded), trial.LIMIT)
+        decoded = trial.decode_bundle(encoded)
+        self.assertEqual(decoded["files"], self.seed["files"])
+        self.assertEqual(len(decoded["transport_test_padding"]), 32 * 1024 * 1024)
+
+    def test_compression_limits_and_corruption_fail_closed(self):
+        import gzip
+        with patch.object(trial, "EXPANDED_LIMIT", 128):
+            with self.assertRaisesRegex(ValueError, "Expanded"):
+                trial.decode_bundle(gzip.compress(b" " * 1024))
+            with self.assertRaisesRegex(ValueError, "Expanded"):
+                trial.encode_bundle(self.seed)
+        with patch.object(trial, "LIMIT", 4):
+            with self.assertRaisesRegex(ValueError, "transfer"):
+                trial.decode_bundle(b"12345")
+            with self.assertRaisesRegex(ValueError, "Compressed"):
+                trial.encode_bundle(self.seed)
+        with self.assertRaises((EOFError, OSError)):
+            trial.decode_bundle(b"\x1f\x8bcorrupt")
+
     def test_stale_status_is_failure_even_when_producer_exits_zero(self):
         original = json.dumps(self.seed, sort_keys=True)
         with patch.object(trial.subprocess, "run") as call:

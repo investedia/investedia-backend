@@ -1,5 +1,7 @@
 """Run the unchanged priority producer in disposable storage; never publish."""
 import argparse
+import gzip
+import io
 import json
 import os
 from pathlib import Path
@@ -13,6 +15,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 
 BASE = Path(__file__).resolve().parents[2]
 LIMIT = 32 * 1024 * 1024
+EXPANDED_LIMIT = 128 * 1024 * 1024
 STATE_NAMES = {"news-live.json", "news-archive.json", "news-48h.json", "news-seen.json",
                "news-status.json", "threads.json", "photos/index.json", "photos/blocked.json"}
 SOURCES = ("update_globe_news.py", "news_core.py", "registry.py", "events.py", "tools/news_library.py",
@@ -49,6 +52,27 @@ def pack(root, include_library=True):
         paths += list((g / "library").glob("*.json"))
     files = {f.relative_to(g).as_posix(): json.loads(f.read_text(encoding="utf-8")) for f in paths}
     return validate({"files": files})
+
+
+def encode_bundle(value):
+    raw = json.dumps(value, ensure_ascii=False, separators=(",", ":")).encode()
+    if len(raw) > EXPANDED_LIMIT:
+        raise ValueError("Expanded trial state exceeds 128 MiB")
+    body = gzip.compress(raw, compresslevel=6, mtime=0)
+    if len(body) > LIMIT:
+        raise ValueError("Compressed trial state exceeds 32 MiB")
+    return body
+
+
+def decode_bundle(body):
+    if len(body) > LIMIT:
+        raise ValueError("Trial transfer exceeds 32 MiB")
+    if body.startswith(b"\x1f\x8b"):
+        with gzip.GzipFile(fileobj=io.BytesIO(body)) as source:
+            body = source.read(EXPANDED_LIMIT + 1)
+        if len(body) > EXPANDED_LIMIT:
+            raise ValueError("Expanded trial state exceeds 128 MiB")
+    return validate(json.loads(body))
 
 
 def run(state, base=BASE):
@@ -106,14 +130,14 @@ class Handler(BaseHTTPRequestHandler):
             length = int(self.headers.get("Content-Length", "0"))
             if self.path != "/run" or not 0 < length <= LIMIT:
                 raise ValueError("Invalid request")
-            body = json.dumps(run(json.loads(self.rfile.read(length))), ensure_ascii=False).encode()
-            if len(body) > LIMIT:
-                raise ValueError("Trial result exceeds storage limit")
+            result = run(decode_bundle(self.rfile.read(length)))
+            body = encode_bundle(result)
             self.send_response(200)
+            self.send_header("X-Trial-Summary", json.dumps(result["summary"], ensure_ascii=True))
         except Exception:
             body = b'{"error":"Trial failed; previous trial state retained"}'
             self.send_response(422)
-        self.send_header("Content-Type", "application/json")
+        self.send_header("Content-Type", "application/gzip" if body.startswith(b"\x1f\x8b") else "application/json")
         self.send_header("Content-Length", str(len(body)))
         self.end_headers()
         self.wfile.write(body)
@@ -125,11 +149,12 @@ if __name__ == "__main__":
     parser.add_argument("--preflight", action="store_true")
     args = parser.parse_args()
     if args.pack:
-        body = json.dumps(pack(BASE, include_library=False), ensure_ascii=False).encode()
-        if len(body) > LIMIT:
-            raise SystemExit("Seed exceeds 32 MiB")
+        try:
+            body = encode_bundle(pack(BASE, include_library=False))
+        except ValueError as error:
+            raise SystemExit(str(error))
         args.pack.write_bytes(body)
-        print("Wrote trial seed locally; no articles generated or published")
+        print("Wrote compressed trial seed locally:", len(body), "bytes; no articles generated or published")
     elif args.preflight:
         for name in SOURCES:
             if not (BASE / name).is_file():

@@ -69,11 +69,11 @@ jobs:
           PY
       - name: Package saved state without changing article timestamps
         working-directory: backend
-        run: python workers/news-trial/runner.py --pack ../trial-seed.json
+        run: python workers/news-trial/runner.py --pack ../trial-seed.json.gz
       - name: Retain seed privately for one day
         uses: actions/upload-artifact@v4
         with:
           name: isolated-news-trial-seed
-          path: trial-seed.json
+          path: trial-seed.json.gz
           if-no-files-found: error
           retention-days: 1

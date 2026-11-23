@@ -44,8 +44,9 @@ export async function route(request, env) {
   const path = new URL(request.url).pathname;
   if (path === "/health" && request.method === "GET") return Response.json({ trial: true, enabled: env.TRIAL_ENABLED === "true", scheduled: false });
   if (path === "/result" && request.method === "GET") {
-    const saved = await env.TRIAL_STORE.get("trial/latest.json");
-    return saved ? new Response(saved.body, { headers: { "Content-Type": "application/json", "Cache-Control": "no-store" } }) : new Response("No trial result", { status: 404 });
+    const compressed = await env.TRIAL_STORE.get("trial/latest.json.gz");
+    const saved = compressed || await env.TRIAL_STORE.get("trial/latest.json");
+    return saved ? new Response(saved.body, { headers: { "Content-Type": compressed ? "application/gzip" : "application/json", "Cache-Control": "no-store" } }) : new Response("No trial result", { status: 404 });
   }
   if (path !== "/run" || request.method !== "POST") return new Response("Not found", { status: 404 });
   if (env.TRIAL_ENABLED !== "true" || !env.GEMINI_API_KEY) return new Response("Trial disabled", { status: 409 });
