@@ -109,3 +109,9 @@ Real PR #118 trials passed: 951 market assets, 29 ECB currencies (provider date 
 
 
 Fresh-state news retries on 23 November 2026 remained unsuccessful: priority fetched 226 items (30 candidates, five failed sources) and broad fetched 2,437 items (200 candidates, 19 failed sources). Both reported `gemini_ok=false` and generation HTTP 503, returned a producer-stage failure and retained the last good trial result. This does not establish successful source parity, a global provider outage or a completed news migration. Production GitHub schedules remain in place.
+
+
+The first real saved-library run failed before writing articles because reusing the producer's Container TCP port handle caused `Network connection lost` on the next fetch. This was reproduced with the real Container API in a fully local Linux development session, without provider keys or cloud storage. Reacquiring the port for each library page resolved it: all 1,501 saved articles transferred to local R2 successfully with zero AI calls. A regression test simulates closed producer/page connections and requires a fresh handle for every page. Temporary exception tracing was removed. The deployed isolated Worker remains disabled; the corrected code still requires an owner merge and Cloudflare runtime verification.
+
+
+Additional verification: a second local native-Container transfer reported zero article writes; all 1,501 local stored articles matched every original field/date. An independent localhost Worker using the real isolated R2 binding also copied all 1,501 articles, and every actual private R2 readback matched its saved source. This verifies the bucket/artifacts while the deployed Container connection fix is still awaiting owner merge. No production readers or publishing schedules were switched.
