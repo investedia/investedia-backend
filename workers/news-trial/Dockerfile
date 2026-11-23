@@ -24,6 +24,7 @@ COPY .local/cloudflare-frontend/ .local/cloudflare-frontend/
 COPY tools/coverage/country_basics.py tools/coverage/country_basics.py
 COPY assets/globe/economy.json assets/globe/economy.json
 COPY data/market-country-facts.json data/market-country-facts.json
+COPY tools/publish_library.py tools/publish_library.py
 USER 65532:65532
 EXPOSE 8080
 CMD ["python", "workers/news-trial/runner.py"]

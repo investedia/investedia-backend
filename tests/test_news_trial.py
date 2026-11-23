@@ -16,6 +16,58 @@ class NewsTrialTests(unittest.TestCase):
     def setUpClass(cls):
         cls.seed = trial.pack(ROOT, include_library=False)
 
+    def test_library_export_preserves_real_records_and_bounds_pages(self):
+        rows = self.seed["files"]["news-live.json"]["stories"][:12]
+        original = json.dumps(rows)
+        first = trial.library_page(rows, 0)
+        self.assertEqual(first["articles"], rows[:10])
+        self.assertEqual(first["next"], 10)
+        last = trial.library_page(rows, 10)
+        self.assertEqual(last["articles"], rows[10:])
+        self.assertEqual(last["next"], len(rows))
+        self.assertEqual(json.dumps(rows), original)
+        for cursor in (-1, len(rows) + 1, "0"):
+            with self.assertRaises(ValueError):
+                trial.library_page(rows, cursor)
+        with self.assertRaises(ValueError):
+            trial.library_page([{**rows[0], "id": "../key"}], 0)
+
+    def test_container_library_endpoint_exports_only_bounded_article_pages(self):
+        import http.client
+        import threading
+        server = trial.HTTPServer(("127.0.0.1", 0), trial.Handler)
+        server.library = self.seed["files"]["news-live.json"]["stories"][:12]
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        client = http.client.HTTPConnection("127.0.0.1", server.server_port, timeout=5)
+        try:
+            client.request("GET", "/library?cursor=0")
+            response = client.getresponse()
+            self.assertEqual(response.status, 200)
+            page = json.loads(response.read())
+            self.assertEqual(page["articles"], server.library[:10])
+            for path in ("/library?cursor=-1", "/library?cursor=0&cursor=1", "/library?cursor=0&path=../key"):
+                client.request("GET", path)
+                response = client.getresponse()
+                self.assertEqual(response.status, 400)
+                response.read()
+        finally:
+            client.close(); server.shutdown(); server.server_close(); thread.join(timeout=5)
+
+    def test_saved_library_copy_never_generates_and_preserves_every_article_field(self):
+        original = json.dumps(self.seed, sort_keys=True)
+        with patch.object(trial.subprocess, "run", side_effect=AssertionError("No process or AI calls permitted")):
+            result = trial.run_library(self.seed)
+        originals = {}
+        for name in ("news-live.json", "news-48h.json", "news-archive.json"):
+            for row in self.seed["files"].get(name, {}).get("stories", []):
+                originals.setdefault(row["id"], row)
+        articles = {name[8:-5]: row for name, row in result["files"].items() if name.startswith("library/")}
+        self.assertGreater(len(articles), 0)
+        self.assertEqual(articles, {sid: originals[sid] for sid in articles})
+        self.assertEqual(result["summary"]["gemini_calls"], 0)
+        self.assertEqual(json.dumps(self.seed, sort_keys=True), original)
+
     def test_seed_preserves_real_data_and_excludes_historical_library(self):
         self.assertEqual(self.seed["files"]["news-live.json"], json.loads((ROOT / "assets/globe/news-live.json").read_text(encoding="utf-8")))
         self.assertFalse(any(n.startswith("library/") for n in self.seed["files"]))

@@ -1,3 +1,4 @@
+import { readTrialArticle } from "./library.mjs";
 // Exact producer feed hosts. Redirects must pass the same policy on every hop.
 export const SOURCE_HOSTS = new Set([
   "addisfortune.news",
@@ -272,7 +273,7 @@ export function trialJob(request) {
   const values = new URL(request.url).searchParams.getAll("job");
   if (values.length > 1) return null;
   const job = values[0] || "news";
-  return ["news", "calendar", "markets", "fx", "economy-history", "country-basics"].includes(job) ? job : null;
+  return ["news", "calendar", "library", "markets", "fx", "economy-history", "country-basics"].includes(job) ? job : null;
 }
 export async function route(request, env) {
   if (!env.TRIAL_TOKEN || request.headers.get("Authorization") !== `Bearer ${env.TRIAL_TOKEN}`)
@@ -282,6 +283,7 @@ export async function route(request, env) {
   if (!job) return new Response("Unknown trial job", { status: 400 });
   const prefix = job === "news" ? "trial" : `trial/${job}`;
   if (path === "/health" && request.method === "GET") return Response.json({ trial: true, enabled: env.TRIAL_ENABLED === "true", scheduled: false });
+  if (path === "/article" && request.method === "GET") return readTrialArticle(request, env.TRIAL_STORE);
   if (path === "/result" && request.method === "GET") {
     const compressed = await env.TRIAL_STORE.get(`${prefix}/latest.json.gz`);
     const saved = compressed || await env.TRIAL_STORE.get(`${prefix}/latest.json`);
@@ -291,5 +293,5 @@ export async function route(request, env) {
   if (env.TRIAL_ENABLED !== "true" || (job === "news" && !env.GEMINI_API_KEY)) return new Response("Trial disabled", { status: 409 });
   const tier = trialTier(request);
   if (!tier) return new Response("Unknown news tier", { status: 400 });
-  return env.TRIAL_CONTAINER.getByName(job === "news" ? "priority-trial" : `${job}-trial`).fetch(`http://trial/run?tier=${tier}&job=${job}`, { method: "POST" });
+  return env.TRIAL_CONTAINER.getByName(["news", "library"].includes(job) ? "priority-trial" : `${job}-trial`).fetch(`http://trial/run?tier=${tier}&job=${job}`, { method: "POST" });
 }
