@@ -41,7 +41,14 @@ def _get(path, params, key):
         with urllib.request.urlopen(urllib.request.Request(API + path + '?' + q, headers=UA), timeout=40) as r:
             return json.load(r)
     except urllib.error.HTTPError as e:
-        raise FredError(f'{path}: HTTP {e.code}') from None
+        reason = ''
+        try:
+            value = json.loads(e.read(1024)).get('trial_fred_reason')
+            if value in {'key_format', 'key_rejected', 'request_parameters', 'rate_limited', 'upstream_unavailable', 'request_rejected'}:
+                reason = f' [{value}]'
+        except Exception:
+            pass
+        raise FredError(f'{path}: HTTP {e.code}{reason}') from None
     except Exception as e:
         raise FredError(f'{path}: {type(e).__name__}') from None
 

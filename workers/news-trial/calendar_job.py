@@ -5,6 +5,7 @@ import io
 import os
 from pathlib import Path
 import runpy
+import re
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -20,5 +21,6 @@ if __name__ == "__main__":
     report = {"official_events": len(official),
               "failed_sources": [str(row).split(":", 1)[0] for row in result.get("failed", [])],
               "fred_configured": bool(os.environ.get("FRED_API_KEY")),
-              "fred_failures": len(result.get("fred_failed", []))}
+              "fred_failures": len(result.get("fred_failed", [])),
+              "fred_failure_reasons": sorted({reason for message in result.get("fred_failed", []) for reason in re.findall(r"\[(key_format|key_rejected|request_parameters|rate_limited|upstream_unavailable|request_rejected)\]", str(message))})}
     (ROOT / "calendar-trial-status.json").write_text(json.dumps(report), encoding="utf-8")
