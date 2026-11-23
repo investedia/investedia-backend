@@ -10,6 +10,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+from urllib.parse import urlsplit, parse_qs
 from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
@@ -75,7 +76,9 @@ def decode_bundle(body):
     return validate(json.loads(body))
 
 
-def run(state, base=BASE):
+def run(state, base=BASE, tier="priority"):
+    if tier not in ("priority", "broad"):
+        raise ValueError("Unknown news tier")
     validate(state)
     # Caller cannot supply commands, environment variables, URLs or filesystem paths.
     with tempfile.TemporaryDirectory(prefix="news-trial-") as tmp:
@@ -92,7 +95,7 @@ def run(state, base=BASE):
             target.write_text(json.dumps(value, ensure_ascii=False), encoding="utf-8")
         started = datetime.now(timezone.utc)
         env = {"PATH": os.environ.get("PATH", ""), "PYTHONIOENCODING": "utf-8", "PYTHONUTF8": "1",
-               "NEWS_TIER": "priority", "GEMINI_API_KEY": "trial-proxy", "PIXABAY_KEY": "",
+               "NEWS_TIER": tier, "GEMINI_API_KEY": "trial-proxy", "PIXABAY_KEY": "",
                "SSL_CERT_FILE": "/etc/cloudflare/certs/cloudflare-containers-ca.crt"}
         # Never relay producer logs: upstream errors can include request details.
         for script in ("update_globe_news.py", "tools/globe-news/connections.py"):
@@ -100,16 +103,16 @@ def run(state, base=BASE):
                            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True, timeout=720)
             if script == "update_globe_news.py":
                 status = json.loads((g / "news-status.json").read_text(encoding="utf-8"))
-                tier = status.get("tiers", {}).get("priority", {})
-                success = tier.get("last_success")
-                if (not success or success != status.get("ran_at") or success != tier.get("last_run")
+                tier_status = status.get("tiers", {}).get(tier, {})
+                success = tier_status.get("last_success")
+                if (not success or success != status.get("ran_at") or success != tier_status.get("last_run")
                         or datetime.fromisoformat(success.replace("Z", "+00:00")) < started.replace(microsecond=0)):
-                    raise ValueError("Priority generation did not report a fresh success")
+                    raise ValueError("News generation did not report a fresh success")
                 if not status.get("fetched"):
                     raise ValueError("No sources fetched; trial cannot count as a successful comparison")
         result = pack(root)
         result["connections"] = json.loads((g / "connections.json").read_text(encoding="utf-8"))
-        result["summary"] = {"trial": True, "started_at": started.isoformat(),
+        result["summary"] = {"trial": True, "tier": tier, "started_at": started.isoformat(),
                              "finished_at": datetime.now(timezone.utc).isoformat(),
                              "articles": len(result["files"]["news-live.json"]["stories"]),
                              "failed_sources": status.get("failed_sources", []),
@@ -128,9 +131,11 @@ class Handler(BaseHTTPRequestHandler):
     def do_POST(self):
         try:
             length = int(self.headers.get("Content-Length", "0"))
-            if self.path != "/run" or not 0 < length <= LIMIT:
+            url = urlsplit(self.path)
+            tiers = parse_qs(url.query).get("tier", ["priority"])
+            if url.path != "/run" or len(tiers) != 1 or tiers[0] not in ("priority", "broad") or not 0 < length <= LIMIT:
                 raise ValueError("Invalid request")
-            result = run(decode_bundle(self.rfile.read(length)))
+            result = run(decode_bundle(self.rfile.read(length)), tier=tiers[0])
             body = encode_bundle(result)
             self.send_response(200)
             self.send_header("X-Trial-Summary", json.dumps(result["summary"], ensure_ascii=True))

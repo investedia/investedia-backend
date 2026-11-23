@@ -72,6 +72,43 @@ class NewsTrialTests(unittest.TestCase):
         self.assertEqual(kwargs["env"]["GEMINI_API_KEY"], "trial-proxy")
         self.assertFalse(Path(kwargs["cwd"]).exists())
 
+    def test_broad_tier_uses_only_the_fixed_generator_and_broad_status(self):
+        with patch.object(trial.subprocess, "run") as call:
+            with self.assertRaisesRegex(ValueError, "fresh success"):
+                trial.run(self.seed, tier="broad")
+        self.assertEqual(call.call_args.kwargs["env"]["NEWS_TIER"], "broad")
+        with patch.object(trial.subprocess, "run") as call:
+            with self.assertRaisesRegex(ValueError, "Unknown news tier"):
+                trial.run(self.seed, tier="../../other")
+            call.assert_not_called()
+
+    def test_allowlist_covers_all_declared_producer_feed_hosts(self):
+        import ast, re
+        from urllib.parse import urlsplit
+        tree = ast.parse((ROOT / "update_globe_news.py").read_text(encoding="utf-8"))
+        values = {}
+        def value(node):
+            return values[node.id] if isinstance(node, ast.Name) else ast.literal_eval(node)
+        for node in tree.body:
+            if isinstance(node, ast.Assign):
+                for target in node.targets:
+                    if isinstance(target, ast.Name):
+                        try:
+                            values[target.id] = value(node.value)
+                        except (ValueError, TypeError, KeyError):
+                            pass
+            elif isinstance(node, ast.AugAssign) and isinstance(node.target, ast.Name) and isinstance(node.op, ast.Add):
+                try:
+                    values[node.target.id] += value(node.value)
+                except (ValueError, TypeError, KeyError):
+                    pass
+        expected = {urlsplit(row[0]).hostname for name in ("FEEDS", "NEWS_FEEDS", "REGION_FEEDS") for row in values[name]}
+        policy = (ROOT / "workers/news-trial/policy.mjs").read_text(encoding="utf-8")
+        allowed = set(json.loads(re.search(r"SOURCE_HOSTS = new Set\((\[.*?\])\)", policy, re.S).group(1)))
+        self.assertFalse(expected - allowed, "Producer feed domains missing from the trial proxy")
+        self.assertIn("api.gdeltproject.org", allowed)
+        self.assertNotIn("api.investedia.com", allowed)
+
     def test_offline_connections_on_real_seed(self):
         import subprocess, sys
         with tempfile.TemporaryDirectory() as tmp:
