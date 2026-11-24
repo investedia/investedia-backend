@@ -519,6 +519,7 @@ def gemini(prompt):
 def azure(prompt):
     endpoint, key = os.environ.get('AZURE_OPENAI_ENDPOINT', '').strip(), os.environ.get('AZURE_OPENAI_API_KEY', '').strip()
     if not endpoint or not key: raise RuntimeError('not configured')
+    endpoint = '/'.join(endpoint.split('/')[:3])  # keep https://host only, whatever path was copied from the portal (same as the backfill)
     # Owner 24 Nov 2026: news backup uses gpt-4.1-nano only (the saved default deployment answered "API version not supported").
     deps = ['gpt-4.1-nano']
     errs = []
