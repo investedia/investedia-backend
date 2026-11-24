@@ -1,0 +1,38 @@
+name: GDELT backfill save sweeper
+# Owner 24 Nov 2026: with many backfill runs in parallel, GitHub keeps only one waiting job in the shared
+# news-production queue and cancels older waiting ones, so some backfills wrote articles but never saved them.
+# Every 20 minutes this re-runs the cancelled save (ingest) job of such runs, one at a time. The articles are
+# already in the run's artifact, so no model is called again and nothing is generated twice.
+on:
+  schedule:
+    - cron: '7,27,47 * * * *'
+  workflow_dispatch:
+permissions:
+  actions: write
+  contents: read
+concurrency:
+  group: gdelt-save-sweeper
+  cancel-in-progress: false
+jobs:
+  sweep:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+    steps:
+      - name: Re-run one cancelled backfill save, if any
+        run: |
+          set -euo pipefail
+          since=$(date -u -d '-6 days' +%Y-%m-%dT%H:%M:%SZ)
+          # a save already waiting or running: leave the queue alone this time
+          busy=$(gh api "repos/$REPO/actions/workflows/gdelt-backfill.yml/runs?per_page=50" --jq '[.workflow_runs[]|select(.status=="in_progress" or .status=="queued" or .status=="waiting")|.id]|length')
+          for id in $(gh api "repos/$REPO/actions/workflows/gdelt-backfill.yml/runs?status=cancelled&per_page=50&created=>$since" --jq '.workflow_runs[].id'); do
+            jobs=$(gh api "repos/$REPO/actions/runs/$id/jobs" --jq '[.jobs[]|"\(.name)=\(.conclusion)"]|join(" ")')
+            case "$jobs" in *generate=success*ingest=cancelled*|*ingest=cancelled*generate=success*)
+              if [ "$busy" -gt 3 ]; then echo "busy ($busy runs active); retry next sweep"; exit 0; fi
+              echo "re-running save of run $id"; gh run rerun "$id" --failed -R "$REPO"; exit 0;;
+            esac
+          done
+          echo "nothing to re-run"
