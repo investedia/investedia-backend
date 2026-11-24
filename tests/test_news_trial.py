@@ -68,6 +68,50 @@ class NewsTrialTests(unittest.TestCase):
         self.assertEqual(result["summary"]["gemini_calls"], 0)
         self.assertEqual(json.dumps(self.seed, sort_keys=True), original)
 
+    def test_live_outputs_use_disposable_state_and_original_priority_broad_limits(self):
+        import importlib.util
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp); g = root / 'assets/globe'; g.mkdir(parents=True)
+            for name in ('tools/push-news-to-worker.py', 'tools/push-connections-to-worker.py'):
+                target = root / name; target.parent.mkdir(parents=True, exist_ok=True); target.write_bytes((ROOT / name).read_bytes())
+            for name, data in self.seed['files'].items():
+                target = g / name; target.parent.mkdir(parents=True, exist_ok=True); target.write_text(json.dumps(data), encoding='utf-8')
+            (g / 'connections.json').write_bytes((ROOT / 'assets/globe/connections.json').read_bytes())
+            original = json.loads((g / 'news-live.json').read_text(encoding='utf-8'))
+            spec = importlib.util.spec_from_file_location('original_push_fixture', ROOT / 'tools/push-news-to-worker.py')
+            helper = importlib.util.module_from_spec(spec); spec.loader.exec_module(helper)
+            for tier, limit in (('priority', 40), ('broad', 80)):
+                out = trial.live_outputs(root, tier)
+                self.assertEqual(out['news'], helper.payload(root=root, limit=limit))
+                spec2 = importlib.util.spec_from_file_location('original_connections_fixture', root / 'tools/push-connections-to-worker.py')
+                connections = importlib.util.module_from_spec(spec2); spec2.loader.exec_module(connections)
+                self.assertEqual(out['connections'], connections.payload(g / 'connections.json'))
+                self.assertLessEqual(len(out['news']['stories']), limit)
+                self.assertEqual(out.get('library', {}).get('days', {}), helper.library_days(root))
+            self.assertEqual(json.loads((g / 'news-live.json').read_text(encoding='utf-8')), original)
+
+    def test_container_live_exports_are_fixed_paths_and_do_not_return_arbitrary_state(self):
+        import http.client, threading
+        server = trial.HTTPServer(('127.0.0.1', 0), trial.Handler)
+        body = json.dumps(self.seed['files']['news-live.json']).encode()
+        server.live_outputs = {'news': body}
+        thread = threading.Thread(target=server.serve_forever, daemon=True); thread.start()
+        client = http.client.HTTPConnection('127.0.0.1', server.server_port, timeout=5)
+        try:
+            for path, status in (('/output?kind=news', 200), ('/output?kind=library', 404),
+                                 ('/output?kind=../state', 400), ('/output?kind=news&kind=calendar', 400),
+                                 ('/output?kind=news&path=private', 400)):
+                client.request('GET', path); response = client.getresponse()
+                self.assertEqual(response.status, status)
+                saved = response.read()
+                if status == 200: self.assertEqual(saved, body)
+            client.request('POST', '/run?job=news', body=b'{}')
+            response = client.getresponse(); self.assertEqual(response.status, 422); response.read()
+            client.request('GET', '/output?kind=news')
+            response = client.getresponse(); self.assertEqual(response.status, 404); response.read()
+        finally:
+            client.close(); server.shutdown(); server.server_close(); thread.join(timeout=5)
+
     def test_seed_preserves_real_data_and_excludes_historical_library(self):
         self.assertEqual(self.seed["files"]["news-live.json"], json.loads((ROOT / "assets/globe/news-live.json").read_text(encoding="utf-8")))
         self.assertFalse(any(n.startswith("library/") for n in self.seed["files"]))
@@ -119,6 +163,7 @@ class NewsTrialTests(unittest.TestCase):
         args, kwargs = call.call_args
         self.assertTrue(args[0][-1].endswith("update_globe_news.py"))
         self.assertNotIn("NEWS_INGEST_TOKEN", kwargs["env"])
+        self.assertNotIn("LIVE_INGEST_TOKEN", kwargs["env"])
         self.assertNotIn("WORKER_URL", kwargs["env"])
         self.assertEqual(kwargs["env"]["PIXABAY_KEY"], "")
         self.assertEqual(kwargs["env"]["GEMINI_API_KEY"], "trial-proxy")

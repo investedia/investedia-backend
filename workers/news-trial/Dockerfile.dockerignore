@@ -35,3 +35,6 @@
 !.local/cloudflare-library-index/all.json
 !.local/cloudflare-library-index/meta.json
 !.local/cloudflare-library-index/tick-[A-Z_].json
+
+!tools/push-news-to-worker.py
+!tools/push-connections-to-worker.py

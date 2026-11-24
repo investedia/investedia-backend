@@ -1,4 +1,5 @@
 import { DurableObject, WorkerEntrypoint } from "cloudflare:workers";
+import { prepareLiveInputs, postLiveInputs } from "./live-publication.mjs";
 import { readIndexInput, publishedIds, publishIndexExports } from "./index-publication.mjs";
 import { storeTrialLibrary, publishLibraryPage } from "./library.mjs";
 import { egress, route, trialTier, trialJob, safeDiagnostic } from "./policy.mjs";
@@ -64,6 +65,9 @@ export class NewsTrial extends DurableObject {
     if (!tier) return new Response("Unknown news tier", { status: 400 });
     if (this.busy) return new Response("Trial already running", { status: 409 });
     if (this.env.TRIAL_ENABLED !== "true" || (job === "news" && !this.env.GEMINI_API_KEY)) return new Response("Trial disabled", { status: 409 });
+    if (["news", "calendar"].includes(job) && this.env.LIVE_INGEST_ENABLED === "true"
+        && (!this.env.LIVE_API || !this.env.LIVE_INGEST_TOKEN?.trim() || /[\r\n]/.test(this.env.LIVE_INGEST_TOKEN.trim()) || (job === "news" && this.env.PUBLISH_LIBRARY_ENABLED !== "true")))
+      return new Response("Live ingestion prerequisites missing", { status: 409 });
     this.busy = true;
     const c = this.ctx.container;
     let stage = "seed";
@@ -75,7 +79,7 @@ export class NewsTrial extends DurableObject {
       await this.startContainer(job);
       const port = c.getTcpPort(8080);
       stage = "producer";
-      const response = await port.fetch(`http://container/run?tier=${tier}&job=${job}`, { method: "POST", body: await seed.arrayBuffer(), headers: { "X-Fred-Enabled": job === "calendar" && this.env.FRED_API_KEY ? "1" : "0" } });
+      const response = await port.fetch(`http://container/run?tier=${tier}&job=${job}`, { method: "POST", body: await seed.arrayBuffer(), headers: { "X-Fred-Enabled": job === "calendar" && this.env.FRED_API_KEY ? "1" : "0", "X-Live-Export": ["news", "calendar"].includes(job) && this.env.LIVE_INGEST_ENABLED === "true" ? "1" : "0" } });
       if (!response.ok) {
         let failure; try { failure = await response.json(); } catch {}
         const diagnostic = failure?.error === "generation_failed" ? safeDiagnostic(failure.diagnostic) : null;
@@ -89,17 +93,26 @@ export class NewsTrial extends DurableObject {
       if (!header || header.length > 4096) throw new Error("Invalid summary");
       const summary = JSON.parse(header);
       if (summary?.trial !== true || (job === "news" ? summary.tier !== tier : summary.job !== job)) throw new Error("Invalid result");
+      let liveInputs;
+      if (["news", "calendar"].includes(job) && this.env.LIVE_INGEST_ENABLED === "true") {
+        stage = "live-export";
+        liveInputs = await prepareLiveInputs({ fetch: request => c.getTcpPort(8080).fetch(request) }, job);
+      }
       if (["news", "library"].includes(job)) {
         stage = "library";
         // Reacquire the port after each HTTP/1.0 response closes its connection.
         const library = await storeTrialLibrary({ fetch: request => c.getTcpPort(8080).fetch(request) }, this.env.TRIAL_STORE, summary.library_articles);
         summary.library_written = library.written;
         if (job === "news" && this.env.PUBLISH_LIBRARY_ENABLED === "true") {
-          const published = await storeTrialLibrary({ fetch: request => c.getTcpPort(8080).fetch(request) }, this.env.TRIAL_STORE, summary.library_articles, "published");
+          const published = await storeTrialLibrary({ fetch: request => c.getTcpPort(8080).fetch(request) }, this.env.TRIAL_STORE, summary.library_articles, "published", this.env.LIVE_INGEST_ENABLED === "true" ? "export" : "saved");
           summary.published_articles_written = published.written;
           stage = "index";
           summary.library_index = await this.buildIndex();
         }
+      }
+      if (liveInputs) {
+        stage = "live-ingest";
+        summary.live_ingest = await postLiveInputs(liveInputs, this.env);
       }
       // Keep the large archive opaque here; parsing it in the Worker can exhaust memory.
       stage = "storage";
@@ -107,7 +120,7 @@ export class NewsTrial extends DurableObject {
       await this.env.TRIAL_STORE.put(`${prefix}/state.json.gz`, result, { httpMetadata: { contentType: "application/gzip" } });
       return Response.json(summary);
     } catch {
-      return Response.json({ error: "trial_failed", stage, tier, production_untouched: this.env.PUBLISH_LIBRARY_ENABLED !== "true" }, { status: 502 });
+      return Response.json({ error: "trial_failed", stage, tier, production_untouched: this.env.PUBLISH_LIBRARY_ENABLED !== "true" && this.env.LIVE_INGEST_ENABLED !== "true" }, { status: 502 });
     } finally {
       try { if (c.running) await c.destroy(); } finally { this.busy = false; }
     }

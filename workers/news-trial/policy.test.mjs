@@ -48,7 +48,8 @@ const source = (await readFile(new URL("./index.js", import.meta.url), "utf8"))
     'class DurableObject { constructor(ctx, env) { this.ctx=ctx; this.env=env; } } class WorkerEntrypoint {}')
   .replace('"./policy.mjs"', JSON.stringify(new URL("./policy.mjs", import.meta.url).href))
   .replace('"./library.mjs"', JSON.stringify(new URL("./library.mjs", import.meta.url).href))
-  .replace('"./index-publication.mjs"', JSON.stringify(new URL("./index-publication.mjs", import.meta.url).href));
+  .replace('"./index-publication.mjs"', JSON.stringify(new URL("./index-publication.mjs", import.meta.url).href))
+  .replace('"./live-publication.mjs"', JSON.stringify(new URL("./live-publication.mjs", import.meta.url).href));
 const { NewsTrial } = await import(`data:text/javascript;base64,${Buffer.from(source).toString("base64")}`);
 function bindings(fail = false, articles = []) {
   const puts = [], starts = [];
@@ -416,5 +417,58 @@ test("index endpoint serializes with generation and always releases its Containe
   const failed = await b.instance.fetch(request);
   assert.equal(failed.status, 502);
   assert.deepEqual(await failed.json(), { error: "index_publication_failed", previous_index_preserved: true });
+  assert.equal(b.c.running, false); assert.equal(b.instance.busy, false);
+});
+
+
+test("live news prerequisites fail before any paid Container start", async () => {
+  for (const token of [undefined, "test-live", "bad\nheader"]) {
+    const b = bindings(); b.instance.env.LIVE_INGEST_ENABLED = "true";
+    b.instance.env.LIVE_INGEST_TOKEN = token;
+    assert.equal((await b.instance.fetch()).status, 409); assert.equal(b.starts.length, 0); assert.equal(b.instance.busy, false);
+  }
+});
+
+
+test("live exports survive index Container restart and publish only after the article index", async () => {
+  const rows = JSON.parse(await readFile(new URL("../../assets/globe/news-live.json", import.meta.url), "utf8")).stories.slice(0, 2);
+  const b = bindings(false, rows), objects = new Map(); let phase = "producer";
+  Object.assign(b.instance.env, { LIVE_INGEST_ENABLED: "true", LIVE_INGEST_TOKEN: "test-live", PUBLISH_LIBRARY_ENABLED: "true" });
+  b.instance.env.TRIAL_STORE.head = async key => objects.has(key) ? {} : null;
+  b.instance.env.TRIAL_STORE.get = async key => key.endsWith("seed.json.gz") ? { size: 2, arrayBuffer: async () => new TextEncoder().encode("{}") }
+    : objects.has(key) ? { size: objects.get(key).length, text: async () => objects.get(key) } : null;
+  b.instance.env.TRIAL_STORE.put = async (key, value) => { objects.set(key, value); b.puts.push(key); };
+  const getPort = b.c.getTcpPort;
+  b.c.getTcpPort = () => ({ fetch: async url => {
+    assert.equal(phase, "producer");
+    const u = new URL(url);
+    if (u.pathname === "/output") return u.searchParams.get("kind") === "library" ? new Response(null, { status: 404 }) : Response.json({ stories: rows });
+    return getPort().fetch(url);
+  } });
+  b.instance.buildIndex = async () => { for (const r of rows) assert.ok(objects.has(`published/library/articles/${r.id}.json`)); phase = "index-published"; return { version: "complete" }; };
+  b.instance.env.LIVE_API = { fetch: (...args) => globalThis.fetch(...args) };
+  const originalFetch = globalThis.fetch; const calls = [];
+  globalThis.fetch = async url => { calls.push(url); assert.equal(phase, "index-published"); assert.equal(objects.has("trial/state.json.gz"), false); return Response.json({ ok: true }); };
+  try {
+    const response = await b.instance.fetch(); assert.equal(response.status, 200);
+    assert.equal((await response.json()).live_ingest.news.ok, true);
+    assert.deepEqual(calls, ["https://api.investedia.com/v1/ingest/news", "https://api.investedia.com/v1/ingest/connections"]);
+    assert.deepEqual(b.puts.slice(-2), ["trial/latest.json.gz", "trial/state.json.gz"]);
+  } finally { globalThis.fetch = originalFetch; }
+  assert.equal(b.c.running, false); assert.equal(b.instance.busy, false);
+});
+test("failed live ingestion cannot advance producer state or expose upstream details", async () => {
+  const b = bindings(); Object.assign(b.instance.env, { LIVE_INGEST_ENABLED: "true", LIVE_INGEST_TOKEN: "test-live", PUBLISH_LIBRARY_ENABLED: "true" });
+  const getPort = b.c.getTcpPort;
+  b.c.getTcpPort = () => ({ fetch: async url => new URL(url).pathname === "/output" ? Response.json({ value: "existing output" }) : getPort().fetch(url) });
+  b.instance.buildIndex = async () => ({ version: "complete" });
+  b.instance.env.LIVE_API = { fetch: (...args) => globalThis.fetch(...args) };
+  const original = globalThis.fetch;
+  globalThis.fetch = async () => new Response("private upstream details", { status: 503 });
+  try {
+    const response = await b.instance.fetch(); assert.equal(response.status, 502);
+    const body = await response.json(); assert.equal(body.stage, "live-ingest"); assert.equal(body.production_untouched, false);
+    assert.equal(JSON.stringify(body).includes("private"), false); assert.equal(b.puts.some(k => k.endsWith("/state.json.gz")), false);
+  } finally { globalThis.fetch = original; }
   assert.equal(b.c.running, false); assert.equal(b.instance.busy, false);
 });

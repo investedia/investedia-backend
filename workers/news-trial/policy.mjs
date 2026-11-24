@@ -303,7 +303,7 @@ export async function route(request, env) {
     if (env.PUBLISH_LIBRARY_ENABLED !== "true") return new Response("Article publication disabled", { status: 409 });
     return env.TRIAL_CONTAINER.getByName("priority-trial").fetch("http://trial" + path, { method: "POST" });
   }
-  if (path === "/health" && request.method === "GET") return Response.json({ trial: true, enabled: env.TRIAL_ENABLED === "true", publication_enabled: env.PUBLISH_LIBRARY_ENABLED === "true", scheduled: false });
+  if (path === "/health" && request.method === "GET") return Response.json({ trial: true, enabled: env.TRIAL_ENABLED === "true", publication_enabled: env.PUBLISH_LIBRARY_ENABLED === "true", live_ingest_enabled: env.LIVE_INGEST_ENABLED === "true", scheduled: false });
   if (path === "/article" && request.method === "GET") return readTrialArticle(request, env.TRIAL_STORE);
   if (path === "/result" && request.method === "GET") {
     const compressed = await env.TRIAL_STORE.get(`${prefix}/latest.json.gz`);

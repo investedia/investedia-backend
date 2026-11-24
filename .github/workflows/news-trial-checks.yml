@@ -16,6 +16,8 @@ on:
       - 'events.py'
       - 'tools/news_library.py'
       - 'tools/publish_library.py'
+      - 'tools/push-news-to-worker.py'
+      - 'tools/push-connections-to-worker.py'
       - 'tools/globe-news/connections.py'
 permissions:
   contents: read
