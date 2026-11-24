@@ -239,9 +239,9 @@ class LibraryTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             m.ingest_library('https://w.invalid', 't', days, lambda d: [], lambda *a: {'ok': False}, acked.extend)
 
-    def test_budget_cap_is_1_to_80(self):
-        self.assertEqual(m.Budget(lambda *a, **k: '{}', 80).limit, 80)
-        for bad in (0, 81):
+    def test_budget_cap_is_1_to_400(self):
+        self.assertEqual(m.Budget(lambda *a, **k: "{}", 400).limit, 400)
+        for bad in (0, 401):
             with self.assertRaises(ValueError): m.Budget(lambda *a, **k: '{}', bad)
 
 

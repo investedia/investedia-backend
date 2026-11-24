@@ -27,7 +27,7 @@ on:
         default: 'all'
         required: true
       gemini_calls:
-        description: 'Gemini call budget: 1–80'
+        description: 'Model call budget: 1–400 (Azure: about $0.005 per call)'
         default: '40'
         required: true
       batch_size:
@@ -91,7 +91,7 @@ jobs:
         run: |
           python - <<'PY'
           import os, re
-          assert 1 <= int(os.environ['CALLS']) <= 80, 'gemini_calls must be 1–80'
+          assert 1 <= int(os.environ['CALLS']) <= 400, 'gemini_calls must be 1–400'
           assert 1 <= int(os.environ['BATCH']) <= 40, 'batch_size must be 1–40'
           assert 1 <= int(os.environ['GDELT']) <= 400, 'gdelt_files must be 1–400'
           for key in ('START_DATE', 'END_DATE'):

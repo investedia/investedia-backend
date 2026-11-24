@@ -67,7 +67,7 @@ HOUR_ROUNDS = (12, 0, 6, 18, 3, 9, 15, 21)  # every day at noon first, then midn
 ALLOWED_START = '2016-01-01'  # owner 22 Nov 2026: 50K more articles, back to 2016 (Azure gpt-4.1-mini, runs in parallel per year)
 ALLOWED_END = '2026-11-14'    # inclusive day (owner 17 Nov 2026: whole 90 days, incl. the 16-18 Oct and 8-9 Nov gaps)
 DEFAULT_CALLS = 40
-HARD_CALL_LIMIT = 80
+HARD_CALL_LIMIT = 400  # owner 24 Nov 2026: 100K target on Azure credit needs far more model calls per run (was 80)
 MODEL_BATCH = 25
 DEFAULT_GDELT_FILES = 160     # about two 15-minute files per day for Aug 1 - Oct 15
 MAX_GDELT_FILES = 400
@@ -490,7 +490,7 @@ class Budget(regional.ModelBudget):
     skipped and the robot's loop moves on to the next listed model, as the hourly robot does. Every attempt counts
     against the budget and every failure is recorded (HTTP code and Google's short message)."""
     def __init__(self, transport, limit=DEFAULT_CALLS, deadline=None, sleep=time.sleep):
-        if not 1 <= limit <= HARD_CALL_LIMIT: raise ValueError('gemini_calls_must_be_1_to_80')
+        if not 1 <= limit <= HARD_CALL_LIMIT: raise ValueError('gemini_calls_must_be_1_to_400')
         super().__init__(transport, 1, deadline); self.limit = limit
         self.failed = {}; self.retries = Counter(); self.sleep = sleep; self.last_error = None; self.last_code = None
 
@@ -926,7 +926,7 @@ def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=No
     if provider not in ('gemini', 'claude', 'azure'): raise ValueError('provider_must_be_gemini_claude_or_azure')
     if not 0 < float(max_usd) <= 50: raise ValueError('max_usd_must_be_0_to_50')
     a, b = window(start, end); regions = regions_from(','.join(regions) if isinstance(regions, list) else regions)
-    if not 1 <= gemini_calls <= HARD_CALL_LIMIT: raise ValueError('gemini_calls_must_be_1_to_80')
+    if not 1 <= gemini_calls <= HARD_CALL_LIMIT: raise ValueError('gemini_calls_must_be_1_to_400')
     if not 1 <= batch_size <= 40: raise ValueError('batch_size_must_be_1_to_40')
     if not 1 <= gdelt_files <= MAX_GDELT_FILES: raise ValueError('gdelt_files_must_be_1_to_400')
     now = now or datetime.now(timezone.utc); clock0 = time.monotonic(); deadline = clock0 + max_minutes * 60
@@ -1086,7 +1086,7 @@ def main(argv=None):
     p.add_argument('--cache', type=Path, default=ROOT/'.local/gdelt-cache'); p.add_argument('--output', type=Path, default=ROOT/'.local/gdelt-backfill')
     a = p.parse_args(argv)
     if a.confirm != 'BACKFILL': p.error('confirm_must_equal_BACKFILL')
-    if not 1 <= a.gemini_calls <= HARD_CALL_LIMIT: p.error('gemini_calls_must_be_1_to_80')
+    if not 1 <= a.gemini_calls <= HARD_CALL_LIMIT: p.error('gemini_calls_must_be_1_to_400')
     if not 1 <= a.batch_size <= 40: p.error('batch_size_must_be_1_to_40')
     if not 1 <= a.gdelt_files <= MAX_GDELT_FILES: p.error('gdelt_files_must_be_1_to_400')
     if not 5 <= a.max_minutes <= 170: p.error('max_minutes_must_be_5_to_170')
