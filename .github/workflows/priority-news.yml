@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   priority-news:
-    if: vars.PRIORITY_NEWS_ENABLED == 'true' && github.ref == 'refs/heads/main'
+    if: vars.PRIORITY_NEWS_ENABLED == 'true' && github.ref == 'refs/heads/main' && (github.event_name != 'schedule' || vars.CLOUDFLARE_PRIORITY_NEWS_ENABLED != 'true')
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:

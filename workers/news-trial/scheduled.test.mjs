@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { DATA_SCHEDULES, scheduledJobs, runScheduled } from "./scheduled.mjs";
+import { DATA_SCHEDULES, NEWS_SCHEDULES, scheduledJobs, runScheduled } from "./scheduled.mjs";
 const time = Date.UTC(2026, 10, 24, 15, 37);
 const result = job => ({ trial: true, job, gemini_calls: 0, ...(job === "calendar" ? { live_ingest: { calendar: { ok: true } } } : job === "economy-history" ? { review_only: true } : { published_snapshot: { written: true } }) });
 function fixture(job) {
@@ -74,4 +74,48 @@ test("Cloudflare weekday dialect cannot copy GitHub zero-based numeric days", ()
   assert.equal(DATA_SCHEDULES["43 21 * * 1-5"], undefined);
   assert.equal(DATA_SCHEDULES["12 6 * * 0"], undefined);
 
+});
+
+function newsFixture(tier) {
+  const b = fixture(tier);
+  delete b.env.FRED_API_KEY;
+  Object.assign(b.env, { PUBLISH_LIBRARY_ENABLED: "true", GEMINI_API_KEY: "offline-model" });
+  const summary = { trial: true, tier, published_articles_written: 0, library_index: { version: "a".repeat(64) }, live_ingest: { news: { ok: true }, connections: { ok: true } } };
+  b.env.TRIAL_CONTAINER.getByName = name => ({ fetch: async (url, options) => { b.calls.push({ name, url, options }); return Response.json(summary); } });
+  return { ...b, summary };
+}
+test("news tiers share the locked producer, preserve cadence, and require full publication acknowledgement", async () => {
+  assert.deepEqual(NEWS_SCHEDULES, { "17,47 * * * *": "priority", "7 */2 * * *": "broad" });
+  assert.deepEqual(scheduledJobs({ SCHEDULED_JOBS: "calendar,priority,broad" }), ["calendar", "priority", "broad"]);
+  for (const [cron, tier] of Object.entries(NEWS_SCHEDULES)) {
+    const b = newsFixture(tier); await runScheduled({ cron, scheduledTime: time }, b.env);
+    assert.deepEqual(b.calls, [{ name: "news-trial", url: "http://trial/run?job=news&tier=" + tier, options: { method: "POST" } }]);
+    assert.equal(b.writes.get(`operations/schedules/${tier}/last-success.json`).ok, true);
+    assert.equal(JSON.stringify([...b.writes]).includes("offline-model"), false);
+  }
+});
+test("news prerequisites fail before paid generation and incomplete acknowledgements never hand off", async () => {
+  const cron = Object.keys(NEWS_SCHEDULES)[0], original = console.warn; console.warn = () => {};
+  try {
+    for (const key of ["GEMINI_API_KEY", "PUBLISH_LIBRARY_ENABLED", "LIVE_INGEST_ENABLED", "LIVE_INGEST_TOKEN", "LIVE_API"]) {
+      const b = newsFixture("priority"); delete b.env[key];
+      await assert.rejects(runScheduled({ cron, scheduledTime: time }, b.env)); assert.equal(b.calls.length, 0);
+    }
+    for (const change of [s => s.live_ingest.news.ok = false, s => s.live_ingest.connections.ok = false,
+      s => delete s.library_index, s => s.published_articles_written = -1, s => s.tier = "broad"]) {
+      const b = newsFixture("priority"); change(b.summary);
+      await assert.rejects(runScheduled({ cron, scheduledTime: time }, b.env));
+      assert.equal(b.calls.length, 1); assert.equal(b.writes.has("operations/schedules/priority/last-success.json"), false);
+    }
+  } finally { console.warn = original; }
+});
+test("news timers stay unselected by default and GitHub handoffs skip only scheduled runs", async () => {
+  const config = await readFile(new URL("./wrangler.toml", import.meta.url), "utf8");
+  assert.match(config, /SCHEDULED_JOBS = "off"/);
+  for (const cron of Object.keys(NEWS_SCHEDULES)) assert.ok(config.includes('"' + cron + '"'));
+  for (const [name, gate] of [["priority-news", "CLOUDFLARE_PRIORITY_NEWS_ENABLED"], ["broad-news", "CLOUDFLARE_BROAD_NEWS_ENABLED"]]) {
+    const workflow = await readFile(new URL("../../.github/workflows/" + name + ".yml", import.meta.url), "utf8");
+    assert.ok(workflow.includes("github.event_name != 'schedule' || vars." + gate + " != 'true'"));
+    assert.ok(workflow.includes("workflow_dispatch:")); assert.ok(workflow.includes("github.ref == 'refs/heads/main'"));
+  }
 });
