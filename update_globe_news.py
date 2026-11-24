@@ -475,17 +475,17 @@ Candidates:
 
 
 def gemini_models():
-    """Newest available 'flash' text models first (Google retires model names often, so ask instead of hard-coding)."""
+    """Prefer Lite text models, newest within each family; discover names because Google retires them."""
     try:
         r = json.loads(get('https://generativelanguage.googleapis.com/v1beta/models?pageSize=200', headers={'x-goog-api-key': GEMINI}))
         ms = [m['name'].split('/')[-1] for m in r.get('models', []) if 'generateContent' in m.get('supportedGenerationMethods', [])]
         ms = [m for m in ms if 'flash' in m and not re.search(r'image|tts|audio|live|thinking|embed|exp', m)]
         ver = lambda m: [float(x) for x in re.findall(r'(\d+(?:\.\d+)?)', m)[:1]] or [0]
-        ms.sort(key=lambda m: (ver(m), 'preview' not in m, 'lite' not in m, '-0' not in m), reverse=True)
+        ms.sort(key=lambda m: ('lite' in m, ver(m), 'preview' not in m, '-0' not in m), reverse=True)
         status['gemini_models_seen'] = ms[:8]
         if ms: return ms[:6]
     except Exception as e: err(f'Gemini model list: {e}')
-    return ['gemini-flash-latest', 'gemini-flash-lite-latest']
+    return ['gemini-flash-lite-latest', 'gemini-flash-latest']
 
 
 def gemini(prompt):
@@ -503,7 +503,7 @@ def gemini(prompt):
             except urllib.error.HTTPError as e:
                 tried.append(f'{model}: HTTP {e.code}')
                 if e.code in (400, 401, 403): raise RuntimeError(f'{tried[-1]} {e.read()[:200]!r}')
-                if e.code == 404 or (e.code == 503 and t == 1): break  # retired, or still unavailable after one delayed retry
+                if e.code in (404, 429) or (e.code == 503 and t == 1): break  # retired/quota-limited: move on; unavailable: retry once
                 time.sleep(20)
             except Exception as e:
                 tried.append(f'{model}: {e}'); time.sleep(5)
