@@ -519,34 +519,41 @@ def gemini(prompt):
 def azure(prompt):
     endpoint, key = os.environ.get('AZURE_OPENAI_ENDPOINT', '').strip(), os.environ.get('AZURE_OPENAI_API_KEY', '').strip()
     if not endpoint or not key: raise RuntimeError('not configured')
-    dep = os.environ.get('AZURE_OPENAI_DEPLOYMENT', '').strip() or 'gpt-4.1-mini'
-    body = {'messages': [{'role': 'user', 'content': prompt}]}
-    if dep.startswith('gpt-5'): body.update(max_completion_tokens=16000, reasoning_effort='minimal')
-    else: body.update(max_tokens=16000, temperature=0.2)
-    url = '%s/openai/deployments/%s/chat/completions?api-version=2024-10-21' % (endpoint.rstrip('/'), dep)
-    last = None
-    for t in range(2):
-        try:
-            r = json.loads(get(url, data=json.dumps(body).encode(), headers={'Content-Type': 'application/json', 'api-key': key}, timeout=240))
-            txt = r['choices'][0]['message']['content']
-            out = json.loads(re.sub(r'^```(json)?|```$', '', txt.strip()))
-            if isinstance(out, dict):  # tolerate {"stories": [...]} around the array
-                lists = [v for v in out.values() if isinstance(v, list)]
-                if len(lists) == 1: out = lists[0]
-            status['gemini_model'] = 'azure:' + dep
-            return out
-        except urllib.error.HTTPError as e:
-            detail = ''
-            try: detail = json.loads(e.read()).get('error', {}).get('message', '')[:160]
-            except Exception: pass
-            last = f'HTTP {e.code} {detail}'.strip()
-            if e.code == 400 and 'max_tokens' in body:  # newer Azure models only take max_completion_tokens and no temperature
-                body.pop('max_tokens', None); body.pop('temperature', None); body['max_completion_tokens'] = 16000; continue
-            if e.code in (400, 401, 403, 404): break
-            time.sleep(15)
-        except Exception as e:
-            last = str(e)[:200]; time.sleep(5)
-    raise RuntimeError(last or 'failed')
+    # Owner 24 Nov 2026: the saved default deployment answered "API version not supported"; the backfill runs fine on
+    # gpt-4.1-mini / gpt-4.1-nano, so try the saved one first and then those.
+    deps = []
+    for d in (os.environ.get('AZURE_OPENAI_DEPLOYMENT', '').strip(), 'gpt-4.1-mini', 'gpt-4.1-nano'):
+        if d and d not in deps: deps.append(d)
+    errs = []
+    for dep in deps:
+        body = {'messages': [{'role': 'user', 'content': prompt}]}
+        if dep.startswith('gpt-5'): body.update(max_completion_tokens=16000, reasoning_effort='minimal')
+        else: body.update(max_tokens=16000, temperature=0.2)
+        url = '%s/openai/deployments/%s/chat/completions?api-version=2024-10-21' % (endpoint.rstrip('/'), dep)
+        last = None
+        for t in range(3):
+            try:
+                r = json.loads(get(url, data=json.dumps(body).encode(), headers={'Content-Type': 'application/json', 'api-key': key}, timeout=240))
+                txt = r['choices'][0]['message']['content']
+                out = json.loads(re.sub(r'^```(json)?|```$', '', txt.strip()))
+                if isinstance(out, dict):  # tolerate {"stories": [...]} around the array
+                    lists = [v for v in out.values() if isinstance(v, list)]
+                    if len(lists) == 1: out = lists[0]
+                status['gemini_model'] = 'azure:' + dep
+                return out
+            except urllib.error.HTTPError as e:
+                detail = ''
+                try: detail = json.loads(e.read()).get('error', {}).get('message', '')[:120]
+                except Exception: pass
+                last = f'HTTP {e.code} {detail}'.strip()
+                if e.code == 400 and 'max_tokens' in body and 'max_tokens' in detail:  # newer models only take max_completion_tokens
+                    body.pop('max_tokens', None); body.pop('temperature', None); body['max_completion_tokens'] = 16000; continue
+                if e.code in (400, 401, 403, 404): break
+                time.sleep(15)
+            except Exception as e:
+                last = str(e)[:160]; time.sleep(5)
+        errs.append(f'{dep}: {last}')
+    raise RuntimeError(' ; '.join(errs))
 
 
 # ---------- Direct impact analysis (optional; failures never discard reporting) ----------
