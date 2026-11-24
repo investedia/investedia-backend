@@ -503,7 +503,7 @@ def gemini(prompt):
             except urllib.error.HTTPError as e:
                 tried.append(f'{model}: HTTP {e.code}')
                 if e.code in (400, 401, 403): raise RuntimeError(f'{tried[-1]} {e.read()[:200]!r}')
-                if e.code in (404, 503): break  # retired or overloaded: try the next model
+                if e.code == 404 or (e.code == 503 and t == 1): break  # retired, or still unavailable after one delayed retry
                 time.sleep(20)
             except Exception as e:
                 tried.append(f'{model}: {e}'); time.sleep(5)
