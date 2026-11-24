@@ -6,6 +6,8 @@ on:
       - 'tests/test_news_trial.py'
       - 'tests/test_data_trials.py'
       - 'tools/cloudflare/stage_frontend.py'
+      - 'tools/cloudflare/stage_library_index.py'
+      - 'tests/test_cloudflare_library_index.py'
       - 'tools/coverage/country_basics.py'
       - '.github/workflows/news-trial-checks.yml'
       - 'update_globe_news.py'
@@ -33,6 +35,19 @@ jobs:
           token: ${{ secrets.FRONTEND_PUSH_TOKEN }}
           persist-credentials: false
           path: .local/frontend-source
+      - uses: actions/checkout@v4
+        with:
+          repository: investedia/investedia-frontend
+          ref: 53b8e93830deab9f574a11745a05e40155fdad2c
+          token: ${{ secrets.FRONTEND_PUSH_TOKEN }}
+          persist-credentials: false
+          path: .local/library-index-source
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            tools/news_library_index.py
+            assets/globe/library-index/all.json
+            assets/globe/library-index/meta.json
+            assets/globe/library-index/tick-*.json
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -40,6 +55,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: python tools/cloudflare/stage_frontend.py .local/frontend-source
+      - run: python tools/cloudflare/stage_library_index.py .local/library-index-source --commit 53b8e93830deab9f574a11745a05e40155fdad2c
       - run: node --test workers/news-trial/*.test.mjs
       - run: python -m unittest discover -s tests -p test_news_trial.py
       - run: python -m unittest discover -s tests -p test_data_trials.py

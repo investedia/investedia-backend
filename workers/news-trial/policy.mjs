@@ -299,9 +299,9 @@ export async function route(request, env) {
   const job = trialJob(request);
   if (!job) return new Response("Unknown trial job", { status: 400 });
   const prefix = job === "news" ? "trial" : `trial/${job}`;
-  if (path === "/publish-library" && request.method === "POST") {
+  if (["/publish-library", "/publish-library-index"].includes(path) && request.method === "POST") {
     if (env.PUBLISH_LIBRARY_ENABLED !== "true") return new Response("Article publication disabled", { status: 409 });
-    return env.TRIAL_CONTAINER.getByName("priority-trial").fetch("http://trial/publish-library", { method: "POST" });
+    return env.TRIAL_CONTAINER.getByName("priority-trial").fetch("http://trial" + path, { method: "POST" });
   }
   if (path === "/health" && request.method === "GET") return Response.json({ trial: true, enabled: env.TRIAL_ENABLED === "true", publication_enabled: env.PUBLISH_LIBRARY_ENABLED === "true", scheduled: false });
   if (path === "/article" && request.method === "GET") return readTrialArticle(request, env.TRIAL_STORE);

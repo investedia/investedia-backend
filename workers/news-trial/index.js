@@ -1,12 +1,45 @@
 import { DurableObject, WorkerEntrypoint } from "cloudflare:workers";
+import { readIndexInput, publishedIds, publishIndexExports } from "./index-publication.mjs";
 import { storeTrialLibrary, publishLibraryPage } from "./library.mjs";
 import { egress, route, trialTier, trialJob, safeDiagnostic } from "./policy.mjs";
 
 export class TrialEgress extends WorkerEntrypoint {
-  fetch(request) { return egress(request, this.ctx.props.job === "news" ? this.env.GEMINI_API_KEY : "", this.env.TRIAL_ENABLED === "true", fetch, this.ctx.props.job === "calendar" ? this.env.FRED_API_KEY : ""); }
+  fetch(request) { if (this.ctx.props.job === "library-index") return readIndexInput(request, this.env); return egress(request, this.ctx.props.job === "news" ? this.env.GEMINI_API_KEY : "", this.env.TRIAL_ENABLED === "true", fetch, this.ctx.props.job === "calendar" ? this.env.FRED_API_KEY : ""); }
 }
 export class NewsTrial extends DurableObject {
   busy = false;
+  async startContainer(job) {
+    const c = this.ctx.container;
+    if (c.running) await c.destroy();
+    c.start({ image: c.images.base, instance: "basic", enableInternet: false });
+    await c.setInactivityTimeout(15 * 60 * 1000);
+    const proxy = this.ctx.exports.TrialEgress({ props: { job } });
+    await c.interceptOutboundHttps("*", proxy);
+    await c.interceptAllOutboundHttp(proxy);
+    for (let i = 0; i < 60; i++) {
+      try { if ((await c.getTcpPort(8080).fetch("http://container/health")).ok) return c; } catch {}
+      await new Promise(resolve => setTimeout(resolve, 1000));
+    }
+    throw new Error("Container unavailable");
+  }
+  async buildIndex() {
+    const ids = await publishedIds(this.env.TRIAL_STORE);
+    const c = await this.startContainer("library-index");
+    const result = await c.getTcpPort(8080).fetch("http://container/run?job=library-index", { method: "POST", body: JSON.stringify({ ids }) });
+    if (!result.ok) { await result.body?.cancel(); throw new Error("Index generation failed"); }
+    const summary = JSON.parse(result.headers.get("X-Trial-Summary"));
+    await result.body?.cancel();
+    const published = await publishIndexExports({ fetch: request => c.getTcpPort(8080).fetch(request) }, this.env.TRIAL_STORE);
+    return { ...summary, ...published };
+  }
+  async publishIndex() {
+    if (this.env.PUBLISH_LIBRARY_ENABLED !== "true") return new Response("Article publication disabled", { status: 409 });
+    if (this.busy) return new Response("Trial already running", { status: 409 });
+    this.busy = true;
+    try { return Response.json(await this.buildIndex()); }
+    catch { return Response.json({ error: "index_publication_failed", previous_index_preserved: true }, { status: 502 }); }
+    finally { try { if (this.ctx.container.running) await this.ctx.container.destroy(); } finally { this.busy = false; } }
+  }
   async publishLibrary() {
     if (this.env.PUBLISH_LIBRARY_ENABLED !== "true") return new Response("Article publication disabled", { status: 409 });
     if (this.busy) return new Response("Trial already running", { status: 409 });
@@ -22,6 +55,7 @@ export class NewsTrial extends DurableObject {
     } finally { this.busy = false; }
   }
   async fetch(request = new Request("http://trial/run")) {
+    if (new URL(request.url).pathname === "/publish-library-index") return this.publishIndex();
     if (new URL(request.url).pathname === "/publish-library") return this.publishLibrary();
     const job = trialJob(request);
     if (!job) return new Response("Unknown trial job", { status: 400 });
@@ -38,20 +72,8 @@ export class NewsTrial extends DurableObject {
         || await this.env.TRIAL_STORE.get(`${prefix}/seed.json.gz`) || await this.env.TRIAL_STORE.get(`${prefix}/seed.json`);
       if (!seed || seed.size > 32 * 1024 * 1024) return new Response("Trial seed missing or too large", { status: 409 });
       stage = "container";
-      if (c.running) await c.destroy();
-      c.start({ image: c.images.base, instance: "basic", enableInternet: false });
-      await c.setInactivityTimeout(15 * 60 * 1000);
-      const proxy = this.ctx.exports.TrialEgress({ props: { job } });
-      await c.interceptOutboundHttps("*", proxy);
-      await c.interceptAllOutboundHttp(proxy);
+      await this.startContainer(job);
       const port = c.getTcpPort(8080);
-      let ready = false;
-      for (let i = 0; i < 60; i++) {
-        try { ready = (await port.fetch("http://container/health")).ok; } catch {}
-        if (ready) break;
-        await new Promise(resolve => setTimeout(resolve, 1000));
-      }
-      if (!ready) throw new Error("Container unavailable");
       stage = "producer";
       const response = await port.fetch(`http://container/run?tier=${tier}&job=${job}`, { method: "POST", body: await seed.arrayBuffer(), headers: { "X-Fred-Enabled": job === "calendar" && this.env.FRED_API_KEY ? "1" : "0" } });
       if (!response.ok) {
@@ -75,6 +97,8 @@ export class NewsTrial extends DurableObject {
         if (job === "news" && this.env.PUBLISH_LIBRARY_ENABLED === "true") {
           const published = await storeTrialLibrary({ fetch: request => c.getTcpPort(8080).fetch(request) }, this.env.TRIAL_STORE, summary.library_articles, "published");
           summary.published_articles_written = published.written;
+          stage = "index";
+          summary.library_index = await this.buildIndex();
         }
       }
       // Keep the large archive opaque here; parsing it in the Worker can exhaust memory.
@@ -83,7 +107,7 @@ export class NewsTrial extends DurableObject {
       await this.env.TRIAL_STORE.put(`${prefix}/state.json.gz`, result, { httpMetadata: { contentType: "application/gzip" } });
       return Response.json(summary);
     } catch {
-      return Response.json({ error: "trial_failed", stage, tier, production_untouched: true }, { status: 502 });
+      return Response.json({ error: "trial_failed", stage, tier, production_untouched: this.env.PUBLISH_LIBRARY_ENABLED !== "true" }, { status: 502 });
     } finally {
       try { if (c.running) await c.destroy(); } finally { this.busy = false; }
     }

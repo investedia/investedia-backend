@@ -28,3 +28,10 @@
 !.local/cloudflare-frontend/data/registry.json
 
 !tools/publish_library.py
+
+!workers/news-trial/index_job.py
+!.local/cloudflare-library-index/baseline.json
+!.local/cloudflare-library-index/news_library_index.py
+!.local/cloudflare-library-index/all.json
+!.local/cloudflare-library-index/meta.json
+!.local/cloudflare-library-index/tick-[A-Z_].json

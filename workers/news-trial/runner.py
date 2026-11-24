@@ -18,6 +18,8 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 BASE = Path(__file__).resolve().parents[2]
 LIMIT = 32 * 1024 * 1024
 EXPANDED_LIMIT = 128 * 1024 * 1024
+INDEX_SOURCES = ("workers/news-trial/index_job.py", ".local/cloudflare-library-index/baseline.json",
+                 ".local/cloudflare-library-index/all.json", ".local/cloudflare-library-index/news_library_index.py")
 STATE_NAMES = {"news-live.json", "news-archive.json", "news-48h.json", "news-seen.json",
                "news-status.json", "threads.json", "photos/index.json", "photos/blocked.json"}
 SOURCES = ("update_globe_news.py", "news_core.py", "registry.py", "events.py", "tools/news_library.py",
@@ -300,6 +302,13 @@ class Handler(BaseHTTPRequestHandler):
             self.send_response(200); self.end_headers(); return
         try:
             url = urlsplit(self.path); query = parse_qs(url.query)
+            if url.path == "/index":
+                names = query.get("file", [])
+                if set(query) != {"file"} or len(names) != 1 or names[0] not in getattr(self.server, "index_files", {}):
+                    raise ValueError("Invalid index export")
+                body = self.server.index_files[names[0]]
+                self.send_response(200); self.send_header("Content-Type", "application/octet-stream")
+                self.send_header("Content-Length", str(len(body))); self.end_headers(); self.wfile.write(body); return
             cursors = query.get("cursor", [])
             if url.path != "/library" or set(query) != {"cursor"} or len(cursors) != 1 or not cursors[0].isascii() or not cursors[0].isdigit():
                 raise ValueError("Invalid library request")
@@ -312,16 +321,22 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         self.server.library = []
+        self.server.index_files = {}
         try:
             length = int(self.headers.get("Content-Length", "0"))
             url = urlsplit(self.path)
             query = parse_qs(url.query)
             jobs = query.get("job", ["news"])
             tiers = query.get("tier", ["priority"])
-            if url.path != "/run" or len(jobs) != 1 or jobs[0] not in ("news", "calendar", "library", *DATA_JOBS) or len(tiers) != 1 or tiers[0] not in ("priority", "broad") or not 0 < length <= LIMIT:
+            if url.path != "/run" or len(jobs) != 1 or jobs[0] not in ("news", "calendar", "library", "library-index", *DATA_JOBS) or len(tiers) != 1 or tiers[0] not in ("priority", "broad") or not 0 < length <= LIMIT:
                 raise ValueError("Invalid request")
             raw = self.rfile.read(length)
-            if jobs[0] == "library":
+            if jobs[0] == "library-index":
+                spec = importlib.util.spec_from_file_location("library_index_job", BASE / "workers/news-trial/index_job.py")
+                module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
+                self.server.index_files, summary = module.build_index(decode_bundle(raw, lambda value: value))
+                result = {"summary": summary}
+            elif jobs[0] == "library":
                 result = run_library(decode_bundle(raw))
             elif jobs[0] in DATA_JOBS:
                 job = jobs[0]
@@ -361,7 +376,7 @@ if __name__ == "__main__":
         args.pack.write_bytes(body)
         print("Wrote compressed trial seed locally:", len(body), "bytes; no articles generated or published")
     elif args.preflight:
-        for name in SOURCES + CALENDAR_SOURCES + LIBRARY_SOURCES + tuple(name for sources in DATA_SOURCES.values() for name in sources):
+        for name in SOURCES + CALENDAR_SOURCES + LIBRARY_SOURCES + INDEX_SOURCES + tuple(name for sources in DATA_SOURCES.values() for name in sources):
             if not (BASE / name).is_file():
                 raise SystemExit("Missing trial source: " + name)
         print("Offline preflight passed")
