@@ -84,3 +84,13 @@ test("runtime transport requires the configured private live service, with no pu
   const result = await postLiveInputs(inputs(), { ...env, LIVE_API: service });
   assert.equal(result.news.ok, true); assert.equal(calls.length, 3);
 });
+
+
+test("ingest failure diagnostics contain only fixed kinds and HTTP numbers", async () => {
+  const captured = [], original = console.warn;
+  console.warn = (...args) => captured.push(args);
+  try {
+    await assert.rejects(postLiveInputs(inputs(), env, async () => new Response("private response must never be logged", { status: 409 })));
+    assert.deepEqual(captured, [["live_ingest_failure", JSON.stringify({ kind: "news", http_status: 409 })]]);
+  } finally { console.warn = original; }
+});
