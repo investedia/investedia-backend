@@ -1,7 +1,7 @@
 # Graph Report - investedia-news-schedules-20261124  (2026-11-24)
 
 ## Corpus Check
-- 8215 files · ~1,953,461 words
+- 8215 files · ~1,953,471 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 17 file(s) not represented in the graph (top: (none) 5, .csv 3, .otf 3)
 
@@ -11,7 +11,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6698069f`
+- Built from commit: `c111430d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -911,17 +911,17 @@ Nodes (3): default, description, gemini_model
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `SnapshotUnavailableException` connect `SnapshotRepositoryTest.java` to `FileMarketRepository.java`, `NewsService.java`, `SnapshotResponseHeaders.java`?**
-  _High betweenness centrality (0.009) - this node is a cross-community bridge._
+- **Why does `RegionalTests` connect `RegionalTests` to `pathlib`, `error_message`?**
+  _High betweenness centrality (0.024) - this node is a cross-community bridge._
 - **What connects `com.investedia:investedia-backend`, `com.investedia:investedia-services`, `RFC-8291` to the rest of the system?**
   _4 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `FakeFred` be split into smaller, more focused modules?**
   _Cohesion score 0.07738095238095238 - nodes in this community are weakly interconnected._
-- **Why does `NewsTrialTests` connect `NewsTrialTests` to `pathlib`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+- **Why does `AzureEditorTests` connect `AzureEditorTests` to `pathlib`?**
+  _High betweenness centrality (0.012) - this node is a cross-community bridge._
 - **Should `pathlib` be split into smaller, more focused modules?**
   _Cohesion score 0.04730052556139513 - nodes in this community are weakly interconnected._
+- **Why does `SnapshotUnavailableException` connect `SnapshotRepositoryTest.java` to `FileMarketRepository.java`, `NewsService.java`, `SnapshotResponseHeaders.java`?**
+  _High betweenness centrality (0.009) - this node is a cross-community bridge._
 - **Should `run` be split into smaller, more focused modules?**
   _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
-- **Should `json` be split into smaller, more focused modules?**
-  _Cohesion score 0.0797872340425532 - nodes in this community are weakly interconnected._
