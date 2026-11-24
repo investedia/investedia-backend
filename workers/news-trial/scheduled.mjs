@@ -1,8 +1,8 @@
 // Reuse the existing authenticated producer path through private Durable Object bindings.
 import { bounded } from "./index-publication.mjs";
 export const DATA_SCHEDULES = {
-  "23 */6 * * *": "calendar", "43 21 * * 1-5": "markets",
-  "37 15 * * 1-5": "fx", "12 6 * * 0": "economy-history"
+  "23 */6 * * *": "calendar", "43 21 * * MON-FRI": "markets",
+  "37 15 * * MON-FRI": "fx", "12 6 * * SUN": "economy-history"
 };
 export function scheduledJobs(env) {
   const raw = env.SCHEDULED_JOBS?.trim();

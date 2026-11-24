@@ -15,10 +15,10 @@ function fixture(job) {
 test("default-off and unselected jobs do not touch bindings; unknown or repeated jobs fail closed", async () => {
   for (const value of [undefined, "off", ""]) {
     assert.deepEqual(scheduledJobs({ SCHEDULED_JOBS: value }), []);
-    await runScheduled({ cron: "37 15 * * 1-5", scheduledTime: time }, { SCHEDULED_JOBS: value });
+    await runScheduled({ cron: "37 15 * * MON-FRI", scheduledTime: time }, { SCHEDULED_JOBS: value });
   }
   for (const value of ["news", "markets,markets", "calendar,", "country-basics", "../private"]) assert.throws(() => scheduledJobs({ SCHEDULED_JOBS: value }));
-  const b = fixture("markets"); await runScheduled({ cron: "37 15 * * 1-5", scheduledTime: time }, b.env);
+  const b = fixture("markets"); await runScheduled({ cron: "37 15 * * MON-FRI", scheduledTime: time }, b.env);
   assert.equal(b.calls.length, 0); assert.equal(b.writes.size, 0);
 });
 test("each exact existing UTC schedule calls only its private job and records success", async () => {
@@ -45,7 +45,7 @@ test("failed and unacknowledged runs retain last success, log fixed fields and f
     for (const response of [new Response("private response must not leak", { status: 503 }), new Response("busy", { status: 409 }), Response.json({ trial: true, job: "fx", gemini_calls: 0 })]) {
       const b = fixture("fx"), key = "operations/schedules/fx/last-success.json"; b.writes.set(key, { previous: true });
       b.env.TRIAL_CONTAINER.getByName = () => ({ fetch: async () => response });
-      await assert.rejects(runScheduled({ cron: "37 15 * * 1-5", scheduledTime: time }, b.env));
+      await assert.rejects(runScheduled({ cron: "37 15 * * MON-FRI", scheduledTime: time }, b.env));
       assert.deepEqual(b.writes.get(key), { previous: true }); assert.equal(b.writes.get("operations/schedules/fx/last-attempt.json").ok, false);
     }
   } finally { console.warn = original; }
@@ -54,16 +54,24 @@ test("failed and unacknowledged runs retain last success, log fixed fields and f
 });
 test("review jobs cannot acknowledge accidental publication and monitoring errors remain failures", async () => {
   const b = fixture("economy-history"); b.env.TRIAL_CONTAINER.getByName = () => ({ fetch: async () => Response.json({ ...result("economy-history"), review_only: false }) });
-  await assert.rejects(runScheduled({ cron: "12 6 * * 0", scheduledTime: time }, b.env));
+  await assert.rejects(runScheduled({ cron: "12 6 * * SUN", scheduledTime: time }, b.env));
   assert.equal(b.writes.has("operations/schedules/economy-history/last-success.json"), false);
   const c = fixture("markets"); c.env.TRIAL_STORE.put = async () => { throw Error("private storage error"); };
-  await assert.rejects(runScheduled({ cron: "43 21 * * 1-5", scheduledTime: time }, c.env), /Scheduled markets failed/);
+  await assert.rejects(runScheduled({ cron: "43 21 * * MON-FRI", scheduledTime: time }, c.env), /Scheduled markets failed/);
 });
-test("checked-in trigger times match existing legacy workflows and scheduler defaults off", async () => {
+test("Cloudflare named weekdays preserve intended weekdays/Sunday and scheduler defaults off", async () => {
   const config = await readFile(new URL("./wrangler.toml", import.meta.url), "utf8");
   assert.match(config, /SCHEDULED_JOBS = "off"/);
   for (const cron of Object.keys(DATA_SCHEDULES)) assert.ok(config.includes('"' + cron + '"'));
   const calendar = await readFile(new URL("../../.github/workflows/calendar.yml", import.meta.url), "utf8");
   assert.ok(calendar.includes("23 */6 * * *")); assert.ok(calendar.includes("github.event_name != 'schedule' || vars.CLOUDFLARE_CALENDAR_ENABLED != 'true'"));
   assert.ok(calendar.includes("workflow_dispatch:"));
+});
+
+test("Cloudflare weekday dialect cannot copy GitHub zero-based numeric days", () => {
+  const intended = { calendar: "*", markets: "MON-FRI", fx: "MON-FRI", "economy-history": "SUN" };
+  for (const [cron, job] of Object.entries(DATA_SCHEDULES)) assert.equal(cron.split(" ")[4], intended[job]);
+  assert.equal(DATA_SCHEDULES["43 21 * * 1-5"], undefined);
+  assert.equal(DATA_SCHEDULES["12 6 * * 0"], undefined);
+
 });
