@@ -24,7 +24,8 @@ async function boundedJson(response) {
   return JSON.parse(new TextDecoder().decode(data));
 }
 
-export async function storeTrialLibrary(port, store, expected, prefix = "trial") {
+export async function storeTrialLibrary(port, store, expected, prefix = "trial", source = "saved") {
+  if (!["saved", "export"].includes(source) || (source === "export" && prefix !== "published")) throw new Error("Invalid publication source");
   if (!["trial", "published"].includes(prefix)) throw new Error("Invalid library scope");
   if (!Number.isSafeInteger(expected) || expected < 0 || expected > 10000) throw new Error("Invalid library count");
   let cursor = 0, written = 0; const seen = new Set();
@@ -39,7 +40,12 @@ export async function storeTrialLibrary(port, store, expected, prefix = "trial")
       const body = JSON.stringify(article);
       if (new TextEncoder().encode(body).length > 512 * 1024) throw new Error("Library article too large");
       if (prefix === "published") {
-        if (await publishSavedArticle(store, article.id)) written++;
+        if (source === "export") {
+          const key = `published/library/articles/${article.id}.json`;
+          if (!await store.head(key)) {
+            await store.put(key, body, { httpMetadata: { contentType: "application/json" } }); written++;
+          }
+        } else if (await publishSavedArticle(store, article.id)) written++;
         continue;
       }
       const key = `trial/library/articles/${article.id}.json`;

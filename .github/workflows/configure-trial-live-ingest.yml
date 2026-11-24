@@ -1,0 +1,32 @@
+# Copy an existing secret store-to-store only; this never enables generation or live ingestion.
+name: Configure Cloudflare live ingest token
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: read
+concurrency:
+  group: configure-trial-live-ingest
+  cancel-in-progress: false
+jobs:
+  configure:
+    if: github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Copy existing ingest token to the job Worker secret store
+        env:
+          NEWS_INGEST_TOKEN: ${{ secrets.NEWS_INGEST_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          test -n "$NEWS_INGEST_TOKEN"
+          test -n "$CLOUDFLARE_API_TOKEN"
+          test -n "$CLOUDFLARE_ACCOUNT_ID"
+          printf '%s' "$NEWS_INGEST_TOKEN" | npx --yes wrangler@4.136.0 secret put LIVE_INGEST_TOKEN --config workers/news-trial/wrangler.toml

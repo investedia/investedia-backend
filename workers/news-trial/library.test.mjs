@@ -84,3 +84,19 @@ test("publication rejects invalid paths, excess pages and mismatched source IDs"
   store.list = async () => ({ objects: [{ key: `trial/library/articles/${rows[0].id}.json`, size: 1 }], truncated: false });
   await assert.rejects(publishLibraryPage(store)); assert.deepEqual(store.puts, []);
 });
+
+
+test("live publication uses the fresh export for new IDs without promoting earlier trial copies", async () => {
+  const store = storage(), article = rows[0];
+  const trialBody = JSON.stringify({ ...article, headline: article.headline + " " });
+  store.files.set(`trial/library/articles/${article.id}.json`, trialBody);
+  const port = exportPage({ articles: [article], total: 1, next: 1 });
+  assert.equal((await storeTrialLibrary(port, store, 1, "published", "export")).written, 1);
+  assert.deepEqual(JSON.parse(store.files.get(`published/library/articles/${article.id}.json`)), article);
+  assert.equal(store.files.get(`trial/library/articles/${article.id}.json`), trialBody);
+  const original = store.files.get(`published/library/articles/${article.id}.json`);
+  assert.equal((await storeTrialLibrary(exportPage({ articles: [{ ...article, headline: article.headline + " " }], total: 1, next: 1 }), store, 1, "published", "export")).written, 0);
+  assert.equal(store.files.get(`published/library/articles/${article.id}.json`), original);
+  await assert.rejects(storeTrialLibrary(port, store, 1, "trial", "export"));
+  await assert.rejects(storeTrialLibrary(port, store, 1, "published", "invalid"));
+});

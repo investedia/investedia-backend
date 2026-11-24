@@ -3,7 +3,7 @@ const HEX = /^[0-9a-f]{64}$/;
 const FILE = /^(?:all|meta|tick-[A-Z_])\.json$/;
 const MAX_FILE = 32 * 1024 * 1024;
 
-async function bounded(response, limit) {
+export async function bounded(response, limit) {
   if (!response.ok || !response.body) throw new Error("Index export unavailable");
   const reader = response.body.getReader(), chunks = []; let size = 0;
   try {

@@ -45,12 +45,13 @@ def push_library(url,token,days,timeout=30):
     req=urllib.request.Request(url+'/v1/ingest/library',data=json.dumps({'days':days},ensure_ascii=False).encode('utf-8'),method='POST',headers={'Content-Type':'application/json','Authorization':'Bearer '+token,'User-Agent':'InvestediaRobot/1.0'})
     with urllib.request.build_opener(NoRedirect).open(req,timeout=timeout) as response:return json.loads(response.read(100_000))
 
-def payload(path=None,limit=None):
+def payload(path=None,limit=None,root=None):
+    root = ROOT if root is None else root
     limit=limit or min(80,int(os.environ.get('PUSH_LIMIT') or 40))
-    with open(path or ROOT/'assets/globe/news-live.json',encoding='utf-8') as source:d=json.load(source)
+    with open(path or root/'assets/globe/news-live.json',encoding='utf-8') as source:d=json.load(source)
     st=sorted(d.get('stories',[]),key=lambda s:s['published_at'],reverse=True)[:limit]
     if not st:raise ValueError('no articles to send')
-    return {'generated_at':d.get('updated_at'),'stories':st,'stats':site_stats()}
+    return {'generated_at':d.get('updated_at'),'stories':st,'stats':site_stats(root)}
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self,req,fp,code,msg,headers,newurl):

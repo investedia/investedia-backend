@@ -24,6 +24,7 @@ STATE_NAMES = {"news-live.json", "news-archive.json", "news-48h.json", "news-see
                "news-status.json", "threads.json", "photos/index.json", "photos/blocked.json"}
 SOURCES = ("update_globe_news.py", "news_core.py", "registry.py", "events.py", "tools/news_library.py",
            "tools/globe-news/connections.py", "tools/globe-news/iso.json", "tools/globe-news/wb-countries.json",
+           "tools/push-news-to-worker.py", "tools/push-connections-to-worker.py",
            "data/registry.json", "assets/quotes.js", "assets/globe/countries-50m.json",
            "assets/globe/iso.json", "assets/globe/markets.json", "assets/globe/projects.json")
 
@@ -91,7 +92,19 @@ class GenerationFailed(ValueError):
         }
 
 
-def run(state, base=BASE, tier="priority"):
+def live_outputs(root, tier):
+    def module(name):
+        spec = importlib.util.spec_from_file_location(name.replace('-', '_'), root / 'tools' / (name + '.py'))
+        value = importlib.util.module_from_spec(spec); spec.loader.exec_module(value); return value
+    news = module('push-news-to-worker')
+    outputs = {'news': news.payload(root=root, limit=80 if tier == 'broad' else 40),
+               'connections': module('push-connections-to-worker').payload(root / 'assets/globe/connections.json')}
+    days = news.library_days(root)
+    if days: outputs['library'] = {'days': days}
+    return outputs
+
+
+def run(state, base=BASE, tier="priority", export_live=False):
     if tier not in ("priority", "broad"):
         raise ValueError("Unknown news tier")
     validate(state)
@@ -126,6 +139,7 @@ def run(state, base=BASE, tier="priority"):
                 if not status.get("fetched"):
                     raise ValueError("No sources fetched; trial cannot count as a successful comparison")
         result = pack(root)
+        if export_live: result["live_outputs"] = live_outputs(root, tier)
         result["connections"] = json.loads((g / "connections.json").read_text(encoding="utf-8"))
         result["summary"] = {"trial": True, "tier": tier, "started_at": started.isoformat(),
                              "finished_at": datetime.now(timezone.utc).isoformat(),
@@ -302,6 +316,15 @@ class Handler(BaseHTTPRequestHandler):
             self.send_response(200); self.end_headers(); return
         try:
             url = urlsplit(self.path); query = parse_qs(url.query)
+            if url.path == "/output":
+                kinds = query.get("kind", [])
+                if set(query) != {"kind"} or len(kinds) != 1 or kinds[0] not in ("news", "connections", "library", "calendar"):
+                    raise ValueError("Invalid output request")
+                body = getattr(self.server, "live_outputs", {}).get(kinds[0])
+                self.send_response(200 if body is not None else 404)
+                body = body if body is not None else b'{}'
+                self.send_header("Content-Type", "application/json"); self.send_header("Content-Length", str(len(body)))
+                self.end_headers(); self.wfile.write(body); return
             if url.path == "/index":
                 names = query.get("file", [])
                 if set(query) != {"file"} or len(names) != 1 or names[0] not in getattr(self.server, "index_files", {}):
@@ -322,6 +345,7 @@ class Handler(BaseHTTPRequestHandler):
     def do_POST(self):
         self.server.library = []
         self.server.index_files = {}
+        self.server.live_outputs = {}
         try:
             length = int(self.headers.get("Content-Length", "0"))
             url = urlsplit(self.path)
@@ -344,17 +368,22 @@ class Handler(BaseHTTPRequestHandler):
             elif jobs[0] == "calendar":
                 result = run_calendar(decode_bundle(raw, validate_calendar), fred_enabled=self.headers.get("X-Fred-Enabled") == "1")
             else:
-                result = run(decode_bundle(raw), tier=tiers[0])
+                result = run(decode_bundle(raw), tier=tiers[0], export_live=self.headers.get("X-Live-Export") == "1")
             if jobs[0] in ("news", "library"):
                 self.server.library = [data for name, data in sorted(result["files"].items()) if name.startswith("library/")]
                 result["summary"]["library_articles"] = len(self.server.library)
+            outputs = result.pop("live_outputs", {})
+            if jobs[0] == "calendar" and self.headers.get("X-Live-Export") == "1": outputs = {"calendar": result["files"]["calendar-live.json"]}
+            self.server.live_outputs = {kind: json.dumps(value, ensure_ascii=False, separators=(",", ":")).encode() for kind, value in outputs.items()}
             body = encode_bundle(result)
             self.send_response(200)
             self.send_header("X-Trial-Summary", json.dumps(result["summary"], ensure_ascii=True))
         except GenerationFailed as error:
+            self.server.live_outputs = {}
             body = json.dumps({"error": "generation_failed", "diagnostic": error.diagnostic}).encode()
             self.send_response(422)
         except Exception:
+            self.server.live_outputs = {}
             body = b'{"error":"Trial failed; previous trial state retained"}'
             self.send_response(422)
         self.send_header("Content-Type", "application/gzip" if body.startswith(b"\x1f\x8b") else "application/json")
