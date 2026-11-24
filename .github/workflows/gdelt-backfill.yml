@@ -46,6 +46,14 @@ on:
         type: choice
         options: [claude-haiku-5-5, azure-openai, gemini]
         default: claude-haiku-5-5
+      azure_deployment:
+        description: 'Azure only: deployment name to use (blank = secret AZURE_OPENAI_DEPLOYMENT)'
+        default: ''
+      azure_model:
+        description: 'Azure only: model behind that deployment, for the spending cap (auto = guess from the name)'
+        type: choice
+        options: [auto, gpt-4.1-nano, gpt-4.1-mini, gpt-5-nano]
+        default: auto
       sources:
         description: 'english, translated (local-language press; English headlines marked translated; Claude writer only), or english+translated'
         type: choice
@@ -64,7 +72,7 @@ permissions:
   actions: read
 jobs:
   generate:
-    if: inputs.confirm == 'BACKFILL' && github.ref == 'refs/heads/main'
+    if: inputs.confirm == 'BACKFILL' && (github.ref == 'refs/heads/main' || (inputs.dry_run && startsWith(github.ref, 'refs/heads/claude/')))
     runs-on: ubuntu-latest
     timeout-minutes: 120
     concurrency:
@@ -159,7 +167,8 @@ jobs:
           ANTHROPIC_API_KEY: ${{ startsWith(inputs.writer, 'claude') && secrets.ANTHROPIC_API_KEY || '' }}
           AZURE_OPENAI_ENDPOINT: ${{ inputs.writer == 'azure-openai' && secrets.AZURE_OPENAI_ENDPOINT || '' }}
           AZURE_OPENAI_API_KEY: ${{ inputs.writer == 'azure-openai' && secrets.AZURE_OPENAI_API_KEY || '' }}
-          AZURE_OPENAI_DEPLOYMENT: ${{ inputs.writer == 'azure-openai' && (secrets.AZURE_OPENAI_DEPLOYMENT || 'gpt-4.1-mini') || '' }}
+          AZURE_OPENAI_DEPLOYMENT: ${{ inputs.writer == 'azure-openai' && (inputs.azure_deployment || secrets.AZURE_OPENAI_DEPLOYMENT || 'gpt-4.1-mini') || '' }}
+          AZURE_OPENAI_MODEL: ${{ inputs.writer == 'azure-openai' && inputs.azure_model != 'auto' && inputs.azure_model || '' }}
           WORKER_URL: ${{ secrets.WORKER_URL }}
           PIXABAY_KEY: ''
         run: >-
