@@ -536,7 +536,12 @@ def azure(prompt):
             status['gemini_model'] = 'azure:' + dep
             return out
         except urllib.error.HTTPError as e:
-            last = f'HTTP {e.code}'
+            detail = ''
+            try: detail = json.loads(e.read()).get('error', {}).get('message', '')[:160]
+            except Exception: pass
+            last = f'HTTP {e.code} {detail}'.strip()
+            if e.code == 400 and 'max_tokens' in body:  # newer Azure models only take max_completion_tokens and no temperature
+                body.pop('max_tokens', None); body.pop('temperature', None); body['max_completion_tokens'] = 16000; continue
             if e.code in (400, 401, 403, 404): break
             time.sleep(15)
         except Exception as e:
