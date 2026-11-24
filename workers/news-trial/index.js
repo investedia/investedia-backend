@@ -1,3 +1,4 @@
+import { publishSnapshot } from "./snapshot-publication.mjs";
 import { DurableObject, WorkerEntrypoint } from "cloudflare:workers";
 import { prepareLiveInputs, postLiveInputs } from "./live-publication.mjs";
 import { readIndexInput, publishedIds, publishIndexExports } from "./index-publication.mjs";
@@ -79,7 +80,7 @@ export class NewsTrial extends DurableObject {
       await this.startContainer(job);
       const port = c.getTcpPort(8080);
       stage = "producer";
-      const response = await port.fetch(`http://container/run?tier=${tier}&job=${job}`, { method: "POST", body: await seed.arrayBuffer(), headers: { "X-Fred-Enabled": job === "calendar" && this.env.FRED_API_KEY ? "1" : "0", "X-Live-Export": ["news", "calendar"].includes(job) && this.env.LIVE_INGEST_ENABLED === "true" ? "1" : "0" } });
+      const response = await port.fetch(`http://container/run?tier=${tier}&job=${job}`, { method: "POST", body: await seed.arrayBuffer(), headers: { "X-Data-Export": ["markets", "fx"].includes(job) && this.env.DATA_PUBLICATION_ENABLED === "true" ? "1" : "0", "X-Fred-Enabled": job === "calendar" && this.env.FRED_API_KEY ? "1" : "0", "X-Live-Export": ["news", "calendar"].includes(job) && this.env.LIVE_INGEST_ENABLED === "true" ? "1" : "0" } });
       if (!response.ok) {
         let failure; try { failure = await response.json(); } catch {}
         const diagnostic = failure?.error === "generation_failed" ? safeDiagnostic(failure.diagnostic) : null;
@@ -114,13 +115,17 @@ export class NewsTrial extends DurableObject {
         stage = "live-ingest";
         summary.live_ingest = await postLiveInputs(liveInputs, this.env);
       }
+      if (["markets", "fx"].includes(job) && this.env.DATA_PUBLICATION_ENABLED === "true") {
+        stage = "snapshot-publication";
+        summary.published_snapshot = await publishSnapshot({ fetch: request => c.getTcpPort(8080).fetch(request) }, this.env, job);
+      }
       // Keep the large archive opaque here; parsing it in the Worker can exhaust memory.
       stage = "storage";
       await this.env.TRIAL_STORE.put(`${prefix}/latest.json.gz`, result, { httpMetadata: { contentType: "application/gzip" } });
       await this.env.TRIAL_STORE.put(`${prefix}/state.json.gz`, result, { httpMetadata: { contentType: "application/gzip" } });
       return Response.json(summary);
     } catch {
-      return Response.json({ error: "trial_failed", stage, tier, production_untouched: this.env.PUBLISH_LIBRARY_ENABLED !== "true" && this.env.LIVE_INGEST_ENABLED !== "true" }, { status: 502 });
+      return Response.json({ error: "trial_failed", stage, tier, production_untouched: this.env.PUBLISH_LIBRARY_ENABLED !== "true" && this.env.LIVE_INGEST_ENABLED !== "true" && this.env.DATA_PUBLICATION_ENABLED !== "true" }, { status: 502 });
     } finally {
       try { if (c.running) await c.destroy(); } finally { this.busy = false; }
     }
