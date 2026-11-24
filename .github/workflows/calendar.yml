@@ -12,7 +12,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   calendar:
-    if: vars.CALENDAR_ENABLED == 'true' && github.ref == 'refs/heads/main'
+    if: vars.CALENDAR_ENABLED == 'true' && github.ref == 'refs/heads/main' && (github.event_name != 'schedule' || vars.CLOUDFLARE_CALENDAR_ENABLED != 'true')
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
