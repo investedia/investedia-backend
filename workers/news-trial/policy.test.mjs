@@ -49,6 +49,7 @@ const source = (await readFile(new URL("./index.js", import.meta.url), "utf8"))
   .replace('"./policy.mjs"', JSON.stringify(new URL("./policy.mjs", import.meta.url).href))
   .replace('"./library.mjs"', JSON.stringify(new URL("./library.mjs", import.meta.url).href))
   .replace('"./index-publication.mjs"', JSON.stringify(new URL("./index-publication.mjs", import.meta.url).href))
+  .replace('"./scheduled.mjs"', JSON.stringify(new URL("./scheduled.mjs", import.meta.url).href))
   .replace('"./snapshot-publication.mjs"', JSON.stringify(new URL("./snapshot-publication.mjs", import.meta.url).href))
   .replace('"./live-publication.mjs"', JSON.stringify(new URL("./live-publication.mjs", import.meta.url).href));
 const { NewsTrial } = await import(`data:text/javascript;base64,${Buffer.from(source).toString("base64")}`);

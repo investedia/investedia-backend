@@ -1,3 +1,4 @@
+import { runScheduled } from "./scheduled.mjs";
 import { publishSnapshot } from "./snapshot-publication.mjs";
 import { DurableObject, WorkerEntrypoint } from "cloudflare:workers";
 import { prepareLiveInputs, postLiveInputs } from "./live-publication.mjs";
@@ -131,4 +132,4 @@ export class NewsTrial extends DurableObject {
     }
   }
 }
-export default { fetch: route };
+export default { fetch: route, scheduled: runScheduled };

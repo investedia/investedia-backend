@@ -9,9 +9,10 @@ TRIAL_ENABLED = "false"
 PUBLISH_LIBRARY_ENABLED = "false"
 LIVE_INGEST_ENABLED = "false"
 DATA_PUBLICATION_ENABLED = "false"
+SCHEDULED_JOBS = "off"
 
 [triggers]
-crons = []
+crons = ["23 */6 * * *", "43 21 * * 1-5", "37 15 * * 1-5", "12 6 * * 0"]
 
 [[containers]]
 class_name = "NewsTrial"
