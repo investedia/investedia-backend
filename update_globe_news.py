@@ -519,11 +519,8 @@ def gemini(prompt):
 def azure(prompt):
     endpoint, key = os.environ.get('AZURE_OPENAI_ENDPOINT', '').strip(), os.environ.get('AZURE_OPENAI_API_KEY', '').strip()
     if not endpoint or not key: raise RuntimeError('not configured')
-    # Owner 24 Nov 2026: the saved default deployment answered "API version not supported"; the backfill runs fine on
-    # gpt-4.1-mini / gpt-4.1-nano, so try the saved one first and then those.
-    deps = []
-    for d in (os.environ.get('AZURE_OPENAI_DEPLOYMENT', '').strip(), 'gpt-4.1-mini', 'gpt-4.1-nano'):
-        if d and d not in deps: deps.append(d)
+    # Owner 24 Nov 2026: news backup uses gpt-4.1-nano only (the saved default deployment answered "API version not supported").
+    deps = ['gpt-4.1-nano']
     errs = []
     for dep in deps:
         body = {'messages': [{'role': 'user', 'content': prompt}]}
