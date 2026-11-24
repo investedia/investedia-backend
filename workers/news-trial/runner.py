@@ -318,7 +318,7 @@ class Handler(BaseHTTPRequestHandler):
             url = urlsplit(self.path); query = parse_qs(url.query)
             if url.path == "/output":
                 kinds = query.get("kind", [])
-                if set(query) != {"kind"} or len(kinds) != 1 or kinds[0] not in ("news", "connections", "library", "calendar"):
+                if set(query) != {"kind"} or len(kinds) != 1 or kinds[0] not in ("news", "connections", "library", "calendar", "markets", "fx"):
                     raise ValueError("Invalid output request")
                 body = getattr(self.server, "live_outputs", {}).get(kinds[0])
                 self.send_response(200 if body is not None else 404)
@@ -374,6 +374,8 @@ class Handler(BaseHTTPRequestHandler):
                 result["summary"]["library_articles"] = len(self.server.library)
             outputs = result.pop("live_outputs", {})
             if jobs[0] == "calendar" and self.headers.get("X-Live-Export") == "1": outputs = {"calendar": result["files"]["calendar-live.json"]}
+            if jobs[0] in ("markets", "fx") and self.headers.get("X-Data-Export") == "1":
+                outputs = {jobs[0]: result["files"][{"markets": "markets.json", "fx": "fx-ecb.json"}[jobs[0]]]}
             self.server.live_outputs = {kind: json.dumps(value, ensure_ascii=False, separators=(",", ":")).encode() for kind, value in outputs.items()}
             body = encode_bundle(result)
             self.send_response(200)

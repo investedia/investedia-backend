@@ -49,6 +49,7 @@ const source = (await readFile(new URL("./index.js", import.meta.url), "utf8"))
   .replace('"./policy.mjs"', JSON.stringify(new URL("./policy.mjs", import.meta.url).href))
   .replace('"./library.mjs"', JSON.stringify(new URL("./library.mjs", import.meta.url).href))
   .replace('"./index-publication.mjs"', JSON.stringify(new URL("./index-publication.mjs", import.meta.url).href))
+  .replace('"./snapshot-publication.mjs"', JSON.stringify(new URL("./snapshot-publication.mjs", import.meta.url).href))
   .replace('"./live-publication.mjs"', JSON.stringify(new URL("./live-publication.mjs", import.meta.url).href));
 const { NewsTrial } = await import(`data:text/javascript;base64,${Buffer.from(source).toString("base64")}`);
 function bindings(fail = false, articles = []) {
@@ -471,4 +472,27 @@ test("failed live ingestion cannot advance producer state or expose upstream det
     assert.equal(JSON.stringify(body).includes("private"), false); assert.equal(b.puts.some(k => k.endsWith("/state.json.gz")), false);
   } finally { globalThis.fetch = original; }
   assert.equal(b.c.running, false); assert.equal(b.instance.busy, false);
+});
+
+
+test("snapshot publication is separately gated, precedes producer state, and failure retains state", async () => {
+  const saved = await readFile(new URL("../../assets/globe/markets.json", import.meta.url));
+  for (const mode of ["disabled", "enabled", "failed"]) {
+    const b = bindings(), env = b.instance.env;
+    env.DATA_PUBLICATION_ENABLED = mode === "disabled" ? "false" : "true";
+    env.TRIAL_STORE.head = async () => null;
+    env.TRIAL_STORE.put = async name => { if (mode === "failed" && name.startsWith("published/")) throw Error("storage failure"); b.puts.push(name); };
+    let exported = false;
+    b.c.getTcpPort = () => ({ fetch: async (url, options) => {
+      if (url.endsWith("/health")) return new Response();
+      if (url.includes("/output?kind=markets")) { exported = true; return new Response(saved); }
+      assert.equal(options.headers["X-Data-Export"], mode === "disabled" ? "0" : "1");
+      return new Response(gzipSync("{}"), { headers: { "X-Trial-Summary": JSON.stringify({ trial: true, job: "markets" }) } });
+    } });
+    const response = await b.instance.fetch(new Request("http://trial/run?job=markets", { method: "POST" }));
+    assert.equal(response.status, mode === "failed" ? 502 : 200);
+    assert.equal(exported, mode !== "disabled");
+    assert.deepEqual(b.puts, mode === "failed" ? [] : [...(mode === "enabled" ? ["published/data/markets.json"] : []), "trial/markets/latest.json.gz", "trial/markets/state.json.gz"]);
+    assert.equal(b.c.running, false);
+  }
 });

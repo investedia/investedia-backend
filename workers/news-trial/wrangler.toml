@@ -8,6 +8,7 @@ preview_urls = false
 TRIAL_ENABLED = "false"
 PUBLISH_LIBRARY_ENABLED = "false"
 LIVE_INGEST_ENABLED = "false"
+DATA_PUBLICATION_ENABLED = "false"
 
 [triggers]
 crons = []
