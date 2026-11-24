@@ -72,7 +72,7 @@ permissions:
   actions: read
 jobs:
   generate:
-    if: inputs.confirm == 'BACKFILL' && github.ref == 'refs/heads/main'
+    if: inputs.confirm == 'BACKFILL' && (github.ref == 'refs/heads/main' || (inputs.dry_run && startsWith(github.ref, 'refs/heads/claude/')))
     runs-on: ubuntu-latest
     timeout-minutes: 120
     concurrency:
