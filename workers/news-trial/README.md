@@ -131,3 +131,27 @@ After PR #120 merged, the deployed Container library transfer and a repeat both 
 Failed Google requests retain the same generic client error and HTTP status, but emit a private `news_provider_failure` console record containing only the HTTP number, an allowlisted provider status and a fixed diagnostic category. Categories help distinguish capacity/unavailability, quota/rate limits, billing restrictions, key rejection, permission/region restrictions, invalid requests and unreadable errors; they are diagnostic hints, not a confirmed cause. Error bodies are read at most 16 KiB and closed. URLs, provider prose, keys, prompts and article contents are never returned or logged. The bounded reader is also reused by FRED, preserving its existing fixed categories and server/rate-limit handling.
 
 During an isolated retry, inspect only these fixed console records; never dump complete request headers or provider bodies. Prompts, models, successful responses, secrets, flags and schedules are unchanged. Actual provider diagnosis still requires a deployed isolated retry after owner merge; this change does not claim that the news 503 failures are fixed.
+
+
+## Versioned website listings
+
+The separately authenticated `POST /publish-library-index` endpoint uses `PUBLISH_LIBRARY_ENABLED` and the same news lock. It reads **already-published canonical** articles only; it cannot promote trial articles, invoke Gemini, ingest news or change timers. Successful news publication also builds this index before advancing producer state. Generation may remain disabled for an index-only run.
+
+Before building the image, stage a reviewed frontend catalog, independently of the existing pinned data-job scripts:
+
+```text
+python tools/cloudflare/stage_frontend.py <frontend-checkout>
+python tools/cloudflare/stage_library_index.py <frontend-checkout> --commit <exact-reviewed-40-character-commit>
+```
+
+Staging reads only committed regular Git blobs: the original row projection, compact catalog, metadata and ticker shards. The current offline CI baseline is frontend `53b8e93830deab9f574a11745a05e40155fdad2c`. It contains 55,960 articles. No working-tree configs or credentials enter the image. For the coordinated publisher cutover, stage the final static catalog after GitHub publication is paused; an older baseline intentionally cannot replace a newer static archive.
+
+The Container preserves every static row and original ticker link, appends only previously unseen canonical published articles using the original frontend row projection, and produces metadata, search rows and ticker shards. Pagination records exact UTF-8 byte ranges into `all.json`, rather than uploading thousands of page objects. The Worker validates bounds and SHA-256 checksums, saves immutable files under `published/library-index/versions/<sha256>/`, checkpoints compressed private row state, then changes `published/library-index/current.json` **last**. Failed/partial versions remain invisible and can be reused on retry. An unchanged version writes nothing. The 15 MiB catalog is parsed in the 1 GiB Container, not in the Worker.
+
+For this index job only, intercepted `http://article-store/library/<safe-id>.json` requests return exact published objects; `/index-state.json.gz` returns the previous private compact index state. All other origins, paths, methods, query strings and HTTPS requests are denied. This export has no provider keys or forwarded network requests. Cloudflare's [intercept-all DNS behavior](https://developers.cloudflare.com/containers/configuration/outbound-traffic/) resolves the internal hostname without public DNS.
+
+The frontend readers keep the existing `library-index/*` and `site-stats.json` URLs. They activate only when the manifest's baseline hash equals the deployed static catalog's hash. Otherwise they keep the static response. A page reads only its bounded byte range; search retains the existing on-demand full compact index. Homepage project totals stay from the deployed site. Seeds, trial results and compact private state are never exposed.
+
+Offline verification preserved all 55,960 static rows and ticker links and reconstructed every one of 2,332 pages exactly from its byte ranges, with zero model calls. New code still needs owner merge and deployed runtime verification; no schedules or production feed were switched. Current limits are 100,000 rows, 32 MiB per exported file and 512 KiB per page. Versioned objects consume storage over time; review actual R2 storage/container usage before scheduling and add safe retention when needed, without deleting the active version.
+
+Further local verification: the actual generated Python manifest and all 29 index files passed the JavaScript checksum publisher; repeat publication wrote zero files and the public pointer was written last. A real local Cloudflare R2 binding returned exact first/second/final page byte ranges, unchanged full-search bytes and HEAD responses; homepage project totals were preserved. The full 55,960-row generator also ran in a network-disabled, read-only 1 GiB Docker container. These are local checks, not a deployed runtime cutover. The Linux backend suite passed 365 tests (four skips); native Windows runs retain unrelated symlink-permission / project evidence hash failures.

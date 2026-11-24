@@ -25,6 +25,8 @@ COPY tools/coverage/country_basics.py tools/coverage/country_basics.py
 COPY assets/globe/economy.json assets/globe/economy.json
 COPY data/market-country-facts.json data/market-country-facts.json
 COPY tools/publish_library.py tools/publish_library.py
+COPY workers/news-trial/index_job.py workers/news-trial/index_job.py
+COPY .local/cloudflare-library-index/ .local/cloudflare-library-index/
 USER 65532:65532
 EXPOSE 8080
 CMD ["python", "workers/news-trial/runner.py"]

@@ -47,7 +47,8 @@ const source = (await readFile(new URL("./index.js", import.meta.url), "utf8"))
   .replace('import { DurableObject, WorkerEntrypoint } from "cloudflare:workers";',
     'class DurableObject { constructor(ctx, env) { this.ctx=ctx; this.env=env; } } class WorkerEntrypoint {}')
   .replace('"./policy.mjs"', JSON.stringify(new URL("./policy.mjs", import.meta.url).href))
-  .replace('"./library.mjs"', JSON.stringify(new URL("./library.mjs", import.meta.url).href));
+  .replace('"./library.mjs"', JSON.stringify(new URL("./library.mjs", import.meta.url).href))
+  .replace('"./index-publication.mjs"', JSON.stringify(new URL("./index-publication.mjs", import.meta.url).href));
 const { NewsTrial } = await import(`data:text/javascript;base64,${Buffer.from(source).toString("base64")}`);
 function bindings(fail = false, articles = []) {
   const puts = [], starts = [];
@@ -272,7 +273,7 @@ test("article pages reacquire container ports after a closed producer response",
     } };
   };
   assert.equal((await b.instance.fetch()).status, 200);
-  assert.equal(handles, 3);
+  assert.equal(handles, 4);
   assert.deepEqual(b.puts, [...rows.map(row => `trial/library/articles/${row.id}.json`), "trial/latest.json.gz", "trial/state.json.gz"]);
   assert.equal(b.c.running, false);
 });
@@ -335,6 +336,11 @@ test("enabled news publication uses the validated saved copy before advancing st
   b.instance.env.TRIAL_STORE.get = async key => key.endsWith("seed.json.gz") ? { size: 2, arrayBuffer: async () => new TextEncoder().encode("{}") }
     : objects.has(key) ? { size: new TextEncoder().encode(objects.get(key)).length, text: async () => objects.get(key) } : null;
   b.instance.env.TRIAL_STORE.put = async (key, value) => { objects.set(key, value); b.puts.push(key); };
+  b.instance.buildIndex = async () => {
+    for (const row of rows) assert.ok(objects.has(`published/library/articles/${row.id}.json`));
+    assert.equal(objects.has("trial/state.json.gz"), false);
+    return { version: "verified-index" };
+  };
   const response = await b.instance.fetch();
   assert.equal(response.status, 200);
   assert.equal((await response.json()).published_articles_written, rows.length);
@@ -393,4 +399,22 @@ test("successful provider requests retain their response without failure logging
     const response = await egress(new Request("https://generativelanguage.googleapis.com/v1beta/models?pageSize=200"), "private-key", true, async () => Response.json({ models: [] }));
     assert.deepEqual(await response.json(), { models: [] }); assert.deepEqual(captured, []);
   } finally { console.log = original; }
+});
+
+
+test("index endpoint serializes with generation and always releases its Container", async () => {
+  const b = bindings(); const request = new Request("http://trial/publish-library-index", { method: "POST" });
+  assert.equal((await b.instance.fetch(request)).status, 409);
+  b.instance.env.PUBLISH_LIBRARY_ENABLED = "true"; b.instance.env.TRIAL_ENABLED = "false";
+  let finish;
+  b.instance.buildIndex = () => { b.c.running = true; return new Promise(resolve => { finish = resolve; }); };
+  const first = b.instance.fetch(request);
+  assert.equal((await b.instance.fetch(request)).status, 409);
+  finish({ job: "library-index", gemini_calls: 0 });
+  assert.equal((await first).status, 200); assert.equal(b.c.running, false); assert.equal(b.instance.busy, false);
+  b.instance.buildIndex = async () => { b.c.running = true; throw Error("private failure details"); };
+  const failed = await b.instance.fetch(request);
+  assert.equal(failed.status, 502);
+  assert.deepEqual(await failed.json(), { error: "index_publication_failed", previous_index_preserved: true });
+  assert.equal(b.c.running, false); assert.equal(b.instance.busy, false);
 });
