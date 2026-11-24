@@ -512,7 +512,7 @@ def gemini(prompt):
     try:
         return azure(prompt)
     except Exception as e:
-        tried.append(f'azure: {e}')
+        tried.insert(0, f'azure backup: {e}')  # first, so the reason is never cut off by the length limit
     raise RuntimeError(' | '.join(tried)[:600])
 
 
