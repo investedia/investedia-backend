@@ -1,5 +1,5 @@
 // Exact producer bytes; only these two public snapshots may leave private trial storage.
-import { bounded } from "./index-publication.mjs";
+import { readProducerOutput } from "./live-publication.mjs";
 const FILES = { markets: "markets.json", fx: "fx-ecb.json" };
 export const SNAPSHOT_LIMIT = 4 * 1024 * 1024;
 
@@ -24,7 +24,7 @@ export function snapshotDate(data, job) {
 export async function publishSnapshot(port, env, job) {
   if (env.DATA_PUBLICATION_ENABLED !== "true" || !Object.hasOwn(FILES, job) || !env.TRIAL_STORE)
     throw new Error("Snapshot publication disabled");
-  const bytes = await bounded(await port.fetch("http://container/output?kind=" + job), SNAPSHOT_LIMIT);
+  const bytes = await readProducerOutput(port, job, SNAPSHOT_LIMIT);
   const asOf = snapshotDate(JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(bytes)), job);
   const sha256 = Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256", bytes)), x => x.toString(16).padStart(2, "0")).join("");
   const key = "published/data/" + FILES[job], old = await env.TRIAL_STORE.head(key);

@@ -94,3 +94,79 @@ test("ingest failure diagnostics contain only fixed kinds and HTTP numbers", asy
     assert.deepEqual(captured, [["live_ingest_failure", JSON.stringify({ kind: "news", http_status: 409 })]]);
   } finally { console.warn = original; }
 });
+
+
+test("transient immutable export reads retry once without producer runs or byte changes", async () => {
+  for (const mode of ["network", "stream", "server"]) {
+    const data = inputs(), calls = []; let failed = false;
+    const port = { fetch: async input => {
+      const url = new URL(input), kind = url.searchParams.get("kind");
+      assert.equal(url.origin, "http://container"); assert.equal(url.pathname, "/output"); calls.push(kind);
+      if (kind === "news" && !failed) {
+        failed = true;
+        if (mode === "network") throw Error("private transport details");
+        if (mode === "server") return new Response("private provider body", { status: 503 });
+        return new Response(new ReadableStream({ start(controller) { controller.error(Error("private stream details")); } }));
+      }
+      return new Response(data[kind]);
+    } };
+    const body = await prepareLiveInputs(port, "news");
+    assert.deepEqual(calls, ["news", "news", "connections", "library"]);
+    for (const kind of Object.keys(data)) assert.deepEqual(body[kind], data[kind]);
+  }
+});
+
+test("persistent export failures stop after two reads with fixed non-secret diagnostics", async () => {
+  let calls = 0; const original = console.warn, logs = []; console.warn = (...args) => logs.push(args);
+  try {
+    await assert.rejects(prepareLiveInputs({ fetch: async () => { calls++; throw Error("private transport must never leak"); } }, "news"), /Live export news failed/);
+  } finally { console.warn = original; }
+  assert.equal(calls, 2); assert.equal(logs.length, 2);
+  assert.deepEqual(logs.map(([name]) => name), ["live_export_retry", "live_export_failure"]);
+  assert.equal(JSON.stringify(logs).includes("private transport"), false);
+  for (const [, text] of logs) assert.deepEqual(Object.keys(JSON.parse(text)).sort(), ["attempt", "http_status", "kind", "reason"]);
+  assert.deepEqual(JSON.parse(logs[1][1]), { kind: "news", http_status: 0, reason: "unavailable", attempt: 2 });
+});
+
+test("oversized exports and required HTTP 404 are never retried or partially accepted", async () => {
+  for (const mode of ["oversized", "missing"]) {
+    let calls = 0; const original = console.warn, logs = []; console.warn = (...args) => logs.push(args);
+    try {
+      await assert.rejects(prepareLiveInputs({ fetch: async () => { calls++; return mode === "oversized" ? new Response("x".repeat(400001)) : new Response("private missing body", { status: 404 }); } }, "news"));
+    } finally { console.warn = original; }
+    assert.equal(calls, 1); assert.equal(logs.length, 1);
+    const record = JSON.parse(logs[0][1]); assert.equal(record.reason, mode === "oversized" ? "oversized" : "http_rejected");
+    assert.equal(JSON.stringify(logs).includes("private missing"), false);
+  }
+});
+
+test("optional compact-day export failure stays best effort without sending invalid data", async () => {
+  for (const mode of ["oversized", "server"]) {
+    const data = inputs(), calls = [];
+    const original = console.warn, logs = []; console.warn = (...args) => logs.push(args);
+    let prepared;
+    try {
+      prepared = await prepareLiveInputs({ fetch: async url => {
+        const kind = new URL(url).searchParams.get("kind"); calls.push(kind);
+        return kind === "library" ? mode === "oversized" ? new Response("x".repeat(900001)) : new Response("private optional failure", { status: 503 }) : new Response(data[kind]);
+      } }, "news");
+    } finally { console.warn = original; }
+    assert.deepEqual(Object.keys(prepared), ["news", "connections"]);
+    assert.equal(calls.filter(kind => kind === "library").length, mode === "oversized" ? 1 : 2);
+    assert.equal(logs.at(-1)[0], "live_export_failure"); assert.equal(JSON.parse(logs.at(-1)[1]).kind, "library");
+    assert.equal(JSON.stringify(logs).includes("private optional"), false);
+    const sent = [];
+    const result = await postLiveInputs(prepared, env, async url => { sent.push(url); return Response.json({ ok: true, written: false }); });
+    assert.equal(result.news.ok, true); assert.equal(result.connections.ok, true);
+    assert.equal(sent.some(url => url.endsWith("/library")), false);
+  }
+});
+
+test("required connections still fail immediately above the unchanged receiver bound", async () => {
+  const calls = [];
+  await assert.rejects(prepareLiveInputs({ fetch: async url => {
+    const kind = new URL(url).searchParams.get("kind"); calls.push(kind);
+    return new Response(kind === "news" ? inputs().news : new Uint8Array(2 * 1024 * 1024 + 1));
+  } }, "news"));
+  assert.deepEqual(calls, ["news", "connections"]);
+});

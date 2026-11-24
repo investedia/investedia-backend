@@ -37,3 +37,11 @@ test("failed storage is not reported as publication success", async () => {
   const b = setup(fx); b.env.TRIAL_STORE.put = async () => { throw Error("storage unavailable"); };
   await assert.rejects(publishSnapshot(b.port, b.env, "fx"));
 });
+
+test("market snapshot uses the same bounded read retry without repeating generation", async () => {
+  const b = setup(markets); let calls = 0;
+  b.port.fetch = async url => { assert.equal(url, "http://container/output?kind=markets"); if (++calls === 1) throw Error("private socket details"); return new Response(markets); };
+  const result = await publishSnapshot(b.port, b.env, "markets");
+  assert.equal(calls, 2); assert.equal(result.written, true); assert.equal(b.writes.length, 1);
+  assert.deepEqual(Buffer.from(b.writes[0].body), markets);
+});

@@ -4,14 +4,36 @@ const TARGETS = {
   news: ["/v1/ingest/news", 400000], connections: ["/v1/ingest/connections", 2 * 1024 * 1024],
   library: ["/v1/ingest/library", 900000], calendar: ["/v1/ingest/calendar", 2 * 1024 * 1024]
 };
+export async function readProducerOutput(port, kind, limit) {
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    let response;
+    try {
+      response = await port.fetch("http://container/output?kind=" + kind);
+      if (kind === "library" && response.status === 404) { await response.body?.cancel(); return null; }
+      return await bounded(response, limit);
+    } catch (error) {
+      await response?.body?.cancel().catch(() => {});
+      const reason = error?.message === "Index export too large" ? "oversized" : response && !response.ok ? "http_rejected" : "unavailable";
+      const retry = attempt === 1 && (reason === "unavailable" || (reason === "http_rejected" && response.status >= 500));
+      console.warn(retry ? "live_export_retry" : "live_export_failure", JSON.stringify({ kind, http_status: response?.status || 0, reason, attempt }));
+      if (!retry) throw new Error("Live export " + kind + " failed");
+      // Output reads are immutable under the producer lock; do not repeat paid generation.
+      await new Promise(resolve => setTimeout(resolve, 100));
+    }
+  }
+}
 export async function prepareLiveInputs(port, job) {
   const kinds = job === "news" ? ["news", "connections", "library"] : job === "calendar" ? ["calendar"] : null;
   if (!kinds) throw new Error("Unsupported live job");
   const inputs = {};
   for (const kind of kinds) {
-    const response = await port.fetch("http://container/output?kind=" + kind);
-    if (kind === "library" && response.status === 404) { await response.body?.cancel(); continue; }
-    inputs[kind] = await bounded(response, TARGETS[kind][1]);
+    try {
+      const bytes = await readProducerOutput(port, kind, TARGETS[kind][1]);
+      if (bytes !== null) inputs[kind] = bytes;
+    } catch (error) {
+      // Match the original producer's best-effort compact-day sync; full R2 articles/index stay required.
+      if (kind !== "library" || error?.message !== "Live export library failed") throw error;
+    }
   }
   return inputs;
 }
