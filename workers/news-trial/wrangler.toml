@@ -12,7 +12,7 @@ DATA_PUBLICATION_ENABLED = "false"
 SCHEDULED_JOBS = "off"
 
 [triggers]
-crons = ["23 */6 * * *", "43 21 * * 1-5", "37 15 * * 1-5", "12 6 * * 0"]
+crons = ["23 */6 * * *", "43 21 * * MON-FRI", "37 15 * * MON-FRI", "12 6 * * SUN"]
 
 [[containers]]
 class_name = "NewsTrial"
