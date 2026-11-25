@@ -7,7 +7,7 @@ import { storeTrialLibrary, publishLibraryPage } from "./library.mjs";
 import { egress, route, trialTier, trialJob, safeDiagnostic } from "./policy.mjs";
 
 export class TrialEgress extends WorkerEntrypoint {
-  fetch(request) { if (this.ctx.props.job === "library-index") return readIndexInput(request, this.env); return egress(request, this.ctx.props.job === "news" ? this.env.GEMINI_API_KEY : "", this.env.TRIAL_ENABLED === "true", fetch, this.ctx.props.job === "calendar" ? this.env.FRED_API_KEY : ""); }
+  fetch(request) { if (this.ctx.props.job === "library-index") return readIndexInput(request, this.env); return egress(request, this.ctx.props.job === "news" ? this.env.GEMINI_API_KEY : "", this.env.TRIAL_ENABLED === "true", fetch, this.ctx.props.job === "calendar" ? this.env.FRED_API_KEY : "", this.ctx.props.job === "news" ? { endpoint: this.env.AZURE_OPENAI_ENDPOINT, key: this.env.AZURE_OPENAI_API_KEY } : {}); }
 }
 export class NewsTrial extends DurableObject {
   busy = false;
@@ -18,6 +18,7 @@ export class NewsTrial extends DurableObject {
     await c.setInactivityTimeout(15 * 60 * 1000);
     const proxy = this.ctx.exports.TrialEgress({ props: { job } });
     await c.interceptOutboundHttps("*", proxy);
+    if (job === "news" && this.env.AZURE_OPENAI_ENDPOINT && this.env.AZURE_OPENAI_API_KEY) await c.interceptOutboundHttps("azure-backup.invalid", proxy);
     await c.interceptAllOutboundHttp(proxy);
     for (let i = 0; i < 60; i++) {
       try { if ((await c.getTcpPort(8080).fetch("http://container/health")).ok) return c; } catch {}
@@ -81,7 +82,7 @@ export class NewsTrial extends DurableObject {
       await this.startContainer(job);
       const port = c.getTcpPort(8080);
       stage = "producer";
-      const response = await port.fetch(`http://container/run?tier=${tier}&job=${job}`, { method: "POST", body: await seed.arrayBuffer(), headers: { "X-Data-Export": ["markets", "fx"].includes(job) && this.env.DATA_PUBLICATION_ENABLED === "true" ? "1" : "0", "X-Fred-Enabled": job === "calendar" && this.env.FRED_API_KEY ? "1" : "0", "X-Live-Export": ["news", "calendar"].includes(job) && this.env.LIVE_INGEST_ENABLED === "true" ? "1" : "0" } });
+      const response = await port.fetch(`http://container/run?tier=${tier}&job=${job}`, { method: "POST", body: await seed.arrayBuffer(), headers: { "X-Data-Export": ["markets", "fx"].includes(job) && this.env.DATA_PUBLICATION_ENABLED === "true" ? "1" : "0", "X-Fred-Enabled": job === "calendar" && this.env.FRED_API_KEY ? "1" : "0", "X-Azure-Enabled": job === "news" && this.env.AZURE_OPENAI_ENDPOINT && this.env.AZURE_OPENAI_API_KEY ? "1" : "0", "X-Live-Export": ["news", "calendar"].includes(job) && this.env.LIVE_INGEST_ENABLED === "true" ? "1" : "0" } });
       if (!response.ok) {
         let failure; try { failure = await response.json(); } catch {}
         const diagnostic = failure?.error === "generation_failed" ? safeDiagnostic(failure.diagnostic) : null;

@@ -71,7 +71,7 @@ function bindings(fail = false, articles = []) {
     get: async name => name.endsWith("seed.json.gz") ? { size: 2, arrayBuffer: async () => new TextEncoder().encode("{}") } : null,
     put: async (name, value) => puts.push(name),
   } };
-  return { instance: new NewsTrial({ container: c, exports: { TrialEgress: () => ({}) } }, env), c, puts, starts };
+  return { instance: new NewsTrial({ container: c, exports: { TrialEgress: () => ({}) } }, env), c, puts, starts, env };
 }
 test("successful trial stores only isolated artifacts and stops the container", async () => {
   const b = bindings();
@@ -496,5 +496,53 @@ test("snapshot publication is separately gated, precedes producer state, and fai
     assert.equal(exported, mode !== "disabled");
     assert.deepEqual(b.puts, mode === "failed" ? [] : [...(mode === "enabled" ? ["published/data/markets.json"] : []), "trial/markets/latest.json.gz", "trial/markets/state.json.gz"]);
     assert.equal(b.c.running, false);
+  }
+});
+
+const backupUrl = "https://azure-backup.invalid/openai/deployments/gpt-4.1-nano/chat/completions?api-version=2024-10-21";
+test("existing Azure backup receives only its configured key at the exact fixed deployment", async () => {
+  const config = { endpoint: "https://unit-resource.openai.azure.com/", key: "offline-azure-key" };
+  let calls = 0;
+  const upstream = async (url, init) => {
+    calls++; assert.equal(url, "https://unit-resource.openai.azure.com/openai/deployments/gpt-4.1-nano/chat/completions?api-version=2024-10-21");
+    assert.equal(init.headers.get("api-key"), config.key); assert.equal(init.headers.get("x-goog-api-key"), null);
+    assert.equal(init.headers.get("Authorization"), null); assert.equal(init.headers.get("Cookie"), null);
+    assert.equal(init.redirect, "manual"); assert.equal(new TextDecoder().decode(init.body), "offline-prompt");
+    return Response.json({ choices: [] });
+  };
+  const r = await egress(new Request(backupUrl, { method: "POST", body: "offline-prompt", headers: { Authorization: "browser-secret", Cookie: "browser-secret", "api-key": "placeholder" } }), "offline-google-key", true, upstream, "", config);
+  assert.equal(r.status, 200); assert.equal(calls, 1);
+  for (const url of ["https://www.ecb.europa.eu/rss", "https://generativelanguage.googleapis.com/v1beta/models?pageSize=200"]) {
+    await egress(new Request(url), "offline-google-key", true, async (_url, init) => {
+      assert.equal(init.headers.get("api-key"), null); return new Response("ok");
+    }, "", config);
+  }
+  for (const path of [backupUrl.replace("gpt-4.1-nano", "other-model"), backupUrl.replace("2024-10-21", "other-version"), backupUrl + "&extra=1"])
+    assert.equal(destination(path, "POST"), null);
+});
+test("missing or unsafe Azure configuration fails before any external request; redirects/errors never expose secrets", async () => {
+  for (const config of [{}, { endpoint: "http://unit.openai.azure.com", key: "offline-key" }, { endpoint: "https://unit.openai.azure.com.evil.invalid", key: "offline-key" }, { endpoint: "https://unit.openai.azure.com/private", key: "offline-key" }, { endpoint: "https://user:pass@unit.openai.azure.com", key: "offline-key" }, { endpoint: "https://unit.openai.azure.com", key: "line\nbreak" }]) {
+    const r = await egress(new Request(backupUrl, { method: "POST", body: "{}" }), "google", true, () => { throw Error("must not fetch"); }, "", config);
+    assert.equal(r.status, 403);
+  }
+  const config = { endpoint: "https://unit.openai.azure.com", key: "offline-key" };
+  for (const upstream of [() => new Response(null, { status: 302, headers: { Location: "https://evil.invalid/" } }), () => new Response("private upstream detail", { status: 429 })]) {
+    const r = await egress(new Request(backupUrl, { method: "POST", body: "{}" }), "google", true, upstream, "", config);
+    assert.ok([429, 502].includes(r.status)); assert.doesNotMatch(await r.text(), /offline-key|private upstream|openai.azure/);
+  }
+});
+
+test("backup configuration enables only the news producer and exact-host interception; real keys never reach Container requests", async () => {
+  for (const job of ["news", "calendar"]) {
+    const b = bindings(), hosts = [], options = [];
+    Object.assign(b.env, { AZURE_OPENAI_ENDPOINT: "https://unit.openai.azure.com", AZURE_OPENAI_API_KEY: "offline-real-key" });
+    b.c.interceptOutboundHttps = async host => hosts.push(host);
+    const original = b.c.getTcpPort;
+    b.c.getTcpPort = () => ({ fetch: async (url, init) => { if (init) options.push(init); return original().fetch(url, init); } });
+    assert.equal((await b.instance.fetch(new Request("http://trial/run?job=" + job))).status, 200);
+    assert.deepEqual(hosts, job === "news" ? ["*", "azure-backup.invalid"] : ["*"]);
+    assert.equal(options[0].headers["X-Azure-Enabled"], job === "news" ? "1" : "0");
+    assert.doesNotMatch(JSON.stringify(options), /offline-real-key|unit.openai.azure.com/);
+    assert.equal(b.starts[0].env, undefined);
   }
 });

@@ -104,7 +104,7 @@ def live_outputs(root, tier):
     return outputs
 
 
-def run(state, base=BASE, tier="priority", export_live=False):
+def run(state, base=BASE, tier="priority", export_live=False, azure_enabled=False):
     if tier not in ("priority", "broad"):
         raise ValueError("Unknown news tier")
     validate(state)
@@ -125,6 +125,9 @@ def run(state, base=BASE, tier="priority", export_live=False):
         env = {"PATH": os.environ.get("PATH", ""), "PYTHONIOENCODING": "utf-8", "PYTHONUTF8": "1",
                "NEWS_TIER": tier, "GEMINI_API_KEY": "trial-proxy", "PIXABAY_KEY": "",
                "SSL_CERT_FILE": "/etc/cloudflare/certs/cloudflare-containers-ca.crt"}
+        if azure_enabled:
+            # The proxy injects the existing backup credential; the producer gets placeholders only.
+            env.update(AZURE_OPENAI_ENDPOINT="https://azure-backup.invalid", AZURE_OPENAI_API_KEY="trial-proxy")
         # Never relay producer logs: upstream errors can include request details.
         for script in ("update_globe_news.py", "tools/globe-news/connections.py"):
             subprocess.run([sys.executable, str(root / script)], cwd=root, env=env,
@@ -368,7 +371,7 @@ class Handler(BaseHTTPRequestHandler):
             elif jobs[0] == "calendar":
                 result = run_calendar(decode_bundle(raw, validate_calendar), fred_enabled=self.headers.get("X-Fred-Enabled") == "1")
             else:
-                result = run(decode_bundle(raw), tier=tiers[0], export_live=self.headers.get("X-Live-Export") == "1")
+                result = run(decode_bundle(raw), tier=tiers[0], export_live=self.headers.get("X-Live-Export") == "1", azure_enabled=self.headers.get("X-Azure-Enabled") == "1")
             if jobs[0] in ("news", "library"):
                 self.server.library = [data for name, data in sorted(result["files"].items()) if name.startswith("library/")]
                 result["summary"]["library_articles"] = len(self.server.library)
