@@ -169,6 +169,19 @@ class NewsTrialTests(unittest.TestCase):
         self.assertEqual(kwargs["env"]["GEMINI_API_KEY"], "trial-proxy")
         self.assertFalse(Path(kwargs["cwd"]).exists())
 
+    def test_azure_backup_is_opt_in_and_only_placeholder_credentials_reach_producer(self):
+        for enabled in (False, True):
+            with patch.object(trial.subprocess, "run") as call:
+                with self.assertRaisesRegex(ValueError, "fresh success"):
+                    trial.run(self.seed, azure_enabled=enabled)
+            env = call.call_args.kwargs["env"]
+            if enabled:
+                self.assertEqual(env["AZURE_OPENAI_ENDPOINT"], "https://azure-backup.invalid")
+                self.assertEqual(env["AZURE_OPENAI_API_KEY"], "trial-proxy")
+            else:
+                self.assertNotIn("AZURE_OPENAI_API_KEY", env)
+                self.assertNotIn("AZURE_OPENAI_ENDPOINT", env)
+
     def test_broad_tier_uses_only_the_fixed_generator_and_broad_status(self):
         with patch.object(trial.subprocess, "run") as call:
             with self.assertRaisesRegex(ValueError, "fresh success"):

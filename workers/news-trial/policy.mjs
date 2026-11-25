@@ -184,6 +184,8 @@ export function destination(url, method) {
   if (method === "GET" && ((u.hostname === "api.worldbank.org" && /^\/v2\/country\/all\/indicator\/[A-Z0-9.]+$/.test(u.pathname))
       || (u.hostname === "query1.finance.yahoo.com" && /^\/v8\/finance\/chart\/[^/]+$/.test(u.pathname)))) return "source";
   if (SOURCE_HOSTS.has(u.hostname) && method === "GET") return "source";
+  if (u.hostname === "azure-backup.invalid" && method === "POST"
+      && u.pathname === "/openai/deployments/gpt-4.1-nano/chat/completions" && u.search === "?api-version=2024-10-21") return "azure";
   if (u.hostname !== "generativelanguage.googleapis.com") return null;
   if (method === "GET" && u.pathname === "/v1beta/models" && u.search === "?pageSize=200") return "gemini";
   if (method === "POST" && /^\/v1beta\/models\/[a-zA-Z0-9.-]+:generateContent$/.test(u.pathname) && !u.search) return "gemini";
@@ -231,7 +233,7 @@ async function geminiFailure(response) {
   else if (data && response.status === 400) reason = "request_invalid";
   return { provider_status, reason };
 }
-export async function egress(request, key, enabled, upstream = fetch, fredKey = "") {
+export async function egress(request, key, enabled, upstream = fetch, fredKey = "", azure = {}) {
   if (!enabled) return new Response("Trial egress disabled", { status: 403 });
   fredKey = typeof fredKey === "string" ? fredKey.trim() : "";
   let url = request.url;
@@ -248,6 +250,14 @@ export async function egress(request, key, enabled, upstream = fetch, fredKey = 
       const value = request.headers.get(name); if (value) headers.set(name, value.slice(0, 256));
     }
     if (type === "gemini") { headers.set("x-goog-api-key", key); headers.set("Content-Type", "application/json"); }
+    if (type === "azure") {
+      let target;
+      try { target = new URL(azure.endpoint?.trim()); } catch { return new Response("Backup disabled", { status: 403 }); }
+      if (target.protocol !== "https:" || target.username || target.password || target.port || target.pathname !== "/" || target.search || target.hash
+          || !/^[a-z0-9-]+\.openai\.azure\.com$/.test(target.hostname) || !azure.key?.trim() || /[\r\n]/.test(azure.key)) return new Response("Backup disabled", { status: 403 });
+      url = target.origin + source.pathname + source.search;
+      headers.set("api-key", azure.key.trim()); headers.set("Content-Type", "application/json");
+    }
     if (type === "fred") {
       if (!/^[a-z0-9]{32}$/.test(fredKey)) return Response.json({ trial_fred_reason: "key_format" }, { status: 400 });
       const target = new URL(url); target.searchParams.set("api_key", fredKey); url = target.href;
