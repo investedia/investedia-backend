@@ -104,7 +104,7 @@ def main():
                                'Use the common name (with abbreviation in brackets when people use it, e.g. "Price-to-earnings ratio (P/E)"). No duplicates, no people or company names. '
                                'JSON: {"terms":[{"term":"...","level":"beginner|intermediate|expert"}]}', 4000)
         except RuntimeError as e: report['stop'] = str(e); break
-        for x in r.get('terms') or []:
+        for x in [y for y in (r.get('terms') or []) if isinstance(y, dict)]:
             t = str((x or {}).get('term') or '').strip(); base = re.sub(r'\s*\(.*?\)', '', t).lower()
             if t and t.lower() not in seen and base not in seen and len(t) < 70:
                 seen[t.lower()] = seen[base] = 1; terms.append({'term': t, 'level': str(x.get('level') or ''), 'topic': k})
@@ -123,12 +123,13 @@ def main():
                                '"mistakes" (2 common misunderstandings, one sentence each), "related" (3-6 related glossary terms). '
                                'JSON: {"entries":[...]}', 9000)
         except RuntimeError as e: report['stop'] = str(e); break
-        got = {(c or {}).get('term', '').lower(): c for c in r.get('entries') or []}
+        got = {str(c.get('term', '')).lower(): c for c in (r.get('entries') or []) if isinstance(c, dict)}
         for x in part:
             c = clean(got.get(x['term'].lower()), TOPICS)
             (entries.append(c) if c else failed.append(x['term']))
         print(f'written {len(entries)}/{len(terms)}  ${az.usd:.3f}', flush=True)
     report['written'] = len(entries); report['write_failed'] = failed
+    json.dump({'entries': entries}, open(os.path.join(a.out, 'written-before-check.json'), 'w'), ensure_ascii=False)  # kept even if the check fails
 
     # 3. checking pass: a second reading that fixes or rejects
     checked, dropped, fixed = [], [], 0
@@ -142,9 +143,10 @@ def main():
                        'JSON: {"results":[{"slug":"...","verdict":"ok|fix|drop","reason":"short","entry":{...only when fix}}]}\n\n' + json.dumps(part, ensure_ascii=False), 9000)
         except RuntimeError as e:
             report['stop'] = str(e); checked += [dict(x, checked=False) for x in entries[i:]]; break
-        res = {(x or {}).get('slug'): x for x in r.get('results') or []}
+        res = {x.get('slug'): x for x in (r.get('results') or []) if isinstance(x, dict)}
         for e in part:
             v = res.get(e['slug']) or {}
+            if not isinstance(v, dict): v = {}
             if v.get('verdict') == 'drop': dropped.append({'term': e['term'], 'reason': v.get('reason', '')}); continue
             if v.get('verdict') == 'fix':
                 f = clean(dict(v.get('entry') or {}, term=e['term']), TOPICS)
