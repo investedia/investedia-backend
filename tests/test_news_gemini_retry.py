@@ -1,6 +1,7 @@
 """Offline retry contract; no provider requests or financial content."""
 import importlib.util
 import io
+import json
 from pathlib import Path
 import unittest
 import urllib.error
@@ -22,13 +23,13 @@ class GeminiRetryTests(unittest.TestCase):
         return error
 
     def check(self, codes, models):
-        with patch.object(robot, "GEMINI", "offline-placeholder"), patch.object(robot, "gemini_models", return_value=models), patch.object(robot, "get", side_effect=[self.error(c) for c in codes]) as request, patch.object(robot.time, "sleep") as sleep:
+        with patch.object(robot, "GEMINI", "offline-placeholder"), patch.object(robot, "gemini_models", return_value=models), patch.object(robot, "get", side_effect=[self.error(c) for c in codes]) as request, patch.object(robot.time, "sleep") as sleep, patch.object(robot, "azure", side_effect=RuntimeError("offline backup")):
             with self.assertRaises(RuntimeError): robot.gemini("offline protocol test")
         return request, sleep
 
     def test_unavailable_retries_same_model_after_delay(self):
         success = b'{"candidates":[{"content":{"parts":[{"text":"[]"}]}}]}'
-        with patch.object(robot, "GEMINI", "offline-placeholder"), patch.object(robot, "gemini_models", return_value=["unit-a"]), patch.object(robot, "get", side_effect=[self.error(503), success]) as request, patch.object(robot.time, "sleep") as sleep:
+        with patch.object(robot, "GEMINI", "offline-placeholder"), patch.object(robot, "gemini_models", return_value=["unit-a"]), patch.object(robot, "get", side_effect=[self.error(503), success]) as request, patch.object(robot.time, "sleep") as sleep, patch.object(robot, "azure", side_effect=RuntimeError("offline backup")):
             self.assertEqual(robot.gemini("offline protocol test"), [])
         self.assertEqual(request.call_count, 2)
         self.assertEqual(request.call_args_list[0].args, request.call_args_list[1].args)
@@ -43,6 +44,29 @@ class GeminiRetryTests(unittest.TestCase):
         request, sleep = self.check([404]*2, ["unit-a", "unit-b"])
         self.assertEqual(request.call_count, 2)
         sleep.assert_not_called()
+
+    def test_quota_moves_to_next_model_without_sleep_or_duplicate_request(self):
+        success = b'{"candidates":[{"content":{"parts":[{"text":"[]"}]}}]}'
+        with patch.object(robot, "GEMINI", "offline-placeholder"), patch.object(robot, "gemini_models", return_value=["unit-a", "unit-b"]), patch.object(robot, "get", side_effect=[self.error(429), success]) as request, patch.object(robot.time, "sleep") as sleep, patch.object(robot, "azure") as backup:
+            self.assertEqual(robot.gemini("offline protocol test"), [])
+        self.assertEqual(request.call_count, 2)
+        self.assertIn("unit-a:", request.call_args_list[0].args[0])
+        self.assertIn("unit-b:", request.call_args_list[1].args[0])
+        sleep.assert_not_called(); backup.assert_not_called()
+
+    def test_all_quota_limited_models_are_attempted_only_once(self):
+        request, sleep = self.check([429, 429], ["unit-a", "unit-b"])
+        self.assertEqual(request.call_count, 2); sleep.assert_not_called()
+
+    def test_discovery_prefers_lite_and_filters_non_text_models(self):
+        names = ["gemini-3.8-flash", "gemini-3.1-flash-lite", "gemini-3.5-flash-lite", "gemini-3.8-flash-tts", "gemini-3.8-flash-image"]
+        models = {"models": [{"name": "models/" + n, "supportedGenerationMethods": ["generateContent"]} for n in names]}
+        with patch.object(robot, "get", return_value=json.dumps(models)):
+            self.assertEqual(robot.gemini_models(), ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-3.8-flash"])
+
+    def test_discovery_failure_keeps_lite_first(self):
+        with patch.object(robot, "get", side_effect=OSError("offline")), patch.object(robot, "err"):
+            self.assertEqual(robot.gemini_models(), ["gemini-flash-lite-latest", "gemini-flash-latest"])
 
     def test_client_errors_stop_without_retry_or_fallback(self):
         for code in (400, 401, 403):
