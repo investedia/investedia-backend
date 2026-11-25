@@ -49,6 +49,8 @@ class Azure:
                 break
             except urllib.error.HTTPError as e:
                 if e.code in (429, 500, 502, 503, 504) and attempt < 4: time.sleep(3 * 2 ** attempt); continue
+                try: print('azure error', e.code, e.read()[:400].decode('utf-8', 'replace'), flush=True)
+                except Exception: pass
                 raise RuntimeError('azure_http_%d' % e.code) from None
             except (urllib.error.URLError, TimeoutError, OSError):
                 if attempt < 4: time.sleep(3 * 2 ** attempt); continue
