@@ -1,0 +1,31 @@
+name: Education glossary (Azure)
+# Owner, 25 Nov 2026: build the Investedia Education glossary with the Azure OpenAI credit.
+# Output is a review artifact only; the site is updated by a separate reviewed frontend PR.
+on:
+  push:
+    branches: [claude/learn-glossary]
+    paths: [tools/learn-glossary.py, .github/workflows/learn-glossary.yml]
+  workflow_dispatch:
+    inputs:
+      max_usd: {description: 'Spending cap in US dollars', default: '3'}
+      deployment: {description: 'Azure deployment name', default: 'gpt-4.1-mini'}
+permissions: {contents: read}
+concurrency: {group: learn-glossary, cancel-in-progress: false}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Write glossary
+        env:
+          AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
+          AZURE_OPENAI_API_KEY: ${{ secrets.AZURE_OPENAI_API_KEY }}
+          AZURE_DEPLOYMENT: ${{ inputs.deployment || 'gpt-4.1-mini' }}
+          MAX_USD: ${{ inputs.max_usd || '3' }}
+        run: python tools/learn-glossary.py --out out --max-usd "$MAX_USD"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: education-glossary, path: out/, retention-days: 30}
