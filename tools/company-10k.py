@@ -79,9 +79,11 @@ def main():
             if not y.get('match') or y.get('sector') not in ce.SECTORS or not y.get('description'): skipped += 1; continue
             x.update(description=y['description'].strip(), sector=y['sector']); x.pop('extract', None)
             x['sources'] = [s for s in [x.get('wiki_url'), 'https://www.wikidata.org/wiki/' + x['qid']] if s]; out.append(x)
-        if i % 500 == 0: print(f'written {len(out)} skipped {skipped} ${az.usd:.3f}', flush=True)
+        if i % 500 == 0:
+            print(f'written {len(out)} skipped {skipped} ${az.usd:.3f}', flush=True)
+            json.dump({'partial': True, 'companies': out}, open(f'{a.out}/companies-10k.partial.json', 'w'), ensure_ascii=False)  # survives a later crash
     rep = {'target': a.target, 'picked': len(picked), 'written': len(out), 'skipped': skipped, 'cost_usd': round(az.usd, 4), 'minutes': round((time.time() - t0) / 60, 1),
-           'by_continent': {k: sum(1 for x in out if x['continent'] == k) for k in QUOTA}, 'by_sector': {k: sum(1 for x in out if x['sector'] == k) for k in ce.SECTORS},
+           'by_continent': {k: sum(1 for x in out if x['continent'] == k) for k in REG}, 'by_sector': {k: sum(1 for x in out if x['sector'] == k) for k in ce.SECTORS},
            'with_coords': sum(1 for x in out if x['lat'] is not None), 'with_ticker': sum(1 for x in out if x['ticker']), 'with_logo_file': sum(1 for x in out if x['logo_file'])}
     json.dump({'schema': 'investedia.companies-10k.v1', 'count': len(out), 'companies': out}, open(f'{a.out}/companies-10k.json', 'w'), ensure_ascii=False)
     json.dump(rep, open(f'{a.out}/report.json', 'w'), indent=1); print(json.dumps(rep))
