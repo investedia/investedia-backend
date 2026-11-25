@@ -22,6 +22,8 @@ enabled = true
 # After deploying, add a custom domain in the Cloudflare dashboard: Workers & Pages > investedia-live > Settings > Domains & Routes > Add > Custom domain: live.investedia.com
 
 [vars]
+# Shadow mode (default on this branch): the price cron writes to KV key px-shadow only; the live px key is not touched.
+PRICE_SHADOW = "true"
 # Pilot API code only; no R2 binding or publication is activated here.
 MARKETS_API_ENABLED = "false"
 NEWS_CRON = "off"

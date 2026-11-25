@@ -5,6 +5,8 @@ import { GROUPS, entry, toRow, merge, unchanged, shouldWrite, rollStats, envelop
 const A = TIER_A.map(entry), B = TIER_B.map(entry), ALL = [...A, ...B];
 export const SYMBOLS_BY_GROUP = {};
 for (const e of ALL) (SYMBOLS_BY_GROUP[GROUPS[e.g]] ||= []).push(e.site);
+// Shadow mode (PRICE_SHADOW="true"): the same cron writes its snapshot to 'px-shadow' so it can be compared with the live 'px' without any visitor seeing it.
+const keyOf = env => env.PRICE_SHADOW === 'true' ? 'px-shadow' : 'px';
 const chunks = (list, n) => { const o = []; for (let i = 0; i < list.length; i += n) o.push(list.slice(i, i + n)); return o; };
 const B_PER_RUN = 160;  // 8 spark calls: with tier A (7 calls) one run uses about 15 of the 50 free subrequests
 
@@ -12,7 +14,7 @@ const B_PER_RUN = 160;  // 8 spark calls: with tier A (7 calls) one run uses abo
 export async function refresh(env, now = Date.now(), fetchFn = fetch) {
   const slot = Math.floor(now / 120e3), nB = Math.ceil(B.length / B_PER_RUN), sliceB = nB ? B.slice((slot % nB) * B_PER_RUN, (slot % nB + 1) * B_PER_RUN) : [];  // tier B is empty while the whole site list fits in tier A
   const batch = [...A, ...sliceB], byY = new Map(batch.map(e => [e.y, e]));
-  let snap = {}; try { snap = JSON.parse(await env.PRICES.get('px')) || {}; } catch {}
+  let snap = {}; try { snap = JSON.parse(await env.PRICES.get(keyOf(env))) || {}; } catch {}
   const stats = rollStats(snap.stats, now); stats.cron_runs++;
   const fresh = {};
   const calls = chunks(batch.map(e => e.y), MAX_SYMBOLS);
@@ -25,7 +27,7 @@ export async function refresh(env, now = Date.now(), fetchFn = fetch) {
   if (!changed) stats.skipped_unchanged++;
   const write = shouldWrite({ changed, lastWrite: snap.t, writesToday: stats.writes, now });
   let next = snap;
-  if (write) { stats.writes++; next = { t: now, p, stats, provider: PROVIDER.id }; await env.PRICES.put('px', JSON.stringify(next)); }
+  if (write) { stats.writes++; next = { t: now, p, stats, provider: PROVIDER.id }; await env.PRICES.put(keyOf(env), JSON.stringify(next)); }
   return { ok: got, sent: batch.length, wrote: write, changed, stats, snapshot: next };
 }
 
