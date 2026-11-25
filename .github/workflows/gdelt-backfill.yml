@@ -74,7 +74,7 @@ jobs:
   generate:
     if: inputs.confirm == 'BACKFILL' && (github.ref == 'refs/heads/main' || (inputs.dry_run && startsWith(github.ref, 'refs/heads/claude/')))
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 185
     concurrency:
       group: gdelt-backfill-${{ inputs.start_date }}  # owner 22 Nov 2026: different years run side by side
       cancel-in-progress: false
@@ -176,7 +176,7 @@ jobs:
           $( case "$WRITER" in gemini) echo --provider gemini;; azure-*) echo --provider azure;; *) echo --provider claude --claude-model "$WRITER";; esac ) --max-usd "$MAX_USD" --sources "$SOURCES" --country-cap "$COUNTRY_CAP"
           --confirm "$CONFIRM" --dry-run "$DRY_RUN"
           --start "$START_DATE" --end "$END_DATE" --regions "$REGIONS"
-          --gemini-calls "$CALLS" --batch-size "$BATCH" --gdelt-files "$GDELT" --max-minutes 100
+          --gemini-calls "$CALLS" --batch-size "$BATCH" --gdelt-files "$GDELT" --max-minutes 165
       - name: Rescue a stopped or killed run from its last checkpoint (no model calls)
         if: ${{ always() }}
         working-directory: backend
