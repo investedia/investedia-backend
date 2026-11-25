@@ -414,10 +414,12 @@ class PageFetcher:
     def __init__(self, get=regional.request, clock=time.monotonic, sleep=time.sleep):
         self.get, self.clock, self.sleep = get, clock, sleep
         self.lock = threading.Lock(); self.locks = {}; self.policies = {}; self.last = {}; self.pages = 0
+        self.dead = {}; self.fails = {}  # speed fix (owner 25 Nov 2026): skip a site for the rest of the run once it keeps failing
 
     def policy(self, host):
+        if host in self.dead: raise ValueError(self.dead[host])
         if host not in self.policies:
-            try: raw = self.get('https://' + host + '/robots.txt', timeout=10)
+            try: raw = self.get('https://' + host + '/robots.txt', timeout=6)
             except urllib.error.HTTPError as e:
                 if e.code not in (404, 410): raise ValueError('robots_unavailable') from None
                 raw = ''
@@ -430,6 +432,7 @@ class PageFetcher:
         host = urlsplit(url).hostname
         with self.lock: lock = self.locks.setdefault(host, threading.Lock())
         with lock:
+          try:
             for _ in range(3):
                 rp = self.policy(host)
                 if not rp.can_fetch(UA, url): raise ValueError('robots_disallowed')
@@ -440,7 +443,7 @@ class PageFetcher:
                     if wait > 0: self.sleep(wait)
                 try:
                     self.pages += 1
-                    text = self.get(url, timeout=12)
+                    text = self.get(url, timeout=8)
                     return text[:PAGE_LIMIT]
                 except urllib.error.HTTPError as e:
                     if e.code in (301, 302, 303, 307, 308) and e.headers and e.headers.get('Location'):
@@ -451,6 +454,12 @@ class PageFetcher:
                 except (OSError, http.client.HTTPException): raise ValueError('page_unavailable') from None
                 finally: self.last[host] = self.clock()
             raise ValueError('too_many_redirects')
+          except ValueError as e:
+            why = str(e)
+            if why == 'robots_unavailable' or why == 'page_http_429' or why == 'page_unavailable' or why.startswith('page_http_5'):
+                self.fails[host] = self.fails.get(host, 0) + 1
+                if why == 'robots_unavailable' or self.fails[host] >= 3: self.dead[host] = why
+            raise
 
     def enrich(self, row, start, end):
         if paywalled_host(urlsplit(row['url']).hostname): return None, 'paywalled_publisher'
@@ -695,7 +704,7 @@ def usage_stories(usage):
     return [{'image': {'file': f}} for f, n in sorted(usage.items()) for _ in range(min(int(n), 1000))]
 
 
-def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH, deadline=None, workers=8, translator=None, photos=True, prior_usage=(), checkpoint=None, country_cap=0, country_prior=None, thin_only=False):
+def generate(rows, start, end, now, ref, budget, fetcher, batch_size=MODEL_BATCH, deadline=None, workers=24, translator=None, photos=True, prior_usage=(), checkpoint=None, country_cap=0, country_prior=None, thin_only=False):
     """Enrich lazily, one model batch at a time; stop when the call budget, deadline or rows run out."""
     if not 1 <= batch_size <= 40: raise ValueError('batch_size_must_be_1_to_40')
     box, by_iso, sym = ref
@@ -918,7 +927,7 @@ def ingest_artifact(output, worker, state_root, now, library_push=None):
 
 # ---------- run ----------
 def run(start, end, regions, dry_run, output, worker, cache_dir, gemini_model=None, gemini_calls=DEFAULT_CALLS,
-        batch_size=MODEL_BATCH, gdelt_files=DEFAULT_GDELT_FILES, max_minutes=100, now=None,
+        batch_size=MODEL_BATCH, gdelt_files=DEFAULT_GDELT_FILES, max_minutes=165, now=None,
         gdelt_get=None, page_get=None, model_get=None, library_push=None, sleep=time.sleep, state_root=None, ingest=True,
         provider='gemini', claude_model='claude-haiku-5-5', max_usd=3.0, claude_client=None, sources='english', country_cap=0):
     if sources not in ('english', 'english+translated', 'translated'): raise ValueError('sources_invalid')
