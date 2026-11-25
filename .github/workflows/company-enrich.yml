@@ -1,0 +1,29 @@
+name: Company pages enrichment (Azure)
+# Owner, 25 Nov 2026: descriptions, sectors and facts for company pages from Wikipedia/Wikidata; review artifact only.
+on:
+  push:
+    branches: [claude/company-enrich]
+    paths: [tools/company-enrich.py, .github/workflows/company-enrich.yml]
+  workflow_dispatch:
+    inputs:
+      max_usd: {description: 'Spending cap in US dollars', default: '3'}
+permissions: {contents: read}
+concurrency: {group: company-enrich, cancel-in-progress: false}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Enrich companies
+        env:
+          AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
+          AZURE_OPENAI_API_KEY: ${{ secrets.AZURE_OPENAI_API_KEY }}
+          AZURE_DEPLOYMENT: gpt-4.1-mini
+          MAX_USD: ${{ inputs.max_usd || '3' }}
+        run: python tools/company-enrich.py --out out --max-usd "$MAX_USD"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: company-enrich, path: out/, retention-days: 30}
