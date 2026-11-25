@@ -7,61 +7,33 @@ import argparse, importlib.util, json, os, sys, time, urllib.parse
 spec = importlib.util.spec_from_file_location('ce', os.path.join(os.path.dirname(__file__), 'company-enrich.py'))
 ce = importlib.util.module_from_spec(spec); spec.loader.exec_module(ce)
 
-SPARQL = 'https://query.wikidata.org/sparql'
-# Continent share of the target (owner: companies a bit everywhere, biggest first)
-QUOTA = {'Asia': .27, 'Europe': .22, 'North America': .18, 'Africa': .11, 'South America': .09, 'Middle East': .07, 'Oceania': .06}
-ME = {'Q851', 'Q878', 'Q846', 'Q817', 'Q398', 'Q842', 'Q801', 'Q810', 'Q822', 'Q796', 'Q794', 'Q858', 'Q805', 'Q43', 'Q229', 'Q219060'}
-CONT = {'Q48': 'Asia', 'Q46': 'Europe', 'Q49': 'North America', 'Q15': 'Africa', 'Q18': 'South America', 'Q538': 'Oceania', 'Q55643': 'Oceania'}
+WD_LIST = 'https://raw.githubusercontent.com/investedia/investedia-frontend/main/assets/globe/companies-wd.json'
+REG = {'Asia': 'Asia', 'Europe': 'Europe', 'North America': 'North America', 'Africa': 'Africa', 'South America': 'South America', 'Middle East': 'Middle East', 'Oceania': 'Oceania'}
 
 
-def sparql(q):
-    for a in range(5):
-        try:
-            u = SPARQL + '?' + urllib.parse.urlencode({'query': q, 'format': 'json'})
-            r = ce.get(u)
-            if r: return r['results']['bindings']
-        except Exception: pass
-        time.sleep(5 * (a + 1))
-    return []
-
-
-def countries():
-    rows = sparql('SELECT ?c ?cLabel ?cont WHERE { ?c wdt:P31 wd:Q3624078; wdt:P30 ?cont. FILTER NOT EXISTS {?c wdt:P576 ?e} '
-                  'SERVICE wikibase:label { bd:serviceParam wikibase:language "en". } }')
+def entities(qids):
+    """Wikidata action API (not the query service): English Wikipedia title, employees, tickers, logo, founded, industry."""
     out = {}
-    for r in rows:
-        q = r['c']['value'].rsplit('/', 1)[-1]; ct = CONT.get(r['cont']['value'].rsplit('/', 1)[-1])
-        if not ct: continue
-        out[q] = {'name': r['cLabel']['value'], 'cont': 'Middle East' if q in ME else ct}
+    for i in range(0, len(qids), 50):
+        r = ce.get('https://www.wikidata.org/w/api.php?' + urllib.parse.urlencode({'action': 'wbgetentities', 'ids': '|'.join(qids[i:i + 50]),
+                   'props': 'claims|sitelinks|labels', 'sitefilter': 'enwiki', 'languages': 'en', 'format': 'json'})) or {}
+        for q, e in (r.get('entities') or {}).items():
+            cl = e.get('claims') or {}
+            emp = None
+            for st in cl.get('P1128') or []:
+                try: emp = max(emp or 0, int(float(st['mainsnak']['datavalue']['value']['amount'])))
+                except Exception: pass
+            tick = None
+            for st in cl.get('P414') or []:
+                for qq in (st.get('qualifiers') or {}).get('P249') or []:
+                    tick = tick or (qq.get('datavalue') or {}).get('value')
+            out[q] = {'wiki': ((e.get('sitelinks') or {}).get('enwiki') or {}).get('title'), 'employees': emp, 'ticker': tick, 'listed': bool(cl.get('P414')),
+                      'logo_file': ce.claim(e, 'P154') if isinstance(ce.claim(e, 'P154'), str) else None,
+                      'founded': ((ce.claim(e, 'P571') or {}).get('time') or '')[1:5] or None if isinstance(ce.claim(e, 'P571'), dict) else None,
+                      'label': ((e.get('labels') or {}).get('en') or {}).get('value')}
+        if i % 1000 == 0: print(f'wikidata {i}/{len(qids)} got {len(out)}', flush=True)
+        time.sleep(1)
     return out
-
-
-def top(cq, n):
-    q = f'''SELECT ?co ?coLabel ?emp ?listed ?hqLabel ?coord ?indLabel ?web ?logo ?inc ?tick ?exLabel ?art WHERE {{
-      {{ SELECT ?co (MAX(?e) AS ?emp) (SAMPLE(?x) AS ?listed) WHERE {{
-          ?co wdt:P17 wd:{cq}; wdt:P31/wdt:P279* wd:Q4830453.
-          OPTIONAL {{ ?co wdt:P1128 ?e }} OPTIONAL {{ ?co wdt:P414 ?x }}
-          FILTER NOT EXISTS {{ ?co wdt:P576 ?d }}
-        }} GROUP BY ?co ORDER BY DESC(BOUND(?x)) DESC(?emp) LIMIT {n} }}
-      ?art schema:about ?co; schema:isPartOf <https://en.wikipedia.org/>.
-      OPTIONAL {{ ?co wdt:P159 ?hq. OPTIONAL {{ ?hq wdt:P625 ?coord }} }}
-      OPTIONAL {{ ?co wdt:P452 ?ind }} OPTIONAL {{ ?co wdt:P856 ?web }} OPTIONAL {{ ?co wdt:P154 ?logo }} OPTIONAL {{ ?co wdt:P571 ?inc }}
-      OPTIONAL {{ ?co p:P414 ?st. ?st ps:P414 ?ex. OPTIONAL {{ ?st pq:P249 ?tick }} }}
-      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }} }}'''
-    seen = {}
-    for r in sparql(q):
-        k = r['co']['value'].rsplit('/', 1)[-1]
-        if k in seen: continue
-        v = lambda f: r.get(f, {}).get('value')
-        lat = lon = None
-        if v('coord'):
-            try: lon, lat = map(float, v('coord').split('(')[1].rstrip(')').split())
-            except Exception: pass
-        seen[k] = {'qid': k, 'name': v('coLabel'), 'employees': int(float(v('emp'))) if v('emp') else None, 'listed': bool(v('listed')),
-                   'hq_city': v('hqLabel'), 'lat': lat, 'lon': lon, 'industry': v('indLabel'), 'website': v('web'),
-                   'logo_file': urllib.parse.unquote(v('logo').rsplit('/', 1)[-1]) if v('logo') else None, 'founded': (v('inc') or '')[:4] or None,
-                   'ticker': v('tick'), 'exchange': v('exLabel'), 'wiki': urllib.parse.unquote(v('art').rsplit('/', 1)[-1]).replace('_', ' ')}
-    return list(seen.values())
 
 
 def main():
@@ -69,25 +41,18 @@ def main():
     ap.add_argument('--max-usd', type=float, default=5.0); ap.add_argument('--per-country', type=int, default=400); a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True); t0 = time.time()
     have = {c['name'].lower() for c in ce.get(ce.SRC)['companies']}
-    cs = countries(); print('countries', len(cs), flush=True)
-    pool = {k: [] for k in QUOTA}
-    for i, (cq, c) in enumerate(cs.items()):
-        for x in top(cq, a.per_country):
-            if x['name'] and x['name'].lower() not in have and not x['name'].startswith('Q'): x.update(country=c['name'], continent=c['cont']); pool[c['cont']].append(x)
-        if i % 20 == 0: print(f'country {i}/{len(cs)}', {k: len(v) for k, v in pool.items()}, flush=True)
-        time.sleep(1)
-    # pick biggest first per continent: listed, then most employees; countries interleaved so small countries also appear
-    picked = []
-    for ct, share in QUOTA.items():
-        L = sorted(pool[ct], key=lambda x: (not x['listed'], -(x['employees'] or 0)))
-        by = {}
-        for x in L: by.setdefault(x['country'], []).append(x)
-        n, rr = int(a.target * share), []
-        while len(rr) < n and any(by.values()):
-            for k in list(by):
-                if by[k]: rr.append(by[k].pop(0))
-                if len(rr) >= n: break
-        picked += rr
+    base = [c for c in ce.get(WD_LIST)['companies'] if c.get('n') and c['n'].lower() not in have and c.get('r') in REG]
+    meta = entities([c['q'] for c in base]); picked = []
+    for c in base:
+        m = meta.get(c['q']) or {}
+        if not m.get('wiki'): continue
+        picked.append({'qid': c['q'], 'name': c['n'], 'country': c.get('c'), 'continent': c['r'], 'hq_city': c.get('city'), 'lat': c.get('la'), 'lon': c.get('lo'),
+                       'website': c.get('w'), 'industry': c.get('i') or c.get('s'), 'list_sector': c.get('s'), 'wiki': m['wiki'], 'employees': m.get('employees'),
+                       'listed': m.get('listed') or bool(c.get('l')), 'ticker': m.get('ticker'), 'logo_file': m.get('logo_file'), 'founded': m.get('founded')})
+    picked.sort(key=lambda x: (not x['listed'], -(x['employees'] or 0)))  # biggest first
+    picked = picked[:a.target]
+    print('picked', len(picked), 'from', len(base), flush=True)
+    if not picked: sys.exit('no companies: Wikidata did not answer')
     print('picked', len(picked), flush=True)
     # Wikipedia summaries, then Azure descriptions + sector
     for i, x in enumerate(picked):
@@ -95,7 +60,7 @@ def main():
         x['extract'] = (s or {}).get('extract', '')[:1500] if (s or {}).get('type') == 'standard' else ''
         x['wiki_url'] = ((s or {}).get('content_urls') or {}).get('desktop', {}).get('page')
         if i % 200 == 0: print(f'wikipedia {i}/{len(picked)}', flush=True)
-        time.sleep(.1)
+        time.sleep(.2)
     az = ce.Azure('gpt-4.1-mini', a.max_usd)
     sysm = ('You write short company descriptions for Investedia, a financial news site. Use ONLY facts in the given Wikipedia summary. '
             'No opinions, no advice, no share prices, no figures that are not in the summary. Reply with JSON only.')
