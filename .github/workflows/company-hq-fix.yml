@@ -1,0 +1,26 @@
+name: Company HQ city fix (Azure)
+# Owner, 25 Nov 2026: reconcile head-office cities of the 10K list with Wikipedia. Review artifact only.
+on:
+  push:
+    branches: [claude/company-10k]
+    paths: [tools/company-hq-fix.py, .github/workflows/company-hq-fix.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+concurrency: {group: company-hq-fix, cancel-in-progress: false}
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Reconcile cities
+        env:
+          AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
+          AZURE_OPENAI_API_KEY: ${{ secrets.AZURE_OPENAI_API_KEY }}
+          AZURE_DEPLOYMENT: gpt-4.1-mini
+        run: python tools/company-hq-fix.py --out out --max-usd 1.5
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: companies-10k-fixed, path: out/, retention-days: 30}
