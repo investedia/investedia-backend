@@ -28,6 +28,7 @@ RULES = ("Rules: plain English for a general reader; UK/US neutral spelling is f
 
 class Azure:
     def __init__(self, endpoint, key, deployment, model, max_usd):
+        endpoint = '/'.join(str(endpoint).strip().split('/')[:3])  # host only, as in gdelt-backfill (portal URLs carry a path)
         self.url = '%s/openai/deployments/%s/chat/completions?api-version=%s' % (endpoint.rstrip('/'), deployment, API_VERSION)
         self.key, self.model, self.max_usd = key, model, max_usd
         self.tin = self.tout = self.calls = 0
