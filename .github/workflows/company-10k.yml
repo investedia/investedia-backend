@@ -1,0 +1,26 @@
+name: Company pages 10K (Azure)
+# Owner, 25 Nov 2026: build up to 10,000 company pages, biggest first on every continent. Review artifact only.
+on:
+  push:
+    branches: [claude/company-10k]
+    paths: [tools/company-10k.py, .github/workflows/company-10k.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+concurrency: {group: company-10k, cancel-in-progress: false}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Build company list and descriptions
+        env:
+          AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
+          AZURE_OPENAI_API_KEY: ${{ secrets.AZURE_OPENAI_API_KEY }}
+          AZURE_DEPLOYMENT: gpt-4.1-mini
+        run: python tools/company-10k.py --out out --max-usd 5
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: companies-10k, path: out/, retention-days: 30}
