@@ -4,7 +4,7 @@ name: Education glossary (Azure)
 on:
   push:
     branches: [claude/learn-glossary]
-    paths: [tools/learn-glossary.py, .github/workflows/learn-glossary.yml]
+    paths: [tools/learn-glossary.py, .github/workflows/learn-glossary.yml, tools/learn/glossary-v1.json]
   workflow_dispatch:
     inputs:
       max_usd: {description: 'Spending cap in US dollars', default: '3'}
@@ -25,7 +25,7 @@ jobs:
           AZURE_OPENAI_API_KEY: ${{ secrets.AZURE_OPENAI_API_KEY }}
           AZURE_DEPLOYMENT: ${{ inputs.deployment || 'gpt-4.1-mini' }}
           MAX_USD: ${{ inputs.max_usd || '3' }}
-        run: python tools/learn-glossary.py --out out --max-usd "$MAX_USD"
+        run: python tools/learn-glossary.py --out out --max-usd "$MAX_USD" --extend tools/learn/glossary-v1.json --add-beginner 60
       - uses: actions/upload-artifact@v4
         if: always()
         with: {name: education-glossary, path: out/, retention-days: 30}

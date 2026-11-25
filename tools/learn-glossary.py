@@ -86,6 +86,8 @@ def main():
     ap.add_argument('--out', default='out'); ap.add_argument('--max-usd', type=float, default=3.0)
     ap.add_argument('--per-topic', type=int, default=60); ap.add_argument('--limit', type=int, default=1000)
     ap.add_argument('--batch', type=int, default=12)
+    ap.add_argument('--extend', default='', help='existing glossary.json: add --add-beginner new beginner terms, re-check unchecked ones')
+    ap.add_argument('--add-beginner', type=int, default=60)
     a = ap.parse_args()
     endpoint, key = os.environ.get('AZURE_OPENAI_ENDPOINT', ''), os.environ.get('AZURE_OPENAI_API_KEY', '')
     dep = (os.environ.get('AZURE_DEPLOYMENT') or 'gpt-4.1-mini').strip()
@@ -95,10 +97,22 @@ def main():
     report = {'model': az.model, 'started': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()), 'notice': 'Educational only. Not investment advice.'}
     sysmsg = 'You write an investing glossary for Investedia, a financial news site. ' + RULES + ' Reply with JSON only.'
 
+    base = []
+    if a.extend:
+        base = json.load(open(a.extend))['entries']
+        for e in base: e.pop('aka', None)  # owner 25 Nov: other names removed (some were different ideas, e.g. dividend yield)
+        names = sorted(e['term'] for e in base)
+        r = az.ask(sysmsg, f'This investing glossary already has these terms: {json.dumps(names)}. Suggest {int(a.add_beginner * 1.6)} more BEGINNER terms that a new investor '
+                           'really needs and that are missing (everyday money, saving, first investments, reading the news, account basics). No near-duplicates of existing terms, '
+                           'nothing niche or country-specific. JSON: {"terms":[{"term":"...","why_useful":"short"}]}', 4000)
+        have = {n.lower() for n in names}
+        terms = [{'term': t['term'], 'level': 'beginner', 'topic': ''} for t in (r.get('terms') or []) if isinstance(t, dict) and t.get('term') and t['term'].lower() not in have][:int(a.add_beginner * 1.3)]
+        report['terms_listed'] = len(terms)
     # 1. term list
-    seen, terms = {}, []
-    for t in EXISTING: seen[t.lower()] = 1; terms.append({'term': t, 'level': '', 'topic': ''})
-    for k, desc in TOPICS.items():
+    seen = {}
+    if not a.extend: terms = []
+    for t in ([] if a.extend else EXISTING): seen[t.lower()] = 1; terms.append({'term': t, 'level': '', 'topic': ''})
+    for k, desc in ([] if a.extend else TOPICS.items()):
         try:
             r = az.ask(sysmsg, f'List {a.per_topic} important glossary terms for the topic "{desc}", spread across levels: about 30% beginner, 45% intermediate, 25% expert. '
                                'Use the common name (with abbreviation in brackets when people use it, e.g. "Price-to-earnings ratio (P/E)"). No duplicates, no people or company names. '
@@ -108,7 +122,7 @@ def main():
             t = str((x or {}).get('term') or '').strip(); base = re.sub(r'\s*\(.*?\)', '', t).lower()
             if t and t.lower() not in seen and base not in seen and len(t) < 70:
                 seen[t.lower()] = seen[base] = 1; terms.append({'term': t, 'level': str(x.get('level') or ''), 'topic': k})
-    terms = terms[:a.limit]; report['terms_listed'] = len(terms)
+    terms = terms[:a.limit]; report.setdefault('terms_listed', len(terms))
 
     # 2. write entries
     entries, failed = [], []
@@ -132,6 +146,8 @@ def main():
     json.dump({'entries': entries}, open(os.path.join(a.out, 'written-before-check.json'), 'w'), ensure_ascii=False)  # kept even if the check fails
 
     # 3. checking pass: a second reading that fixes or rejects
+    keep = [e for e in base if e.get('checked')]
+    entries = entries + [e for e in base if not e.get('checked')]
     checked, dropped, fixed = [], [], 0
     for i in range(0, len(entries), a.batch):
         part = entries[i:i + a.batch]
@@ -139,7 +155,7 @@ def main():
             r = az.ask('You are a strict finance editor checking a glossary for accuracy and tone. ' + RULES + ' Reply with JSON only.',
                        'Check each entry. If it is correct and follows the rules, verdict "ok". If it has a fixable problem (factual slip, advice-like wording, '
                        'a stated current price or statistic, wrong level), verdict "fix" and return the corrected full entry with the same fields. '
-                       'If the term is not a real or useful investing term, verdict "drop". '
+                       'If the term is not a real, useful investing term for this level, or duplicates a common term, verdict "drop". '
                        'JSON: {"results":[{"slug":"...","verdict":"ok|fix|drop","reason":"short","entry":{...only when fix}}]}\n\n' + json.dumps(part, ensure_ascii=False), 9000)
         except RuntimeError as e:
             report['stop'] = str(e); checked += [dict(x, checked=False) for x in entries[i:]]; break
@@ -154,6 +170,11 @@ def main():
             checked.append(dict(e, checked=bool(v)))
         print(f'checked {len(checked)}/{len(entries)}  ${az.usd:.3f}', flush=True)
 
+    if a.extend:
+        newb = [e for e in checked if e['term'].lower() not in {b['term'].lower() for b in base}][:a.add_beginner]
+        checked = keep + [e for e in checked if e['term'].lower() in {b['term'].lower() for b in base}] + newb
+        report['added_beginner'] = len(newb)
+    for e in checked: e.pop('aka', None)
     checked.sort(key=lambda e: e['term'].lower())
     known = {e['term'].lower() for e in checked}
     for e in checked: e['related'] = [r for r in e['related'] if r.lower() in known] or e['related'][:3]
