@@ -614,7 +614,7 @@ class ClaudeEditor:
 
 # Azure OpenAI (owner 22 Nov 2026: use the Azure credit). Same prompt, same validation, same budget and dollar cap;
 # only the HTTP call differs. Prices: $ per million input / output tokens, Azure standard (global) list price.
-AZURE_PRICES = {'gpt-4o-mini': (0.15, 0.60), 'gpt-4.1-mini': (0.40, 1.60), 'gpt-4.1-nano': (0.10, 0.40), 'gpt-5-mini': (0.25, 2.00), 'gpt-5-nano': (0.05, 0.40)}
+AZURE_PRICES = {'gpt-4.1': (2.00, 8.00), 'gpt-4o-mini': (0.15, 0.60), 'gpt-4.1-mini': (0.40, 1.60), 'gpt-4.1-nano': (0.10, 0.40), 'gpt-5-mini': (0.25, 2.00), 'gpt-5-nano': (0.05, 0.40)}
 AZURE_API_VERSION = '2024-10-21'
 
 
