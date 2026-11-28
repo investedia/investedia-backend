@@ -1,0 +1,53 @@
+# Refresh assets/globe/news-prices.json on the website (owner, 28 Nov 2026: keep Yahoo).
+# Prices for assets the news mentions (Yahoo Finance chart endpoint + FRED), used by the globe, story cards and
+# "big move" tags. It stopped on 7 Nov when no workflow ran update_news_prices.py any more.
+# Needs the same secret and switch as publish-library: FRONTEND_PUSH_TOKEN and LIBRARY_PUBLISH_ENABLED=true.
+name: News prices (every 2 hours)
+on:
+  schedule:
+    - cron: '17 */2 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: publish-library   # shares the website push lane with the library publisher
+  cancel-in-progress: false
+jobs:
+  prices:
+    if: vars.LIBRARY_PUBLISH_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: backend
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check out the website
+        uses: actions/checkout@v4
+        with:
+          repository: investedia/investedia-frontend
+          ref: main
+          path: frontend
+          token: ${{ secrets.FRONTEND_PUSH_TOKEN }}
+          fetch-depth: 1
+      - name: Refresh prices from the website's current news
+        run: |
+          for f in news-live.json markets.json news-ledger.json news-prices.json; do
+            [ -f frontend/assets/globe/$f ] && cp frontend/assets/globe/$f backend/assets/globe/$f || true
+          done
+          (cd backend && python update_news_prices.py) | tee -a "$GITHUB_STEP_SUMMARY"
+          cp backend/assets/globe/news-prices.json frontend/assets/globe/news-prices.json
+          [ -d frontend/docs/assets/globe ] && cp backend/assets/globe/news-prices.json frontend/docs/assets/globe/news-prices.json || true
+      - name: Commit and push to the website
+        working-directory: frontend
+        run: |
+          git config user.name 'Investedia news robot'
+          git config user.email 'robot@investedia.com'
+          git add assets/globe/news-prices.json docs/assets/globe/news-prices.json 2>/dev/null || true
+          if git diff --cached --quiet; then echo 'No price changes.'; exit 0; fi
+          git commit -m 'Prices: refresh news-prices.json'
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep $((i*10)); done
+          echo '::error::Push failed after 3 tries' && exit 1
